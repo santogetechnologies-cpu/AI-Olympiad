@@ -1444,7 +1444,7 @@ const TOPIC_QUESTION_MAP: Record<string, DynamicQuizQuestion[]> = {
   ],
 
   // ── CHAPTER 3: AI SOLVE ────────────────────────────────────────────────────
-  'ai on the road': [
+  'smart road systems & autonomous driving': [
     {
       id: 'aotr-1',
       question: 'How do self-driving cars perceive pedestrians and road signs?',

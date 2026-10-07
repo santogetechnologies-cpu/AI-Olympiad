@@ -93,7 +93,7 @@ export const MasteryAssessmentEngine: React.FC<MasteryAssessmentEngineProps> = (
 
   // Timer
   const [timeLeft, setTimeLeft] = useState(600) // 10 minutes default
-  const timerRef = useRef<NodeJS.Timeout | null>(null)
+  const timerRef = useRef<any>(null)
 
   const contextKey = useMemo(() => {
     return `${gradeKey}_${chapterId}_${lessonId || 'chapter_quiz'}`
@@ -243,7 +243,7 @@ export const MasteryAssessmentEngine: React.FC<MasteryAssessmentEngineProps> = (
     if (isCorrect) {
       gameAudio.playSuccess()
     } else {
-      gameAudio.playError()
+      gameAudio.playWrong()
     }
 
     setIsCurrentAnswerCorrect(isCorrect)

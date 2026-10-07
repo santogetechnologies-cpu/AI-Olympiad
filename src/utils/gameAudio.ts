@@ -134,6 +134,10 @@ class GameAudioSynthesizer {
     } catch {}
   }
 
+  public playError() {
+    this.playWrong()
+  }
+
   // 4. Coin / XP Collect Sparkle
   public playCoin() {
     if (this.muted) return
