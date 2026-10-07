@@ -75,28 +75,28 @@ export const SuccessCelebration: React.FC<{
   onContinue,
   continueLabel = 'Continue Journey →',
 }) => (
-  <div className="bg-gradient-to-r from-emerald-900/60 via-teal-900/40 to-slate-900/80 border-2 border-emerald-400/30 rounded-3xl p-6 sm:p-8 text-center space-y-4 shadow-2xl relative overflow-hidden animate-in zoom-in-95 duration-400">
-    <div className="w-16 h-16 rounded-2xl bg-emerald-400/20 text-emerald-300 border border-emerald-300/40 flex items-center justify-center mx-auto shadow-inner">
-      <Sparkles size={32} className="text-emerald-300 animate-spin" style={{ animationDuration: '6s' }} />
-    </div>
-    <div className="space-y-1">
-      <h3 className="text-xl sm:text-2xl font-black text-white">{title}</h3>
-      <p className="text-slate-300 text-xs sm:text-sm max-w-md mx-auto">{subtitle}</p>
-    </div>
-    {xpEarned > 0 && (
-      <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/20 text-emerald-300 font-black text-sm border border-emerald-400/30">
-        <span>+{xpEarned} XP Earned</span>
+    <div className="bg-gradient-to-r from-emerald-900/60 via-teal-900/40 to-slate-900/80 border-2 border-emerald-400/30 rounded-3xl p-6 sm:p-8 text-center space-y-4 shadow-2xl relative overflow-hidden animate-in zoom-in-95 duration-400">
+      <div className="w-16 h-16 rounded-2xl bg-emerald-400/20 text-emerald-300 border border-emerald-300/40 flex items-center justify-center mx-auto shadow-inner">
+        <Sparkles size={32} className="text-emerald-300 animate-spin" style={{ animationDuration: '6s' }} />
       </div>
-    )}
-    {onContinue && (
-      <div className="pt-2">
-        <button
-          onClick={onContinue}
-          className="px-8 py-3 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white font-bold text-sm shadow-lg shadow-emerald-500/25 transition-all transform hover:-translate-y-0.5 active:translate-y-0"
-        >
-          {continueLabel}
-        </button>
+      <div className="space-y-1">
+        <h3 className="text-xl sm:text-2xl font-black text-white">{title}</h3>
+        <p className="text-slate-300 text-xs sm:text-sm max-w-md mx-auto">{subtitle}</p>
       </div>
-    )}
-  </div>
-)
+      {xpEarned > 0 && (
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/20 text-emerald-300 font-black text-sm border border-emerald-400/30">
+          <span>+{xpEarned} XP Earned.</span>
+        </div>
+      )}
+      {onContinue && (
+        <div className="pt-2">
+          <button
+            onClick={onContinue}
+            className="px-8 py-3 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white font-bold text-sm shadow-lg shadow-emerald-500/25 transition-all transform hover:-translate-y-0.5 active:translate-y-0"
+          >
+            {continueLabel}
+          </button>
+        </div>
+      )}
+    </div>
+  )
