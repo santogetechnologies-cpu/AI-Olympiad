@@ -120,8 +120,8 @@ export const ChapterVideoSection: React.FC<ChapterVideoSectionProps> = ({
       {/* Aura AI Guide Interactive Dialogue */}
       <div className="shrink-0 w-full max-w-3xl mx-auto">
         <AuraGuideAvatar
-          mood="explaining"
-          message={guideMessage}
+          mood={completedState ? 'celebrating' : 'explaining'}
+          message={completedState ? `Great job watching the video! You're now ready to explore Lesson 1.` : guideMessage}
           size="sm"
           className="w-full bg-white rounded-2xl border border-slate-200 shadow-xs"
         />

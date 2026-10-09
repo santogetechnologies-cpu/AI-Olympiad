@@ -7,6 +7,7 @@ import { gameAudio } from '../../../utils/gameAudio'
 import { gamification } from '../../../utils/gamification'
 import type { ExperienceComponentProps } from './ExplorationExperience'
 import { AssignedImageSlot } from '../../content/AssignedImageSlot'
+import { AuraGuideAvatar } from '../primitives/AuraGuideAvatar'
 
 export const DiscoveryLabExperience: React.FC<ExperienceComponentProps> = ({
   gradeKey,
@@ -177,6 +178,32 @@ export const DiscoveryLabExperience: React.FC<ExperienceComponentProps> = ({
         contentType="resource"
         position="after_hook"
       />
+
+      {/* Aura AI Lab Assistant */}
+      <div className="bg-white/95 rounded-2xl p-3 border border-slate-200/90 shadow-2xs">
+        <AuraGuideAvatar
+          mood={
+            isCompleted
+              ? 'celebrating'
+              : simResults.status === 'optimal'
+              ? 'celebrating'
+              : simResults.status === 'overfitting'
+              ? 'thinking'
+              : 'wrong'
+          }
+          message={
+            isCompleted
+              ? 'Experiment verified! You explored how complexity, noise, and regularization affect real-world models.'
+              : simResults.status === 'optimal'
+              ? `Optimal calibration achieved! Validation accuracy reached ${simResults.valAcc.toFixed(1)}% with low latency.`
+              : simResults.status === 'overfitting'
+              ? `Overfitting detected! The model is memorizing noise. Try increasing sample size or enabling regularization.`
+              : `Underfitting detected! The model is too simple. Increase layers or tune parameters to learn the pattern.`
+          }
+          size="sm"
+          className="w-full"
+        />
+      </div>
 
       {/* Main Two-Column Experiment Workbench */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">

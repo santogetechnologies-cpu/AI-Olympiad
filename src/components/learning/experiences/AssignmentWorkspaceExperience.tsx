@@ -6,6 +6,7 @@ import {
 import { gameAudio } from '../../../utils/gameAudio'
 import { gamification } from '../../../utils/gamification'
 import type { ExperienceComponentProps } from './ExplorationExperience'
+import { AuraGuideAvatar } from '../primitives/AuraGuideAvatar'
 
 export const AssignmentWorkspaceExperience: React.FC<ExperienceComponentProps> = ({
   topicTitle,
@@ -156,6 +157,20 @@ export const AssignmentWorkspaceExperience: React.FC<ExperienceComponentProps> =
             </div>
           )}
         </div>
+      </div>
+
+      {/* Aura AI Project Mentor */}
+      <div className="bg-white/95 rounded-2xl p-3 border border-slate-200/90 shadow-2xs">
+        <AuraGuideAvatar
+          mood={readyToAdvance ? 'celebrating' : isSubmitted ? 'celebrating' : 'explaining'}
+          message={
+            readyToAdvance
+              ? 'Capstone assignment completed! Your architecture, safeguards, and executive brief are archived and ready for review.'
+              : `Welcome to the ${topicTitle} Capstone! Synthesize your project specification, outline architecture, and attach your prototype.`
+          }
+          size="sm"
+          className="w-full"
+        />
       </div>
 
       {/* Auto-save & Status */}

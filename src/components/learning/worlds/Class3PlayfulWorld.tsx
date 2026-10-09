@@ -11,6 +11,8 @@ import {
 } from 'lucide-react'
 import type { WorldExperienceProps } from './types'
 import { ThreeStageMasteryQuiz } from '../ThreeStageMasteryQuiz'
+import { Class3AuthenticBookExperience } from '../engines/Class3AuthenticBookExperience'
+import { GaioInteractiveBookApp } from '../../gaio/GaioInteractiveBookApp'
 import {
   UniversalLessonGameEngine,
   MatchPairStation,
@@ -70,155 +72,29 @@ function Class3Chapter1DiscoverWorld(props: any) {
 
 function C3Ch1S2MeetAIFriend(props: any) {
   return (
-    <UniversalLessonGameEngine
-      badge="Class 3 · Chapter 1"
-      title="Meet My AI Friend"
-      lessonSubtitle="What is an AI Helper?"
-      simpleDefinition="An AI friend is a smart computer buddy that can talk, listen, and play learning games with you!"
-      smallExample="Just like Siri or Alexa answering 'Mount Everest' when you ask about tall mountains!"
-      oneWordPoint={{ question: "Can an AI friend learn from us?", answer: "Yes!" }}
-      keyPoints={[
-        { icon: Heart, title: 'Helpful Buddy', text: 'Helps us solve puzzles and learn fun facts.' },
-        { icon: Sparkles, title: 'Super Listener', text: 'Listens when you speak and answers kindly.' },
-        { icon: Eye, title: 'Learns Fast', text: 'Gets better every time we practice together.' },
-        { icon: Shield, title: 'Safe & Polite', text: 'Always follows good manners and safety rules.' },
-      ]}
-      aiDialogue="Hi! I am Aura, your friendly AI buddy. Let's play 3 fun games to welcome your new friend!"
-      htmlContent={props.canonicalSection?.htmlContent}
-      imageSrc={props.canonicalSection?.imageSrc}
-      xpReward={25}
-      isCompleted={props.isCompleted}
-      onComplete={props.onComplete}
-      onJumpToSection={props.onJumpToSection}
-      nextSectionIdx={2}
-      games={[
-        {
-          badge: "Game 1 · Friend Matcher",
-          title: "Match Human Skills with AI Helper Skills",
-          render: (onPass) => (
-            <MatchPairStation
-              pairs={[
-                { id: 'p1', left: 'Human Friend', right: 'Has feelings & true imagination' },
-                { id: 'p2', left: 'AI Friend', right: 'Calculates fast & remembers facts' },
-                { id: 'p3', left: 'Teamwork', right: 'Humans and AI solving puzzles together' },
-              ]}
-              onAllMatched={onPass}
-            />
-          )
-        },
-        {
-          badge: "Game 2 · Greeting Sequence",
-          title: "Order the Steps to Say Hello to AI",
-          render: (onPass) => (
-            <SequenceBuilder
-              items={[
-                { id: 's1', label: '1. Wake up the helper with "Hello Aura"', detail: 'Voice prompt' },
-                { id: 's2', label: '2. Ask your question clearly', detail: 'User inquiry' },
-                { id: 's3', label: '3. Listen to the friendly answer', detail: 'AI response' }
-              ]}
-              onOrderChange={(ids) => {
-                if (ids[0] === 's1' && ids[1] === 's2' && ids[2] === 's3') onPass()
-              }}
-            />
-          )
-        },
-        {
-          badge: "Game 3 · Friend Sorter",
-          title: "Sort Friendly AI Behaviors",
-          render: (onPass) => (
-            <ClassificationSorter
-              items={[
-                { id: 'i1', label: 'Explaining homework clues patiently', correctBin: 'A' },
-                { id: 'i2', label: 'Saying please and thank you', correctBin: 'A' },
-                { id: 'i3', label: 'Asking for your secret home password', correctBin: 'B' },
-                { id: 'i4', label: 'Helping you spell a tricky word', correctBin: 'A' },
-              ]}
-              binALabel="Safe Friend Behavior"
-              binBLabel="Not Allowed / Unsafe"
-              onComplete={onPass}
-            />
-          )
-        }
-      ]}
-    />
+    <div className="w-full max-w-md mx-auto flex flex-col justify-between h-full max-h-full overflow-hidden select-none animate-in fade-in duration-200">
+      <GaioInteractiveBookApp
+        topicFilter={1}
+        onComplete={props.onComplete}
+        onExit={() => {
+          if (props.onJumpToSection) props.onJumpToSection(0)
+        }}
+      />
+    </div>
   )
 }
 
 function C3Ch1S3MachinesThatHelp(props: any) {
   return (
-    <UniversalLessonGameEngine
-      badge="Class 3 · Chapter 1"
-      title="Machines That Help Us"
-      lessonSubtitle="Smart Machines in Daily Life"
-      simpleDefinition="Helper machines do boring chores so we have more time to learn, draw, and play with friends!"
-      smallExample="A robot vacuum rolls around the carpet and cleans up biscuit crumbs all by itself!"
-      oneWordPoint={{ question: "Why do we build helper machines?", answer: "To Help Us" }}
-      keyPoints={[
-        { icon: Home, title: 'Home Helpers', text: 'Clean floors and wash clothes for our family.' },
-        { icon: Navigation, title: 'Map Guides', text: 'Show the quickest road to school or the park.' },
-        { icon: Activity, title: 'Hospital Carts', text: 'Bring medicines safely to doctors and patients.' },
-      ]}
-      aiDialogue="Smart machines help us every day! Let's play 3 games to see what they can do."
-      htmlContent={props.canonicalSection?.htmlContent}
-      imageSrc={props.canonicalSection?.imageSrc}
-      xpReward={25}
-      isCompleted={props.isCompleted}
-      onComplete={props.onComplete}
-      onJumpToSection={props.onJumpToSection}
-      nextSectionIdx={3}
-      games={[
-        {
-          badge: "Game 1 · Machine Sorter",
-          title: "Identify Smart AI Helpers vs Simple Tools",
-          render: (onPass) => (
-            <ClassificationSorter
-              items={[
-                { id: 'm1', label: 'Robotic Vacuum navigating around table', correctBin: 'A' },
-                { id: 'm2', label: 'Simple wooden broom', correctBin: 'B' },
-                { id: 'm3', label: 'Voice-controlled smart light bulb', correctBin: 'A' },
-                { id: 'm4', label: 'Standard metal spoon', correctBin: 'B' },
-              ]}
-              binALabel="Smart Machine (AI/Sensor)"
-              binBLabel="Simple Manual Tool"
-              onComplete={onPass}
-            />
-          )
-        },
-        {
-          badge: "Game 2 · Power Level",
-          title: "Calibrate Robot Helper Speed",
-          render: (onPass) => (
-            <InteractiveSliderTuner
-              title="Set Safe Indoor Speed"
-              description="Keep the robot helper moving safely inside the living room between 3 and 5 km/h."
-              min={1}
-              max={10}
-              unit=" km/h"
-              targetRange={[3, 5]}
-              optimalLabel="Safe Speed! Robot avoids running into objects."
-              suboptimalLabel="Too fast or stopped. Tune to safe range (3-5 km/h)."
-              onCorrect={onPass}
-            />
-          )
-        },
-        {
-          badge: "Game 3 · Helper Check",
-          title: "Inspect Helper Robot Parts",
-          render: (onPass) => (
-            <VisualInspectionScanner
-              title="Helper Robot Chassis Inspection"
-              prompt="Tap all 3 parts of the helper robot."
-              hotspots={[
-                { id: 'h1', label: 'Rubber Wheels', explanation: 'Allows smooth gliding over floors and rugs.' },
-                { id: 'h2', label: 'Front Sensor Ring', explanation: 'Prevents bumping into furniture.' },
-                { id: 'h3', label: 'Power Battery', explanation: 'Keeps the robot working for hours.' }
-              ]}
-              onAllDiscovered={onPass}
-            />
-          )
-        }
-      ]}
-    />
+    <div className="w-full max-w-md mx-auto flex flex-col justify-between h-full max-h-full overflow-hidden select-none animate-in fade-in duration-200">
+      <GaioInteractiveBookApp
+        topicFilter={2}
+        onComplete={props.onComplete}
+        onExit={() => {
+          if (props.onJumpToSection) props.onJumpToSection(0)
+        }}
+      />
+    </div>
   )
 }
 

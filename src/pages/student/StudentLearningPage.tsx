@@ -218,28 +218,24 @@ export default function StudentLearningPage() {
 
     const studentId = user?.id || 'guest-student'
 
-    const computeChapterProgress = (chapList: Chapter[]) => {
-      const progMap: Record<string, { percentage: number; completed: boolean; completedSections?: number; totalSections?: number }> = {}
+    const loadChaptersWithProgress = async (chapList: Chapter[]) => {
+      const progMap: Record<string, { percentage: number; completed: boolean; completedSections: number; totalSections: number }> = {}
       for (const ch of chapList) {
-        let pct = 0
-        let completed = false
-        let doneSecs = 0
-        const totalSecs = 8
         try {
-          const stored = localStorage.getItem(`progress_${studentId}_${ch.id}`)
-          if (stored) {
-            const arr = JSON.parse(stored)
-            doneSecs = Array.isArray(arr) ? Math.min(totalSecs, arr.length) : 0
-            pct = Math.min(100, Math.round((doneSecs / totalSecs) * 1000) / 10)
-            completed = doneSecs >= totalSecs
+          const prog = await progressService.getChapterProgress(studentId, ch.id)
+          progMap[ch.id] = {
+            percentage: prog.percentage,
+            completed: prog.isCompleted,
+            completedSections: prog.completed,
+            totalSections: 8,
           }
-        } catch {}
-
-        progMap[ch.id] = {
-          percentage: completed ? 100 : pct,
-          completed: completed,
-          completedSections: doneSecs,
-          totalSections: totalSecs,
+        } catch {
+          progMap[ch.id] = {
+            percentage: 0,
+            completed: false,
+            completedSections: 0,
+            totalSections: 8,
+          }
         }
       }
       return progMap
@@ -273,7 +269,7 @@ export default function StudentLearningPage() {
       }))
 
       setChapters(synChaps)
-      const progMap = computeChapterProgress(synChaps)
+      const progMap = await loadChaptersWithProgress(synChaps)
       setChapterProgress(progMap)
     }
 
@@ -281,24 +277,8 @@ export default function StudentLearningPage() {
       chapterService.getPublished(user.organization_id, selectedSubject.id).then(async chaps => {
         if (chaps.length > 0) {
           setChapters(chaps)
-          const progMap = computeChapterProgress(chaps)
-          for (const ch of chaps) {
-            if (!progMap[ch.id]?.completed && user?.id) {
-              try {
-                const prog = await progressService.getChapterProgress(user.id, ch.id)
-                if (prog.percentage > (progMap[ch.id]?.percentage || 0)) {
-                  const isDone = prog.percentage === 100 || prog.completed >= (prog.total || 8)
-                  progMap[ch.id] = {
-                    percentage: isDone ? 100 : prog.percentage,
-                    completed: isDone,
-                    completedSections: isDone ? 8 : prog.completed,
-                    totalSections: 8,
-                  }
-                }
-              } catch {}
-            }
-          }
-          setChapterProgress({ ...progMap })
+          const progMap = await loadChaptersWithProgress(chaps)
+          setChapterProgress(progMap)
         } else {
           loadFallbackChapters()
         }
@@ -311,40 +291,33 @@ export default function StudentLearningPage() {
   // Real-time synchronization when returning from chapter view or storage update
   useEffect(() => {
     const studentId = user?.id || 'guest-student'
-    const syncProgress = () => {
+    const syncProgress = async () => {
       if (chapters.length === 0) return
-      setChapterProgress(prev => {
-        const updated = { ...prev }
-        let changed = false
-        for (const ch of chapters) {
-          try {
-            const stored = localStorage.getItem(`progress_${studentId}_${ch.id}`)
-            if (stored) {
-              const arr = JSON.parse(stored)
-              const totalSecs = 8
-              const doneSecs = Array.isArray(arr) ? Math.min(totalSecs, arr.length) : 0
-              const pct = Math.min(100, Math.round((doneSecs / totalSecs) * 1000) / 10)
-              const isCompleted = doneSecs >= totalSecs
-              const finalPct = isCompleted ? 100 : pct
-              if (
-                !updated[ch.id] ||
-                updated[ch.id].percentage !== finalPct ||
-                updated[ch.id].completed !== isCompleted ||
-                updated[ch.id].completedSections !== doneSecs
-              ) {
-                updated[ch.id] = {
-                  percentage: finalPct,
-                  completed: isCompleted,
-                  completedSections: doneSecs,
-                  totalSections: totalSecs,
-                }
-                changed = true
-              }
-            }
-          } catch {}
-        }
-        return changed ? updated : prev
-      })
+      const updatedMap: Record<string, { percentage: number; completed: boolean; completedSections: number; totalSections: number }> = {}
+      let changed = false
+      for (const ch of chapters) {
+        try {
+          const prog = await progressService.getChapterProgress(studentId, ch.id)
+          const current = chapterProgress[ch.id]
+          if (
+            !current ||
+            current.percentage !== prog.percentage ||
+            current.completed !== prog.isCompleted ||
+            current.completedSections !== prog.completed
+          ) {
+            changed = true
+          }
+          updatedMap[ch.id] = {
+            percentage: prog.percentage,
+            completed: prog.isCompleted,
+            completedSections: prog.completed,
+            totalSections: 8,
+          }
+        } catch {}
+      }
+      if (changed) {
+        setChapterProgress(prev => ({ ...prev, ...updatedMap }))
+      }
     }
 
     window.addEventListener('focus', syncProgress)
@@ -356,7 +329,7 @@ export default function StudentLearningPage() {
       window.removeEventListener('storage', syncProgress)
       window.removeEventListener('chapter_progress_updated', syncProgress)
     }
-  }, [chapters, user])
+  }, [chapters, user, chapterProgress])
 
   // Aggregate metrics
   const totalChaptersCount = chapters.length
@@ -421,7 +394,7 @@ export default function StudentLearningPage() {
               </h1>
 
               <p className="text-blue-100/90 text-xs sm:text-sm lg:text-base leading-relaxed">
-                Step through 10 interactive stages per chapter: Concept Deep Dive, Hands-on Lab Simulation, Matching Activities, Interactive Workbook, and Mastery Quizzes.
+                Step through 8 interactive sections per chapter: Video Briefing, Concept Lessons, Interactive Workbook, Challenge Activity, Discovery Lab, Capstone Project, and Mastery Assessment.
               </p>
 
               {/* Dynamic Metrics Ribbon */}

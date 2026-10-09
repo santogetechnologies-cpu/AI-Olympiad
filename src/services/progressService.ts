@@ -62,7 +62,244 @@ export interface StudentDashboardData {
   enrollments: Enrollment[]
 }
 
+export const SECTION_PERCENTAGES: Record<number, number> = {
+  0: 0,
+  1: 12.5,
+  2: 25,
+  3: 37.5,
+  4: 50,
+  5: 62.5,
+  6: 75,
+  7: 87.5,
+  8: 100,
+}
+
+export interface SectionCompletionRecord {
+  student_id: string
+  class_id?: string
+  chapter_id: string
+  section_id: string
+  organization_id?: string
+  status: 'completed'
+  completed_at: string
+}
+
+export function calculateChapterProgress(completedCount: number): {
+  total: 8
+  required: 8
+  completed: number
+  requiredCompleted: number
+  percentage: number
+  isCompleted: boolean
+} {
+  const count = Math.max(0, Math.min(8, Math.floor(completedCount || 0)))
+  const percentage = SECTION_PERCENTAGES[count] ?? Math.min(100, (count / 8) * 100)
+  const isCompleted = count === 8
+  return {
+    total: 8,
+    required: 8,
+    completed: count,
+    requiredCompleted: count,
+    percentage: isCompleted ? 100 : percentage,
+    isCompleted,
+  }
+}
+
+function getPersistentRecordKey(studentId: string): string {
+  return `nanjil_section_completions_${studentId}`
+}
+
+function loadLocalCompletionRecords(studentId: string): Map<string, SectionCompletionRecord> {
+  const map = new Map<string, SectionCompletionRecord>()
+  if (!studentId) return map
+  try {
+    const raw = localStorage.getItem(getPersistentRecordKey(studentId))
+    if (raw) {
+      const list: SectionCompletionRecord[] = JSON.parse(raw)
+      if (Array.isArray(list)) {
+        list.forEach(item => {
+          if (item?.chapter_id && item?.section_id) {
+            const key = `${item.chapter_id}::${item.section_id}`
+            map.set(key, item)
+          }
+        })
+      }
+    }
+  } catch {}
+  return map
+}
+
+function saveLocalCompletionRecords(studentId: string, map: Map<string, SectionCompletionRecord>): void {
+  if (!studentId) return
+  try {
+    const list = Array.from(map.values())
+    localStorage.setItem(getPersistentRecordKey(studentId), JSON.stringify(list))
+  } catch {}
+}
+
 export const progressService = {
+  async getCanonicalSectionIds(chapterId: string): Promise<string[]> {
+    if (!chapterId) return []
+
+    // If chapterId is a DB UUID, query chapter_content table
+    if (isUuid(chapterId)) {
+      try {
+        const { data: dbItems } = await supabase
+          .from('chapter_content')
+          .select('id, display_order, content_type')
+          .eq('chapter_id', chapterId)
+          .neq('status', 'archived')
+          .order('display_order', { ascending: true })
+
+        if (dbItems && dbItems.length > 0) {
+          const ids: string[] = []
+          for (let slot = 1; slot <= 8; slot++) {
+            const matched = dbItems.find(i => i.display_order === slot)
+            if (matched) {
+              ids.push(matched.id)
+            } else {
+              ids.push(`${chapterId}-sec-${slot}`)
+            }
+          }
+          return ids
+        }
+      } catch {}
+    }
+
+    // Default 8 canonical sections for catalog or standard chapters
+    return [
+      `${chapterId}-sec-1`,
+      `${chapterId}-sec-2`,
+      `${chapterId}-sec-3`,
+      `${chapterId}-sec-4`,
+      `${chapterId}-sec-5`,
+      `${chapterId}-sec-6`,
+      `${chapterId}-sec-7`,
+      `${chapterId}-sec-8`,
+    ]
+  },
+
+  async recordSectionCompletion(params: {
+    studentId: string
+    classId?: string
+    chapterId: string
+    sectionId: string
+    organizationId?: string
+  }): Promise<{ isNew: boolean; completedSectionsCount: number; percentage: number; isCompleted: boolean }> {
+    const { studentId, classId, chapterId, sectionId, organizationId } = params
+    if (!studentId || !chapterId || !sectionId) {
+      return { isNew: false, completedSectionsCount: 0, percentage: 0, isCompleted: false }
+    }
+
+    const map = loadLocalCompletionRecords(studentId)
+    const recordKey = `${chapterId}::${sectionId}`
+
+    const isNew = !map.has(recordKey)
+    if (isNew) {
+      const record: SectionCompletionRecord = {
+        student_id: studentId,
+        class_id: classId,
+        chapter_id: chapterId,
+        section_id: sectionId,
+        organization_id: organizationId,
+        status: 'completed',
+        completed_at: new Date().toISOString(),
+      }
+      map.set(recordKey, record)
+      saveLocalCompletionRecords(studentId, map)
+
+      // Also persist to Supabase student_content_progress if UUIDs are valid
+      if (isUuid(studentId) && isUuid(sectionId) && organizationId && isUuid(organizationId)) {
+        try {
+          await supabase.from('student_content_progress').upsert(
+            {
+              student_id: studentId,
+              chapter_content_id: sectionId,
+              organization_id: organizationId,
+              status: 'completed',
+              completion_percentage: 100,
+              completed_at: record.completed_at,
+              last_accessed_at: record.completed_at,
+            },
+            { onConflict: 'student_id,chapter_content_id' }
+          )
+        } catch (dbErr) {
+          console.warn('Notice persisting to Supabase student_content_progress:', dbErr)
+        }
+      }
+    }
+
+    // Calculate strictly from genuine completed section records
+    const canonicalIds = await progressService.getCanonicalSectionIds(chapterId)
+    const completedIds = canonicalIds.filter(id => map.has(`${chapterId}::${id}`))
+    const calc = calculateChapterProgress(completedIds.length)
+
+    // Trigger class progression check if chapter just reached genuine 8/8 completion
+    if (calc.isCompleted && isNew && organizationId) {
+      setTimeout(() => {
+        progressService.checkAndAdvanceClassProgression(studentId, organizationId, chapterId).catch(() => {})
+      }, 50)
+    }
+
+    return {
+      isNew,
+      completedSectionsCount: calc.completed,
+      percentage: calc.percentage,
+      isCompleted: calc.isCompleted,
+    }
+  },
+
+  async getCompletedSectionIds(
+    studentId: string,
+    chapterId: string,
+    canonicalSectionIds?: string[]
+  ): Promise<string[]> {
+    if (!studentId || !chapterId) return []
+
+    const canonicalIds = canonicalSectionIds || await progressService.getCanonicalSectionIds(chapterId)
+    const canonicalSet = new Set(canonicalIds)
+    const completedSet = new Set<string>()
+
+    // 1. Query Supabase database for genuine completion records
+    if (isUuid(studentId)) {
+      try {
+        const uuidItems = canonicalIds.filter(id => isUuid(id))
+        let query = supabase
+          .from('student_content_progress')
+          .select('chapter_content_id, status')
+          .eq('student_id', studentId)
+          .eq('status', 'completed')
+
+        if (uuidItems.length > 0) {
+          query = query.in('chapter_content_id', uuidItems)
+        }
+
+        const { data: dbItems } = await query
+        if (dbItems) {
+          dbItems.forEach(p => {
+            if (p.status === 'completed' && canonicalSet.has(p.chapter_content_id)) {
+              completedSet.add(p.chapter_content_id)
+            }
+          })
+        }
+      } catch (err) {
+        console.warn('Notice querying Supabase student_content_progress:', err)
+      }
+    }
+
+    // 2. Query persistent completion registry for this student and chapter
+    const localMap = loadLocalCompletionRecords(studentId)
+    canonicalIds.forEach(id => {
+      const recordKey = `${chapterId}::${id}`
+      if (localMap.has(recordKey)) {
+        completedSet.add(id)
+      }
+    })
+
+    // Return strictly the matching canonical section IDs
+    return canonicalIds.filter(id => completedSet.has(id))
+  },
+
   async upsertProgress(payload: Partial<StudentContentProgress> & {
     student_id: string
     chapter_content_id: string
@@ -95,7 +332,25 @@ export const progressService = {
     return data
   },
 
-  async markCompleted(studentId: string, contentId: string, organizationId: string): Promise<StudentContentProgress> {
+  async markCompleted(
+    studentId: string,
+    contentId: string,
+    organizationId: string,
+    chapterId?: string,
+    classId?: string
+  ): Promise<StudentContentProgress> {
+    const resolvedChapterId = chapterId || (contentId.includes('-sec-') ? contentId.split('-sec-')[0] : '')
+
+    if (resolvedChapterId) {
+      await progressService.recordSectionCompletion({
+        studentId,
+        classId,
+        chapterId: resolvedChapterId,
+        sectionId: contentId,
+        organizationId,
+      })
+    }
+
     const res = await progressService.upsertProgress({
       student_id: studentId,
       chapter_content_id: contentId,
@@ -104,11 +359,6 @@ export const progressService = {
       completion_percentage: 100,
       completed_at: new Date().toISOString(),
     })
-
-    // Trigger asynchronous progression check
-    setTimeout(() => {
-      progressService.checkAndAdvanceClassProgression(studentId, organizationId).catch(() => {})
-    }, 100)
 
     return res
   },
@@ -128,65 +378,46 @@ export const progressService = {
     })
   },
 
-  async getChapterProgress(studentId: string, chapterId: string): Promise<{
-    total: number
-    required: number
+  async getChapterProgress(
+    studentId: string,
+    chapterId: string,
+    canonicalSectionIds?: string[]
+  ): Promise<{
+    total: 8
+    required: 8
     completed: number
     requiredCompleted: number
     percentage: number
+    isCompleted: boolean
+    completedSectionIds: string[]
   }> {
-    // Check local fallback first for instant responsiveness
-    let localCompletedCount = 0
-    try {
-      const stored = localStorage.getItem(`progress_${studentId}_${chapterId}`)
-      if (stored) {
-        const arr = JSON.parse(stored)
-        localCompletedCount = Array.isArray(arr) ? arr.length : 0
+    if (!studentId || !chapterId) {
+      return {
+        total: 8,
+        required: 8,
+        completed: 0,
+        requiredCompleted: 0,
+        percentage: 0,
+        isCompleted: false,
+        completedSectionIds: [],
       }
-    } catch {}
-
-    if (!isUuid(chapterId)) {
-      const total = 8
-      const percentage = Math.min(100, Math.round((localCompletedCount / 8) * 1000) / 10)
-      return { total, required: total, completed: Math.min(8, localCompletedCount), requiredCompleted: Math.min(8, localCompletedCount), percentage }
     }
 
-    const { data: contentItems } = await supabase
-      .from('chapter_content')
-      .select('id, is_required')
-      .eq('chapter_id', chapterId)
-      .neq('status', 'archived')
-    
-    if (!contentItems || contentItems.length === 0) {
-      const total = 8
-      const percentage = Math.min(100, Math.round((localCompletedCount / 8) * 1000) / 10)
-      return { total, required: total, completed: Math.min(8, localCompletedCount), requiredCompleted: Math.min(8, localCompletedCount), percentage }
+    const canonicalIds = canonicalSectionIds || await progressService.getCanonicalSectionIds(chapterId)
+    const completedIds = await progressService.getCompletedSectionIds(studentId, chapterId, canonicalIds)
+    const count = Math.min(8, completedIds.length)
+
+    const calc = calculateChapterProgress(count)
+
+    return {
+      total: 8,
+      required: 8,
+      completed: calc.completed,
+      requiredCompleted: calc.completed,
+      percentage: calc.percentage,
+      isCompleted: calc.isCompleted,
+      completedSectionIds: completedIds,
     }
-
-    const ids = contentItems.map(i => i.id).filter(id => isUuid(id))
-    if (ids.length === 0 || !isUuid(studentId)) {
-      const total = 8
-      const percentage = Math.min(100, Math.round((localCompletedCount / 8) * 1000) / 10)
-      return { total, required: total, completed: Math.min(8, localCompletedCount), requiredCompleted: Math.min(8, localCompletedCount), percentage }
-    }
-
-    const { data: progressItems } = await supabase
-      .from('student_content_progress')
-      .select('chapter_content_id, status')
-      .eq('student_id', studentId)
-      .in('chapter_content_id', ids)
-
-    const completedIds = new Set(
-      (progressItems || []).filter(p => p.status === 'completed').map(p => p.chapter_content_id)
-    )
-
-    const total = 8
-    const dbCompleted = contentItems.filter(i => completedIds.has(i.id)).length
-    const completed = Math.min(8, Math.max(dbCompleted, localCompletedCount))
-    const requiredCompleted = completed
-    const percentage = Math.min(100, Math.round((completed / 8) * 1000) / 10)
-
-    return { total, required: 8, completed, requiredCompleted, percentage }
   },
 
   async getProgressForContents(studentId: string, contentIds: string[]): Promise<Map<string, StudentContentProgress>> {
@@ -202,23 +433,48 @@ export const progressService = {
     return map
   },
 
-  async getStudentOverallProgress(studentId: string, organizationId: string) {
-    if (!isUuid(studentId) || !isUuid(organizationId)) {
-      return { completed: 0, totalTime: 0, quizAvg: 0, totalItems: 0 }
+  async getStudentOverallProgress(studentId: string, _organizationId?: string) {
+    const completedSet = new Set<string>()
+    let totalTime = 0
+    let avgCompletion = 0
+    let itemsCount = 0
+
+    if (isUuid(studentId)) {
+      try {
+        const { data } = await supabase
+          .from('student_content_progress')
+          .select('chapter_content_id, status, time_spent, completion_percentage')
+          .eq('student_id', studentId)
+
+        if (data && data.length > 0) {
+          itemsCount = data.length
+          data.forEach(i => {
+            if (i.status === 'completed') {
+              completedSet.add(i.chapter_content_id)
+            }
+            totalTime += i.time_spent || 0
+          })
+          avgCompletion = data.reduce((sum, i) => sum + (i.completion_percentage || 0), 0) / data.length
+        }
+      } catch {}
     }
-    const { data, error } = await supabase
-      .from('student_content_progress')
-      .select('status, time_spent, completion_percentage')
-      .eq('student_id', studentId)
-      .eq('organization_id', organizationId)
-    if (error) return { completed: 0, totalTime: 0, quizAvg: 0, totalItems: 0 }
-    const items = data || []
-    const completed = items.filter(i => i.status === 'completed').length
-    const totalTime = items.reduce((sum, i) => sum + (i.time_spent || 0), 0)
-    const avgCompletion = items.length > 0 
-      ? items.reduce((sum, i) => sum + i.completion_percentage, 0) / items.length 
-      : 0
-    return { completed, totalTime, quizAvg: avgCompletion, totalItems: items.length }
+
+    // Also include from persistent completion registry
+    const localMap = loadLocalCompletionRecords(studentId)
+    localMap.forEach(rec => {
+      if (rec.status === 'completed') {
+        completedSet.add(rec.section_id)
+      }
+    })
+
+    const completed = completedSet.size
+    const totalPossible = Math.max(itemsCount, 48) // 6 chapters * 8 canonical sections = 48
+    return {
+      completed,
+      totalTime,
+      quizAvg: avgCompletion,
+      totalItems: totalPossible,
+    }
   },
 
   async checkAndAdvanceClassProgression(
@@ -259,34 +515,25 @@ export const progressService = {
     const totalChaps = 6
 
     for (let chIdx = 1; chIdx <= totalChaps; chIdx++) {
-      const catChapId = `cat-${currentSpec.gradeKey}-${chIdx}`
       let isChapDone = false
+      let targetChapterId = `cat-${currentSpec.gradeKey}-${chIdx}`
 
-      // Check database first
-      const { data: dbChaps } = await supabase
-        .from('chapters')
-        .select('id, subject:subjects!inner(class:classes!inner(name))')
-        .ilike('subject.class.name', `%${currentSpec.name}%`)
-        .eq('chapter_number', String(chIdx))
-      
-      if (dbChaps && dbChaps.length > 0) {
-        const prog = await progressService.getChapterProgress(studentId, dbChaps[0].id)
-        if (prog.percentage >= 100) {
-          isChapDone = true
+      try {
+        const { data: dbChaps } = await supabase
+          .from('chapters')
+          .select('id, subject:subjects!inner(class:classes!inner(name))')
+          .ilike('subject.class.name', `%${currentSpec.name}%`)
+          .eq('chapter_number', String(chIdx))
+        
+        if (dbChaps && dbChaps.length > 0 && dbChaps[0].id) {
+          targetChapterId = dbChaps[0].id
         }
-      }
+      } catch {}
 
-      // Check local storage progress fallback
-      if (!isChapDone) {
-        try {
-          const stored = localStorage.getItem(`progress_${studentId}_${catChapId}`)
-          if (stored) {
-            const arr = JSON.parse(stored)
-            if (Array.isArray(arr) && arr.length >= 8) {
-              isChapDone = true
-            }
-          }
-        } catch {}
+      const prog = await progressService.getChapterProgress(studentId, targetChapterId)
+      // A chapter is 100% complete ONLY when all 8 sections are genuinely completed
+      if (prog.completed === 8 && prog.percentage === 100 && prog.isCompleted) {
+        isChapDone = true
       }
 
       if (isChapDone) {
@@ -294,7 +541,7 @@ export const progressService = {
       }
     }
 
-    // Only if ALL 6 chapters in the current class are 100% completed
+    // Only if ALL 6 chapters (all 48 sections) in the current class are 100% completed
     if (totalCompletedChapters >= totalChaps) {
       classCompleted = true
 
@@ -465,7 +712,7 @@ export const progressService = {
         } catch {}
       }
 
-      // Return catalog chapters mapped with progress
+      // Return catalog chapters mapped with genuine progress
       const lvl =
         curriculumCatalogService.getLevelData(subjectMeta?.class?.name) ||
         curriculumCatalogService.getLevelData(subjectMeta?.class?.code) ||
@@ -473,32 +720,23 @@ export const progressService = {
         curriculumCatalogService.getLevelData(subjectMeta?.code) ||
         curriculumCatalogService.getLevelData(subjectId) ||
         ALL_LEVELS_CURRICULUM[0]
-      return lvl.chapters.map((c) => {
+
+      const mappedList = []
+      for (const c of lvl.chapters) {
         const catId = `cat-${lvl.gradeKey}-${c.chapterNumber}`
-        let doneSecs = 0
-        try {
-          const stored = localStorage.getItem(`progress_${studentId}_${catId}`)
-          if (stored) {
-            const arr = JSON.parse(stored)
-            doneSecs = Array.isArray(arr) ? Math.min(8, arr.length) : 0
-          }
-        } catch {}
-
-        const percentage = Math.min(100, Math.round((doneSecs / 8) * 1000) / 10)
-        const isDone = doneSecs >= 8
-        const isLocked = false
-
-        return {
+        const prog = await progressService.getChapterProgress(studentId, catId)
+        mappedList.push({
           id: catId,
           chapter_number: c.chapterNumber,
           title: c.chapterTitle,
           short_description: c.shortDescription,
           estimated_duration: c.duration,
-          progress: { total: 8, required: 8, completed: doneSecs, requiredCompleted: doneSecs, percentage },
-          is_completed: isDone,
-          is_locked: isLocked,
-        }
-      })
+          progress: prog,
+          is_completed: prog.isCompleted,
+          is_locked: false,
+        })
+      }
+      return mappedList
     }
 
     const chapterList = []
@@ -506,7 +744,7 @@ export const progressService = {
     for (let idx = 0; idx < chapters.length; idx++) {
       const chap = chapters[idx]
       const prog = await progressService.getChapterProgress(studentId, chap.id)
-      const isCompleted = prog.percentage === 100
+      const isCompleted = prog.isCompleted && prog.completed === 8
       const isLocked = false
 
       chapterList.push({
@@ -673,8 +911,8 @@ export const progressService = {
       const prog = await progressService.getChapterProgress(studentId, chap.id)
       const totalSec = 8
       const doneSec = Math.min(8, prog.completed)
-      const pct = Math.min(100, Math.round((doneSec / 8) * 1000) / 10)
-      const isDone = doneSec >= 8
+      const pct = doneSec === 8 ? 100 : (SECTION_PERCENTAGES[doneSec] ?? Math.min(100, (doneSec / 8) * 100))
+      const isDone = doneSec === 8 && prog.isCompleted
       const isInProg = !isDone && doneSec > 0
       const isNotStarted = doneSec === 0
 

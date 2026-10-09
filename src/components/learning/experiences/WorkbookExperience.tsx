@@ -7,6 +7,7 @@ import { gameAudio } from '../../../utils/gameAudio'
 import { gamification } from '../../../utils/gamification'
 import type { ExperienceComponentProps } from './ExplorationExperience'
 import { AssignedImageSlot } from '../../content/AssignedImageSlot'
+import { AuraGuideAvatar } from '../primitives/AuraGuideAvatar'
 
 export const WorkbookExperience: React.FC<ExperienceComponentProps> = ({
   gradeKey,
@@ -178,6 +179,21 @@ export const WorkbookExperience: React.FC<ExperienceComponentProps> = ({
         contentType="worksheet"
         position="header"
       />
+      {/* Aura AI Guide Interactive Companion */}
+      <div className="bg-white/95 rounded-2xl p-3 border border-slate-200/90 shadow-2xs">
+        <AuraGuideAvatar
+          mood={readyToAdvance || isCompleted ? 'celebrating' : synthesisDone ? 'explaining' : 'thinking'}
+          message={
+            readyToAdvance || isCompleted
+              ? 'Outstanding work! You have completed all workbook synthesis questions and sorted the pipeline components.'
+              : synthesisDone
+              ? 'Great progress! Continue sorting the pipeline elements and check your self-evaluation checklist.'
+              : 'Welcome to your Workbook! Answer the core synthesis prompts below to capture key ideas from this chapter.'
+          }
+          size="sm"
+          className="w-full"
+        />
+      </div>
 
       {/* Auto-save bar */}
       <div className="flex items-center justify-between px-2 text-xs text-slate-500">

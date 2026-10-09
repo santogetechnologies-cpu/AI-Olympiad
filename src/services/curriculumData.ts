@@ -157,7 +157,7 @@ export const SYLLABUS_SPECS = [
   { gradeKey: 'ug3', name: 'UG 3rd Year', code: 'UG-03', age: '20-21 Years (Undergraduate)', tier: 'ug' as const, subjectName: 'Deep Learning, NLP & Enterprise LLM Engineering', subjectCode: 'DLE-03', c1: ['Generative Intelligence', 'Inside LLMs', 'Multi-Head Attention & KV Caching'], c2: ['AI-Powered Development', 'Connect, Create & Automate', 'Low-Rank Adaptation (LoRA) & Parameter-Efficient Fine-Tuning'], c3: ['AI Automation at Work', 'AI for Innovation', 'Semantic Caching & Token Optimization'], c4: ['Become Industry Ready', 'AI Opportunity Map', 'Production SRE & High-Availability Model Serving'], c5: ['Chatbot Builder', 'AI Automation Studio', 'Multi-Agent Collaboration Frameworks'], c6: ['Truth in the AI Era', 'Safe AI Systems', 'Red-Teaming, Jailbreak Mitigation & Guardrails'] },
   { gradeKey: 'ug4', name: 'UG Final Year', code: 'UG-04', age: '21-22 Years (Undergraduate)', tier: 'ug' as const, subjectName: 'Autonomous AI Agents, Scalable System Architecture & Capstone Systems', subjectCode: 'AAA-04', c1: ['The Age of AI Agents', 'Intelligence at Scale', 'Autonomous Tool Execution & Long-Term Memory'], c2: ['Build Smart Applications', 'Design AI Workflows', 'Distributed Inference Clustered Across GPUs'], c3: ['AI for Enterprise', 'AI for Start-ups', 'Enterprise SLAs, P99 Latency & Failover'], c4: ['From Campus to AI Career', 'Idea to AI Venture', 'Venture Engineering & Scalable System Deliverables'], c5: ['AI Prototype Lab', 'Agent Builder Studio', 'Continuous Pre-Training & Domain Adaptation'], c6: ['Accountable AI', 'AI Governance Essentials', 'Audit Logs, Provenance & Regulatory Compliance'] },
   { gradeKey: 'pg1', name: 'PG 1st Year', code: 'PG-01', age: '22-23 Years (Postgraduate)', tier: 'pg' as const, subjectName: 'Advanced Machine Learning Theory & Statistical Optimization', subjectCode: 'AML-01', c1: ['Modern Intelligence Explained', 'AI Beyond Automation', 'Non-Convex Optimization & Loss Surfaces'], c2: ['Develop with Intelligence', 'Design Smart Workflows', 'Reinforcement Learning from Human Feedback (RLHF & DPO)'], c3: ['AI for Advanced Research', 'AI for Professional Innovation', 'Diffusion Probabilistic Models & Score Matching'], c4: ['AI Specialist Roadmap', 'Research to Profession', 'Authoring Peer-Reviewed Conference Manuscripts'], c5: ['AI Research Workbench', 'Intelligent Prototype Lab', 'Empirical Ablation Methodologies & Significance Testing'], c6: ['Transparent AI', 'Trustworthy AI Systems', 'Mechanistic Interpretability & Circuit Discovery'] },
-  { gradeKey: 'pg2', name: 'PG Final Year', code: 'PG-02', age: '23+ Years (Postgraduate)', tier: 'pg' as const, subjectName: 'Frontiers of AI, Mechanistic Interpretability & Research Dissertation', subjectCode: 'FAI-02', c1: ['Frontiers of AI', 'Human + Machine Intelligence', 'Emergence in Foundation Models & Scaling Laws'], c2: ['Engineer Intelligent Solutions', 'AI System Thinking', 'Probing Attention Circuits & Inductive Biases'], c3: ['AI for Transformation', 'AI Breakthrough Innovation', 'Multimodal World Models & Embodied Intelligence'], c4: ['Lead with AI', 'Research → Innovation → Enterprise', 'Doctoral Dissertation Defense & Tech Innovation'], c5: ['Future AI Lab', 'Innovation to Prototype', 'Formal Verification of Safety Bounds & Alignment'], c6: ['AI & Society', 'Building AI for Humanity', 'Existential Risk, Democratic Governance & Universal Ethics'] },
+  { gradeKey: 'pg2', name: 'PG Final Year', code: 'PG-02', age: '23+ Years (Postgraduate)', tier: 'pg' as const, subjectName: 'Frontiers of AI, Mechanistic Interpretability & Research Dissertation', subjectCode: 'FAI-02', c1: ['Frontiers of AI', 'Human + Machine Intelligence', 'Emergence in Foundation Models & Scaling Laws'], c2: ['Engineer Intelligent Solutions', 'AI System Thinking', 'Probing Attention Circuits & Inductive Biases'], c3: ['AI for Transformation', 'AI for Breakthrough Innovation', 'Multimodal World Models & Embodied Intelligence'], c4: ['Lead with AI', 'Research → Innovation → Enterprise', 'Doctoral Dissertation Defense & Tech Innovation'], c5: ['Future AI Lab', 'Innovation to Prototype', 'Formal Verification of Safety Bounds & Alignment'], c6: ['AI & Society', 'Building AI for Humanity', 'Existential Risk, Democratic Governance & Universal Ethics'] },
 ]
 
 // Topic Specific Pedagogical Knowledge Profiles
@@ -255,7 +255,7 @@ function generateTopicHtml(
         <!-- Topic Header & Level Card -->
         <div class="p-5 bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-600 rounded-r-2xl space-y-2">
           <div class="flex items-center gap-2">
-            <span class="text-[11px] font-bold uppercase text-blue-700 bg-blue-100/80 px-2.5 py-0.5 rounded-full tracking-wider">🌟 ${levelName} • Chapter ${ch}</span>
+            <span class="text-[11px] font-bold uppercase text-blue-700 bg-blue-100/80 px-2.5 py-0.5 rounded-full tracking-wider">${levelName} · Chapter ${ch}</span>
             <span class="text-[11px] font-bold text-indigo-700 bg-indigo-100/80 px-2.5 py-0.5 rounded-full">Primary AI Discovery</span>
           </div>
           <h3 class="text-xl font-bold text-slate-900">${t}</h3>
@@ -272,7 +272,6 @@ function generateTopicHtml(
             ${knowledge.realScenario}
           </p>
           <div class="p-3.5 bg-amber-50/70 border border-amber-200 rounded-xl text-xs text-amber-900 flex items-start gap-2.5">
-            <span class="text-base">💡</span>
             <div>
               <strong class="font-bold text-amber-950 block">Think About It Like This:</strong>
               <span class="text-amber-900 leading-snug">${knowledge.analogy}</span>
@@ -321,7 +320,7 @@ function generateTopicHtml(
             ${knowledge.useCases.map((uc, i) => `
               <div class="p-3 bg-slate-50 border border-slate-200 rounded-xl text-xs space-y-1">
                 <span class="font-bold text-slate-800 flex items-center gap-1.5 text-[11px] text-emerald-700 uppercase">
-                  <span>🚀</span> Helper Example ${i + 1}
+                  Helper Example ${i + 1}
                 </span>
                 <p class="text-slate-600 leading-snug">${uc}</p>
               </div>
@@ -332,7 +331,7 @@ function generateTopicHtml(
         <!-- Section 4: Super Kid Digital Safety Rule -->
         <div class="p-4 bg-gradient-to-r from-blue-50 to-cyan-50 border border-blue-200 rounded-2xl space-y-2">
           <h4 class="text-xs font-bold text-blue-950 flex items-center gap-1.5 uppercase tracking-wide">
-            <span>🛡️</span> Super Kid Digital Safety Habit for ${t}
+            Digital Safety Habit for ${t}
           </h4>
           <p class="text-xs text-blue-900 leading-relaxed font-medium">
             Always protect private personal details (like your full name, passwords, and home address) when using technology for <strong>${t}</strong>. Always ask a parent or teacher if you encounter anything unfamiliar!
@@ -341,7 +340,7 @@ function generateTopicHtml(
 
         <!-- Section 5: Key Takeaways Checklist -->
         <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 space-y-2">
-          <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider">🌟 What We Learned Today:</h4>
+          <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider">What We Learned Today:</h4>
           <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
             ${knowledge.takeaways.map(t => `<li class="leading-relaxed font-medium">${t}</li>`).join('')}
           </ul>
@@ -356,7 +355,7 @@ function generateTopicHtml(
         <!-- Topic Header & Level Card -->
         <div class="p-5 bg-gradient-to-r from-emerald-50 to-teal-50 border-l-4 border-emerald-600 rounded-r-2xl space-y-2">
           <div class="flex items-center gap-2">
-            <span class="text-[11px] font-bold uppercase text-emerald-800 bg-emerald-100/80 px-2.5 py-0.5 rounded-full tracking-wider">⚙️ ${levelName} • Chapter ${ch}</span>
+            <span class="text-[11px] font-bold uppercase text-emerald-800 bg-emerald-100/80 px-2.5 py-0.5 rounded-full tracking-wider">${levelName} · Chapter ${ch}</span>
             <span class="text-[11px] font-bold text-teal-800 bg-teal-100/80 px-2.5 py-0.5 rounded-full">Algorithmic & Python Thinking</span>
           </div>
           <h3 class="text-xl font-bold text-slate-900">${t}</h3>
@@ -373,7 +372,6 @@ function generateTopicHtml(
             ${knowledge.realScenario}
           </p>
           <div class="p-3.5 bg-emerald-50/70 border border-emerald-200 rounded-xl text-xs text-emerald-950 flex items-start gap-2.5">
-            <span class="text-base">💡</span>
             <div>
               <strong class="font-bold text-emerald-950 block">Algorithmic Mental Model:</strong>
               <span class="text-emerald-900 leading-snug">${knowledge.analogy}</span>
@@ -416,7 +414,7 @@ function generateTopicHtml(
         <div class="bg-slate-900 text-slate-100 p-5 rounded-2xl font-mono text-xs space-y-2 border border-slate-800 shadow-md">
           <div class="flex items-center justify-between text-slate-400 pb-2 border-b border-slate-800">
             <span class="font-bold flex items-center gap-1.5 text-emerald-400">
-              <span>🐍</span> Python Implementation Logic: ${t}
+              Python Implementation Logic: ${t}
             </span>
             <span class="text-[10px] bg-slate-800 px-2 py-0.5 rounded text-slate-300">Python 3.x</span>
           </div>
@@ -427,7 +425,7 @@ function generateTopicHtml(
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div class="p-4 rounded-2xl bg-white border border-slate-200 space-y-2 shadow-xs">
             <span class="text-xs font-bold text-slate-900 block flex items-center gap-1.5">
-              <span>🌍</span> Industry Deployments
+              Industry Deployments
             </span>
             <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
               ${knowledge.useCases.map(u => `<li class="leading-snug">${u}</li>`).join('')}
@@ -435,7 +433,7 @@ function generateTopicHtml(
           </div>
           <div class="p-4 rounded-2xl bg-emerald-50/50 border border-emerald-200 space-y-2">
             <span class="text-xs font-bold text-emerald-950 block flex items-center gap-1.5">
-              <span>⚖️</span> Data Fairness & Ethical Validation
+              Data Fairness & Ethical Validation
             </span>
             <p class="text-xs text-emerald-900 leading-relaxed font-medium">
               When programming solutions for <strong>${t}</strong>, engineers must audit datasets for balance, test edge cases rigorously, and eliminate biased decision thresholds.
@@ -445,7 +443,7 @@ function generateTopicHtml(
 
         <!-- Section 5: Key Takeaways -->
         <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 space-y-2">
-          <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider">🎯 Core Technical Takeaways:</h4>
+          <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider">Core Technical Takeaways:</h4>
           <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
             ${knowledge.takeaways.map(t => `<li class="leading-relaxed font-medium">${t}</li>`).join('')}
           </ul>
@@ -460,7 +458,7 @@ function generateTopicHtml(
         <!-- Topic Header & Level Card -->
         <div class="p-5 bg-gradient-to-r from-indigo-50 to-blue-50 border-l-4 border-indigo-600 rounded-r-2xl space-y-2">
           <div class="flex items-center gap-2">
-            <span class="text-[11px] font-bold uppercase text-indigo-800 bg-indigo-100/80 px-2.5 py-0.5 rounded-full tracking-wider">📐 ${levelName} • Chapter ${ch}</span>
+            <span class="text-[11px] font-bold uppercase text-indigo-800 bg-indigo-100/80 px-2.5 py-0.5 rounded-full tracking-wider">${levelName} · Chapter ${ch}</span>
             <span class="text-[11px] font-bold text-blue-800 bg-blue-100/80 px-2.5 py-0.5 rounded-full">Mathematical & Statistical Learning</span>
           </div>
           <h3 class="text-xl font-bold text-slate-900">${t}</h3>
@@ -477,7 +475,6 @@ function generateTopicHtml(
             ${knowledge.realScenario}
           </p>
           <div class="p-3.5 bg-indigo-50/70 border border-indigo-200 rounded-xl text-xs text-indigo-950 flex items-start gap-2.5">
-            <span class="text-base">🧭</span>
             <div>
               <strong class="font-bold text-indigo-950 block">Geometric Optimization Model:</strong>
               <span class="text-indigo-900 leading-snug">${knowledge.analogy}</span>
@@ -520,7 +517,7 @@ function generateTopicHtml(
         <div class="bg-slate-900 text-slate-100 p-5 rounded-2xl font-mono text-xs space-y-2 border border-slate-800 shadow-md">
           <div class="flex items-center justify-between text-slate-400 pb-2 border-b border-slate-800">
             <span class="font-bold flex items-center gap-1.5 text-indigo-400">
-              <span>⚡</span> Vectorized Optimization Pipeline: ${t}
+              Vectorized Optimization Pipeline: ${t}
             </span>
             <span class="text-[10px] bg-slate-800 px-2 py-0.5 rounded text-slate-300">NumPy / PyTorch</span>
           </div>
@@ -531,7 +528,7 @@ function generateTopicHtml(
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div class="p-4 rounded-2xl bg-white border border-slate-200 space-y-2 shadow-xs">
             <span class="text-xs font-bold text-slate-900 block flex items-center gap-1.5">
-              <span>📊</span> Enterprise SOTA Deployments
+              Enterprise SOTA Deployments
             </span>
             <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
               ${knowledge.useCases.map(u => `<li class="leading-snug">${u}</li>`).join('')}
@@ -539,7 +536,7 @@ function generateTopicHtml(
           </div>
           <div class="p-4 rounded-2xl bg-indigo-50/50 border border-indigo-200 space-y-2">
             <span class="text-xs font-bold text-indigo-950 block flex items-center gap-1.5">
-              <span>🔍</span> Metric Audits & Generalization Proofs
+              Metric Audits & Generalization Proofs
             </span>
             <p class="text-xs text-indigo-900 leading-relaxed font-medium">
               Models trained on <strong>${t}</strong> must be audited across cross-validation splits, tracking ROC-AUC, confusion matrices, and F1-score to eliminate overfitting.
@@ -549,7 +546,7 @@ function generateTopicHtml(
 
         <!-- Section 5: Key Takeaways -->
         <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 space-y-2">
-          <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider">🎯 High-Yield Olympiad Takeaways:</h4>
+          <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider">High-Yield Olympiad Takeaways:</h4>
           <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
             ${knowledge.takeaways.map(t => `<li class="leading-relaxed font-medium">${t}</li>`).join('')}
           </ul>
@@ -564,7 +561,7 @@ function generateTopicHtml(
         <!-- Topic Header & Level Card -->
         <div class="p-5 bg-gradient-to-r from-blue-900 via-indigo-950 to-slate-900 text-white rounded-2xl space-y-2 shadow-md">
           <div class="flex items-center gap-2">
-            <span class="text-[11px] font-bold uppercase text-cyan-300 bg-cyan-900/60 px-2.5 py-0.5 rounded-full border border-cyan-400/30">💻 ${levelName} • Chapter ${ch}</span>
+            <span class="text-[11px] font-bold uppercase text-cyan-300 bg-cyan-900/60 px-2.5 py-0.5 rounded-full border border-cyan-400/30">${levelName} · Chapter ${ch}</span>
             <span class="text-[11px] font-bold text-indigo-300 bg-indigo-900/60 px-2.5 py-0.5 rounded-full border border-indigo-400/30">Production Systems Engineering</span>
           </div>
           <h3 class="text-xl font-bold text-white">${t}</h3>
@@ -581,7 +578,6 @@ function generateTopicHtml(
             ${knowledge.realScenario}
           </p>
           <div class="p-3.5 bg-blue-50/80 border border-blue-200 rounded-xl text-xs text-blue-950 flex items-start gap-2.5">
-            <span class="text-base">🚀</span>
             <div>
               <strong class="font-bold text-blue-950 block">Microservices Topology:</strong>
               <span class="text-blue-900 leading-snug">${knowledge.analogy}</span>
@@ -624,7 +620,7 @@ function generateTopicHtml(
         <div class="bg-slate-950 text-slate-100 p-5 rounded-2xl font-mono text-xs space-y-2 border border-slate-800 shadow-md">
           <div class="flex items-center justify-between text-slate-400 pb-2 border-b border-slate-800">
             <span class="font-bold flex items-center gap-1.5 text-cyan-400">
-              <span>⚡</span> Asynchronous API Microservice: ${t}
+              Asynchronous API Microservice: ${t}
             </span>
             <span class="text-[10px] bg-slate-900 px-2 py-0.5 rounded text-cyan-300 border border-cyan-500/20">FastAPI / AsyncIO</span>
           </div>
@@ -635,7 +631,7 @@ function generateTopicHtml(
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div class="p-4 rounded-2xl bg-white border border-slate-200 space-y-2 shadow-xs">
             <span class="text-xs font-bold text-slate-900 block flex items-center gap-1.5">
-              <span>📈</span> SLA Latency &amp; Memory Metrics
+              SLA Latency &amp; Memory Metrics
             </span>
             <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
               ${knowledge.useCases.map(u => `<li class="leading-snug">${u}</li>`).join('')}
@@ -643,7 +639,7 @@ function generateTopicHtml(
           </div>
           <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
             <span class="text-xs font-bold text-slate-900 block flex items-center gap-1.5">
-              <span>🛡️</span> Telemetry &amp; Guardrail Enforcement
+              Telemetry &amp; Guardrail Enforcement
             </span>
             <p class="text-xs text-slate-700 leading-relaxed font-medium">
               Enterprise gateways implementing <strong>${t}</strong> enforce input token validation, Pydantic schema contracts, and real-time p99 latency logging.
@@ -653,7 +649,7 @@ function generateTopicHtml(
 
         <!-- Section 5: Summary -->
         <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 space-y-2">
-          <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider">🎯 Architectural Takeaways:</h4>
+          <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider">Architectural Takeaways:</h4>
           <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
             ${knowledge.takeaways.map(t => `<li class="leading-relaxed font-medium">${t}</li>`).join('')}
           </ul>
@@ -668,7 +664,7 @@ function generateTopicHtml(
       <!-- Topic Header & Level Card -->
       <div class="p-5 bg-gradient-to-r from-purple-950 via-slate-950 to-indigo-950 text-white rounded-2xl space-y-2 shadow-md border border-purple-500/20">
         <div class="flex items-center gap-2">
-          <span class="text-[11px] font-bold uppercase text-purple-300 bg-purple-900/60 px-2.5 py-0.5 rounded-full border border-purple-400/30">🔬 ${levelName} • Chapter ${ch}</span>
+          <span class="text-[11px] font-bold uppercase text-purple-300 bg-purple-900/60 px-2.5 py-0.5 rounded-full border border-purple-400/30">${levelName} · Chapter ${ch}</span>
           <span class="text-[11px] font-bold text-indigo-300 bg-indigo-900/60 px-2.5 py-0.5 rounded-full border border-indigo-400/30">SOTA Research & Mechanistic Interpretability</span>
         </div>
         <h3 class="text-xl font-bold text-white">${t}</h3>
@@ -685,7 +681,6 @@ function generateTopicHtml(
           ${knowledge.realScenario}
         </p>
         <div class="p-3.5 bg-purple-50/80 border border-purple-200 rounded-xl text-xs text-purple-950 flex items-start gap-2.5">
-          <span class="text-base">🔬</span>
           <div>
             <strong class="font-bold text-purple-950 block">Mechanistic Probing Framework:</strong>
             <span class="text-purple-900 leading-snug">${knowledge.analogy}</span>
@@ -728,7 +723,7 @@ function generateTopicHtml(
       <div class="bg-slate-950 text-slate-100 p-5 rounded-2xl font-mono text-xs space-y-2 border border-slate-800 shadow-md">
         <div class="flex items-center justify-between text-slate-400 pb-2 border-b border-slate-800">
           <span class="font-bold flex items-center gap-1.5 text-purple-400">
-            <span>🧪</span> Controlled Ablation Verification: ${t}
+            Controlled Ablation Verification: ${t}
           </span>
           <span class="text-[10px] bg-slate-900 px-2 py-0.5 rounded text-purple-300 border border-purple-500/20">PyTorch / SciPy Stats</span>
         </div>
@@ -739,7 +734,7 @@ function generateTopicHtml(
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div class="p-4 rounded-2xl bg-white border border-slate-200 space-y-2 shadow-xs">
           <span class="text-xs font-bold text-slate-900 block flex items-center gap-1.5">
-            <span>📑</span> Controlled Empirical Benchmark Suites
+            Controlled Empirical Benchmark Suites
           </span>
           <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
             ${knowledge.useCases.map(u => `<li class="leading-snug">${u}</li>`).join('')}
@@ -747,7 +742,7 @@ function generateTopicHtml(
         </div>
         <div class="p-4 rounded-2xl bg-purple-50/50 border border-purple-200 space-y-2">
           <span class="text-xs font-bold text-purple-950 block flex items-center gap-1.5">
-            <span>🏛️</span> Verifiable Alignment Guarantees
+            Verifiable Alignment Guarantees
           </span>
           <p class="text-xs text-purple-900 leading-relaxed font-medium">
             Proving invariant safety guarantees in <strong>${t}</strong> across out-of-distribution adversarial topologies with formal verification bounds.
@@ -757,7 +752,7 @@ function generateTopicHtml(
 
       <!-- Section 5: Summary -->
       <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 space-y-2">
-        <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider">🎯 Research Frontiers Takeaways:</h4>
+        <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider">Research Frontiers Takeaways:</h4>
         <ul class="text-xs text-slate-600 space-y-1.5 list-disc list-inside">
           ${knowledge.takeaways.map(t => `<li class="leading-relaxed font-medium">${t}</li>`).join('')}
         </ul>

@@ -117,8 +117,14 @@ class LearningProgressTracker {
       localStorage.setItem(this.getStorageKey(params.studentId, key), 'completed')
 
       // Sync with existing progress service for database persistence
-      if (params.orgId && !params.sectionId.startsWith('cat-')) {
-        progressService.markCompleted(params.studentId, params.sectionId, params.orgId).catch(() => {})
+      if (params.studentId && params.sectionId && params.chapterId) {
+        progressService.recordSectionCompletion({
+          studentId: params.studentId,
+          classId: params.classId,
+          chapterId: params.chapterId,
+          sectionId: params.sectionId,
+          organizationId: params.orgId,
+        }).catch(() => {})
       }
 
       window.dispatchEvent(

@@ -1,0 +1,2284 @@
+{
+  "metadata": {
+    "totalTopics": 12,
+    "totalMonths": 6,
+    "totalPdfPages": 153,
+    "generated": "2026-10-09"
+  },
+  "topics": {
+    "1": {
+      "topicNumber": 1,
+      "topicTitle": "Meet My AI Friend",
+      "monthNumber": 1,
+      "monthTitle": "AI DISCOVER",
+      "area": "AI BASICS",
+      "startPage": 6,
+      "concepts": [
+        "AI means Artificial Intelligence.",
+        "AI helps machines think and learn a little, like us.",
+        "AI is a helper. It cannot feel happy or sad like you.",
+        "AI can live inside..."
+      ],
+      "magicWords": [
+        {
+          "word": "AI",
+          "definition": "A smart helper"
+        },
+        {
+          "word": "Machine",
+          "definition": "A thing that does work"
+        },
+        {
+          "word": "Smart",
+          "definition": "Can learn"
+        }
+      ],
+      "storyPanels": [
+        {
+          "speaker": "Ria",
+          "speech": "Bolt, what is AI?",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "AI means Artificial Intelligence! I am an AI robot!",
+          "emoji": "🤖"
+        },
+        {
+          "speaker": "Ria",
+          "speech": "Can you feel happy, Bolt?",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "No! I can think and help, but feelings are special to YOU!",
+          "emoji": "🤖"
+        }
+      ],
+      "lookData": {
+        "examples": [
+          "Smart phone",
+          "Smart speaker",
+          "Robot helper",
+          "GPS navigation",
+          "Face ID unlock",
+          "Voice assistant"
+        ],
+        "boltSays": "Hi! I am Bolt. I am a robot with AI. I learn from lots of  examples!",
+        "funFact": "! Some AI helpers understand English, Tamil, Hindi and  many more languages!"
+      },
+      "activitySteps": [
+        {
+          "step": 1,
+          "desc": "Ask Bolt: Are you an AI? Write YES or NO."
+        },
+        {
+          "step": 2,
+          "desc": "Find 2 AI helpers in your home and draw them."
+        },
+        {
+          "step": 3,
+          "desc": "Tell a friend: AI is a helper, not a human!"
+        },
+        {
+          "step": 4,
+          "desc": "Colour the AI helpers on your activity sheet."
+        }
+      ],
+      "quizQuestions": [
+        {
+          "id": 1,
+          "q": "Q1. AI is short for...",
+          "options": [
+            "Artificial Intelligence",
+            "Apple Ice-cream",
+            "Air India"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 2,
+          "q": "Q2. Which one can have AI?",
+          "options": [
+            "Stone",
+            "Smart phone",
+            "Banana"
+          ],
+          "correct": 1
+        },
+        {
+          "id": 3,
+          "q": "Q3. Can AI feel sad like you?",
+          "options": [
+            "Yes",
+            "Sometimes",
+            "No"
+          ],
+          "correct": 2
+        },
+        {
+          "id": 4,
+          "q": "Q4. AI learns from...",
+          "options": [
+            "Examples",
+            "Pizza",
+            "Sleeping"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 5,
+          "q": "Q5. Bolt is a...",
+          "options": [
+            "..",
+            "Dog",
+            "Tree"
+          ],
+          "correct": 2
+        }
+      ],
+      "trueFalse": [
+        {
+          "statement": "Bolt is a robot.",
+          "answer": true
+        },
+        {
+          "statement": "AI can feel sad like me.",
+          "answer": false
+        },
+        {
+          "statement": "AI learns from examples.",
+          "answer": true
+        },
+        {
+          "statement": "A stone has AI.",
+          "answer": false
+        },
+        {
+          "statement": "A map app can use AI.",
+          "answer": true
+        },
+        {
+          "statement": "Some AI understands Tamil.",
+          "answer": true
+        }
+      ],
+      "traceWords": [
+        "AI",
+        "Machine",
+        "Smart"
+      ],
+      "oddOneCorrects": [
+        3,
+        2,
+        3
+      ],
+      "countTargets": [
+        4,
+        3,
+        5
+      ],
+      "homeConnect": {
+        "prompt": "Find one example of meet my ai friend in your home or neighbourhood!",
+        "talkPrompt": "Tell your family: What did you learn about Meet My AI Friend today?",
+        "drawPrompt": "Draw what you found related to Meet My AI Friend!"
+      }
+    },
+    "2": {
+      "topicNumber": 2,
+      "topicTitle": "Machines That Help Us",
+      "monthNumber": 1,
+      "monthTitle": "AI DISCOVER",
+      "area": "AI BASICS",
+      "startPage": 16,
+      "concepts": [
+        "A machine is a thing that helps us do work.",
+        "Some machines are simple. Some machines are smart.",
+        "Smart machines use AI to learn.",
+        "Simple or smart?"
+      ],
+      "magicWords": [
+        {
+          "word": "Machine",
+          "definition": "Helps us work"
+        },
+        {
+          "word": "Simple",
+          "definition": "Just works"
+        },
+        {
+          "word": "Smart",
+          "definition": "Can learn"
+        }
+      ],
+      "storyPanels": [
+        {
+          "speaker": "Sam",
+          "speech": "Look! The robot cleaner is sweeping the floor!",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "That is a smart machine with AI inside!",
+          "emoji": "🤖"
+        },
+        {
+          "speaker": "Sam",
+          "speech": "Can scissors think?",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "No! Scissors are simple machines. No AI inside!",
+          "emoji": "🤖"
+        }
+      ],
+      "lookData": {
+        "examples": [
+          "Scissors (simple)",
+          "Bicycle (simple)",
+          "Self-driving car (smart)",
+          "Smart speaker (smart)",
+          "Refrigerator (simple)",
+          "ATM machine (smart)"
+        ],
+        "boltSays": "Simple machines just work. Smart machines can also  learn new things!",
+        "funFact": "! Some cars can drive by themselves. They use AI  cameras to see the road!"
+      },
+      "activitySteps": [
+        {
+          "step": 1,
+          "desc": "Find 3 machines in your home."
+        },
+        {
+          "step": 2,
+          "desc": "Sort them: Simple (🔧) or Smart (🤖)?"
+        },
+        {
+          "step": 3,
+          "desc": "Draw one simple and one smart machine."
+        },
+        {
+          "step": 4,
+          "desc": "Share your drawings with a friend."
+        }
+      ],
+      "quizQuestions": [
+        {
+          "id": 1,
+          "q": "Q1. Which is a machine?",
+          "options": [
+            "Tree",
+            "Cycle",
+            "Cow"
+          ],
+          "correct": 1
+        },
+        {
+          "id": 2,
+          "q": "Q2. A smart machine can...",
+          "options": [
+            "Learn",
+            "Eat food",
+            "Sleep"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 3,
+          "q": "Q3. Which keeps food cold?",
+          "options": [
+            "TV",
+            "Fan",
+            "Fridge"
+          ],
+          "correct": 2
+        },
+        {
+          "id": 4,
+          "q": "Q4. Which can drive by itself?",
+          "options": [
+            "Smart car",
+            "Trolley",
+            "Skateboard"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 5,
+          "q": "Q5. Who should help you use machines?",
+          "options": [
+            "Monkey",
+            "An adult",
+            "Baby"
+          ],
+          "correct": 1
+        }
+      ],
+      "trueFalse": [
+        {
+          "statement": "A cycle is a machine.",
+          "answer": true
+        },
+        {
+          "statement": "A tree is a machine.",
+          "answer": false
+        },
+        {
+          "statement": "A fridge keeps food cold.",
+          "answer": true
+        },
+        {
+          "statement": "Some cars can drive by themselves.",
+          "answer": true
+        },
+        {
+          "statement": "Scissors are smart machines.",
+          "answer": false
+        },
+        {
+          "statement": "Use machines with an adult.",
+          "answer": true
+        }
+      ],
+      "traceWords": [
+        "Machine",
+        "Simple",
+        "Smart"
+      ],
+      "oddOneCorrects": [
+        3,
+        3,
+        1
+      ],
+      "countTargets": [
+        3,
+        4,
+        2
+      ],
+      "homeConnect": {
+        "prompt": "Find one example of machines that help us in your home or neighbourhood!",
+        "talkPrompt": "Tell your family: What did you learn about Machines That Help Us today?",
+        "drawPrompt": "Draw what you found related to Machines That Help Us!"
+      }
+    },
+    "3": {
+      "topicNumber": 3,
+      "topicTitle": "Give Me a Command!",
+      "monthNumber": 2,
+      "monthTitle": "AI CONNECT",
+      "area": "COMMUNICATE WITH AI",
+      "startPage": 29,
+      "concepts": [
+        "A command is an order we give.",
+        "Machines need clear commands.",
+        "Short and clear words work best!"
+      ],
+      "magicWords": [
+        {
+          "word": "Command",
+          "definition": "An order"
+        },
+        {
+          "word": "Clear",
+          "definition": "Easy to understand"
+        },
+        {
+          "word": "Listen",
+          "definition": "Hear carefully"
+        }
+      ],
+      "storyPanels": [
+        {
+          "speaker": "Mia",
+          "speech": "Bolt, what is a command?",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "A command is a clear instruction. Like: Jump three times!",
+          "emoji": "🤖"
+        },
+        {
+          "speaker": "Mia",
+          "speech": "What if I say: Go somewhere?",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "That is too unclear! Machines need CLEAR commands!",
+          "emoji": "🤖"
+        }
+      ],
+      "lookData": {
+        "examples": [
+          "Tell Bolt to JUMP",
+          "Ask Alexa to play music",
+          "Give GPS a location",
+          "Set a timer command",
+          "Tell a robot to turn left",
+          "Order pizza by voice"
+        ],
+        "boltSays": "Say it clearly! \"Bolt, walk two steps\" is better than \"Bolt,  do something!\"",
+        "funFact": "! Some smart speakers wait for a wake-up word. Then  they listen to you!"
+      },
+      "activitySteps": [
+        {
+          "step": 1,
+          "desc": "Say a command to your partner: Jump 3 times!"
+        },
+        {
+          "step": 2,
+          "desc": "Make the command clearer: Walk to the door slowly."
+        },
+        {
+          "step": 3,
+          "desc": "Give Bolt a clear command and see what he does!"
+        },
+        {
+          "step": 4,
+          "desc": "Write your best command on your activity sheet."
+        }
+      ],
+      "quizQuestions": [
+        {
+          "id": 1,
+          "q": "Q1. A command is an...",
+          "options": [
+            "Order",
+            "Ice-cream",
+            "Balloon"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 2,
+          "q": "Q2. Which command is clear?",
+          "options": [
+            "Do something",
+            "Walk 2 steps",
+            "Go there"
+          ],
+          "correct": 1
+        },
+        {
+          "id": 3,
+          "q": "Q3. Machines like words that are...",
+          "options": [
+            "Mixed up",
+            "Silent",
+            "Clear"
+          ],
+          "correct": 2
+        },
+        {
+          "id": 4,
+          "q": "Q4. At a red light, the car must...",
+          "options": [
+            "Stop",
+            "Run",
+            "Sing"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 5,
+          "q": "Q5. Who follows commands?",
+          "options": [
+            "Rock",
+            "Robot",
+            "Moon"
+          ],
+          "correct": 1
+        }
+      ],
+      "trueFalse": [
+        {
+          "statement": "A command is an order.",
+          "answer": true
+        },
+        {
+          "statement": "\"Do the thing\" is a clear command.",
+          "answer": false
+        },
+        {
+          "statement": "At a red light, cars stop.",
+          "answer": true
+        },
+        {
+          "statement": "Robots follow commands.",
+          "answer": true
+        },
+        {
+          "statement": "Machines like mixed-up words.",
+          "answer": true
+        },
+        {
+          "statement": "Listen carefully to commands.",
+          "answer": false
+        }
+      ],
+      "traceWords": [
+        "Command",
+        "Clear",
+        "Listen"
+      ],
+      "oddOneCorrects": [
+        3,
+        3,
+        2
+      ],
+      "countTargets": [
+        3,
+        5,
+        2
+      ],
+      "homeConnect": {
+        "prompt": "Find one example of give me a command! in your home or neighbourhood!",
+        "talkPrompt": "Tell your family: What did you learn about Give Me a Command! today?",
+        "drawPrompt": "Draw what you found related to Give Me a Command!!"
+      }
+    },
+    "4": {
+      "topicNumber": 4,
+      "topicTitle": "Put It in Order!",
+      "monthNumber": 2,
+      "monthTitle": "AI CONNECT",
+      "area": "COMMUNICATE WITH AI",
+      "startPage": 39,
+      "concepts": [
+        "Order means what comes first, next and last.",
+        "Machines follow steps one by one.",
+        "Wrong order gives a wrong result!"
+      ],
+      "magicWords": [
+        {
+          "word": "Order",
+          "definition": "First, next, last"
+        },
+        {
+          "word": "Step",
+          "definition": "One small part"
+        },
+        {
+          "word": "Algorithm",
+          "definition": "Steps in order"
+        }
+      ],
+      "storyPanels": [
+        {
+          "speaker": "Dev",
+          "speech": "Bolt, my steps are mixed up! My sandwich is wrong!",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "Order matters! Bread first, then butter, then jam!",
+          "emoji": "🤖"
+        },
+        {
+          "speaker": "Dev",
+          "speech": "Like an algorithm?",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "Exactly! Steps in the right order = algorithm!",
+          "emoji": "🤖"
+        }
+      ],
+      "lookData": {
+        "examples": [
+          "Get up and brush teeth",
+          "Have breakfast",
+          "Pack school bag",
+          "Go to school",
+          "Study and play",
+          "Sleep at night"
+        ],
+        "boltSays": "Steps in the right order are called an ALGORITHM. Say it:  Al-go-ri-thm!",
+        "funFact": "! A recipe is an algorithm for cooking!"
+      },
+      "activitySteps": [
+        {
+          "step": 1,
+          "desc": "Cut out the step cards from your worksheet."
+        },
+        {
+          "step": 2,
+          "desc": "Arrange them in the correct order."
+        },
+        {
+          "step": 3,
+          "desc": "Check with a partner — do they agree?"
+        },
+        {
+          "step": 4,
+          "desc": "Write your own algorithm for brushing teeth!"
+        }
+      ],
+      "quizQuestions": [
+        {
+          "id": 1,
+          "q": "Q1. What comes first?",
+          "options": [
+            "Tree",
+            "Seed",
+            "Fruit"
+          ],
+          "correct": 1
+        },
+        {
+          "id": 2,
+          "q": "Q2. Steps in order are called an...",
+          "options": [
+            "Algorithm",
+            "Balloon",
+            "Dinosaur"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 3,
+          "q": "Q3. What do you wear first?",
+          "options": [
+            "Shoes",
+            "Cap",
+            "Socks"
+          ],
+          "correct": 2
+        },
+        {
+          "id": 4,
+          "q": "Q4. A recipe is a list of...",
+          "options": [
+            "Steps",
+            "Colours",
+            "Fish"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 5,
+          "q": "Q5. If the steps are mixed up...",
+          "options": [
+            "Always right",
+            "Wrong result",
+            "A rainbow comes"
+          ],
+          "correct": 1
+        }
+      ],
+      "trueFalse": [
+        {
+          "statement": "A seed comes before a tree.",
+          "answer": true
+        },
+        {
+          "statement": "We wear shoes before socks.",
+          "answer": true
+        },
+        {
+          "statement": "Steps in order make an algorithm.",
+          "answer": false
+        },
+        {
+          "statement": "A recipe has steps.",
+          "answer": true
+        },
+        {
+          "statement": "Wrong order gives the right result.",
+          "answer": false
+        },
+        {
+          "statement": "Machines follow steps one by one.",
+          "answer": true
+        }
+      ],
+      "traceWords": [
+        "Order",
+        "Step",
+        "Algorithm"
+      ],
+      "oddOneCorrects": [
+        3,
+        3,
+        2
+      ],
+      "countTargets": [
+        2,
+        4,
+        3
+      ],
+      "homeConnect": {
+        "prompt": "Find one example of put it in order! in your home or neighbourhood!",
+        "talkPrompt": "Tell your family: What did you learn about Put It in Order! today?",
+        "drawPrompt": "Draw what you found related to Put It in Order!!"
+      }
+    },
+    "5": {
+      "topicNumber": 5,
+      "topicTitle": "AI Goes to School",
+      "monthNumber": 3,
+      "monthTitle": "AI SOLVE",
+      "area": "AI APPLICATIONS",
+      "startPage": 52,
+      "concepts": [
+        "AI can help teachers and students.",
+        "It can read stories aloud and help us practise.",
+        "But our teacher is our best guide!",
+        "AI can help me..."
+      ],
+      "magicWords": [
+        {
+          "word": "School",
+          "definition": "Place to learn"
+        },
+        {
+          "word": "Smart board",
+          "definition": "A big screen in class"
+        },
+        {
+          "word": "Guide",
+          "definition": "Shows the way"
+        }
+      ],
+      "storyPanels": [
+        {
+          "speaker": "Joy",
+          "speech": "Bolt, how does the smart board work?",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "It connects to the internet and shows lessons and videos!",
+          "emoji": "🤖"
+        },
+        {
+          "speaker": "Joy",
+          "speech": "Can AI be my teacher?",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "AI can help, but your teacher is the BEST guide!",
+          "emoji": "🤖"
+        }
+      ],
+      "lookData": {
+        "examples": [
+          "Smart board in classroom",
+          "AI spelling checker",
+          "Online quiz platform",
+          "Math practice app",
+          "Story reading AI",
+          "Science experiment video"
+        ],
+        "boltSays": "I can help you learn. But YOU do the thinking!",
+        "funFact": "! Some reading apps use AI to listen to children read  and help with hard words!"
+      },
+      "activitySteps": [
+        {
+          "step": 1,
+          "desc": "Ask your teacher to show the smart board."
+        },
+        {
+          "step": 2,
+          "desc": "Find one app that helps you learn."
+        },
+        {
+          "step": 3,
+          "desc": "Try a quiz app for 5 minutes."
+        },
+        {
+          "step": 4,
+          "desc": "Tell your class: How did it help you?"
+        }
+      ],
+      "quizQuestions": [
+        {
+          "id": 1,
+          "q": "Q1. AI at school can...",
+          "options": [
+            "Eat lunch",
+            "Read stories",
+            "Sleep"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 2,
+          "q": "Q2. Who is my best guide?",
+          "options": [
+            "My teacher",
+            "TV",
+            "Game"
+          ],
+          "correct": 1
+        },
+        {
+          "id": 3,
+          "q": "Q3. Who does the thinking?",
+          "options": [
+            "Chair",
+            "Crayon",
+            "Me!"
+          ],
+          "correct": 2
+        },
+        {
+          "id": 4,
+          "q": "Q4. AI can help me with...",
+          "options": [
+            "Spelling",
+            "Brushing teeth",
+            "Making rain"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 5,
+          "q": "Q5. A smart board is in the...",
+          "options": [
+            "Sea",
+            "Classroom",
+            "Moon"
+          ],
+          "correct": 1
+        }
+      ],
+      "trueFalse": [
+        {
+          "statement": "My teacher is my best guide.",
+          "answer": true
+        },
+        {
+          "statement": "AI can read a story aloud.",
+          "answer": false
+        },
+        {
+          "statement": "AI does all my thinking.",
+          "answer": true
+        },
+        {
+          "statement": "A smart board is in the classroom.",
+          "answer": true
+        },
+        {
+          "statement": "AI eats my lunch.",
+          "answer": false
+        },
+        {
+          "statement": "AI can help with spelling.",
+          "answer": true
+        }
+      ],
+      "traceWords": [
+        "School",
+        "Smart board",
+        "Guide"
+      ],
+      "oddOneCorrects": [
+        3,
+        3,
+        2
+      ],
+      "countTargets": [
+        3,
+        2,
+        4
+      ],
+      "homeConnect": {
+        "prompt": "Find one example of ai goes to school in your home or neighbourhood!",
+        "talkPrompt": "Tell your family: What did you learn about AI Goes to School today?",
+        "drawPrompt": "Draw what you found related to AI Goes to School!"
+      }
+    },
+    "6": {
+      "topicNumber": 6,
+      "topicTitle": "AI Comes Home",
+      "monthNumber": 3,
+      "monthTitle": "AI SOLVE",
+      "area": "AI APPLICATIONS",
+      "startPage": 62,
+      "concepts": [
+        "Many homes have smart helpers.",
+        "They play songs, switch on lights and remind us.",
+        "Always ask an adult before using them.",
+        "Smart helpers at home"
+      ],
+      "magicWords": [
+        {
+          "word": "Home",
+          "definition": "Where we live"
+        },
+        {
+          "word": "Reminder",
+          "definition": "Helps us remember"
+        }
+      ],
+      "storyPanels": [
+        {
+          "speaker": "Ali",
+          "speech": "Bolt, AI is in our home?",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "Yes! Smart speakers, robot cleaners, smart doorbells!",
+          "emoji": "🤖"
+        },
+        {
+          "speaker": "Ali",
+          "speech": "Can I use them alone?",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "Always ask a grown-up first to be safe!",
+          "emoji": "🤖"
+        }
+      ],
+      "lookData": {
+        "examples": [
+          "Smart speaker at home",
+          "Robot vacuum cleaner",
+          "Smart doorbell with camera",
+          "Smart TV recommendations",
+          "Smart refrigerator reminder",
+          "AI security camera"
+        ],
+        "boltSays": "Smart helpers save time at home. But they don't do  your homework!",
+        "funFact": "! Robot cleaners make a map of your room so they  don't bump into the sofa!"
+      },
+      "activitySteps": [
+        {
+          "step": 1,
+          "desc": "Walk around your home with an adult."
+        },
+        {
+          "step": 2,
+          "desc": "Find 3 smart devices and list them."
+        },
+        {
+          "step": 3,
+          "desc": "Ask: How does each one help your family?"
+        },
+        {
+          "step": 4,
+          "desc": "Draw your favourite smart home helper."
+        }
+      ],
+      "quizQuestions": [
+        {
+          "id": 1,
+          "q": "Q1. Which is a smart home helper?",
+          "options": [
+            "Bucket",
+            "Sock",
+            "Smart speaker"
+          ],
+          "correct": 2
+        },
+        {
+          "id": 2,
+          "q": "Q2. A robot cleaner helps to...",
+          "options": [
+            "Clean",
+            "Bake a cake",
+            "Sing"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 3,
+          "q": "Q3. Before using a smart device, ask...",
+          "options": [
+            "The cat",
+            "An adult",
+            "Teddy"
+          ],
+          "correct": 1
+        },
+        {
+          "id": 4,
+          "q": "Q4. A smart doorbell shows...",
+          "options": [
+            "Who is at the door",
+            "Stars",
+            "Fish"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 5,
+          "q": "Q5. Who does your homework?",
+          "options": [
+            "Robot",
+            "Speaker",
+            "Me!"
+          ],
+          "correct": 2
+        }
+      ],
+      "trueFalse": [
+        {
+          "statement": "A robot cleaner cleans floors.",
+          "answer": true
+        },
+        {
+          "statement": "A smart speaker can play songs.",
+          "answer": true
+        },
+        {
+          "statement": "Smart helpers do my homework.",
+          "answer": false
+        },
+        {
+          "statement": "A smart doorbell shows who is at the",
+          "answer": true
+        },
+        {
+          "statement": "door.",
+          "answer": false
+        },
+        {
+          "statement": "I ask the cat before using devices.",
+          "answer": true
+        }
+      ],
+      "traceWords": [
+        "Home",
+        "Reminder"
+      ],
+      "oddOneCorrects": [
+        3,
+        3,
+        2
+      ],
+      "countTargets": [
+        4,
+        3,
+        2
+      ],
+      "homeConnect": {
+        "prompt": "Find one example of ai comes home in your home or neighbourhood!",
+        "talkPrompt": "Tell your family: What did you learn about AI Comes Home today?",
+        "drawPrompt": "Draw what you found related to AI Comes Home!"
+      }
+    },
+    "7": {
+      "topicNumber": 7,
+      "topicTitle": "When I Grow Up",
+      "monthNumber": 4,
+      "monthTitle": "AI RISE",
+      "area": "AI & CAREER",
+      "startPage": 75,
+      "concepts": [
+        "You can be anything when you grow up!",
+        "Many jobs use technology and AI.",
+        "Learning today builds your dream tomorrow."
+      ],
+      "magicWords": [
+        {
+          "word": "Dream",
+          "definition": "What I wish to be"
+        },
+        {
+          "word": "Job",
+          "definition": "Work we do"
+        },
+        {
+          "word": "Future",
+          "definition": "Days to come"
+        }
+      ],
+      "storyPanels": [
+        {
+          "speaker": "Tom",
+          "speech": "Bolt, what can I be when I grow up?",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "Anything you dream! Doctor, farmer, artist, coder!",
+          "emoji": "🤖"
+        },
+        {
+          "speaker": "Tom",
+          "speech": "Does AI help all of them?",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "Yes! AI helps every job become smarter!",
+          "emoji": "🤖"
+        }
+      ],
+      "lookData": {
+        "examples": [
+          "Farmer using AI drone",
+          "Doctor with AI scanner",
+          "Teacher with smart board",
+          "Artist using AI tools",
+          "Engineer designing robots",
+          "Scientist using AI lab"
+        ],
+        "boltSays": "Every job needs a curious mind. Keep asking  questions!",
+        "funFact": "! AI helps robot cars called rovers drive on Mars, far far  away!"
+      },
+      "activitySteps": [
+        {
+          "step": 1,
+          "desc": "Draw your dream job at the top of your sheet."
+        },
+        {
+          "step": 2,
+          "desc": "Write: AI helps this job by..."
+        },
+        {
+          "step": 3,
+          "desc": "Share your dream with the class."
+        },
+        {
+          "step": 4,
+          "desc": "Find a famous person with your dream job!"
+        }
+      ],
+      "quizQuestions": [
+        {
+          "id": 1,
+          "q": "Q1. Who grows our food?",
+          "options": [
+            "Farmer",
+            "Astronaut",
+            "Singer"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 2,
+          "q": "Q2. Who flies to space?",
+          "options": [
+            "Doctor",
+            "Astronaut",
+            "Farmer"
+          ],
+          "correct": 1
+        },
+        {
+          "id": 3,
+          "q": "Q3. A doctor uses a...",
+          "options": [
+            "..",
+            "Tractor",
+            "Guitar"
+          ],
+          "correct": 2
+        },
+        {
+          "id": 4,
+          "q": "Q4. AI helps farmers know the...",
+          "options": [
+            "Weather",
+            "Cartoons",
+            "Candy"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 5,
+          "q": "Q5. To reach my dream I must...",
+          "options": [
+            "Sleep all day",
+            "Keep learning",
+            "Watch TV all day"
+          ],
+          "correct": 1
+        }
+      ],
+      "trueFalse": [
+        {
+          "statement": "A farmer grows our food.",
+          "answer": true
+        },
+        {
+          "statement": "An astronaut flies to space.",
+          "answer": false
+        },
+        {
+          "statement": "A doctor uses a tractor.",
+          "answer": true
+        },
+        {
+          "statement": "AI helps rovers drive on Mars.",
+          "answer": true
+        },
+        {
+          "statement": "Sleeping all day helps my dream.",
+          "answer": false
+        },
+        {
+          "statement": "Learning builds my future.",
+          "answer": true
+        }
+      ],
+      "traceWords": [
+        "Dream",
+        "Job",
+        "Future"
+      ],
+      "oddOneCorrects": [
+        3,
+        3,
+        2
+      ],
+      "countTargets": [
+        3,
+        5,
+        2
+      ],
+      "homeConnect": {
+        "prompt": "Find one example of when i grow up in your home or neighbourhood!",
+        "talkPrompt": "Tell your family: What did you learn about When I Grow Up today?",
+        "drawPrompt": "Draw what you found related to When I Grow Up!"
+      }
+    },
+    "8": {
+      "topicNumber": 8,
+      "topicTitle": "People Behind Technology",
+      "monthNumber": 4,
+      "monthTitle": "AI RISE",
+      "area": "AI & CAREER",
+      "startPage": 85,
+      "concepts": [
+        "Machines do not make themselves.",
+        "People design, build and teach them.",
+        "Behind every smart machine is a smart human!"
+      ],
+      "magicWords": [
+        {
+          "word": "Coder",
+          "definition": "Writes code"
+        },
+        {
+          "word": "Engineer",
+          "definition": "Builds machines"
+        },
+        {
+          "word": "Scientist",
+          "definition": "Does experiments"
+        }
+      ],
+      "storyPanels": [
+        {
+          "speaker": "Ana",
+          "speech": "Who makes you, Bolt?",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "Coders write my programs. Engineers build my body!",
+          "emoji": "🤖"
+        },
+        {
+          "speaker": "Ana",
+          "speech": "I want to build robots too!",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "Study hard and dream big, Ana! You can do it!",
+          "emoji": "🤖"
+        }
+      ],
+      "lookData": {
+        "examples": [
+          "Software coder at computer",
+          "Robot engineer in factory",
+          "AI scientist in lab",
+          "Data scientist with charts",
+          "Game developer with VR",
+          "Space scientist with satellite"
+        ],
+        "boltSays": "People made me and taught me. Thank you, humans!",
+        "funFact": "! In 2023, India's ISRO scientists landed Chandrayaan-3  on the Moon! HERO CORNER: DR. A.P.J. ABDUL KALAM He was born in Rameswaram, Tamil Nadu. He became  a great rocket scientist and the President of India. He  loved children and science!"
+      },
+      "activitySteps": [
+        {
+          "step": 1,
+          "desc": "Draw a person who makes AI or robots."
+        },
+        {
+          "step": 2,
+          "desc": "Write their job title under the drawing."
+        },
+        {
+          "step": 3,
+          "desc": "Write: They help the world by..."
+        },
+        {
+          "step": 4,
+          "desc": "Share with your class or teacher."
+        }
+      ],
+      "quizQuestions": [
+        {
+          "id": 1,
+          "q": "Q1. Who makes machines?",
+          "options": [
+            "Rain",
+            "People",
+            "Birds"
+          ],
+          "correct": 1
+        },
+        {
+          "id": 2,
+          "q": "Q2. A coder writes...",
+          "options": [
+            "Code",
+            "Milk",
+            "Cakes"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 3,
+          "q": "Q3. Dr. Kalam was born in...",
+          "options": [
+            "New York",
+            "Paris",
+            "Rameswaram"
+          ],
+          "correct": 2
+        },
+        {
+          "id": 4,
+          "q": "Q4. Chandrayaan-3 landed on the...",
+          "options": [
+            "Moon",
+            "Sun",
+            "Sea"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 5,
+          "q": "Q5. Who teaches AI?",
+          "options": [
+            "Snail",
+            "People",
+            "Balloon"
+          ],
+          "correct": 1
+        }
+      ],
+      "trueFalse": [
+        {
+          "statement": "Machines make themselves.",
+          "answer": false
+        },
+        {
+          "statement": "A coder writes code.",
+          "answer": true
+        },
+        {
+          "statement": "Chandrayaan-3 landed on the Moon.",
+          "answer": true
+        },
+        {
+          "statement": "Dr. Kalam was born in Rameswaram.",
+          "answer": true
+        },
+        {
+          "statement": "People made trees.",
+          "answer": false
+        },
+        {
+          "statement": "An engineer builds machines.",
+          "answer": true
+        }
+      ],
+      "traceWords": [
+        "Coder",
+        "Engineer",
+        "Scientist"
+      ],
+      "oddOneCorrects": [
+        3,
+        2,
+        3
+      ],
+      "countTargets": [
+        2,
+        4,
+        3
+      ],
+      "homeConnect": {
+        "prompt": "Find one example of people behind technology in your home or neighbourhood!",
+        "talkPrompt": "Tell your family: What did you learn about People Behind Technology today?",
+        "drawPrompt": "Draw what you found related to People Behind Technology!"
+      }
+    },
+    "9": {
+      "topicNumber": 9,
+      "topicTitle": "Ask & Explore",
+      "monthNumber": 5,
+      "monthTitle": "AI CREATE",
+      "area": "AI TOOLS",
+      "startPage": 98,
+      "concepts": [
+        "Asking questions is a superpower!",
+        "AI helpers can answer many questions.",
+        "Ask with an adult, then check the answer."
+      ],
+      "magicWords": [
+        {
+          "word": "Explore",
+          "definition": "Find out new things"
+        },
+        {
+          "word": "Check",
+          "definition": "Make sure it is right"
+        }
+      ],
+      "storyPanels": [
+        {
+          "speaker": "Ria",
+          "speech": "Bolt, I want to know how birds fly!",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "Great question! Use AI tools to explore and find out!",
+          "emoji": "🤖"
+        },
+        {
+          "speaker": "Ria",
+          "speech": "Is every answer from AI correct?",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "Always check! Ask a teacher or look in a book!",
+          "emoji": "🤖"
+        }
+      ],
+      "lookData": {
+        "examples": [
+          "Ask AI: How do birds fly?",
+          "Search: Why is the sky blue?",
+          "Explore: What is gravity?",
+          "Ask: How do rainbows form?",
+          "Check: What is photosynthesis?",
+          "Discover: Why do stars twinkle?"
+        ],
+        "boltSays": "Ask clearly! \"What do pandas eat?\" is better than \"Tell  me stuff.\"",
+        "funFact": "! A giant panda spends many hours every day eating  bamboo!"
+      },
+      "activitySteps": [
+        {
+          "step": 1,
+          "desc": "Write 3 questions you want to ask AI today."
+        },
+        {
+          "step": 2,
+          "desc": "Try asking one question to an AI tool."
+        },
+        {
+          "step": 3,
+          "desc": "Check the answer in a book or with your teacher."
+        },
+        {
+          "step": 4,
+          "desc": "Share the most surprising thing you found!"
+        }
+      ],
+      "quizQuestions": [
+        {
+          "id": 1,
+          "q": "Q1. Asking questions is a...",
+          "options": [
+            "..",
+            "Superpower",
+            "Bad habit"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 2,
+          "q": "Q2. Which question is clear?",
+          "options": [
+            "Tell stuff",
+            "What do elephants",
+            "Hmm?"
+          ],
+          "correct": 1
+        },
+        {
+          "id": 3,
+          "q": "Q3. Use AI helpers with...",
+          "options": [
+            "A dinosaur",
+            "A ghost",
+            "An adult"
+          ],
+          "correct": 2
+        },
+        {
+          "id": 4,
+          "q": "Q4. To check an answer, look in a...",
+          "options": [
+            "..",
+            "Book",
+            "Tin"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 5,
+          "q": "Q5. Which word asks about a place?",
+          "options": [
+            "When",
+            "Where",
+            "Why"
+          ],
+          "correct": 1
+        }
+      ],
+      "trueFalse": [
+        {
+          "statement": "Asking questions is a superpower.",
+          "answer": true
+        },
+        {
+          "statement": "\"Tell me stuff\" is a clear question.",
+          "answer": false
+        },
+        {
+          "statement": "I can check answers in a book.",
+          "answer": true
+        },
+        {
+          "statement": "Use AI helpers with an adult.",
+          "answer": true
+        },
+        {
+          "statement": "\"Where\" asks about time.",
+          "answer": false
+        },
+        {
+          "statement": "Pandas love bamboo.",
+          "answer": true
+        }
+      ],
+      "traceWords": [
+        "Explore",
+        "Check"
+      ],
+      "oddOneCorrects": [
+        3,
+        3,
+        2
+      ],
+      "countTargets": [
+        4,
+        2,
+        3
+      ],
+      "homeConnect": {
+        "prompt": "Find one example of ask & explore in your home or neighbourhood!",
+        "talkPrompt": "Tell your family: What did you learn about Ask & Explore today?",
+        "drawPrompt": "Draw what you found related to Ask & Explore!"
+      }
+    },
+    "10": {
+      "topicNumber": 10,
+      "topicTitle": "Draw & Imagine",
+      "monthNumber": 5,
+      "monthTitle": "AI CREATE",
+      "area": "AI TOOLS",
+      "startPage": 108,
+      "concepts": [
+        "Imagination means making pictures in your mind.",
+        "Some AI tools can draw pictures from words.",
+        "Your own ideas make art special!"
+      ],
+      "magicWords": [
+        {
+          "word": "Imagine",
+          "definition": "Picture it in your mind"
+        },
+        {
+          "word": "Art",
+          "definition": "What we create"
+        },
+        {
+          "word": "Picture",
+          "definition": "Something we see"
+        }
+      ],
+      "storyPanels": [
+        {
+          "speaker": "Dev",
+          "speech": "Bolt, can AI draw pictures?",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "Yes! You give it words and it imagines and draws!",
+          "emoji": "🤖"
+        },
+        {
+          "speaker": "Dev",
+          "speech": "Can it replace human artists?",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "No! Your imagination and feelings make YOUR art unique!",
+          "emoji": "🤖"
+        }
+      ],
+      "lookData": {
+        "examples": [
+          "Draw a robot friend",
+          "Paint a sunset",
+          "Make a paper collage",
+          "Design your dream home",
+          "Create a comic strip",
+          "Sculpt with clay"
+        ],
+        "boltSays": "I can draw from your words. But YOUR imagination  gives me the ideas!",
+        "funFact": "! Cartoon makers use computers to draw thousands of  pictures that move!"
+      },
+      "activitySteps": [
+        {
+          "step": 1,
+          "desc": "Choose a theme: Nature, Space, or Animals."
+        },
+        {
+          "step": 2,
+          "desc": "Draw your imagined picture using any art tools."
+        },
+        {
+          "step": 3,
+          "desc": "Write a title for your artwork."
+        },
+        {
+          "step": 4,
+          "desc": "Display your art and tell its story."
+        }
+      ],
+      "quizQuestions": [
+        {
+          "id": 1,
+          "q": "Q1. Imagination makes pictures in your...",
+          "options": [
+            "Mind",
+            "Cup",
+            "Shoe"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 2,
+          "q": "Q2. AI drawing tools need...",
+          "options": [
+            "Pizza",
+            "Words",
+            "Water"
+          ],
+          "correct": 1
+        },
+        {
+          "id": 3,
+          "q": "Q3. Which is a drawing tool?",
+          "options": [
+            "Spoon",
+            "Hammer",
+            "Crayon"
+          ],
+          "correct": 2
+        },
+        {
+          "id": 4,
+          "q": "Q4. What makes art special?",
+          "options": [
+            "My own ideas",
+            "Copying",
+            "Throwing it"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 5,
+          "q": "Q5. Cartoons are made with...",
+          "options": [
+            "Ice",
+            "Computers",
+            "Carrots"
+          ],
+          "correct": 1
+        }
+      ],
+      "trueFalse": [
+        {
+          "statement": "Imagination happens in my mind.",
+          "answer": true
+        },
+        {
+          "statement": "AI drawing tools need words.",
+          "answer": true
+        },
+        {
+          "statement": "A spoon is a drawing tool.",
+          "answer": false
+        },
+        {
+          "statement": "My own ideas make art special.",
+          "answer": true
+        },
+        {
+          "statement": "Cartoons are made with computers.",
+          "answer": true
+        },
+        {
+          "statement": "Copying makes art special.",
+          "answer": false
+        }
+      ],
+      "traceWords": [
+        "Imagine",
+        "Art",
+        "Picture"
+      ],
+      "oddOneCorrects": [
+        3,
+        3,
+        2
+      ],
+      "countTargets": [
+        2,
+        5,
+        3
+      ],
+      "homeConnect": {
+        "prompt": "Find one example of draw & imagine in your home or neighbourhood!",
+        "talkPrompt": "Tell your family: What did you learn about Draw & Imagine today?",
+        "drawPrompt": "Draw what you found related to Draw & Imagine!"
+      }
+    },
+    "11": {
+      "topicNumber": 11,
+      "topicTitle": "My AI Safety Rules",
+      "monthNumber": 6,
+      "monthTitle": "AI CARE",
+      "area": "RESPONSIBLE AI",
+      "startPage": 121,
+      "concepts": [
+        "Technology is fun when we are safe.",
+        "Always use devices with an adult.",
+        "Feel scared or confused? Stop and tell an adult."
+      ],
+      "magicWords": [
+        {
+          "word": "Safe",
+          "definition": "Free from harm Screen break"
+        },
+        {
+          "word": "Ask",
+          "definition": "Get help"
+        }
+      ],
+      "storyPanels": [
+        {
+          "speaker": "Mia",
+          "speech": "Bolt, someone online asked me to share my photo!",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "STOP! Tell a trusted adult immediately!",
+          "emoji": "🤖"
+        },
+        {
+          "speaker": "Mia",
+          "speech": "What is the safety rule?",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "STOP - THINK - ASK! Always, always, always!",
+          "emoji": "🤖"
+        }
+      ],
+      "lookData": {
+        "examples": [
+          "Use phone with parents",
+          "Set safe screen time limits",
+          "Never share passwords",
+          "Block strangers online",
+          "Report mean messages",
+          "Log out after using devices"
+        ],
+        "boltSays": "Remember my magic words: STOP, THINK, ASK!",
+        "funFact": "! Look at something far away every 20 minutes. It rests  your eyes!"
+      },
+      "activitySteps": [
+        {
+          "step": 1,
+          "desc": "Read the safety rule: STOP - THINK - ASK."
+        },
+        {
+          "step": 2,
+          "desc": "Write 2 online situations when you should STOP."
+        },
+        {
+          "step": 3,
+          "desc": "Tell a trusted adult one rule you will always follow."
+        },
+        {
+          "step": 4,
+          "desc": "Make a Safety Rules poster for your room."
+        }
+      ],
+      "quizQuestions": [
+        {
+          "id": 1,
+          "q": "Q1. Use devices with...",
+          "options": [
+            "An adult",
+            "A crocodile",
+            "Teddy"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 2,
+          "q": "Q2. If something feels wrong...",
+          "options": [
+            "Keep quiet",
+            "Tell an adult",
+            "Hide it"
+          ],
+          "correct": 1
+        },
+        {
+          "id": 3,
+          "q": "Q3. STOP, THINK, ...",
+          "options": [
+            "Eat",
+            "Sleep",
+            "Ask"
+          ],
+          "correct": 2
+        },
+        {
+          "id": 4,
+          "q": "Q4. Screen breaks are good for my...",
+          "options": [
+            "Eyes",
+            "Shoes",
+            "Bag"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 5,
+          "q": "Q5. Which one is safe?",
+          "options": [
+            "Clicking strange",
+            "Playing outside",
+            "Phone all night"
+          ],
+          "correct": 1
+        }
+      ],
+      "trueFalse": [
+        {
+          "statement": "I use devices with an adult.",
+          "answer": true
+        },
+        {
+          "statement": "Playing on a phone all night is good.",
+          "answer": false
+        },
+        {
+          "statement": "If something feels wrong, I stop.",
+          "answer": true
+        },
+        {
+          "statement": "I click every link I see.",
+          "answer": false
+        },
+        {
+          "statement": "Screen breaks rest my eyes.",
+          "answer": true
+        },
+        {
+          "statement": "Playing outside is good for me.",
+          "answer": true
+        }
+      ],
+      "traceWords": [
+        "Safe",
+        "Ask"
+      ],
+      "oddOneCorrects": [
+        3,
+        3,
+        2
+      ],
+      "countTargets": [
+        3,
+        2,
+        4
+      ],
+      "homeConnect": {
+        "prompt": "Find one example of my ai safety rules in your home or neighbourhood!",
+        "talkPrompt": "Tell your family: What did you learn about My AI Safety Rules today?",
+        "drawPrompt": "Draw what you found related to My AI Safety Rules!"
+      }
+    },
+    "12": {
+      "topicNumber": 12,
+      "topicTitle": "Share with Care",
+      "monthNumber": 6,
+      "monthTitle": "AI CARE",
+      "area": "RESPONSIBLE AI",
+      "startPage": 131,
+      "concepts": [
+        "Some things are private. They are just for you and your",
+        "Never share your address, school or photos with strangers.",
+        "Share kindness, not secrets!",
+        "Keep these private!"
+      ],
+      "magicWords": [
+        {
+          "word": "Private",
+          "definition": "Just for me"
+        },
+        {
+          "word": "Share",
+          "definition": "Give to others"
+        },
+        {
+          "word": "Kind",
+          "definition": "Nice and caring"
+        }
+      ],
+      "storyPanels": [
+        {
+          "speaker": "Sam",
+          "speech": "Bolt, what is private information?",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "Your name, address, school, and phone number!",
+          "emoji": "🤖"
+        },
+        {
+          "speaker": "Sam",
+          "speech": "Can I share these online?",
+          "emoji": "😊"
+        },
+        {
+          "speaker": "Bolt",
+          "speech": "NEVER! Keep private things private and be kind online!",
+          "emoji": "🤖"
+        }
+      ],
+      "lookData": {
+        "examples": [
+          "Keep address private",
+          "Never share school name",
+          "Don't post photos of your face",
+          "Never give phone number online",
+          "Block unknown contacts",
+          "Tell parents about online friends"
+        ],
+        "boltSays": "Be kind online. Type nice words, just like you speak  nicely!",
+        "funFact": "! A password is like a lock. Only you and your parents  should know it!"
+      },
+      "activitySteps": [
+        {
+          "step": 1,
+          "desc": "Circle what is PRIVATE: name, address, school, password."
+        },
+        {
+          "step": 2,
+          "desc": "Write: I keep ___ private because ___."
+        },
+        {
+          "step": 3,
+          "desc": "Practice saying: I can't share that online."
+        },
+        {
+          "step": 4,
+          "desc": "Colour the Share with Care safety badge."
+        }
+      ],
+      "quizQuestions": [
+        {
+          "id": 1,
+          "q": "Q1. Which is private?",
+          "options": [
+            "Favourite colour",
+            "I love dogs",
+            "Password"
+          ],
+          "correct": 2
+        },
+        {
+          "id": 2,
+          "q": "Q2. A stranger online asks your address. You...",
+          "options": [
+            "Tell an adult",
+            "Tell them",
+            "Send a photo"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 3,
+          "q": "Q3. Online, we type...",
+          "options": [
+            "Angry words",
+            "Kind words",
+            "Mean jokes"
+          ],
+          "correct": 1
+        },
+        {
+          "id": 4,
+          "q": "Q4. Who can know your password?",
+          "options": [
+            "My parents",
+            "Strangers",
+            "Everyone"
+          ],
+          "correct": 0
+        },
+        {
+          "id": 5,
+          "q": "Q5. Share kindness, not...",
+          "options": [
+            "Smiles",
+            "Help",
+            "Secrets"
+          ],
+          "correct": 2
+        }
+      ],
+      "trueFalse": [
+        {
+          "statement": "My password is private.",
+          "answer": true
+        },
+        {
+          "statement": "I tell strangers my address.",
+          "answer": false
+        },
+        {
+          "statement": "I type kind words online.",
+          "answer": true
+        },
+        {
+          "statement": "My parents can know my password.",
+          "answer": true
+        },
+        {
+          "statement": "I send my photo to strangers.",
+          "answer": false
+        },
+        {
+          "statement": "Kindness is good to share.",
+          "answer": true
+        }
+      ],
+      "traceWords": [
+        "Private",
+        "Share",
+        "Kind"
+      ],
+      "oddOneCorrects": [
+        3,
+        3,
+        2
+      ],
+      "countTargets": [
+        3,
+        4,
+        2
+      ],
+      "homeConnect": {
+        "prompt": "Find one example of share with care in your home or neighbourhood!",
+        "talkPrompt": "Tell your family: What did you learn about Share with Care today?",
+        "drawPrompt": "Draw what you found related to Share with Care!"
+      }
+    }
+  },
+  "wordSearches": {
+    "1": {
+      "monthNumber": 1,
+      "monthTitle": "AI DISCOVER",
+      "words": [
+        "AI",
+        "MACHINE",
+        "SMART",
+        "SIMPLE",
+        "ROBOT",
+        "HELPER",
+        "BOLT",
+        "LEARN"
+      ]
+    },
+    "2": {
+      "monthNumber": 2,
+      "monthTitle": "AI CONNECT",
+      "words": [
+        "COMMAND",
+        "CLEAR",
+        "LISTEN",
+        "ORDER",
+        "STEP",
+        "ALGORITHM",
+        "SORT",
+        "FIRST"
+      ]
+    },
+    "3": {
+      "monthNumber": 3,
+      "monthTitle": "AI SOLVE",
+      "words": [
+        "SCHOOL",
+        "SMART",
+        "BOARD",
+        "GUIDE",
+        "HOME",
+        "REMINDER",
+        "LEARN",
+        "TUTOR"
+      ]
+    },
+    "4": {
+      "monthNumber": 4,
+      "monthTitle": "AI RISE",
+      "words": [
+        "DREAM",
+        "JOB",
+        "FUTURE",
+        "CODER",
+        "ENGINEER",
+        "SCIENTIST",
+        "DESIGN",
+        "BUILD"
+      ]
+    },
+    "5": {
+      "monthNumber": 5,
+      "monthTitle": "AI CREATE",
+      "words": [
+        "QUESTION",
+        "EXPLORE",
+        "CHECK",
+        "IMAGINE",
+        "ART",
+        "PICTURE",
+        "STORY",
+        "MUSIC"
+      ]
+    },
+    "6": {
+      "monthNumber": 6,
+      "monthTitle": "AI CARE",
+      "words": [
+        "SAFE",
+        "ASK",
+        "PRIVATE",
+        "SHARE",
+        "KIND",
+        "STOP",
+        "THINK",
+        "PROTECT"
+      ]
+    }
+  },
+  "unitReviews": {
+    "1": {
+      "monthNumber": 1,
+      "monthTitle": "AI DISCOVER",
+      "questions": [
+        "Which uses AI?",
+        "A machine helps us...",
+        "Which is a SMART machine?",
+        "AI is a...",
+        "Which keeps us cool?",
+        "Bolt learns from..."
+      ]
+    },
+    "2": {
+      "monthNumber": 2,
+      "monthTitle": "AI CONNECT",
+      "questions": [
+        "Which is a command?",
+        "What comes after a caterpillar?",
+        "Steps in order are an...",
+        "Which arrow means UP?",
+        "Machines like words that are...",
+        "What do you do first?"
+      ]
+    },
+    "3": {
+      "monthNumber": 3,
+      "monthTitle": "AI SOLVE",
+      "questions": [
+        "Who helps at school?",
+        "Which cleans the floor?",
+        "AI can read stories...",
+        "Before using a device, ask...",
+        "Who does my homework?",
+        "A big screen in class is a..."
+      ]
+    },
+    "4": {
+      "monthNumber": 4,
+      "monthTitle": "AI RISE",
+      "questions": [
+        "Who cooks food?",
+        "Who writes code?",
+        "Who made the robot?",
+        "A farmer uses a...",
+        "Dr. Kalam loved...",
+        "To reach my dream I..."
+      ]
+    },
+    "5": {
+      "monthNumber": 5,
+      "monthTitle": "AI CREATE",
+      "questions": [
+        "Which is a question word?",
+        "AI drawing tools need...",
+        "Check an answer in a...",
+        "Which is a drawing tool?",
+        "\"Where\" asks about a...",
+        "Art is special because of..."
+      ]
+    },
+    "6": {
+      "monthNumber": 6,
+      "monthTitle": "AI CARE",
+      "questions": [
+        "STOP, THINK, ...",
+        "Which is private?",
+        "Screen breaks rest my...",
+        "Online, I type...",
+        "A strange link pops up. I...",
+        "A password is like a..."
+      ]
+    }
+  }
+}

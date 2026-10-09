@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react'
 import {
-  CheckCircle2, XCircle, ArrowRight, RotateCcw,
+  CheckCircle2, XCircle, ArrowRight, ArrowLeft, RotateCcw,
   Sparkles, Award, Zap, Shield, Check, Info,
   ChevronUp, ChevronDown, Compass, Eye, Cpu, Lightbulb,
   Camera, Mic, Sliders, Sun, Moon, Lock, Unlock, Play, Terminal, Wrench, X
@@ -11,6 +11,9 @@ import { AuraGuideAvatar, type GuideMood } from './AuraGuideAvatar'
 import { RoboticIllustration, RandomRoboticBadge } from './RoboticIllustrations'
 import { TopicLessonIllustration } from './TopicLessonIllustration'
 import { useLearningNavigation } from '../LearningNavigationContext'
+import { getTopicSpecificHowItWorks } from '../engines/SimpleStructuredLessonView'
+import { Lesson1ConceptExperience } from '../engines/Lesson1ConceptExperience'
+import { Lesson1RealWorldExampleExperience } from '../engines/Lesson1RealWorldExampleExperience'
 
 // ─────────────────────────────────────────────────────────────────────────────
 // TYPES & INTERFACES
@@ -1682,20 +1685,10 @@ export const UniversalLessonGameEngine: React.FC<UniversalLessonGameEngineProps>
 }) => {
   const navContext = useLearningNavigation()
   const handleClose = onClose || navContext.onClose
-  // Step: 0 = Learn, 1 = Game 1, 2 = Game 2, 3 = Game 3, 4 = Lesson Complete
+  // Step: 0 = Learn (3 screens), 1 = Game 1, 2 = Game 2, 3 = Game 3, 4 = Lesson Complete
   const [currentStep, setCurrentStep] = useState<0 | 1 | 2 | 3 | 4>(0)
-  const [cardScene, setCardScene] = useState<number>(0)
+  const [learnScreen, setLearnScreen] = useState<1 | 2 | 3>(1)
   const [showFullArticle, setShowFullArticle] = useState(false)
-
-  // Natural layout variation between lessons - Called unconditionally before any early returns
-  const layoutVariant = useMemo(() => {
-    const sum = (title + badge).split('').reduce((acc, c) => acc + c.charCodeAt(0), 0)
-    return sum % 3 // 0, 1, or 2
-  }, [title, badge])
-
-  const pointsPerPage = 2
-  const totalPointScenes = Math.max(1, Math.ceil(keyPoints.length / pointsPerPage))
-  const currentPoints = keyPoints.slice(cardScene * pointsPerPage, (cardScene + 1) * pointsPerPage)
 
   const handleStartGames = () => {
     gameAudio.playTap()
@@ -1736,191 +1729,161 @@ export const UniversalLessonGameEngine: React.FC<UniversalLessonGameEngineProps>
 
   const currentGame = currentStep >= 1 && currentStep <= 3 ? games[currentStep - 1] : null
 
-  // Page 1 = Learn (Step 0), Page 2 = Games (Steps 1, 2, 3)
+  // Page 1 = Learn (Step 0 with 3 Screens), Page 2 = Games (Steps 1, 2, 3)
   const isPage1 = currentStep === 0
   const isPage2 = currentStep >= 1 && currentStep <= 3
 
   return (
-    <div className="w-full max-w-2xl mx-auto flex flex-col justify-between px-2 sm:px-4 py-1.5 sm:py-2.5 h-full max-h-full overflow-hidden select-none">
-      {/* 1. TOP OF LESSON SCREEN: Clear Lucide Close Button + Stage Status */}
-      <div className="w-full flex items-center justify-between pb-1 sm:pb-2 border-b border-slate-200 shrink-0">
-        {handleClose ? (
-          <button
-            type="button"
-            onClick={handleClose}
-            className="p-1 sm:p-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 active:bg-slate-300 text-slate-700 hover:text-slate-900 border border-slate-200 transition-colors cursor-pointer flex items-center gap-1.5 text-xs font-bold"
-            title="Return to Chapter Sections"
-            aria-label="Close Lesson"
-          >
-            <X size={15} />
-            <span>Close</span>
-          </button>
-        ) : (
-          <div />
-        )}
-
-        <div className="flex items-center gap-1.5 shrink-0">
-          {isPage2 && (
-            <button
-              type="button"
-              onClick={() => setCurrentStep(0)}
-              title="Review Lesson Notes (Page 1)"
-              className="px-2 py-0.5 rounded-lg text-[10px] font-bold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 border border-indigo-200 transition-colors cursor-pointer"
-            >
-              Notes
-            </button>
-          )}
-          <div className="flex items-center gap-1 bg-amber-50 border border-amber-200 px-2 py-0.5 rounded-lg text-[10px] sm:text-[11px] font-black text-amber-800">
-            <Zap size={10} className="text-amber-500 fill-amber-500" />
-            <span>+{xpReward} XP</span>
-          </div>
-          <div className="text-[10px] font-mono font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-lg border border-slate-200">
-            {isPage1 ? 'Learn' : `Game ${currentStep}/3`}
-          </div>
-        </div>
-      </div>
-
-      {/* PAGE 1: LEARN CONCEPT */}
+    <div className="w-full max-w-2xl mx-auto flex flex-col justify-between px-2 sm:px-4 py-1.5 sm:py-2 h-full max-h-full overflow-hidden select-none">
+      {/* PAGE 1: LEARN CONCEPT (3-Screen Smooth Flow) */}
       {isPage1 && (
-        <div className="flex-1 flex flex-col justify-between min-h-0 overflow-hidden py-1 space-y-1 sm:space-y-1.5 animate-in fade-in">
-          {/* 2. LESSON TITLE */}
-          <div className="shrink-0 text-center sm:text-left">
-            <div className="flex items-center justify-center sm:justify-start gap-1.5 mb-0.5">
-              <span className="text-[8px] sm:text-[10px] font-black uppercase tracking-wider text-indigo-700 bg-indigo-50 border border-indigo-200 px-1.5 py-0.5 rounded-md">
-                {badge}
-              </span>
-              {lessonSubtitle && (
-                <span className="text-[8px] sm:text-[9px] font-bold text-slate-500">
-                  {lessonSubtitle}
+        <div className="flex-1 flex flex-col justify-between min-h-0 overflow-hidden space-y-1.5 animate-in fade-in">
+          {/* Header & 3-Screen Progress */}
+          <div className="shrink-0 flex items-center justify-between bg-white/95 backdrop-blur-md rounded-xl p-2 border border-slate-200 shadow-2xs">
+            <div className="min-w-0 flex-1">
+              <div className="flex items-center gap-1.5">
+                <span className="text-[8px] sm:text-[9px] font-black uppercase tracking-wider text-indigo-700 bg-indigo-50 border border-indigo-200 px-1.5 py-0.5 rounded-md inline-block">
+                  {badge}
                 </span>
+                <span className="text-[8px] sm:text-[9px] font-bold text-slate-500">
+                  Screen {learnScreen} of 3
+                </span>
+              </div>
+              <h1 className="text-xs sm:text-sm md:text-base font-black text-slate-900 tracking-tight truncate mt-0.5">
+                {title}
+              </h1>
+            </div>
+
+            <div className="flex items-center gap-1 shrink-0">
+              {[1, 2, 3].map((s) => (
+                <button
+                  key={s}
+                  onClick={() => setLearnScreen(s as 1 | 2 | 3)}
+                  className={`h-1.5 sm:h-2 rounded-full transition-all cursor-pointer ${
+                    learnScreen === s
+                      ? 'w-6 bg-indigo-600 shadow-xs'
+                      : learnScreen > s
+                      ? 'w-3 bg-emerald-500'
+                      : 'w-3 bg-slate-200 hover:bg-slate-300'
+                  }`}
+                  title={`Go to Screen ${s}`}
+                />
+              ))}
+              {htmlContent && (
+                <button
+                  type="button"
+                  onClick={() => setShowFullArticle(true)}
+                  className="ml-1.5 px-2 py-0.5 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-bold text-[9px] rounded-lg border border-indigo-200 cursor-pointer"
+                >
+                  Notes
+                </button>
               )}
             </div>
-            <h1 className="text-sm sm:text-lg font-black text-slate-900 tracking-tight truncate">
-              {title}
-            </h1>
           </div>
 
-          {/* 3. LARGE TOPIC-BASED SVG (Standalone visual, NOT inside a background box/card!) */}
-          <div className="w-full flex justify-center shrink-0 py-0.5 sm:py-1 select-none">
-            <TopicLessonIllustration
-              topic={title}
-              chapterTitle={badge}
-              size={135}
-              className="drop-shadow-md transition-transform hover:scale-102"
-            />
-          </div>
-
-          {/* 4. CORE CONCEPT HEADER */}
-          <div className="shrink-0 flex items-center justify-between">
-            <div className="inline-flex items-center gap-1 text-[10px] sm:text-xs font-black text-indigo-900 bg-indigo-50 px-2 py-0.5 rounded-full border border-indigo-200">
-              <Sparkles size={11} className="text-indigo-600" />
-              <span>Core Concept</span>
-            </div>
-
-            {htmlContent && (
-              <button
-                type="button"
-                onClick={() => setShowFullArticle(true)}
-                className="px-1.5 py-0.5 bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold text-[9px] rounded-lg border border-slate-200 cursor-pointer"
-              >
-                Full Article
-              </button>
-            )}
-          </div>
-
-          {/* 5. DEFINITION */}
-          <div className="w-full bg-white p-2 sm:p-2.5 rounded-xl border border-slate-200 shadow-2xs shrink-0">
-            <p className="text-[11px] sm:text-xs md:text-sm font-semibold text-slate-800 leading-snug">
-              {simpleDefinition}
-            </p>
-          </div>
-
-          {/* 6. EXAMPLE */}
-          {smallExample && (
-            <div className="w-full text-[10px] sm:text-xs font-medium text-emerald-900 bg-emerald-50/90 p-1.5 sm:p-2 rounded-xl border border-emerald-200 shrink-0">
-              <strong className="text-emerald-950 font-black">Daily Example:</strong> {smallExample}
+          {/* SCREEN 1: ALIVE TOPIC CONCEPT EXPERIENCE (WHAT IS IT? + SIMPLE MEANING) */}
+          {learnScreen === 1 && (
+            <div className="flex-1 min-h-0 overflow-hidden animate-in fade-in slide-in-from-right-3 duration-200">
+              <Lesson1ConceptExperience
+                badge={badge}
+                title={title}
+                topicTitle={title}
+                simpleDefinition={simpleDefinition}
+                simpleMeaning={smallExample}
+                aiDialogue={aiDialogue}
+                onNext={() => {
+                  gameAudio.playTap()
+                  setLearnScreen(2)
+                }}
+                nextLabel="Next: Real-World Example"
+              />
             </div>
           )}
 
-          {/* 7. KEY POINTS */}
-          {keyPoints.length > 0 && (
-            <div className="shrink-0 space-y-1">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-1">
-                {currentPoints.map((pt, idx) => {
-                  const Icon = pt.icon || CheckCircle2
-                  return (
-                    <div
-                      key={idx}
-                      className="bg-white rounded-lg p-1.5 border border-slate-200 flex items-start gap-1.5 shadow-2xs"
-                    >
-                      <div className="p-1 rounded-md bg-indigo-50 text-indigo-600 shrink-0 mt-0.5">
-                        <Icon size={10} />
-                      </div>
-                      <div className="min-w-0 flex-1">
-                        <h4 className="text-[10px] sm:text-[11px] font-bold text-slate-900 leading-tight">
-                          {pt.title}
-                        </h4>
-                        <p className="text-[8px] sm:text-[9px] text-slate-600 mt-0.5 leading-tight line-clamp-1">
-                          {pt.text}
-                        </p>
-                      </div>
-                    </div>
-                  )
-                })}
-              </div>
+          {/* SCREEN 2: REAL-WORLD EXAMPLE (INTERACTIVE BESPOKE SCENE) */}
+          {learnScreen === 2 && (
+            <div className="flex-1 min-h-0 overflow-hidden animate-in fade-in slide-in-from-right-3 duration-200">
+              <Lesson1RealWorldExampleExperience
+                badge={badge}
+                title={title}
+                topicTitle={title}
+                chapterTitle={badge}
+                exampleText={smallExample || 'Everyday smart devices spot patterns and help people make great decisions effortlessly!'}
+                onBack={() => {
+                  gameAudio.playTap()
+                  setLearnScreen(1)
+                }}
+                onNext={() => {
+                  gameAudio.playTap()
+                  setLearnScreen(3)
+                }}
+                nextLabel="Next: How It Works"
+              />
+            </div>
+          )}
 
-              {/* Quick Stepper if more points exist */}
-              {totalPointScenes > 1 && (
-                <div className="flex items-center justify-between pt-0.5">
-                  <button
-                    type="button"
-                    disabled={cardScene === 0}
-                    onClick={() => {
-                      gameAudio.playTap()
-                      setCardScene(prev => Math.max(0, prev - 1))
-                    }}
-                    className="text-[8px] font-bold text-indigo-600 disabled:opacity-20 cursor-pointer"
-                  >
-                    &larr; Prev Points
-                  </button>
-                  <div className="flex gap-1">
-                    {Array.from({ length: totalPointScenes }).map((_, i) => (
-                      <div
-                        key={i}
-                        className={`w-1.5 h-1.5 rounded-full ${
-                          i === cardScene ? 'bg-indigo-600' : 'bg-slate-300'
-                        }`}
-                      />
+          {/* SCREEN 3: HOW IT WORKS (TOPIC-BOUND BESPOKE BREAKDOWN) */}
+          {learnScreen === 3 && (() => {
+            const dynamicHowItWorks = getTopicSpecificHowItWorks(title, badge, '')
+            return (
+              <div className="flex-1 flex flex-col justify-between min-h-0 space-y-1.5 animate-in fade-in slide-in-from-right-3 duration-200">
+                {/* How It Works 3-Step Pipeline */}
+                <div className="bg-slate-50/90 border border-slate-200 rounded-2xl p-2 sm:p-2.5 space-y-1 shrink-0">
+                  <span className="text-[11px] sm:text-xs font-black uppercase tracking-wider text-slate-800 block">
+                    How It Works: {title}
+                  </span>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-1.5">
+                    {dynamicHowItWorks.steps.map((st, i) => (
+                      <div key={i} className="bg-white border border-slate-200/90 rounded-xl p-1.5 sm:p-2 shadow-2xs flex flex-col justify-between">
+                        <span className="text-[9px] sm:text-[10px] font-black text-indigo-700 block truncate">{st.title}</span>
+                        <p className="text-[8px] sm:text-[9px] text-slate-600 font-medium leading-tight mt-0.5">{st.explanation}</p>
+                      </div>
                     ))}
                   </div>
+                </div>
+
+                {/* Key Points Takeaway */}
+                <div className="flex-1 flex flex-col justify-center bg-emerald-50/80 border border-emerald-200 rounded-2xl p-2 sm:p-2.5">
+                  <h4 className="text-[10px] sm:text-xs font-black uppercase tracking-wider text-emerald-950 mb-1 flex items-center gap-1">
+                    <CheckCircle2 size={12} className="text-emerald-600" /> Key Takeaway Points:
+                  </h4>
+                  <div className="space-y-1">
+                    {(keyPoints.length > 0 ? keyPoints : dynamicHowItWorks.keyPoints).slice(0, 3).map((kp, idx) => (
+                      <div key={idx} className="flex items-start gap-1.5 text-[9px] sm:text-[10px] text-emerald-900 font-medium leading-tight">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0 mt-0.5" />
+                        <span><strong>{kp.title}:</strong> {kp.text}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Launch Games Action Button */}
+                <div className="pt-1 flex items-center justify-between gap-2 shrink-0">
                   <button
                     type="button"
-                    disabled={cardScene >= totalPointScenes - 1}
                     onClick={() => {
                       gameAudio.playTap()
-                      setCardScene(prev => Math.min(totalPointScenes - 1, prev + 1))
+                      setLearnScreen(2)
                     }}
-                    className="text-[8px] font-bold text-indigo-600 disabled:opacity-20 cursor-pointer"
+                    className="py-2 px-3 sm:px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs flex items-center gap-1.5 transition-all cursor-pointer"
                   >
-                    More Points &rarr;
+                    <ArrowLeft size={14} />
+                    <span>Back</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleStartGames}
+                    className="py-2.5 px-4 sm:px-6 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-black text-xs sm:text-sm shadow-md flex items-center justify-center gap-2 cursor-pointer transition-all flex-1 sm:flex-initial ml-auto active:scale-[0.99]"
+                  >
+                    <Play size={14} className="fill-white" />
+                    <span>Play 3 Interactive Games</span>
+                    <ArrowRight size={14} />
                   </button>
                 </div>
-              )}
-            </div>
-          )}
+              </div>
+            )
+          })()}
 
-          {/* 8. NEXT / PLAY */}
-          <div className="pt-1 shrink-0">
-            <button
-              type="button"
-              onClick={handleStartGames}
-              className="w-full py-2.5 sm:py-3 px-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white font-black text-xs sm:text-sm shadow-md flex items-center justify-center gap-2 cursor-pointer transition-all"
-            >
-              <Play size={13} className="fill-white" />
-              <span>Next: Play 3 Lesson Games</span>
-              <ArrowRight size={13} />
-            </button>
-          </div>
 
           {/* Full CMS Lesson Text Modal */}
           {showFullArticle && htmlContent && (
@@ -1952,9 +1915,33 @@ export const UniversalLessonGameEngine: React.FC<UniversalLessonGameEngineProps>
       )}
 
       {/* PHASE 2: 3 DISTINCT MINI-GAMES (Steps 1, 2, 3) */}
-      {currentStep >= 1 && currentStep <= 3 && currentGame && (
-        <div className="flex-1 flex flex-col justify-center min-h-0 overflow-hidden animate-in fade-in py-1">
-          {currentGame.render(() => handleGamePass(currentStep as 1 | 2 | 3))}
+      {isPage2 && currentGame && (
+        <div className="flex-1 flex flex-col justify-between min-h-0 overflow-hidden animate-in fade-in py-1">
+          {/* Game Header with Aura Mini Mentor Banner */}
+          <div className="shrink-0 mb-1 flex items-center justify-between bg-white/95 backdrop-blur-md rounded-xl p-2 border border-slate-200 shadow-2xs">
+            <div className="min-w-0 flex-1">
+              <div className="flex items-center gap-1.5">
+                <span className="text-[8px] sm:text-[9px] font-black uppercase tracking-wider text-emerald-700 bg-emerald-50 border border-emerald-200 px-1.5 py-0.5 rounded-md inline-block">
+                  {currentGame.badge}
+                </span>
+                <span className="text-[8px] sm:text-[9px] font-bold text-slate-500">
+                  Game {currentStep} of 3
+                </span>
+              </div>
+              <h2 className="text-xs sm:text-sm font-black text-slate-900 tracking-tight truncate mt-0.5">
+                {currentGame.title}
+              </h2>
+            </div>
+            <AuraGuideAvatar
+              mood="thinking"
+              size="sm"
+              message={`Challenge ${currentStep}: Solve the hands-on interaction to test your understanding!`}
+            />
+          </div>
+
+          <div className="flex-1 flex flex-col justify-center min-h-0 overflow-hidden">
+            {currentGame.render(() => handleGamePass(currentStep as 1 | 2 | 3))}
+          </div>
         </div>
       )}
     </div>

@@ -8,6 +8,7 @@ import {
 import { gameAudio } from '../../utils/gameAudio'
 import { gamification } from '../../utils/gamification'
 import { TopicLessonIllustration } from '../learning/primitives/TopicLessonIllustration'
+import { AuraCharacter } from '../learning/primitives/AuraCharacter'
 import {
   lessonQuizService,
   type DynamicQuizQuestion,
@@ -423,6 +424,20 @@ export const MasteryAssessmentEngine: React.FC<MasteryAssessmentEngineProps> = (
             </p>
           </div>
 
+          {/* Aura AI Guide Welcome */}
+          <div className="w-full max-w-md">
+            <AuraCharacter
+              mood={isAlreadyMastered ? 'celebrating' : 'explaining'}
+              message={
+                isAlreadyMastered
+                  ? "Mastery verified! You can practice again to encounter new questions from the chapter question pool."
+                  : "Welcome to the Mastery Assessment! Read each question with care, deduce the correct patterns, and earn your mastery trophy."
+              }
+              size="sm"
+              showSpeechBubble
+            />
+          </div>
+
           {/* If already completed, show Mastery Completed State */}
           {isAlreadyMastered && latestAttempt && (
             <div className="w-full max-w-md bg-emerald-50/90 border border-emerald-200 rounded-2xl p-3 text-left space-y-2">
@@ -780,29 +795,42 @@ export const MasteryAssessmentEngine: React.FC<MasteryAssessmentEngineProps> = (
 
           {/* Instant Feedback Drawer upon submission */}
           {isAnswerSubmitted && (
-            <div className={`p-2.5 sm:p-3 rounded-xl border animate-in slide-in-from-bottom duration-200 shrink-0 ${
-              isCurrentAnswerCorrect
-                ? 'bg-emerald-50/95 border-emerald-200 text-emerald-950'
-                : 'bg-rose-50/95 border-rose-200 text-rose-950'
-            }`}>
-              <div className="flex items-center justify-between gap-1 mb-1">
-                <span className="text-xs font-black flex items-center gap-1">
-                  {isCurrentAnswerCorrect ? (
-                    <>
-                      <CheckCircle2 size={14} className="text-emerald-600" />
-                      <span>Correct Deduction</span>
-                    </>
-                  ) : (
-                    <>
-                      <XCircle size={14} className="text-rose-600" />
-                      <span>Concept Clarification</span>
-                    </>
-                  )}
-                </span>
+            <div className="space-y-2 shrink-0 animate-in slide-in-from-bottom duration-200">
+              <AuraCharacter
+                mood={isCurrentAnswerCorrect ? 'correct' : 'wrong'}
+                size="xs"
+                message={
+                  isCurrentAnswerCorrect
+                    ? 'Excellent deduction! You applied the core concept accurately.'
+                    : 'Good try! Take a moment to read the clarification below to solidify your understanding.'
+                }
+                showSpeechBubble
+              />
+
+              <div className={`p-2.5 sm:p-3 rounded-xl border ${
+                isCurrentAnswerCorrect
+                  ? 'bg-emerald-50/95 border-emerald-200 text-emerald-950'
+                  : 'bg-rose-50/95 border-rose-200 text-rose-950'
+              }`}>
+                <div className="flex items-center justify-between gap-1 mb-1">
+                  <span className="text-xs font-black flex items-center gap-1">
+                    {isCurrentAnswerCorrect ? (
+                      <>
+                        <CheckCircle2 size={14} className="text-emerald-600" />
+                        <span>Correct Deduction</span>
+                      </>
+                    ) : (
+                      <>
+                        <XCircle size={14} className="text-rose-600" />
+                        <span>Concept Clarification</span>
+                      </>
+                    )}
+                  </span>
+                </div>
+                <p className="text-[11px] leading-relaxed opacity-90">
+                  {currentQ.explanation}
+                </p>
               </div>
-              <p className="text-[11px] leading-relaxed opacity-90">
-                {currentQ.explanation}
-              </p>
             </div>
           )}
         </div>
@@ -866,13 +894,19 @@ export const MasteryAssessmentEngine: React.FC<MasteryAssessmentEngineProps> = (
         </div>
 
         {/* Center Mastery Summary */}
-        <div className="flex-1 flex flex-col items-center justify-center py-2 text-center min-h-0 space-y-2.5 overflow-hidden">
-          <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-50 to-amber-50 border-2 border-indigo-200 flex items-center justify-center shadow-inner shrink-0">
-            {passed ? (
-              <Award size={36} className="text-amber-500" />
-            ) : (
-              <RotateCcw size={32} className="text-indigo-600" />
-            )}
+        <div className="flex-1 flex flex-col items-center justify-center py-2 text-center min-h-0 space-y-2 overflow-y-auto">
+          {/* Animated Aura Reaction */}
+          <div className="w-full max-w-sm shrink-0">
+            <AuraCharacter
+              mood={passed ? 'celebrating' : 'thinking'}
+              size="sm"
+              message={
+                passed
+                  ? "Mastery Complete! You demonstrated verified conceptual understanding. Outstanding deduction!"
+                  : "Practice Recommended! Review the insights below and try a fresh attempt to achieve mastery."
+              }
+              showSpeechBubble
+            />
           </div>
 
           <div>
@@ -884,14 +918,9 @@ export const MasteryAssessmentEngine: React.FC<MasteryAssessmentEngineProps> = (
               {passed ? <CheckCircle2 size={13} className="text-emerald-600" /> : <Lightbulb size={13} className="text-amber-600" />}
               <span>{passed ? 'Concept Mastery Verified' : 'Practice Recommended'}</span>
             </div>
-            <h2 className="text-lg sm:text-2xl font-black text-slate-900">
+            <h2 className="text-lg sm:text-xl font-black text-slate-900">
               {passed ? 'Mastery Complete!' : 'Assessment Concluded'}
             </h2>
-            <p className="text-xs text-slate-500 max-w-sm mx-auto mt-0.5">
-              {passed
-                ? 'Outstanding deduction! You have demonstrated verified mastery of this lesson topic.'
-                : 'Good attempt! Review the question explanations below and try a fresh question set.'}
-            </p>
           </div>
 
           {/* Metric Cards Grid */}

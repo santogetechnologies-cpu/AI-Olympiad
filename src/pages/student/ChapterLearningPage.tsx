@@ -17,10 +17,12 @@ import { LearningSidebar } from '../../components/learning/LearningSidebar'
 import { LearningExperienceDispatcher } from '../../components/learning/LearningExperienceDispatcher'
 import { LearningNavigationContext } from '../../components/learning/LearningNavigationContext'
 import { gameAudio } from '../../utils/gameAudio'
+import { auraSpeechService } from '../../services/auraSpeechService'
 import {
   Award, Sparkles, Check, ChevronRight, Video, BookOpen,
   Compass, FileEdit, Gamepad2, FlaskConical, Trophy
 } from 'lucide-react'
+import { GaioInteractiveBookApp } from '../../components/gaio/GaioInteractiveBookApp'
 
 import { supabase } from '../../lib/supabase'
 
@@ -111,9 +113,21 @@ export default function ChapterLearningPage() {
   const [isMobileDrawerOpen, setIsMobileDrawerOpen] = useState(false)
 
   const handleCloseSection = useCallback(() => {
+    auraSpeechService.stop()
     setMobileViewMode('sections')
     setSearchParams({})
   }, [setSearchParams])
+
+  // Stop any active Aura speech on section change or page unmount
+  useEffect(() => {
+    auraSpeechService.stop()
+  }, [currentSectionIdx])
+
+  useEffect(() => {
+    return () => {
+      auraSpeechService.stop()
+    }
+  }, [])
 
   // Synchronize currentSectionIdx & mobileViewMode when searchParams changes (browser back/forward/refresh)
   useEffect(() => {
@@ -437,28 +451,14 @@ export default function ChapterLearningPage() {
 
       setSections(canonicalSections)
 
-      // Restore stored progress from database & localStorage strictly for this chapter's 8 sections
+      // Restore stored progress from database strictly for this chapter's 8 sections
       try {
-        const canonicalSectionIds = new Set(canonicalSections.map(s => s.id))
-        let dbCompletedIds: string[] = []
-        if (studentId && isUuid(studentId)) {
-          const { data: dbProg } = await supabase
-            .from('student_content_progress')
-            .select('chapter_content_id, status')
-            .eq('student_id', studentId)
-            .eq('status', 'completed')
-          if (dbProg && dbProg.length > 0) {
-            dbCompletedIds = dbProg.map(p => p.chapter_content_id)
-          }
-        }
-
-        const stored = localStorage.getItem(`progress_${studentId}_${chapterId}`)
-        const localIds = stored ? JSON.parse(stored) : []
-        const validLocal = Array.isArray(localIds) ? localIds.filter(id => canonicalSectionIds.has(id)) : []
-        const validDb = dbCompletedIds.filter(id => canonicalSectionIds.has(id))
-        const mergedCompleted = Array.from(new Set([...validDb, ...validLocal]))
-        setCompletedSectionIds(mergedCompleted)
-      } catch {}
+        const canonicalIds = canonicalSections.map(s => s.id)
+        const completedIds = await progressService.getCompletedSectionIds(studentId, chapterId, canonicalIds)
+        setCompletedSectionIds(completedIds)
+      } catch (err) {
+        console.warn('Notice loading completed sections in chapter page:', err)
+      }
     } catch {
       toast.error('Failed to load chapter content')
     } finally {
@@ -490,47 +490,58 @@ export default function ChapterLearningPage() {
 
   // Section completion handler - ONLY called after authentic completion of required content/game
   const markSectionDone = async (sectionId: string) => {
-    if (!completedSectionIds.includes(sectionId)) {
-      const updated = [...completedSectionIds, sectionId]
-      setCompletedSectionIds(updated)
-      try {
-        localStorage.setItem(`progress_${studentId}_${chapterId}`, JSON.stringify(updated))
-        window.dispatchEvent(new CustomEvent('chapter_progress_updated', {
-          detail: { chapterId, studentId, completedSectionIds: updated }
-        }))
-      } catch {}
-
-      // Track progress event in database
-      await progressService.markCompleted(studentId, sectionId, orgId).catch(() => {})
-      await learningProgressTracker.trackSectionCompleted({
-        studentId,
-        orgId,
-        classId: currentGradeKey,
-        chapterId: chapterId || '',
-        sectionId,
-        xpReward: currentSection?.xpReward || 20,
-      })
-
-      // Check if all 8 sections completed
-      if (updated.length >= 8) {
-        try {
-          const res = await progressService.checkAndAdvanceClassProgression(studentId, orgId || 'default-org', chapterId)
-          if (res.classCompleted && res.nextClassName) {
-            setClassUnlockData({
-              completedClassName: res.currentClassName || 'Current Level',
-              nextClassName: res.nextClassName,
-              nextSubjectName: res.nextSubjectName || 'Next Curriculum',
-              nextGradeKey: res.nextGradeKey
-            })
-            setShowClassUnlockModal(true)
-          }
-        } catch (err) {
-          console.error('Progression check error:', err)
-        }
-      }
-
-      setStats(gamification.getStats(studentId))
+    // 1. Prevent duplicate completion records
+    if (completedSectionIds.includes(sectionId)) {
+      return
     }
+
+    // 2. Add to completed sections list
+    const updated = Array.from(new Set([...completedSectionIds, sectionId]))
+    setCompletedSectionIds(updated)
+
+    // 3. Persist genuine section completion record in database
+    await progressService.recordSectionCompletion({
+      studentId,
+      classId: currentGradeKey,
+      chapterId: chapterId || '',
+      sectionId,
+      organizationId: orgId,
+    })
+
+    // 4. Award XP (idempotently handled)
+    await learningProgressTracker.trackSectionCompleted({
+      studentId,
+      orgId,
+      classId: currentGradeKey,
+      chapterId: chapterId || '',
+      sectionId,
+      xpReward: currentSection?.xpReward || 20,
+    })
+
+    // 5. Notify UI of progress update
+    window.dispatchEvent(new CustomEvent('chapter_progress_updated', {
+      detail: { chapterId, studentId, completedSectionIds: updated, completedCount: updated.length }
+    }))
+
+    // 6. Chapter is complete ONLY when all 8 distinct sections are completed
+    if (updated.length === 8) {
+      try {
+        const res = await progressService.checkAndAdvanceClassProgression(studentId, orgId || 'default-org', chapterId)
+        if (res.classCompleted && res.nextClassName) {
+          setClassUnlockData({
+            completedClassName: res.currentClassName || 'Current Level',
+            nextClassName: res.nextClassName,
+            nextSubjectName: res.nextSubjectName || 'Next Curriculum',
+            nextGradeKey: res.nextGradeKey
+          })
+          setShowClassUnlockModal(true)
+        }
+      } catch (err) {
+        console.error('Progression check error:', err)
+      }
+    }
+
+    setStats(gamification.getStats(studentId))
   }
 
   const chapNum = parseInt(String(chapter?.chapter_number || '1'), 10)
@@ -626,6 +637,29 @@ export default function ChapterLearningPage() {
     if (k.includes('pg')) return 'pg'
     return 'primary'
   })()
+
+  // ─── CLASS 3 AUTHENTIC DIGITAL BOOK EXPERIENCE (GAIO Class 3 Book.pdf) ───
+  // Complete replacement of LMS template with exact interactive book experience
+  if (currentGradeKey === 'class3') {
+    const cNum = parseInt(String(chapter?.chapter_number || '1'), 10) || 1
+    return (
+      <AppLayout>
+        <div className="flex-1 flex flex-col w-full h-full min-h-0 bg-slate-900/5 overflow-hidden">
+          <GaioInteractiveBookApp
+            initialMonth={cNum >= 1 && cNum <= 6 ? cNum : 1}
+            studentName={user?.profile?.full_name || 'Super Student'}
+            onExit={() => navigate('/student/learning')}
+            onComplete={() => {
+              if (currentSection) {
+                markSectionDone(currentSection.id)
+              }
+              toast.success(`Congratulations! You completed Chapter ${cNum} in the GAIO Class 3 Book!`)
+            }}
+          />
+        </div>
+      </AppLayout>
+    )
+  }
 
   return (
     <LearningNavigationContext.Provider

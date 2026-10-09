@@ -11,7 +11,7 @@ export interface ExperienceComponentProps {
   chapterTitle: string
   topicTitle: string
   canonicalSection: any
-  config: any
+  config?: any
   isCompleted: boolean
   onComplete: () => void
   onJumpToSection?: (idx: number) => void
