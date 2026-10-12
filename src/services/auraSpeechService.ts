@@ -53,27 +53,47 @@ class AuraSpeechService {
   private pickBestVoice(voices: SpeechSynthesisVoice[]): SpeechSynthesisVoice | null {
     if (!voices || voices.length === 0) return null
 
-    // Target friendly natural English voices suitable for AI mascot Aura
-    const preferredKeywords = [
-      'natural',
-      'zira',
-      'samantha',
-      'google us english',
-      'jenny',
-      'aria',
-      'karen',
-      'victoria',
-      'female'
+    // Target bold, warm, friendly natural English MALE voices for Gaio AI Guide
+    const preferredMaleKeywords = [
+      'guy',
+      'david',
+      'george',
+      'mark',
+      'daniel',
+      'richard',
+      'james',
+      'oliver',
+      'male',
+      'google uk english male',
+      'microsoft david',
+      'microsoft guy',
+      'google us english'
     ]
 
-    for (const kw of preferredKeywords) {
+    for (const kw of preferredMaleKeywords) {
       const match = voices.find(
-        (v) => v.lang.toLowerCase().startsWith('en') && v.name.toLowerCase().includes(kw)
+        (v) =>
+          v.lang.toLowerCase().startsWith('en') &&
+          v.name.toLowerCase().includes(kw) &&
+          !v.name.toLowerCase().includes('female') &&
+          !v.name.toLowerCase().includes('zira') &&
+          !v.name.toLowerCase().includes('samantha')
       )
       if (match) return match
     }
 
-    // Secondary fallback: any English voice
+    // Secondary fallback: any English voice that is not explicitly female
+    const anyMaleEnglish = voices.find(
+      (v) =>
+        v.lang.toLowerCase().startsWith('en') &&
+        !v.name.toLowerCase().includes('female') &&
+        !v.name.toLowerCase().includes('zira') &&
+        !v.name.toLowerCase().includes('samantha') &&
+        !v.name.toLowerCase().includes('jenny')
+    )
+    if (anyMaleEnglish) return anyMaleEnglish
+
+    // General English fallback
     const anyEnglish = voices.find((v) => v.lang.toLowerCase().startsWith('en'))
     if (anyEnglish) return anyEnglish
 
@@ -203,8 +223,8 @@ class AuraSpeechService {
       // 3. Create utterance synchronously inside user click turn
       const utterance = new SpeechSynthesisUtterance(textToRead)
       utterance.lang = 'en-US'
-      utterance.rate = 1.0
-      utterance.pitch = 1.05
+      utterance.rate = 0.88 // A little slow, clear and patient for easy understanding
+      utterance.pitch = 0.92 // Bold, warm, resonant male voice
       utterance.volume = 1.0
 
       // 4. Select best available voice dynamically
