@@ -37,10 +37,8 @@ function ContentManagerNav(): NavItem[] {
 
 function StudentNav(): NavItem[] {
   return [
-    { label: 'Dashboard', href: '/student', icon: Home },
-    { label: 'My Learning', href: '/student/learning', icon: BookOpen },
-    { label: 'Assignments', href: '/student/assignments', icon: FileText },
-    { label: 'Quizzes', href: '/student/quizzes', icon: HelpCircle },
+    { label: 'Home', href: '/student', icon: Home },
+    { label: 'Learn', href: '/student/learning', icon: BookOpen },
     { label: 'Progress', href: '/student/progress', icon: BarChart3 },
     { label: 'Profile', href: '/student/profile', icon: User },
   ]
@@ -111,8 +109,8 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="flex h-screen bg-slate-50 overflow-hidden">
-      {/* Mobile overlay with backdrop-blur */}
-      {mobileOpen && (
+      {/* Mobile overlay with backdrop-blur (Only for non-students if opened) */}
+      {!isStudent && mobileOpen && (
         <div
           className="fixed inset-0 bg-slate-950/60 backdrop-blur-xs z-[60] lg:hidden transition-opacity duration-300 pointer-events-auto"
           onClick={(e) => {
@@ -123,13 +121,13 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
         />
       )}
 
-      {/* Sidebar Drawer (Top Z-Index on Mobile) */}
+      {/* Sidebar Drawer: Completely removed on mobile for students, desktop-only */}
       <aside
         className={`
-          fixed lg:relative inset-y-0 left-0 z-[70] flex flex-col
+          ${isStudent ? 'hidden lg:flex' : 'fixed lg:relative inset-y-0 left-0 z-[70] flex'} flex-col
           bg-slate-900 text-white transition-all duration-300 ease-in-out
           ${collapsed ? 'w-16' : 'w-72 max-w-[85vw] lg:w-60'}
-          ${mobileOpen ? 'translate-x-0 shadow-2xl pointer-events-auto' : '-translate-x-full lg:translate-x-0 pointer-events-none lg:pointer-events-auto'}
+          ${!isStudent && mobileOpen ? 'translate-x-0 shadow-2xl pointer-events-auto' : (!isStudent ? '-translate-x-full lg:translate-x-0 pointer-events-none lg:pointer-events-auto' : '')}
         `}
       >
         {/* Logo Header */}
@@ -232,26 +230,31 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
         {/* Top Header */}
         <header className="h-14 sm:h-16 bg-white border-b border-slate-200/90 flex items-center justify-between px-3 sm:px-6 flex-shrink-0 z-20">
           <div className="flex items-center gap-2.5 min-w-0">
-            {/* Mobile Sidebar Toggle Button */}
-            <button
-              type="button"
-              onClick={(e) => {
-                e.preventDefault()
-                e.stopPropagation()
-                setMobileOpen(prev => !prev)
-              }}
-              className="lg:hidden p-2 rounded-xl text-slate-700 hover:text-slate-900 bg-slate-100 hover:bg-slate-200 active:bg-slate-300 border border-slate-200/80 touch-manipulation cursor-pointer shrink-0 min-h-[38px] min-w-[38px] flex items-center justify-center relative z-30 transition-colors"
-              aria-label="Toggle navigation menu"
-              aria-expanded={mobileOpen}
-            >
-              <Menu size={20} />
-            </button>
-            <div className="lg:hidden flex items-center gap-1.5 min-w-0">
-              <div className="w-7 h-7 bg-blue-600 rounded-lg flex items-center justify-center shrink-0 shadow-2xs">
-                <GraduationCap size={15} className="text-white" />
+            {/* Mobile Sidebar Toggle Button - Only shown for non-students (admin) */}
+            {!isStudent && (
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault()
+                  e.stopPropagation()
+                  setMobileOpen(prev => !prev)
+                }}
+                className="lg:hidden p-2 rounded-xl text-slate-700 hover:text-slate-900 bg-slate-100 hover:bg-slate-200 active:bg-slate-300 border border-slate-200/80 touch-manipulation cursor-pointer shrink-0 min-h-[38px] min-w-[38px] flex items-center justify-center relative z-30 transition-colors"
+                aria-label="Toggle navigation menu"
+                aria-expanded={mobileOpen}
+              >
+                <Menu size={20} />
+              </button>
+            )}
+            <Link to={isStudent ? "/student" : "/admin"} className="flex items-center gap-2 min-w-0 group">
+              <div className="w-8 h-8 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center shrink-0 shadow-2xs group-hover:scale-105 transition-transform">
+                <GraduationCap size={17} className="text-white" />
               </div>
-              <span className="text-sm font-black text-slate-900 truncate">Nanjil LMS</span>
-            </div>
+              <div className="min-w-0">
+                <span className="text-sm font-black text-slate-900 leading-tight truncate block">Nanjil LMS</span>
+                <span className="text-[10px] text-blue-600 font-bold leading-tight truncate block">AI Olympiad</span>
+              </div>
+            </Link>
           </div>
 
           {/* Right Header Badges */}
@@ -291,36 +294,88 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
           </div>
         </header>
 
-        {/* Main Scrollable Content */}
-        <main className={`flex-1 overflow-y-auto overflow-x-hidden ${isStudent ? 'pb-20 lg:pb-0' : ''}`}>
-          {children}
-        </main>
+        {/* Main Content Viewport */}
+        {(() => {
+          const isLearningRoute = isStudent && location.pathname.startsWith('/student/learning')
+          return (
+            <main
+              className={`flex-1 ${
+                isLearningRoute
+                  ? 'overflow-hidden pb-[3.75rem] lg:pb-0 flex flex-col min-h-0'
+                  : `overflow-y-auto overflow-x-hidden ${isStudent ? 'pb-24 lg:pb-0' : ''}`
+              }`}
+            >
+              {children}
+            </main>
+          )
+        })()}
 
-        {/* Student Mobile Bottom Navigation Bar (Thumb-Friendly on 320px–430px) */}
+        {/* Student Mobile Bottom Navigation Bar (4 Items: Home, Learn, Progress, Profile) */}
         {isStudent && (
-          <nav className="fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200/90 lg:hidden flex items-center justify-around px-1 py-1.5 shadow-lg safe-area-bottom">
+          <nav
+            aria-label="Mobile Bottom Navigation"
+            className="fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200/90 lg:hidden flex items-center justify-around px-2 py-1.5 shadow-[0_-4px_24px_rgba(15,23,42,0.06)] pb-[calc(0.4rem+env(safe-area-inset-bottom,0px))]"
+          >
             {[
-              { label: 'Home', href: '/student', icon: Home },
-              { label: 'Learn', href: '/student/learning', icon: BookOpen },
-              { label: 'Tasks', href: '/student/assignments', icon: FileText },
-              { label: 'Quizzes', href: '/student/quizzes', icon: HelpCircle },
-              { label: 'Progress', href: '/student/progress', icon: BarChart3 },
+              {
+                label: 'Home',
+                href: '/student',
+                icon: Home,
+                isActive: location.pathname === '/student',
+              },
+              {
+                label: 'Learn',
+                href: '/student/learning',
+                icon: BookOpen,
+                isActive:
+                  location.pathname.startsWith('/student/learning') ||
+                  location.pathname.startsWith('/student/book') ||
+                  location.pathname.startsWith('/book'),
+              },
+              {
+                label: 'Progress',
+                href: '/student/progress',
+                icon: BarChart3,
+                isActive: location.pathname.startsWith('/student/progress'),
+              },
+              {
+                label: 'Profile',
+                href: '/student/profile',
+                icon: User,
+                isActive: location.pathname.startsWith('/student/profile'),
+              },
             ].map((tab) => {
               const Icon = tab.icon
-              const isActive = location.pathname === tab.href ||
-                (tab.href !== '/student' && location.pathname.startsWith(tab.href))
+              const isActive = tab.isActive
               return (
                 <Link
                   key={tab.href}
                   to={tab.href}
-                  className={`flex flex-col items-center justify-center flex-1 min-h-[44px] py-1 px-1 rounded-xl transition-all duration-150 touch-manipulation active:scale-95 ${
+                  className={`flex flex-col items-center justify-center flex-1 min-h-[50px] py-1 px-1 rounded-2xl transition-all duration-200 touch-manipulation active:scale-95 group relative ${
                     isActive
-                      ? 'text-blue-600 font-bold bg-blue-50/80'
-                      : 'text-slate-500 hover:text-slate-800'
+                      ? 'text-blue-600 font-bold bg-blue-50/80 shadow-2xs'
+                      : 'text-slate-500 hover:text-slate-900 hover:bg-slate-50/60'
                   }`}
                 >
-                  <Icon size={19} className={isActive ? 'stroke-[2.5]' : 'stroke-2'} />
-                  <span className="text-[10px] mt-0.5 leading-none tracking-tight">{tab.label}</span>
+                  <div
+                    className={`flex items-center justify-center p-1 rounded-xl transition-all duration-200 ${
+                      isActive
+                        ? 'bg-blue-600 text-white shadow-xs'
+                        : 'text-slate-500 group-hover:text-slate-800'
+                    }`}
+                  >
+                    <Icon size={18} className={isActive ? 'stroke-[2.5]' : 'stroke-2'} />
+                  </div>
+                  <span
+                    className={`text-[11px] mt-0.5 leading-none tracking-tight font-semibold ${
+                      isActive ? 'text-blue-600 font-bold' : 'text-slate-500'
+                    }`}
+                  >
+                    {tab.label}
+                  </span>
+                  {isActive && (
+                    <span className="w-1 h-1 rounded-full bg-blue-600 mt-0.5" />
+                  )}
                 </Link>
               )
             })}

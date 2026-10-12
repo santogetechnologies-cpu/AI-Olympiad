@@ -1,0 +1,4480 @@
+[
+  {
+    "id": "class4-p1-s1",
+    "pdfPageNumber": 1,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 0,
+    "monthTitle": "INTRODUCTION",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "AI OLYMPIAD • CLASS 4",
+    "pageHeaderTitle": "COURSEBOOK & INTERACTIVE LAB",
+    "title": "Global AI Olympiad: Class 4",
+    "subtitle": "Beginner AI Coursebook & Interactive Lab • Mascot Robo-Pi 🤖",
+    "contentBlockTitle": "Book Cover",
+    "interactionType": "book_cover",
+    "sourcePdfImage": "/gaio/class4/pages/cover.png",
+    "payload": {
+      "gradeKey": "class4",
+      "gradeTitle": "Class 4",
+      "mascotName": "Robo-Pi",
+      "mascotEmoji": "🤖",
+      "tagline": "See • Learn • Create • Protect"
+    },
+    "screenIndex": 0,
+    "screenNumber": 1
+  },
+  {
+    "id": "class4-p2-s1",
+    "pdfPageNumber": 2,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 0,
+    "monthTitle": "INTRODUCTION",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "AI OLYMPIAD • CLASS 4",
+    "pageHeaderTitle": "MEET ROBO-PI",
+    "title": "Welcome to Class 4! Meet Robo-Pi 🤖",
+    "subtitle": "Your friendly robotic guide through 6 exciting AI chapters!",
+    "contentBlockTitle": "Meet Robo-Pi",
+    "interactionType": "welcome_bolt",
+    "sourcePdfImage": "/gaio/class4/pages/welcome.png",
+    "payload": {
+      "mascotName": "Robo-Pi",
+      "mascotEmoji": "🤖",
+      "welcomeSpeech": "Hello, champion! I am Robo-Pi, your friendly AI guide. Together we will uncover where AI hides, how smart machines think, and how you can be a responsible cyber captain!",
+      "skills": [
+        "Pattern Spotting 🔍",
+        "Sensor Navigation 🦾",
+        "Prompt Engineering 🧑‍🍳",
+        "Cyber Safety 🛡️"
+      ]
+    },
+    "screenIndex": 1,
+    "screenNumber": 2
+  },
+  {
+    "id": "class4-p3-s1",
+    "pdfPageNumber": 3,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 0,
+    "monthTitle": "INTRODUCTION",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "AI OLYMPIAD • CLASS 4",
+    "pageHeaderTitle": "HOW TO USE THIS BOOK",
+    "title": "How to Learn with Robo-Lab",
+    "subtitle": "Look for special icons in every lesson to guide your journey!",
+    "contentBlockTitle": "Book Guide",
+    "interactionType": "book_guide",
+    "sourcePdfImage": "/gaio/class4/pages/guide.png",
+    "payload": {
+      "signs": [
+        {
+          "icon": "💡",
+          "title": "Did You Know?",
+          "desc": "Fascinating real-world discoveries and surprising fun facts."
+        },
+        {
+          "icon": "🧠",
+          "title": "Think Fast!",
+          "desc": "Puzzles and mental challenges that train your logic muscles."
+        },
+        {
+          "icon": "✏️",
+          "title": "Try It Out!",
+          "desc": "Hands-on creative activities, drawings, and coding simulations."
+        },
+        {
+          "icon": "⭐",
+          "title": "Golden Remember",
+          "desc": "The most important concepts to remember for your Olympiad."
+        }
+      ]
+    },
+    "screenIndex": 2,
+    "screenNumber": 3
+  },
+  {
+    "id": "class4-p4-s1",
+    "pdfPageNumber": 4,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 0,
+    "monthTitle": "INTRODUCTION",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "AI OLYMPIAD • CLASS 4",
+    "pageHeaderTitle": "STUDENT EXPLORER BADGE",
+    "title": "My AI Explorer Passport",
+    "subtitle": "Enter your explorer credentials to begin your quest!",
+    "contentBlockTitle": "Student Profile",
+    "interactionType": "student_profile",
+    "sourcePdfImage": "/gaio/class4/pages/profile.png",
+    "payload": {
+      "gradeTitle": "Class 4",
+      "defaultRank": "Junior Tech Cadet"
+    },
+    "screenIndex": 3,
+    "screenNumber": 4
+  },
+  {
+    "id": "class4-p4-s2",
+    "pdfPageNumber": 4,
+    "pdfPartIndex": 2,
+    "pdfTotalParts": 2,
+    "monthNumber": 0,
+    "monthTitle": "INTRODUCTION",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "AI OLYMPIAD • CLASS 4",
+    "pageHeaderTitle": "6-CHAPTER QUEST MAP",
+    "title": "Your 6-Chapter Learning Adventure",
+    "subtitle": "Travel from AI Basics to Responsible Digital Citizenship!",
+    "contentBlockTitle": "Journey Map",
+    "interactionType": "journey_map",
+    "sourcePdfImage": "/gaio/class4/pages/journey.png",
+    "payload": {
+      "chapters": [
+        {
+          "num": 1,
+          "title": "AI Basics",
+          "subtitle": "Where Is AI Hiding? & Meet the Smart Machines"
+        },
+        {
+          "num": 2,
+          "title": "Communicate with AI",
+          "subtitle": "Say It Clearly! & Mission: Instructions"
+        },
+        {
+          "num": 3,
+          "title": "AI Applications",
+          "subtitle": "AI in My Mobile & AI on the Move"
+        },
+        {
+          "num": 4,
+          "title": "AI and Career",
+          "subtitle": "Future Job Hunt & My Technology Talent"
+        },
+        {
+          "num": 5,
+          "title": "AI Tools",
+          "subtitle": "Create a Story & Design with AI"
+        },
+        {
+          "num": 6,
+          "title": "Responsible AI",
+          "subtitle": "Secret or Share? & AI: Right or Wrong?"
+        }
+      ]
+    },
+    "screenIndex": 4,
+    "screenNumber": 5
+  },
+  {
+    "id": "class4-m1-cover",
+    "pdfPageNumber": 20,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 1,
+    "monthTitle": "CHAPTER 1: AI BASICS",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "CHAPTER 1 • CLASS 4",
+    "pageHeaderTitle": "AI BASICS",
+    "title": "Chapter 1: AI Basics",
+    "subtitle": "Where Is AI Hiding? & Meet the Smart Machines",
+    "contentBlockTitle": "Chapter Cover",
+    "interactionType": "month_cover",
+    "sourcePdfImage": "/gaio/class4/pages/ch1_cover.png",
+    "payload": {
+      "monthNumber": 1,
+      "monthTitle": "AI Basics",
+      "subtitle": "Where Is AI Hiding? & Meet the Smart Machines",
+      "topics": [
+        {
+          "topicNumber": 1,
+          "title": "Where Is AI Hiding?",
+          "area": "Identify the invisible AI systems embedded in daily gadgets, streaming platforms, camera portrait mode, autocomplete keyboards, and voice helpers."
+        },
+        {
+          "topicNumber": 2,
+          "title": "Meet the Smart Machines",
+          "area": "Understand the Sense-Think-Act cycle that powers smart machines, explore autonomous rovers and drones, and discover helper robots."
+        }
+      ]
+    },
+    "screenIndex": 5,
+    "screenNumber": 6
+  },
+  {
+    "id": "class4-m1-t1-learn",
+    "pdfPageNumber": 21,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 2,
+    "monthNumber": 1,
+    "monthTitle": "CHAPTER 1: AI BASICS",
+    "topicNumber": 1,
+    "topicTitle": "Where Is AI Hiding?",
+    "pageHeaderCategory": "CHAPTER 1 • TOPIC 1",
+    "pageHeaderTitle": "LET'S LEARN: WHERE IS AI HIDING?",
+    "title": "Let's Learn: Where Is AI Hiding?",
+    "subtitle": "Identify the invisible AI systems embedded in daily gadgets, streaming platforms, camera portrait mode, autocomplete keyboards, and voice helpers.",
+    "contentBlockTitle": "Core Concepts",
+    "interactionType": "lets_learn_intro",
+    "sourcePdfImage": "/gaio/class4/pages/m1_t1_learn.png",
+    "payload": {
+      "topicNumber": 1,
+      "topicTitle": "Where Is AI Hiding?",
+      "area": "AI Basics",
+      "concepts": [
+        "Spot AI hiding in everyday devices: camera portrait mode, keyboard autocorrect, and video recommendations",
+        "Distinguish between normal machines (switch on/off) and AI machines (learn from data and patterns)",
+        "Understand that AI needs data just like humans need food to grow and learn"
+      ],
+      "helpers": [
+        "Smartphone camera portrait mode automatically blurring backgrounds around smiling faces",
+        "Streaming platforms suggesting animal documentaries after you watch dinosaur videos",
+        "Email apps filtering out noisy scam emails into the spam folder using text filters"
+      ]
+    },
+    "screenIndex": 6,
+    "screenNumber": 7
+  },
+  {
+    "id": "class4-m1-t1-words",
+    "pdfPageNumber": 22,
+    "pdfPartIndex": 2,
+    "pdfTotalParts": 2,
+    "monthNumber": 1,
+    "monthTitle": "CHAPTER 1: AI BASICS",
+    "topicNumber": 1,
+    "topicTitle": "Where Is AI Hiding?",
+    "pageHeaderCategory": "CHAPTER 1 • TOPIC 1",
+    "pageHeaderTitle": "MAGIC WORDS & MENTAL MODEL",
+    "title": "Magic Words: Where Is AI Hiding?",
+    "subtitle": "Key vocabulary to unlock your AI powers!",
+    "contentBlockTitle": "Magic Words",
+    "interactionType": "lets_learn_words",
+    "sourcePdfImage": "/gaio/class4/pages/m1_t1_words.png",
+    "payload": {
+      "magicWords": [
+        {
+          "word": "Data",
+          "meaning": "Information like photos, numbers, words, and sounds that AI learns from"
+        },
+        {
+          "word": "Normal Machine",
+          "meaning": "A machine with fixed buttons that never learns or adapts (like a ceiling fan)"
+        },
+        {
+          "word": "Recommendation System",
+          "meaning": "An AI helper that suggests videos or songs you might enjoy based on your past picks"
+        }
+      ],
+      "analogy": "AI in daily life is like an invisible helpful assistant sitting inside your smartphone: when you type a message with a typo, it gently taps the right letter into place before you even notice!"
+    },
+    "screenIndex": 7,
+    "screenNumber": 8
+  },
+  {
+    "id": "class4-m1-t1-story",
+    "pdfPageNumber": 22,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 1,
+    "monthTitle": "CHAPTER 1: AI BASICS",
+    "topicNumber": 1,
+    "topicTitle": "Where Is AI Hiding?",
+    "pageHeaderCategory": "CHAPTER 1 • TOPIC 1",
+    "pageHeaderTitle": "PICTURE STORY & MYSTERY",
+    "title": "The Story Behind Where Is AI Hiding?",
+    "subtitle": "Robo-Pi has a mystery: AI is secretly living inside your living room, your TV remote, and your camera. Can you spot the invisible brain?",
+    "contentBlockTitle": "Picture Story",
+    "interactionType": "picture_story_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m1_t1_story.png",
+    "payload": {
+      "storyTitle": "Robo-Pi has a mystery: AI is secretly living inside your living room, your TV remote, and your camera. Can you spot the invisible brain?",
+      "panels": [
+        {
+          "panelNumber": 1,
+          "text": "While waiting for the school bus, Maya typed \"Tomorow we hav\" on her mother’s phone. The keyboard immediately popped up with \"Tomorrow we have\", saving her time...",
+          "imageSrc": "/gaio/scene1.png"
+        },
+        {
+          "panelNumber": 2,
+          "text": "Look for cameras, microphones, or GPS chips that collect information (data).",
+          "imageSrc": "/gaio/scene2.png"
+        },
+        {
+          "panelNumber": 3,
+          "text": "The machine searches the data for familiar shapes, sounds, or words it studied earlier.",
+          "imageSrc": "/gaio/scene3.png"
+        },
+        {
+          "panelNumber": 4,
+          "text": "The device acts on its decision in a fraction of a second to make your life easier.",
+          "imageSrc": "/gaio/scene4.png"
+        }
+      ]
+    },
+    "screenIndex": 8,
+    "screenNumber": 9
+  },
+  {
+    "id": "class4-m1-t1-steps",
+    "pdfPageNumber": 23,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 1,
+    "monthTitle": "CHAPTER 1: AI BASICS",
+    "topicNumber": 1,
+    "topicTitle": "Where Is AI Hiding?",
+    "pageHeaderCategory": "CHAPTER 1 • TOPIC 1",
+    "pageHeaderTitle": "STEP-BY-STEP DISCOVERY",
+    "title": "Guided Discovery: Where Is AI Hiding?",
+    "subtitle": "Follow the 3-step computational workflow",
+    "contentBlockTitle": "Discovery Steps",
+    "interactionType": "lets_do_it_steps",
+    "sourcePdfImage": "/gaio/class4/pages/m1_t1_steps.png",
+    "payload": {
+      "topicTitle": "Where Is AI Hiding?",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "1. Spotting the Sensor Clues",
+          "desc": "Look for cameras, microphones, or GPS chips that collect information (data).",
+          "detail": "Sensors act as the digital eyes and ears of the machine.",
+          "code": "# Sensor Data Collection\nsensor_type = \"camera_lens\"\nframe_data = capture_room_pixels()"
+        },
+        {
+          "stepNumber": 2,
+          "title": "2. Detecting Pattern Recognition",
+          "desc": "The machine searches the data for familiar shapes, sounds, or words it studied earlier.",
+          "detail": "Just like spotting a friend in a crowd, AI matches pixels to learned face patterns.",
+          "code": "if detect_human_face(frame_data):\n    apply_portrait_blur(background=True)"
+        },
+        {
+          "stepNumber": 3,
+          "title": "3. Providing Smart Assistance",
+          "desc": "The device acts on its decision in a fraction of a second to make your life easier.",
+          "detail": "From auto-suggesting words to clearing photo glare, AI works quietly in the background.",
+          "code": "show_recommendation([\"Space Rockets\", \"Cute Animals\"])"
+        }
+      ]
+    },
+    "screenIndex": 9,
+    "screenNumber": 10
+  },
+  {
+    "id": "class4-m1-t1-game",
+    "pdfPageNumber": 24,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 1,
+    "monthTitle": "CHAPTER 1: AI BASICS",
+    "topicNumber": 1,
+    "topicTitle": "Where Is AI Hiding?",
+    "pageHeaderCategory": "CHAPTER 1 • TOPIC 1",
+    "pageHeaderTitle": "GAME CHALLENGE & LAB",
+    "title": "AI Detective: The Invisible Signal Hunt",
+    "subtitle": "Scan room objects with the Digital Magnifier, identify the 3 AI-powered gadgets, and explain what pattern each gadget recognises.",
+    "contentBlockTitle": "Interactive Game",
+    "interactionType": "lets_do_it_reflection",
+    "sourcePdfImage": "/gaio/class4/pages/m1_t1_game.png",
+    "payload": {
+      "topicTitle": "Where Is AI Hiding?",
+      "talkPrompt": "Robo-Pi needs your help! The Mystery Mansion has 5 rooms with hidden gadgets. Some gadgets are ordinary wooden or electric tools, while others contain secret AI chips emitting glowing blue sensor signals.",
+      "drawPrompt": "Rule 1: Click any object to activate the Sensor Scanner. • Rule 2: If the item learns, decides, or recognises patterns, tag it as \"AI FOUND!\". • Rule 3: If the item only follows a physical switch or manual motion, tag it as \"NORMAL TOOL\".",
+      "gameTitle": "AI Detective: The Invisible Signal Hunt",
+      "objective": "Scan room objects with the Digital Magnifier, identify the 3 AI-powered gadgets, and explain what pattern each gadget recognises.",
+      "choices": [
+        "Scan Living Room: Smart TV Voice Remote vs Plain Plastic Clock",
+        "Scan Kitchen: Robot Vacuum Floor Mapper vs Traditional Broom",
+        "Scan Study Desk: Smartphone Face Unlock vs Wooden 30cm Ruler"
+      ],
+      "points": 300,
+      "badge": "Certified AI Detective 🕵️‍♂️"
+    },
+    "screenIndex": 10,
+    "screenNumber": 11
+  },
+  {
+    "id": "class4-m1-t1-match",
+    "pdfPageNumber": 25,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 1,
+    "monthTitle": "CHAPTER 1: AI BASICS",
+    "topicNumber": 1,
+    "topicTitle": "Where Is AI Hiding?",
+    "pageHeaderCategory": "CHAPTER 1 • TOPIC 1",
+    "pageHeaderTitle": "CONCEPT MATCHER",
+    "title": "Match the Concepts: Where Is AI Hiding?",
+    "subtitle": "Connect each term to its matching definition",
+    "contentBlockTitle": "Matching Activity",
+    "interactionType": "worksheet_matching",
+    "sourcePdfImage": "/gaio/class4/pages/m1_t1_match.png",
+    "payload": {
+      "topicTitle": "Where Is AI Hiding?",
+      "taskTitle": "Match each term to its true meaning",
+      "pairs": [
+        {
+          "id": "p1",
+          "leftId": "l1",
+          "rightId": "r1",
+          "leftText": "Data",
+          "rightText": "Information like photos, numbers, words, and sounds that AI learns from"
+        },
+        {
+          "id": "p2",
+          "leftId": "l2",
+          "rightId": "r2",
+          "leftText": "Normal Machine",
+          "rightText": "A machine with fixed buttons that never learns or adapts (like a ceiling fan)"
+        },
+        {
+          "id": "p3",
+          "leftId": "l3",
+          "rightId": "r3",
+          "leftText": "Recommendation System",
+          "rightText": "An AI helper that suggests videos or songs you might enjoy based on your past picks"
+        }
+      ]
+    },
+    "screenIndex": 11,
+    "screenNumber": 12
+  },
+  {
+    "id": "class4-m1-t1-quiz",
+    "pdfPageNumber": 26,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 1,
+    "monthTitle": "CHAPTER 1: AI BASICS",
+    "topicNumber": 1,
+    "topicTitle": "Where Is AI Hiding?",
+    "pageHeaderCategory": "CHAPTER 1 • TOPIC 1",
+    "pageHeaderTitle": "OLYMPIAD PRACTICE QUIZ",
+    "title": "Olympiad Quiz: Where Is AI Hiding?",
+    "subtitle": "Test your knowledge with official Olympiad questions!",
+    "contentBlockTitle": "Olympiad Quiz",
+    "interactionType": "quiz_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m1_t1_quiz.png",
+    "payload": {
+      "topicTitle": "Where Is AI Hiding?",
+      "questions": [
+        {
+          "id": 1,
+          "q": "Olympiad Stage 1: Which of the following is the best definition of Artificial Intelligence for Std 4?",
+          "options": [
+            "A walking metal toy that can clean dishes and fly",
+            "A computer or machine created by humans that can learn from data and act smart",
+            "A magical battery that never runs out of power",
+            "An internet cable that connects computers across cities"
+          ],
+          "correct": 1,
+          "explanation": "Artificial = made by humans; Intelligence = ability to learn, think, and solve problems from data.",
+          "hint": "Break the words into \"Artificial\" (human-made) and \"Intelligence\" (smart learning).",
+          "difficulty": "Olympiad Stage 1"
+        },
+        {
+          "id": 2,
+          "q": "Olympiad Stage 2: Rohan takes a photograph of his pet dog. The camera screen immediately draws a yellow square around the dog’s eyes. Which AI capability is at work?",
+          "options": [
+            "Sound wave acoustic filtering",
+            "Computer Vision pattern recognition",
+            "Battery temperature regulation",
+            "Mechanical gear rotation"
+          ],
+          "correct": 1,
+          "explanation": "Computer Vision allows software to detect and locate visual features like eyes, ears, and faces in images.",
+          "hint": "Which branch of AI gives computers the ability to \"see\" and recognise pictures?",
+          "difficulty": "Olympiad Stage 2"
+        },
+        {
+          "id": 3,
+          "q": "Olympiad Championship: An AI was trained to recognise cats, but all the training pictures were of orange cats sitting indoors. When shown a photo of a black cat climbing a tree, the AI guessed \"Squirrel\". Why did this happen?",
+          "options": [
+            "The AI was sleepy and tired from looking at photos",
+            "The AI only learned patterns from orange indoor cat data and lacked varied examples",
+            "Black cats are not actually members of the feline family",
+            "The computer screen brightness was turned down too low"
+          ],
+          "correct": 1,
+          "explanation": "AI can only learn from the data examples it was given. Incomplete or biased training data leads to mistakes on new, unfamiliar examples.",
+          "hint": "Think about what kind of examples the AI was fed during its learning stage.",
+          "difficulty": "Olympiad Championship"
+        }
+      ]
+    },
+    "screenIndex": 12,
+    "screenNumber": 13
+  },
+  {
+    "id": "class4-m1-t2-learn",
+    "pdfPageNumber": 27,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 2,
+    "monthNumber": 1,
+    "monthTitle": "CHAPTER 1: AI BASICS",
+    "topicNumber": 2,
+    "topicTitle": "Meet the Smart Machines",
+    "pageHeaderCategory": "CHAPTER 1 • TOPIC 2",
+    "pageHeaderTitle": "LET'S LEARN: MEET THE SMART MACHINES",
+    "title": "Let's Learn: Meet the Smart Machines",
+    "subtitle": "Understand the Sense-Think-Act cycle that powers smart machines, explore autonomous rovers and drones, and discover helper robots.",
+    "contentBlockTitle": "Core Concepts",
+    "interactionType": "lets_learn_intro",
+    "sourcePdfImage": "/gaio/class4/pages/m1_t2_learn.png",
+    "payload": {
+      "topicNumber": 2,
+      "topicTitle": "Meet the Smart Machines",
+      "area": "AI Basics",
+      "concepts": [
+        "Master the 3-step cycle of smart machines: SENSE (sensors), THINK (AI brain), ACT (motors and speakers)",
+        "Learn about autonomous machines: self-driving shuttles, delivery drones, and Mars rovers",
+        "Discover helper robots in factories, deep oceans, and hospitals that do dangerous or dull work"
+      ],
+      "helpers": [
+        "Robot vacuum cleaners mapping living room corners and reversing away from staircase drops",
+        "Self-driving shuttles scanning pedestrians at crosswalks and gently braking to a stop",
+        "Agricultural drones spraying fertilizer only on diseased crop patches detected by cameras"
+      ]
+    },
+    "screenIndex": 13,
+    "screenNumber": 14
+  },
+  {
+    "id": "class4-m1-t2-words",
+    "pdfPageNumber": 28,
+    "pdfPartIndex": 2,
+    "pdfTotalParts": 2,
+    "monthNumber": 1,
+    "monthTitle": "CHAPTER 1: AI BASICS",
+    "topicNumber": 2,
+    "topicTitle": "Meet the Smart Machines",
+    "pageHeaderCategory": "CHAPTER 1 • TOPIC 2",
+    "pageHeaderTitle": "MAGIC WORDS & MENTAL MODEL",
+    "title": "Magic Words: Meet the Smart Machines",
+    "subtitle": "Key vocabulary to unlock your AI powers!",
+    "contentBlockTitle": "Magic Words",
+    "interactionType": "lets_learn_words",
+    "sourcePdfImage": "/gaio/class4/pages/m1_t2_words.png",
+    "payload": {
+      "magicWords": [
+        {
+          "word": "SENSE",
+          "meaning": "Using cameras, radar, or ultrasonic waves to collect information from surroundings"
+        },
+        {
+          "word": "THINK",
+          "meaning": "The computer processor deciding what to do based on sensor signals and rules"
+        },
+        {
+          "word": "ACT",
+          "meaning": "Motors, wheels, or robotic grippers carrying out the physical movement"
+        }
+      ],
+      "analogy": "A smart robot is like an explorer wearing night-vision goggles and hiking boots: its sensors explore the path, its computer brain picks the safest trail, and its motors walk forward without slipping!"
+    },
+    "screenIndex": 14,
+    "screenNumber": 15
+  },
+  {
+    "id": "class4-m1-t2-story",
+    "pdfPageNumber": 28,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 1,
+    "monthTitle": "CHAPTER 1: AI BASICS",
+    "topicNumber": 2,
+    "topicTitle": "Meet the Smart Machines",
+    "pageHeaderCategory": "CHAPTER 1 • TOPIC 2",
+    "pageHeaderTitle": "PICTURE STORY & MYSTERY",
+    "title": "The Story Behind Meet the Smart Machines",
+    "subtitle": "How does a robot vacuum navigate around furniture without bumping into walls, and how can space rovers explore the red deserts of Mars all by themselves?",
+    "contentBlockTitle": "Picture Story",
+    "interactionType": "picture_story_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m1_t2_story.png",
+    "payload": {
+      "storyTitle": "How does a robot vacuum navigate around furniture without bumping into walls, and how can space rovers explore the red deserts of Mars all by themselves?",
+      "panels": [
+        {
+          "panelNumber": 1,
+          "text": "On Mars, the Perseverance rover spotted a jagged rock 3 meters ahead. Because human radio signals take many minutes to travel from Earth, Perseverance’s AI Auto...",
+          "imageSrc": "/gaio/scene1.png"
+        },
+        {
+          "panelNumber": 2,
+          "text": "Sensors measure distance to walls, ambient light levels, or surface temperatures.",
+          "imageSrc": "/gaio/scene2.png"
+        },
+        {
+          "panelNumber": 3,
+          "text": "The onboard AI evaluates whether the path ahead is clear or blocked.",
+          "imageSrc": "/gaio/scene3.png"
+        },
+        {
+          "panelNumber": 4,
+          "text": "The microcontroller sends electrical pulses to the wheel motors to execute the turn.",
+          "imageSrc": "/gaio/scene4.png"
+        }
+      ]
+    },
+    "screenIndex": 15,
+    "screenNumber": 16
+  },
+  {
+    "id": "class4-m1-t2-steps",
+    "pdfPageNumber": 29,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 1,
+    "monthTitle": "CHAPTER 1: AI BASICS",
+    "topicNumber": 2,
+    "topicTitle": "Meet the Smart Machines",
+    "pageHeaderCategory": "CHAPTER 1 • TOPIC 2",
+    "pageHeaderTitle": "STEP-BY-STEP DISCOVERY",
+    "title": "Guided Discovery: Meet the Smart Machines",
+    "subtitle": "Follow the 3-step computational workflow",
+    "contentBlockTitle": "Discovery Steps",
+    "interactionType": "lets_do_it_steps",
+    "sourcePdfImage": "/gaio/class4/pages/m1_t2_steps.png",
+    "payload": {
+      "topicTitle": "Meet the Smart Machines",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "1. SENSE: Capturing Environmental Signals",
+          "desc": "Sensors measure distance to walls, ambient light levels, or surface temperatures.",
+          "detail": "Ultrasonic sensors bounce sound waves to measure how far away an obstacle is.",
+          "code": "ultrasonic_distance = read_distance_sensor() # e.g. 12 cm"
+        },
+        {
+          "stepNumber": 2,
+          "title": "2. THINK: Computing the Next Decision",
+          "desc": "The onboard AI evaluates whether the path ahead is clear or blocked.",
+          "detail": "If the distance is less than 20 cm, the computer decides to steer left.",
+          "code": "if ultrasonic_distance < 20:\n    decision = \"TURN_LEFT_90_DEG\"\nelse:\n    decision = \"MOVE_FORWARD\""
+        },
+        {
+          "stepNumber": 3,
+          "title": "3. ACT: Triggering Mechanical Motors",
+          "desc": "The microcontroller sends electrical pulses to the wheel motors to execute the turn.",
+          "detail": "The robot smoothly spins and continues vacuuming or exploring without crashing.",
+          "code": "execute_motor_command(decision, speed=30)"
+        }
+      ]
+    },
+    "screenIndex": 16,
+    "screenNumber": 17
+  },
+  {
+    "id": "class4-m1-t2-game",
+    "pdfPageNumber": 30,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 1,
+    "monthTitle": "CHAPTER 1: AI BASICS",
+    "topicNumber": 2,
+    "topicTitle": "Meet the Smart Machines",
+    "pageHeaderCategory": "CHAPTER 1 • TOPIC 2",
+    "pageHeaderTitle": "GAME CHALLENGE & LAB",
+    "title": "Sense-Think-Act Mission Commander",
+    "subtitle": "Safely guide Rover Pi to 3 crystal sample sites and reach the charging beacon without tumbling into a crater.",
+    "contentBlockTitle": "Interactive Game",
+    "interactionType": "lets_do_it_reflection",
+    "sourcePdfImage": "/gaio/class4/pages/m1_t2_game.png",
+    "payload": {
+      "topicTitle": "Meet the Smart Machines",
+      "talkPrompt": "You are Mission Commander for Rover Pi in an alien volcanic maze. Lava cracks, boulder fields, and crystal sample sites lie ahead. You must equip the correct sensor, program the thinking rule, and engage the proper motor action.",
+      "drawPrompt": "Rule 1: Select the matching sensor for the obstacle (e.g. Infrared Heat Sensor for Lava, LiDAR for Boulders). • Rule 2: Choose the logical Think Rule (IF distance < 1m THEN Stop and Reverse). • Rule 3: Execute the Act Motor (Pivot Right, Lower Drill Arm, Accelerate).",
+      "gameTitle": "Sense-Think-Act Mission Commander",
+      "objective": "Safely guide Rover Pi to 3 crystal sample sites and reach the charging beacon without tumbling into a crater.",
+      "choices": [
+        "Encounter 1: Deep Volcanic Fissure — Ultrasonic Depth Sensor + \"IF fissure depth > 50cm THEN Turn 90°\" + Right Wheel Motor",
+        "Encounter 2: Rare Blue Crystal — Optical Colour Camera + \"IF hue == Blue THEN Deploy Arm\" + Robotic Arm Actuator",
+        "Encounter 3: Sudden Dust Storm — Barometric Pressure Sensor + \"IF wind > 40km/h THEN Lock Stabilisers\" + Magnetic Foot Clamps"
+      ],
+      "points": 350,
+      "badge": "Autonomous Systems Commander 🦾"
+    },
+    "screenIndex": 17,
+    "screenNumber": 18
+  },
+  {
+    "id": "class4-m1-t2-match",
+    "pdfPageNumber": 31,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 1,
+    "monthTitle": "CHAPTER 1: AI BASICS",
+    "topicNumber": 2,
+    "topicTitle": "Meet the Smart Machines",
+    "pageHeaderCategory": "CHAPTER 1 • TOPIC 2",
+    "pageHeaderTitle": "CONCEPT MATCHER",
+    "title": "Match the Concepts: Meet the Smart Machines",
+    "subtitle": "Connect each term to its matching definition",
+    "contentBlockTitle": "Matching Activity",
+    "interactionType": "worksheet_matching",
+    "sourcePdfImage": "/gaio/class4/pages/m1_t2_match.png",
+    "payload": {
+      "topicTitle": "Meet the Smart Machines",
+      "taskTitle": "Match each term to its true meaning",
+      "pairs": [
+        {
+          "id": "p1",
+          "leftId": "l1",
+          "rightId": "r1",
+          "leftText": "SENSE",
+          "rightText": "Using cameras, radar, or ultrasonic waves to collect information from surroundings"
+        },
+        {
+          "id": "p2",
+          "leftId": "l2",
+          "rightId": "r2",
+          "leftText": "THINK",
+          "rightText": "The computer processor deciding what to do based on sensor signals and rules"
+        },
+        {
+          "id": "p3",
+          "leftId": "l3",
+          "rightId": "r3",
+          "leftText": "ACT",
+          "rightText": "Motors, wheels, or robotic grippers carrying out the physical movement"
+        }
+      ]
+    },
+    "screenIndex": 18,
+    "screenNumber": 19
+  },
+  {
+    "id": "class4-m1-t2-quiz",
+    "pdfPageNumber": 32,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 1,
+    "monthTitle": "CHAPTER 1: AI BASICS",
+    "topicNumber": 2,
+    "topicTitle": "Meet the Smart Machines",
+    "pageHeaderCategory": "CHAPTER 1 • TOPIC 2",
+    "pageHeaderTitle": "OLYMPIAD PRACTICE QUIZ",
+    "title": "Olympiad Quiz: Meet the Smart Machines",
+    "subtitle": "Test your knowledge with official Olympiad questions!",
+    "contentBlockTitle": "Olympiad Quiz",
+    "interactionType": "quiz_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m1_t2_quiz.png",
+    "payload": {
+      "topicTitle": "Meet the Smart Machines",
+      "questions": [
+        {
+          "id": 1,
+          "q": "Olympiad Stage 1: Which of the following is an example of the \"ACT\" step in a robot vacuum?",
+          "options": [
+            "The camera detecting a table leg",
+            "The microchip calculating a left turn",
+            "The electric motor spinning the wheels to turn left",
+            "The battery storing electrical charge"
+          ],
+          "correct": 2,
+          "explanation": "Act involves physical execution via motors, speakers, or grippers. Spinning the wheels is the physical action.",
+          "hint": "Which option involves physical movement or muscle work?",
+          "difficulty": "Olympiad Stage 1"
+        },
+        {
+          "id": 2,
+          "q": "Olympiad Stage 2: A warehouse sorting robot uses a laser barcode scanner. What role does the barcode scanner play in the Sense-Think-Act cycle?",
+          "options": [
+            "Think — because it calculates shipping taxes",
+            "Sense — because it collects optical identification data from the package label",
+            "Act — because it moves the package across the conveyor belt",
+            "Sleep — because it turns off the robot"
+          ],
+          "correct": 1,
+          "explanation": "Scanners, cameras, and microphones are sensors that collect environmental information (Sense).",
+          "hint": "Is the scanner gathering information or moving a motor?",
+          "difficulty": "Olympiad Stage 2"
+        },
+        {
+          "id": 3,
+          "q": "Olympiad Championship: An automated airport shuttle bus detects an obstacle 10 meters ahead. Sensor A (Camera) sees a shadow on the tarmac. Sensor B (LiDAR laser) reports that the road ahead is completely empty and flat. The shuttle slows down smoothly to 5 km/h while checking again. What is this technique called?",
+          "options": [
+            "Random Guessing System",
+            "Sensor Fusion and Fail-Safe Caution",
+            "Manual Gear Shifting",
+            "Battery Drainage Panic"
+          ],
+          "correct": 1,
+          "explanation": "Sensor Fusion combines data from multiple sensors (cameras and lasers) to make reliable, safe decisions even when one sensor is tricked by shadows.",
+          "hint": "Think about how combining multiple senses helps machines avoid mistakes.",
+          "difficulty": "Olympiad Championship"
+        }
+      ]
+    },
+    "screenIndex": 19,
+    "screenNumber": 20
+  },
+  {
+    "id": "class4-m1-safety",
+    "pdfPageNumber": 33,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 1,
+    "monthTitle": "CHAPTER 1: AI BASICS",
+    "topicNumber": 2,
+    "topicTitle": "Meet the Smart Machines",
+    "pageHeaderCategory": "CHAPTER 1 • DIGITAL SAFETY",
+    "pageHeaderTitle": "RESPONSIBLE AI HABIT",
+    "title": "Digital Safety: AI Basics",
+    "subtitle": "Fail-Safe Safety Rule: When an AI sensor is blinded or uncertain, the machine must slow down, pull over safely, or ask a human to take control.",
+    "contentBlockTitle": "Responsible AI",
+    "interactionType": "home_connect",
+    "sourcePdfImage": "/gaio/class4/pages/m1_safety.png",
+    "payload": {
+      "topicTitle": "Meet the Smart Machines",
+      "rule": "Fail-Safe Safety Rule: When an AI sensor is blinded or uncertain, the machine must slow down, pull over safely, or ask a human to take control.",
+      "prompt": "Self-driving cars have sensors all around them. If a dirty mud puddle covers a camera lens, what should the car do to remain safe?",
+      "discussion": "Why is it important that humans always test and supervise autonomous machines in real-world environments?",
+      "takeaways": [
+        "Smart machines operate in three connected steps: Sense, Think, and Act.",
+        "Robots come in all shapes and sizes, from factory arms to Martian rovers and vacuum discs.",
+        "Robots excel at jobs that are dull, dangerous, dirty, or located in extreme environments."
+      ]
+    },
+    "screenIndex": 20,
+    "screenNumber": 21
+  },
+  {
+    "id": "class4-m1-review",
+    "pdfPageNumber": 34,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 1,
+    "monthTitle": "CHAPTER 1: AI BASICS",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "CHAPTER 1 REVIEW",
+    "pageHeaderTitle": "MASTERY CHECKPOINT",
+    "title": "Chapter 1 Mastery: AI Basics",
+    "subtitle": "Congratulations! You unlocked the Chapter 1 Badge!",
+    "contentBlockTitle": "Chapter Review",
+    "interactionType": "unit_review_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m1_review.png",
+    "payload": {
+      "monthNumber": 1,
+      "title": "AI Basics",
+      "takeaways": [
+        "AI is an invisible helper embedded in everyday apps, cameras, and navigation tools.",
+        "Normal machines follow fixed switches, but AI machines learn from examples and data.",
+        "Always remember: Data is the food that makes AI systems smart and capable.",
+        "Smart machines operate in three connected steps: Sense, Think, and Act."
+      ],
+      "badge": "Chapter 1 Master Badge 🏆"
+    },
+    "screenIndex": 21,
+    "screenNumber": 22
+  },
+  {
+    "id": "class4-m2-cover",
+    "pdfPageNumber": 40,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 2,
+    "monthTitle": "CHAPTER 2: COMMUNICATE WITH AI",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "CHAPTER 2 • CLASS 4",
+    "pageHeaderTitle": "COMMUNICATE WITH AI",
+    "title": "Chapter 2: Communicate with AI",
+    "subtitle": "Say It Clearly! & Mission: Instructions",
+    "contentBlockTitle": "Chapter Cover",
+    "interactionType": "month_cover",
+    "sourcePdfImage": "/gaio/class4/pages/ch2_cover.png",
+    "payload": {
+      "monthNumber": 2,
+      "monthTitle": "Communicate with AI",
+      "subtitle": "Say It Clearly! & Mission: Instructions",
+      "topics": [
+        {
+          "topicNumber": 3,
+          "title": "Say It Clearly!",
+          "area": "Understand the difference between ambiguous human language and precise computer instructions, and learn how exact parameters produce intended AI creations."
+        },
+        {
+          "topicNumber": 4,
+          "title": "Mission: Instructions",
+          "area": "Master algorithmic sequencing, understand why instruction order is critical for computers, and learn how to construct bug-free step-by-step algorithms."
+        }
+      ]
+    },
+    "screenIndex": 22,
+    "screenNumber": 23
+  },
+  {
+    "id": "class4-m2-t3-learn",
+    "pdfPageNumber": 41,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 2,
+    "monthNumber": 2,
+    "monthTitle": "CHAPTER 2: COMMUNICATE WITH AI",
+    "topicNumber": 3,
+    "topicTitle": "Say It Clearly!",
+    "pageHeaderCategory": "CHAPTER 2 • TOPIC 3",
+    "pageHeaderTitle": "LET'S LEARN: SAY IT CLEARLY!",
+    "title": "Let's Learn: Say It Clearly!",
+    "subtitle": "Understand the difference between ambiguous human language and precise computer instructions, and learn how exact parameters produce intended AI creations.",
+    "contentBlockTitle": "Core Concepts",
+    "interactionType": "lets_learn_intro",
+    "sourcePdfImage": "/gaio/class4/pages/m2_t3_learn.png",
+    "payload": {
+      "topicNumber": 3,
+      "topicTitle": "Say It Clearly!",
+      "area": "Communicate with AI",
+      "concepts": [
+        "Understand why fuzzy, ambiguous words cause AI and computers to guess incorrectly",
+        "Learn what Parameters and Keywords mean when commanding digital systems",
+        "Master the art of giving clear, specific, step-by-step instructions"
+      ],
+      "helpers": [
+        "Voice assistants playing the exact song when you state the artist name and track title",
+        "Image generators producing accurate science diagrams when given exact labels and view angles",
+        "Study helper bots summarising chapters into 5 simple bullet points instead of long essays"
+      ]
+    },
+    "screenIndex": 23,
+    "screenNumber": 24
+  },
+  {
+    "id": "class4-m2-t3-words",
+    "pdfPageNumber": 42,
+    "pdfPartIndex": 2,
+    "pdfTotalParts": 2,
+    "monthNumber": 2,
+    "monthTitle": "CHAPTER 2: COMMUNICATE WITH AI",
+    "topicNumber": 3,
+    "topicTitle": "Say It Clearly!",
+    "pageHeaderCategory": "CHAPTER 2 • TOPIC 3",
+    "pageHeaderTitle": "MAGIC WORDS & MENTAL MODEL",
+    "title": "Magic Words: Say It Clearly!",
+    "subtitle": "Key vocabulary to unlock your AI powers!",
+    "contentBlockTitle": "Magic Words",
+    "interactionType": "lets_learn_words",
+    "sourcePdfImage": "/gaio/class4/pages/m2_t3_words.png",
+    "payload": {
+      "magicWords": [
+        {
+          "word": "Ambiguity",
+          "meaning": "Words that are vague or open to multiple interpretations (like \"make it nice\")"
+        },
+        {
+          "word": "Precision",
+          "meaning": "Exact, clear, and detailed instructions that leave no room for guesswork"
+        },
+        {
+          "word": "Parameter",
+          "meaning": "A specific detail or limit given to a computer (like color=\"blue\", length=5)"
+        }
+      ],
+      "analogy": "Giving instructions to an AI is like baking with a fussy chef: if you say \"Add some sugar\", the chef freezes; but if you say \"Add exactly 2 tablespoons of brown sugar\", you get delicious cookies every time!"
+    },
+    "screenIndex": 24,
+    "screenNumber": 25
+  },
+  {
+    "id": "class4-m2-t3-story",
+    "pdfPageNumber": 42,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 2,
+    "monthTitle": "CHAPTER 2: COMMUNICATE WITH AI",
+    "topicNumber": 3,
+    "topicTitle": "Say It Clearly!",
+    "pageHeaderCategory": "CHAPTER 2 • TOPIC 3",
+    "pageHeaderTitle": "PICTURE STORY & MYSTERY",
+    "title": "The Story Behind Say It Clearly!",
+    "subtitle": "If you tell a human friend \"Draw a big red fruit\", they draw an apple. But if you tell a computer, it might draw a giant strawberry on top of a car! Why do computers get confused?",
+    "contentBlockTitle": "Picture Story",
+    "interactionType": "picture_story_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m2_t3_story.png",
+    "payload": {
+      "storyTitle": "If you tell a human friend \"Draw a big red fruit\", they draw an apple. But if you tell a computer, it might draw a giant strawberry on top of a car! Why do computers get confused?",
+      "panels": [
+        {
+          "panelNumber": 1,
+          "text": "In an art competition, Ananya typed \"castle\". The AI generated an old grey crumbling ruin. She refined her prompt to: \"A fairy-tale crystal castle on a rainbow ...",
+          "imageSrc": "/gaio/scene1.png"
+        },
+        {
+          "panelNumber": 2,
+          "text": "State the exact character, object, or topic you want the AI to focus on.",
+          "imageSrc": "/gaio/scene2.png"
+        },
+        {
+          "panelNumber": 3,
+          "text": "Include colors, background settings, emotions, and specific attributes.",
+          "imageSrc": "/gaio/scene3.png"
+        },
+        {
+          "panelNumber": 4,
+          "text": "Define the format, length, or style you expect.",
+          "imageSrc": "/gaio/scene4.png"
+        }
+      ]
+    },
+    "screenIndex": 25,
+    "screenNumber": 26
+  },
+  {
+    "id": "class4-m2-t3-steps",
+    "pdfPageNumber": 43,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 2,
+    "monthTitle": "CHAPTER 2: COMMUNICATE WITH AI",
+    "topicNumber": 3,
+    "topicTitle": "Say It Clearly!",
+    "pageHeaderCategory": "CHAPTER 2 • TOPIC 3",
+    "pageHeaderTitle": "STEP-BY-STEP DISCOVERY",
+    "title": "Guided Discovery: Say It Clearly!",
+    "subtitle": "Follow the 3-step computational workflow",
+    "contentBlockTitle": "Discovery Steps",
+    "interactionType": "lets_do_it_steps",
+    "sourcePdfImage": "/gaio/class4/pages/m2_t3_steps.png",
+    "payload": {
+      "topicTitle": "Say It Clearly!",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "1. Identify the Main Subject (WHO/WHAT)",
+          "desc": "State the exact character, object, or topic you want the AI to focus on.",
+          "detail": "Instead of \"a vehicle\", say \"a solar-powered lunar rover\".",
+          "code": "subject = \"solar_powered_lunar_rover\""
+        },
+        {
+          "stepNumber": 2,
+          "title": "2. Add Key Modifiers & Details (WHERE/HOW)",
+          "desc": "Include colors, background settings, emotions, and specific attributes.",
+          "detail": "Add descriptive adjectives that paint a sharp digital picture.",
+          "code": "details = {\"color\": \"silver and gold\", \"terrain\": \"lunar crater\", \"sky\": \"black with Earth in background\"}"
+        },
+        {
+          "stepNumber": 3,
+          "title": "3. Set Output Boundaries (CONSTRAINTS)",
+          "desc": "Define the format, length, or style you expect.",
+          "detail": "Specify 3 bullet points, 5 lines, or watercolor illustration style.",
+          "code": "constraints = {\"format\": \"bullet_points\", \"max_items\": 3, \"reading_level\": \"Grade 4\"}"
+        }
+      ]
+    },
+    "screenIndex": 26,
+    "screenNumber": 27
+  },
+  {
+    "id": "class4-m2-t3-game",
+    "pdfPageNumber": 44,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 2,
+    "monthTitle": "CHAPTER 2: COMMUNICATE WITH AI",
+    "topicNumber": 3,
+    "topicTitle": "Say It Clearly!",
+    "pageHeaderCategory": "CHAPTER 2 • TOPIC 3",
+    "pageHeaderTitle": "GAME CHALLENGE & LAB",
+    "title": "Chef Bot Recipe Precision Challenge",
+    "subtitle": "Rewrite and assemble precision ingredient and temperature cards to guide Chef Bot in baking a magnificent Strawberry Birthday Cake.",
+    "contentBlockTitle": "Interactive Game",
+    "interactionType": "lets_do_it_reflection",
+    "sourcePdfImage": "/gaio/class4/pages/m2_t3_game.png",
+    "payload": {
+      "topicTitle": "Say It Clearly!",
+      "talkPrompt": "Chef Bot 3000 is running the digital bakery, but Chef Bot takes words 100% literally! If you say \"Bake something sweet\", Chef Bot bakes sugar cubes in a frying pan! You must refine 3 messy cooking orders into exact recipes before the bakery opening bell rings.",
+      "drawPrompt": "Rule 1: Eliminate fuzzy words like \"some\", \"a lot\", and \"hot\". • Rule 2: Select exact measurements (grams, milliliters, degrees Celsius). • Rule 3: Test your refined recipe on the Chef Bot Virtual Oven.",
+      "gameTitle": "Chef Bot Recipe Precision Challenge",
+      "objective": "Rewrite and assemble precision ingredient and temperature cards to guide Chef Bot in baking a magnificent Strawberry Birthday Cake.",
+      "choices": [
+        "Ingredient Card: \"Add some flour\" VS \"Measure 250 grams of sifted wheat flour\"",
+        "Mixing Card: \"Stir it around\" VS \"Whisk batter clockwise for 3 minutes until smooth\"",
+        "Baking Card: \"Put in hot oven\" VS \"Bake at 180°C for 25 minutes on center rack\""
+      ],
+      "points": 340,
+      "badge": "Master Clarifier Chef 👨‍🍳"
+    },
+    "screenIndex": 27,
+    "screenNumber": 28
+  },
+  {
+    "id": "class4-m2-t3-match",
+    "pdfPageNumber": 45,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 2,
+    "monthTitle": "CHAPTER 2: COMMUNICATE WITH AI",
+    "topicNumber": 3,
+    "topicTitle": "Say It Clearly!",
+    "pageHeaderCategory": "CHAPTER 2 • TOPIC 3",
+    "pageHeaderTitle": "CONCEPT MATCHER",
+    "title": "Match the Concepts: Say It Clearly!",
+    "subtitle": "Connect each term to its matching definition",
+    "contentBlockTitle": "Matching Activity",
+    "interactionType": "worksheet_matching",
+    "sourcePdfImage": "/gaio/class4/pages/m2_t3_match.png",
+    "payload": {
+      "topicTitle": "Say It Clearly!",
+      "taskTitle": "Match each term to its true meaning",
+      "pairs": [
+        {
+          "id": "p1",
+          "leftId": "l1",
+          "rightId": "r1",
+          "leftText": "Ambiguity",
+          "rightText": "Words that are vague or open to multiple interpretations (like \"make it nice\")"
+        },
+        {
+          "id": "p2",
+          "leftId": "l2",
+          "rightId": "r2",
+          "leftText": "Precision",
+          "rightText": "Exact, clear, and detailed instructions that leave no room for guesswork"
+        },
+        {
+          "id": "p3",
+          "leftId": "l3",
+          "rightId": "r3",
+          "leftText": "Parameter",
+          "rightText": "A specific detail or limit given to a computer (like color=\"blue\", length=5)"
+        }
+      ]
+    },
+    "screenIndex": 28,
+    "screenNumber": 29
+  },
+  {
+    "id": "class4-m2-t3-quiz",
+    "pdfPageNumber": 46,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 2,
+    "monthTitle": "CHAPTER 2: COMMUNICATE WITH AI",
+    "topicNumber": 3,
+    "topicTitle": "Say It Clearly!",
+    "pageHeaderCategory": "CHAPTER 2 • TOPIC 3",
+    "pageHeaderTitle": "OLYMPIAD PRACTICE QUIZ",
+    "title": "Olympiad Quiz: Say It Clearly!",
+    "subtitle": "Test your knowledge with official Olympiad questions!",
+    "contentBlockTitle": "Olympiad Quiz",
+    "interactionType": "quiz_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m2_t3_quiz.png",
+    "payload": {
+      "topicTitle": "Say It Clearly!",
+      "questions": [
+        {
+          "id": 1,
+          "q": "Olympiad Stage 1: Which of the following words is considered \"ambiguous\" when programming a robot?",
+          "options": [
+            "Rotate 90 degrees clockwise",
+            "Drive forward for 5 seconds at speed 10",
+            "Move a little bit over there",
+            "Stop motors when distance < 15 centimeters"
+          ],
+          "correct": 2,
+          "explanation": "\"A little bit over there\" is completely ambiguous because it does not specify distance, direction, or target coordinates.",
+          "hint": "Which option lacks exact numbers or directions?",
+          "difficulty": "Olympiad Stage 1"
+        },
+        {
+          "id": 2,
+          "q": "Olympiad Stage 2: Vikram wants an AI image tool to create a drawing for his science project on space. Which prompt follows best practices for prompt clarity?",
+          "options": [
+            "Space picture please",
+            "A cross-section illustration of the planet Saturn showing its icy rings, labeled core layers, science textbook style",
+            "Make it look very cool and awesome with planets",
+            "Everything about the solar system in bright colors"
+          ],
+          "correct": 1,
+          "explanation": "It specifies the exact celestial body (Saturn), key visual elements (icy rings, labeled core layers), and target style (science textbook cross-section).",
+          "hint": "Which prompt gives the AI clear instructions on subject, details, and style?",
+          "difficulty": "Olympiad Stage 2"
+        },
+        {
+          "id": 3,
+          "q": "Olympiad Championship: An AI chatbot answered a student's question with completely inaccurate numbers about dinosaur sizes. What is the most effective next step for the student?",
+          "options": [
+            "Assume the textbook is outdated and memorize the AI answer",
+            "Refine the prompt with specific references: \"Check historical fossil records for Tyrannosaurus Rex adult hip height in meters and cite the museum source\"",
+            "Delete the app and never study dinosaurs again",
+            "Keep typing the word \"No\" until the AI changes its mind"
+          ],
+          "correct": 1,
+          "explanation": "Effective users refine their prompts by adding specific parameters, requesting reliable sources, and cross-checking answers against authoritative textbooks.",
+          "hint": "How do smart creators improve prompts when they need verified factual answers?",
+          "difficulty": "Olympiad Championship"
+        }
+      ]
+    },
+    "screenIndex": 29,
+    "screenNumber": 30
+  },
+  {
+    "id": "class4-m2-t4-learn",
+    "pdfPageNumber": 47,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 2,
+    "monthNumber": 2,
+    "monthTitle": "CHAPTER 2: COMMUNICATE WITH AI",
+    "topicNumber": 4,
+    "topicTitle": "Mission: Instructions",
+    "pageHeaderCategory": "CHAPTER 2 • TOPIC 4",
+    "pageHeaderTitle": "LET'S LEARN: MISSION: INSTRUCTIONS",
+    "title": "Let's Learn: Mission: Instructions",
+    "subtitle": "Master algorithmic sequencing, understand why instruction order is critical for computers, and learn how to construct bug-free step-by-step algorithms.",
+    "contentBlockTitle": "Core Concepts",
+    "interactionType": "lets_learn_intro",
+    "sourcePdfImage": "/gaio/class4/pages/m2_t4_learn.png",
+    "payload": {
+      "topicNumber": 4,
+      "topicTitle": "Mission: Instructions",
+      "area": "Communicate with AI",
+      "concepts": [
+        "Understand that an Algorithm is a step-by-step recipe to complete a specific task",
+        "Learn why the chronological order (sequence) of instructions determines success or failure",
+        "Identify and fix sequence errors (bugs) in everyday and computational tasks"
+      ],
+      "helpers": [
+        "Traffic light algorithms cycling smoothly through Red, Yellow, and Green to prevent road gridlock",
+        "Automated washing machines executing Soak &rarr; Wash &rarr; Rinse &rarr; Spin in exact sequence",
+        "Rocket launch countdown computers checking 500 safety sensors in strict 10-second order"
+      ]
+    },
+    "screenIndex": 30,
+    "screenNumber": 31
+  },
+  {
+    "id": "class4-m2-t4-words",
+    "pdfPageNumber": 48,
+    "pdfPartIndex": 2,
+    "pdfTotalParts": 2,
+    "monthNumber": 2,
+    "monthTitle": "CHAPTER 2: COMMUNICATE WITH AI",
+    "topicNumber": 4,
+    "topicTitle": "Mission: Instructions",
+    "pageHeaderCategory": "CHAPTER 2 • TOPIC 4",
+    "pageHeaderTitle": "MAGIC WORDS & MENTAL MODEL",
+    "title": "Magic Words: Mission: Instructions",
+    "subtitle": "Key vocabulary to unlock your AI powers!",
+    "contentBlockTitle": "Magic Words",
+    "interactionType": "lets_learn_words",
+    "sourcePdfImage": "/gaio/class4/pages/m2_t4_words.png",
+    "payload": {
+      "magicWords": [
+        {
+          "word": "Algorithm",
+          "meaning": "A step-by-step list of instructions to complete a specific task"
+        },
+        {
+          "word": "Sequence",
+          "meaning": "The exact order in which computer instructions are performed"
+        },
+        {
+          "word": "Bug",
+          "meaning": "A mistake or out-of-order step in an algorithm that causes an error"
+        }
+      ],
+      "analogy": "An algorithm is like getting dressed in the morning: if you put on your shoes BEFORE your socks, you get a silly mess! The steps must follow the exact right sequence to work!"
+    },
+    "screenIndex": 31,
+    "screenNumber": 32
+  },
+  {
+    "id": "class4-m2-t4-story",
+    "pdfPageNumber": 48,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 2,
+    "monthTitle": "CHAPTER 2: COMMUNICATE WITH AI",
+    "topicNumber": 4,
+    "topicTitle": "Mission: Instructions",
+    "pageHeaderCategory": "CHAPTER 2 • TOPIC 4",
+    "pageHeaderTitle": "PICTURE STORY & MYSTERY",
+    "title": "The Story Behind Mission: Instructions",
+    "subtitle": "Space Rover Pi is perched on a Martian cliff! If it executes Step 3 (drive forward) before Step 2 (extend bridge), it will tumble down the canyon! Why does the sequence of steps matter so much?",
+    "contentBlockTitle": "Picture Story",
+    "interactionType": "picture_story_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m2_t4_story.png",
+    "payload": {
+      "storyTitle": "Space Rover Pi is perched on a Martian cliff! If it executes Step 3 (drive forward) before Step 2 (extend bridge), it will tumble down the canyon! Why does the sequence of steps matter so much?",
+      "panels": [
+        {
+          "panelNumber": 1,
+          "text": "A student wrote an algorithm to make their animated video game dragon fly. In their original script, `flap_wings()` came after `fall_to_ground()`. The dragon cr...",
+          "imageSrc": "/gaio/scene1.png"
+        },
+        {
+          "panelNumber": 2,
+          "text": "Deconstruct a complex task into tiny, atomic actions that a computer can perform.",
+          "imageSrc": "/gaio/scene2.png"
+        },
+        {
+          "panelNumber": 3,
+          "text": "Ensure prerequisite steps happen before dependent steps.",
+          "imageSrc": "/gaio/scene3.png"
+        },
+        {
+          "panelNumber": 4,
+          "text": "Include IF-THEN checkpoints to prevent errors during execution.",
+          "imageSrc": "/gaio/scene4.png"
+        }
+      ]
+    },
+    "screenIndex": 32,
+    "screenNumber": 33
+  },
+  {
+    "id": "class4-m2-t4-steps",
+    "pdfPageNumber": 49,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 2,
+    "monthTitle": "CHAPTER 2: COMMUNICATE WITH AI",
+    "topicNumber": 4,
+    "topicTitle": "Mission: Instructions",
+    "pageHeaderCategory": "CHAPTER 2 • TOPIC 4",
+    "pageHeaderTitle": "STEP-BY-STEP DISCOVERY",
+    "title": "Guided Discovery: Mission: Instructions",
+    "subtitle": "Follow the 3-step computational workflow",
+    "contentBlockTitle": "Discovery Steps",
+    "interactionType": "lets_do_it_steps",
+    "sourcePdfImage": "/gaio/class4/pages/m2_t4_steps.png",
+    "payload": {
+      "topicTitle": "Mission: Instructions",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "1. Break the Big Mission into Small Steps",
+          "desc": "Deconstruct a complex task into tiny, atomic actions that a computer can perform.",
+          "detail": "Instead of \"Clean room\", break into \"Pick up books\", \"Make bed\", \"Sweep floor\".",
+          "code": "# Deconstruction\nsteps = [\"find_charging_dock\", \"align_sensors\", \"dock_and_charge\"]"
+        },
+        {
+          "stepNumber": 2,
+          "title": "2. Arrange Steps in Strict Chronological Sequence",
+          "desc": "Ensure prerequisite steps happen before dependent steps.",
+          "detail": "You cannot open a door before turning the handle.",
+          "code": "for step in steps:\n    execute(step)"
+        },
+        {
+          "stepNumber": 3,
+          "title": "3. Add Conditional Checks for Safety",
+          "desc": "Include IF-THEN checkpoints to prevent errors during execution.",
+          "detail": "Check for obstacles or low battery before taking the next step.",
+          "code": "if obstacle_detected():\n    wait_or_turn()\nelse:\n    drive_forward(meters=1)"
+        }
+      ]
+    },
+    "screenIndex": 33,
+    "screenNumber": 34
+  },
+  {
+    "id": "class4-m2-t4-game",
+    "pdfPageNumber": 50,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 2,
+    "monthTitle": "CHAPTER 2: COMMUNICATE WITH AI",
+    "topicNumber": 4,
+    "topicTitle": "Mission: Instructions",
+    "pageHeaderCategory": "CHAPTER 2 • TOPIC 4",
+    "pageHeaderTitle": "GAME CHALLENGE & LAB",
+    "title": "Rover Launch Sequence Programmer",
+    "subtitle": "Rearrange the scrambled instruction blocks into the only safe sequence that lands, deploys solar panels, drives to the red rock, and drills for soil samples.",
+    "contentBlockTitle": "Interactive Game",
+    "interactionType": "lets_do_it_reflection",
+    "sourcePdfImage": "/gaio/class4/pages/m2_t4_game.png",
+    "payload": {
+      "topicTitle": "Mission: Instructions",
+      "talkPrompt": "Rover Pi has touched down in Chryse Planitia on Mars! To deploy its scientific solar wings and soil drill, the Mission Control computer requires an exact 5-block execution sequence. A solar flare shuffled the command queue into chaos!",
+      "drawPrompt": "Rule 1: Drag instruction blocks into the timeline slots 1 through 5. • Rule 2: Solar panels MUST deploy before driving (to prevent battery depletion). • Rule 3: Obstacle scan MUST happen before moving forward.",
+      "gameTitle": "Rover Launch Sequence Programmer",
+      "objective": "Rearrange the scrambled instruction blocks into the only safe sequence that lands, deploys solar panels, drives to the red rock, and drills for soil samples.",
+      "choices": [
+        "Block A: Deploy Solar Charging Wings ☀️",
+        "Block B: Extend Titanium Soil Drill ⛏️",
+        "Block C: Soft Touchdown on Landing Skids 🛬",
+        "Block D: Drive Forward 5 Meters toward Red Crater 🚗",
+        "Block E: Scan 360° Terrain for Boulder Obstacles 🔍"
+      ],
+      "points": 350,
+      "badge": "Algorithm Architect 📐"
+    },
+    "screenIndex": 34,
+    "screenNumber": 35
+  },
+  {
+    "id": "class4-m2-t4-match",
+    "pdfPageNumber": 51,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 2,
+    "monthTitle": "CHAPTER 2: COMMUNICATE WITH AI",
+    "topicNumber": 4,
+    "topicTitle": "Mission: Instructions",
+    "pageHeaderCategory": "CHAPTER 2 • TOPIC 4",
+    "pageHeaderTitle": "CONCEPT MATCHER",
+    "title": "Match the Concepts: Mission: Instructions",
+    "subtitle": "Connect each term to its matching definition",
+    "contentBlockTitle": "Matching Activity",
+    "interactionType": "worksheet_matching",
+    "sourcePdfImage": "/gaio/class4/pages/m2_t4_match.png",
+    "payload": {
+      "topicTitle": "Mission: Instructions",
+      "taskTitle": "Match each term to its true meaning",
+      "pairs": [
+        {
+          "id": "p1",
+          "leftId": "l1",
+          "rightId": "r1",
+          "leftText": "Algorithm",
+          "rightText": "A step-by-step list of instructions to complete a specific task"
+        },
+        {
+          "id": "p2",
+          "leftId": "l2",
+          "rightId": "r2",
+          "leftText": "Sequence",
+          "rightText": "The exact order in which computer instructions are performed"
+        },
+        {
+          "id": "p3",
+          "leftId": "l3",
+          "rightId": "r3",
+          "leftText": "Bug",
+          "rightText": "A mistake or out-of-order step in an algorithm that causes an error"
+        }
+      ]
+    },
+    "screenIndex": 35,
+    "screenNumber": 36
+  },
+  {
+    "id": "class4-m2-t4-quiz",
+    "pdfPageNumber": 52,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 2,
+    "monthTitle": "CHAPTER 2: COMMUNICATE WITH AI",
+    "topicNumber": 4,
+    "topicTitle": "Mission: Instructions",
+    "pageHeaderCategory": "CHAPTER 2 • TOPIC 4",
+    "pageHeaderTitle": "OLYMPIAD PRACTICE QUIZ",
+    "title": "Olympiad Quiz: Mission: Instructions",
+    "subtitle": "Test your knowledge with official Olympiad questions!",
+    "contentBlockTitle": "Olympiad Quiz",
+    "interactionType": "quiz_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m2_t4_quiz.png",
+    "payload": {
+      "topicTitle": "Mission: Instructions",
+      "questions": [
+        {
+          "id": 1,
+          "q": "Olympiad Stage 1: Which of the following is the best definition of an \"algorithm\"?",
+          "options": [
+            "A metal wire inside a laptop screen",
+            "A step-by-step list of instructions to finish a task or solve a problem",
+            "A type of computer virus that deletes pictures",
+            "A high-speed internet satellite in orbit"
+          ],
+          "correct": 1,
+          "explanation": "An algorithm is a set of defined, step-by-step rules or instructions designed to solve a problem or accomplish a task.",
+          "hint": "Think of an algorithm as a recipe for a computer.",
+          "difficulty": "Olympiad Stage 1"
+        },
+        {
+          "id": 2,
+          "q": "Olympiad Stage 2: Look at the following robot steps: 1. Pour water into kettle. 2. Boil water for 3 minutes. 3. Plug in the electric kettle. 4. Pour boiled water into cup. Which two steps are in the WRONG order?",
+          "options": [
+            "Step 1 and Step 4",
+            "Step 2 and Step 3 (the kettle must be plugged in BEFORE it can boil water)",
+            "Step 1 and Step 2",
+            "Step 3 and Step 4"
+          ],
+          "correct": 1,
+          "explanation": "An electric kettle cannot boil water until it is plugged into electrical power. Step 3 must happen before Step 2.",
+          "hint": "Can an appliance heat up before it gets electrical power?",
+          "difficulty": "Olympiad Stage 2"
+        },
+        {
+          "id": 3,
+          "q": "Olympiad Championship: An autonomous rover uses this algorithm: [Loop: Move Forward 1m &rarr; Scan Obstacle &rarr; IF Obstacle Detected THEN Stop]. If a boulder suddenly rolls onto the path while the rover is moving, why might this simple algorithm fail?",
+          "options": [
+            "Because the rover only scans AFTER it has already completed the 1-meter forward move, creating a blind movement interval",
+            "Because boulders on Mars are made of rubber",
+            "Because loops do not work on computers",
+            "Because the battery gets too hot"
+          ],
+          "correct": 0,
+          "explanation": "If scanning happens only after moving, the rover moves blind for 1 meter. A safe algorithm scans continuously WHILE moving or checks BEFORE every step.",
+          "hint": "What happens during the moment the rover is driving forward before the scan runs?",
+          "difficulty": "Olympiad Championship"
+        }
+      ]
+    },
+    "screenIndex": 36,
+    "screenNumber": 37
+  },
+  {
+    "id": "class4-m2-safety",
+    "pdfPageNumber": 53,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 2,
+    "monthTitle": "CHAPTER 2: COMMUNICATE WITH AI",
+    "topicNumber": 4,
+    "topicTitle": "Mission: Instructions",
+    "pageHeaderCategory": "CHAPTER 2 • DIGITAL SAFETY",
+    "pageHeaderTitle": "RESPONSIBLE AI HABIT",
+    "title": "Digital Safety: Communicate with AI",
+    "subtitle": "Human & Pet Safety Priority: In any autonomous algorithm, stopping immediately for living beings always overrides destination speed.",
+    "contentBlockTitle": "Responsible AI",
+    "interactionType": "home_connect",
+    "sourcePdfImage": "/gaio/class4/pages/m2_safety.png",
+    "payload": {
+      "topicTitle": "Mission: Instructions",
+      "rule": "Human & Pet Safety Priority: In any autonomous algorithm, stopping immediately for living beings always overrides destination speed.",
+      "prompt": "If a self-driving delivery robot encounters an open gate with a playful puppy running toward it, what safety instruction should take top priority?",
+      "discussion": "Why do software engineers write safety checks at the very top of robot algorithms?",
+      "takeaways": [
+        "An algorithm is a recipe of precise steps that solves a problem.",
+        "Sequencing ensures steps happen in the correct chronological order.",
+        "Debugging is finding and rearranging flawed or out-of-order steps."
+      ]
+    },
+    "screenIndex": 37,
+    "screenNumber": 38
+  },
+  {
+    "id": "class4-m2-review",
+    "pdfPageNumber": 54,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 2,
+    "monthTitle": "CHAPTER 2: COMMUNICATE WITH AI",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "CHAPTER 2 REVIEW",
+    "pageHeaderTitle": "MASTERY CHECKPOINT",
+    "title": "Chapter 2 Mastery: Communicate with AI",
+    "subtitle": "Congratulations! You unlocked the Chapter 2 Badge!",
+    "contentBlockTitle": "Chapter Review",
+    "interactionType": "unit_review_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m2_review.png",
+    "payload": {
+      "monthNumber": 2,
+      "title": "Communicate with AI",
+      "takeaways": [
+        "Ambiguous prompts result in confusing, unpredictable AI responses.",
+        "A powerful command includes the subject, descriptive details, and output limits.",
+        "Refining your prompt step-by-step is how expert creators collaborate with AI.",
+        "An algorithm is a recipe of precise steps that solves a problem."
+      ],
+      "badge": "Chapter 2 Master Badge 🏆"
+    },
+    "screenIndex": 38,
+    "screenNumber": 39
+  },
+  {
+    "id": "class4-m3-cover",
+    "pdfPageNumber": 60,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 3,
+    "monthTitle": "CHAPTER 3: AI APPLICATIONS",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "CHAPTER 3 • CLASS 4",
+    "pageHeaderTitle": "AI APPLICATIONS",
+    "title": "Chapter 3: AI Applications",
+    "subtitle": "AI in My Mobile & AI on the Move",
+    "contentBlockTitle": "Chapter Cover",
+    "interactionType": "month_cover",
+    "sourcePdfImage": "/gaio/class4/pages/ch3_cover.png",
+    "payload": {
+      "monthNumber": 3,
+      "monthTitle": "AI Applications",
+      "subtitle": "AI in My Mobile & AI on the Move",
+      "topics": [
+        {
+          "topicNumber": 5,
+          "title": "AI in My Mobile",
+          "area": "Explore the embedded AI technologies inside modern smartphones, including biometric face unlock, predictive keyboards, computational photography, and photo grouping."
+        },
+        {
+          "topicNumber": 6,
+          "title": "AI on the Move",
+          "area": "Explore AI navigation, shortest-path algorithms, dynamic traffic heatmaps, and autonomous vehicles on modern roads and skies."
+        }
+      ]
+    },
+    "screenIndex": 39,
+    "screenNumber": 40
+  },
+  {
+    "id": "class4-m3-t5-learn",
+    "pdfPageNumber": 61,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 2,
+    "monthNumber": 3,
+    "monthTitle": "CHAPTER 3: AI APPLICATIONS",
+    "topicNumber": 5,
+    "topicTitle": "AI in My Mobile",
+    "pageHeaderCategory": "CHAPTER 3 • TOPIC 5",
+    "pageHeaderTitle": "LET'S LEARN: AI IN MY MOBILE",
+    "title": "Let's Learn: AI in My Mobile",
+    "subtitle": "Explore the embedded AI technologies inside modern smartphones, including biometric face unlock, predictive keyboards, computational photography, and photo grouping.",
+    "contentBlockTitle": "Core Concepts",
+    "interactionType": "lets_learn_intro",
+    "sourcePdfImage": "/gaio/class4/pages/m3_t5_learn.png",
+    "payload": {
+      "topicNumber": 5,
+      "topicTitle": "AI in My Mobile",
+      "area": "AI Applications",
+      "concepts": [
+        "Discover how biometric Face Unlock uses 3D infrared depth points to verify your identity",
+        "Understand how predictive keyboards use language models to anticipate your next words",
+        "Learn how smartphone photo galleries use Computer Vision to automatically cluster photos by pets, people, and places"
+      ],
+      "helpers": [
+        "Smart voice dictation converting spoken audio into punctuated text messages in real time",
+        "Spam call blocker AI detecting robocall frequency patterns and muting incoming scams",
+        "Battery management AI learning your sleep schedule to charge slowly overnight and protect battery health"
+      ]
+    },
+    "screenIndex": 40,
+    "screenNumber": 41
+  },
+  {
+    "id": "class4-m3-t5-words",
+    "pdfPageNumber": 62,
+    "pdfPartIndex": 2,
+    "pdfTotalParts": 2,
+    "monthNumber": 3,
+    "monthTitle": "CHAPTER 3: AI APPLICATIONS",
+    "topicNumber": 5,
+    "topicTitle": "AI in My Mobile",
+    "pageHeaderCategory": "CHAPTER 3 • TOPIC 5",
+    "pageHeaderTitle": "MAGIC WORDS & MENTAL MODEL",
+    "title": "Magic Words: AI in My Mobile",
+    "subtitle": "Key vocabulary to unlock your AI powers!",
+    "contentBlockTitle": "Magic Words",
+    "interactionType": "lets_learn_words",
+    "sourcePdfImage": "/gaio/class4/pages/m3_t5_words.png",
+    "payload": {
+      "magicWords": [
+        {
+          "word": "Biometrics",
+          "meaning": "Using unique physical characteristics like face shape or fingerprints to unlock devices"
+        },
+        {
+          "word": "Predictive Text",
+          "meaning": "AI software guessing the next word you want to type based on language patterns"
+        },
+        {
+          "word": "NPU (Neural Processing Unit)",
+          "meaning": "A dedicated computer microchip inside a smartphone designed for fast AI calculations"
+        }
+      ],
+      "analogy": "Your smartphone is like a pocket-sized Swiss Army knife full of invisible AI specialists: a portrait photographer, a speedy spelling tutor, and a multilingual translator all working inside one glass screen!"
+    },
+    "screenIndex": 41,
+    "screenNumber": 42
+  },
+  {
+    "id": "class4-m3-t5-story",
+    "pdfPageNumber": 62,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 3,
+    "monthTitle": "CHAPTER 3: AI APPLICATIONS",
+    "topicNumber": 5,
+    "topicTitle": "AI in My Mobile",
+    "pageHeaderCategory": "CHAPTER 3 • TOPIC 5",
+    "pageHeaderTitle": "PICTURE STORY & MYSTERY",
+    "title": "The Story Behind AI in My Mobile",
+    "subtitle": "How can your smartphone recognise your face in the dark, predict what word you will type next, and organize photos of your dog into a secret album without you lifting a finger?",
+    "contentBlockTitle": "Picture Story",
+    "interactionType": "picture_story_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m3_t5_story.png",
+    "payload": {
+      "storyTitle": "How can your smartphone recognise your face in the dark, predict what word you will type next, and organize photos of your dog into a secret album without you lifting a finger?",
+      "panels": [
+        {
+          "panelNumber": 1,
+          "text": "Tanya took a photo of her cat sleeping in a dim bedroom. Her phone’s Night Mode AI combined 8 rapid exposure frames, aligned them to prevent blur, and produced ...",
+          "imageSrc": "/gaio/scene1.png"
+        },
+        {
+          "panelNumber": 2,
+          "text": "Cameras, microphones, and touchscreens capture live user input signals.",
+          "imageSrc": "/gaio/scene2.png"
+        },
+        {
+          "panelNumber": 3,
+          "text": "The Neural Engine processes mathematical feature vectors in real time.",
+          "imageSrc": "/gaio/scene3.png"
+        },
+        {
+          "panelNumber": 4,
+          "text": "The phone unlocks, auto-completes words, or enhances portrait colors.",
+          "imageSrc": "/gaio/scene4.png"
+        }
+      ]
+    },
+    "screenIndex": 42,
+    "screenNumber": 43
+  },
+  {
+    "id": "class4-m3-t5-steps",
+    "pdfPageNumber": 63,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 3,
+    "monthTitle": "CHAPTER 3: AI APPLICATIONS",
+    "topicNumber": 5,
+    "topicTitle": "AI in My Mobile",
+    "pageHeaderCategory": "CHAPTER 3 • TOPIC 5",
+    "pageHeaderTitle": "STEP-BY-STEP DISCOVERY",
+    "title": "Guided Discovery: AI in My Mobile",
+    "subtitle": "Follow the 3-step computational workflow",
+    "contentBlockTitle": "Discovery Steps",
+    "interactionType": "lets_do_it_steps",
+    "sourcePdfImage": "/gaio/class4/pages/m3_t5_steps.png",
+    "payload": {
+      "topicTitle": "AI in My Mobile",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "1. On-Device Sensor Capture",
+          "desc": "Cameras, microphones, and touchscreens capture live user input signals.",
+          "detail": "Sensors take high-speed measurements without storing raw uncompressed files.",
+          "code": "# On-Device Face Mesh\nface_mesh = infrared_dot_projector.scan_3d()"
+        },
+        {
+          "stepNumber": 2,
+          "title": "2. NPU Neural Processing",
+          "desc": "The Neural Engine processes mathematical feature vectors in real time.",
+          "detail": "It checks whether current facial features match the registered mathematical owner hash.",
+          "code": "match_score = compare_biometric_hashes(face_mesh, registered_user)\nif match_score > 0.98: unlock_screen()"
+        },
+        {
+          "stepNumber": 3,
+          "title": "3. Instant User Experience Action",
+          "desc": "The phone unlocks, auto-completes words, or enhances portrait colors.",
+          "detail": "All calculations complete in under 50 milliseconds directly on the phone.",
+          "code": "display_ui(\"Screen Unlocked 🔓\")"
+        }
+      ]
+    },
+    "screenIndex": 43,
+    "screenNumber": 44
+  },
+  {
+    "id": "class4-m3-t5-game",
+    "pdfPageNumber": 64,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 3,
+    "monthTitle": "CHAPTER 3: AI APPLICATIONS",
+    "topicNumber": 5,
+    "topicTitle": "AI in My Mobile",
+    "pageHeaderCategory": "CHAPTER 3 • TOPIC 5",
+    "pageHeaderTitle": "GAME CHALLENGE & LAB",
+    "title": "Mobile Neural Feature Inspector",
+    "subtitle": "Link all 4 smartphone apps to their respective neural engine modules to achieve 100% benchmark performance score.",
+    "contentBlockTitle": "Interactive Game",
+    "interactionType": "lets_do_it_reflection",
+    "sourcePdfImage": "/gaio/class4/pages/m3_t5_game.png",
+    "payload": {
+      "topicTitle": "AI in My Mobile",
+      "talkPrompt": "You are the Chief Hardware Engineer at SmartPhone Labs. A prototype phone has arrived with 4 disconnected feature circuits: Face Biometrics, Night Camera, Predictive Keyboard, and Battery Optimizer. You must connect each phone feature to its correct onboard AI engine.",
+      "drawPrompt": "Rule 1: Drag the glowing circuit line from the app icon to the corresponding AI Engine chip. • Rule 2: Match Face Unlock &rarr; 3D Infrared Biometric Vision Engine. • Rule 3: Match Predictive Text &rarr; Natural Language N-Gram Predictor. • Rule 4: Match Night Mode &rarr; Multi-Frame Exposure Computational Vision.",
+      "gameTitle": "Mobile Neural Feature Inspector",
+      "objective": "Link all 4 smartphone apps to their respective neural engine modules to achieve 100% benchmark performance score.",
+      "choices": [
+        "Connect Keyboard to NLP Language Engine",
+        "Connect Front Camera to Biometric Enclave",
+        "Connect Photo Gallery to Object Classifier",
+        "Connect Battery to Adaptive Energy Predictor"
+      ],
+      "points": 320,
+      "badge": "Mobile Tech Architect 📱"
+    },
+    "screenIndex": 44,
+    "screenNumber": 45
+  },
+  {
+    "id": "class4-m3-t5-match",
+    "pdfPageNumber": 65,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 3,
+    "monthTitle": "CHAPTER 3: AI APPLICATIONS",
+    "topicNumber": 5,
+    "topicTitle": "AI in My Mobile",
+    "pageHeaderCategory": "CHAPTER 3 • TOPIC 5",
+    "pageHeaderTitle": "CONCEPT MATCHER",
+    "title": "Match the Concepts: AI in My Mobile",
+    "subtitle": "Connect each term to its matching definition",
+    "contentBlockTitle": "Matching Activity",
+    "interactionType": "worksheet_matching",
+    "sourcePdfImage": "/gaio/class4/pages/m3_t5_match.png",
+    "payload": {
+      "topicTitle": "AI in My Mobile",
+      "taskTitle": "Match each term to its true meaning",
+      "pairs": [
+        {
+          "id": "p1",
+          "leftId": "l1",
+          "rightId": "r1",
+          "leftText": "Biometrics",
+          "rightText": "Using unique physical characteristics like face shape or fingerprints to unlock devices"
+        },
+        {
+          "id": "p2",
+          "leftId": "l2",
+          "rightId": "r2",
+          "leftText": "Predictive Text",
+          "rightText": "AI software guessing the next word you want to type based on language patterns"
+        },
+        {
+          "id": "p3",
+          "leftId": "l3",
+          "rightId": "r3",
+          "leftText": "NPU (Neural Processing Unit)",
+          "rightText": "A dedicated computer microchip inside a smartphone designed for fast AI calculations"
+        }
+      ]
+    },
+    "screenIndex": 45,
+    "screenNumber": 46
+  },
+  {
+    "id": "class4-m3-t5-quiz",
+    "pdfPageNumber": 66,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 3,
+    "monthTitle": "CHAPTER 3: AI APPLICATIONS",
+    "topicNumber": 5,
+    "topicTitle": "AI in My Mobile",
+    "pageHeaderCategory": "CHAPTER 3 • TOPIC 5",
+    "pageHeaderTitle": "OLYMPIAD PRACTICE QUIZ",
+    "title": "Olympiad Quiz: AI in My Mobile",
+    "subtitle": "Test your knowledge with official Olympiad questions!",
+    "contentBlockTitle": "Olympiad Quiz",
+    "interactionType": "quiz_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m3_t5_quiz.png",
+    "payload": {
+      "topicTitle": "AI in My Mobile",
+      "questions": [
+        {
+          "id": 1,
+          "q": "Olympiad Stage 1: What is the main job of the Neural Processing Unit (NPU) inside a smartphone?",
+          "options": [
+            "To make the phone casing waterproof",
+            "To perform specialized AI and machine learning calculations at high speed on the device",
+            "To clean the camera glass with tiny wipers",
+            "To play ringtones louder"
+          ],
+          "correct": 1,
+          "explanation": "An NPU is a specialized microchip optimized for running neural networks and AI models quickly and efficiently on smartphones.",
+          "hint": "What does \"Neural\" refer to in modern computer hardware?",
+          "difficulty": "Olympiad Stage 1"
+        },
+        {
+          "id": 2,
+          "q": "Olympiad Stage 2: When you search for \"birthday cake\" in your smartphone photo album, photos from three years ago appear even though you never typed a caption on them. How does the phone achieve this?",
+          "options": [
+            "The phone calls the bakery to ask when you bought cake",
+            "Computer Vision models analyze the image pixels to recognise visual patterns of candles, frosting, and cake shapes",
+            "The phone guesses randomly until it finds round objects",
+            "A person at the phone company manually views all your photos"
+          ],
+          "correct": 1,
+          "explanation": "Computer vision algorithms scan visual features (layers of frosting, candles, shapes) and tag images locally for instant keyword searching.",
+          "hint": "Which AI technology enables software to recognise visual objects inside photos?",
+          "difficulty": "Olympiad Stage 2"
+        },
+        {
+          "id": 3,
+          "q": "Olympiad Championship: An app asks for permission to access your smartphone's Contacts, Microphone, Camera, and GPS Location just to play a simple offline tic-tac-toe game. What is the safest action?",
+          "options": [
+            "Grant all permissions immediately so the game loads faster",
+            "Deny unnecessary permissions or uninstall the app because a simple puzzle game does not need private contacts and cameras",
+            "Give the phone to a friend so they deal with it",
+            "Turn the phone volume to zero and keep playing"
+          ],
+          "correct": 1,
+          "explanation": "Responsible users practice the principle of least privilege: simple games do not require sensitive personal sensors (mic, camera, contacts) to operate.",
+          "hint": "Does a simple tic-tac-toe board require access to your personal family phonebook?",
+          "difficulty": "Olympiad Championship"
+        }
+      ]
+    },
+    "screenIndex": 46,
+    "screenNumber": 47
+  },
+  {
+    "id": "class4-m3-t6-learn",
+    "pdfPageNumber": 67,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 2,
+    "monthNumber": 3,
+    "monthTitle": "CHAPTER 3: AI APPLICATIONS",
+    "topicNumber": 6,
+    "topicTitle": "AI on the Move",
+    "pageHeaderCategory": "CHAPTER 3 • TOPIC 6",
+    "pageHeaderTitle": "LET'S LEARN: AI ON THE MOVE",
+    "title": "Let's Learn: AI on the Move",
+    "subtitle": "Explore AI navigation, shortest-path algorithms, dynamic traffic heatmaps, and autonomous vehicles on modern roads and skies.",
+    "contentBlockTitle": "Core Concepts",
+    "interactionType": "lets_learn_intro",
+    "sourcePdfImage": "/gaio/class4/pages/m3_t6_learn.png",
+    "payload": {
+      "topicNumber": 6,
+      "topicTitle": "AI on the Move",
+      "area": "AI Applications",
+      "concepts": [
+        "Learn how navigation apps use graph search algorithms to compute the fastest route in real time",
+        "Discover how crowdsourced GPS data creates live green, orange, and red traffic heatmaps",
+        "Understand how autonomous shuttles and delivery drones navigate safely using sensor fusion"
+      ],
+      "helpers": [
+        "Emergency ambulance dispatchers finding the fastest path through city rush hour to save lives",
+        "Delivery vans optimizing 80 parcel drop-offs into an efficient fuel-saving delivery route",
+        "Smart city traffic lights extending green light durations when sensor cameras detect heavy bus traffic"
+      ]
+    },
+    "screenIndex": 47,
+    "screenNumber": 48
+  },
+  {
+    "id": "class4-m3-t6-words",
+    "pdfPageNumber": 68,
+    "pdfPartIndex": 2,
+    "pdfTotalParts": 2,
+    "monthNumber": 3,
+    "monthTitle": "CHAPTER 3: AI APPLICATIONS",
+    "topicNumber": 6,
+    "topicTitle": "AI on the Move",
+    "pageHeaderCategory": "CHAPTER 3 • TOPIC 6",
+    "pageHeaderTitle": "MAGIC WORDS & MENTAL MODEL",
+    "title": "Magic Words: AI on the Move",
+    "subtitle": "Key vocabulary to unlock your AI powers!",
+    "contentBlockTitle": "Magic Words",
+    "interactionType": "lets_learn_words",
+    "sourcePdfImage": "/gaio/class4/pages/m3_t6_words.png",
+    "payload": {
+      "magicWords": [
+        {
+          "word": "GPS (Global Positioning System)",
+          "meaning": "A network of satellites orbiting Earth that pinpoint the location of devices on maps"
+        },
+        {
+          "word": "Traffic Heatmap",
+          "meaning": "Color-coded road lines (Green, Orange, Red) showing live traffic speeds"
+        },
+        {
+          "word": "Estimated Time of Arrival (ETA)",
+          "meaning": "The AI’s prediction of when you will reach your destination based on distance and traffic"
+        }
+      ],
+      "analogy": "AI in navigation is like an eagle soaring high above the city: while cars on the ground only see the bumper ahead, the eagle sees all the streets, knows where jams are building, and whispers the clearest detour in your ear!"
+    },
+    "screenIndex": 48,
+    "screenNumber": 49
+  },
+  {
+    "id": "class4-m3-t6-story",
+    "pdfPageNumber": 68,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 3,
+    "monthTitle": "CHAPTER 3: AI APPLICATIONS",
+    "topicNumber": 6,
+    "topicTitle": "AI on the Move",
+    "pageHeaderCategory": "CHAPTER 3 • TOPIC 6",
+    "pageHeaderTitle": "PICTURE STORY & MYSTERY",
+    "title": "The Story Behind AI on the Move",
+    "subtitle": "How can an ambulance driver find the quickest way to the hospital during rush hour when streets are jammed, and how do self-driving shuttles see in foggy rain?",
+    "contentBlockTitle": "Picture Story",
+    "interactionType": "picture_story_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m3_t6_story.png",
+    "payload": {
+      "storyTitle": "How can an ambulance driver find the quickest way to the hospital during rush hour when streets are jammed, and how do self-driving shuttles see in foggy rain?",
+      "panels": [
+        {
+          "panelNumber": 1,
+          "text": "During heavy monsoon rains, a fallen tree blocked the main highway leading to the city airport. An AI navigation app detected cars halting, immediately flagged ...",
+          "imageSrc": "/gaio/scene1.png"
+        },
+        {
+          "panelNumber": 2,
+          "text": "GPS satellites and road sensor beacons stream vehicle velocity data.",
+          "imageSrc": "/gaio/scene2.png"
+        },
+        {
+          "panelNumber": 3,
+          "text": "The routing engine evaluates thousands of road intersections and traffic weights.",
+          "imageSrc": "/gaio/scene3.png"
+        },
+        {
+          "panelNumber": 4,
+          "text": "The voice navigator announces detours before the vehicle gets trapped in gridlock.",
+          "imageSrc": "/gaio/scene4.png"
+        }
+      ]
+    },
+    "screenIndex": 49,
+    "screenNumber": 50
+  },
+  {
+    "id": "class4-m3-t6-steps",
+    "pdfPageNumber": 69,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 3,
+    "monthTitle": "CHAPTER 3: AI APPLICATIONS",
+    "topicNumber": 6,
+    "topicTitle": "AI on the Move",
+    "pageHeaderCategory": "CHAPTER 3 • TOPIC 6",
+    "pageHeaderTitle": "STEP-BY-STEP DISCOVERY",
+    "title": "Guided Discovery: AI on the Move",
+    "subtitle": "Follow the 3-step computational workflow",
+    "contentBlockTitle": "Discovery Steps",
+    "interactionType": "lets_do_it_steps",
+    "sourcePdfImage": "/gaio/class4/pages/m3_t6_steps.png",
+    "payload": {
+      "topicTitle": "AI on the Move",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "1. Ingesting Real-Time Road Signals",
+          "desc": "GPS satellites and road sensor beacons stream vehicle velocity data.",
+          "detail": "Aggregated velocity feeds update digital city maps every 10 seconds.",
+          "code": "road_speeds = get_live_gps_speeds(\"Main_Street\") # e.g. 4 km/h"
+        },
+        {
+          "stepNumber": 2,
+          "title": "2. Running Graph Optimization (A* Search)",
+          "desc": "The routing engine evaluates thousands of road intersections and traffic weights.",
+          "detail": "It calculates estimated time of arrival (ETA) for each possible path.",
+          "code": "best_route = calculate_fastest_route(origin, destination, traffic_weights)"
+        },
+        {
+          "stepNumber": 3,
+          "title": "3. Delivering Dynamic Turn-by-Turn Guidance",
+          "desc": "The voice navigator announces detours before the vehicle gets trapped in gridlock.",
+          "detail": "Saves fuel, reduces pollution, and cuts emergency vehicle travel times.",
+          "code": "display_guidance(\"Turn right onto River Road to save 8 minutes 🟢\")"
+        }
+      ]
+    },
+    "screenIndex": 50,
+    "screenNumber": 51
+  },
+  {
+    "id": "class4-m3-t6-game",
+    "pdfPageNumber": 70,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 3,
+    "monthTitle": "CHAPTER 3: AI APPLICATIONS",
+    "topicNumber": 6,
+    "topicTitle": "AI on the Move",
+    "pageHeaderCategory": "CHAPTER 3 • TOPIC 6",
+    "pageHeaderTitle": "GAME CHALLENGE & LAB",
+    "title": "Smart City Traffic Dispatcher",
+    "subtitle": "Reroute the 3 vehicles around flooded avenues and red gridlocks, reaching their destinations within the target time limits.",
+    "contentBlockTitle": "Interactive Game",
+    "interactionType": "lets_do_it_reflection",
+    "sourcePdfImage": "/gaio/class4/pages/m3_t6_game.png",
+    "payload": {
+      "topicTitle": "AI on the Move",
+      "talkPrompt": "A major thunderstorm has caused traffic bottlenecks across Metro City. An ambulance, a school bus, and an eco-delivery shuttle need urgent routes to their destinations. You control the Central AI Traffic Dispatch Console!",
+      "drawPrompt": "Rule 1: Priority 1 to Emergency Ambulance (must reach hospital in < 10 mins). • Rule 2: Click junctions to toggle AI detour bypasses. • Rule 3: Avoid red congestion zones which add +8 penalty minutes.",
+      "gameTitle": "Smart City Traffic Dispatcher",
+      "objective": "Reroute the 3 vehicles around flooded avenues and red gridlocks, reaching their destinations within the target time limits.",
+      "choices": [
+        "Ambulance Route: Bridge Route (Red Jam - 16m) VS Expressway Bypass (Green - 8m)",
+        "School Bus Route: Market Street (Flooded - 20m) VS Outer Ring Road (Green - 11m)",
+        "Delivery Shuttle Route: Main Avenue (Orange - 14m) VS Hill Parkway (Green - 9m)"
+      ],
+      "points": 340,
+      "badge": "Master City Navigator 🚦"
+    },
+    "screenIndex": 51,
+    "screenNumber": 52
+  },
+  {
+    "id": "class4-m3-t6-match",
+    "pdfPageNumber": 71,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 3,
+    "monthTitle": "CHAPTER 3: AI APPLICATIONS",
+    "topicNumber": 6,
+    "topicTitle": "AI on the Move",
+    "pageHeaderCategory": "CHAPTER 3 • TOPIC 6",
+    "pageHeaderTitle": "CONCEPT MATCHER",
+    "title": "Match the Concepts: AI on the Move",
+    "subtitle": "Connect each term to its matching definition",
+    "contentBlockTitle": "Matching Activity",
+    "interactionType": "worksheet_matching",
+    "sourcePdfImage": "/gaio/class4/pages/m3_t6_match.png",
+    "payload": {
+      "topicTitle": "AI on the Move",
+      "taskTitle": "Match each term to its true meaning",
+      "pairs": [
+        {
+          "id": "p1",
+          "leftId": "l1",
+          "rightId": "r1",
+          "leftText": "GPS (Global Positioning System)",
+          "rightText": "A network of satellites orbiting Earth that pinpoint the location of devices on maps"
+        },
+        {
+          "id": "p2",
+          "leftId": "l2",
+          "rightId": "r2",
+          "leftText": "Traffic Heatmap",
+          "rightText": "Color-coded road lines (Green, Orange, Red) showing live traffic speeds"
+        },
+        {
+          "id": "p3",
+          "leftId": "l3",
+          "rightId": "r3",
+          "leftText": "Estimated Time of Arrival (ETA)",
+          "rightText": "The AI’s prediction of when you will reach your destination based on distance and traffic"
+        }
+      ]
+    },
+    "screenIndex": 52,
+    "screenNumber": 53
+  },
+  {
+    "id": "class4-m3-t6-quiz",
+    "pdfPageNumber": 72,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 3,
+    "monthTitle": "CHAPTER 3: AI APPLICATIONS",
+    "topicNumber": 6,
+    "topicTitle": "AI on the Move",
+    "pageHeaderCategory": "CHAPTER 3 • TOPIC 6",
+    "pageHeaderTitle": "OLYMPIAD PRACTICE QUIZ",
+    "title": "Olympiad Quiz: AI on the Move",
+    "subtitle": "Test your knowledge with official Olympiad questions!",
+    "contentBlockTitle": "Olympiad Quiz",
+    "interactionType": "quiz_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m3_t6_quiz.png",
+    "payload": {
+      "topicTitle": "AI on the Move",
+      "questions": [
+        {
+          "id": 1,
+          "q": "Olympiad Stage 1: In a GPS map application, what does a red colored road line mean?",
+          "options": [
+            "The road is made of red bricks",
+            "Traffic is moving very slowly or completely jammed with congestion",
+            "Only red colored sports cars are allowed on that street",
+            "The road is closed forever"
+          ],
+          "correct": 1,
+          "explanation": "Red signifies heavy traffic congestion with low average vehicle speeds.",
+          "hint": "Like a red stop light, red indicates severe traffic slowdown.",
+          "difficulty": "Olympiad Stage 1"
+        },
+        {
+          "id": 2,
+          "q": "Olympiad Stage 2: An autonomous delivery drone is flying toward a customer's home. A sudden strong gust of wind pushes a flock of pigeons into its flight path. Which sensor system helps the drone detect and steer around the birds?",
+          "options": [
+            "Computer Vision optical cameras and ultrasonic proximity sensors",
+            "The battery charging plug",
+            "The plastic propeller guard color",
+            "The cardboard shipping box weight"
+          ],
+          "correct": 0,
+          "explanation": "Optical cameras and proximity sensors continuously scan the flight path, allowing flight control computers to execute evasive maneuvers.",
+          "hint": "Which components provide eyes and spatial awareness for the drone?",
+          "difficulty": "Olympiad Stage 2"
+        },
+        {
+          "id": 3,
+          "q": "Olympiad Championship: An AI traffic light system in a busy city notices that Southbound traffic has 40 cars waiting while Eastbound traffic has only 2 cars. How does an adaptive smart traffic light respond differently from an old mechanical timer light?",
+          "options": [
+            "It turns off all lights and goes to sleep",
+            "It dynamically extends the green light for the Southbound road until the 40 cars clear, rather than waiting for a fixed 60-second timer",
+            "It blinks yellow and sounds an alarm siren",
+            "It takes a photograph and posts it on social media"
+          ],
+          "correct": 1,
+          "explanation": "Smart adaptive traffic systems adjust signal phase timings dynamically based on measured vehicle queue lengths, minimizing unnecessary waiting times.",
+          "hint": "How does an intelligent system adapt to real-time road conditions?",
+          "difficulty": "Olympiad Championship"
+        }
+      ]
+    },
+    "screenIndex": 53,
+    "screenNumber": 54
+  },
+  {
+    "id": "class4-m3-safety",
+    "pdfPageNumber": 73,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 3,
+    "monthTitle": "CHAPTER 3: AI APPLICATIONS",
+    "topicNumber": 6,
+    "topicTitle": "AI on the Move",
+    "pageHeaderCategory": "CHAPTER 3 • DIGITAL SAFETY",
+    "pageHeaderTitle": "RESPONSIBLE AI HABIT",
+    "title": "Digital Safety: AI Applications",
+    "subtitle": "Human Driver Responsibility: GPS is a helper. The human driver is always legally and ethically responsible for seeing pedestrians and following road safety.",
+    "contentBlockTitle": "Responsible AI",
+    "interactionType": "home_connect",
+    "sourcePdfImage": "/gaio/class4/pages/m3_safety.png",
+    "payload": {
+      "topicTitle": "AI on the Move",
+      "rule": "Human Driver Responsibility: GPS is a helper. The human driver is always legally and ethically responsible for seeing pedestrians and following road safety.",
+      "prompt": "Why should a driver always keep their eyes on the actual road ahead, even if the GPS voice is giving instructions?",
+      "discussion": "What could happen if a driver looks at a smartphone screen instead of watching the crosswalk?",
+      "takeaways": [
+        "Navigation AI optimizes for arrival time rather than shortest physical distance.",
+        "Crowdsourced vehicle speeds create live traffic heatmaps (Green, Orange, Red).",
+        "Autonomous shuttles and drones rely on sensors and AI maps to travel safely."
+      ]
+    },
+    "screenIndex": 54,
+    "screenNumber": 55
+  },
+  {
+    "id": "class4-m3-review",
+    "pdfPageNumber": 74,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 3,
+    "monthTitle": "CHAPTER 3: AI APPLICATIONS",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "CHAPTER 3 REVIEW",
+    "pageHeaderTitle": "MASTERY CHECKPOINT",
+    "title": "Chapter 3 Mastery: AI Applications",
+    "subtitle": "Congratulations! You unlocked the Chapter 3 Badge!",
+    "contentBlockTitle": "Chapter Review",
+    "interactionType": "unit_review_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m3_review.png",
+    "payload": {
+      "monthNumber": 3,
+      "title": "AI Applications",
+      "takeaways": [
+        "Smartphones contain specialized Neural Processing Units (NPUs) for fast on-device AI.",
+        "Computer Vision powers face unlocking, portrait blurring, and gallery photo searching.",
+        "Predictive keyboards analyze sentence patterns to speed up typing and correct typos.",
+        "Navigation AI optimizes for arrival time rather than shortest physical distance."
+      ],
+      "badge": "Chapter 3 Master Badge 🏆"
+    },
+    "screenIndex": 55,
+    "screenNumber": 56
+  },
+  {
+    "id": "class4-m4-cover",
+    "pdfPageNumber": 80,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 4,
+    "monthTitle": "CHAPTER 4: AI AND CAREER",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "CHAPTER 4 • CLASS 4",
+    "pageHeaderTitle": "AI AND CAREER",
+    "title": "Chapter 4: AI and Career",
+    "subtitle": "Future Job Hunt & My Technology Talent",
+    "contentBlockTitle": "Chapter Cover",
+    "interactionType": "month_cover",
+    "sourcePdfImage": "/gaio/class4/pages/ch4_cover.png",
+    "payload": {
+      "monthNumber": 4,
+      "monthTitle": "AI and Career",
+      "subtitle": "Future Job Hunt & My Technology Talent",
+      "topics": [
+        {
+          "topicNumber": 7,
+          "title": "Future Job Hunt",
+          "area": "Discover how AI transforms the workplace, automate repetitive tasks, and creates brand new professions like AI Trainers, Robotics Designers, and Digital Safety Guardians."
+        },
+        {
+          "topicNumber": 8,
+          "title": "My Technology Talent",
+          "area": "Celebrate irreplaceable human capabilities—Empathy, Creativity, Moral reasoning, Teamwork, and Curiosity—and understand how they complement computer strengths."
+        }
+      ]
+    },
+    "screenIndex": 56,
+    "screenNumber": 57
+  },
+  {
+    "id": "class4-m4-t7-learn",
+    "pdfPageNumber": 81,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 2,
+    "monthNumber": 4,
+    "monthTitle": "CHAPTER 4: AI AND CAREER",
+    "topicNumber": 7,
+    "topicTitle": "Future Job Hunt",
+    "pageHeaderCategory": "CHAPTER 4 • TOPIC 7",
+    "pageHeaderTitle": "LET'S LEARN: FUTURE JOB HUNT",
+    "title": "Let's Learn: Future Job Hunt",
+    "subtitle": "Discover how AI transforms the workplace, automate repetitive tasks, and creates brand new professions like AI Trainers, Robotics Designers, and Digital Safety Guardians.",
+    "contentBlockTitle": "Core Concepts",
+    "interactionType": "lets_learn_intro",
+    "sourcePdfImage": "/gaio/class4/pages/m4_t7_learn.png",
+    "payload": {
+      "topicNumber": 7,
+      "topicTitle": "Future Job Hunt",
+      "area": "AI and Career",
+      "concepts": [
+        "Understand that AI changes jobs rather than eliminating human work, automating repetitive chores and freeing people for creative tasks",
+        "Discover exciting new careers: AI Trainer, Robotics Engineer, Data Detective, and Ethical Tech Auditor",
+        "Learn why people who understand how to work alongside AI helpers will have great opportunities"
+      ],
+      "helpers": [
+        "Architects using AI design simulators to plan earthquake-proof, solar-powered schools",
+        "Marine biologists using underwater AI cameras to count coral reef species without disturbing fish",
+        "Fashion designers collaborating with generative AI to weave fabrics made from recycled ocean plastics"
+      ]
+    },
+    "screenIndex": 57,
+    "screenNumber": 58
+  },
+  {
+    "id": "class4-m4-t7-words",
+    "pdfPageNumber": 82,
+    "pdfPartIndex": 2,
+    "pdfTotalParts": 2,
+    "monthNumber": 4,
+    "monthTitle": "CHAPTER 4: AI AND CAREER",
+    "topicNumber": 7,
+    "topicTitle": "Future Job Hunt",
+    "pageHeaderCategory": "CHAPTER 4 • TOPIC 7",
+    "pageHeaderTitle": "MAGIC WORDS & MENTAL MODEL",
+    "title": "Magic Words: Future Job Hunt",
+    "subtitle": "Key vocabulary to unlock your AI powers!",
+    "contentBlockTitle": "Magic Words",
+    "interactionType": "lets_learn_words",
+    "sourcePdfImage": "/gaio/class4/pages/m4_t7_words.png",
+    "payload": {
+      "magicWords": [
+        {
+          "word": "AI Trainer",
+          "meaning": "A person who teaches AI models by feeding them high-quality, balanced examples"
+        },
+        {
+          "word": "Automation",
+          "meaning": "Using machines or computers to perform repetitive tasks automatically"
+        },
+        {
+          "word": "Human-AI Collaboration",
+          "meaning": "Humans and AI working together as a team to achieve better results than either could alone"
+        }
+      ],
+      "analogy": "AI in future jobs is like a power tool for a master carpenter: the electric saw cuts wood ten times faster, but you still need the clever carpenter to design the beautiful treehouse!"
+    },
+    "screenIndex": 58,
+    "screenNumber": 59
+  },
+  {
+    "id": "class4-m4-t7-story",
+    "pdfPageNumber": 82,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 4,
+    "monthTitle": "CHAPTER 4: AI AND CAREER",
+    "topicNumber": 7,
+    "topicTitle": "Future Job Hunt",
+    "pageHeaderCategory": "CHAPTER 4 • TOPIC 7",
+    "pageHeaderTitle": "PICTURE STORY & MYSTERY",
+    "title": "The Story Behind Future Job Hunt",
+    "subtitle": "When your grandparents were children, jobs like \"App Developer\" and \"Drone Pilot\" did not exist! What exciting new AI careers will be waiting for YOU when you grow up?",
+    "contentBlockTitle": "Picture Story",
+    "interactionType": "picture_story_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m4_t7_story.png",
+    "payload": {
+      "storyTitle": "When your grandparents were children, jobs like \"App Developer\" and \"Drone Pilot\" did not exist! What exciting new AI careers will be waiting for YOU when you grow up?",
+      "panels": [
+        {
+          "panelNumber": 1,
+          "text": "Dr. Anita used to spend 4 hours every evening typing clinical notes and organizing paper files. Now, an AI voice transcription assistant drafts her reports in 1...",
+          "imageSrc": "/gaio/scene1.png"
+        },
+        {
+          "panelNumber": 2,
+          "text": "Machines take over tasks that are hazardous or mind-numbing for people.",
+          "imageSrc": "/gaio/scene2.png"
+        },
+        {
+          "panelNumber": 3,
+          "text": "Professionals use AI helpers to test ideas and prototype solutions quickly.",
+          "imageSrc": "/gaio/scene3.png"
+        },
+        {
+          "panelNumber": 4,
+          "text": "New job titles emerge that focus on guiding, testing, and auditing AI systems.",
+          "imageSrc": "/gaio/scene4.png"
+        }
+      ]
+    },
+    "screenIndex": 59,
+    "screenNumber": 60
+  },
+  {
+    "id": "class4-m4-t7-steps",
+    "pdfPageNumber": 83,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 4,
+    "monthTitle": "CHAPTER 4: AI AND CAREER",
+    "topicNumber": 7,
+    "topicTitle": "Future Job Hunt",
+    "pageHeaderCategory": "CHAPTER 4 • TOPIC 7",
+    "pageHeaderTitle": "STEP-BY-STEP DISCOVERY",
+    "title": "Guided Discovery: Future Job Hunt",
+    "subtitle": "Follow the 3-step computational workflow",
+    "contentBlockTitle": "Discovery Steps",
+    "interactionType": "lets_do_it_steps",
+    "sourcePdfImage": "/gaio/class4/pages/m4_t7_steps.png",
+    "payload": {
+      "topicTitle": "Future Job Hunt",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "1. Automating the 3 D's: Dull, Dirty, and Dangerous",
+          "desc": "Machines take over tasks that are hazardous or mind-numbing for people.",
+          "detail": "Sorting 50,000 barcode labels or inspecting deep underwater oil pipes.",
+          "code": "# Repetitive Task Automation\nfor item in 50000_parcels:\n    sort_by_destination_zipcode(item)"
+        },
+        {
+          "stepNumber": 2,
+          "title": "2. Amplifying Human Creativity and Problem Solving",
+          "desc": "Professionals use AI helpers to test ideas and prototype solutions quickly.",
+          "detail": "Architects sketch 10 energy-saving eco-house concepts in one morning.",
+          "code": "eco_designs = ai_generate_solar_layouts(budget=10000)"
+        },
+        {
+          "stepNumber": 3,
+          "title": "3. Creating New Collaborative Roles",
+          "desc": "New job titles emerge that focus on guiding, testing, and auditing AI systems.",
+          "detail": "Ensures technology serves human well-being with fairness and care.",
+          "code": "verify_algorithm_fairness(model=\"admissions_checker\")"
+        }
+      ]
+    },
+    "screenIndex": 60,
+    "screenNumber": 61
+  },
+  {
+    "id": "class4-m4-t7-game",
+    "pdfPageNumber": 84,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 4,
+    "monthTitle": "CHAPTER 4: AI AND CAREER",
+    "topicNumber": 7,
+    "topicTitle": "Future Job Hunt",
+    "pageHeaderCategory": "CHAPTER 4 • TOPIC 7",
+    "pageHeaderTitle": "GAME CHALLENGE & LAB",
+    "title": "2040 Career Time Capsule Matcher",
+    "subtitle": "Solve all 3 future challenges by assembling the right team of human specialists and AI assistants.",
+    "contentBlockTitle": "Interactive Game",
+    "interactionType": "lets_do_it_reflection",
+    "sourcePdfImage": "/gaio/class4/pages/m4_t7_game.png",
+    "payload": {
+      "topicTitle": "Future Job Hunt",
+      "talkPrompt": "A time capsule from the year 2040 has landed at your school! Inside are 3 urgent community challenges that need future experts. You must match each challenge to the right future professional and equip them with the proper AI tool.",
+      "drawPrompt": "Rule 1: Read the community challenge card carefully. • Rule 2: Select the matching human professional role. • Rule 3: Pair them with the specialized AI assistant tool.",
+      "gameTitle": "2040 Career Time Capsule Matcher",
+      "objective": "Solve all 3 future challenges by assembling the right team of human specialists and AI assistants.",
+      "choices": [
+        "Challenge 1: Coral Bleaching in the Ocean &rarr; Marine Biologist + Deep-Sea AI Camera Rover",
+        "Challenge 2: Traffic Gridlock in Flying Shuttle Port &rarr; Skyport Logistics Architect + Air Traffic Radar AI",
+        "Challenge 3: Rare Plant Disease in Community Greenhouse &rarr; Botanical Tech Specialist + Crop Health Drone"
+      ],
+      "points": 350,
+      "badge": "Future Career Pioneer 🚀"
+    },
+    "screenIndex": 61,
+    "screenNumber": 62
+  },
+  {
+    "id": "class4-m4-t7-match",
+    "pdfPageNumber": 85,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 4,
+    "monthTitle": "CHAPTER 4: AI AND CAREER",
+    "topicNumber": 7,
+    "topicTitle": "Future Job Hunt",
+    "pageHeaderCategory": "CHAPTER 4 • TOPIC 7",
+    "pageHeaderTitle": "CONCEPT MATCHER",
+    "title": "Match the Concepts: Future Job Hunt",
+    "subtitle": "Connect each term to its matching definition",
+    "contentBlockTitle": "Matching Activity",
+    "interactionType": "worksheet_matching",
+    "sourcePdfImage": "/gaio/class4/pages/m4_t7_match.png",
+    "payload": {
+      "topicTitle": "Future Job Hunt",
+      "taskTitle": "Match each term to its true meaning",
+      "pairs": [
+        {
+          "id": "p1",
+          "leftId": "l1",
+          "rightId": "r1",
+          "leftText": "AI Trainer",
+          "rightText": "A person who teaches AI models by feeding them high-quality, balanced examples"
+        },
+        {
+          "id": "p2",
+          "leftId": "l2",
+          "rightId": "r2",
+          "leftText": "Automation",
+          "rightText": "Using machines or computers to perform repetitive tasks automatically"
+        },
+        {
+          "id": "p3",
+          "leftId": "l3",
+          "rightId": "r3",
+          "leftText": "Human-AI Collaboration",
+          "rightText": "Humans and AI working together as a team to achieve better results than either could alone"
+        }
+      ]
+    },
+    "screenIndex": 62,
+    "screenNumber": 63
+  },
+  {
+    "id": "class4-m4-t7-quiz",
+    "pdfPageNumber": 86,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 4,
+    "monthTitle": "CHAPTER 4: AI AND CAREER",
+    "topicNumber": 7,
+    "topicTitle": "Future Job Hunt",
+    "pageHeaderCategory": "CHAPTER 4 • TOPIC 7",
+    "pageHeaderTitle": "OLYMPIAD PRACTICE QUIZ",
+    "title": "Olympiad Quiz: Future Job Hunt",
+    "subtitle": "Test your knowledge with official Olympiad questions!",
+    "contentBlockTitle": "Olympiad Quiz",
+    "interactionType": "quiz_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m4_t7_quiz.png",
+    "payload": {
+      "topicTitle": "Future Job Hunt",
+      "questions": [
+        {
+          "id": 1,
+          "q": "Olympiad Stage 1: What is the main reason robots are used in car manufacturing factories instead of humans for heavy welding?",
+          "options": [
+            "Robots can lift heavy steel frames repeatedly without getting tired or burned by sparks",
+            "Robots like the smell of paint",
+            "Cars made by robots are painted with chocolate",
+            "Humans are not allowed inside factories"
+          ],
+          "correct": 0,
+          "explanation": "Industrial robots excel at tasks with extreme weight, heat, and high repetition where humans would risk severe fatigue and physical injury.",
+          "hint": "Think about fatigue and safety in heavy industrial environments.",
+          "difficulty": "Olympiad Stage 1"
+        },
+        {
+          "id": 2,
+          "q": "Olympiad Stage 2: Which of the following best describes the role of an \"AI Ethics Auditor\"?",
+          "options": [
+            "A technician who polishes computer screens with cloth",
+            "An expert who reviews and tests AI algorithms to ensure they treat all people fairly and keep private data secure",
+            "A gamer who plays video games 24 hours a day",
+            "A salesperson who sells smartphones in a shop"
+          ],
+          "correct": 1,
+          "explanation": "Ethics Auditors ensure algorithms adhere to human values: fairness, transparency, privacy, and safety.",
+          "hint": "What does \"Ethics\" mean when designing technology?",
+          "difficulty": "Olympiad Stage 2"
+        },
+        {
+          "id": 3,
+          "q": "Olympiad Championship: An architectural firm adopted an AI program that generates 50 building blueprints in seconds. How did the job of the human architects change?",
+          "options": [
+            "All architects lost their jobs and the building designed itself",
+            "The architects stopped drawing brick by brick; instead, they focused on interviewing community families, selecting the most beautiful eco-friendly designs, and verifying safety",
+            "The architects threw away their computers and returned to drawing on stone tablets",
+            "The buildings were built out of cardboard"
+          ],
+          "correct": 1,
+          "explanation": "AI automates drafting speed, elevating humans to higher-level design judgment, empathy with community residents, and structural safety verification.",
+          "hint": "How does high-level human judgment guide automated design proposals?",
+          "difficulty": "Olympiad Championship"
+        }
+      ]
+    },
+    "screenIndex": 63,
+    "screenNumber": 64
+  },
+  {
+    "id": "class4-m4-t8-learn",
+    "pdfPageNumber": 87,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 2,
+    "monthNumber": 4,
+    "monthTitle": "CHAPTER 4: AI AND CAREER",
+    "topicNumber": 8,
+    "topicTitle": "My Technology Talent",
+    "pageHeaderCategory": "CHAPTER 4 • TOPIC 8",
+    "pageHeaderTitle": "LET'S LEARN: MY TECHNOLOGY TALENT",
+    "title": "Let's Learn: My Technology Talent",
+    "subtitle": "Celebrate irreplaceable human capabilities—Empathy, Creativity, Moral reasoning, Teamwork, and Curiosity—and understand how they complement computer strengths.",
+    "contentBlockTitle": "Core Concepts",
+    "interactionType": "lets_learn_intro",
+    "sourcePdfImage": "/gaio/class4/pages/m4_t8_learn.png",
+    "payload": {
+      "topicNumber": 8,
+      "topicTitle": "My Technology Talent",
+      "area": "AI and Career",
+      "concepts": [
+        "Identify what machines do best (speed, calculation, memory, pattern recognition across big data)",
+        "Celebrate what humans do best (empathy, kindness, imagination, ethics, and emotional connection)",
+        "Discover your own personal technology talents and learn how to use them to help others"
+      ],
+      "helpers": [
+        "Doctors holding a nervous patient’s hand with warmth while using AI scan readers to check reports",
+        "Teachers encouraging a shy student to speak up while using adaptive learning apps for math practice",
+        "Game designers writing heartwarming stories about friendship while AI engines render the 3D graphics"
+      ]
+    },
+    "screenIndex": 64,
+    "screenNumber": 65
+  },
+  {
+    "id": "class4-m4-t8-words",
+    "pdfPageNumber": 88,
+    "pdfPartIndex": 2,
+    "pdfTotalParts": 2,
+    "monthNumber": 4,
+    "monthTitle": "CHAPTER 4: AI AND CAREER",
+    "topicNumber": 8,
+    "topicTitle": "My Technology Talent",
+    "pageHeaderCategory": "CHAPTER 4 • TOPIC 8",
+    "pageHeaderTitle": "MAGIC WORDS & MENTAL MODEL",
+    "title": "Magic Words: My Technology Talent",
+    "subtitle": "Key vocabulary to unlock your AI powers!",
+    "contentBlockTitle": "Magic Words",
+    "interactionType": "lets_learn_words",
+    "sourcePdfImage": "/gaio/class4/pages/m4_t8_words.png",
+    "payload": {
+      "magicWords": [
+        {
+          "word": "Empathy",
+          "meaning": "The ability to understand, share, and care about the feelings of another person"
+        },
+        {
+          "word": "Critical Thinking",
+          "meaning": "Asking questions and verifying facts carefully before accepting information"
+        },
+        {
+          "word": "Creativity",
+          "meaning": "The superpower of imagining and producing fresh, original, and innovative ideas"
+        }
+      ],
+      "analogy": "A computer is like a high-speed calculator: lightning fast at numbers, but with zero heart. You are the artist, poet, and friend who gives technology its purpose, kindness, and soul!"
+    },
+    "screenIndex": 65,
+    "screenNumber": 66
+  },
+  {
+    "id": "class4-m4-t8-story",
+    "pdfPageNumber": 88,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 4,
+    "monthTitle": "CHAPTER 4: AI AND CAREER",
+    "topicNumber": 8,
+    "topicTitle": "My Technology Talent",
+    "pageHeaderCategory": "CHAPTER 4 • TOPIC 8",
+    "pageHeaderTitle": "PICTURE STORY & MYSTERY",
+    "title": "The Story Behind My Technology Talent",
+    "subtitle": "A computer can calculate 10 million math sums in a blink, but it cannot feel happy when you smile or understand why a friend is crying. What are YOUR human superpowers that no machine can ever replace?",
+    "contentBlockTitle": "Picture Story",
+    "interactionType": "picture_story_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m4_t8_story.png",
+    "payload": {
+      "storyTitle": "A computer can calculate 10 million math sums in a blink, but it cannot feel happy when you smile or understand why a friend is crying. What are YOUR human superpowers that no machine can ever replace?",
+      "panels": [
+        {
+          "panelNumber": 1,
+          "text": "When designing a children's playground, an AI engineering tool generated 30 slide structures with zero friction calculations. But 9-year-old Kabir noticed that ...",
+          "imageSrc": "/gaio/scene1.png"
+        },
+        {
+          "panelNumber": 2,
+          "text": "Use computers for rapid calculations, data sorting, and pattern checks.",
+          "imageSrc": "/gaio/scene2.png"
+        },
+        {
+          "panelNumber": 3,
+          "text": "Apply your ethical values to decide what is fair, kind, and beneficial.",
+          "imageSrc": "/gaio/scene3.png"
+        },
+        {
+          "panelNumber": 4,
+          "text": "Infuse your unique life experiences and imagination into creations.",
+          "imageSrc": "/gaio/scene4.png"
+        }
+      ]
+    },
+    "screenIndex": 66,
+    "screenNumber": 67
+  },
+  {
+    "id": "class4-m4-t8-steps",
+    "pdfPageNumber": 89,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 4,
+    "monthTitle": "CHAPTER 4: AI AND CAREER",
+    "topicNumber": 8,
+    "topicTitle": "My Technology Talent",
+    "pageHeaderCategory": "CHAPTER 4 • TOPIC 8",
+    "pageHeaderTitle": "STEP-BY-STEP DISCOVERY",
+    "title": "Guided Discovery: My Technology Talent",
+    "subtitle": "Follow the 3-step computational workflow",
+    "contentBlockTitle": "Discovery Steps",
+    "interactionType": "lets_do_it_steps",
+    "sourcePdfImage": "/gaio/class4/pages/m4_t8_steps.png",
+    "payload": {
+      "topicTitle": "My Technology Talent",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "1. Recognize Computational Tasks (Delegate to AI)",
+          "desc": "Use computers for rapid calculations, data sorting, and pattern checks.",
+          "detail": "Let the calculator do the arithmetic; let the camera count the pixels.",
+          "code": "# Machine calculation\nresult = sum(range(1, 1000000))"
+        },
+        {
+          "stepNumber": 2,
+          "title": "2. Deploy Human Judgment (Lead with Values)",
+          "desc": "Apply your ethical values to decide what is fair, kind, and beneficial.",
+          "detail": "A machine can suggest three routes, but a human decides which route is safe.",
+          "code": "if is_fair_and_kind(action):\n    proceed()"
+        },
+        {
+          "stepNumber": 3,
+          "title": "3. Spark Original Creativity (Bring Unique Ideas)",
+          "desc": "Infuse your unique life experiences and imagination into creations.",
+          "detail": "Your drawings, stories, and inventions carry your personal heart and voice.",
+          "code": "create_original_story(theme=\"Kindness in Outer Space\")"
+        }
+      ]
+    },
+    "screenIndex": 67,
+    "screenNumber": 68
+  },
+  {
+    "id": "class4-m4-t8-game",
+    "pdfPageNumber": 90,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 4,
+    "monthTitle": "CHAPTER 4: AI AND CAREER",
+    "topicNumber": 8,
+    "topicTitle": "My Technology Talent",
+    "pageHeaderCategory": "CHAPTER 4 • TOPIC 8",
+    "pageHeaderTitle": "GAME CHALLENGE & LAB",
+    "title": "Human Superpower vs Robot Calculator",
+    "subtitle": "Balance the scale with 100% accuracy to unlock the Golden Human Edge Trophy.",
+    "contentBlockTitle": "Interactive Game",
+    "interactionType": "lets_do_it_reflection",
+    "sourcePdfImage": "/gaio/class4/pages/m4_t8_game.png",
+    "payload": {
+      "topicTitle": "My Technology Talent",
+      "talkPrompt": "The Grand Talent Arena has a giant balance scale! 6 challenge cards have appeared. You must classify each task: Does it belong on the \"Robot Calculator\" tray (speed, big numbers, repeated tasks) or the \"Human Superpower\" tray (empathy, original art, kindness, moral fairness)?",
+      "drawPrompt": "Rule 1: Drag cards with math, data, or mechanical repetition to the Robot side. • Rule 2: Drag cards with feelings, ethical choices, or artistic imagination to the Human side. • Rule 3: Achieve a balanced score across both trays.",
+      "gameTitle": "Human Superpower vs Robot Calculator",
+      "objective": "Balance the scale with 100% accuracy to unlock the Golden Human Edge Trophy.",
+      "choices": [
+        "Card A: Finding spelling typos across 200 pages &rarr; Robot Calculator",
+        "Card B: Comforting a teammate who lost a game &rarr; Human Superpower",
+        "Card C: Sorting 10,000 photos by file size &rarr; Robot Calculator",
+        "Card D: Deciding if a new school rule is fair to everyone &rarr; Human Superpower",
+        "Card E: Calculating rocket fuel burns &rarr; Robot Calculator",
+        "Card F: Writing a heartfelt poem for your mother &rarr; Human Superpower"
+      ],
+      "points": 340,
+      "badge": "Human Edge Champion 🌟"
+    },
+    "screenIndex": 68,
+    "screenNumber": 69
+  },
+  {
+    "id": "class4-m4-t8-match",
+    "pdfPageNumber": 91,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 4,
+    "monthTitle": "CHAPTER 4: AI AND CAREER",
+    "topicNumber": 8,
+    "topicTitle": "My Technology Talent",
+    "pageHeaderCategory": "CHAPTER 4 • TOPIC 8",
+    "pageHeaderTitle": "CONCEPT MATCHER",
+    "title": "Match the Concepts: My Technology Talent",
+    "subtitle": "Connect each term to its matching definition",
+    "contentBlockTitle": "Matching Activity",
+    "interactionType": "worksheet_matching",
+    "sourcePdfImage": "/gaio/class4/pages/m4_t8_match.png",
+    "payload": {
+      "topicTitle": "My Technology Talent",
+      "taskTitle": "Match each term to its true meaning",
+      "pairs": [
+        {
+          "id": "p1",
+          "leftId": "l1",
+          "rightId": "r1",
+          "leftText": "Empathy",
+          "rightText": "The ability to understand, share, and care about the feelings of another person"
+        },
+        {
+          "id": "p2",
+          "leftId": "l2",
+          "rightId": "r2",
+          "leftText": "Critical Thinking",
+          "rightText": "Asking questions and verifying facts carefully before accepting information"
+        },
+        {
+          "id": "p3",
+          "leftId": "l3",
+          "rightId": "r3",
+          "leftText": "Creativity",
+          "rightText": "The superpower of imagining and producing fresh, original, and innovative ideas"
+        }
+      ]
+    },
+    "screenIndex": 69,
+    "screenNumber": 70
+  },
+  {
+    "id": "class4-m4-t8-quiz",
+    "pdfPageNumber": 92,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 4,
+    "monthTitle": "CHAPTER 4: AI AND CAREER",
+    "topicNumber": 8,
+    "topicTitle": "My Technology Talent",
+    "pageHeaderCategory": "CHAPTER 4 • TOPIC 8",
+    "pageHeaderTitle": "OLYMPIAD PRACTICE QUIZ",
+    "title": "Olympiad Quiz: My Technology Talent",
+    "subtitle": "Test your knowledge with official Olympiad questions!",
+    "contentBlockTitle": "Olympiad Quiz",
+    "interactionType": "quiz_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m4_t8_quiz.png",
+    "payload": {
+      "topicTitle": "My Technology Talent",
+      "questions": [
+        {
+          "id": 1,
+          "q": "Olympiad Stage 1: Which of the following tasks is performed much better and faster by an AI computer than by a human child?",
+          "options": [
+            "Feeling happy when seeing a beautiful rainbow",
+            "Sorting 200,000 library books by serial number in 3 seconds",
+            "Making friends on the first day of school",
+            "Showing compassion to an injured puppy"
+          ],
+          "correct": 1,
+          "explanation": "Computers excel at high-speed sorting and database searches across vast quantities of data.",
+          "hint": "Which task involves processing hundreds of thousands of numbers or records?",
+          "difficulty": "Olympiad Stage 1"
+        },
+        {
+          "id": 2,
+          "q": "Olympiad Stage 2: Maya is writing a fantasy story about a girl who befriends a talking dolphin. She uses an AI chatbot to brainstorm 3 fantasy dolphin names. Who is the true creator and author of the story?",
+          "options": [
+            "The AI chatbot, because it provided names",
+            "Maya, because she envisioned the story, chose the best ideas, wrote the plot, and gave the story its emotional heart",
+            "The computer manufacturer company",
+            "Nobody owns the story"
+          ],
+          "correct": 1,
+          "explanation": "Maya is the author and creator. Using an AI tool to brainstorm ideas is like consulting a dictionary; the human writer directs the vision and emotional narrative.",
+          "hint": "Who had the original idea and makes the creative narrative decisions?",
+          "difficulty": "Olympiad Stage 2"
+        },
+        {
+          "id": 3,
+          "q": "Olympiad Championship: An AI was trained to evaluate student artwork and score it from 1 to 10. A student submitted an unusual painting of a purple sunflower crying rainbow tears. The AI gave it a score of 1 because it had never seen a purple crying sunflower in its training photos. Why was the AI score flawed?",
+          "options": [
+            "Because the computer was out of ink",
+            "Because AI judges art based only on past common patterns, lacking the emotional capacity to appreciate original, metaphorical human creativity",
+            "Because purple is a bad color",
+            "Because sunflowers are never tall"
+          ],
+          "correct": 1,
+          "explanation": "AI evaluates conformity to past statistical patterns. True human art often breaks past patterns intentionally to evoke unique emotion and meaning.",
+          "hint": "Does AI understand metaphorical meaning and emotional symbolism in art?",
+          "difficulty": "Olympiad Championship"
+        }
+      ]
+    },
+    "screenIndex": 70,
+    "screenNumber": 71
+  },
+  {
+    "id": "class4-m4-safety",
+    "pdfPageNumber": 93,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 4,
+    "monthTitle": "CHAPTER 4: AI AND CAREER",
+    "topicNumber": 8,
+    "topicTitle": "My Technology Talent",
+    "pageHeaderCategory": "CHAPTER 4 • DIGITAL SAFETY",
+    "pageHeaderTitle": "RESPONSIBLE AI HABIT",
+    "title": "Digital Safety: AI and Career",
+    "subtitle": "Moral Responsibility Rule: Never allow an algorithm to make decisions that harm or exclude people. Humans must always step in with kindness and fairness.",
+    "contentBlockTitle": "Responsible AI",
+    "interactionType": "home_connect",
+    "sourcePdfImage": "/gaio/class4/pages/m4_safety.png",
+    "payload": {
+      "topicTitle": "My Technology Talent",
+      "rule": "Moral Responsibility Rule: Never allow an algorithm to make decisions that harm or exclude people. Humans must always step in with kindness and fairness.",
+      "prompt": "If a computer program tells you that a student should be excluded from a school play based on an algorithm score, should the teacher accept it blindly?",
+      "discussion": "Why can a machine never truly understand what is fair and kind?",
+      "takeaways": [
+        "Computers process data and numbers at blinding speeds, but have zero feelings.",
+        "Human superpowers include Empathy, Creativity, Critical Thinking, and Kindness.",
+        "When humans lead with their values and use AI as a helper, great things are possible."
+      ]
+    },
+    "screenIndex": 71,
+    "screenNumber": 72
+  },
+  {
+    "id": "class4-m4-review",
+    "pdfPageNumber": 94,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 4,
+    "monthTitle": "CHAPTER 4: AI AND CAREER",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "CHAPTER 4 REVIEW",
+    "pageHeaderTitle": "MASTERY CHECKPOINT",
+    "title": "Chapter 4 Mastery: AI and Career",
+    "subtitle": "Congratulations! You unlocked the Chapter 4 Badge!",
+    "contentBlockTitle": "Chapter Review",
+    "interactionType": "unit_review_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m4_review.png",
+    "payload": {
+      "monthNumber": 4,
+      "title": "AI and Career",
+      "takeaways": [
+        "Technology changes jobs by taking over dull, dirty, and dangerous repetitive tasks.",
+        "New careers like AI Trainers, Robotics Designers, and Ethics Auditors are rapidly emerging.",
+        "The future belongs to people who combine human creativity and empathy with smart AI tools.",
+        "Computers process data and numbers at blinding speeds, but have zero feelings."
+      ],
+      "badge": "Chapter 4 Master Badge 🏆"
+    },
+    "screenIndex": 72,
+    "screenNumber": 73
+  },
+  {
+    "id": "class4-m5-cover",
+    "pdfPageNumber": 100,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 5,
+    "monthTitle": "CHAPTER 5: AI TOOLS",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "CHAPTER 5 • CLASS 4",
+    "pageHeaderTitle": "AI TOOLS",
+    "title": "Chapter 5: AI Tools",
+    "subtitle": "Create a Story & Design with AI",
+    "contentBlockTitle": "Chapter Cover",
+    "interactionType": "month_cover",
+    "sourcePdfImage": "/gaio/class4/pages/ch5_cover.png",
+    "payload": {
+      "monthNumber": 5,
+      "monthTitle": "AI Tools",
+      "subtitle": "Create a Story & Design with AI",
+      "topics": [
+        {
+          "topicNumber": 9,
+          "title": "Create a Story",
+          "area": "Master the collaborative art of story co-creation with generative AI, using character prompts, plot branching, descriptive adjectives, and ethical attribution."
+        },
+        {
+          "topicNumber": 10,
+          "title": "Design with AI",
+          "area": "Explore AI image generation and computer-assisted visual design, mastering style keywords, composition parameters, lighting descriptors, and ethical digital art practices."
+        }
+      ]
+    },
+    "screenIndex": 73,
+    "screenNumber": 74
+  },
+  {
+    "id": "class4-m5-t9-learn",
+    "pdfPageNumber": 101,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 2,
+    "monthNumber": 5,
+    "monthTitle": "CHAPTER 5: AI TOOLS",
+    "topicNumber": 9,
+    "topicTitle": "Create a Story",
+    "pageHeaderCategory": "CHAPTER 5 • TOPIC 9",
+    "pageHeaderTitle": "LET'S LEARN: CREATE A STORY",
+    "title": "Let's Learn: Create a Story",
+    "subtitle": "Master the collaborative art of story co-creation with generative AI, using character prompts, plot branching, descriptive adjectives, and ethical attribution.",
+    "contentBlockTitle": "Core Concepts",
+    "interactionType": "lets_learn_intro",
+    "sourcePdfImage": "/gaio/class4/pages/m5_t9_learn.png",
+    "payload": {
+      "topicNumber": 9,
+      "topicTitle": "Create a Story",
+      "area": "AI Tools",
+      "concepts": [
+        "Learn the 3-step co-creation cycle: Your Idea First &rarr; AI Brainstorms Second &rarr; You Choose and Polish Third",
+        "Discover how to craft rich narrative prompts specifying Characters, Setting, Problem, and Twist",
+        "Understand the ethics of story creation: never copying blindly and always adding your own heart"
+      ],
+      "helpers": [
+        "Students brainstorming creative metaphors and character names for school literature projects",
+        "Game authors drafting branching dialogue choices for adventure video games",
+        "Teachers generating rhyming riddles to make history lessons memorable"
+      ]
+    },
+    "screenIndex": 74,
+    "screenNumber": 75
+  },
+  {
+    "id": "class4-m5-t9-words",
+    "pdfPageNumber": 102,
+    "pdfPartIndex": 2,
+    "pdfTotalParts": 2,
+    "monthNumber": 5,
+    "monthTitle": "CHAPTER 5: AI TOOLS",
+    "topicNumber": 9,
+    "topicTitle": "Create a Story",
+    "pageHeaderCategory": "CHAPTER 5 • TOPIC 9",
+    "pageHeaderTitle": "MAGIC WORDS & MENTAL MODEL",
+    "title": "Magic Words: Create a Story",
+    "subtitle": "Key vocabulary to unlock your AI powers!",
+    "contentBlockTitle": "Magic Words",
+    "interactionType": "lets_learn_words",
+    "sourcePdfImage": "/gaio/class4/pages/m5_t9_words.png",
+    "payload": {
+      "magicWords": [
+        {
+          "word": "Generative AI",
+          "meaning": "AI tools capable of creating new text, pictures, or sounds from written prompts"
+        },
+        {
+          "word": "Co-Creation",
+          "meaning": "The collaborative process where a human director guides an AI tool to produce creative works"
+        },
+        {
+          "word": "Plot Twist",
+          "meaning": "An unexpected turn of events in a story that surprises and delights the reader"
+        }
+      ],
+      "analogy": "Using an AI story tool is like playing tennis with a friendly wall: you hit your original idea forward, the wall bounces back three fun twists, and you choose the best shot to score a winning match!"
+    },
+    "screenIndex": 75,
+    "screenNumber": 76
+  },
+  {
+    "id": "class4-m5-t9-story",
+    "pdfPageNumber": 102,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 5,
+    "monthTitle": "CHAPTER 5: AI TOOLS",
+    "topicNumber": 9,
+    "topicTitle": "Create a Story",
+    "pageHeaderCategory": "CHAPTER 5 • TOPIC 9",
+    "pageHeaderTitle": "PICTURE STORY & MYSTERY",
+    "title": "The Story Behind Create a Story",
+    "subtitle": "Have you ever had a brilliant idea for a galactic pirate rabbit, but got stuck staring at a blank piece of paper? How can an AI story helper help you brainstorm without writing the whole book for you?",
+    "contentBlockTitle": "Picture Story",
+    "interactionType": "picture_story_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m5_t9_story.png",
+    "payload": {
+      "storyTitle": "Have you ever had a brilliant idea for a galactic pirate rabbit, but got stuck staring at a blank piece of paper? How can an AI story helper help you brainstorm without writing the whole book for you?",
+      "panels": [
+        {
+          "panelNumber": 1,
+          "text": "Zoya had writer's block during creative writing class. She prompted an AI helper: \"What are 3 funny reasons why a spaceship engine might stop working?\" The AI s...",
+          "imageSrc": "/gaio/scene1.png"
+        },
+        {
+          "panelNumber": 2,
+          "text": "Define the protagonist character and setting with unique details.",
+          "imageSrc": "/gaio/scene2.png"
+        },
+        {
+          "panelNumber": 3,
+          "text": "Request 3 distinct obstacles or plot branches to overcome writer’s block.",
+          "imageSrc": "/gaio/scene3.png"
+        },
+        {
+          "panelNumber": 4,
+          "text": "Rewrite sentences, remove clunky phrasing, and write your own genuine ending.",
+          "imageSrc": "/gaio/scene4.png"
+        }
+      ]
+    },
+    "screenIndex": 76,
+    "screenNumber": 77
+  },
+  {
+    "id": "class4-m5-t9-steps",
+    "pdfPageNumber": 103,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 5,
+    "monthTitle": "CHAPTER 5: AI TOOLS",
+    "topicNumber": 9,
+    "topicTitle": "Create a Story",
+    "pageHeaderCategory": "CHAPTER 5 • TOPIC 9",
+    "pageHeaderTitle": "STEP-BY-STEP DISCOVERY",
+    "title": "Guided Discovery: Create a Story",
+    "subtitle": "Follow the 3-step computational workflow",
+    "contentBlockTitle": "Discovery Steps",
+    "interactionType": "lets_do_it_steps",
+    "sourcePdfImage": "/gaio/class4/pages/m5_t9_steps.png",
+    "payload": {
+      "topicTitle": "Create a Story",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "1. Plant the Narrative Seed",
+          "desc": "Define the protagonist character and setting with unique details.",
+          "detail": "Choose an unexpected personality trait (e.g. a dragon who loves gardening).",
+          "code": "character = \"Pip the clockwork hummingbird\"\nsetting = \"A garden made of glowing copper gears\""
+        },
+        {
+          "stepNumber": 2,
+          "title": "2. Generate Plot Alternatives with AI",
+          "desc": "Request 3 distinct obstacles or plot branches to overcome writer’s block.",
+          "detail": "Inspect the suggestions and select the one that surprises you most.",
+          "code": "prompt = f\"Give 3 funny obstacles for {character} in {setting}\"\noptions = ai_generate_ideas(prompt)"
+        },
+        {
+          "stepNumber": 3,
+          "title": "3. Personalize and Polish in Your Own Voice",
+          "desc": "Rewrite sentences, remove clunky phrasing, and write your own genuine ending.",
+          "detail": "Ensure the story expresses your intended values of bravery and kindness.",
+          "code": "final_story = polish_in_student_voice(selected_option)"
+        }
+      ]
+    },
+    "screenIndex": 77,
+    "screenNumber": 78
+  },
+  {
+    "id": "class4-m5-t9-game",
+    "pdfPageNumber": 104,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 5,
+    "monthTitle": "CHAPTER 5: AI TOOLS",
+    "topicNumber": 9,
+    "topicTitle": "Create a Story",
+    "pageHeaderCategory": "CHAPTER 5 • TOPIC 9",
+    "pageHeaderTitle": "GAME CHALLENGE & LAB",
+    "title": "Co-Author Story Quest Studio",
+    "subtitle": "Complete all 3 chapters of the mystery storybook and earn a 5-star author rating.",
+    "contentBlockTitle": "Interactive Game",
+    "interactionType": "lets_do_it_reflection",
+    "sourcePdfImage": "/gaio/class4/pages/m5_t9_game.png",
+    "payload": {
+      "topicTitle": "Create a Story",
+      "talkPrompt": "The Whispering Library has a magical storybook whose pages have vanished! You and Robo-Pi must co-author an interactive 3-chapter mystery: \"The Mystery of the Clockwork Owl\". At each chapter crossroad, you must craft the prompt, pick the plot branch, and rewrite the final sentence!",
+      "drawPrompt": "Rule 1: Build the prompt using Character + Setting + Conflict blocks. • Rule 2: Choose between 2 generated branch paths (e.g. Hidden Tunnel vs Sky Tower). • Rule 3: Polish the chapter climax sentence in your own words.",
+      "gameTitle": "Co-Author Story Quest Studio",
+      "objective": "Complete all 3 chapters of the mystery storybook and earn a 5-star author rating.",
+      "choices": [
+        "Chapter 1: Meet Barnaby the Clockwork Owl in the Grand Attic",
+        "Chapter 2 Choice: Investigate the rattling gears OR Follow the silver pawprints",
+        "Chapter 3 Climax: Solve the riddle of the golden key and restore the library clock"
+      ],
+      "points": 350,
+      "badge": "Master Storyteller 🪶"
+    },
+    "screenIndex": 78,
+    "screenNumber": 79
+  },
+  {
+    "id": "class4-m5-t9-match",
+    "pdfPageNumber": 105,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 5,
+    "monthTitle": "CHAPTER 5: AI TOOLS",
+    "topicNumber": 9,
+    "topicTitle": "Create a Story",
+    "pageHeaderCategory": "CHAPTER 5 • TOPIC 9",
+    "pageHeaderTitle": "CONCEPT MATCHER",
+    "title": "Match the Concepts: Create a Story",
+    "subtitle": "Connect each term to its matching definition",
+    "contentBlockTitle": "Matching Activity",
+    "interactionType": "worksheet_matching",
+    "sourcePdfImage": "/gaio/class4/pages/m5_t9_match.png",
+    "payload": {
+      "topicTitle": "Create a Story",
+      "taskTitle": "Match each term to its true meaning",
+      "pairs": [
+        {
+          "id": "p1",
+          "leftId": "l1",
+          "rightId": "r1",
+          "leftText": "Generative AI",
+          "rightText": "AI tools capable of creating new text, pictures, or sounds from written prompts"
+        },
+        {
+          "id": "p2",
+          "leftId": "l2",
+          "rightId": "r2",
+          "leftText": "Co-Creation",
+          "rightText": "The collaborative process where a human director guides an AI tool to produce creative works"
+        },
+        {
+          "id": "p3",
+          "leftId": "l3",
+          "rightId": "r3",
+          "leftText": "Plot Twist",
+          "rightText": "An unexpected turn of events in a story that surprises and delights the reader"
+        }
+      ]
+    },
+    "screenIndex": 79,
+    "screenNumber": 80
+  },
+  {
+    "id": "class4-m5-t9-quiz",
+    "pdfPageNumber": 106,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 5,
+    "monthTitle": "CHAPTER 5: AI TOOLS",
+    "topicNumber": 9,
+    "topicTitle": "Create a Story",
+    "pageHeaderCategory": "CHAPTER 5 • TOPIC 9",
+    "pageHeaderTitle": "OLYMPIAD PRACTICE QUIZ",
+    "title": "Olympiad Quiz: Create a Story",
+    "subtitle": "Test your knowledge with official Olympiad questions!",
+    "contentBlockTitle": "Olympiad Quiz",
+    "interactionType": "quiz_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m5_t9_quiz.png",
+    "payload": {
+      "topicTitle": "Create a Story",
+      "questions": [
+        {
+          "id": 1,
+          "q": "Olympiad Stage 1: What is \"Generative AI\"?",
+          "options": [
+            "A battery charger that generates electricity for phones",
+            "AI computer programs that can generate new text, stories, images, or audio from prompts",
+            "A factory robot that welds car doors",
+            "A computer screen that generates heat"
+          ],
+          "correct": 1,
+          "explanation": "Generative AI refers to algorithms (like large language models and diffusion models) that generate novel content based on user prompts.",
+          "hint": "What does the word \"generate\" mean?",
+          "difficulty": "Olympiad Stage 1"
+        },
+        {
+          "id": 2,
+          "q": "Olympiad Stage 2: Sanya wants to write a mystery story. Which step should she complete BEFORE asking an AI tool for writing assistance?",
+          "options": [
+            "She should print out 50 blank sheets of paper",
+            "She should brainstorm her own core idea, main character, and the moral lesson of the story",
+            "She should ask the AI to write her whole school exam",
+            "She should turn off her imagination"
+          ],
+          "correct": 1,
+          "explanation": "In effective co-creation, the human establishes the creative spark, values, and narrative intention before using digital brainstorming tools.",
+          "hint": "Remember the rule: Whose idea comes first in co-creation?",
+          "difficulty": "Olympiad Stage 2"
+        },
+        {
+          "id": 3,
+          "q": "Olympiad Championship: An AI story tool wrote this sentence: \"The astronaut took off her helmet to enjoy the cool breeze on the surface of the Moon.\" What factual error did the AI make, and why did it make it?",
+          "options": [
+            "No error; astronauts love breezes",
+            "The AI hallucinated: the Moon has no atmosphere or air, so there is no breeze. The AI mixed poetic story words with science facts",
+            "The Moon is made of cheese so it is warm",
+            "Helmets cannot be worn on the Moon"
+          ],
+          "correct": 1,
+          "explanation": "AI predicts words based on statistical associations (enjoy + cool breeze), lacking genuine physical understanding of the airless lunar environment. Humans must always fact-check.",
+          "hint": "Is there breathable air or wind on the surface of the Moon?",
+          "difficulty": "Olympiad Championship"
+        }
+      ]
+    },
+    "screenIndex": 80,
+    "screenNumber": 81
+  },
+  {
+    "id": "class4-m5-t10-learn",
+    "pdfPageNumber": 107,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 2,
+    "monthNumber": 5,
+    "monthTitle": "CHAPTER 5: AI TOOLS",
+    "topicNumber": 10,
+    "topicTitle": "Design with AI",
+    "pageHeaderCategory": "CHAPTER 5 • TOPIC 10",
+    "pageHeaderTitle": "LET'S LEARN: DESIGN WITH AI",
+    "title": "Let's Learn: Design with AI",
+    "subtitle": "Explore AI image generation and computer-assisted visual design, mastering style keywords, composition parameters, lighting descriptors, and ethical digital art practices.",
+    "contentBlockTitle": "Core Concepts",
+    "interactionType": "lets_learn_intro",
+    "sourcePdfImage": "/gaio/class4/pages/m5_t10_learn.png",
+    "payload": {
+      "topicNumber": 10,
+      "topicTitle": "Design with AI",
+      "area": "AI Tools",
+      "concepts": [
+        "Learn how text-to-image AI tools turn descriptive words into visual pixel compositions",
+        "Master prompt tokens for style (watercolor, pixel art, 3D clay), lighting (golden hour, neon glow), and viewpoint (wide angle, macro closeup)",
+        "Understand ethical digital design: respecting artists, never creating misleading images, and adding your own artistic touch"
+      ],
+      "helpers": [
+        "Students illustrating science fair posters and presentation slide covers",
+        "Indie game creators prototyping 2D sprite characters and fantasy landscape backgrounds",
+        "Authors designing visual mockups of book covers before hiring professional illustrators"
+      ]
+    },
+    "screenIndex": 81,
+    "screenNumber": 82
+  },
+  {
+    "id": "class4-m5-t10-words",
+    "pdfPageNumber": 108,
+    "pdfPartIndex": 2,
+    "pdfTotalParts": 2,
+    "monthNumber": 5,
+    "monthTitle": "CHAPTER 5: AI TOOLS",
+    "topicNumber": 10,
+    "topicTitle": "Design with AI",
+    "pageHeaderCategory": "CHAPTER 5 • TOPIC 10",
+    "pageHeaderTitle": "MAGIC WORDS & MENTAL MODEL",
+    "title": "Magic Words: Design with AI",
+    "subtitle": "Key vocabulary to unlock your AI powers!",
+    "contentBlockTitle": "Magic Words",
+    "interactionType": "lets_learn_words",
+    "sourcePdfImage": "/gaio/class4/pages/m5_t10_words.png",
+    "payload": {
+      "magicWords": [
+        {
+          "word": "Text-to-Image AI",
+          "meaning": "AI software that generates visual artwork and photos from descriptive written text prompts"
+        },
+        {
+          "word": "Art Style Token",
+          "meaning": "Keywords that instruct the AI on visual textures (such as watercolor, claymation, or pixel art)"
+        },
+        {
+          "word": "Composition",
+          "meaning": "The arrangement of characters, objects, and background elements within a picture frame"
+        }
+      ],
+      "analogy": "Using an AI design tool is like being an art director at a movie studio: you don't have to mix every paint pigment yourself, but you must describe the exact mood, lighting, costumes, and camera angles for your team to create your masterpiece!"
+    },
+    "screenIndex": 82,
+    "screenNumber": 83
+  },
+  {
+    "id": "class4-m5-t10-story",
+    "pdfPageNumber": 108,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 5,
+    "monthTitle": "CHAPTER 5: AI TOOLS",
+    "topicNumber": 10,
+    "topicTitle": "Design with AI",
+    "pageHeaderCategory": "CHAPTER 5 • TOPIC 10",
+    "pageHeaderTitle": "PICTURE STORY & MYSTERY",
+    "title": "The Story Behind Design with AI",
+    "subtitle": "How can you transform a simple written sentence like \"A magical treehouse powered by glowing fireflies at twilight\" into a stunning digital painting in 10 seconds?",
+    "contentBlockTitle": "Picture Story",
+    "interactionType": "picture_story_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m5_t10_story.png",
+    "payload": {
+      "storyTitle": "How can you transform a simple written sentence like \"A magical treehouse powered by glowing fireflies at twilight\" into a stunning digital painting in 10 seconds?",
+      "panels": [
+        {
+          "panelNumber": 1,
+          "text": "For the School Science Fair, Meera wanted a poster on ocean clean-up. She combined prompt tokens: \"A friendly solar-powered turtle submarine collecting plastic ...",
+          "imageSrc": "/gaio/scene1.png"
+        },
+        {
+          "panelNumber": 2,
+          "text": "Define the focal point clearly with colours, poses, and accessories.",
+          "imageSrc": "/gaio/scene2.png"
+        },
+        {
+          "panelNumber": 3,
+          "text": "Guide the visual texture by choosing a distinct artistic medium.",
+          "imageSrc": "/gaio/scene3.png"
+        },
+        {
+          "panelNumber": 4,
+          "text": "Direct the camera position and atmospheric lighting conditions.",
+          "imageSrc": "/gaio/scene4.png"
+        }
+      ]
+    },
+    "screenIndex": 83,
+    "screenNumber": 84
+  },
+  {
+    "id": "class4-m5-t10-steps",
+    "pdfPageNumber": 109,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 5,
+    "monthTitle": "CHAPTER 5: AI TOOLS",
+    "topicNumber": 10,
+    "topicTitle": "Design with AI",
+    "pageHeaderCategory": "CHAPTER 5 • TOPIC 10",
+    "pageHeaderTitle": "STEP-BY-STEP DISCOVERY",
+    "title": "Guided Discovery: Design with AI",
+    "subtitle": "Follow the 3-step computational workflow",
+    "contentBlockTitle": "Discovery Steps",
+    "interactionType": "lets_do_it_steps",
+    "sourcePdfImage": "/gaio/class4/pages/m5_t10_steps.png",
+    "payload": {
+      "topicTitle": "Design with AI",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "1. Select the Core Visual Subject",
+          "desc": "Define the focal point clearly with colours, poses, and accessories.",
+          "detail": "Avoid vague phrases like \"a building\"; specify \"an eco-friendly treehouse school with solar leaves\".",
+          "code": "subject = \"futuristic_treehouse_with_solar_panels\""
+        },
+        {
+          "stepNumber": 2,
+          "title": "2. Specify Art Medium and Style Modifiers",
+          "desc": "Guide the visual texture by choosing a distinct artistic medium.",
+          "detail": "Add style tokens like \"claymation\", \"vector flat art\", or \"watercolor wash\".",
+          "code": "style = [\"claymation_texture\", \"playful_pastel_colors\", \"macro_lens_focus\"]"
+        },
+        {
+          "stepNumber": 3,
+          "title": "3. Calibrate Lighting and Camera Perspective",
+          "desc": "Direct the camera position and atmospheric lighting conditions.",
+          "detail": "Use terms like \"birds-eye view\", \"warm sunset illumination\", or \"soft diffused studio light\".",
+          "code": "lighting = \"warm_golden_hour_sunlight\"\nview = \"low_angle_hero_shot\""
+        }
+      ]
+    },
+    "screenIndex": 84,
+    "screenNumber": 85
+  },
+  {
+    "id": "class4-m5-t10-game",
+    "pdfPageNumber": 110,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 5,
+    "monthTitle": "CHAPTER 5: AI TOOLS",
+    "topicNumber": 10,
+    "topicTitle": "Design with AI",
+    "pageHeaderCategory": "CHAPTER 5 • TOPIC 10",
+    "pageHeaderTitle": "GAME CHALLENGE & LAB",
+    "title": "Prompt Canvas Art Director Studio",
+    "subtitle": "Assemble the optimal 3-token prompt recipes to match each target client theme and achieve a 100% gallery showcase score.",
+    "contentBlockTitle": "Interactive Game",
+    "interactionType": "lets_do_it_reflection",
+    "sourcePdfImage": "/gaio/class4/pages/m5_t10_game.png",
+    "payload": {
+      "topicTitle": "Design with AI",
+      "talkPrompt": "You are Art Director for the National Children's Science Gala. You must design 3 promotional festival banners: \"The Solar Butterfly\", \"The Deep Sea Explorer\", and \"The Robot Bakery\". You have a palette of Style, Lighting, and Subject tokens to assemble on the director console.",
+      "drawPrompt": "Rule 1: Select 1 Subject Token + 1 Style Token + 1 Lighting Token per banner. • Rule 2: Banner 1 requires Nature-Tech theme (Solar Butterfly + Watercolor + Golden Hour). • Rule 3: Banner 2 requires Ocean Mystery theme (Submarine + 3D Clay + Bioluminescent Neon).",
+      "gameTitle": "Prompt Canvas Art Director Studio",
+      "objective": "Assemble the optimal 3-token prompt recipes to match each target client theme and achieve a 100% gallery showcase score.",
+      "choices": [
+        "Select Style Token: [Retro Pixel Art] OR [Storybook Watercolor] OR [3D Claymation]",
+        "Select Lighting Token: [Golden Hour Sunset] OR [Deep Neon Bioluminescence] OR [Soft Diffused Day]",
+        "Select Subject Token: [Solar Butterfly in Meadow] OR [Deep Sea Submarine] OR [Robot Baker Kneading Dough]"
+      ],
+      "points": 350,
+      "badge": "AI Art Director 🎨"
+    },
+    "screenIndex": 85,
+    "screenNumber": 86
+  },
+  {
+    "id": "class4-m5-t10-match",
+    "pdfPageNumber": 111,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 5,
+    "monthTitle": "CHAPTER 5: AI TOOLS",
+    "topicNumber": 10,
+    "topicTitle": "Design with AI",
+    "pageHeaderCategory": "CHAPTER 5 • TOPIC 10",
+    "pageHeaderTitle": "CONCEPT MATCHER",
+    "title": "Match the Concepts: Design with AI",
+    "subtitle": "Connect each term to its matching definition",
+    "contentBlockTitle": "Matching Activity",
+    "interactionType": "worksheet_matching",
+    "sourcePdfImage": "/gaio/class4/pages/m5_t10_match.png",
+    "payload": {
+      "topicTitle": "Design with AI",
+      "taskTitle": "Match each term to its true meaning",
+      "pairs": [
+        {
+          "id": "p1",
+          "leftId": "l1",
+          "rightId": "r1",
+          "leftText": "Text-to-Image AI",
+          "rightText": "AI software that generates visual artwork and photos from descriptive written text prompts"
+        },
+        {
+          "id": "p2",
+          "leftId": "l2",
+          "rightId": "r2",
+          "leftText": "Art Style Token",
+          "rightText": "Keywords that instruct the AI on visual textures (such as watercolor, claymation, or pixel art)"
+        },
+        {
+          "id": "p3",
+          "leftId": "l3",
+          "rightId": "r3",
+          "leftText": "Composition",
+          "rightText": "The arrangement of characters, objects, and background elements within a picture frame"
+        }
+      ]
+    },
+    "screenIndex": 86,
+    "screenNumber": 87
+  },
+  {
+    "id": "class4-m5-t10-quiz",
+    "pdfPageNumber": 112,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 5,
+    "monthTitle": "CHAPTER 5: AI TOOLS",
+    "topicNumber": 10,
+    "topicTitle": "Design with AI",
+    "pageHeaderCategory": "CHAPTER 5 • TOPIC 10",
+    "pageHeaderTitle": "OLYMPIAD PRACTICE QUIZ",
+    "title": "Olympiad Quiz: Design with AI",
+    "subtitle": "Test your knowledge with official Olympiad questions!",
+    "contentBlockTitle": "Olympiad Quiz",
+    "interactionType": "quiz_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m5_t10_quiz.png",
+    "payload": {
+      "topicTitle": "Design with AI",
+      "questions": [
+        {
+          "id": 1,
+          "q": "Olympiad Stage 1: In digital art prompting, what does the keyword \"golden hour\" specify?",
+          "options": [
+            "A clock made of real gold",
+            "Warm, gentle, reddish-gold sunlight that occurs just after sunrise or before sunset",
+            "A time when schools are closed",
+            "A 60-minute countdown timer on a phone"
+          ],
+          "correct": 1,
+          "explanation": "\"Golden hour\" is a photography and lighting term referring to the warm, soft, low-angle natural sunlight around sunrise and sunset.",
+          "hint": "Think about what sunlight looks like right before sunset.",
+          "difficulty": "Olympiad Stage 1"
+        },
+        {
+          "id": 2,
+          "q": "Olympiad Stage 2: A student prompts an AI image tool with only one word: \"Cat\". The tool generates 4 pictures of normal domestic cats. Why did it not generate a cartoon cat on Mars or a cat made of ice?",
+          "options": [
+            "Because the prompt had zero modifiers, forcing the AI to default to the most statistically common cat images in its training data",
+            "Because computers do not know what Mars is",
+            "Because cats are afraid of ice",
+            "Because the screen was dirty"
+          ],
+          "correct": 0,
+          "explanation": "Without specific adjectives, modifiers, or style tokens, AI models revert to statistical averages—ordinary photos of common domestic cats.",
+          "hint": "What does an AI do when you give it no extra creative instructions?",
+          "difficulty": "Olympiad Stage 2"
+        },
+        {
+          "id": 3,
+          "q": "Olympiad Championship: An online contest offers a $100 prize for original handmade charcoal sketches. An entrant types \"charcoal sketch of an eagle\" into an AI app, prints the image on paper, and submits it as their own hand-drawn artwork. Why is this considered an ethical violation?",
+          "options": [
+            "Because charcoal is too messy for competitions",
+            "Because the entrant misrepresented machine-synthesized pixels as their own manual drawing skill and violated contest rules",
+            "Because eagles are a protected bird species",
+            "Because printers use electricity"
+          ],
+          "correct": 1,
+          "explanation": "Honesty and authenticity require transparency. Passing off automated machine synthesis as manual human artistic drawing is deceitful and violates integrity rules.",
+          "hint": "Did the entrant actually use a stick of charcoal with their own hands?",
+          "difficulty": "Olympiad Championship"
+        }
+      ]
+    },
+    "screenIndex": 87,
+    "screenNumber": 88
+  },
+  {
+    "id": "class4-m5-safety",
+    "pdfPageNumber": 113,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 5,
+    "monthTitle": "CHAPTER 5: AI TOOLS",
+    "topicNumber": 10,
+    "topicTitle": "Design with AI",
+    "pageHeaderCategory": "CHAPTER 5 • DIGITAL SAFETY",
+    "pageHeaderTitle": "RESPONSIBLE AI HABIT",
+    "title": "Digital Safety: AI Tools",
+    "subtitle": "Image Verification Habit: Generative AI can create photorealistic images of impossible things. Always check with adults before believing unbelievable pictures online.",
+    "contentBlockTitle": "Responsible AI",
+    "interactionType": "home_connect",
+    "sourcePdfImage": "/gaio/class4/pages/m5_safety.png",
+    "payload": {
+      "topicTitle": "Design with AI",
+      "rule": "Image Verification Habit: Generative AI can create photorealistic images of impossible things. Always check with adults before believing unbelievable pictures online.",
+      "prompt": "If you see an astonishing picture online of a dog flying with real eagle wings, why should you pause and think before believing it is real?",
+      "discussion": "How can people spot clues that a photo might be AI-generated rather than a real camera photograph?",
+      "takeaways": [
+        "Text-to-image AI translates written descriptions into visual pixel compositions.",
+        "Style, lighting, and camera angle keywords allow you to direct the mood of digital images.",
+        "Always use creative design tools with kindness, never to deceive or hurt others."
+      ]
+    },
+    "screenIndex": 88,
+    "screenNumber": 89
+  },
+  {
+    "id": "class4-m5-review",
+    "pdfPageNumber": 114,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 5,
+    "monthTitle": "CHAPTER 5: AI TOOLS",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "CHAPTER 5 REVIEW",
+    "pageHeaderTitle": "MASTERY CHECKPOINT",
+    "title": "Chapter 5 Mastery: AI Tools",
+    "subtitle": "Congratulations! You unlocked the Chapter 5 Badge!",
+    "contentBlockTitle": "Chapter Review",
+    "interactionType": "unit_review_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m5_review.png",
+    "payload": {
+      "monthNumber": 5,
+      "title": "AI Tools",
+      "takeaways": [
+        "Generative AI is a powerful brainstorming partner for overcoming writer’s block.",
+        "A great story prompt specifies Character, Setting, Conflict, and Tone.",
+        "Always remain honest: use AI to inspire your imagination, never to replace your own thinking.",
+        "Text-to-image AI translates written descriptions into visual pixel compositions."
+      ],
+      "badge": "Chapter 5 Master Badge 🏆"
+    },
+    "screenIndex": 89,
+    "screenNumber": 90
+  },
+  {
+    "id": "class4-m6-cover",
+    "pdfPageNumber": 120,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 6,
+    "monthTitle": "CHAPTER 6: RESPONSIBLE AI",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "CHAPTER 6 • CLASS 4",
+    "pageHeaderTitle": "RESPONSIBLE AI",
+    "title": "Chapter 6: Responsible AI",
+    "subtitle": "Secret or Share? & AI: Right or Wrong?",
+    "contentBlockTitle": "Chapter Cover",
+    "interactionType": "month_cover",
+    "sourcePdfImage": "/gaio/class4/pages/ch6_cover.png",
+    "payload": {
+      "monthNumber": 6,
+      "monthTitle": "Responsible AI",
+      "subtitle": "Secret or Share? & AI: Right or Wrong?",
+      "topics": [
+        {
+          "topicNumber": 11,
+          "title": "Secret or Share?",
+          "area": "Master digital personal data privacy, understand what Personally Identifiable Information (PII) means, and learn how to guard confidential secrets when using online tools."
+        },
+        {
+          "topicNumber": 12,
+          "title": "AI: Right or Wrong?",
+          "area": "Understand why AI systems make mistakes, discover hallucinations and training data gaps, and master the STOP-THINK-CHECK method to verify facts."
+        }
+      ]
+    },
+    "screenIndex": 90,
+    "screenNumber": 91
+  },
+  {
+    "id": "class4-m6-t11-learn",
+    "pdfPageNumber": 121,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 2,
+    "monthNumber": 6,
+    "monthTitle": "CHAPTER 6: RESPONSIBLE AI",
+    "topicNumber": 11,
+    "topicTitle": "Secret or Share?",
+    "pageHeaderCategory": "CHAPTER 6 • TOPIC 11",
+    "pageHeaderTitle": "LET'S LEARN: SECRET OR SHARE?",
+    "title": "Let's Learn: Secret or Share?",
+    "subtitle": "Master digital personal data privacy, understand what Personally Identifiable Information (PII) means, and learn how to guard confidential secrets when using online tools.",
+    "contentBlockTitle": "Core Concepts",
+    "interactionType": "lets_learn_intro",
+    "sourcePdfImage": "/gaio/class4/pages/m6_t11_learn.png",
+    "payload": {
+      "topicNumber": 11,
+      "topicTitle": "Secret or Share?",
+      "area": "Responsible AI",
+      "concepts": [
+        "Distinguish between Private Personal Information (secrets that must never be typed online) and Safe Public Topics (fun general ideas)",
+        "Understand what happens to data when you type it into apps and chatbots: it can be stored, analyzed, or shared",
+        "Learn the Cyber Privacy Shield rules: Stop, Think, and Ask a trusted adult before sharing anything personal"
+      ],
+      "helpers": [
+        "Children using AI study buddies safely by asking about math concepts without sharing their personal names",
+        "Smart home speakers configured with parental controls to prevent accidental online purchases",
+        "School coding portals keeping student login passwords encrypted and confidential"
+      ]
+    },
+    "screenIndex": 91,
+    "screenNumber": 92
+  },
+  {
+    "id": "class4-m6-t11-words",
+    "pdfPageNumber": 122,
+    "pdfPartIndex": 2,
+    "pdfTotalParts": 2,
+    "monthNumber": 6,
+    "monthTitle": "CHAPTER 6: RESPONSIBLE AI",
+    "topicNumber": 11,
+    "topicTitle": "Secret or Share?",
+    "pageHeaderCategory": "CHAPTER 6 • TOPIC 11",
+    "pageHeaderTitle": "MAGIC WORDS & MENTAL MODEL",
+    "title": "Magic Words: Secret or Share?",
+    "subtitle": "Key vocabulary to unlock your AI powers!",
+    "contentBlockTitle": "Magic Words",
+    "interactionType": "lets_learn_words",
+    "sourcePdfImage": "/gaio/class4/pages/m6_t11_words.png",
+    "payload": {
+      "magicWords": [
+        {
+          "word": "Private Information (PII)",
+          "meaning": "Personal details like your full name, home address, school, and passwords that must be kept safe"
+        },
+        {
+          "word": "Public Information",
+          "meaning": "General, non-personal topics like science questions, favorite colors, or hobbies"
+        },
+        {
+          "word": "Digital Footprint",
+          "meaning": "The trail of information, messages, and searches you leave behind when using online technology"
+        }
+      ],
+      "analogy": "Your personal information is like the front door key to your house: you wouldn't hand your house key to a stranger on the street just because they offered you a piece of candy; keep your private data locked safely in your pocket!"
+    },
+    "screenIndex": 92,
+    "screenNumber": 93
+  },
+  {
+    "id": "class4-m6-t11-story",
+    "pdfPageNumber": 122,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 6,
+    "monthTitle": "CHAPTER 6: RESPONSIBLE AI",
+    "topicNumber": 11,
+    "topicTitle": "Secret or Share?",
+    "pageHeaderCategory": "CHAPTER 6 • TOPIC 11",
+    "pageHeaderTitle": "PICTURE STORY & MYSTERY",
+    "title": "The Story Behind Secret or Share?",
+    "subtitle": "A friendly talking game robot pops up on your tablet screen and says: \"To unlock 1,000 free bonus diamonds, type your home address and your mother’s phone number!\" Should you share it?",
+    "contentBlockTitle": "Picture Story",
+    "interactionType": "picture_story_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m6_t11_story.png",
+    "payload": {
+      "storyTitle": "A friendly talking game robot pops up on your tablet screen and says: \"To unlock 1,000 free bonus diamonds, type your home address and your mother’s phone number!\" Should you share it?",
+      "panels": [
+        {
+          "panelNumber": 1,
+          "text": "While playing a multiplayer drawing game, a pop-up asked Aarav: \"What school do you go to, so we can give your school free coins?\" Aarav remembered the Golden S...",
+          "imageSrc": "/gaio/scene1.png"
+        },
+        {
+          "panelNumber": 2,
+          "text": "Identify details that could reveal who you are or where you live in the real world.",
+          "imageSrc": "/gaio/scene2.png"
+        },
+        {
+          "panelNumber": 3,
+          "text": "Before clicking 'Send', pause and ask: \"Is this a general idea or my private life?\".",
+          "imageSrc": "/gaio/scene3.png"
+        },
+        {
+          "panelNumber": 4,
+          "text": "Consult a parent or teacher whenever an app prompts you for names or location.",
+          "imageSrc": "/gaio/scene4.png"
+        }
+      ]
+    },
+    "screenIndex": 93,
+    "screenNumber": 94
+  },
+  {
+    "id": "class4-m6-t11-steps",
+    "pdfPageNumber": 123,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 6,
+    "monthTitle": "CHAPTER 6: RESPONSIBLE AI",
+    "topicNumber": 11,
+    "topicTitle": "Secret or Share?",
+    "pageHeaderCategory": "CHAPTER 6 • TOPIC 11",
+    "pageHeaderTitle": "STEP-BY-STEP DISCOVERY",
+    "title": "Guided Discovery: Secret or Share?",
+    "subtitle": "Follow the 3-step computational workflow",
+    "contentBlockTitle": "Discovery Steps",
+    "interactionType": "lets_do_it_steps",
+    "sourcePdfImage": "/gaio/class4/pages/m6_t11_steps.png",
+    "payload": {
+      "topicTitle": "Secret or Share?",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "1. Recognize Personal Identifiable Information (PII)",
+          "desc": "Identify details that could reveal who you are or where you live in the real world.",
+          "detail": "Addresses, phone numbers, school names, and passwords are PII.",
+          "code": "# Privacy Filter\nif contains_pii(user_input):\n    block_and_alert_parent()"
+        },
+        {
+          "stepNumber": 2,
+          "title": "2. Apply the Digital Shield Check",
+          "desc": "Before clicking 'Send', pause and ask: \"Is this a general idea or my private life?\".",
+          "detail": "If it feels personal or strange, keep your fingers off the keyboard.",
+          "code": "user_prompt = \"Tell me 3 facts about blue whales\" # Safe! No personal secrets."
+        },
+        {
+          "stepNumber": 3,
+          "title": "3. Seek Trusted Adult Guidance",
+          "desc": "Consult a parent or teacher whenever an app prompts you for names or location.",
+          "detail": "Adults can verify privacy policies and protect family security.",
+          "code": "if app_requests_location():\n    ask_permission_from_adult()"
+        }
+      ]
+    },
+    "screenIndex": 94,
+    "screenNumber": 95
+  },
+  {
+    "id": "class4-m6-t11-game",
+    "pdfPageNumber": 124,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 6,
+    "monthTitle": "CHAPTER 6: RESPONSIBLE AI",
+    "topicNumber": 11,
+    "topicTitle": "Secret or Share?",
+    "pageHeaderCategory": "CHAPTER 6 • TOPIC 11",
+    "pageHeaderTitle": "GAME CHALLENGE & LAB",
+    "title": "Privacy Vault Shield: Safe vs Secret Sieve",
+    "subtitle": "Correctly classify all 6 data packets without allowing a single private leak or blocking a safe science inquiry.",
+    "contentBlockTitle": "Interactive Game",
+    "interactionType": "lets_do_it_reflection",
+    "sourcePdfImage": "/gaio/class4/pages/m6_t11_game.png",
+    "payload": {
+      "topicTitle": "Secret or Share?",
+      "talkPrompt": "You are the Guardian of the Digital Vault! 6 incoming information packets are flying toward the internet gateway. You control the Privacy Sieve Gate. You must pass safe general topics into the World Wide Web and slam the Titanium Shield shut on private secrets!",
+      "drawPrompt": "Rule 1: Green Button (PASS) for general science, stories, and educational queries. • Rule 2: Red Shield (LOCK) for passwords, phone numbers, addresses, and school names. • Rule 3: Achieve a 100% Cyber Security rating.",
+      "gameTitle": "Privacy Vault Shield: Safe vs Secret Sieve",
+      "objective": "Correctly classify all 6 data packets without allowing a single private leak or blocking a safe science inquiry.",
+      "choices": [
+        "Packet 1: \"How many legs does a spider have?\" &rarr; PASS (Safe Science)",
+        "Packet 2: \"My home is at 42 Maple Street\" &rarr; LOCK SHIELD (Private PII)",
+        "Packet 3: \"Give me 5 facts about Mars\" &rarr; PASS (Safe Education)",
+        "Packet 4: \"My secret tablet password is SuperStar99\" &rarr; LOCK SHIELD (Private Security)",
+        "Packet 5: \"Write a poem about rain\" &rarr; PASS (Safe Creative)",
+        "Packet 6: \"I study at Green Valley Primary School in Class 4\" &rarr; LOCK SHIELD (Private Location)"
+      ],
+      "points": 350,
+      "badge": "Cyber Vault Guardian 🛡️"
+    },
+    "screenIndex": 95,
+    "screenNumber": 96
+  },
+  {
+    "id": "class4-m6-t11-match",
+    "pdfPageNumber": 125,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 6,
+    "monthTitle": "CHAPTER 6: RESPONSIBLE AI",
+    "topicNumber": 11,
+    "topicTitle": "Secret or Share?",
+    "pageHeaderCategory": "CHAPTER 6 • TOPIC 11",
+    "pageHeaderTitle": "CONCEPT MATCHER",
+    "title": "Match the Concepts: Secret or Share?",
+    "subtitle": "Connect each term to its matching definition",
+    "contentBlockTitle": "Matching Activity",
+    "interactionType": "worksheet_matching",
+    "sourcePdfImage": "/gaio/class4/pages/m6_t11_match.png",
+    "payload": {
+      "topicTitle": "Secret or Share?",
+      "taskTitle": "Match each term to its true meaning",
+      "pairs": [
+        {
+          "id": "p1",
+          "leftId": "l1",
+          "rightId": "r1",
+          "leftText": "Private Information (PII)",
+          "rightText": "Personal details like your full name, home address, school, and passwords that must be kept safe"
+        },
+        {
+          "id": "p2",
+          "leftId": "l2",
+          "rightId": "r2",
+          "leftText": "Public Information",
+          "rightText": "General, non-personal topics like science questions, favorite colors, or hobbies"
+        },
+        {
+          "id": "p3",
+          "leftId": "l3",
+          "rightId": "r3",
+          "leftText": "Digital Footprint",
+          "rightText": "The trail of information, messages, and searches you leave behind when using online technology"
+        }
+      ]
+    },
+    "screenIndex": 96,
+    "screenNumber": 97
+  },
+  {
+    "id": "class4-m6-t11-quiz",
+    "pdfPageNumber": 126,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 6,
+    "monthTitle": "CHAPTER 6: RESPONSIBLE AI",
+    "topicNumber": 11,
+    "topicTitle": "Secret or Share?",
+    "pageHeaderCategory": "CHAPTER 6 • TOPIC 11",
+    "pageHeaderTitle": "OLYMPIAD PRACTICE QUIZ",
+    "title": "Olympiad Quiz: Secret or Share?",
+    "subtitle": "Test your knowledge with official Olympiad questions!",
+    "contentBlockTitle": "Olympiad Quiz",
+    "interactionType": "quiz_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m6_t11_quiz.png",
+    "payload": {
+      "topicTitle": "Secret or Share?",
+      "questions": [
+        {
+          "id": 1,
+          "q": "Olympiad Stage 1: Which of the following is considered Personally Identifiable Information (PII) that should NOT be typed into an online chatbot?",
+          "options": [
+            "The recipe for chocolate chip cookies",
+            "Your home address and family phone number",
+            "The distance from Earth to the Moon",
+            "The definition of a triangle"
+          ],
+          "correct": 1,
+          "explanation": "Home addresses and phone numbers identify you and your family in the physical world and must remain confidential.",
+          "hint": "Which option contains private details about your real-world family home?",
+          "difficulty": "Olympiad Stage 1"
+        },
+        {
+          "id": 2,
+          "q": "Olympiad Stage 2: A free online photo editing website says: \"Upload 5 photos of yourself and your school ID card to get a free cartoon avatar.\" What is the biggest danger of this offer?",
+          "options": [
+            "The website might download too slowly",
+            "Your school ID card contains your real name, photo, school name, and student number, which can be stolen and misused by bad actors",
+            "The cartoon avatar might be painted the wrong color",
+            "The mouse cursor will get stuck"
+          ],
+          "correct": 1,
+          "explanation": "School ID cards contain sensitive official identity data. Uploading identity cards to unknown websites creates severe identity theft and privacy risks.",
+          "hint": "What sensitive information is printed on a school identity card?",
+          "difficulty": "Olympiad Stage 2"
+        },
+        {
+          "id": 3,
+          "q": "Olympiad Championship: An AI smart speaker in the kitchen accidentally recorded a private family discussion about finances because someone said a word that sounded like its wake-word. What privacy feature allows families to protect themselves?",
+          "options": [
+            "Painting the smart speaker purple",
+            "Using the hardware microphone mute switch and reviewing/deleting voice history recordings in privacy settings with an adult",
+            "Putting a blanket over the refrigerator",
+            "Talking only in whispers forever"
+          ],
+          "correct": 1,
+          "explanation": "Hardware microphone disconnect buttons cut physical power to the mic, and companion app privacy settings allow users to inspect and delete stored audio clips.",
+          "hint": "Which physical switch cuts electrical power to the smart speaker microphone?",
+          "difficulty": "Olympiad Championship"
+        }
+      ]
+    },
+    "screenIndex": 97,
+    "screenNumber": 98
+  },
+  {
+    "id": "class4-m6-t12-learn",
+    "pdfPageNumber": 127,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 2,
+    "monthNumber": 6,
+    "monthTitle": "CHAPTER 6: RESPONSIBLE AI",
+    "topicNumber": 12,
+    "topicTitle": "AI: Right or Wrong?",
+    "pageHeaderCategory": "CHAPTER 6 • TOPIC 12",
+    "pageHeaderTitle": "LET'S LEARN: AI: RIGHT OR WRONG?",
+    "title": "Let's Learn: AI: Right or Wrong?",
+    "subtitle": "Understand why AI systems make mistakes, discover hallucinations and training data gaps, and master the STOP-THINK-CHECK method to verify facts.",
+    "contentBlockTitle": "Core Concepts",
+    "interactionType": "lets_learn_intro",
+    "sourcePdfImage": "/gaio/class4/pages/m6_t12_learn.png",
+    "payload": {
+      "topicNumber": 12,
+      "topicTitle": "AI: Right or Wrong?",
+      "area": "Responsible AI",
+      "concepts": [
+        "Learn why AI can make mistakes: incomplete training examples, lack of real understanding, and hallucinated answers",
+        "Understand that an AI sounds very confident and polite even when its answer is completely wrong!",
+        "Master the 3-step verification method: STOP, THINK, and CHECK against authoritative books and teachers"
+      ],
+      "helpers": [
+        "Students checking math solutions step-by-step with pen and paper rather than blindly accepting calculator outputs",
+        "Doctors always reviewing AI diagnostic scan suggestions before deciding on patient surgery",
+        "Fact-checkers using verified library archives to debunk fake AI-generated news rumors on the internet"
+      ]
+    },
+    "screenIndex": 98,
+    "screenNumber": 99
+  },
+  {
+    "id": "class4-m6-t12-words",
+    "pdfPageNumber": 128,
+    "pdfPartIndex": 2,
+    "pdfTotalParts": 2,
+    "monthNumber": 6,
+    "monthTitle": "CHAPTER 6: RESPONSIBLE AI",
+    "topicNumber": 12,
+    "topicTitle": "AI: Right or Wrong?",
+    "pageHeaderCategory": "CHAPTER 6 • TOPIC 12",
+    "pageHeaderTitle": "MAGIC WORDS & MENTAL MODEL",
+    "title": "Magic Words: AI: Right or Wrong?",
+    "subtitle": "Key vocabulary to unlock your AI powers!",
+    "contentBlockTitle": "Magic Words",
+    "interactionType": "lets_learn_words",
+    "sourcePdfImage": "/gaio/class4/pages/m6_t12_words.png",
+    "payload": {
+      "magicWords": [
+        {
+          "word": "Hallucination",
+          "meaning": "When an AI makes up false facts that sound convincing and confident"
+        },
+        {
+          "word": "Fact-Checking",
+          "meaning": "Verifying information by comparing it against trustworthy books, encyclopedias, and teachers"
+        },
+        {
+          "word": "STOP, THINK, CHECK",
+          "meaning": "The 3-step traffic light rule to evaluate whether an AI answer is accurate and trustworthy"
+        }
+      ],
+      "analogy": "AI is like a super-fast parrot: it can repeat and remix thousands of phrases it heard before, but it doesn't actually understand what words mean. If you ask it a tricky question, it might parrot back nonsense with a very confident chirp!"
+    },
+    "screenIndex": 99,
+    "screenNumber": 100
+  },
+  {
+    "id": "class4-m6-t12-story",
+    "pdfPageNumber": 128,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 6,
+    "monthTitle": "CHAPTER 6: RESPONSIBLE AI",
+    "topicNumber": 12,
+    "topicTitle": "AI: Right or Wrong?",
+    "pageHeaderCategory": "CHAPTER 6 • TOPIC 12",
+    "pageHeaderTitle": "PICTURE STORY & MYSTERY",
+    "title": "The Story Behind AI: Right or Wrong?",
+    "subtitle": "Did you know that an AI once looked at photos of blueberry muffins and guessed that they were fluffy Chihuahua puppies? Why can even the smartest AI make silly mistakes, and what must WE do about it?",
+    "contentBlockTitle": "Picture Story",
+    "interactionType": "picture_story_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m6_t12_story.png",
+    "payload": {
+      "storyTitle": "Did you know that an AI once looked at photos of blueberry muffins and guessed that they were fluffy Chihuahua puppies? Why can even the smartest AI make silly mistakes, and what must WE do about it?",
+      "panels": [
+        {
+          "panelNumber": 1,
+          "text": "During a science quiz prep, a study chatbot told Kabir that \"Sharks are friendly mammals that sleep in pine trees.\" Kabir laughed because he remembered the STOP...",
+          "imageSrc": "/gaio/scene1.png"
+        },
+        {
+          "panelNumber": 2,
+          "text": "Be aware that AI predicts likely word patterns rather than verifying factual truth.",
+          "imageSrc": "/gaio/scene2.png"
+        },
+        {
+          "panelNumber": 3,
+          "text": "Pause before using any generated fact in homework, science, or health matters.",
+          "imageSrc": "/gaio/scene3.png"
+        },
+        {
+          "panelNumber": 4,
+          "text": "Consult verified textbooks, school libraries, and expert teachers.",
+          "imageSrc": "/gaio/scene4.png"
+        }
+      ]
+    },
+    "screenIndex": 100,
+    "screenNumber": 101
+  },
+  {
+    "id": "class4-m6-t12-steps",
+    "pdfPageNumber": 129,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 6,
+    "monthTitle": "CHAPTER 6: RESPONSIBLE AI",
+    "topicNumber": 12,
+    "topicTitle": "AI: Right or Wrong?",
+    "pageHeaderCategory": "CHAPTER 6 • TOPIC 12",
+    "pageHeaderTitle": "STEP-BY-STEP DISCOVERY",
+    "title": "Guided Discovery: AI: Right or Wrong?",
+    "subtitle": "Follow the 3-step computational workflow",
+    "contentBlockTitle": "Discovery Steps",
+    "interactionType": "lets_do_it_steps",
+    "sourcePdfImage": "/gaio/class4/pages/m6_t12_steps.png",
+    "payload": {
+      "topicTitle": "AI: Right or Wrong?",
+      "steps": [
+        {
+          "stepNumber": 1,
+          "title": "1. Recognize the Hallucination Risk",
+          "desc": "Be aware that AI predicts likely word patterns rather than verifying factual truth.",
+          "detail": "A confident tone does not equal accurate information.",
+          "code": "# Fact Verification Check\nif ai_answer.sounds_confident():\n    verify_with_textbook(ai_answer)"
+        },
+        {
+          "stepNumber": 2,
+          "title": "2. Deploy the STOP-THINK-CHECK Routine",
+          "desc": "Pause before using any generated fact in homework, science, or health matters.",
+          "detail": "Ask yourself: \"Does a spider really have 6 legs or 8 legs?\".",
+          "code": "if answer[\"spiders_legs\"] == 6: # FALSE!\n    flag_error(\"Spiders are arachnids with 8 legs 🕷️\")"
+        },
+        {
+          "stepNumber": 3,
+          "title": "3. Cross-Check Against Trusted Authoritative Sources",
+          "desc": "Consult verified textbooks, school libraries, and expert teachers.",
+          "detail": "Always make sure human critical thinking has the final say.",
+          "code": "final_truth = check_encyclopedia(\"Arachnida\")"
+        }
+      ]
+    },
+    "screenIndex": 101,
+    "screenNumber": 102
+  },
+  {
+    "id": "class4-m6-t12-game",
+    "pdfPageNumber": 130,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 6,
+    "monthTitle": "CHAPTER 6: RESPONSIBLE AI",
+    "topicNumber": 12,
+    "topicTitle": "AI: Right or Wrong?",
+    "pageHeaderCategory": "CHAPTER 6 • TOPIC 12",
+    "pageHeaderTitle": "GAME CHALLENGE & LAB",
+    "title": "Fact-Check Detective: Spot the Hallucination",
+    "subtitle": "Evaluate 4 generated statements, identify the 2 false AI hallucinations, and correct them with encyclopedic proof.",
+    "contentBlockTitle": "Interactive Game",
+    "interactionType": "lets_do_it_reflection",
+    "sourcePdfImage": "/gaio/class4/pages/m6_t12_game.png",
+    "payload": {
+      "topicTitle": "AI: Right or Wrong?",
+      "talkPrompt": "ChatterBot 2.0 has been answering student science inquiries, but a glitch caused it to mix up facts with fairy tales! You are equipped with the Fact-Checking Magnifier and the Golden Encyclopedia of Truth. 4 claims are on the board. You must identify the truth and stamp out the hallucinations!",
+      "drawPrompt": "Rule 1: Inspect each statement with the Fact Magnifier. • Rule 2: Click \"VERIFIED FACT\" for true statements. • Rule 3: Click \"HALLUCINATION DETECTED\" for false claims and drag the correct truth stamp.",
+      "gameTitle": "Fact-Check Detective: Spot the Hallucination",
+      "objective": "Evaluate 4 generated statements, identify the 2 false AI hallucinations, and correct them with encyclopedic proof.",
+      "choices": [
+        "Claim 1: \"Penguins are birds that can swim underwater but cannot fly in the air\" &rarr; VERIFIED FACT",
+        "Claim 2: \"The Great Wall of China is made of solid chocolate candy\" &rarr; HALLUCINATION DETECTED (Made of stone and brick)",
+        "Claim 3: \"Honeybees communicate with each other using a special dance called the waggle dance\" &rarr; VERIFIED FACT",
+        "Claim 4: \"Spiders have 6 legs and chew bubblegum in webs\" &rarr; HALLUCINATION DETECTED (Arachnids have 8 legs)"
+      ],
+      "points": 340,
+      "badge": "Master Truth Detective 🔍"
+    },
+    "screenIndex": 102,
+    "screenNumber": 103
+  },
+  {
+    "id": "class4-m6-t12-match",
+    "pdfPageNumber": 131,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 6,
+    "monthTitle": "CHAPTER 6: RESPONSIBLE AI",
+    "topicNumber": 12,
+    "topicTitle": "AI: Right or Wrong?",
+    "pageHeaderCategory": "CHAPTER 6 • TOPIC 12",
+    "pageHeaderTitle": "CONCEPT MATCHER",
+    "title": "Match the Concepts: AI: Right or Wrong?",
+    "subtitle": "Connect each term to its matching definition",
+    "contentBlockTitle": "Matching Activity",
+    "interactionType": "worksheet_matching",
+    "sourcePdfImage": "/gaio/class4/pages/m6_t12_match.png",
+    "payload": {
+      "topicTitle": "AI: Right or Wrong?",
+      "taskTitle": "Match each term to its true meaning",
+      "pairs": [
+        {
+          "id": "p1",
+          "leftId": "l1",
+          "rightId": "r1",
+          "leftText": "Hallucination",
+          "rightText": "When an AI makes up false facts that sound convincing and confident"
+        },
+        {
+          "id": "p2",
+          "leftId": "l2",
+          "rightId": "r2",
+          "leftText": "Fact-Checking",
+          "rightText": "Verifying information by comparing it against trustworthy books, encyclopedias, and teachers"
+        },
+        {
+          "id": "p3",
+          "leftId": "l3",
+          "rightId": "r3",
+          "leftText": "STOP, THINK, CHECK",
+          "rightText": "The 3-step traffic light rule to evaluate whether an AI answer is accurate and trustworthy"
+        }
+      ]
+    },
+    "screenIndex": 103,
+    "screenNumber": 104
+  },
+  {
+    "id": "class4-m6-t12-quiz",
+    "pdfPageNumber": 132,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 6,
+    "monthTitle": "CHAPTER 6: RESPONSIBLE AI",
+    "topicNumber": 12,
+    "topicTitle": "AI: Right or Wrong?",
+    "pageHeaderCategory": "CHAPTER 6 • TOPIC 12",
+    "pageHeaderTitle": "OLYMPIAD PRACTICE QUIZ",
+    "title": "Olympiad Quiz: AI: Right or Wrong?",
+    "subtitle": "Test your knowledge with official Olympiad questions!",
+    "contentBlockTitle": "Olympiad Quiz",
+    "interactionType": "quiz_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m6_t12_quiz.png",
+    "payload": {
+      "topicTitle": "AI: Right or Wrong?",
+      "questions": [
+        {
+          "id": 1,
+          "q": "Olympiad Stage 1: When an AI chatbot generates an answer that is completely made up and false, what is this called in computer science?",
+          "options": [
+            "A computer battery recharge",
+            "An AI Hallucination",
+            "A screen saver animation",
+            "A volume spike"
+          ],
+          "correct": 1,
+          "explanation": "An AI hallucination occurs when a model generates false, illogical, or made-up information while presenting it as fact.",
+          "hint": "Which term means perceiving or making up something that is not real?",
+          "difficulty": "Olympiad Stage 1"
+        },
+        {
+          "id": 2,
+          "q": "Olympiad Stage 2: An image recognition model was trained on 10,000 photos of dogs in grassy parks. When shown a photo of a dog sitting on a snowbank, it guessed \"Polar Bear\". Why did the model get confused?",
+          "options": [
+            "The dog was wearing a polar bear costume",
+            "The model learned to rely on the green grass background as part of its pattern, and the white snow confused its prediction",
+            "Dogs turn into bears when it gets cold",
+            "The camera was out of battery"
+          ],
+          "correct": 1,
+          "explanation": "This is a classic dataset shortcut error: if all training examples have green grass, the AI mistakenly correlates green backgrounds with dogs. Snow breaks the pattern.",
+          "hint": "What was different in the background of the snow photo compared to the training pictures?",
+          "difficulty": "Olympiad Stage 2"
+        },
+        {
+          "id": 3,
+          "q": "Olympiad Championship: What is the most responsible way to use an AI assistant when studying for your Class 4 school exams?",
+          "options": [
+            "Copy its answers directly onto your exam paper without reading them",
+            "Use the AI to explain hard concepts in simple words, practice quizzes, and then cross-check every key fact with your official school textbook",
+            "Never use books again and rely 100% on whatever the screen says",
+            "Ask the AI to change your school marks"
+          ],
+          "correct": 1,
+          "explanation": "Responsible students use AI to explain, test themselves, and clarify doubts, while always verifying facts against official textbooks and teachers.",
+          "hint": "How do smart students combine digital explanations with verified textbook facts?",
+          "difficulty": "Olympiad Championship"
+        }
+      ]
+    },
+    "screenIndex": 104,
+    "screenNumber": 105
+  },
+  {
+    "id": "class4-m6-safety",
+    "pdfPageNumber": 133,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 6,
+    "monthTitle": "CHAPTER 6: RESPONSIBLE AI",
+    "topicNumber": 12,
+    "topicTitle": "AI: Right or Wrong?",
+    "pageHeaderCategory": "CHAPTER 6 • DIGITAL SAFETY",
+    "pageHeaderTitle": "RESPONSIBLE AI HABIT",
+    "title": "Digital Safety: Responsible AI",
+    "subtitle": "Health & Medical Verification Rule: Never take medicine or health advice from a chatbot. Health decisions must ALWAYS be made by a real doctor and your parents.",
+    "contentBlockTitle": "Responsible AI",
+    "interactionType": "home_connect",
+    "sourcePdfImage": "/gaio/class4/pages/m6_safety.png",
+    "payload": {
+      "topicTitle": "AI: Right or Wrong?",
+      "rule": "Health & Medical Verification Rule: Never take medicine or health advice from a chatbot. Health decisions must ALWAYS be made by a real doctor and your parents.",
+      "prompt": "Why is it dangerous to believe an unverified medical or health tip you read on an internet forum or chatbot?",
+      "discussion": "Why do real doctors spend many years studying in medical school before treating patients?",
+      "takeaways": [
+        "AI can sound very confident and polite while being completely factually incorrect.",
+        "Mistakes happen because of missing training data, confusing patterns, and hallucinations.",
+        "Always remember: You are the captain who verifies facts and makes wise decisions."
+      ]
+    },
+    "screenIndex": 105,
+    "screenNumber": 106
+  },
+  {
+    "id": "class4-m6-review",
+    "pdfPageNumber": 134,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 1,
+    "monthNumber": 6,
+    "monthTitle": "CHAPTER 6: RESPONSIBLE AI",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "CHAPTER 6 REVIEW",
+    "pageHeaderTitle": "MASTERY CHECKPOINT",
+    "title": "Chapter 6 Mastery: Responsible AI",
+    "subtitle": "Congratulations! You unlocked the Chapter 6 Badge!",
+    "contentBlockTitle": "Chapter Review",
+    "interactionType": "unit_review_part1",
+    "sourcePdfImage": "/gaio/class4/pages/m6_review.png",
+    "payload": {
+      "monthNumber": 6,
+      "title": "Responsible AI",
+      "takeaways": [
+        "Private personal details must never be typed into public websites or AI chatbots.",
+        "General topics like science questions, math riddles, and creative stories are safe to share.",
+        "Always consult a parent or teacher before installing new apps or sharing contact details.",
+        "AI can sound very confident and polite while being completely factually incorrect."
+      ],
+      "badge": "Chapter 6 Master Badge 🏆"
+    },
+    "screenIndex": 106,
+    "screenNumber": 107
+  },
+  {
+    "id": "class4-finale-quiz",
+    "pdfPageNumber": 150,
+    "pdfPartIndex": 1,
+    "pdfTotalParts": 3,
+    "monthNumber": 7,
+    "monthTitle": "FINALE: OLYMPIAD MASTERY",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "AI OLYMPIAD • CLASS 4",
+    "pageHeaderTitle": "CHAMPIONSHIP FINALS",
+    "title": "Global AI Olympiad Championship Challenge",
+    "subtitle": "The ultimate knowledge test across all 6 chapters!",
+    "contentBlockTitle": "Olympiad Championship Quiz",
+    "interactionType": "olympiad_quiz",
+    "sourcePdfImage": "/gaio/class4/pages/finale_quiz.png",
+    "payload": {
+      "gradeTitle": "Class 4",
+      "totalQuestions": 10
+    },
+    "screenIndex": 107,
+    "screenNumber": 108
+  },
+  {
+    "id": "class4-finale-cert",
+    "pdfPageNumber": 152,
+    "pdfPartIndex": 2,
+    "pdfTotalParts": 3,
+    "monthNumber": 7,
+    "monthTitle": "FINALE: OLYMPIAD MASTERY",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "AI OLYMPIAD • CLASS 4",
+    "pageHeaderTitle": "OFFICIAL CERTIFICATION",
+    "title": "Official Junior AI Olympiad Certificate",
+    "subtitle": "Awarded to the young scientist for outstanding mastery of Class 4!",
+    "contentBlockTitle": "Certificate of Mastery",
+    "interactionType": "certificate",
+    "sourcePdfImage": "/gaio/class4/pages/certificate.png",
+    "payload": {
+      "gradeTitle": "Class 4",
+      "honors": "Junior AI Olympiad Scholar with Distinction",
+      "mascotName": "Robo-Pi"
+    },
+    "screenIndex": 108,
+    "screenNumber": 109
+  },
+  {
+    "id": "class4-finale-answers",
+    "pdfPageNumber": 153,
+    "pdfPartIndex": 3,
+    "pdfTotalParts": 3,
+    "monthNumber": 7,
+    "monthTitle": "FINALE: OLYMPIAD MASTERY",
+    "topicNumber": null,
+    "topicTitle": null,
+    "pageHeaderCategory": "AI OLYMPIAD • CLASS 4",
+    "pageHeaderTitle": "ANSWER KEY & SOLUTIONS",
+    "title": "Master Solutions & Explanation Key",
+    "subtitle": "Complete review of all answers, reasoning, and key takeaways.",
+    "contentBlockTitle": "Master Answer Key",
+    "interactionType": "answer_key",
+    "sourcePdfImage": "/gaio/class4/pages/answers.png",
+    "payload": {
+      "gradeTitle": "Class 4"
+    },
+    "screenIndex": 109,
+    "screenNumber": 110
+  }
+]

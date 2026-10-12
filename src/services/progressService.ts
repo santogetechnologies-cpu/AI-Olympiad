@@ -84,6 +84,59 @@ export interface SectionCompletionRecord {
   completed_at: string
 }
 
+export function parseGradeKeyFromClass(target: any): 'class3' | 'class4' | 'class5' {
+  if (!target) return 'class3'
+  const text = (
+    typeof target === 'string'
+      ? target
+      : `${target.name || ''} ${target.code || ''} ${target.id || ''} ${target.gradeKey || ''} ${target.class_id || ''}`
+  ).toLowerCase()
+
+  if (
+    text.includes('class 5') ||
+    text.includes('class5') ||
+    text.includes('cls-05') ||
+    text.includes('fsc-05') ||
+    text.includes('std 5') ||
+    text.includes('std5') ||
+    text.includes('grade 5') ||
+    /\b(class|std|grade)\s*5\b/.test(text) ||
+    /\b5\b/.test(text)
+  ) {
+    return 'class5'
+  }
+
+  if (
+    text.includes('class 4') ||
+    text.includes('class4') ||
+    text.includes('cls-04') ||
+    text.includes('eai-04') ||
+    text.includes('std 4') ||
+    text.includes('std4') ||
+    text.includes('grade 4') ||
+    /\b(class|std|grade)\s*4\b/.test(text) ||
+    /\b4\b/.test(text)
+  ) {
+    return 'class4'
+  }
+
+  if (
+    text.includes('class 3') ||
+    text.includes('class3') ||
+    text.includes('cls-03') ||
+    text.includes('jai-03') ||
+    text.includes('std 3') ||
+    text.includes('std3') ||
+    text.includes('grade 3') ||
+    /\b(class|std|grade)\s*3\b/.test(text) ||
+    /\b3\b/.test(text)
+  ) {
+    return 'class3'
+  }
+
+  return 'class3'
+}
+
 export function calculateChapterProgress(completedCount: number): {
   total: 8
   required: 8
@@ -1091,6 +1144,55 @@ export const enrollmentService = {
     const all = await enrollmentService.getAllStudentEnrollments(studentId)
     const active = all.filter(e => e.status === 'active')
     return active.length > 0 ? active[0] : (all.length > 0 ? all[0] : null)
+  },
+
+  async getStudentAssignedGrade(studentId: string, orgId?: string): Promise<{
+    gradeKey: 'class3' | 'class4' | 'class5'
+    className: string
+    code?: string
+    subjectName?: string
+    enrollment: Enrollment | null
+  }> {
+    if (!studentId) {
+      return {
+        gradeKey: 'class3',
+        className: 'Class 3',
+        code: 'CLS-03',
+        subjectName: 'Junior AI & Playful Logic',
+        enrollment: null,
+      }
+    }
+
+    // 1. Fetch active enrollment (from DB or local cache)
+    let activeEnr = await enrollmentService.getActiveEnrollment(studentId)
+
+    // 2. Fallback to ensureInitialEnrollment if nothing enrolled yet and orgId exists
+    if (!activeEnr && orgId) {
+      try {
+        activeEnr = await enrollmentService.ensureInitialEnrollment(studentId, orgId, 'class3')
+      } catch {}
+    }
+
+    // 3. Fallback to local active class if still null
+    let localCls: any = null
+    if (!activeEnr) {
+      try {
+        const stored = localStorage.getItem(`nanjil_active_class_${studentId}`)
+        if (stored) localCls = JSON.parse(stored)
+      } catch {}
+    }
+
+    const clsObj = activeEnr?.class || localCls
+    const gradeKey = parseGradeKeyFromClass(clsObj || activeEnr?.class_id)
+    const spec = SYLLABUS_SPECS.find(s => s.gradeKey === gradeKey) || SYLLABUS_SPECS[0]
+
+    return {
+      gradeKey,
+      className: clsObj?.name || spec.name,
+      code: clsObj?.code || spec.code,
+      subjectName: activeEnr?.subject?.name || spec.subjectName,
+      enrollment: activeEnr,
+    }
   },
 
   async assignStudentClass({

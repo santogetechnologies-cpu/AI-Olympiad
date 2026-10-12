@@ -59,10 +59,16 @@ export const ScreenPuzzleOddOne: React.FC<ScreenProps> = ({ screen, onNext, save
   const rows = rawRows.length > 0 ? rawRows.map((r: any, rIdx: number) => {
     const rowItems = (r.items || []).map((it: string, itIdx: number) => {
       const isOdd = itIdx === (r.oddIdx !== undefined ? r.oddIdx : (correctOddIndices[rIdx] ?? 3))
+      const assetIdx = rIdx * 4 + itIdx
+      const imageSrc =
+        (payload.itemImages && payload.itemImages[assetIdx]) ||
+        (screen.extractedAssets && screen.extractedAssets[assetIdx]?.url) ||
+        (screen.pdfPageNumber === 12 ? `/gaio/class3/images/p12_img_${assetIdx + 1}.png` : null)
       return {
         id: itIdx + 1,
         name: it,
-        icon: iconPool[(rIdx * 4 + itIdx) % iconPool.length],
+        icon: iconPool[assetIdx % iconPool.length],
+        imageSrc,
         isOdd
       }
     })
@@ -71,7 +77,15 @@ export const ScreenPuzzleOddOne: React.FC<ScreenProps> = ({ screen, onNext, save
       title: `Row ${String.fromCharCode(65 + rIdx)}`,
       items: rowItems
     }
-  }) : defaultRows
+  }) : defaultRows.map((r, rIdx) => ({
+    ...r,
+    items: r.items.map((it, itIdx) => ({
+      ...it,
+      imageSrc: (payload.itemImages && payload.itemImages[rIdx * 4 + itIdx]) ||
+                (screen.extractedAssets && screen.extractedAssets[rIdx * 4 + itIdx]?.url) ||
+                `/gaio/class3/images/p12_img_${rIdx * 4 + itIdx + 1}.png`
+    }))
+  }))
 
   const [selections, setSelections] = useState<Record<string, number>>(savedAnswer || {})
 
@@ -126,7 +140,20 @@ export const ScreenPuzzleOddOne: React.FC<ScreenProps> = ({ screen, onNext, save
                           : 'bg-white border-slate-200 hover:bg-slate-100'
                       }`}
                     >
-                      <span className="text-xl">{item.icon}</span>
+                      <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center overflow-hidden">
+                        {item.imageSrc ? (
+                          <img
+                            src={item.imageSrc}
+                            alt={item.name}
+                            className="max-h-full max-w-full object-contain"
+                            onError={(e) => {
+                              ;(e.target as HTMLElement).style.display = 'none'
+                            }}
+                          />
+                        ) : (
+                          <span className="text-xl">{item.icon}</span>
+                        )}
+                      </div>
                       <span className="text-[8px] font-bold text-slate-700 truncate w-full mt-0.5">
                         {item.name}
                       </span>
@@ -159,15 +186,24 @@ export const ScreenPuzzleCount: React.FC<ScreenProps> = ({ screen, onNext, saved
   const targetCounts = payload.targetCounts || [4, 3, 5]
   const iconPool = ['🤖', '📱', '🔊', '💡', '🚗', '✂️', '🚲', '⚡']
 
-  const items = rawItems.length > 0 ? rawItems.map((it: any, idx: number) => ({
-    id: idx + 1,
-    name: it.label || it.name || `Item ${idx + 1}`,
-    icon: iconPool[idx % iconPool.length],
-    target: it.count || targetCounts[idx] || 3
-  })) : [
-    { id: 1, name: 'Robots', icon: '🤖', target: targetCounts[0] || 4 },
-    { id: 2, name: 'Smart Phones', icon: '📱', target: targetCounts[1] || 3 },
-    { id: 3, name: 'Smart Speakers', icon: '🔊', target: targetCounts[2] || 5 },
+  const items = rawItems.length > 0 ? rawItems.map((it: any, idx: number) => {
+    const imageSrc =
+      it.image ||
+      it.imageSrc ||
+      (payload.itemImages && payload.itemImages[idx]) ||
+      (screen.extractedAssets && screen.extractedAssets[idx]?.url) ||
+      (screen.pdfPageNumber === 12 ? `/gaio/class3/images/p12_img_${idx + 9}.png` : null)
+    return {
+      id: idx + 1,
+      name: it.label || it.name || `Item ${idx + 1}`,
+      icon: iconPool[idx % iconPool.length],
+      imageSrc,
+      target: it.count || targetCounts[idx] || 3
+    }
+  }) : [
+    { id: 1, name: 'Robots', icon: '🤖', imageSrc: '/gaio/class3/images/p12_img_9.png', target: targetCounts[0] || 4 },
+    { id: 2, name: 'Smart Phones', icon: '📱', imageSrc: '/gaio/class3/images/p12_img_10.png', target: targetCounts[1] || 3 },
+    { id: 3, name: 'Smart Speakers', icon: '🔊', imageSrc: '/gaio/class3/images/p12_img_11.png', target: targetCounts[2] || 5 },
   ]
 
   const [counts, setCounts] = useState<Record<number, number>>(savedAnswer || { 1: 0, 2: 0, 3: 0 })
@@ -208,7 +244,20 @@ export const ScreenPuzzleCount: React.FC<ScreenProps> = ({ screen, onNext, saved
               }`}
             >
               <div className="flex items-center gap-3">
-                <span className="text-3xl">{it.icon}</span>
+                <div className="w-10 h-10 rounded-xl bg-sky-50 border border-sky-200 flex items-center justify-center p-0.5 shrink-0 overflow-hidden">
+                  {it.imageSrc ? (
+                    <img
+                      src={it.imageSrc}
+                      alt={it.name}
+                      className="max-h-full max-w-full object-contain"
+                      onError={(e) => {
+                        ;(e.target as HTMLElement).style.display = 'none'
+                      }}
+                    />
+                  ) : (
+                    <span className="text-2xl">{it.icon}</span>
+                  )}
+                </div>
                 <div>
                   <span className="text-xs sm:text-sm font-black text-slate-800 block">
                     {it.name}

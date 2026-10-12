@@ -7,9 +7,10 @@
 
 import React, { useState, useRef } from 'react'
 import type { GaioScreenItem } from '../../types'
-import { Volume2, Sparkles, BookOpen, Compass, CheckCircle2, MessageSquare, Gamepad2, ChevronRight, RotateCcw } from 'lucide-react'
+import { Volume2, Sparkles, BookOpen, Compass, CheckCircle2, MessageSquare, Gamepad2, ChevronRight, RotateCcw, Trophy, Award, Check, Play, Palette } from 'lucide-react'
 import { gameAudio } from '../../../../utils/gameAudio'
 import { auraSpeechService } from '../../../../services/auraSpeechService'
+import confetti from 'canvas-confetti'
 
 interface ScreenProps {
   screen: GaioScreenItem
@@ -163,7 +164,10 @@ export const ScreenLetsLearnIntro: React.FC<ScreenProps> = ({ screen, onNext }) 
         </span>
         <div className="grid grid-cols-4 gap-1">
           {displayHelpers.map((h: any, idx: number) => {
-            const itemImg = payload.itemImages && payload.itemImages[idx]
+            const itemImg =
+              (payload.itemImages && payload.itemImages[idx]) ||
+              (screen.extractedAssets && screen.extractedAssets[idx]?.url) ||
+              (screen.pdfPageNumber === 6 ? `/gaio/class3/images/p6_img_${idx + 7}.png` : null)
 
             return (
               <button
@@ -545,7 +549,9 @@ export const ScreenLookAroundGrid: React.FC<ScreenProps> = ({ screen, onNext }) 
 
       <div className="flex-1 grid grid-cols-3 gap-1.5 py-1 content-center">
         {displayItems.map((item: any, i: number) => {
-          const itemImg = payload.itemImages && payload.itemImages[i]
+          const itemImg =
+            (payload.itemImages && payload.itemImages[i]) ||
+            (screen.extractedAssets && screen.extractedAssets[i]?.url)
 
           return (
             <button
@@ -746,20 +752,55 @@ export const ScreenLetsDoItSteps: React.FC<ScreenProps> = ({ screen, onNext, sav
   )
 }
 
-// 9. LET'S DO IT REFLECTION — payload-driven
+// 9. LET'S DO IT REFLECTION & INTERACTIVE GAME CHALLENGE — payload-driven
 export const ScreenLetsDoItReflection: React.FC<ScreenProps> = ({ screen, onNext, savedAnswer, onSaveAnswer }) => {
   const payload = screen.payload || {}
   const talkPrompt = payload.talkPrompt || 'Tell your family what you learned today!'
   const drawPrompt = payload.drawPrompt || 'Draw what you did and share with your teacher!'
   const topicTitle = payload.topicTitle || screen.topicTitle || 'Activity'
+  const gameTitle = payload.gameTitle
+  const objective = payload.objective
+  const choices: string[] = payload.choices || []
+  const progression: string[] = payload.progression || []
+  const points: number = payload.points || 300
+  const badge: string = payload.badge || 'Master Explorer 🌟'
+
+  // Interactive game state
+  const [completedChoices, setCompletedChoices] = useState<Set<number>>(new Set(savedAnswer?.completedChoices || []))
+  const [showCanvas, setShowCanvas] = useState(false)
+  const [activeLog, setActiveLog] = useState<string | null>(null)
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
   const [isDrawing, setIsDrawing] = useState(false)
   const [penColor, setPenColor] = useState('#8B5CF6')
 
+  const isGameMode = Boolean(gameTitle || choices.length > 0)
+  const allChoicesDone = choices.length > 0 && completedChoices.size === choices.length
+
+  const handleToggleChoice = (idx: number) => {
+    gameAudio.playSuccess()
+    const nextSet = new Set(completedChoices)
+    if (nextSet.has(idx)) {
+      nextSet.delete(idx)
+    } else {
+      nextSet.add(idx)
+      if (progression[idx]) {
+        setActiveLog(progression[idx])
+        auraSpeechService.speak(progression[idx].replace(/\(\+\d+ pts\)/, ''))
+      }
+    }
+    setCompletedChoices(nextSet)
+    if (onSaveAnswer) onSaveAnswer({ completedChoices: Array.from(nextSet) })
+
+    if (nextSet.size === choices.length) {
+      gameAudio.playFanfare()
+      confetti({ particleCount: 60, spread: 70, origin: { y: 0.7 } })
+    }
+  }
+
   const startDraw = (e: any) => { setIsDrawing(true); draw(e) }
   const stopDraw = () => {
     setIsDrawing(false)
-    if (canvasRef.current && onSaveAnswer) onSaveAnswer(canvasRef.current.toDataURL())
+    if (canvasRef.current && onSaveAnswer) onSaveAnswer({ ...savedAnswer, canvas: canvasRef.current.toDataURL() })
   }
   const draw = (e: any) => {
     if (!isDrawing) return
@@ -771,8 +812,144 @@ export const ScreenLetsDoItReflection: React.FC<ScreenProps> = ({ screen, onNext
     ctx.lineWidth = 3; ctx.lineCap = 'round'; ctx.strokeStyle = penColor
     ctx.lineTo(x, y); ctx.stroke(); ctx.beginPath(); ctx.moveTo(x, y)
   }
-  const clearCanvas = () => { canvasRef.current?.getContext('2d')?.clearRect(0, 0, 999, 999); if (onSaveAnswer) onSaveAnswer(null) }
+  const clearCanvas = () => { canvasRef.current?.getContext('2d')?.clearRect(0, 0, 999, 999) }
 
+  // ── GAME CHALLENGE MODE ──
+  if (isGameMode) {
+    return (
+      <div className="w-full h-full flex flex-col justify-between p-2 select-none text-slate-800 animate-in fade-in duration-200">
+        {/* Game Header Banner */}
+        <div className="bg-gradient-to-r from-purple-700 via-indigo-600 to-blue-600 text-white rounded-2xl p-2 flex items-center justify-between shrink-0 shadow-xs">
+          <div className="min-w-0 pr-1">
+            <div className="flex items-center gap-1.5">
+              <span className="text-[8px] font-black uppercase text-purple-200 tracking-wider">GAME CHALLENGE & LAB</span>
+              <span className="px-1.5 py-0.2 rounded-full bg-amber-400 text-amber-950 text-[8px] font-black">+{points} XP</span>
+            </div>
+            <h2 className="text-xs sm:text-sm font-black truncate">{gameTitle || topicTitle}</h2>
+          </div>
+          <Gamepad2 size={18} className="text-purple-200 shrink-0" />
+        </div>
+
+        {/* Mission Scenario & Audio */}
+        <div className="shrink-0 bg-slate-50 border border-slate-200 rounded-xl p-2 mt-1">
+          <div className="flex items-start justify-between gap-1">
+            <p className="text-[10px] font-semibold text-slate-700 leading-tight">
+              🎯 <strong className="text-slate-900">{objective || talkPrompt}</strong>
+            </p>
+            <button
+              onClick={() => auraSpeechService.speak(objective || talkPrompt)}
+              className="p-1 rounded-lg bg-purple-100 text-purple-700 hover:bg-purple-200 transition-colors shrink-0"
+              title="Read mission aloud"
+            >
+              <Volume2 size={12} />
+            </button>
+          </div>
+        </div>
+
+        {/* Interactive Choices Grid */}
+        <div className="flex-1 min-h-0 flex flex-col justify-around py-1 space-y-1">
+          {choices.map((choiceText, idx) => {
+            const isDone = completedChoices.has(idx)
+            return (
+              <button
+                key={idx}
+                type="button"
+                onClick={() => handleToggleChoice(idx)}
+                className={`w-full p-2 rounded-xl border-2 text-left transition-all flex items-center justify-between gap-2 cursor-pointer ${
+                  isDone
+                    ? 'bg-emerald-50 border-emerald-400 shadow-2xs'
+                    : 'bg-white border-slate-200 hover:border-purple-300 hover:bg-purple-50/50'
+                }`}
+              >
+                <div className="flex items-center gap-2 min-w-0">
+                  <div
+                    className={`w-6 h-6 rounded-full flex items-center justify-center shrink-0 font-black text-xs border ${
+                      isDone ? 'bg-emerald-500 border-emerald-500 text-white' : 'bg-slate-100 border-slate-300 text-slate-600'
+                    }`}
+                  >
+                    {isDone ? <Check size={14} /> : idx + 1}
+                  </div>
+                  <span className={`text-[10px] sm:text-xs font-bold leading-tight ${isDone ? 'text-emerald-900' : 'text-slate-800'}`}>
+                    {choiceText}
+                  </span>
+                </div>
+                <span className="text-[9px] font-black uppercase text-purple-600 shrink-0">
+                  {isDone ? 'COMPLETED' : 'RUN TEST'}
+                </span>
+              </button>
+            )
+          })}
+        </div>
+
+        {/* Live Simulation Feedback Log / Unlocked Badge */}
+        {allChoicesDone ? (
+          <div className="shrink-0 bg-gradient-to-r from-amber-500 to-yellow-500 text-amber-950 rounded-xl p-2 flex items-center justify-between border border-amber-300 animate-in zoom-in-95 duration-200">
+            <div className="flex items-center gap-2 min-w-0">
+              <Trophy size={18} className="text-amber-950 shrink-0 animate-bounce" />
+              <div className="min-w-0">
+                <span className="text-[8px] font-black uppercase tracking-wider block">MISSION ACCOMPLISHED!</span>
+                <span className="text-xs font-black truncate block">{badge}</span>
+              </div>
+            </div>
+            <span className="text-xs font-extrabold px-2 py-0.5 rounded-full bg-white text-amber-900 shrink-0">
+              +{points} XP
+            </span>
+          </div>
+        ) : activeLog ? (
+          <div className="shrink-0 bg-purple-50 border border-purple-200 rounded-xl p-1.5 flex items-center gap-1.5 text-[9px] font-bold text-purple-800">
+            <Sparkles size={12} className="text-purple-600 shrink-0" />
+            <span className="truncate">{activeLog}</span>
+          </div>
+        ) : null}
+
+        {/* Optional Drawing Toggle & Canvas */}
+        {showCanvas && (
+          <div className="shrink-0 pt-1">
+            <div className="flex items-center justify-between mb-0.5">
+              <span className="text-[9px] font-black text-slate-700">🎨 Doodle / Notes</span>
+              <button onClick={clearCanvas} className="p-0.5 rounded bg-slate-100 text-slate-500 cursor-pointer text-[9px]">
+                <RotateCcw size={10} />
+              </button>
+            </div>
+            <canvas
+              ref={canvasRef}
+              width={320}
+              height={80}
+              onMouseDown={startDraw}
+              onMouseMove={draw}
+              onMouseUp={stopDraw}
+              onMouseLeave={stopDraw}
+              onTouchStart={startDraw}
+              onTouchMove={draw}
+              onTouchEnd={stopDraw}
+              className="w-full h-16 rounded-lg border border-purple-300 bg-white cursor-crosshair touch-none"
+            />
+          </div>
+        )}
+
+        {/* Bottom Actions */}
+        <div className="shrink-0 pt-1 flex items-center gap-1.5">
+          <button
+            type="button"
+            onClick={() => setShowCanvas(!showCanvas)}
+            className="py-1.5 px-2.5 rounded-xl border border-slate-300 hover:bg-slate-100 text-slate-700 font-bold text-[10px] transition-all flex items-center gap-1 shrink-0"
+          >
+            <Palette size={12} />
+            <span>{showCanvas ? 'Hide Pad' : 'Doodle Pad'}</span>
+          </button>
+          <button
+            type="button"
+            onClick={onNext}
+            className="flex-1 py-2 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-bold text-xs transition-all cursor-pointer shadow-xs"
+          >
+            Next: Match Concepts →
+          </button>
+        </div>
+      </div>
+    )
+  }
+
+  // ── STANDARD REFLECTION DRAWING MODE ──
   return (
     <div className="w-full h-full flex flex-col justify-between p-2.5 select-none text-slate-800 animate-in fade-in duration-200">
       <div className="bg-purple-600 text-white rounded-2xl p-2 flex items-center justify-between shrink-0 shadow-xs">
@@ -798,9 +975,14 @@ export const ScreenLetsDoItReflection: React.FC<ScreenProps> = ({ screen, onNext
           <span className="text-[10px] font-black text-slate-700">🎨 {drawPrompt}</span>
           <div className="flex items-center gap-1">
             {['#8B5CF6', '#EF4444', '#10B981', '#F59E0B'].map((c) => (
-              <button key={c} onClick={() => setPenColor(c)}
-                className={`w-5 h-5 rounded-full border-2 cursor-pointer transition-all ${penColor === c ? 'scale-125 border-white shadow' : 'border-transparent'}`}
-                style={{ background: c }} />
+              <button
+                key={c}
+                onClick={() => setPenColor(c)}
+                className={`w-5 h-5 rounded-full border-2 cursor-pointer transition-all ${
+                  penColor === c ? 'scale-125 border-white shadow' : 'border-transparent'
+                }`}
+                style={{ background: c }}
+              />
             ))}
             <button onClick={clearCanvas} className="p-1 rounded-lg bg-slate-100 text-slate-500 cursor-pointer ml-1">
               <RotateCcw size={12} />
@@ -808,16 +990,26 @@ export const ScreenLetsDoItReflection: React.FC<ScreenProps> = ({ screen, onNext
           </div>
         </div>
         <canvas
-          ref={canvasRef} width={320} height={120}
-          onMouseDown={startDraw} onMouseMove={draw} onMouseUp={stopDraw} onMouseLeave={stopDraw}
-          onTouchStart={startDraw} onTouchMove={draw} onTouchEnd={stopDraw}
+          ref={canvasRef}
+          width={320}
+          height={120}
+          onMouseDown={startDraw}
+          onMouseMove={draw}
+          onMouseUp={stopDraw}
+          onMouseLeave={stopDraw}
+          onTouchStart={startDraw}
+          onTouchMove={draw}
+          onTouchEnd={stopDraw}
           className="w-full flex-1 rounded-xl border-2 border-dashed border-purple-300 bg-purple-50 cursor-crosshair touch-none"
           style={{ minHeight: '80px', maxHeight: '120px' }}
         />
       </div>
 
       <div className="shrink-0 pt-1">
-        <button onClick={onNext} className="w-full py-2 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs transition-all cursor-pointer">
+        <button
+          onClick={onNext}
+          className="w-full py-2 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs transition-all cursor-pointer"
+        >
           Next: Worksheet →
         </button>
       </div>

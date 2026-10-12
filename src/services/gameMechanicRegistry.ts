@@ -142,6 +142,202 @@ export const ALL_GAME_MECHANICS: Record<string, GameMechanicDefinition> = {
     topicFitTags: ['pet', 'companion', 'emotions', 'play']
   },
 
+  // ─── Class 4 (Junior AI Olympiad: Ages 9-10) ──────────────────────────────
+  c4_l1_invisible_signal_hunt: {
+    id: 'c4_l1_invisible_signal_hunt',
+    name: 'AI Detective: The Invisible Signal Hunt',
+    description: 'Use Robo-Pi’s sensory magnifying scanner across everyday rooms to identify hidden AI features in cameras, remotes, and apps.',
+    category: 'exploration',
+    minTier: 'primary',
+    topicFitTags: ['where is ai hiding', 'hiding', 'everyday', 'detective', 'camera', 'portrait']
+  },
+  c4_l2_sense_think_act_commander: {
+    id: 'c4_l2_sense_think_act_commander',
+    name: 'Sense-Think-Act Mission Commander',
+    description: 'Configure ultrasonic sensors, decision rules, and motor wheels to guide a smart robot vacuum and Mars rover safely through obstacles.',
+    category: 'hardware_sensor',
+    minTier: 'primary',
+    topicFitTags: ['meet the smart machines', 'smart machines', 'sense think act', 'robot', 'rover']
+  },
+  c4_l3_chef_bot_recipe_precision: {
+    id: 'c4_l3_chef_bot_recipe_precision',
+    name: 'Chef Bot Recipe Precision Challenge',
+    description: 'Transform ambiguous, fuzzy cooking prompts into exact quantitative parameters and syntax to bake a cake without culinary catastrophe.',
+    category: 'prompt_engineering',
+    minTier: 'primary',
+    topicFitTags: ['say it clearly', 'clearly', 'precision', 'ambiguity', 'syntax', 'command']
+  },
+  c4_l4_rover_launch_sequence: {
+    id: 'c4_l4_rover_launch_sequence',
+    name: 'Rover Launch Sequence Programmer',
+    description: 'Order step-by-step algorithmic blocks (move, check obstacle, lower drill) to navigate a planetary crater grid without order errors.',
+    category: 'algorithm_building',
+    minTier: 'primary',
+    topicFitTags: ['mission: instructions', 'instructions', 'algorithm', 'sequence', 'recipe', 'order']
+  },
+  c4_l5_mobile_feature_neural_inspector: {
+    id: 'c4_l5_mobile_feature_neural_inspector',
+    name: 'Mobile Neural Feature Inspector',
+    description: 'Dissect a smartphone touchscreen to trace which neural AI engine powers face unlock, keyboard autocomplete, and voice dictation.',
+    category: 'discovery',
+    minTier: 'primary',
+    topicFitTags: ['ai in my mobile', 'mobile', 'smartphone', 'keyboard', 'face unlock', 'predictive']
+  },
+  c4_l6_smart_city_traffic_dispatcher: {
+    id: 'c4_l6_smart_city_traffic_dispatcher',
+    name: 'Smart City Traffic Dispatcher',
+    description: 'Reroute autonomous shuttles and emergency ambulances across dynamic GPS traffic maps to beat congestion bottlenecks.',
+    category: 'navigation',
+    minTier: 'primary',
+    topicFitTags: ['ai on the move', 'move', 'traffic', 'gps', 'autonomous', 'shuttle', 'route']
+  },
+  c4_l7_career_time_capsule_matcher: {
+    id: 'c4_l7_career_time_capsule_matcher',
+    name: '2040 Career Time Capsule Matcher',
+    description: 'Unlock future workplace challenges and match emerging occupations like Drone Wildlife Monitor and AI Prompt Architect to society needs.',
+    category: 'simulation',
+    minTier: 'primary',
+    topicFitTags: ['future job hunt', 'job', 'career', 'future', 'trainer', 'roles']
+  },
+  c4_l8_human_vs_robot_superpower: {
+    id: 'c4_l8_human_vs_robot_superpower',
+    name: 'Human Superpower vs Robot Calculator',
+    description: 'Weigh tasks on an interactive balance scale, distinguishing computational machine tasks from irreplaceable human empathy and creativity.',
+    category: 'decision_adventure',
+    minTier: 'primary',
+    topicFitTags: ['my technology talent', 'talent', 'human superpower', 'empathy', 'creativity', 'calculator']
+  },
+  c4_l9_co_author_story_quest: {
+    id: 'c4_l9_co_author_story_quest',
+    name: 'Co-Author Story Quest Studio',
+    description: 'Collaborate with an interactive story buddy by crafting character lore prompts and shaping plot twists for a whimsical mystery adventure.',
+    category: 'prompt_engineering',
+    minTier: 'primary',
+    topicFitTags: ['create a story', 'story', 'writer', 'narrative', 'co-create', 'creative']
+  },
+  c4_l10_prompt_canvas_studio: {
+    id: 'c4_l10_prompt_canvas_studio',
+    name: 'Prompt Canvas Art Director Studio',
+    description: 'Assemble style, lighting, and composition tokens to direct an image synthesis engine in generating vibrant digital festival posters.',
+    category: 'prompt_engineering',
+    minTier: 'primary',
+    topicFitTags: ['design with ai', 'design', 'art', 'canvas', 'tokens', 'style', 'lighting']
+  },
+  c4_l11_privacy_vault_shield: {
+    id: 'c4_l11_privacy_vault_shield',
+    name: 'Privacy Vault Shield: Safe vs Secret Sieve',
+    description: 'Guard digital identity by filtering outgoing information, letting safe general topics pass while locking private passwords and addresses.',
+    category: 'cyber_safety',
+    minTier: 'primary',
+    topicFitTags: ['secret or share', 'secret', 'share', 'privacy', 'passwords', 'safe', 'pii']
+  },
+  c4_l12_fact_check_hallucination_detective: {
+    id: 'c4_l12_fact_check_hallucination_detective',
+    name: 'Fact-Check Detective: Spot the Hallucination',
+    description: 'Cross-examine generated chatbot statements against encyclopedic truth records to spot plausible but false AI hallucinations.',
+    category: 'data_investigation',
+    minTier: 'primary',
+    topicFitTags: ['ai: right or wrong', 'right or wrong', 'fact check', 'hallucination', 'mistake', 'truth']
+  },
+
+  // ─── Class 5 (Junior AI Olympiad: Ages 10-11) ─────────────────────────────
+  c5_l1_neural_net_neuron_linker: {
+    id: 'c5_l1_neural_net_neuron_linker',
+    name: 'Neural Net Neuron Linker & Weight Tuner',
+    description: 'Connect sensory input nodes through multi-layered artificial neurons, adjusting connection weights to classify animal images correctly.',
+    category: 'model_training',
+    minTier: 'primary',
+    topicFitTags: ['the secret behind ai', 'secret behind ai', 'neural network', 'neuron', 'weights', 'layers']
+  },
+  c5_l2_data_training_gym: {
+    id: 'c5_l2_data_training_gym',
+    name: 'Data Training Gym: Train the Classifier',
+    description: 'Execute the 5-step machine learning feedback cycle (Data -> Patterns -> Predict -> Feedback -> Adjust) to lower training error curves.',
+    category: 'model_training',
+    minTier: 'primary',
+    topicFitTags: ['learning machines', 'training data', 'feedback', 'labels', 'machine learning', 'predict']
+  },
+  c5_l3_logic_gate_greenhouse: {
+    id: 'c5_l3_logic_gate_greenhouse',
+    name: 'Logic Gate Maze: Automated Greenhouse',
+    description: 'Assemble conditional IF-ELSE branches, loops, and Boolean logic gates (AND, OR, NOT) to protect rare botanicals from environmental swings.',
+    category: 'algorithm_building',
+    minTier: 'primary',
+    topicFitTags: ['crack the logic', 'logic', 'boolean', 'branching', 'loops', 'conditional', 'greenhouse']
+  },
+  c5_l4_prompt_recipe_kitchen: {
+    id: 'c5_l4_prompt_recipe_kitchen',
+    name: 'Prompt Recipe Kitchen: 4-Block Builder',
+    description: 'Mix WHO (Role), WHAT (Task), DETAILS (Context), and HOW (Format) ingredient blocks, evaluating output scores and iteratively refining prompts.',
+    category: 'prompt_engineering',
+    minTier: 'primary',
+    topicFitTags: ['command to creation', 'command', 'creation', 'recipe', 'who what details how', 'refine']
+  },
+  c5_l5_hospital_diagnostic_assistant: {
+    id: 'c5_l5_hospital_diagnostic_assistant',
+    name: 'Hospital Diagnostic Assistant: Team Human + AI',
+    description: 'Use medical computer vision overlays to detect lung anomalies on X-rays, keeping the licensed physician as the final decision authority.',
+    category: 'simulation',
+    minTier: 'primary',
+    topicFitTags: ['ai in the hospital', 'hospital', 'x-ray', 'medical', 'diagnosis', 'doctor']
+  },
+  c5_l6_adaptive_learning_engine_sim: {
+    id: 'c5_l6_adaptive_learning_engine_sim',
+    name: 'Adaptive Learning Engine Simulator',
+    description: 'Tune an educational AI engine that adjusts quiz difficulty in real time, serving hints to struggling students and enrichment to fast learners.',
+    category: 'simulation',
+    minTier: 'primary',
+    topicFitTags: ['ai in the classroom', 'classroom', 'adaptive', 'personalised', 'learning app', 'school']
+  },
+  c5_l7_career_quest_2035: {
+    id: 'c5_l7_career_quest_2035',
+    name: 'Career Quest 2035: Future Tech Strategist',
+    description: 'Embark on specialized mission hubs in bio-robotics, climate modeling, and AI ethics auditing, assembling required technical credentials.',
+    category: 'decision_adventure',
+    minTier: 'primary',
+    topicFitTags: ['my future with ai', 'future with ai', 'career 2035', 'robotics technician', 'data scientist']
+  },
+  c5_l8_skills_matrix_human_edge: {
+    id: 'c5_l8_skills_matrix_human_edge',
+    name: 'Skills Matrix Arena: The Human Edge',
+    description: 'Deploy the 6 enduring human super-skills (Creativity, Critical Thinking, Communication, Teamwork, Kindness, Curiosity) to solve civic crises.',
+    category: 'decision_adventure',
+    minTier: 'primary',
+    topicFitTags: ['skills of tomorrow', 'skills', 'critical thinking', 'kindness', 'curiosity', 'human edge']
+  },
+  c5_l9_socratic_study_buddy_lab: {
+    id: 'c5_l9_socratic_study_buddy_lab',
+    name: 'Socratic Study Buddy Lab',
+    description: 'Configure conversational AI tutors into Socratic questioning mode to guide problem solving step-by-step rather than spoiling direct answers.',
+    category: 'discovery',
+    minTier: 'primary',
+    topicFitTags: ['ai study buddy', 'study buddy', 'socratic', 'tutor', 'fact-check', 'helper']
+  },
+  c5_l10_multimodal_game_design_sprint: {
+    id: 'c5_l10_multimodal_game_design_sprint',
+    name: 'Multimodal Studio: Game Design Sprint',
+    description: 'Orchestrate a co-creative development pipeline combining text narrative generation, sprite art synthesis, and dynamic soundtrack design.',
+    category: 'prompt_engineering',
+    minTier: 'primary',
+    topicFitTags: ['ai creative corner', 'creative corner', 'multimodal', 'game design', 'co-create', 'music']
+  },
+  c5_l11_dataset_bias_hallucination_buster: {
+    id: 'c5_l11_dataset_bias_hallucination_buster',
+    name: 'Dataset Bias & Hallucination Buster',
+    description: 'Audit an image recognition dataset missing night and dark animal samples, rebalancing training distributions to eliminate skewed classification errors.',
+    category: 'data_investigation',
+    minTier: 'primary',
+    topicFitTags: ['can ai be wrong', 'wrong', 'dataset bias', 'orange cat', 'black cat', 'hallucination']
+  },
+  c5_l12_cyber_captain_smart_shield: {
+    id: 'c5_l12_cyber_captain_smart_shield',
+    name: 'Cyber Captain: S.M.A.R.T. Shield Simulator',
+    description: 'Apply the STOP, THINK, CHECK traffic light and S.M.A.R.T. ethical guidelines to protect the community against deepfakes and data leaks.',
+    category: 'cyber_safety',
+    minTier: 'primary',
+    topicFitTags: ['be a smart ai user', 'smart ai user', 'smart', 'stop think check', 'captain', 'ethical']
+  },
+
   // --- Class 5 & 6 (Middle School - Logic, Classification, Systems) ---
   binary_circuit_logic_gate_board: {
     id: 'binary_circuit_logic_gate_board',

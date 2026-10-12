@@ -69,8 +69,11 @@ export default function App() {
 
           {/* Student routes */}
           <Route path="/student" element={<ProtectedRoute allowedRoles={['student']}><StudentDashboard /></ProtectedRoute>} />
-          <Route path="/student/learning" element={<ProtectedRoute allowedRoles={['student']}><StudentLearningPage /></ProtectedRoute>} />
+          <Route path="/student/learning" element={<ProtectedRoute allowedRoles={['student']}><ChapterLearningPage /></ProtectedRoute>} />
+          <Route path="/student/learning/chapters" element={<ProtectedRoute allowedRoles={['student']}><ChapterLearningPage /></ProtectedRoute>} />
+          <Route path="/student/learning/chapters/:itemId" element={<ProtectedRoute allowedRoles={['student']}><ChapterLearningPage /></ProtectedRoute>} />
           <Route path="/student/learning/:chapterId" element={<ProtectedRoute allowedRoles={['student']}><ChapterLearningPage /></ProtectedRoute>} />
+          <Route path="/student/learning/:chapterId/:itemId" element={<ProtectedRoute allowedRoles={['student']}><ChapterLearningPage /></ProtectedRoute>} />
           <Route path="/student/progress" element={<ProtectedRoute allowedRoles={['student']}><StudentProgressPage /></ProtectedRoute>} />
           <Route path="/student/assignments" element={<ProtectedRoute allowedRoles={['student']}><StudentAssignmentsPage /></ProtectedRoute>} />
           <Route path="/student/quizzes" element={<ProtectedRoute allowedRoles={['student']}><StudentQuizzesPage /></ProtectedRoute>} />

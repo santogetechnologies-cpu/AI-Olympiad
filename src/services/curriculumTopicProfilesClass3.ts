@@ -23,6 +23,30 @@ export interface TopicProfile {
   practicalTask: { title: string; objective: string; steps: string[]; expectedResult: string }
   recall: { q: string; a: string }
   takeaways: [string, string, string]
+  gameMechanic?: {
+    title: string
+    scenario: string
+    objective: string
+    rules: string[]
+    choices: string[]
+    progression: string[]
+    completion: string
+    badge: string
+    points: number
+  }
+  reflectionSafety?: {
+    prompt: string
+    rule: string
+    discussion: string
+  }
+  olympiadQuestions?: {
+    q: string
+    opts: string[]
+    correct: number
+    exp: string
+    hint: string
+    difficulty: 'Olympiad Stage 1' | 'Olympiad Stage 2' | 'Olympiad Championship'
+  }[]
 }
 
 export const CLASS3_TOPIC_PROFILES: Record<string, TopicProfile> = {

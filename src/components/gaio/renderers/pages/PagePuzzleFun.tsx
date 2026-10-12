@@ -97,13 +97,12 @@ export const PagePuzzleFun: React.FC<PagePuzzleFunProps> = ({ pageConfig }) => {
                   <button
                     key={item.id}
                     onClick={() => handleSelectOdd(rIdx, item.id, item.isOddOneOut)}
-                    className={`p-1 rounded-xl border flex flex-col items-center justify-center transition-all cursor-pointer ${
-                      isSelected
+                    className={`p-1 rounded-xl border flex flex-col items-center justify-center transition-all cursor-pointer ${isSelected
                         ? item.isOddOneOut
                           ? 'bg-emerald-100 border-emerald-400 ring-2 ring-emerald-400/50 scale-102'
                           : 'bg-rose-100 border-rose-300'
                         : 'bg-white border-slate-200 hover:border-slate-300'
-                    }`}
+                      }`}
                   >
                     <img src={item.imageSrc} alt={item.name} className="w-8 h-8 sm:w-10 sm:h-10 object-contain" />
                     <span className="text-[8px] font-bold text-slate-700 truncate w-full text-center mt-0.5">
@@ -135,9 +134,8 @@ export const PagePuzzleFun: React.FC<PagePuzzleFunProps> = ({ pageConfig }) => {
             return (
               <div
                 key={item.id}
-                className={`p-1 rounded-xl border flex flex-col items-center justify-between text-center transition-all ${
-                  isTarget ? 'bg-emerald-50 border-emerald-300' : 'bg-white border-slate-200'
-                }`}
+                className={`p-1 rounded-xl border flex flex-col items-center justify-between text-center transition-all ${isTarget ? 'bg-emerald-50 border-emerald-300' : 'bg-white border-slate-200'
+                  }`}
               >
                 <img src={item.img} alt={item.label} className="w-6 h-6 object-contain" />
                 <span className="text-[8px] font-bold text-slate-700 truncate w-full">

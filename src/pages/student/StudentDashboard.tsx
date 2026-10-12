@@ -22,7 +22,6 @@ export default function StudentDashboard() {
   const [loading, setLoading] = useState(true)
   const [refreshing, setRefreshing] = useState(false)
   const [error, setError] = useState<string | null>(null)
-  const [statusFilter, setStatusFilter] = useState<'all' | 'in_progress' | 'completed' | 'not_started'>('all')
 
   const loadDashboard = useCallback(async (isRefresh = false) => {
     if (!user) return
@@ -99,17 +98,6 @@ export default function StudentDashboard() {
       document.removeEventListener('visibilitychange', handleVisibilityChange)
     }
   }, [loadDashboard, user?.id])
-
-  // Filtered assigned chapters
-  const filteredChapters = useMemo(() => {
-    if (!data?.assignedChapters) return []
-    return data.assignedChapters.filter(chap => {
-      if (statusFilter === 'completed') return chap.is_completed
-      if (statusFilter === 'in_progress') return chap.is_in_progress
-      if (statusFilter === 'not_started') return chap.is_not_started
-      return true
-    })
-  }, [data?.assignedChapters, statusFilter])
 
   // Quick action destination (opens exact current or first assigned chapter)
   const nextDestination = useMemo(() => {
@@ -276,211 +264,83 @@ export default function StudentDashboard() {
           />
         </div>
 
-        {/* ─── MY ASSIGNED CURRICULUM (Shows ONLY assigned chapters) ─── */}
-        <div className="space-y-4">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-            <div>
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 rounded-xl bg-blue-100 flex items-center justify-center text-blue-700">
-                  <BookOpen size={18} />
-                </div>
-                <h2 className="text-xl font-bold text-slate-900">
-                  My Assigned Curriculum
-                </h2>
+        {/* ─── Clean Home Workspace Overview & Learning Navigation ─── */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+          {/* Main Action Banner: Jump to Learn */}
+          <Card className="lg:col-span-2 p-6 sm:p-7 rounded-3xl bg-white border border-slate-200/90 shadow-sm flex flex-col justify-between space-y-5">
+            <div className="space-y-3">
+              <div className="flex items-center justify-between flex-wrap gap-2">
+                <span className="text-[11px] font-black uppercase tracking-wider text-blue-700 bg-blue-50 px-3 py-1 rounded-full border border-blue-200 flex items-center gap-1.5">
+                  <BookOpen size={13} />
+                  <span>Enrolled Curriculum Track</span>
+                </span>
                 {assignedClass && (
-                  <Badge variant="info" className="ml-1 font-semibold text-xs">
+                  <Badge variant="info" className="font-bold text-xs">
                     {assignedClass.name}
                   </Badge>
                 )}
               </div>
-              <p className="text-xs text-slate-500 mt-1">
-                {hasChapters
-                  ? `Showing only the ${counts.total} chapters assigned to your learning path.`
-                  : 'Currently enrolled curriculum and assigned chapters.'}
+
+              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                {assignedSubject?.name || 'Junior AI & Playful Logic Track'}
+              </h2>
+
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-xl">
+                Your learning curriculum contains {counts.total || 8} structured chapters with hands-on discovery activities, scenario missions, and interactive digital book pages.
               </p>
             </div>
 
-            {/* Quick Status Filter Tabs (Only shown if chapters are assigned) */}
-            {hasChapters && (
-              <div className="flex items-center gap-1.5 p-1 bg-slate-100 rounded-xl self-start sm:self-auto overflow-x-auto max-w-full">
-                <button
-                  onClick={() => setStatusFilter('all')}
-                  className={`text-xs px-3 py-1.5 rounded-lg font-semibold transition-colors whitespace-nowrap ${
-                    statusFilter === 'all'
-                      ? 'bg-white text-blue-700 shadow-xs'
-                      : 'text-slate-600 hover:text-slate-900'
-                  }`}
-                >
-                  All ({counts.total})
-                </button>
-                <button
-                  onClick={() => setStatusFilter('in_progress')}
-                  className={`text-xs px-3 py-1.5 rounded-lg font-semibold transition-colors whitespace-nowrap ${
-                    statusFilter === 'in_progress'
-                      ? 'bg-white text-blue-700 shadow-xs'
-                      : 'text-slate-600 hover:text-slate-900'
-                  }`}
-                >
-                  In Progress ({counts.inProgress})
-                </button>
-                <button
-                  onClick={() => setStatusFilter('completed')}
-                  className={`text-xs px-3 py-1.5 rounded-lg font-semibold transition-colors whitespace-nowrap ${
-                    statusFilter === 'completed'
-                      ? 'bg-white text-blue-700 shadow-xs'
-                      : 'text-slate-600 hover:text-slate-900'
-                  }`}
-                >
-                  Completed ({counts.completed})
-                </button>
-              </div>
-            )}
-          </div>
+            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+              <Link
+                to="/student/learning"
+                className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm px-6 py-3 rounded-2xl shadow-md hover:shadow-lg transition-all active:scale-98 cursor-pointer"
+              >
+                <BookOpen size={17} />
+                <span>Open Learn & Chapters</span>
+                <ChevronRight size={16} />
+              </Link>
 
-          {/* EMPTY STATE: Student has no assigned curriculum/chapters */}
-          {!hasChapters && (
-            <Card className="p-10 sm:p-14 text-center bg-white border border-slate-200 rounded-3xl shadow-sm">
-              <div className="w-16 h-16 bg-blue-50 text-blue-500 rounded-3xl flex items-center justify-center mx-auto mb-4 border border-blue-100">
-                <BookOpen size={32} />
-              </div>
-              <h3 className="text-lg font-bold text-slate-900">
-                No Curriculum Assigned Yet
+              <Link
+                to="/student/progress"
+                className="inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm px-5 py-3 rounded-2xl transition-colors cursor-pointer"
+              >
+                <TrendingUp size={16} />
+                <span>View Full Progress</span>
+              </Link>
+            </div>
+          </Card>
+
+          {/* Quick Stats Summary Card */}
+          <Card className="p-6 rounded-3xl bg-gradient-to-br from-slate-900 to-blue-950 text-white border border-slate-800 shadow-sm flex flex-col justify-between space-y-4">
+            <div>
+              <span className="text-[10px] font-black uppercase tracking-wider text-blue-300 bg-white/10 px-2.5 py-1 rounded-full border border-white/10">
+                Learning Milestone
+              </span>
+              <h3 className="text-lg font-black mt-3 text-white">
+                Olympiad Readiness
               </h3>
-              <p className="text-slate-500 text-sm mt-1.5 max-w-md mx-auto leading-relaxed">
-                Your administrator has not assigned any chapters to your account yet.
-                Once you are enrolled into a class or subject, your assigned chapters and progress will appear here automatically.
+              <p className="text-xs text-blue-200/80 mt-1 leading-relaxed">
+                Complete all chapter activities to earn your official AI Olympiad certificate.
               </p>
-              <div className="mt-6 flex items-center justify-center gap-3">
-                <Button
-                  onClick={() => loadDashboard(true)}
-                  variant="outline"
-                  icon={<RotateCw size={15} className={refreshing ? 'animate-spin' : ''} />}
-                >
-                  Refresh Dashboard
-                </Button>
+            </div>
+
+            <div className="space-y-3 pt-3 border-t border-white/10">
+              <div className="flex items-center justify-between text-xs">
+                <span className="text-blue-200">Chapters Completed</span>
+                <span className="font-black text-white">{counts.completed} / {counts.total || 8}</span>
               </div>
-            </Card>
-          )}
-
-          {/* CHAPTERS GRID: Shows ONLY assigned chapters for this student */}
-          {hasChapters && (
-            <>
-              {filteredChapters.length === 0 ? (
-                <Card className="p-8 text-center bg-white border border-slate-200 rounded-2xl">
-                  <p className="text-slate-500 text-sm">
-                    No chapters match the selected filter.
-                  </p>
-                  <Button
-                    size="sm"
-                    variant="ghost"
-                    onClick={() => setStatusFilter('all')}
-                    className="mt-2 text-blue-600 font-semibold"
-                  >
-                    View All ({counts.total}) Chapters
-                  </Button>
-                </Card>
-              ) : (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-                  {filteredChapters.map((chap: StudentChapterProgressionItem, idx: number) => {
-                    return (
-                      <Link
-                        key={chap.id}
-                        to={`/student/learning/${chap.id}`}
-                        className="flex flex-col group focus:outline-none"
-                      >
-                        <Card className="h-full p-5 hover:shadow-xl transition-all duration-300 flex flex-col justify-between border border-slate-200 hover:border-blue-400 group-hover:-translate-y-0.5 rounded-2xl bg-white">
-                          <div>
-                            {/* Card Top Header */}
-                            <div className="flex items-center justify-between mb-3">
-                              <div className="flex items-center gap-2">
-                                <span className="w-8 h-8 rounded-xl bg-blue-50 text-blue-700 font-black text-xs flex items-center justify-center border border-blue-100 group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                                  Ch.{chap.chapter_number || idx + 1}
-                                </span>
-                                {chap.subject_name && (
-                                  <span className="text-[11px] text-slate-400 font-medium truncate max-w-[130px]">
-                                    {chap.subject_name}
-                                  </span>
-                                )}
-                              </div>
-
-                              {/* Real-time Status Badge */}
-                              {chap.is_completed ? (
-                                <Badge variant="success" className="font-semibold text-[11px] flex items-center gap-1">
-                                  <CheckCircle size={12} /> Completed
-                                </Badge>
-                              ) : chap.is_in_progress ? (
-                                <Badge variant="info" className="font-semibold text-[11px]">
-                                  In Progress ({chap.percentage}%)
-                                </Badge>
-                              ) : (
-                                <Badge variant="default" className="text-slate-500 font-medium text-[11px]">
-                                  Ready to Learn
-                                </Badge>
-                              )}
-                            </div>
-
-                            {/* Chapter Title */}
-                            <h3 className="font-bold text-slate-900 group-hover:text-blue-600 transition-colors line-clamp-1 text-base">
-                              {chap.title}
-                            </h3>
-
-                            {/* Chapter Description */}
-                            {chap.short_description && (
-                              <p className="text-xs text-slate-500 mt-1.5 line-clamp-2 leading-relaxed min-h-[32px]">
-                                {chap.short_description}
-                              </p>
-                            )}
-                          </div>
-
-                          {/* Progress and Footer */}
-                          <div className="mt-4 pt-3 border-t border-slate-100 space-y-2">
-                            <div className="flex items-center justify-between text-[11px] text-slate-500 font-medium">
-                              <span>
-                                {chap.completedSections} of {chap.totalSections} Sections Complete
-                              </span>
-                              <span className="font-bold text-slate-700">
-                                {chap.percentage}%
-                              </span>
-                            </div>
-
-                            {/* Progress Bar */}
-                            <div className="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
-                              <div
-                                className={`h-full rounded-full transition-all duration-500 ${
-                                  chap.is_completed
-                                    ? 'bg-emerald-500'
-                                    : chap.is_in_progress
-                                    ? 'bg-blue-600'
-                                    : 'bg-transparent'
-                                }`}
-                                style={{ width: `${chap.percentage}%` }}
-                              />
-                            </div>
-
-                            {/* Card Action Link */}
-                            <div className="flex items-center justify-between pt-2 text-xs">
-                              <span className="text-slate-400 flex items-center gap-1">
-                                <Clock size={12} />
-                                {chap.estimated_duration ? `${chap.estimated_duration} min` : 'Self-paced'}
-                              </span>
-                              <span className="font-bold text-blue-600 flex items-center gap-1 group-hover:gap-1.5 transition-all">
-                                {chap.is_completed
-                                  ? 'Review Chapter'
-                                  : chap.is_in_progress
-                                  ? 'Resume Learning'
-                                  : 'Start Chapter'}
-                                <ChevronRight size={13} />
-                              </span>
-                            </div>
-                          </div>
-                        </Card>
-                      </Link>
-                    )
-                  })}
-                </div>
-              )}
-            </>
-          )}
+              <div className="w-full bg-white/10 rounded-full h-2 overflow-hidden">
+                <div
+                  className="bg-emerald-400 h-full rounded-full transition-all duration-700"
+                  style={{ width: `${data?.overallPercentage || 0}%` }}
+                />
+              </div>
+              <div className="flex items-center justify-between text-[11px] text-blue-300">
+                <span>Overall Mastery</span>
+                <span className="font-bold text-emerald-400">{data?.overallPercentage || 0}%</span>
+              </div>
+            </div>
+          </Card>
         </div>
       </div>
     </AppLayout>

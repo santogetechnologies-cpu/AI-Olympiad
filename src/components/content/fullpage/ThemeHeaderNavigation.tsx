@@ -91,13 +91,19 @@ export const ThemeHeaderNavigation: React.FC<ThemeNavProps> = ({
       <div className="w-full flex items-center justify-between gap-2 sm:gap-4 max-w-7xl mx-auto">
         {/* Left: Back Button & Section Title */}
         <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1">
+          {/* Clear Back to Chapters Action */}
           <button
-            onClick={handleBack}
-            className="p-1.5 sm:p-2 rounded-xl bg-slate-100 hover:bg-slate-200 active:bg-slate-300 text-slate-700 hover:text-slate-900 border border-slate-200 transition-all cursor-pointer shrink-0 min-h-[36px] min-w-[36px] flex items-center justify-center"
-            title={currentSectionIdx > 0 ? "Previous Section" : "Return to Curriculum"}
-            aria-label="Back"
+            onClick={() => {
+              gameAudio.playTap()
+              navigate('/student/learning')
+            }}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 active:bg-slate-300 text-slate-700 hover:text-slate-900 border border-slate-200 transition-all cursor-pointer shrink-0 text-xs font-bold"
+            title="Return to Chapters"
+            aria-label="Back to Chapters"
           >
-            <ArrowLeft size={16} />
+            <ArrowLeft size={14} />
+            <span className="hidden xs:inline">Back to Chapters</span>
+            <span className="xs:hidden">Chapters</span>
           </button>
 
           {/* Mobile Sections Drawer Button */}
