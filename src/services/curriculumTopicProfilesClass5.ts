@@ -2084,8 +2084,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'Restart the computer every hour', isCorrect: false },
           { text: 'Record secret videos of people', isCorrect: false }
         ],
-        exp: 'R stands for Respect Others: using technology with empathy, dignity, and kindness, while rejecting cyberbullying and deceptive tricks.',
-        hint: 'Which option represents digital kindness and empathy toward peers?'
+        exp: 'R stands for Respect Others: using technology with empathy, dignity, and kindness, while rejecting cyberbullying and deceptive tricks.'
       },
       {
         q: 'In the team of human and technology, who is always the "Captain" responsible for decisions?',
