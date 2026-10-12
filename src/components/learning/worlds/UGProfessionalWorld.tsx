@@ -20,6 +20,8 @@ import {
   DataCollectorGrid,
   CodeBlockAssembler
 } from '../primitives/LevelEnginePrimitives'
+import { HigherEdInteractiveApp } from '../../higher-ed/HigherEdInteractiveApp'
+import type { HigherEdLevelKey } from '../../higher-ed/types'
 
 // =============================================================================
 // UG PROFESSIONAL WORLD DISPATCHER (ENTERPRISE ENGINEERING WORKBENCH)
@@ -28,10 +30,36 @@ import {
 
 export const UGProfessionalWorld: React.FC<WorldExperienceProps & { sectionIdx: number }> = (props) => {
   const cNum = parseInt(String(props.chapterNum || '1'), 10)
+  const lNum: 1 | 2 = props.sectionIdx === 2 || (props.canonicalSection?.sectionNumber === 3) ? 2 : 1
+
+  // Resolve specific UG academic level
+  const rawKey = (props.gradeKey || 'ug1').toLowerCase()
+  let resolvedLevel: HigherEdLevelKey = 'ug1'
+  if (rawKey.includes('ug2') || rawKey.includes('2')) resolvedLevel = 'ug2'
+  else if (rawKey.includes('ug3') || rawKey.includes('3')) resolvedLevel = 'ug3'
+  else if (rawKey.includes('ug4') || rawKey.includes('final') || rawKey.includes('4')) resolvedLevel = 'ug4'
+  else resolvedLevel = 'ug1'
 
   // Section 8 is ALWAYS the 3-Stage Mastery Quiz
   if (props.sectionIdx === 7 || props.canonicalSection.contentType === 'quiz') {
     return <ThreeStageMasteryQuiz {...props} />
+  }
+
+  // Sections 2 and 3 (Lessons 1 & 2): Mount the Gamified Minimalist Terminal Flow
+  if (props.sectionIdx === 1 || props.sectionIdx === 2 || props.canonicalSection.contentType === 'lesson') {
+    return (
+      <div className="w-full h-full flex flex-col justify-between overflow-hidden select-none animate-in fade-in duration-200">
+        <HigherEdInteractiveApp
+          initialLevel={resolvedLevel}
+          initialChapter={cNum}
+          initialLesson={lNum}
+          onComplete={props.onComplete}
+          onExit={() => {
+            if (props.onJumpToSection) props.onJumpToSection(0)
+          }}
+        />
+      </div>
+    )
   }
 
   switch (cNum) {

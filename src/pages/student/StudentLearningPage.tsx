@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import {
   BookOpen, ChevronRight, Search, CheckCircle, Clock, Sparkles,
   GraduationCap, Play, Zap, Compass, Filter, Flame,
-  Video, FileEdit, Gamepad2, FlaskConical, Trophy
+  Video, FileEdit, Gamepad2, FlaskConical, Trophy, Terminal
 } from 'lucide-react'
 import { useAuth } from '../../contexts/AuthContext'
 import { AppLayout } from '../../components/layout/AppLayout'
@@ -497,6 +497,70 @@ export default function StudentLearningPage() {
           <p className="text-xs text-slate-500 leading-relaxed font-medium">
             Step-by-Step Learning Path: Follow the sequential journey from Lesson 1 (Concept Discovery) → Lesson 2 (Mission Challenge) → Chapter Assessment. Complete each chapter to unlock the next!
           </p>
+        </div>
+
+        {/* Higher Education Interactive Mission Terminal (UG & PG) */}
+        <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-2xl border border-indigo-500/30 p-4 sm:p-5 shadow-xl text-white space-y-3 relative overflow-hidden">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 relative z-10">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-indigo-600/30 border border-indigo-400/40 text-cyan-300 flex items-center justify-center font-bold shadow-lg">
+                <Terminal size={22} />
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-500/20 text-cyan-300 font-bold uppercase tracking-wider">
+                    Higher Ed Mission Terminal
+                  </span>
+                  <span className="text-[10px] font-mono text-emerald-400 flex items-center gap-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    72 Missions Active
+                  </span>
+                </div>
+                <h2 className="text-base sm:text-lg font-bold text-white mt-0.5">
+                  Undergraduate & Postgraduate Gamified Learning Flow
+                </h2>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Link
+                to="/student/higher-ed"
+                className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 border border-cyan-500/40 font-mono text-xs font-bold transition-all shadow-lg cursor-pointer"
+              >
+                <Compass size={14} className="text-cyan-400" />
+                <span>Visual Syllabus Guide</span>
+              </Link>
+              <Link
+                to="/student/higher-ed"
+                className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-mono text-xs font-bold transition-all shadow-lg shadow-indigo-600/40 cursor-pointer"
+              >
+                <Terminal size={14} />
+                <span>Mission Terminal</span>
+                <ChevronRight size={14} />
+              </Link>
+            </div>
+          </div>
+
+          {/* Quick Level Direct Links */}
+          <div className="flex flex-wrap items-center gap-2 pt-1 border-t border-slate-800/80 relative z-10 text-[11px] font-mono">
+            <span className="text-slate-400">Quick Track Jump:</span>
+            {[
+              { id: 'ug1', label: 'UG 1st Yr' },
+              { id: 'ug2', label: 'UG 2nd Yr' },
+              { id: 'ug3', label: 'UG 3rd Yr' },
+              { id: 'ug4', label: 'UG Final Yr' },
+              { id: 'pg1', label: 'PG 1st Yr' },
+              { id: 'pg2', label: 'PG Final Yr' },
+            ].map(lvl => (
+              <Link
+                key={lvl.id}
+                to={`/student/higher-ed?level=${lvl.id}`}
+                className="px-2 py-1 rounded-lg bg-slate-950/60 border border-slate-800 hover:border-indigo-500 text-slate-300 hover:text-cyan-300 transition-colors"
+              >
+                {lvl.label}
+              </Link>
+            ))}
+          </div>
         </div>
 
         {/* Subjects Grid */}

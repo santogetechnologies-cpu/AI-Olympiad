@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import {
   LayoutDashboard, BookOpen, FolderOpen, Users, BarChart3,
   Settings, LogOut, ChevronLeft, ChevronRight, Bell, GraduationCap,
-  FileText, HelpCircle, Home, User, Flame, Zap, X, Menu
+  FileText, HelpCircle, Home, User, Flame, Zap, X, Menu, Terminal
 } from 'lucide-react'
 import { useAuth } from '../../contexts/AuthContext'
 import { gamification, type StudentStats } from '../../utils/gamification'
@@ -39,6 +39,7 @@ function StudentNav(): NavItem[] {
   return [
     { label: 'Dashboard', href: '/student', icon: Home },
     { label: 'My Learning', href: '/student/learning', icon: BookOpen },
+    { label: 'AI Mission Terminal', href: '/student/higher-ed', icon: Terminal },
     { label: 'Assignments', href: '/student/assignments', icon: FileText },
     { label: 'Quizzes', href: '/student/quizzes', icon: HelpCircle },
     { label: 'Progress', href: '/student/progress', icon: BarChart3 },

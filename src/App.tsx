@@ -30,6 +30,7 @@ import StudentAssignmentsPage from './pages/student/StudentAssignmentsPage'
 import StudentQuizzesPage from './pages/student/StudentQuizzesPage'
 import StudentProfilePage from './pages/student/StudentProfilePage'
 import GaioBookPage from './pages/student/GaioBookPage'
+import HigherEdBookPage from './pages/student/HigherEdBookPage'
 
 export default function App() {
   return (
@@ -77,6 +78,10 @@ export default function App() {
           <Route path="/student/profile" element={<ProtectedRoute allowedRoles={['student']}><StudentProfilePage /></ProtectedRoute>} />
           <Route path="/student/book" element={<ProtectedRoute allowedRoles={['student']}><GaioBookPage /></ProtectedRoute>} />
           <Route path="/book" element={<GaioBookPage />} />
+          <Route path="/student/higher-ed" element={<ProtectedRoute allowedRoles={['student']}><HigherEdBookPage /></ProtectedRoute>} />
+          <Route path="/higher-ed" element={<HigherEdBookPage />} />
+          <Route path="/student/terminal" element={<ProtectedRoute allowedRoles={['student']}><HigherEdBookPage /></ProtectedRoute>} />
+          <Route path="/terminal" element={<HigherEdBookPage />} />
 
           {/* Default redirect */}
           <Route path="/" element={<Navigate to="/login" replace />} />
