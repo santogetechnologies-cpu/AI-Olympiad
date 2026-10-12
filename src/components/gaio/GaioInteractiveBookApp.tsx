@@ -8,6 +8,8 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import type { GaioScreenItem } from './types'
+import { getScreensForAnyGrade } from './config/universalGradeScreens'
+import type { GradeKey } from '../../services/progressService'
 import { CLASS3_BOOK_ALL_SCREENS } from './config/class3BookScreens'
 import { CLASS4_BOOK_ALL_SCREENS } from './config/class4BookScreens'
 import { CLASS5_BOOK_ALL_SCREENS } from './config/class5BookScreens'
@@ -317,7 +319,7 @@ export interface GaioInteractiveBookAppProps {
   chapterTitle?: string
   chapterNumber?: number | string
   studentName?: string
-  gradeKey?: 'class3' | 'class4' | 'class5'
+  gradeKey?: GradeKey | string
 }
 
 export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
@@ -336,7 +338,13 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
 }) => {
   const [searchParams, setSearchParams] = useSearchParams()
 
-  const gradeTitle = gradeKey === 'class5' ? 'Class 5' : gradeKey === 'class4' ? 'Class 4' : 'Class 3'
+  const gradeTitle = useMemo(() => {
+    const k = String(gradeKey).toLowerCase()
+    if (k.startsWith('ug')) return `UG ${k.replace('ug', '')}${k.includes('1') ? 'st' : k.includes('2') ? 'nd' : k.includes('3') ? 'rd' : 'th'} Year`
+    if (k.startsWith('pg')) return `PG ${k.replace('pg', '')}${k.includes('1') ? 'st' : ' Final'} Year`
+    if (k.startsWith('class')) return `Class ${k.replace('class', '')}`
+    return 'Class 3'
+  }, [gradeKey])
 
   const chapterMetaList = useMemo(() => {
     if (gradeKey === 'class4') return CLASS4_METADATA
@@ -345,9 +353,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
   }, [gradeKey])
 
   const rawScreens: GaioScreenItem[] = useMemo(() => {
-    if (gradeKey === 'class4') return CLASS4_BOOK_ALL_SCREENS
-    if (gradeKey === 'class5') return CLASS5_BOOK_ALL_SCREENS
-    return CLASS3_BOOK_ALL_SCREENS
+    return getScreensForAnyGrade(gradeKey)
   }, [gradeKey])
 
   // 1. When scopedMonth is set, load ONLY that specific chapter's interactive screens!

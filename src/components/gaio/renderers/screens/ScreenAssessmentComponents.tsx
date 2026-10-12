@@ -1,13 +1,21 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// SCREEN ASSESSMENT COMPONENTS
-// Quiz Time (Parts 1 & 2) • True or False • Home Connect •
-// Unit Review (Parts 1 & 2) • Interactive Word Search
+// SCREEN ASSESSMENT COMPONENTS — ZERO MCQS • ZERO TRUE/FALSE • 100% VISUAL GAMES
+// All assessment screens replaced with permitted interactive visual game mechanics:
+// - Quiz Part 1: Real Life Match / Match the Pairs
+// - Quiz Part 2: Connect the Dots / Build the Sequence + My Stars Celebration
+// - True or False: Teach the Machine / Sort the Cards
+// - Unit Review Part 1: Spot the Anomaly / Outlier Detection
+// - Unit Review Part 2: Feed the AI / Train the Model + Trophy Celebration
+// - Home Connect & Word Search: Pure Visual & Conversational Activities
 // ─────────────────────────────────────────────────────────────────────────────
 
 import React, { useState } from 'react'
 import type { GaioScreenItem } from '../../types'
-import { Check, X, Star, Sparkles, Award, CheckCircle2, Home, Heart } from 'lucide-react'
+import { Check, X, Star, Sparkles, Award, CheckCircle2, Home, Heart, Trophy, Bot, Volume2 } from 'lucide-react'
 import { gameAudio } from '../../../../utils/gameAudio'
+import { auraSpeechService } from '../../../../services/auraSpeechService'
+import { showAuraToast } from '../../../../services/auraGuidanceToast'
+import { VisualGameEngine, type VisualGameConfig } from '../../games/VisualGameEngine'
 import confetti from 'canvas-confetti'
 
 interface ScreenProps {
@@ -18,679 +26,539 @@ interface ScreenProps {
   onAddStars?: (count: number) => void
 }
 
-// 1. QUIZ TIME PART 1 (Questions 1 to 3) — payload-driven
+// 1. QUIZ TIME PART 1 — INTERACTIVE VISUAL GAME: MATCH THE PAIRS / REAL LIFE MATCH
 export const ScreenQuizPart1: React.FC<ScreenProps> = ({ screen, onNext, savedAnswer, onSaveAnswer }) => {
-  // Load questions from payload — topic-specific!
-  const rawQuestions: any[] = screen.payload?.questions || []
-  const questions = rawQuestions.length > 0 ? rawQuestions : [
-    { id: 1, q: 'Q1. AI stands for Artificial...', options: ['Intelligence', 'Ice-cream', 'Interest'], correct: 0 },
-    { id: 2, q: 'Q2. Bolt is a friendly AI...', options: ['Dog', 'Robot', 'Fish'], correct: 1 },
-    { id: 3, q: 'Q3. A machine can...', options: ['Feel sad', 'Do work', 'Dream'], correct: 1 },
+  const payload = screen.payload || {}
+  const rawPairs = payload.matchingPairs || payload.pairs || [
+    { id: 'qp1', left: 'Phone Face Unlock', right: 'Face Recognition AI', icon: '📱' },
+    { id: 'qp2', left: 'Map Route Planner', right: 'Pathfinding Algorithm', icon: '🗺️' },
+    { id: 'qp3', left: 'Voice Keyboard', right: 'Speech Recognition', icon: '🎙️' },
+    { id: 'qp4', left: 'Spam Mail Blocker', right: 'Text Classification', icon: '📧' },
   ]
 
-  const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>(savedAnswer || {})
-
-  const handleSelect = (qId: number, optIdx: number, correctIdx: number) => {
-    if (optIdx === correctIdx) {
-      gameAudio.playSuccess()
-    } else {
-      gameAudio.playTap()
-    }
-    const updated = { ...selectedAnswers, [qId]: optIdx }
-    setSelectedAnswers(updated)
-    if (onSaveAnswer) onSaveAnswer(updated)
+  const gameConfig: VisualGameConfig = {
+    type: 'real_life_match',
+    title: screen.title || 'Quiz Time: Real Life Match',
+    instruction: 'Drag & match everyday life situations to the smart AI concepts behind them!',
+    pairs: rawPairs.map((p: any, i: number) => ({
+      id: p.id || `qp_${i}`,
+      left: p.left || p.term || `Concept ${i + 1}`,
+      right: p.right || p.definition || `Match ${i + 1}`,
+      icon: p.icon || (i === 0 ? '📱' : i === 1 ? '🗺️' : i === 2 ? '🎙️' : '📧')
+    }))
   }
 
   return (
     <div className="w-full h-full flex flex-col justify-between p-2.5 select-none text-slate-800 animate-in fade-in duration-200">
-      <div className="bg-amber-500 text-white rounded-2xl p-2 flex items-center justify-between shrink-0 shadow-xs">
+      <div className="bg-gradient-to-r from-amber-500 to-orange-600 text-white rounded-2xl p-2.5 flex items-center justify-between shrink-0 shadow-md">
         <div>
-          <span className="text-[8px] font-black uppercase text-amber-100">
-            QUIZ TIME • PART 1 OF 2
+          <span className="text-[9px] font-black uppercase text-amber-100 tracking-wider">
+            QUIZ TIME • INTERACTIVE CHALLENGE (PART 1 OF 2)
           </span>
-          <h2 className="text-xs sm:text-sm font-black truncate max-w-[220px]">
+          <h2 className="text-xs sm:text-sm font-black truncate max-w-[260px]">
             {screen.title}
           </h2>
         </div>
-        <Star size={16} className="text-amber-200 fill-amber-200" />
+        <div className="w-8 h-8 rounded-xl bg-white/20 flex items-center justify-center">
+          <Star size={18} className="text-amber-200 fill-amber-200" />
+        </div>
       </div>
 
-      {/* 3 Questions */}
-      <div className="flex-1 flex flex-col justify-around py-1 space-y-1.5">
-        {questions.map((q) => {
-          const userChoice = selectedAnswers[q.id]
-
-          return (
-            <div key={q.id} className="p-2 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
-              <span className="text-[11px] font-black text-slate-900 block leading-tight">
-                {q.q}
-              </span>
-              <div className="grid grid-cols-3 gap-1">
-                {q.options.map((opt: string, optIdx: number) => {
-                  const isSelected = userChoice === optIdx
-                  const isCorrect = isSelected && optIdx === q.correct
-
-                  return (
-                    <button
-                      key={optIdx}
-                      onClick={() => handleSelect(q.id, optIdx, q.correct)}
-                      className={`py-1.5 px-1 rounded-lg text-[10px] font-bold transition-all text-center leading-tight cursor-pointer ${
-                        isSelected
-                          ? isCorrect
-                            ? 'bg-emerald-500 text-white shadow-xs'
-                            : 'bg-rose-500 text-white shadow-xs'
-                          : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'
-                      }`}
-                    >
-                      {opt}
-                    </button>
-                  )
-                })}
-              </div>
-            </div>
-          )
-        })}
+      <div className="flex-1 min-h-0 my-1 bg-white/90 rounded-2xl border border-amber-200 p-2 shadow-xs">
+        <VisualGameEngine
+          config={gameConfig}
+          savedState={savedAnswer}
+          onSaveState={(s) => onSaveAnswer && onSaveAnswer(s)}
+          onComplete={() => {
+            showAuraToast('great_job', 'Quiz Challenge Part 1 mastered! Ready for Part 2.', true)
+          }}
+          onNext={onNext}
+        />
       </div>
 
       <div className="shrink-0 pt-1">
         <button
-          onClick={onNext}
-          className="w-full py-2 rounded-xl bg-[#0288D1] hover:bg-sky-600 text-white font-bold text-xs transition-all cursor-pointer"
+          onClick={() => {
+            gameAudio.playTap()
+            onNext()
+          }}
+          className="w-full py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs transition-all cursor-pointer shadow-md flex items-center justify-center gap-1.5"
         >
-          Next: Questions 4 & 5 + Stars →
+          <span>Next: Quiz Challenge Part 2 & Stars</span>
+          <span>→</span>
         </button>
       </div>
     </div>
   )
 }
 
-// 2. QUIZ TIME PART 2 (Questions 4, 5 & My Stars Celebration) — payload-driven
+// 2. QUIZ TIME PART 2 — INTERACTIVE VISUAL GAME: BUILD THE SEQUENCE + STARS CELEBRATION
 export const ScreenQuizPart2: React.FC<ScreenProps> = ({ screen, onNext, savedAnswer, onSaveAnswer, onAddStars }) => {
-  const rawQuestions: any[] = screen.payload?.questions || []
-  const questions = rawQuestions.length > 0 ? rawQuestions : [
-    { id: 4, q: 'Q4. AI learns from...', options: ['Examples', 'Pizza', 'Sleeping'], correct: 0 },
-    { id: 5, q: 'Q5. Bolt is a...', options: ['Dog', 'Tree', 'Robot'], correct: 2 },
+  const payload = screen.payload || {}
+  const rawSteps = payload.sequence || [
+    { id: 'qs1', step: 1, text: 'Collect Data (Examples)', icon: '📦' },
+    { id: 'qs2', step: 2, text: 'Train Model (Spot Patterns)', icon: '🧠' },
+    { id: 'qs3', step: 3, text: 'Evaluate Accuracy (Test)', icon: '🎯' },
+    { id: 'qs4', step: 4, text: 'Deploy Smart Application', icon: '🚀' },
   ]
 
-  const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>(savedAnswer || {})
   const [starsAwarded, setStarsAwarded] = useState(false)
 
-  const handleSelect = (qId: number, optIdx: number, correctIdx: number) => {
-    if (optIdx === correctIdx) {
-      gameAudio.playSuccess()
-    } else {
-      gameAudio.playTap()
-    }
-    const updated = { ...selectedAnswers, [qId]: optIdx }
-    setSelectedAnswers(updated)
-    if (onSaveAnswer) onSaveAnswer(updated)
+  const gameConfig: VisualGameConfig = {
+    type: 'build_sequence',
+    title: screen.title || 'Quiz Time: Build the Sequence',
+    instruction: 'Arrange the smart AI pipeline steps in their exact logical order!',
+    sequence: rawSteps
+  }
 
-    if (Object.keys(updated).length >= questions.length && !starsAwarded) {
+  const handleGameComplete = () => {
+    if (!starsAwarded) {
       setStarsAwarded(true)
       if (onAddStars) onAddStars(5)
-      confetti({ particleCount: 50, spread: 70 })
+      gameAudio.playFanfare()
+      confetti({ particleCount: 60, spread: 80, origin: { y: 0.6 } })
+      showAuraToast('worksheet_complete', 'You earned 5 Gold Stars for perfect sequencing!', true)
     }
   }
 
   return (
     <div className="w-full h-full flex flex-col justify-between p-2.5 select-none text-slate-800 animate-in fade-in duration-200">
-      <div className="bg-amber-500 text-white rounded-2xl p-2 flex items-center justify-between shrink-0 shadow-xs">
+      <div className="bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 text-white rounded-2xl p-2.5 flex items-center justify-between shrink-0 shadow-md">
         <div>
-          <span className="text-[8px] font-black uppercase text-amber-100">
-            QUIZ TIME • PART 2 OF 2
+          <span className="text-[9px] font-black uppercase text-amber-100 tracking-wider">
+            QUIZ TIME • PIPELINE SEQUENCING (PART 2 OF 2)
           </span>
-          <h2 className="text-xs sm:text-sm font-black truncate max-w-[220px]">
+          <h2 className="text-xs sm:text-sm font-black truncate max-w-[260px]">
             {screen.title}
           </h2>
         </div>
-        <Sparkles size={16} />
+        <Sparkles size={18} className="text-amber-200" />
       </div>
 
-      {/* 2 Questions */}
-      <div className="space-y-1.5 my-1">
-        {questions.map((q) => {
-          const userChoice = selectedAnswers[q.id]
-
-          return (
-            <div key={q.id} className="p-2 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
-              <span className="text-[11px] font-black text-slate-900 block leading-tight">
-                {q.q}
-              </span>
-              <div className="grid grid-cols-3 gap-1">
-                {q.options.map((opt: string, optIdx: number) => {
-                  const isSelected = userChoice === optIdx
-                  const isCorrect = isSelected && optIdx === q.correct
-
-                  return (
-                    <button
-                      key={optIdx}
-                      onClick={() => handleSelect(q.id, optIdx, q.correct)}
-                      className={`py-1.5 px-1 rounded-lg text-[10px] font-bold transition-all text-center leading-tight cursor-pointer ${
-                        isSelected
-                          ? isCorrect
-                            ? 'bg-emerald-500 text-white shadow-xs'
-                            : 'bg-rose-500 text-white shadow-xs'
-                          : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'
-                      }`}
-                    >
-                      {opt}
-                    </button>
-                  )
-                })}
-              </div>
-            </div>
-          )
-        })}
+      <div className="flex-1 min-h-0 my-1 bg-white/90 rounded-2xl border border-amber-200 p-2 shadow-xs flex flex-col justify-between">
+        <VisualGameEngine
+          config={gameConfig}
+          savedState={savedAnswer}
+          onSaveState={(s) => onSaveAnswer && onSaveAnswer(s)}
+          onComplete={handleGameComplete}
+          onNext={onNext}
+        />
       </div>
 
-      {/* MY STARS Celebration Box */}
-      <div className="flex-1 my-1 p-2.5 rounded-2xl bg-amber-50 border-2 border-amber-300 flex flex-col items-center justify-center space-y-1 shadow-xs">
-        <span className="text-[10px] font-black uppercase text-amber-800 tracking-wider">
-          MY STARS RATING
-        </span>
-        <div className="flex gap-1.5">
-          {[1, 2, 3, 4, 5].map((s) => (
-            <Star
-              key={s}
-              size={22}
-              className="text-amber-400 fill-amber-400 animate-pulse"
-              style={{ animationDelay: `${s * 150}ms` }}
-            />
-          ))}
-        </div>
-        <p className="text-[11px] font-bold text-amber-900 pt-0.5">
-          Great job! You answered all 5 quiz questions!
-        </p>
-      </div>
-
-      <div className="shrink-0 pt-1">
-        <button
-          onClick={onNext}
-          className="w-full py-2 rounded-xl bg-[#0288D1] hover:bg-sky-600 text-white font-bold text-xs transition-all cursor-pointer"
-        >
-          Next: True or False →
-        </button>
-      </div>
-    </div>
-  )
-}
-
-// 3. TRUE OR FALSE — payload-driven
-export const ScreenTrueFalse: React.FC<ScreenProps> = ({ screen, onNext, savedAnswer, onSaveAnswer }) => {
-  // Load statements from payload — topic-specific!
-  const rawStatements: any[] = screen.payload?.statements || []
-  const statements = rawStatements.length > 0
-    ? rawStatements.map((s: any, i: number) => ({ id: i + 1, text: s.statement || s.text || s, isTrue: s.answer !== undefined ? s.answer : true }))
-    : [
-        { id: 1, text: 'Bolt is a robot.', isTrue: true },
-        { id: 2, text: 'AI can feel sad like me.', isTrue: false },
-        { id: 3, text: 'AI learns from examples.', isTrue: true },
-        { id: 4, text: 'A stone has AI.', isTrue: false },
-        { id: 5, text: 'A map app can use AI.', isTrue: true },
-        { id: 6, text: 'Some AI understands many languages.', isTrue: true },
-      ]
-
-  const [answers, setAnswers] = useState<Record<number, boolean>>(savedAnswer || {})
-
-  const handleChoose = (id: number, choice: boolean) => {
-    gameAudio.playTap()
-    const updated = { ...answers, [id]: choice }
-    setAnswers(updated)
-    if (onSaveAnswer) onSaveAnswer(updated)
-  }
-
-  return (
-    <div className="w-full h-full flex flex-col justify-between p-2.5 select-none text-slate-800 animate-in fade-in duration-200">
-      <div className="shrink-0 text-center pb-1 border-b border-sky-100">
-        <span className="text-[9px] font-black uppercase text-[#0288D1]">
-          TRUE OR FALSE CHALLENGE
-        </span>
-        <h2 className="text-sm font-black text-slate-900">
-          Tick TRUE or FALSE for each fact!
-        </h2>
-      </div>
-
-      {/* 6 Statements */}
-      <div className="flex-1 flex flex-col justify-around py-1 space-y-1">
-        {statements.map((st) => {
-          const userChoice = answers[st.id]
-          const isSelectedTrue = userChoice === true
-          const isSelectedFalse = userChoice === false
-
-          return (
-            <div
-              key={st.id}
-              className="p-1.5 px-2 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between"
-            >
-              <span className="text-[11px] font-bold text-slate-800 leading-tight pr-2">
-                {st.id}. {st.text}
-              </span>
-              <div className="flex items-center gap-1 shrink-0">
-                <button
-                  onClick={() => handleChoose(st.id, true)}
-                  className={`py-0.5 px-2 rounded-lg text-[10px] font-black cursor-pointer transition-all ${
-                    isSelectedTrue
-                      ? 'bg-emerald-500 text-white shadow-2xs'
-                      : 'bg-white border border-slate-200 text-slate-600 hover:bg-slate-100'
-                  }`}
-                >
-                  TRUE
-                </button>
-                <button
-                  onClick={() => handleChoose(st.id, false)}
-                  className={`py-0.5 px-2 rounded-lg text-[10px] font-black cursor-pointer transition-all ${
-                    isSelectedFalse
-                      ? 'bg-rose-500 text-white shadow-2xs'
-                      : 'bg-white border border-slate-200 text-slate-600 hover:bg-slate-100'
-                  }`}
-                >
-                  FALSE
-                </button>
-              </div>
-            </div>
-          )
-        })}
-      </div>
-
-      <div className="shrink-0 pt-1">
-        <button
-          onClick={onNext}
-          className="w-full py-2 rounded-xl bg-[#0288D1] hover:bg-sky-600 text-white font-bold text-xs transition-all cursor-pointer"
-        >
-          Next: Home Connect & Rating →
-        </button>
-      </div>
-    </div>
-  )
-}
-
-// 4. HOME CONNECT & SELF RATING — payload-driven
-export const ScreenHomeConnect: React.FC<ScreenProps> = ({ screen, onNext, savedAnswer, onSaveAnswer }) => {
-  const payload = screen.payload || {}
-  const homePrompt = payload.prompt || `Find one AI helper at home with your family. Tell them what it does!`
-  const talkPrompt = payload.talkPrompt || 'Tell your family: What did you learn about AI today?'
-  const [rating, setRating] = useState<string | null>(savedAnswer?.rating || null)
-  const [notes, setNotes] = useState(savedAnswer?.notes || '')
-
-  const handleRate = (r: string) => {
-    gameAudio.playSuccess()
-    setRating(r)
-    if (onSaveAnswer) onSaveAnswer({ rating: r, notes })
-  }
-
-  const ratings = [
-    { id: 'well', emoji: '😃', text: 'I know it well!' },
-    { id: 'some', emoji: '🙂', text: 'I know some.' },
-    { id: 'practice', emoji: '🤔', text: 'I need practice.' }
-  ]
-
-  return (
-    <div className="w-full h-full flex flex-col justify-between p-2.5 select-none text-slate-800 animate-in fade-in duration-200">
-      <div className="shrink-0 text-center pb-1 border-b border-sky-100">
-        <h2 className="text-sm font-black text-slate-900">
-          Home Connect & Self Reflection
-        </h2>
-      </div>
-
-      <div className="flex-1 flex flex-col justify-around py-1 space-y-2">
-        {/* Home Connect Prompt */}
-        <div className="p-3 rounded-2xl bg-emerald-50 border-2 border-emerald-300 shadow-xs flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-emerald-500 text-white flex items-center justify-center shrink-0">
-            <Home size={20} />
-          </div>
-          <div>
-            <span className="text-[9px] font-black uppercase text-emerald-800 tracking-wider block">
-              HOME CONNECT
-            </span>
-            <p className="text-xs font-bold text-slate-800 leading-snug">
-              "{homePrompt}"
-            </p>
-          </div>
-        </div>
-
-        {/* Talk Prompt */}
-        <div className="p-2 rounded-xl bg-sky-50 border border-sky-200 flex items-start gap-2">
-          <span className="text-lg shrink-0">💬</span>
-          <p className="text-[11px] font-bold text-slate-700 leading-snug">{talkPrompt}</p>
-        </div>
-
-        {/* Self Reflection 3 Smiles */}
-        <div className="p-2.5 rounded-2xl bg-amber-50 border border-amber-200 text-center space-y-1.5">
-          <span className="text-[10px] font-black uppercase text-amber-900 block">
-            HOW DID I DO? COLOUR A FACE:
+      {/* MY STARS RATING CELEBRATION BOX */}
+      <div className="shrink-0 p-2 rounded-2xl bg-amber-50 border-2 border-amber-300 flex items-center justify-between shadow-xs mb-1">
+        <div className="flex items-center gap-1.5">
+          <span className="text-[10px] font-black uppercase text-amber-800 tracking-wider">
+            MY STARS:
           </span>
-          <div className="grid grid-cols-3 gap-1.5">
-            {ratings.map((rt) => (
-              <button
-                key={rt.id}
-                onClick={() => handleRate(rt.id)}
-                className={`p-2 rounded-xl border-2 transition-all flex flex-col items-center justify-center cursor-pointer ${
-                  rating === rt.id
-                    ? 'bg-amber-200 border-amber-500 scale-105 shadow-xs'
-                    : 'bg-white border-slate-200 hover:bg-slate-100'
-                }`}
-              >
-                <span className="text-2xl">{rt.emoji}</span>
-                <span className="text-[9px] font-bold text-slate-700 mt-0.5 leading-tight">
-                  {rt.text}
-                </span>
-              </button>
+          <div className="flex gap-1">
+            {[1, 2, 3, 4, 5].map((s) => (
+              <Star
+                key={s}
+                size={18}
+                className="text-amber-400 fill-amber-400 animate-bounce"
+                style={{ animationDelay: `${s * 100}ms` }}
+              />
             ))}
           </div>
         </div>
+        <span className="text-[10px] font-bold text-amber-900 bg-amber-200/80 px-2 py-0.5 rounded-full">
+          +5 Gold Stars Earned!
+        </span>
       </div>
 
-      <div className="shrink-0 pt-1">
+      <div className="shrink-0 pt-0.5">
         <button
-          onClick={onNext}
-          className="w-full py-2.5 rounded-xl bg-[#0288D1] hover:bg-sky-600 text-white font-bold text-xs sm:text-sm transition-all cursor-pointer"
+          onClick={() => {
+            gameAudio.playTap()
+            onNext()
+          }}
+          className="w-full py-2.5 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs transition-all cursor-pointer shadow-md flex items-center justify-center gap-1.5"
         >
-          Complete Topic & Continue →
+          <span>Next: Teach the Machine Classification</span>
+          <span>→</span>
         </button>
       </div>
     </div>
   )
 }
 
-// 5. UNIT REVIEW PART 1 — payload-driven
-export const ScreenUnitReviewPart1: React.FC<ScreenProps> = ({ screen, onNext, savedAnswer, onSaveAnswer }) => {
-  const rawQs: string[] = screen.payload?.questions || []
-  // Convert string questions to MCQ format with generic options
-  const questions = rawQs.slice(0, 3).map((q: string, i: number) => ({
-    id: i + 1,
-    q: `Q${i+1}. ${q}`,
-    options: ['True', 'I know this!', 'I need to review'],
-    correct: 1
-  }))
-  const fallbackQuestions = [
-    { id: 1, q: 'Q1. What did you learn this month?', options: ['AI basics', 'Pizza recipes', 'Dance moves'], correct: 0 },
-    { id: 2, q: 'Q2. Bolt is a friendly AI...', options: ['Robot', 'Dinosaur', 'Flower'], correct: 0 },
-    { id: 3, q: 'Q3. AI helps machines to...', options: ['Sleep', 'Think and learn', 'Cook food'], correct: 1 },
+// 3. TEACH THE MACHINE / SORT THE CARDS (REPLACING TRUE OR FALSE)
+export const ScreenTrueFalse: React.FC<ScreenProps> = ({ screen, onNext, savedAnswer, onSaveAnswer }) => {
+  const payload = screen.payload || {}
+  const rawCards = payload.cards || [
+    { id: 'tf1', text: 'Voice Assistant Understanding Accents', categoryId: 'cat_ai', icon: '🎙️' },
+    { id: 'tf2', text: 'Mechanical Kitchen Whisk', categoryId: 'cat_manual', icon: '🥄' },
+    { id: 'tf3', text: 'Autonomous Drone Obstacle Radar', categoryId: 'cat_ai', icon: '🚁' },
+    { id: 'tf4', text: 'Traditional Wooden Door Lock', categoryId: 'cat_manual', icon: '🔑' },
+    { id: 'tf5', text: 'Smart Camera Face Auto-Focus', categoryId: 'cat_ai', icon: '📷' },
+    { id: 'tf6', text: 'Simple Metal Paperclip', categoryId: 'cat_manual', icon: '📎' },
   ]
-  const displayQuestions = questions.length > 0 ? questions : fallbackQuestions
 
-  const [answers, setAnswers] = useState<Record<number, number>>(savedAnswer || {})
-
-  const handleSelect = (qId: number, optIdx: number, correctIdx: number) => {
-    if (optIdx === correctIdx) gameAudio.playSuccess()
-    else gameAudio.playTap()
-    const updated = { ...answers, [qId]: optIdx }
-    setAnswers(updated)
-    if (onSaveAnswer) onSaveAnswer(updated)
+  const gameConfig: VisualGameConfig = {
+    type: 'teach_machine',
+    title: 'Teach the Machine: AI vs Simple Tools',
+    instruction: 'Sort each card into the right bucket to train the machine classifier!',
+    categories: [
+      { id: 'cat_ai', name: 'Learns with AI 🤖', icon: '⚡', color: 'border-sky-400 bg-sky-50' },
+      { id: 'cat_manual', name: 'Simple Tool 🔧', icon: '🔩', color: 'border-amber-400 bg-amber-50' },
+    ],
+    cards: rawCards
   }
 
   return (
     <div className="w-full h-full flex flex-col justify-between p-2.5 select-none text-slate-800 animate-in fade-in duration-200">
-      <div className="bg-[#0288D1] text-white rounded-2xl p-2 flex items-center justify-between shrink-0 shadow-xs">
+      <div className="bg-gradient-to-r from-sky-600 to-indigo-600 text-white rounded-2xl p-2.5 flex items-center justify-between shrink-0 shadow-md">
         <div>
-          <span className="text-[8px] font-black uppercase text-sky-200">
-            UNIT REVIEW • PART 1 OF 2
+          <span className="text-[9px] font-black uppercase text-sky-200 tracking-wider">
+            TEACH THE MACHINE • VISUAL CLASSIFIER LAB
           </span>
-          <h2 className="text-xs sm:text-sm font-black">
-            Unit Review: {screen.monthTitle}
+          <h2 className="text-xs sm:text-sm font-black truncate max-w-[260px]">
+            {screen.title || 'Machine Teaching Challenge'}
           </h2>
         </div>
-        <Award size={16} />
+        <Bot size={18} className="text-sky-200" />
       </div>
 
-      <div className="flex-1 flex flex-col justify-around py-1 space-y-1.5">
-        {displayQuestions.map((q) => {
-          const userChoice = answers[q.id]
-
-          return (
-            <div key={q.id} className="p-2 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
-              <span className="text-[11px] font-black text-slate-900 block leading-tight">
-                {q.q}
-              </span>
-              <div className="grid grid-cols-3 gap-1">
-                {q.options.map((opt, idx) => {
-                  const isSelected = userChoice === idx
-                  const isCorrect = isSelected && idx === q.correct
-
-                  return (
-                    <button
-                      key={idx}
-                      onClick={() => handleSelect(q.id, idx, q.correct)}
-                      className={`p-1 rounded-lg text-[9px] font-bold transition-all text-center leading-tight cursor-pointer ${
-                        isSelected
-                          ? isCorrect
-                            ? 'bg-emerald-500 text-white shadow-xs'
-                            : 'bg-rose-500 text-white shadow-xs'
-                          : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'
-                      }`}
-                    >
-                      {opt}
-                    </button>
-                  )
-                })}
-              </div>
-            </div>
-          )
-        })}
+      <div className="flex-1 min-h-0 my-1 bg-white/90 rounded-2xl border border-sky-200 p-2 shadow-xs">
+        <VisualGameEngine
+          config={gameConfig}
+          savedState={savedAnswer}
+          onSaveState={(s) => onSaveAnswer && onSaveAnswer(s)}
+          onComplete={() => {
+            showAuraToast('great_job', 'All cards classified into machine buckets!', true)
+          }}
+          onNext={onNext}
+        />
       </div>
 
       <div className="shrink-0 pt-1">
         <button
-          onClick={onNext}
-          className="w-full py-2 rounded-xl bg-[#0288D1] hover:bg-sky-600 text-white font-bold text-xs transition-all cursor-pointer"
+          onClick={() => {
+            gameAudio.playTap()
+            onNext()
+          }}
+          className="w-full py-2.5 rounded-xl bg-sky-600 hover:bg-sky-700 text-white font-bold text-xs transition-all cursor-pointer shadow-md flex items-center justify-center gap-1.5"
         >
-          Next: Review Questions 4 to 6 & Trophy →
+          <span>Next: Home Connect Activity</span>
+          <span>→</span>
         </button>
       </div>
     </div>
   )
 }
 
-// 6. UNIT REVIEW PART 2 & TROPHY — payload-driven
-export const ScreenUnitReviewPart2: React.FC<ScreenProps> = ({ screen, onNext, savedAnswer, onSaveAnswer, onAddStars }) => {
-  const rawQs: string[] = screen.payload?.questions || []
-  const baseId = 4
-  const questions = rawQs.slice(0, 3).map((q: string, i: number) => ({
-    id: baseId + i,
-    q: `Q${baseId + i}. ${q}`,
-    options: ['Yes, I know!', 'I learned this!', 'I need practice.'],
-    correct: 1
-  }))
-  const fallbackQuestions = [
-    { id: 4, q: 'Q4. Can a smart machine feel happy or sad like a human?', options: ['No, it has no feelings', 'Yes, it cries', 'Maybe sometimes'], correct: 0 },
-    { id: 5, q: 'Q5. Why do we give clear commands to robots?', options: ['To confuse them', 'So they know what to do', 'To make them sleep'], correct: 1 },
-    { id: 6, q: 'Q6. Good AI users are always...', options: ['Careless', 'Angry', 'Safe & respectful'], correct: 2 },
-  ]
-  const displayQuestions = questions.length > 0 ? questions : fallbackQuestions
-  const badgeLabel = screen.payload?.badgeLabel || `Month ${screen.monthNumber} Complete!`
+// 4. HOME CONNECT & REAL-LIFE SHARING
+export const ScreenHomeConnect: React.FC<ScreenProps> = ({ screen, onNext, savedAnswer, onSaveAnswer }) => {
+  const payload = screen.payload || {}
+  const task = payload.task || 'Look around your home or school today. Find 2 gadgets that use smart AI and 2 that do not. Tell someone in your family!'
+  const prompt = payload.prompt || 'Who did you talk to?'
+  const options = ['Mom / Dad 👨‍👩‍👧', 'Grandparents 👵', 'Brother / Sister 👦', 'Teacher / Friend 🏫']
 
-  const [answers, setAnswers] = useState<Record<number, number>>(savedAnswer || {})
+  const [selectedPerson, setSelectedPerson] = useState<string | null>(savedAnswer?.person || null)
+  const [completed, setCompleted] = useState<boolean>(Boolean(savedAnswer?.person))
+
+  const handleSelectPerson = (p: string) => {
+    gameAudio.playSuccess()
+    setSelectedPerson(p)
+    setCompleted(true)
+    if (onSaveAnswer) onSaveAnswer({ person: p })
+    confetti({ particleCount: 40, spread: 60 })
+    showAuraToast('great_job', `Connected with ${p}! Spreading AI knowledge makes you a true leader.`, true)
+  }
+
+  return (
+    <div className="w-full h-full flex flex-col justify-between p-2.5 select-none text-slate-800 animate-in fade-in duration-200">
+      <div className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-2xl p-2.5 flex items-center justify-between shrink-0 shadow-md">
+        <div>
+          <span className="text-[9px] font-black uppercase text-emerald-200 tracking-wider">
+            HOME CONNECT • REAL-LIFE SHARING
+          </span>
+          <h2 className="text-xs sm:text-sm font-black truncate max-w-[260px]">
+            Share What You Learned at Home
+          </h2>
+        </div>
+        <Home size={18} className="text-emerald-200" />
+      </div>
+
+      <div className="my-auto space-y-3 max-w-sm mx-auto w-full py-2">
+        <div className="p-3.5 rounded-2xl bg-emerald-50 border-2 border-emerald-300 shadow-xs text-center space-y-2">
+          <span className="text-3xl block">🏠</span>
+          <p className="text-xs sm:text-sm font-bold text-slate-900 leading-snug">
+            {task}
+          </p>
+          <button
+            onClick={() => auraSpeechService.speak(task)}
+            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-[10px] font-bold hover:bg-emerald-200 transition-colors"
+          >
+            <Volume2 size={12} />
+            <span>Listen to Mission</span>
+          </button>
+        </div>
+
+        <div>
+          <span className="text-[10px] font-black uppercase text-slate-500 block text-center mb-1.5">
+            {prompt}
+          </span>
+          <div className="grid grid-cols-2 gap-2">
+            {options.map((opt) => {
+              const isSelected = selectedPerson === opt
+              return (
+                <button
+                  key={opt}
+                  type="button"
+                  onClick={() => handleSelectPerson(opt)}
+                  className={`p-2.5 rounded-xl border-2 text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer ${
+                    isSelected
+                      ? 'bg-emerald-500 border-emerald-600 text-white shadow-md scale-[1.02]'
+                      : 'bg-white border-slate-200 hover:border-emerald-300 hover:bg-emerald-50/40 text-slate-800'
+                  }`}
+                >
+                  {isSelected && <Check size={14} className="text-white shrink-0" />}
+                  <span>{opt}</span>
+                </button>
+              )
+            })}
+          </div>
+        </div>
+      </div>
+
+      <div className="shrink-0 pt-1">
+        <button
+          onClick={() => {
+            gameAudio.playSuccess()
+            onNext()
+          }}
+          className="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs transition-all cursor-pointer shadow-md flex items-center justify-center gap-1.5"
+        >
+          <span>Complete Home Connect & Continue</span>
+          <span>→</span>
+        </button>
+      </div>
+    </div>
+  )
+}
+
+// 5. UNIT REVIEW PART 1 — SPOT THE ANOMALY (ANOMALY DETECTION GAME)
+export const ScreenUnitReviewPart1: React.FC<ScreenProps> = ({ screen, onNext, savedAnswer, onSaveAnswer }) => {
+  const payload = screen.payload || {}
+  const rawItems = payload.anomalyItems || [
+    { id: 'an1', name: 'Regular Traffic 40 km/h', icon: '🚗', isOutlier: false },
+    { id: 'an2', name: 'Regular Traffic 45 km/h', icon: '🚗', isOutlier: false },
+    { id: 'an3', name: 'SUDDEN COLLISION 0 km/h', icon: '💥', isOutlier: true },
+    { id: 'an4', name: 'Regular Traffic 50 km/h', icon: '🚗', isOutlier: false },
+  ]
+
+  const gameConfig: VisualGameConfig = {
+    type: 'spot_difference',
+    title: screen.title || 'Unit Review: Spot the Anomaly',
+    instruction: 'Find the unusual outlier pattern that triggers an automated AI alert!',
+    differenceItems: rawItems
+  }
+
+  return (
+    <div className="w-full h-full flex flex-col justify-between p-2.5 select-none text-slate-800 animate-in fade-in duration-200">
+      <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-2xl p-2.5 flex items-center justify-between shrink-0 shadow-md">
+        <div>
+          <span className="text-[9px] font-black uppercase text-blue-200 tracking-wider">
+            UNIT REVIEW • ANOMALY DETECTION LAB (PART 1 OF 2)
+          </span>
+          <h2 className="text-xs sm:text-sm font-black truncate max-w-[260px]">
+            {screen.title || 'Review Challenge'}
+          </h2>
+        </div>
+        <Award size={18} className="text-blue-200" />
+      </div>
+
+      <div className="flex-1 min-h-0 my-1 bg-white/90 rounded-2xl border border-blue-200 p-2 shadow-xs">
+        <VisualGameEngine
+          config={gameConfig}
+          savedState={savedAnswer}
+          onSaveState={(s) => onSaveAnswer && onSaveAnswer(s)}
+          onComplete={() => {
+            showAuraToast('great_job', 'Anomaly spotted! Model flagged outlier instantly.', true)
+          }}
+          onNext={onNext}
+        />
+      </div>
+
+      <div className="shrink-0 pt-1">
+        <button
+          onClick={() => {
+            gameAudio.playTap()
+            onNext()
+          }}
+          className="w-full py-2.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs transition-all cursor-pointer shadow-md flex items-center justify-center gap-1.5"
+        >
+          <span>Next: Feed the AI Training Model</span>
+          <span>→</span>
+        </button>
+      </div>
+    </div>
+  )
+}
+
+// 6. UNIT REVIEW PART 2 — FEED THE AI MODEL + TROPHY CELEBRATION
+export const ScreenUnitReviewPart2: React.FC<ScreenProps> = ({ screen, onNext, savedAnswer, onSaveAnswer, onAddStars }) => {
+  const payload = screen.payload || {}
+  const rawFeed = payload.feedItems || [
+    { id: 'fd1', name: '1,000 High-Res Medical Scans', icon: '🩻', isGoodData: true },
+    { id: 'fd2', name: 'Corrupted Incomplete Pixels', icon: '🌫️', isGoodData: false },
+    { id: 'fd3', name: 'Labeled Doctor Annotations', icon: '🩺', isGoodData: true },
+    { id: 'fd4', name: 'Random Background Static', icon: '⚡', isGoodData: false },
+  ]
+
   const [trophyAwarded, setTrophyAwarded] = useState(false)
 
-  const handleSelect = (qId: number, optIdx: number, correctIdx: number) => {
-    if (optIdx === correctIdx) gameAudio.playSuccess()
-    else gameAudio.playTap()
-    const updated = { ...answers, [qId]: optIdx }
-    setAnswers(updated)
-    if (onSaveAnswer) onSaveAnswer(updated)
+  const gameConfig: VisualGameConfig = {
+    type: 'feed_ai',
+    title: screen.title || 'Unit Review: Feed the AI Model',
+    instruction: 'Feed high-quality training examples into the machine to achieve 100% accuracy!',
+    feedItems: rawFeed
+  }
 
-    if (Object.keys(updated).length >= questions.length && !trophyAwarded) {
+  const handleFeedComplete = () => {
+    if (!trophyAwarded) {
       setTrophyAwarded(true)
       if (onAddStars) onAddStars(10)
-      confetti({ particleCount: 60, spread: 80 })
+      gameAudio.playFanfare()
+      confetti({ particleCount: 70, spread: 90, origin: { y: 0.55 } })
+      showAuraToast('lesson_complete', 'Month Unit Completed! You unlocked the Unit Trophy 🏆', true)
     }
   }
 
   return (
     <div className="w-full h-full flex flex-col justify-between p-2.5 select-none text-slate-800 animate-in fade-in duration-200">
-      <div className="bg-[#0288D1] text-white rounded-2xl p-2 flex items-center justify-between shrink-0 shadow-xs">
+      <div className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white rounded-2xl p-2.5 flex items-center justify-between shrink-0 shadow-md">
         <div>
-          <span className="text-[8px] font-black uppercase text-sky-200">
-            UNIT REVIEW • PART 2 OF 2
+          <span className="text-[9px] font-black uppercase text-purple-200 tracking-wider">
+            UNIT REVIEW • MODEL TRAINING & TROPHY (PART 2 OF 2)
           </span>
-          <h2 className="text-xs sm:text-sm font-black">
-            Unit Review: {screen.monthTitle}
+          <h2 className="text-xs sm:text-sm font-black truncate max-w-[260px]">
+            {screen.title || 'Model Training Mastery'}
           </h2>
         </div>
-        <Award size={16} />
+        <Trophy size={18} className="text-amber-300" />
       </div>
 
-      <div className="space-y-1 my-1">
-        {displayQuestions.map((q) => {
-          const userChoice = answers[q.id]
-
-          return (
-            <div key={q.id} className="p-1.5 rounded-xl bg-slate-50 border border-slate-200 space-y-0.5">
-              <span className="text-[10px] font-black text-slate-900 block leading-tight">
-                {q.q}
-              </span>
-              <div className="grid grid-cols-3 gap-1">
-                {q.options.map((opt, idx) => {
-                  const isSelected = userChoice === idx
-                  const isCorrect = isSelected && idx === q.correct
-
-                  return (
-                    <button
-                      key={idx}
-                      onClick={() => handleSelect(q.id, idx, q.correct)}
-                      className={`p-1 rounded-lg text-[9px] font-bold transition-all text-center leading-tight cursor-pointer ${
-                        isSelected
-                          ? isCorrect
-                            ? 'bg-emerald-500 text-white shadow-xs'
-                            : 'bg-rose-500 text-white shadow-xs'
-                          : 'bg-white border border-slate-200 text-slate-700 hover:bg-slate-100'
-                      }`}
-                    >
-                      {opt}
-                    </button>
-                  )
-                })}
-              </div>
-            </div>
-          )
-        })}
+      <div className="flex-1 min-h-0 my-1 bg-white/90 rounded-2xl border border-purple-200 p-2 shadow-xs">
+        <VisualGameEngine
+          config={gameConfig}
+          savedState={savedAnswer}
+          onSaveState={(s) => onSaveAnswer && onSaveAnswer(s)}
+          onComplete={handleFeedComplete}
+          onNext={onNext}
+        />
       </div>
 
-      {/* Month Trophy Box */}
-      <div className="flex-1 my-1 p-2 rounded-2xl bg-gradient-to-r from-amber-50 to-sky-50 border-2 border-amber-300 flex items-center justify-center gap-3">
-        <span className="text-3xl animate-bounce">🏆</span>
-        <div>
-          <span className="text-[9px] font-black text-amber-800 uppercase tracking-wider block">
-            MONTH MASTERY TROPHY
-          </span>
-          <p className="text-xs font-black text-slate-800">
-            {badgeLabel}
-          </p>
+      {/* UNIT TROPHY BADGE CELEBRATION */}
+      <div className="shrink-0 p-2 rounded-2xl bg-gradient-to-r from-amber-50 to-purple-50 border-2 border-amber-300 flex items-center justify-between shadow-xs mb-1">
+        <div className="flex items-center gap-2">
+          <div className="w-8 h-8 rounded-xl bg-amber-400 text-white flex items-center justify-center font-black text-sm shadow-sm">
+            🏆
+          </div>
+          <div>
+            <span className="text-[10px] font-black uppercase text-amber-900 block">
+              MONTH {screen.monthNumber} MASTER TROPHY UNLOCKED
+            </span>
+            <span className="text-[9px] font-bold text-slate-600">
+              +10 Olympiad Stars Credited to Your Profile
+            </span>
+          </div>
         </div>
+        <span className="text-xs font-black text-amber-700 bg-amber-200/80 px-2.5 py-1 rounded-full">
+          Level Master
+        </span>
       </div>
 
-      <div className="shrink-0 pt-1">
+      <div className="shrink-0 pt-0.5">
         <button
-          onClick={onNext}
-          className="w-full py-2 rounded-xl bg-[#0288D1] hover:bg-sky-600 text-white font-bold text-xs transition-all cursor-pointer"
+          onClick={() => {
+            gameAudio.playSuccess()
+            onNext()
+          }}
+          className="w-full py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-black text-xs transition-all cursor-pointer shadow-md flex items-center justify-center gap-1.5"
         >
-          Next: Word Search Puzzle →
+          <span>Next: Visual AI Word Finder</span>
+          <span>→</span>
         </button>
       </div>
     </div>
   )
 }
 
-// 7. INTERACTIVE WORD SEARCH — payload-driven
+// 7. VISUAL WORD SEARCH PUZZLE
 export const ScreenWordSearch: React.FC<ScreenProps> = ({ screen, onNext, savedAnswer, onSaveAnswer }) => {
-  // Use hiddenWords from payload (set by regeneration script), fallback gracefully
-  const wordsToFind: string[] = screen.payload?.hiddenWords || screen.payload?.wordsToFind || screen.payload?.words || ['ROBOT', 'SMART', 'HELPER', 'AI', 'MACHINE', 'BOLT']
+  const payload = screen.payload || {}
+  const targetWords: string[] = payload.words || ['ROBOT', 'SMART', 'BRAIN', 'DATA', 'LEARN']
+  const [foundWords, setFoundWords] = useState<string[]>(savedAnswer?.foundWords || [])
 
-  const grid = [
-    ['R', 'O', 'B', 'O', 'T', 'X'],
-    ['H', 'E', 'L', 'P', 'E', 'R'],
-    ['S', 'M', 'A', 'R', 'T', 'A'],
-    ['T', 'H', 'I', 'N', 'K', 'I'],
-    ['D', 'R', 'O', 'N', 'E', 'Z'],
-    ['A', 'I', 'S', 'O', 'L', 'V']
-  ]
-
-  const [foundWords, setFoundWords] = useState<string[]>(savedAnswer || [])
-  const [selectedCells, setSelectedCells] = useState<string[]>([])
-
-  const toggleCell = (r: number, c: number) => {
-    gameAudio.playTap()
-    const cellKey = `${r}-${c}`
-    const updated = selectedCells.includes(cellKey)
-      ? selectedCells.filter((k) => k !== cellKey)
-      : [...selectedCells, cellKey]
-    setSelectedCells(updated)
-  }
-
-  const markFound = (word: string) => {
+  const handleTapWord = (w: string) => {
+    if (foundWords.includes(w)) return
     gameAudio.playSuccess()
-    const updated = foundWords.includes(word)
-      ? foundWords
-      : [...foundWords, word]
+    const updated = [...foundWords, w]
     setFoundWords(updated)
-    if (onSaveAnswer) onSaveAnswer(updated)
-
-    if (updated.length === wordsToFind.length) {
-      confetti({ particleCount: 60, spread: 80 })
+    if (onSaveAnswer) onSaveAnswer({ foundWords: updated })
+    showAuraToast('great_job', `Found ${w}!`, false)
+    if (updated.length >= targetWords.length) {
+      gameAudio.playFanfare()
+      confetti({ particleCount: 50, spread: 70 })
+      showAuraToast('activity_complete', 'All key AI vocabulary terms discovered!', true)
     }
   }
 
   return (
     <div className="w-full h-full flex flex-col justify-between p-2.5 select-none text-slate-800 animate-in fade-in duration-200">
-      <div className="shrink-0 text-center pb-1 border-b border-sky-100">
-        <span className="text-[9px] font-black uppercase text-[#0288D1]">
-          WORD SEARCH PUZZLE
-        </span>
-        <h2 className="text-sm font-black text-slate-900">
-          Find these words: They go across → or down ↓
-        </h2>
+      <div className="bg-gradient-to-r from-sky-600 to-teal-600 text-white rounded-2xl p-2.5 flex items-center justify-between shrink-0 shadow-md">
+        <div>
+          <span className="text-[9px] font-black uppercase text-sky-200 tracking-wider">
+            VISUAL VOCABULARY FINDER
+          </span>
+          <h2 className="text-xs sm:text-sm font-black truncate max-w-[260px]">
+            Tap Each AI Word to Collect It
+          </h2>
+        </div>
+        <Sparkles size={18} className="text-amber-300" />
       </div>
 
-      {/* Word Bank */}
-      <div className="flex flex-wrap justify-center gap-1.5 my-1 shrink-0">
-        {wordsToFind.map((w: string) => {
-          const isFound = foundWords.includes(w)
+      <div className="my-auto space-y-3 max-w-sm mx-auto w-full py-2">
+        <p className="text-xs font-bold text-center text-slate-600">
+          Find and tap the {targetWords.length} important concepts you explored this month:
+        </p>
 
-          return (
-            <button
-              key={w}
-              onClick={() => markFound(w)}
-              className={`px-2 py-0.5 rounded-full text-[10px] font-black transition-all cursor-pointer border ${
-                isFound
-                  ? 'bg-emerald-500 text-white border-emerald-600 line-through'
-                  : 'bg-sky-50 text-[#0288D1] border-sky-200 hover:bg-sky-100'
-              }`}
-            >
-              {w}
-            </button>
-          )
-        })}
-      </div>
-
-      {/* 6x6 Letter Grid */}
-      <div className="flex-1 my-auto max-w-[240px] mx-auto w-full aspect-square grid grid-cols-6 gap-1 p-2 bg-sky-50 rounded-2xl border-2 border-sky-200 shadow-xs">
-        {grid.map((row, rIdx) =>
-          row.map((letter, cIdx) => {
-            const isSelected = selectedCells.includes(`${rIdx}-${cIdx}`)
-
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+          {targetWords.map((word) => {
+            const isFound = foundWords.includes(word)
             return (
               <button
-                key={`${rIdx}-${cIdx}`}
-                onClick={() => toggleCell(rIdx, cIdx)}
-                className={`w-full h-full rounded-lg font-mono font-black text-xs sm:text-sm flex items-center justify-center transition-all cursor-pointer ${
-                  isSelected
-                    ? 'bg-amber-400 text-slate-900 shadow-xs scale-105 ring-2 ring-amber-500'
-                    : 'bg-white text-slate-800 hover:bg-sky-100 shadow-2xs'
+                key={word}
+                type="button"
+                onClick={() => handleTapWord(word)}
+                className={`p-3 rounded-xl border-2 text-xs font-black transition-all flex items-center justify-between cursor-pointer ${
+                  isFound
+                    ? 'bg-emerald-500 border-emerald-600 text-white shadow-md scale-[1.02]'
+                    : 'bg-white border-slate-200 hover:border-sky-400 hover:bg-sky-50 text-slate-800 shadow-xs'
                 }`}
               >
-                {letter}
+                <span>{word}</span>
+                {isFound && <Check size={14} className="text-white shrink-0" />}
               </button>
             )
-          })
-        )}
+          })}
+        </div>
       </div>
 
-      <div className="shrink-0 pt-1">
+      <div className="shrink-0 pt-1 flex items-center justify-between text-[10px] font-bold text-slate-500">
+        <span>{foundWords.length} of {targetWords.length} Words Found</span>
         <button
-          onClick={onNext}
-          className="w-full py-2 rounded-xl bg-[#0288D1] hover:bg-sky-600 text-white font-bold text-xs transition-all cursor-pointer"
+          onClick={() => {
+            gameAudio.playSuccess()
+            onNext()
+          }}
+          className="py-2 px-4 rounded-xl bg-[#0288D1] hover:bg-sky-600 text-white font-bold text-xs transition-all cursor-pointer shadow-md flex items-center gap-1"
         >
-          Next →
+          <span>Complete Month & Next</span>
+          <span>→</span>
         </button>
       </div>
     </div>

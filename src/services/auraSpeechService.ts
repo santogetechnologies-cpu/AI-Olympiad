@@ -53,8 +53,9 @@ class AuraSpeechService {
   private pickBestVoice(voices: SpeechSynthesisVoice[]): SpeechSynthesisVoice | null {
     if (!voices || voices.length === 0) return null
 
-    // Target friendly, warm, bold MALE voices suitable for GAIO AI Guide
+    // Target friendly, warm, bold MALE voices suitable for GAIO AI Guide (Aura AI / Aswin)
     const preferredMaleKeywords = [
+      'aswin',
       'david',
       'mark',
       'george',

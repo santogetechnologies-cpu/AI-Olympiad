@@ -80,14 +80,14 @@ export default function App() {
           <Route path="/student/quizzes" element={<ProtectedRoute allowedRoles={['student']}><StudentQuizzesPage /></ProtectedRoute>} />
           <Route path="/student/profile" element={<ProtectedRoute allowedRoles={['student']}><StudentProfilePage /></ProtectedRoute>} />
           <Route path="/student/book" element={<ProtectedRoute allowedRoles={['student']}><GaioBookPage /></ProtectedRoute>} />
-          <Route path="/book" element={<GaioBookPage />} />
+          <Route path="/book" element={<ProtectedRoute allowedRoles={['student']}><GaioBookPage /></ProtectedRoute>} />
           <Route path="/student/middle" element={<ProtectedRoute allowedRoles={['student']}><MiddleLevelBookPage /></ProtectedRoute>} />
-          <Route path="/middle" element={<MiddleLevelBookPage />} />
-          <Route path="/middle-level" element={<MiddleLevelBookPage />} />
+          <Route path="/middle" element={<ProtectedRoute allowedRoles={['student']}><MiddleLevelBookPage /></ProtectedRoute>} />
+          <Route path="/middle-level" element={<ProtectedRoute allowedRoles={['student']}><MiddleLevelBookPage /></ProtectedRoute>} />
 
-          {/* Default routes directly load Middle Level AI Olympiad Learning Hub */}
-          <Route path="/" element={<MiddleLevelBookPage />} />
-          <Route path="*" element={<MiddleLevelBookPage />} />
+          {/* Default redirect */}
+          <Route path="/" element={<Navigate to="/login" replace />} />
+          <Route path="*" element={<Navigate to="/login" replace />} />
         </Routes>
       </AuthProvider>
     </BrowserRouter>

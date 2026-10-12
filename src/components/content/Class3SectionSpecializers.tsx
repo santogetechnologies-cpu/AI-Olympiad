@@ -6,16 +6,11 @@ import { Button } from '../ui'
 import { gamification } from '../../utils/gamification'
 import toast from 'react-hot-toast'
 import { AssignedImageSlot, type CanonicalSection } from './AssignedImageSlot'
+import { auraSpeechService } from '../../services/auraSpeechService'
 
-// Helper for speech synthesis
+// Helper for speech synthesis using Aura AI
 function speakChildText(text: string) {
-  if ('speechSynthesis' in window) {
-    window.speechSynthesis.cancel()
-    const utterance = new SpeechSynthesisUtterance(text)
-    utterance.rate = 0.95
-    utterance.pitch = 1.25 // Friendly, playful voice
-    window.speechSynthesis.speak(utterance)
-  }
+  auraSpeechService.speak(text)
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

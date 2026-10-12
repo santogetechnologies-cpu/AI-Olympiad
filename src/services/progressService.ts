@@ -84,7 +84,14 @@ export interface SectionCompletionRecord {
   completed_at: string
 }
 
-export function parseGradeKeyFromClass(target: any): 'class3' | 'class4' | 'class5' {
+export type GradeKey =
+  | 'class3' | 'class4' | 'class5'
+  | 'class6' | 'class7' | 'class8'
+  | 'class9' | 'class10' | 'class11' | 'class12'
+  | 'ug1' | 'ug2' | 'ug3' | 'ug4'
+  | 'pg1' | 'pg2'
+
+export function parseGradeKeyFromClass(target: any): GradeKey {
   if (!target) return 'class3'
   const text = (
     typeof target === 'string'
@@ -92,47 +99,36 @@ export function parseGradeKeyFromClass(target: any): 'class3' | 'class4' | 'clas
       : `${target.name || ''} ${target.code || ''} ${target.id || ''} ${target.gradeKey || ''} ${target.class_id || ''}`
   ).toLowerCase()
 
-  if (
-    text.includes('class 5') ||
-    text.includes('class5') ||
-    text.includes('cls-05') ||
-    text.includes('fsc-05') ||
-    text.includes('std 5') ||
-    text.includes('std5') ||
-    text.includes('grade 5') ||
-    /\b(class|std|grade)\s*5\b/.test(text) ||
-    /\b5\b/.test(text)
-  ) {
-    return 'class5'
-  }
+  // PG levels (check before UG/class matches)
+  if (text.includes('pg2') || text.includes('pg-02') || text.includes('pg final') || text.includes('fai-02')) return 'pg2'
+  if (text.includes('pg1') || text.includes('pg-01') || text.includes('pg 1') || text.includes('aml-01') || (text.includes('pg') && !text.includes('pg2'))) return 'pg1'
 
-  if (
-    text.includes('class 4') ||
-    text.includes('class4') ||
-    text.includes('cls-04') ||
-    text.includes('eai-04') ||
-    text.includes('std 4') ||
-    text.includes('std4') ||
-    text.includes('grade 4') ||
-    /\b(class|std|grade)\s*4\b/.test(text) ||
-    /\b4\b/.test(text)
-  ) {
-    return 'class4'
-  }
+  // UG levels
+  if (text.includes('ug4') || text.includes('ug-04') || text.includes('ug final') || text.includes('aaa-04') || text.includes('ug 4')) return 'ug4'
+  if (text.includes('ug3') || text.includes('ug-03') || text.includes('ug 3') || text.includes('dle-03')) return 'ug3'
+  if (text.includes('ug2') || text.includes('ug-02') || text.includes('ug 2') || text.includes('cml-02')) return 'ug2'
+  if (text.includes('ug1') || text.includes('ug-01') || text.includes('ug 1') || text.includes('cai-01') || (text.includes('ug') && !text.includes('ug2') && !text.includes('ug3') && !text.includes('ug4'))) return 'ug1'
 
-  if (
-    text.includes('class 3') ||
-    text.includes('class3') ||
-    text.includes('cls-03') ||
-    text.includes('jai-03') ||
-    text.includes('std 3') ||
-    text.includes('std3') ||
-    text.includes('grade 3') ||
-    /\b(class|std|grade)\s*3\b/.test(text) ||
-    /\b3\b/.test(text)
-  ) {
-    return 'class3'
-  }
+  // Class 12
+  if (text.includes('class 12') || text.includes('class12') || text.includes('cls-12') || text.includes('dlt-12') || /\b(class|std|grade)\s*12\b/.test(text)) return 'class12'
+  // Class 11
+  if (text.includes('class 11') || text.includes('class11') || text.includes('cls-11') || text.includes('mmn-11') || /\b(class|std|grade)\s*11\b/.test(text)) return 'class11'
+  // Class 10
+  if (text.includes('class 10') || text.includes('class10') || text.includes('cls-10') || text.includes('mlf-10') || /\b(class|std|grade)\s*10\b/.test(text)) return 'class10'
+  // Class 9
+  if (text.includes('class 9') || text.includes('class9') || text.includes('cls-09') || text.includes('ais-09') || /\b(class|std|grade)\s*9\b/.test(text)) return 'class9'
+  // Class 8
+  if (text.includes('class 8') || text.includes('class8') || text.includes('cls-08') || text.includes('aai-08') || /\b(class|std|grade)\s*8\b/.test(text)) return 'class8'
+  // Class 7
+  if (text.includes('class 7') || text.includes('class7') || text.includes('cls-07') || text.includes('dlp-07') || /\b(class|std|grade)\s*7\b/.test(text)) return 'class7'
+  // Class 6
+  if (text.includes('class 6') || text.includes('class6') || text.includes('cls-06') || text.includes('mai-06') || /\b(class|std|grade)\s*6\b/.test(text)) return 'class6'
+  // Class 5
+  if (text.includes('class 5') || text.includes('class5') || text.includes('cls-05') || text.includes('fsc-05') || /\b(class|std|grade)\s*5\b/.test(text)) return 'class5'
+  // Class 4
+  if (text.includes('class 4') || text.includes('class4') || text.includes('cls-04') || text.includes('eai-04') || /\b(class|std|grade)\s*4\b/.test(text)) return 'class4'
+  // Class 3
+  if (text.includes('class 3') || text.includes('class3') || text.includes('cls-03') || text.includes('jai-03') || /\b(class|std|grade)\s*3\b/.test(text)) return 'class3'
 
   return 'class3'
 }
@@ -1147,7 +1143,7 @@ export const enrollmentService = {
   },
 
   async getStudentAssignedGrade(studentId: string, orgId?: string): Promise<{
-    gradeKey: 'class3' | 'class4' | 'class5'
+    gradeKey: GradeKey
     className: string
     code?: string
     subjectName?: string

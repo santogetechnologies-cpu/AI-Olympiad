@@ -61,7 +61,7 @@ export const MiddleLevelShell: React.FC<MiddleLevelShellProps> = ({
       setIsSpeaking(false)
     } else {
       gameAudio.playTap()
-      const textToRead = `Hello explorer! I am your GAIO AI Guide. Today we are learning ${lesson.lessonTitle} in ${lesson.chapterTitle}. Let's make learning simple and fun!`
+      const textToRead = `Hello explorer! I am your Aura AI Guide. Today we are learning ${lesson.lessonTitle} in ${lesson.chapterTitle}. Let's make learning simple and fun!`
       gaioSpeechService.speak(textToRead, `shell-${lesson.id}`)
     }
   }
@@ -144,10 +144,10 @@ export const MiddleLevelShell: React.FC<MiddleLevelShellProps> = ({
                 ? 'bg-rose-500/25 border-rose-500 text-rose-300 ring-2 ring-rose-500/30 animate-pulse'
                 : 'bg-sky-500/15 border-sky-400/40 text-sky-300 hover:bg-sky-500/25'
             }`}
-            title="GAIO AI Guide: Listen to male voice explanation"
+            title="Aura AI Guide: Listen to voice explanation"
           >
             <Bot size={13} className={isSpeaking ? 'animate-bounce text-yellow-300' : 'text-sky-400'} />
-            <span className="hidden xs:inline">{isSpeaking ? 'Speaking...' : 'GAIO Guide 🎙️'}</span>
+            <span className="hidden xs:inline">{isSpeaking ? 'Speaking...' : 'Aura AI 🎙️'}</span>
           </button>
 
           {/* Jargon Buster Button */}

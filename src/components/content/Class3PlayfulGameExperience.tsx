@@ -6,6 +6,7 @@ import {
 } from 'lucide-react'
 import { Button } from '../ui'
 import { gamification } from '../../utils/gamification'
+import { auraSpeechService } from '../../services/auraSpeechService'
 import toast from 'react-hot-toast'
 
 export interface Class3PlayfulGameProps {
@@ -50,15 +51,9 @@ export function Class3PlayfulGameExperience({
   const [quizIdx, setQuizIdx] = useState(0)
   const [quizFinished, setQuizFinished] = useState(false)
 
-  // Web speech synthesis for voice read-aloud
+  // Aura speech synthesis for voice read-aloud
   const speakText = (text: string) => {
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel()
-      const utterance = new SpeechSynthesisUtterance(text)
-      utterance.rate = 0.95
-      utterance.pitch = 1.2 // Friendly, playful higher pitch for kids
-      window.speechSynthesis.speak(utterance)
-    }
+    auraSpeechService.speak(text)
   }
 
   // Chapter-specific content variations

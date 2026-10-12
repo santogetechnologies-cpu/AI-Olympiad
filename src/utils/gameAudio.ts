@@ -3,6 +3,8 @@
 // Subtle, pleasant educational audio effects with persistent mute controls
 // ─────────────────────────────────────────────────────────────────────────────
 
+import { auraSpeechService } from '../services/auraSpeechService'
+
 class GameAudioSynthesizer {
   private ctx: AudioContext | null = null
   private muted: boolean = false
@@ -216,15 +218,7 @@ class GameAudioSynthesizer {
 
   public speak(text: string) {
     if (this.muted) return
-    try {
-      if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel()
-        const utterance = new SpeechSynthesisUtterance(text)
-        utterance.rate = 1.0
-        utterance.pitch = 1.05
-        window.speechSynthesis.speak(utterance)
-      }
-    } catch {}
+    auraSpeechService.speak(text)
   }
 }
 

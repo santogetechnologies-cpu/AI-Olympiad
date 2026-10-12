@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom'
 import { AppLayout } from '../../components/layout/AppLayout'
-import { enrollmentService, parseGradeKeyFromClass } from '../../services/progressService'
+import { enrollmentService, parseGradeKeyFromClass, type GradeKey } from '../../services/progressService'
 import { useAuth } from '../../contexts/AuthContext'
 import { toast } from 'react-hot-toast'
 import { gameAudio } from '../../utils/gameAudio'
@@ -367,35 +367,145 @@ export const CLASS5_GRID_ITEMS: ChapterGridItem[] = [
 
 export const CHAPTER_GRID_ITEMS = CLASS3_GRID_ITEMS
 
-const GRADE_TRACK_INFO = {
-  class3: {
-    name: 'Class 3',
-    subjectName: 'Junior AI & Playful Logic',
-    mascot: 'Bolt ⚡',
-    theme: {
-      dot: 'bg-sky-500',
-      badge: 'bg-sky-50 text-sky-700 border-sky-200',
-    },
-  },
-  class4: {
-    name: 'Class 4',
-    subjectName: 'Elementary AI & Algorithmic Patterns',
-    mascot: 'Robo-Pi 🤖',
-    theme: {
-      dot: 'bg-emerald-500',
-      badge: 'bg-emerald-50 text-emerald-700 border-emerald-200',
-    },
-  },
-  class5: {
-    name: 'Class 5',
-    subjectName: 'Foundations of Smart Computing',
-    mascot: 'Data-Volt ⚡',
-    theme: {
-      dot: 'bg-purple-500',
-      badge: 'bg-purple-50 text-purple-700 border-purple-200',
-    },
-  },
-} as const
+// ─── Middle Level Grid Items (Class 6–8) ───
+export const CLASS6_GRID_ITEMS: ChapterGridItem[] = [
+  { key: 'intro', code: 'INTRO', title: 'Welcome & Algo', subtitle: 'Computational Thinking Orientation', monthNumber: 0, pageRange: 'p. 1–4', screenCount: 5, icon: Sparkles, gradient: 'from-teal-600 to-emerald-600', badgeColor: 'bg-teal-50 text-teal-700 border-teal-200' },
+  { key: 'ch1', code: 'CH1', title: 'How Machines Get Smart', subtitle: 'Learning from Examples & Features', monthNumber: 1, pageRange: 'p. 20–39', screenCount: 16, icon: Bot, gradient: 'from-emerald-600 to-teal-600', badgeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+  { key: 'ch2', code: 'CH2', title: 'Think → Plan → Code', subtitle: 'Coding Made Friendly in Python', monthNumber: 2, pageRange: 'p. 40–59', screenCount: 16, icon: MessageSquare, gradient: 'from-blue-600 to-indigo-600', badgeColor: 'bg-blue-50 text-blue-700 border-blue-200' },
+  { key: 'ch3', code: 'CH3', title: 'AI on the Road & Farm', subtitle: 'Smart Cities & Automated Agriculture', monthNumber: 3, pageRange: 'p. 60–79', screenCount: 16, icon: Compass, gradient: 'from-sky-500 to-cyan-600', badgeColor: 'bg-sky-50 text-sky-700 border-sky-200' },
+  { key: 'ch4', code: 'CH4', title: 'Explore Tech Careers', subtitle: 'Discover Your Skills & Data Science', monthNumber: 4, pageRange: 'p. 80–99', screenCount: 16, icon: Rocket, gradient: 'from-purple-500 to-violet-600', badgeColor: 'bg-purple-50 text-purple-700 border-purple-200' },
+  { key: 'ch5', code: 'CH5', title: 'AI Learning Lab', subtitle: 'Prompt Engineering & Creation', monthNumber: 5, pageRange: 'p. 100–119', screenCount: 16, icon: Palette, gradient: 'from-rose-500 to-pink-600', badgeColor: 'bg-rose-50 text-rose-700 border-rose-200' },
+  { key: 'ch6', code: 'CH6', title: 'Protect Your Data', subtitle: 'Cybersecurity & Ethical AI', monthNumber: 6, pageRange: 'p. 120–139', screenCount: 16, icon: HeartHandshake, gradient: 'from-amber-500 to-amber-600', badgeColor: 'bg-amber-50 text-amber-700 border-amber-200' },
+  { key: 'finale', code: 'FINALE', title: 'Olympiad Mastery', subtitle: 'Algo Championship & Certificate', monthNumber: 7, pageRange: 'p. 140–152', screenCount: 3, icon: Trophy, gradient: 'from-amber-500 to-yellow-500', badgeColor: 'bg-amber-50 text-amber-800 border-amber-200' },
+]
+
+export const CLASS7_GRID_ITEMS: ChapterGridItem[] = [
+  { key: 'intro', code: 'INTRO', title: 'Welcome & Pythia', subtitle: 'Data Logic Orientation', monthNumber: 0, pageRange: 'p. 1–4', screenCount: 5, icon: Sparkles, gradient: 'from-blue-600 to-indigo-600', badgeColor: 'bg-blue-50 text-blue-700 border-blue-200' },
+  { key: 'ch1', code: 'CH1', title: 'AI Learns from Data', subtitle: 'Patterns Make It Smart', monthNumber: 1, pageRange: 'p. 20–39', screenCount: 16, icon: Bot, gradient: 'from-blue-600 to-cyan-600', badgeColor: 'bg-blue-50 text-blue-700 border-blue-200' },
+  { key: 'ch2', code: 'CH2', title: 'Hello, Python!', subtitle: 'Code Your First Idea & Structures', monthNumber: 2, pageRange: 'p. 40–59', screenCount: 16, icon: MessageSquare, gradient: 'from-indigo-600 to-blue-600', badgeColor: 'bg-indigo-50 text-indigo-700 border-indigo-200' },
+  { key: 'ch3', code: 'CH3', title: 'AI in Money Matters', subtitle: 'AI for a Greener World', monthNumber: 3, pageRange: 'p. 60–79', screenCount: 16, icon: Compass, gradient: 'from-emerald-500 to-teal-600', badgeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+  { key: 'ch4', code: 'CH4', title: 'Career Compass: AI', subtitle: 'Skills That Matter in Engineering', monthNumber: 4, pageRange: 'p. 80–99', screenCount: 16, icon: Rocket, gradient: 'from-purple-500 to-pink-600', badgeColor: 'bg-purple-50 text-purple-700 border-purple-200' },
+  { key: 'ch5', code: 'CH5', title: 'AI Content Creator', subtitle: 'Chatbots & Conversational Agents', monthNumber: 5, pageRange: 'p. 100–119', screenCount: 16, icon: Palette, gradient: 'from-rose-500 to-orange-600', badgeColor: 'bg-rose-50 text-rose-700 border-rose-200' },
+  { key: 'ch6', code: 'CH6', title: 'Fact, Fake or AI?', subtitle: 'Algorithmic Fairness & Deepfakes', monthNumber: 6, pageRange: 'p. 120–139', screenCount: 16, icon: HeartHandshake, gradient: 'from-amber-500 to-yellow-600', badgeColor: 'bg-amber-50 text-amber-700 border-amber-200' },
+  { key: 'finale', code: 'FINALE', title: 'Olympiad Mastery', subtitle: 'Pythia Championship & Certificate', monthNumber: 7, pageRange: 'p. 140–152', screenCount: 3, icon: Trophy, gradient: 'from-amber-500 to-yellow-500', badgeColor: 'bg-amber-50 text-amber-800 border-amber-200' },
+]
+
+export const CLASS8_GRID_ITEMS: ChapterGridItem[] = [
+  { key: 'intro', code: 'INTRO', title: 'Welcome & Neural', subtitle: 'Applied AI Orientation', monthNumber: 0, pageRange: 'p. 1–4', screenCount: 5, icon: Sparkles, gradient: 'from-violet-600 to-purple-600', badgeColor: 'bg-violet-50 text-violet-700 border-violet-200' },
+  { key: 'ch1', code: 'CH1', title: 'How AI Makes Choices', subtitle: 'Supervised vs Unsupervised Learning', monthNumber: 1, pageRange: 'p. 20–39', screenCount: 16, icon: Bot, gradient: 'from-purple-600 to-indigo-600', badgeColor: 'bg-purple-50 text-purple-700 border-purple-200' },
+  { key: 'ch2', code: 'CH2', title: 'Python Playground', subtitle: 'Code Solutions & Modular Logic', monthNumber: 2, pageRange: 'p. 40–59', screenCount: 16, icon: MessageSquare, gradient: 'from-blue-600 to-teal-600', badgeColor: 'bg-blue-50 text-blue-700 border-blue-200' },
+  { key: 'ch3', code: 'CH3', title: 'AI for Better Health', subtitle: 'Diagnostic Imaging & Smart Cities', monthNumber: 3, pageRange: 'p. 60–79', screenCount: 16, icon: Compass, gradient: 'from-emerald-500 to-cyan-600', badgeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+  { key: 'ch4', code: 'CH4', title: 'Find Your Future Path', subtitle: 'Cloud AI & Data Infrastructure', monthNumber: 4, pageRange: 'p. 80–99', screenCount: 16, icon: Rocket, gradient: 'from-amber-500 to-orange-600', badgeColor: 'bg-amber-50 text-amber-700 border-amber-200' },
+  { key: 'ch5', code: 'CH5', title: 'Build with GenAI', subtitle: 'Diffusion Models & Media Studio', monthNumber: 5, pageRange: 'p. 100–119', screenCount: 16, icon: Palette, gradient: 'from-rose-500 to-pink-600', badgeColor: 'bg-rose-50 text-rose-700 border-rose-200' },
+  { key: 'ch6', code: 'CH6', title: 'Deepfake Alert!', subtitle: 'Provenance, Rights & Watermarking', monthNumber: 6, pageRange: 'p. 120–139', screenCount: 16, icon: HeartHandshake, gradient: 'from-cyan-600 to-blue-600', badgeColor: 'bg-cyan-50 text-cyan-700 border-cyan-200' },
+  { key: 'finale', code: 'FINALE', title: 'Olympiad Mastery', subtitle: 'Neural Championship & Certificate', monthNumber: 7, pageRange: 'p. 140–152', screenCount: 3, icon: Trophy, gradient: 'from-amber-500 to-yellow-500', badgeColor: 'bg-amber-50 text-amber-800 border-amber-200' },
+]
+
+// ─── Secondary Level Grid Items (Class 9–12) ───
+export const CLASS9_GRID_ITEMS: ChapterGridItem[] = [
+  { key: 'intro', code: 'INTRO', title: 'Welcome & Data Scientist', subtitle: 'Orientation & Tools', monthNumber: 0, pageRange: 'p. 1–4', screenCount: 5, icon: Sparkles, gradient: 'from-cyan-600 to-teal-600', badgeColor: 'bg-cyan-50 text-cyan-700 border-cyan-200' },
+  { key: 'ch1', code: 'CH1', title: 'Data Intelligence', subtitle: 'Prediction & Decision Trees', monthNumber: 1, pageRange: 'p. 5–27', screenCount: 16, icon: Bot, gradient: 'from-teal-600 to-emerald-600', badgeColor: 'bg-teal-50 text-teal-700 border-teal-200' },
+  { key: 'ch2', code: 'CH2', title: 'Python Practicals', subtitle: 'NumPy & DataFrames', monthNumber: 2, pageRange: 'p. 28–50', screenCount: 16, icon: MessageSquare, gradient: 'from-blue-600 to-indigo-600', badgeColor: 'bg-blue-50 text-blue-700 border-blue-200' },
+  { key: 'ch3', code: 'CH3', title: 'AI for Society', subtitle: 'Planet & Public Good', monthNumber: 3, pageRange: 'p. 51–73', screenCount: 16, icon: Compass, gradient: 'from-green-500 to-emerald-600', badgeColor: 'bg-green-50 text-green-700 border-green-200' },
+  { key: 'ch4', code: 'CH4', title: 'AI Careers', subtitle: 'Research & Product Paths', monthNumber: 4, pageRange: 'p. 74–96', screenCount: 16, icon: Rocket, gradient: 'from-violet-500 to-purple-600', badgeColor: 'bg-violet-50 text-violet-700 border-violet-200' },
+  { key: 'ch5', code: 'CH5', title: 'AI Creator Studio', subtitle: 'Bias, Variance & Models', monthNumber: 5, pageRange: 'p. 97–119', screenCount: 16, icon: Palette, gradient: 'from-rose-500 to-pink-600', badgeColor: 'bg-rose-50 text-rose-700 border-rose-200' },
+  { key: 'ch6', code: 'CH6', title: 'Responsible AI', subtitle: 'Privacy & GDPR', monthNumber: 6, pageRange: 'p. 120–139', screenCount: 16, icon: HeartHandshake, gradient: 'from-amber-500 to-orange-600', badgeColor: 'bg-amber-50 text-amber-700 border-amber-200' },
+  { key: 'finale', code: 'FINALE', title: 'Olympiad Mastery', subtitle: 'Challenge & Certificate', monthNumber: 7, pageRange: 'p. 140–152', screenCount: 3, icon: Trophy, gradient: 'from-amber-500 to-yellow-500', badgeColor: 'bg-amber-50 text-amber-800 border-amber-200' },
+]
+
+export const CLASS10_GRID_ITEMS: ChapterGridItem[] = [
+  { key: 'intro', code: 'INTRO', title: 'Welcome & ML Engineer', subtitle: 'Orientation & Setup', monthNumber: 0, pageRange: 'p. 1–4', screenCount: 5, icon: Sparkles, gradient: 'from-indigo-600 to-blue-600', badgeColor: 'bg-indigo-50 text-indigo-700 border-indigo-200' },
+  { key: 'ch1', code: 'CH1', title: 'Neural Networks', subtitle: 'AI Thinks & Generative AI', monthNumber: 1, pageRange: 'p. 5–27', screenCount: 16, icon: Bot, gradient: 'from-blue-700 to-violet-600', badgeColor: 'bg-blue-50 text-blue-700 border-blue-200' },
+  { key: 'ch2', code: 'CH2', title: 'AI Coding Lab', subtitle: 'Test, Refactor & Automate', monthNumber: 2, pageRange: 'p. 28–50', screenCount: 16, icon: MessageSquare, gradient: 'from-emerald-600 to-teal-600', badgeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+  { key: 'ch3', code: 'CH3', title: 'AI at Work', subtitle: 'Autonomous & Edge Systems', monthNumber: 3, pageRange: 'p. 51–73', screenCount: 16, icon: Compass, gradient: 'from-sky-500 to-cyan-600', badgeColor: 'bg-sky-50 text-sky-700 border-sky-200' },
+  { key: 'ch4', code: 'CH4', title: 'Career Launchpad', subtitle: 'GitHub & Open Source', monthNumber: 4, pageRange: 'p. 74–96', screenCount: 16, icon: Rocket, gradient: 'from-rose-600 to-pink-600', badgeColor: 'bg-rose-50 text-rose-700 border-rose-200' },
+  { key: 'ch5', code: 'CH5', title: 'AI Projects', subtitle: 'Streamlit Web Prototypes', monthNumber: 5, pageRange: 'p. 97–119', screenCount: 16, icon: Palette, gradient: 'from-purple-500 to-indigo-600', badgeColor: 'bg-purple-50 text-purple-700 border-purple-200' },
+  { key: 'ch6', code: 'CH6', title: 'Ethics & IP', subtitle: 'Copyright & Attribution', monthNumber: 6, pageRange: 'p. 120–139', screenCount: 16, icon: HeartHandshake, gradient: 'from-amber-500 to-yellow-600', badgeColor: 'bg-amber-50 text-amber-700 border-amber-200' },
+  { key: 'finale', code: 'FINALE', title: 'Board Exam Ready', subtitle: 'Challenge & Certificate', monthNumber: 7, pageRange: 'p. 140–152', screenCount: 3, icon: Trophy, gradient: 'from-amber-500 to-yellow-500', badgeColor: 'bg-amber-50 text-amber-800 border-amber-200' },
+]
+
+export const CLASS11_GRID_ITEMS: ChapterGridItem[] = [
+  { key: 'intro', code: 'INTRO', title: 'Welcome & Neural Forge', subtitle: 'Orientation & Setup', monthNumber: 0, pageRange: 'p. 1–4', screenCount: 5, icon: Sparkles, gradient: 'from-violet-700 to-purple-600', badgeColor: 'bg-violet-50 text-violet-700 border-violet-200' },
+  { key: 'ch1', code: 'CH1', title: 'Intelligent Machines', subtitle: 'Perceptrons & Backprop', monthNumber: 1, pageRange: 'p. 5–27', screenCount: 16, icon: Bot, gradient: 'from-purple-700 to-indigo-600', badgeColor: 'bg-purple-50 text-purple-700 border-purple-200' },
+  { key: 'ch2', code: 'CH2', title: 'PyTorch Lab', subtitle: 'Tensors & Loss Functions', monthNumber: 2, pageRange: 'p. 28–50', screenCount: 16, icon: MessageSquare, gradient: 'from-blue-600 to-sky-600', badgeColor: 'bg-blue-50 text-blue-700 border-blue-200' },
+  { key: 'ch3', code: 'CH3', title: 'AI Across Industries', subtitle: 'Maintenance & Supply Chain', monthNumber: 3, pageRange: 'p. 51–73', screenCount: 16, icon: Compass, gradient: 'from-emerald-600 to-green-600', badgeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+  { key: 'ch4', code: 'CH4', title: 'AI Career Universe', subtitle: 'MLOps & Full-Stack AI', monthNumber: 4, pageRange: 'p. 74–96', screenCount: 16, icon: Rocket, gradient: 'from-rose-500 to-red-600', badgeColor: 'bg-rose-50 text-rose-700 border-rose-200' },
+  { key: 'ch5', code: 'CH5', title: 'Research Desk', subtitle: 'Fine-Tuning Open LLMs', monthNumber: 5, pageRange: 'p. 97–119', screenCount: 16, icon: Palette, gradient: 'from-teal-600 to-cyan-600', badgeColor: 'bg-teal-50 text-teal-700 border-teal-200' },
+  { key: 'ch6', code: 'CH6', title: 'Fair & Private AI', subtitle: 'Differential Privacy', monthNumber: 6, pageRange: 'p. 120–139', screenCount: 16, icon: HeartHandshake, gradient: 'from-amber-500 to-orange-600', badgeColor: 'bg-amber-50 text-amber-700 border-amber-200' },
+  { key: 'finale', code: 'FINALE', title: 'Olympiad Mastery', subtitle: 'Challenge & Certificate', monthNumber: 7, pageRange: 'p. 140–152', screenCount: 3, icon: Trophy, gradient: 'from-amber-500 to-yellow-500', badgeColor: 'bg-amber-50 text-amber-800 border-amber-200' },
+]
+
+export const CLASS12_GRID_ITEMS: ChapterGridItem[] = [
+  { key: 'intro', code: 'INTRO', title: 'Welcome & Transformer', subtitle: 'Orientation & Setup', monthNumber: 0, pageRange: 'p. 1–4', screenCount: 5, icon: Sparkles, gradient: 'from-slate-700 to-blue-700', badgeColor: 'bg-slate-50 text-slate-700 border-slate-200' },
+  { key: 'ch1', code: 'CH1', title: 'Generative AI & LLMs', subtitle: 'Self-Attention Mechanisms', monthNumber: 1, pageRange: 'p. 5–27', screenCount: 16, icon: Bot, gradient: 'from-blue-700 to-indigo-700', badgeColor: 'bg-blue-50 text-blue-700 border-blue-200' },
+  { key: 'ch2', code: 'CH2', title: 'AI Workflows', subtitle: 'Chain-of-Thought Agents', monthNumber: 2, pageRange: 'p. 28–50', screenCount: 16, icon: MessageSquare, gradient: 'from-indigo-700 to-violet-600', badgeColor: 'bg-indigo-50 text-indigo-700 border-indigo-200' },
+  { key: 'ch3', code: 'CH3', title: 'Enterprise AI', subtitle: 'Vector Databases & RAG', monthNumber: 3, pageRange: 'p. 51–73', screenCount: 16, icon: Compass, gradient: 'from-emerald-600 to-teal-600', badgeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+  { key: 'ch4', code: 'CH4', title: 'AI Launchpad', subtitle: 'GitHub & Research', monthNumber: 4, pageRange: 'p. 74–96', screenCount: 16, icon: Rocket, gradient: 'from-rose-600 to-pink-600', badgeColor: 'bg-rose-50 text-rose-700 border-rose-200' },
+  { key: 'ch5', code: 'CH5', title: 'AI Project Studio', subtitle: 'Deploy ONNX Models', monthNumber: 5, pageRange: 'p. 97–119', screenCount: 16, icon: Palette, gradient: 'from-amber-600 to-orange-600', badgeColor: 'bg-amber-50 text-amber-700 border-amber-200' },
+  { key: 'ch6', code: 'CH6', title: 'XAI & Trust', subtitle: 'Explainable & Interpretable AI', monthNumber: 6, pageRange: 'p. 120–139', screenCount: 16, icon: HeartHandshake, gradient: 'from-teal-500 to-cyan-600', badgeColor: 'bg-teal-50 text-teal-700 border-teal-200' },
+  { key: 'finale', code: 'FINALE', title: 'Board Mastery', subtitle: 'Final Challenge & Cert', monthNumber: 7, pageRange: 'p. 140–152', screenCount: 3, icon: Trophy, gradient: 'from-amber-500 to-yellow-500', badgeColor: 'bg-amber-50 text-amber-800 border-amber-200' },
+]
+
+// ─── Higher Level Grid Items (UG & PG) ───
+const HIGHER_GRID_BASE: Omit<ChapterGridItem, 'key' | 'code' | 'title' | 'subtitle'>[] = [
+  { monthNumber: 0, pageRange: 'Module 0', screenCount: 5, icon: Sparkles, gradient: 'from-slate-700 to-indigo-800', badgeColor: 'bg-slate-50 text-slate-700 border-slate-200' },
+  { monthNumber: 1, pageRange: 'Module 1', screenCount: 16, icon: Bot, gradient: 'from-indigo-700 to-blue-700', badgeColor: 'bg-indigo-50 text-indigo-700 border-indigo-200' },
+  { monthNumber: 2, pageRange: 'Module 2', screenCount: 16, icon: MessageSquare, gradient: 'from-blue-700 to-cyan-600', badgeColor: 'bg-blue-50 text-blue-700 border-blue-200' },
+  { monthNumber: 3, pageRange: 'Module 3', screenCount: 16, icon: Compass, gradient: 'from-teal-600 to-emerald-600', badgeColor: 'bg-teal-50 text-teal-700 border-teal-200' },
+  { monthNumber: 4, pageRange: 'Module 4', screenCount: 16, icon: Rocket, gradient: 'from-violet-600 to-purple-700', badgeColor: 'bg-violet-50 text-violet-700 border-violet-200' },
+  { monthNumber: 5, pageRange: 'Module 5', screenCount: 16, icon: Palette, gradient: 'from-rose-600 to-pink-600', badgeColor: 'bg-rose-50 text-rose-700 border-rose-200' },
+  { monthNumber: 6, pageRange: 'Module 6', screenCount: 16, icon: HeartHandshake, gradient: 'from-amber-600 to-orange-600', badgeColor: 'bg-amber-50 text-amber-700 border-amber-200' },
+  { monthNumber: 7, pageRange: 'Module 7', screenCount: 3, icon: Trophy, gradient: 'from-amber-500 to-yellow-500', badgeColor: 'bg-amber-50 text-amber-800 border-amber-200' },
+]
+
+const UG_TITLES = [
+  ['INTRO', 'Orientation', 'Getting Started'],
+  ['MOD1', 'AI Foundations', 'Computational Graphs'],
+  ['MOD2', 'Python + Prompting', 'Function Calling & JSON'],
+  ['MOD3', 'Real-World AI', 'Distributed Serving'],
+  ['MOD4', 'AI Careers', 'Production Readiness'],
+  ['MOD5', 'AI Workbench', 'Synthetic Data & Augmentation'],
+  ['MOD6', 'Responsible AI', 'Governance Frameworks'],
+  ['FINALE', 'Certification', 'Portfolio & Award'],
+]
+
+export const UG1_GRID_ITEMS: ChapterGridItem[] = HIGHER_GRID_BASE.map((b, i) => ({
+  ...b, key: UG_TITLES[i][0].toLowerCase() === 'intro' ? 'intro' : UG_TITLES[i][0].toLowerCase() === 'finale' ? 'finale' : `ch${i}`, code: UG_TITLES[i][0], title: UG_TITLES[i][1], subtitle: UG_TITLES[i][2],
+}))
+
+const PG_TITLES = [
+  ['INTRO', 'Orientation', 'Getting Started'],
+  ['MOD1', 'Modern Intelligence', 'Non-Convex Optimization'],
+  ['MOD2', 'Smart Workflows', 'RLHF & DPO'],
+  ['MOD3', 'Advanced Research', 'Diffusion Models'],
+  ['MOD4', 'AI Specialist', 'Conference Manuscripts'],
+  ['MOD5', 'Research Workbench', 'Ablation & Significance'],
+  ['MOD6', 'Transparent AI', 'Mechanistic Interpretability'],
+  ['FINALE', 'Dissertation', 'Research Defense & Award'],
+]
+
+export const PG1_GRID_ITEMS: ChapterGridItem[] = HIGHER_GRID_BASE.map((b, i) => ({
+  ...b, key: PG_TITLES[i][0].toLowerCase() === 'intro' ? 'intro' : PG_TITLES[i][0].toLowerCase() === 'finale' ? 'finale' : `ch${i}`, code: PG_TITLES[i][0], title: PG_TITLES[i][1], subtitle: PG_TITLES[i][2],
+}))
+
+const GRADE_TRACK_INFO: Record<GradeKey, { name: string; subjectName: string; mascot: string; theme: { dot: string; badge: string } }> = {
+  class3: { name: 'Class 3', subjectName: 'Junior AI & Playful Logic', mascot: 'Bolt ⚡', theme: { dot: 'bg-sky-500', badge: 'bg-sky-50 text-sky-700 border-sky-200' } },
+  class4: { name: 'Class 4', subjectName: 'Elementary AI & Algorithmic Patterns', mascot: 'Robo-Pi 🤖', theme: { dot: 'bg-emerald-500', badge: 'bg-emerald-50 text-emerald-700 border-emerald-200' } },
+  class5: { name: 'Class 5', subjectName: 'Foundations of Smart Computing', mascot: 'Data-Volt ⚡', theme: { dot: 'bg-purple-500', badge: 'bg-purple-50 text-purple-700 border-purple-200' } },
+  class6: { name: 'Class 6', subjectName: 'Middle School AI & Computational Thinking', mascot: 'Algo 🧠', theme: { dot: 'bg-teal-500', badge: 'bg-teal-50 text-teal-700 border-teal-200' } },
+  class7: { name: 'Class 7', subjectName: 'Data Logic & Python Foundations', mascot: 'Pythia 🐍', theme: { dot: 'bg-blue-500', badge: 'bg-blue-50 text-blue-700 border-blue-200' } },
+  class8: { name: 'Class 8', subjectName: 'Applied AI Thinking & Python Coding', mascot: 'Neural 🕸️', theme: { dot: 'bg-violet-500', badge: 'bg-violet-50 text-violet-700 border-violet-200' } },
+  class9: { name: 'Class 9', subjectName: 'Applied AI & Statistical Learning', mascot: 'DataBot 📊', theme: { dot: 'bg-cyan-600', badge: 'bg-cyan-50 text-cyan-700 border-cyan-200' } },
+  class10: { name: 'Class 10', subjectName: 'ML Foundations & Python Engineering', mascot: 'Perceptron 🔮', theme: { dot: 'bg-indigo-600', badge: 'bg-indigo-50 text-indigo-700 border-indigo-200' } },
+  class11: { name: 'Class 11', subjectName: 'Mathematical Foundations of ML', mascot: 'Tensor 🔥', theme: { dot: 'bg-violet-600', badge: 'bg-violet-50 text-violet-700 border-violet-200' } },
+  class12: { name: 'Class 12', subjectName: 'Deep Learning, Transformers & GenAI', mascot: 'Transformer ✨', theme: { dot: 'bg-slate-600', badge: 'bg-slate-50 text-slate-700 border-slate-200' } },
+  ug1: { name: 'UG 1st Year', subjectName: 'Computational AI & Data Science Engineering', mascot: 'Grad 🎓', theme: { dot: 'bg-blue-700', badge: 'bg-blue-50 text-blue-800 border-blue-200' } },
+  ug2: { name: 'UG 2nd Year', subjectName: 'Classical ML & Applied Statistical Models', mascot: 'Scholar 📚', theme: { dot: 'bg-indigo-700', badge: 'bg-indigo-50 text-indigo-800 border-indigo-200' } },
+  ug3: { name: 'UG 3rd Year', subjectName: 'Deep Learning, NLP & LLM Engineering', mascot: 'Architect 🏗️', theme: { dot: 'bg-violet-700', badge: 'bg-violet-50 text-violet-800 border-violet-200' } },
+  ug4: { name: 'UG Final Year', subjectName: 'Autonomous AI Agents & Scalable Systems', mascot: 'Captain 🚀', theme: { dot: 'bg-purple-700', badge: 'bg-purple-50 text-purple-800 border-purple-200' } },
+  pg1: { name: 'PG 1st Year', subjectName: 'Advanced ML Theory & Statistical Optimization', mascot: 'Researcher 🔬', theme: { dot: 'bg-rose-700', badge: 'bg-rose-50 text-rose-800 border-rose-200' } },
+  pg2: { name: 'PG Final Year', subjectName: 'Frontiers of AI & Research Dissertation', mascot: 'Professor 🧑‍🔬', theme: { dot: 'bg-amber-700', badge: 'bg-amber-50 text-amber-800 border-amber-200' } },
+}
 
 export default function ChapterLearningPage() {
   const { chapterId, itemId } = useParams<{ chapterId?: string; itemId?: string }>()
@@ -404,7 +514,7 @@ export default function ChapterLearningPage() {
   const navigate = useNavigate()
 
   // 1. Database-bound assigned grade state (initialized from fast local cache, verified from DB)
-  const [assignedGrade, setAssignedGrade] = useState<'class3' | 'class4' | 'class5'>(() => {
+  const [assignedGrade, setAssignedGrade] = useState<GradeKey>(() => {
     if (user?.id) {
       try {
         const stored = localStorage.getItem(`nanjil_active_class_${user.id}`)
@@ -425,7 +535,7 @@ export default function ChapterLearningPage() {
     subjectName: string
     mascot: string
   }>(() => {
-    const meta = GRADE_TRACK_INFO[assignedGrade]
+    const meta = GRADE_TRACK_INFO[assignedGrade] || GRADE_TRACK_INFO['class3']
     return {
       className: meta.name,
       subjectName: meta.subjectName,
@@ -443,7 +553,7 @@ export default function ChapterLearningPage() {
         const res = await enrollmentService.getStudentAssignedGrade(user.id, user.organization_id)
         if (isMounted) {
           setAssignedGrade(res.gradeKey)
-          const meta = GRADE_TRACK_INFO[res.gradeKey]
+          const meta = GRADE_TRACK_INFO[res.gradeKey] || GRADE_TRACK_INFO['class3']
           setAssignedClassInfo({
             className: res.className || meta.name,
             subjectName: res.subjectName || meta.subjectName,
@@ -477,9 +587,18 @@ export default function ChapterLearningPage() {
   const currentGridItems = useMemo(() => {
     if (assignedGrade === 'class4') return CLASS4_GRID_ITEMS
     if (assignedGrade === 'class5') return CLASS5_GRID_ITEMS
+    if (assignedGrade === 'class6') return CLASS6_GRID_ITEMS
+    if (assignedGrade === 'class7') return CLASS7_GRID_ITEMS
+    if (assignedGrade === 'class8') return CLASS8_GRID_ITEMS
+    // Secondary level
+    if (assignedGrade === 'class9') return CLASS9_GRID_ITEMS
+    if (assignedGrade === 'class10') return CLASS10_GRID_ITEMS
+    if (assignedGrade === 'class11') return CLASS11_GRID_ITEMS
+    if (assignedGrade === 'class12') return CLASS12_GRID_ITEMS
+    // Higher education (UG/PG): all use the same higher grid structure
+    if (assignedGrade === 'ug1' || assignedGrade === 'ug2' || assignedGrade === 'ug3' || assignedGrade === 'ug4') return UG1_GRID_ITEMS
+    if (assignedGrade === 'pg1' || assignedGrade === 'pg2') return PG1_GRID_ITEMS
     return CLASS3_GRID_ITEMS
-  }, [assignedGrade])
-
   // 4. Resolve which of the 8 items is requested
   const resolvedItemKey = useMemo(() => {
     const raw = itemId || searchParams.get('item')
@@ -529,7 +648,7 @@ export default function ChapterLearningPage() {
       navigate(`/student/learning/chapters/${itemKey}`)
     }
 
-    const currentTrackTheme = GRADE_TRACK_INFO[assignedGrade].theme
+    const currentTrackTheme = (GRADE_TRACK_INFO[assignedGrade] || GRADE_TRACK_INFO['class3']).theme
 
     return (
       <AppLayout>

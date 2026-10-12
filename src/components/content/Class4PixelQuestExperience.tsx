@@ -5,6 +5,7 @@ import {
 } from 'lucide-react'
 import { Button } from '../ui'
 import { gamification } from '../../utils/gamification'
+import { auraSpeechService } from '../../services/auraSpeechService'
 import toast from 'react-hot-toast'
 import { getCurriculumTopicProfile } from '../../services/curriculumTopicRegistry'
 
@@ -42,15 +43,9 @@ export function Class4PixelQuestExperience({
   const [selectedPracticeOpt, setSelectedPracticeOpt] = useState<number | null>(null)
   const [practiceAnswered, setPracticeAnswered] = useState(false)
 
-  // Sound / Speech
+  // Aura AI Voice
   const speakVoice = (text: string) => {
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel()
-      const u = new SpeechSynthesisUtterance(text)
-      u.rate = 1.0
-      u.pitch = 1.15
-      window.speechSynthesis.speak(u)
-    }
+    auraSpeechService.speak(text)
   }
 
   // Dynamic scanner items derived from topic profile use cases and everyday items

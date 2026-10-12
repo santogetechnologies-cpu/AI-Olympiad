@@ -5,6 +5,7 @@ import {
 } from 'lucide-react'
 import { Button } from '../ui'
 import { gamification } from '../../utils/gamification'
+import { auraSpeechService } from '../../services/auraSpeechService'
 import toast from 'react-hot-toast'
 
 export interface Class4To5StoryDetectiveProps {
@@ -32,13 +33,7 @@ export function Class4To5StoryDetectiveExperience({
   const cNum = parseInt(String(chapterNum || '1'), 10)
 
   const speakText = (text: string) => {
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel()
-      const utterance = new SpeechSynthesisUtterance(text)
-      utterance.rate = 0.95
-      utterance.pitch = 1.15
-      window.speechSynthesis.speak(utterance)
-    }
+    auraSpeechService.speak(text)
   }
 
   // Chapter-tailored mystery case files

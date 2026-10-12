@@ -38,7 +38,7 @@ export const GaioAiGuideAvatar: React.FC<GaioAiGuideAvatarProps> = ({
       setIsSpeaking(false)
     } else {
       gameAudio.playTap()
-      const speechNarrative = `Hello young explorer! I am your GAIO AI Guide. Today we are learning about ${conceptTitle}. Here is the secret: ${simpleText}`
+      const speechNarrative = `Hello young explorer! I am your Aura AI Guide. Today we are learning about ${conceptTitle}. Here is the secret: ${simpleText}`
       gaioSpeechService.speak(speechNarrative, `guide-${conceptTitle}`)
       setIsSpeaking(true)
     }
@@ -92,7 +92,7 @@ export const GaioAiGuideAvatar: React.FC<GaioAiGuideAvatarProps> = ({
 
           <span className="text-[10px] font-black uppercase tracking-wider text-sky-300 mt-1 flex items-center gap-1">
             <Bot size={11} className="text-sky-400" />
-            GAIO Guide
+            Aura AI Guide
           </span>
         </div>
 
@@ -108,7 +108,7 @@ export const GaioAiGuideAvatar: React.FC<GaioAiGuideAvatarProps> = ({
               </span>
             </div>
 
-            {/* Listen Button (Slow, Bold Male Voice) */}
+            {/* Listen Button (Slow, Bold Voice) */}
             <button
               onClick={handleToggleSpeak}
               className={`px-3 py-1 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all shadow-md cursor-pointer ${
@@ -116,7 +116,7 @@ export const GaioAiGuideAvatar: React.FC<GaioAiGuideAvatarProps> = ({
                   ? 'bg-rose-500 hover:bg-rose-600 text-white ring-2 ring-rose-400/50 animate-pulse'
                   : 'bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white shadow-sky-500/20 active:scale-95'
               }`}
-              title="Click to hear GAIO AI Guide explain in a friendly, slow male voice"
+              title="Click to hear Aura AI Guide explain in a friendly, slow voice"
             >
               {isSpeaking ? (
                 <>
@@ -126,7 +126,7 @@ export const GaioAiGuideAvatar: React.FC<GaioAiGuideAvatarProps> = ({
               ) : (
                 <>
                   <Volume2 size={13} />
-                  <span>Listen to Guide 🎙️</span>
+                  <span>Listen to Aura 🎙️</span>
                 </>
               )}
             </button>

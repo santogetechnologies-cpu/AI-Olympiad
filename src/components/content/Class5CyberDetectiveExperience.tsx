@@ -3,6 +3,7 @@ import {
   Volume2, Shield, Award, Check, Search, Lock, Unlock
 } from 'lucide-react'
 import { gamification } from '../../utils/gamification'
+import { auraSpeechService } from '../../services/auraSpeechService'
 import toast from 'react-hot-toast'
 
 import type { LessonJourneyData } from '../../services/curriculumData'
@@ -39,13 +40,7 @@ export function Class5CyberDetectiveExperience({
   const [badgeAwarded, setBadgeAwarded] = useState(false)
 
   const speakText = (text: string) => {
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel()
-      const u = new SpeechSynthesisUtterance(text)
-      u.rate = 0.95
-      u.pitch = 1.1
-      window.speechSynthesis.speak(u)
-    }
+    auraSpeechService.speak(text)
   }
 
   // Clues for Lesson 1 (Derived from topic-specific journey steps or topic title)

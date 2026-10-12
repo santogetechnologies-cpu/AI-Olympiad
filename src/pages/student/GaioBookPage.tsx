@@ -3,23 +3,26 @@ import { useNavigate } from 'react-router-dom'
 import { AppLayout } from '../../components/layout/AppLayout'
 import { GaioInteractiveBookApp } from '../../components/gaio/GaioInteractiveBookApp'
 import { useAuth } from '../../contexts/AuthContext'
-import { enrollmentService, parseGradeKeyFromClass } from '../../services/progressService'
+import { enrollmentService, parseGradeKeyFromClass, type GradeKey } from '../../services/progressService'
 import toast from 'react-hot-toast'
 
 export const GaioBookPage: React.FC = () => {
   const navigate = useNavigate()
   const { user } = useAuth()
 
-  const [gradeKey, setGradeKey] = useState<'class3' | 'class4' | 'class5'>(() => {
+  const [gradeKey, setGradeKey] = useState<GradeKey>(() => {
     if (user?.id) {
       try {
         const stored = localStorage.getItem(`nanjil_active_class_${user.id}`)
-        if (stored) return parseGradeKeyFromClass(JSON.parse(stored))
+        const parsed = stored ? parseGradeKeyFromClass(JSON.parse(stored)) : null
+        if (parsed) return parsed
         const enrStored = localStorage.getItem(`nanjil_enrollment_${user.id}`)
         if (enrStored) {
-          const parsed = JSON.parse(enrStored)
-          const enr = Array.isArray(parsed) ? parsed[0] : parsed
-          if (enr) return parseGradeKeyFromClass(enr.class || enr.class_id)
+          const e = JSON.parse(enrStored)
+          const enr = Array.isArray(e) ? e[0] : e
+          if (enr) {
+            return parseGradeKeyFromClass(enr.class || enr.class_id)
+          }
         }
       } catch {}
     }
@@ -29,7 +32,7 @@ export const GaioBookPage: React.FC = () => {
   useEffect(() => {
     if (user?.id) {
       enrollmentService.getStudentAssignedGrade(user.id, user.organization_id).then(res => {
-        setGradeKey(res.gradeKey)
+        if (res.gradeKey) setGradeKey(res.gradeKey)
       }).catch(() => {})
     }
   }, [user?.id, user?.organization_id])
