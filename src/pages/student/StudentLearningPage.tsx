@@ -499,25 +499,25 @@ export default function StudentLearningPage() {
           </p>
         </div>
 
-        {/* Higher Education Interactive Mission Terminal (UG & PG) */}
+        {/* Higher Education Gaio AI Guide (UG & PG) */}
         <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-2xl border border-indigo-500/30 p-4 sm:p-5 shadow-xl text-white space-y-3 relative overflow-hidden">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 relative z-10">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-indigo-600/30 border border-indigo-400/40 text-cyan-300 flex items-center justify-center font-bold shadow-lg">
-                <Terminal size={22} />
+              <div className="w-10 h-10 rounded-xl bg-cyan-600/30 border border-cyan-400/40 text-cyan-300 flex items-center justify-center font-bold shadow-lg">
+                <Sparkles size={22} />
               </div>
               <div>
                 <div className="flex items-center gap-2">
-                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-500/20 text-cyan-300 font-bold uppercase tracking-wider">
-                    Higher Ed Mission Terminal
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 font-bold uppercase tracking-wider">
+                    Gaio AI Guide • Male Voice (Slow & Bold)
                   </span>
                   <span className="text-[10px] font-mono text-emerald-400 flex items-center gap-1">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                    72 Missions Active
+                    All 6 Academic Levels Ready
                   </span>
                 </div>
                 <h2 className="text-base sm:text-lg font-bold text-white mt-0.5">
-                  Undergraduate & Postgraduate Gamified Learning Flow
+                  Undergraduate & Postgraduate: Base Syllabus with Gaio
                 </h2>
               </div>
             </div>
@@ -525,18 +525,10 @@ export default function StudentLearningPage() {
             <div className="flex items-center gap-2">
               <Link
                 to="/student/higher-ed"
-                className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 border border-cyan-500/40 font-mono text-xs font-bold transition-all shadow-lg cursor-pointer"
+                className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-slate-950 font-bold font-mono text-xs shadow-lg shadow-cyan-500/25 cursor-pointer transition-all"
               >
-                <Compass size={14} className="text-cyan-400" />
-                <span>Visual Syllabus Guide</span>
-              </Link>
-              <Link
-                to="/student/higher-ed"
-                className="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-mono text-xs font-bold transition-all shadow-lg shadow-indigo-600/40 cursor-pointer"
-              >
-                <Terminal size={14} />
-                <span>Mission Terminal</span>
-                <ChevronRight size={14} />
+                <span>Launch Gaio AI Guide</span>
+                <ChevronRight size={16} />
               </Link>
             </div>
           </div>

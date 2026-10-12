@@ -48,7 +48,7 @@ export const AuraCharacter: React.FC<AuraCharacterProps> = ({
   lookDirection = 'center',
   isSpeaking: externalIsSpeaking,
   message,
-  speakerName = 'Aura (AI Guide)',
+  speakerName = 'Gaio (AI Guide)',
   showSpeechBubble = false,
   showSpeaker = true,
   onActionComplete,
