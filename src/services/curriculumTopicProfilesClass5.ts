@@ -87,7 +87,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'Because scientists observed how billions of interconnected neurons in the human brain communicate and learn from experience', isCorrect: true },
           { text: 'Because computer microchips have real hearts and lungs', isCorrect: false },
           { text: 'Because computers need to drink water to stay cool', isCorrect: false },
-          { text: 'Because keyboards are shaped like human hands' }
+          { text: 'Because keyboards are shaped like human hands', isCorrect: false }
         ],
         exp: 'Artificial neural networks were directly inspired by biological neuroscience: networks of simple interconnected units passing electrical/numerical signals.'
       },
@@ -97,7 +97,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'It produces the final answer like "Cat" or "Dog"', isCorrect: false },
           { text: 'It receives raw data signals, such as image pixel brightness values or audio waveforms', isCorrect: true },
           { text: 'It shuts down the computer when it gets too hot', isCorrect: false },
-          { text: 'It charges the battery' }
+          { text: 'It charges the battery', isCorrect: false }
         ],
         exp: 'The input layer accepts external data signals (such as raw pixel matrix values) and feeds them into the hidden thinking layers.'
       }
@@ -275,7 +275,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'The error graph slopes downward toward zero as the model gets smarter', isCorrect: true },
           { text: 'The error graph goes straight up because the computer gets tired', isCorrect: false },
           { text: 'The graph turns into a circle and stops', isCorrect: false },
-          { text: 'The graph disappears completely' }
+          { text: 'The graph disappears completely', isCorrect: false }
         ],
         exp: 'As feedback corrects connection weights, the model makes fewer mistakes, causing the loss curve to decrease steadily.'
       }
@@ -449,7 +449,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'True', isCorrect: false },
           { text: 'False, because the AND operator requires BOTH sides to be True', isCorrect: true },
           { text: 'Maybe', isCorrect: false },
-          { text: 'None of the above' }
+          { text: 'None of the above', isCorrect: false }
         ],
         exp: 'For an AND condition to evaluate to True, every connected sub-condition must be True. If even one is False, the result is False.'
       },
@@ -459,7 +459,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'OR — because you want the alarm to sound if EITHER smoke OR dangerous heat is detected to protect lives quickly', isCorrect: true },
           { text: 'AND — because you must wait for both before warning anyone', isCorrect: false },
           { text: 'NOT — because alarms should never sound', isCorrect: false },
-          { text: 'NONE — alarms should only be rung manually with a bell' }
+          { text: 'NONE — alarms should only be rung manually with a bell', isCorrect: false }
         ],
         exp: 'Safety systems use OR for emergency triggers so that detection of either danger immediately activates alarms.'
       }
@@ -627,7 +627,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'It guides the AI\'s vocabulary, tone, and depth to match the intended audience precisely', isCorrect: true },
           { text: 'It forces the AI to wear a space suit', isCorrect: false },
           { text: 'It speeds up the computer processor clock', isCorrect: false },
-          { text: 'It saves battery power on the device' }
+          { text: 'It saves battery power on the device', isCorrect: false }
         ],
         exp: 'Specifying a persona primes the language model to select appropriate vocabulary, analogies, and pacing suitable for that expert viewpoint and target audience.'
       },
@@ -637,7 +637,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'Delete the app and give up', isCorrect: false },
           { text: 'Refine your prompt by saying: "Summarize the above into 3 simple sentences using 5th-grade words"', isCorrect: true },
           { text: 'Copy the long text without reading it', isCorrect: false },
-          { text: 'Print it out 10 times' }
+          { text: 'Print it out 10 times', isCorrect: false }
         ],
         exp: 'Iterative refinement is the cornerstone of prompt engineering: guide the AI to reformat or condense its previous answer.'
       }
@@ -813,7 +813,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'Because health information is deeply personal and confidential, and must never be leaked or shared without patient consent', isCorrect: true },
           { text: 'Because medical scans are too heavy to send over email', isCorrect: false },
           { text: 'Because hospital computers turn off if anyone looks at a chart', isCorrect: false },
-          { text: 'Because doctors don\'t like using passwords' }
+          { text: 'Because doctors don\'t like using passwords', isCorrect: false }
         ],
         exp: 'Medical records contain intimate health details. Safeguarding medical privacy is a fundamental human right and legal obligation.'
       },
@@ -823,7 +823,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'By making coffee for the hospital staff', isCorrect: false },
           { text: 'By serving as a second pair of tireless eyes that flags subtle scan anomalies for the doctor\'s review', isCorrect: true },
           { text: 'By replacing all the nurses so doctors can sleep', isCorrect: false },
-          { text: 'By turning off the hospital lights' }
+          { text: 'By turning off the hospital lights', isCorrect: false }
         ],
         exp: 'AI scan readers assist tired human physicians by highlighting potential areas of concern that warrant extra clinical inspection.'
       }
@@ -995,7 +995,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'Because teachers provide emotional encouragement, mentorship, moral values, and understand each child\'s heart—qualities machines lack', isCorrect: true },
           { text: 'Because computers don\'t know how to write on chalkboards', isCorrect: false },
           { text: 'Because schools don\'t have enough electrical plugs', isCorrect: false },
-          { text: 'Because robots are too tall to stand in classrooms' }
+          { text: 'Because robots are too tall to stand in classrooms', isCorrect: false }
         ],
         exp: 'Teaching is fundamentally a human relationship. While AI delivers practice questions, human teachers inspire, mentor, and cultivate character.'
       },
@@ -1005,7 +1005,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'It allows students who are deaf or hard of hearing to read live captions of the teacher\'s words in real time', isCorrect: true },
           { text: 'It lets students play video games during lecture time', isCorrect: false },
           { text: 'It whispers test answers into headphones', isCorrect: false },
-          { text: 'It turns off the school bell' }
+          { text: 'It turns off the school bell', isCorrect: false }
         ],
         exp: 'Real-time captioning and assistive speech tech ensure students with hearing impairments can fully participate in classroom learning.'
       }
@@ -1176,7 +1176,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'Because AI tools will be integrated into virtually every industry, allowing professionals who understand them to innovate and lead', isCorrect: true },
           { text: 'Because everyone will be forced to stop farming and write code all day', isCorrect: false },
           { text: 'Because plants and animals will only listen to computers in the future', isCorrect: false },
-          { text: 'Because paintbrushes will be outlawed' }
+          { text: 'Because paintbrushes will be outlawed', isCorrect: false }
         ],
         exp: 'AI is a cross-disciplinary multiplier: doctors use medical vision, artists use generative studios, and farmers use precision drone monitors.'
       },
@@ -1186,7 +1186,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'Memorize phonebooks and never play outdoors', isCorrect: false },
           { text: 'Cultivate strong curiosity, practice problem solving, learn basic coding logic, and practice teamwork with friends', isCorrect: true },
           { text: 'Wait until university before touching any technology', isCorrect: false },
-          { text: 'Let computers do all homework and stop reading books' }
+          { text: 'Let computers do all homework and stop reading books', isCorrect: false }
         ],
         exp: 'Developing adaptable foundational skills—curiosity, logical problem solving, communication, and digital literacy—prepares learners for evolving careers.'
       }
@@ -1354,7 +1354,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'Because AI tools can generate convincing, plausible-sounding hallucinations and fake claims, requiring humans to verify truth', isCorrect: true },
           { text: 'Because computers refuse to work unless humans think hard', isCorrect: false },
           { text: 'Because critical thinking makes computer fans spin faster', isCorrect: false },
-          { text: 'Because search engines stop working' }
+          { text: 'Because search engines stop working', isCorrect: false }
         ],
         exp: 'With AI able to generate realistic fake content in seconds, human critical thinking is essential to separate factual truth from deceptive hallucination.'
       },
@@ -1364,7 +1364,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'Stop asking questions once you finish school', isCorrect: false },
           { text: 'Always asking "Why?" and "How?", reading broadly, and trying new creative challenges regularly', isCorrect: true },
           { text: 'Copying homework from online forums', isCorrect: false },
-          { text: 'Only watching 5-second video clips all day' }
+          { text: 'Only watching 5-second video clips all day', isCorrect: false }
         ],
         exp: 'Continuous curiosity—asking questions, reading books, and tackling creative projects—is the proven driver of cognitive growth and innovation.'
       }
@@ -1540,7 +1540,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'It protects you from becoming dependent on machines and prevents you from accepting unverified AI errors', isCorrect: true },
           { text: 'It protects your keyboard from dust', isCorrect: false },
           { text: 'It prevents computer batteries from getting full', isCorrect: false },
-          { text: 'It stops books from closing' }
+          { text: 'It stops books from closing', isCorrect: false }
         ],
         exp: 'Trying first strengthens your brain; asking second resolves obstacles; checking third ensures you never memorize an inaccurate hallucinated claim.'
       },
@@ -1550,7 +1550,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'Because you can ask it to re-explain using different analogies, simpler words, or funny stories without it ever getting impatient', isCorrect: true },
           { text: 'Because it will do all your chores for you', isCorrect: false },
           { text: 'Because it calls your teacher on the telephone', isCorrect: false },
-          { text: 'Because it changes your grades in the school computer' }
+          { text: 'Because it changes your grades in the school computer', isCorrect: false }
         ],
         exp: 'Patience and adaptability are great strengths of conversational tutors: they can generate dozens of fresh analogies tailored to your specific learning style.'
       }
@@ -1721,7 +1721,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'The project will feel generic, repetitive, and devoid of your personal voice, memories, and emotional heart', isCorrect: true },
           { text: 'The computer will run out of colors', isCorrect: false },
           { text: 'The file will become too loud', isCorrect: false },
-          { text: 'The monitor will melt' }
+          { text: 'The monitor will melt', isCorrect: false }
         ],
         exp: 'Uncurated AI generation lacks personal perspective and authentic emotional resonance. Human curation, editing, and intention give art its soul.'
       },
@@ -1731,7 +1731,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'Operating only in black and white text', isCorrect: false },
           { text: 'Working across multiple media modes simultaneously, such as text, speech, images, and music', isCorrect: true },
           { text: 'Running on multiple batteries', isCorrect: false },
-          { text: 'A computer with three wheels' }
+          { text: 'A computer with three wheels', isCorrect: false }
         ],
         exp: '"Multimodal" systems process and synthesize multiple sensory modalities—text, vision, audio, and code—within unified architectures.'
       }
@@ -1903,7 +1903,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'Because large language models are trained to mimic confident, authoritative human writing style, regardless of factual truth', isCorrect: true },
           { text: 'Because computers are legally forbidden from being wrong', isCorrect: false },
           { text: 'Because the internet verifies every single word before displaying it', isCorrect: false },
-          { text: 'Because keyboards only type correct facts' }
+          { text: 'Because keyboards only type correct facts', isCorrect: false }
         ],
         exp: 'Generative models predict probable linguistic tokens that sound natural and convincing; they do not have an internal consciousness that verifies objective truth.'
       },
@@ -1913,7 +1913,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'By painting the computer case with gold paint', isCorrect: false },
           { text: 'By collecting diverse, balanced training examples from all demographic groups and environmental conditions', isCorrect: true },
           { text: 'By deleting the word "bias" from the computer dictionary', isCorrect: false },
-          { text: 'By unplugging the mouse' }
+          { text: 'By unplugging the mouse', isCorrect: false }
         ],
         exp: 'Mitigating dataset bias requires intentional data curation: gathering balanced, representative samples that reflect real-world diversity.'
       }
@@ -2079,12 +2079,11 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
       {
         q: 'What does the letter "R" stand for in the S.M.A.R.T. AI Framework?',
         opts: [
-          'Run as fast as possible',
-          'Respect others — never use AI to tease, trick, bully, or hurt anyone',
-          'Restart the computer every hour',
-          'Record secret videos of people'
+          { text: 'Run as fast as possible', isCorrect: false },
+          { text: 'Respect others — never use AI to tease, trick, bully, or hurt anyone', isCorrect: true },
+          { text: 'Restart the computer every hour', isCorrect: false },
+          { text: 'Record secret videos of people', isCorrect: false }
         ],
-        correct: 1,
         exp: 'R stands for Respect Others: using technology with empathy, dignity, and kindness, while rejecting cyberbullying and deceptive tricks.',
         hint: 'Which option represents digital kindness and empathy toward peers?'
       },
@@ -2094,7 +2093,7 @@ export const CLASS5_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'The human person, because humans possess moral responsibility, empathy, and ethical agency', isCorrect: true },
           { text: 'The computer graphics card', isCorrect: false },
           { text: 'The WiFi router', isCorrect: false },
-          { text: 'The algorithm code' }
+          { text: 'The algorithm code', isCorrect: false }
         ],
         exp: 'Humans are always the captains. Machines are tools. Humans bear ethical, legal, and moral responsibility for how technology is directed.'
       }

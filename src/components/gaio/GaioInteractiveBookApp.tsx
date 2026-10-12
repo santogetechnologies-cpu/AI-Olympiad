@@ -8,10 +8,7 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import type { GaioScreenItem } from './types'
-import {
-  CLASS3_BOOK_ALL_SCREENS,
-  TOTAL_WEBSITE_SCREENS as TOTAL_CLASS3_SCREENS,
-} from './config/class3BookScreens'
+import { CLASS3_BOOK_ALL_SCREENS } from './config/class3BookScreens'
 import { CLASS4_BOOK_ALL_SCREENS } from './config/class4BookScreens'
 import { CLASS5_BOOK_ALL_SCREENS } from './config/class5BookScreens'
 import { GaioBookShell } from './primitives/GaioBookShell'
@@ -361,6 +358,9 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
     }
     return rawScreens
   }, [rawScreens, scopedMonth])
+
+  const TOTAL_WEBSITE_SCREENS = screens.length
+  const TOTAL_PDF_PAGES = 153
 
   const targetTopic = initialTopic || topicFilter
   const targetMonth = scopedMonth !== undefined ? scopedMonth : (initialMonth || monthFilter)
