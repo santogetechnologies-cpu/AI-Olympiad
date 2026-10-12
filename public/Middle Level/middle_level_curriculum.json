@@ -1,0 +1,501 @@
+{
+  "curriculum_metadata": {
+    "title": "Global AI Olympiad Curriculum \u2014 Middle Level (Classes 6\u20138)",
+    "version": "2.0.0-PROD",
+    "standard": "Official AI Olympiad Master Syllabus",
+    "total_classes": 3,
+    "total_chapters": 18,
+    "total_lessons": 36,
+    "total_questions": 180,
+    "total_verified_python_solutions": 36,
+    "gamified_mechanics_count": 36
+  },
+  "classes": [
+    {
+      "class_id": "Class_6",
+      "class_name": "Class 6",
+      "chapters": [
+        {
+          "chapter_id": "Chapter_1_AI_Basics",
+          "chapter_name": "Chapter 1 AI Basics",
+          "lessons": [
+            {
+              "lesson_file": "Lesson_1_How_Machines_Get_Smart.md",
+              "lesson_title": "Lesson 1: How Machines Get Smart",
+              "game_title": "Rule Master vs Pattern Bot",
+              "game_engine": "Comparative Decision Simulation & Edge-Case Gauntlet.",
+              "word_count": 2482,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_6/Chapter_1_AI_Basics/Lesson_1_How_Machines_Get_Smart.md"
+            },
+            {
+              "lesson_file": "Lesson_2_Learning_from_Examples.md",
+              "lesson_title": "Lesson 2: Learning from Examples",
+              "game_title": "The Training Ground",
+              "game_engine": "Dataset Curation & Generalization Battle.",
+              "word_count": 2504,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_6/Chapter_1_AI_Basics/Lesson_2_Learning_from_Examples.md"
+            }
+          ]
+        },
+        {
+          "chapter_id": "Chapter_2_Communicate_with_AI",
+          "chapter_name": "Chapter 2 Communicate with AI",
+          "lessons": [
+            {
+              "lesson_file": "Lesson_1_Think_Plan_Code.md",
+              "lesson_title": "Lesson 1: Think \u2192 Plan \u2192 Code",
+              "game_title": "The Algorithm Labyrinth",
+              "game_engine": "Algorithmic Grid Navigation & Sub-Routine Planner.",
+              "word_count": 2328,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_6/Chapter_2_Communicate_with_AI/Lesson_1_Think_Plan_Code.md"
+            },
+            {
+              "lesson_file": "Lesson_2_Coding_Made_Friendly.md",
+              "lesson_title": "Lesson 2: Coding Made Friendly",
+              "game_title": "The Chat-Companion Sandbox",
+              "game_engine": "Dialogue Tree Builder & Tone Calibration Lab.",
+              "word_count": 2233,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_6/Chapter_2_Communicate_with_AI/Lesson_2_Coding_Made_Friendly.md"
+            }
+          ]
+        },
+        {
+          "chapter_id": "Chapter_3_AI_Applications",
+          "chapter_name": "Chapter 3 AI Applications",
+          "lessons": [
+            {
+              "lesson_file": "Lesson_1_AI_on_the_Road.md",
+              "lesson_title": "Lesson 1: AI on the Road",
+              "game_title": "Autonomous Highway Navigator",
+              "game_engine": "Real-Time Sensor Fusion & Telemetry Dashboard Simulator.",
+              "word_count": 2573,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_6/Chapter_3_AI_Applications/Lesson_1_AI_on_the_Road.md"
+            },
+            {
+              "lesson_file": "Lesson_2_AI_on_the_Farm.md",
+              "lesson_title": "Lesson 2: AI on the Farm",
+              "game_title": "The Smart Agro-Manager",
+              "game_engine": "Resource-Optimization & Ecological Balance Simulation.",
+              "word_count": 2419,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_6/Chapter_3_AI_Applications/Lesson_2_AI_on_the_Farm.md"
+            }
+          ]
+        },
+        {
+          "chapter_id": "Chapter_4_AI_and_Career",
+          "chapter_name": "Chapter 4 AI and Career",
+          "lessons": [
+            {
+              "lesson_file": "Lesson_1_Explore_Tech_Careers.md",
+              "lesson_title": "Lesson 1: Explore Tech Careers",
+              "game_title": "Tech Career Pathfinder",
+              "game_engine": "Crisis Management & Team Assembly Simulation.",
+              "word_count": 2479,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_6/Chapter_4_AI_and_Career/Lesson_1_Explore_Tech_Careers.md"
+            },
+            {
+              "lesson_file": "Lesson_2_Discover_Your_Skills.md",
+              "lesson_title": "Lesson 2: Discover Your Skills",
+              "game_title": "The Skill Matrix Challenge",
+              "game_engine": "4-Stage Multi-Cognitive Quest & Archetype Unlocker.",
+              "word_count": 2464,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_6/Chapter_4_AI_and_Career/Lesson_2_Discover_Your_Skills.md"
+            }
+          ]
+        },
+        {
+          "chapter_id": "Chapter_5_AI_Tools",
+          "chapter_name": "Chapter 5 AI Tools",
+          "lessons": [
+            {
+              "lesson_file": "Lesson_1_AI_Learning_Lab.md",
+              "lesson_title": "Lesson 1: AI Learning Lab",
+              "game_title": "Vision Model Trainer",
+              "game_engine": "Interactive Training Studio & Robustness Stress-Tester.",
+              "word_count": 2503,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_6/Chapter_5_AI_Tools/Lesson_1_AI_Learning_Lab.md"
+            },
+            {
+              "lesson_file": "Lesson_2_Create_with_AI.md",
+              "lesson_title": "Lesson 2: Create with AI",
+              "game_title": "The Prompt Alchemist",
+              "game_engine": "Iterative Constraint Optimization & Target Generation Arena.",
+              "word_count": 2500,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_6/Chapter_5_AI_Tools/Lesson_2_Create_with_AI.md"
+            }
+          ]
+        },
+        {
+          "chapter_id": "Chapter_6_Responsible_AI",
+          "chapter_name": "Chapter 6 Responsible AI",
+          "lessons": [
+            {
+              "lesson_file": "Lesson_1_Protect_Your_Data.md",
+              "lesson_title": "Lesson 1: Protect Your Data",
+              "game_title": "The Cyber Privacy Shield",
+              "game_engine": "App Security Audit & Permission Defense Lab.",
+              "word_count": 2572,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_6/Chapter_6_Responsible_AI/Lesson_1_Protect_Your_Data.md"
+            },
+            {
+              "lesson_file": "Lesson_2_Think_Before_You_Trust.md",
+              "lesson_title": "Lesson 2: Think Before You Trust",
+              "game_title": "Truth Detective Agency",
+              "game_engine": "Digital Forensic Investigation & Evidence Triangulation Room.",
+              "word_count": 2589,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_6/Chapter_6_Responsible_AI/Lesson_2_Think_Before_You_Trust.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class_id": "Class_7",
+      "class_name": "Class 7",
+      "chapters": [
+        {
+          "chapter_id": "Chapter_1_AI_Basics",
+          "chapter_name": "Chapter 1 AI Basics",
+          "lessons": [
+            {
+              "lesson_file": "Lesson_1_AI_Learns_from_Data.md",
+              "lesson_title": "Lesson 1: AI Learns from Data",
+              "game_title": "The Corrupt Dataset Heist",
+              "game_engine": "Data Cleaning Pipeline & Feature Engineering Puzzle.",
+              "word_count": 2598,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_7/Chapter_1_AI_Basics/Lesson_1_AI_Learns_from_Data.md"
+            },
+            {
+              "lesson_file": "Lesson_2_Patterns_Make_It_Smart.md",
+              "lesson_title": "Lesson 2: Patterns Make It Smart",
+              "game_title": "The Pixel Matrix Decoder",
+              "game_engine": "Mathematical Image Processing & Edge Detection Puzzle.",
+              "word_count": 2468,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_7/Chapter_1_AI_Basics/Lesson_2_Patterns_Make_It_Smart.md"
+            }
+          ]
+        },
+        {
+          "chapter_id": "Chapter_2_Communicate_with_AI",
+          "chapter_name": "Chapter 2 Communicate with AI",
+          "lessons": [
+            {
+              "lesson_file": "Lesson_1_Hello_Python.md",
+              "lesson_title": "Lesson 1: Hello, Python!",
+              "game_title": "Syntax Dungeon Escape",
+              "game_engine": "Terminal Debugging Quest & Logic Puzzle.",
+              "word_count": 2581,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_7/Chapter_2_Communicate_with_AI/Lesson_1_Hello_Python.md"
+            },
+            {
+              "lesson_file": "Lesson_2_Code_Your_First_Idea.md",
+              "lesson_title": "Lesson 2: Code Your First Idea",
+              "game_title": "The AI Smart Assistant Quest",
+              "game_engine": "Diagnostic Expert System & Decision Tree Builder.",
+              "word_count": 2379,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_7/Chapter_2_Communicate_with_AI/Lesson_2_Code_Your_First_Idea.md"
+            }
+          ]
+        },
+        {
+          "chapter_id": "Chapter_3_AI_Applications",
+          "chapter_name": "Chapter 3 AI Applications",
+          "lessons": [
+            {
+              "lesson_file": "Lesson_1_AI_in_Money_Matters.md",
+              "lesson_title": "Lesson 1: AI in Money Matters",
+              "game_title": "Wall Street Fraud Buster",
+              "game_engine": "Real-Time Transaction Stream Anomaly Defense Simulator.",
+              "word_count": 2597,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_7/Chapter_3_AI_Applications/Lesson_1_AI_in_Money_Matters.md"
+            },
+            {
+              "lesson_file": "Lesson_2_AI_for_a_Greener_World.md",
+              "lesson_title": "Lesson 2: AI for a Greener World",
+              "game_title": "Eco-Grid Dispatcher",
+              "game_engine": "Real-Time Power Grid Balancing & Resource Allocation Simulator.",
+              "word_count": 2588,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_7/Chapter_3_AI_Applications/Lesson_2_AI_for_a_Greener_World.md"
+            }
+          ]
+        },
+        {
+          "chapter_id": "Chapter_4_AI_and_Career",
+          "chapter_name": "Chapter 4 AI and Career",
+          "lessons": [
+            {
+              "lesson_file": "Lesson_1_Career_Compass_AI.md",
+              "lesson_title": "Lesson 1: Career Compass: AI",
+              "game_title": "The Innovation Studio",
+              "game_engine": "Startup Venture Incubator & Interdisciplinary Team Simulation.",
+              "word_count": 2546,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_7/Chapter_4_AI_and_Career/Lesson_1_Career_Compass_AI.md"
+            },
+            {
+              "lesson_file": "Lesson_2_Skills_That_Matter.md",
+              "lesson_title": "Lesson 2: Skills That Matter",
+              "game_title": "The Tech Decathlon",
+              "game_engine": "Multi-Stage Competitive Logic & Code Audit Tournament.",
+              "word_count": 2629,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_7/Chapter_4_AI_and_Career/Lesson_2_Skills_That_Matter.md"
+            }
+          ]
+        },
+        {
+          "chapter_id": "Chapter_5_AI_Tools",
+          "chapter_name": "Chapter 5 AI Tools",
+          "lessons": [
+            {
+              "lesson_file": "Lesson_1_AI_Content_Creator.md",
+              "lesson_title": "Lesson 1: AI Content Creator",
+              "game_title": "Prompt Arena Championship",
+              "game_engine": "Competitive Generative Constraint & Token Optimization Arena.",
+              "word_count": 2488,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_7/Chapter_5_AI_Tools/Lesson_1_AI_Content_Creator.md"
+            },
+            {
+              "lesson_file": "Lesson_2_AI_Learning_Assistant.md",
+              "lesson_title": "Lesson 2: AI Learning Assistant",
+              "game_title": "The Socratic Tutor Experiment",
+              "game_engine": "Pedagogical Persona Calibration & Student Triage Lab.",
+              "word_count": 2584,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_7/Chapter_5_AI_Tools/Lesson_2_AI_Learning_Assistant.md"
+            }
+          ]
+        },
+        {
+          "chapter_id": "Chapter_6_Responsible_AI",
+          "chapter_name": "Chapter 6 Responsible AI",
+          "lessons": [
+            {
+              "lesson_file": "Lesson_1_Fact_Fake_or_AI.md",
+              "lesson_title": "Lesson 1: Fact, Fake or AI?",
+              "game_title": "The Misinformation Forensics Lab",
+              "game_engine": "Digital Evidence Workbench & Forensic Authentication Gauntlet.",
+              "word_count": 2596,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_7/Chapter_6_Responsible_AI/Lesson_1_Fact_Fake_or_AI.md"
+            },
+            {
+              "lesson_file": "Lesson_2_Fairness_Matters.md",
+              "lesson_title": "Lesson 2: Fairness Matters",
+              "game_title": "The Fair Hiring Algorithm Audit",
+              "game_engine": "Algorithmic De-Biasing & Policy Optimization Lab.",
+              "word_count": 2717,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_7/Chapter_6_Responsible_AI/Lesson_2_Fairness_Matters.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "class_id": "Class_8",
+      "class_name": "Class 8",
+      "chapters": [
+        {
+          "chapter_id": "Chapter_1_AI_Basics",
+          "chapter_name": "Chapter 1 AI Basics",
+          "lessons": [
+            {
+              "lesson_file": "Lesson_1_How_AI_Makes_Choices.md",
+              "lesson_title": "Lesson 1: How AI Makes Choices",
+              "game_title": "The Decision Boundary Architect",
+              "game_engine": "2D Scatter Plot Geometry & Hyperplane Optimization Puzzle.",
+              "word_count": 2656,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_8/Chapter_1_AI_Basics/Lesson_1_How_AI_Makes_Choices.md"
+            },
+            {
+              "lesson_file": "Lesson_2_Learning_from_Data.md",
+              "lesson_title": "Lesson 2: Learning from Data",
+              "game_title": "The Model Hospital Clinic",
+              "game_engine": "Confusion Matrix Calibration & Asymmetric Cost Optimization Lab.",
+              "word_count": 2598,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_8/Chapter_1_AI_Basics/Lesson_2_Learning_from_Data.md"
+            }
+          ]
+        },
+        {
+          "chapter_id": "Chapter_2_Communicate_with_AI",
+          "chapter_name": "Chapter 2 Communicate with AI",
+          "lessons": [
+            {
+              "lesson_file": "Lesson_1_Python_Playground.md",
+              "lesson_title": "Lesson 1: Python Playground",
+              "game_title": "The Modular Code Factory",
+              "game_engine": "Monolith Refactoring & Unit Test Assembly Challenge.",
+              "word_count": 2428,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_8/Chapter_2_Communicate_with_AI/Lesson_1_Python_Playground.md"
+            },
+            {
+              "lesson_file": "Lesson_2_Code_a_Solution.md",
+              "lesson_title": "Lesson 2: Code a Solution",
+              "game_title": "The Autonomous Delivery Dispatcher",
+              "game_engine": "Urban Route Optimization & Dynamic Exception Gauntlet.",
+              "word_count": 2632,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_8/Chapter_2_Communicate_with_AI/Lesson_2_Code_a_Solution.md"
+            }
+          ]
+        },
+        {
+          "chapter_id": "Chapter_3_AI_Applications",
+          "chapter_name": "Chapter 3 AI Applications",
+          "lessons": [
+            {
+              "lesson_file": "Lesson_1_AI_for_Better_Health.md",
+              "lesson_title": "Lesson 1: AI for Better Health",
+              "game_title": "AI Radiologist Assistant",
+              "game_engine": "Clinical Pathology Inspection & Heatmap Verification Lab.",
+              "word_count": 2754,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_8/Chapter_3_AI_Applications/Lesson_1_AI_for_Better_Health.md"
+            },
+            {
+              "lesson_file": "Lesson_2_AI_for_Better_Cities.md",
+              "lesson_title": "Lesson 2: AI for Better Cities",
+              "game_title": "Smart Metropolis Mayor",
+              "game_engine": "Urban Traffic Grid Optimization & Crisis Response Simulator.",
+              "word_count": 2664,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_8/Chapter_3_AI_Applications/Lesson_2_AI_for_Better_Cities.md"
+            }
+          ]
+        },
+        {
+          "chapter_id": "Chapter_4_AI_and_Career",
+          "chapter_name": "Chapter 4 AI and Career",
+          "lessons": [
+            {
+              "lesson_file": "Lesson_1_Find_Your_Future_Path.md",
+              "lesson_title": "Lesson 1: Find Your Future Path",
+              "game_title": "The Future Tech Incubator",
+              "game_engine": "Startup Venture Strategy & Runway Management Simulation.",
+              "word_count": 2717,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_8/Chapter_4_AI_and_Career/Lesson_1_Find_Your_Future_Path.md"
+            },
+            {
+              "lesson_file": "Lesson_2_AI_Career_Discovery.md",
+              "lesson_title": "Lesson 2: AI Career Discovery",
+              "game_title": "Tech Portfolio Showcase",
+              "game_engine": "Digital Identity Construction & Recruiter Evaluation Arena.",
+              "word_count": 2694,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_8/Chapter_4_AI_and_Career/Lesson_2_AI_Career_Discovery.md"
+            }
+          ]
+        },
+        {
+          "chapter_id": "Chapter_5_AI_Tools",
+          "chapter_name": "Chapter 5 AI Tools",
+          "lessons": [
+            {
+              "lesson_file": "Lesson_1_Build_with_GenAI.md",
+              "lesson_title": "Lesson 1: Build with GenAI",
+              "game_title": "The Neural Media Architect",
+              "game_engine": "Diffusion Model Latent Space Calibration Simulator.",
+              "word_count": 2939,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_8/Chapter_5_AI_Tools/Lesson_1_Build_with_GenAI.md"
+            },
+            {
+              "lesson_file": "Lesson_2_AI_Media_Studio.md",
+              "lesson_title": "Lesson 2: AI Media Studio",
+              "game_title": "The Virtual Film Producer",
+              "game_engine": "Multimodal Pipeline Orchestrator & Audio-Visual Synchronization Suite.",
+              "word_count": 2762,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_8/Chapter_5_AI_Tools/Lesson_2_AI_Media_Studio.md"
+            }
+          ]
+        },
+        {
+          "chapter_id": "Chapter_6_Responsible_AI",
+          "chapter_name": "Chapter 6 Responsible AI",
+          "lessons": [
+            {
+              "lesson_file": "Lesson_1_Deepfake_Alert.md",
+              "lesson_title": "Lesson 1: Deepfake Alert!",
+              "game_title": "Cyber Forensic Courtroom",
+              "game_engine": "Expert Witness Trial Simulator & Biometric Signal Analysis Suite.",
+              "word_count": 2881,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_8/Chapter_6_Responsible_AI/Lesson_1_Deepfake_Alert.md"
+            },
+            {
+              "lesson_file": "Lesson_2_Your_Data_Your_Right.md",
+              "lesson_title": "Lesson 2: Your Data, Your Right",
+              "game_title": "Data Sovereign Defense (The Privacy Ombudsman Simulator)",
+              "game_engine": "Legal-Tech Audit & Regulatory Enforcement Simulator",
+              "word_count": 4988,
+              "questions_count": 5,
+              "has_verified_code": true,
+              "path": "Class_8/Chapter_6_Responsible_AI/Lesson_2_Your_Data_Your_Right.md"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

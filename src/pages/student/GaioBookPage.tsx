@@ -35,7 +35,22 @@ export const GaioBookPage: React.FC = () => {
   }, [user?.id, user?.organization_id])
 
   const bookApp = (
-    <div className="flex-1 flex flex-col w-full h-full min-h-0 bg-slate-900/5 overflow-hidden">
+    <div className="flex-1 flex flex-col w-full h-full min-h-0 bg-slate-900/5 overflow-hidden relative">
+      {/* Floating Level Switcher */}
+      <div className="absolute top-2 right-14 sm:right-28 z-40 hidden sm:flex items-center gap-1 bg-white/95 border border-sky-200 p-0.5 rounded-full shadow-lg">
+        <button
+          className="px-2.5 py-0.5 text-[10px] font-bold bg-[#0288D1] text-white rounded-full shadow-xs cursor-default"
+        >
+          Primary (Class 3)
+        </button>
+        <button
+          onClick={() => navigate('/middle')}
+          className="px-2.5 py-0.5 text-[10px] font-semibold text-slate-600 hover:text-[#0288D1] rounded-full transition-colors cursor-pointer"
+        >
+          Middle (Classes 6–8)
+        </button>
+      </div>
+
       <GaioInteractiveBookApp
         gradeKey={gradeKey}
         studentName={user?.profile?.full_name || 'Super Student'}

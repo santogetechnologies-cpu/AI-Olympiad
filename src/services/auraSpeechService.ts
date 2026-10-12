@@ -53,31 +53,61 @@ class AuraSpeechService {
   private pickBestVoice(voices: SpeechSynthesisVoice[]): SpeechSynthesisVoice | null {
     if (!voices || voices.length === 0) return null
 
-    // Target friendly natural English voices suitable for AI mascot Aura
-    const preferredKeywords = [
-      'natural',
+    // Target friendly, warm, bold MALE voices suitable for GAIO AI Guide
+    const preferredMaleKeywords = [
+      'david',
+      'mark',
+      'george',
+      'male',
+      'guy',
+      'james',
+      'alex',
+      'daniel',
+      'richard',
+      'oliver',
+      'google uk english male',
+      'microsoft david'
+    ]
+
+    const femaleKeywords = [
+      'female',
       'zira',
       'samantha',
-      'google us english',
       'jenny',
       'aria',
       'karen',
       'victoria',
-      'female'
+      'hazel',
+      'susan',
+      'catherine',
+      'linda',
+      'lisa'
     ]
 
-    for (const kw of preferredKeywords) {
-      const match = voices.find(
-        (v) => v.lang.toLowerCase().startsWith('en') && v.name.toLowerCase().includes(kw)
-      )
+    // 1. Look for explicit English male voices
+    for (const kw of preferredMaleKeywords) {
+      const match = voices.find((v) => {
+        const name = v.name.toLowerCase()
+        const lang = v.lang.toLowerCase()
+        const isNotFemale = !femaleKeywords.some((fk) => name.includes(fk))
+        return lang.startsWith('en') && name.includes(kw) && isNotFemale
+      })
       if (match) return match
     }
 
-    // Secondary fallback: any English voice
+    // 2. Look for any English voice that is NOT female
+    const nonFemaleEnglish = voices.find((v) => {
+      const name = v.name.toLowerCase()
+      const lang = v.lang.toLowerCase()
+      const isNotFemale = !femaleKeywords.some((fk) => name.includes(fk))
+      return lang.startsWith('en') && isNotFemale
+    })
+    if (nonFemaleEnglish) return nonFemaleEnglish
+
+    // 3. Fallback: any English voice
     const anyEnglish = voices.find((v) => v.lang.toLowerCase().startsWith('en'))
     if (anyEnglish) return anyEnglish
 
-    // Last resort default voice
     return voices.find((v) => v.default) || voices[0] || null
   }
 
@@ -200,11 +230,11 @@ class AuraSpeechService {
         window.speechSynthesis.resume()
       }
 
-      // 3. Create utterance synchronously inside user click turn
+      // 3. Create utterance synchronously inside user click turn (slow and bold male voice for GAIO AI Guide)
       const utterance = new SpeechSynthesisUtterance(textToRead)
       utterance.lang = 'en-US'
-      utterance.rate = 1.0
-      utterance.pitch = 1.05
+      utterance.rate = 0.85 // Patient, slow and perfectly paced for young learners
+      utterance.pitch = 0.88 // Bold, deep, warm and friendly male tone
       utterance.volume = 1.0
 
       // 4. Select best available voice dynamically
@@ -302,4 +332,5 @@ class AuraSpeechService {
 }
 
 export const auraSpeechService = new AuraSpeechService()
+export const gaioSpeechService = auraSpeechService
 export default auraSpeechService

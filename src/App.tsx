@@ -30,6 +30,7 @@ import StudentAssignmentsPage from './pages/student/StudentAssignmentsPage'
 import StudentQuizzesPage from './pages/student/StudentQuizzesPage'
 import StudentProfilePage from './pages/student/StudentProfilePage'
 import GaioBookPage from './pages/student/GaioBookPage'
+import MiddleLevelBookPage from './pages/student/MiddleLevelBookPage'
 
 export default function App() {
   return (
@@ -80,10 +81,13 @@ export default function App() {
           <Route path="/student/profile" element={<ProtectedRoute allowedRoles={['student']}><StudentProfilePage /></ProtectedRoute>} />
           <Route path="/student/book" element={<ProtectedRoute allowedRoles={['student']}><GaioBookPage /></ProtectedRoute>} />
           <Route path="/book" element={<GaioBookPage />} />
+          <Route path="/student/middle" element={<ProtectedRoute allowedRoles={['student']}><MiddleLevelBookPage /></ProtectedRoute>} />
+          <Route path="/middle" element={<MiddleLevelBookPage />} />
+          <Route path="/middle-level" element={<MiddleLevelBookPage />} />
 
-          {/* Default redirect */}
-          <Route path="/" element={<Navigate to="/login" replace />} />
-          <Route path="*" element={<Navigate to="/login" replace />} />
+          {/* Default routes directly load Middle Level AI Olympiad Learning Hub */}
+          <Route path="/" element={<MiddleLevelBookPage />} />
+          <Route path="*" element={<MiddleLevelBookPage />} />
         </Routes>
       </AuthProvider>
     </BrowserRouter>
