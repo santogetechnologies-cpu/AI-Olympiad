@@ -72,6 +72,10 @@ class GameAudioSynthesizer {
     } catch {}
   }
 
+  public playClick() {
+    this.playTap()
+  }
+
   // 2. Correct Action / Success Chord
   public playSuccess() {
     if (this.muted) return
@@ -199,6 +203,10 @@ class GameAudioSynthesizer {
   }
 
   public playVictory() {
+    this.playLevelUp()
+  }
+
+  public playComplete() {
     this.playLevelUp()
   }
 

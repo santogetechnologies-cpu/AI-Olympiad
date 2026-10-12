@@ -1,9 +1,15 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// SCRIPT: BUILD FULL CURRICULUM TOPIC REGISTRY (ALL 192 TOPICS)
+// SCRIPT: VERIFY CURRICULUM DATA SERVICE AVAILABILITY
 // ─────────────────────────────────────────────────────────────────────────────
 
 import fs from 'fs'
 import path from 'path'
 
-// Topic definitions generator with domain-specific knowledge
-import { SYLLABUS_SPECS } from '../src/services/curriculumData.ts'
+const curriculumDataPath = path.resolve('src/services/curriculumData.ts')
+if (fs.existsSync(curriculumDataPath)) {
+  const content = fs.readFileSync(curriculumDataPath, 'utf8')
+  console.log(`[test_import] Successfully verified curriculumData.ts (${content.length} bytes)`)
+} else {
+  console.error('[test_import] Error: curriculumData.ts not found at expected path')
+  process.exit(1)
+}

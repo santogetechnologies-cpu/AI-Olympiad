@@ -23,6 +23,7 @@ import {
   Compass, FileEdit, Gamepad2, FlaskConical, Trophy
 } from 'lucide-react'
 import { GaioInteractiveBookApp } from '../../components/gaio/GaioInteractiveBookApp'
+import { SeniorInteractiveBookApp } from '../../components/senior/SeniorInteractiveBookApp'
 
 import { supabase } from '../../lib/supabase'
 
@@ -654,6 +655,36 @@ export default function ChapterLearningPage() {
                 markSectionDone(currentSection.id)
               }
               toast.success(`Congratulations! You completed Chapter ${cNum} in the GAIO Class 3 Book!`)
+            }}
+          />
+        </div>
+      </AppLayout>
+    )
+  }
+
+  // ─── SENIOR LEVEL (CLASSES 9-12) AUTHENTIC DIGITAL BOOK EXPERIENCE ───
+  if (
+    currentGradeKey === 'class9' ||
+    currentGradeKey === 'class10' ||
+    currentGradeKey === 'class11' ||
+    currentGradeKey === 'class12' ||
+    currentGradeKey.toLowerCase().includes('senior')
+  ) {
+    const gradeNum = parseInt(currentGradeKey.replace(/\D/g, ''), 10) || 9
+    const cNum = parseInt(String(chapter?.chapter_number || '1'), 10) || 1
+    return (
+      <AppLayout>
+        <div className="flex-1 flex flex-col w-full h-full min-h-0 bg-slate-950 overflow-hidden">
+          <SeniorInteractiveBookApp
+            initialGrade={gradeNum}
+            initialChapter={cNum}
+            initialLesson={1}
+            onExit={() => navigate('/student/learning')}
+            onComplete={() => {
+              if (currentSection) {
+                markSectionDone(currentSection.id)
+              }
+              toast.success(`Congratulations! You completed Chapter ${cNum} in Senior Level AI Book!`)
             }}
           />
         </div>

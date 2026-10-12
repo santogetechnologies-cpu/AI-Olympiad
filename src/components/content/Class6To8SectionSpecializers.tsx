@@ -9,6 +9,7 @@ import { gameAudio } from '../../utils/gameAudio'
 import toast from 'react-hot-toast'
 import { AssignedImageSlot, type CanonicalSection } from './AssignedImageSlot'
 import { getCurriculumTopicProfile } from '../../services/curriculumTopicRegistry'
+import { KindergartenAnalogyCard } from '../common/KindergartenAnalogyCard'
 
 // ─────────────────────────────────────────────────────────────────────────────
 // 1. CLASS 6–8 WORKBOOK: "⚔️ Algorithm Flow Engine Sequencer" (Zero typing!)
@@ -89,6 +90,15 @@ export function Class6To8WorkbookView({
         chapterNum={chapterNum}
         sectionKey={section.id || 'worksheet'}
         position="header"
+      />
+
+      {/* 👶 Super-Simple Kindergarten Story Analogy */}
+      <KindergartenAnalogyCard
+        term={topicTitle || section.topicTitle || section.title}
+        customTitle={`👶 Kindergarten Story: ${profile.title || 'Algorithm Flow'}`}
+        customAnalogy={profile.analogy}
+        customExplanation={profile.goal || profile.hook}
+        defaultOpen={true}
       />
 
       {/* Step 1: Flow Nodes */}
@@ -401,6 +411,15 @@ export function Class6To8PracticalLabView({
         position="header"
       />
 
+      {/* 👶 Super-Simple Kindergarten Story Analogy */}
+      <KindergartenAnalogyCard
+        term={topicTitle || section.topicTitle || section.title}
+        customTitle={`👶 Kindergarten Story: ${profile.title || 'Sorter Lab'}`}
+        customAnalogy={profile.analogy}
+        customExplanation={profile.goal || profile.hook}
+        defaultOpen={true}
+      />
+
       <div className="bg-white rounded-3xl border border-slate-200 p-4 sm:p-5 shadow-sm space-y-4">
         <div className="p-4 bg-slate-900 rounded-2xl text-center space-y-3">
           <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block">
@@ -506,6 +525,15 @@ export function Class6To8AssignmentView({
         chapterNum={chapterNum}
         sectionKey={section.id || 'assignment'}
         position="header"
+      />
+
+      {/* 👶 Super-Simple Kindergarten Story Analogy */}
+      <KindergartenAnalogyCard
+        term={topicTitle || section.topicTitle || section.title}
+        customTitle={`👶 Kindergarten Story: ${profile.title || 'Mission Quest'}`}
+        customAnalogy={profile.analogy}
+        customExplanation={profile.goal || profile.hook}
+        defaultOpen={false}
       />
 
       <div className="bg-white rounded-3xl border border-slate-200 p-4 sm:p-5 shadow-sm space-y-4">
@@ -691,6 +719,15 @@ export function Class6To8MasteryQuizView({
         chapterNum={chapterNum}
         sectionKey={section.id || 'quiz'}
         position="header"
+      />
+
+      {/* 👶 Super-Simple Kindergarten Story Quiz Hint */}
+      <KindergartenAnalogyCard
+        term={topicTitle || section.topicTitle || section.title}
+        customTitle={`👶 Kindergarten Boss Clue: ${profile.title || 'Mastery Battle'}`}
+        customAnalogy={profile.analogy}
+        customExplanation={profile.goal || profile.hook}
+        defaultOpen={false}
       />
 
       {isVictory ? (

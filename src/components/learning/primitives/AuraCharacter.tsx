@@ -48,7 +48,7 @@ export const AuraCharacter: React.FC<AuraCharacterProps> = ({
   lookDirection = 'center',
   isSpeaking: externalIsSpeaking,
   message,
-  speakerName = 'Aura (AI Guide)',
+  speakerName = 'GAIO (AI Guide)',
   showSpeechBubble = false,
   showSpeaker = true,
   onActionComplete,
@@ -581,19 +581,24 @@ export const AuraCharacter: React.FC<AuraCharacterProps> = ({
             )}
           </g>
 
-          {/* ── 6. FRONT HAIR BANGS & CYBER CLIP ── */}
+          {/* ── 6. FRONT HAIR BANGS & CYBER HEADSET (GAIO MALE TECH DESIGN) ── */}
           <g className="aura-hair-front">
-            {/* Bangs */}
+            {/* Spiked Short Cyber-Boy Bangs */}
             <path
-              d="M34 46 C44 54, 52 54, 58 48 C64 54, 76 54, 86 46 C84 34, 72 28, 60 28 C48 28, 36 34, 34 46 Z"
+              d="M32 46 C38 52, 44 48, 48 42 C52 52, 60 52, 66 40 C72 52, 80 50, 88 44 C84 32, 72 26, 60 26 C48 26, 36 32, 32 46 Z"
               fill="url(#auraHair)"
             />
-            {/* Center Lock */}
-            <path d="M54 36 L62 52 L66 36" fill="#4338CA" opacity="0.7" />
+            {/* Center Angular Spikes */}
+            <path d="M52 32 L60 48 L64 32 Z" fill="#312E81" />
+            <path d="M42 34 L48 45 L50 34 Z" fill="#4338CA" />
+            <path d="M68 34 L74 46 L76 34 Z" fill="#4338CA" />
+            {/* Cyan Energy Tip Highlights */}
+            <path d="M46 44 L48 48 L50 44 Z" fill="#38BDF8" />
+            <path d="M58 46 L60 51 L62 46 Z" fill="#38BDF8" />
             {/* Hair Highlights Sheen */}
-            <path d="M42 34 Q60 28 78 34" stroke="url(#auraHairSheen)" strokeWidth="3" strokeLinecap="round" fill="none" />
-            {/* Cyan Cyber Hairpin */}
-            <polygon points="36,40 42,42 40,46 34,44" fill="#38BDF8" />
+            <path d="M38 32 Q60 26 82 32" stroke="url(#auraHairSheen)" strokeWidth="2.5" strokeLinecap="round" fill="none" />
+            {/* Cyan Cyber Tech Badge / Comm Link */}
+            <rect x="33" y="38" width="8" height="4" rx="2" fill="#06B6D4" stroke="#0891B2" strokeWidth="0.8" />
           </g>
         </g>
       </svg>

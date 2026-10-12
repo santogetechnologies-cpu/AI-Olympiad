@@ -19,7 +19,7 @@ export interface AuraGuideAvatarProps {
 export const AuraGuideAvatar: React.FC<AuraGuideAvatarProps> = ({
   mood = 'explaining',
   message,
-  speakerName = 'Aura (AI Guide)',
+  speakerName = 'GAIO (AI Guide)',
   size = 'md',
   className = '',
   showSpeaker = true,

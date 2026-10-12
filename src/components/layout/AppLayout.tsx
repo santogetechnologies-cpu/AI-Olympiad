@@ -39,6 +39,8 @@ function StudentNav(): NavItem[] {
   return [
     { label: 'Dashboard', href: '/student', icon: Home },
     { label: 'My Learning', href: '/student/learning', icon: BookOpen },
+    { label: 'Senior Olympiad', href: '/student/senior-book', icon: GraduationCap },
+    { label: 'Class 3 Book', href: '/student/book', icon: BookOpen },
     { label: 'Assignments', href: '/student/assignments', icon: FileText },
     { label: 'Quizzes', href: '/student/quizzes', icon: HelpCircle },
     { label: 'Progress', href: '/student/progress', icon: BarChart3 },

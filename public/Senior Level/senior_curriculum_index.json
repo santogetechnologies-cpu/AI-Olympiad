@@ -1,0 +1,418 @@
+{
+  "title": "Global AI Olympiad - Senior Level Curriculum (Classes 9-12)",
+  "version": "2.0-Production",
+  "authoritative_syllabus": "AI OLYMPIAD 6-MONTH CURRICULUM (Class 3 to PG)",
+  "total_grades": 4,
+  "total_chapters": 24,
+  "total_lessons": 48,
+  "classes": {
+    "Class 9": {
+      "total_chapters": 6,
+      "total_lessons": 12,
+      "chapters": [
+        {
+          "chapter_folder": "Chapter 1 - AI Basics",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - From Data to Intelligence.md",
+              "relative_path": "Class 9/Chapter 1 - AI Basics/Lesson 1 - From Data to Intelligence.md",
+              "file_size_bytes": 13028
+            },
+            {
+              "file_name": "Lesson 2 - Machines That Predict.md",
+              "relative_path": "Class 9/Chapter 1 - AI Basics/Lesson 2 - Machines That Predict.md",
+              "file_size_bytes": 12786
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 2 - Communicate with AI",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - Python in Action.md",
+              "relative_path": "Class 9/Chapter 2 - Communicate with AI/Lesson 1 - Python in Action.md",
+              "file_size_bytes": 11717
+            },
+            {
+              "file_name": "Lesson 2 - Solve It with Code.md",
+              "relative_path": "Class 9/Chapter 2 - Communicate with AI/Lesson 2 - Solve It with Code.md",
+              "file_size_bytes": 12928
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 3 - AI Applications",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - AI for Our Planet.md",
+              "relative_path": "Class 9/Chapter 3 - AI Applications/Lesson 1 - AI for Our Planet.md",
+              "file_size_bytes": 11822
+            },
+            {
+              "file_name": "Lesson 2 - AI for Public Good.md",
+              "relative_path": "Class 9/Chapter 3 - AI Applications/Lesson 2 - AI for Public Good.md",
+              "file_size_bytes": 12486
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 4 - AI and Career",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - Design Your AI Future.md",
+              "relative_path": "Class 9/Chapter 4 - AI and Career/Lesson 1 - Design Your AI Future.md",
+              "file_size_bytes": 12563
+            },
+            {
+              "file_name": "Lesson 2 - Skill-to-Career Map.md",
+              "relative_path": "Class 9/Chapter 4 - AI and Career/Lesson 2 - Skill-to-Career Map.md",
+              "file_size_bytes": 12022
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 5 - AI Tools",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - AI Research Room.md",
+              "relative_path": "Class 9/Chapter 5 - AI Tools/Lesson 1 - AI Research Room.md",
+              "file_size_bytes": 13251
+            },
+            {
+              "file_name": "Lesson 2 - AI Creator Studio.md",
+              "relative_path": "Class 9/Chapter 5 - AI Tools/Lesson 2 - AI Creator Studio.md",
+              "file_size_bytes": 13733
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 6 - Responsible AI",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - Think Before You Believe.md",
+              "relative_path": "Class 9/Chapter 6 - Responsible AI/Lesson 1 - Think Before You Believe.md",
+              "file_size_bytes": 13045
+            },
+            {
+              "file_name": "Lesson 2 - Digital Footprints & AI.md",
+              "relative_path": "Class 9/Chapter 6 - Responsible AI/Lesson 2 - Digital Footprints & AI.md",
+              "file_size_bytes": 13195
+            }
+          ]
+        }
+      ]
+    },
+    "Class 10": {
+      "total_chapters": 6,
+      "total_lessons": 12,
+      "chapters": [
+        {
+          "chapter_folder": "Chapter 1 - AI Basics",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - How AI Thinks with Data.md",
+              "relative_path": "Class 10/Chapter 1 - AI Basics/Lesson 1 - How AI Thinks with Data.md",
+              "file_size_bytes": 13064
+            },
+            {
+              "file_name": "Lesson 2 - Generative AI Uncovered.md",
+              "relative_path": "Class 10/Chapter 1 - AI Basics/Lesson 2 - Generative AI Uncovered.md",
+              "file_size_bytes": 13206
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 2 - Communicate with AI",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - AI-Assisted Coding.md",
+              "relative_path": "Class 10/Chapter 2 - Communicate with AI/Lesson 1 - AI-Assisted Coding.md",
+              "file_size_bytes": 12585
+            },
+            {
+              "file_name": "Lesson 2 - Code to Test to Improve.md",
+              "relative_path": "Class 10/Chapter 2 - Communicate with AI/Lesson 2 - Code to Test to Improve.md",
+              "file_size_bytes": 13204
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 3 - AI Applications",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - AI at Work.md",
+              "relative_path": "Class 10/Chapter 3 - AI Applications/Lesson 1 - AI at Work.md",
+              "file_size_bytes": 12945
+            },
+            {
+              "file_name": "Lesson 2 - AI Solving Real Problems.md",
+              "relative_path": "Class 10/Chapter 3 - AI Applications/Lesson 2 - AI Solving Real Problems.md",
+              "file_size_bytes": 12639
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 4 - AI and Career",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - Your Road to an AI Career.md",
+              "relative_path": "Class 10/Chapter 4 - AI and Career/Lesson 1 - Your Road to an AI Career.md",
+              "file_size_bytes": 13679
+            },
+            {
+              "file_name": "Lesson 2 - AI Skills Beyond School.md",
+              "relative_path": "Class 10/Chapter 4 - AI and Career/Lesson 2 - AI Skills Beyond School.md",
+              "file_size_bytes": 12966
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 5 - AI Tools",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - AI Productivity Booster.md",
+              "relative_path": "Class 10/Chapter 5 - AI Tools/Lesson 1 - AI Productivity Booster.md",
+              "file_size_bytes": 12730
+            },
+            {
+              "file_name": "Lesson 2 - Create Your AI Project.md",
+              "relative_path": "Class 10/Chapter 5 - AI Tools/Lesson 2 - Create Your AI Project.md",
+              "file_size_bytes": 14660
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 6 - Responsible AI",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - Original or AI-Made?.md",
+              "relative_path": "Class 10/Chapter 6 - Responsible AI/Lesson 1 - Original or AI-Made?.md",
+              "file_size_bytes": 13851
+            },
+            {
+              "file_name": "Lesson 2 - Use AI, Don't Misuse AI.md",
+              "relative_path": "Class 10/Chapter 6 - Responsible AI/Lesson 2 - Use AI, Don't Misuse AI.md",
+              "file_size_bytes": 13591
+            }
+          ]
+        }
+      ]
+    },
+    "Class 11": {
+      "total_chapters": 6,
+      "total_lessons": 12,
+      "chapters": [
+        {
+          "chapter_folder": "Chapter 1 - AI Basics",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - Inside Intelligent Machines.md",
+              "relative_path": "Class 11/Chapter 1 - AI Basics/Lesson 1 - Inside Intelligent Machines.md",
+              "file_size_bytes": 13459
+            },
+            {
+              "file_name": "Lesson 2 - Predict, Learn & Improve.md",
+              "relative_path": "Class 11/Chapter 1 - AI Basics/Lesson 2 - Predict, Learn & Improve.md",
+              "file_size_bytes": 14050
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 2 - Communicate with AI",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - Python for Smart Solutions.md",
+              "relative_path": "Class 11/Chapter 2 - Communicate with AI/Lesson 1 - Python for Smart Solutions.md",
+              "file_size_bytes": 14432
+            },
+            {
+              "file_name": "Lesson 2 - The Art of Prompting.md",
+              "relative_path": "Class 11/Chapter 2 - Communicate with AI/Lesson 2 - The Art of Prompting.md",
+              "file_size_bytes": 14648
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 3 - AI Applications",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - AI Powers Innovation.md",
+              "relative_path": "Class 11/Chapter 3 - AI Applications/Lesson 1 - AI Powers Innovation.md",
+              "file_size_bytes": 14061
+            },
+            {
+              "file_name": "Lesson 2 - AI Across Industries.md",
+              "relative_path": "Class 11/Chapter 3 - AI Applications/Lesson 2 - AI Across Industries.md",
+              "file_size_bytes": 15217
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 4 - AI and Career",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - AI Career Universe.md",
+              "relative_path": "Class 11/Chapter 4 - AI and Career/Lesson 1 - AI Career Universe.md",
+              "file_size_bytes": 13755
+            },
+            {
+              "file_name": "Lesson 2 - Create Your Career Blueprint.md",
+              "relative_path": "Class 11/Chapter 4 - AI and Career/Lesson 2 - Create Your Career Blueprint.md",
+              "file_size_bytes": 13947
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 5 - AI Tools",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - AI Research Desk.md",
+              "relative_path": "Class 11/Chapter 5 - AI Tools/Lesson 1 - AI Research Desk.md",
+              "file_size_bytes": 13695
+            },
+            {
+              "file_name": "Lesson 2 - AI Creation Studio.md",
+              "relative_path": "Class 11/Chapter 5 - AI Tools/Lesson 2 - AI Creation Studio.md",
+              "file_size_bytes": 15014
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 6 - Responsible AI",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - Fair AI Challenge.md",
+              "relative_path": "Class 11/Chapter 6 - Responsible AI/Lesson 1 - Fair AI Challenge.md",
+              "file_size_bytes": 15110
+            },
+            {
+              "file_name": "Lesson 2 - Privacy in an AI World.md",
+              "relative_path": "Class 11/Chapter 6 - Responsible AI/Lesson 2 - Privacy in an AI World.md",
+              "file_size_bytes": 14128
+            }
+          ]
+        }
+      ]
+    },
+    "Class 12": {
+      "total_chapters": 6,
+      "total_lessons": 12,
+      "chapters": [
+        {
+          "chapter_folder": "Chapter 1 - AI Basics",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - The World of Generative AI.md",
+              "relative_path": "Class 12/Chapter 1 - AI Basics/Lesson 1 - The World of Generative AI.md",
+              "file_size_bytes": 13893
+            },
+            {
+              "file_name": "Lesson 2 - Understanding LLMs.md",
+              "relative_path": "Class 12/Chapter 1 - AI Basics/Lesson 2 - Understanding LLMs.md",
+              "file_size_bytes": 15090
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 2 - Communicate with AI",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - Prompt to Plan to Produce.md",
+              "relative_path": "Class 12/Chapter 2 - Communicate with AI/Lesson 1 - Prompt to Plan to Produce.md",
+              "file_size_bytes": 15634
+            },
+            {
+              "file_name": "Lesson 2 - AI Workflow Basics.md",
+              "relative_path": "Class 12/Chapter 2 - Communicate with AI/Lesson 2 - AI Workflow Basics.md",
+              "file_size_bytes": 15704
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 3 - AI Applications",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - AI for Innovation.md",
+              "relative_path": "Class 12/Chapter 3 - AI Applications/Lesson 1 - AI for Innovation.md",
+              "file_size_bytes": 13280
+            },
+            {
+              "file_name": "Lesson 2 - AI for Enterprise.md",
+              "relative_path": "Class 12/Chapter 3 - AI Applications/Lesson 2 - AI for Enterprise.md",
+              "file_size_bytes": 16255
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 4 - AI and Career",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - Your AI Career Launchpad.md",
+              "relative_path": "Class 12/Chapter 4 - AI and Career/Lesson 1 - Your AI Career Launchpad.md",
+              "file_size_bytes": 13362
+            },
+            {
+              "file_name": "Lesson 2 - Build Your Professional Profile.md",
+              "relative_path": "Class 12/Chapter 4 - AI and Career/Lesson 2 - Build Your Professional Profile.md",
+              "file_size_bytes": 15370
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 5 - AI Tools",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - AI Assistant Lab.md",
+              "relative_path": "Class 12/Chapter 5 - AI Tools/Lesson 1 - AI Assistant Lab.md",
+              "file_size_bytes": 14172
+            },
+            {
+              "file_name": "Lesson 2 - AI Project Studio.md",
+              "relative_path": "Class 12/Chapter 5 - AI Tools/Lesson 2 - AI Project Studio.md",
+              "file_size_bytes": 15161
+            }
+          ]
+        },
+        {
+          "chapter_folder": "Chapter 6 - Responsible AI",
+          "lesson_count": 2,
+          "lessons": [
+            {
+              "file_name": "Lesson 1 - Verify Before You Trust.md",
+              "relative_path": "Class 12/Chapter 6 - Responsible AI/Lesson 1 - Verify Before You Trust.md",
+              "file_size_bytes": 16433
+            },
+            {
+              "file_name": "Lesson 2 - Humans Behind AI Decisions.md",
+              "relative_path": "Class 12/Chapter 6 - Responsible AI/Lesson 2 - Humans Behind AI Decisions.md",
+              "file_size_bytes": 17142
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

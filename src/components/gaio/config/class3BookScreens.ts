@@ -51,11 +51,5 @@ export function getStartingScreenIndexForTopic(topicNumber: number): number {
 }
 
 export function getStartingScreenIndexForChapter(chapterNumber: number): number {
-  // Chapter 1 -> Month 1 (Screen 8)
-  // Chapter 2 -> Month 2 (Screen 52)
-  // Chapter 3 -> Month 3 (Screen 96)
-  // Chapter 4 -> Month 4 (Screen 140)
-  // Chapter 5 -> Month 5 (Screen 184)
-  // Chapter 6 -> Month 6 (Screen 228)
   return getStartingScreenIndexForMonth(chapterNumber)
 }
