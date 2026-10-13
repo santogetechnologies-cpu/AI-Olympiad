@@ -1,0 +1,1204 @@
+{
+  "lessonId": "l2",
+  "title": "AI Comes Home",
+  "level": "junior",
+  "class": "class3",
+  "chapter": "ch3",
+  "mascot": "Bolt",
+  "badge": {
+    "badgeId": "badge-ch3-l2",
+    "name": "Smart Home Explorer Badge 🏡⭐",
+    "description": "Awarded for exploring Bolt's cozy smart home, mastering living room lights, understanding automatic air conditioning and food safety, discovering camera doorbells, and practicing safe household habits!",
+    "emoji": "🏡🛋️❄️🚪⚡",
+    "trophy_unlocked": "🏆 Smart Home Champion Trophy unlocked! You understand how helpful home technology works, how to save energy, and why responsible adults always make the safety decisions! 🌟🏡"
+  },
+  "introduction": {
+    "overview": "“BEEP BOOP! Welcome to my cozy smart home, little explorer! Let’s discover how helpful technology can make a home more comfortable!” 🤖⚡\n\nHello, my wonderful Class 3 friend! It is ME — BOLT, your favourite blue robot buddy with glowing sapphire eyes and a cheerful battery pack full of excitement! 🌈✨ Come on in, wipe your shoes on the welcome mat, and make yourself at home! *BEEP BOOP CHIK-CHIK!* 🚪👟\n\nThink about everything that happens inside a house every single day! 🏡\nIn the living room, you sit on the soft sofa with your family to read storybooks or watch a cheerful cartoon. 🛋️📺\nIn the kitchen, the sweet smell of warm soup fills the air while the refrigerator hums quietly to keep the milk cold and fresh. 🍲🥛\nIn the bedroom, a cozy blanket keeps you warm while a soft bedside lamp helps you drift off to sleep. 🛏️🌙\nAt the front door, a visitor rings the bell to say hello. 🚪🔔\nAnd out in the sunny backyard garden, green leafy plants drink water from the soil under the warm sunshine! 🪴🌱\n\nDid you know that some homes have special digital helpers called smart home devices? 💡📱\nSome smart lamps can change from bright sunshine light to cozy bedtime light with a gentle tap or a spoken request! 💡🌙\nSome air conditioners can notice how warm the air is and turn on gentle cooling to keep the room comfortable. ❄️🌡️\nSome video doorbells can send a picture to a parent's phone so they can see who is standing on the front porch before opening the door! 🚪📱\n\nBUT here is Bolt's very important golden rule for today:\nHOMES ARE ALL DIFFERENT AND UNIQUE! 🏡❤️\nNot every house has smart gadgets, and that is completely wonderful! An ordinary reading lamp gives wonderful bright light. An ordinary refrigerator keeps food perfectly cold. An ordinary doorbell goes *DING-DONG* loud and clear! Simple tools are super useful! And even when a home has smart gadgets, not every automatic machine uses Artificial Intelligence. Some tools use simple clocks, timers, or temperature sensors! Most important of all: technology helps people, but loving parents, grandparents, and caregivers are the true superheroes who keep our homes safe, happy, and cozy! 👩‍👧👨‍👦💖\n\nAre you ready to join Bolt on a magical room-by-room home safari? Let's step into the living room and start exploring! 🛋️✨",
+    "learningObjectives": [
+      "Understand what smart home helpers are and how they assist families in everyday household routines 🏡🤖",
+      "Explore the living room to discover smart lamps, dimming controls for bedtime, and smart TVs with adult guidance 🛋️💡📺",
+      "Investigate the kitchen and bedroom to understand automatic air conditioners, temperature control (24°C), and refrigerator safety 🍲❄️🛏️",
+      "Discover smart doorbells with cameras showing visitors like Dadi on a phone, and understand essential door-opening safety rules 🚪🔔📱",
+      "Learn about garden watering timers, soil moisture helpers, and how to save electricity and water at home 🪴💧⚡",
+      "Distinguish between ordinary machines (timers, mechanical bells) and smart devices, understanding that automatic does not always mean AI 💡⚙️",
+      "Recognize that responsible adults always make safety decisions and that children must never open doors to strangers or alter electrical settings 🛡️👨‍👩‍👧"
+    ],
+    "duration": "45-60 minutes of joyful, hands-on home discovery, room-by-room challenges, and interactive safety games! ⏱️🎉"
+  },
+  "sections": [
+    {
+      "sectionId": "section1",
+      "title": "Smart Helpers in the Living Room 🛋️📺💡",
+      "content": "BEEP BOOP! Step right into the living room — the coziest room in the whole house! 🛋️✨\nThe living room is where families gather after a busy day at school and work. It is a place for talking, playing board games, reading adventures, and relaxing together. In many modern homes, technology helps make the living room comfortable, bright, and entertaining! But how do these gadgets work, and what makes a smart helper different from an ordinary household tool? Let's inspect the living room together, explorer! 🔍🤖\n\nFIRST STOP: THE LIVING ROOM LIGHTS! 💡🛋️\nImagine you are sitting on the couch on a cloudy afternoon trying to read your favourite adventure book about baby elephants. The words on the page look dim and shadowy. In an ordinary room, you walk over to the wall, flip a mechanical plastic clicker switch, and *CLICK!* — the lightbulb turns on at full brightness. That simple switch is wonderful and reliable!\n\nNow imagine a compatible smart lamp! A smart lamp has tiny electronic circuits inside its base. It can connect wirelessly to a home Wi-Fi network, a tablet app, or a smart voice speaker. When an adult taps a button on their phone or says, 'Turn on the living room lamp,' the lamp gently glows with warm golden light! ✨\n\nEVEN COOLER: ADJUSTABLE BRIGHTNESS! 🌙💡\nHave you ever tried going to sleep while a blindingly bright white spotlight was shining right in your eyes? It is very difficult! Your eyes feel tired, and your brain thinks it is still noon! Some smart lighting systems allow people to dim the light. Dimming means making the light softer and less bright. When evening arrives and storytime begins, an adult can adjust the smart lamp to 30% brightness. The room fills with a cozy, amber glow like a gentle campfire. This softer light signals to our bodies that nighttime is approaching, helping everyone feel calm, peaceful, and ready for sweet dreams! 😴🛌\n\nIMPORTANT ACCURACY CHECK FROM BOLT:\nDoes a smart lamp magically know your bedtime all by itself? NO! 🤖❌ A smart lamp does not have eyes, ears, or magical telepathy! It does not know if you are brushing your teeth, doing homework, or getting into your pyjamas. An adult must choose the setting, schedule a bedtime timer in the app, or tap the dimming control. Smart lights follow instructions set by humans!\n\nSECOND STOP: THE SMART TELEVISION! 📺🍿\nLook over on the media table — there is the family television! An ordinary TV from years ago could only display programmes broadcast over an antenna cable. But a modern smart television is like a giant computer screen for the living room! A smart TV can connect to the internet, open supported video applications, play educational science documentaries, stream music, and even respond to voice searches when you speak into the remote control. 🎙️📺\n\nSAFETY AND FAMILY RULES WITH SMART TVS:\nSmart TVs have thousands of channels and videos. That is why Bolt has an essential rule for young learners: ALWAYS ASK A PARENT OR TRUSTED ADULT BEFORE OPENING AN APP OR WATCHING A NEW PROGRAMME! 👨‍👩‍👧🛡️ Parents know which shows are gentle, educational, and suitable for 8-year-old explorers. Also, watching TV for too many hours can make our eyes tired and stop us from playing outdoors! Balanced screen time keeps our bodies strong and our minds sharp! 🏃‍♂️🌳\n\nTHIRD STOP: SAVING ENERGY TOGETHER! ⚡🌱\nElectricity is the invisible energy that powers our lamps, televisions, and tablets. It takes energy from power stations to produce electricity. When we leave lights and TVs turned on in an empty room, that electricity goes to waste! Smart technology can help us save energy by allowing adults to turn off all lights with a single tap, or setting schedules so lights turn off when nobody is home. But you do not need smart tech to be an Energy Superhero! Whenever you leave a room, reach out your hand and flip the switch to OFF! That simple action saves precious power for our planet! 🌍💚",
+      "examples": [
+        {
+          "exampleId": "ex1",
+          "title": "Bolt's Cozy Reading Lamp 📖💡",
+          "description": "Bolt sits down on the blue armchair to read a book about friendly space satellites. The afternoon sunlight is fading, making the pages dark. Bolt uses a supported home app on his tablet to turn on the smart floor lamp. The lamp instantly glows with crisp, clear golden light, making every single word easy to read without straining Bolt's optical sensors! ✨📚",
+          "keyTakeaway": "A compatible smart lamp can be turned on using a connected app, voice helper, or wall control to provide the perfect reading light! 💡📱"
+        },
+        {
+          "exampleId": "ex2",
+          "title": "Anya's Bedtime Dimming Routine 🌙🛏️",
+          "description": "It is 8:00 PM at Anya's house. Storytime is finished, and it is time for bed. Anya's father opens the home lighting app and slides the brightness bar from 100% down to 20%. The bright living room light softens into a soothing honey-gold glow. Anya yawns happily, rubs her eyes, and hugs her teddy bear. The soft light helps her body relax and prepare for sleep! 🧸💤",
+          "keyTakeaway": "Dimming means making lights softer. Softer lighting creates a calm, cozy atmosphere that helps children unwind before bedtime! 🌙✨"
+        },
+        {
+          "exampleId": "ex3",
+          "title": "Family Science Movie Night 📺🍿",
+          "description": "On Friday evening, Kabir's family gathers on the sofa. Kabir wants to learn about sea turtles! Kabir asks his mother if they can watch a nature documentary. His mother opens the approved educational video app on their smart TV, types 'Sea Turtles in the Ocean,' and presses play. Kabir watches baby turtles scurry toward the ocean waves on the big screen! 🐢🌊",
+          "keyTakeaway": "A smart TV can run supported video applications, but children should always ask parents before opening apps or picking shows! 📺👨‍👩‍👦"
+        },
+        {
+          "exampleId": "ex4",
+          "title": "The Great Energy Saving Patrol ⚡🏃‍♂️",
+          "description": "Arjun and his little sister Maya run out to the backyard to play catch. Arjun notices that the living room ceiling light and television are still running with nobody in the room! Arjun immediately runs back inside, switches off the television remote, and turns off the lamp. Bolt cheers: 'BEEP BOOP! You just saved 100 watts of electrical power! Energy Champion!' 🌟🔌",
+          "keyTakeaway": "Switching off lamps and televisions when leaving an empty room saves electricity and protects our environment! 🌍💡"
+        },
+        {
+          "exampleId": "ex5",
+          "title": "Ordinary Lamp vs Smart Lamp Showdown 💡⚖️",
+          "description": "In the study sits Grandpa's wooden brass desk lamp. It has a simple black cord and a turn-knob switch. In the hallway stands a modern smart colour lamp. Both lamps give bright, beautiful light! But the smart lamp can change brightness levels or be controlled via a phone, while the desk lamp requires a human hand to twist the knob. Both do their main job — illuminating the room — brilliantly! 🪵✨",
+          "keyTakeaway": "Both ordinary and smart devices are super useful! Smart devices simply offer extra controls like dimming or remote switching. 💡🤝"
+        }
+      ],
+      "keyPoints": [
+        "A compatible smart lamp can be controlled through a supported switch, voice assistant, or connected phone app 💡📱",
+        "Dimming controls allow adults to make lights softer, creating a calm, relaxing environment for bedtime routines 🌙🛏️",
+        "A smart lamp does NOT magically know when a child is tired; an adult must select the setting or schedule 🤖❌",
+        "A smart TV connects to the internet to run supported applications, and children should always ask an adult before using unfamiliar apps 📺🛡️",
+        "Turning off lights and appliances in empty rooms saves electricity and helps protect our planet's energy resources ⚡🌍"
+      ],
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "The Living Room: Heart of the Household 🛋️❤️",
+          "content": "Let us walk around the living room together! Look at the comfortable sofa with its fluffy cushions. Look at the coffee table where board games sit. Look at the windows that let in morning sunshine! The living room is where people relax, talk, and share stories. When we add technology to a living room, the goal is always to make the space more welcoming, comfortable, and peaceful for the human family who lives there! Technology should never make a room feel stressful, noisy, or confusing. It is a quiet, friendly helper that serves our needs! 🛋️✨"
+        },
+        {
+          "partNumber": 2,
+          "title": "Smart Lamps and Dimmable Controls 💡🌙",
+          "content": "How does a smart lamp actually change its brightness? Inside an ordinary lightbulb, electricity flows through a wire to make it glow. In a smart lamp, tiny microchips control how much electrical power reaches the light-emitting diodes (LEDs). When an adult tells the app to dim the light to 20%, the microchip reduces the electrical flow, making the light softer and gentler. This is wonderful for bedtime stories, quiet music listening, or relaxing after dinner. But remember: dimming a light does not always save the exact same percentage of energy across every type of bulb! It simply makes the room feel cozy and peaceful. 💡🛌"
+        },
+        {
+          "partNumber": 3,
+          "title": "Smart Televisions and Connected Media 📺🌐",
+          "content": "In the past, televisions could only receive signals sent through a rooftop antenna or a thick black coaxial cable. Today, a smart television connects directly to your home's wireless Wi-Fi network! It has its own operating system, just like a tablet or smartphone. That means it can run specialized applications — such as drawing apps, music players, educational video platforms, and interactive learning games. Because a smart TV connects to the internet, it can access millions of videos from around the globe. That is why adult guidance is so important! Responsible grown-ups set family filters and choose programmes that teach, inspire, and entertain safely! 📺🛡️"
+        },
+        {
+          "partNumber": 4,
+          "title": "Ordinary vs Smart: What Really Matters? 💡⚖️",
+          "content": "Sometimes people think that older or simpler devices are not good because they are not 'smart.' But Bolt wants you to know that this is completely untrue! An ordinary desk lamp with a sturdy metal switch will work reliably for decades without ever needing a software update, a Wi-Fi password, or an internet connection! If the internet stops working during a stormy day, an ordinary lamp turns on instantly with a flick of the switch. Smart devices give us extra convenience, like changing brightness from across the room, but ordinary devices are dependable champions of everyday life! 🪵💡"
+        },
+        {
+          "partNumber": 5,
+          "title": "Energy Conservation: The Brightest Habit ⚡🌍",
+          "content": "Every time a lightbulb glows, it uses electrical energy measured in watts. If a home leaves ten bright lights shining all night long in empty hallways, living rooms, and closets, hundreds of watts of power are wasted! Power plants have to burn fuel or use clean solar and wind energy to generate that electricity. By learning to turn off the lights when leaving the living room, you are acting as an Earth Guardian! Even young children can take pride in walking through the house before bedtime and ensuring that unnecessary lights and screens are turned off. Saving power helps nature and keeps our planet green! 🌿🔋"
+        }
+      ],
+      "guidedQuestions": [
+        {
+          "questionId": "gq1",
+          "question": "What does it mean when an adult dims a smart lamp in the living room? 💡🌙",
+          "options": [
+            "It turns the lamp into a flying robot 🛸",
+            "It makes the light softer and less bright so the room feels cozy 🌙✨",
+            "It breaks the lightbulb so it never works again 💥",
+            "It paints the lamp green with watercolours 🎨"
+          ],
+          "correctAnswer": "It makes the light softer and less bright so the room feels cozy 🌙✨",
+          "explanation": "Dimming means reducing the brightness of the light so it feels soft, warm, and gentle for bedtime or resting! 💡",
+          "hint": "Think about relaxing before sleep: do you want a super-bright spotlight or a soft, gentle glow?"
+        },
+        {
+          "questionId": "gq2",
+          "question": "Does a smart lamp automatically know the exact second you are going to sleep? 🤖🤔",
+          "options": [
+            "Yes, it reads your mind through telepathy! 🧠✨",
+            "No, it does not know your feelings; an adult must set a schedule, timer, or tap the control! 📱👨‍👩‍👧",
+            "Yes, it flies into your bedroom to check your blanket 🛸",
+            "Yes, it whispers bedtime stories through the wall 🗣️"
+          ],
+          "correctAnswer": "No, it does not know your feelings; an adult must set a schedule, timer, or tap the control! 📱👨‍👩‍👧",
+          "explanation": "Smart lamps follow instructions set by humans on apps or timers; they do not know what people are feeling or doing! 💡",
+          "hint": "Remember: gadgets do not have eyes, ears, or magical powers!"
+        },
+        {
+          "questionId": "gq3",
+          "question": "What should you do before opening a new video app on a smart television? 📺👀",
+          "options": [
+            "Press every single button as fast as you can 🔘⚡",
+            "Ask a parent or trusted adult to make sure the app and show are safe and suitable 👨‍👩‍👦🛡️",
+            "Cover the TV screen with a heavy winter blanket 🧣",
+            "Unplug the TV cord and throw it out the window 🔌❌"
+          ],
+          "correctAnswer": "Ask a parent or trusted adult to make sure the app and show are safe and suitable 👨‍👩‍👦🛡️",
+          "explanation": "Always ask a grown-up before opening new apps on a smart TV so they can help you pick safe, fun shows! 📺",
+          "hint": "Who in your family helps choose good movies and shows for kids?"
+        },
+        {
+          "questionId": "gq4",
+          "question": "Why is it a great habit to turn off the living room light when you go outside to play? ⚡🌳",
+          "options": [
+            "It makes the lightbulb angry 😡",
+            "It saves electricity and helps protect our planet's energy resources! 🌍💡",
+            "It makes the couch turn into chocolate cake 🍫",
+            "It makes the clock run backwards ⏰"
+          ],
+          "correctAnswer": "It saves electricity and helps protect our planet's energy resources! 🌍💡",
+          "explanation": "Switching off unused lights prevents electricity waste and helps preserve energy for everyone! ⚡",
+          "hint": "Think about being an Earth Guardian and saving power!"
+        },
+        {
+          "questionId": "gq5",
+          "question": "How are an ordinary lamp and a smart lamp similar? 💡🤝",
+          "options": [
+            "Both lamps produce light to help us see in the dark! ✨👀",
+            "Both lamps can cook hot vegetable soup 🍲",
+            "Both lamps have wheels and drive down the street 🚗",
+            "Both lamps need a Wi-Fi password to turn on 📶"
+          ],
+          "correctAnswer": "Both lamps produce light to help us see in the dark! ✨👀",
+          "explanation": "Both types of lamps do the main job of lighting up a room! The smart lamp simply offers extra digital controls like dimming. 💡",
+          "hint": "What is the primary job of any lamp in the world?"
+        }
+      ]
+    },
+    {
+      "sectionId": "section2",
+      "title": "Smart Helpers in the Kitchen and Bedroom 🍲❄️🛏️",
+      "content": "BEEP BOOP! Follow Bolt down the hallway into two very important rooms: the buzzing kitchen and the peaceful bedroom! 🍲🛏️\nEvery home has rooms where we prepare nourishing food and rooms where we rest our bodies after an exciting day. Technology plays different roles in these spaces, from keeping milk cold to keeping the air cool and comfortable on hot summer afternoons. Let's explore how temperature controls, kitchen timers, and bedroom comforts work safely! ❄️🌡️\n\nREQUIRED REAL-LIFE EXAMPLE: THE AUTOMATIC AIR CONDITIONER ❄️🌡️🏠\nImagine a sizzling hot summer afternoon outside. The sun is beating down on the rooftops, and the temperature outdoors reaches 38°C! Inside the house, the air feels warm and sticky. \nAn adult steps up to the wall thermostat or picks up the remote control and selects an automatic cooling setting of 24°C. 🌡️❄️\nWhat happens inside the air conditioner?\n1. The air conditioner has a small temperature sensor inside it that measures how warm the room air is. 🌡️\n2. The sensor detects that the room is currently 29°C — much warmer than the target of 24°C!\n3. The cooling compressor turns on, blowing crisp, cool, refreshing air into the room through the vents. 🌬️❄️\n4. As the cool air circulates, the room gradually cools down toward 24°C.\n5. Once the sensor detects that the room has reached approximately 24°C, the cooling compressor gently turns OFF or slows down to rest! 🛑💤\n6. A few minutes later, if someone opens the back door and warm air rushes in, raising the temperature back up to 26°C, the sensor detects the warmth and turns cooling back on! 🔄❄️\n\nCRITICAL ACCURACY AND SAFETY RULES FROM BOLT:\n- DOES AUTOMATIC TEMPERATURE CONTROL MEAN THE AC USES AI? NOT NECESSARILY! 🤖❌ Simple electronic thermostats and mechanical sensors have been turning cooling on and off using basic temperature switches for decades without any Artificial Intelligence! A machine can be automatic without using AI!\n- DOES THE ROOM STAY AT EXACTLY 24°C EVERY SINGLE SECOND? NO! 🌡️ Real-world rooms fluctuate! If afternoon sunlight pours through a large window, or if someone leaves the kitchen door open, the room may warm up to 25°C or 26°C before the AC cools it down again.\n- CHILD SAFETY RULE: Children should NEVER fiddle with air conditioner settings, electrical plugs, or thermostat dials without adult permission! Grown-ups manage appliance settings safely! 🚫🔌\n\nSECOND STOP: THE KITCHEN HELPERS 🍲🧊⏰\nNow let's step into the kitchen where delicious aromas tickle Bolt's sensors! \nLook at the tall refrigerator standing by the counter. What does an ordinary refrigerator do? It circulates cold refrigerant liquid through metal coils to keep your yoghurt, milk, fruits, and vegetables chilly and fresh so they do not spoil! 🥛🍎 That is an amazing, essential job.\n\nNow look at a modern smart refrigerator! In addition to keeping food cold, a smart fridge might have a large interactive touchscreen on the front door, internal cameras that show what is on the shelves when parents are grocery shopping, or reminder apps that help track when milk is running low. But remember: BOTH fridges keep your food fresh! Not every home needs a smart fridge, and an ordinary fridge is a fantastic household champion! 🧊✨\n\nWHAT ABOUT THE KITCHEN TIMER? ⏲️🍲\nWhen Papa is baking delicious blueberry muffins in the oven, he twists a mechanical timer to 20 minutes or taps a button on a digital kitchen timer. When 20 minutes pass, the timer rings: *BEEP BEEP BEEP!* 🔔\nDoes that timer use AI? NO! ❌ It is just a clock counting down seconds! It does not taste the muffins, it does not know if they are golden brown, and it does not know what a muffin is! It simply follows a mechanical or electronic countdown. Papa is the one with the culinary wisdom who checks the oven with oven mitts! 👨‍🍳🧁\n\nKITCHEN SAFETY IS NUMBER ONE! 🔥🛑\nThe kitchen has hot gas burners, boiling soup, sharp knives, and heavy pans. Children should NEVER touch hot stoves, open hot ovens, or plug in heavy electrical appliances alone. Always let adults do the cooking and heating! Young explorers can help with safe tasks like washing lettuce leaves or setting the napkins on the dining table! 🥬🍽️\n\nTHIRD STOP: BEDROOM REST AND ALARMS 🛏️⏰🌙\nIn the bedroom, rest is the most important mission! After an adult dims the bedroom lights, you snuggle under your duvet. \nOn the bedside table sits an alarm clock set for 7:00 AM. Does an ordinary alarm clock use AI? No! It counts minutes through clockwork or quartz crystals until the hour matches 7:00 AM, then plays a cheerful chime to wake you up for school! ⏰🔔 Technology provides helpful routines, while cozy blankets and loving bedtime stories from family help us rest peacefully! 🛏️💖",
+      "examples": [
+        {
+          "exampleId": "ex1",
+          "title": "The Sizzling Summer Afternoon at 24°C ☀️❄️",
+          "description": "Outside, the summer heat reaches 36°C, and the tar on the road is hot! Inside, Maya's mother sets the living room air conditioner to 24°C. The AC hums softly, circulating chilled air until the thermometer reads near 24°C. When Maya's brother opens the front door to bring in the mail, warm air rushes in. The AC sensor notices the temperature rise and temporarily increases cooling until the room is comfortable again! 🌬️🏡",
+          "keyTakeaway": "An automatic air conditioner uses temperature sensors to turn cooling on and off, keeping the room near the chosen setting like 24°C! ❄️🌡️"
+        },
+        {
+          "exampleId": "ex2",
+          "title": "Papa's Blueberry Muffin Countdown 🧁⏲️",
+          "description": "Papa puts a tray of blueberry muffins into the oven and sets a digital magnetic timer on the fridge for 25 minutes. While the muffins bake, Papa and Kabir play a game of dominoes. Exactly 25 minutes later, the timer beeps cheerfully: *BEEP BEEP BEEP!* Papa puts on thick heat-proof oven mitts, opens the oven, and pulls out perfectly baked muffins! 🥧✨",
+          "keyTakeaway": "A kitchen timer counts down time faithfully, but it is a simple electronic clock, not an AI! Adults safely handle hot ovens. ⏲️👨‍🍳"
+        },
+        {
+          "exampleId": "ex3",
+          "title": "The Smart Refrigerator Grocery Peek 🥛📱",
+          "description": "Anya's father is at the supermarket grocery aisle wondering: 'Do we have enough eggs and milk for breakfast tomorrow?' He opens his phone and checks a photo taken by his compatible smart fridge camera before he left home. He sees two cartons of milk and a full tray of eggs! He smiles and buys crunchy green apples instead! 🍎🛒",
+          "keyTakeaway": "Some smart refrigerators have cameras or reminder apps to help adults check food supplies, but regular fridges keep food just as cold! 🧊📱"
+        },
+        {
+          "exampleId": "ex4",
+          "title": "The 7:00 AM School Alarm Chime ⏰🔔",
+          "description": "Arjun has an ordinary digital clock on his wooden bedside shelf. Before sleeping, he makes sure the alarm is toggled ON for 7:00 AM. At 7:00 AM sharp, the clock sounds a friendly rhythmic chime. Arjun sits up, stretches his arms, and greets the morning sun! The clock followed its internal quartz timer without needing internet or AI! 🌅🛏️",
+          "keyTakeaway": "An ordinary alarm clock follows a simple timer schedule to wake us up; automatic timekeeping does not require AI! ⏰☀️"
+        },
+        {
+          "exampleId": "ex5",
+          "title": "Kitchen Safety: The No-Touch Stove Zone 🔥🛑",
+          "description": "Kabir smells delicious tomato soup bubbling on the kitchen stove. The red stove burner is glowing hot. Kabir knows the golden safety rule: he steps two big paces back and tells his grandmother: 'Dadi, the soup is bubbling!' Dadi smiles, uses a wooden spoon to stir the soup, and turns down the flame. Kabir helped by being observant while staying safe! 🍲👵",
+          "keyTakeaway": "Children should never touch hot stoves, ovens, or electrical plugs; always alert an adult to handle hot cookware! 🛑👨‍👩‍👧"
+        }
+      ],
+      "keyPoints": [
+        "An automatic air conditioner uses temperature sensors to help keep a room near an adult's chosen setting, such as 24°C ❄️🌡️",
+        "Automatic temperature control turns cooling on and off as needed, but this does not automatically mean the device uses AI 🤖❌",
+        "Actual room temperature fluctuates when doors open or sunlight shifts; no room stays at the exact decimal temperature every second 🌡️🚪",
+        "Kitchen timers count down minutes using simple electronic or mechanical clocks, not Artificial Intelligence ⏲️🧁",
+        "Children must never touch hot stoves, ovens, or electrical appliance settings without adult permission and supervision 🔥🛡️"
+      ],
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "How Temperature Sensors Work 🌡️❄️",
+          "content": "Have you ever wondered how an air conditioner 'feels' whether a room is hot or cold? Inside the unit is a component called a thermistor or temperature sensor. When air passes over the sensor, the electrical resistance of the material changes depending on how warm the air is. The computer circuit reads this signal and compares it to the target number set by the adult — like 24°C! If the room air is warmer than 24°C, the cooling unit starts up. If the room air reaches 24°C, the cooling unit shuts down. It is a wonderful feedback loop that keeps our homes pleasant during scorching heat waves! 🌬️❄️"
+        },
+        {
+          "partNumber": 2,
+          "title": "The Difference Between Automatic and AI 🤖⚙️",
+          "content": "This is one of the most important lessons in computer science for young minds! Many machines in our world are AUTOMATIC. That means they do an action by themselves when a trigger occurs. A toaster pops up toast when its timer finishes. A flush valve releases water when a lever is pulled. An air conditioner turns on cooling when the temperature rises above 24°C. These machines follow FIXED, RIGID RULES created by mechanical springs or simple microchips. They do not learn, they do not recognize patterns, and they do not use AI! AI systems, on the other hand, learn from examples and handle complex patterns like human speech. Knowing this difference makes you a super-smart tech detective! 🔍💡"
+        },
+        {
+          "partNumber": 3,
+          "title": "The Heart of the Kitchen: Food Preservation 🧊🥛",
+          "content": "Why do we keep milk, yoghurt, cheese, and vegetables inside a refrigerator? Bacteria and microbes love warm environments. In warm air, milk can turn sour in just a few hours! But inside a refrigerator, where the temperature is kept around 4°C, cold temperatures slow down bacteria completely. Food stays delicious, crisp, and safe to eat for days! An ordinary refrigerator does this job with 100% excellence. Some smart fridges add extra perks, like digital shopping lists or door screens, but the real hero is the cooling system that protects our food and keeps our families healthy! 🥦🍎"
+        },
+        {
+          "partNumber": 4,
+          "title": "Kitchen Safety: Where Technology Meets Responsibility 🛑👩‍🍳",
+          "content": "Kitchens are wonderful workshops of flavour, but they also contain high heat and electrical energy. Toasters have glowing red heating wires. Microwaves generate intense radio waves. Stoves burn with hot blue flames or glowing induction coils. Because children's skin is delicate and accidents can happen quickly, safety rules are absolute: never reach over a stove, never stick forks into toasters, and never touch electrical cords with wet hands. Technology is a tool that requires respect and adult supervision at all times! 🚸🔌"
+        },
+        {
+          "partNumber": 5,
+          "title": "Bedtime Comfort: Creating Restful Spaces 🛏️🌙",
+          "content": "Our bodies grow and heal while we sleep! For an 8-year-old child, getting 9 to 10 hours of peaceful rest every night is essential for brain development, memory, and physical energy. Bedroom helpers support this rest: a thermostat keeps the air at a pleasant temperature so you do not sweat or shiver, a dimmable bedside lamp creates a tranquil mood for a bedtime story, and an alarm clock ensures you wake up refreshed for tomorrow's adventures. Technology helps set the stage, but cozy blankets and a calm mind bring the sweetest dreams! 😴⭐"
+        }
+      ],
+      "guidedQuestions": [
+        {
+          "questionId": "gq1",
+          "question": "When an adult sets an automatic air conditioner to 24°C, what does the unit do? ❄️🌡️",
+          "options": [
+            "It turns the room into an Antarctic glacier with real penguins 🐧",
+            "It uses temperature sensors to turn cooling on and off to keep the room near 24°C 🌬️✨",
+            "It blows hot steam and bakes a pizza 🍕",
+            "It plays loud rock music through the vents 🎸"
+          ],
+          "correctAnswer": "It uses temperature sensors to turn cooling on and off to keep the room near 24°C 🌬️✨",
+          "explanation": "The AC measures the room air and turns cooling on when it gets too warm, then turns off when it reaches approximately 24°C! ❄️",
+          "hint": "Think about how cooling turns on when it is hot and rests when it is comfortable!"
+        },
+        {
+          "questionId": "gq2",
+          "question": "Does an air conditioner with automatic temperature control always use AI? 🤖🤔",
+          "options": [
+            "Yes, every single air conditioner is a super-genius AI robot! 🤖",
+            "No! Automatic temperature switches and thermostats have worked without AI for decades! ⚙️🌡️",
+            "Yes, the AC reads books when you are asleep 📚",
+            "Yes, the AC has feelings and gets happy when it cools ❄️"
+          ],
+          "correctAnswer": "No! Automatic temperature switches and thermostats have worked without AI for decades! ⚙️🌡️",
+          "explanation": "Automatic temperature control relies on simple sensors and switches; it does not necessarily use Artificial Intelligence! 💡",
+          "hint": "Remember the difference between a simple automatic switch and smart learning!"
+        },
+        {
+          "questionId": "gq3",
+          "question": "Why might a room set to 24°C temporarily warm up to 26°C? 🚪☀️",
+          "options": [
+            "Because a dragon flew into the living room 🐉",
+            "Because someone opened an outside door or afternoon sunlight streamed through the window! 🚪☀️",
+            "Because the walls decided to take a walk 🧱",
+            "Because the refrigerator turned upside down 🙃"
+          ],
+          "correctAnswer": "Because someone opened an outside door or afternoon sunlight streamed through the window! 🚪☀️",
+          "explanation": "Real-world rooms change temperature when doors open or sunlight enters, so the temperature fluctuates naturally! 🌡️",
+          "hint": "What happens on a hot day when you open the front door?"
+        },
+        {
+          "questionId": "gq4",
+          "question": "How does a digital kitchen timer know when muffins are finished baking? 🧁⏲️",
+          "options": [
+            "It smells the blueberry aroma through a tiny robot nose 👃",
+            "It simply counts down the minutes set by the adult; it does not know what a muffin is! ⏱️👨‍🍳",
+            "It takes a bite of the muffin to check if it is soft 😋",
+            "It calls the bakery on the telephone 📞"
+          ],
+          "correctAnswer": "It simply counts down the minutes set by the adult; it does not know what a muffin is! ⏱️👨‍🍳",
+          "explanation": "A timer is an electronic clock that counts down time; it has no AI, no senses, and simply beeps when the time runs out! ⏲️",
+          "hint": "Does a plastic clock know what food is inside the oven?"
+        },
+        {
+          "questionId": "gq5",
+          "question": "What is the most important safety rule for children regarding hot stoves and ovens? 🔥🛑",
+          "options": [
+            "Touch the red glowing burner to see if it is warm ✋❌",
+            "Never touch hot stoves, ovens, or plugs; always let responsible adults handle cooking and heating! 👨‍👩‍👧🛡️",
+            "Spray water on electrical plugs to clean them 🚿❌",
+            "Open the hot oven door wearing shorts and sandals 🩳"
+          ],
+          "correctAnswer": "Never touch hot stoves, ovens, or plugs; always let responsible adults handle cooking and heating! 👨‍👩‍👧🛡️",
+          "explanation": "Stoves and ovens get extremely hot; children must stay safe and let grown-ups manage cooking appliances! 🔥",
+          "hint": "Who should always handle the hot pots and pans in your kitchen?"
+        }
+      ]
+    },
+    {
+      "sectionId": "section3",
+      "title": "Smart Doors, Doorbells, and Gardens 🚪🔔🪴",
+      "content": "BEEP BOOP! Now let us walk to the boundary where our cozy home meets the outside world: the front entrance, the doorbell, and the green backyard garden! 🚪🔔🪴\nThe front door is the protective shield of our home. It keeps us safe, dry, and warm inside. In recent years, remarkable new technologies have been created to help families notice visitors and manage their homes. Outside in the garden, innovative tools help care for green plants and flowers. But every tool requires human wisdom, careful safety habits, and responsible decisions! Let's explore together! 🔍🏡\n\nREQUIRED REAL-LIFE EXAMPLE: THE SMART DOORBELL AND DADI'S VISIT 🚪🔔👵\nImagine it is a sunny Saturday afternoon. You are sitting at the dining table drawing a colourful picture of Bolt dancing with a giraffe. \nSuddenly, the front doorbell rings: *CHIME-CHIME!* 🔔🎶\nOutside on the front porch stands DADI — your beloved grandmother who has arrived with a basket of fresh homemade mango sweets! 🥭👵\n\nWhat happens when a home has a compatible smart doorbell?\n1. Inside the doorbell unit mounted beside the door frame is a tiny digital video camera, microphone, and wireless transmitter. 📷🎙️\n2. When Dadi presses the button, the smart doorbell instantly chimes and sends a high-definition video alert to Papa's connected smartphone! 📱✨\n3. Papa picks up his phone, unlocks the screen, and sees a live colour video feed of Dadi smiling on the porch and waving her basket of sweets! 👵👋\n4. Papa speaks through the phone: 'Hello Ma! We are right here!' Then Papa walks to the front door, unlocks the deadbolt, and opens the door wide to welcome Dadi with a giant hug! 💖🤗\n\nCRITICAL DOOR SAFETY RULES FOR ALL CHILDREN: 🚨🛡️\nBolt wants you to listen with all your robot ears to these life-saving rules:\n- RULE 1: NEVER OPEN THE FRONT DOOR ALONE! 🛑🚪 Even if you look through the window or see on a screen that it is your friend, a delivery driver, or your grandmother, ALWAYS tell a parent or trusted adult first! Let the grown-up unlock and open the door.\n- RULE 2: A CAMERA SCREEN DOES NOT PROVE A VISITOR IS SAFE! 📷❌ A camera simply shows an image of who is standing outside. It does not replace the judgment, caution, and protection of an adult family member.\n- RULE 3: NEVER OPEN THE DOOR FOR STRANGERS! 🚫👤 If an unfamiliar person knocks or rings, stay inside, keep the door locked, and alert a parent immediately.\n- RULE 4: NOT EVERY DOORBELL HAS A CAMERA OR PHONE APP! 🔔 An ordinary doorbell is a simple electrical buzzer that rings a chime inside the hallway. It has no camera, no internet, and no AI — and it has kept homes notified for over a hundred years! Both kinds of doorbells do their job of signaling a visitor.\n\nSECOND STOP: THE BACKYARD GARDEN HELPERS 🪴🌱💧\nStep through the back sliding glass door into the fresh outdoor air! Smell the moist soil, green grass, and blooming jasmine flowers! 🌸🌿\nPlants are living beings that need sunshine, healthy soil, and clean water to thrive. But how do people ensure plants get the right amount of water without wasting a single drop?\n\nEXAMPLE 1: THE TIMER-CONTROLLED WATERING SYSTEM ⏲️🚿\nLook near the garden hose faucet. Many gardens have a drip irrigation hose connected to a simple battery-powered watering timer. At 6:00 AM every morning before the sun gets too hot, the timer valve opens automatically for 10 minutes, letting water gently trickle to the roots of the tomato plants. 🍅💧\nDoes that garden timer use AI? NO! ❌ It is a mechanical clock with a small motorized valve! It does not know if it rained heavily during the night; it simply turns on when the clock strikes 6:00 AM! If it rained all night, a thoughtful human should switch the timer off to save water! 🌧️🛑\n\nEXAMPLE 2: SMART SOIL MOISTURE SENSORS 🌱💧📡\nIn some advanced gardens, gardeners push a smart sensor probe down into the soil near delicate rose bushes. The sensor measures how damp the soil is and transmits the reading to an app. If the soil is already damp from yesterday's rain, the app displays: 'Soil is moist — no watering needed today!' 📱👍\nThis helps families save precious water and prevents plant roots from drowning in soggy mud! But remember: sensors can get dirty or lose battery power. A caring human gardener who touches the soil with their fingers to feel the moisture is always the best plant caretaker! 🧤🌱\n\nSAVING WATER: EVERY DROP IS SACRED! 💧🌍\nClean drinking water is one of the most valuable resources on planet Earth. Whether watering plants, brushing our teeth, or washing dishes, we must never leave hoses or taps running needlessly. Smart timers help, but our daily mindful habits protect our world's rivers and reservoirs! 🌊💙",
+      "examples": [
+        {
+          "exampleId": "ex1",
+          "title": "Dadi's Arrival and the Smart Video Doorbell 👵🚪📱",
+          "description": "Dadi presses the button on the smart doorbell. Inside, Papa's phone chimes and displays a live video of Dadi holding a warm casserole dish of halwa. Papa checks the screen, smiles, and says: 'Dadi is here!' Papa walks to the door, unlocks it, and lets Dadi in with a warm greeting. Anya gave Dadi a giant hug while remembering that Papa opened the door safely! 🍯💖",
+          "keyTakeaway": "A smart doorbell can show a live video of visitors on a connected phone, but responsible adults must always decide when to open the door! 🚪📱"
+        },
+        {
+          "exampleId": "ex2",
+          "title": "The Mysterious Delivery Parcel 📦👤",
+          "description": "A delivery courier rings the doorbell while Kabir is in the hallway. Kabir looks through the front door peephole and sees a delivery uniform. Kabir does NOT open the door! Instead, Kabir calls out: 'Mummy, someone is at the door with a box!' Mummy comes to the door, checks through the window, and opens the door safely. Kabir followed the golden safety rule perfectly! 🛡️⭐",
+          "keyTakeaway": "Never open the door alone, even for delivery workers or people in uniforms; always call a grown-up to handle the entrance! 🛑👨‍👩‍👧"
+        },
+        {
+          "exampleId": "ex3",
+          "title": "Grandpa's Classic Ding-Dong Chime 🔔🪵",
+          "description": "At Grandpa's house, the doorbell is a classic mechanical brass chime from 1985. When the postman presses the front button, a small metal hammer strikes two chimes: *DING-DONG!* It has no lens, no Wi-Fi chip, and no smartphone connection. Grandpa looks through the clear hallway window to see who has arrived. It is completely reliable and works every single day! 🔔👍",
+          "keyTakeaway": "An ordinary doorbell is a simple electric bell that rings a chime without cameras or AI; both simple and smart bells notify us of visitors! 🔔🤝"
+        },
+        {
+          "exampleId": "ex4",
+          "title": "The Rainy Morning Garden Timer 🌧️🪴",
+          "description": "A heavy thunderstorm drenches the garden all night long. In the morning, Maya notices the garden soil is already soaked like a wet sponge. Maya reminds her father: 'Papa, the garden has plenty of rain!' Her father taps the pause button on the garden watering timer so the sprinklers do not run unnecessarily. Maya's observation saved 50 litres of clean water! 💧🌿",
+          "keyTakeaway": "Garden timers follow set schedules regardless of weather; mindful humans must check the soil and turn off timers to save water after rain! 🌧️🛑"
+        },
+        {
+          "exampleId": "ex5",
+          "title": "The Smart Soil Moisture Probe 🌱📡",
+          "description": "Arjun helps his mother insert a green soil probe into their potted fern. The probe measures moisture in the potting soil and sends a message to their tablet: 'Moisture level 85% — fern is happy and hydrated!' Arjun smiles and leaves the watering can on the shelf. The smart sensor helped them avoid over-watering the delicate leaves! 🪴📱",
+          "keyTakeaway": "Smart soil sensors can measure moisture levels to help families decide when plants need water, preventing water waste and plant damage! 🌱💧"
+        },
+        {
+          "exampleId": "ex6",
+          "title": "Mindful Water Savers in Action 🚿🌊",
+          "description": "While brushing his teeth before school, Kabir turns off the bathroom tap instead of letting clean water gush down the drain. Then, in the garden, he uses leftover rinse water from the vegetable bowl to water the flower bed. Bolt awards Kabir a Sparkling Water Droplet Badge: 'BEEP BOOP! You saved 10 litres of water today! Planet Hero!' 🌟💧",
+          "keyTakeaway": "Conserving water through mindful everyday actions is a wonderful habit that protects our rivers, lakes, and communities! 🌍💧"
+        }
+      ],
+      "keyPoints": [
+        "A compatible smart doorbell uses a small camera to show a picture or live video of visitors on an adult's connected smartphone 🚪📱",
+        "A video camera screen does not prove a visitor is safe; children must NEVER open the front door alone, even for people they recognize 🛑🛡️",
+        "Always follow family safety rules and ask a trusted adult to check the door and decide whether it is safe to open 👨‍👩‍👧🔑",
+        "Not every doorbell has a camera or internet connection; ordinary doorbells ring a loud chime using simple electrical circuits 🔔⚡",
+        "Garden watering timers and smart soil sensors help care for plants and save water, but human gardeners must inspect plants thoughtfully 🪴💧"
+      ],
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "The Front Porch: Welcome Mat and Security 🚪🏠",
+          "content": "The front porch is the threshold between the safe sanctuary of our home and the public neighbourhood. When people arrive at our home, they ring the doorbell to request permission to enter. For generations, people used brass door knockers, mechanical bells, or peepholes in the door to see who was outside. Today, smart video doorbells add a digital eye to the doorframe! When a visitor presses the button, an alert rings inside the house and streams video to a phone. This allows parents to see delivery packages, welcome friends, or speak to visitors through two-way audio. But the physical front door remains locked until an adult decides to open it! 🚪🔑"
+        },
+        {
+          "partNumber": 2,
+          "title": "The Golden Door Safety Rules 🚨🛑",
+          "content": "Why is Bolt so passionate about door safety? Because keeping children safe is the number one priority of every family and community! Sometimes, when the doorbell rings, children get so excited they run straight to the door, turn the handle, and yank it open. That can be very dangerous! A child should NEVER open the door alone. Even if the visitor looks like a friendly neighbour, a mail carrier, or someone delivering a pizza, the rule remains identical: step back, find an adult, and let the grown-up handle the door. Doorbell cameras are helpful tools for grown-ups, not permission slips for kids to open doors! 🛡️👨‍👩‍👦"
+        },
+        {
+          "partNumber": 3,
+          "title": "Ordinary Doorbells: Simple, Sturdy, and Reliable 🔔⚙️",
+          "content": "Let us celebrate the ordinary doorbell! How does an ordinary doorbell work? When someone presses the round plastic button on the porch, it closes an electrical circuit. Electricity flows through a wire to an electromagnet inside the hallway chime box. The electromagnet pulls a small spring-loaded metal pin that strikes a tuned metal bar: *DING!* When the button is released, the spring bounces back and strikes a second metal bar: *DONG!* That is pure physics and electrical engineering working without a single line of code, without Wi-Fi, and without AI! It is reliable, sturdy, and never needs recharging! 🔔✨"
+        },
+        {
+          "partNumber": 4,
+          "title": "Watering the Garden: Timers vs Nature 🪴🌧️",
+          "content": "Plants drink water through their roots to carry nutrients up to their green leaves, where they use sunlight to make food. In hot weather, garden soil dries out quickly. Watering timers help families by turning on sprinklers at dawn or dusk when evaporation is low. However, timers are blind to the weather! A timer will happily turn on the sprinklers during a raging rainstorm unless an observant human turns it off or a smart weather sensor pauses the schedule. This teaches us an essential truth about technology: automatic gadgets need human guidance to work wisely! 🌿💧"
+        },
+        {
+          "partNumber": 5,
+          "title": "Caring for Plants and Conserving Resources 🌸🌍",
+          "content": "Every living thing in our home ecosystem deserves care and respect. Plants clean our indoor air, produce oxygen, and bring beauty to our living spaces. Caring for plants teaches us patience, responsibility, and ecology. By pairing smart tools like soil moisture probes with hands-on love and careful water conservation, we create a healthy green haven in our backyards and balconies. Saving water, turning off unused lights, and making safe choices are the marks of a true Smart Home Explorer! 🪴🌟"
+        }
+      ],
+      "guidedQuestions": [
+        {
+          "questionId": "gq1",
+          "question": "When Dadi rings the smart doorbell, how can an adult see who is at the door? 👵🚪📱",
+          "options": [
+            "Through a tiny camera in the smart doorbell that sends video to a connected phone 📱✨",
+            "Through a crystal ball on the kitchen table 🔮",
+            "By asking a parrot to fly outside and look 🦜",
+            "Through a telescope pointed at the moon 🌙"
+          ],
+          "correctAnswer": "Through a tiny camera in the smart doorbell that sends video to a connected phone 📱✨",
+          "explanation": "A smart doorbell has a camera that transmits a live picture or video of the visitor to an adult's smartphone! 📱",
+          "hint": "Which device has a screen that shows pictures and receives notifications?"
+        },
+        {
+          "questionId": "gq2",
+          "question": "What should you do if the doorbell rings while you are in the hallway? 🚪👀",
+          "options": [
+            "Yank the door open immediately without looking 🚪💨",
+            "Ask a trusted adult to check the door and decide whether it is safe to open! 👨‍👩‍👧🛡️",
+            "Hide inside a laundry basket and scream 🧺",
+            "Invite everyone on the street into the living room 📢"
+          ],
+          "correctAnswer": "Ask a trusted adult to check the door and decide whether it is safe to open! 👨‍👩‍👧🛡️",
+          "explanation": "Never open the door alone! Always call a parent or trusted adult to check who is outside and make the safe choice. 🛑",
+          "hint": "Remember Bolt's golden rule: grown-ups always manage the front door!"
+        },
+        {
+          "questionId": "gq3",
+          "question": "Does an ordinary hallway doorbell that goes 'DING-DONG' use Artificial Intelligence? 🔔🤔",
+          "options": [
+            "Yes, it has a robot brain inside the chime box 🤖",
+            "No, it uses simple electrical circuits and metal chimes without cameras or AI! ⚙️🔔",
+            "Yes, it writes poems about visitors 📜",
+            "Yes, it recognizes faces with a laser beam 🎯"
+          ],
+          "correctAnswer": "No, it uses simple electrical circuits and metal chimes without cameras or AI! ⚙️🔔",
+          "explanation": "An ordinary doorbell is a simple electrical chime; it does not have cameras, internet, or Artificial Intelligence! 🔔",
+          "hint": "Does a simple mechanical chime have a computer brain?"
+        },
+        {
+          "questionId": "gq4",
+          "question": "If it rains heavily all night, what should an observant human do with the garden watering timer? 🌧️🪴",
+          "options": [
+            "Turn on extra hoses to flood the garden like an ocean 🌊",
+            "Pause or switch off the watering timer because the soil is already soaked with rainwater! 🛑💧",
+            "Bury the timer in the mud 泥",
+            "Throw the timer into the neighbour's yard 🏡"
+          ],
+          "correctAnswer": "Pause or switch off the watering timer because the soil is already soaked with rainwater! 🛑💧",
+          "explanation": "When rain drenches the soil, plants have plenty of water! Pausing the timer saves valuable water. 🌧️🌿",
+          "hint": "Do plants need extra tap water if nature just gave them a giant rain shower?"
+        },
+        {
+          "questionId": "gq5",
+          "question": "How does a smart soil moisture probe help families take care of plants? 🌱📱",
+          "options": [
+            "It turns the plant leaves into potato chips 🥔",
+            "It measures how damp the soil is to help people decide if the plant needs watering! 💧🪴",
+            "It sings lullabies to make the flowers grow faster 🎵",
+            "It pulls weeds out of the ground using robot arms 🦾"
+          ],
+          "correctAnswer": "It measures how damp the soil is to help people decide if the plant needs watering! 💧🪴",
+          "explanation": "Soil moisture probes measure dampness in the dirt so gardeners know whether to water or wait, preventing overwatering! 🌱",
+          "hint": "What does a moisture probe measure in the soil?"
+        }
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "activityId": "activity1",
+      "title": "Decorate Bolt's Cozy Smart Room 🛋️",
+      "description": "BEEP BOOP! Welcome to the MAIN EVENT of Chapter 3, Lesson 2: DECORATE BOLT'S COZY SMART ROOM! 🛋️🏡🎮✨\n\nIn this delightful simulation activity, YOU are Bolt's Lead Home Explorer and Safety Champion! \nBolt's tablet displays a cozy, customizable smart room with different areas:\n- The Living Room reading corner with a soft armchair and lamp 🛋️💡\n- The Entertainment wall with a family television 📺🍿\n- The Climate comfort zone with an air conditioner thermostat ❄️🌡️\n- The Kitchen snack bar with a refrigerator and oven timer 🍲🧊⏰\n- The Front entrance door with a video camera doorbell 🚪🔔📱\n- The Sunny backyard garden patch with flowers and watering hoses 🪴🌱💧\n\nYOUR MISSION, EXPLORER:\nBolt needs your sharp thinking to choose the right devices for each household situation, practice energy and water saving, distinguish between smart tools and ordinary mechanical helpers, and master essential home safety rules! \n\nRemember Bolt's golden rules:\n- Always ask a grown-up before opening the front door or touching appliance settings! 🛑👨‍👩‍👧\n- Dimming lights creates calm bedtime relaxation! 🌙💡\n- Automatic devices like air conditioners and timers are helpful, but they don't always use AI! ⚙️🤖\n- Saving electricity and water makes you an Earth Superhero! 🌍⚡💧\n\nScore 5 correct challenges in a row to earn your Smart Home Streak! Complete all 18 challenges to unlock the GRAND CHAMPION SMART HOME TROPHY! 🏆🎉",
+      "instructions": [
+        "1. Examine the room scenario and household situation on screen carefully 👀🏡",
+        "2. Identify the matching helper, safe action, or smart device for the situation 🛋️💡",
+        "3. Choose the safe, smart, and energy-conscious choice for each household scenario 🟢",
+        "4. Tap your answer to submit and see Bolt's cheerful reaction! 👆✨",
+        "5. Watch Bolt celebrate with warm golden light beams, friendly chime sounds, and confetti! 💡🎉",
+        "6. If you pick the wrong choice, read Bolt's gentle guidance and try again! 💡",
+        "7. Score 5 correct in a row to unlock the Cozy Home Streak Bonus! 🔥",
+        "8. Finish all 18 challenges to earn the Grand Champion Smart Home Badge! 🏆🌟"
+      ],
+      "materials": [
+        "Interactive Room Explorer simulation screen 📱💻",
+        "Virtual Smart Lamp with dimming brightness slider 💡🌙",
+        "Virtual Air Conditioner with 24°C temperature controls ❄️🌡️",
+        "Virtual Smart Video Doorbell with phone notification screen 🚪🔔📱",
+        "Virtual Kitchen Refrigerator and Oven Timer 🍲🧊⏲️",
+        "Virtual Garden Soil Moisture Sensor and Water Hose 🪴💧🌱",
+        "Bolt's Golden Smart Home Explorer Star Tokens ⭐🏅"
+      ],
+      "duration": "20-25 minutes of interactive room design, smart-sorting games, and home safety practice! ⏱️🎉",
+      "toastMessages": {
+        "tap_prompt": "👇 Tap the smart lamp to turn on cozy golden light!",
+        "great_job": "💡 CLICK! The room is cozy and warm! Energy saved!",
+        "try_again": "🚪 Try tapping the smart doorbell with the camera!",
+        "streak_bonus": "🔥 5 IN A ROW! Bolt's circuits are dancing! Smart Home Streak UNLOCKED! 🌟🏡",
+        "perfect_score": "🏆 GRAND CHAMPION SMART HOME EXPLORER! You mastered home tech, energy saving, and door safety! BEEP BOOP! 🎊🛋️"
+      },
+      "sortingItems": [
+        {
+          "itemId": "task1",
+          "name": "Challenge A: Turn On the Smart Lamp 💡🛋️",
+          "emoji": "💡",
+          "category": "living_room",
+          "categoryLabel": "Living Room Helpers 🛋️",
+          "isCorrect": true,
+          "description": "Bolt is sitting in the living room trying to read an adventure storybook, but the room is getting dark as evening approaches. Look at the room containing a smart lamp, a television, a sofa, and a plant.",
+          "question": "Which device in the living room can help make the room brighter for reading storybooks?",
+          "options": [
+            "The green leafy potted plant 🪴",
+            "The compatible smart lamp with adjustable light 💡✨",
+            "The wooden coffee table 🪵",
+            "The fluffy living room rug 🧶"
+          ],
+          "correctAnswer": "The compatible smart lamp with adjustable light 💡✨",
+          "explanation": "The smart lamp illuminates the reading corner with clear, comfortable light so you can read without straining your eyes! 💡",
+          "hint": "Which object glows and provides light when switched on?",
+          "positiveFeedback": "💡 CLICK! The room is cozy and warm! Energy saved! Perfect choice!",
+          "tryAgainFeedback": "👇 Tap the smart lamp to turn on cozy golden light!",
+          "boltEncouragement": "BEEP BOOP! Brilliant! Now our reading corner is filled with bright, warm sunshine light! 📖⚡"
+        },
+        {
+          "itemId": "task2",
+          "name": "Challenge B: Bedtime Lights — Softer Settings 🌙🛏️",
+          "emoji": "🌙",
+          "category": "bedroom_routine",
+          "categoryLabel": "Bedtime Routines 🛏️",
+          "isCorrect": true,
+          "description": "It is 8:30 PM and storytime is over. An adult wants to help everyone in the house relax and get ready for a deep, restful sleep.",
+          "question": "What can a compatible smart lamp do when an adult selects a softer light setting on the app?",
+          "options": [
+            "It can play loud drum solos all night long 🥁",
+            "It can dim the brightness to make the room softer and less bright for bedtime 🌙✨",
+            "It can launch into the sky like a rocket 🚀",
+            "It can spray cold water across the carpet 🚿"
+          ],
+          "correctAnswer": "It can dim the brightness to make the room softer and less bright for bedtime 🌙✨",
+          "explanation": "Dimming makes the light gentler and softer, which creates a peaceful atmosphere that helps our eyes and brains prepare for sleep! 😴",
+          "hint": "Think about making light less bright so it feels soothing!",
+          "positiveFeedback": "🌙 Ahhh! The soft golden glow makes everyone feel calm and sleepy! Wonderful answer!",
+          "tryAgainFeedback": "💡 Remember: dimming means making the light softer and less bright!",
+          "boltEncouragement": "BEEP BOOP! So cozy! Bolt's optical sensors are entering night-mode relaxation! 💤⚡"
+        },
+        {
+          "itemId": "task3",
+          "name": "Challenge C: Keep the Room Comfortable (Air Conditioner 24°C) ❄️🌡️",
+          "emoji": "❄️",
+          "category": "climate_comfort",
+          "categoryLabel": "Room Comfort & Climate ❄️",
+          "isCorrect": true,
+          "description": "Outside, the summer sun is scorching hot at 37°C. Inside, an adult has set the room's automatic air conditioner to a comfortable 24°C.",
+          "question": "Which household device helps keep the room near the selected comfortable temperature of 24°C?",
+          "options": [
+            "The metal toaster on the kitchen counter 🍞",
+            "The air conditioner with automatic temperature control ❄️🌡️",
+            "The wooden coat hanger near the hallway 🧥",
+            "The wall mirror in the bathroom 🪞"
+          ],
+          "correctAnswer": "The air conditioner with automatic temperature control ❄️🌡️",
+          "explanation": "The automatic air conditioner uses temperature sensors to cycle cooling on and off, keeping the room near 24°C! ❄️",
+          "hint": "Which device blows cool, refreshing air into a hot room?",
+          "positiveFeedback": "❄️ BRRR! The air conditioner cools the room down to a lovely, fresh 24°C! Super job!",
+          "tryAgainFeedback": "🌡️ Look for the appliance that controls room temperature and cooling!",
+          "boltEncouragement": "BEEP BOOP! Cool and refreshing! Bolt's cooling fan is spinning with joy! 🌬️⚡"
+        },
+        {
+          "itemId": "task4",
+          "name": "Challenge D: Who Is at the Door? (Dadi's Visit) 🚪🔔👵",
+          "emoji": "🚪",
+          "category": "door_safety",
+          "categoryLabel": "Door & Home Safety 🛡️",
+          "isCorrect": true,
+          "description": "The doorbell chimes: *CHIME-CHIME!* Through the smart doorbell screen, you see your sweet grandmother Dadi standing on the porch holding a tin of sweets.",
+          "question": "What is the correct, safe action for a child to take when the doorbell rings?",
+          "options": [
+            "Unlock the deadbolt immediately and open the door wide alone 🚪💨",
+            "Follow family rules and ask a trusted adult to check the visitor and open the door! 👨‍👩‍👧🛡️",
+            "Climb out the living room window to say hello 🪟❌",
+            "Ignore everyone and run into the backyard 🏃‍♂️"
+          ],
+          "correctAnswer": "Follow family rules and ask a trusted adult to check the visitor and open the door! 👨‍👩‍👧🛡️",
+          "explanation": "Children must never open the front door alone, even for relatives! Always let a parent or trusted adult check and open the door safely. 🛑",
+          "hint": "Who in the household should always manage unlocking the front door?",
+          "positiveFeedback": "🛡️ Safe and sound! You alerted an adult, and Papa opened the door to welcome Dadi with hugs! 👵💖",
+          "tryAgainFeedback": "🚪 Try tapping the smart doorbell with the camera!",
+          "boltEncouragement": "BEEP BOOP! Super safety champion! Golden rules keep our homes protected! ⭐⚡"
+        },
+        {
+          "itemId": "task5",
+          "name": "Challenge E: Help the Garden (Watering Timer) 🪴💧",
+          "emoji": "🪴",
+          "category": "garden_care",
+          "categoryLabel": "Garden & Plant Care 🪴",
+          "isCorrect": true,
+          "description": "The backyard garden has flowering jasmine and tomato plants that need a gentle drink of water every morning before the sun gets too hot.",
+          "question": "Which tool can help water garden plants automatically at a set morning time?",
+          "options": [
+            "A suitable timer-controlled watering system connected to the garden hose ⏲️🌱",
+            "A television remote control left on the grass 📺",
+            "A wooden skateboard leaning on the fence 🛹",
+            "A metal alarm clock dropped into a puddle ⏰"
+          ],
+          "correctAnswer": "A suitable timer-controlled watering system connected to the garden hose ⏲️🌱",
+          "explanation": "A timer-controlled watering valve opens at the scheduled morning hour to deliver water directly to the plant roots! 🪴💧",
+          "hint": "Look for the device that controls water flow using a timer!",
+          "positiveFeedback": "💧 Refreshing! The gentle trickle of water hydrates the plants while saving water! Excellent!",
+          "tryAgainFeedback": "🌱 Think about how a timer can turn a water valve on and off at set hours!",
+          "boltEncouragement": "BEEP BOOP! The tomato plants are wiggling their green leaves with gratitude! 🍅⚡"
+        },
+        {
+          "itemId": "task6",
+          "name": "Challenge F: Find the Smart Fridge 🧊📱",
+          "description": "Bolt wants you to distinguish an ordinary refrigerator from a modern smart refrigerator with extra digital features.",
+          "emoji": "🧊",
+          "category": "smart_vs_ordinary",
+          "categoryLabel": "Smart vs Ordinary Helpers ⚖️",
+          "question": "What is an extra feature that a smart refrigerator might have compared to an ordinary refrigerator?",
+          "options": [
+            "It can grow wings and fly over the kitchen roof 🕊️",
+            "An interactive touchscreen, door camera, or food reminder app 📱🧊",
+            "It turns warm milk into boiling tea automatically ☕",
+            "It replaces the kitchen floor with ice cubes ⛸️"
+          ],
+          "correctAnswer": "An interactive touchscreen, door camera, or food reminder app 📱🧊",
+          "explanation": "Both refrigerators keep food cold, but a smart fridge may offer extra digital perks like door screens, cameras, or shopping lists! 🧊",
+          "hint": "What digital tools can connect to an app on a smartphone?",
+          "positiveFeedback": "🧊 Exactly right! Digital screens and cameras give extra convenience, while cold coils protect the food! 🍎",
+          "tryAgainFeedback": "💡 Look for the digital tool that connects to apps and screens!",
+          "boltEncouragement": "BEEP BOOP! You are a master tech detective! Both fridges keep food fresh, but smart ones add screens! 🔍⚡"
+        },
+        {
+          "itemId": "task7",
+          "name": "Challenge G: Smart or Ordinary? — The Regular Desk Lamp 💡🪵",
+          "emoji": "🪵",
+          "category": "smart_vs_ordinary",
+          "categoryLabel": "Smart vs Ordinary Helpers ⚖️",
+          "isCorrect": true,
+          "description": "Look at Grandpa's brass desk lamp with a sturdy turn-knob switch and an electrical plug cord.",
+          "question": "Is Grandpa's classic brass desk lamp an ordinary electrical device or an AI robot?",
+          "options": [
+            "It is an ordinary electrical lamp that provides light when turned on with a physical switch 💡🪵",
+            "It is a super-intelligent AI robot that writes homework essays 🤖📝",
+            "It is an alien spaceship from Jupiter 🛸",
+            "It is a magical tree that grows golden lightbulbs 🌳"
+          ],
+          "correctAnswer": "It is an ordinary electrical lamp that provides light when turned on with a physical switch 💡🪵",
+          "explanation": "Grandpa's lamp is a wonderful, reliable ordinary lamp; it works with a simple mechanical switch without any AI or internet! 💡",
+          "hint": "Does a simple lamp with a turn-knob have a computer brain inside it?",
+          "positiveFeedback": "💡 Spot on! Simple electrical devices are reliable champions of everyday life! 🪵✨",
+          "tryAgainFeedback": "🤔 Think about whether a simple metal switch uses computer AI!",
+          "boltEncouragement": "BEEP BOOP! Super analysis! Ordinary tools do their job with 100% excellence! 🌟⚡"
+        },
+        {
+          "itemId": "task8",
+          "name": "Challenge H: Smart or Ordinary? — The Video Doorbell 🚪📷",
+          "emoji": "🚪",
+          "category": "smart_vs_ordinary",
+          "categoryLabel": "Smart vs Ordinary Helpers ⚖️",
+          "isCorrect": true,
+          "description": "Look at the doorbell on the porch that has a camera lens, a microphone, and sends video alerts to Papa's phone.",
+          "question": "What makes this video doorbell a smart device compared to a regular buzzer bell?",
+          "options": [
+            "It paints the front porch pink 🎨",
+            "It connects to home Wi-Fi and sends live video notifications to an adult's phone 📱📷",
+            "It eats all the packages delivered by couriers 📦",
+            "It replaces the front door with a brick wall 🧱"
+          ],
+          "correctAnswer": "It connects to home Wi-Fi and sends live video notifications to an adult's phone 📱📷",
+          "explanation": "The video doorbell is a smart helper because it uses internet connectivity and digital cameras to share information with phones! 🚪📱",
+          "hint": "What special visual feature does this doorbell have that normal bells do not?",
+          "positiveFeedback": "📷 Fantastic! The camera and Wi-Fi connection make it a smart household helper! 🌟",
+          "tryAgainFeedback": "🚪 Try tapping the smart doorbell with the camera!",
+          "boltEncouragement": "BEEP BOOP! You spotted the digital features in a flash! 📸⚡"
+        },
+        {
+          "itemId": "task9",
+          "name": "Challenge I: Saving Energy in the Living Room ⚡🏃‍♂️",
+          "emoji": "⚡",
+          "category": "living_room",
+          "categoryLabel": "Living Room Helpers 🛋️",
+          "isCorrect": true,
+          "description": "You finish watching an educational documentary on the smart TV and walk outside to play badminton in the sunny courtyard.",
+          "question": "What is the best energy-saving action before leaving the living room?",
+          "options": [
+            "Leave the TV, lamps, and fan turned on full blast all afternoon 📺💡❌",
+            "Turn off the television and switch off the lights to save electricity! ⚡🌍",
+            "Put ice cream cones on top of the television remote 🍦",
+            "Open all the windows while running the heater 🔥"
+          ],
+          "correctAnswer": "Turn off the television and switch off the lights to save electricity! ⚡🌍",
+          "explanation": "Switching off unused appliances saves electricity, lowers energy bills, and protects the Earth's natural resources! ⚡",
+          "hint": "What should you do to electrical items when nobody is using them?",
+          "positiveFeedback": "🌍 Earth Champion! Turning off unused devices saves precious power for our planet! 💚",
+          "tryAgainFeedback": "💡 Think about stopping electricity waste when an empty room is left behind!",
+          "boltEncouragement": "BEEP BOOP! 100 watts saved! Bolt's battery meter gives you a green star! 🔋⚡"
+        },
+        {
+          "itemId": "task10",
+          "name": "Challenge J: Smart or Ordinary? — The Kitchen Oven Timer ⏲️🧁",
+          "emoji": "⏲️",
+          "category": "smart_vs_ordinary",
+          "categoryLabel": "Smart vs Ordinary Helpers ⚖️",
+          "isCorrect": true,
+          "description": "A digital timer on the kitchen counter counts down from 20 minutes to zero and goes *BEEP BEEP BEEP!*",
+          "question": "Does this kitchen timer use Artificial Intelligence to taste and check the muffins?",
+          "options": [
+            "Yes, it has a robot tongue that tastes every muffin 👅",
+            "No, it is a simple countdown clock that tracks time without AI or senses! ⏲️🧁",
+            "Yes, it writes baking recipes for magazines 📖",
+            "Yes, it controls the weather outside 🌧️"
+          ],
+          "correctAnswer": "No, it is a simple countdown clock that tracks time without AI or senses! ⏲️🧁",
+          "explanation": "A timer simply measures seconds and minutes; it has no senses, no learning ability, and does not use AI! ⏲️",
+          "hint": "Does a timer know what kind of food is baking inside the metal oven?",
+          "positiveFeedback": "🧁 Spot on! A timer tracks seconds, while human bakers judge when muffins are golden brown! 👨‍🍳",
+          "tryAgainFeedback": "💡 Remember: simple clocks and countdowns do not use Artificial Intelligence!",
+          "boltEncouragement": "BEEP BOOP! Perfect deduction! Automatic countdowns are simple tools, not AI! ⏰⚡"
+        },
+        {
+          "itemId": "task11",
+          "name": "Challenge K: Smart TV Safety Rules 📺🛡️",
+          "emoji": "📺",
+          "category": "living_room",
+          "categoryLabel": "Living Room Helpers 🛋️",
+          "isCorrect": true,
+          "description": "You see an unfamiliar video app icon with flashing lights on the smart television home screen.",
+          "question": "What should you do before clicking on unfamiliar applications or videos?",
+          "options": [
+            "Download everything and watch without telling anyone 📺❌",
+            "Ask a parent or trusted adult to verify that the app is safe, age-appropriate, and approved! 👨‍👩‍👦🛡️",
+            "Throw popcorn at the TV screen 🍿",
+            "Press the power cord with wet hands 🔌❌"
+          ],
+          "correctAnswer": "Ask a parent or trusted adult to verify that the app is safe, age-appropriate, and approved! 👨‍👩‍👦🛡️",
+          "explanation": "Children should always ask parents before exploring new apps on smart TVs to ensure safe and positive entertainment! 📺",
+          "hint": "Who helps you make sure media content is safe for kids?",
+          "positiveFeedback": "🛡️ Safe media explorer! Grown-ups help us discover wonderful educational shows! 🌟",
+          "tryAgainFeedback": "👨‍👩‍👧 Remember to always check with a grown-up before using unfamiliar apps!",
+          "boltEncouragement": "BEEP BOOP! Wise choice! Safe screen habits keep our minds happy and healthy! 📺⚡"
+        },
+        {
+          "itemId": "task12",
+          "name": "Challenge L: Why Did the AC Turn Off? ❄️🛑",
+          "emoji": "❄️",
+          "category": "climate_comfort",
+          "categoryLabel": "Room Comfort & Climate ❄️",
+          "isCorrect": true,
+          "description": "The air conditioner was blowing cool air for 15 minutes, and now the fan has slowed down and cooling has temporarily paused.",
+          "question": "Why did the automatic air conditioner pause its cooling cycle?",
+          "options": [
+            "It ran out of ideas and fell asleep 💤",
+            "Its temperature sensor detected that the room reached the desired comfortable temperature of 24°C! ❄️🌡️",
+            "It got scared of the sofa cushions 🛋️",
+            "It turned into an ice cream maker 🍦"
+          ],
+          "correctAnswer": "Its temperature sensor detected that the room reached the desired comfortable temperature of 24°C! ❄️🌡️",
+          "explanation": "When the room cools down to the target setting (around 24°C), the sensor signals the cooling compressor to rest until needed! ❄️",
+          "hint": "What happens when a target temperature is successfully reached?",
+          "positiveFeedback": "🌡️ Exactly! The target temperature was reached, so the unit rests to save electricity! 💡",
+          "tryAgainFeedback": "❄️ Think about what the temperature sensor does when the room is cool enough!",
+          "boltEncouragement": "BEEP BOOP! That is how feedback loops work! Measure, adjust, and rest! 🔄⚡"
+        },
+        {
+          "itemId": "task13",
+          "name": "Challenge M: The Mystery Visitor at the Door 👤🚪",
+          "emoji": "🚪",
+          "category": "door_safety",
+          "categoryLabel": "Door & Home Safety 🛡️",
+          "isCorrect": true,
+          "description": "The doorbell rings. The camera shows someone in an unfamiliar uniform holding a clipboard. You have never seen this person before.",
+          "question": "What is the only safe action when an unfamiliar stranger is at the door?",
+          "options": [
+            "Open the door immediately and invite them to have lunch 🍲❌",
+            "Keep the door locked and immediately call a parent or trusted adult to handle the situation! 🛑👨‍👩‍👧",
+            "Tell the stranger through the letterbox where your parents hide the house keys 🔑❌",
+            "Open the door a little crack to peek 🚪❌"
+          ],
+          "correctAnswer": "Keep the door locked and immediately call a parent or trusted adult to handle the situation! 🛑👨‍👩‍👧",
+          "explanation": "Never open the door to strangers! Keep the door locked and let a grown-up answer and handle visitors safely. 🛡️",
+          "hint": "Should children ever open the door to someone they don't know?",
+          "positiveFeedback": "🛡️ Golden Rule Champion! Doors stay locked, and grown-ups take charge! Perfect safety! 🌟",
+          "tryAgainFeedback": "🚪 Safety first! Always call an adult and never open doors to strangers!",
+          "boltEncouragement": "BEEP BOOP! You have the protective instincts of a master security robot! 🤖🛡️"
+        },
+        {
+          "itemId": "task14",
+          "name": "Challenge N: Soil Moisture Check After Storm 🌧️🌱",
+          "emoji": "🌱",
+          "category": "garden_care",
+          "categoryLabel": "Garden & Plant Care 🪴",
+          "isCorrect": true,
+          "description": "A smart soil moisture sensor probe reads 90% dampness after a huge rainstorm that lasted three hours.",
+          "question": "What should the gardener do with the garden watering hose today?",
+          "options": [
+            "Turn on the hose at full blast and flood the garden deeper 🌊",
+            "Keep the hose turned off because the plants already have plenty of rainwater! 🛑💧",
+            "Pour hot chocolate over the plant roots ☕",
+            "Cut the garden hose into ten small pieces ✂️"
+          ],
+          "correctAnswer": "Keep the hose turned off because the plants already have plenty of rainwater! 🛑💧",
+          "explanation": "When soil is already damp from rain, adding tap water can drown roots and waste clean water; keeping it off saves water! 🌧️",
+          "hint": "Do plants need extra water when the soil is already soaked like a wet sponge?",
+          "positiveFeedback": "💧 Smart water conservation! Plants stay healthy, and zero litres of tap water are wasted! 🌿",
+          "tryAgainFeedback": "🌱 Look at the high moisture reading: do the plants need more water right now?",
+          "boltEncouragement": "BEEP BOOP! You treat nature's resources with wisdom and care! 🌍⚡"
+        },
+        {
+          "itemId": "task15",
+          "name": "Challenge O: Kitchen Stove Heat Awareness 🔥🛑",
+          "emoji": "🍲",
+          "category": "kitchen_safety",
+          "categoryLabel": "Kitchen & Food Safety 🍲",
+          "isCorrect": true,
+          "description": "Mummy is boiling vegetable stew on the kitchen stove, and steam is rising from the metal pot lid.",
+          "question": "How can a Class 3 student help safely in the kitchen during cooking?",
+          "options": [
+            "Try to grab the hot metal pot handles with bare hands ✋❌",
+            "Help with safe tasks away from the stove, like folding napkins or washing celery stalks! 🥬🍽️",
+            "Stick metal spoons into the glowing flame 🔥❌",
+            "Climb up onto the kitchen counter next to the boiling soup 🧗‍♂️"
+          ],
+          "correctAnswer": "Help with safe tasks away from the stove, like folding napkins or washing celery stalks! 🥬🍽️",
+          "explanation": "Children should stay safely back from hot burners and ovens; help with cool, safe prep work like washing veggies or setting napkins! 🥗",
+          "hint": "Which task is completely away from hot flames and boiling liquids?",
+          "positiveFeedback": "🥬 Fantastic helper! You kept safe from heat while helping prepare the family meal! 🍽️",
+          "tryAgainFeedback": "🛑 Remember to stay away from hot burners and pick safe tasks!",
+          "boltEncouragement": "BEEP BOOP! That is how great sous-chefs work: safe, helpful, and organized! 👨‍🍳⚡"
+        },
+        {
+          "itemId": "task16",
+          "name": "Challenge P: Smart or Ordinary? — Mechanical Wall Clock 🕰️⚙️",
+          "emoji": "🕰️",
+          "category": "smart_vs_ordinary",
+          "categoryLabel": "Smart vs Ordinary Helpers ⚖️",
+          "isCorrect": true,
+          "description": "A ticking wooden wall clock hangs above the fireplace, swinging a brass pendulum back and forth every second.",
+          "question": "Does this pendulum wall clock connect to the internet or use AI to tell time?",
+          "options": [
+            "Yes, it downloads time from the cloud using 5G Wi-Fi ☁️",
+            "No, it uses mechanical gears, springs, and gravity to track time without AI or internet! ⚙️🕰️",
+            "Yes, it has a tiny robot inside that pushes the clock hands 🤖",
+            "Yes, it is a smartphone shaped like a clock 📱"
+          ],
+          "correctAnswer": "No, it uses mechanical gears, springs, and gravity to track time without AI or internet! ⚙️🕰️",
+          "explanation": "Pendulum clocks are mechanical wonders of gears and weights; they work beautifully without software, Wi-Fi, or AI! 🕰️",
+          "hint": "Think about how gears and pendulums work mechanically!",
+          "positiveFeedback": "⚙️ Brilliant! Mechanical clocks are masterpieces of physics, working without any AI! 🕰️",
+          "tryAgainFeedback": "💡 Think about whether gears and pendulums need computer code!",
+          "boltEncouragement": "BEEP BOOP! Tick-tock, tick-tock! Physics and mechanics are awesome! ⏳⚡"
+        },
+        {
+          "itemId": "task17",
+          "name": "Challenge Q: The True Guardians of the Home 👨‍👩‍👧❤️",
+          "emoji": "🏡",
+          "category": "home_wisdom",
+          "categoryLabel": "Home Wisdom & Heart 💖",
+          "isCorrect": true,
+          "description": "Think about all the smart lamps, automatic air conditioners, video doorbells, and kitchen gadgets in a house.",
+          "question": "Who are the real heroes who make a home safe, loving, comfortable, and happy?",
+          "options": [
+            "The electrical wires inside the drywall 🔌",
+            "The loving parents, grandparents, family members, and children who care for each other! 👨‍👩‍👧❤️",
+            "The plastic remote controls sitting on the table 📱",
+            "The metal screws inside the door hinges 🔩"
+          ],
+          "correctAnswer": "The loving parents, grandparents, family members, and children who care for each other! 👨‍👩‍👧❤️",
+          "explanation": "Technology is just a collection of helpful tools; the true warmth, safety, and joy of any home comes from the human family! 💖",
+          "hint": "Who gives hugs, cooks warm meals, and tucks you into bed with love?",
+          "positiveFeedback": "💖 THE HEART OF THE HOME! Technology helps, but family love makes a home complete! 🌟",
+          "tryAgainFeedback": "👨‍👩‍👧 Think about who provides love, care, and safety in your household!",
+          "boltEncouragement": "BEEP BOOP! *Sniff!* Bolt's emotional circuits are glowing with pure happiness! 🤖💖"
+        },
+        {
+          "itemId": "task18",
+          "name": "Challenge R: The Ultimate Smart Home Formula 🌟🤝",
+          "emoji": "🌟",
+          "category": "home_wisdom",
+          "categoryLabel": "Home Wisdom & Heart 💖",
+          "isCorrect": true,
+          "description": "Bolt wants you to state the ultimate summary of everything we learned in Chapter 3, Lesson 2: AI Comes Home!",
+          "question": "What is the best way to live with technology in our homes?",
+          "options": [
+            "Let machines make every decision while humans stop thinking 🤖❌",
+            "Use helpful tools thoughtfully, follow adult safety rules, save energy and water, and care for family! 🌟🏡💡",
+            "Throw all lamps out the window and live in complete darkness 🪟🌑",
+            "Never turn off any electronics ever again ⚡❌"
+          ],
+          "correctAnswer": "Use helpful tools thoughtfully, follow adult safety rules, save energy and water, and care for family! 🌟🏡💡",
+          "explanation": "Wise technology use means combining helpful gadgets with safety rules, energy conservation, and family care! 🌟",
+          "hint": "Which choice balances helpful tools with safety, conservation, and love?",
+          "positiveFeedback": "🏆 GRAND CHAMPION SMART HOME EXPLORER! You mastered home tech, energy saving, and door safety! BEEP BOOP! 🎊🛋️",
+          "tryAgainFeedback": "💡 Look for the answer that brings together safety, saving resources, and caring for people!",
+          "boltEncouragement": "BEEP BOOP! HOORAY! You unlocked the Grand Champion Smart Home Trophy! 🏆🎉⚡"
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "quizId": "quiz-ch3-l2",
+    "title": "AI Comes Home — Grand Explorer Quiz 🏡❓",
+    "description": "Test your mastery of smart home helpers, living room lamps, air conditioning facts, doorbell safety, and resource saving with Bolt!",
+    "passMark": 80,
+    "questions": [
+      {
+        "questionId": "q1",
+        "question": "What is a compatible smart lamp? 💡",
+        "type": "multiple_choice",
+        "options": [
+          "A flashlight made out of a banana 🍌",
+          "A lamp that can be controlled via switches, phone apps, or voice helpers to adjust light and brightness 💡📱",
+          "A lamp that only works underwater 🌊",
+          "A candle that never needs a match 🕯️"
+        ],
+        "correctAnswer": "A lamp that can be controlled via switches, phone apps, or voice helpers to adjust light and brightness 💡📱",
+        "explanation": "Smart lamps have microchips that connect to apps or voice controllers so adults can turn them on, off, or dim them! 💡",
+        "emoji": "💡",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Exactly right! Smart lamps give flexible lighting controls! Gold Star! ⭐",
+          "incorrect": "💡 A smart lamp connects to apps or voice tools to adjust light and brightness!"
+        }
+      },
+      {
+        "questionId": "q2",
+        "question": "Why might an adult dim the living room or bedroom lights before bedtime? 🌙🛏️",
+        "type": "multiple_choice",
+        "options": [
+          "To play hide-and-seek with ghosts 👻",
+          "Because softer, gentler lighting creates a calm environment that helps our bodies prepare for sleep 🌙✨",
+          "Because bright lights make the lightbulb explode 💥",
+          "To turn the room into a movie theatre for hamsters 🐹"
+        ],
+        "correctAnswer": "Because softer, gentler lighting creates a calm environment that helps our bodies prepare for sleep 🌙✨",
+        "explanation": "Softer light signals to our eyes and brains that nighttime is here, helping us relax for sweet dreams! 😴",
+        "emoji": "🌙",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Soothing and calm! Soft light is the secret to wonderful bedtime rest! 🛌⚡",
+          "incorrect": "🌙 Dimming creates soft lighting that helps our bodies relax before sleeping!"
+        }
+      },
+      {
+        "questionId": "q3",
+        "question": "Does a smart lamp know when you feel sleepy all by itself? 🤖❌",
+        "type": "multiple_choice",
+        "options": [
+          "Yes, it reads your dreams while you are awake 💭",
+          "No, it does not have thoughts or feelings; an adult must set a schedule, timer, or adjust the control! 📱👨‍👩‍👧",
+          "Yes, it flies around the bedroom checking your eyelids 🪰",
+          "Yes, it sends text messages to your pillow 📱"
+        ],
+        "correctAnswer": "No, it does not have thoughts or feelings; an adult must set a schedule, timer, or adjust the control! 📱👨‍👩‍👧",
+        "explanation": "Smart gadgets do not know human feelings; they follow schedules, commands, or app settings created by people! 💡",
+        "emoji": "🤖",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Spot on! Gadgets follow instructions; they do not have minds of their own! 🧠⚡",
+          "incorrect": "🤖 Smart lamps do not know your feelings; adults must set schedules or adjust controls!"
+        }
+      },
+      {
+        "questionId": "q4",
+        "question": "What is an important safety rule when using a smart television? 📺🛡️",
+        "type": "multiple_choice",
+        "options": [
+          "Press all the buttons with a wooden broomstick 🧹",
+          "Always ask a parent or trusted adult before opening unfamiliar applications or streaming new shows 👨‍👩‍👦🛡️",
+          "Watch TV for 24 hours without blinking 👁️❌",
+          "Pour cold water on the TV screen to keep it cool 🚿❌"
+        ],
+        "correctAnswer": "Always ask a parent or trusted adult before opening unfamiliar applications or streaming new shows 👨‍👩‍👦🛡️",
+        "explanation": "Always check with grown-ups so they can help pick safe, educational, and fun programmes! 📺",
+        "emoji": "📺",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Wonderful media wisdom! Grown-ups help us stay safe online! 🛡️⚡",
+          "incorrect": "📺 Always check with a parent or trusted adult before opening unfamiliar apps!"
+        }
+      },
+      {
+        "questionId": "q5",
+        "question": "How does an automatic air conditioner help keep a room near 24°C on a hot day? ❄️🌡️",
+        "type": "multiple_choice",
+        "options": [
+          "It opens the freezer door and throws ice cubes at the couch 🧊",
+          "It uses temperature sensors to turn cooling on when the room is warm and turns it off when near 24°C 🌬️✨",
+          "It paints the ceiling white with chalk 🖍️",
+          "It blows hot desert wind into the bedroom 🏜️"
+        ],
+        "correctAnswer": "It uses temperature sensors to turn cooling on when the room is warm and turns it off when near 24°C 🌬️✨",
+        "explanation": "Temperature sensors detect warmth and cycle cooling on and off to maintain comfortable air! ❄️",
+        "emoji": "❄️",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Crisp and cool! Feedback loops keep our rooms pleasant! 🌬️⚡",
+          "incorrect": "❄️ The AC uses temperature sensors to cycle cooling on and off near 24°C!"
+        }
+      },
+      {
+        "questionId": "q6",
+        "question": "Does automatic temperature control mean an air conditioner definitely uses AI? 🤖🤔",
+        "type": "multiple_choice",
+        "options": [
+          "Yes, every single cooling machine is an Artificial Intelligence genius 🤖",
+          "No, automatic thermostats and mechanical switches have controlled temperatures for decades without AI! ⚙️🌡️",
+          "Yes, the air conditioner speaks five foreign languages 🗣️",
+          "Yes, the air conditioner designs buildings in its spare time 🏛️"
+        ],
+        "correctAnswer": "No, automatic thermostats and mechanical switches have controlled temperatures for decades without AI! ⚙️🌡️",
+        "explanation": "Automatic control can be achieved with simple electronic sensors and switches; it does not automatically mean AI! 💡",
+        "emoji": "⚙️",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Super tech detective! Automatic does NOT always mean AI! 🔍⚡",
+          "incorrect": "⚙️ No, simple automatic switches and thermostats work without AI!"
+        }
+      },
+      {
+        "questionId": "q7",
+        "question": "Why might a room set to 24°C sometimes measure 25°C or 26°C? 🌡️🚪",
+        "type": "multiple_choice",
+        "options": [
+          "Because the thermometer is daydreaming 💭",
+          "Because real-world factors like opening doors or shifting sunlight naturally change room temperature 🚪☀️",
+          "Because the walls absorbed too much soup aroma 🍲",
+          "Because the floor decided to get warmer for fun 🪵"
+        ],
+        "correctAnswer": "Because real-world factors like opening doors or shifting sunlight naturally change room temperature 🚪☀️",
+        "explanation": "Open doors, windows, and sunlight fluctuate the temperature; machines respond gradually to real-world changes! 🌡️",
+        "emoji": "🚪",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Exactly right! Real-world rooms fluctuate naturally! ☀️⚡",
+          "incorrect": "🚪 Real-world factors like open doors or sunlight change temperature naturally!"
+        }
+      },
+      {
+        "questionId": "q8",
+        "question": "What is the main job of both an ordinary refrigerator and a smart refrigerator? 🧊🥛",
+        "type": "multiple_choice",
+        "options": [
+          "To bake warm sourdough bread 🍞",
+          "To keep food and drinks cold, fresh, and safe from spoiling! 🥦🍎",
+          "To play loud music in the middle of the night 🎺",
+          "To wash the kitchen floor with soapy water 🧼"
+        ],
+        "correctAnswer": "To keep food and drinks cold, fresh, and safe from spoiling! 🥦🍎",
+        "explanation": "Both refrigerators keep perishable food cold to prevent bacteria growth and keep our food fresh! 🧊",
+        "emoji": "🧊",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Spot on! Both types of fridges protect our food and health! 🥛⚡",
+          "incorrect": "🧊 Both kinds of fridges keep food cold and safe to eat!"
+        }
+      },
+      {
+        "questionId": "q9",
+        "question": "How does a kitchen timer know when the time is up? ⏲️🧁",
+        "type": "multiple_choice",
+        "options": [
+          "It tastes the food with an artificial tongue 👅",
+          "It counts down the minutes and seconds using an electronic or mechanical clock, then beeps! ⏱️🔔",
+          "It looks through the oven window with robot eyes 👀",
+          "It asks the chef on the phone 📞"
+        ],
+        "correctAnswer": "It counts down the minutes and seconds using an electronic or mechanical clock, then beeps! ⏱️🔔",
+        "explanation": "A timer is a simple clockwork or electronic countdown; it does not know what is baking! ⏲️",
+        "emoji": "⏲️",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Precision timekeeping! Clocks count seconds, not recipes! ⏰⚡",
+          "incorrect": "⏲️ A timer simply counts down minutes and seconds using a clock circuit!"
+        }
+      },
+      {
+        "questionId": "q10",
+        "question": "When Dadi presses the smart doorbell, how does an adult see her on the porch? 👵🚪📱",
+        "type": "multiple_choice",
+        "options": [
+          "By sending a carrier pigeon outside 🕊️",
+          "Through a video camera in the doorbell that streams live video to an adult's connected phone 📱✨",
+          "Through a magic kaleidoscope 🔮",
+          "By knocking on the floorboards 🪵"
+        ],
+        "correctAnswer": "Through a video camera in the doorbell that streams live video to an adult's connected phone 📱✨",
+        "explanation": "The camera in the smart doorbell sends an alert and live video stream to the parent's phone! 📱",
+        "emoji": "📱",
+        "boltReaction": {
+          "correct": "BEEP BOOP! High-definition video to the phone! Clear and convenient! 📸⚡",
+          "incorrect": "📱 The smart doorbell camera sends a video feed to an adult's phone!"
+        }
+      },
+      {
+        "questionId": "q11",
+        "question": "What is the number one safety rule for children when someone rings the doorbell? 🚪🛑",
+        "type": "multiple_choice",
+        "options": [
+          "Immediately unlock and swing the door wide open 🚪💨",
+          "Never open the door alone; always ask a parent or trusted adult to check and open the door! 👨‍👩‍👧🛡️",
+          "Throw water through the letterbox 📬",
+          "Shout: 'Nobody is home, we went to Mars!' 🚀"
+        ],
+        "correctAnswer": "Never open the door alone; always ask a parent or trusted adult to check and open the door! 👨‍👩‍👧🛡️",
+        "explanation": "Children must never open doors alone! Always call a trusted adult to manage visitors safely. 🛑",
+        "emoji": "🛡️",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Essential rule! Doors stay locked until grown-ups open them! 🛡️⚡",
+          "incorrect": "🛡️ Never open the door alone; always get a parent or trusted adult!"
+        }
+      },
+      {
+        "questionId": "q12",
+        "question": "Does an ordinary brass doorbell that goes 'DING-DONG' have a camera or use AI? 🔔🪵",
+        "type": "multiple_choice",
+        "options": [
+          "Yes, it has invisible robot eyes 👀",
+          "No, it uses simple electromagnets, springs, and metal bars to make a physical chime sound! ⚙️🔔",
+          "Yes, it is connected to a satellite in outer space 🛰️",
+          "Yes, it writes down visitor names in a digital diary 📖"
+        ],
+        "correctAnswer": "No, it uses simple electromagnets, springs, and metal bars to make a physical chime sound! ⚙️🔔",
+        "explanation": "An ordinary doorbell is a simple electrical chime; it has no camera, no Wi-Fi, and no AI! 🔔",
+        "emoji": "🔔",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Exactly! Mechanical chimes are simple electrical wonders! ⚙️⚡",
+          "incorrect": "🔔 No, an ordinary doorbell uses electromagnets and metal bars without AI!"
+        }
+      },
+      {
+        "questionId": "q13",
+        "question": "How does a smart soil moisture sensor help care for garden plants? 🌱💧",
+        "type": "multiple_choice",
+        "options": [
+          "It paints the leaves with green glitter ✨",
+          "It measures how damp the soil is so people know if plants need water, preventing waste and root damage 🪴📊",
+          "It picks all the apples and puts them in pies 🥧",
+          "It barks like a guard dog at caterpillars 🐶"
+        ],
+        "correctAnswer": "It measures how damp the soil is so people know if plants need water, preventing waste and root damage 🪴📊",
+        "explanation": "Soil moisture sensors detect water levels in the soil to help gardeners water efficiently! 🌱",
+        "emoji": "🌱",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Healthy plants and saved water! A winning combination! 🌿⚡",
+          "incorrect": "🌱 It measures soil moisture to help people decide if plants need watering!"
+        }
+      },
+      {
+        "questionId": "q14",
+        "question": "Why should we turn off lights and televisions when leaving an empty room? ⚡🌍",
+        "type": "multiple_choice",
+        "options": [
+          "Because the lightbulbs get lonely 😢",
+          "To save electricity, lower energy waste, and protect our planet's resources! 🌍💡",
+          "Because electricity turns into purple smoke if left on 💨",
+          "To make the carpet softer 🧶"
+        ],
+        "correctAnswer": "To save electricity, lower energy waste, and protect our planet's resources! 🌍💡",
+        "explanation": "Turning off unused appliances saves valuable power and helps protect the Earth! ⚡",
+        "emoji": "⚡",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Earth Guardian status achieved! Saving power protects our world! 🌍⚡",
+          "incorrect": "⚡ Switching off unused devices saves electricity and protects our planet!"
+        }
+      },
+      {
+        "questionId": "q15",
+        "question": "What is the most important thing to remember about smart home technology? 🏡❤️",
+        "type": "multiple_choice",
+        "options": [
+          "Smart technology replaces human parents and teachers completely 🤖❌",
+          "Smart technology can help us, but loving adults make the safe decisions, and not every tool needs AI! 🌟👨‍👩‍👧",
+          "Every house in the world must have ten robots inside 🦾",
+          "Ordinary lamps and tools are useless and should be discarded 🗑️"
+        ],
+        "correctAnswer": "Smart technology can help us, but loving adults make the safe decisions, and not every tool needs AI! 🌟👨‍👩‍👧",
+        "explanation": "Technology is a helpful assistant, but human wisdom, love, and safety rules always come first! 💖",
+        "emoji": "💖",
+        "boltReaction": {
+          "correct": "BEEP BOOP! 100% PERFECT! You are officially a Master Smart Home Explorer! 🏆🎉⚡",
+          "incorrect": "💖 Tech is a helpful assistant, but loving adults always make the safe decisions!"
+        }
+      }
+    ]
+  },
+  "discussion": {
+    "questions": [
+      "What appliances or helpers do you use in your living room, kitchen, and bedroom every day? Which ones are simple, and which ones have digital controls? 🛋️🍲🛏️",
+      "Why is softer, dimmer lighting helpful before bedtime? How does lighting change how a room feels? 💡🌙",
+      "If you had a smart helper in your bedroom, what kind of helpful chore would you want it to help you with? 🤖🛏️",
+      "Why is it so important that children NEVER open the front door alone, even if they recognize the person outside? 🚪🛡️",
+      "What are three easy ways your family can save electricity and water in your home every single week? ⚡💧🌍",
+      "How are ordinary tools like mechanical clocks and brass doorbells just as wonderful and useful as smart gadgets? 🕰️🔔🤝"
+    ],
+    "homeExplorationTasks": [
+      "Room-by-Room Light Patrol: Walk through your home with an adult and count how many lamps and light switches you have. Practice turning off switches in empty rooms! 💡🔍",
+      "Thermostat & Thermometer Check: Ask a grown-up to show you your home's air conditioner remote, fan speed dial, or wall thermometer. What temperature is the room right now? ❄️🌡️",
+      "The Fridge Inspection: Open your refrigerator with a parent and look at where milk, vegetables, and leftovers are kept chilly. How does the cold air feel on your fingers? 🧊🥛",
+      "Front Door Safety Drill: Stand at your front door with an adult and practice what to say when the doorbell rings: 'I am alerting a grown-up!' 🚪🛡️",
+      "Garden & Houseplant Hydration Test: Touch the soil of an indoor potted plant or outdoor garden flower with your fingertip. Is it moist, damp, or dry? Does it need water today? 🪴👆"
+    ]
+  },
+  "summary": {
+    "recap": "BEEP BOOP! What an unforgettable safari through Bolt's cozy smart home! 🏡🤖⚡\nFrom dimming the living room lamp for bedtime story relaxation 💡🌙 to discovering how automatic air conditioners maintain comfort near 24°C ❄️🌡️, from checking who is on the porch with a smart video doorbell 🚪📱 to saving water with garden timers and soil moisture probes 🪴💧 — you have mastered every corner of household technology! Most importantly, you know that ordinary tools are fantastic champions, that automatic doesn't always mean AI, and that responsible adults and family love are the true heart of every safe home! ❤️🏠",
+    "keyTakeaways": [
+      "Smart devices can help families with household tasks, but ordinary tools like mechanical lamps and doorbells are equally wonderful and reliable 🏡💡",
+      "A compatible smart lamp may offer brightness controls, allowing adults to dim the light to create a calm, soothing bedtime atmosphere 🌙🛋️",
+      "Some smart televisions connect to the internet to run supported streaming and learning apps, and children should always ask adults before opening new apps 📺🛡️",
+      "An automatic air conditioner uses temperature sensors to cycle cooling on and off, helping keep a room near an adult's chosen setting such as 24°C ❄️🌡️",
+      "A smart refrigerator may offer extra digital perks like door screens, cameras, or reminder apps, while regular fridges keep food just as cold and safe 🧊🥛",
+      "A camera-enabled smart doorbell can stream live video of visitors to an adult's connected phone, helping families see who is on the front porch 🚪📱",
+      "Adults must always decide when it is safe to open the front door; children must NEVER open the door alone, even for people they recognize 🛑🔑",
+      "Garden timers and soil moisture sensors help families care for plants and prevent overwatering, but human gardeners must inspect plants with care 🪴💧",
+      "Not every automatic device uses Artificial Intelligence; simple clocks, timers, thermostats, and mechanical switches work without AI ⚙️🤖",
+      "People remain responsible for using technology safely, and children should always ask adults before touching unfamiliar electrical appliances 🛡️🔌",
+      "Children should never touch hot stoves, ovens, or electrical plugs, leaving cooking and heat management to responsible grown-ups 🔥👩‍🍳",
+      "Saving electricity and clean water through simple everyday habits makes every young learner a proud Earth Guardian! ⚡💧🌍"
+    ],
+    "closingToast": {
+      "message": "🌟 'BEEP BOOP! Give yourself a giant robot high-five! You are officially a CERTIFIED SMART HOME CHAMPION! See you in Chapter 4!' 🤖⚡🏆",
+      "trophyEarned": "🏆 Smart Home Champion Trophy & Golden House Key Ribbon UNLOCKED! 🎖️",
+      "boltAction": "Bolt turns on a cozy golden halo light 💡, chimes a cheerful melody 🔔, and projects a hologram of a warm, smiling family home! 🏡✨"
+    },
+    "nextLesson": {
+      "lessonId": "l1",
+      "chapterId": "ch4",
+      "title": "When I Grow Up 🚀👩‍⚕️🧑‍💻",
+      "teaser": "BEEP BOOP! Now that we have explored AI at school and at home, what exciting careers and adventures await you in the future? In Chapter 4: AI and Career — RISE, we discover doctors, artists, space scientists, and engineers who use smart helpers to solve big real-world challenges! Pack your dreaming caps — your future begins now! 🌟🚀"
+    }
+  }
+}
