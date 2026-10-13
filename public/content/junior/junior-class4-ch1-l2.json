@@ -1,0 +1,1405 @@
+{
+  "lessonId": "l2",
+  "fullLessonId": "junior-class4-ch1-l2",
+  "title": "Meet the Smart Machines 🤖✨",
+  "level": "junior",
+  "class": "class4",
+  "chapter": "ch1",
+  "chapterTitle": "AI Basics • DISCOVER",
+  "lessonNumber": 2,
+  "classNumber": 4,
+  "chapterNumber": 1,
+  "mascot": {
+    "name": "Robo-Pi",
+    "emoji": "🤖✨",
+    "description": "A friendly silver robot wearing a tiny graduation cap, a sparkling magnifying glass necklace, and shiny golden roller skates! Robo-Pi has big glowing blue eyes that sparkle when excited, two bouncy antenna ears that wiggle, and a cheerful beeping voice!",
+    "voiceStyle": "Cheerful, energetic beeping sentences. Loves exclamation marks! Uses BEEP BOOP as a greeting. Always encourages the child with huge enthusiasm, silly giggles, and warm robot hugs!",
+    "catchphrase": "BEEP BOOP! SENSE 👁️, THINK 🧠, ACT 🏃! Let's meet the smartest machines on Earth and Mars! 🚀🤖"
+  },
+  "metadata": {
+    "duration": "45 minutes",
+    "ageGroup": "9-10 years",
+    "difficulty": "beginner",
+    "totalWords": 12000,
+    "version": "1.0",
+    "lastUpdated": "2026-10-13",
+    "author": "AI Olympiad Team",
+    "tags": [
+      "smart machines",
+      "robotics",
+      "sense think act",
+      "sensors",
+      "robot vacuum",
+      "mars rover",
+      "automatic doors",
+      "AI basics",
+      "class4",
+      "junior"
+    ]
+  },
+  "content": {
+    "introduction": {
+      "welcomeMessage": "🤖✨ BEEP BOOP! Welcome back, Super Explorer! Today we are meeting the coolest, cleverest machines in the whole wide universe! 🛸🪐",
+      "roboPiGreeting": {
+        "text": "BEEP BOOP! Hello hello hello, my wonderful young friend! It is me, your robot best buddy Robo-Pi! 🤖✨ Give me a big virtual high-five right on the screen! *CLINK!* ✋ Today is going to be one of the most magical days of your entire life because today, you and I are going to peek inside the secret world of SMART MACHINES! 🚀 Have you ever stopped to wonder why some gadgets just sit there like sleepy rocks, while other machines seem almost ALIVE? A regular spoon cannot do anything by itself. If you leave a spoon on the kitchen table, it will just sit there for a hundred years without moving an inch! 🥄 But a smart robot vacuum cleaner? Oh boy! It wakes up, rolls across the rug, sweeps up breadcrumbs, spots a table leg, turns around, and drives all the way back to its cozy little charging house without ANYONE pushing it! 🧹✨ How does it do that? Does it have tiny magical fairies inside? NOPE! It has three golden superpowers! Listen very closely to my golden robot rhyme: BEEP BOOP! Just like you see a puddle 👁️, think 'Don't wet my shoes!' 🧠, and jump over it 🏃, smart machines do the same! That is right! Every smart machine on planet Earth — and even on planet Mars — follows the exact same three magic steps: SENSE 👁️, THINK 🧠, and ACT 🏃! Today, you are going to learn how these three steps work together to turn cold metal and plastic into helpful, friendly smart friends! Are you excited? My antenna is twirling like a helicopter! Let us jump in! 🚀🎉",
+        "toastGuidance": {
+          "tap_prompt": "👇 Tap Robo-Pi's shiny antenna to start our Smart Machine Adventure! 🤖✨",
+          "great_job": "🌟 BEEP BOOP! Antenna activated! Your Explorer Spark is GLOWING bright gold! ⭐",
+          "encouragement": "🤖 Don't worry if it sounds new — Robo-Pi is right by your side every single step of the way!"
+        }
+      },
+      "openingStory": {
+        "title": "🚀 The Great Martian Adventure of Rusty the Brave Rover! 🪐",
+        "content": "Far, far away across the dark starry velvet of outer space, past the glowing moon and deep into the cosmos, sits a giant rusty-red planet called Mars! 🪐 On this dusty red world, there are no trees, no birds, no houses, and no humans having breakfast. But rolling across the red hills is a very special explorer: a six-wheeled robot rover named Rusty! 🚀 Rusty was built by scientists on Earth and sent across the solar system on a giant rocket. Rusty's job is to explore Mars, climb red sandy dunes, and search for ancient riverbeds and shiny alien rocks. But Rusty has a HUGE problem! Mars is so incredibly far away from Earth — over 200 million kilometers away! That means if a scientist on Earth sends a radio signal shouting 'Hey Rusty, look out!', it takes over twenty whole minutes for the message to travel through space and reach Rusty's antenna! 📡 Imagine if you were riding your bicycle down a hill toward a big bump, but you had to wait twenty minutes for someone to tell you to squeeze the brakes! You would crash into the bump a thousand times before the message arrived! That would be a complete disaster! 💥 So how does Rusty survive on Mars all alone without crashing into giant red boulders or falling off steep sandy cliffs? The answer is pure magic: Rusty is a SMART MACHINE! Rusty does not wait for humans on Earth to steer him every second. Rusty has his own mechanical eyes — big panoramic stereo cameras mounted high on his neck that SENSE 👁️ the Martian rocks and deep craters. Rusty has a powerful computer brain tucked safely inside his warm golden belly that THINKS 🧠: 'Uh-oh! There is a huge jagged rock two meters straight ahead. If I keep rolling, my front tire will pop! The safest path is forty degrees to the left!' And Rusty has six rugged titanium wheels with independent steering motors that ACT 🏃: *whirrrr-click-whirrrr*, the wheels pivot gracefully, and Rusty rolls safely around the boulder without a single scratch! 🛞✨ Rusty completed the loop: SENSE 👁️ → THINK 🧠 → ACT 🏃! Because Rusty can sense, think, and act all on his own, he can explore the alien red world safely for years and years, sending back breathtaking photographs and scientific discoveries to children and scientists back home on Earth! 📸🪐",
+        "moraleOfStory": "A smart machine does not just wait helplessly for someone to push it. By using SENSE 👁️, THINK 🧠, and ACT 🏃, it can protect itself, solve problems, and help us explore worlds that are too far away for humans to visit! 🚀✨",
+        "roboPiComment": "BEEP BOOP! Isn't Rusty the coolest space robot ever? He doesn't panic, he doesn't get scared — he just senses the rock, thinks up a clever plan, and acts by steering his wheels! You and I are going to become just as clever as Rusty today! 🪐🤖"
+      },
+      "learningObjectives": [
+        "👁️ Understand what SENSE means: How machines use sensors (cameras, lasers, microphones) like eyes, ears, and touch!",
+        "🧠 Understand what THINK means: How computer chips process clues, calculate paths, and make smart decisions!",
+        "🏃 Understand what ACT means: How motors, wheels, robotic arms, and speakers carry out the machine's choices!",
+        "🔄 Master the Golden 3-Step Loop: SENSE 👁️ → THINK 🧠 → ACT 🏃 that every smart machine repeats over and over!",
+        "🧹 Discover how everyday smart helpers work: Robot vacuum cleaners, Mars rovers, and automatic supermarket sliding doors!",
+        "⭐ Earn your official Golden Triple-Star Rover License and become a certified Smart Machine Master! 🪐🏅"
+      ],
+      "detectiveBadge": {
+        "title": "The Golden Triple-Star Rover License 🪐⭐",
+        "description": "Collect all three glowing badges to power up your very own virtual Mars Rover and complete the Golden Loop!",
+        "magnifiers": [
+          {
+            "id": "badge-sense",
+            "name": "Golden Sensor Eye Badge 👁️",
+            "earnedBy": "Mastering Section 1: Discovering how smart machines see, hear, and feel the world!",
+            "colour": "#FFD700"
+          },
+          {
+            "id": "badge-think",
+            "name": "Sparkling Mind Core Badge 🧠",
+            "earnedBy": "Mastering Section 2: Discovering how computer chips make super-fast decisions!",
+            "colour": "#00E5FF"
+          },
+          {
+            "id": "badge-act",
+            "name": "Turbo Motor Wheel Badge 🏃",
+            "earnedBy": "Mastering Section 3: Discovering how wheels, motors, and arms jump into action!",
+            "colour": "#FF4081"
+          }
+        ]
+      },
+      "auraGuidance": {
+        "welcome": "LET'S DISCOVER! Welcome to Meet the Smart Machines! Get ready for an out-of-this-world adventure! 🚀",
+        "instruction": "Listen to Robo-Pi's cheerful beeps, tap the glowing cards, and watch how smart machines loop from SENSE to THINK to ACT! 👁️🧠🏃",
+        "encouragement": "You have a super sharp brain! You are going to master this golden loop faster than a rocket speeding to Mars! 🌟"
+      }
+    },
+    "mainConcept": {
+      "whatIsAI": {
+        "title": "🤖 What Makes a Machine 'Smart'? (The Golden Secret!) 🌟",
+        "roboPiIntro": "BEEP BOOP! Before we open up the three golden treasure chests, let me tell you the big secret that separates ordinary tools from super-smart machines! Prepare to be amazed! 🤖💡",
+        "simpleExplanation": "Think about a normal yellow wooden pencil sitting on your desk. ✏️ Can the pencil feel when your paper gets soggy? No! Can the pencil think 'Oops, I made a spelling mistake, let me erase that'? No! Can the pencil move its own little rubber eraser to fix the word? No way! A pencil is an ordinary tool. It only does what your fingers physically force it to do. If you drop it, it falls. If you leave it, it sleeps. Now think about a smart machine, like the robot vacuum cleaner sleeping under your sofa. 🧹 When dust gathers on the floor, the robot wakes up all by itself! It rolls across the room. When it comes close to the shiny wooden leg of your dining table, it does NOT crash into it with a giant BANG! Instead, it slows down gently, turns around smoothly, and cleans around the leg like a polite guest! Why? Because the robot vacuum is NOT an ordinary tool — it is a SMART MACHINE! A smart machine has three special parts working together in harmony: First, it has SENSORS that act like eyes, ears, and fingertips. Second, it has a COMPUTER BRAIN that acts like your mind, thinking through what the sensors found. Third, it has MOTORS and ACTUATORS that act like muscles, legs, and hands, moving the machine to do work. When you connect those three parts in a circle, you get the GOLDEN LOOP: SENSE 👁️ leads to THINK 🧠, which leads to ACT 🏃, which leads to sensing again! That continuous circle is the secret heartbeat of every robot, every smart car, and every space explorer in the universe! 🔄✨",
+        "keyPoints": [
+          "🔧 Ordinary tools (spoons, pencils, hammers) cannot feel, think, or move on their own.",
+          "🤖 Smart machines have sensors (eyes/ears), computer brains (thinking chips), and motors (muscles).",
+          "👁️ SENSE: The machine gathers clues from the world around it using cameras, lasers, and touch bumpers.",
+          "🧠 THINK: The computer brain looks at the clues and decides the best, safest thing to do.",
+          "🏃 ACT: The machine's motors, wheels, or screens carry out the decision right away!",
+          "🔄 REPEAT: The loop never stops! SENSE → THINK → ACT repeats dozens of times every single second!"
+        ],
+        "toastGuidance": {
+          "tap_prompt": "👇 Tap the Golden Loop diagram to see how SENSE 👁️ flows into THINK 🧠 and ACT 🏃!",
+          "great_job": "⭐ SPLENDID! You unlocked the secret heartbeat of all smart machines! 🔄💖",
+          "try_again": "🤔 Remember the three steps in order: First SENSE 👁️, then THINK 🧠, then ACT 🏃!"
+        }
+      },
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "👁️ Step 1: SENSE! How Smart Machines See, Hear, and Feel the World! 🔍",
+          "missionBadge": "Golden Sensor Eye 👁️",
+          "roboPiMissionBriefing": "BEEP BOOP! Explorer, welcome to Mission 1! 🤖👁️ Your first mission is to discover how machines touch, hear, and see! If you close your eyes and cover your ears, you cannot tell where you are going. Smart machines need senses too! Let us find out what machine eyes, ears, and whiskers look like! 🔍⭐",
+          "mainContent": {
+            "paragraph1": "Close your eyes for five seconds right now. What do you feel? You can feel the chair under you, you can hear mama or teacher talking in the background, and if you open your eyes, you see bright colours, walls, and books. You have five wonderful senses: eyes to see, ears to hear, a nose to smell, a tongue to taste, and skin to feel touch! 👁️👂👃👅 Smart machines do not have human skin or eyeballs made of jelly, but their inventors gave them something equally magical called SENSORS! Sensors are electronic organs that collect clues from the physical world and turn those clues into electrical numbers that a computer can understand. ⚡",
+            "paragraph2": "Let us look at machine eyes first! When a smartphone camera looks at you, it uses a tiny light sensor that captures millions of dots of colour called pixels. 📸 When a robot vacuum cleaner drives around your house, it might have a tiny camera pointing at the ceiling to make a map of the room, or it might have a rotating laser eye called LiDAR! 🛸 This laser shoots out invisible beams of light that bounce off walls and sofa legs like millions of tiny bouncy rubber balls. By timing how many nanoseconds it takes for the light to bounce back, the robot knows EXACTLY how many centimeters away the wall is! Isn't that incredible? It can 'see' in total pitch-black darkness! 🕶️✨",
+            "paragraph3": "What about machine ears and touch? Smart machines have ears called microphones! 🎙️ When you say 'Hey Siri, play my favourite cartoon theme song!', a tiny microphone inside the tablet feels the vibration of your vocal cords floating through the air. The microphone turns your sound waves into electrical waves. And machines have touch sensors too! Think about the front bumper of a robot vacuum cleaner. 🧹 It has a spring-loaded bumper bar. When the vacuum gently touches a kitchen cabinet door, *boing*, the bumper clicks a tiny micro-switch. The touch sensor immediately shouts: 'ALERT! My front nose is touching a wooden obstacle!' 🪵",
+            "paragraph4": "And smart machines even have senses that humans do NOT have! Can you see heat? Nope! If a pizza is piping hot or freezing cold, you cannot tell just by looking from across the room. But an infrared sensor on a smart machine can see heat waves glowing in the dark! 🔥 Can you shoot out ultrasonic sound waves that bounce off walls like a flying bat? Bats can do it, and smart machines can do it too using ultrasonic sensors! 🦇 Ultrasonic sensors make a super high-pitched chirp that human ears cannot hear. The sound wave hits an obstacle, bounces back, and the sensor listens for the echo. If the echo comes back super fast, the machine knows: 'Uh-oh, a wall is right in front of my nose!' 🧱",
+            "paragraph5": "Without SENSORS, a machine is completely blind, completely deaf, and completely numb. A blind machine would crash into walls, tumble down stairs, and get stuck under coffee tables forever! SENSING is the magical first step of the Golden Loop. It gathers all the facts, takes snapshots of the world, and hands those clues directly to the computer brain. When a smart machine senses well, it is ready for step two: THINKING! 👁️➡️🧠"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-sense-1",
+              "title": "🧹 The Robot Vacuum's Bumper & Laser Whisker Eyes! 🛋️",
+              "icon": "🧹",
+              "description": "How a round robot vacuum cleans under beds without crashing into furniture or tumbling down stairs!",
+              "realLifeScenario": "Mama presses the start button on the round robot vacuum in the living room. The vacuum hums to life and rolls forward toward the dining room table. Right before it hits the shiny wooden table leg, a tiny laser turret on top of the vacuum spins around, shoots an invisible beam of light, and measures that the table leg is only 4 centimeters away! At the same time, infrared cliff sensors underneath its belly look down at the carpet. When the vacuum reaches the edge of the tall staircase, the cliff sensors see empty air instead of carpet and immediately scream: 'STOP! CLIFF DETECTED! DO NOT FALL DOWN THE STAIRS!' 🛑🪜",
+              "roboPiComment": "BEEP BOOP! Did you know the robot vacuum has sensors on its top, on its front, AND on its bottom? It has eyes everywhere! It can even detect if the carpet is extra dusty using an acoustic dirt sensor! 🧹✨",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the Robot Vacuum's laser turret to see its invisible measuring beam! 🛸",
+                "great_job": "🌟 BEEP BOOP! Laser beam bounced back! Vacuum measured 4 centimeters to the sofa! 🛋️📏",
+                "try_again": "🤔 Tap the top sensor where the tiny laser spinning eye lives!"
+              }
+            },
+            {
+              "id": "dde-sense-2",
+              "title": "🛒 The Supermarket's Magic Motion Radar Door! 🚪✨",
+              "icon": "🚪",
+              "description": "How the big heavy glass doors at the supermarket know you are coming before you even touch them!",
+              "realLifeScenario": "You and papa walk up to the giant glass entrance of the supermarket carrying a shopping basket. You don't have to push a handle, twist a knob, or kick the door. When you are two steps away, WHOOSH — the two giant glass doors slide open smoothly like pure magic! 🪄 How did the doors know? Look right above the center of the door frame! There is a little black curved box with an infrared motion sensor and microwave radar. It shoots down a wide invisible fan of radar waves. As soon as your body walks into that invisible radar zone, you bounce the radar waves back into the sensor. The sensor spots you instantly and yells: 'HUMAN APPROACHING! HUMAN APPROACHING!' 🛒🚶",
+              "roboPiComment": "BEEP BOOP! The automatic door's sensor is like an invisible magical curtain hanging from the ceiling! As soon as you step through the curtain, the sensor rings the doorbell inside the computer brain! 🚪🔔",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the black sensor box above the glass door to trigger the motion radar! 📡",
+                "great_job": "🌟 RADAR PING! The sensor spotted you walking toward the grocery cart! 🛒🚪",
+                "try_again": "🤔 Look above the door frame where the radar eye is watching!"
+              }
+            },
+            {
+              "id": "dde-sense-3",
+              "title": "🪐 The Mars Rover's 3D Panoramic Stereo Eyes! 🚀📸",
+              "icon": "🪐",
+              "description": "How NASA's Curiosity and Perseverance rovers photograph the red planet with dual 3D stereo vision!",
+              "realLifeScenario": "Rusty the Mars Rover is perched atop a sandy Martian ridge called Gale Crater. Millions of kilometers away, the red sky is dusty orange. Rusty extends his tall robotic neck called the Remote Sensing Mast. On the top of the mast are two high-definition cameras placed side by side, just like human eyes! Because the two cameras are slightly separated, they take two photos at the exact same moment from slightly different angles. By comparing the two photos, Rusty's sensors calculate a 3D depth map of every single pebble, sand ripple, and rocky trench in front of him! Rusty doesn't just see a flat picture — he senses exact 3D distances down to the millimeter! 📐🪐",
+              "roboPiComment": "BEEP BOOP! Try closing your left eye, then switch and close your right eye! Notice how objects seem to jump slightly? That is stereo vision! Rusty uses stereo cameras to calculate depth on Mars! 📸👁️",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap SENSE to see what the Mars Rover spots! 👁️🪐",
+                "great_job": "🌟 SENSE complete! The Rover's 3D stereo cameras spotted a sharp red rock 3 meters ahead! 🪨📸",
+                "try_again": "🤔 First tap SENSE to let the Rover look through its high-definition space cameras!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "👁️ SENSE is the first golden step: gathering clues from the real world.",
+            "📡 Sensors are the electronic eyes, ears, touch whiskers, and noses of machines.",
+            "📸 Cameras capture light, colours, shapes, and faces using digital pixels.",
+            "🦇 Ultrasonic and laser LiDAR sensors shoot sound or light beams to measure exact distances.",
+            "🪜 Cliff sensors under robot vacuums prevent them from tumbling down dangerous staircases.",
+            "🚪 Motion sensors above automatic doors shoot invisible radar fans to spot approaching shoppers."
+          ],
+          "mission1Complete": {
+            "celebrationText": "🎉 MISSION 1 ACCOMPLISHED! You mastered SENSE 👁️!",
+            "roboPiCelebration": "BEEP BOOP YAY! 🥳 You now know how smart machines see, hear, and feel! Your Golden Sensor Eye Badge is sparkling on your chest! Now, what does the machine do with all those clues? It is time to THINK! 🧠✨",
+            "magnifierEarned": "Golden Sensor Eye Badge 👁️",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM BADGE to attach the Golden Sensor Eye to your Rover! 🏅",
+              "great_job": "⭐ SENSOR BADGE EQUIPPED! Your Rover's eyes are crystal clear! 👁️✨",
+              "encouragement": "On to Mission 2 — let's wake up the computer brain! 🧠🚀"
+            }
+          }
+        },
+        {
+          "id": "section-2",
+          "title": "🧠 Step 2: THINK! The Clever Computer Brain That Makes Decisions! 💭",
+          "missionBadge": "Sparkling Mind Core 🧠",
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Mission 2, Brain Explorer! 🤖🧠 Now that our smart machine has sensed the world, what happens next? It cannot just sit there with clues in its hands! It needs to THINK, calculate, and choose what to do! Let us dive into the microchip brain! 💻✨",
+          "mainContent": {
+            "paragraph1": "Imagine if you saw a giant puddle of muddy brown water right in front of your sneakers 👁️, but your brain was fast asleep. If your brain didn't think, your legs would keep walking straight ahead — SPLASH! 👟💦 Your shoes, socks, and pants would be soaked in cold muddy slime! Yuck! You don't do that because the second your eyes see the puddle, your brain kicks into gear! Your brain thinks: 'Uh-oh, wet puddle! Wet shoes will make mama mad and give me cold feet! I need to do something! Can I jump over it? Yes, my legs are strong enough!' That lightning-fast thought process is called THINKING! 🧠",
+            "paragraph2": "Smart machines do the exact same thing using a tiny square piece of silicon called a MICROPROCESSOR or COMPUTER BRAIN! 💻 Inside this tiny chip, smaller than a postage stamp, are billions of microscopic electronic switches that can perform billions of math calculations in a single blink of your eye! When the sensor reports a clue — like 'Red rock detected 2 meters ahead!' — the computer brain takes that number and runs it through a set of smart rules and AI programs. 🧮",
+            "paragraph3": "What kind of thoughts does a machine have? Machine thoughts are like super-fast logic puzzles called algorithms! 🧩 For example, a robot vacuum cleaner's brain asks itself questions in fractions of a millisecond: 'Rule 1: Is the battery low? No, battery is 85%. Rule 2: Is the dirt bin full? No, plenty of room. Rule 3: Is there a sofa leg blocking the path? YES! The front laser measures a wooden obstacle 4 centimeters away. What is the smartest choice? Option A: Ram straight into the wood at full speed? BAD IDEA! It will scratch the sofa and dent my bumper. Option B: Turn 90 degrees to the right where there is empty open carpet? EXCELLENT IDEA! Decision: Turn right!' 🧹💭",
+            "paragraph4": "Think about the Mars Rover Rusty! Mars has wild rocky terrain filled with sharp volcanic stones, loose powdery sand traps, and steep crater cliffs. If Rusty's wheels get stuck in a sand trap on Mars, there is no tow truck in outer space to come pull him out! 🚜🚫 So Rusty's computer brain has an advanced AI navigation system called AutoNav. AutoNav builds a 3D digital puzzle of the rocks ahead. It tests hundreds of virtual paths in its mind: 'Path 1 hits a pointy rock. Path 2 is too slippery. Path 3 goes around the smooth boulder safely with plenty of clearance!' Rusty's brain picks Path 3! All of this thinking happens silently inside Rusty's golden computer box while he rolls along under the Martian stars. 🌌🪐",
+            "paragraph5": "Without THINKING, sensors are completely useless! Having a camera without a computer brain is like having a pair of eyeglasses sitting alone on a table — the glasses can let light pass through, but they cannot understand what they are looking at! THINKING is the magical bridge that connects what the machine SENSES to what the machine ACTS! It turns clues into smart decisions! Let us see some amazing real-world machine thoughts! 🧠➡️🏃"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-think-1",
+              "title": "🧹 Vacuum Brain Thinks: 'Chair Leg Ahead! Stop and Turn 45 Degrees!' 🔄💭",
+              "icon": "🧹",
+              "description": "How a robot vacuum's microchip calculates the optimal cleaning path around dining table chairs!",
+              "realLifeScenario": "The robot vacuum is happily humming across the dining room floor. Suddenly, its front laser sensor reports: 'Obstacle at 12 o'clock, distance 5 cm!' The microchip processor receives the signal. In less than 0.002 seconds, the vacuum brain runs its navigation logic: 'I cannot go forward. Can I go left? Left side has a chair leg at 8 cm. Can I go right? Right side is completely clear for 2 meters! Decision: Send brake signal to front drive, spin left wheel forward and right wheel backward to rotate 45 degrees right, then resume vacuum suction!' The thinking was instant, logical, and kept the living room safe and clean! 🪑✨",
+              "roboPiComment": "BEEP BOOP! The vacuum brain does thousands of math problems every single second! It is like doing your entire math homework in the time it takes to sneeze! *Achoo-click!* 🧮🤖",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap THINK to watch the vacuum's microchip calculate the safe detour! 🧠💻",
+                "great_job": "🌟 BRAIN CALCULATED! The chip chose a smooth 45-degree spin away from the chair leg! 🔄⭐",
+                "try_again": "🤔 Tap the glowing microchip icon to start the thinking calculation!"
+              }
+            },
+            {
+              "id": "dde-think-2",
+              "title": "🚪 Door Brain Decides: 'Human Approaching! Slide Open NOW!' 🛒⚡",
+              "icon": "🚪",
+              "description": "How the supermarket door's microcontroller avoids hitting slow walkers or closing too early!",
+              "realLifeScenario": "A busy mother is pushing a stroller toward the supermarket entrance, and right behind her is an elderly grandfather walking with a cane. The motion sensor detects movement and sends pulses to the door's microcontroller board. The computer brain thinks: 'Movement speed: 1 meter per second. Direction: Walking straight toward the glass. Safety timer: Keep doors open for at least 6 seconds after the last motion pulse so the grandfather walks through without the door closing on his coat! Decision: Engage motor relay, open doors at speed setting 2, hold open until clearance is verified!' The door's brain ensures that everyone passes through safely, neither opening too late nor closing too early! 🚪👵👶",
+              "roboPiComment": "BEEP BOOP! That is such a thoughtful door brain! It even has safety light curtains so it never, ever pinches someone's fingers! Safety first, always! 🛡️🚪",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap THINK to let the door microcontroller verify safe crossing time! ⏱️🧠",
+                "great_job": "🌟 LOGIC VERIFIED! Timer set to 6 seconds — full safety clearance approved! 🚪✅",
+                "try_again": "🤔 Tap the green brain circuit to process the pedestrian crossing rules!"
+              }
+            },
+            {
+              "id": "dde-think-3",
+              "title": "🪐 Rover Brain Calculates: 'Crater Slope 35 Degrees! Too Steep! Re-Route North!' 🧭🪐",
+              "icon": "🪐",
+              "description": "How the Mars Rover AutoNav software calculates slope steepness and picks the safest trail!",
+              "realLifeScenario": "Rusty is rolling across the Martian sand toward a scientifically fascinating rock outcrop. His 3D stereo cameras map a slope right ahead. The onboard RAD750 computer processor calculates the angle: 'The ground ahead slopes downward at 35 degrees! Martian gravity is weak, but powdery sand on a 35-degree slope could cause wheel slip greater than 40%! If the wheels slip, the Rover could slide into the crater basin and get trapped forever! Decision: Abort southern direct path. Calculate alternate northern ridge route. Northern slope is only 12 degrees. Safe threshold: Approved! Send drive commands to wheel actuators!' Rusty thought through the physics and saved the entire mission! 🛰️📐",
+              "roboPiComment": "BEEP BOOP! Think of Rusty's brain like a super-smart space chess player! He thinks three moves ahead so his wheels never get stuck in the Martian sand! ♟️🚀",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap THINK to calculate the slope angle and find the safe detour! 🧠📐",
+                "great_job": "🌟 PATH COMPUTED! Danger slope avoided — safe northern route locked in! 🧭🪐",
+                "try_again": "🤔 Tap the glowing processor in the Rover's belly to compute the route!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🧠 THINK is the second golden step: processing sensor clues and making smart choices.",
+            "💻 Microprocessors and computer chips are the brains of smart machines.",
+            "⚡ Machines think by performing millions of lightning-fast math calculations and checking rules.",
+            "🚫 A smart machine compares choices: it rejects bad ideas (crashing) and picks safe ideas (turning).",
+            "🛡️ Safety rules are programmed into machine brains to protect humans, pets, and the machine itself.",
+            "🧭 Mars rovers use AutoNav AI software to test dozens of virtual paths before moving an inch!"
+          ],
+          "mission2Complete": {
+            "celebrationText": "🎉 MISSION 2 ACCOMPLISHED! You mastered THINK 🧠!",
+            "roboPiCelebration": "BEEP BOOP HOORAY! 🧠✨ You unlocked the secrets of the machine brain! Your Sparkling Mind Core Badge is glowing neon blue! Now that the brain has made its clever plan, how does the machine make things HAPPEN? It is time to ACT! 🏃⚡",
+            "magnifierEarned": "Sparkling Mind Core Badge 🧠",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM BADGE to install the Sparkling Mind Core inside your Rover! 🏅",
+              "great_job": "⭐ MIND CORE INSTALLED! Your Rover's computer brain is operating at 100%! 🧠⚡",
+              "encouragement": "On to Mission 3 — time to spin those turbo wheels! 🏃🛞"
+            }
+          }
+        },
+        {
+          "id": "section-3",
+          "title": "🏃 Step 3: ACT! Motors, Wheels, and Helpers Jumping into Motion! ⚡",
+          "missionBadge": "Turbo Motor Wheel 🏃",
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Mission 3, Action Hero! 🤖🏃 A smart thought in a robot's brain is wonderful, but if the robot cannot move, the puddle will still splash and the rock will still block the road! It is time to see the muscles of the machine: MOTORS, WHEELS, and ACTUATORS! Let's ROLL! 🛞💨",
+          "mainContent": {
+            "paragraph1": "Think about what your body does after your brain decides to jump over the muddy puddle. Your brain sends an electrical nerve impulse down your spine, into your hip muscles, down through your knees, and into your calf muscles. Your leg muscles coil like powerful steel springs — and BOING! 🦵 You push off the ground, soar gracefully over the brown puddle, and land safely on dry, clean grass! That is the ACTION step! SENSE saw the water 👁️, THINK chose to jump 🧠, and ACT did the jumping 🏃! Without your muscles, the thought would just stay trapped inside your head.",
+            "paragraph2": "How do machines take action? They don't have biological muscles made of meat and tendons. Instead, machines have electric MOTORS, gears, pulleys, and robotic actuators! 🦾 An electric motor uses magnets and copper wire coils. When the computer brain sends an electrical pulse into the motor, magnetic forces cause the motor shaft to spin at lightning speed! *Whirrrrrr!* By attaching gears and wheels to the motor, the machine can roll forward, spin in circles, slide doors, lift heavy boxes, or extend robotic arms! 🛞⚙️",
+            "paragraph3": "Look at the robot vacuum cleaner's muscles! 🧹 Underneath its plastic belly, it has three separate motors: Motor 1 spins the tiny side brush, flicking breadcrumbs from baseboards into the center. Motor 2 powers a high-speed suction fan that gulps up dust like a hungry baby dragon. Motor 3 and Motor 4 power the left and right rubber drive wheels independently! If the brain says 'Turn left!', the right motor spins forward while the left motor stops or spins backward. In a fraction of a second, the vacuum pivots on a dime and glides away! 🔄💨",
+            "paragraph4": "And look at Rusty the Mars Rover's incredible action systems! 🪐 Rusty has six independent wheels connected by a clever mechanical suspension called a 'rocker-bogie' system. Each of the six wheels has its very own individual motor built right inside the wheel hub! The four corner wheels also have special steering motors that can pivot 360 degrees, allowing Rusty to turn in place just like a tank! But that is not all: Rusty also has a 2-meter-long robotic arm with a rotary percussion drill, a robotic scoop, and a laser spectrometer! When Rusty's brain says 'Examine that shiny red rock!', the robotic arm unfolds, positions the drill with sub-millimeter precision, and drills a tiny sample hole into the Martian stone! That is physical action at its finest! 🦾🪨",
+            "paragraph5": "Actions do not always have to be wheels rolling or arms lifting. An action can also be a friendly sound, a blinking light, or a message on a screen! 🔊💡 When a smart microwave finishes heating your bowl of warm soup, its action is: 'BEEP! BEEP! BEEP! Soup is ready!' When your tablet finishes downloading a fun game, its action is popping up a cheerful notification banner! Whatever the action is, it is the visible, tangible result of the machine's sensing and thinking. SENSE 👁️, THINK 🧠, ACT 🏃 — the golden loop is now complete! 🎉"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-act-1",
+              "title": "🧹 Vacuum Spins Side Brushes and Rumbles Across the Rug! 🌪️",
+              "icon": "🧹",
+              "description": "How independent wheel motors allow the robot vacuum to pivot on a dime and sweep under furniture!",
+              "realLifeScenario": "The robot vacuum's computer brain just made the decision: 'Turn 45 degrees right!' Instantly, the motor controller sends electricity to the wheel drivers. The left wheel motor pushes forward with 12 volts of power, while the right wheel motor locks in place. *Whirrrr-pivot!* In 0.3 seconds, the vacuum rotates smoothly to the right, avoiding the dining table leg entirely. Next, both wheels spin forward together at 0.3 meters per second, while the side sweeper brush whirls at 150 rotations per minute, sweeping a stray cornflake directly into the suction mouth! Clean floor, zero scratches, total victory! 🌽✨",
+              "roboPiComment": "BEEP BOOP! Dual-wheel steering is called differential drive! Tanks use it, wheelchairs use it, and your little robot vacuum uses it every single morning! 🛞🦾",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap ACT to fire up the vacuum's dual wheel motors! 🏃🧹",
+                "great_job": "🌟 WHEELS SPINNING! The vacuum turned 45 degrees and scooped up the cornflake! 🌽💨",
+                "try_again": "🤔 Tap the spinning wheel icon to trigger the physical action!"
+              }
+            },
+            {
+              "id": "dde-act-2",
+              "title": "🚪 Sliding Door Pulleys Whisper Open Smooth as Silk! ✨🚪",
+              "icon": "🚪",
+              "description": "How a brushless DC motor and timing belt slide heavy glass supermarket doors silently!",
+              "realLifeScenario": "The supermarket entrance door receives the command from its computer brain: 'OPEN NOW!' High above the door header, an electric brushless motor hums quietly. The motor turns a toothed pulley wheel, which pulls a reinforced rubber timing belt. The timing belt is clamped to the top metal rollers of the two heavy glass door panels. As the belt moves, the left glass panel glides smoothly to the left, and the right glass panel glides smoothly to the right, gliding on precision ball-bearing tracks! The whole action is whisper-quiet: *shhhhh-click*. A mother holding her toddler's hand walks through safely with plenty of room to spare! 🛒🚪",
+              "roboPiComment": "BEEP BOOP! Did you know those glass doors weigh over 80 kilograms each? That is heavier than two grown-up humans! But the electric motor glides them effortlessly! 🏋️‍♂️✨",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap ACT to pull the timing belt and slide the glass doors open! 🏃🚪",
+                "great_job": "🌟 DOORS GLIDED OPEN! Smooth as silk — the shoppers walk through safely! 🛒✨",
+                "try_again": "🤔 Tap the sliding door arrows to start the motor pulling the belt!"
+              }
+            },
+            {
+              "id": "dde-act-3",
+              "title": "🪐 Rover's Six Titanium Wheels Roll Across Martian Dunes! 🛞🪐",
+              "icon": "🪐",
+              "description": "How Rusty's six rocker-bogie wheels navigate boulders and climb 20-degree sand hills!",
+              "realLifeScenario": "Rusty's AutoNav brain has selected the safe northern detour path. Now comes the grand physical action! The main power distribution unit sends electric current down the wiring harness to all six hub motors. The steering actuators on the four corner wheels pivot slightly to an angle of 18 degrees. *Zzzzz-clack!* Then, all six cleated titanium wheels begin to turn slowly and steadily at 0.1 kilometers per hour. Rusty's rocker-bogie titanium suspension flexes over smaller pebbles without tilting the delicate camera mast. Rusty gracefully rolls past the towering red rock with 45 centimeters of safety clearance! The Mars Rover dodged the obstacle in style! 🪨🛞🚀",
+              "roboPiComment": "BEEP BOOP! Six wheels mean even if one wheel gets stuck in a ditch, the other five wheels can easily push and pull the rover to safety! Teamwork makes the dream work! 🛞🤝",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap ACT to turn the steering wheels and drive around the rock! 🏃🛞",
+                "great_job": "🌟 SENSE → THINK → ACT loop complete! Rover dodged the big red rock! 🪨🚀🎉",
+                "try_again": "🤔 First see the rock, then think, then turn the steering wheels!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🏃 ACT is the third golden step: carrying out the decision through physical movement or signals.",
+            "🦾 Electric motors, wheels, pulleys, and robotic arms are the muscles of smart machines.",
+            "🛞 Differential drive lets robot vacuums turn 360 degrees on the spot by spinning wheels in opposite directions.",
+            "🚪 Automatic doors use timing belts and electric motors to slide heavy glass panels quietly.",
+            "🪐 Mars rovers have six motorized wheels and flexible suspension to conquer alien rocks.",
+            "🔊 Actions can also be non-moving: beeping alarms, flashing LED lights, or screen notifications!"
+          ],
+          "mission3Complete": {
+            "celebrationText": "🎉 MISSION 3 ACCOMPLISHED! You mastered ACT 🏃!",
+            "roboPiCelebration": "BEEP BOOP YIPPEE! 🏃💨 You unlocked the physical power of smart machines! Your Turbo Motor Wheel Badge is spinning like a golden whirlwind! All three badges are now in your hands! Now, let us connect them into the never-ending GOLDEN LOOP! 🔄🌟",
+            "magnifierEarned": "Turbo Motor Wheel Badge 🏃",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM BADGE to snap the Turbo Motor Wheels onto your Rover chassis! 🏅",
+              "great_job": "⭐ TURBO WHEELS EQUIPPED! All 3 badges unlocked: SENSE 👁️, THINK 🧠, ACT 🏃! 🏆",
+              "encouragement": "Look at your Rover — fully powered and ready for the Golden Loop! 🚀⭐"
+            }
+          }
+        },
+        {
+          "id": "section-4",
+          "title": "🔄 The Golden Loop in Motion: SENSE 👁️ → THINK 🧠 → ACT 🏃 (Over & Over!) 🌟",
+          "roboPiIntro": "BEEP BOOP! Guess what, super explorer? A smart machine doesn't just do SENSE, THINK, ACT once and then go to sleep! No way! It does it in a continuous, endless loop hundreds of times every single minute! Let's watch the magic circle spin! 🔄🤖",
+          "mainContent": {
+            "paragraph1": "Here is the biggest secret in all of robotics: SENSE 👁️, THINK 🧠, and ACT 🏃 are not three separate islands. They are a circle — a loop that never stops spinning as long as the machine is turned on! When Rusty the Mars Rover acts by turning his wheels 🏃, guess what happens next? His new position puts him in a brand new spot on Mars! Now he must SENSE 👁️ the ground again! His cameras look: 'What is ahead now?' His computer brain THINKS 🧠: 'All clear for 5 meters!' His wheels ACT 🏃: 'Roll forward 5 meters!' Then he senses again! SENSE → THINK → ACT → SENSE → THINK → ACT! 🔄",
+            "paragraph2": "Let us trace the human comparison one more time because it makes everything so crystal clear! 👦 When you are running on the school playground during recess, your eyes SENSE 👁️ your friend running toward you from the left. Your brain THINKS 🧠: 'If I keep running straight, we will bump into each other like bowling pins! I will duck to the right!' Your leg muscles ACT 🏃: you swerve to the right! The moment you swerve, your eyes SENSE 👁️ the soccer ball bouncing near your feet. Your brain THINKS 🧠: 'Kick it into the goal!' Your foot ACTS 🏃: *SWOOSH*, you score a goal! GOOOAL! ⚽🎉 You were looping from sense to think to act every single second without even realizing it!",
+            "paragraph3": "Now think about a smart flying drone soaring in the sky! 🛸 A gentle gust of wind pushes the drone from the side. The drone's internal gyroscope and accelerometer SENSE 👁️ the tilt: 'Tilted 15 degrees to the left!' The flight computer THINKS 🧠: 'Calculate counter-thrust! Speed up left propellers by 12% and slow right propellers by 12%!' The motor speed controllers ACT 🏃: the left propellers whirr faster, and *WHOOSH*, the drone levels out instantly in mid-air like a perched hawk! 🦅 If the drone took 5 seconds to think, it would flip upside down and crash into the lawn. But because the Golden Loop runs 500 times per second, the drone stays rock-solid!",
+            "paragraph4": "Look around your modern world today: smart machines are popping up everywhere! From self-driving cars that sense traffic lanes, think about road signs, and act by turning the steering wheel and applying the brakes 🚗; to smart refrigerators that sense when the milk carton is almost empty, think 'Mama needs milk for breakfast', and act by adding milk to mama's phone shopping list 🥛📱; to automatic farm tractors that sense ripe golden wheat, think about harvesting rows, and act by cutting the wheat with millimeter precision 🌾🚜!",
+            "paragraph5": "You are growing up in an extraordinary time in human history. You are not just going to be someone who uses smart machines — you might be the brilliant engineer who invents the next smart machine! You might design a smart ocean-cleaning robot that senses plastic bottles in coral reefs, thinks about ocean currents, and acts by scooping them into recycling pods! 🌊🐢 Or you might design a medical robot that helps doctors heal sick children! Whatever you dream of building, it all starts with the exact three golden steps you mastered today: SENSE 👁️, THINK 🧠, and ACT 🏃! Give yourself a massive round of applause! 👏🎉"
+          },
+          "smartMachineSpotterList": [
+            {
+              "id": "sm-1",
+              "name": "🛸 Smart Flying Drone",
+              "sense": "👁️ SENSE: Gyroscope senses tilt angle; camera spots ground landing zone.",
+              "think": "🧠 THINK: Flight controller calculates how much power each propeller needs to stay level.",
+              "act": "🏃 ACT: Four brushless motors spin carbon-fibre blades faster or slower to stabilize in mid-air."
+            },
+            {
+              "id": "sm-2",
+              "name": "🚗 Self-Driving Electric Car",
+              "sense": "👁️ SENSE: Cameras spot red traffic lights, pedestrian crosswalks, and road markings.",
+              "think": "🧠 THINK: AI navigation computer decides: 'Stop line is 10 meters ahead; apply brakes smoothly.'",
+              "act": "🏃 ACT: Hydraulic brake actuators squeeze brake pads; car glides to a stop at the white line."
+            },
+            {
+              "id": "sm-3",
+              "name": "🥛 Smart Family Fridge",
+              "sense": "👁️ SENSE: Interior cameras photograph milk shelf; weight sensor measures jug heaviness.",
+              "think": "🧠 THINK: Computer determines: 'Only 100ml of milk left; family drinks milk every morning.'",
+              "act": "🏃 ACT: Sends a notification to mama's smartphone: 'Time to buy fresh milk! 🥛🛒'"
+            },
+            {
+              "id": "sm-4",
+              "name": "🌾 Autonomous Farm Harvester",
+              "sense": "👁️ SENSE: Optical cameras and GPS satellites detect boundaries of ripe wheat rows.",
+              "think": "🧠 THINK: Navigation AI maps straight harvest lanes without trampling unharvested crops.",
+              "act": "🏃 ACT: Heavy rubber tracks steer forward while rotating cutter bars harvest wheat cleanly."
+            },
+            {
+              "id": "sm-5",
+              "name": "🏥 Hospital Sanitizer Robot",
+              "sense": "👁️ SENSE: Ultrasonic distance sensors verify that a hospital room is completely empty of humans.",
+              "think": "🧠 THINK: Safety logic confirms: 'Room is vacant; safe to emit ultraviolet sterilizing light.'",
+              "act": "🏃 ACT: Illuminates powerful UV-C lamps to destroy germs on beds and door handles."
+            },
+            {
+              "id": "sm-6",
+              "name": "🐱 Automatic Smart Pet Feeder",
+              "sense": "👁️ SENSE: Clock timer reaches 7:00 AM; infrared sensor checks if food bowl is already full.",
+              "think": "🧠 THINK: Microcontroller decides: 'Bowl is empty and it is breakfast time for Fluffy!'",
+              "act": "🏃 ACT: Dispenser motor rotates food wheel, dropping exactly one scoop of crunchy kibble into bowl! 🐾"
+            }
+          ],
+          "keyPoints": [
+            "🔄 SENSE 👁️ → THINK 🧠 → ACT 🏃 is a never-ending continuous loop.",
+            "⚡ Smart machines repeat the loop dozens or hundreds of times every single second.",
+            "👦 Humans use the exact same loop naturally when playing, running, and jumping over puddles.",
+            "🛸 Drones use the loop to adjust propeller speeds 500 times per second to defeat gusts of wind.",
+            "🚗 Self-driving cars use the loop to brake safely at red lights and avoid obstacles.",
+            "🌟 You can use this loop to invent your own smart machines in the future!"
+          ],
+          "mission4Complete": {
+            "celebrationText": "🏆 CONGRATULATIONS! You have earned your Golden Triple-Star Rover License! 🪐⭐",
+            "roboPiCelebration": "BEEP BOOP BOOP BEEP! 🤖🎉 Look at you, official Smart Machine Master! You know what makes machines smart, you know the three golden steps, and you know how the loop powers the whole world! I am dancing on my roller skates! Let us play some awesome games to test your superpowers! 🛼✨",
+            "badgeEarned": "Official Golden Triple-Star Rover License 🪐🏅",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CELEBRATE to dance with Robo-Pi and start the games! 💃🤖",
+              "great_job": "🌟 TRIPLE-STAR LICENSE UNLOCKED! You are an official Master of Smart Machines! 🏅🎉",
+              "encouragement": "Get ready for the games — let us see your high score! 🎮🚀"
+            }
+          }
+        }
+      ],
+      "totalWordCount": 12000
+    },
+    "games": [
+      {
+        "gameId": "game-1",
+        "gameType": "tap_to_find",
+        "title": "🪐 Mars Rover Obstacle Odyssey! 🚀",
+        "icon": "🪐",
+        "instruction": "Help Rusty the Mars Rover scan the Martian terrain! Move your scanner across the red planet surface and tap all 6 Martian obstacles and sensor beacons to help the Rover navigate safely! 🚀",
+        "difficulty": "easy",
+        "duration": "8 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Explorer, Rusty is in the middle of a rocky Martian desert! 🪐 His cameras are scanning for obstacles so he can SENSE 👁️ them, THINK 🧠 how to steer, and ACT 🏃 by driving! Can you spot all SIX obstacles and beacons scattered across the red sands? Tap each one to earn 20 space credits and golden stars! 🌟 Let's scan Mars! 📡",
+        "sceneDescription": "A wide, colourful cartoon panorama of the Martian surface under a soft orange sky. Towering red dunes, scattered volcanic boulders, deep crater rims, laser measurement beacons, and landing probe remnants dot the dusty red soil. Rusty the Rover sits at the center with glowing stereo cameras.",
+        "targets": [
+          {
+            "id": "target-1",
+            "x": 120,
+            "y": 180,
+            "width": 90,
+            "height": 70,
+            "object": "Giant Jagged Red Boulder 🪨",
+            "emoji": "🪨",
+            "isAI": true,
+            "aiType": "Obstacle Avoidance Target",
+            "explanation": "SENSE spotted a 1.5-meter sharp volcanic rock! Rusty's brain calculates a detour to protect his front left tire!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-2",
+            "x": 320,
+            "y": 220,
+            "width": 110,
+            "height": 60,
+            "object": "Deep Sand Dune Crater 🪐",
+            "emoji": "🪐",
+            "isAI": true,
+            "aiType": "Slope Hazard Target",
+            "explanation": "SENSE measured a 30-degree slippery sand slope! The computer brain says 'Too steep! Turn north!'",
+            "goldSparks": true
+          },
+          {
+            "id": "target-3",
+            "x": 520,
+            "y": 140,
+            "width": 80,
+            "height": 90,
+            "object": "Laser Distance Beacon 📡",
+            "emoji": "📡",
+            "isAI": true,
+            "aiType": "LiDAR Calibration Target",
+            "explanation": "Rusty shoots an infrared laser pulse to this beacon to measure exact ground distance to the nearest millimeter!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-4",
+            "x": 680,
+            "y": 260,
+            "width": 75,
+            "height": 65,
+            "object": "Dust Devil Wind Vortex 🌪️",
+            "emoji": "🌪️",
+            "isAI": true,
+            "aiType": "Atmospheric Weather Sensor Target",
+            "explanation": "Meteorology sensors detect sudden air pressure drops and wind swirl, prompting Rusty to shelter his delicate camera lenses!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-5",
+            "x": 240,
+            "y": 310,
+            "width": 85,
+            "height": 75,
+            "object": "Ancient Riverbed Shale 🪨✨",
+            "emoji": "✨",
+            "isAI": true,
+            "aiType": "Robotic Arm Science Target",
+            "explanation": "SENSE identified mineral glints in this flat stone! Rusty's brain orders his robotic arm to drill and gather a scientific sample!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-6",
+            "x": 450,
+            "y": 340,
+            "width": 70,
+            "height": 70,
+            "object": "Solar Power Recharging Station ☀️",
+            "emoji": "☀️",
+            "isAI": true,
+            "aiType": "Battery Management Target",
+            "explanation": "Light sensors track the position of the sun in the Martian sky so Rusty can tilt his solar panels for maximum energy!",
+            "goldSparks": true
+          }
+        ],
+        "totalAITargets": 6,
+        "scoring": {
+          "correctTap": 20,
+          "incorrectTap": -5,
+          "bonusForAllCorrect": 30,
+          "maxScore": 150
+        },
+        "auraGuidance": {
+          "start": "LOOK closely at the red Martian landscape! Find all 6 glowing targets for Rusty! 🔍🪐",
+          "correct": "EXCELLENT SCAN! Target identified and recorded in Rover navigation memory! ⭐",
+          "incorrect": "That is just plain red sand! Look for rocks, craters, beacons, and science targets glowing with golden sparkles! ✨",
+          "hint": "Try checking near the big sandy ridge on the left side of the screen! 🪨",
+          "complete": "FANTASTIC ODYSSEY! All 6 Martian targets mapped! Rusty can now drive safely across Mars! 🚀🎉"
+        }
+      },
+      {
+        "gameId": "game-2",
+        "gameType": "drag_drop_sort",
+        "title": "🧠 Sense, Think, or Act? The Great Golden Sorter! 🗂️",
+        "icon": "🗂️",
+        "instruction": "Look at each machine card below! Is it doing SENSE 👁️, THINK 🧠, or ACT 🏃? Drag each card into the right golden basket to build the complete Golden Loop!",
+        "difficulty": "medium",
+        "duration": "10 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Welcome to the Great Golden Sorter! 🤖🗂️ Nine different cards are tumbling out of my robot chest! Each card describes a cool machine in action. Your job is to sort them: Does this card belong to SENSE 👁️, THINK 🧠, or ACT 🏃? Sort them all correctly to win the Golden Ribbon! 🎀⭐",
+        "categories": [
+          {
+            "id": "cat-sense",
+            "label": "SENSE 👁️ (Gather Clues)",
+            "description": "Sensors, cameras, lasers, microphones, and touch bumpers taking in information from the world!",
+            "color": "#FFD700",
+            "emoji": "👁️"
+          },
+          {
+            "id": "cat-think",
+            "label": "THINK 🧠 (Make Decisions)",
+            "description": "Computer chips, microprocessors, and AI software calculating paths and choosing smart actions!",
+            "color": "#00E5FF",
+            "emoji": "🧠"
+          },
+          {
+            "id": "cat-act",
+            "label": "ACT 🏃 (Take Physical Action)",
+            "description": "Motors, wheels, robotic arms, timing belts, and speakers moving or speaking in the real world!",
+            "color": "#FF4081",
+            "emoji": "🏃"
+          }
+        ],
+        "items": [
+          {
+            "id": "item-1",
+            "label": "Robot vacuum camera takes snapshot of the living room ceiling 📷",
+            "emoji": "📷",
+            "correctCategory": "cat-sense",
+            "feedback": "🌟 CORRECT! Taking a photo to collect clues is SENSING 👁️! The camera is the robot's eye!",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-2",
+            "label": "Computer chip calculates: 'Sofa leg 5 cm ahead! Turn right 90 degrees!' 🧮",
+            "emoji": "🧮",
+            "correctCategory": "cat-think",
+            "feedback": "🌟 CORRECT! Doing math and making decisions inside the microchip is THINKING 🧠!",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-3",
+            "label": "Electric motor spins rubber wheels to steer vacuum away from the sofa 🛞",
+            "emoji": "🛞",
+            "correctCategory": "cat-act",
+            "feedback": "🌟 CORRECT! Spinning motors and rolling wheels to move is taking ACTION 🏃!",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-4",
+            "label": "Motion sensor above supermarket door detects approaching family with radar 📡",
+            "emoji": "📡",
+            "correctCategory": "cat-sense",
+            "feedback": "🌟 CORRECT! Bouncing radar waves to spot moving people is SENSING 👁️!",
+            "difficulty": "medium"
+          },
+          {
+            "id": "item-5",
+            "label": "Door microcontroller checks safety rule: 'Keep doors open for 6 full seconds!' ⏱️",
+            "emoji": "cat-think",
+            "correctCategory": "cat-think",
+            "feedback": "🌟 CORRECT! Checking timer rules and making sure humans are safe is THINKING 🧠!",
+            "difficulty": "medium"
+          },
+          {
+            "id": "item-6",
+            "label": "Timing belt pulls heavy glass doors open along ball-bearing tracks 🚪",
+            "emoji": "🚪",
+            "correctCategory": "cat-act",
+            "feedback": "🌟 CORRECT! Pulling the belt and sliding the doors physically is taking ACTION 🏃!",
+            "difficulty": "medium"
+          },
+          {
+            "id": "item-7",
+            "label": "Mars Rover stereo cameras measure 3D depth of rocky crater cliff 📸",
+            "emoji": "📸",
+            "correctCategory": "cat-sense",
+            "feedback": "🌟 CORRECT! Measuring distance and taking 3D photos on Mars is SENSING 👁️!",
+            "difficulty": "hard"
+          },
+          {
+            "id": "item-8",
+            "label": "AutoNav AI tests 50 virtual paths to find the least slippery sand trail 🧭",
+            "emoji": "🧭",
+            "correctCategory": "cat-think",
+            "feedback": "🌟 CORRECT! Testing virtual routes and choosing the best trail is THINKING 🧠!",
+            "difficulty": "hard"
+          },
+          {
+            "id": "item-9",
+            "label": "Rover robotic arm unfolds and drills a tiny sample hole into Martian stone 🦾",
+            "emoji": "🦾",
+            "correctCategory": "cat-act",
+            "feedback": "🌟 CORRECT! Moving a heavy metal robotic arm and drilling is taking physical ACTION 🏃!",
+            "difficulty": "hard"
+          }
+        ],
+        "scoring": {
+          "correctSort": 15,
+          "incorrectSort": -5,
+          "streakBonus": 10,
+          "maxScore": 165
+        },
+        "auraGuidance": {
+          "start": "READ each action carefully! Ask yourself: Is the machine feeling (SENSE), deciding (THINK), or moving (ACT)? 🗂️",
+          "correct": "BULLSEYE! That card landed in the perfect golden basket! 🌟",
+          "incorrect": "Oopsie! Think about whether this is collecting clues, making a choice, or physically moving! Try again! 🤔",
+          "streak": "TRIPLE STREAK! You understand the Golden Loop like a true engineer! 🔥",
+          "complete": "ALL NINE SORTED FLAWLESSLY! You earned the Golden Master Sorter Ribbon! 🎀🏆"
+        }
+      },
+      {
+        "gameId": "game-3",
+        "gameType": "match_pairs",
+        "title": "🔗 Match the Machine to Its Golden Action Loop! ⚡",
+        "icon": "🔗",
+        "instruction": "Connect each smart machine on the left with its complete SENSE → THINK → ACT superpower on the right! Connect all 6 pairs to unlock the Superpower Trophy! 🏆",
+        "difficulty": "medium",
+        "duration": "10 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Ready for the grand matching challenge? 🤖🔗 On the left side are six amazing smart machines. On the right side are their three-step golden superpowers! Match each machine to how it senses, thinks, and acts! Let us make the connections sparkle! ✨",
+        "pairs": [
+          {
+            "left": {
+              "id": "sm-left-1",
+              "content": "Robot Vacuum Cleaner 🧹",
+              "emoji": "🧹",
+              "description": "Round cleaning robot on living room carpets"
+            },
+            "right": {
+              "id": "sm-right-1",
+              "content": "Bumper touches chair leg 👁️ → thinks 'turn right' 🧠 → wheel motors spin away 🏃",
+              "emoji": "🔄",
+              "description": "Detects furniture, maps room, steers around obstacles"
+            }
+          },
+          {
+            "left": {
+              "id": "sm-left-2",
+              "content": "Supermarket Automatic Door 🚪",
+              "emoji": "🚪",
+              "description": "Glass sliding entrance at grocery store"
+            },
+            "right": {
+              "id": "sm-right-2",
+              "content": "Radar spots approaching shopper 👁️ → decides safe speed 🧠 → pulley glides glass panels open 🏃",
+              "emoji": "🛒",
+              "description": "Radar senses motion, timer checks clearance, motor opens door"
+            }
+          },
+          {
+            "left": {
+              "id": "sm-left-3",
+              "content": "Mars Rover Rusty 🪐",
+              "emoji": "🪐",
+              "description": "Six-wheeled robotic space explorer on red sands"
+            },
+            "right": {
+              "id": "sm-right-3",
+              "content": "Stereo cams spot giant crater 👁️ → AutoNav maps detour 🧠 → six titanium wheels steer around 🏃",
+              "emoji": "🚀",
+              "description": "3D cameras see rocks, computer maps route, wheels drive safely"
+            }
+          },
+          {
+            "left": {
+              "id": "sm-left-4",
+              "content": "Smart Traffic Light 🚦",
+              "emoji": "🚦",
+              "description": "Overhead city intersection signal controller"
+            },
+            "right": {
+              "id": "sm-right-4",
+              "content": "Camera senses long line of school buses 👁️ → decides to clear jam 🧠 → switches lamp to bright green 🏃",
+              "emoji": "🟢",
+              "description": "Senses vehicle queue, computes waiting priority, changes signal lights"
+            }
+          },
+          {
+            "left": {
+              "id": "sm-left-5",
+              "content": "Flying Camera Drone 🛸",
+              "emoji": "🛸",
+              "description": "Four-propeller aerial photographer in sky"
+            },
+            "right": {
+              "id": "sm-right-5",
+              "content": "Gyroscope senses wind tilt 👁️ → calculates counter-balance 🧠 → spins left blades faster to level out 🏃",
+              "emoji": "💨",
+              "description": "Measures wind tilt, calculates rotor balance, adjusts propeller RPM"
+            }
+          },
+          {
+            "left": {
+              "id": "sm-left-6",
+              "content": "Smart Automatic Plant Waterer 🌱",
+              "emoji": "🌱",
+              "description": "Garden helper caring for potted tomato plants"
+            },
+            "right": {
+              "id": "sm-right-6",
+              "content": "Soil probe senses dry dirt 👁️ → decides plant is thirsty 🧠 → opens electric valve to sprinkle water 🏃",
+              "emoji": "💧",
+              "description": "Measures soil moisture, evaluates dryness limit, pumps fresh water"
+            }
+          }
+        ],
+        "scoring": {
+          "correctMatch": 20,
+          "incorrectMatch": -5,
+          "maxScore": 120
+        },
+        "auraGuidance": {
+          "start": "TAP a smart machine on the left, then TAP its matching golden loop on the right! 🔗✨",
+          "correct": "GOLDEN PAIR CONNECTED! Look at that loop sparkle with electricity! ⚡⭐",
+          "incorrect": "Not quite right! Read the steps carefully — match the vacuum to its wheels and the door to its glass panels! 🤔",
+          "hint": "The Mars Rover has six wheels and stereo cameras looking at craters! 🪐",
+          "complete": "ALL SIX PAIRS CONNECTED PERFECTLY! You unlocked the Superpower Trophy! 🏆🎉"
+        }
+      }
+    ],
+    "activities": [
+      {
+        "activityId": "activity-1",
+        "title": "🪐 Mars Rover Obstacle Course at Home or School! 🚀",
+        "type": "hands-on",
+        "duration": "20 minutes",
+        "icon": "🪐",
+        "roboPiActivityBrief": "BEEP BOOP! Time for our headline mission: The Mars Rover Obstacle Course! 🤖🪐 You get to turn your living room or classroom into planet Mars, build an obstacle course out of cushions and books, and play Rover! Ready for blast-off?",
+        "description": "Now that you are a certified Master of Smart Machines, it is time to build and conquer the ultimate Mars Rover Obstacle Course! In this exciting hands-on activity, two players work together: Player 1 plays 'The Smart Rover', and Player 2 plays 'Mission Control' (or you can play solo by programming your own steps). You will lay out cushions, pillows, empty shoe boxes, and books on the carpet to represent giant red Martian boulders, deep crater trenches, and rocky canyons. The Rover must practice the golden sequence: SENSE the obstacle with eyes 👁️, STOP and THINK aloud about the detour 🧠, and ACT by pivoting feet and taking careful steps forward 🏃! This kinesthetic game embeds the SENSE-THINK-ACT loop directly into muscle memory while providing tons of laughter and family fun!",
+        "materials": [
+          "🛋️ 3 to 5 sofa cushions or soft pillows (to represent Giant Martian Boulders)",
+          "📦 2 empty cardboard boxes or shoe boxes (to represent Deep Crater Holes)",
+          "📚 3 big storybooks laid flat on the floor (to represent Slippery Sand Dunes)",
+          "🧣 A soft scarf or blindfold (OPTIONAL: for Advanced Blind Rover Challenge with partner guidance)",
+          "🏆 A piece of yellow paper or cardboard to cut out a Gold Rover Mission Badge"
+        ],
+        "steps": [
+          "Step 1: Clear a wide open floor area in your living room or classroom carpet (about 3 meters long). Declare this area 'The Jezero Crater on Mars'!",
+          "Step 2: Place your pillows, boxes, and books scattered across the carpet. Leave small winding pathways between them so a rover can navigate through.",
+          "Step 3: Stand at the 'Landing Pad' starting line. Put your hands on your hips like robot wheels, and beep: 'ROVER SYSTEMS ONLINE! BEEP BOOP!'",
+          "Step 4: Take two robot steps forward. FREEZE! Now perform Step 1 — SENSE 👁️: Look at the pillow ahead. Say aloud: 'SENSE: I see a giant red boulder 1 foot in front of my toes!'",
+          "Step 5: Perform Step 2 — THINK 🧠: Touch your forehead and say aloud: 'THINK: If I step forward, I will trip on the boulder! The safest path is to turn 90 degrees left!'",
+          "Step 6: Perform Step 3 — ACT 🏃: Pivot your feet on the spot, make a motor sound 'WHIRRRR-CLICK', and take three careful steps through the clear gap!",
+          "Step 7: Repeat the loop at every single obstacle: SENSE 👁️ → THINK 🧠 → ACT 🏃 until you cross the entire Martian room and reach the Golden Science Station!",
+          "Step 8: Bonus Challenge (Two Players): Player 1 wears the blindfold scarf as the Rover. Player 2 acts as the 'Sensor Wire', tapping Player 1's left shoulder to SENSE obstacles, whispering THINK instructions, and letting Player 1 ACT by stepping! Switch roles!"
+        ],
+        "thingsToLookFor": [
+          "👁️ Did the Rover freeze and consciously look (SENSE) before taking any steps?",
+          "🧠 Did the Rover verbalize the decision aloud (THINK) before moving their feet?",
+          "🏃 Did the Rover turn smoothly on the spot (ACT) just like Rusty's differential wheels?",
+          "🪨 Were all obstacles cleared without knocking over any cushions or shoe boxes?",
+          "🔄 Did the sequence repeat continuously as a loop across the entire course?",
+          "🤝 In the partner version, did the sensor communicate clearly with the motor player?",
+          "⏱️ Did the Rover slow down when approaching narrow canyon gaps between two pillows?",
+          "🎉 Did both players celebrate with a joyful robot dance at the finish line?"
+        ],
+        "discussionWithGrownUp": [
+          "Why can't scientists on Earth steer the real Mars Rover with a live joystick in real time? (Answer: Because radio signals take up to 20 minutes to travel across space!)",
+          "What would happen to a real Mars Rover if its SENSE cameras got covered in thick red Martian dust?",
+          "How is jumping over a puddle in the rain similar to the Rover dodging the red pillow boulder?",
+          "If you could add one brand-new sensor to Rusty the Rover (like a smell sensor or metal detector), what would you choose and why?"
+        ],
+        "familyConnection": "Have mama, papa, brother, or sister try the course while you act as Chief NASA Mission Controller! Give them hilarious beeping sound effects every time they SENSE, THINK, and ACT! 🪐👨‍👩‍👧",
+        "learningOutcome": "Children experience the physical reality of autonomous robotic navigation, demonstrating that without sensing and thinking, physical action results in collisions and failure.",
+        "auraGuidance": {
+          "before": "PREPARE your Martian carpet! Scatter cushions safely with plenty of room to walk! 🛋️🪐",
+          "during": "REMEMBER to speak each step aloud: SENSE 👁️, THINK 🧠, ACT 🏃! No skipping steps! 🗣️",
+          "after": "MISSION COMPLETE! You navigated the alien red terrain without a single collision! Outstanding piloting! 🚀🏆"
+        }
+      },
+      {
+        "activityId": "activity-2",
+        "title": "🧹 The Living Room Robot Vacuum Simulation Challenge! 🛋️",
+        "type": "active_roleplay",
+        "duration": "15 minutes",
+        "icon": "🧹",
+        "roboPiActivityBrief": "BEEP BOOP! Ready to transform into a round, spinning robot vacuum? 🤖🧹 Let's clean the living room floor while practicing our bump-and-turn golden loops!",
+        "description": "In this lively physical simulation, you become an autonomous cleaning robot! You will curl your arms around you like a round plastic chassis. With your eyes wide open, you roll forward in straight lines. Every time your toes gently touch a chair leg or sofa base (your bump sensor), you must stop, beep 'BUMP SENSED!', compute a random turn angle in your head (THINK), spin around on the spot (ACT), and resume rolling along a new straight cleaning path! This hands-on game demonstrates exactly how real robot vacuums clean entire rooms using bump-and-swerve algorithms!",
+        "materials": [
+          "🛋️ A room with normal everyday furniture (chairs, sofa, low tables)",
+          "🧦 Thick socks (for smooth sliding pivots on tile, wood, or carpet)",
+          "⏱️ A 3-minute timer on mama's phone",
+          "📄 5 small crumpled balls of paper (representing 'breadcrumbs' to collect)",
+          "🧺 A small bowl or basket at the room corner (representing the 'Charging Dock')"
+        ],
+        "steps": [
+          "Step 1: Scatter the 5 paper 'breadcrumbs' randomly across the living room carpet.",
+          "Step 2: Start at the 'Charging Dock' basket in the corner. Beep: 'BATTERY 100%! START CLEANING CYCLE!'",
+          "Step 3: Roll forward in a straight line at a slow, steady robotic walking pace. Make a soft vacuum humming sound: 'hmmmmmmmmm'.",
+          "Step 4: When you reach a breadcrumb, bend down with your hands like suction brushes and pick it up! Place it in your pocket dust bin!",
+          "Step 5: When your foot comes within 10 centimeters of a wall or furniture leg, STOP! That is SENSE 👁️! Shout: 'BUMPER ALERT!'",
+          "Step 6: Touch your head and THINK 🧠: 'Obstacle ahead! Choose random turn: 60 degrees to the right!'",
+          "Step 7: ACT 🏃: Pivot on your heel like a robot differential drive, point your body into open space, and resume rolling forward!",
+          "Step 8: Once all 5 breadcrumbs are collected, use your memory to navigate back to the Charging Dock basket, sit down, and beep: 'CLEANING COMPLETE! RECHARGING!' 🔋"
+        ],
+        "bonusChallenge": [
+          "⚡ Speed Run: Collect all 5 breadcrumbs in under 2 minutes without bumping anything harder than a gentle toe tap!",
+          "🔄 Spiral Mode: Try cleaning like high-tech vacuums do: start in the center of the room and walk in an expanding spiral circle until you hit a wall!",
+          "🔋 Low Battery Return: Have a partner shout 'BATTERY 15%!' at any surprise moment; you must immediately pause cleaning and find the fastest straight path back to the dock!"
+        ],
+        "creativityPrompts": [
+          "Draw a colourful floor plan of your living room on a piece of paper, and use a red crayon to trace the winding path you took during the game!",
+          "Give your robot vacuum persona a fun name (like 'Sir Sweeps-a-Lot' or 'Dust-Buster 3000') and invent its special greeting sound!"
+        ],
+        "familyConnection": "Invite a family member to sit in a dining chair. Clean around their feet like a polite robot guest without bumping their toes! 👣🧹",
+        "learningOutcome": "Reinforces understanding of bump sensors, turning algorithms, and how simple sense-think-act loops combine to achieve complex tasks like cleaning an entire house.",
+        "auraGuidance": {
+          "before": "CLEAR away any dangerous sharp objects from the floor so your robot path is totally safe! 🛡️",
+          "during": "SMOOTH gentle pivots! Remember to spin on the spot like dual rubber wheels! 🔄🛞",
+          "after": "BREADCRUMBS CLEARED! The living room is sparkling clean and your algorithm was flawless! 🌟🧹"
+        }
+      },
+      {
+        "activityId": "activity-3",
+        "title": "🛒 The Automatic Supermarket Door Family Theater & Dinner Quiz! 🚪🍽️",
+        "type": "interactive_drama",
+        "duration": "15 minutes",
+        "icon": "🛒",
+        "roboPiActivityBrief": "BEEP BOOP! Time for family theater! 🤖🎭 Two of you play the sliding glass doors, and one plays the grocery shopper! Plus, test your whole family at the dinner table tonight!",
+        "description": "Combine hilarious family roleplay with an educational dinner quiz! In Part 1, two family members stand side by side with hands touching in the center, acting as the two sliding glass panels of a supermarket automatic door. A third person walks toward them holding a shopping bag. The 'doors' must SENSE the shopper approaching, THINK 'Verify 2 meters clearance!', and ACT by sliding apart smoothly with a whisper sound! In Part 2, children take the role of Quiz Master at dinner and test grown-ups with 5 punchy smart machine questions!",
+        "quizQuestions": [
+          "Question 1: Does an automatic sliding door have a magic wizard inside pushing the glass? (Grown-up Answer: No! It has an infrared/radar motion sensor, a computer chip, and an electric motor pulley!)",
+          "Question 2: What are the three golden steps that EVERY smart machine follows? (Grown-up Answer: SENSE 👁️ → THINK 🧠 → ACT 🏃!)",
+          "Question 3: Why can't scientists on Earth steer the Mars Rover in real time using a video game joystick? (Grown-up Answer: Radio signals take about 20 minutes to reach Mars, so the rover must think for itself!)",
+          "Question 4: What is the difference between a normal broom and a robot vacuum? (Grown-up Answer: A broom is an ordinary tool that needs human hands; a robot vacuum has sensors, a microchip brain, and motors to clean autonomously!)",
+          "Question 5: What does a machine use as its 'eyes' and 'ears'? (Grown-up Answer: SENSORS like cameras, lasers, ultrasonic sound bumpers, and microphones!)"
+        ],
+        "familyConnection": "Grade your family members' answers with Golden Stars ⭐! Award mama and papa an 'Honorary Junior AI Detective Certificate' if they get at least 4 out of 5 questions right!",
+        "learningOutcome": "Children cement their own conceptual mastery by teaching others and articulating technical ideas in their own everyday words during family dinner conversations.",
+        "auraGuidance": {
+          "before": "STAND side-by-side with arms outstretched to form the glass door entrance! 🚪",
+          "during": "GLIDE open smoothly! Don't open too early or too late — wait for the shopper to enter the radar zone! 🛒",
+          "after": "BRAVO! Family theater was a smash hit, and dinner table quiz scores were off the charts! 🌟🍽️"
+        }
+      }
+    ],
+    "realWorldExamples": [
+      {
+        "id": "rwe-1",
+        "title": "🧹 The Robot Vacuum and the Sneaky Sofa Leg 🛋️",
+        "scenario": "On Sunday morning, mama taps the clean button on the round robot vacuum in the living room. The vacuum rolls across the Persian rug. Hidden under the edge of the rug is the thick carved wooden leg of an antique sofa. The vacuum hums along steadily at 0.3 meters per second. When it gets within 5 centimeters of the sofa leg, its infrared bumper emits invisible light pulses that bounce back instantly.",
+        "aiConnection": "This is a textbook SENSE-THINK-ACT loop! SENSE 👁️: The infrared light bounced off the wood, triggering the proximity sensor. THINK 🧠: The internal processor processed the obstacle coordinates, checked the room map, and decided: 'Do not collide; slow down, pivot 90 degrees left, and clean along the contour of the leg.' ACT 🏃: The left wheel motor reversed while the right wheel motor moved forward, pivoting the vacuum gracefully. The side brush swept the dust near the leg directly into the suction intake, leaving the furniture spotless and unharmed!",
+        "observation": "Notice how the vacuum does not violently slam into the sofa with a loud bang. It slows down right before reaching it, touches with a feather-light bumper tap, and pivots smoothly.",
+        "discussion": "What would happen if the vacuum had wheels and motors (ACT), but NO sensors (SENSE)? It would repeatedly ram into walls, scratch wooden furniture, and get trapped in corners forever!",
+        "roboPiTip": "BEEP BOOP! Always make sure your floor does not have loose shoelaces or telephone charging cables before the robot vacuum starts, because cables can wrap around the spinning brushes! Help your smart machine helper do its best job! 🧹🔌"
+      },
+      {
+        "id": "rwe-2",
+        "title": "🪐 The Mars Rover Curiosity on the Alien Red Sands 🚀",
+        "scenario": "225 million kilometers from Earth, NASA's Curiosity rover is driving across the rugged floor of Gale Crater on Mars. The Martian terrain is littered with razor-sharp ventifact rocks that can puncture metal tires, alongside powdery sand dunes that can trap six-wheeled rovers. A radio signal from Earth takes 18 minutes to travel one way through space.",
+        "aiConnection": "Autonomous AI navigation in action! SENSE 👁️: Curiosity's Mastcam stereo cameras capture two high-resolution 3D photos of the terrain ahead, mapping elevations and slope angles. THINK 🧠: Curiosity's onboard RAD750 computer runs the AutoNav AI program. AutoNav analyzes hundreds of potential drive paths, rejecting paths with steep slopes or jagged stones, and selecting the safest detour route with optimal traction. ACT 🏃: Curiosity's motor controllers steer the four corner wheels to 15 degrees and activate the titanium wheel motors, safely driving 10 meters around the hazard without human intervention from Earth!",
+        "observation": "Even though humans built the rover, the rover drives itself across the dangerous Martian rocks using its own continuous loop of sensing, thinking, and acting.",
+        "discussion": "Why is autonomy so critical in deep space exploration? Because when distance makes instant communication impossible, machines MUST have the intelligence to make safe decisions on their own!",
+        "roboPiTip": "BEEP BOOP! Curiosity has been exploring Mars since 2012 — over a decade! That is longer than you have been alive! And it has survived thanks to millions of successful SENSE-THINK-ACT loops! 🪐🎂"
+      },
+      {
+        "id": "rwe-3",
+        "title": "🛒 The Supermarket Automatic Sliding Glass Door 🚪",
+        "scenario": "You and papa arrive at the big grocery supermarket on a bustling Saturday afternoon. Your hands are full of reusable shopping bags. As you take your final two strides toward the entrance, the wide glass panels slide open without anyone pressing a button or turning a key.",
+        "aiConnection": "The classic commercial automation loop! SENSE 👁️: A combined microwave radar and passive infrared (PIR) motion sensor mounted above the doorway detects moving body heat and motion within a 3-meter fan zone. THINK 🧠: The digital door controller receives the trigger pulse, calculates that a person is walking toward the door at walking velocity, and calculates the required door opening speed and dwell time (open duration). ACT 🏃: A brushless electric motor engages a toothed timing belt, sliding the heavy glass panels apart silently on steel tracks, and holds them open until safety sensors confirm everyone has passed through safely!",
+        "observation": "If you stand completely still like a statue 5 meters away, the door does not open. But the instant you take one step forward, the radar sensor senses your motion and the door glides open instantly!",
+        "discussion": "Why do automatic doors use motion sensors instead of simple pressure mats on the floor like they did 50 years ago? Motion sensors can detect people from farther away, don't wear out from foot traffic, and accommodate strollers and wheelchairs effortlessly!",
+        "roboPiTip": "BEEP BOOP! Next time you visit the grocery store with mama or papa, look up right above the glass door and spot the little black sensor eye! Wave hello and say: 'Thank you for SENSING me!' 🛒👋"
+      }
+    ],
+    "practiceExercises": [
+      {
+        "exerciseId": "practice-1",
+        "type": "interactive_sorting",
+        "title": "🚶 The Human vs Smart Machine Morning Relay! ☀️",
+        "instruction": "Read each morning event below. Is it a step of SENSE 👁️, THINK 🧠, or ACT 🏃? Sort them correctly to see how humans and smart machines share the golden loop!",
+        "roboPiIntro": "BEEP BOOP! Let's trace a sunny morning at home and break down what your body and your home gadgets do! Match each step to SENSE 👁️, THINK 🧠, or ACT 🏃! ☀️🤖",
+        "items": [
+          {
+            "activity": "👀 Your eyes see your favourite blue sneakers sitting next to the door.",
+            "hasAI": false,
+            "stepType": "SENSE",
+            "explanation": "SENSE 👁️: Your eyes gather light and spot the location of your sneakers!",
+            "roboPiComment": "BEEP BOOP! Just like a camera on a robot! 👁️👟"
+          },
+          {
+            "activity": "💭 Your brain thinks: 'If I tie double knots, my laces will not come undone during soccer recess!'",
+            "hasAI": false,
+            "stepType": "THINK",
+            "explanation": "THINK 🧠: Your brain weighs choices and plans a double-knot strategy!",
+            "roboPiComment": "BEEP BOOP! Pure brainpower at work! 🧠⚽"
+          },
+          {
+            "activity": "👐 Your fingers loop the shoelaces, pull them tight, and tie a firm bow.",
+            "hasAI": false,
+            "stepType": "ACT",
+            "explanation": "ACT 🏃: Your finger muscles carry out the tying action physically!",
+            "roboPiComment": "BEEP BOOP! Muscles in motion! 🏃🎀"
+          },
+          {
+            "activity": "📸 Robot vacuum's infrared eye spots a pile of breakfast toast crumbs under the table.",
+            "hasAI": true,
+            "stepType": "SENSE",
+            "explanation": "SENSE 👁️: The optical sensor detects dirt particles on the rug!",
+            "roboPiComment": "BEEP BOOP! Sensor eye locked on target! 👁️🍞"
+          },
+          {
+            "activity": "💻 Vacuum microchip calculates: 'Increase suction fan power by 25% to swallow heavy crumbs!'",
+            "hasAI": true,
+            "stepType": "THINK",
+            "explanation": "THINK 🧠: The microchip decides the exact motor power needed to clean the mess!",
+            "roboPiComment": "BEEP BOOP! Calculating the clean plan! 🧠🌪️"
+          },
+          {
+            "activity": "🌪️ Suction fan whirrs loudly and side brushes sweep the crumbs into the dust bin.",
+            "hasAI": true,
+            "stepType": "ACT",
+            "explanation": "ACT 🏃: Electric motors and suction fans perform the physical cleaning!",
+            "roboPiComment": "BEEP BOOP! Crumbs swallowed! Mission accomplished! 🏃🧹"
+          }
+        ],
+        "feedback": {
+          "correct": "🌟 SPOT ON! You can see the SENSE → THINK → ACT loop everywhere — in humans AND in smart machines! 🎉",
+          "incorrect": "🤔 Check whether the item is collecting information (SENSE), making a choice (THINK), or doing something physical (ACT)!"
+        }
+      },
+      {
+        "exerciseId": "practice-2",
+        "type": "fill_in_blanks",
+        "title": "📝 Complete Robo-Pi's Smart Machine Blueprint! 🤖",
+        "instruction": "Fill in the missing words in Robo-Pi's golden blueprint using the Word Bank below!",
+        "wordBank": [
+          "SENSE 👁️",
+          "THINK 🧠",
+          "ACT 🏃",
+          "Sensors 📡",
+          "Motors 🦾",
+          "Loop 🔄"
+        ],
+        "sentences": [
+          {
+            "id": "sent-1",
+            "sentence": "When a robot gathers clues using cameras or lasers, it is performing step 1: _____.",
+            "blank": "SENSE 👁️",
+            "options": [
+              "SENSE 👁️",
+              "SLEEP 💤",
+              "DANCE 💃",
+              "EAT 🍕"
+            ],
+            "correctAnswer": "SENSE 👁️",
+            "explanation": "SENSE is the first golden step where a machine collects information from its environment using sensors."
+          },
+          {
+            "id": "sent-2",
+            "sentence": "When a computer microchip calculates choices and makes a plan, it is performing step 2: _____.",
+            "blank": "THINK 🧠",
+            "options": [
+              "THINK 🧠",
+              "FORGET ❓",
+              "JUMP 🦘",
+              "CRASH 💥"
+            ],
+            "correctAnswer": "THINK 🧠",
+            "explanation": "THINK is the second golden step where microprocessors crunch numbers and choose the best response."
+          },
+          {
+            "id": "sent-3",
+            "sentence": "When wheels spin, robotic arms move, or doors slide open, the machine is performing step 3: _____.",
+            "blank": "ACT 🏃",
+            "options": [
+              "ACT 🏃",
+              "WAIT ⏳",
+              "HIDE 🙈",
+              "MELT 🍦"
+            ],
+            "correctAnswer": "ACT 🏃",
+            "explanation": "ACT is the third golden step where motors, actuators, or speakers carry out physical action."
+          },
+          {
+            "id": "sent-4",
+            "sentence": "Electronic organs like cameras, microphones, and touch bumpers are called _____.",
+            "blank": "Sensors 📡",
+            "options": [
+              "Sensors 📡",
+              "Batteries 🔋",
+              "Pencils ✏️",
+              "Wheels 🛞"
+            ],
+            "correctAnswer": "Sensors 📡",
+            "explanation": "Sensors are the electronic hardware devices that detect physical inputs like light, sound, heat, and touch."
+          },
+          {
+            "id": "sent-5",
+            "sentence": "The mechanical muscles that spin wheels and slide heavy glass doors are powered by electric _____.",
+            "blank": "Motors 🦾",
+            "options": [
+              "Motors 🦾",
+              "Mirrors 🪞",
+              "Balloons 🎈",
+              "Books 📚"
+            ],
+            "correctAnswer": "Motors 🦾",
+            "explanation": "Electric motors convert electrical power into physical rotation, driving wheels, timing belts, and gears."
+          },
+          {
+            "id": "sent-6",
+            "sentence": "Because SENSE leads to THINK, which leads to ACT, and repeats over and over, we call this the Golden _____.",
+            "blank": "Loop 🔄",
+            "options": [
+              "Loop 🔄",
+              "Square ⏹️",
+              "Wall 🧱",
+              "Stop 🛑"
+            ],
+            "correctAnswer": "Loop 🔄",
+            "explanation": "A loop is a continuous cycle that repeats endlessly, allowing autonomous machines to operate smoothly."
+          }
+        ]
+      }
+    ],
+    "lessonSummary": {
+      "roboPiFinalMessage": "BEEP BOOP BOOP BEEP! 🤖✨ Oh my goodness, Super Explorer! You did it! You have officially completed Lesson 2 and mastered the secret architecture of EVERY smart machine in existence! From your living room robot vacuum cleaner, to the automatic sliding doors at the grocery store, all the way to Rusty the brave Mars Rover rolling across Gale Crater on the red planet — you know their secret! SENSE 👁️, THINK 🧠, ACT 🏃, in an endless, magical golden loop! You are no longer just a kid looking at gadgets — you are a certified Junior Smart Machine Architect! My antenna is beeping with pride, my roller skates are spinning, and I am giving you the biggest robot bear-hug in the universe! *CLINK-HUG!* 🦾💖",
+      "keyTakeaways": [
+        "🤖 Ordinary tools (spoons, pencils) cannot feel or move on their own; SMART MACHINES can SENSE, THINK, and ACT!",
+        "👁️ SENSE is Step 1: Sensors (cameras, LiDAR, radar, ultrasonic bumpers) act like eyes, ears, and touch to gather clues.",
+        "🧠 THINK is Step 2: Microprocessors and AI software evaluate clues, check safety rules, and calculate the best plan.",
+        "🏃 ACT is Step 3: Electric motors, wheels, pulleys, and robotic arms carry out the plan with physical motion.",
+        "🔄 The Golden Loop is continuous: SENSE → THINK → ACT repeats dozens of times every second without stopping.",
+        "🧹 Robot vacuums use bump and laser sensors to avoid furniture, think up detours, and steer differential drive wheels.",
+        "🪐 Mars rovers must be autonomous because radio signals take up to 20 minutes to travel across interplanetary space.",
+        "🚪 Automatic supermarket doors use microwave radar sensors, microcontrollers, and motor timing belts to welcome shoppers safely."
+      ],
+      "recap": "In this lesson, we discovered what makes machines smart. We explored the 3 golden steps: SENSE 👁️ (collecting clues with sensors), THINK 🧠 (calculating decisions with computer chips), and ACT 🏃 (carrying out actions with motors and wheels). We analyzed real-world smart machines including robot vacuum cleaners, automatic supermarket doors, and Mars rovers, and we demonstrated that the SENSE-THINK-ACT sequence operates in an endless, repeating Golden Loop.",
+      "studentReflection": {
+        "question": "Think of one gadget or toy in your house that you wish was a SMART MACHINE. What would its SENSE 👁️, THINK 🧠, and ACT 🏃 steps be?",
+        "roboPiReflection": "BEEP BOOP! Imagine a smart backpack! It could SENSE when your heavy math textbook is missing 👁️, THINK 'Uh-oh, school starts in 15 minutes!' 🧠, and ACT by beeping cheerfully: 'Don't forget your math book, Super Explorer!' 🏃🎒 Wouldn't that be incredible?"
+      },
+      "nextLesson": {
+        "title": "Chapter 2 • Lesson 1: Give Me a Command! 🗣️✨",
+        "preview": "Now that we know how smart machines sense, think, and act, how do HUMANS talk to them? How do we give clear, polite, and precise commands to smart helpers?",
+        "teaser": "Get ready to explore voice assistants, voice commands, and learn how to speak the secret language of robots without confusing them! 🎤🤖"
+      },
+      "parentNote": "Today, your child explored the foundational architecture of robotics and artificial intelligence: the SENSE → THINK → ACT paradigm. By connecting abstract concepts to relatable everyday examples (robot vacuums, supermarket doors) and exciting space exploration (Mars rovers), your child developed an intuitive understanding of autonomous systems and cybernetic loops. Encourage your child to point out sensors in public spaces and discuss the three steps during family walks and shopping trips!",
+      "auraClosing": {
+        "congratulations": "MAGNIFICENT ACHIEVEMENT! You completed Chapter 1 • Lesson 2: Meet the Smart Machines! 🌟",
+        "achievement": "Golden Triple-Star Rover License Unlocked! 🪐🏅",
+        "nextStep": "Ready for Chapter 2: Communicate with AI! 🗣️✨",
+        "totalPoints": 500
+      }
+    }
+  },
+  "assessment": {
+    "quizType": "multiple_choice_interactive",
+    "roboPiQuizIntro": "BEEP BOOP! Time for the Grand Explorer Quiz! 🤖📝 Five fun questions stand between you and the Perfect Score Crown! Read carefully, think like a rover, and tap the golden answers! 👑✨",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "tap_correct",
+        "emoji": "🔄",
+        "question": "What are the three golden steps that every smart machine follows in order? 🌟",
+        "options": [
+          {
+            "id": "opt1a",
+            "label": "SENSE 👁️ → THINK 🧠 → ACT 🏃 ✨",
+            "correct": true,
+            "feedback": "⭐ BINGO! The Golden Loop is SENSE 👁️, THINK 🧠, and ACT 🏃! Perfectly remembered! 🌟"
+          },
+          {
+            "id": "opt1b",
+            "label": "SLEEP 💤 → EAT 🍕 → PLAY 🎮",
+            "correct": false,
+            "feedback": "🤔 Haha! That sounds like a fun weekend, but smart machines follow SENSE → THINK → ACT! Try again! 🤖"
+          },
+          {
+            "id": "opt1c",
+            "label": "ACT 🏃 → SENSE 👁️ → SLEEP 💤",
+            "correct": false,
+            "feedback": "🤔 A machine must first sense clues before it can act! Remember: SENSE first, then THINK, then ACT! 👁️"
+          },
+          {
+            "id": "opt1d",
+            "label": "JUMP 🦘 → YELL 📢 → RUN 🏃",
+            "correct": false,
+            "feedback": "🤔 Silly robot! The golden sequence is SENSE 👁️ → THINK 🧠 → ACT 🏃!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q2",
+        "type": "tap_correct",
+        "emoji": "👁️",
+        "question": "What do smart machines use as their 'eyes', 'ears', and 'fingertips' to gather clues? 🔍",
+        "options": [
+          {
+            "id": "opt2a",
+            "label": "Magic paintbrushes 🖌️",
+            "correct": false,
+            "feedback": "🤔 Paintbrushes make pretty art, but machines use electronic SENSORS to collect clues!"
+          },
+          {
+            "id": "opt2b",
+            "label": "Sensors (cameras, lasers, radar, microphones) 📡✨",
+            "correct": true,
+            "feedback": "⭐ CORRECT! Sensors are the electronic organs that let machines see, hear, and feel the world! 👁️✨"
+          },
+          {
+            "id": "opt2c",
+            "label": "Wooden spoons 🥄",
+            "correct": false,
+            "feedback": "🤔 Wooden spoons are for cooking soup! Smart machines use SENSORS like cameras and radar! 🍲"
+          },
+          {
+            "id": "opt2d",
+            "label": "Paper clips 📎",
+            "correct": false,
+            "feedback": "🤔 Paper clips hold papers together! Electronic SENSORS collect clues for smart machines!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q3",
+        "type": "tap_correct",
+        "emoji": "🧹",
+        "question": "When a robot vacuum cleaner senses a sofa leg 5 centimeters ahead, what does its computer brain THINK? 💭",
+        "options": [
+          {
+            "id": "opt3a",
+            "label": "'Ram into the sofa leg as hard as possible!' 💥",
+            "correct": false,
+            "feedback": "🤔 Ouch! That would scratch the furniture and break the bumper! Smart machines avoid collisions! 🛋️"
+          },
+          {
+            "id": "opt3b",
+            "label": "'Turn into a spaceship and fly out the window!' 🚀",
+            "correct": false,
+            "feedback": "🤔 Vacuums cannot fly! They think about safe navigation on the floor! 🛸"
+          },
+          {
+            "id": "opt3c",
+            "label": "'Sofa leg ahead! Slow down, turn right, and clean around it safely!' 🔄✨",
+            "correct": true,
+            "feedback": "⭐ BRILLIANT! The computer brain calculates a safe detour to clean around the leg without crashing! 🧹✨"
+          },
+          {
+            "id": "opt3d",
+            "label": "'Forget cleaning and play music instead!' 🎵",
+            "correct": false,
+            "feedback": "🤔 The vacuum stays focused on its mission: safe, thorough floor cleaning!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q4",
+        "type": "tap_correct",
+        "emoji": "🪐",
+        "question": "Why must the Mars Rover Rusty make smart decisions on its own instead of waiting for a human with a joystick? 🚀",
+        "options": [
+          {
+            "id": "opt4a",
+            "label": "Because scientists on Earth are always taking naps 😴",
+            "correct": false,
+            "feedback": "🤔 Scientists work very hard around the clock! But Mars is too far away for instant radio signals!"
+          },
+          {
+            "id": "opt4b",
+            "label": "Because Mars is so far away that radio signals take up to 20 minutes to arrive! 📡🪐✨",
+            "correct": true,
+            "feedback": "⭐ SPOT ON! At interplanetary distances, radio signals take up to 20 minutes, so the rover MUST be autonomous! 🚀🪐"
+          },
+          {
+            "id": "opt4c",
+            "label": "Because Rusty doesn't like listening to humans 🤖",
+            "correct": false,
+            "feedback": "🤔 Rusty loves his human team! But physics and the speed of light make instant control impossible! 🌌"
+          },
+          {
+            "id": "opt4d",
+            "label": "Because joysticks do not work on computers 🎮",
+            "correct": false,
+            "feedback": "🤔 Joysticks work great, but the 20-minute radio delay across deep space causes crashes!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q5",
+        "type": "tap_correct",
+        "emoji": "🏃",
+        "question": "Which of the following is an example of a smart machine taking physical ACTION 🏃?",
+        "options": [
+          {
+            "id": "opt5a",
+            "label": "An electric motor sliding the supermarket glass doors open smoothly! 🚪✨",
+            "correct": true,
+            "feedback": "⭐ PERFECT SCORE! An electric motor physically sliding the glass doors is a pure physical ACTION! 🏃🚪"
+          },
+          {
+            "id": "opt5b",
+            "label": "A camera taking a snapshot of a face 📷",
+            "correct": false,
+            "feedback": "🤔 Taking a snapshot to collect clues is SENSING 👁️, not taking physical action!"
+          },
+          {
+            "id": "opt5c",
+            "label": "A microchip calculating a math formula 🧮",
+            "correct": false,
+            "feedback": "🤔 Calculating numbers inside a chip is THINKING 🧠, not taking physical action!"
+          },
+          {
+            "id": "opt5d",
+            "label": "A book sitting quietly on a wooden bookshelf 📚",
+            "correct": false,
+            "feedback": "🤔 A book sitting on a shelf is an ordinary object doing nothing at all!"
+          }
+        ],
+        "points": 20
+      }
+    ],
+    "maxScore": 100,
+    "passingScore": 80,
+    "completionMessages": {
+      "perfect": "🌟 PERFECT 100/100! You are a genuine Master of Smart Machines! Wear your Triple-Star Crown with pride! 👑🪐",
+      "excellent": "🎉 FANTASTIC 80+/100! You deeply understand SENSE, THINK, and ACT! Rusty the Rover is cheering for you! 🚀✨",
+      "good": "👍 GOOD JOB! You understand the basics! Review the three sections and try again for a perfect score! 🤖",
+      "tryAgain": "💪 DON'T GIVE UP! Remember Robo-Pi's golden rhyme: SENSE 👁️, THINK 🧠, ACT 🏃! Let's try again! 🌟"
+    }
+  },
+  "resources": {
+    "teacherGuide": "/content/junior/guides/class4-ch1-l2-teacher.pdf",
+    "worksheets": [
+      "/content/junior/worksheets/class4-ch1-l2-mars-rover-course.pdf",
+      "/content/junior/worksheets/class4-ch1-l2-golden-loop-sorter.pdf"
+    ],
+    "videos": [
+      {
+        "title": "🎬 How Do Mars Rovers Drive Themselves? (NASA Kids Science)",
+        "url": "TBD",
+        "duration": "4:15",
+        "description": "An awe-inspiring animated look at NASA's autonomous AutoNav systems traversing Martian dunes!"
+      },
+      {
+        "title": "🎬 Inside a Robot Vacuum Cleaner: How Does It See Your Living Room?",
+        "url": "TBD",
+        "duration": "3:50",
+        "description": "Kid-friendly transparent teardown showing LiDAR lasers, bump micro-switches, and wheel motors in action!"
+      },
+      {
+        "title": "🎬 SENSE, THINK, ACT: The Secret Loop Behind All Robots!",
+        "url": "TBD",
+        "duration": "4:30",
+        "description": "Cheerful musical animation explaining the cybernetic loop for elementary school engineers!"
+      }
+    ],
+    "additionalReading": [
+      {
+        "title": "📖 The Boy Who Built a Robot: Amazing Tales of Everyday Automation",
+        "url": "TBD",
+        "level": "Elementary"
+      }
+    ],
+    "parentResources": [
+      {
+        "title": "👨‍👩‍👧 Spotting Smart Machines on Everyday Family Outings: A Parent's Guide",
+        "url": "TBD",
+        "description": "Simple prompts to help parents turn grocery store visits and walks into engaging STEM learning moments."
+      }
+    ]
+  },
+  "teacherNotes": {
+    "preparation": "Set up a physical demonstration if possible! A toy remote control car or a real robot vacuum brings this lesson instantly to life. Mark three colored zones on the whiteboard: SENSE (Yellow 👁️), THINK (Cyan 🧠), ACT (Magenta 🏃). Have cushions and empty shoe boxes ready for Activity 1 (Mars Rover Obstacle Course).",
+    "lessonFlow": "Hook students with the Opening Story of Rusty the Mars Rover. Emphasize why live remote control is impossible over 200 million kilometers. Introduce the puddle metaphor ('See puddle 👁️, think don't wet shoes 🧠, jump over it 🏃'). Move systematically through SENSE, THINK, and ACT, then bring students to their feet for Activity 1. Conclude with the interactive assessment.",
+    "tips": [
+      "🎯 Use physical kinesthetic roleplay: have students act as 'The Sensor', 'The Brain', and 'The Wheels' in trios!",
+      "💡 When explaining sensors, have students close their eyes and touch an object to demonstrate sensory input.",
+      "🚀 Emphasize the interplanetary radio delay: 20 minutes each way makes autonomy a survival necessity, not just a luxury.",
+      "🧹 Highlight that everyday machines like grocery store doors use the exact same loop as multi-billion dollar NASA rovers.",
+      "⚠️ Address the common misconception that machines 'think' with human feelings; clarify that machine thinking is math and rule-checking.",
+      "🌟 Celebrate every student's Golden Triple-Star Rover License at the end of the period!"
+    ],
+    "commonMisconceptions": [
+      "❌ Misconception: 'Robots have brains made of meat like humans.' → Correction: Robot brains are microchips made of silicon that do lightning-fast math calculations.",
+      "❌ Misconception: 'A regular electric fan is a smart machine.' → Correction: A regular fan spins when plugged into a switch, but it has no sensors to measure room temperature and no brain to decide when to stop.",
+      "❌ Misconception: 'The Mars Rover is driven with a live joystick from NASA headquarters.' → Correction: Interplanetary distance creates a 20-minute radio delay, making autonomous onboard navigation essential.",
+      "❌ Misconception: 'Sensors can only see things.' → Correction: Sensors can hear (microphones), feel touch (bumpers), measure distance (lasers), and detect heat (infrared)."
+    ],
+    "differentiatedInstruction": {
+      "forStrugglingStudents": "Focus primarily on the human puddle analogy (see puddle, think don't get wet, jump). Use physical gestures: point to eyes for SENSE, point to head for THINK, tap feet for ACT. Keep the 3 steps as a repetitive call-and-response cheer.",
+      "forAdvancedStudents": "Challenge advanced students to design a flowchart for an autonomous school bus or an underwater submarine robot. Ask them to identify what specific sensors (sonar, GPS, depth gauge) would be required and what safety rules the brain must check.",
+      "forELLStudents": "Provide illustrated flashcards for SENSE 👁️, THINK 🧠, and ACT 🏃. Encourage physical demonstration over verbal explanation. Connect vocabulary to native-language equivalents for sight, thought, and motion."
+    }
+  },
+  "additionalResources": [
+    {
+      "type": "video",
+      "title": "🎬 NASA Curiosity Rover's Greatest Hits on Mars",
+      "description": "Exciting 3-minute video featuring real footage and 3D animations of the Curiosity rover overcoming Martian sand dunes.",
+      "url": "TBD",
+      "ageAppropriate": true
+    },
+    {
+      "type": "article",
+      "title": "📰 How Robot Vacuums Make Maps of Your House",
+      "description": "An illustrated article showing how LiDAR laser eyes build 2D floor plans on smartphone apps, written for 9-year-olds.",
+      "url": "TBD",
+      "ageAppropriate": true
+    },
+    {
+      "type": "activity",
+      "title": "🎨 Printable Golden Rover License & Robot Cut-Out",
+      "description": "A printable PDF template where kids can draw their own invented robot rover, write its 3 golden steps, and color its badges.",
+      "url": "TBD",
+      "ageAppropriate": true
+    },
+    {
+      "type": "interactive",
+      "title": "🌐 Virtual Mars Rover Sandbox Simulator",
+      "description": "A simple web-based simulator where children can place boulders on red sand and program a virtual rover's SENSE, THINK, ACT loop.",
+      "url": "TBD",
+      "ageAppropriate": true
+    }
+  ],
+  "assessmentQuestions": [
+    {
+      "questionId": "aq1",
+      "question": "What is the primary function of SENSORS on a smart machine? 👁️",
+      "options": [
+        "To provide battery power to the machine",
+        "To collect information and clues from the environment like eyes, ears, and touch 📡✨",
+        "To make the machine look shiny and pretty",
+        "To store physical garbage inside the robot"
+      ],
+      "correctAnswer": "To collect information and clues from the environment like eyes, ears, and touch 📡✨",
+      "explanation": "Sensors are input devices that detect environmental variables such as light, sound, obstacle distance, and motion."
+    },
+    {
+      "questionId": "aq2",
+      "question": "Which component represents the 'brain' of a smart machine where THINKING occurs? 🧠",
+      "options": [
+        "The rubber wheels on the bottom",
+        "The plastic bumper on the front",
+        "The microchip or computer processor running smart software programs 💻✨",
+        "The electrical power cord plugged into the wall"
+      ],
+      "correctAnswer": "The microchip or computer processor running smart software programs 💻✨",
+      "explanation": "The microprocessor is the computational engine that processes sensor inputs, evaluates logic, and makes operational decisions."
+    },
+    {
+      "questionId": "aq3",
+      "question": "Why does the SENSE → THINK → ACT sequence operate as a continuous LOOP? 🔄",
+      "options": [
+        "Because once a machine acts, its new position requires it to sense the new environment all over again! 🔄✨",
+        "Because robots get dizzy if they don't spin in circles",
+        "Because machines only work for five seconds and then shut off",
+        "Because the battery only lasts for one single step"
+      ],
+      "correctAnswer": "Because once a machine acts, its new position requires it to sense the new environment all over again! 🔄✨",
+      "explanation": "Autonomous operation requires continuous feedback: taking action changes the robot's physical state, requiring fresh sensor data to plan the next action."
+    },
+    {
+      "questionId": "aq4",
+      "question": "How does an automatic supermarket sliding door SENSE an approaching shopper? 🛒",
+      "options": [
+        "A cashier watches from across the store and pushes a hidden button",
+        "An infrared motion sensor or microwave radar mounted above the door detects approaching movement 📡✨",
+        "The shopper must whisper a secret password into the glass",
+        "The glass door weighs each person with a scale"
+      ],
+      "correctAnswer": "An infrared motion sensor or microwave radar mounted above the door detects approaching movement 📡✨",
+      "explanation": "Overhead motion sensors emit invisible infrared or microwave radar beams that bounce back when an approaching shopper enters the detection zone."
+    },
+    {
+      "questionId": "aq5",
+      "question": "What would happen if Rusty the Mars Rover did NOT have autonomous SENSE-THINK-ACT capabilities? 🪐",
+      "options": [
+        "Rusty would easily fly back to Earth like a superhero",
+        "Rusty would turn into a human astronaut",
+        "Rusty would crash into rocks and get stuck in craters because radio commands from Earth take 20 minutes to arrive! 💥✨",
+        "Rusty would immediately build a hotel on Mars"
+      ],
+      "correctAnswer": "Rusty would crash into rocks and get stuck in craters because radio commands from Earth take 20 minutes to arrive! 💥✨",
+      "explanation": "The immense interplanetary distance between Earth and Mars causes communication delays of up to 20 minutes, making live steering impossible and autonomous obstacle avoidance critical."
+    }
+  ]
+}
