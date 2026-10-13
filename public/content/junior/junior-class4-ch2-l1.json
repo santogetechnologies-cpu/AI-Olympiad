@@ -1,0 +1,1399 @@
+{
+  "lessonId": "l1",
+  "fullLessonId": "junior-class4-ch2-l1",
+  "title": "Say It Clearly! 🗣️✨",
+  "level": "junior",
+  "class": "class4",
+  "chapter": "ch2",
+  "chapterTitle": "Communicate with AI • CONNECT",
+  "lessonNumber": 1,
+  "classNumber": 4,
+  "chapterNumber": 2,
+  "mascot": {
+    "name": "Robo-Pi",
+    "emoji": "🤖✨",
+    "description": "A friendly silver robot wearing a tiny graduation cap, a sparkling magnifying glass necklace, and shiny golden roller skates! Robo-Pi has big glowing blue eyes that sparkle when excited, two bouncy antenna ears that wiggle when listening carefully, and a cheerful beeping voice!",
+    "voiceStyle": "Cheerful, energetic beeping sentences. Loves exclamation marks! Uses BEEP BOOP as a greeting. Always encourages the child with huge enthusiasm, silly giggles, and warm robot hugs!",
+    "catchphrase": "BEEP BOOP! Fuzzy words make robot blunders; clear words make magic wonders! Say it clearly! 🗣️✨🤖"
+  },
+  "metadata": {
+    "duration": "45 minutes",
+    "ageGroup": "9-10 years",
+    "difficulty": "beginner",
+    "totalWords": 12000,
+    "version": "1.0",
+    "lastUpdated": "2026-10-13",
+    "author": "AI Olympiad Team",
+    "tags": [
+      "AI communication",
+      "prompting",
+      "say it clearly",
+      "clear commands",
+      "vague vs clear",
+      "chef bot",
+      "no coding",
+      "class4",
+      "junior",
+      "connect"
+    ]
+  },
+  "content": {
+    "introduction": {
+      "welcomeMessage": "🤖✨ BEEP BOOP! Welcome to Chapter 2! Today we learn the most magical superpower in the world: How to TALK to smart machines so they understand you perfectly! 🗣️🎉",
+      "roboPiGreeting": {
+        "text": "BEEP BOOP! Hello, hello, hello, my brilliant wordsmith friend! It is me, Robo-Pi, back for Chapter 2 of our grand AI adventure! 🤖✨ Give me an extra-loud virtual high-five! *CLINK-CLANK!* ✋ Last chapter, we learned that smart machines SENSE 👁️, THINK 🧠, and ACT 🏃. But today, we face a whole new mystery: How do WE tell a smart machine what we want? Have you ever asked a computer to do something, and it gave you something completely CRAZY? That is because robots do not have magic crystal balls to peek inside your brain! A smart machine takes your words ONE HUNDRED PERCENT LITERALLY! If you ask a robot: 'Can you bring me cold food?', it might march straight to the freezer, grab a frozen raw onion with ice crystals on it, and drop it on your plate with a proud smile! 🧅🥶 You wanted sweet mango ice cream, but you only said 'cold food'! Whose fault was that? The robot followed your exact words! That is why today's lesson is called 'Say It Clearly!' 🗣️ We are going to discover the golden art of giving crystal-clear commands! When you say exactly what you mean, smart machines can bake you dream cakes 🎂, draw you laughing puppies 🐶🎨, and play your favorite songs 🎵! Are you ready to become a master communicator? Put on your imaginary megaphone hat — BEEP click BOOP — let's go! 📢⭐",
+        "toastGuidance": {
+          "tap_prompt": "👇 Tap Robo-Pi's golden megaphone to start Chapter 2! 📢✨",
+          "great_job": "🌟 BEEP BOOP! Megaphone activated! Your voice is loud and crystal-clear! 🗣️⭐",
+          "encouragement": "🤖 Don't worry if you made vague prompts before — today you'll become a pro prompter!"
+        }
+      },
+      "openingStory": {
+        "title": "🎂 The Hilarious Disaster at Chef Bot's Grand Bakery! 🍰🤖",
+        "content": "Once upon a sunny Saturday morning in the bustling town of Techville, a shiny new bakery opened its doors called 'The Robo-Bake Shoppe'! 🏪 Behind the counter stood Chef Bot — a gleaming white kitchen robot with a tall puffy chef's hat, eight stainless steel whisk fingers, and a computerized oven tummy that could bake any pastry in sixty seconds flat! 👨‍🍳✨ A young boy named Leo ran into the bakery to order a cake for his little sister Lily's seventh birthday. Leo was in a huge hurry because the birthday party started in thirty minutes. Leo ran up to Chef Bot's glowing microphone screen and shouted: 'Hey Chef Bot! Make food! Fast!' 🗣️💨 Chef Bot's blue eyes blinked thoughtfully: *BEEP BOOP... Processing command: MAKE FOOD.* What did Chef Bot do? Well, 'food' could be anything in the entire universe! Chef Bot's robotic pantry arm whirred open, scooped up a cup of dry uncooked oatmeal, poured spicy hot chili sauce over it, topped it with three raw garlic cloves, and baked it into a crunchy brown brick! *DING!* Chef Bot presented the spicy garlic oatmeal brick on a silver tray and beeped proudly: 'Order complete! Delicious food ready for consumption!' 🧄🌶️ Leo's jaw dropped to the floor. 'YUCK! What is THIS? I can't give my sister a spicy garlic brick for her birthday party! She will cry!' Leo groaned. 'Chef Bot, you silly robot! Make something sweet!' Chef Bot blinked again: *BEEP BOOP... Processing command: MAKE SOMETHING SWEET.* Chef Bot grabbed a giant bag of pure white table sugar, poured five kilograms of sugar into a punch bowl, stirred in four tablespoons of sweet pancake syrup, and handed Leo a giant bowl of sugary white paste! 'Here is sweet thing! 100% sugar!' Leo grabbed his hair in frustration. 'Oh no, oh no, oh no! Why can't you just make what I want?!' Just then, Leo's older sister Maya walked into the bakery. Maya smiled and gently tapped Leo's shoulder. 'Leo, look at Chef Bot. He has no imagination! He doesn't know Lily loves pink and chocolate. You have to say it CLEARLY!' Maya leaned into the microphone with a calm, polite smile and spoke: 'Hello Chef Bot! Please bake a round, two-layer chocolate birthday cake with fluffy vanilla frosting, pink sprinkles around the edges, and exactly five fresh red strawberries on top. Thank you!' 🎂🍓 Chef Bot's eyes spun with dazzling golden stars: *BEEP BOOP! Crystal-clear recipe detected!* Whisk fingers whipped Belgian chocolate batter; the oven tummy glowed warm gold; white vanilla frosting swirled like clouds; pink sprinkles danced across the top; and *plop, plop, plop, plop, plop* — five juicy red strawberries were placed in a perfect circle! Sixty seconds later, a breathtaking, mouth-watering chocolate masterpiece slid out onto the counter! Leo gasped in wonder. 'WOW! That is the most beautiful cake I have ever seen!' Maya laughed: 'See? When you say fuzzy words, you get garlic bricks. When you say crystal-clear words, you get chocolate strawberry magic!' 🍰✨",
+        "moraleOfStory": "Smart machines are powerful helpers, but they cannot read your mind! If you give vague words, you get silly blunders. If you give clear, descriptive words, you get exactly what you dreamed of! 🗣️✨",
+        "roboPiComment": "BEEP BOOP! Poor Chef Bot was trying his very best! He didn't know Leo wanted chocolate — he just knew 'food'! Remember: clear words are the magical key that unlocks the robot's genius! 🔑🤖"
+      },
+      "learningObjectives": [
+        "🗣️ Understand the difference between Fuzzy/Vague commands and Crystal-Clear commands!",
+        "🚫 Learn why smart machines take human words 100% literally and cannot guess your secret thoughts!",
+        "🍓 Master the Magic 3 Questions: WHAT is it? HOW does it look/taste/sound? WHICH special details?",
+        "🌟 Learn the polite, powerful words: 'Please', action verbs ('Bake', 'Draw', 'List'), and exact numbers!",
+        "🎂 Conquer the Chef Bot Bakery Challenge by creating the ultimate crystal-clear bakery prompt!",
+        "🏆 Earn your official Crystal-Clear Speaker Badge and become a certified Junior AI Communicator! 🏅"
+      ],
+      "detectiveBadge": {
+        "title": "The Crystal-Clear Speaker Badge 🗣️⭐",
+        "description": "Earn all three sparkling communication medals to prove you can talk to any robot or AI without confusing it!",
+        "magnifiers": [
+          {
+            "id": "badge-fuzzy",
+            "name": "Fuzzy Trap Breaker Medal 🔍",
+            "earnedBy": "Mastering Section 1: Spotting and escaping the dangerous trap of vague, blurry words!",
+            "colour": "#FF9800"
+          },
+          {
+            "id": "badge-details",
+            "name": "Magic Details Master Medal 🎨",
+            "earnedBy": "Mastering Section 2: Using the Magic Three Questions (WHAT, HOW, WHICH) to paint vivid word pictures!",
+            "colour": "#4CAF50"
+          },
+          {
+            "id": "badge-polite",
+            "name": "Polite Super-Prompter Medal 🌟",
+            "earnedBy": "Mastering Section 3: Crafting respectful, organized, step-by-step commands with action verbs!",
+            "colour": "#9C27B0"
+          }
+        ]
+      },
+      "auraGuidance": {
+        "welcome": "LET'S COMMUNICATE! Welcome to Chapter 2! Get ready to unlock the secret language of smart machines! 🗣️",
+        "instruction": "Listen to the hilarious mix-ups, tap the crystal-clear words, and watch Chef Bot bake wonders! 🎂✨",
+        "encouragement": "You have a wonderful voice and great ideas! Today, you will learn how to turn those ideas into robot magic! 🌟"
+      }
+    },
+    "mainConcept": {
+      "whatIsAI": {
+        "title": "🗣️ Why Do Robots Need Us to 'Say It Clearly'? 🤖💡",
+        "roboPiIntro": "BEEP BOOP! Before we visit Chef Bot's kitchen, let's unlock the big secret of how computers hear words! Prepare for some giggles! 🤖🤭",
+        "simpleExplanation": "Think about talking to your best friend at school recess. If you turn to your best friend and say: 'Hey, let's play that thing!', your friend instantly smiles and shouts: 'Yeah! Four-square by the big oak tree!' 🌳 Why did your friend understand? Because your friend has human context! Your friend remembers what you played yesterday, knows what games you like, and can read the excited look in your eyes. But a smart machine does NOT have human memories, childhood playground recess, or a secret crystal ball! A smart machine is a computer program running on math and rules. When you type or speak a sentence to an AI, the computer looks at the literal definition of every single word. If you use fuzzy, blurry, lazy words like 'Make food', 'Draw stuff', or 'Do that thing', the computer has to pick one choice out of ten million possibilities! 🎲 And nine times out of ten, it will pick something hilarious that you never wanted! But when you give CLEAR words — naming the item, its size, its color, its flavor, and its special ingredients — the computer zeroes in on your exact vision like a laser beam! Speaking clearly to AI is not about memorizing hard computer code. It is about being a wonderful storyteller! It is about using rich, descriptive everyday words that paint a vivid picture! 🎨✨",
+        "keyPoints": [
+          "🤖 Robots do NOT have human crystal balls: they take human words 100% literally!",
+          "🌫️ Fuzzy words ('food', 'stuff', 'thing', 'nice') make robots guess blindly.",
+          "✨ Clear words give exact details: size, colour, flavour, texture, and count.",
+          "🎨 Talking to AI is like painting a picture with words: the more details you paint, the clearer the result!",
+          "🗣️ No coding is needed! You only need everyday descriptive English words used clearly and politely."
+        ],
+        "toastGuidance": {
+          "tap_prompt": "👇 Tap the glowing speech bubble to hear how AI listens to words! 💬🤖",
+          "great_job": "⭐ BRILLIANT! You discovered why literal robot brains need crystal-clear instructions! 💡",
+          "try_again": "🤔 Tap the speech bubble icon to reveal the secret behind robot hearing!"
+        }
+      },
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "🌫️ Section 1: The Fuzzy Foggy Trap! (Why Vague Words Cause Robot Blunders!) ❓🚫",
+          "missionBadge": "Fuzzy Trap Breaker Medal 🔍",
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Section 1, Word Detective! 🤖🔍 Your first mission is to spot the dangerous 'Fuzzy Foggy Words' that trip up computers every single day! When you clear the fog, the magic appears! Let's explore some hilarious real-world blunders! 🌫️✨",
+          "mainContent": {
+            "paragraph1": "Have you ever tried to find your way through a thick, cloudy blanket of morning fog? Everything looks blurry, gray, and confusing. You can't tell if that shape in the distance is a friendly neighbor's dog or a fire hydrant! 🌫️ That is exactly what happens inside a computer's microprocessor when you use FUZZY WORDS! Words like 'thing', 'stuff', 'good', 'nice', 'big', 'cool', and 'fast' are the foggiest words in the English dictionary! What does 'nice' mean? To you, a nice afternoon might mean eating mango popsicles on the front porch. To a penguin in Antarctica, a nice afternoon means swimming in freezing salt water and catching raw silver fish! 🐧🐟 If you tell a robot: 'Make me a nice lunch', the robot has to guess what 'nice' means to a human!",
+            "paragraph2": "Let us examine the famous 'Cold Food' blunder! Imagine you are sitting on the couch on a scorching hot summer afternoon. The temperature outside is thirty-five degrees, and the sun is blazing like a fireball. You are sweating and thirsty. You look at your friendly kitchen helper bot and say: 'Robot, I am hot! Bring me cold food!' 🗣️ In your mind, you are dreaming of a tall glass of icy lemonade with two scoops of velvety vanilla ice cream. But what did your mouth actually say? 'COLD FOOD'. The robot's computer brain checks its database: 'Cold food = items stored below zero degrees Celsius.' The robot rolls to the deep freezer, pulls out a frozen raw beef soup bone that has been sitting in the freezer for three months, and thumps it onto your lap! *CLUNK!* 🦴🥶 The robot smiles: 'Cold food delivered!' You scream in horror! But the robot followed your instructions with one hundred percent mathematical perfection! It brought cold food!",
+            "paragraph3": "Now let us look at the 'Draw an Animal' disaster! 🎨 You open a magical AI drawing app on your tablet. You want to make a cute greeting card for your grandmother who loves fluffy white kittens. But instead of typing all those details, you get lazy and type three words: 'Draw an animal.' ✏️ The AI computer searches its mind. There are over eight million animal species on planet Earth! The AI thinks: 'Should I draw a hairy tarantula spider with eight furry legs? Should I draw a slimy blobfish from the bottom of the deep ocean? Should I draw an angry giant snapping turtle?' The AI picks... THE SLIMY BLOBFISH! 🐟😖 On your screen appears a giant, pink, frowning, slippery blobfish with droopy eyes! You wanted a cute white kitten with a pink ribbon for grandma, but you got a deep-sea monster! Whose fault was that? It was the Fuzzy Foggy Trap!",
+            "paragraph4": "Think about clothes and shoes! A boy named Sammy asks his smart shopping assistant: 'Order me big shoes!' Sammy meant size 5 sneakers for school soccer, because his current size 4 sneakers feel a little tight on his toes. But what does 'big' mean to a machine? The shopping assistant searches the world's shoe warehouses and finds a pair of size 22 giant clown shoes with squeaky yellow toes and purple polka dots! 🤡👟 Three days later, a giant cardboard box arrives at Sammy's house with shoes that are longer than his entire leg! When Sammy puts them on, they squeak like a wounded duck: *HONK! SQUEAK!* Sammy cannot run in soccer practice wearing giant clown shoes! All because Sammy used the fuzzy word 'big' instead of saying: 'Size 5 blue running sneakers with rubber grips.'",
+            "paragraph5": "Whenever you feel tempted to use a short, lazy, fuzzy command, remember this golden rule: A robot cannot read your secret thoughts! If you do not say it with your words, it does not exist in the robot's universe! When you break free from the Fuzzy Foggy Trap, you unlock the ability to get exactly what you want every single time! Let us look at three classic blunders and how a single clear sentence fixes each one! 🌫️➡️🌟"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-fuzzy-1",
+              "title": "🥔 The Frozen Raw Potato Surprise! 🥶",
+              "icon": "🥔",
+              "description": "Why saying 'Give me cold food' results in frozen root vegetables instead of delicious ice cream!",
+              "realLifeScenario": "It is a boiling hot afternoon in July. Little Kabir runs into the kitchen after playing cricket outside. He shouts to the smart kitchen fridge bot: 'Robot! Give me cold food right now!' The fridge bot opens its bottom freezer drawer, extends its metal gripper, grabs a rock-hard frozen raw baking potato covered in frost, and drops it into Kabir's hands! Kabir cries: 'A frozen potato?! I wanted mango ice cream!' The fridge bot beeps politely: 'Potato temperature is minus eighteen degrees Celsius. Query satisfied.' Kabir's vague command produced a rock-hard vegetable brick! 🥔❄️",
+              "roboPiComment": "BEEP BOOP! A frozen raw potato is definitely cold, and it is definitely food! Kabir's prompt was 100% satisfied by the robot! To get ice cream, Kabir needed to say the magic words: 'Two scoops of Alphonso mango ice cream in a bowl!' 🥭🍨",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the frozen potato to see how a crystal-clear ice cream command fixes it! 🥔✨",
+                "great_job": "🌟 FROZEN POTATO BANISHED! Swapped for sweet mango ice cream scoops! 🍨🎉",
+                "try_again": "🤔 Tap the frost-covered potato to teach Kabir the clear command!"
+              }
+            },
+            {
+              "id": "dde-fuzzy-2",
+              "title": "🐟 The Mystery Slime Monster Painting! 🎨❓",
+              "icon": "🎨",
+              "description": "How typing 'Draw something nice' generates a grumpy deep-sea blobfish instead of a cheerful puppy!",
+              "realLifeScenario": "Ananya wanted to create a cheerful desktop wallpaper for her computer. She opened the AI art generator, typed 'Draw something nice', and clicked generate. Thirty seconds later, the screen displayed a grumpy deep-sea anglerfish with needle-sharp fangs and glowing green slime lurking in dark black water! Ananya jumped out of her chair in fright! The AI didn't know that Ananya finds puppies, rainbows, and sunflowers 'nice'. To an AI trained on marine biology textbooks, deep-sea fish are fascinating and 'nice'! 🐟🌊",
+              "roboPiComment": "BEEP BOOP! 'Nice' is the fuzziest word in the universe! To a frog, a juicy crunchy fly is nice! To you, a strawberry cupcake is nice! Always tell the AI what KIND of nice you want! 🧁🐸",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the anglerfish to transform it into a smiling golden puppy! 🐟➡️🐶",
+                "great_job": "🌟 ART MAGIC! Replaced the scary fish with a happy puppy chasing a blue ball! 🐶🎾",
+                "try_again": "🤔 Tap the scary fish to enter the crystal-clear art description!"
+              }
+            },
+            {
+              "id": "dde-fuzzy-3",
+              "title": "👟 The Giant Honking Clown Shoes! 🤡👟",
+              "icon": "👟",
+              "description": "Why telling a smart shopping assistant to 'Buy big shoes' delivers size 22 circus footwear!",
+              "realLifeScenario": "Rohan's school sports day was coming up on Friday. Rohan asked the smart speaker: 'Order me some big shoes for running!' The smart speaker searched online shoe stores. It found standard running shoes in sizes 1 through 10, but then it found a pair of novelty circus clown running shoes labeled 'Extra Giant Big Size 22 with Squeaker Soles'. The algorithm matched the keyword 'big' with the highest relevance score and placed the order! When the delivery box arrived, the shoes were 50 centimeters long, bright neon yellow, and went *HONK!* every time Rohan took a step! 🤡👟",
+              "roboPiComment": "BEEP BOOP! Rohan learned a hilarious lesson: Always specify the exact shoe size, brand, and colour! 'Size 4 blue Puma running shoes' would have saved Rohan from the squeaking circus shoes! 👟🏃",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the giant clown shoe to replace it with real running sneakers! 🤡👟",
+                "great_job": "🌟 HONK GONE! Replaced with sleek size 4 blue running sneakers! 👟✨",
+                "try_again": "🤔 Tap the yellow clown shoe to fix the shoe order prompt!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🌫️ The Fuzzy Foggy Trap happens when we use vague words like 'thing', 'stuff', 'nice', or 'food'.",
+            "🤖 Computers take words 100% literally and cannot guess your mood, preferences, or thoughts.",
+            "🥔 'Cold food' can mean a frozen raw potato just as easily as mango ice cream.",
+            "🎨 'Draw something nice' lets the AI guess from millions of images, often picking scary or strange things.",
+            "👟 Words like 'big' or 'fast' need exact measurements (size numbers, centimeters, seconds).",
+            "✨ When you spot a fuzzy word in your sentence, STOP and replace it with a specific descriptive word!"
+          ],
+          "mission1Complete": {
+            "celebrationText": "🎉 MISSION 1 ACCOMPLISHED! You smashed the Fuzzy Foggy Trap!",
+            "roboPiCelebration": "BEEP BOOP HOORAY! 🥳 You can spot fuzzy words from a mile away! No more frozen potatoes, no more slimy blobfish, and no more clown shoes! Your Fuzzy Trap Breaker Medal is shining on your chest! Now, how do we build the ultimate clear command? Let's unlock the Magic Three Questions! 🎨✨",
+            "magnifierEarned": "Fuzzy Trap Breaker Medal 🔍",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to pin the Fuzzy Trap Breaker Medal onto your sash! 🏅",
+              "great_job": "⭐ MEDAL EQUIPPED! You are officially immune to vague word traps! 🛡️✨",
+              "encouragement": "On to Section 2 — let's learn the Magic Three Questions! 🍓🎨"
+            }
+          }
+        },
+        {
+          "id": "section-2",
+          "title": "🎨 Section 2: The Magic Three Questions! (WHAT, HOW, and WHICH!) 🍓✨",
+          "missionBadge": "Magic Details Master Medal 🎨",
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Section 2, Master Prompter! 🤖🎨 Now that we know fuzzy words are dangerous, what is the secret recipe for a crystal-clear command? It is as easy as 1, 2, 3! Whenever you talk to AI, answer the Magic Three Questions: WHAT, HOW, and WHICH! Let's explore how they turn ordinary sentences into masterpieces! 🍓🎂",
+          "mainContent": {
+            "paragraph1": "Imagine you are an artist with a giant blank white canvas and a palette of colorful paints. If someone tells you: 'Paint a picture', you don't know what colors to pick or what subject to draw. But if someone gives you three golden clues, suddenly the entire painting appears vividly inside your imagination! Those three golden clues are called THE MAGIC THREE QUESTIONS: Question 1: WHAT is it? Question 2: HOW does it look, taste, or feel? Question 3: WHICH special details make it unique? 🎨✨ When you answer all three questions in your prompt, you give the smart machine a crystal-clear blueprint to follow!",
+            "paragraph2": "Let us examine Question 1: WHAT is it? 🏷️ This is the core noun. You must name the exact object, food, or task. Never say 'food' — say 'birthday cake', 'sandwich', 'pasta', or 'soup'. Never say 'animal' — say 'golden retriever puppy', 'baby koala', or 'sea turtle'. Never say 'music' — say 'acoustic guitar song', 'piano lullaby', or 'drum beat'. By naming the exact noun, you instantly eliminate 99.9% of all robot confusion! The robot immediately pulls up the correct folder in its digital brain!",
+            "paragraph3": "Now let us examine Question 2: HOW does it look, taste, or feel? 🌈 These are the sensory adjectives! Think about your five senses: sight, sound, touch, taste, and smell. What color is it? Is it bright sky-blue, golden yellow, or emerald green? What shape is it? Is it round, square, tall, or flat? What texture is it? Is it fluffy, crunchy, velvety, or smooth? What flavor is it? Is it rich dark chocolate, sweet strawberry, or tangy lemon? When you add sensory adjectives, your command transforms from black-and-white into glorious, vibrant Technicolor! 🍫🍓",
+            "paragraph4": "Finally, let us examine Question 3: WHICH special details make it unique? ⭐ This is where the real magic happens! Special details are the specific extras that make your request one-of-a-kind. It includes exact numbers ('five red strawberries', 'two scoops', 'three layers'), specific actions ('chasing a blue ball', 'wearing a pirate hat'), and special background settings ('in a sunny green meadow under a rainbow', 'on a wooden picnic table'). When you tell the AI exactly which toppings, decorations, or poses to include, the result matches your dream with breathtaking precision!",
+            "paragraph5": "Let us put the Magic Three Questions together in Chef Bot's bakery! 🎂 Look at this side-by-side transformation: VAGUE COMMAND: 'Make food.' (Result: spicy garlic oatmeal brick! 🧄). CLEAR COMMAND: Question 1 (WHAT): 'A round birthday cake.' Question 2 (HOW): 'Rich chocolate flavor with fluffy white vanilla frosting.' Question 3 (WHICH DETAILS): 'Two layers tall, with pink sprinkles around the edges, and exactly five fresh red strawberries on top!' Combined Prompt: 'Bake a two-layer round chocolate birthday cake with fluffy vanilla frosting, pink sprinkles around the edges, and five fresh red strawberries on top!' Look at that! It is crystal clear, perfectly descriptive, and impossible to misunderstand! Chef Bot will bake a masterpiece every single time! 🎂🍓✨"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-details-1",
+              "title": "🎂 Chef Bot's Masterpiece Chocolate Strawberry Cake! 🍓",
+              "icon": "🎂",
+              "description": "How answering WHAT, HOW, and WHICH turns a baking nightmare into a five-star birthday triumph!",
+              "realLifeScenario": "Leo wants to celebrate his sister Lily's birthday. Instead of shouting 'Make food', Leo uses the Magic Three Questions! WHAT: 'A birthday cake.' HOW: 'Two layers of moist chocolate sponge with whipped vanilla cream frosting.' WHICH: 'Decorated with pink sugar stars and exactly five plump red strawberries arranged in a circle on top.' Chef Bot receives the prompt, measures precise grams of cocoa powder and flour, whips the cream to stiff peaks, bakes at 180 degrees Celsius, and places the strawberries with delicate robotic pincers. The cake looks like it belongs in a royal palace bakery! Lily gasps with pure joy when she blows out the candles! 🎂👑",
+              "roboPiComment": "BEEP BOOP! Notice the exact number 'five strawberries'! When you give an exact count, the robot never has to guess whether you wanted one strawberry or a whole mountain of fifty strawberries! Numbers are a robot's best friend! 🔢🍓",
+              "toastGuidance": {
+                "tap_prompt": "👇 Choose the crystal-clear command for the Chef Bot! 🎂✨",
+                "great_job": "🎂 YUMMY! Chef Bot baked the exact chocolate strawberry cake you asked for! 🎉",
+                "try_again": "🤔 'Make something sweet' was too vague! Tell Chef Bot what flavor!"
+              }
+            },
+            {
+              "id": "dde-details-2",
+              "title": "🥪 The Ultimate Whole-Wheat Picnic Sandwich! 🥑🍯",
+              "icon": "🥪",
+              "description": "How combining bread type, spreads, and toppings creates the perfect lunch without weird surprises!",
+              "realLifeScenario": "Zara is packing her lunchbox for a school field trip to the science museum. She talks to her family's smart sandwich maker. Vague prompt: 'Make a sandwich.' (Robot might make mustard and pickle on soggy white bread! 🥒😖). Crystal-clear prompt: 'Please make a toasted whole-wheat sandwich with creamy peanut butter spread on both slices, thinly cut ripe banana rounds in the middle, and a light drizzle of golden honey.' The machine toasts the bread to golden perfection, spreads the peanut butter edge-to-edge, places twelve neat banana circles, drizzles honey, and slices the sandwich into two neat triangles! A gourmet school lunch! 🥪🍌",
+              "roboPiComment": "BEEP BOOP! Cutting into triangles was a brilliant detail! Robots can even slice your sandwich into squares, rectangles, or fun dinosaur shapes if you ask clearly! 🦖🥪",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the sandwich maker to load the peanut butter banana recipe! 🥪✨",
+                "great_job": "🌟 CRUNCHY TOAST SUCCESS! Two golden triangles with sweet honey drizzle ready! 🍯🥪",
+                "try_again": "🤔 Tell the sandwich maker what bread, spread, and fruit to use!"
+              }
+            },
+            {
+              "id": "dde-details-3",
+              "title": "🐶 The Smiling Golden Puppy Comic Poster! 🎾🎨",
+              "icon": "🐶",
+              "description": "How describing breed, action, colors, and background generates breathtaking AI art every time!",
+              "realLifeScenario": "Arjun wants to print a poster for his bedroom wall. He opens an AI drawing tool. Vague prompt: 'Draw a dog.' (AI draws a blurry gray silhouette of a sleeping hound in a mud puddle). Crystal-clear prompt: 'Draw a cute, smiling golden retriever puppy with floppy ears and big brown eyes, running happily across a sunny green grass lawn, chasing a bright bouncing blue rubber ball. The sky has fluffy white clouds and a soft rainbow in the background, in a colorful cartoon storybook style.' The resulting illustration is so gorgeous, vibrant, and joyful that Arjun frames it on his wall! Everyone who visits asks which famous artist drew it! 🖼️🐕",
+              "roboPiComment": "BEEP BOOP! Specifying the art style ('colorful cartoon storybook style') is a secret pro trick! You can ask for cartoon style, watercolor style, or 3D clay animation style! 🎨✨",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the puppy canvas to generate the storybook illustration! 🐶🎨",
+                "great_job": "🌟 MASTERPIECE GENERATED! A happy golden puppy chasing a blue ball under a rainbow! 🌈🎾",
+                "try_again": "🤔 Include the puppy's breed, the ball's colour, and the green grass!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🎨 The Magic Three Questions build a crystal-clear prompt: WHAT, HOW, and WHICH!",
+            "🏷️ Question 1 (WHAT): Name the exact noun (birthday cake, golden puppy, acoustic song).",
+            "🌈 Question 2 (HOW): Use sensory adjectives (colors, shapes, flavors, textures).",
+            "⭐ Question 3 (WHICH DETAILS): Add specific numbers, actions, toppings, and background settings.",
+            "🔢 Exact counts (like '5 red strawberries' or '2 scoops') prevent robot guessing.",
+            "🖼️ In art prompts, mentioning the art style (e.g. 'colorful cartoon') gives professional results!"
+          ],
+          "mission2Complete": {
+            "celebrationText": "🎉 MISSION 2 ACCOMPLISHED! You mastered the Magic Three Questions!",
+            "roboPiCelebration": "BEEP BOOP BRAVO! 🎨✨ You hold the paintbrush of words! With WHAT, HOW, and WHICH in your toolkit, you can describe anything in the universe with crystal clarity! Your Magic Details Master Medal is pinned proudly on your chest! Now, how do we make our commands polite, organized, and super-friendly? Let's enter Section 3! 🌟📢",
+            "magnifierEarned": "Magic Details Master Medal 🎨",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to attach the Magic Details Master Medal! 🏅",
+              "great_job": "⭐ DETAILS MEDAL UNLOCKED! Your word pictures are vivid and colorful! 🎨🌟",
+              "encouragement": "On to Section 3 — let's learn how to be a Polite Super-Prompter! 📢✨"
+            }
+          }
+        },
+        {
+          "id": "section-3",
+          "title": "📢 Section 3: The Secret Words: Polite, Precise, and Perfect! 🌟🗣️",
+          "missionBadge": "Polite Super-Prompter Medal 🌟",
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Section 3, Courteous Communicator! 🤖📢 Did you know that the WAY you speak matters just as much as what you say? When you use powerful action verbs, clear step-by-step numbers, and polite words like 'Please' and 'Thank you', communication becomes smooth, joyful, and flawless! Let's discover the secret pro-prompter habits! 🌟🗣️",
+          "mainContent": {
+            "paragraph1": "Have you ever heard someone bark an angry, bossy command like: 'HEY MACHINE! GIMME COLD THING NOW!' 😠 How does that feel to hear? It sounds harsh, messy, and unpleasant! Even though computers and AI models do not have feelings that get hurt, practicing polite, respectful communication is one of the most important habits a young person can develop. When you say 'Please' and 'Thank you', your brain naturally slows down, thinks carefully about its words, and organizes ideas in a calm, structured manner. Being polite trains YOU to be a thoughtful, articulate speaker in every area of your life — with computers, with teachers, with friends, and with family! 🌟",
+            "paragraph2": "Let us learn the superpower of STRONG ACTION VERBS! 💥 A verb is an action word that tells the robot what physical or mental work to perform. Weak, lazy verbs like 'do', 'make', or 'get' leave the machine guessing. Strong, precise action verbs tell the machine the EXACT skill to use! Instead of saying 'Do a cake', say 'BAKE a cake'! Instead of saying 'Do a picture', say 'ILLUSTRATE a picture'! Instead of saying 'Do some words', say 'COMPOSE a three-stanza poem', 'SUMMARIZE this paragraph', or 'TRANSLATE these words into Spanish'! Notice how the verb 'Translate' or 'Summarize' tells the AI the exact mathematical task required! 📚✨",
+            "paragraph3": "Look at the magic of STEP-BY-STEP NUMBERING! 🔢 If you have a task with more than one part, don't dump all your sentences together into a giant jumbled spaghetti paragraph! Separate them with clear numbers: Step 1, Step 2, and Step 3! For example, look at this prompt for a smart breakfast robot: 'Please prepare my breakfast using these three steps: Step 1: Toast two slices of multigrain bread until golden brown. Step 2: Fry one egg sunny-side up with a pinch of salt. Step 3: Place the fried egg between the two toast slices and cut in half.' Look at how clean, organized, and elegant that is! A robot processor loves numbers because it can execute Step 1, verify completion, execute Step 2, verify completion, and execute Step 3! Zero confusion, zero mistakes! 🍳🍞",
+            "paragraph4": "What about asking for ice cream at a smart futuristic parlour? 🍦 Look at the contrast: RUDE & FUZZY: 'Give cold stuff.' (Result: a block of dry ice that burns your fingers! ❄️). POLITE & PRECISE: 'Hello Ice Cream Bot! Please scoop two generous balls of sweet Alphonso mango ice cream into a crisp waffle cone, and top with rainbow sprinkles. Thank you very much!' Look at how pleasant that sounds! The parlour robot's screen lights up with a cheerful smiley face, the ice cream scoops are perfectly rounded, the sprinkles are colorful, and the cone is crisp! You feel happy, the environment is joyful, and your order is 100% accurate! 🍨🌈",
+            "paragraph5": "When you combine POLITE MANNERS + STRONG ACTION VERBS + STEP-BY-STEP NUMBERS + CRYSTAL-CLEAR DETAILS, you become what engineers call a SUPER-PROMPTER! 🦸‍♂️ You have the power to direct any smart tool, voice assistant, creative AI, or autonomous helper with effortless mastery. You are not just pushing buttons — you are conducting a high-tech orchestra with your words! Let us explore three wonderful polite pro-prompts! 📢➡️🏆"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-polite-1",
+              "title": "🍨 The Polite Smart Ice Cream Parlour Order! 🥭🌈",
+              "icon": "🍨",
+              "description": "How combining courteous greetings, exact flavors, and container choices creates the ultimate sweet treat!",
+              "realLifeScenario": "Sana walks up to the interactive kiosk at the futuristic Robo-Scoops Parlour. Instead of banging on the screen or mumbling, Sana speaks into the microphone: 'Good afternoon! Please scoop two generous balls of Alphonso mango ice cream into a warm, crunchy waffle cone. Please sprinkle colorful sugar rainbow sprinkles on top. Thank you, Robot!' The kiosk screen chimes with a happy melody: *BEEP CHIME!* A robotic arm gently dips the stainless steel scoop into creamy mango gelato, forms two perfect spheres, places them securely inside the waffle cone, shakes a neat shower of rainbow sprinkles, and extends the cone through the serving window on a clean napkin! Sana smiles: 'Thank you!' 🍦✨",
+              "roboPiComment": "BEEP BOOP! Sana's prompt included: Greeting ('Good afternoon'), Verb ('scoop'), Flavour ('Alphonso mango'), Amount ('two generous balls'), Container ('waffle cone'), Topping ('rainbow sprinkles'), and Courtesy ('Thank you')! That is a 10/10 master prompt! 🏆🍨",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the parlour microphone to order the mango waffle cone! 🎙️🍦",
+                "great_job": "🌟 CONE DELIVERED! Two mango scoops with rainbow sprinkles served with a smile! 🍨🌈",
+                "try_again": "🤔 Remember to specify the cone type, flavor, and polite magic words!"
+              }
+            },
+            {
+              "id": "dde-polite-2",
+              "title": "📖 The Bedtime Storyteller Bot Adventure! 🐉🌙",
+              "icon": "📖",
+              "description": "How specifying character, setting, story duration, and mood generates a soothing bedtime tale!",
+              "realLifeScenario": "Before going to sleep, Dev asks his family's smart speaker for a story. Vague prompt: 'Tell story.' (The speaker starts reading a dry 45-minute encyclopedia article about the history of tractor engines! 🚜💤). Polite & precise prompt: 'Hello Story Bot! Please tell me a cheerful, 3-minute bedtime story about a tiny silver robot named Pip who gets lost in a glowing emerald forest and befriends a gentle baby dragon named Sparky. Make the ending peaceful and sleepy. Thank you!' The smart speaker lowers its voice to a warm, gentle whisper, tells a magical tale of Pip and Sparky sharing roasted marshmallows under starry skies, and ends with Pip curling up to sleep as soft lullaby music fades out. Dev drifts peacefully off to dreamland! 🌙✨",
+              "roboPiComment": "BEEP BOOP! Giving a time limit ('3-minute bedtime story') and an emotional mood ('cheerful, peaceful, sleepy') is genius! It keeps the story from babbling on forever when you need to sleep! ⏰😴",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the glowing bedtime book to start Pip and Sparky's tale! 📖✨",
+                "great_job": "🌟 MAGICAL TALE TOLD! Pip and the baby dragon are fast asleep under starry skies! 🐉🌙",
+                "try_again": "🤔 Include the character names, story duration, and peaceful mood!"
+              }
+            },
+            {
+              "id": "dde-polite-3",
+              "title": "🎸 The Study Jam DJ Music Robot! 🎵🎧",
+              "icon": "🎸",
+              "description": "How specifying instrument, tempo, genre, and activity helps music AI pick the ideal soundtrack!",
+              "realLifeScenario": "Meera is sitting at her desk doing her science homework on space exploration. She wants background music that helps her focus without distracting her with loud singing. Vague prompt: 'Play music.' (The speaker blasts high-volume heavy metal rock music with screaming guitars that makes her jump out of her seat! 🎸💥). Polite & precise prompt: 'Please play gentle, upbeat acoustic guitar instrumental music at 40% volume that is great for studying and concentration. No singing lyrics, please. Thank you!' The smart speaker streams soft, rhythmic acoustic guitar melodies with warm gentle chords. Meera's mind feels calm, energized, and focused, and she finishes her science homework with flying colors! 📝🪐",
+              "roboPiComment": "BEEP BOOP! Specifying 'no singing lyrics' and '40% volume' is a pro-prompter move! Words in songs can distract your brain while reading, but soft guitar instruments boost focus! 🎧💡",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the acoustic guitar to start the relaxing study soundtrack! 🎸🎵",
+                "great_job": "🌟 PERFECT VIBE! Gentle acoustic melodies playing at 40% volume — focus 100%! 🎧📚",
+                "try_again": "🤔 Specify instrumental acoustic guitar, soft volume, and no lyrics!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "📢 Polite words ('Please' and 'Thank you') train you to speak calmly, clearly, and thoughtfully.",
+            "💥 Strong action verbs ('Bake', 'Illustrate', 'Summarize', 'Scoop') give exact instructions.",
+            "🔢 Step-by-step numbers (Step 1, Step 2, Step 3) organize complex multi-part requests.",
+            "⏱️ Specifying limits like duration ('3 minutes') or volume ('40%') prevents unwanted surprises.",
+            "🎧 Telling the AI what to EXCLUDE (e.g. 'no singing lyrics', 'no nuts') is just as important as what to include!",
+            "🦸 When you combine manners, verbs, numbers, and details, you become an unstoppable Super-Prompter!"
+          ],
+          "mission3Complete": {
+            "celebrationText": "🎉 MISSION 3 ACCOMPLISHED! You are a Polite Super-Prompter!",
+            "roboPiCelebration": "BEEP BOOP FANTASTIC! 🌟📢 You have mastered manners, verbs, numbers, and precision! Your Polite Super-Prompter Medal is glowing bright amethyst purple! You now possess all three medals of communication! Let's bring everything together into the Ultimate Prompter's Formula! 🏆✨",
+            "magnifierEarned": "Polite Super-Prompter Medal 🌟",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to complete your sparkling communication sash! 🏅",
+              "great_job": "⭐ ALL 3 MEDALS EARNED! You are a certified Junior AI Communicator! 🏆🎉",
+              "encouragement": "On to Section 4 — let's review the Golden Prompter's Formula! 🌟🗣️"
+            }
+          }
+        },
+        {
+          "id": "section-4",
+          "title": "🌟 Section 4: The Golden Prompter's Formula! (WHO + WHAT + DETAILS + POLITE!) 🏆",
+          "roboPiIntro": "BEEP BOOP! Are you ready for the ultimate master key? Here is the secret formula that professional AI engineers use every single day, simplified into four easy building blocks! Let's lock it in! 🗝️🤖",
+          "mainContent": {
+            "paragraph1": "Look at how far you have come today! You started by laughing at frozen raw potatoes and giant clown shoes. You learned how to answer the Magic Three Questions. And you discovered the power of action verbs and polite manners. Now, let us combine all of those golden lessons into one single, unforgettable recipe: THE GOLDEN PROMPTER'S FORMULA! Whenever you speak to any smart machine, follow this four-part pattern: Block 1: WHO (Polite Greeting + Role), Block 2: ACTION VERB (What to do), Block 3: THE CORE OBJECT (Exact noun), and Block 4: RICH DETAILS (Colors, numbers, flavors, and exclusions)! 🧱✨",
+            "paragraph2": "Let us see the four building blocks in action: Block 1 (WHO): 'Hello Chef Bot, please...' Block 2 (ACTION VERB): '...bake...' Block 3 (CORE OBJECT): '...a round chocolate birthday cake...' Block 4 (RICH DETAILS): '...with fluffy vanilla frosting, pink sugar stars, and five fresh red strawberries on top. Thank you!' Put them all together, and your sentence flows naturally like a crystal-clear mountain stream! Anyone reading that sentence — human or robot — knows EXACTLY what is expected! There is zero room for confusion, zero room for guessing, and 100% guarantee of success! 🍰⭐",
+            "paragraph3": "Look at how this formula transforms everyday requests in your home! Look at these side-by-side examples: Example A (Drawing Art): FUZZY: 'Draw a car.' 🚗❓ FORMULA: 'Hello Art Bot! Please draw a sleek red convertible sports car driving along a coastal highway next to a sparkling blue ocean at sunset, in vibrant cartoon style. Thank you!' 🌅🏎️ Example B (Homework Help): FUZZY: 'Explain planets.' 🪐❓ FORMULA: 'Hello Tutor Bot! Please explain why Mars is called the Red Planet in three simple bullet points suitable for a 9-year-old student. Thank you!' 🪐📝 Example C (Music Request): FUZZY: 'Play tunes.' 🎵❓ FORMULA: 'Hello Music Bot! Please play upbeat instrumental acoustic guitar music for 20 minutes while I finish my puzzle. Thank you!' 🎸🧩",
+            "paragraph4": "Notice what happens when you practice this formula: you are not just getting better answers from computers — you are becoming a more brilliant, articulate, and organized human communicator! When you explain school projects to your teacher, when you describe games to your classmates, when you tell your parents about your day — using clear nouns, vivid adjectives, and structured steps makes you a natural leader! Communication is the most powerful skill in the entire 21st century! 🌟",
+            "paragraph5": "You are now officially ready to take on the world! You know how smart machines sense, think, and act; and now you know how to talk to them like a seasoned pro! Let us celebrate your graduation from Chapter 2 • Lesson 1 with an awesome bakery challenge, fun games, and great activities! Give yourself a tremendous cheer! BEEP BOOP HOORAY! 🎉👏"
+          },
+          "vagueVsClearTable": [
+            {
+              "id": "vvc-1",
+              "situation": "🎂 Ordering Birthday Food",
+              "fuzzyPrompt": "Make food fast! 🧄",
+              "disasterResult": "Chef Bot bakes a dry oatmeal brick with spicy hot sauce and raw garlic! 😖",
+              "crystalClearPrompt": "Please bake a round chocolate birthday cake with fluffy vanilla frosting and 5 fresh red strawberries on top! 🎂🍓",
+              "triumphResult": "A breathtaking, mouth-watering two-layer royal chocolate strawberry masterpiece! 🎉"
+            },
+            {
+              "id": "vvc-2",
+              "situation": "🍦 Getting a Summer Treat",
+              "fuzzyPrompt": "Bring cold food! 🥔",
+              "disasterResult": "Kitchen bot delivers a rock-hard frozen raw potato from the bottom freezer! 🥶",
+              "crystalClearPrompt": "Please scoop two generous balls of mango ice cream into a crisp waffle cone with rainbow sprinkles! 🍨🥭",
+              "triumphResult": "A double-scoop tropical delight that cools you down perfectly! ☀️✨"
+            },
+            {
+              "id": "vvc-3",
+              "situation": "🎨 Drawing Room Decor",
+              "fuzzyPrompt": "Draw an animal! 🐟",
+              "disasterResult": "AI generates a grumpy, slimy deep-sea blobfish in dark murky water! 😖",
+              "crystalClearPrompt": "Please draw a smiling golden puppy chasing a blue ball across green grass in cartoon style! 🐶🎾",
+              "triumphResult": "A heartwarming, colorful poster ready to frame on your bedroom wall! 🖼️💖"
+            },
+            {
+              "id": "vvc-4",
+              "situation": "👟 Buying Sports Gear",
+              "fuzzyPrompt": "Order big shoes! 🤡",
+              "disasterResult": "Shoe bot orders size 22 circus clown shoes with squeaky yellow toes! 🎪HONK!",
+              "crystalClearPrompt": "Please order size 4 blue running sneakers with white laces and rubber grips! 👟🏃",
+              "triumphResult": "Perfect-fitting athletic sneakers ready for winning Sports Day! 🥇"
+            },
+            {
+              "id": "vvc-5",
+              "situation": "📖 Bedtime Reading",
+              "fuzzyPrompt": "Tell a story! 🚜",
+              "disasterResult": "Speaker reads a 45-minute dry manual about tractor diesel engine valves! 💤",
+              "crystalClearPrompt": "Please tell a 3-minute gentle story about a silver robot named Pip meeting a baby dragon! 🐉🌙",
+              "triumphResult": "A cozy, peaceful tale that lulls you into sweet, happy dreams! 😴⭐"
+            }
+          ],
+          "keyPoints": [
+            "🏆 The Golden Prompter's Formula: WHO + ACTION VERB + CORE OBJECT + RICH DETAILS!",
+            "🧱 Block 1 (WHO): Polite greeting and bot role ('Hello Chef Bot, please...').",
+            "⚡ Block 2 (ACTION VERB): Precise verb ('bake', 'illustrate', 'summarize').",
+            "📦 Block 3 (CORE OBJECT): Exact noun ('chocolate cake', 'running sneakers').",
+            "🎨 Block 4 (RICH DETAILS): Sensory details, exact numbers, and exclusions.",
+            "🌟 Clear communication with AI makes you a more confident, articulate speaker in real life!"
+          ],
+          "mission4Complete": {
+            "celebrationText": "🏆 CONGRATULATIONS! You have earned your Crystal-Clear Speaker Badge! 🗣️⭐",
+            "roboPiCelebration": "BEEP BOOP BOOP BEEP! 🤖🎉 Look at your gleaming badge! You know the difference between fuzzy fog and crystal clarity, you have mastered the Magic Three Questions, and you can speak the Golden Prompter's Formula like a true master! Let's play some fabulous games and conquer the Chef Bot Bakery Challenge! 🎂🎮",
+            "badgeEarned": "Official Crystal-Clear Speaker Badge 🗣️🏅",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CELEBRATE to spin with Robo-Pi and start the games! 💃🤖",
+              "great_job": "🌟 SPEAKER BADGE ACTIVATED! You are an official Master of AI Communication! 🗣️🏆",
+              "encouragement": "Get ready for the games — let us see your high score in the bakery! 🎂🚀"
+            }
+          }
+        }
+      ],
+      "totalWordCount": 12000
+    },
+    "games": [
+      {
+        "gameId": "game-1",
+        "gameType": "tap_to_find",
+        "title": "🎂 Chef Bot's Bakery Order Rush! 🧁✨",
+        "icon": "🎂",
+        "instruction": "Help Chef Bot find all 6 crystal-clear recipe ingredients and order cards scattered across the bakery counter to bake the ultimate birthday cake! 🍰",
+        "difficulty": "easy",
+        "duration": "8 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Welcome to the bakery rush! 🤖🎂 Chef Bot's counter is overflowing with mixing bowls, recipe cards, and ingredients! Some cards are fuzzy disasters (garlic, onions, clown shoes!), but SIX items contain the crystal-clear ingredients for Lily's dream chocolate strawberry cake! Can you tap all SIX glowing ingredients and clear order slips? Let's bake! 🍓🎉",
+        "sceneDescription": "A cheerful, colourful cartoon bakery kitchen with sparkling stainless steel counters, a glowing oven tummy, hanging copper whisks, and shelves filled with flour jars, chocolate bars, and fresh fruit baskets. Chef Bot stands at the center with a tall chef's hat.",
+        "targets": [
+          {
+            "id": "target-1",
+            "x": 140,
+            "y": 190,
+            "width": 85,
+            "height": 75,
+            "object": "Belgian Dark Chocolate Bar 🍫",
+            "emoji": "🍫",
+            "isAI": true,
+            "aiType": "Core Flavor Ingredient",
+            "explanation": "WHAT & HOW: Premium cocoa chocolate sponge gives the cake its rich, delicious flavor!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-2",
+            "x": 310,
+            "y": 160,
+            "width": 95,
+            "height": 80,
+            "object": "Five Fresh Red Strawberries 🍓",
+            "emoji": "🍓",
+            "isAI": true,
+            "aiType": "Counted Topping Detail",
+            "explanation": "WHICH DETAIL: Exactly 5 plump, sweet red strawberries counted out for the cake top!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-3",
+            "x": 510,
+            "y": 210,
+            "width": 80,
+            "height": 85,
+            "object": "Fluffy Whipped Vanilla Frosting 🍦",
+            "emoji": "🍦",
+            "isAI": true,
+            "aiType": "Texture Adjective Ingredient",
+            "explanation": "HOW IT LOOKS: Velvety white vanilla cream swirled between the two chocolate sponge layers!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-4",
+            "x": 690,
+            "y": 240,
+            "width": 75,
+            "height": 70,
+            "object": "Pink Sugar Stars Shaker ⭐",
+            "emoji": "⭐",
+            "isAI": true,
+            "aiType": "Decoration Detail",
+            "explanation": "WHICH DETAIL: Pink edible sugar stars sprinkled along the cake rim for birthday sparkle!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-5",
+            "x": 230,
+            "y": 330,
+            "width": 90,
+            "height": 70,
+            "object": "Two-Layer Round Baking Pan 🎂",
+            "emoji": "🎂",
+            "isAI": true,
+            "aiType": "Shape & Structure Spec",
+            "explanation": "WHAT SHAPE: Round, two-layer cake pans specifying the exact architecture of the dessert!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-6",
+            "x": 470,
+            "y": 340,
+            "width": 85,
+            "height": 75,
+            "object": "Polite Order Ticket ('Please & Thank you') 📝",
+            "emoji": "📝",
+            "isAI": true,
+            "aiType": "Polite Prompt Protocol",
+            "explanation": "POLITE PROTOCOL: The golden order ticket starting with 'Please bake' and ending with 'Thank you'!",
+            "goldSparks": true
+          }
+        ],
+        "totalAITargets": 6,
+        "scoring": {
+          "correctTap": 20,
+          "incorrectTap": -5,
+          "bonusForAllCorrect": 30,
+          "maxScore": 150
+        },
+        "auraGuidance": {
+          "start": "LOOK across Chef Bot's kitchen counter! Find all 6 glowing ingredients and prompt tickets! 🔍🎂",
+          "correct": "INGREDIENT VERIFIED! Added straight into Chef Bot's gold mixing bowl! ⭐",
+          "incorrect": "That's a jar of raw garlic cloves! Garlic does NOT belong in a birthday cake! Look for sweet ingredients! 🧄🚫",
+          "hint": "Check near the fruit basket on the left for the five fresh red strawberries! 🍓",
+          "complete": "CAKE MASTERPIECE COMPLETE! All 6 ingredients combined perfectly! The oven is dinging! 🎂🎉"
+        }
+      },
+      {
+        "gameId": "game-2",
+        "gameType": "drag_drop_sort",
+        "title": "🗂️ Vague Fog vs Crystal Clear! The Great Prompt Sorter! 🌫️✨",
+        "icon": "🗂️",
+        "instruction": "Read each prompt card below! Is it a FUZZY FOG command 🌫️ that confuses robots, or a CRYSTAL-CLEAR command 🌟 that gets perfect results? Drag each card to its correct basket!",
+        "difficulty": "medium",
+        "duration": "10 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Welcome to the Great Prompt Sorter! 🤖🗂️ Nine cards are raining down from the sky! Some are fuzzy traps that cause robot disasters, and some are crystal-clear masterpieces! Can you sort all nine into the right baskets and earn the Golden Sorter Trophy? 🏆",
+        "categories": [
+          {
+            "id": "cat-vague",
+            "label": "FUZZY FOG 🌫️ (Confuses Robots!)",
+            "description": "Vague, lazy words with missing nouns, fuzzy adjectives, and zero details that lead to silly robot blunders!",
+            "color": "#FF9800",
+            "emoji": "🌫️"
+          },
+          {
+            "id": "cat-clear",
+            "label": "CRYSTAL CLEAR 🌟 (Robot Magic!)",
+            "description": "Precise, descriptive prompts with exact nouns, colors, flavors, counts, action verbs, and polite manners!",
+            "color": "#4CAF50",
+            "emoji": "🌟"
+          }
+        ],
+        "items": [
+          {
+            "id": "item-1",
+            "label": "'Make food fast!' 🧄",
+            "emoji": "🧄",
+            "correctCategory": "cat-vague",
+            "feedback": "🌟 CORRECT! 'Make food' is super fuzzy! Chef Bot might give you raw garlic oatmeal! 🌫️",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-2",
+            "label": "'Please bake a two-layer round chocolate cake with vanilla frosting and 5 strawberries!' 🎂🍓",
+            "emoji": "🎂",
+            "correctCategory": "cat-clear",
+            "feedback": "🌟 CORRECT! Crystal clear! Exact shape, flavor, layers, frosting, and counted fruit! 🌟",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-3",
+            "label": "'Bring me cold food.' 🥔",
+            "emoji": "🥔",
+            "correctCategory": "cat-vague",
+            "feedback": "🌟 CORRECT! Super fuzzy! That's how you end up with a rock-hard frozen potato! 🌫️",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-4",
+            "label": "'Please scoop two balls of mango ice cream in a waffle cone with rainbow sprinkles.' 🍨🥭",
+            "emoji": "🍨",
+            "correctCategory": "cat-clear",
+            "feedback": "🌟 CORRECT! Crystal clear! Exact scoops, flavor, cone type, and topping! 🌟",
+            "difficulty": "medium"
+          },
+          {
+            "id": "item-5",
+            "label": "'Draw something nice.' 🐟",
+            "emoji": "🐟",
+            "correctCategory": "cat-vague",
+            "feedback": "🌟 CORRECT! 'Nice' is the fuzziest word in the world! You might get a grumpy blobfish! 🌫️",
+            "difficulty": "medium"
+          },
+          {
+            "id": "item-6",
+            "label": "'Draw a smiling golden puppy chasing a blue ball on green grass in cartoon style.' 🐶🎾",
+            "emoji": "🐶",
+            "correctCategory": "cat-clear",
+            "feedback": "🌟 CORRECT! Crystal clear! Breed, mood, action, toy color, background, and art style! 🌟",
+            "difficulty": "medium"
+          },
+          {
+            "id": "item-7",
+            "label": "'Buy big shoes.' 🤡",
+            "emoji": "🤡",
+            "correctCategory": "cat-vague",
+            "feedback": "🌟 CORRECT! 'Big' has no number! You'll get size 22 honking clown shoes! 🌫️",
+            "difficulty": "hard"
+          },
+          {
+            "id": "item-8",
+            "label": "'Please order size 4 blue running sneakers with white laces and rubber soles.' 👟🏃",
+            "emoji": "👟",
+            "correctCategory": "cat-clear",
+            "feedback": "🌟 CORRECT! Crystal clear! Size number, color, shoe type, lace color, and sole material! 🌟",
+            "difficulty": "hard"
+          },
+          {
+            "id": "item-9",
+            "label": "'Play music.' 🎸💥",
+            "emoji": "🎸",
+            "correctCategory": "cat-vague",
+            "feedback": "🌟 CORRECT! Fuzzy! The bot doesn't know if you want gentle lullabies or screeching heavy metal! 🌫️",
+            "difficulty": "hard"
+          }
+        ],
+        "scoring": {
+          "correctSort": 15,
+          "incorrectSort": -5,
+          "streakBonus": 10,
+          "maxScore": 165
+        },
+        "auraGuidance": {
+          "start": "READ each card carefully! Ask yourself: Does this prompt paint a crystal-clear picture, or is it trapped in fuzzy fog? 🗂️",
+          "correct": "BULLSEYE! That card landed in the perfect golden basket! 🌟",
+          "incorrect": "Oopsie! Look for specific details like numbers, colors, and flavors! Try again! 🤔",
+          "streak": "UNSTOPPABLE STREAK! You can spot a fuzzy word from ten miles away! 🔥",
+          "complete": "ALL NINE SORTED FLAWLESSLY! You earned the Master Prompt Sorter Ribbon! 🎀🏆"
+        }
+      },
+      {
+        "gameId": "game-3",
+        "gameType": "match_pairs",
+        "title": "🔗 Match the Vague Mix-Up to the Crystal-Clear Fix! 💡✨",
+        "icon": "🔗",
+        "instruction": "Connect each hilarious robot disaster on the left with the crystal-clear prompt on the right that fixes it! Connect all 6 pairs to unlock the Super-Prompter Crown! 👑",
+        "difficulty": "medium",
+        "duration": "10 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Ready for the grand repair match? 🤖🔗 On the left side are six funny robot disasters caused by fuzzy words! On the right side are the crystal-clear commands that save the day! Connect each disaster to its cure! Let's make the connections shine! ✨",
+        "pairs": [
+          {
+            "left": {
+              "id": "disaster-1",
+              "content": "Robot bakes a spicy garlic and raw onion oatmeal brick! 🧄😖",
+              "emoji": "🧄",
+              "description": "Caused by saying 'Make food fast!'"
+            },
+            "right": {
+              "id": "fix-1",
+              "content": "'Please bake a two-layer chocolate cake with vanilla frosting and 5 strawberries!' 🎂🍓",
+              "emoji": "🎂",
+              "description": "Fixes the bakery disaster with exact cake specs"
+            }
+          },
+          {
+            "left": {
+              "id": "disaster-2",
+              "content": "Fridge bot hands you a frost-covered rock-hard frozen raw potato! 🥔🥶",
+              "emoji": "🥔",
+              "description": "Caused by saying 'Bring me cold food!'"
+            },
+            "right": {
+              "id": "fix-2",
+              "content": "'Please scoop two balls of mango ice cream into a crisp waffle cone!' 🍨🥭",
+              "emoji": "🍨",
+              "description": "Fixes the freezer mix-up with exact flavor and cone"
+            }
+          },
+          {
+            "left": {
+              "id": "disaster-3",
+              "content": "AI draws a grumpy, slimy blobfish with droopy fangs in murky water! 🐟😖",
+              "emoji": "🐟",
+              "description": "Caused by saying 'Draw something nice!'"
+            },
+            "right": {
+              "id": "fix-3",
+              "content": "'Draw a smiling golden puppy chasing a blue ball on green grass in cartoon style!' 🐶🎾",
+              "emoji": "🐶",
+              "description": "Fixes the scary fish with breed, action, and style"
+            }
+          },
+          {
+            "left": {
+              "id": "disaster-4",
+              "content": "Shoe bot delivers giant neon yellow size 22 honking clown shoes! 🤡👟",
+              "emoji": "🤡",
+              "description": "Caused by saying 'Order big shoes!'"
+            },
+            "right": {
+              "id": "fix-4",
+              "content": "'Please order size 4 blue running sneakers with white laces!' 👟🏃",
+              "emoji": "👟",
+              "description": "Fixes the circus footwear with exact size and color"
+            }
+          },
+          {
+            "left": {
+              "id": "disaster-5",
+              "content": "Speaker blasts screaming heavy metal rock during homework quiet time! 🎸💥",
+              "emoji": "🎸",
+              "description": "Caused by saying 'Play music!'"
+            },
+            "right": {
+              "id": "fix-5",
+              "content": "'Please play soft acoustic guitar instrumental music at 40% volume without lyrics!' 🎧📖",
+              "emoji": "🎧",
+              "description": "Fixes the volume blast with instrument, volume, and no lyrics"
+            }
+          },
+          {
+            "left": {
+              "id": "disaster-6",
+              "content": "Smart speaker reads a 45-minute dry manual about tractor engine gears! 🚜💤",
+              "emoji": "🚜",
+              "description": "Caused by saying 'Tell a story!'"
+            },
+            "right": {
+              "id": "fix-6",
+              "content": "'Please tell a 3-minute bedtime story about Pip the robot and a baby dragon!' 🐉🌙",
+              "emoji": "🌙",
+              "description": "Fixes the tractor manual with characters and 3-minute limit"
+            }
+          }
+        ],
+        "scoring": {
+          "correctMatch": 20,
+          "incorrectMatch": -5,
+          "maxScore": 120
+        },
+        "auraGuidance": {
+          "start": "TAP a robot disaster on the left, then TAP the crystal-clear prompt on the right that fixes it! 🔗✨",
+          "correct": "PERFECT FIX CONNECTED! The robot understood the clear prompt instantly! ⚡⭐",
+          "incorrect": "That prompt doesn't fix this disaster! Match the potato to ice cream, and clown shoes to sneakers! 🤔",
+          "hint": "The garlic oatmeal brick is fixed by the chocolate strawberry birthday cake! 🎂",
+          "complete": "ALL SIX PAIRS CONNECTED! You earned the Super-Prompter Crown! 👑🎉"
+        }
+      }
+    ],
+    "activities": [
+      {
+        "activityId": "activity-1",
+        "title": "🎂 The Chef Bot Bakery Challenge at Home or School! 🍰🤖",
+        "type": "hands-on",
+        "duration": "20 minutes",
+        "icon": "🎂",
+        "roboPiActivityBrief": "BEEP BOOP! Welcome to the headline activity: The Chef Bot Bakery Challenge! 🤖🎂 You get to become both the Master Prompter AND Chef Bot! Grab a partner (or family member) and let's bake up some linguistic wonders!",
+        "description": "In this unforgettable hands-on communication game, two players take turns playing 'The Human Customer' and 'Chef Bot The Literal Robot'! Player 1 acts as Chef Bot. Chef Bot must wear an imaginary chef hat, speak in a cheerful robotic monotone (*BEEP BOOP*), and follow commands ONE HUNDRED PERCENT LITERALLY! In Round 1, Player 2 gives a deliberately FUZZY command like 'Make me a yummy sweet snack!' Player 1 (Chef Bot) must humorously misinterpret the command literally (e.g. grabbing an imaginary banana peel and sprinkling salt on it: 'Sweet salty snack ready!'). In Round 2, Player 2 uses the Golden Prompter's Formula to deliver a crystal-clear command with WHAT, HOW, WHICH, exact counts, and polite manners! Chef Bot joyfully prepares the exact dream pastry with sound effects (*whirrr-ding!*). Then switch roles! This activity cements the literal nature of AI in an atmosphere of riotous laughter!",
+        "materials": [
+          "📄 2 sheets of blank paper and colorful markers or crayons",
+          "👨‍🍳 An imaginary (or paper folded) Chef Hat for Chef Bot",
+          "🥣 A plastic bowl and spoon (for dramatic bakery mixing sounds!)",
+          "⏱️ A timer (2 minutes per bakery round)",
+          "🏅 A cut-out Gold Master Chef Prompter Badge"
+        ],
+        "steps": [
+          "Step 1: Choose who plays 'Chef Bot' first and who plays 'The Customer'. Chef Bot puts on the chef hat and beeps: 'CHEF BOT ONLINE! READY FOR ORDERS!'",
+          "Step 2: ROUND 1 (The Fuzzy Trap): The Customer gives a vague, fuzzy command without details! For example: 'Chef Bot, make something sweet and crunchy!'",
+          "Step 3: Chef Bot acts 100% literally! Chef Bot pretends to grab an ice cube (cold) and a piece of dry cardboard (crunchy), stirs them in the bowl, and says: 'Crunchy cold snack ready for human consumption! BEEP!' Both players laugh at how silly fuzzy words are!",
+          "Step 4: ROUND 2 (The Crystal-Clear Order): The Customer takes their sheet of paper and writes down a Golden Prompt answering WHAT, HOW, WHICH, exact count, and polite manners!",
+          "Step 5: The Customer reads the Golden Prompt aloud into Chef Bot's microphone ear: 'Good morning Chef Bot! Please bake a warm, double-chocolate fudge cookie with rainbow chocolate chips and a gooey marshmallow in the center. Thank you!'",
+          "Step 6: Chef Bot beeps with joy: 'BEEP BOOP! Crystal-clear recipe locked in!' Chef Bot pantomimes scooping cocoa, folding marshmallow, sliding the tray into the oven tummy, making baking sounds (*tick-tick-tick-DING!*), and serving the warm cookie on a napkin!",
+          "Step 7: The Customer draws a colorful picture of the finished pastry on their paper to 'verify' the order was 100% accurate!",
+          "Step 8: SWITCH ROLES! The Customer becomes Chef Bot, and Chef Bot becomes the Customer! Try ordering a breakfast waffle, a sandwich, or a smoothie!"
+        ],
+        "thingsToLookFor": [
+          "🤖 Did Chef Bot maintain their literal robotic persona during Round 1?",
+          "🌫️ Did Round 1 demonstrate how easy it is to misunderstand fuzzy words like 'sweet' or 'crunchy'?",
+          "🍓 Did Round 2 include exact nouns, sensory adjectives, and specific counts?",
+          "📢 Were polite magic words ('Please' and 'Thank you') included in the command?",
+          "🎨 Did the drawing match every single detail mentioned in the spoken prompt?",
+          "🔄 Did both players get a chance to experience being the robot interpreter AND the human prompter?",
+          "😂 Did both players have fun laughing at literal robot misunderstandings?",
+          "🏆 Did both players award each other the Master Chef Prompter Badge at the end?"
+        ],
+        "discussionWithGrownUp": [
+          "Why did Chef Bot make something weird in Round 1? Was Chef Bot being naughty, or was it just following words literally?",
+          "How is talking to a real AI tool (like ChatGPT or Siri) just like talking to Chef Bot in this game?",
+          "What happens if you forget to tell a pizza chef what toppings you want on your pizza?",
+          "Can you think of a time when a person misunderstood your words because you didn't give enough details?"
+        ],
+        "familyConnection": "Play the Chef Bot challenge at the real kitchen counter with mama or papa when making afternoon snacks! Practice ordering your real sandwich or fruit bowl using crystal-clear prompts! 🥪🍎",
+        "learningOutcome": "Children internalize the literal nature of algorithmic parsing and experience first-hand how precise specification eliminates ambiguity in human-computer interaction.",
+        "auraGuidance": {
+          "before": "PUT ON your chef hat and clear the kitchen table for dramatic baking! 👨‍🍳🎂",
+          "during": "PRACTICE the literal robot voice in Round 1: 'BEEP BOOP... PROCESSING!' 🤖",
+          "after": "BAKERY TRIUMPH! Both players mastered clear prompt engineering with flying colors! 🌟🍰"
+        }
+      },
+      {
+        "activityId": "activity-2",
+        "title": "🎨 The Blindfolded Picasso AI Drawing Game! 🖍️🙈",
+        "type": "active_roleplay",
+        "duration": "15 minutes",
+        "icon": "🎨",
+        "roboPiActivityBrief": "BEEP BOOP! Ready for some hilarious artistic chaos? 🤖🎨 One of you plays an AI Drawing Bot with eyes closed, and the other gives verbal drawing prompts! Let's see what happens!",
+        "description": "This game visually proves why AI art generators need detailed prompts! Player 1 plays 'The AI Drawing Bot'. The Drawing Bot holds a marker over a blank sheet of paper with their eyes closed (or wearing a gentle blindfold). Player 2 plays 'The Human Prompter'. In Round 1, Player 2 gives a vague prompt: 'Draw a house.' Player 1 draws with eyes closed based only on that word. The result is usually floating windows, a door on the roof, and a chimney in the sky! In Round 2, Player 2 gives a structured step-by-step prompt: 'Step 1: In the center of the paper, draw a large square for the walls. Step 2: On top of the square, draw a triangle roof with horizontal shingle lines. Step 3: Draw a small rectangle door in the bottom center with a circle doorknob.' The difference in quality is shocking and hilarious!",
+        "materials": [
+          "📄 4 sheets of blank white drawing paper",
+          "🖍️ Colorful markers, crayons, or colored pencils",
+          "🧣 A soft scarf or sleep mask (or simply closing eyes tightly!)",
+          "⏱️ 3-minute timer per drawing round"
+        ],
+        "steps": [
+          "Step 1: Player 1 sits at the table, holds a dark marker, and closes their eyes tightly like an offline robot screen.",
+          "Step 2: ROUND 1 (Vague Prompt): Player 2 says: 'AI Bot, draw a monster!' That's it — no other words allowed!",
+          "Step 3: Player 1 draws for 60 seconds with eyes closed, guessing where the monster's eyes, horns, and feet should go.",
+          "Step 4: Player 1 opens their eyes! Look at the drawing together and giggle at where the horns and mouth ended up!",
+          "Step 5: ROUND 2 (Crystal-Clear Step-by-Step Prompt): Player 1 closes eyes again on a fresh sheet of paper.",
+          "Step 6: Player 2 acts as a Super-Prompter using numbered steps: 'Step 1: Draw a big oval in the center for the head. Step 2: Draw two round eyes side by side at the top of the oval with dots in the middle. Step 3: Draw a wide smiling curved mouth with three triangular teeth pointing down. Step 4: Draw two fluffy rabbit ears on top of the head.'",
+          "Step 7: Player 1 opens their eyes! Compare Round 1 to Round 2! Notice how the step-by-step prompt produced a recognizable, cute creature!",
+          "Step 8: Switch roles so both players get to experience the challenge of drawing from blind instructions!"
+        ],
+        "bonusChallenge": [
+          "🌈 Color Specialist: The prompter must specify exact colors for each part ('Pick the green marker for the ears; pick the purple marker for the nose')!",
+          "🚀 Space Rocket Challenge: Try prompting a complete Apollo space rocket with booster fins, porthole windows, and flame exhaust!"
+        ],
+        "creativityPrompts": [
+          "Give your finished Round 2 drawing a funny name and write the exact prompt you used at the bottom of the page like a real AI art exhibit!",
+          "Hang both drawings side by side on your bedroom door labeled: 'Vague Prompt 🌫️' vs 'Clear Prompt 🌟'!"
+        ],
+        "familyConnection": "Challenge a parent to be the blindfolded artist while you direct them to draw your family pet! See if mama or papa can draw the family cat using your step-by-step directions! 🐱🎨",
+        "learningOutcome": "Demonstrates that computer vision and generation systems require spatial, structural, and sequential parameters to produce coherent visual artifacts.",
+        "auraGuidance": {
+          "before": "TAPE the paper to the table corners so it doesn't slide around while eyes are closed! 📐",
+          "during": "SPEAK slowly and clearly! Give the artist time to finish Step 1 before giving Step 2! 🗣️",
+          "after": "EXHIBIT COMPLETE! The power of structured prompting is proven on paper! 🖼️🌟"
+        }
+      },
+      {
+        "activityId": "activity-3",
+        "title": "🥪 The Literal Sandwich Robot Family Theater & Dinner Quiz! 🍽️🎭",
+        "type": "interactive_drama",
+        "duration": "15 minutes",
+        "icon": "🥪",
+        "roboPiActivityBrief": "BEEP BOOP! The world-famous Sandwich Robot experiment comes to your dinner table! 🤖🥪 Can you get a grown-up robot to make a sandwich without making a hilarious mess?",
+        "description": "This is the classic, beloved computer science teaching exercise used in top universities and elementary schools worldwide! A parent or older sibling plays 'The Sandwich Robot'. The child plays 'The Programmer'. On the table sits a loaf of bread in a closed bag, a closed jar of peanut butter or jam, and a butter knife. The child must give verbal commands to make a sandwich. But the Robot takes EVERY command 100% literally! If the child says 'Put peanut butter on the bread', the Robot picks up the entire closed glass jar of peanut butter and places it physically on top of the closed plastic bread bag! *CLUNK!* The child quickly realizes: 'Oh! I have to say: Open the plastic bread bag! Take out two slices of bread! Open the peanut butter jar lid! Use the knife to scoop peanut butter!' It is the ultimate lesson in precision, followed by 5 dinner quiz questions!",
+        "quizQuestions": [
+          "Question 1: If you tell a robot 'Put peanut butter on bread', why might it place the closed glass jar on the bread bag? (Grown-up Answer: Because it takes words literally and wasn't told to open the jar or use a knife!)",
+          "Question 2: What are the Magic Three Questions for building a great prompt? (Grown-up Answer: WHAT is it, HOW does it look/taste, and WHICH special details!)",
+          "Question 3: Why are words like 'nice', 'stuff', and 'big' called 'Fuzzy Foggy Words'? (Grown-up Answer: Because they have no exact meaning, so the computer has to guess wildly!)",
+          "Question 4: What is the difference between a weak verb like 'make' and a strong verb like 'summarize' or 'bake'? (Grown-up Answer: Strong verbs tell the machine the exact skill and task to perform!)",
+          "Question 5: Why is being polite ('Please' and 'Thank you') a great habit when talking to AI? (Grown-up Answer: It trains our human brain to pause, structure thoughts clearly, and communicate with calm respect!)"
+        ],
+        "familyConnection": "Play the Sandwich Robot game in the kitchen before dinner! Once the sandwich is successfully made with clear instructions, cut it into triangles and eat it as a team victory snack! 🥪😋",
+        "learningOutcome": "Illustrates the necessity of operational decomposition: breaking complex tasks into explicit, atomic sub-instructions that an autonomous agent can execute sequentially.",
+        "auraGuidance": {
+          "before": "PREPARE your bread, jar, and butter knife on the kitchen counter! 🍞🧈",
+          "during": "ROBOT: Stay strictly literal! Do NOT open the jar unless the human explicitly commands it! 🤖🔒",
+          "after": "VICTORY SNACK! You programmed a real sandwich into existence with pure verbal precision! 🥪🎉"
+        }
+      }
+    ],
+    "realWorldExamples": [
+      {
+        "id": "rwe-1",
+        "title": "🍨 Ordering at the Futuristic Smart Ice Cream Parlour 🍦🥭",
+        "scenario": "On a hot Saturday afternoon, Kabir and his mother visit a high-tech automated ice cream shop in the shopping mall. The shop has no human servers behind the glass counter; instead, two sleek robotic arms with silicone grips operate the soft-serve nozzles and gelato tubs. A touch-and-voice microphone kiosk greets customers.",
+        "aiConnection": "This is a real-world prompt engineering scenario in public commerce! Vague prompt: A hurried customer walks up and mutters: 'Give me two cold sweet treats.' The computer screen flashes: 'ERROR 402: Please select item type from 32 available options.' The line stalls behind them. Crystal-clear prompt: Kabir steps up, smiles, and speaks clearly: 'Hello! Please scoop two scoops of mango gelato into a waffle cone with rainbow sprinkles. Thank you!' The natural language processing (NLP) model immediately extracts: Entity 1 = Mango Gelato, Quantity = 2 scoops, Container = Waffle Cone, Topping = Rainbow Sprinkles, Sentiment = Polite. The robotic arm dips, scoops, sprinkles, and serves the cone in 40 seconds flat!",
+        "observation": "Notice how the clear prompt answered WHAT (mango gelato), HOW (two scoops, creamy gelato), and WHICH (waffle cone, rainbow sprinkles). The machine did not have to ask a single clarifying question!",
+        "discussion": "What would happen if Kabir had a severe peanut allergy, but forgot to say 'No peanuts or nuts' in his prompt? Why is mentioning EXCLUSIONS just as important as mentioning inclusions in smart machines?",
+        "roboPiTip": "BEEP BOOP! Always remember: if you don't want something (like nuts, onions, or loud singing in music), tell the AI: 'Please do NOT include nuts!' Specifying exclusions protects your health and your happiness! 🥜🚫"
+      },
+      {
+        "id": "rwe-2",
+        "title": "🐶 Prompting an AI Art Generator for a Golden Puppy 🎨🐕",
+        "scenario": "Maya is designing a handmade birthday card for her grandmother's 75th birthday. Her grandmother loves golden retriever puppies, gardening, and sunflowers. Maya sits down at her tablet with an AI image generator to create the cover art.",
+        "aiConnection": "The classic generative AI prompt engineering loop! Test 1 (Vague): Maya types: 'Cute puppy.' The AI generates a random photo of a tiny pug sleeping on a gray concrete floor under harsh fluorescent lights. It is technically a cute puppy, but it doesn't feel warm, sunny, or personal for grandma's card. Test 2 (Crystal-Clear): Maya uses the Golden Prompter's Formula: 'Please generate a joyful, smiling golden retriever puppy with fluffy honey-colored fur and floppy ears, sitting happily in a sunny garden surrounded by blooming yellow sunflowers and fluttering orange butterflies. Soft warm morning sunlight, vibrant watercolor storybook illustration style. Thank you!' The resulting image is breathtaking! Golden morning light shines through the sunflowers, the puppy's eyes sparkle with affection, and the watercolor texture looks like a painted classic children's book. Grandma is moved to tears when she opens the card!",
+        "observation": "Look at the difference between two words ('Cute puppy') and forty words with lighting ('soft warm morning sunlight'), setting ('sunflower garden'), breed ('golden retriever'), and style ('vibrant watercolor'). The AI had exact coordinates for every brushstroke!",
+        "discussion": "Why did adding the phrase 'vibrant watercolor storybook illustration style' make such a huge difference compared to just letting the computer pick a random camera photo?",
+        "roboPiTip": "BEEP BOOP! Specifying the art style is like giving the AI a magic paintbrush! You can ask for 'watercolor', 'claymation', 'crayon sketch', or 'comic book'! Try different styles on the same puppy! 🎨✨"
+      },
+      {
+        "id": "rwe-3",
+        "title": "⏱️ Asking a Smart Voice Assistant for a School Lunch Timer 🥪📱",
+        "scenario": "Dev is in the kitchen baking mini pizza bagels for his school lunch. The recipe says the bagels must bake in the toaster oven for exactly seven minutes, or the cheese will burn black. Dev's hands are covered in tomato sauce and shredded mozzarella cheese, so he cannot touch his phone screen.",
+        "aiConnection": "Voice assistant command parsing in everyday multi-tasking! Vague prompt: Dev shouts across the noisy kitchen: 'Hey assistant, remind me about the food later!' The voice assistant beeps: 'When would you like to be reminded, and what is the reminder?' Dev shouts: 'Later! When it is done!' The assistant beeps: 'I didn't quite catch that. Setting a reminder for 5:00 PM called 'Food Later'.' Seven minutes later, Dev forgets, the cheese catches fire, and the kitchen fills with smoke! 🥯🔥 Crystal-clear prompt: Dev takes a breath and speaks clearly: 'Hey assistant, please set a seven-minute timer called 'Pizza Bagels'.' The assistant responds instantly: 'Seven-minute timer called Pizza Bagels started now.' Exactly seven minutes later, a loud cheerful chime rings: *DING DING DING! Your Pizza Bagels timer is done!* Dev pulls out golden, bubbly, perfectly melted pizza bagels with zero burns!",
+        "observation": "Naming the timer ('called Pizza Bagels') allowed Dev to know EXACTLY which timer went off, especially if his family had other timers running for tea or laundry at the same time!",
+        "discussion": "Why do smart voice assistants like Alexa, Siri, or Google Assistant sometimes say 'I didn't quite catch that'? How does background kitchen noise (like running water or sizzling pans) make clear speaking even more important?",
+        "roboPiTip": "BEEP BOOP! When talking to voice assistants in a noisy room, speak one notch louder, enunciate your consonant sounds clearly (*T-timer*, *P-pizza*), and always state the exact number of minutes! ⏱️📢"
+      }
+    ],
+    "practiceExercises": [
+      {
+        "exerciseId": "practice-1",
+        "type": "interactive_sorting",
+        "title": "🌫️ Fix the Fuzzy Prompt! (The Prompt Polisher) ✨",
+        "instruction": "Read each fuzzy command below. Which polished crystal-clear prompt turns it into robot magic? Match each fuzzy command to its polished twin!",
+        "roboPiIntro": "BEEP BOOP! Welcome to the Prompt Polishing Workshop! 🤖✨ Five fuzzy commands are covered in dust. Pick the sparkling, polished command that fixes each one! Let's polish! 🧼",
+        "items": [
+          {
+            "activity": "🌫️ 'Draw a cat.'",
+            "hasAI": false,
+            "stepType": "FUZZY_INPUT",
+            "polishedVersion": "🌟 'Please draw a fluffy white Persian kitten with bright blue eyes wearing a red bowtie, sitting on a velvet cushion in cartoon style.'",
+            "explanation": "The polished version adds breed (Persian), color (white), eye color (blue), accessory (red bowtie), setting (cushion), and art style (cartoon)!",
+            "roboPiComment": "BEEP BOOP! Now the AI won't draw a grumpy alley cat in an alleyway! 🐱🎀"
+          },
+          {
+            "activity": "🌫️ 'Make breakfast.'",
+            "hasAI": false,
+            "stepType": "FUZZY_INPUT",
+            "polishedVersion": "🌟 'Please toast two slices of sourdough bread, spread strawberry jam on both sides, and serve with a peeled ripe banana. Thank you!'",
+            "explanation": "The polished version specifies the bread type, slice count, exact jam flavor, and fruit side dish!",
+            "roboPiComment": "BEEP BOOP! Sourdough and strawberry jam — breakfast of champions! 🍞🍓"
+          },
+          {
+            "activity": "🌫️ 'Play a song.'",
+            "hasAI": false,
+            "stepType": "FUZZY_INPUT",
+            "polishedVersion": "🌟 'Please play cheerful acoustic guitar instrumental music at 35% volume while I read my science book. Thank you!'",
+            "explanation": "The polished version specifies the instrument, mood, volume level, and instrumental format without lyrics!",
+            "roboPiComment": "BEEP BOOP! Perfect volume for studying! 🎸📚"
+          },
+          {
+            "activity": "🌫️ 'Tell me about dinosaurs.'",
+            "hasAI": false,
+            "stepType": "FUZZY_INPUT",
+            "polishedVersion": "🌟 'Please explain three fun facts about the Tyrannosaurus Rex in simple sentences suitable for a 4th-grade student. Thank you!'",
+            "explanation": "The polished version specifies the exact dinosaur species (T-Rex), fact count (three facts), and reading grade level!",
+            "roboPiComment": "BEEP BOOP! T-Rex facts for a 4th grader beats a 50-page paleontology thesis! 🦖🦕"
+          },
+          {
+            "activity": "🌫️ 'Set a timer.'",
+            "hasAI": false,
+            "stepType": "FUZZY_INPUT",
+            "polishedVersion": "🌟 'Please set a countdown timer for exactly 15 minutes labeled 'Math Homework Break'. Thank you!'",
+            "explanation": "The polished version specifies the exact minute count (15 minutes) and labels the timer purpose!",
+            "roboPiComment": "BEEP BOOP! A labeled timer keeps your day on schedule! ⏱️📚"
+          },
+          {
+            "activity": "🌫️ 'Write a story.'",
+            "hasAI": false,
+            "stepType": "FUZZY_INPUT",
+            "polishedVersion": "🌟 'Please write a 2-minute funny bedtime story about a baby penguin who learns to ice skate on a frozen lake with a friendly polar bear. Thank you!'",
+            "explanation": "The polished version specifies length (2 minutes), genre (funny bedtime), characters (penguin, polar bear), and plot (ice skating)!",
+            "roboPiComment": "BEEP BOOP! Ice skating penguins make the best bedtime stories! 🐧⛸️"
+          }
+        ],
+        "feedback": {
+          "correct": "🌟 SPOT ON! Every single fuzzy prompt was polished into a dazzling, crystal-clear masterpiece! 💎🎉",
+          "incorrect": "🤔 Look for the option that includes exact nouns, sensory details, counts, and polite manners!"
+        }
+      },
+      {
+        "exerciseId": "practice-2",
+        "type": "fill_in_blanks",
+        "title": "📝 Complete Chef Bot's Master Recipe Prompt! 🎂",
+        "instruction": "Fill in the missing words in the master prompt using the Word Bank below to help Chef Bot bake Lily's birthday cake!",
+        "wordBank": [
+          "Please bake 🍰",
+          "two-layer 🎂",
+          "chocolate 🍫",
+          "vanilla frosting 🍦",
+          "five strawberries 🍓",
+          "Thank you! 💖"
+        ],
+        "sentences": [
+          {
+            "id": "sent-1",
+            "sentence": "Start your prompt with a polite action verb: '_____ a round birthday cake.'",
+            "blank": "Please bake 🍰",
+            "options": [
+              "Please bake 🍰",
+              "Throw 🤾",
+              "Forget 🙈",
+              "Destroy 💥"
+            ],
+            "correctAnswer": "Please bake 🍰",
+            "explanation": "'Please bake' combines polite courtesy with a precise action verb telling the kitchen robot the exact task."
+          },
+          {
+            "id": "sent-2",
+            "sentence": "Specify the structure and height: 'Make it a _____ round cake.'",
+            "blank": "two-layer 🎂",
+            "options": [
+              "two-layer 🎂",
+              "invisible 👻",
+              "squashed 👟",
+              "hundred-mile 📏"
+            ],
+            "correctAnswer": "two-layer 🎂",
+            "explanation": "'Two-layer' gives the machine exact geometric proportions so it knows how many sponge tiers to bake."
+          },
+          {
+            "id": "sent-3",
+            "sentence": "Specify the core sponge cake flavor: '...with rich dark _____ sponge.'",
+            "blank": "chocolate 🍫",
+            "options": [
+              "chocolate 🍫",
+              "garlic 🧄",
+              "onion 🧅",
+              "cardboard 📦"
+            ],
+            "correctAnswer": "chocolate 🍫",
+            "explanation": "'Chocolate' specifies the exact taste profile, preventing the robot from guessing random ingredients."
+          },
+          {
+            "id": "sent-4",
+            "sentence": "Specify the whipped topping: '...covered in fluffy white _____.'",
+            "blank": "vanilla frosting 🍦",
+            "options": [
+              "vanilla frosting 🍦",
+              "motor oil 🛢️",
+              "toothpaste 🪥",
+              "mud slime 🐸"
+            ],
+            "correctAnswer": "vanilla frosting 🍦",
+            "explanation": "'Vanilla frosting' describes both the flavor and the creamy texture of the outer coating."
+          },
+          {
+            "id": "sent-5",
+            "sentence": "Specify the exact counted fruit topping: '...and decorated with exactly _____ on top.'",
+            "blank": "five strawberries 🍓",
+            "options": [
+              "five strawberries 🍓",
+              "ten potatoes 🥔",
+              "two rocks 🪨",
+              "zero things ❌"
+            ],
+            "correctAnswer": "five strawberries 🍓",
+            "explanation": "'Five strawberries' provides an exact numeric count and names the specific fresh fruit."
+          },
+          {
+            "id": "sent-6",
+            "sentence": "Always close your command with courteous appreciation: '_____'",
+            "blank": "Thank you! 💖",
+            "options": [
+              "Thank you! 💖",
+              "Whatever 😒",
+              "Hurry up 😠",
+              "Bye bye 🏃"
+            ],
+            "correctAnswer": "Thank you! 💖",
+            "explanation": "'Thank you!' reinforces polite communication habits that make human-computer interaction structured and respectful."
+          }
+        ]
+      }
+    ],
+    "lessonSummary": {
+      "roboPiFinalMessage": "BEEP BOOP BOOP BEEP! 🤖✨ Oh my goodness, Super Prompter! You did it! You have officially conquered Chapter 2 • Lesson 1 and unlocked the golden secret of talking to smart machines! You know that computers do not have crystal balls — they take words 100% literally! You know how to banish the Fuzzy Foggy Trap, how to answer the Magic Three Questions (WHAT, HOW, WHICH), and how to weave polite manners, strong action verbs, and exact numbers into the Golden Prompter's Formula! Chef Bot is bowing in respect, your communication medals are shining, and the whole robot world is ready to follow your crystal-clear lead! *CLINK-CLANK CHEERS!* 🦾💖",
+      "keyTakeaways": [
+        "🤖 Smart machines take words 100% literally and cannot read your secret thoughts or human context.",
+        "🌫️ Fuzzy words ('food', 'stuff', 'nice', 'big') lead to hilarious blunders like frozen potatoes and clown shoes.",
+        "🎨 The Magic Three Questions turn prompts into masterpieces: WHAT is it? HOW does it look/taste? WHICH special details?",
+        "🔢 Exact numbers (counts, centimeters, minutes) prevent computers from guessing amounts.",
+        "💥 Strong action verbs ('Bake', 'Illustrate', 'Summarize', 'Scoop') give precise task instructions.",
+        "📢 Polite manners ('Please' and 'Thank you') train our human brains to speak calmly, clearly, and thoughtfully.",
+        "🏆 The Golden Prompter's Formula: WHO + ACTION VERB + CORE OBJECT + RICH DETAILS!",
+        "🌟 Mastering clear communication with AI makes you a more confident, articulate speaker with humans too!"
+      ],
+      "recap": "In this lesson, we discovered how humans communicate with artificial intelligence and smart machines. We learned why literal-minded algorithms misinterpret vague commands, explored funny examples of prompt blunders (garlic oatmeal, frozen potatoes, clown shoes), and mastered the Magic Three Questions (WHAT, HOW, WHICH). We practiced crafting polite, precise, and numbered commands using strong action verbs, and synthesized the Golden Prompter's Formula to achieve exact results from creative and autonomous machines.",
+      "studentReflection": {
+        "question": "Think of an imaginary smart robot you would love to have in your bedroom. What is ONE crystal-clear command you would give it right now using the Golden Prompter's Formula?",
+        "roboPiReflection": "BEEP BOOP! I would ask an Art Bot: 'Hello Art Bot! Please paint a glowing mural of the planet Saturn with sparkling rainbow rings and three smiling astronaut robots waving from a silver spaceship on my ceiling. Thank you!' What would YOU ask? 🪐🎨"
+      },
+      "nextLesson": {
+        "title": "Chapter 2 • Lesson 2: Put It in Order! (Sequencing & Step-by-Step Instructions) 🔢🥪",
+        "preview": "Now that we know how to use crystal-clear words, what happens when a task has multiple steps that must happen in a STRICT sequence? Can you put on your shoes BEFORE your socks?",
+        "teaser": "Get ready to explore algorithms, step-by-step sequencing, and learn why robots get completely confused if you scramble the order of instructions! 🔢🤖"
+      },
+      "parentNote": "Today, your child explored the fundamentals of prompt engineering and natural language communication with AI. Rather than technical coding, this lesson emphasizes clear articulation, descriptive vocabulary, operational precision, and courteous communication. By analyzing the literal interpretations of algorithms through playful scenarios, your child learned that precision in thought and language eliminates misunderstandings. Encourage your child to practice giving multi-step, descriptive instructions during everyday family cooking and chore routines!",
+      "auraClosing": {
+        "congratulations": "OUTSTANDING SUCCESS! You completed Chapter 2 • Lesson 1: Say It Clearly! 🌟",
+        "achievement": "Crystal-Clear Speaker Badge Unlocked! 🗣️🏅",
+        "nextStep": "Ready for Chapter 2 • Lesson 2: Put It in Order! 🔢✨",
+        "totalPoints": 500
+      }
+    }
+  },
+  "assessment": {
+    "quizType": "multiple_choice_interactive",
+    "roboPiQuizIntro": "BEEP BOOP! Time for the Grand Prompter's Quiz! 🤖📝 Five fun questions stand between you and the Master Communicator Crown! Read carefully, think like a pro prompter, and tap the golden answers! 👑✨",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "tap_correct",
+        "emoji": "🗣️",
+        "question": "Why do smart machines and AI helpers need humans to 'Say It Clearly'? 🤖💡",
+        "options": [
+          {
+            "id": "opt1a",
+            "label": "Because smart machines take human words 100% literally and cannot guess your thoughts! ✨",
+            "correct": true,
+            "feedback": "⭐ PERFECT! Smart machines have no crystal ball — they follow your exact words literally! 🌟"
+          },
+          {
+            "id": "opt1b",
+            "label": "Because robots only understand when you whisper very softly 🤫",
+            "correct": false,
+            "feedback": "🤔 Whispering doesn't help! It is the clear descriptive words that make the difference!"
+          },
+          {
+            "id": "opt1c",
+            "label": "Because computers get angry if you don't speak fast ⚡",
+            "correct": false,
+            "feedback": "🤔 Computers don't get angry! Speaking fast can actually cause muddled words. Speak calmly and clearly!"
+          },
+          {
+            "id": "opt1d",
+            "label": "Because machines already know what you want before you speak 🔮",
+            "correct": false,
+            "feedback": "🤔 Machines cannot read your mind! That's why vague words cause hilarious mix-ups!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q2",
+        "type": "tap_correct",
+        "emoji": "🥔",
+        "question": "If Kabir asks a kitchen bot: 'Bring me cold food!', why might the robot bring a frozen raw potato? 🥶",
+        "options": [
+          {
+            "id": "opt2a",
+            "label": "Because a frozen raw potato is technically cold and technically food! 🥔✨",
+            "correct": true,
+            "feedback": "⭐ BINGO! Kabir's fuzzy words were 100% satisfied by a frozen potato! To get ice cream, Kabir must say 'ice cream'! 🍨"
+          },
+          {
+            "id": "opt2b",
+            "label": "Because the robot loves eating potatoes 🤖🥔",
+            "correct": false,
+            "feedback": "🤔 Robots don't eat food! The robot simply matched the literal words 'cold' and 'food'!"
+          },
+          {
+            "id": "opt2c",
+            "label": "Because the freezer was completely out of ice cream ❌",
+            "correct": false,
+            "feedback": "🤔 There was plenty of ice cream, but the robot wasn't told to look for ice cream!"
+          },
+          {
+            "id": "opt2d",
+            "label": "Because potatoes are the only cold food in the world 🌍",
+            "correct": false,
+            "feedback": "🤔 There are thousands of cold foods! That's why fuzzy words cause robots to guess wildly!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q3",
+        "type": "tap_correct",
+        "emoji": "🎨",
+        "question": "What are the Magic Three Questions for building a crystal-clear prompt? 🍓✨",
+        "options": [
+          {
+            "id": "opt3a",
+            "label": "WHAT is it? HOW does it look/taste? WHICH special details? 🎨✨",
+            "correct": true,
+            "feedback": "⭐ BRILLIANT! WHAT (the noun), HOW (the adjectives), and WHICH (special details) make the perfect prompt! 🏆"
+          },
+          {
+            "id": "opt3b",
+            "label": "WHO did it? WHERE is it? WHY is it sleeping? 💤",
+            "correct": false,
+            "feedback": "🤔 That sounds like a detective mystery, but prompt building uses WHAT, HOW, and WHICH!"
+          },
+          {
+            "id": "opt3c",
+            "label": "CAN I have it? IS IT free? WILL IT explode? 💥",
+            "correct": false,
+            "feedback": "🤔 Haha, no explosions here! Remember: WHAT, HOW, and WHICH!"
+          },
+          {
+            "id": "opt3d",
+            "label": "HOW FAST? HOW LOUD? HOW HEAVY? 🏋️",
+            "correct": false,
+            "feedback": "🤔 Those are physical measurements, but the golden prompt recipe is WHAT, HOW, and WHICH!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q4",
+        "type": "tap_correct",
+        "emoji": "🎂",
+        "question": "Which of the following commands will successfully bake Lily's dream birthday cake without confusion? 🍰",
+        "options": [
+          {
+            "id": "opt4a",
+            "label": "'Make sweet food fast!' 🧄",
+            "correct": false,
+            "feedback": "🤔 That's fuzzy! Chef Bot might make a bowl of plain sugar paste or garlic oatmeal! 😖"
+          },
+          {
+            "id": "opt4b",
+            "label": "'Please bake a two-layer round chocolate cake with vanilla frosting and 5 fresh red strawberries on top!' 🎂🍓✨",
+            "correct": true,
+            "feedback": "⭐ MASTER PROMPT! Exact shape, layers, flavor, frosting, and counted strawberries! 100% success! 🎂🎉"
+          },
+          {
+            "id": "opt4c",
+            "label": "'Do that cake thing!' ❓",
+            "correct": false,
+            "feedback": "🤔 'Cake thing' gives zero details! Which cake? What flavor? How many layers?"
+          },
+          {
+            "id": "opt4d",
+            "label": "'Cook whatever you feel like cooking.' 🎲",
+            "correct": false,
+            "feedback": "🤔 Robots don't have feelings! Leaving it to chance will result in weird kitchen blunders!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q5",
+        "type": "tap_correct",
+        "emoji": "📢",
+        "question": "Why is using strong action verbs like 'BAKE', 'ILLUSTRATE', or 'SUMMARIZE' better than weak verbs like 'MAKE' or 'DO'? ⚡",
+        "options": [
+          {
+            "id": "opt5a",
+            "label": "Because strong action verbs tell the computer the EXACT mathematical task and skill to perform! 💻✨",
+            "correct": true,
+            "feedback": "⭐ PERFECT SCORE! 'Illustrate' or 'Summarize' tells the AI the exact processing algorithm required! 🏆🌟"
+          },
+          {
+            "id": "opt5b",
+            "label": "Because strong verbs make the computer's battery charge faster 🔋",
+            "correct": false,
+            "feedback": "🤔 Words don't charge batteries! But they do give precise programming instructions!"
+          },
+          {
+            "id": "opt5c",
+            "label": "Because weak verbs make the computer turn off automatically 🔌",
+            "correct": false,
+            "feedback": "🤔 Computers don't turn off, they just guess poorly when verbs are weak!"
+          },
+          {
+            "id": "opt5d",
+            "label": "Because strong verbs are only found in ancient books 📜",
+            "correct": false,
+            "feedback": "🤔 Strong verbs are everyday English words that describe specific actions clearly!"
+          }
+        ],
+        "points": 20
+      }
+    ],
+    "maxScore": 100,
+    "passingScore": 80,
+    "completionMessages": {
+      "perfect": "🌟 PERFECT 100/100! You are a genuine Master of AI Communication! Wear your Golden Crown with pride! 👑🗣️",
+      "excellent": "🎉 FANTASTIC 80+/100! You deeply understand clear commands and the Magic Three Questions! 🌟🍰",
+      "good": "👍 GOOD JOB! You understand the basics! Review the three sections and try again for a perfect score! 🤖",
+      "tryAgain": "💪 DON'T GIVE UP! Remember Robo-Pi's golden rhyme: Fuzzy words make blunders; clear words make wonders! Let's try again! 🌟"
+    }
+  },
+  "resources": {
+    "teacherGuide": "/content/junior/guides/class4-ch2-l1-teacher.pdf",
+    "worksheets": [
+      "/content/junior/worksheets/class4-ch2-l1-chef-bot-order-cards.pdf",
+      "/content/junior/worksheets/class4-ch2-l1-vague-vs-clear-sorter.pdf"
+    ],
+    "videos": [
+      {
+        "title": "🎬 Talking to AI: How Words Become Computer Code! (Kids Edition)",
+        "url": "TBD",
+        "duration": "4:00",
+        "description": "An entertaining animated guide showing how natural language processing models break down sentences!"
+      },
+      {
+        "title": "🎬 The Famous Exact Instructions Peanut Butter Sandwich Experiment!",
+        "url": "TBD",
+        "duration": "5:15",
+        "description": "A hilarious classroom demonstration of a teacher acting as a literal computer trying to make a sandwich!"
+      },
+      {
+        "title": "🎬 Prompt Engineering for Kids: How to Get Amazing AI Art!",
+        "url": "TBD",
+        "duration": "3:45",
+        "description": "Fun visual examples showing how adding lighting, adjectives, and art styles transforms AI drawing outputs!"
+      }
+    ],
+    "additionalReading": [
+      {
+        "title": "📖 The Robot Who Took Everything Literally: A Tale of Words & Wonder",
+        "url": "TBD",
+        "level": "Elementary"
+      }
+    ],
+    "parentResources": [
+      {
+        "title": "👨‍👩‍👧 Helping Kids Build Clear Verbal Communication in the AI Age",
+        "url": "TBD",
+        "description": "Practical conversational games parents can play during car rides and dinner to sharpen descriptive speaking."
+      }
+    ]
+  },
+  "teacherNotes": {
+    "preparation": "Prepare props for Activity 3 (The Literal Sandwich Robot): an unopened loaf of sliced bread, an unopened jar of jam or peanut butter, and a dull plastic butter knife. Write the Magic Three Questions on the board: 1. WHAT? 2. HOW? 3. WHICH DETAILS? Print the Chef Bot Order Cards worksheet for paired roleplay.",
+    "lessonFlow": "Hook students with the Opening Story of Chef Bot baking a spicy garlic oatmeal brick. Elicit why Chef Bot made it (literal interpretation of 'make food'). Lead an interactive discussion on 'Fuzzy Foggy Words' vs 'Crystal Clear Words'. Introduce the Magic Three Questions. Run Activity 1 (Chef Bot Bakery Challenge) or Activity 3 (Sandwich Robot) live in class. Finish with the interactive quiz.",
+    "tips": [
+      "🎯 Perform the Literal Sandwich Robot live in front of the classroom: when a student says 'Put peanut butter on bread', drop the unopened jar on the bread bag! The classroom laughter will cement the lesson forever!",
+      "💡 Emphasize that prompt engineering is fundamentally about descriptive writing and vocabulary, not computer coding.",
+      "🍓 Encourage students to count toppings or items: numbers give AI algorithms concrete boundaries.",
+      "🚫 Teach the concept of 'exclusions': telling the AI what NOT to include (allergies, noise, unwanted elements).",
+      "🌟 Connect polite prompting ('Please' and 'Thank you') to respectful human interpersonal habits.",
+      "👏 Celebrate every student's Crystal-Clear Speaker Badge at the end of the session!"
+    ],
+    "commonMisconceptions": [
+      "❌ Misconception: 'Robots are smart enough to guess what I mean even if I use sloppy words.' → Correction: Algorithms lack human social context and take linguistic tokens 100% literally.",
+      "❌ Misconception: 'Talking to AI requires learning difficult programming languages like Python.' → Correction: Modern AI models use natural language; clear everyday English is the programming language!",
+      "❌ Misconception: 'Long prompts are always better than short prompts.' → Correction: Length alone doesn't help if words are rambling; clarity, exact nouns, and specific adjectives are what matter.",
+      "❌ Misconception: 'Computers have human emotions that get hurt when we don't say please.' → Correction: Being polite trains the HUMAN speaker to structure thoughts calmly, respectfully, and deliberately."
+    ],
+    "differentiatedInstruction": {
+      "forStrugglingStudents": "Use visual prompt cards featuring icons for WHAT (icon of cake), HOW (icon of chocolate swirl), and WHICH (icon of 5 strawberries). Have students point and say the three words before assembling full sentences.",
+      "forAdvancedStudents": "Challenge students to write a negative prompt (specifying what the AI must NOT do, e.g. 'no nuts, no artificial coloring, no candles'). Introduce basic prompt formatting with bullet points and role prompting ('Act as a Michelin-star pastry chef...').",
+      "forELLStudents": "Provide bilingual vocabulary sentence frames: 'Please [action verb] a [color/size] [noun] with [details]. Thank you!' Pair ELL students with supportive peers during the Chef Bot roleplay activity."
+    }
+  },
+  "additionalResources": [
+    {
+      "type": "video",
+      "title": "🎬 The Literal Sandwich Robot: Harvard CS50 Demonstration",
+      "description": "Professor David Malan's world-famous demonstration of literal computer instruction execution with bread and peanut butter.",
+      "url": "TBD",
+      "ageAppropriate": true
+    },
+    {
+      "type": "article",
+      "title": "📰 Prompt Engineering: The Art of Talking to Smart Machines",
+      "description": "An illustrated kid-friendly guide exploring how prompt engineers talk to AI models across animation, gaming, and medicine.",
+      "url": "TBD",
+      "ageAppropriate": true
+    },
+    {
+      "type": "activity",
+      "title": "🎨 Printable Chef Bot Bakery Menu & Order Pad",
+      "description": "A printable PDF where students can design their own custom bakery menu and write out crystal-clear prompts for friends.",
+      "url": "TBD",
+      "ageAppropriate": true
+    },
+    {
+      "type": "interactive",
+      "title": "🌐 Virtual AI Prompt Playground for Young Explorers",
+      "description": "A safe, child-friendly sandbox where students can type prompts and observe the difference between fuzzy and clear inputs.",
+      "url": "TBD",
+      "ageAppropriate": true
+    }
+  ],
+  "assessmentQuestions": [
+    {
+      "questionId": "aq1",
+      "question": "What does it mean when we say a smart machine takes human commands 'literally'? 🤖",
+      "options": [
+        "It translates the words into an ancient secret language",
+        "It follows the exact dictionary meaning of the words spoken without guessing hidden intentions 📖✨",
+        "It ignores whatever you say and does whatever it wants",
+        "It checks with your teacher before starting work"
+      ],
+      "correctAnswer": "It follows the exact dictionary meaning of the words spoken without guessing hidden intentions 📖✨",
+      "explanation": "Literal execution means computing systems process exact input parameters according to programmed logic rather than inferring unspoken human intentions."
+    },
+    {
+      "questionId": "aq2",
+      "question": "Which of the following is considered a 'Fuzzy Foggy Word' that often confuses computers? 🌫️",
+      "options": [
+        "'Strawberry'",
+        "'Two-layer'",
+        "'Thing' ❓✨",
+        "'Multi-grain'"
+      ],
+      "correctAnswer": "'Thing' ❓✨",
+      "explanation": "Vague placeholder words like 'thing', 'stuff', or 'food' lack concrete semantic definitions, forcing algorithms to choose among millions of random possibilities."
+    },
+    {
+      "questionId": "aq3",
+      "question": "Which question in the Magic Three Questions provides the sensory colors, textures, and flavors of an object? 🎨",
+      "options": [
+        "Question 1: WHAT is it?",
+        "Question 2: HOW does it look, taste, or feel? 🌈✨",
+        "Question 3: WHO made it?",
+        "Question 4: WHERE is the store?"
+      ],
+      "correctAnswer": "Question 2: HOW does it look, taste, or feel? 🌈✨",
+      "explanation": "Question 2 supplies sensory adjectives (colors, textures, flavors, shapes) that transform a generic noun into a specific, vivid mental picture."
+    },
+    {
+      "questionId": "aq4",
+      "question": "Why is including exact numbers (like 'two scoops' or 'five strawberries') so effective when prompting AI? 🔢",
+      "options": [
+        "Because numbers give the computer explicit mathematical bounds so it doesn't have to guess amounts 🔢✨",
+        "Because computers only speak in numbers and cannot understand letters",
+        "Because numbers make the food taste much sweeter",
+        "Because robots get sleepy if you use words without numbers"
+      ],
+      "correctAnswer": "Because numbers give the computer explicit mathematical bounds so it doesn't have to guess amounts 🔢✨",
+      "explanation": "Numeric quantification removes ambiguity regarding scale, quantity, and repetition, ensuring exact alignment between user intent and algorithmic output."
+    },
+    {
+      "questionId": "aq5",
+      "question": "In the Golden Prompter's Formula (WHO + ACTION VERB + CORE OBJECT + RICH DETAILS), which part represents the action verb? ⚡",
+      "options": [
+        "'Hello Chef Bot'",
+        "'Bake' 🍰✨",
+        "'Chocolate birthday cake'",
+        "'With pink sprinkles and five strawberries'"
+      ],
+      "correctAnswer": "'Bake' 🍰✨",
+      "explanation": "'Bake' is the strong action verb that designates the specific functional operation the machine or agent must execute."
+    }
+  ]
+}
