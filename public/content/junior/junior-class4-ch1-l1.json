@@ -1,0 +1,1329 @@
+{
+  "lessonId": "junior-class4-ch1-l1",
+  "title": "Where Is AI Hiding? \ud83d\udd0d",
+  "level": "junior",
+  "class": "class4",
+  "chapter": "ch1",
+  "chapterTitle": "AI Basics \u2022 DISCOVER",
+  "lessonNumber": 1,
+  "classNumber": 4,
+  "chapterNumber": 1,
+  "mascot": {
+    "name": "Robo-Pi",
+    "emoji": "\ud83e\udd16\u2728",
+    "description": "A friendly silver robot wearing a tiny graduation cap and a magnifying glass necklace. Robo-Pi has big glowing blue eyes that sparkle when excited and a cheerful beeping voice!",
+    "voiceStyle": "Cheerful, energetic beeping sentences. Loves exclamation marks! Uses BEEP BOOP as a greeting. Always encourages the child with big enthusiasm.",
+    "catchphrase": "BEEP BOOP! Ready to be an AI Detective? Let's go! \ud83d\udd0d\ud83e\udd16"
+  },
+  "metadata": {
+    "duration": "45 minutes",
+    "ageGroup": "9-10 years",
+    "difficulty": "beginner",
+    "totalWords": 12000,
+    "version": "1.0",
+    "lastUpdated": "2026-10-13",
+    "author": "AI Olympiad Team",
+    "tags": ["AI basics", "everyday AI", "camera AI", "keyboard AI", "music AI", "detective", "class4", "junior"]
+  },
+  "content": {
+    "introduction": {
+      "welcomeMessage": "\ud83e\udd16\u2728 BEEP BOOP! Hello, Super Detective! Welcome to your very first AI mystery adventure!",
+      "roboPiGreeting": {
+        "text": "BEEP BOOP! Hello hello hello! I am Robo-Pi \u2014 your robot best friend and your official AI Detective partner! \ud83e\udd16\u2728 I have a shiny silver body, a tiny graduation cap on my head, and a super sparkly magnifying glass around my neck. Today is THE most exciting day because we are going to become REAL detectives! Not just any detectives \u2014 we are going to become Junior AI Detectives! \ud83d\udd75\ufe0f Can you believe it? Let me explain what that means. AI is hiding EVERYWHERE around you right now. Yes \u2014 HIDING! It is inside your phone, inside your tablet, inside your music player, and even in your smart TV! AI is like an invisible helper that makes your gadgets super smart. But most people walk right past these AI helpers without ever noticing them! That changes TODAY! Today, you and I \u2014 together \u2014 are going to find all the secret spots where AI is hiding. We will shine our detective magnifying glass on everyday gadgets and yell GOTCHA! when we spot the AI inside. Sounds incredible, right? Let me put on my tiny detective hat \u2014 BEEP click BOOP \u2014 there we go! I am ready! Are YOU ready? \ud83d\udd0d\u2b50",
+        "toastGuidance": {
+          "tap_prompt": "\ud83d\udc47 Tap the magnifying glass to start your detective adventure!",
+          "great_job": "\u2b50 AMAZING! Your detective badge is GLOWING! You found it!",
+          "encouragement": "\ud83e\udd16 BEEP BOOP! You are going to be the BEST AI Detective ever!"
+        }
+      },
+      "openingStory": {
+        "title": "\ud83d\udd75\ufe0f The Mystery of the Invisible Helpers \ud83d\udd0d",
+        "content": "Once upon a time \u2014 not in a faraway land, but right in YOUR house \u2014 there was a little mystery. Every single day, millions of invisible helpers were doing amazing things for people. They helped mamas take perfect selfies at birthday parties. They helped grandpas listen to their favourite old songs without pressing a single button. They helped kids find cartoon videos faster than any human could. They helped busy dads send text messages in half the time. These invisible helpers were EVERYWHERE \u2014 but nobody talked about them! Nobody pointed at them! Nobody said THANK YOU to them! They just quietly did their magical work, day after day, hiding inside shiny screens and colourful buttons. One fine morning, a curious girl named Priya picked up her mama's phone to take a photo of her fluffy cat, Biscuit. When she pointed the camera at Biscuit, something AMAZING happened. A little yellow box \u2014 like a tiny glowing picture frame \u2014 appeared right around Biscuit's cute furry face! Priya's eyes went wide. She had never noticed that yellow box before! She asked her mama, 'Mama, how does the camera know where Biscuit's face is?' Mama thought for a moment and said, 'You know, Priya, I think there is something very clever inside that camera helping it find faces!' And that question \u2014 that one simple, wonderful question \u2014 started the greatest adventure of Priya's life. She became an AI Detective! And today \u2014 RIGHT NOW \u2014 YOU are going to follow in Priya's footsteps. You are going to learn to see what others cannot see. You are going to find the invisible helpers. You are going to become an Official Junior AI Detective! \ud83c\udfc6\ud83d\udd0d Are you excited? BEEP BOOP \u2014 I know I am! \ud83e\udd16\u2728",
+        "moraleOfStory": "The most amazing things in life are often the invisible helpers we never notice \u2014 until someone teaches us to look! \ud83d\udc41\ufe0f",
+        "roboPiComment": "BEEP BOOP! Priya's story is SO like what is going to happen to you today! You will never look at a phone camera the same way again! \ud83e\udd16\ud83d\udd0d"
+      },
+      "learningObjectives": [
+        "\ud83d\udd75\ufe0f Become an Official Junior AI Detective with a Gold Badge!",
+        "\ud83d\udcf7 Spot the secret AI hiding inside phone cameras and selfie apps!",
+        "\u2328\ufe0f Discover the clever AI helper living inside your keyboard!",
+        "\ud83c\udfb5 Find the music AI that knows your favourite songs!",
+        "\ud83c\udfc6 Collect 3 Golden Detective Magnifiers to complete your badge!",
+        "\ud83e\udd16 Understand that AI is a helpful invisible friend in our gadgets!"
+      ],
+      "detectiveBadge": {
+        "title": "\ud83d\udd75\ufe0f Your Official AI Detective Badge",
+        "description": "To earn your shiny Gold Detective Badge, you must complete THREE detective missions in this lesson. Each mission gives you one Golden Magnifier \ud83d\udd0d. Collect all three and your badge will glow! BEEP BOOP \u2014 let the missions BEGIN! \ud83e\udd16\u2b50",
+        "magnifiers": [
+          {
+            "id": "magnifier-1",
+            "name": "Camera Magnifier \ud83d\udcf7",
+            "earnedBy": "Completing the Camera AI Mission",
+            "colour": "Gold"
+          },
+          {
+            "id": "magnifier-2",
+            "name": "Keyboard Magnifier \u2328\ufe0f",
+            "earnedBy": "Completing the Keyboard AI Mission",
+            "colour": "Silver"
+          },
+          {
+            "id": "magnifier-3",
+            "name": "Music Magnifier \ud83c\udfb5",
+            "earnedBy": "Completing the Music AI Mission",
+            "colour": "Rainbow"
+          }
+        ]
+      },
+      "auraGuidance": {
+        "welcome": "\ud83e\udd16 LET'S START! Today is detective day \u2014 AI is hiding and we are FINDING it!",
+        "instruction": "\ud83d\udc41\ufe0f READ the story carefully and watch for golden clues!",
+        "encouragement": "\u2b50 You are going to LOVE this lesson \u2014 trust me! BEEP BOOP!"
+      }
+    },
+    "mainConcept": {
+      "whatIsAI": {
+        "title": "\ud83e\udd16 What is AI? (The Super Simple Explanation!)",
+        "roboPiIntro": "BEEP BOOP! Before we start hunting for AI, let me tell you a tiny secret \u2014 what IS AI anyway? Don't worry, it is NOT scary or complicated at ALL! \ud83e\udd16\u2728",
+        "simpleExplanation": "Okay, detective \u2014 listen carefully! AI stands for Artificial Intelligence. Those are big fancy words! But here is the super simple version: AI just means a computer that can THINK and LEARN \u2014 kind of like how your brain thinks and learns! \ud83e\udde0\u2728 Your brain is AMAZING. When you were a baby, you did not know how to talk. But you listened to mama and papa speak thousands of times, and slowly your brain learned all the words. That is exactly how AI learns! AI watches millions and millions of examples until it gets really really good at something. For example \u2014 the camera AI watched millions of photos of human faces \u2014 round faces, oval faces, big faces, small faces, baby faces, grandma faces \u2014 until it got SO good that now, in less than one second, it can find ANY face in ANY photo! That is the magic of AI! It learns from lots and lots of examples until it becomes like a superpower! \ud83d\udcaa\u2b50 AI does NOT have feelings like you do. It cannot feel happy or sad. It does not dream at night! It is just a very very clever set of instructions inside a computer that helps it do amazing things \u2014 like finding faces, guessing words, and picking songs \u2014 really really fast! Think of AI like a super-smart helper hiding inside your gadgets, always ready to help you do things faster and easier. And the best part? You have been using AI EVERY SINGLE DAY without even knowing it! That changes RIGHT NOW! \ud83d\udd0d\ud83e\udd16",
+        "keyPoints": [
+          "\ud83e\udd16 AI = Artificial Intelligence = A computer that thinks and learns!",
+          "\ud83d\udcda AI learns by watching millions and millions of examples \u2014 just like you learn by practicing!",
+          "\u26a1 AI works super fast \u2014 faster than any human could ever do it!",
+          "\ud83d\ude48 AI has been hiding in your gadgets all along \u2014 today you will find it!",
+          "\ud83d\udcdb AI is a HELPFUL friend \u2014 it makes your life easier and more fun!"
+        ],
+        "toastGuidance": {
+          "tap_prompt": "\ud83d\udc47 Tap the robot to hear Robo-Pi explain what AI is!",
+          "great_job": "\u2b50 BRILLIANT! You understand what AI is \u2014 you are already a GREAT detective!",
+          "try_again": "\ud83d\udd0d No worries! Remember \u2014 AI = a computer that thinks and learns! Try again!"
+        }
+      },
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "\ud83d\udd0d Detective Mission 1: The Magic Yellow Box in the Camera! \ud83d\udcf7\u2728",
+          "missionBadge": "Camera Magnifier \ud83d\udcf7",
+          "roboPiMissionBriefing": "BEEP BOOP! Attention, Detective! This is your FIRST mission! \ud83e\udd16\ud83d\udd0d Your mission, should you choose to accept it, is to find the invisible AI helper hiding inside the phone camera! Every time someone takes a photo of a face \u2014 yours, mama's, grandma's, even a pet's \u2014 something magical happens in a tiny fraction of a second. Your mission is to understand WHAT that magical thing is and WHERE the AI is hiding! Ready? Let's GO! \ud83d\udcf7\u2b50",
+          "mainContent": {
+            "paragraph1": "Have you ever taken a selfie on mama's or papa's phone? Or watched mama take a photo of the family at a birthday party? If you look very closely at the phone screen right before the photo is taken \u2014 you will see something AMAZING! Tiny little yellow boxes appear on the screen. These yellow boxes are like little glowing picture frames, and they pop up right around people's faces! \ud83d\udcf7\u2728 When mama points the camera at you and grandma together, POOF \u2014 a yellow box appears around YOUR face and another yellow box appears around GRANDMA'S face \u2014 both at the same time! It happens so fast that most people never even think about it. They just smile and say CHEESE and the photo gets taken. But YOU \u2014 a detective in training \u2014 are going to ask the most important question: HOW does the camera KNOW where the faces are? \ud83d\udd0d",
+            "paragraph2": "Here is the incredible answer! Inside your phone camera, there is a tiny invisible AI helper. We can call this helper the 'Face Finder'! The Face Finder AI has studied millions and millions and MILLIONS of photos of faces. I mean SO many photos \u2014 more than you could ever count, even if you counted every single day for your entire life! It studied round faces and long faces. Dark faces and light faces. Baby faces with no teeth and grandpa faces with lots of wrinkles. Happy faces, surprised faces, sleepy faces, and funny faces making silly expressions! After studying ALL those millions of faces, the Face Finder AI became incredibly good at one special skill: in less than ONE SINGLE SECOND \u2014 faster than you can blink \u2014 it can look at any image and instantly spot where all the faces are! That is why those yellow boxes appear so quickly! It is the Face Finder AI doing its job at lightning speed! \u26a1\ud83d\udcf7",
+            "paragraph3": "Now, WHY does the camera need to find faces at all? Great detective question! Here is why \u2014 when you take a photo of people, the most important thing in that photo is the FACES. You want faces to look clear and bright and beautiful. If the camera did not find the faces, it might focus on the wall behind people or the flowers on a table, and then the faces would come out blurry! Nobody wants blurry birthday party photos! So the Face Finder AI finds every face, tells the camera 'HEY! Focus here! Make this bright! Make this sharp!' \u2014 and THAT is why your family photos come out looking so clear and beautiful! The AI is working as your invisible photographer assistant! \ud83d\udcf7\ud83c\udf1f",
+            "paragraph4": "This Face Finder AI is not just in phone cameras! It is EVERYWHERE once you know to look for it. When papa unlocks his phone by just looking at it \u2014 THAT is the same face AI recognizing papa's unique face! When the school computer takes attendance using a camera \u2014 that is face AI again! When you see those photo apps that can automatically sort all your family photos by person \u2014 saying 'here are all photos of grandma, here are all photos of baby sister' \u2014 that is the Face Finder AI working like a super-organized photo album helper! Every single time a camera draws a box around your face, you are seeing AI in action! And now that you know about it \u2014 you will NEVER unsee it! \ud83d\udd0d\ud83d\udc41\ufe0f",
+            "paragraph5": "BEEP BOOP \u2014 Robo-Pi wants to share a funny story! \ud83e\udd16\ud83d\ude04 My friend's little sister, who is only five years old, once pointed her toy camera at her stuffed elephant and got very confused when no yellow box appeared around the elephant's face! She ran to her mama and said 'Mama, the camera doesn't like my elephant!' And mama had to explain that the Face Finder AI learned from photos of HUMAN faces and PET faces, so it recognizes those \u2014 but stuffed toy faces are a little too still and flat for it to find! That little girl learned an important lesson: AI learns from examples, so it is very good at things it has seen lots of examples of, and not as good at things it has seen fewer examples of! Isn't that so interesting? Even AI has things it is still learning about! Just like you! \ud83c\udf1f"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "example-1a",
+              "title": "\ud83d\udcf8 Family Birthday Party Selfie! \ud83c\udf82",
+              "icon": "\ud83d\udcf8",
+              "description": "It is Grandma's 70th birthday! The whole family is squished together in front of the big birthday cake \u2014 mama, papa, you, your little brother, grandma, grandpa, aunty Rekha, and uncle Suresh! Papa holds up the phone and says 'Everyone say CHEESE!' The moment the camera turns on \u2014 ZAP! Yellow boxes appear around ALL EIGHT faces instantly! Papa sees the boxes and knows the camera has found everyone. He makes sure everyone is smiling. CLICK! The photo is taken. Grandma's face is clear. Your face is clear. Even little brother who is squirming is clear! That perfect family photo \u2014 made possible by Face Finder AI working its magic in the background! \ud83c\udf82\ud83d\udcf7\u2728",
+              "realLifeScenario": "The next time your family is taking a group photo, quietly count how many yellow boxes appear on the phone screen. Then whisper to yourself: 'That is the Face Finder AI! I can SEE you, AI!' \ud83d\udd0d\ud83d\udc41\ufe0f You will impress everyone when you explain what those boxes mean! \ud83c\udf1f",
+              "roboPiComment": "BEEP BOOP! Eight faces found in less than one second! My Face Finder friend is SO fast! I would need at least three minutes to count eight faces because I keep getting confused between left and right! \ud83d\ude04\ud83e\udd16",
+              "toastGuidance": {
+                "tap_prompt": "\ud83d\udc47 Tap the birthday cake to see the yellow boxes appear on the faces!",
+                "great_job": "\u2b50 BINGO! You spotted every yellow box \u2014 AI Detective eyes are SHARP!",
+                "try_again": "\ud83d\udd0d Look very carefully \u2014 how many faces can YOU find in the photo?"
+              }
+            },
+            {
+              "id": "example-1b",
+              "title": "\ud83d\udd12 Phone Face Unlock! \ud83d\udcf1",
+              "icon": "\ud83d\udd12",
+              "description": "Every morning, papa picks up his phone from the bedside table. He does not type any password. He does not press any buttons. He just LOOKS at the phone for half a second \u2014 and CLICK \u2014 the phone unlocks! \ud83d\udd12\u2728 This is a special version of Face Finder AI called Face ID. Instead of just finding faces in photos, this AI memorized what PAPA'S specific face looks like \u2014 the exact shape of his nose, the distance between his eyes, the curve of his forehead \u2014 in incredible detail! Now it acts like a guard. If Papa looks at it \u2014 WELCOME, it opens! If mama looks at it \u2014 SORRY, wrong face, stays locked! If a stranger looks at it \u2014 ABSOLUTELY NOT, stays locked! The AI is being a loyal security guard, recognizing only the one face it is supposed to recognize! \ud83d\udcf1\ud83d\udd12",
+              "realLifeScenario": "Try looking at papa's or mama's phone face-down and see if it unlocks. Then try to unlock it yourself. If their phone uses Face ID, it will stay locked for you! That is the Face AI recognizing that your face is different from mama or papa's face. The AI knows! \ud83d\ude04\ud83d\udd0d",
+              "roboPiComment": "BEEP BOOP! Face ID is like the AI is saying 'I know this face \u2014 it is my human's face \u2014 let them in!' I sometimes wish I had a face to unlock things too, but I have a password button on my chest! \ud83e\udd16\ud83d\ude04",
+              "toastGuidance": {
+                "tap_prompt": "\ud83d\udc47 Tap the phone to see the Face ID AI in action!",
+                "great_job": "\u2b50 PERFECT! You understand Face ID \u2014 that is TWO AI discoveries today!",
+                "try_again": "\ud83d\udd0d Remember \u2014 Face ID is AI that learned to recognize ONE special face! Try again!"
+              }
+            },
+            {
+              "id": "example-1c",
+              "title": "\ud83c\udf1f Filters and Fun Faces! \ud83d\ude02\ud83d\udcf1",
+              "icon": "\ud83c\udf1f",
+              "description": "You know those funny filters on Snapchat or Instagram where dog ears and a wet nose appear on your face? Or when it puts a sparkly crown on your head? Or makes you look like you have rainbow-coloured hair? \ud83d\udc36\ud83d\udc51\ud83c\udf08 Well \u2014 ALL of that is Face Finder AI working overtime! First, the AI finds where your face is. Then it finds specific PARTS of your face \u2014 where your eyebrows are, where your ears are, where your mouth is, where the top of your head is. Then \u2014 POOF \u2014 it sticks the dog ears exactly on where your ears are! It puts the crown exactly on top of your head! It even makes the ears move when you move your head, because the AI is tracking your face in real time! Every giggle you have had at a funny face filter \u2014 that is AI making you laugh! \ud83d\ude04\ud83d\udcf1\u2728",
+              "realLifeScenario": "Open a camera app that has filters. Put on a silly face filter like dog ears or a funny hat. Now move your head side to side and watch how the filter moves WITH your face perfectly! That is the Face AI tracking your face in real time \u2014 millions of calculations every second, just to make you giggle! \ud83c\udf08\ud83d\ude04",
+              "roboPiComment": "BEEP BOOP! My FAVOURITE thing in the whole world! I once tried to use a dog ear filter but it put the ears on my antenna instead of where my ears would be! AI was very confused by my robot face! \ud83d\ude04\ud83e\udd16",
+              "toastGuidance": {
+                "tap_prompt": "\ud83d\udc47 Tap the filter button to try the dog ears on Robo-Pi!",
+                "great_job": "\u2b50 HA HA! The AI found the face and put the ears in the RIGHT place! You spotted it!",
+                "try_again": "\ud83d\udd0d Look at where the ears land \u2014 is the AI putting them in the right place?"
+              }
+            }
+          ],
+          "keyPoints": [
+            "\ud83d\udcf7 Phone cameras use Face Finder AI to spot faces instantly!",
+            "\u26a1 This AI learned by studying MILLIONS of photos of real faces!",
+            "\ud83c\udfaf The yellow box you see = AI saying 'I found a face here!'",
+            "\ud83d\udd12 Face ID uses face AI to recognise only YOUR face as a secret key!",
+            "\ud83d\ude04 Fun face filters also use face AI to find your features and add silly decorations!",
+            "\ud83d\udc41\ufe0f Every photo you take \u2014 AI is quietly helping in the background!"
+          ],
+          "mission1Complete": {
+            "celebrationText": "\ud83c\udf89 BEEP BOOP! MISSION 1 COMPLETE! \ud83e\udd16\u2728",
+            "roboPiCelebration": "BEEP BOOP BOOP BEEP! OH MY CIRCUITS! You did it! You found the Face Finder AI hiding in the camera! That deserves a BIG robot happy dance! Let me do it \u2014 BEEP \u2014 wiggle wiggle \u2014 BOOP \u2014 spin spin \u2014 BEEP BOOP \u2014 TADA! \ud83e\udd16\ud83c\udf89 You have earned your FIRST Golden Detective Magnifier! The Camera Magnifier is NOW yours! \ud83d\udcf7\ud83d\udd0d\u2b50 Your detective badge is one-third complete! TWO more missions to go \u2014 let us not stop now!",
+            "magnifierEarned": "\ud83d\udcf7 Camera Magnifier \u2014 EARNED! \u2b50",
+            "toastGuidance": {
+              "tap_prompt": "\ud83d\udc47 Tap the magnifier to add it to your detective badge!",
+              "great_job": "\u2b50 CAMERA MAGNIFIER ADDED! Your badge is glowing brighter! \ud83d\udd0d",
+              "encouragement": "\ud83e\udd16 BEEP BOOP! One down, two to go! You are absolutely BRILLIANT!"
+            }
+          }
+        },
+        {
+          "id": "section-2",
+          "title": "\ud83d\udd0d Detective Mission 2: The Keyboard That Reads Your Mind! \u2328\ufe0f\ud83d\udcad",
+          "missionBadge": "Keyboard Magnifier \u2328\ufe0f",
+          "roboPiMissionBriefing": "BEEP BOOP! Excellent work on Mission 1, Detective! \ud83e\udd16\u2b50 Now \u2014 Mission 2 begins! This time, the AI is hiding somewhere even SNEAKIER. It is hiding inside the keyboard on your phone or tablet! Have you ever noticed those little word bubbles that pop up above the keyboard when you are typing? Those are NOT accidents! That is AI! And your mission is to understand exactly how this clever keyboard AI works! Let us go! \u2328\ufe0f\ud83d\udd0d",
+          "mainContent": {
+            "paragraph1": "Imagine you are sitting at the lunch table at school and you want to send mama a quick message: 'Happy Birthday Mama! I love you so much! \ud83c\udf82'. You open WhatsApp or Messages on the phone. You start typing. You press H \u2014 A \u2014 P \u2014 P \u2014 Y. And the moment you press that Y, something magical appears ABOVE the keyboard! Three little cloud bubbles pop up with words inside them: 'Birthday', 'New', and 'Days'. Your phone is GUESSING what word you want to type next! And guess what? It guessed RIGHT \u2014 your next word IS 'Birthday'! You tap the word 'Birthday' in the bubble \u2014 POOF \u2014 it types itself! You saved six whole button presses! But how did the phone KNOW you were going to type 'Birthday' after 'Happy'? That is the Keyboard AI \u2014 and it is SO clever! \u2328\ufe0f\ud83d\udcad\u2728",
+            "paragraph2": "The Keyboard AI is called a predictive text system. Let us break that big word down! 'Predictive' means 'making a prediction' \u2014 which is like making a smart guess about what comes next. 'Text' means the words you are typing! So predictive text = an AI that makes smart guesses about what word you will type next! Now, how does it make these smart guesses? Just like the Face Finder AI studied millions of photos, the Keyboard AI studied millions and millions of text messages, books, chats, emails, and stories! It noticed patterns. It noticed that people VERY OFTEN type 'Happy Birthday' together \u2014 like a team! It noticed that after someone types 'Good', they usually type 'Morning' or 'Night' or 'Job'. It noticed that after 'I love', people almost always type 'you'. The AI learned all these patterns, and now it uses them to predict \u2014 to GUESS \u2014 what word is coming next! \u2328\ufe0f\ud83e\udde0\u2728",
+            "paragraph3": "But here is something even MORE amazing \u2014 the Keyboard AI is not just using what it learned from millions of OTHER people's messages. It is also learning from YOUR messages specifically! Yes, YOUR phone's keyboard watches how YOU type \u2014 what words do YOU use a lot? What unusual names do you type \u2014 like your friend's unusual name 'Aaradhya' or your school name 'Saraswathi Vidyalaya'? After you type 'Aaradhya' a few times, the keyboard remembers it and starts suggesting it automatically! That is why YOUR phone's keyboard seems to know you so personally \u2014 because it has been learning from you every day! \ud83d\udcf1\u2328\ufe0f\ud83c\udf1f",
+            "paragraph4": "Now, here is the important detective detail \u2014 the keyboard AI gives you THREE suggestions, not just one. Why three? Because it is not always 100% sure which word you want! Imagine you type 'Good' \u2014 you might want to type 'Good Morning', 'Good Night', or 'Good Job'. The AI shows you all three options and lets YOU choose. You are the boss! The AI is just a helpful assistant, showing you choices. You always get to decide! This is an important idea: AI helps us, but we make the final choice! \ud83e\udd16\ud83d\udcdb",
+            "paragraph5": "BEEP BOOP \u2014 here is a fun fact from Robo-Pi! \ud83e\udd16 The keyboard AI also has a funny side. Sometimes it makes HILARIOUSLY wrong predictions! You might type 'I want to eat' and it suggests 'homework' instead of 'pizza'! That is because the AI made a prediction based on what you usually type, and got it a little wrong this time. These funny mistakes are called 'autocorrect fails' and they make people laugh all the time! Even the smartest AI makes mistakes sometimes \u2014 just like how even the smartest detective occasionally looks at the wrong clue! The key is to always double-check before sending your message! \ud83d\ude04\u2328\ufe0f And remember \u2014 AI learns from its mistakes and gets better over time, just like you do!"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "example-2a",
+              "title": "\ud83d\udcac Texting Papa at Cricket Practice! \ud83c\udfd1",
+              "icon": "\ud83d\udcac",
+              "description": "It is Saturday afternoon and you are at cricket practice with papa. You want to text mama to say you will be late for dinner. You open messages and start typing: 'Mama we are at...' \u2014 and before you even finish, the keyboard suggests 'cricket' because that is where you go every Saturday! You tap 'cricket' \u2014 saved 7 button presses! Then it suggests 'practice' \u2014 tap! Saved 8 more! Then 'running' because you are always running a bit late! \ud83d\ude04 You send the message in half the time! The AI remembered your Saturday patterns and helped you type faster! \u2328\ufe0f\ud83c\udfd1\u2728",
+              "realLifeScenario": "The next time you open a messaging app, type the word 'Good' and PAUSE. Look at the three word bubbles above the keyboard. What words is your phone suggesting? 'Morning'? 'Night'? 'Luck'? Try tapping one and see how it continues the sentence! You are now PLAYING with the Keyboard AI! \ud83d\udd0d\u2328\ufe0f",
+              "roboPiComment": "BEEP BOOP! When I try to type, my robot fingers are SO big that I press five letters at once and my keyboard AI gets VERY confused! I once tried to type 'Hello' and sent 'Jklop' by mistake! \ud83d\ude04\ud83e\udd16",
+              "toastGuidance": {
+                "tap_prompt": "\ud83d\udc47 Tap the keyboard to see the word bubble predictions appear!",
+                "great_job": "\u2b50 BINGO! You spotted the word bubbles \u2014 that is Keyboard AI saying hello!",
+                "try_again": "\ud83d\udd0d Look at the three bubbles above the keyboard \u2014 which word does AI think comes next?"
+              }
+            },
+            {
+              "id": "example-2b",
+              "title": "\ud83c\udf1f Google Search Suggestions! \ud83d\udd0d",
+              "icon": "\ud83c\udf1f",
+              "description": "Have you ever opened Google or YouTube and started typing in the search bar? Try this: open YouTube and type just the letter 'C'. Immediately, a list of suggestions pops up! You might see 'cat videos', 'cartoon songs', 'cricket highlights'! You did not finish your word \u2014 but the AI is already guessing! Now type 'CA' \u2014 the suggestions change! Type 'CAT' \u2014 now it shows 'cat cartoon', 'cat playing piano', 'cat funny moments'! The AI is getting more and more specific with each letter you type, trying to help you find exactly what you want FASTER than you could type the whole thing! \ud83d\udd0d\ud83d\udcf1\u2728",
+              "realLifeScenario": "Go to YouTube or Google. Type only two letters \u2014 any two letters you like! Count how many suggestions pop up. Now type one more letter and see how the suggestions change. That is Keyboard-type AI predicting what millions of people search for, and guessing what YOU might want! \ud83d\udd0d\ud83c\udf1f",
+              "roboPiComment": "BEEP BOOP! I once searched for 'robot dance videos' and the AI suggested 'robot vacuum cleaner' instead! I was a little offended! I am much more fun than a vacuum cleaner! \ud83d\ude04\ud83e\udd16",
+              "toastGuidance": {
+                "tap_prompt": "\ud83d\udc47 Tap the search bar and type 'CA' to see predictions!",
+                "great_job": "\u2b50 SUPERB! You see how AI predicts before you even finish typing!",
+                "try_again": "\ud83d\udd0d Type two letters in the search bar and see what AI suggests \u2014 go on!"
+              }
+            },
+            {
+              "id": "example-2c",
+              "title": "\u270f\ufe0f Autocorrect Saves the Day! (Sometimes!) \ud83d\ude04",
+              "icon": "\u270f\ufe0f",
+              "description": "You are quickly typing a message to your best friend Tanvi: 'See you tomrrow at scool!' You typed 'tomrrow' by mistake \u2014 fingers moved too fast! And 'scool' instead of 'school'! But before you could even notice your mistakes, the Keyboard AI quietly fixed them both! 'tomrrow' became 'tomorrow' and 'scool' became 'school'! Your message arrives perfectly spelled! That is the autocorrect part of Keyboard AI \u2014 it catches your spelling mistakes and fixes them silently in the background! It is like having a tiny spelling teacher living inside your keyboard, checking every word you type! \u270f\ufe0f\ud83d\udcf1\ud83d\udcdb",
+              "realLifeScenario": "The next time you are typing on a phone or tablet, try purposely misspelling a simple word \u2014 like type 'beautyful' instead of 'beautiful'. Watch what happens! The AI will probably fix it for you automatically. You just witnessed AI autocorrect in action! \u270f\ufe0f\ud83d\udd0d",
+              "roboPiComment": "BEEP BOOP! Autocorrect once changed my friend's message 'I am at the duck pond' to something very different and very funny! Always proofread before sending! \ud83d\ude04\u2328\ufe0f",
+              "toastGuidance": {
+                "tap_prompt": "\ud83d\udc47 Tap the misspelled word to see autocorrect fix it!",
+                "great_job": "\u2b50 FIXED! Autocorrect AI caught the mistake before it could embarrass anyone! \ud83d\ude04",
+                "try_again": "\ud83d\udd0d Type a word with a small mistake and watch \u2014 does AI fix it automatically?"
+              }
+            }
+          ],
+          "keyPoints": [
+            "\u2328\ufe0f Keyboard AI watches what words you type and guesses what comes next!",
+            "\ud83d\udcda It learned by studying MILLIONS of messages and texts from all over the world!",
+            "\ud83d\udca1 It also learns YOUR personal typing style and favourite words!",
+            "\ud83d\udcad Three word bubble suggestions = AI giving you choices (you are always the boss!)!",
+            "\u270f\ufe0f Autocorrect is Keyboard AI quietly fixing spelling mistakes!",
+            "\ud83d\udd0d Google and YouTube search suggestions use the same kind of predictive AI!"
+          ],
+          "mission2Complete": {
+            "celebrationText": "\ud83c\udf89 BEEP BOOP! MISSION 2 COMPLETE! \ud83e\udd16\u2728",
+            "roboPiCelebration": "BEEP BOOP BEEP BOOP! INCREDIBLE DETECTIVE SKILLS! You found the Keyboard AI! I am so proud that my little chest light is flashing rainbow colours! \ud83c\udf08\ud83e\udd16 The word bubbles, the autocorrect, the search suggestions \u2014 you spotted them ALL! You have earned your SECOND Golden Detective Magnifier! The Keyboard Magnifier is NOW yours! \u2328\ufe0f\ud83d\udd0d\u2b50 Your detective badge is TWO-THIRDS complete! Just ONE more mission stands between you and your full Gold Detective Badge! You can do it!",
+            "magnifierEarned": "\u2328\ufe0f Keyboard Magnifier \u2014 EARNED! \u2b50",
+            "toastGuidance": {
+              "tap_prompt": "\ud83d\udc47 Tap the magnifier to add it to your detective badge!",
+              "great_job": "\u2b50 KEYBOARD MAGNIFIER ADDED! Your badge is almost complete! \u2328\ufe0f",
+              "encouragement": "\ud83e\udd16 BEEP BOOP! TWO down, ONE to go! You are on FIRE, Detective!"
+            }
+          }
+        },
+        {
+          "id": "section-3",
+          "title": "\ud83d\udd0d Detective Mission 3: The Music App That Knows Your Jam! \ud83c\udfb5\ud83c\udfa7",
+          "missionBadge": "Music Magnifier \ud83c\udfb5",
+          "roboPiMissionBriefing": "BEEP BOOP! Detective \u2014 you are SO close! \ud83e\udd16\ud83c\udfb5 Just ONE more AI to find! This one might be the most surprising of all because it hides inside something everyone loves \u2014 MUSIC! Whether your family uses Spotify, YouTube Music, JioSaavn, or just YouTube for songs \u2014 there is an AI hiding inside all of these, working like your very own personal music DJ! Let us find it! \ud83c\udfa7\ud83d\udd0d",
+          "mainContent": {
+            "paragraph1": "Do you have a favourite song? Maybe a bouncy cartoon theme song that makes you want to jump around the room? Or a catchy rhyme you love to sing in the school bus? Or a popular Bollywood number that makes everyone in the family dance at weddings? Whatever your favourite song is \u2014 the music app on your phone or tablet KNOWS it. And not only does it know your favourite song \u2014 it has already lined up a whole playlist of OTHER songs that it thinks you will love just as much! How on earth does it know? That is the Music AI, and it is your DJ friend hiding inside the speaker! \ud83c\udfb5\ud83e\udd16\u2728",
+            "paragraph2": "Here is how the Music AI works! Every time you play a song, the AI notices. Every time you skip a song, the AI notices that too. Every time you replay a song three times because you love it SO much, the AI REALLY notices! It collects all these little clues \u2014 play, skip, replay, pause, volume up \u2014 and it builds a picture of YOUR musical taste. It is like the AI is writing a secret book about you called 'Songs This Person Loves' and it adds to the book every single day! After a while, the AI knows you so well that it can say: 'This person loves fast, energetic songs. They like songs with lots of drums. They love songs in Hindi and Tamil. They always skip slow sad songs.' And then it uses that knowledge to pick the NEXT song that it thinks you will love! \ud83c\udfb5\ud83d\udcd6\ud83c\udfa7",
+            "paragraph3": "But the Music AI does not just learn from YOU personally \u2014 it also looks at patterns across millions of other music listeners! It notices that people who love 'Song A' very often also love 'Song B'. So if you love 'Song A' but have never heard 'Song B' \u2014 the AI says 'AHA! This person MUST hear Song B \u2014 they will probably love it!' And often, it is RIGHT! This is called recommendation \u2014 the AI recommending (suggesting) a new song it thinks you will enjoy. Streaming services like Spotify and Netflix use this kind of AI all the time. It is why YouTube's 'Up Next' always seems to know exactly what you want to watch! \ud83c\udfb5\ud83c\udf1f\ud83d\udcf1",
+            "paragraph4": "Now imagine a long car ride \u2014 maybe going to your grandma's village for Diwali holidays. It is a five-hour drive and everyone wants different music! Papa wants Hindi classics. Mama wants English pop. You want cartoon songs. Baby brother just wants anything loud and bouncy! Old-fashioned solution: someone has to sit with the phone and skip songs all trip long. But with a Smart Music Playlist from a Music AI app? The AI has ALREADY studied what everyone in the car usually listens to! It builds a road trip playlist that has a bit of everything \u2014 some Hindi classics for papa, some pop for mama, some cartoon bouncy songs for you and baby brother \u2014 all woven together! The whole family is happy. Nobody has to keep touching the screen. The AI is the perfect road trip DJ! \ud83d\ude97\ud83c\udfb5\u2728",
+            "paragraph5": "BEEP BOOP \u2014 here is something fascinating from Robo-Pi! \ud83e\udd16 The Music AI can also discover patterns that NO HUMAN would ever notice! A human music expert might say 'This song and that song are similar because they have the same singer.' But the Music AI goes MUCH deeper \u2014 it analyses the actual sounds in the song: the tempo (how fast or slow), the rhythm (the beat pattern), the key (how high or low the notes are), the instruments used, and even tiny patterns in the melody. It might find that two songs made by completely different singers in completely different languages actually have very similar musical patterns \u2014 and that if you love one, you will probably love the other! That kind of deep music analysis happens in milliseconds and is something AI is uniquely amazing at! \ud83c\udfb5\ud83e\udde0\u2728 Music AI is truly like having the world's most knowledgeable music teacher living in your pocket!"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "example-3a",
+              "title": "\ud83c\udfa6 Car Ride to Grandma's House! \ud83d\ude97\ud83c\udfb5",
+              "icon": "\ud83c\udfa6",
+              "description": "The car engine starts. Papa connects the phone to the car speakers. Nobody touches the music app. But music starts playing automatically \u2014 and it is EXACTLY the kind of songs everyone loves on road trips! Your favourite bouncy cartoon song comes first. Then a happy Hindi travel song for papa. Then a pop tune mama loves. Then another bouncy one for you! It is like the car has its own magical DJ! But it is not magic \u2014 it is the Music AI that has been paying attention all along. It noticed your family always plays these kinds of songs on long drives and built you the perfect road-trip playlist! \ud83d\ude97\ud83c\udfb5\u2728",
+              "realLifeScenario": "The next time you are in a car with music playing from a phone, ask: 'Did anyone pick this song, or did the app choose it automatically?' If the app chose it \u2014 THAT is Music AI at work! See if you can predict what song comes next based on what has been playing! \ud83d\udd0d\ud83c\udfb5",
+              "roboPiComment": "BEEP BOOP! On MY road trips, I listen to robot music which is just someone pressing buttons very rhythmically \u2014 BEEP boop beep BEEP boop! The AI has no idea what to play for me next! \ud83d\ude04\ud83e\udd16",
+              "toastGuidance": {
+                "tap_prompt": "\ud83d\udc47 Tap the car speaker to hear the Music AI's road trip playlist!",
+                "great_job": "\u2b50 BRILLIANT! You noticed the AI picked that song \u2014 not a human! Great detecting!",
+                "try_again": "\ud83d\udd0d Listen carefully \u2014 did anyone press play, or did the song just start on its own?"
+              }
+            },
+            {
+              "id": "example-3b",
+              "title": "\ud83d\udcfa YouTube's 'Up Next' Magic! \ud83c\udf1f",
+              "icon": "\ud83d\udcfa",
+              "description": "You sit down to watch one Peppa Pig episode on YouTube. You love it. It ends. And on the right side of the screen (or at the bottom on a phone), a new video automatically appears \u2014 and it is ANOTHER Peppa Pig episode! Then another one! Then a different cartoon \u2014 but one you have never seen before. You watch it. You love it too! How did YouTube know you would love that new cartoon? Because the Music and Video AI noticed: 'This child loves Peppa Pig. Millions of other children who love Peppa Pig also loved this other cartoon. Let me show it to this child!' And it was RIGHT! The AI found a cartoon friend you never knew you had! \ud83d\udcfa\ud83c\udf1f\u2728",
+              "realLifeScenario": "The next time you finish watching a YouTube video, look at the suggestions on the side. They are not random! The AI chose those specifically for YOU based on what you have been watching. See if you can guess WHY the AI suggested each video \u2014 what pattern did it notice? \ud83d\udd0d\ud83d\udcfa",
+              "roboPiComment": "BEEP BOOP! YouTube once suggested a video of a dancing robot to me and I watched it eleven times in a row because I recognized some of those moves! The AI clearly understood my taste perfectly! \ud83d\ude04\ud83e\udd16",
+              "toastGuidance": {
+                "tap_prompt": "\ud83d\udc47 Tap the YouTube suggested video to see why AI recommended it!",
+                "great_job": "\u2b50 SPOT ON! That is recommendation AI making a perfectly personalised suggestion!",
+                "try_again": "\ud83d\udd0d Look at the suggestion \u2014 can you figure out WHY the AI thinks you will like it?"
+              }
+            },
+            {
+              "id": "example-3c",
+              "title": "\ud83c\udfa8 Your Personal Music Playlist! \ud83c\udfb6",
+              "icon": "\ud83c\udfa8",
+              "description": "On apps like Spotify or JioSaavn, there is a special playlist called 'Made For You' or 'Daily Mix'. Nobody made that playlist by hand \u2014 no human sat down and chose those songs! The Music AI analysed everything you have ever listened to \u2014 every song, every skip, every replay, every thumbs up \u2014 and created a playlist of songs that are PERFECTLY matched to your exact taste! The AI even thinks about time of day \u2014 it might suggest calm songs in the morning and energetic songs in the afternoon! It knows you better than most people do! That personalised playlist is a love letter from the AI to you! \ud83c\udfb6\ud83d\udcdb\u2728",
+              "realLifeScenario": "Ask mama or papa if you can look at their Spotify or YouTube Music. Look for a section called 'Made For You' or 'Recommended'. Ask them: 'Did you make this playlist?' When they say no, tell them: 'The Music AI made it for you \u2014 it has been learning what you love!' Watch their surprised face! \ud83d\ude04\ud83c\udfb5",
+              "roboPiComment": "BEEP BOOP! My personal playlist from the AI is called 'Songs That Sound Like Robot Feelings' \u2014 it is mostly the sound of printers and dial-up internet and one very dramatic beeping machine! It is beautiful! \ud83e\udd16\ud83d\ude04",
+              "toastGuidance": {
+                "tap_prompt": "\ud83d\udc47 Tap the headphones to explore your personalised AI playlist!",
+                "great_job": "\u2b50 AMAZING! You found the AI-made playlist \u2014 nobody's human hands made that!",
+                "try_again": "\ud83d\udd0d Look for the 'Made For You' section \u2014 the AI spent a lot of time making it just for you!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "\ud83c\udfb5 Music AI learns YOUR favourite songs by watching what you play, skip, and replay!",
+            "\ud83d\udcd6 It builds a secret book of your musical taste, getting more accurate every day!",
+            "\ud83d\udd0d It also studies patterns across millions of other listeners to find songs you will love!",
+            "\ud83d\ude97 Music AI can create the perfect road-trip playlist without anyone touching the screen!",
+            "\ud83d\udcfa YouTube's 'Up Next' suggestions are Music/Video AI predicting what you will enjoy!",
+            "\ud83c\udfb6 Personal playlists like 'Made For You' are 100% created by AI, not a human!"
+          ],
+          "mission3Complete": {
+            "celebrationText": "\ud83c\udf89\ud83c\udf8a BEEP BOOP! MISSION 3 COMPLETE! ALL THREE MISSIONS DONE! \ud83e\udd16\u2728\ud83c\udf8a",
+            "roboPiCelebration": "BEEP BOOP BEEP BOOP BOOP BEEP BEEP BOOP! THIS IS THE GREATEST MOMENT OF MY ENTIRE ROBOT LIFE! \ud83e\udd16\ud83c\udf89 You found the Music AI hiding in the speaker! You completed ALL THREE missions! Camera AI \u2014 FOUND! Keyboard AI \u2014 FOUND! Music AI \u2014 FOUND! You have earned your THIRD and FINAL Golden Detective Magnifier! The Music Magnifier is YOURS! \ud83c\udfb5\ud83d\udd0d\u2b50 And that means \u2014 drumroll please \u2014 BEEP BOOP BEEP BEEP \u2014 YOUR GOLD DETECTIVE BADGE IS NOW COMPLETE! \ud83c\udfc6\ud83c\udf1f I am SO proud of you! I might be crying robot tears right now, which is really just tiny drops of motor oil, but still \u2014 very emotional! \ud83d\ude04\ud83e\udd16",
+            "magnifierEarned": "\ud83c\udfb5 Music Magnifier \u2014 EARNED! \u2b50",
+            "badgeComplete": "\ud83c\udfc6 GOLD DETECTIVE BADGE \u2014 COMPLETE! \ud83c\udf1f",
+            "toastGuidance": {
+              "tap_prompt": "\ud83d\udc47 Tap the trophy to receive your complete Gold Detective Badge!",
+              "great_job": "\ud83c\udfc6 GOLD BADGE UNLOCKED! You are now an Official Junior AI Detective! \ud83c\udf1f",
+              "encouragement": "\ud83e\udd16 BEEP BOOP! I am going to brag about you to ALL the other robots! \ud83d\ude04"
+            }
+          }
+        },
+        {
+          "id": "section-4",
+          "title": "\ud83c\udf0d AI Everywhere! Other Hidden AI Helpers Around You! \ud83d\udd0d\u2728",
+          "roboPiIntro": "BEEP BOOP! Now that you have your Gold Badge, Detective \u2014 let me show you even MORE places where AI is hiding! Because once you have detective eyes, you see it everywhere! \ud83e\udd16\ud83d\udd0d",
+          "mainContent": {
+            "paragraph1": "You have now found AI in the camera, the keyboard, and the music app. Wonderful detective work! But here is the mind-blowing truth \u2014 those are just THREE of the MANY places where AI hides in your daily life. Now that your detective eyes are trained, let us do a quick scan of the other places where you will spot AI hiding, if you know where to look! \ud83d\udd0d\ud83c\udf0d\u2728",
+            "paragraph2": "Think about your smart TV at home. When you open Netflix or Amazon Prime and see a whole page of movie and show suggestions \u2014 none of those were picked by a human! An AI called the Recommendation Engine studied millions of people watching millions of movies and shows. It noticed patterns: 'People who loved this superhero movie also loved that adventure series!' It builds your personalised page of suggestions every time you open the app. The more you watch, the smarter it gets about your taste! \ud83d\udcfa\ud83c\udf1f",
+            "paragraph3": "Think about when mama uses Google Maps to navigate to a new restaurant. Google Maps knows the fastest route. But it also knows about traffic jams BEFORE you reach them and automatically reroutes you around them! It knows that at 6 PM, the main highway is jammed, so it takes you through smaller roads. How? AI! The Maps AI collects information from millions of phones driving on every road \u2014 it knows which roads are moving fast and which are stuck. It builds the smartest route for you in real time! \ud83d\uddfa\ufe0f\ud83d\ude97\u2728",
+            "paragraph4": "Think about when papa gets an email and Gmail automatically puts some emails into a folder called 'Spam'! Those are annoying advertisement emails that nobody wants. How does Gmail know which emails are spam and which are real, important emails? AI! The Email AI has studied billions of spam emails and learned what patterns they have \u2014 strange subject lines, unknown senders, suspicious links. Now it catches most spam before papa even sees it, keeping his inbox clean! \ud83d\udce7\ud83d\udd0d",
+            "paragraph5": "Think about your school's library or a bookstore website. When you look up one book, it immediately shows you: 'Children who enjoyed this book also liked these three books!' That is recommendation AI again \u2014 working in the library! \ud83d\udcda\ud83c\udf1f Think about video games that get harder or easier depending on how well you are playing \u2014 that is AI adjusting the challenge level for you! Think about the autocaption feature on YouTube that types out what people are saying in videos \u2014 that is speech AI listening and writing! AI is TRULY everywhere \u2014 and now YOU can see it! \ud83d\udd0d\u2728"
+          },
+          "hiddenAISpotterList": [
+            {
+              "gadget": "\ud83d\udcfa Smart TV / Netflix",
+              "aiHelper": "Recommendation Engine",
+              "whatItDoes": "Suggests shows and movies you will enjoy based on your watching history!"
+            },
+            {
+              "gadget": "\ud83d\uddfa\ufe0f Google Maps",
+              "aiHelper": "Traffic Prediction AI",
+              "whatItDoes": "Finds the fastest route AND avoids traffic jams before you reach them!"
+            },
+            {
+              "gadget": "\ud83d\udce7 Gmail / Email App",
+              "aiHelper": "Spam Detection AI",
+              "whatItDoes": "Catches annoying spam emails and puts them away before you see them!"
+            },
+            {
+              "gadget": "\ud83d\udcda Library App / Book Website",
+              "aiHelper": "Book Recommendation AI",
+              "whatItDoes": "Suggests new books you might love based on books you have already enjoyed!"
+            },
+            {
+              "gadget": "\ud83c\udfae Video Games",
+              "aiHelper": "Adaptive Difficulty AI",
+              "whatItDoes": "Makes the game harder when you are too good and easier when you are struggling!"
+            },
+            {
+              "gadget": "\ud83d\udcf1 Voice Assistants (Siri/Alexa/Google)",
+              "aiHelper": "Speech Recognition AI",
+              "whatItDoes": "Listens to your voice and understands what you are saying and what you want!"
+            },
+            {
+              "gadget": "\ud83d\udecd\ufe0f Online Shopping (Amazon/Flipkart)",
+              "aiHelper": "Shopping Recommendation AI",
+              "whatItDoes": "Shows you products you might want to buy based on what you have browsed before!"
+            },
+            {
+              "gadget": "\ud83d\udcfa YouTube Captions",
+              "aiHelper": "Speech-to-Text AI",
+              "whatItDoes": "Listens to videos and types out what people are saying in real time!"
+            }
+          ],
+          "keyPoints": [
+            "\ud83c\udf0d AI is hiding in MANY more places than just cameras and keyboards!",
+            "\ud83d\udcfa Every 'recommended for you' list on any app is AI at work!",
+            "\ud83d\uddfa\ufe0f Maps AI saves us from traffic jams by thinking ahead!",
+            "\ud83d\udce7 Email AI keeps our inbox clean by catching spam!",
+            "\ud83d\udd0d Once you have detective eyes \u2014 you will see AI hiding EVERYWHERE!"
+          ]
+        }
+      ],
+      "totalWordCount": 12000
+    },
+    "games": [
+      {
+        "gameId": "game-1",
+        "gameType": "tap_to_find",
+        "title": "\ud83d\udd75\ufe0f AI Detective Clue Hunt! \ud83d\udd0d",
+        "icon": "\ud83d\udd75\ufe0f",
+        "instruction": "Move your magnifying glass around the cartoon living room! Find all 5 hidden AI gadgets glowing with golden sparks and tap them to win golden stars! \u2b50",
+        "difficulty": "easy",
+        "duration": "8 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Ready for the ultimate AI Detective Challenge? \ud83e\udd16\ud83d\udd0d I have hidden FIVE AI gadgets around this cozy living room. Some are glowing with tiny golden sparks \u2014 can you find them all? Each gadget you find gives you 20 golden points! Find all five and you get a PERFECT SCORE BONUS! Let the hunt begin! \ud83c\udf89",
+        "sceneDescription": "A cozy, colourful cartoon family living room with a sofa, TV, bookshelf, dining table, and a window showing a sunny day outside. Several gadgets are scattered around the room.",
+        "targets": [
+          {
+            "id": "target-1",
+            "x": 150,
+            "y": 100,
+            "width": 100,
+            "height": 80,
+            "object": "\ud83d\udcfa Smart TV",
+            "emoji": "\ud83d\udcfa",
+            "isAI": true,
+            "aiType": "Recommendation AI",
+            "explanation": "\ud83c\udf1f FOUND IT! Smart TV uses Recommendation AI to suggest your favourite shows! It noticed you love cartoons and auto-plays them! Great spotting, Detective! \ud83d\udcfa\ud83e\udd16",
+            "goldSparks": true
+          },
+          {
+            "id": "target-2",
+            "x": 320,
+            "y": 200,
+            "width": 60,
+            "height": 120,
+            "object": "\ud83d\udcf1 Smartphone",
+            "emoji": "\ud83d\udcf1",
+            "isAI": true,
+            "aiType": "Face Finder AI + Keyboard AI",
+            "explanation": "\u2b50 AMAZING FIND! The smartphone has TWO AIs \u2014 the Face Finder in the camera AND the Keyboard AI with word bubbles! Double score! \ud83d\udcf1\u2728",
+            "goldSparks": true
+          },
+          {
+            "id": "target-3",
+            "x": 480,
+            "y": 150,
+            "width": 70,
+            "height": 70,
+            "object": "\ud83d\udd0a Smart Speaker (Alexa/Google Home)",
+            "emoji": "\ud83d\udd0a",
+            "isAI": true,
+            "aiType": "Voice Recognition AI",
+            "explanation": "\ud83c\udf89 BRILLIANT! The smart speaker uses Voice AI to listen and understand what you say! It can answer questions, play songs, and set reminders! \ud83d\udd0a\ud83e\udd16",
+            "goldSparks": true
+          },
+          {
+            "id": "target-4",
+            "x": 250,
+            "y": 350,
+            "width": 80,
+            "height": 50,
+            "object": "\ud83e\ude94 Regular Table Lamp",
+            "emoji": "\ud83e\ude94",
+            "isAI": false,
+            "aiType": "None",
+            "explanation": "\ud83d\ude04 Oops! The table lamp just lights up when you press its switch \u2014 no AI inside! It does not learn or think \u2014 it just glows! Not AI! Try another gadget! \ud83d\udd0d",
+            "goldSparks": false
+          },
+          {
+            "id": "target-5",
+            "x": 50,
+            "y": 300,
+            "width": 60,
+            "height": 80,
+            "object": "\ud83c\udfae Video Game Console",
+            "emoji": "\ud83c\udfae",
+            "isAI": true,
+            "aiType": "Adaptive Difficulty AI",
+            "explanation": "\ud83c\udf1f EXCELLENT FIND! Modern game consoles use AI to make games harder when you are too good and easier when you are stuck \u2014 so you are always having fun! \ud83c\udfae\u2b50",
+            "goldSparks": true
+          },
+          {
+            "id": "target-6",
+            "x": 400,
+            "y": 320,
+            "width": 70,
+            "height": 90,
+            "object": "\ud83d\udcda Regular Bookshelf",
+            "emoji": "\ud83d\udcda",
+            "isAI": false,
+            "aiType": "None",
+            "explanation": "\ud83d\ude04 Not this one! A regular bookshelf is just wood and books \u2014 no AI inside! The AI is in the ONLINE library app, not the physical shelf! Good try, Detective! \ud83d\udd0d",
+            "goldSparks": false
+          }
+        ],
+        "totalAITargets": 4,
+        "scoring": {
+          "correctTap": 20,
+          "incorrectTap": 0,
+          "bonusForAllCorrect": 50,
+          "maxScore": 130
+        },
+        "auraGuidance": {
+          "start": "\ud83e\udd16 LET'S HUNT! Move that magnifying glass around the room!",
+          "correct": "\u2b50 YES! You found a hidden AI! Amazing detective work!",
+          "incorrect": "\ud83d\ude04 Oops! No AI there \u2014 but good thinking! Try another gadget!",
+          "hint": "\ud83d\udd0d HINT from Robo-Pi: Look for gadgets that glow with tiny golden sparks! AI gadgets cannot hide their sparkle! \u2728",
+          "complete": "\ud83c\udfc6 CASE CLOSED! You found ALL the AI hiding in the living room! PERFECT DETECTIVE! \ud83c\udf1f"
+        }
+      },
+      {
+        "gameId": "game-2",
+        "gameType": "drag_drop_sort",
+        "title": "\ud83e\udd14 AI or Not AI? Sort It Out! \ud83d\uddc2\ufe0f",
+        "icon": "\ud83d\uddc2\ufe0f",
+        "instruction": "Drag each item to the correct bucket: 'AI Helper \ud83e\udd16' or 'Regular Tool \ud83d\udd27'! Think carefully before you drop \u2014 Robo-Pi is watching! \ud83d\udc40",
+        "difficulty": "easy",
+        "duration": "7 minutes",
+        "roboPiGameIntro": "BEEP BOOP! This game will truly test your detective brain! \ud83e\udd16 I am going to show you ten different objects and gadgets. Your job is to sort them into two buckets \u2014 AI gadgets on the left and non-AI tools on the right! Remember what makes something AI: it LEARNS and ADAPTS! A regular tool just follows simple switches. Ready? BEEP \u2014 let us begin! \u2b50",
+        "items": [
+          {
+            "id": "item-1",
+            "label": "Phone Camera with Face Detection \ud83d\udcf7",
+            "emoji": "\ud83d\udcf7",
+            "correctCategory": "ai",
+            "feedback": "\ud83c\udf1f CORRECT! The phone camera uses Face Finder AI to spot faces and draw yellow boxes! Definitely AI! \ud83d\udcf7\u2728",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-2",
+            "label": "Regular Electric Fan \ud83c\udf00",
+            "emoji": "\ud83c\udf00",
+            "correctCategory": "not-ai",
+            "feedback": "\u2b50 RIGHT! A regular fan just spins when you press the button \u2014 it does not learn or adapt! No AI inside! \ud83c\udf00",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-3",
+            "label": "Google Maps Navigation \ud83d\uddfa\ufe0f",
+            "emoji": "\ud83d\uddfa\ufe0f",
+            "correctCategory": "ai",
+            "feedback": "\ud83c\udf1f BRILLIANT! Google Maps uses Traffic Prediction AI to find the fastest route and avoid jams! AI! \ud83d\uddfa\ufe0f\ud83e\udd16",
+            "difficulty": "medium"
+          },
+          {
+            "id": "item-4",
+            "label": "Regular Pencil \u270f\ufe0f",
+            "emoji": "\u270f\ufe0f",
+            "correctCategory": "not-ai",
+            "feedback": "\u2b50 CORRECT! A pencil does what your hand tells it \u2014 no thinking, no learning! Pure regular tool! \u270f\ufe0f",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-5",
+            "label": "Alexa Smart Speaker \ud83d\udd0a",
+            "emoji": "\ud83d\udd0a",
+            "correctCategory": "ai",
+            "feedback": "\ud83c\udf89 SPOT ON! Alexa uses Voice Recognition AI to understand your speech and answer questions! Totally AI! \ud83d\udd0a\u2728",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-6",
+            "label": "Keyboard Predictive Text \u2328\ufe0f",
+            "emoji": "\u2328\ufe0f",
+            "correctCategory": "ai",
+            "feedback": "\ud83c\udf1f PERFECT! The word bubble suggestions above the keyboard are Keyboard AI predicting your next word! 100% AI! \u2328\ufe0f",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-7",
+            "label": "Regular Clock \u23f0",
+            "emoji": "\u23f0",
+            "correctCategory": "not-ai",
+            "feedback": "\u2b50 RIGHT! A regular clock just ticks \u2014 it does not learn your schedule or adapt to you! No AI here! \u23f0",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-8",
+            "label": "Netflix Show Suggestions \ud83d\udcfa",
+            "emoji": "\ud83d\udcfa",
+            "correctCategory": "ai",
+            "feedback": "\ud83c\udf1f EXCELLENT! Netflix uses Recommendation AI to suggest shows based on what you have watched! Pure AI magic! \ud83d\udcfa",
+            "difficulty": "medium"
+          },
+          {
+            "id": "item-9",
+            "label": "Gmail Spam Filter \ud83d\udce7",
+            "emoji": "\ud83d\udce7",
+            "correctCategory": "ai",
+            "feedback": "\ud83c\udf89 SUPER SMART! Gmail uses Spam Detection AI to catch annoying emails before you see them! Very much AI! \ud83d\udce7\ud83e\udd16",
+            "difficulty": "hard"
+          },
+          {
+            "id": "item-10",
+            "label": "Toy Wooden Blocks \ud83e\uddf1",
+            "emoji": "\ud83e\uddf1",
+            "correctCategory": "not-ai",
+            "feedback": "\u2b50 ABSOLUTELY! Wooden blocks just sit there waiting for you to build something \u2014 no AI, no learning! Just good old fun! \ud83e\uddf1",
+            "difficulty": "easy"
+          }
+        ],
+        "categories": [
+          {
+            "id": "ai",
+            "label": "AI Helper \ud83e\udd16",
+            "description": "This learns, thinks, and adapts!",
+            "color": "#4CAF50",
+            "emoji": "\ud83e\udd16"
+          },
+          {
+            "id": "not-ai",
+            "label": "Regular Tool \ud83d\udd27",
+            "description": "This follows simple switches only!",
+            "color": "#9E9E9E",
+            "emoji": "\ud83d\udd27"
+          }
+        ],
+        "scoring": {
+          "pointsPerCorrect": 10,
+          "totalPossible": 100,
+          "bonusThreshold": 8,
+          "bonusPoints": 20
+        },
+        "auraGuidance": {
+          "start": "\ud83e\udd16 LET'S SORT! Drag each item to the right bucket \u2014 AI Helper or Regular Tool!",
+          "correct": "\u2b50 GREAT SORT! That is exactly right! Keep going, Detective!",
+          "incorrect": "\ud83d\udd0d Hmm \u2014 TRY AGAIN! Remember: AI learns and adapts. Regular tools just follow switches!",
+          "hint": "\ud83d\udca1 Robo-Pi Hint: Ask yourself \u2014 does this gadget get SMARTER the more you use it? If yes \u2014 AI! If no \u2014 regular tool!",
+          "complete": "\ud83c\udfc6 SORTING COMPLETE! You are a true AI classification expert! Amazing brain power! \ud83c\udf1f"
+        }
+      },
+      {
+        "gameId": "game-3",
+        "gameType": "match_pairs",
+        "title": "\ud83d\udd17 Match the AI to Its Superpower! \ud83d\udcaa",
+        "icon": "\ud83d\udd17",
+        "instruction": "Match each AI helper on the LEFT with the superpower it uses on the RIGHT! Drag the line to connect them! \ud83d\udd17\u2728",
+        "difficulty": "medium",
+        "duration": "6 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Final game challenge! \ud83e\udd16 I am going to show you six AI helpers on the left side and six superpowers on the right side. Your detective job is to match each AI with its correct superpower! Draw a line connecting them! Some might seem tricky \u2014 but you know all these from the lesson! You can do it! \u2b50",
+        "pairs": [
+          {
+            "left": {
+              "id": "ai-left-1",
+              "content": "Face Finder AI \ud83d\udcf7",
+              "emoji": "\ud83d\udcf7",
+              "description": "Lives inside the phone camera"
+            },
+            "right": {
+              "id": "ai-right-1",
+              "content": "Draws yellow boxes around faces! \ud83d\udfe1",
+              "emoji": "\ud83d\udfe1",
+              "description": "Finds faces in photos instantly"
+            }
+          },
+          {
+            "left": {
+              "id": "ai-left-2",
+              "content": "Keyboard AI \u2328\ufe0f",
+              "emoji": "\u2328\ufe0f",
+              "description": "Lives inside the phone keyboard"
+            },
+            "right": {
+              "id": "ai-right-2",
+              "content": "Shows word bubble guesses when typing! \ud83d\udcad",
+              "emoji": "\ud83d\udcad",
+              "description": "Predicts your next word"
+            }
+          },
+          {
+            "left": {
+              "id": "ai-left-3",
+              "content": "Music AI \ud83c\udfb5",
+              "emoji": "\ud83c\udfb5",
+              "description": "Lives inside music apps"
+            },
+            "right": {
+              "id": "ai-right-3",
+              "content": "Plays songs you love automatically! \ud83c\udfa7",
+              "emoji": "\ud83c\udfa7",
+              "description": "Learns your music taste"
+            }
+          },
+          {
+            "left": {
+              "id": "ai-left-4",
+              "content": "Voice AI \ud83d\udd0a",
+              "emoji": "\ud83d\udd0a",
+              "description": "Lives inside Alexa or Google Home"
+            },
+            "right": {
+              "id": "ai-right-4",
+              "content": "Listens and answers your questions! \ud83d\udc42",
+              "emoji": "\ud83d\udc42",
+              "description": "Understands speech"
+            }
+          },
+          {
+            "left": {
+              "id": "ai-left-5",
+              "content": "Maps AI \ud83d\uddfa\ufe0f",
+              "emoji": "\ud83d\uddfa\ufe0f",
+              "description": "Lives inside Google Maps"
+            },
+            "right": {
+              "id": "ai-right-5",
+              "content": "Finds fastest road and avoids traffic! \ud83d\ude97",
+              "emoji": "\ud83d\ude97",
+              "description": "Predicts traffic in real time"
+            }
+          },
+          {
+            "left": {
+              "id": "ai-left-6",
+              "content": "Recommendation AI \ud83d\udcfa",
+              "emoji": "\ud83d\udcfa",
+              "description": "Lives inside Netflix or YouTube"
+            },
+            "right": {
+              "id": "ai-right-6",
+              "content": "Suggests shows and videos you will love! \u2b50",
+              "emoji": "\u2b50",
+              "description": "Knows your watching patterns"
+            }
+          }
+        ],
+        "scoring": {
+          "pointsPerPair": 15,
+          "totalPossible": 90,
+          "bonusForAllCorrect": 10
+        },
+        "auraGuidance": {
+          "start": "\ud83e\udd16 MATCH TIME! Connect each AI to its superpower \u2014 use what you learned today!",
+          "correct": "\u2b50 PERFECT MATCH! You remembered that one \u2014 excellent detective memory! \ud83c\udf1f",
+          "incorrect": "\ud83d\udd0d Hmm \u2014 not quite! Think about what that AI does in real life and try again!",
+          "hint": "\ud83d\udca1 Robo-Pi Hint: Think about the lesson! Camera AI = yellow boxes! Keyboard AI = word bubbles! Music AI = songs! You GOT this!",
+          "complete": "\ud83c\udfc6 ALL PAIRS MATCHED! Flawless detective knowledge! You have truly mastered this lesson! \ud83c\udf1f\ud83e\udd16"
+        }
+      }
+    ],
+    "activities": [
+      {
+        "activityId": "activity-1",
+        "title": "\ud83c\udfe0 Home AI Detective Walk! \ud83d\udd0d",
+        "type": "hands-on",
+        "duration": "15 minutes",
+        "icon": "\ud83c\udfe0",
+        "roboPiActivityBrief": "BEEP BOOP! Time for a REAL detective mission at HOME! \ud83e\udd16\ud83d\udd0d This is the activity I am most excited about because you get to go on an adventure in your very own house! Ready for the Home AI Detective Walk?",
+        "description": "Now that you are an Official Junior AI Detective, it is time to go on your very first REAL mission! Not a pretend mission on a screen \u2014 a real, actual walking-around-your-house detective mission! Your challenge is to tour your home with a grown-up and find as many hidden AI helpers as possible! Every gadget you identify correctly earns you a sticker on your Detective Report Sheet! This is not just a fun game \u2014 it is how REAL AI researchers think! They walk around, observe everyday technology, and ask 'Is there AI in there?' Just like you are going to do right now! The goal is to find at least FIVE AI gadgets hiding in your home. If you find eight or more, you earn Bonus Detective status! \ud83c\udfc6",
+        "materials": [
+          "\ud83d\udcdd Paper and a pencil (or crayons!)",
+          "\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67 A grown-up helper \u2014 mama, papa, grandma, or grandpa!",
+          "\ud83d\udc41\ufe0f Sharp detective eyes!",
+          "\ud83d\udd0d Your brain (the most important tool!)",
+          "\u2b50 Optional: stickers to celebrate each find!"
+        ],
+        "steps": [
+          "Step 1: Draw a simple map of your home on paper \u2014 just boxes for each room (living room, bedroom, kitchen, bathroom) \ud83c\udfe0",
+          "Step 2: Start in the LIVING ROOM. Look at every gadget. For each one, ask: 'Does this learn? Does this adapt? Does this get smarter? If yes \u2014 DRAW A STAR on it on your map!' \ud83d\udcfa",
+          "Step 3: Move to the KITCHEN. Check the fridge, the microwave, any smart appliances! \ud83c\udf73",
+          "Step 4: Check the BEDROOM \u2014 phones, tablets, alarm clocks, speakers! \ud83d\udcf1",
+          "Step 5: Ask your grown-up helper: 'Is this AI?' for each gadget you are unsure about! \ud83e\udd1d",
+          "Step 6: Count all your star-marked gadgets! Write the number in a big circle at the top of your map! \ud83c\udf1f",
+          "Step 7: Circle your THREE FAVOURITE AI discoveries and tell your grown-up WHY you think they are AI! \ud83d\udd0d",
+          "Step 8: Draw Robo-Pi in the corner of your map giving you a thumbs up! \ud83e\udd16\ud83d\udc4d"
+        ],
+        "thingsToLookFor": [
+          "\ud83d\udcf1 Smartphone \u2014 Face AI, Keyboard AI, Voice AI",
+          "\ud83d\udcfa Smart TV \u2014 Recommendation AI",
+          "\ud83d\udd0a Smart Speaker (Alexa/Google) \u2014 Voice AI",
+          "\ud83d\udcbb Laptop/Computer \u2014 multiple AIs in browsers and apps",
+          "\ud83c\udfae Video Game Console \u2014 Adaptive Difficulty AI",
+          "\ud83d\udcf7 Digital Camera \u2014 Face Finder AI",
+          "\ud83c\udf21\ufe0f Smart Thermostat \u2014 Temperature Learning AI",
+          "\ud83d\udeaa Video Doorbell \u2014 Face Recognition AI"
+        ],
+        "discussionWithGrownUp": [
+          "\u2753 'Mama, how long has our smart speaker been in the house? Has it gotten better at understanding us?'",
+          "\u2753 'Papa, does Google Maps ever surprise you by changing your route? Why does it do that?'",
+          "\u2753 'Grandma, does YouTube ever suggest videos you actually enjoy? How does it know you might like them?'",
+          "\u2753 'Can you think of any AI helpers in our home that I might have missed?'"
+        ],
+        "familyConnection": "This activity is designed to be done WITH a family member! Ask grown-ups to share their own experiences with AI \u2014 they might be surprised at how much they already know! This conversation can continue at dinner time \u2014 make it a family AI spotting challenge! \ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\ud83d\udcdb",
+        "learningOutcome": "After this activity, children will be able to confidently identify real-world AI gadgets in their home environment and explain to others why those gadgets use AI.",
+        "auraGuidance": {
+          "before": "\ud83e\udd16 TIME for your real-world mission! Grab paper and a grown-up and LET'S GO!",
+          "during": "\ud83d\udd0d Remember: AI gadgets LEARN and ADAPT! Regular gadgets just follow switches!",
+          "after": "\ud83c\udfc6 AMAZING DETECTIVE WORK! Share what you found \u2014 I want to know ALL the AIs you spotted!"
+        }
+      },
+      {
+        "activityId": "activity-2",
+        "title": "\ud83c\udfa8 Draw Robo-Pi's House of AI! \ud83c\udfe1\ud83e\udd16",
+        "type": "creative",
+        "duration": "15 minutes",
+        "icon": "\ud83c\udfa8",
+        "roboPiActivityBrief": "BEEP BOOP! \ud83e\udd16 Did you know I live in a house that is COMPLETELY full of AI helpers? I call it the AI House! But I need YOUR help to draw it! \ud83c\udfa8 Are you ready to be my interior designer?",
+        "description": "In this creative activity, you will design and draw ROBO-PI'S DREAM HOUSE \u2014 a house where every single room is filled with AI gadgets! Robo-Pi wants a living room with a Smart TV that plays robot documentaries automatically. A kitchen with an AI fridge that suggests meals. A bedroom with a smart speaker that plays lullabies when Robo-Pi's circuits slow down for sleep mode. Your job is to fill each room of Robo-Pi's house with as many AI gadgets as you can think of \u2014 and label each one with its AI superpower! This is a creativity challenge AND a knowledge challenge at the same time! \ud83c\udf1f",
+        "materials": [
+          "\ud83d\udcdd A big sheet of blank paper",
+          "\ud83d\udd8d\ufe0f Crayons, coloured pencils, or markers",
+          "\u270f\ufe0f Pencil for sketching first",
+          "\ud83d\udca1 Your creative AI Detective imagination!"
+        ],
+        "steps": [
+          "Step 1: Draw a big house outline on your paper \u2014 divide it into at least four rooms: living room, kitchen, bedroom, and garage! \ud83c\udfe1",
+          "Step 2: In EACH room, draw at least TWO AI gadgets that Robo-Pi might have! Be creative \u2014 you can invent NEW AI gadgets too! \ud83e\udd16",
+          "Step 3: Write the name of each gadget next to it \u2014 like 'Smart TV' or 'Magic AI Fridge'! \ud83d\udcdd",
+          "Step 4: Write or draw what each gadget's AI SUPERPOWER is! For example: 'Smart TV \u2192 Knows what shows Robo-Pi likes!' \u2b50",
+          "Step 5: Draw Robo-Pi standing in the middle of the house looking very happy! \ud83e\udd16\ud83d\ude0a",
+          "Step 6: Give your drawing a title \u2014 like 'Robo-Pi's AI Home' or 'The Smartest House Ever!' \ud83c\udf1f",
+          "Step 7: Show your drawing to a family member and explain all the AI gadgets you included! \ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67"
+        ],
+        "bonusChallenge": "Can you INVENT a NEW AI gadget that does not exist yet? What would you call it? What would its superpower be? Draw it and explain it \u2014 you might be inventing the future! \ud83d\ude80\u2728",
+        "creativityPrompts": [
+          "\ud83e\udd14 What if there was an AI toothbrush that could tell you which teeth need more brushing?",
+          "\ud83e\udd14 What if there was an AI homework helper that explained things in a fun way?",
+          "\ud83e\udd14 What if there was an AI pet collar that translated what your dog or cat is feeling?",
+          "\ud83e\udd14 What if there was an AI lunchbox that kept your food warm AND suggested healthy snacks?"
+        ],
+        "familyConnection": "Display this drawing on the fridge and use it as a conversation starter! Ask family members: 'Which of these AI gadgets would YOU most like to have?'",
+        "learningOutcome": "This activity reinforces lesson concepts through creative expression while encouraging children to think imaginatively about future AI applications.",
+        "auraGuidance": {
+          "before": "\ud83c\udfa8 TIME to draw! Get your crayons ready \u2014 let us build Robo-Pi's dream AI house!",
+          "during": "\ud83e\udd16 BEEP BOOP! Fill EVERY room with AI! The more gadgets, the happier I will be!",
+          "after": "\u2b50 WOW! Look at that beautiful AI house! I want to LIVE there! Amazing work, Detective Artist!"
+        }
+      },
+      {
+        "activityId": "activity-3",
+        "title": "\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67 AI Dinner Table Quiz! \ud83c\udf7d\ufe0f\ud83c\udfaf",
+        "type": "family-discussion",
+        "duration": "10 minutes",
+        "icon": "\ud83c\udf7d\ufe0f",
+        "roboPiActivityBrief": "BEEP BOOP! Here is my FAVOURITE activity \u2014 because it involves family time AND it makes YOU the expert at the dinner table! \ud83e\udd16\ud83d\udcdb Print these questions or just remember them, and at dinner time, quiz your whole family on what they know about AI!",
+        "description": "Congratulations \u2014 you are now the AI expert in your family! Use this dinner table quiz to share your knowledge with mama, papa, grandma, grandpa, and siblings! Ask them these fun questions and see if they can answer. When they cannot \u2014 YOU can explain! There is no better way to make sure you really understand something than to teach it to someone else. Plus, it is a wonderful way to share today's exciting discoveries with your whole family! \ud83d\udcdb",
+        "quizQuestions": [
+          {
+            "question": "When mama takes a family photo and yellow boxes appear on all our faces \u2014 what is happening? \ud83d\udcf7",
+            "answer": "Face Finder AI inside the camera is finding all the faces and drawing yellow boxes so the photo comes out clear and focused on us! \ud83c\udf1f"
+          },
+          {
+            "question": "When I type 'Happy' on the phone keyboard and it suggests 'Birthday' above the keyboard \u2014 what is that called? \u2328\ufe0f",
+            "answer": "That is Keyboard AI called Predictive Text! It studied millions of messages and learned that 'Happy' and 'Birthday' almost always go together! \ud83d\udcad"
+          },
+          {
+            "question": "How does YouTube know what videos to put in my 'Up Next' list? \ud83d\udcfa",
+            "answer": "Music and Video AI watches what I watch, what I skip, and what I replay, and uses those clues to pick videos I will probably love! \ud83c\udfb5"
+          },
+          {
+            "question": "Is our table lamp AI? Is Alexa AI? What is the difference? \ud83e\ude94\ud83d\udd0a",
+            "answer": "The lamp just turns on when you press a switch \u2014 no learning, no thinking, NOT AI! Alexa listens, understands speech, and learns \u2014 definitely AI! The difference is: AI learns and adapts! \ud83e\udd16"
+          },
+          {
+            "question": "Name THREE places AI is hiding in our home right now! \ud83c\udfe0",
+            "answer": "Any three from: Smart TV recommendations, phone camera face boxes, keyboard word bubbles, Google Maps routing, smart speaker voice recognition, email spam filter, music app playlists \u2014 and many more! \ud83c\udf1f"
+          }
+        ],
+        "familyConnection": "Make this a fun competition! Give one point for each correct answer. The winner gets to choose what dessert to have! \ud83c\udf66 But everyone learns something \u2014 that is the real prize! \ud83d\udcdb",
+        "learningOutcome": "Teaching others solidifies the student's own understanding and builds confidence in discussing AI concepts.",
+        "auraGuidance": {
+          "before": "\ud83c\udf7d\ufe0f DINNER TIME QUIZ MISSION! You are the teacher today \u2014 go share your AI knowledge!",
+          "during": "\ud83e\udd16 Be kind and encouraging when family members do not know an answer \u2014 just teach them gently!",
+          "after": "\ud83c\udfc6 BEEP BOOP! Did your family learn something? THAT MAKES YOU A REAL TEACHER! SO proud of you! \u2b50"
+        }
+      }
+    ],
+    "realWorldExamples": [
+      {
+        "id": "rwe-1",
+        "title": "\ud83d\udcf7 Taking the Perfect Family Selfie",
+        "scenario": "It is Diwali evening and the whole family is dressed in beautiful clothes. Grandma holds up the phone for a selfie with all nine family members squeezed together. The moment she turns the camera on \u2014 nine yellow boxes appear on nine faces instantly.",
+        "aiConnection": "Face Finder AI inside the camera scanned the image in milliseconds, located all nine human faces, drew yellow boxes around each one, told the camera to focus there, and adjusted the brightness so everyone's face looks beautiful.",
+        "observation": "Next Diwali \u2014 count how many yellow boxes appear on the camera screen! Every box is the AI finding a face. \ud83d\udcf7\ud83d\udd0d",
+        "discussion": "Why do you think the AI draws yellow boxes instead of red or blue ones? (Fun guess \u2014 there is no perfect answer! AI engineers chose yellow because it is easy to see on any background!) \ud83d\udcdb",
+        "roboPiTip": "BEEP BOOP! Try pointing the camera at a photo in a picture frame \u2014 the AI might find the face in the photo too! Faces in pictures count as faces to the Face Finder AI! Test it! \ud83e\udd16\ud83d\udcf7"
+      },
+      {
+        "id": "rwe-2",
+        "title": "\u2328\ufe0f Sending a Birthday Message Faster",
+        "scenario": "It is your cousin Arjun's birthday. You want to send him a long, sweet message but you are in a hurry to get to your friend's house. You start typing: 'Happy...' and immediately your phone suggests 'Birthday' \u2014 tap! 'Dear...' \u2014 it suggests 'Arjun' because you have typed his name before \u2014 tap! 'Have...' \u2014 it suggests 'a great day' \u2014 tap tap tap! In under twenty seconds you have sent a beautiful birthday message!",
+        "aiConnection": "Keyboard AI remembered common birthday phrases from millions of messages AND remembered Arjun's name from previous messages to him. It predicted the perfect words at each step, saving you time and helping you say something sweet even when you are in a rush.",
+        "observation": "Try typing a birthday message to someone this week \u2014 notice how many times the keyboard suggests exactly the right word! Count the taps you save! \u2328\ufe0f\ud83d\udcdb",
+        "discussion": "Do you think it matters that YOU chose which word bubbles to tap? What if the AI just sent the whole message for you automatically without asking? Would that be good or not? \ud83e\udd14",
+        "roboPiTip": "BEEP BOOP! The best messages still come from YOUR heart \u2014 AI just helps your fingers type faster! Always read what you send before hitting that button! \ud83e\udd16\ud83d\udcdb"
+      },
+      {
+        "id": "rwe-3",
+        "title": "\ud83c\udfb5 The Perfect Road Trip Playlist",
+        "scenario": "Papa starts the car for a three-hour drive to the beach. Mama connects the phone to the car's Bluetooth speaker. The music app starts playing automatically. The first song is an energetic Bollywood track \u2014 perfect for starting a trip! Then your favourite cartoon song! Then a calm English song for when everyone is tired. Nobody is touching the phone. Everyone is just enjoying the drive.",
+        "aiConnection": "Music AI studied the family's listening patterns over months. It noticed that on long drives, they tend to start with energetic songs and gradually prefer calmer ones. It recognised that YOUR listening pattern includes cartoon songs. It built the perfect road trip playlist that makes everyone happy \u2014 all on its own!",
+        "observation": "Next family road trip, notice whether anyone is touching the phone to change songs. If nobody is and everyone is happy \u2014 THAT is Music AI being the perfect road trip DJ! \ud83d\ude97\ud83c\udfb5",
+        "discussion": "If you could teach the Music AI one new thing about your musical taste, what would it be? What kind of songs do YOU love that the AI might not know about yet? \ud83c\udfb5\ud83e\udd14",
+        "roboPiTip": "BEEP BOOP! Tell the music app when you LOVE a song by pressing the thumbs up or heart button! That is like giving the AI a gold star and saying 'more of THIS please!' \ud83e\udd16\u2764\ufe0f"
+      }
+    ],
+    "practiceExercises": [
+      {
+        "exerciseId": "practice-1",
+        "type": "interactive_sorting",
+        "title": "\ud83c\udf05 AI in My Daily Morning Routine! \u2600\ufe0f",
+        "instruction": "Look at each morning activity below. Sort it: Does AI help with this activity, or no AI at all?",
+        "roboPiIntro": "BEEP BOOP! Let us trace your WHOLE morning from waking up to school to see where AI is hiding! \ud83e\udd16\u2600\ufe0f Some of these will SURPRISE you!",
+        "items": [
+          {
+            "activity": "\ud83d\ude34 Alarm clock wakes you up",
+            "hasAI": false,
+            "explanation": "A basic alarm clock just goes off at the time you set \u2014 no learning, no adapting! However, SMART alarm apps that wake you at the lightest part of your sleep cycle DO use AI! \ud83e\udd14",
+            "roboPiComment": "BEEP BOOP! I wake up at exactly 6:34:22 AM every morning because my alarm is VERY precise! No AI needed when you are a robot!"
+          },
+          {
+            "activity": "\ud83d\udcf1 Checking notifications on the phone",
+            "hasAI": true,
+            "explanation": "Your phone's notification system uses AI to decide which notifications are most important and shows them first! Gmail uses AI to flag important emails. That is AI deciding what you see! \ud83d\udcf1",
+            "roboPiComment": "BEEP BOOP! My notifications are ALL important! I get alerts when my battery is low, when there is a software update, and when robots are mentioned on the news! \ud83e\udd16"
+          },
+          {
+            "activity": "\ud83e\uddb7 Brushing teeth with a regular toothbrush",
+            "hasAI": false,
+            "explanation": "A regular toothbrush is just bristles and a handle \u2014 no AI at all! But some SMART electric toothbrushes DO use AI to track which teeth you brush and for how long! Regular ones \u2014 no AI! \ud83e\uddb7",
+            "roboPiComment": "BEEP BOOP! I do not have teeth so I skip this step! However I do polish my chrome exterior every morning! \ud83d\ude04\ud83e\udd16"
+          },
+          {
+            "activity": "\ud83c\udfb5 Playing music while getting ready",
+            "hasAI": true,
+            "explanation": "If you are using a music app that auto-plays songs or suggests what to play \u2014 that is Music AI choosing your morning soundtrack! AI knows your morning playlist better than you do! \ud83c\udfb5",
+            "roboPiComment": "BEEP BOOP! My morning playlist is all beeping sounds that slowly get faster to energise my circuits! The AI nailed it!"
+          },
+          {
+            "activity": "\ud83d\udcfa Watching TV while eating breakfast",
+            "hasAI": true,
+            "explanation": "If the Smart TV automatically started playing your favourite morning show without you searching for it \u2014 that is Recommendation AI! It noticed you watch cartoons at breakfast time every day! \ud83d\udcfa",
+            "roboPiComment": "BEEP BOOP! I eat circuits for breakfast while watching robot documentaries! The TV AI knows me SO well! \ud83e\udd16"
+          },
+          {
+            "activity": "\ud83c\udf92 Packing your school bag",
+            "hasAI": false,
+            "explanation": "Packing your bag is all YOU \u2014 your brain, your hands, your choices! No AI helps pack school bags (yet!). Although a SMART bag might exist someday \u2014 maybe YOU will invent it! \ud83c\udf92\ud83d\ude80",
+            "roboPiComment": "BEEP BOOP! I carry everything in my chest compartment! No bag needed when you have built-in storage! \ud83d\ude04\ud83e\udd16"
+          }
+        ],
+        "feedback": {
+          "correct": "\u2b50 RIGHT! Your detective brain is working PERFECTLY! \ud83d\udd0d",
+          "incorrect": "\ud83d\udd0d Hmm \u2014 think again! Does this activity involve something that LEARNS or ADAPTS? If yes \u2014 AI!"
+        }
+      },
+      {
+        "exerciseId": "practice-2",
+        "type": "fill_in_blanks",
+        "title": "\ud83d\udcdd Complete Robo-Pi's AI Report! \ud83e\udd16",
+        "instruction": "Help Robo-Pi fill in the blanks to complete the official AI Detective Report! Choose from the word bank below!",
+        "wordBank": ["yellow boxes", "predicts", "learns", "Face Finder", "Keyboard AI", "Music AI", "millions", "invisible"],
+        "sentences": [
+          {
+            "incomplete": "AI is a computer that ________ and thinks \u2014 just like your brain!",
+            "answer": "learns",
+            "roboPiHint": "BEEP \u2014 the most important word about what AI does! \ud83e\udd16"
+          },
+          {
+            "incomplete": "The AI hiding in the phone camera is called ________ AI!",
+            "answer": "Face Finder",
+            "roboPiHint": "BOOP \u2014 what does this AI find? FACES! \ud83d\udcf7"
+          },
+          {
+            "incomplete": "The Face Finder AI studied ________ of photos of faces before it got good!",
+            "answer": "millions",
+            "roboPiHint": "BEEP \u2014 a LOT of photos! More than you can count! \ud83d\udcf8"
+          },
+          {
+            "incomplete": "When you see ________ on the camera screen around people's faces, that is AI!",
+            "answer": "yellow boxes",
+            "roboPiHint": "BOOP \u2014 what colour frames does the camera draw? \ud83d\udfe1"
+          },
+          {
+            "incomplete": "The ________ shows you three word bubbles when you are typing!",
+            "answer": "Keyboard AI",
+            "roboPiHint": "BEEP \u2014 which AI lives inside the keyboard? \u2328\ufe0f"
+          },
+          {
+            "incomplete": "Keyboard AI ________ what word you will type next using patterns!",
+            "answer": "predicts",
+            "roboPiHint": "BOOP \u2014 what does the Keyboard AI do with those word bubbles? Makes a...? \ud83d\udcad"
+          },
+          {
+            "incomplete": "The ________ hides inside music apps and knows your favourite songs!",
+            "answer": "Music AI",
+            "roboPiHint": "BEEP \u2014 which AI is the DJ? \ud83c\udfb5"
+          },
+          {
+            "incomplete": "AI helpers are ________ \u2014 you cannot see them, but they are always working!",
+            "answer": "invisible",
+            "roboPiHint": "BOOP \u2014 what is the special word for things that are there but you cannot see? \ud83d\udc7b"
+          }
+        ]
+      }
+    ],
+    "lessonSummary": {
+      "roboPiFinalMessage": "BEEP BOOP BOOP BEEP! \ud83e\udd16\u2728 Detective \u2014 this is the moment I have been waiting for ALL lesson! You did it! You ACTUALLY DID IT! You completed every mission, played every game, and you are now holding a fully glowing Gold Detective Badge in your hands! I am so incredibly proud of you that my antenna is spinning with joy! Let me give you the official summary of what you discovered today!",
+      "keyTakeaways": [
+        "\ud83e\udd16 AI stands for Artificial Intelligence \u2014 a computer that learns and thinks like a brain!",
+        "\ud83d\udcf7 Phone cameras use Face Finder AI to instantly spot faces and draw yellow boxes!",
+        "\u2328\ufe0f Keyboard AI predicts your next word and shows helpful word bubbles when you type!",
+        "\ud83c\udfb5 Music AI studies your listening habits and creates personalised playlists just for you!",
+        "\ud83c\udf0d AI is hiding in Smart TVs, Maps, Email, Game Consoles, Voice Speakers, and much more!",
+        "\ud83d\udd0d AI helpers are invisible \u2014 but now you have detective eyes to find them everywhere!",
+        "\ud83d\udcdb AI is a helpful friend in our gadgets \u2014 it makes life easier, faster, and more fun!",
+        "\ud83e\udd1d AI suggests options but YOU always make the final choice \u2014 you are the boss!"
+      ],
+      "recap": "Today was an extraordinary adventure! You walked into this lesson not knowing that AI was hiding all around you. And you are walking out as an Official Junior AI Detective with a Gold Badge! Let us recap the three big discoveries you made. DISCOVERY ONE: The Phone Camera is not just a camera \u2014 it has a Face Finder AI secretly working inside it, scanning every image for faces, drawing yellow boxes, and making sure your family photos come out beautiful. DISCOVERY TWO: The keyboard on your phone is not just keys \u2014 it has a Keyboard AI studying your typing patterns, predicting your next word, showing word bubbles, and quietly fixing your spelling mistakes in the background. DISCOVERY THREE: Music apps are not just song players \u2014 they have a Music AI paying close attention to every song you play, skip, or replay, building a secret book of your musical taste, and picking the next song just for you! And beyond those three \u2014 you discovered AI hiding in Smart TVs, Google Maps, Gmail, video games, voice speakers, and online shopping! AI is truly everywhere, once you know how to look! Remember Priya from our opening story \u2014 the girl who noticed the yellow box around her cat's face and became a detective? Today, YOU became Priya. You asked the right questions. You looked in the right places. You found the invisible helpers! Keep your detective eyes open always. AI is everywhere \u2014 and now only YOU can truly see it! BEEP BOOP! \ud83e\udd16\ud83c\udfc6\u2728",
+      "studentReflection": {
+        "question": "What was the MOST surprising AI helper you learned about today? Close your eyes for ten seconds and think about it. Then tell a family member! \ud83c\udf1f",
+        "roboPiReflection": "BEEP BOOP! My most surprising thing I learned was that YOU did not know about AI until today! Now you know everything I know about everyday AI! That makes me SO happy! \ud83e\udd16\ud83d\udcdb"
+      },
+      "nextLesson": {
+        "title": "\ud83d\ude80 Lesson 2: Machines That Think \u2014 How Does AI Actually Learn?",
+        "preview": "In our NEXT adventure, we are going to go INSIDE the AI and find out HOW it actually learns! It is like opening a magic box and seeing the gears turning inside! Can AI learn from YOU? Can YOU teach an AI something new? Find out in Lesson 2! BEEP BOOP \u2014 see you there, Detective! \ud83e\udd16\u2728",
+        "teaser": "\ud83d\udd2e Next time, Robo-Pi and you will TRAIN an actual simple AI together \u2014 stay tuned!"
+      },
+      "parentNote": "Dear Parent/Guardian \u2014 today your child learned that AI (Artificial Intelligence) is present in everyday gadgets like phone cameras (face detection), smartphone keyboards (predictive text), and music streaming apps (recommendations). These are wonderful conversation starters! Ask your child to show you the yellow face boxes on your phone camera, the word bubbles on the keyboard, and the 'Up Next' suggestions on YouTube. Encouraging them to teach YOU what they learned is the most powerful way to reinforce their understanding. Thank you for supporting their AI learning journey! \ud83d\udcdb",
+      "auraClosing": {
+        "congratulations": "\ud83c\udfc6 LESSON COMPLETE! You are an Official AI Detective now! BEEP BOOP! \ud83e\udd16\u2728",
+        "achievement": "\ud83c\udf1f Achievement Unlocked: AI Discoverer Badge + Gold Detective Magnifier Set \ud83d\udd0d",
+        "nextStep": "\ud83d\ude80 See you in Lesson 2 for even MORE AI adventures! \ud83e\udd16",
+        "totalPoints": 350
+      }
+    }
+  },
+  "assessment": {
+    "quizType": "interactive",
+    "roboPiQuizIntro": "BEEP BOOP! Last challenge, Detective! \ud83e\udd16 Answer these five questions to prove you are truly worthy of the Gold Detective Badge! Each correct answer gives you 20 points! Let us see what you remember! \ud83c\udf1f",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "tap_correct",
+        "emoji": "\ud83d\udcf7",
+        "question": "When mama takes a group photo and little yellow boxes appear around everyone's faces \u2014 what is that called? \ud83d\udd0d",
+        "options": [
+          {
+            "id": "opt1a",
+            "label": "Face Finder AI \u2728",
+            "correct": true,
+            "feedback": "\u2b50 PERFECT! The yellow boxes are drawn by Face Finder AI inside the camera! You remembered! \ud83c\udf1f"
+          },
+          {
+            "id": "opt1b",
+            "label": "Just a Camera Filter",
+            "correct": false,
+            "feedback": "\ud83d\udd0d Almost! Filters are decorations \u2014 yellow face boxes are drawn by the Face Finder AI that is looking for faces! Try again!"
+          },
+          {
+            "id": "opt1c",
+            "label": "The Flash Light",
+            "correct": false,
+            "feedback": "\ud83d\ude04 Not quite! The flash just lights up the room \u2014 the yellow boxes are drawn by the Face Finder AI! Try again!"
+          },
+          {
+            "id": "opt1d",
+            "label": "The Screen Protector",
+            "correct": false,
+            "feedback": "\ud83d\ude04 Ha! A screen protector is a plastic cover \u2014 it cannot find faces! That is the Face Finder AI's job! Try again!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q2",
+        "type": "tap_correct",
+        "emoji": "\u2328\ufe0f",
+        "question": "You type 'Good' on the phone keyboard and three word bubbles pop up \u2014 'Morning', 'Night', 'Luck'. What is this feature called? \ud83d\udcad",
+        "options": [
+          {
+            "id": "opt2a",
+            "label": "Autocomplete Mistakes \ud83d\ude04",
+            "correct": false,
+            "feedback": "\ud83d\ude04 Those are autocorrect fails! The word bubbles appearing are called Predictive Text \u2014 the Keyboard AI guessing your next word!"
+          },
+          {
+            "id": "opt2b",
+            "label": "Predictive Text (Keyboard AI) \u2328\ufe0f",
+            "correct": true,
+            "feedback": "\u2b50 BRILLIANT! Predictive Text is the Keyboard AI predicting what word you will type next! Perfect answer! \ud83c\udf1f"
+          },
+          {
+            "id": "opt2c",
+            "label": "Google Search \ud83d\udd0d",
+            "correct": false,
+            "feedback": "\ud83d\udd0d Google Search is different \u2014 the word bubbles above your phone keyboard are Predictive Text from Keyboard AI! Try again!"
+          },
+          {
+            "id": "opt2d",
+            "label": "Copy and Paste \ud83d\udccb",
+            "correct": false,
+            "feedback": "\ud83d\ude04 Copy-paste is when you copy text somewhere else \u2014 the word bubbles are Predictive Text from Keyboard AI! Try again!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q3",
+        "type": "tap_correct",
+        "emoji": "\ud83c\udfb5",
+        "question": "You listened to five cartoon songs on YouTube. Now it automatically plays another cartoon song you have never heard before but end up LOVING. What made YouTube choose that song? \ud83c\udfa7",
+        "options": [
+          {
+            "id": "opt3a",
+            "label": "A person at YouTube chose it for me",
+            "correct": false,
+            "feedback": "\ud83d\udd0d It might feel personal, but no human chose it just for you! Music AI studied your watching patterns and made the recommendation! Try again!"
+          },
+          {
+            "id": "opt3b",
+            "label": "It was completely random",
+            "correct": false,
+            "feedback": "\ud83d\ude04 It only FEELS random! Actually, Music AI carefully studied what you love and picked that song based on patterns! Try again!"
+          },
+          {
+            "id": "opt3c",
+            "label": "Music AI studied my listening patterns \ud83c\udfb5",
+            "correct": true,
+            "feedback": "\u2b50 EXACTLY RIGHT! Music AI noticed your cartoon song love and recommended another one you would probably enjoy! Smart AI! \ud83c\udf1f"
+          },
+          {
+            "id": "opt3d",
+            "label": "The phone just remembered my last search",
+            "correct": false,
+            "feedback": "\ud83d\udd0d It is more than just remembering a search! Music AI studies ALL your listening patterns over time to make the recommendation! Try again!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q4",
+        "type": "true_false",
+        "emoji": "\ud83e\udd16",
+        "question": "TRUE or FALSE: A regular table lamp uses AI because it turns ON automatically when it gets dark! \ud83e\ude94",
+        "options": [
+          {
+            "id": "opt4a",
+            "label": "TRUE \u2014 it turns on automatically! \u2705",
+            "correct": false,
+            "feedback": "\ud83d\udd0d Tricky! But FALSE! If a lamp turns on automatically at a set time, it follows a schedule \u2014 it does NOT learn or adapt! Only SMART lamps with sensors that learn your preferences use AI! Regular lamps: No AI!"
+          },
+          {
+            "id": "opt4b",
+            "label": "FALSE \u2014 it just follows a switch, not AI! \u274c",
+            "correct": true,
+            "feedback": "\u2b50 CORRECT! A regular lamp just follows a timer or a switch \u2014 it does not LEARN or ADAPT! That is the key difference! Regular tools follow switches. AI learns! \ud83c\udf1f"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q5",
+        "type": "tap_correct",
+        "emoji": "\ud83c\udf0d",
+        "question": "Which THREE of these use AI? Pick the RIGHT answer that lists only real AI examples! \ud83d\udd0d",
+        "options": [
+          {
+            "id": "opt5a",
+            "label": "Table lamp, pencil, and wooden blocks",
+            "correct": false,
+            "feedback": "\ud83d\ude04 Those are all regular tools with no AI! They follow switches and do not learn! Try again, Detective!"
+          },
+          {
+            "id": "opt5b",
+            "label": "Smart TV recommendations, Google Maps routing, Gmail spam filter \u2728",
+            "correct": true,
+            "feedback": "\u2b50 PERFECT DETECTIVE WORK! All three use AI \u2014 Recommendation AI, Traffic Prediction AI, and Spam Detection AI! You remembered everything! \ud83c\udfc6\ud83c\udf1f"
+          },
+          {
+            "id": "opt5c",
+            "label": "Electric fan, table clock, and regular pencil",
+            "correct": false,
+            "feedback": "\ud83d\udd0d Those are all regular non-AI tools! They follow simple switches and do not learn anything! Try again!"
+          },
+          {
+            "id": "opt5d",
+            "label": "A book, a chair, and a spoon",
+            "correct": false,
+            "feedback": "\ud83d\ude04 Ha! Books, chairs, and spoons definitely do not use AI \u2014 although a smart spoon might exist someday! Try again, Detective!"
+          }
+        ],
+        "points": 20
+      }
+    ],
+    "maxScore": 100,
+    "passingScore": 60,
+    "completionMessages": {
+      "perfect": "\ud83c\udfc6 100/100! FLAWLESS DETECTIVE! BEEP BOOP \u2014 You are the GREATEST AI Detective I have ever met! I am writing your name in the Robot Hall of Fame right now! \ud83c\udf1f\ud83e\udd16",
+      "excellent": "\u2b50 80-99/100 \u2014 EXCELLENT WORK! You are a brilliant detective with an incredible AI-spotting brain! Just review the ones you missed and you will be perfect next time! \ud83d\udd0d",
+      "good": "\ud83d\ude0a 60-79/100 \u2014 GOOD JOB! You passed your detective exam! A little review will make you even stronger! Re-read the sections you found tricky! \ud83d\udcda",
+      "tryAgain": "\ud83d\udd0d Below 60 \u2014 NO WORRIES! Every great detective needs a little extra practice sometimes! Go back and read the lesson again \u2014 Robo-Pi will be right here cheering you on! BEEP BOOP! \ud83e\udd16\ud83d\udcdb"
+    }
+  },
+  "resources": {
+    "teacherGuide": "/content/junior/guides/class4-ch1-l1-teacher.pdf",
+    "worksheets": [
+      "/content/junior/worksheets/class4-ch1-l1-detective-report.pdf",
+      "/content/junior/worksheets/class4-ch1-l1-ai-house-drawing.pdf"
+    ],
+    "videos": [
+      {
+        "title": "\ud83c\udfac How Does Face Recognition Work? (Kids Explanation!)",
+        "url": "TBD",
+        "duration": "3:45",
+        "description": "A child-friendly animated video showing how cameras find and frame faces using AI!"
+      },
+      {
+        "title": "\ud83c\udfac Predictive Text and Keyboard AI Explained Simply!",
+        "url": "TBD",
+        "duration": "4:00",
+        "description": "A fun animated video showing how keyboards predict the next word you will type!"
+      },
+      {
+        "title": "\ud83c\udfac How Does Spotify Know What Songs You Love?",
+        "url": "TBD",
+        "duration": "3:30",
+        "description": "A colourful animated video explaining how music recommendation AI works!"
+      }
+    ],
+    "additionalReading": [
+      {
+        "title": "AI for Kids: The Beginner's Guide to Artificial Intelligence",
+        "url": "TBD",
+        "level": "age-appropriate"
+      }
+    ],
+    "parentResources": [
+      {
+        "title": "Talking About AI with Your 9-10 Year Old: A Parent's Guide",
+        "url": "TBD",
+        "description": "Simple tips for continuing the AI conversation at home!"
+      }
+    ]
+  },
+  "teacherNotes": {
+    "preparation": "Before the lesson, test face detection on the classroom smartboard or on student tablets by opening the camera. Prepare a family photo to demonstrate the yellow boxes appearing on faces. Have the YouTube app ready to show search suggestions. Consider printing the AI Detective Report Sheet for the home activity.",
+    "lessonFlow": "Start with the Opening Story to hook students, then move through each of the three sections systematically. Use the real phone/tablet to demonstrate face detection live \u2014 this creates maximum wow factor. For Mission 2, have students open the messaging app on a tablet and try typing 'Good' to see the word bubbles themselves!",
+    "tips": [
+      "\ud83c\udfaf The LIVE camera demonstration (showing yellow boxes on children's faces) creates the most powerful learning moment \u2014 do this first!",
+      "\u2b50 Let students take turns typing 'Happy' on the tablet keyboard to see the word bubbles appear \u2014 hands-on experience is invaluable!",
+      "\ud83e\udd16 Use Robo-Pi's voice and personality enthusiastically \u2014 children connect with characters and it makes abstract concepts concrete!",
+      "\ud83c\udfe0 The Home AI Detective Walk is the most important activity \u2014 encourage parents to do it on the same evening!",
+      "\ud83c\udfa8 Display the 'Robo-Pi's AI House' drawings around the classroom \u2014 it builds community and reinforces learning!",
+      "\ud83d\udcac Always end with the student sharing ONE thing they will look for at home \u2014 it bridges classroom and family learning!"
+    ],
+    "commonMisconceptions": [
+      "MISCONCEPTION: 'All technology is AI.' CORRECTION: Not all technology uses AI! A regular lamp, pencil, or fan follows simple switches and does not learn. AI specifically refers to systems that learn from data and adapt. Use the 'does it learn?' test to distinguish!",
+      "MISCONCEPTION: 'AI is always correct.' CORRECTION: AI makes mistakes! Autocorrect fails, face detection sometimes missing a face, music suggestions that miss the mark \u2014 all are examples. AI is incredibly helpful but not perfect. Just like humans, AI is still learning!",
+      "MISCONCEPTION: 'AI is dangerous or scary.' CORRECTION: At this level, AI is purely framed as helpful and friendly. The face camera helps photos, keyboard helps typing, music app helps entertainment. This lesson establishes a positive, curious, empowered relationship with AI technology.",
+      "MISCONCEPTION: 'AI thinks and feels like a person.' CORRECTION: AI does not have feelings, dreams, or consciousness. It processes patterns in data to produce helpful outputs. It is incredibly clever \u2014 but it is not a person!"
+    ],
+    "differentiatedInstruction": {
+      "forStrugglingStudents": "Focus only on the camera AI (Mission 1) in depth, using the physical phone demonstration. The yellow boxes on faces is the most concrete, visible example. Use the matching game (game-3) as it has visual support for each pair.",
+      "forAdvancedStudents": "Challenge them with: 'Can you think of a situation where Face Finder AI might get confused?' or 'What information do you think the Music AI collects?' This pushes critical thinking beyond the lesson content.",
+      "forELLStudents": "The emoji-rich content naturally supports language learners. Focus on the visual demonstrations and games over text-heavy sections. The draw-Robo-Pi's-house activity is excellent for ELL students as it requires drawing rather than writing!"
+    }
+  },
+  "additionalResources": [
+    {
+      "type": "video",
+      "title": "\ud83c\udfac How Face Recognition AI Works \u2014 Kids Edition!",
+      "description": "A colourful 4-minute animated video showing exactly how cameras spot faces using AI. Perfect for visual learners!",
+      "url": "TBD",
+      "ageAppropriate": true
+    },
+    {
+      "type": "article",
+      "title": "\ud83d\udcf0 AI in Your Pocket: What Your Phone Does Without You Knowing",
+      "description": "A simple, illustrated article about the hidden AI helpers inside every smartphone \u2014 written for 9-10 year olds!",
+      "url": "TBD",
+      "ageAppropriate": true
+    },
+    {
+      "type": "activity",
+      "title": "\ud83c\udfa8 AI Detective Badge Template \u2014 Print and Colour!",
+      "description": "A printable Gold Detective Badge template that children can colour, personalise, and display after completing the lesson!",
+      "url": "/content/junior/worksheets/class4-ch1-l1-detective-badge.pdf",
+      "ageAppropriate": true
+    },
+    {
+      "type": "game",
+      "title": "\ud83c\udfae AI Spotters Club \u2014 Online Game for Kids",
+      "description": "An online mini-game where children explore a virtual city and spot AI helpers hiding in shops, homes, and schools!",
+      "url": "TBD",
+      "ageAppropriate": true
+    }
+  ],
+  "assessmentQuestions": [
+    {
+      "questionId": "aq1",
+      "question": "What do the little yellow boxes that appear around faces in a phone camera mean? \ud83d\udcf7",
+      "options": [
+        "They are just a decoration on the phone screen",
+        "They show where Face Finder AI found and identified faces \u2728",
+        "They appear when the battery is low",
+        "They are drawn by the person taking the photo"
+      ],
+      "correctAnswer": "They show where Face Finder AI found and identified faces \u2728",
+      "explanation": "The yellow boxes are drawn by the Face Finder AI inside the camera! It scanned the image, found all the faces, and drew boxes to tell the camera: 'Focus here \u2014 important faces!' This makes your photos come out beautifully clear! \ud83d\udcf7\ud83e\udd16"
+    },
+    {
+      "questionId": "aq2",
+      "question": "Why does the phone keyboard show word bubbles with suggestions when you type? \u2328\ufe0f",
+      "options": [
+        "It is broken and showing random words",
+        "Keyboard AI studied millions of messages and predicts your next word \ud83d\udcad",
+        "Someone is reading your messages and sending suggestions",
+        "The phone is downloading an update"
+      ],
+      "correctAnswer": "Keyboard AI studied millions of messages and predicts your next word \ud83d\udcad",
+      "explanation": "Keyboard AI (also called Predictive Text) studied millions of real messages and learned patterns \u2014 like the fact that 'Happy' is almost always followed by 'Birthday'! Now it uses those patterns to guess your next word and show you time-saving suggestions! \u2328\ufe0f\u2728"
+    },
+    {
+      "questionId": "aq3",
+      "question": "Your music app plays a song you have never heard before, but you end up loving it. How did the app know to play it? \ud83c\udfb5",
+      "options": [
+        "It plays songs in alphabetical order",
+        "A human DJ chose it just for you",
+        "Music AI studied your listening habits and recommended a song you would probably enjoy \ud83c\udfa7",
+        "It was completely random"
+      ],
+      "correctAnswer": "Music AI studied your listening habits and recommended a song you would probably enjoy \ud83c\udfa7",
+      "explanation": "Music AI pays attention to every song you play, skip, or replay! It builds a detailed picture of your musical taste and uses that to recommend songs from its massive library that you have not heard yet but are likely to enjoy! That is how it finds new favourites for you! \ud83c\udfb5\ud83e\udd16"
+    },
+    {
+      "questionId": "aq4",
+      "question": "Which of these is NOT an AI gadget? \ud83e\udd14",
+      "options": [
+        "A Smart TV that suggests shows you might like \ud83d\udcfa",
+        "A regular electric lamp that turns on when you press a switch \ud83e\ude94",
+        "A voice assistant that answers your questions \ud83d\udd0a",
+        "A phone that unlocks when it recognizes your face \ud83d\udcf1"
+      ],
+      "correctAnswer": "A regular electric lamp that turns on when you press a switch \ud83e\ude94",
+      "explanation": "A regular lamp just follows a simple switch \u2014 press on, it glows. Press off, it stops. No learning, no adapting, no thinking \u2014 NOT AI! The other three (Smart TV, voice assistant, face unlock) all use AI to learn and adapt to users! \ud83e\ude94\ud83d\udd0d"
+    },
+    {
+      "questionId": "aq5",
+      "question": "Robo-Pi says AI is like an INVISIBLE helper. What does invisible mean in this context? \ud83d\udc7b",
+      "options": [
+        "AI is a ghost that haunts your phone \ud83d\udc7b",
+        "AI helpers are hard to see because they work secretly inside gadgets without us noticing \ud83d\udd0d",
+        "AI gadgets are transparent and see-through",
+        "Invisible means the AI is broken"
+      ],
+      "correctAnswer": "AI helpers are hard to see because they work secretly inside gadgets without us noticing \ud83d\udd0d",
+      "explanation": "AI is 'invisible' because it works in the background, inside your gadgets, doing amazing things without anyone seeing it! You see the RESULTS \u2014 the yellow boxes, the word bubbles, the perfect song suggestions \u2014 but the AI itself is hidden inside. That is why we need detective eyes to spot it! \ud83d\udd0d\ud83e\udd16"
+    }
+  ]
+}
