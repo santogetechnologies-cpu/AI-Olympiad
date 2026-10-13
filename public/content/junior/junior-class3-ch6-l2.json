@@ -1,0 +1,1223 @@
+{
+  "lessonId": "l2",
+  "title": "Share with Care",
+  "level": "junior",
+  "class": "class3",
+  "chapter": "ch6",
+  "mascot": "Bolt",
+  "badge": {
+    "badgeId": "badge-ch6-l2",
+    "name": "Kindness & Sharing Ambassador Medal 💖🎖️",
+    "description": "Awarded for mastering polite communication, patient turn-taking, empathetic digital citizenship, and respecting private boundaries with Bolt the Robot!",
+    "emoji": "💖🤝🎁🌸🎖️",
+    "trophy_unlocked": "🏆 Grand Kindness & Sharing Trophy unlocked! You proved that kind words, fair turn-taking, and digital empathy make you a true AI Champion! BEEP BOOP! 🌟💖🎖️"
+  },
+  "introduction": {
+    "overview": "“BEEP BOOP! Kind words make everyone happy—even your robot friend!” 🤖💖⚡\n\n“Every day gives us little chances to be kind. We can use polite words, take turns, help others, and make thoughtful choices when we use technology!” 🌸🤝\n\nHello, my wonderful Class 3 friend! It is ME — BOLT, your loyal, sparkly blue robot mentor with gleaming sapphire eyes and a big glowing heart-shaped battery on my chest! 🤖💖⚡\nToday, I have arrived with something truly magical: a shimmering golden treasure box filled with colorful, jingling KINDNESS MEDALS! 🎖️🎁✨ Give my metal hand a gentle, cheerful high-five right on your screen — *CLINK! BEEP BOOP!* 🖐️⚡\n\nImagine this sunny afternoon story:\nYou are sitting comfortably in the living room, building an amazing digital castle on the family tablet. Your fingers are gliding across the screen, placing colorful flags on the towers. Suddenly, your younger sister skips into the room with sparkling eyes and says: *'I want to play my animal puzzle game right now!'* 👧📱\nBoth of you love the tablet! Both of you are super excited to play!\nBolt floats right between you with twinkling golden lights and gently asks:\n*“How can they make sure both children get a fair turn?”* 🤔💡\n\nDo they grab the tablet back and forth like a tug-of-war rope? NO WAY! That could break the screen, hurt feelings, and cause tears! 🛑❌\nInstead, you use your superpower: KINDNESS & FAIR SHARING! 💖🤝\nYou take a deep breath, smile, and say: *'Mommy, Papa! We both want to play on the tablet. Can you help us set a timer so we both get a fair turn?'* 👨‍👩‍👧⏰\nYour parents smile, set a cheerful 15-minute kitchen timer, and say: *'You can finish your castle castle first, and then it is your sister's turn for 15 minutes!'*\nWhile waiting for your sister's turn later, you draw a picture of a dancing robot with crayons on paper! 🖍️🤖 Everyone stays happy, the tablet stays safe, and love fills the home!\n\nBUT REMEMBER BOLT'S GOLDEN BOUNDARY:\nBeing kind does NOT mean sharing everything without limits! 🔒🛡️\nTrue kindness NEVER asks you to share your secret passwords, your home address, or your private family photos. True kindness is about fairness, politeness, patience, and mutual respect!\n\nIn this heartwarming lesson — CHAPTER 6, LESSON 2: SHARE WITH CARE — we will explore three wonderful kingdoms:\n1. 🗣️💖 SECTION 1: KIND WORDS, HAPPY HELPERS! (Discovering the magic of 'Please', 'Thank you', and polite requests to humans and AI!)\n2. 🤝🎁 SECTION 2: SHARE, TAKE TURNS & HELP EACH OTHER! (Mastering turn-taking clocks, patience, caring for shared screens, and guarding secret passwords!)\n3. 🌍🌈 SECTION 3: BE A KIND DIGITAL CITIZEN! (Spreading joy in games, respecting different creative ideas, pressing pause on scary videos, and asking adults for help!)\n\nAre you ready to join Bolt, open the Kindness Medal Box, and become a Certified Digital Kindness Champion? Let's take our first polite step together! 💖✨🎖️",
+    "learningObjectives": [
+      "Understand why kindness matters deeply when interacting with people, friends, family, and technology 💖🤝",
+      "Use polite words naturally, such as 'please', 'thank you', 'excuse me', and 'sorry' in everyday conversations 🗣️🌸",
+      "Understand that voice assistants and AI tools respond to polite requests without having human feelings or consciousness 🎤🤖",
+      "Practice fair sharing, patience, and gentle turn-taking when using tablets and family devices with siblings 👧👦📱",
+      "Understand that kindness has healthy boundaries: sharing never means giving away passwords or private personal details 🔒🛑",
+      "Recognize kind versus unkind online behaviors and choose encouraging words over mean comments in games 🎮🌟",
+      "Respond respectfully to other children's unique ideas, drawings, and AI creations without laughing or insulting them 🎨🤝",
+      "Know that frightening, hurtful, or uncomfortable online content should be paused immediately and reported to a trusted adult 🛑👨‍👩‍👧",
+      "Respect family rules regarding device usage, screen-time timers, and borrowing permissions ⏳🏡",
+      "Learn that every child is unique with different opinions, speeds, talents, and abilities 🌍🌱",
+      "Earn pretend honors across all rounds of The Kindness & Sharing Medal Ceremony activity 🎖️🏆",
+      "Develop lifelong habits of thoughtful, safe, gentle, and responsible digital citizenship 🌟🤖💖"
+    ],
+    "duration": "45-60 minutes of inspiring digital citizenship adventures, polite conversation practice, and medal ceremony triumphs! ⏱️🎉"
+  },
+  "sections": [
+    {
+      "sectionId": "sec1",
+      "title": "Kind Words, Happy Helpers! 🗣️💖",
+      "content": "BEEP BOOP! Welcome to Section 1: KIND WORDS, HAPPY HELPERS! 🗣️💖✨\nWords are like little paper airplanes folded from our thoughts. When we speak kind, polite, and encouraging words, our paper airplanes carry sunshine, warmth, and smiles to everyone around us! But when someone uses sharp, demanding, or rude words, their airplanes can sting feelings and make people feel sad or angry.\n\nIn this section, we learn how polite language—such as 'Please', 'Thank you', 'Excuse me', 'May I have a turn?', 'Can you help me, please?', 'I appreciate your help', 'Sorry, I made a mistake', and 'Would you like to play together?'—builds trust and happiness everywhere we go. We will also discover the fascinating difference between talking to human friends and talking to smart voice assistants like Alexa, Siri, or smart speaker helpers! 🎤🤖\n\nEven though smart machines do not have human hearts or feelings, using polite words when asking questions is a wonderful habit that trains our minds to be polite, thoughtful human leaders! Let's explore how kind words transform our homes, classrooms, and digital worlds! 🌟🌸",
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "The Magic Power of Polite Words ✨🗣️",
+          "content": "Think about the last time someone spoke to you. If someone walked up and shouted: *'Give me your crayon RIGHT NOW!'*, how would your tummy feel? It would probably feel tight, startled, and unhappy! 😠💥 You might not want to share your crayon at all. But what if that same person smiled gently and said: *'Excuse me, may I please borrow your green crayon when you are finished?'* 🖍️🌸 Instantly, your heart feels respected and cheerful! You would happily say: *'Of course! Here you go!'*\n\nPolite words are not just rules from a grammar book; they are social keys that unlock cooperation, friendship, and peace. When Class 3 students use polite words, teachers notice, parents feel proud, and friends feel safe. Here are the core magic phrases every digital champion carries:\n- **'Please'** 🌸: Shows that you are making a respectful request, not bossing someone around.\n- **'Thank you'** 🎁: Expresses genuine gratitude and shows that you noticed someone's kindness or help.\n- **'Excuse me'** 🙋: Politely gets someone's attention without interrupting or bumping into them.\n- **'May I have a turn?'** ⏳: Respects that the other person is currently playing while asking for a fair turn.\n- **'Can you help me, please?'** 🤝: Opens the door for teamwork when a task feels too big or confusing.\n- **'I appreciate your help'** 💖: A deeper way of telling a parent, teacher, or friend how much their time meant to you.\n- **'Sorry, I made a mistake'** 🩹: A brave, honest admission that heals hurt feelings and repairs friendship.\n- **'Would you like to play together?'** 🎈: The most welcoming invitation in the entire playground!"
+        },
+        {
+          "partNumber": 2,
+          "title": "Talking with Voice Assistants & AI Helpers 🎤🤖",
+          "content": "Have you ever asked a smart speaker in your living room: *'What is the weather outside today?'* or *'Set a timer for 10 minutes!'*? 🌤️⏰ Smart speakers, voice assistants, and AI chatbots are clever computer programs that listen to your spoken sound waves, turn them into digital code, search a database, and speak an answer back using synthesized audio.\n\nHere is an important scientific truth that Bolt wants you to understand:\nA voice assistant does NOT have feelings! 🤖❌ It does not feel sad if someone is rude, and it does not feel happy or warm inside if you say thank you. It has no brain cells, no beating heart, no feelings of joy, and no sadness. It is an electronic tool, just like an electric blender or a bicycle!\n\nSO WHY DO WE ENCOURAGE SAYING 'PLEASE' AND 'THANK YOU' TO AI HELPERS? 🤔💡\nBecause **YOU** have human feelings, and communication is a muscle! When you practice speaking politely to voice assistants, your brain builds strong, automatic habits of respect. If a child gets into the habit of barking loud, rude commands at an AI assistant—*'DO IT NOW! PLAY MUSIC! SHUT UP!'*—that child might accidentally start talking like that to their mother, their teacher, or their classmates! 🙅‍♂️\nBy choosing to say: *'Please play a lion roar'* and *'Thank you, Alexa!'*, you keep your own heart gentle, polite, and respectful. You train yourself to be a polite person in every situation!"
+        },
+        {
+          "partNumber": 3,
+          "title": "Asking for Help at School & Home 📚🏫",
+          "content": "School is a bustling workshop of learning where every student tackles puzzles, reading comprehension, mathematics, and science projects. Sometimes, a question looks like a jumbled puzzle of mysterious numbers! 🤯🔢 What should you do when you feel stuck?\n\nCompare these two different approaches:\n- **Approach A (Unkind & Demanding):** Standing up, crossing your arms, scowling, and snapping at your table partner: *'Tell me the answer NOW! You got it right, so give it to me!'* 💥❌\nHow does your partner feel? They feel pressured, taken advantage of, and annoyed! Giving someone the answer without explaining doesn't help anyone learn, and demanding it rudely damages friendship.\n- **Approach B (Kind & Collaborative):** Leaning in with an open smile and asking: *'Could you help me understand this question, please? I am confused about step two.'* 🤝✨\nWhat happens now? Your partner feels respected and valued! They might say: *'Sure! Look, you first count the blue blocks, and then subtract the red blocks!'* You both learn together, and you finish with a warm: *'Thank you so much! You are a great study partner!'* 🌟\n\nRespectful requests make teamwork smooth and enjoyable. Whenever you feel frustrated, pause, take a deep breath, and turn your frustration into a polite question."
+        },
+        {
+          "partNumber": 4,
+          "title": "The Healing Magic of 'I am Sorry' 🌸🫂",
+          "content": "Nobody in the whole wide world is perfect—not even smart robots! 🤖 We all make mistakes. Sometimes you might get so excited about an idea that you talk right over your friend while they are speaking. Sometimes you might accidentally bump a table and knock over a tower of wooden blocks your classmate was building. 🧱💥\n\nWhen a mistake happens, some children feel embarrassed and try to run away, laugh nervously, or blame someone else: *'It was the table's fault!'* But that leaves the other person feeling hurt and sad.\n\nA true Kindness Champion uses the healing power of a sincere apology: 🌸🩹\n*'I am so sorry for interrupting you while you were telling your story. Please continue, I am listening!'*\nOr:\n*'I am so sorry I bumped the table! That was an accident. Let me help you rebuild the tower right now!'*\n\nNotice the three golden steps of a sincere apology:\n1. Say **I am sorry** clearly and calmly.\n2. Name the mistake honestly without making silly excuses.\n3. Offer a kind action to make things right or invite the person to continue.\nA sincere apology does not make you weak—it shows immense bravery, maturity, and emotional intelligence!"
+        },
+        {
+          "partNumber": 5,
+          "title": "Chatting Politely with Bolt the Robot 🤖⚡",
+          "content": "Let's look at how polite conversation works between you and Bolt! 🤖💬\nWhen you interact with Bolt in your learning app, Bolt listens to your ideas, celebrates your curiosity, and offers playful guidance.\n\nImagine you want to create an art piece, but your mind is completely blank. You tap your screen and speak:\n*'Bolt, please help me choose a drawing idea.'* 🎨🗣️\nBolt's antenna glows bright neon green, his sapphire eyes blink happily, and he chimes:\n*“BEEP BOOP! Of course! Would you like to draw a friendly robot, a flying kitten, or a rainbow castle?”* 🤖⚡🏰\n\nYou smile and reply: *'I would love to draw a flying kitten with butterfly wings, please!'*\nBolt responds: *'BEEP BOOP! Super creative choice! Let's give it purple velvet fur and sparkly silver wings!'*\n\nNotice how the polite words create a joyful rhythm! When communication is polite, learning feels like a celebratory game. Whether you are talking to teachers, parents, classmates, or interactive mentors, polite words turn everyday tasks into delightful adventures!"
+        }
+      ],
+      "examples": [
+        {
+          "exampleId": "ex1",
+          "title": "Example 1: Asking a Voice Assistant 🎤",
+          "description": "A child named Kabir wanted to hear how a wild African lion sounds for his school animal project. Instead of shouting 'LION SOUND NOW!', Kabir stood two feet from the family smart speaker, smiled, and said clearly: 'Please play a lion sound.' The smart speaker replied: 'Here is a lion roar: ROAAAR!' Kabir laughed with joy and immediately said: 'Thank you!' Bolt explains: Saying please and thank you to a voice assistant is a wonderful habit. While the assistant does not have human feelings, practicing polite words trains your brain to communicate respectfully with real people!",
+          "realLifeScenario": "Kabir practicing clear, gentle manners with the living room smart speaker."
+        },
+        {
+          "exampleId": "ex2",
+          "title": "Example 2: Asking for Help at School 📚",
+          "description": "During math class, Anya did not understand how to solve a three-digit addition puzzle. She looked at her classmate Maya. An unkind request would have been: 'Tell me the answer NOW!' But Anya remembered her manners. She tapped Maya's shoulder gently and asked: 'Could you help me understand this question, please?' Maya smiled warmly and showed Anya how to regroup the tens column. Anya said: 'I appreciate your help!' Both girls felt happy and confident.",
+          "realLifeScenario": "Anya turning frustration into polite collaboration during school mathematics."
+        },
+        {
+          "exampleId": "ex3",
+          "title": "Example 3: Making a Mistake 🌸",
+          "description": "Arjun was super excited about a space documentary he watched over the weekend. While his friend Rohan was describing his Sunday soccer match, Arjun blurted out: 'I saw Saturn's rings!' Rohan stopped talking and looked down, feeling ignored. Arjun immediately caught his mistake. He touched Rohan's arm and said: 'Sorry for interrupting you, Rohan. That was rude of me. Please continue telling me about your soccer goal!' Rohan smiled and finished his story happily.",
+          "realLifeScenario": "Arjun apologizing sincerely and restoring a friendship moment."
+        },
+        {
+          "exampleId": "ex4",
+          "title": "Example 4: Asking Bolt 🤖",
+          "description": "A student was exploring the creative art studio and wondered what to sketch. The student asked: 'Bolt, please help me choose a drawing idea.' Bolt responded with dancing blue lights: 'BEEP BOOP! Of course! Would you like to draw a friendly robot, a flying kitten, or a rainbow castle?' The polite conversation made the creative brainstorming session joyful, inspiring, and fun!",
+          "realLifeScenario": "A student collaborating politely with Bolt in the digital creative studio."
+        }
+      ],
+      "keyPoints": [
+        "Polite words like 'please', 'thank you', and 'excuse me' show respect and make people feel valued 🗣️💖",
+        "Voice assistants are smart machines without human feelings, but speaking politely to them builds great human habits 🎤🤖",
+        "Demanding answers rudely creates tension; asking for help with 'please' invites joyful teamwork 📚🤝",
+        "When you accidentally interrupt or bump someone, saying 'Sorry, I made a mistake' heals feelings quickly 🌸🩹",
+        "Polite requests make communication smooth, calm, and effective at home, school, and online 🏡🏫",
+        "Asking 'May I have a turn?' is the fairest way to request shared games or toys without arguing ⏳🎈",
+        "Saying 'I appreciate your help' shows mature gratitude for parents, teachers, and friends 💖✨",
+        "Bolt reminds us: 'BEEP BOOP! Kind words make everyone happy—even your robot friend!' 🤖⚡"
+      ],
+      "guidedQuestions": [
+        {
+          "questionId": "gq1",
+          "question": "Which of the following is the most polite way to ask a smart voice assistant for music? 🎤🎶",
+          "options": [
+            "PLAY MUSIC RIGHT THIS SECOND! 💥",
+            "Please play a cheerful song for study time. 🎵🌸✨",
+            "Hey box, do your job! 😠",
+            "I am not talking to you, just do it. 🚫"
+          ],
+          "correctAnswer": "Please play a cheerful song for study time. 🎵🌸✨",
+          "explanation": "Starting your request with 'Please' and speaking clearly is the gold standard of polite communication! 🌸",
+          "hint": "Look for the sentence that includes the magic polite word 'Please'!"
+        },
+        {
+          "questionId": "gq2",
+          "question": "Why is it a good habit to say 'please' and 'thank you' to voice assistants even though machines don't have feelings? 🤖💡",
+          "options": [
+            "Because the robot will cry if you don't 😢❌",
+            "Because practicing polite words trains your brain to always communicate respectfully with human beings! 🧠💖✨",
+            "Because smart speakers will turn into toast if you are rude 🍞",
+            "Because machines will tell secrets to your neighbours 🤫"
+          ],
+          "correctAnswer": "Because practicing polite words trains your brain to always communicate respectfully with human beings! 🧠💖✨",
+          "explanation": "Practicing polite communication builds lifelong respectful habits that carry over to friends, family, and teachers! 🌟",
+          "hint": "Which choice talks about building good human communication habits?"
+        },
+        {
+          "questionId": "gq3",
+          "question": "You accidentally interrupt your friend while they are sharing an exciting story. What is the kindest response? 🌸🗣️",
+          "options": [
+            "Talk louder so nobody hears them 📢❌",
+            "Say: 'Sorry for interrupting you. Please continue, I am listening!' 🌸🫂✨",
+            "Pretend nothing happened and look at your shoes 👟",
+            "Tell your friend that their story is boring anyway 😠"
+          ],
+          "correctAnswer": "Say: 'Sorry for interrupting you. Please continue, I am listening!' 🌸🫂✨",
+          "explanation": "Apologizing sincerely for an accidental interruption and inviting your friend to continue shows true empathy! 💖",
+          "hint": "Which option contains a sincere apology and invites the friend to finish their story?"
+        },
+        {
+          "questionId": "gq4",
+          "question": "You do not understand how to solve a classroom puzzle. What should you say to your classmate? 📚🤝",
+          "options": [
+            "Give me your paper right now! 💥",
+            "Could you help me understand this question, please? 🤝✨",
+            "You are mean if you don't do my work! 😠",
+            "I give up and I won't talk to anyone! 🛑"
+          ],
+          "correctAnswer": "Could you help me understand this question, please? 🤝✨",
+          "explanation": "Asking politely for someone's help to understand a problem encourages teamwork and makes learning enjoyable! 📚",
+          "hint": "Choose the answer that asks for help respectfully using the word 'please'."
+        },
+        {
+          "questionId": "gq5",
+          "question": "What did Bolt say about kind words? 🤖⚡",
+          "options": [
+            "Robots only like loud buzzing noises 🐝",
+            "“BEEP BOOP! Kind words make everyone happy—even your robot friend!” 🤖💖✨",
+            "Never speak to robots because they are asleep 💤",
+            "Only say please on Sundays 🗓️"
+          ],
+          "correctAnswer": "“BEEP BOOP! Kind words make everyone happy—even your robot friend!” 🤖💖✨",
+          "explanation": "Bolt loves kind words because they fill every room and circuit with warmth and happiness! 🤖💖",
+          "hint": "Look for Bolt's exact famous quote!"
+        },
+        {
+          "questionId": "gq6",
+          "question": "A friend invites you to play a collaborative digital building game, but your turn is not ready yet. How do you respond politely? 🎈🤝",
+          "options": [
+            "No, I hate your game! 😠❌",
+            "Thank you for inviting me! May I join as soon as my timer starts? 🎈🌸✨",
+            "Delete the game immediately 🛑",
+            "Take their tablet by force 📱"
+          ],
+          "correctAnswer": "Thank you for inviting me! May I join as soon as my timer starts? 🎈🌸✨",
+          "explanation": "Politely accepting invitations and asking to join when ready builds wonderful friendship and teamwork! 🎈",
+          "hint": "Which choice expresses gratitude and asks politely to join when ready?"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec2",
+      "title": "Share, Take Turns & Help Each Other! 🤝🎁",
+      "content": "BEEP BOOP! Welcome to Section 2: SHARE, TAKE TURNS & HELP EACH OTHER! 🤝🎁✨\nHave you ever noticed that sharing a box of sweet strawberries makes them taste even sweeter? Or that playing a two-player racing game with a friend is twice as thrilling as playing alone? Sharing is one of humanity's greatest superpowers! It connects people, creates laughter, and turns ordinary moments into unforgettable memories.\n\nHowever, sharing technology—like family tablets, gaming consoles, laptops, or smartphones—can sometimes feel tricky! When two children both want to hold the same shiny tablet at the exact same moment, frustration can bubble up like a fizzy soda can. If we don't have good sharing rules, children might argue, grab, or feel left out.\n\nIn this section, we will learn how to share devices fairly through family turn-taking routines, how to care for shared electronics with gentle hands, what fun off-screen activities we can enjoy while waiting patiently for our turn, and why TRUE KINDNESS NEVER REQUIRES GIVING AWAY PASSWORDS OR PRIVATE INFORMATION! 🔒🛑 Let's master the art of fair, safe, and joyful sharing! 🌟🤝",
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "The Turn-Taking Clock: How to Share Without Tears ⏳🤝",
+          "content": "Imagine two siblings, Kabir and his little sister Maya. Both love the family tablet. In the past, if Maya wanted the tablet while Kabir was playing, she might try to pull it from his hands. Kabir would pull back, shouting: *'No! It's my turn!'* The tablet would wobble dangerously, their mother would have to intervene, and both children would end up crying with the tablet turned off for the rest of the day. 😢📱\n\nHow did they transform their home into a Peaceful Sharing Zone? They introduced **THE TURN-TAKING CLOCK**! ⏰✨\nHere is how fair turn-taking works in any family:\n1. **Consult the Family Rules:** Ask Mommy or Papa how much screen time is approved for the day.\n2. **Agree on the Order:** Decide calmly who goes first. A fair method is flipping a coin, checking who went second yesterday, or letting the younger sibling have the first 15 minutes.\n3. **Set a Visible Timer:** Use a cheerful kitchen timer, a smartphone alarm, or a clock that both children can see. When the timer is ticking, the child playing can relax knowing their time is protected, and the child waiting knows exactly when their turn begins!\n4. **Hand Over Gracefully:** When the timer chimes *DING!*, the first player pauses their game, saves their progress, wipes any fingerprints off the screen with a soft cloth, and hands the tablet over with a smile: *'Here you go, Maya! Have fun with your puzzle!'* 🎁\n5. **Celebrate Cooperation:** Both children feel respected. No arguing, no grabbing, no hurt feelings!"
+        },
+        {
+          "partNumber": 2,
+          "title": "What Can We Do While Waiting? (Fun Off-Screen Activities) 🎨🧩",
+          "content": "Waiting for your turn does NOT mean sitting on the carpet staring like a statue at the back of your sister's head! If you just sit and stare, 15 minutes feels like three long hours! ⏳😫\n\nA smart digital champion knows how to turn waiting time into exciting **OFF-SCREEN ADVENTURES**! 🚀🌟\nWhile your sibling is enjoying their turn, you can:\n- **Build an Epic LEGO Castle:** Grab colorful building blocks and construct a space fortress for toy astronauts! 🧱🚀\n- **Draw a Comic Strip:** Grab a piece of drawing paper and create a funny comic starring Bolt the Robot and a flying cat! 🖍️🐱\n- **Read an Adventure Book:** Dive into an illustrated book about deep-sea creatures, rainforest jungles, or ancient pyramids! 📚🌊\n- **Practice Soccer Tricks:** Head into the garden or hallway and practice balancing a soft soccer ball on your foot! ⚽🌿\n- **Help in the Kitchen:** Ask a parent if you can wash crisp carrots or stir pancake batter for snack time! 🥞🥕\n\nWhen you engage your mind in creative play, the timer rings before you even know it! You might even say: *'Wait, is it my turn already? I was having so much fun finishing my drawing!'* 🎨✨"
+        },
+        {
+          "partNumber": 3,
+          "title": "Caring for Shared Family Tech: Gentle Hands & Safe Spaces 📱🛡️",
+          "content": "When a tablet, smartphone, or laptop belongs to the whole family, caring for it is a team responsibility. Electronic devices are delicate machines with glass touchscreens, tiny microchips, and sensitive camera lenses. If a device drops on a hard tile floor, the glass can crack like a spiderweb, making it unsafe for anyone to touch! 🕸️💥\n\nHere are the four golden rules for handling shared devices:\n- **Clean, Dry Hands First:** Never touch a touchscreen with sticky jam fingers, buttery popcorn hands, or wet paint! Always wash and dry your hands before tapping. 🧼🖐️\n- **Two-Handed Safe Grip:** Always hold a tablet with two firm, gentle hands. Never swing it by one corner like a plastic toy briefcase! 📱🤲\n- **Safe Resting Stations:** When your turn is finished, never leave the tablet on the floor, on a chair where someone might sit on it, or near the edge of a kitchen counter next to a glass of orange juice! Always place it in its designated safe dock or soft sofa table. 🪑🛡️\n- **Never Change Settings or Profiles:** If your brother has his own game profile, never delete his saved high scores or change his avatar without his permission. Respect each other's digital spaces! 🎮👤"
+        },
+        {
+          "partNumber": 4,
+          "title": "Kindness Has Boundaries: Never Share Passwords! 🔒🛑",
+          "content": "Now pay very close attention, because this is one of the MOST IMPORTANT safety truths in this entire chapter! ⚠️🛡️\nSometimes, another child at school or online might say:\n*“If you are really my best friend, you will tell me your secret password so I can play with your cool avatar!”* 🗣️🔑\nOr:\n*“Sharing is caring! So share your secret password with me right now!”*\n\nHow should you respond? 🛑🤔\nBolt wants you to remember this forever: **PASSWORDS ARE NOT TOYS! PASSWORDS ARE SECRET DIGITAL KEYS!** 🔑🔒\nTrue kindness does NOT mean giving away your private security keys. Giving someone your password is like giving a stranger the house keys to your family's front door! Even if someone is your best friend today, they might accidentally tell someone else, or lose control of the account.\n\nHere is what you say politely and firmly:\n*'I really like being your friend, but my family rule is that passwords are strictly secret. I cannot share my password with anyone except Mommy and Papa.'* 👨‍👩‍👧🛡️\nIf that person gets angry, pushes you, or threatens not to be your friend unless you give them your password, that is NOT true friendship! Walk straight to your teacher or parent and tell them what happened. A real friend respects your privacy boundaries!"
+        },
+        {
+          "partNumber": 5,
+          "title": "Asking Permission Before Borrowing 🙋‍♀️📲",
+          "content": "Imagine your mother leaves her smartphone on the dining table to answer the door. You see the screen light up with a message notification. Should you grab the phone, swipe it open, and start tapping through her photos or messages? 📱👀\nABSOLUTELY NOT! 🛑❌\n\nBorrowing someone else's device—whether it belongs to a parent, older brother, teacher, or friend—ALWAYS requires clear, upfront permission!\nAlways ask:\n*'Mommy, may I please borrow your phone for 5 minutes to take a picture of my block tower?'* 📸🙋\nAnd when permission is granted, follow their exact instructions:\n- Only open the specific app you were given permission to use (like the camera app).\n- Never peek into private email messages, text conversations, or bank apps.\n- Return the device immediately when asked.\nRespecting other people's property and privacy is the foundation of digital honor!"
+        }
+      ],
+      "examples": [
+        {
+          "exampleId": "ex1",
+          "title": "Example 1: Sharing a Tablet with a Sister 👧📱",
+          "description": "Kabir and his 6-year-old sister Maya both wanted to use the family tablet on Saturday morning. Kabir followed the 5-step fair sharing approach: 1. He asked his mother how long they could use the screen. She approved 30 minutes total. 2. Kabir and Maya agreed that Kabir would play his math quest for 15 minutes first. 3. They set the blue kitchen timer for 15 minutes. 4. When the timer chimed, Kabir saved his game and handed the tablet to Maya with a warm smile: 'Here you go, Maya!' 5. While Maya played her animal puzzles, Kabir drew a superhero dog on paper. Both children had a peaceful, happy morning!",
+          "realLifeScenario": "Kabir and Maya implementing the 5-step turn-taking routine peacefully."
+        },
+        {
+          "exampleId": "ex2",
+          "title": "Example 2: Sharing with a Brother 👦🎮",
+          "description": "Arjun and his older brother Rohan wanted to play completely different games on the shared gaming console. Arjun wanted soccer, while Rohan wanted space exploration. Instead of fighting over the controller, they sat down calmly. They agreed that Rohan would play one space mission (about 20 minutes), and then Arjun would play one soccer match. Arjun promised not to touch Rohan's save files, and Rohan cheered for Arjun during his soccer match. Cooperation turned potential conflict into double the fun!",
+          "realLifeScenario": "Arjun and Rohan negotiating console time with mutual respect."
+        },
+        {
+          "exampleId": "ex3",
+          "title": "Example 3: Sharing Toys 🧸",
+          "description": "At school, Anya and her friend Priya both wanted to play with the only toy microscope in the science discovery corner. Anya suggested: 'How about we examine the leaf slide together? You adjust the focus knob, and I will write down what we see!' When physical toys are limited, children can take turns or collaborate as a research team. Bolt explains: The same golden rule applies to digital tablets—teamwork turns waiting into shared joy!",
+          "realLifeScenario": "Anya turning toy competition into cooperative discovery."
+        },
+        {
+          "exampleId": "ex4",
+          "title": "Example 4: Helping a Friend 💚",
+          "description": "During computer lab, a classmate named Leo was having trouble understanding how to snap coding blocks together in a puzzle game. Another student started giggling and said: 'Leo doesn't know how to code!' But Maya stepped in. She pulled up a chair and asked gently: 'Would you like me to show you how this part works? The blue block connects to the yellow loop like a puzzle piece!' Leo's face lit up with relief: 'Thank you, Maya!' Helping is always infinitely better than making someone feel embarrassed.",
+          "realLifeScenario": "Maya providing gentle, kind guidance to a struggling classmate."
+        },
+        {
+          "exampleId": "ex5",
+          "title": "Example 5: Respecting Private Information 🔒",
+          "description": "A boy in an online gaming lobby typed to Kabir: 'If you are my real friend, you must tell me your password so I can upgrade your armor!' Kabir remembered Bolt's rule: True friendship never requires sharing secrets! Kabir replied calmly: 'No, my family rule is to keep passwords secret.' When the boy kept nagging, Kabir blocked him and told his father. Kabir's father gave him a high-five for defending his privacy boundary!",
+          "realLifeScenario": "Kabir standing firm against password pressure with poise and maturity."
+        },
+        {
+          "exampleId": "ex6",
+          "title": "Example 6: Asking Before Borrowing 📱",
+          "description": "Anya wanted to check what time her gymnastics class started on her mother's phone. Even though the phone was resting right on the kitchen table, Anya did not pick it up unannounced. She walked into the living room and asked: 'Mommy, may I please look at the calendar app on your phone to check gymnastics time?' Her mother said: 'Thank you for asking politely, Anya! Yes, you may.' Asking permission proves that you respect other people's private property.",
+          "realLifeScenario": "Anya asking permission before touching a parent's mobile device."
+        }
+      ],
+      "keyPoints": [
+        "Sharing tablets and devices with siblings is fair and peaceful when using clear family turn-taking timers ⏳🤝",
+        "Waiting for your turn is easy and fun when you engage in creative off-screen hobbies like drawing, LEGO, or reading 🎨📚",
+        "Always handle shared devices with clean, dry hands, two gentle hands, and place them on safe surfaces 📱🤲",
+        "Never delete a sibling's saved games, change their avatars, or mess with their profiles without permission 🎮👤",
+        "True kindness NEVER asks for passwords; passwords are secret family keys that must never be shared 🔒🛑",
+        "If someone pressures you to share passwords to 'prove friendship', refuse politely and tell a trusted adult 👨‍👩‍👧🛡️",
+        "Always ask permission before borrowing a parent's or friend's device, and never open private apps 🙋‍♀️📲",
+        "Helping a struggling classmate with kind words builds confidence and creates true lifelong friendships 💚✨"
+      ],
+      "guidedQuestions": [
+        {
+          "questionId": "gq6",
+          "question": "You and your brother both want to use the family tablet at the same time. What is the fairest action? 🤝📱",
+          "options": [
+            "Snatch the tablet and run into the bathroom to lock the door 🏃‍♂️❌",
+            "Ask a parent to help set a turn-taking timer so you both get a fair turn! ⏳👨‍👩‍👧✨",
+            "Arm wrestle to see who gets the tablet for the whole day 💪",
+            "Hide the tablet under the sofa so nobody gets to play 🛋️"
+          ],
+          "correctAnswer": "Ask a parent to help set a turn-taking timer so you both get a fair turn! ⏳👨‍👩‍👧✨",
+          "explanation": "Setting a clear, parent-approved timer ensures that everyone gets an equal, fair turn without arguments! ⏳",
+          "hint": "Which choice uses a fair timer and parent guidance?"
+        },
+        {
+          "questionId": "gq7",
+          "question": "What is an awesome activity you can enjoy while waiting patiently for your turn on the tablet? 🎨⏳",
+          "options": [
+            "Stare angrily at your sibling and count the seconds 😠❌",
+            "Draw a colorful comic strip, build a LEGO tower, or read a book! 🖍️🧱📚✨",
+            "Cry loudly until your sibling feels guilty 😭",
+            "Shake the table so your sibling loses their game 💥"
+          ],
+          "correctAnswer": "Draw a colorful comic strip, build a LEGO tower, or read a book! 🖍️🧱📚✨",
+          "explanation": "Creative off-screen activities make waiting time fly by quickly and exercise your imagination! 🌟",
+          "hint": "Which option describes fun, creative off-screen activities?"
+        },
+        {
+          "questionId": "gq8",
+          "question": "A classmate says: 'If you are really my friend, you must tell me your secret game password!' What should you do? 🔒🛑",
+          "options": [
+            "Give them your password immediately so they stay your friend 🔑❌",
+            "Politely refuse, explain that passwords are secret family keys, and tell a trusted adult! 🛡️👨‍👩‍👧✨",
+            "Trade passwords with three other people in class 🔄",
+            "Write your password on the classroom chalkboard 📝"
+          ],
+          "correctAnswer": "Politely refuse, explain that passwords are secret family keys, and tell a trusted adult! 🛡️👨‍👩‍👧✨",
+          "explanation": "True kindness respects boundaries! Passwords must stay strictly private, even with best friends. 🔒",
+          "hint": "Remember: True friends never demand your secret passwords!"
+        },
+        {
+          "questionId": "gq9",
+          "question": "How should you care for a shared family tablet to keep it safe from breaking? 📱🤲",
+          "options": [
+            "Hold it with clean, dry hands, use two gentle hands, and put it on a safe table! 🧼🤲🛡️✨",
+            "Eat sticky pancakes directly on top of the screen 🥞",
+            "Toss it onto the floor from across the living room 🎯",
+            "Leave it in the rain on the balcony 🌧️"
+          ],
+          "correctAnswer": "Hold it with clean, dry hands, use two gentle hands, and put it on a safe table! 🧼🤲🛡️✨",
+          "explanation": "Handling electronics with clean hands, two hands, and safe placement protects glass screens from damage! 📱",
+          "hint": "Look for the answer that mentions clean hands, two hands, and safe placement."
+        },
+        {
+          "questionId": "gq10",
+          "question": "You want to take a photo of your art project using your mother's phone. What should you do first? 📸🙋",
+          "options": [
+            "Take the phone secretly while she is in another room 🤫❌",
+            "Ask her permission politely and only use the camera app! 🙋‍♀️📲✨",
+            "Read all her private text messages first 📱",
+            "Download five new games without asking 🎮"
+          ],
+          "correctAnswer": "Ask her permission politely and only use the camera app! 🙋‍♀️📲✨",
+          "explanation": "Always ask permission before borrowing devices, and only open the app you were approved to use! 🌸",
+          "hint": "Which choice asks permission politely before touching the device?"
+        },
+        {
+          "questionId": "gq12",
+          "question": "Your classmate is having trouble understanding how the turn-taking clock works. How can you help them? ⏳💚",
+          "options": [
+            "Laugh loudly and call them slow 😆❌",
+            "Show them kindly how the timer works and offer to wait together with fun drawing! ⏳🤝✨",
+            "Ignore them completely and look away 🚫",
+            "Tell the teacher they don't know how to tell time ⏰"
+          ],
+          "correctAnswer": "Show them kindly how the timer works and offer to wait together with fun drawing! ⏳🤝✨",
+          "explanation": "Helping someone understand the turn-taking clock kindly creates a calm, supportive environment for everyone! ⏳",
+          "hint": "Which answer offers kind assistance and cooperative waiting?"
+        }
+      ]
+    },
+    {
+      "sectionId": "sec3",
+      "title": "Be a Kind Digital Citizen! 🌍🌈",
+      "content": "BEEP BOOP! Welcome to Section 3: BE A KIND DIGITAL CITIZEN! 🌍🌈✨\nWhat does it mean to be a citizen? In your neighborhood or school, being a good citizen means following traffic rules, putting trash in the recycling bin, holding doors open, and being friendly to your neighbors. \n\nA **DIGITAL CITIZEN** is someone who uses digital tools—like computers, tablets, multiplayer games, educational websites, and AI assistants—responsibly, thoughtfully, and kindly! 🌍💻\nAs Bolt puts it simply:\n*“When we use games, videos, websites, or AI tools, we should try to be respectful, careful, and kind.”* 💖🤖\n\nBecause we cannot see people's faces through a screen, it can sometimes be easy to forget that real human beings with real feelings are playing on the other side of an avatar! In this section, we learn how to spread kindness in gaming lobbies, how to respect different creative artistic ideas, how to interact mindfully with AI writing and drawing assistants, when to press pause on scary or uncomfortable videos, and why you should NEVER have to handle unkind messages or online bullying alone! 🛡️🫂 Let's shine our brightest digital light! 🌟",
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "What is a Digital Citizen? The Global Playground 🌍🎮",
+          "content": "Imagine the internet as the largest playground in the entire galaxy! 🪐 In this massive digital playground, millions of children and adults from Tokyo, London, Mumbai, New York, and Sydney are building virtual worlds, exploring science simulations, learning languages, and drawing art. \n\nJust like your school playground has rules (no pushing on the swings, no throwing sand, take turns on the slide), the digital playground thrives when everyone acts as a **Kind Digital Citizen**:\n- **Speak with Warmth:** Type words that lift people up instead of knocking them down.\n- **Protect Digital Space:** Don't spam chat boxes with repeated nonsense or block other players from playing fairly.\n- **Protect Everyone's Privacy:** Never post someone else's name, school, address, or picture without their permission.\n- **Be an Upstander, Not a Bystander:** If you see someone being teased online, don't join in or laugh; support the person and tell a trusted adult.\nWhen you act kindly online, you make the digital universe a safer, brighter space for every explorer!"
+        },
+        {
+          "partNumber": 2,
+          "title": "Uplifting Teammates & Celebrating Diverse Ideas 🎨🌟",
+          "content": "Have you ever played an online multiplayer soccer game or racing challenge where a teammate made a clumsy mistake and accidentally kicked the ball into their own goal? ⚽🤦‍♂️\nIn that split second, you have a big choice to make:\n- **Choice A (The Unkind Reaction):** Typing furiously into chat: *'YOU ARE TERRIBLE AT THIS GAME! UNINSTALL NOW! NOOB!'* 💥❌\nHow does your teammate feel? Their heart sinks, their eyes might tear up, and they feel miserable and embarrassed. Nobody plays better when they are being yelled at.\n- **Choice B (The Kind Digital Citizen Reaction):** Typing with cheerful encouragement: *'Good try! Don't worry about it, we all make mistakes. Let's try again together!'* 🌟🤝✨\nWhat happens now? Your teammate takes a breath, feels grateful, smiles, and plays with renewed courage! You built a bond of true sportsmanship.\n\nThe same rule applies when looking at art! If a classmate uses an AI tool to create a purple flying rhinoceros with neon yellow polka dots, don't say: *'That looks ridiculous and ugly!'* Say: *'That is such an interesting and imaginative idea! I love the polka dots!'* 🎨🦏 Everyone has unique creativity, and celebrating differences makes our world rich and wonderful!"
+        },
+        {
+          "partNumber": 3,
+          "title": "The Power to Press Pause: Frightening & Uncomfortable Content 🛑📺",
+          "content": "While exploring video streaming apps or educational websites, you might occasionally click on a thumbnail that looks innocent, but suddenly the video shows something scary, weird, confusing, or gross that makes your stomach feel funny. 📺🕷️\nSome children freeze up. They think: *'My friend recommended this video, so I HAVE to finish watching it, otherwise I am being rude!'*\nOr they think: *'If I tell Mommy, she will think I did something bad and take my tablet away!'*\n\nBolt wants you to hear this loud and clear: **YOU NEVER HAVE TO FINISH AN UNCOMFORTABLE VIDEO! YOU HAVE THE POWER TO PRESS PAUSE!** 🛑✋\nHere is your 4-Step Safety Shield Protocol:\n1. **Press PAUSE Immediately:** Do not keep watching! Close the video or turn the screen face-down.\n2. **Do Not Feel Pressured:** It does NOT make you rude to stop watching something scary, even if a friend dared you to watch it.\n3. **Tell a Trusted Adult Immediately:** Walk straight to Mommy, Papa, or your teacher and say: *'I was watching a video and it showed something confusing and scary that made my tummy feel weird. Can you please help me?'* 👨‍👩‍👧💚\n4. **You Are NEVER in Trouble:** Responsible adults will never be angry with you for reporting an upsetting video. They will hug you, praise your bravery, and help block or report the bad channel!"
+        },
+        {
+          "partNumber": 4,
+          "title": "Mindful AI Collaboration: Creative Tools, Not Humans 🤖💡",
+          "content": "Generative AI tools—like smart story assistants or sketch generators—can help you brainstorm bedtime stories, compose funny rhyming poems, or come up with game characters. When using these tools, here is how a kind, smart digital citizen behaves:\n\n- **Use Respectful, Clear Language:** Type clear, polite prompts like: *'Please write a story about a brave squirrel who invents a solar-powered acorn collector.'* 🐿️🌰 Clear prompts yield brilliant, organized stories!\n- **Remember AI Can Make Mistakes:** An AI tool does not 'know' facts like a wise teacher; it predicts words based on patterns. If an AI gives an answer that sounds weird, wrong, or confusing, always cross-check it with a school encyclopedia, a library book, or your teacher! 📚🔍\n- **Never Share Private Data in AI Prompts:** Never type: *'Write a poem about my house at 12 Maple Street where my brother Arjun goes to Lincoln Elementary.'* Keep prompts purely imaginative and private! 🔒✨\n- **Remember AI Does Not Have Feelings:** You don't need to worry about hurting an AI chatbot's feelings, but you should never follow dangerous or harmful advice from an AI tool. If an AI ever says anything scary, show an adult immediately!"
+        },
+        {
+          "partNumber": 5,
+          "title": "Photo Privacy & Standing Up Against Unkindness 📸🛡️",
+          "content": "Photographs are special digital snapshots of our lives. But did you know that sharing photos online requires great care? 📸🔒\nImagine your little sister takes a funny photo where she has chocolate ice cream smeared all across her nose and cheeks. It looks hilarious! You might want to upload it to an online game forum or send it to a group chat so everyone laughs.\n\nSTOP RIGHT THERE! 🛑✋\nWould your sister feel happy if hundreds of people saw that photo? What if kids at her school teased her about it? Always ask these two questions before sharing any photo:\n1. **Did I ask permission from the person in the photo?** If your sister says 'No, don't share that!', you must respect her wishes completely.\n2. **Did a parent approve it?** Parents know how to keep family photos safe from strangers on the public internet.\n\nWHAT IF YOU RECEIVE AN UNKIND MESSAGE ONLINE? 💚🛑\nIf another player sends you a mean message like: *'Nobody likes you, leave the game'*: \n- DO NOT reply with mean words back! Fighting fire with fire only creates a bigger blaze. 🔥❌\n- Freeze your fingers. Stop typing.\n- Take a screenshot or leave the message open, and show it straight to a trusted adult. \n- Your parent or teacher will help you click the **BLOCK & REPORT** button. You never, ever have to handle online unkindness alone!"
+        }
+      ],
+      "examples": [
+        {
+          "exampleId": "ex1",
+          "title": "Example 1: Kind Words in an Online Game 🎮",
+          "description": "While playing a cooperative building game, Kabir watched a newer player accidentally place a stone block in the wrong spot, causing a bridge to collapse. An unkind player typed: 'You are terrible at this game!' Kabir immediately typed: 'Good try! Don't worry, let's rebuild it together!' Kabir showed the player where to place the support beam. The player typed back: 'Thank you so much! You made my day!' Kabir proved that kind words transform gaming into an uplifting adventure.",
+          "realLifeScenario": "Kabir standing up for a struggling teammate in an online multiplayer game."
+        },
+        {
+          "exampleId": "ex2",
+          "title": "Example 2: Respecting Different Ideas 🎨",
+          "description": "In art class, students used a children's AI image assistant to design fantasy vehicles. Anya designed an electric carrot-car driven by a giant rabbit wearing sunglasses. One student giggled and said it looked silly, but Maya said: 'That is such a funny and creative idea! I love the giant rabbit!' Anya felt proud of her imagination. Bolt explains: Every human has unique creative ideas; celebrating differences brings joy to everyone!",
+          "realLifeScenario": "Maya praising Anya's unique creative art in the digital studio."
+        },
+        {
+          "exampleId": "ex3",
+          "title": "Example 3: Thanking a Voice Assistant 🎤",
+          "description": "Arjun asked the family voice assistant to set a reminder for his soccer practice: 'Please remind me to pack my soccer cleats at 4 PM.' When the assistant replied: 'Reminder set for 4:00 PM', Arjun smiled and said: 'Thank you!' Bolt notes: Polite words are like music notes—practicing them with voice assistants keeps your communication rhythm sweet and respectful for all people!",
+          "realLifeScenario": "Arjun practicing polite manners while setting daily reminders."
+        },
+        {
+          "exampleId": "ex4",
+          "title": "Example 4: An Uncomfortable Video 📺",
+          "description": "While watching a science cartoon, a recommended video thumbnail autoplayed showing a scary monster with glowing red eyes making loud screaming sounds. Anya felt her heart beat fast and her tummy ache. She didn't wait to see if it got better. She slammed the pause button immediately, set the tablet on the table, and called her mother: 'Mommy, this video got scary and made me feel weird.' Her mother hugged her, praised her for stopping it, and blocked the channel. Anya felt safe and protected.",
+          "realLifeScenario": "Anya using the 4-step protocol to stop an uncomfortable video safely."
+        },
+        {
+          "exampleId": "ex5",
+          "title": "Example 5: Kindness in an AI Chat 🤖",
+          "description": "Rohan was using an educational AI writing tutor to brainstorm a story about space exploration. Rohan typed polite, clear prompts: 'Please help me write a dialogue between a brave astronaut and an alien who loves gardening.' When the AI suggested that aliens breathe chocolate milk, Rohan laughed, checked his school science book, and realized that was just a silly fantasy idea. Rohan remembered: AI tools are fun helpers, but they can make silly mistakes, so always verify important facts!",
+          "realLifeScenario": "Rohan practicing polite prompts and critical thinking with an AI story helper."
+        },
+        {
+          "exampleId": "ex6",
+          "title": "Example 6: Ask Before Sharing a Photo 📸",
+          "description": "Arjun took a funny photo of his baby brother wearing a giant foam dinosaur hat. Arjun wanted to send it to his school class group chat. Before tapping send, Arjun walked into the kitchen and showed his father: 'Papa, may I share this funny picture of Leo in the chat?' His father said: 'Let's keep family photos private within our family album, Arjun.' Arjun nodded cheerfully: 'Okay Papa!' Arjun understood that photo privacy protects loved ones.",
+          "realLifeScenario": "Arjun consulting his father before sharing a family photo online."
+        },
+        {
+          "exampleId": "ex7",
+          "title": "Example 7: Responding to Unkind Messages 💚",
+          "description": "Maya was playing a friendly trivia game when an opponent typed: 'You are so slow, you must be a baby!' Maya felt a pang of hurt in her chest. She wanted to type something mean back, but remembered Bolt's rule: Never fight mean words with mean words! Maya stopped typing, took a screenshot, and showed her teacher. The teacher helped Maya report the player and congratulated Maya for handling the situation like a true mature champion.",
+          "realLifeScenario": "Maya refusing to retaliate and reporting an unkind comment to an adult."
+        }
+      ],
+      "keyPoints": [
+        "A digital citizen uses technology, online games, and AI tools with kindness, care, and respect 🌍💻",
+        "Encouraging words like 'Good try! Let's try again together!' turn online gaming into a joyful team adventure 🎮🌟",
+        "Celebrate unique creative ideas; never tease or insult a classmate because their art or drawing looks different 🎨🤝",
+        "You NEVER have to finish a frightening or uncomfortable video; press pause immediately and tell a trusted adult 🛑📺",
+        "You are NEVER in trouble for reporting an upsetting online message, weird pop-up, or scary video to parents 💚👨‍👩‍👧",
+        "AI writing and drawing tools are fun creative helpers, but they do not have feelings and can make mistakes 🤖📚",
+        "Never share photographs of family members or friends online without their permission and parent approval 📸🔒",
+        "If you receive an unkind message, do NOT fight back with mean words; stop, show an adult, and block/report 🛡️🫂"
+      ],
+      "guidedQuestions": [
+        {
+          "questionId": "gq11",
+          "question": "A teammate in an online game makes an accidental mistake and loses a point. What is the kindest response? 🎮💖",
+          "options": [
+            "Type: 'You are terrible! Leave the game!' 💥❌",
+            "Type: 'Good try! We can do this together, let's try again!' 🌟🤝✨",
+            "Send angry face emojis for 10 minutes 😡",
+            "Report the player for making a normal mistake 🛑"
+          ],
+          "correctAnswer": "Type: 'Good try! We can do this together, let's try again!' 🌟🤝✨",
+          "explanation": "Encouraging your teammates with positive words builds sportsmanship, trust, and courage! 🌟",
+          "hint": "Which choice encourages the teammate and offers to try again together?"
+        },
+        {
+          "questionId": "gq12",
+          "question": "You click on an online video and it suddenly shows scary images that make your tummy feel uncomfortable. What should you do? 🛑📺",
+          "options": [
+            "Keep watching until the very end because your friend dared you 🕷️❌",
+            "Press PAUSE immediately, step away from the screen, and tell a trusted adult! 🛑👨‍👩‍👧✨",
+            "Turn the volume all the way up and hide under a blanket 🔊",
+            "Send the scary video to your little sister to see if she cries 😭"
+          ],
+          "correctAnswer": "Press PAUSE immediately, step away from the screen, and tell a trusted adult! 🛑👨‍👩‍👧✨",
+          "explanation": "You always have the power to press pause on scary content, and trusted adults are always there to help you! 🛑",
+          "hint": "Which choice stops the video immediately and seeks adult help?"
+        },
+        {
+          "questionId": "gq13",
+          "question": "Why should you ask permission from a parent before sharing a photograph of your sibling online? 📸🔒",
+          "options": [
+            "Because photos take up too much battery 🔋",
+            "Because private photographs belong to people, and parents help protect family privacy from strangers! 👨‍👩‍👧🛡️✨",
+            "Because the camera might break if you send pictures 📷",
+            "Because photos turn into video games automatically 🎮"
+          ],
+          "correctAnswer": "Because private photographs belong to people, and parents help protect family privacy from strangers! 👨‍👩‍👧🛡️✨",
+          "explanation": "Respecting personal privacy and getting adult approval ensures that photographs remain safe and respectful! 🔒",
+          "hint": "Look for the answer that discusses protecting family privacy with parent guidance."
+        },
+        {
+          "questionId": "gq14",
+          "question": "An unfamiliar player sends you a mean message in an online game lobby. What is the smartest action? 💚🛡️",
+          "options": [
+            "Reply with ten even meaner insults to prove you are tough 💥❌",
+            "Stop typing, do not reply with mean words, and show a trusted adult to help block and report! 🛑👨‍👩‍👧✨",
+            "Give them your home address so they can apologize in person 🏡❌",
+            "Delete your entire computer 💻"
+          ],
+          "correctAnswer": "Stop typing, do not reply with mean words, and show a trusted adult to help block and report! 🛑👨‍👩‍👧✨",
+          "explanation": "Never fight fire with fire! Stop typing, show a trusted adult, and use safety tools like blocking and reporting. 🛡️",
+          "hint": "Which option avoids retaliating and gets help from a trusted adult to block and report?"
+        },
+        {
+          "questionId": "gq15",
+          "question": "What is true about AI tools when you ask them questions or brainstorm stories? 🤖💡",
+          "options": [
+            "AI tools have human hearts and can feel hurt feelings 💔❌",
+            "AI tools are helpful computer programs that can make mistakes, so always verify important facts with adults and books! 📚🔍✨",
+            "AI tools know every single truth in the universe with 100% perfection 🔮",
+            "AI tools replace teachers and parents completely 👨‍🏫"
+          ],
+          "correctAnswer": "AI tools are helpful computer programs that can make mistakes, so always verify important facts with adults and books! 📚🔍✨",
+          "explanation": "AI assistants are creative computer tools without feelings; they can make mistakes and should be fact-checked! 🤖",
+          "hint": "Which choice explains that AI is a tool that can make mistakes and needs fact-checking?"
+        },
+        {
+          "questionId": "gq18",
+          "question": "Why is it wonderful to celebrate different and unusual creative ideas in class art projects? 🎨🌈",
+          "options": [
+            "Because every person has unique imagination, and celebrating diversity makes our world colorful and fun! 🎨🌈✨",
+            "Because art is only good if it looks identical to a photograph 📷❌",
+            "Because computers should draw all pictures exactly the same 🤖",
+            "Because laughing at other people makes them famous 😆"
+          ],
+          "correctAnswer": "Because every person has unique imagination, and celebrating diversity makes our world colorful and fun! 🎨🌈✨",
+          "explanation": "Celebrating unique and diverse creative ideas encourages confidence and fosters a warm creative community! 🎨",
+          "hint": "Which option praises unique imagination and diversity?"
+        }
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "activityId": "act-kindness-ceremony",
+      "title": "The Kindness & Sharing Medal Ceremony 🎖️",
+      "description": "Step right up to Bolt's Grand Kindness Podium! 🎖️✨ Join Bolt the Robot for an extraordinary celebration where everyday digital choices earn prestigious pretend medals: the Polite Words Medal 🗣️, the Fair Sharing Medal 🤝, the Patient Helper Medal ⏳, the Digital Kindness Medal 💖, the Privacy Protector Medal 🔒, and the Trusted Adult Helper Medal 👨‍👩‍👧! Read each real-life scenario, choose the most thoughtful, kind, and safe action, and collect all medals to unlock the Grand Champion Kindness Trophy! 🏆🎉",
+      "instructions": [
+        "Read each scenario carefully with Bolt the Robot 🤖",
+        "Choose the most polite, fair, safe, and empathetic action from the options 💖",
+        "Earn pretend medals for making kind choices and learn why each action makes the world brighter 🎖️",
+        "If you pick a choice that needs improvement, read Bolt's gentle guidance and try again 🌸",
+        "Complete all rounds to earn the Grand Kindness & Sharing Ambassador Trophy! 🏆✨"
+      ],
+      "materials": "Interactive Digital Medal Board, Bolt's Sparkle Audio Engine, Virtual Kindness Badges, and Family Turn-Taking Clock ⏱️🎖️",
+      "duration": "20-25 minutes of scenario problem solving, empathetic decision-making, and medal celebrations! 🏅",
+      "toastMessages": {
+        "tap_prompt": "👇 Tap the 'Share Tablet with Sister' button to earn 50 Kindness Points!",
+        "great_job": "💖 SO SWEET! Sharing toys and tablets makes you the Ultimate AI Hero!",
+        "try_again": "🌸 Say 'Thank you, Alexa!' to hear her happy chime!",
+        "streak_bonus": "🔥 5 IN A ROW! Bolt's circuits are dancing! Kindness Champion Streak UNLOCKED! 🌟💖",
+        "perfect_score": "🏆 GRAND CHAMPION KINDNESS AMBASSADOR! You earned every medal and proved that warmth and respect make the world shine! BEEP BOOP! 🎊🎖️"
+      },
+      "sortingItems": [
+        {
+          "itemId": "med1",
+          "name": "Round 1: The Polite Request 🗣️",
+          "emoji": "🗣️",
+          "category": "polite_words",
+          "categoryLabel": "Polite Words Medal 🗣️",
+          "isCorrect": true,
+          "description": "You want a smart voice assistant in your living room to play an animal sound for your homework project.",
+          "question": "Which request is the most polite and respectful way to ask? 🎤",
+          "options": [
+            "PLAY LION ROAR RIGHT NOW! 💥",
+            "Please play a lion sound. 🦁🌸✨",
+            "Hey machine, make animal noises! 😠",
+            "I demand you roar like a lion! 🛑"
+          ],
+          "correctAnswer": "Please play a lion sound. 🦁🌸✨",
+          "explanation": "Saying 'Please play a lion sound' is polite, clear, and builds wonderful communication habits! 🌸",
+          "hint": "Say 'Thank you, Alexa!' to hear her happy chime!",
+          "positiveFeedback": "💖 SO SWEET! Sharing toys and tablets makes you the Ultimate AI Hero!",
+          "tryAgainFeedback": "🌸 Say 'Thank you, Alexa!' to hear her happy chime!",
+          "boltEncouragement": "BEEP BOOP! Polite Words Medal awarded! Your respectful words make every room feel sunny! 🗣️🎖️"
+        },
+        {
+          "itemId": "med2",
+          "name": "Round 2: Share the Tablet 📱",
+          "emoji": "🤝",
+          "category": "fair_sharing",
+          "categoryLabel": "Fair Sharing Medal 🤝",
+          "isCorrect": true,
+          "description": "You are playing a game on the family tablet, and your younger sister asks if she can play her puzzle game.",
+          "question": "What is the fairest, kindest way to handle this situation? 👧📱",
+          "options": [
+            "Hold the tablet behind your back and pretend you don't hear her 🙈❌",
+            "Agree on a fair turn-taking timer with your parents so you both get equal screen time! ⏳👨‍👩‍👧✨",
+            "Tell her that only big kids are allowed to touch technology 🙅‍♂️",
+            "Play for 3 hours until the tablet battery dies completely 🔋❌"
+          ],
+          "correctAnswer": "Agree on a fair turn-taking timer with your parents so you both get equal screen time! ⏳👨‍👩‍👧✨",
+          "explanation": "Setting a turn-taking timer with parents ensures both siblings get a fair, peaceful turn! 🤝",
+          "hint": "Tap the 'Share Tablet with Sister' button to earn 50 Kindness Points!",
+          "positiveFeedback": "💖 SO SWEET! Sharing toys and tablets makes you the Ultimate AI Hero!",
+          "tryAgainFeedback": "👇 Tap the 'Share Tablet with Sister' button to earn 50 Kindness Points!",
+          "boltEncouragement": "BEEP BOOP! Fair Sharing Medal awarded! Taking turns like a team is true leadership! 🤝🎖️"
+        },
+        {
+          "itemId": "med3",
+          "name": "Round 3: The Waiting Friend ⏳",
+          "emoji": "⏳",
+          "category": "patient_helper",
+          "categoryLabel": "Patient Helper Medal ⏳",
+          "isCorrect": true,
+          "description": "Your friend is taking their 15-minute turn on the gaming console. You have 10 minutes left before your turn starts.",
+          "question": "What can you do while waiting patiently? 🎨🧱",
+          "options": [
+            "Pout, stomp your feet, and complain that time is moving too slow 😫❌",
+            "Draw a colorful comic strip, build with LEGO, or read an exciting book! 🖍️🧱📚✨",
+            "Keep tapping the pause button to ruin your friend's game 🛑",
+            "Stand two inches away and stare unblinkingly at the screen 👀"
+          ],
+          "correctAnswer": "Draw a colorful comic strip, build with LEGO, or read an exciting book! 🖍️🧱📚✨",
+          "explanation": "Engaging in fun off-screen activities makes waiting easy, joyful, and creative! ⏳",
+          "hint": "Which choice chooses creative off-screen fun while waiting?"
+        },
+        {
+          "itemId": "med4",
+          "name": "Round 4: The Thank-You Challenge 🎁",
+          "emoji": "🗣️",
+          "category": "polite_words",
+          "categoryLabel": "Polite Words Medal 🗣️",
+          "isCorrect": true,
+          "description": "The voice assistant finishes playing the lion roar sound you requested.",
+          "question": "What is a wonderful communication habit to practice after receiving help? 🎁🌸",
+          "options": [
+            "Say 'Thank you!' cheerfully to practice polite human manners! 🎁🌸✨",
+            "Yell 'Shut up!' at the speaker 😠❌",
+            "Unplug the speaker from the wall violently 🔌",
+            "Ignore it completely because machines don't matter 🚫"
+          ],
+          "correctAnswer": "Say 'Thank you!' cheerfully to practice polite human manners! 🎁🌸✨",
+          "explanation": "Saying 'Thank you' reinforces habits of gratitude and polite respect in your everyday life! 🎁",
+          "hint": "Say 'Thank you, Alexa!' to hear her happy chime!",
+          "positiveFeedback": "💖 SO SWEET! Sharing toys and tablets makes you the Ultimate AI Hero!",
+          "tryAgainFeedback": "🌸 Say 'Thank you, Alexa!' to hear her happy chime!",
+          "boltEncouragement": "BEEP BOOP! Polite Words Medal double-star! Gratitude is the sweetest sound in the galaxy! 🌟🎖️"
+        },
+        {
+          "itemId": "med5",
+          "name": "Round 5: The Unkind Comment 💚",
+          "emoji": "💖",
+          "category": "digital_kindness",
+          "categoryLabel": "Digital Kindness Medal 💖",
+          "isCorrect": true,
+          "description": "In an online puzzle game, a teammate makes a wrong move that resets the puzzle level.",
+          "question": "What is the kindest, most supportive message you can type? 🎮🌟",
+          "options": [
+            "You are the worst player ever! Leave now! 💥❌",
+            "Good try! Don't worry, we can solve it together on this next try! 🌟🤝✨",
+            "Why are you so silly? 😡",
+            "I am never playing with you again! 🚫"
+          ],
+          "correctAnswer": "Good try! Don't worry, we can solve it together on this next try! 🌟🤝✨",
+          "explanation": "Encouraging words help teammates learn and make gaming a positive, friendly space! 💖",
+          "hint": "Which option provides encouragement and teamwork instead of insults?"
+        },
+        {
+          "itemId": "med6",
+          "name": "Round 6: The Uncomfortable Video 🛑",
+          "emoji": "👨‍👩‍👧",
+          "category": "trusted_adult",
+          "categoryLabel": "Trusted Adult Helper Medal 👨‍👩‍👧",
+          "isCorrect": true,
+          "description": "A recommended video starts showing spooky, frightening monsters that make you feel scared and uncomfortable.",
+          "question": "What should you do right away? 📺🛑",
+          "options": [
+            "Force yourself to watch the whole thing so nobody thinks you are a scaredy-cat 🕷️❌",
+            "Press pause immediately, put the device down, and tell a trusted adult! 🛑👨‍👩‍👧✨",
+            "Turn off the lights to make it even scarier 💡",
+            "Send the link to five classmates as a dare 📩"
+          ],
+          "correctAnswer": "Press pause immediately, put the device down, and tell a trusted adult! 🛑👨‍👩‍👧✨",
+          "explanation": "You never have to finish an uncomfortable video; always pause and tell a trusted adult! 🛑",
+          "hint": "Remember the 4-step protocol: Pause immediately and tell a trusted adult!"
+        },
+        {
+          "itemId": "med7",
+          "name": "Round 7: The Secret Password 🔒",
+          "emoji": "🔒",
+          "category": "privacy_protector",
+          "categoryLabel": "Privacy Protector Medal 🔒",
+          "isCorrect": true,
+          "description": "Someone in your online game claims they are your best friend and demands: 'Give me your password to prove you like me!'",
+          "question": "Is sharing your password necessary to prove friendship? 🔒🛑",
+          "options": [
+            "Yes, true friends must share every secret password 🔑❌",
+            "No! Passwords are secret family keys; refuse politely and tell a trusted adult! 🔒👨‍👩‍👧✨",
+            "Only share it if they promise not to change your avatar 🎮",
+            "Give them half of your password as a compromise 🧩"
+          ],
+          "correctAnswer": "No! Passwords are secret family keys; refuse politely and tell a trusted adult! 🔒👨‍👩‍👧✨",
+          "explanation": "True kindness respects boundaries; passwords must stay strictly private, even between best friends! 🔒",
+          "hint": "Never share house keys or secret passwords with anyone!"
+        },
+        {
+          "itemId": "med8",
+          "name": "Round 8: The Photograph Question 📸",
+          "emoji": "🔒",
+          "category": "privacy_protector",
+          "categoryLabel": "Privacy Protector Medal 🔒",
+          "isCorrect": true,
+          "description": "You took a funny photo of your little brother covered in pasta sauce and want to post it to a public website.",
+          "question": "What must happen BEFORE any photograph of someone else is shared online? 📸👨‍👩‍👧",
+          "options": [
+            "Post it right away so everyone can giggle at him 🍝❌",
+            "Ask permission from the person and get full approval from a parent or trusted adult! 📸👨‍👩‍👧✨",
+            "Add funny cat ears to the photo and post it secretly 🐱",
+            "Only post it at night when he is asleep 🌙"
+          ],
+          "correctAnswer": "Ask permission from the person and get full approval from a parent or trusted adult! 📸👨‍👩‍👧✨",
+          "explanation": "Always respect personal privacy by asking permission and getting parent approval before sharing photos! 📸",
+          "hint": "Which choice insists on asking permission and getting parent approval?"
+        },
+        {
+          "itemId": "med9",
+          "name": "Round 9: The School Help Challenge 📚",
+          "emoji": "🤝",
+          "category": "fair_sharing",
+          "categoryLabel": "Fair Sharing Medal 🤝",
+          "isCorrect": true,
+          "description": "A classmate at your table is struggling to understand how a coding block works in the science lab.",
+          "question": "How can you be a kind and patient helper? 💚💻",
+          "options": [
+            "Laugh and say: 'That is so easy, how can you not know that?' 😆❌",
+            "Ask gently: 'Would you like me to show you how this part works?' and explain kindly! 🤝✨",
+            "Grab their mouse and do the entire project for them without explaining 🖱️",
+            "Ignore them and look at the ceiling 🙄"
+          ],
+          "correctAnswer": "Ask gently: 'Would you like me to show you how this part works?' and explain kindly! 🤝✨",
+          "explanation": "Offering gentle, patient guidance helps classmates learn with confidence! 🤝",
+          "hint": "Which answer offers kind assistance without teasing?"
+        },
+        {
+          "itemId": "med10",
+          "name": "Round 10: Respecting Different Art 🎨",
+          "emoji": "💖",
+          "category": "digital_kindness",
+          "categoryLabel": "Digital Kindness Medal 💖",
+          "isCorrect": true,
+          "description": "A classmate creates an unusual AI drawing of a purple flying fish with polka dots and roller skates.",
+          "question": "What is the most respectful response to their creative work? 🎨🌟",
+          "options": [
+            "Tell them the drawing looks ugly and weird 🐟❌",
+            "Say: 'That is such an imaginative and interesting idea! I love the colors!' 🎨🌟✨",
+            "Tell the teacher that fish cannot have roller skates 🛼",
+            "Draw a big red X across their screen ❌"
+          ],
+          "correctAnswer": "Say: 'That is such an imaginative and interesting idea! I love the colors!' 🎨🌟✨",
+          "explanation": "Celebrating unique creativity encourages everyone to express themselves freely and joyfully! 🎨",
+          "hint": "Which option compliments their imagination and colors?"
+        },
+        {
+          "itemId": "med11",
+          "name": "Round 11: The Borrowing Manners Test 📱",
+          "emoji": "👨‍👩‍👧",
+          "category": "trusted_adult",
+          "categoryLabel": "Trusted Adult Helper Medal 👨‍👩‍👧",
+          "isCorrect": true,
+          "description": "Your father leaves his smartphone on the coffee table. You want to check what time your music lesson is.",
+          "question": "What is the proper, respectful way to borrow his device? 📱🙋",
+          "options": [
+            "Swipe it open quietly and look through his messages while he is busy 🤫❌",
+            "Ask: 'Papa, may I please borrow your phone to check my music lesson time?' 🙋‍♀️📲✨",
+            "Hide the phone in your backpack so it is yours 🎒",
+            "Download three new racing games onto his phone 🏎️"
+          ],
+          "correctAnswer": "Ask: 'Papa, may I please borrow your phone to check my music lesson time?' 🙋‍♀️📲✨",
+          "explanation": "Always ask permission before touching someone else's device, and only open the approved app! 📱",
+          "hint": "Which choice asks permission politely?"
+        },
+        {
+          "itemId": "med12",
+          "name": "Round 12: Stopping Mean Messages 💚",
+          "emoji": "💖",
+          "category": "digital_kindness",
+          "categoryLabel": "Digital Kindness Medal 💖",
+          "isCorrect": true,
+          "description": "A stranger in a multiplayer lobby sends you a rude comment saying you are slow and silly.",
+          "question": "What is the best way to handle this unkind message? 🛡️🫂",
+          "options": [
+            "Send an even meaner comment back to prove you are strong 🔥❌",
+            "Do not reply with mean words; show a trusted adult to help block and report the user! 🛑👨‍👩‍👧✨",
+            "Give them your password so they stop being mean 🔑",
+            "Cry alone in your room and keep it a secret 😢"
+          ],
+          "correctAnswer": "Do not reply with mean words; show a trusted adult to help block and report the user! 🛑👨‍👩‍👧✨",
+          "explanation": "Never retaliate with mean words; get adult help to block and report the user safely! 🛡️",
+          "hint": "Do not fight back; show an adult and block/report!"
+        },
+        {
+          "itemId": "med13",
+          "name": "Round 13: Sincere Apology Station 🌸",
+          "emoji": "🗣️",
+          "category": "polite_words",
+          "categoryLabel": "Polite Words Medal 🗣️",
+          "isCorrect": true,
+          "description": "You got so excited telling a story about a dinosaur movie that you talked right over your friend.",
+          "question": "How do you make things right? 🌸🫂",
+          "options": [
+            "Shout louder: 'My movie was better than your story!' 🦖❌",
+            "Say: 'I am so sorry for interrupting you! Please continue, I am listening.' 🌸🫂✨",
+            "Run away and pretend you don't know them 🏃‍♂️",
+            "Blame your robot toy for making you talk 🤖"
+          ],
+          "correctAnswer": "Say: 'I am so sorry for interrupting you! Please continue, I am listening.' 🌸🫂✨",
+          "explanation": "A sincere apology and inviting your friend to continue heals hurt feelings immediately! 🌸",
+          "hint": "Which answer apologizes sincerely and invites the friend to finish?"
+        },
+        {
+          "itemId": "med14",
+          "name": "Round 14: Caring for Hardware 📱",
+          "emoji": "⏳",
+          "category": "patient_helper",
+          "categoryLabel": "Patient Helper Medal ⏳",
+          "isCorrect": true,
+          "description": "You just finished your 15-minute turn on the family tablet. It's time to pass it to your brother.",
+          "question": "How should you hand over the tablet? 📱🤲",
+          "options": [
+            "Drop it onto the hard wooden floor near his feet 💥❌",
+            "Hold it gently with two hands, place it on the table safely, or hand it to him carefully! 🤲🛡️✨",
+            "Throw it like a frisbee onto the sofa 🥏",
+            "Spill milk on the screen to clean it 🥛"
+          ],
+          "correctAnswer": "Hold it gently with two hands, place it on the table safely, or hand it to him carefully! 🤲🛡️✨",
+          "explanation": "Caring for shared tech with two gentle hands keeps glass screens safe for everyone! 📱",
+          "hint": "Which choice handles the tablet with two gentle hands?"
+        },
+        {
+          "itemId": "med15",
+          "name": "Round 15: Fact-Checking AI Answers 🤖",
+          "emoji": "👨‍👩‍👧",
+          "category": "trusted_adult",
+          "categoryLabel": "Trusted Adult Helper Medal 👨‍👩‍👧",
+          "isCorrect": true,
+          "description": "An AI chatbot helper tells you that elephants have eight legs and fly in the clouds.",
+          "question": "What should you do with this confusing AI statement? 🐘🔍",
+          "options": [
+            "Believe it completely and write it on your science test 📝❌",
+            "Pause, think critically, and check a trusted animal book or ask a teacher! 📚👨‍🏫✨",
+            "Argue with the AI until it cries 😢",
+            "Tell everyone at school that flying elephants are real 🐘"
+          ],
+          "correctAnswer": "Pause, think critically, and check a trusted animal book or ask a teacher! 📚👨‍🏫✨",
+          "explanation": "AI can make silly mistakes! Always verify surprising facts with books, teachers, and parents! 📚",
+          "hint": "Which option verifies the facts with books and teachers?"
+        },
+        {
+          "itemId": "med16",
+          "name": "Round 16: Safe AI Prompts 🔒",
+          "emoji": "🔒",
+          "category": "privacy_protector",
+          "categoryLabel": "Privacy Protector Medal 🔒",
+          "isCorrect": true,
+          "description": "You want an AI drawing tool to draw an amazing castle for your creative writing story.",
+          "question": "Which prompt is safe and does NOT reveal private information? 🏰✨",
+          "options": [
+            "Draw the castle at 45 Elm Street where I live with my parents 🏡❌",
+            "Draw a magical crystal castle on a floating island with rainbow waterfalls! 🏰🌈✨",
+            "Draw my school classroom at St. Jude's with my teacher's phone number 📞❌",
+            "Draw my bedroom window and my house keys 🔑❌"
+          ],
+          "correctAnswer": "Draw a magical crystal castle on a floating island with rainbow waterfalls! 🏰🌈✨",
+          "explanation": "Imaginative prompts describe creative fantasy elements without sharing private real-world data! 🏰",
+          "hint": "Which prompt describes fantasy elements without any real addresses or phone numbers?"
+        },
+        {
+          "itemId": "med17",
+          "name": "Round 17: The Mindful Story Prompt 🤖✨",
+          "emoji": "🤖",
+          "category": "digital_kindness",
+          "categoryLabel": "Digital Kindness Medal 💖",
+          "isCorrect": true,
+          "description": "You are using an educational AI story assistant to write a story about forest animals. How should you ask for the story?",
+          "question": "Which prompt uses clear, polite language without revealing private personal details? 🐾📖",
+          "options": [
+            "Hey robot, write me a story about my street at 14 Hill Lane with my home address 🏡❌",
+            "Please write an exciting tale about a detective fox who solves mysteries in the forest! 🦊🌲✨",
+            "Write a story now or I will turn you off forever 😠",
+            "Tell me my teacher's private phone number in a story 📞❌"
+          ],
+          "correctAnswer": "Please write an exciting tale about a detective fox who solves mysteries in the forest! 🦊🌲✨",
+          "explanation": "Using polite phrasing and creative fictional details makes AI story-writing fun, respectful, and completely safe! 🦊",
+          "hint": "Which prompt describes fictional animals without any real-world private data?",
+          "positiveFeedback": "💖 SO SWEET! Sharing toys and tablets makes you the Ultimate AI Hero!",
+          "tryAgainFeedback": "🌸 Say 'Thank you, Alexa!' to hear her happy chime!",
+          "boltEncouragement": "BEEP BOOP! Digital Kindness Medal earned! Creative imagination at its absolute finest! 🐾🎖️"
+        },
+        {
+          "itemId": "med18",
+          "name": "Round 18: The Grand Kindness Ceremony Pledge 🎖️💖",
+          "emoji": "👨‍👩‍👧",
+          "category": "trusted_adult",
+          "categoryLabel": "Trusted Adult Helper Medal 👨‍👩‍👧",
+          "isCorrect": true,
+          "description": "Bolt invites you to stand on the highest podium step and make the Official Junior Digital Kindness Pledge!",
+          "question": "What is the heart of the Junior Digital Kindness Pledge? 🌟🤝",
+          "options": [
+            "Only be kind when adults are watching you 🙈❌",
+            "Use polite words, share devices fairly, respect everyone's privacy, never share passwords, and ask trusted adults for help! 💖🤝🔒👨‍👩‍👧✨",
+            "Share every password with anyone who asks nicely 🔑❌",
+            "Spend 24 hours on screens without sleeping or taking breaks ⏳❌"
+          ],
+          "correctAnswer": "Use polite words, share devices fairly, respect everyone's privacy, never share passwords, and ask trusted adults for help! 💖🤝🔒👨‍👩‍👧✨",
+          "explanation": "The Digital Kindness Pledge brings together politeness, sharing, privacy boundaries, and adult trust! 🌟",
+          "hint": "Tap the 'Share Tablet with Sister' button to earn 50 Kindness Points!",
+          "positiveFeedback": "💖 SO SWEET! Sharing toys and tablets makes you the Ultimate AI Hero!",
+          "tryAgainFeedback": "👇 Tap the 'Share Tablet with Sister' button to earn 50 Kindness Points!",
+          "boltEncouragement": "BEEP BOOP! Grand Kindness & Sharing Medal unlocked! You are officially an Ultimate AI Hero! 🏆🎉⚡"
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "quizId": "quiz-ch6-l2",
+    "title": "Class 3 Master Kindness & Digital Citizenship Quiz 💖🏆",
+    "description": "Demonstrate your mastery of polite words, fair turn-taking, digital empathy, photo privacy, and safe boundaries with Bolt the Robot!",
+    "passMark": 80,
+    "questions": [
+      {
+        "questionId": "q1",
+        "question": "What is the magic word you should use when asking someone for help or making a request? 🌸🗣️",
+        "type": "multiple_choice",
+        "options": [
+          "NOW! 💥",
+          "Please 🌸✨",
+          "Hurry up! ⏱️",
+          "Whatever 🙄"
+        ],
+        "correctAnswer": "Please 🌸✨",
+        "explanation": "The word 'Please' turns demands into polite, respectful requests that people love to help with! 🌸",
+        "emoji": "🌸",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Exactly right! 'Please' is a golden key that opens hearts and doors! 🌸⚡",
+          "incorrect": "🌸 Remember, 'Please' is the magic polite word for requests!"
+        }
+      },
+      {
+        "questionId": "q2",
+        "question": "Why should we practice saying 'please' and 'thank you' when talking to voice assistants? 🎤🤖",
+        "type": "multiple_choice",
+        "options": [
+          "Because the machine will get feelings hurt 😢",
+          "Because practicing polite words trains our brains to always be respectful to real people! 🧠💖✨",
+          "Because voice assistants stop working if you don't say please 🛑",
+          "Because robots give you candy when you say thank you 🍬"
+        ],
+        "correctAnswer": "Because practicing polite words trains our brains to always be respectful to real people! 🧠💖✨",
+        "explanation": "Manners are like muscles—practicing polite words with AI helpers strengthens your human kindness! 💖",
+        "emoji": "🎤",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Spot on! Communication habits build our human character! 🌟⚡",
+          "incorrect": "🤖 Voice assistants don't have feelings, but practicing polite words builds our own good habits!"
+        }
+      },
+      {
+        "questionId": "q3",
+        "question": "What is the fairest way for siblings to share one tablet without fighting? ⏳📱",
+        "type": "multiple_choice",
+        "options": [
+          "Whoever grabs it first keeps it forever 🏃‍♂️❌",
+          "Ask parents to help set a clear turn-taking timer so both children get equal time! ⏳👨‍👩‍👧✨",
+          "Hide it in the laundry basket 🧺",
+          "Wrestle on the living room rug 🤼"
+        ],
+        "correctAnswer": "Ask parents to help set a clear turn-taking timer so both children get equal time! ⏳👨‍👩‍👧✨",
+        "explanation": "Turn-taking timers provide clear, fair boundaries so everyone enjoys their screen time peacefully! ⏳",
+        "emoji": "⏳",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Brilliant! Timers eliminate arguments and make sharing crystal clear! ⏰⚡",
+          "incorrect": "🤝 Using a parent-approved turn-taking timer is the fairest solution!"
+        }
+      },
+      {
+        "questionId": "q4",
+        "question": "While waiting for your sibling to finish their turn on the tablet, what is a great activity? 🎨📚",
+        "type": "multiple_choice",
+        "options": [
+          "Complain every 10 seconds 😫",
+          "Draw, build with LEGO, play outside, or read an adventure story! 🖍️🧱⚽📚✨",
+          "Try to pull the power cord out 🔌",
+          "Stare angril at your sister's forehead 😠"
+        ],
+        "correctAnswer": "Draw, build with LEGO, play outside, or read an adventure story! 🖍️🧱⚽📚✨",
+        "explanation": "Creative off-screen activities make waiting enjoyable and exercise different parts of your brain! 🎨",
+        "emoji": "🎨",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Masterful! Real champions know that off-screen play is packed with adventure! 🌟⚡",
+          "incorrect": "🎨 Creative activities like drawing, LEGO, and reading make waiting time fun!"
+        }
+      },
+      {
+        "questionId": "q5",
+        "question": "A friend says: 'If you really care about me, share your secret password with me!' What should you do? 🔒🛑",
+        "type": "multiple_choice",
+        "options": [
+          "Give them the password to prove you are nice 🔑❌",
+          "Politely refuse, explain that passwords are secret family keys, and tell an adult if pressured! 🔒👨‍👩‍👧✨",
+          "Post your password in the group chat 📱",
+          "Change your password to their name 👤"
+        ],
+        "correctAnswer": "Politely refuse, explain that passwords are secret family keys, and tell an adult if pressured! 🔒👨‍👩‍👧✨",
+        "explanation": "True kindness respects boundaries; passwords are secret family security keys that must never be shared! 🔒",
+        "emoji": "🔒",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Fortress level safety! Passwords are never shared to prove friendship! 🔐⚡",
+          "incorrect": "🛑 Passwords are strictly private family keys; never share them with anyone!"
+        }
+      },
+      {
+        "questionId": "q6",
+        "question": "What does it mean to be a good digital citizen? 🌍💻",
+        "type": "multiple_choice",
+        "options": [
+          "Playing games for 20 hours a day without sleeping 🎮❌",
+          "Using technology, websites, and games with kindness, respect, honesty, and safety! 🌍💖🛡️✨",
+          "Only using devices made out of gold 🥇",
+          "Knowing how to turn computers off and on quickly 🔌"
+        ],
+        "correctAnswer": "Using technology, websites, and games with kindness, respect, honesty, and safety! 🌍💖🛡️✨",
+        "explanation": "A digital citizen uses tech thoughtfully, respects others, protects privacy, and stays safe! 🌍",
+        "emoji": "🌍",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Cosmic truth! A digital citizen makes the whole online world better! 🌍⚡",
+          "incorrect": "💻 A digital citizen uses digital tools respectfully, kindly, and safely!"
+        }
+      },
+      {
+        "questionId": "q7",
+        "question": "In an online game, someone makes a mistake and scores in the wrong goal. What should you say? ⚽🤝",
+        "type": "multiple_choice",
+        "options": [
+          "You are awful at this game! 💥❌",
+          "Good try! Don't worry about it, let's play together and win the next point! 🌟🤝✨",
+          "I am telling everyone at school you are bad 📢",
+          "Stop playing forever 🛑"
+        ],
+        "correctAnswer": "Good try! Don't worry about it, let's play together and win the next point! 🌟🤝✨",
+        "explanation": "Encouraging your teammates when mistakes happen builds true friendship and sportsmanship! 🌟",
+        "emoji": "⚽",
+        "boltReaction": {
+          "correct": "BEEP BOOP! That is pure championship sportsmanship! Encouragement always wins! 🏆⚡",
+          "incorrect": "💖 Always offer encouraging words like 'Good try, let's do this together!'"
+        }
+      },
+      {
+        "questionId": "q8",
+        "question": "You start watching a video and it suddenly shows a scary, uncomfortable scene that upsets you. What should you do? 🛑📺",
+        "type": "multiple_choice",
+        "options": [
+          "Watch until the end because quitting is rude 🕷️❌",
+          "Press PAUSE immediately, put the device down, and tell a trusted adult! 🛑👨‍👩‍👧✨",
+          "Hide the tablet in the freezer 🧊",
+          "Close your eyes but keep listening 🙈"
+        ],
+        "correctAnswer": "Press PAUSE immediately, put the device down, and tell a trusted adult! 🛑👨‍👩‍👧✨",
+        "explanation": "You never have to finish an uncomfortable video; always pause and seek adult guidance! 🛑",
+        "emoji": "🛑",
+        "boltReaction": {
+          "correct": "BEEP BOOP! You have the power to press pause! You are never in trouble for reporting bad videos! 🛡️⚡",
+          "incorrect": "🛑 Always pause immediately and tell a trusted adult when content feels uncomfortable!"
+        }
+      },
+      {
+        "questionId": "q9",
+        "question": "Before you post or share a photo of your friend online, what two things MUST you do? 📸🔒",
+        "type": "multiple_choice",
+        "options": [
+          "Add funny stickers and post it instantly 🎨❌",
+          "Ask permission from your friend and get approval from a parent or trusted adult! 📸👨‍👩‍👧✨",
+          "Make sure the photo is taken in the dark 🌙",
+          "Nothing, any photo is free to share 🚫"
+        ],
+        "correctAnswer": "Ask permission from your friend and get approval from a parent or trusted adult! 📸👨‍👩‍👧✨",
+        "explanation": "Respecting photo privacy means always getting permission from the person and approval from parents! 📸",
+        "emoji": "📸",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Privacy champion! Personal photos require personal permission and parent approval! 🔐⚡",
+          "incorrect": "📸 Always ask permission from the person and get approval from a trusted adult!"
+        }
+      },
+      {
+        "questionId": "q10",
+        "question": "If an unfamiliar player sends you a mean message online, what should you NEVER do? 🛑🔥",
+        "type": "multiple_choice",
+        "options": [
+          "Never reply with mean or hurtful words back! 🛑❌✨",
+          "Never tell your parents 🤐",
+          "Never turn off the game 🎮",
+          "Never drink water 💧"
+        ],
+        "correctAnswer": "Never reply with mean or hurtful words back! 🛑❌✨",
+        "explanation": "Never fight mean words with mean words; stop typing, tell an adult, and block/report! 🛑",
+        "emoji": "🛑",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Exactly right! Fighting mean with mean only creates bigger hurt! Rise above! 🌟⚡",
+          "incorrect": "🛑 Never reply with mean words; show an adult and let them help you block and report!"
+        }
+      },
+      {
+        "questionId": "q11",
+        "question": "What is true about AI tools like writing and drawing assistants? 🤖📚",
+        "type": "multiple_choice",
+        "options": [
+          "They are alive and have hearts like puppies 🐶❌",
+          "They are smart computer tools that do NOT have feelings and can make mistakes! 🤖📚✨",
+          "They know everything that will happen in the year 3000 🔮",
+          "They should be given your secret passwords 🔑"
+        ],
+        "correctAnswer": "They are smart computer tools that do NOT have feelings and can make mistakes! 🤖📚✨",
+        "explanation": "AI helpers are clever tools, but they lack human consciousness and can make mistakes! 🤖",
+        "emoji": "🤖",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Scientific clarity! AI tools are helpful instruments, not humans! 🛠️⚡",
+          "incorrect": "🤖 AI tools are computer programs without feelings, and they can make mistakes!"
+        }
+      },
+      {
+        "questionId": "q12",
+        "question": "You want to borrow your mother's phone to take a photo of your drawing. What is the kindest step? 📱🙋",
+        "type": "multiple_choice",
+        "options": [
+          "Take it without asking while she is cooking 🍳❌",
+          "Ask permission politely and only use the camera app as agreed! 🙋‍♀️📲✨",
+          "Download three games while she isn't looking 🎮",
+          "Change her ringtone to a loud horn 📯"
+        ],
+        "correctAnswer": "Ask permission politely and only use the camera app as agreed! 🙋‍♀️📲✨",
+        "explanation": "Asking permission and sticking to the approved app shows maturity and respect for property! 📱",
+        "emoji": "📱",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Respectful honor! Asking permission builds deep trust with parents! 💖⚡",
+          "incorrect": "📱 Always ask permission before borrowing devices, and only open the approved app!"
+        }
+      },
+      {
+        "questionId": "q13",
+        "question": "When you accidentally bump someone or interrupt their conversation, what should you say? 🌸🩹",
+        "type": "multiple_choice",
+        "options": [
+          "It's your fault for standing there! 💥❌",
+          "“Sorry, I made a mistake. Please continue!” 🌸🩹✨",
+          "Laugh and point at them 😆",
+          "Pretend you are invisible 👻"
+        ],
+        "correctAnswer": "“Sorry, I made a mistake. Please continue!” 🌸🩹✨",
+        "explanation": "A sincere apology repairs small mistakes and shows that you respect other people's feelings! 🌸",
+        "emoji": "🌸",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Emotional wisdom! Sincere apologies heal accidents instantly! 🌸⚡",
+          "incorrect": "🩹 Saying 'Sorry, I made a mistake' is the mature, kind way to handle accidents!"
+        }
+      },
+      {
+        "questionId": "q14",
+        "question": "What is Bolt's exact famous dialogue about kind words? 🤖⚡",
+        "type": "multiple_choice",
+        "options": [
+          "“BEEP BOOP! Robots only like metal bolts and electric oil!” 🔩",
+          "“BEEP BOOP! Kind words make everyone happy—even your robot friend!” 🤖💖✨",
+          "“BEEP BOOP! Only humans need manners, robots don't care!” 🚫",
+          "“BEEP BOOP! Be quiet and do your homework!” 🤫"
+        ],
+        "correctAnswer": "“BEEP BOOP! Kind words make everyone happy—even your robot friend!” 🤖💖✨",
+        "explanation": "Bolt loves kind words because they make everyone happy, including your robot mentor! 🤖💖",
+        "emoji": "🤖",
+        "boltReaction": {
+          "correct": "BEEP BOOP! You remembered my favorite motto! My circuits are glowing with pride! 🤖💖⚡",
+          "incorrect": "🤖 Bolt's motto is: 'BEEP BOOP! Kind words make everyone happy—even your robot friend!'"
+        }
+      },
+      {
+        "questionId": "q15",
+        "question": "If you ever feel scared, confused, or unsure about something online, what is the best choice? 👨‍👩‍👧💚",
+        "type": "multiple_choice",
+        "options": [
+          "Keep it a secret and worry alone 😢❌",
+          "Always ask Mommy, Papa, or your teacher for help—you are never in trouble! 👨‍👩‍👧💚✨",
+          "Ask an online stranger in a chat room 👤",
+          "Throw the tablet into the garden pond 🌊"
+        ],
+        "correctAnswer": "Always ask Mommy, Papa, or your teacher for help—you are never in trouble! 👨‍👩‍👧💚✨",
+        "explanation": "Trusted adults are your greatest safety shield; asking for help is always a smart, brave choice! 👨‍👩‍👧",
+        "emoji": "👨‍👩‍👧",
+        "boltReaction": {
+          "correct": "BEEP BOOP! 100% PERFECT! You are officially an Ultimate Kindness & Digital Safety Champion! 🏆🎉⚡",
+          "incorrect": "💚 Always ask a trusted adult—you are never in trouble for asking for help!"
+        }
+      }
+    ]
+  },
+  "discussion": {
+    "questions": [
+      "Why do you think using polite words like 'please' and 'thank you' makes people feel happy and willing to help? 🗣️💖",
+      "Have you ever had to wait for a sibling or friend to finish their turn on a device? What fun off-screen activity did you do while waiting? ⏳🎨",
+      "Why is giving away a password NOT an act of kindness, even if someone claims they are your best friend? 🔒🛑",
+      "How would you feel if a classmate made a mistake in an online game and everyone cheered them on with kind words instead of yelling? 🎮🤝",
+      "Why is it so important to know that you are NEVER in trouble when you report a scary or uncomfortable video to your parents? 📺👨‍👩‍👧",
+      "What are three ways you can show kindness as a digital citizen whenever you use technology at home or school? 🌍✨"
+    ],
+    "homeExplorationTasks": [
+      {
+        "taskId": "task1",
+        "title": "The 15-Minute Turn-Taking Timer Challenge ⏳📱",
+        "description": "Next time you and a sibling or friend want to use a shared device, practice setting a 15-minute kitchen timer together. When the timer chimes, hand the device over with a smile and a high-five, and do a fun drawing or building activity while you wait!"
+      },
+      {
+        "taskId": "task2",
+        "title": "The Voice Assistant Manners Test 🎤🌸",
+        "description": "With a parent's permission, practice asking a family smart speaker or voice assistant three questions using 'Please' (e.g., 'Please tell me a science joke') and follow up each answer with 'Thank you!' Notice how polite speaking becomes second nature!"
+      },
+      {
+        "taskId": "task3",
+        "title": "Create a Family Kindness Jar 🏺💖",
+        "description": "Decorate a small jar with ribbons or stickers. Whenever someone in the family shares a device peacefully, uses polite words, or helps someone, write it on a little slip of paper and drop it in the jar. Read the slips together on Sunday evening!"
+      },
+      {
+        "taskId": "task4",
+        "title": "The Drawing Praise Exchange 🎨🤝",
+        "description": "Draw a funny or imaginative creature with crayons or a child-safe digital tool. Show it to a family member, and have them share two specific kind things they love about your creation. Then switch and praise a drawing they made!"
+      },
+      {
+        "taskId": "task5",
+        "title": "Design Your Kindness Shield Poster 🛡️✨",
+        "description": "On a sheet of paper, draw a big golden shield. Inside, write the 4 magic phrases: 'Please', 'Thank you', 'May I have a turn?', and 'Never share passwords!' Hang it near your family computer or study desk as a reminder for everyone!"
+      }
+    ]
+  },
+  "summary": {
+    "recap": "BEEP BOOP! What a magnificent, heartwarming, and inspiring adventure in kindness! 🌟🤖💖⚡\nToday, you stepped into Bolt's Kindness World and proved that technology shines brightest when it is guided by warm hearts, polite words, and thoughtful boundaries! 🌸🤝\nYou discovered that polite words like 'Please' and 'Thank you' build strong human communication habits even when chatting with voice assistants 🎤; you mastered fair turn-taking routines with timers and creative off-screen hobbies while waiting ⏳; you learned that TRUE KINDNESS NEVER REQUIRES GIVING AWAY PASSWORDS OR PRIVATE KEYS 🔒; and you discovered how to be an exemplary digital citizen who uplifts teammates, respects diverse creativity, presses pause on scary videos, and asks trusted adults for guidance! 🌍✨\n\nRemember Bolt's timeless truth:\n“BEEP BOOP! Kind words make everyone happy—even your robot friend!” 🤖💖⚡\n\n“BEEP BOOP! AMAZING WORK, Kindness Champion! 💖 You used kind words, shared fairly, and made thoughtful choices online. Keep spreading kindness while keeping your secrets safe! 🤖⚡”",
+    "keyTakeaways": [
+      "1. Use kind words such as “please” and “thank you.” 💖",
+      "2. Take turns when sharing tablets, toys, and other approved activities. 🤝",
+      "3. Follow family rules when using devices.",
+      "4. Respect other people’s ideas and creative work. 🎨",
+      "5. Be kind when someone makes a mistake.",
+      "6. Never share passwords or private information to prove friendship. 🔒",
+      "7. Stop watching content that makes you uncomfortable and tell a trusted adult. 🛑",
+      "8. Ask permission before sharing another person’s photograph.",
+      "9. Remember that AI tools can make mistakes and do not have human feelings. 🤖",
+      "10. Ask a trusted adult whenever an online situation feels confusing or unsafe. 👨‍👩‍👧"
+    ],
+    "closingToast": "💖 BEEP BOOP! Wear your Kindness & Sharing Medal with pride, Junior AI Hero! 🎖️⚡",
+    "nextLesson": "🎉 CONGRATULATIONS! You have completed Chapter 6 of Junior AI & Playful Logic! You are an official Certified Junior AI Explorer with a brilliant mind, safe habits, and a kind heart! 🌟🤖"
+  }
+}
