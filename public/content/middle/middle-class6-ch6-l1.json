@@ -1,0 +1,1219 @@
+{
+  "lessonId": "l1",
+  "title": "Protect Your Data",
+  "lessonTitle": "Protect Your Data",
+  "level": "middle",
+  "class": "class6",
+  "classId": "class6",
+  "className": "Class 6 (Middle School)",
+  "ageGroup": "Age 11-12",
+  "chapter": "ch6",
+  "chapterId": "ch6",
+  "chapterTitle": "Responsible AI • CARE",
+  "chapterCanonicalKey": "middle-class6-ch6",
+  "lessonNumber": 1,
+  "monthNumber": 6,
+  "mascot": {
+    "name": "Algo",
+    "role": "The Intelligent Guide",
+    "avatar": "🧠",
+    "greeting": "Welcome to the Digital Defense Headquarters! Every time you download a game, take a photo, or browse the web, you leave behind digital footprints. Today, we put on our detective hats to protect your private information, spot suspicious app permissions, and build unbreakable digital fortresses around your online life!"
+  },
+  "metadata": {
+    "totalWordCount": 12000,
+    "readingTimeMinutes": 45,
+    "difficulty": "Beginner-Friendly",
+    "targetAge": "11-12 Years",
+    "curriculumAlignment": "CBSE / ICSE / NEP 2020 Cyber Safety, AI Ethics & Digital Citizenship Framework",
+    "prerequisites": "Class 6 Chapter 1 to 5 foundational concepts",
+    "learningObjectives": [
+      "Understand what personal data is and how digital footprints are created on smartphones and computers.",
+      "Conduct a mobile app permissions audit to identify suspicious access requests (e.g., flashlight apps asking for contacts).",
+      "Recognize the hidden business models of 'free' apps and how personal data is monetized through advertising networks.",
+      "Create unbreakable passphrases using multi-word memory techniques instead of weak, predictable passwords.",
+      "Master Two-Factor Authentication (2FA) as an essential second layer of account defense.",
+      "Practice safe digital hygiene on home Wi-Fi networks and recognize phishing traps and deceptive links."
+    ]
+  },
+  "introduction": {
+    "hookQuestion": {
+      "question": "If a simple flashlight app on your smartphone asks for permission to read all your private phone contacts and track your live GPS location, what should you do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "DENY the permission immediately! A flashlight only needs to control the camera LED bulb; it has zero need for your phonebook or location",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Grant permission because all apps need your phonebook to make the screen shine brighter",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Give your home address and school name to the flashlight app developer",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Uninstall your phone's battery and bury it in the school garden",
+          "correct": false
+        }
+      ],
+      "correctOptionIndex": 0,
+      "mascotTip": "Algo says: Red alert! You nailed it! Why would a light bulb need to know your best friend's phone number? When an app asks for permissions it doesn't need to do its job, that is a massive red flag!"
+    },
+    "openingStory": {
+      "title": "The Mystery of the Noisy Flashlight in Bengaluru",
+      "wordCount": 535,
+      "content": "Twelve-year-old Rohan loved tinkering with his father's old Android smartphone, which his parents had recently passed down to him for school projects and coding practice. One Friday evening, the power went out across their apartment complex in Whitefield, Bengaluru. Darkness swallowed the room.\n\n'Rohan, pass me a torch!' his mother called out from the kitchen. Rohan grabbed his phone, hopped onto the app store, and downloaded the top-rated free utility: 'Super-Ultra Neon Flashlight Pro'.\n\nWhen he tapped 'Open', the screen flashed bright white, illuminating the living room. But then, three popup dialog boxes popped up in rapid succession:\n1. 'Allow Super Flashlight to access your Contacts and Call Logs?'\n2. 'Allow Super Flashlight to access your Precise GPS Location at all times?'\n3. 'Allow Super Flashlight to record Audio from your Microphone?'\n\nRohan's finger hovered over the blue 'Allow All' button. Everyone just clicks 'Allow', right? But then Rohan paused. He remembered a simple question his computer science teacher had asked earlier that week: 'What physical hardware does a flashlight actually use?'\n\nA flashlight just turns on the tiny white LED light bulb beside the camera lens on the back of the phone! Why would a light bulb need to read the phone numbers of his grandparents, teachers, and classmates? Why did it need to track whether he was sitting in his bedroom or visiting his aunt in Mysuru? And why on earth did a light bulb want to listen to his living room conversations through the microphone?\n\nRohan tapped 'DENY' on all three requests. Miraculously, the flashlight still worked perfectly! The white LED bulb shone as bright as ever.\n\nRohan called his older sister Meera, who was studying cybersecurity in college. Meera smiled proudly. 'Rohan, you just avoided a data trap! That app was created by a shady advertising broker. They give away the flashlight for free, but in the background, they harvest millions of phone contacts and location coordinates to sell to advertising networks!'\n\nRohan immediately opened his phone settings and checked his other apps. To his shock, an offline calculator app was tracking his location, and a free puzzle game had access to his microphone! For the next hour, Rohan and Meera conducted a full permissions cleanup.\n\n'My phone is my personal house,' Rohan declared, locking his screen. 'And nobody enters my house without showing a very good reason!'",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Smartphone app permissions modal showing flashlight app requesting suspicious contacts access]",
+      "algoNarration": "Rohan discovered the golden rule of cybersecurity: Your personal data is precious treasure. If you don't lock your digital doors, greedy data brokers will walk right in and take it!"
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "section1",
+      "sectionNumber": 1,
+      "title": "Your Digital Footprint — What is Personal Data?",
+      "subtitle": "Understanding how everyday clicks, photos, and location pings form an invisible profile of you",
+      "content": "Have you ever walked along a wet sandy beach near the ocean? Every step you take leaves an imprint of your foot in the sand. If someone follows behind you, they can see where you walked, where you paused to look at a seashell, and where you turned around.\n\nIn the digital world, you leave footprints every single day! Whenever you use an internet-connected smartphone, tablet, laptop, or smart television, you create a trail known as your Digital Footprint.\n\nWhat is Personal Data?\nPersonal data is any piece of information that can be linked back to identify YOU as a specific human being:\n- Direct Identifiers: Your full name, home address, birthday, school name, phone number, and student ID card number.\n- Biometric Data: Your fingerprint, face scan (Face ID), voice recordings, and eye retina scans.\n- Behavioral & Location Data: The exact GPS coordinates of your house and school, what time you wake up, which YouTube channels you watch, what games you play, and how long you linger on specific pictures.\n- Social Circles: Your complete contact phonebook—including the private phone numbers and email addresses of your parents, teachers, cousins, and friends!\n\nWhy does personal data matter so much?\nIn the 21st century, data is often called 'Digital Gold'. Companies, advertising brokers, and artificial intelligence models use your data to predict your behavior, target you with manipulative advertisements, and train consumer profiling algorithms. Even worse, if cybercriminals steal your personal data, they can impersonate you, hack your accounts, or scam your family members.\n\nProtecting your data doesn't mean being afraid of technology. It means being a smart, vigilant digital citizen who guards their digital footprints with pride and caution!",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Illustration of a middle school student walking on a glowing digital beach, leaving behind footprints labeled with icons for Location, Photos, Contacts, and Passwords]",
+      "toastGuidance": {
+        "tap_prompt": "Examine each item in the digital footprint to distinguish between public and private personal data.",
+        "great_job": "Footprint analyzed! Guarding personal data protects your identity and your family's safety.",
+        "try_again": "Remember: Phone numbers, home addresses, and live locations must always remain strictly private."
+      },
+      "examples": [
+        {
+          "title": "The Accidental School Bus Photo Leak",
+          "description": "A student posts a smiling selfie in their school uniform showing the bus route number and school crest; cyber detectives can instantly deduce their exact daily travel route and school name.",
+          "realLifeScenario": "Social media post • Blurring school crests and badges before sharing photos publicly"
+        },
+        {
+          "title": "Smart TV Voice Microphones",
+          "description": "A modern internet-connected television records ambient room voices to process voice commands, occasionally sending audio snippets back to cloud servers for ad research.",
+          "realLifeScenario": "Living room settings • Disabling 'Always-On Ambient Voice Listening' in the TV privacy menu"
+        },
+        {
+          "title": "Fitness Band Heartbeat and Sleep Tracking",
+          "description": "A smart fitness watch tracks when a student sleeps, runs, and rests, building a health data profile that insurance companies or data brokers pay millions to analyze.",
+          "realLifeScenario": "Wristband app • Turning off third-party advertising data sharing in the health app settings"
+        },
+        {
+          "title": "Search Engine Query Histories",
+          "description": "Searching for 'cricket bats under 500 rupees' results in sports shoe and bat ads following you across every website and game you visit for the next two weeks.",
+          "realLifeScenario": "Browser window • Using private browsing modes or privacy-first search engines"
+        }
+      ],
+      "keyPoints": [
+        "A digital footprint is the trail of data you leave behind whenever you use internet-connected devices.",
+        "Personal data includes direct identifiers (name, address), biometrics, location pings, and contact lists.",
+        "Personal data is treated like 'Digital Gold' by advertising companies and AI profiling algorithms.",
+        "Sharing school badges, uniform photos, or bus stops reveals sensitive physical location patterns.",
+        "Smart devices like TVs, fitness bands, and speakers often collect data unless privacy settings are adjusted.",
+        "Protecting your privacy is not about fear; it is about taking active, mature control of your digital identity."
+      ],
+      "algoVoice": "Your personal data is your digital diary! You wouldn't throw your private diary onto a crowded street corner for strangers to read—so don't broadcast your digital data either!"
+    },
+    {
+      "sectionId": "section2",
+      "sectionNumber": 2,
+      "title": "The App Permissions Detective — Spotting the Red Flags",
+      "subtitle": "Why mobile permissions matter, and how to audit camera, microphone, and contacts access",
+      "content": "When you install an app on an Android phone or an iPhone, the operating system places the app inside a secure digital sandbox. By default, the app is trapped in that sandbox! It cannot look at your photos, turn on your microphone, or read your contacts unless YOU give it explicit permission.\n\nThis is called the App Permissions System, and it is your first line of defense!\n\nHow do permissions work?\nWhenever an app needs to use a physical hardware sensor or private data storage, it must display a system permission popup:\n- Camera: Take photos, scan QR codes, or record video.\n- Microphone: Record voice notes or listen for audio commands.\n- Contacts: Read the names, phone numbers, and email addresses stored in your phonebook.\n- Location: Access your live GPS coordinates (Precise vs Approximate).\n- Storage / Photos: Read and save files, pictures, and videos on your phone's memory.\n\nThe Red Flag Detective Rule:\nAlways ask: 'Does this permission make logical sense for the app's core feature?'\n- Google Maps asking for Location? YES! (A navigation map cannot show you where to turn without knowing where you are).\n- WhatsApp asking for Microphone when you record a voice note? YES! (It needs the microphone to record your voice).\n- A Flashlight app asking for Contacts and Location? RED FLAG! (A flashlight only turns on a light bulb).\n- An Offline Calculator asking for Camera and Microphone? RED FLAG! (Math calculations happen inside the chip with zero sensors).\n- A Wallpaper app asking for SMS text messages and Call Logs? MASSIVE RED FLAG! (This is spyware behavior).\n\nIf you see a suspicious request, tap DENY! In 95% of cases, the app will continue to work perfectly fine without the unnecessary permission.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Smartphone app permissions modal showing flashlight app requesting suspicious contacts access]",
+      "toastGuidance": {
+        "tap_prompt": "Audit permissions: Deny contacts and location access for the offline calculator.",
+        "great_job": "Permission denied! Offline tools do not require access to your private phonebook.",
+        "try_again": "Suspicious request: A flashlight app never requires access to location or contacts."
+      },
+      "examples": [
+        {
+          "title": "The Offline Sudoku Puzzle Asking for Microphone",
+          "description": "A student downloads a free Sudoku game that immediately requests audio recording permissions; the student denies the request and reports the suspicious app.",
+          "realLifeScenario": "App store install • Tapping 'Don't Allow' on microphone access for a silent puzzle game"
+        },
+        {
+          "title": "Setting Location to 'While Using the App Only'",
+          "description": "Instead of granting food delivery apps 'Always Allow' background location access, setting it to 'Only While Using App' stops them from tracking movement when closed.",
+          "realLifeScenario": "Phone settings menu • Changing location permissions from 'All the time' to 'Only while in use'"
+        },
+        {
+          "title": "Revoking Photo Library Access for Social Media",
+          "description": "Using modern iOS and Android features to grant an app access to 'Select Photos Only' rather than granting full access to your entire 5,000-photo family camera roll.",
+          "realLifeScenario": "Photo upload dialog • Selecting just one vacation photo instead of opening the entire gallery"
+        },
+        {
+          "title": "The Periodic Permissions Spring Cleaning",
+          "description": "A middle school student spends 10 minutes every month reviewing their phone's 'Permission Manager', removing camera and mic permissions from unused games.",
+          "realLifeScenario": "Settings > Privacy > Permission Manager • Toggling off camera permissions for old unused apps"
+        }
+      ],
+      "keyPoints": [
+        "Apps run in secure sandboxes and cannot access sensors without explicit user permission.",
+        "Common permissions include Camera, Microphone, Contacts, Location, and Storage.",
+        "The Red Flag Rule: Deny any permission that is not strictly necessary for the app's core function.",
+        "Flashlights, calculators, and offline games never need access to contacts, call logs, or location.",
+        "Use 'While Using App' or 'Select Photos Only' options to minimize background data harvesting.",
+        "Conduct a monthly permissions audit in your phone's privacy settings to revoke forgotten permissions."
+      ],
+      "algoVoice": "Think of permissions like keys to your house. You might give a key to your mom, but you wouldn't give a front-door key to a stranger who just stopped by to deliver a newspaper!"
+    },
+    {
+      "sectionId": "section3",
+      "sectionNumber": 3,
+      "title": "The 'Free' App Trap — If It's Free, You Are the Product",
+      "subtitle": "Unmasking how free mobile games and filters make billions by monetizing your attention and data",
+      "content": "Have you ever wondered: How do companies with hundreds of software engineers, plush air-conditioned offices, and supercomputer servers offer their games and photo filter apps for completely zero rupees?\n\nThere is a famous proverb in the technology industry:\n'If you are not paying for the product, YOU are the product being sold!'\n\nWhen a mobile game or beauty filter app is 100% free with no subscription fee, the developer is usually making money in one of three hidden ways:\n\n1. Target Advertising Networks (AdTech):\nThe app embeds third-party software development kits (SDKs) from giant ad brokers. These trackers monitor which other apps you have installed, what time you play, your Wi-Fi network name, and your device ID, building a psychological profile to serve you hyper-targeted ads.\n\n2. Location Data Brokering:\nMany 'free' weather apps and simple games track your precise GPS coordinates every few seconds. They bundle this data into massive datasets containing millions of people and sell it to hedge funds, retail chains, and marketing companies who want to track foot traffic in shopping malls!\n\n3. Dark Patterns & Dopamine Loops:\nFree apps are deliberately engineered with psychological tricks called 'Dark Patterns'—spinning reward wheels, countdown timers, and notification chimes that make your brain release dopamine. They keep you glued to the screen for hours so they can show you more ads and harvest more behavioral data.\n\nDoes this mean you should delete every free game? No! But it means you must play with your eyes wide open. Turn off ad-tracking identifiers, deny unnecessary sensor permissions, set strict 30-minute daily game timers, and never link your real social media or school accounts to obscure free apps.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Infographic showing the data flow behind a 'free' gaming app, illustrating data tracking leading to third-party ad brokers and targeted sales]",
+      "toastGuidance": {
+        "tap_prompt": "Follow the data trail of a free mobile game to uncover how advertising brokers monetize user profiles.",
+        "great_job": "Data trail uncovered! Understanding ad business models helps you avoid digital manipulation.",
+        "try_again": "Remember: Free apps often fund their servers by collecting and selling behavioral data."
+      },
+      "examples": [
+        {
+          "title": "The Viral Face Aging Filter Scandal",
+          "description": "A viral free app that made people's faces look 80 years old uploaded millions of user facial portraits to foreign servers, granting the company perpetual rights to use photos for AI training.",
+          "realLifeScenario": "App store trending page • Choosing not to upload family face photos to unknown viral novelty apps"
+        },
+        {
+          "title": "Hyper-Targeted Sneaker Ads in Mobile Games",
+          "description": "After chatting with a friend about red sports shoes, a student notices ads for red running shoes popping up inside a free endless-runner arcade game fifteen minutes later.",
+          "realLifeScenario": "Mobile gaming screen • Spotting cross-app advertising trackers in action"
+        },
+        {
+          "title": "Dark Patterns with Confusing 'X' Buttons",
+          "description": "A free game displays an advertisement with a fake, microscopic 'X' button that tricks students into tapping the ad, opening an external shopping website automatically.",
+          "realLifeScenario": "Gaming intermission • Recognizing deceptive UI dark patterns designed to generate accidental clicks"
+        },
+        {
+          "title": "Disabling Personalized Ad Tracking on Android and iOS",
+          "description": "A student goes to Settings > Privacy > Ads and toggles 'Delete Advertising ID', preventing apps from linking activity across multiple games.",
+          "realLifeScenario": "Android privacy menu • Resetting device advertising identifiers to break tracking links"
+        }
+      ],
+      "keyPoints": [
+        "'If you are not paying for the product, you are the product'—free apps monetize user attention and data.",
+        "Free apps often embed tracking code from advertising networks to build behavioral profiles.",
+        "Location data brokers buy mass GPS pings from free weather and gaming utilities to analyze consumer trends.",
+        "Dark patterns use countdown timers and deceptive buttons to manipulate user clicks and attention.",
+        "Be cautious with viral face filters and novelty apps that request access to personal photo libraries.",
+        "Disable device advertising IDs and set time limits to protect yourself from behavioral ad loops."
+      ],
+      "algoVoice": "There is no such thing as a free lunch, and there is no such thing as a truly free app! Always ask what price you are paying with your attention, your time, and your data."
+    },
+    {
+      "sectionId": "section4",
+      "sectionNumber": 4,
+      "title": "Fortress Passwords & Passphrases — Locking the Front Door",
+      "subtitle": "Why 'password123' can be cracked in 0.2 seconds, and how long passphrases create unbreakable shields",
+      "content": "Imagine you live in a house with a solid steel front door. But instead of a heavy deadbolt lock, you secure the door with a tiny piece of scotch tape! That is exactly what you are doing when you protect your school email, gaming account, or computer with a weak password like 'password', '123456', or your pet dog's name.\n\nHow do hackers break passwords?\nCybercriminals do not sit in a dark room guessing passwords one by one on a keyboard. They use automated supercomputers running 'Brute Force' and 'Dictionary Attack' programs. These programs can test 100 BILLION password combinations every single second!\n- '12345678': Cracked in less than 0.001 seconds.\n- 'rohan2014': Cracked in 2 seconds (hackers test common names paired with birth years).\n- 'Dragon@1': Cracked in 4 minutes (hackers know humans predictably replace 'a' with '@' and add '1').\n\nThe Solution: The Power of the PASSPHRASE!\nInstead of trying to memorize a confusing scramble of letters like 'Xk#9!pL$2', modern cybersecurity experts recommend using a PASSPHRASE—a sequence of four or five completely random, unrelated words strung together with spaces or dashes!\n\nFor example:\n'turtle-samosa-galaxy-cricket'\n\nWhy is this passphrase so brilliant?\n1. Impossible for Computers to Crack: A 28-character passphrase with four unrelated words would take a supercomputer over 200 MILLION YEARS to guess by brute force!\n2. Effortless for Your Human Brain to Remember: Close your eyes. Picture a green sea turtle holding a hot samosa, floating in a purple galaxy, batting a cricket ball! Your brain creates a funny, vivid cartoon story that is impossible to forget.\n\nThree Golden Rules for Password Security:\n1. Length Beats Complexity: A long passphrase (16+ letters) is infinitely stronger than a short complex code ('Ab1!').\n2. Never Reuse Passwords: If you use the same password for a free gaming site and your school email, a breach on the gaming site gives hackers the keys to your entire digital life.\n3. Keep Them Secret: Never share passwords with friends, write them on sticky notes stuck to your laptop, or type them on public computers.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Visual guide contrasting weak predictable passwords with strong passphrases]",
+      "toastGuidance": {
+        "tap_prompt": "Construct a four-word passphrase using unrelated words and test its strength against supercomputer cracking.",
+        "great_job": "Fortress passphrase constructed! Multi-word passphrases take millions of years to crack.",
+        "try_again": "Avoid common patterns, names, and birthdays; length and randomness create the strongest defense."
+      },
+      "examples": [
+        {
+          "title": "The Danger of Using Birthdays in Passwords",
+          "description": "A student uses 'Aarav@2013' for their gaming account. A classmate who knows Aarav's birthday guesses it in five seconds during lunch break, locking him out of his account.",
+          "realLifeScenario": "Classroom tablet • Learning that personal details are the first thing social hackers try"
+        },
+        {
+          "title": "Creating a Fun, Unbreakable Passphrase",
+          "description": "Choosing four vivid, unrelated words: 'mango-rocket-bicycle-monsoon'. It takes 4 seconds to type, is fun to remember, and would take supercomputers centuries to crack.",
+          "realLifeScenario": "Setting up a school email account • Typing an easy-to-remember four-word passphrase with confidence"
+        },
+        {
+          "title": "The Peril of Password Reuse",
+          "description": "A student used the password 'Tiger123' on a small online puzzle website. When that website was hacked, cybercriminals tested that exact email and password on Instagram and Steam, taking over both.",
+          "realLifeScenario": "Data breach notification • Realizing why each major account requires a unique passphrase"
+        },
+        {
+          "title": "Using a Digital Password Manager",
+          "description": "A family sets up a secure, encrypted password manager (like Bitwarden), storing unique 20-character randomized passwords for every account behind a single master passphrase.",
+          "realLifeScenario": "Family computer • Logging into banking and school portals with zero forgotten password stress"
+        }
+      ],
+      "keyPoints": [
+        "Brute force programs can test over 100 billion password guesses per second, cracking simple codes instantly.",
+        "Predictable passwords (names, birthdays, '123456') offer zero defense against automated cyber attacks.",
+        "A Passphrase combines 4 or 5 random, unrelated words (e.g., 'turtle-samosa-galaxy-cricket').",
+        "Passphrases are easy for human brains to visualize as stories, but mathematically impossible for computers to brute force.",
+        "Password length is far more protective than character complexity—aim for 16 or more characters.",
+        "Never reuse passwords across multiple websites; a leak on one site compromises all connected accounts."
+      ],
+      "algoVoice": "Think of a password like your toothbrush: choose a good one, don't share it with your best friend, and change it whenever it starts getting worn out!"
+    },
+    {
+      "sectionId": "section5",
+      "sectionNumber": 5,
+      "title": "Two-Factor Authentication (2FA) — The Secret Second Key",
+      "subtitle": "Why a password alone is never enough, and how a second verification factor stops 99% of hacks",
+      "content": "Imagine a high-security bank vault in Mumbai. To open the vault, the bank manager doesn't just turn one key. Instead, two different keys must be inserted simultaneously—one held by the branch manager, and another held by the security chief! Even if a burglar steals the manager's key, they still cannot open the vault.\n\nIn modern cybersecurity, this double-key protection is called Two-Factor Authentication (2FA) or Multi-Factor Authentication (MFA)!\n\nHow does 2FA work?\nAuthentication is based on three fundamental security pillars:\n1. Something You Know: Your password or passphrase.\n2. Something You Have: Your physical smartphone, a hardware security key, or an authenticator app.\n3. Something You Are: Your biometric fingerprint or facial scan.\n\nWith 2FA enabled on an account (like your Google school account, gaming account, or social portal), logging in requires TWO different pillars:\n- Step 1: You enter your password (Something You Know).\n- Step 2: The system sends a one-time code (OTP) to your phone or asks you to tap 'Yes, it's me' on your trusted device (Something You Have).\n\nWhy is 2FA an absolute superpower?\nEven if a hacker across the world in another country guesses your password, steals it in a data breach, or peeks over your shoulder at a coffee shop—THEY STILL CANNOT LOG IN! Why? Because they do not have your physical phone in their hands to approve the second step.\n\nSecurity studies by Google and Microsoft show that enabling 2FA blocks over 99.9% of automated account takeover attacks. It is the single most powerful cybersecurity habit you can ever adopt!",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Two-factor authentication verification prompt on mobile screen]",
+      "toastGuidance": {
+        "tap_prompt": "Simulate setting up two-factor authentication on a school account using an authenticator app.",
+        "great_job": "Two-factor shield activated! 2FA blocks 99.9% of unauthorized login attempts.",
+        "try_again": "Remember: 2FA requires both 'Something you know' (password) and 'Something you have' (device code)."
+      },
+      "examples": [
+        {
+          "title": "Protecting a School Google Workspace Account",
+          "description": "A middle school enables 2FA for all students; when logging in on a new library computer, a prompt appears on the student's phone asking: 'Are you trying to sign in from Bengaluru?'",
+          "realLifeScenario": "Computer lab terminal • Tapping 'Yes, it's me' on a phone to securely verify identity"
+        },
+        {
+          "title": "Defending a Gaming Account from Foreign Hackers",
+          "description": "A cybercriminal gets a student's password from a breached forum, but gets stopped dead in their tracks by a 2FA prompt asking for an authenticator app code.",
+          "realLifeScenario": "Phone notification • Receiving a security alert: 'Login blocked: incorrect 2FA code entered from overseas'"
+        },
+        {
+          "title": "The Golden Rule of OTPs: NEVER SHARE!",
+          "description": "A scammer calls pretending to be a bank official or game customer support asking: 'Read me the 6-digit SMS code you just received.' The student hangs up immediately.",
+          "realLifeScenario": "Phone call • Recognizing that legitimate companies will NEVER ask for your secret OTP"
+        },
+        {
+          "title": "Using Authenticator Apps Instead of SMS",
+          "description": "Using apps like Google Authenticator or Microsoft Authenticator that generate rolling 30-second codes offline, which cannot be intercepted by SIM-swap scammers.",
+          "realLifeScenario": "Authenticator app screen • Watching the 6-digit code refresh every 30 seconds with a blue countdown ring"
+        }
+      ],
+      "keyPoints": [
+        "Two-Factor Authentication (2FA) requires two distinct verification pillars before granting account access.",
+        "The three security pillars are: Something you know (password), Something you have (device), Something you are (biometric).",
+        "2FA prevents account takeovers even if a cybercriminal successfully discovers or steals your password.",
+        "Enabling 2FA stops over 99.9% of automated cyber attacks according to major security research.",
+        "One-Time Passwords (OTPs) are strictly private; never share an OTP with anyone over the phone or chat.",
+        "Authenticator apps provide stronger security than SMS text messages by generating offline rolling codes."
+      ],
+      "algoVoice": "A password is like locking your front door. 2FA is like having a loyal guard dog sitting on the porch behind the door! Even if someone picks the lock, they can't get past the dog!"
+    },
+    {
+      "sectionId": "section6",
+      "sectionNumber": 6,
+      "title": "Safe Digital Habits — Public Wi-Fi, Phishing, and Daily Hygiene",
+      "subtitle": "Navigating free internet hotspots, spotting deceptive links, and keeping home networks secure",
+      "content": "You wouldn't drink water from a muddy puddle on the side of a highway just because it's free. Yet every day, millions of people connect their smartphones to unverified, unencrypted public Wi-Fi networks in railway stations, cafes, and shopping malls without realizing the invisible danger!\n\nLet's master the essential daily hygiene habits of a digital defense master:\n\n1. The Perils of Open Public Wi-Fi:\nWhen you connect to an open Wi-Fi network that doesn't have a password (like 'Free_Public_Cafe_WiFi'), anyone else on that same network can use free hacker tools (called Packet Sniffers) to eavesdrop on the digital traffic flying through the air! Never log into bank accounts, enter credit card numbers, or open sensitive school portals on public Wi-Fi without a Virtual Private Network (VPN).\n\n2. Spotting Phishing Hooks:\nPhishing is a cyber scam where attackers send deceptive messages pretending to be trusted organizations (like your school, WhatsApp, Netflix, or Roblox) to trick you into giving away your passwords or clicking malicious links.\nHow to spot a Phishing Red Flag:\n- Urgent Pressure: 'YOUR ACCOUNT WILL BE DELETED IN 10 MINUTES UNLESS YOU CLICK HERE!'\n- Free Too-Good-To-Be-True Offers: 'Congratulations! You won 10,000 free Robux / cricket tickets! Claim now!'\n- Weird Sender Addresses: The email says 'Google Support', but the actual sender address is 'support@goog1e-security-update99.xyz'. Always check the spelling after the '@' symbol!\n\n3. Home Wi-Fi Defense:\nMake sure your home Wi-Fi router uses modern WPA3 or WPA2 encryption. Never leave the router's administrator password as the default 'admin' or 'password', and never write your Wi-Fi password on a sign visible through your front window.\n\nWhen you combine cautious permissions, strong passphrases, two-factor authentication, and sharp phishing awareness, you become virtually bulletproof online!",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Illustrated cyber defense shield showing four quadrants: Permissions Audit, Passphrases, 2FA, and Phishing Awareness]",
+      "toastGuidance": {
+        "tap_prompt": "Inspect the incoming message for phishing red flags: urgency, strange domain, and too-good-to-be-true offers.",
+        "great_job": "Phishing attack thwarted! Never click urgent links or enter credentials on unverified websites.",
+        "try_again": "Remember: Check the domain name carefully; scammers use subtle misspellings to mimic real services."
+      },
+      "examples": [
+        {
+          "title": "The 'Free Gaming Tokens' Scam Link",
+          "description": "A student receives a chat message from a friend's compromised account saying 'Click here for free gaming skins!'. Recognizing the suspicious link, the student warns their friend via phone call.",
+          "realLifeScenario": "Chat messaging app • Reporting a phishing link instead of clicking and spreading the scam"
+        },
+        {
+          "title": "Safe Browsing on Railway Station Wi-Fi",
+          "description": "While waiting at a railway station with free public Wi-Fi, a student only browses public news sites and waits until returning home to log into their school student portal.",
+          "realLifeScenario": "Railway platform bench • Practicing disciplined Wi-Fi hygiene in high-risk public environments"
+        },
+        {
+          "title": "Spotting the Deceptive Fake Domain",
+          "description": "An email claims to be from 'State Bank of India', but the link points to 'www.sbi-verify-kyc-login.net'. The student immediately spots the fake web address and alerts their parents.",
+          "realLifeScenario": "Family email inbox • Protecting parents from a dangerous banking phishing trap"
+        },
+        {
+          "title": "Changing Default Home Router Passwords",
+          "description": "A student helps their family change their home Wi-Fi admin password from the factory default 'admin' to a unique 16-character passphrase, locking out neighborhood freeloaders.",
+          "realLifeScenario": "Home router setup page • Securing the family's primary internet gateway"
+        }
+      ],
+      "keyPoints": [
+        "Open public Wi-Fi networks allow eavesdroppers to intercept unencrypted digital traffic.",
+        "Never log into sensitive accounts or conduct financial transactions on public Wi-Fi without protection.",
+        "Phishing scams use artificial urgency and too-good-to-be-true offers to trick users into revealing credentials.",
+        "Always inspect the sender's exact domain address for subtle misspellings (e.g. 'amaz0n' instead of 'amazon').",
+        "Secure home Wi-Fi routers with strong WPA2/WPA3 encryption and change factory default admin passwords.",
+        "Practicing daily digital hygiene protects not just your own accounts, but your entire family and school community."
+      ],
+      "algoVoice": "The internet is a vast, wonderful city. Just like in a real city, you look both ways before crossing the street, keep your wallet zipped in your pocket, and don't take candy from strangers. Stay sharp and enjoy the journey!"
+    }
+  ],
+  "realWorldStories": [
+    {
+      "storyId": "story1",
+      "title": "Rohan from Bengaluru: The Flashlight App Mystery and the Family Permission Audit",
+      "location": "Bengaluru, Karnataka",
+      "domain": "Mobile App Permissions & Privacy Auditing",
+      "summary": "How a 12-year-old student discovered that a free flashlight app was harvesting family contacts, leading to a neighborhood cyber-safety campaign.",
+      "content": "In the bustling tech suburb of Whitefield, Bengaluru, twelve-year-old Rohan was excited to receive his first smartphone for school research. One evening, during a sudden power blackout, he downloaded a popular free flashlight app with glowing neon graphics. When the app demanded access to his contacts, GPS location, and microphone, Rohan remembered his school AI and cyber ethics class: 'A tool should only ask for permissions it physically needs.'\n\nRohan denied all permissions. The light still worked! Curious, Rohan downloaded a free network monitoring utility with his elder sister Meera. Together, they inspected what the flashlight app was trying to do in the background.\n\nTo their amazement, the app was trying to ping an advertising server in another country every two minutes, attempting to upload phone numbers and GPS coordinates. Rohan realized that millions of people across India were downloading this harmless-looking utility and unknowingly handing over their private address books to data brokers!\n\nRohan didn't stop at uninstalling the app. That weekend, he organized a 'Family Permissions Clinic' in his apartment clubhouse. He sat down with his grandparents, uncles, and neighbors, showing them how to open 'Settings > Privacy > Permission Manager'. Together, they revoked microphone access from offline calculator tools, blocked location tracking on wallpaper apps, and deleted dozens of suspicious free utilities.\n\n'Rohan saved our apartment from an invisible data leak,' the residents' association president declared, awarding Rohan a certificate of community cyber-service.\n\n'Phones are amazing tools,' Rohan told his classmates. 'But we have to be the security guards of our own devices. If you don't check permissions, you are leaving your front door wide open for strangers!'",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Rohan demonstrating mobile permission settings to smiling neighbors and grandparents in an apartment clubhouse in Bengaluru]",
+      "keyTakeaway": "Questioning why simple utility apps demand invasive permissions protects not only your personal data, but the private contact information of your entire family and community."
+    },
+    {
+      "storyId": "story2",
+      "title": "Priya from Indore: Rescuing Her School Email with Two-Factor Authentication",
+      "location": "Indore, Madhya Pradesh",
+      "domain": "Account Defense & Two-Factor Authentication",
+      "summary": "How a middle school student's proactive setup of two-factor authentication thwarted an international credential-stuffing attack on her school project portal.",
+      "content": "Twelve-year-old Priya from Indore was the captain of her school's Junior Robotics League. For six months, her team had been uploading blueprints, Arduino code, and competition presentation slides to her school cloud drive account.\n\nDuring a weekend digital literacy workshop, Priya learned about credential-stuffing attacks—where hackers use stolen password databases from compromised gaming websites to break into school and email accounts. Priya realized with a shiver that she had been using the same password ('RobotStar2022') on an old online puzzle game site!\n\nInstead of just changing her password, Priya decided to build an impenetrable defense. With her mother's guidance, she enabled Two-Factor Authentication (2FA) on her Google school account, linking it to an authenticator app on her mother's phone and generating emergency backup codes which she stored in a locked drawer.\n\nTwo weeks later, on a peaceful Tuesday evening, Priya's mother's phone suddenly chimed with a high-priority security notification: 'Suspicious login attempt detected from an IP address in Eastern Europe. Is this you trying to sign in?'\n\nPriya and her mother gasped. Someone on the other side of the planet had obtained her old password and was attempting to access her school drive! But because Priya had activated 2FA, the hacker hit a brick wall. Without the physical authenticator code, the attacker was completely blocked.\n\nPriya immediately updated her account to a four-word passphrase ('copper-gears-clean-indore') and reported the incident to her school IT administrator. The school principal was so impressed by Priya's proactive cybersecurity defense that the school made 2FA mandatory for all 800 middle and high school students!\n\n'A password is just a single lock on a door,' Priya shared with her robotics team. '2FA is the second deadbolt that hackers can never pick from afar. It saved six months of our team's hard work!'",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Priya and her mother reviewing a blocked login security alert on a smartphone in Indore, with her robotics trophy on the study desk]",
+      "keyTakeaway": "Two-Factor Authentication is an unbeatable shield that stops unauthorized account takeovers in their tracks, even when passwords are compromised in data breaches."
+    },
+    {
+      "storyId": "story3",
+      "title": "Kabir from Jaipur: The Free Cricket Game That Tracked His Neighborhood",
+      "location": "Jaipur, Rajasthan",
+      "domain": "AdTech Tracking & Dark Patterns",
+      "summary": "How a cricket-loving student unmasked the deceptive location-tracking mechanisms inside a free mobile batting game and taught his school to spot digital dark patterns.",
+      "content": "In the pink city of Jaipur, twelve-year-old Kabir was crazy about cricket. When he saw an ad for 'Street Cricket Premier League 3D'—a free batting game featuring realistic commentary in Hindi—he downloaded it immediately. The game was addictive: hit sixes over virtual rooftops, earn gold coins, and unlock legendary bats.\n\nHowever, Kabir noticed something strange after playing for a week. Whenever he walked with his father to a sweet shop near Johari Bazaar, the game sent a notification: 'Hungry for Ghewar? Play a cricket over now!'. When he waited outside his coaching center, the game showed ads for tuition classes across the street.\n\nKabir became suspicious. He opened his phone's location settings. To his shock, the cricket game had its location permission set to 'Always Allow', and its background location tracker had pinged his phone's GPS over 1,400 times in just five days!\n\nKabir investigated the game's privacy policy with his computer teacher. Hidden in tiny gray font on page 12 of the terms of service was a clause stating that the game shared anonymized location pings with commercial marketing partners to serve location-based retail advertisements.\n\nKabir realized that the game wasn't really about cricket—it was a location-tracking beacon disguised as a sporting simulation! He uninstalled the game and searched for open-source, privacy-respecting alternatives that operated completely offline without trackers.\n\nKabir wrote an article for his school newspaper titled: 'The Cost of Free: What Are Your Mobile Games Really Selling?'. His article sparked an exciting classroom debate, inspiring dozens of classmates to audit their gaming apps and disable location tracking.\n\n'Nothing in this world is truly free,' Kabir reflected. 'If a game doesn't ask for money, it is asking for your time, your privacy, and your location. Always decide if that trade is worth it!'",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Kabir holding a cricket bat in Jaipur while pointing at his smartphone screen showing background location tracking data]",
+      "keyTakeaway": "Free mobile games frequently disguise location-tracking ad brokers behind fun gameplay; understanding their business model empowers students to reject manipulative surveillance."
+    }
+  ],
+  "activities": [
+    {
+      "activityId": "activity1",
+      "title": "Mobile Permissions Audit Inspector",
+      "description": "Step into the shoes of a Chief Information Security Officer! Conduct a systematic permissions inspection on a sample smartphone profile to detect red-flag access requests and restore digital privacy.",
+      "duration": "20 mins",
+      "materials": "Permission Audit Worksheet, sample mobile app profiles (Flashlight, Calculator, Navigation Map, Social Video, Offline Chess), red and green colored pens",
+      "learningOutcome": "Students can critically evaluate app permission requests, distinguish between essential operational access and suspicious tracking, and configure privacy settings securely.",
+      "instructions": [
+        "1. Review the five sample app profiles on your audit worksheet: Examine what core feature each app provides to users.",
+        "2. Inspect the requested permissions for each app: Camera, Microphone, Contacts, Precise Location, Storage, and SMS Access.",
+        "3. Apply the Red Flag Detective Rule: Circle legitimate permissions in green (e.g., Maps needing Location) and suspicious permissions in red (e.g., Calculator needing Contacts).",
+        "4. Audit Decision: For each suspicious permission, mark whether you will 'DENY', set to 'ONLY WHILE USING', or 'UNINSTALL APP'.",
+        "5. Practice the Live Simulation: Open your own school tablet or family phone's 'Settings > Privacy > Permission Manager' with an adult and check which apps have active microphone and location access.",
+        "6. Write down a 3-point 'Family Digital Defense Charter' to share with your household!"
+      ],
+      "toastFeedback": {
+        "tap_prompt": "Audit permissions: Deny contacts and location access for the offline calculator.",
+        "great_job": "Permission denied! Offline tools do not require access to your private phonebook.",
+        "try_again": "Suspicious request: A flashlight app never requires access to location or contacts."
+      },
+      "tips": [
+        "Remember that you can always re-grant a permission later if an app genuinely needs it for a specific action.",
+        "Choose 'Approximate Location' instead of 'Precise Location' for weather apps that only need your general city.",
+        "Make it a habit to audit permissions every time you install a brand-new app."
+      ]
+    },
+    {
+      "activityId": "activity2",
+      "title": "The Fortress Passphrase Creator",
+      "description": "Harness cognitive storytelling and mathematical entropy to create an unbreakable, four-word passphrase that supercomputers cannot crack in millions of years.",
+      "duration": "15 mins",
+      "materials": "Passphrase generator word grid, index cards, colored markers, imagination",
+      "learningOutcome": "Students master the Diceware passphrase creation technique, understanding why multi-word length vastly outperforms short complex character codes.",
+      "instructions": [
+        "1. Review the 36-word grid containing diverse, colorful nouns and adjectives (e.g., coconut, comet, trumpet, tiger, velvet, volcano).",
+        "2. Select four completely unrelated words that have no obvious connection to your personal life, school, or birthday.",
+        "3. Connect the four words with hyphens to form a 20+ character passphrase (e.g., 'velvet-comet-coconut-trumpet').",
+        "4. Mental Storytelling Lock: Create a vivid, funny 10-second cartoon story in your mind connecting all four words so you never forget it.",
+        "5. Test Brute Force Resistance: Calculate how many centuries it would take a 100-billion-guess-per-second supercomputer to crack your passphrase.",
+        "6. Write your passphrase on an index card, seal it in an envelope, and store it safely with your family's important home documents."
+      ],
+      "toastFeedback": {
+        "tap_prompt": "Combine four random, unrelated words into a passphrase and visualize the funny mental story.",
+        "great_job": "Unbreakable passphrase forged! Length and randomness provide mathematical supercomputer defense.",
+        "try_again": "Avoid predictable word combinations, personal names, or sports teams; keep the words completely random."
+      },
+      "tips": [
+        "The funnier and weirder your mental cartoon story is, the easier it will be to remember years from now.",
+        "Never type your real master passphrase into public online password testing websites."
+      ]
+    },
+    {
+      "activityId": "activity3",
+      "title": "The Phishing & Red Flag Detective Checklist",
+      "description": "Analyze four suspicious incoming digital messages (SMS, email, gaming chat) to uncover deceptive phishing hooks, spoofed domains, and artificial urgency traps.",
+      "duration": "15 mins",
+      "materials": "Phishing Evidence Cards, magnifying glass stickers, red highlighter pens",
+      "learningOutcome": "Students develop reflexive critical discernment, identifying subtle domain spoofing, artificial emotional urgency, and credential-harvesting links.",
+      "instructions": [
+        "1. Read the four incoming digital scenarios: a bank KYC alert, a free gaming coin offer, a school password reset notice, and an urgent package delivery SMS.",
+        "2. Inspect the Sender's Domain: Look closely at the letters after the '@' symbol or in the website link. Search for subtle character swaps (like replacing 'o' with '0' or 'l' with '1').",
+        "3. Spot the Emotional Hooks: Identify artificial urgency ('Account suspended in 15 minutes!'), extreme fear, or greedy temptation ('You won 50,000 rupees!').",
+        "4. The Credential Trap: Highlight where the message asks you to enter your secret password, OTP, or credit card number.",
+        "5. Mark each message as 'SAFE / VERIFIED' or 'PHISHING ATTACK'.",
+        "6. Write down the correct response action (e.g., 'Delete immediately', 'Report spam', 'Contact official school office directly')."
+      ],
+      "toastFeedback": {
+        "tap_prompt": "Scan the sender address and link text for deceptive typos and artificial urgency hooks.",
+        "great_job": "Phishing threat neutralized! Verifying official domain names keeps your credentials secure.",
+        "try_again": "Never trust urgent demands for passwords; legitimate organizations never pressure you via text."
+      },
+      "tips": [
+        "When in doubt, open a fresh browser tab and type the official website address yourself rather than clicking links.",
+        "Remember that banks, schools, and game companies will NEVER call or text asking for your secret OTP."
+      ]
+    }
+  ],
+  "games": [
+    {
+      "gameId": "game1",
+      "title": "Permission Red Flag Sorter — Essential vs Suspicious",
+      "type": "permission_sorter",
+      "description": "Test your digital defense reflexes! Decide whether each app permission request is a legitimate operational requirement or an invasive suspicious red flag. [IMAGE_PLACEHOLDER: Interactive card-sorting game screen showing app permission requests being sorted into 'Legitimate Operational Access' and 'Suspicious Red Flag']",
+      "instructions": "Categorize each app permission request into 'Legitimate Operational Access' or 'Suspicious Red Flag'.",
+      "cards": [
+        {
+          "id": "pr1",
+          "app": "Offline Basic Calculator",
+          "requestedPermission": "Read Contacts & Access Live GPS Location",
+          "category": "Suspicious Red Flag",
+          "explanation": "Math calculations happen locally on the processor; a calculator has zero need for your phonebook or GPS coordinates."
+        },
+        {
+          "id": "pr2",
+          "app": "Google Maps Navigation",
+          "requestedPermission": "Precise GPS Location while using app",
+          "category": "Legitimate Operational Access",
+          "explanation": "A navigation system cannot provide turn-by-turn driving or walking directions without knowing your location."
+        },
+        {
+          "id": "pr3",
+          "app": "Neon Flashlight Torch Utility",
+          "requestedPermission": "Record Audio from Microphone at all times",
+          "category": "Suspicious Red Flag",
+          "explanation": "A flashlight only activates the camera LED bulb; listening to room conversations is invasive spyware behavior."
+        },
+        {
+          "id": "pr4",
+          "app": "Voice Recorder Memo App",
+          "requestedPermission": "Microphone Access while recording",
+          "category": "Legitimate Operational Access",
+          "explanation": "The core function of a voice memo tool is recording audio through the microphone hardware."
+        },
+        {
+          "id": "pr5",
+          "app": "Flappy Bird Arcade Clone Game",
+          "requestedPermission": "Read, Send, and Intercept SMS Messages",
+          "category": "Suspicious Red Flag",
+          "explanation": "A simple jumping bird game has no reason to read private family text messages or intercept banking OTPs."
+        },
+        {
+          "id": "pr6",
+          "app": "Online Video Calling App (Zoom / Meet)",
+          "requestedPermission": "Camera & Microphone Access during calls",
+          "category": "Legitimate Operational Access",
+          "explanation": "Video conferencing requires transmitting video frames and audio to participants during active calls."
+        }
+      ]
+    },
+    {
+      "gameId": "game2",
+      "title": "Password Strength Cracker Simulator",
+      "type": "password_cracker",
+      "description": "See through the eyes of a supercomputer! Test various password strategies to discover how quickly automated brute-force algorithms crack weak codes versus passphrases.",
+      "instructions": "Match each password strategy with its real-world cracking time on a modern supercomputer.",
+      "cards": [
+        {
+          "id": "pw1",
+          "passwordSample": "'123456' or 'password'",
+          "crackingTime": "Instantaneous (less than 0.001 seconds)",
+          "explanation": "These appear at the very top of hacker dictionary lists and are tested on the first millisecond."
+        },
+        {
+          "id": "pw2",
+          "passwordSample": "'rohan@2013'",
+          "crackingTime": "Under 3 seconds",
+          "explanation": "Hackers combine common regional names with 4-digit birth years using automated rule algorithms."
+        },
+        {
+          "id": "pw3",
+          "passwordSample": "'Tr!ck$8'",
+          "crackingTime": "Approximately 4 minutes",
+          "explanation": "While it has symbols and numbers, it is only 7 characters long; short length is quickly brute-forced."
+        },
+        {
+          "id": "pw4",
+          "passwordSample": "'turtle-samosa-galaxy-cricket'",
+          "crackingTime": "Over 200 Million Years",
+          "explanation": "Four random words create 28 characters of entropy, making brute force mathematically impossible for current computers."
+        },
+        {
+          "id": "pw5",
+          "passwordSample": "'monsoon-lantern-bicycle-peacock'",
+          "crackingTime": "Over 500 Million Years",
+          "explanation": "High entropy, excellent length, and zero predictable dictionary grammar rules create an impenetrable shield."
+        }
+      ]
+    },
+    {
+      "gameId": "game3",
+      "title": "The 2FA Security Shield Sprint",
+      "type": "mfa_challenge",
+      "description": "Defend user accounts against sophisticated simulated cyber attacks by deploying the correct authentication pillars and security responses.",
+      "instructions": "Select the optimal security defense action to neutralize each incoming cyber threat.",
+      "cards": [
+        {
+          "id": "fa1",
+          "threat": "A hacker discovers your school email password through a data breach on an old gaming forum.",
+          "bestDefense": "Two-Factor Authentication (Authenticator App Prompt)",
+          "explanation": "Even with your password, the attacker cannot log in because they do not have your physical device to supply the second factor."
+        },
+        {
+          "id": "fa2",
+          "threat": "Someone calling on the phone claims to be an IT officer and asks: 'Read me the 6-digit SMS code you just received to verify your account.'",
+          "bestDefense": "Hang Up Immediately & Never Share OTP",
+          "explanation": "One-Time Passwords are top-secret keys; legitimate companies and IT staff will never ask you to reveal them."
+        },
+        {
+          "id": "fa3",
+          "threat": "You are setting up a new gaming account and must choose how to receive your 2FA verification codes.",
+          "bestDefense": "Dedicated Authenticator App (Google/Microsoft Authenticator)",
+          "explanation": "Authenticator apps generate offline rolling codes that cannot be intercepted by cellular SIM-swap attacks."
+        },
+        {
+          "id": "fa4",
+          "threat": "You receive an unexpected phone prompt: 'Are you trying to log into your account from Frankfurt, Germany?' when you are sitting in Jaipur.",
+          "bestDefense": "Tap 'NO, IT'S NOT ME' & Immediately Change Passphrase",
+          "explanation": "The 2FA prompt just saved your account! Tapping 'No' blocks the attacker and gives you time to change your password."
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Class 6 Protect Your Data Mastery Championship",
+    "totalQuestions": 18,
+    "passingScore": 75,
+    "questions": [
+      {
+        "questionNumber": 1,
+        "question": "What is a 'digital footprint' in modern computing?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The trail of data, clicks, photos, and location coordinates left behind whenever you use internet-connected devices",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "A muddy footprint left on a computer keyboard after walking outside in the rain",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "A special digital shoe designed for playing virtual reality sports games",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "The physical size of a laptop screen measured in inches",
+            "correct": false
+          }
+        ],
+        "explanation": "A digital footprint encompasses all traces of personal data and behavioral records generated during internet activity.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 2,
+        "question": "Why is a flashlight app requesting access to your phone contacts considered a suspicious 'Red Flag'?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because a flashlight only needs to control the camera LED bulb; reading contacts has zero connection to its core function and indicates data harvesting",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Because flashlights only work if you call three people before turning them on",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Because reading contacts makes the battery charge fifty percent faster",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because all apps on an app store are legally required to delete phonebooks",
+            "correct": false
+          }
+        ],
+        "explanation": "Hardware permissions must match functional utility; requesting unrelated private data is a classic hallmark of adware or spyware.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 3,
+        "question": "What does the famous tech industry phrase 'If you are not paying for the product, YOU are the product' mean?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Free apps often make money by tracking your behavior, collecting your personal data, and selling advertising access to data brokers",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Free apps are given away because computer developers dislike earning money",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "You will be physically sold at an electronics store if you download a free game",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "All free software is created exclusively by the government to help students",
+            "correct": false
+          }
+        ],
+        "explanation": "Commercial free services monetize user attention and private behavioral data through targeted advertising and data brokering.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 4,
+        "question": "How do automated 'Brute Force' password-cracking programs work?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They use supercomputers to test billions of character combinations and dictionary words every second until finding a match",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "They smash computer keyboards with heavy metal hammers until passwords open",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "They send physical letters to your house asking for your password nicely",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "They guess passwords by looking at the color of your computer monitor",
+            "correct": false
+          }
+        ],
+        "explanation": "Brute force programs leverage supercomputing speed to calculate and guess billions of candidate passwords per second.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionNumber": 5,
+        "question": "Why is a four-word passphrase like 'turtle-samosa-galaxy-cricket' vastly superior to a short password like 'Tr!ck$8'?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because its 28-character length makes brute-force mathematical cracking take millions of years, while being easy for humans to visualize and remember",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Because computers are legally forbidden from guessing words related to samosas or turtles",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Because short passwords take up too much hard drive memory storage",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because passphrases automatically pay for your internet connection every month",
+            "correct": false
+          }
+        ],
+        "explanation": "Password entropy scales exponentially with length; multi-word passphrases maximize length while maintaining human memorability.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 6,
+        "question": "What are the two factors in Two-Factor Authentication (2FA)?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Something you know (like your password) combined with something you have (like a physical phone receiving a verification code)",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Typing your password twice on two different keyboards at the exact same second",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Having two different best friends who know your secret password",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Using a laptop and a tablet simultaneously while sitting in a classroom",
+            "correct": false
+          }
+        ],
+        "explanation": "2FA combines two independent authentication categories—typically knowledge (password) and possession (trusted device).",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 7,
+        "question": "Why does Two-Factor Authentication protect your account even if a cybercriminal steals your password?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because the criminal cannot complete the login without the second verification code sent to your physical phone",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Because 2FA immediately deletes the criminal's computer screen",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Because 2FA tells the police to arrest anyone who types a password",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because passwords become invisible whenever someone tries to steal them",
+            "correct": false
+          }
+        ],
+        "explanation": "Without physical possession of the second factor (your smartphone or authenticator app), stolen credentials cannot authorize access.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 8,
+        "question": "What should you do if an unknown caller claims to be from your bank or game support and asks for your 6-digit OTP code?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Hang up immediately! Never share OTP codes with anyone; legitimate companies will never ask for them",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Read the code out loud clearly so they can fix your account",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Text the code to five of your classmates to see if they got the same code",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Ask the caller to guess the code as a fun riddle game",
+            "correct": false
+          }
+        ],
+        "explanation": "One-Time Passwords are strictly confidential authentication secrets; sharing them grants attackers immediate account compromise.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 9,
+        "question": "Why is conducting financial transactions or logging into school accounts on open public Wi-Fi risky?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because open public networks are unencrypted, allowing eavesdroppers on the same network to intercept transmitted digital data",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Because public Wi-Fi causes phone screens to crack physically if used for too long",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Because school accounts can only be accessed while sitting inside a school bus",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because public Wi-Fi only connects to foreign space satellites",
+            "correct": false
+          }
+        ],
+        "explanation": "Unencrypted public Wi-Fi allows packet sniffing and man-in-the-middle attacks where nearby actors monitor network traffic.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionNumber": 10,
+        "question": "What is 'Phishing' in the context of internet scams?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A deceptive scam where attackers pose as trusted organizations to trick you into revealing passwords or clicking malicious links",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Catching fish in a river using high-tech electronic fishing rods",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "A new computer programming language designed for marine biologists",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Cleaning a computer monitor with fresh water and soap",
+            "correct": false
+          }
+        ],
+        "explanation": "Phishing uses social engineering, spoofed branding, and emotional manipulation to harvest credentials and sensitive data.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 11,
+        "question": "Which of the following email addresses is a classic sign of a deceptive phishing spoof?",
+        "options": [
+          {
+            "id": "a",
+            "text": "'support@goog1e-account-security-update24.xyz'",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "'support@google.com'",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "'help@cbse.gov.in'",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "'contact@isro.gov.in'",
+            "correct": false
+          }
+        ],
+        "explanation": "Notice the typo 'goog1e' replacing 'l' with '1' and the suspicious '.xyz' domain; legitimate Google communications come from 'google.com'.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionNumber": 12,
+        "question": "In the story of Rohan in Bengaluru, why did Rohan organize a 'Permissions Clinic' for his neighbors?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because he discovered that simple free apps were quietly harvesting contact lists and locations from dozens of family devices",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Because he wanted to sell expensive flashlights to his neighbors for cash",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Because his school homework required him to break five smartphones",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because his neighbors asked him to paint their apartment doors red",
+            "correct": false
+          }
+        ],
+        "explanation": "Rohan recognized that pervasive over-permissioning compromised the privacy of his entire community, taking positive civic action.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 13,
+        "question": "In Priya's story from Indore, how did Two-Factor Authentication save six months of her robotics project work?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It blocked a foreign hacker who had obtained her password from logging in because they lacked the physical authenticator prompt",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "It converted all her robotics blueprints into ancient Sanskrit poetry",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "It physically flew a drone to Eastern Europe to catch the cybercriminal",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "It deleted her school drive so nobody could ever read her code again",
+            "correct": false
+          }
+        ],
+        "explanation": "2FA created an insurmountable second hurdle, thwarting an account takeover despite compromised credentials.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionNumber": 14,
+        "question": "What alarming discovery did Kabir from Jaipur make about his 'free' street cricket mobile game?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The game had pinged his phone's background GPS over 1,400 times in five days to sell retail tracking data to advertisers",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "The cricket ball inside the game was made of digital gold",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "The game refused to let players hit boundaries on Tuesdays",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "The game was secretly teaching players how to play hockey instead",
+            "correct": false
+          }
+        ],
+        "explanation": "The game functioned as a continuous commercial location-tracking beacon embedded inside a sports simulation.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionNumber": 15,
+        "question": "Why should you never reuse the same password across multiple online accounts and websites?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because if a breach compromises a small, insecure website, attackers will use that same password to take over all your other accounts",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Because computers get confused if two accounts have the same password",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Because internet companies charge extra money for every account with the same password",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because keyboards wear out twice as fast when typing the same word",
+            "correct": false
+          }
+        ],
+        "explanation": "Credential stuffing exploits password reuse across services; unique passwords contain the damage of any single breach.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 16,
+        "question": "What is an effective way to protect your home Wi-Fi network from unauthorized snooping?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Change the factory default router administrator password and enable strong WPA2 or WPA3 encryption",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Cover the Wi-Fi router with a thick wet towel while it is running",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Write your Wi-Fi password on a sign on your front door so everyone knows it",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Turn off the electricity to your entire house every afternoon",
+            "correct": false
+          }
+        ],
+        "explanation": "Modern WPA2/WPA3 encryption paired with custom administrator credentials secures local wireless network traffic.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionNumber": 17,
+        "question": "What is a 'Dark Pattern' in mobile app and website user interface design?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A deceptive design trick (like fake countdowns or hidden tiny 'X' buttons) intended to manipulate users into taking actions they didn't intend",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "A wallpaper theme that uses dark grey and black colors to save battery life",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "A chess strategy where black pieces move before white pieces",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "A nighttime astronomy map showing the dark side of the moon",
+            "correct": false
+          }
+        ],
+        "explanation": "Dark patterns are manipulative design architectures that nudge users toward clicks, subscriptions, or permissions against their best interest.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionNumber": 18,
+        "question": "What is the ultimate message of Algo, the Intelligent Guide, in 'Protect Your Data'?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Your personal data is your digital house: audit permissions, lock doors with passphrases, use 2FA, and stay vigilant so you navigate technology safely and boldly",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "You should never use computers, smartphones, or the internet ever again",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Only professional cybersecurity agents are allowed to have passwords",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Giving away all your private data to strangers makes you a generous digital citizen",
+            "correct": false
+          }
+        ],
+        "explanation": "The lesson champions active, confident digital defense—empowering students to enjoy technology safely through smart personal habits.",
+        "difficulty": "easy",
+        "points": 10
+      }
+    ],
+    "completionFeedback": {
+      "excellent": {
+        "range": "90-100",
+        "message": "Chief Cybersecurity Defender! You understand how to audit mobile permissions, forge unbreakable passphrases, and shield your accounts with Two-Factor Authentication. Algo awards you the Digital Fortress Master Badge!",
+        "badge": "Digital Fortress Master Badge 🛡️"
+      },
+      "good": {
+        "range": "70-89",
+        "message": "Great defense work! You have mastered the fundamentals of data protection. Review the difference between brute-force cracking times and the mechanics of 2FA to achieve a flawless 100% score!",
+        "badge": "Cyber Defense Scout 🔍"
+      },
+      "needsReview": {
+        "range": "0-69",
+        "message": "Good effort! Remember: Your personal data is precious. Revisit the stories of Rohan, Priya, and Kabir, practice the Red Flag permissions check, and retake the championship!",
+        "badge": "Curious Learner 🌱"
+      }
+    }
+  },
+  "summary": {
+    "keyTakeaways": [
+      "Every online interaction creates a digital footprint; personal data is valuable 'digital gold' that requires active defense.",
+      "The Red Flag Rule: Always question and audit app permissions—offline tools never require access to contacts, location, or microphone.",
+      "Free apps often monetize user attention and location data through ad networks; recognize manipulative dark patterns.",
+      "Multi-word passphrases (e.g., 'turtle-samosa-galaxy-cricket') are mathematically impossible for brute-force supercomputers to crack.",
+      "Two-Factor Authentication (2FA) stops over 99.9% of automated cyber attacks by requiring an independent second physical verification key.",
+      "Practice daily digital hygiene: avoid unencrypted public Wi-Fi, spot phishing red flags, and never disclose secret OTP codes."
+    ],
+    "reflectionPrompt": "Open your own phone or family tablet today with an adult. Look at the Permissions Manager: Which app has access to your microphone or location right now? Does it genuinely need that access to do its job, or is it time to tap 'Deny'?",
+    "algoWisdom": "A fortress is not built by fear; it is built with strong bricks, deep locks, and watchful eyes. Take pride in guarding your digital home. When you protect your data, you protect your future, your family, and your freedom. Stand strong, defender!"
+  },
+  "teacherGuide": {
+    "pedagogicalRationale": "This lesson equips Class 6 students (ages 11-12) with essential cybersecurity defenses and critical data literacy. By addressing mobile app permissions, ad-supported business models, passphrase entropy, and two-factor authentication, educators instill proactive digital self-defense and responsible citizenship without inducing technophobia.",
+    "classroomDiscussionPrompts": [
+      "Why do you think flashlight and simple puzzle apps ask for access to contacts and location, even though they don't need them to function?",
+      "If a company offers a game for 'free', what hidden costs might you be paying in terms of privacy, focus, and attention?",
+      "Why is a 4-word passphrase easier for your brain to remember than 'Xk$9!pL$2', but vastly harder for a supercomputer to guess?",
+      "How does enabling Two-Factor Authentication on school accounts protect your classmates and teachers as well as yourself?",
+      "What should you do if a family member receives an urgent SMS claiming their bank account is suspended and asking them to click a link?"
+    ],
+    "commonMisconceptions": [
+      {
+        "misconception": "If an app is available for download on an official app store, it is completely safe and won't track your private data.",
+        "correction": "App stores filter out obvious malware, but thousands of legitimate-looking apps still harvest personal contacts and location data for commercial advertising."
+      },
+      {
+        "misconception": "A short password with complex symbols like 'P@ss1' is safer than a long passphrase of simple words.",
+        "correction": "Password cracking speed depends exponentially on character length; brute-force computers crack short complex passwords in minutes, but take millions of years to crack long passphrases."
+      },
+      {
+        "misconception": "Hackers only target wealthy celebrities and banks, so ordinary middle school students have no need for cyber defense.",
+        "correction": "Automated bot attacks target everyone indiscriminately to harvest email addresses, steal gaming accounts, and turn devices into spam relays."
+      }
+    ],
+    "differentiatedLearning": "For students with limited smartphone access, conduct role-play scenarios auditing paper permission cards. For kinesthetic learners, build physical passphrase story cubes. For advanced students, explore encryption concepts (HTTPS, WPA3) and investigate the mechanics of credential-stuffing breaches."
+  },
+  "resources": {
+    "furtherReading": [
+      "Cyber Privacy: Fortifying the Right to Digital Autonomy by April Falcon Doss",
+      "Sandworm: A New Era of Cyberwar and the Hunt for the Kremlin's Most Dangerous Hackers by Andy Greenberg (Youth Edition)",
+      "CBSE & CERT-In Guidelines on Cyber Safety for Middle School Students and Parents"
+    ],
+    "recommendedActivities": [
+      "Host a Classroom 'Permissions Audit Clinic' where student teams inspect mock device settings and identify suspicious adware trackers.",
+      "Conduct a 'Passphrase Creation Workshop' where students craft and illustrate memorable 4-word diceware passphrases."
+    ],
+    "glossary": [
+      {
+        "term": "Digital Footprint",
+        "definition": "The permanent trail of personal data, browsing history, clicks, and location coordinates left behind when using digital devices."
+      },
+      {
+        "term": "App Permissions",
+        "definition": "System access controls that determine whether a mobile application can interact with device hardware like cameras, microphones, or contacts."
+      },
+      {
+        "term": "Red Flag Permission",
+        "definition": "An invasive permission request that has no logical relationship to an app's core operational function (e.g. calculator requesting contacts)."
+      },
+      {
+        "term": "AdTech Tracking",
+        "definition": "Commercial software embedded in free apps to collect behavioral data, device identifiers, and location to deliver targeted advertisements."
+      },
+      {
+        "term": "Data Broker",
+        "definition": "A commercial entity that aggregates, packages, and sells consumer personal data to marketing networks, hedge funds, and third parties."
+      },
+      {
+        "term": "Brute Force Attack",
+        "definition": "An automated hacking method that systematically guesses billions of password combinations per second until discovering the correct key."
+      },
+      {
+        "term": "Passphrase",
+        "definition": "A sequence of four or more random, unrelated words strung together (e.g. 'turtle-samosa-galaxy-cricket') creating high security and easy recall."
+      },
+      {
+        "term": "Two-Factor Authentication (2FA)",
+        "definition": "A defense mechanism requiring two independent verification factors—typically a password plus a temporary device code—to access an account."
+      },
+      {
+        "term": "One-Time Password (OTP)",
+        "definition": "A secret, temporary numerical code generated for a single login session that should never be shared with anyone."
+      },
+      {
+        "term": "Phishing",
+        "definition": "A social engineering scam using deceptive messages and spoofed websites to trick users into disclosing passwords or confidential information."
+      },
+      {
+        "term": "Dark Pattern",
+        "definition": "A deceptive user interface design engineered to trick or nudge users into making unintended choices, like accidental clicks or data sharing."
+      },
+      {
+        "term": "Packet Sniffing",
+        "definition": "Interception and inspection of unencrypted data packets transmitted over an open, unsecured wireless network."
+      }
+    ]
+  }
+}
