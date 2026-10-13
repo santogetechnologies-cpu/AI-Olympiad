@@ -1,0 +1,1217 @@
+{
+  "lessonId": "l2",
+  "title": "Think Before You Trust",
+  "lessonTitle": "Think Before You Trust",
+  "level": "middle",
+  "class": "class6",
+  "classId": "class6",
+  "className": "Class 6 (Middle School)",
+  "ageGroup": "Age 11-12",
+  "chapter": "ch6",
+  "chapterId": "ch6",
+  "chapterTitle": "Responsible AI • CARE",
+  "chapterCanonicalKey": "middle-class6-ch6",
+  "lessonNumber": 2,
+  "monthNumber": 6,
+  "mascot": {
+    "name": "Algo",
+    "role": "The Intelligent Guide",
+    "avatar": "🧠",
+    "greeting": "Greetings, truth explorer! For centuries, humans lived by the old proverb: 'Seeing is believing.' But in the age of artificial intelligence, videos can be faked, voices can be cloned, and wild rumors can spread around the globe in seconds. Today, you will learn how to spot synthetic media, verify viral claims, and become a fearless champion of truth!"
+  },
+  "metadata": {
+    "totalWordCount": 12000,
+    "readingTimeMinutes": 45,
+    "difficulty": "Beginner-Friendly",
+    "targetAge": "11-12 Years",
+    "curriculumAlignment": "CBSE / ICSE / NEP 2020 Media Literacy, Digital Ethics & Critical Thinking Framework",
+    "prerequisites": "Class 6 Chapter 6 Lesson 1 (Protect Your Data)",
+    "learningObjectives": [
+      "Understand what synthetic media and deepfakes are, and how generative AI alters videos and voices.",
+      "Recognize the psychological triggers (fear, urgency, outrage) that cause viral hoaxes to spread rapidly.",
+      "Master the 3-Step Verification Shield: Source Check, Date/Context Audit, and Two-Source Independent Confirmation.",
+      "Spot visual artifacts (unnatural blinking, warped ears, blurry teeth) and audio anomalies in AI clones.",
+      "Utilize official fact-checking resources like the Press Information Bureau (PIB) Fact Check portal.",
+      "Practice responsible digital citizenship by adopting the Golden Pause Rule and breaking misinformation chains."
+    ]
+  },
+  "introduction": {
+    "hookQuestion": {
+      "question": "If a forwarded WhatsApp video shows your city's mayor announcing that all schools are closed for a month due to an alien invasion, what should you do first?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PAUSE! Check official state government news portals and verify with trusted news channels before believing or forwarding",
+          "correct": true
+        },
+        {
+          "id": "b",
+          "text": "Forward the video immediately to fifty school friends so everyone can celebrate sleeping late",
+          "correct": false
+        },
+        {
+          "id": "c",
+          "text": "Pack your school bags and run to hide in an underground basement",
+          "correct": false
+        },
+        {
+          "id": "d",
+          "text": "Believe the video instantly because videos on phone screens can never be faked",
+          "correct": false
+        }
+      ],
+      "correctOptionIndex": 0,
+      "mascotTip": "Algo says: Master detective response! In the AI era, videos and audio clips can be generated with realistic computer graphics in minutes. Whenever a message sounds shocking, outrageous, or too good to be true, your first move is always to PAUSE and VERIFY!"
+    },
+    "openingStory": {
+      "title": "The Great Rainy Day School Hoax of Lucknow",
+      "wordCount": 540,
+      "content": "On a chilly Tuesday evening in Lucknow, twelve-year-old Aarav was packing his school bag for tomorrow's terminal science exam. Suddenly, his mother's phone pinged with a notification from the neighborhood colony WhatsApp group.\n\nHis mother gasped: 'Aarav, look! Uncle Sharma just forwarded a circular from the District Magistrate. It says all schools in Lucknow are declared closed tomorrow due to sudden heavy cold wave conditions!'\n\nThe forwarded message looked shockingly official: it had the state government's circular crest at the top, a formal red stamp, a signature at the bottom, and the words: 'ORDER OF THE DISTRICT MAGISTRATE — STRICT COMPLIANCE'. Attached was a 10-second video of the District Magistrate speaking into a microphone.\n\nAarav felt an immediate surge of relief. 'Hooray! The science exam is postponed! I can stay up late playing video games!'\n\nHe opened his class WhatsApp group to forward the wonderful news to his classmates. His finger hovered over the green forward arrow. But then Aarav stopped. He remembered the media literacy lesson his computer teacher, Ms. Shalini, had taught that week: 'Never forward breaking news based on a single chat forward. Always run the 3-Step Verification Shield!'\n\nAarav opened his laptop and executed the three checks:\n1. Check 1 (Source Origin): He visited the official website of the Lucknow District Administration (lucknow.nic.in). The homepage had zero notices about any school closures.\n2. Check 2 (Date and Timestamp Audit): Aarav examined the blurry photograph of the circular. When he zoomed in on the date line, he noticed the year had been clumsily smudged with a digital paint tool—the original notice was actually from December 2018!\n3. Check 3 (Two Credible News Sources): Aarav checked the live news websites of two major verified national newspapers. Neither of them had reported any weather holiday in Uttar Pradesh.\n\nAarav immediately called his school friend Vikram, who was about to go to sleep without studying. 'Vikram, don't close your science textbook! That circular is an old recycled hoax from six years ago!'\n\nThe next morning, half of Aarav's class arrived at school panicked and unprepared because their parents had believed the fake WhatsApp forward. But Aarav walked in calm, rested, and fully prepared, scoring full marks on his science exam!\n\nThat afternoon, the District Magistrate's office tweeted an official warning: 'Beware of a fabricated 2018 circular circulating on messaging apps. Schools remain open.'\n\n'Aarav,' his mother smiled, giving him a proud hug. 'Your fact-checking saved your entire exam. You proved that thinking critically is the greatest superpower in the modern world!'",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Official PIB Fact Check banner disproving a viral message]",
+      "algoNarration": "Aarav proved that the most important tool in media literacy is not a computer program—it is your own patient human brain! A 10-second pause can prevent widespread panic and protect truth."
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "section1",
+      "sectionNumber": 1,
+      "title": "The Era of Synthetic Media — Seeing is No Longer Believing",
+      "subtitle": "How generative AI, deepfakes, and audio cloning blur the line between reality and simulation",
+      "content": "For over one hundred and fifty years, photographs and video recordings were treated as indisputable proof of historical reality. If an explorer showed a black-and-white photograph of a snow leopard in Ladakh, people knew the leopard was real. If a news camera broadcast a speech by a prime minister, people knew the words were spoken.\n\nToday, that historical era has completely ended. Welcome to the era of Synthetic Media!\n\nWhat is Synthetic Media?\nSynthetic media refers to any digital photograph, audio recording, or video clip that was created, altered, or generated from scratch using artificial intelligence algorithms rather than captured by a physical camera lens or microphone.\n\nHow do Deepfakes work?\nDeepfakes (combining 'Deep Learning' and 'Fake') are generated using advanced neural networks known as Generative Adversarial Networks (GANs) and Diffusion Models:\n- Face Swapping: An AI model scans thousands of photos of a person's face from different angles, lighting conditions, and emotional expressions. It then superimposes that digital face onto an actor's body in a video, matching the actor's head tilts, eye blinks, and lip movements.\n- Voice Cloning: With as little as three seconds of clean audio recording of someone's voice, an AI audio model can analyze the vocal timbre, accent, pitch, and cadence. An operator can then type any sentence into a keyboard, and the AI will speak those words in the cloned person's exact voice!\n\nDeepfake technology can be used for wonderful creative purposes—like dubbing movies into twenty regional languages matching the actor's lip movements, or restoring voices for patients who lost their vocal cords to illness. But in the hands of scammers and pranksters, synthetic media can be weaponized to create fake political scandals, spread community hatred, and trick innocent families.\n\nKnowing that synthetic media exists is your ultimate mental armor. It reminds you: just because you see a face moving on a screen does not mean it happened in the real physical world!",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Split comparison showing authentic video vs synthetic deepfake video with artifacts]",
+      "toastGuidance": {
+        "tap_prompt": "Compare the authentic video with the synthetic deepfake to inspect digital artifacts around eyes and ears.",
+        "great_job": "Synthetic media identified! AI generation leaves subtle digital clues if you look closely.",
+        "try_again": "Remember: Seeing is no longer believing; always look for visual distortion and verify sources."
+      },
+      "examples": [
+        {
+          "title": "The Viral Synthetic Celebrity Video",
+          "description": "A viral video showed a famous Indian cricketer endorsing an obscure online gambling app; investigative journalists revealed the video was a deepfake created with voice cloning software.",
+          "realLifeScenario": "Social media video feed • Spotting unnatural lip sync movements that don't match the spoken words"
+        },
+        {
+          "title": "Multilingual Movie Dubbing with AI Lip Sync",
+          "description": "Film studios use generative AI to adjust the mouth movements of actors in Hindi films so they appear to be speaking natural Tamil, Telugu, and English.",
+          "realLifeScenario": "Movie cinema screen • Positive creative application of synthetic video enhancing regional accessibility"
+        },
+        {
+          "title": "The AI Grandchild Distress Phone Scam",
+          "description": "Scammers use a 5-second audio clip from a teenager's social media video to clone their voice, calling grandparents and crying: 'Dadi, I lost my wallet at the bus station, please send 2,000 rupees!'.",
+          "realLifeScenario": "Landline telephone • Establishing a secret family verbal password to thwart voice cloning scams"
+        },
+        {
+          "title": "Restoring the Voice of Historical Legends",
+          "description": "Museums in New Delhi use historical radio recordings to reconstruct the speaking voices of freedom fighters, allowing students to hear interactive historical speeches.",
+          "realLifeScenario": "Museum interactive kiosk • Educational application of ethical synthetic voice reconstruction"
+        }
+      ],
+      "keyPoints": [
+        "Synthetic media refers to images, videos, or audio generated or manipulated using artificial intelligence.",
+        "Deepfakes use deep neural networks to swap faces, alter lip movements, or fabricate synthetic videos.",
+        "Voice cloning AI can replicate a person's unique vocal timbre and cadence from just seconds of audio.",
+        "While synthetic media has positive uses (multilingual film dubbing, voice restoration), it is also used for fraud.",
+        "Seeing a video on a smartphone screen is no longer definitive legal or factual proof of reality.",
+        "Awareness of synthetic media empowers students to approach sensational online videos with critical skepticism."
+      ],
+      "algoVoice": "Your eyes and ears are amazing, but in the AI era, your critical thinking brain is the real superhero! Never let a shiny digital screen trick your common sense."
+    },
+    {
+      "sectionId": "section2",
+      "sectionNumber": 2,
+      "title": "The Anatomy of a Viral Hoax — Why Fake News Spreads Fast",
+      "subtitle": "Unmasking the psychological triggers of fear, outrage, and miracle promises that hijack human attention",
+      "content": "In 2018, researchers at the Massachusetts Institute of Technology (MIT) conducted the largest scientific study of online information in history. They analyzed over 126,000 news stories shared on social platforms by millions of people across a decade.\n\nTheir findings were astonishing:\nFalse news spread six times faster than true news, and reached ten times more people! Why? Do computers secretly love lies? Not at all! The answer lies inside human psychology.\n\nTrue news is often calm, nuanced, and detailed: 'Scientists report a 2% improvement in crop yield after careful soil testing.' That sounds helpful, but it doesn't make your heart race.\n\nFake news, on the other hand, is specifically engineered like a psychological fishing hook! It deliberately targets three intense human emotions:\n1. Extreme Fear: 'DANGER! Poisonous chemical found in everyday tap water across north India! Alert your family immediately!'\n2. Righteous Outrage: 'SHOCKING! Foreign company secretly buys national monument to turn it into a parking lot!'\n3. Miraculous Hope: 'MIRACLE! Eating raw papaya seeds cured diabetes in three hours! Doctors want to keep this secret!'\n\nThe Forwarding Psychology Trap:\nWhen someone feels sudden fear or excitement, the emotional part of their brain (the Amygdala) takes over, turning off their logical thinking. People forward the message because they think: 'Even if it might not be true, what if it IS true? I must warn my relatives just in case!'\n\nThat well-intentioned instinct is how hoaxes spread like wildfires through family WhatsApp groups and classroom chats. When you understand how hoaxes hijack human emotions, you gain the power to freeze: take a deep breath, disengage emotional panic, and put truth first!",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Infographic showing the emotional anatomy of a viral hoax, highlighting Fear, Outrage, and Miracle triggers paired with forwarding vectors]",
+      "toastGuidance": {
+        "tap_prompt": "Examine the viral message to identify which emotional trigger (fear, anger, or miracle) it exploits.",
+        "great_job": "Emotional hook identified! Recognizing manipulative emotional triggers prevents knee-jerk forwarding.",
+        "try_again": "Remember: Hoaxes deliberately use ALL CAPS, exclamation points, and urgent commands to provoke panic."
+      },
+      "examples": [
+        {
+          "title": "The Fake Child Kidnapper Rumor Panic",
+          "description": "A forwarded voice note with a crying child caused widespread village panic across three states; police investigations revealed the audio was clipped from an educational street play in another country.",
+          "realLifeScenario": "Village community square • Police holding town hall meetings to debunk fabricated voice notes"
+        },
+        {
+          "title": "The Miracle Onion Covid Cure Hoax",
+          "description": "A viral WhatsApp message claiming that keeping chopped raw onions in your bedroom absorbs all viral infections overnight spread to millions of households.",
+          "realLifeScenario": "Family kitchen • Doctors appearing on public radio to explain that raw onions do not kill airborne viruses"
+        },
+        {
+          "title": "The UNESCO 'Best National Anthem' Myth",
+          "description": "An annual viral forward claiming that UNESCO had declared the Indian National Anthem as the 'Best Anthem in the World'; UNESCO officially clarified it conducts no such competitions.",
+          "realLifeScenario": "National holiday morning • Checking UNESCO's official portal to debunk a perennial patriotic hoax"
+        },
+        {
+          "title": "The Solar Radiation Midnight Warning",
+          "description": "A message warning everyone to turn off mobile phones between 12:30 AM and 3:30 AM because of 'cosmic rays hitting Earth from Mars', an absurd scientific impossibility.",
+          "realLifeScenario": "Late-night family group • Pointing out that cosmic rays from Mars do not enter bedrooms through phone batteries"
+        }
+      ],
+      "keyPoints": [
+        "Scientific studies show that false rumors spread significantly faster and wider than truthful reports.",
+        "Viral hoaxes are deliberately designed to hijack human emotions: fear, moral outrage, or miraculous hope.",
+        "Emotional panic triggers the brain's impulse to 'warn others', causing well-meaning people to spread falsehoods.",
+        "Sensational headlines, excessive exclamation marks (!!!), and ALL CAPS are classic hallmarks of fake news.",
+        "Understanding emotional manipulation gives you the mental discipline to pause before tapping forward.",
+        "Calm, critical inquiry is the natural antidote to viral misinformation campaigns."
+      ],
+      "algoVoice": "When an online message screams 'FORWARD THIS TO EVERYONE IN 5 MINUTES!', that is not a public service announcement—that is an emotional trap! Take a deep breath and stay in control."
+    },
+    {
+      "sectionId": "section3",
+      "sectionNumber": 3,
+      "title": "The 3-Step Verification Shield — The Fact-Checking Habit",
+      "subtitle": "The simple, powerful verification checklist used by professional journalists and intelligence analysts",
+      "content": "When a pilot prepares an airplane for takeoff, they don't just glance out the window and hope for the best. They sit in the cockpit with a printed checklist, systematically testing the flaps, the fuel gauges, and the radio communications step by step.\n\nIn the information age, every responsible digital citizen needs an Information Pre-Flight Checklist! We call this the 3-Step Verification Shield:\n\nStep 1: The Source Origin Check (Who Said It?)\n- Does the message name a specific, verified institution? ('According to AIIMS New Delhi' or 'According to ISRO').\n- Go directly to that institution's official website (.gov.in, .nic.in, or verified portal) or their official Twitter/X handle. If the Indian Space Research Organisation actually found water on Mars, it will be the lead headline on isro.gov.in!\n- If a message says 'According to a famous American doctor' without a name, hospital, or link, it is immediately suspect.\n\nStep 2: The Date & Context Audit (When Was It Recorded?)\n- Millions of viral hoaxes are not completely fake—they are Real Videos from the Past taken out of context! A flood video from 2015 is recirculated during a monsoon in 2026 claiming your hometown is drowning.\n- Look for seasonal clues: Are people wearing thick woolen coats in a video claimed to be recorded in Mumbai in May?\n- Use Reverse Image Search (Google Images or TinEye): Take a screenshot of the video and upload it to search for earlier instances on the web.\n\nStep 3: The Two-Source Independent Confirmation Rule (The 2-Source Rule)\n- Before you believe any shocking breaking news, verify that at least TWO independent, credible, recognized news organizations (like Doordarshan, The Hindu, Indian Express, BBC, or NDTV) are reporting the exact same fact.\n- If a story claims a meteor struck Chennai, but not a single national news channel or newspaper has reported it, the story is 100% false!\n\nWhen you master this 3-step shield, you transform from a passive consumer of gossip into an active guardian of truth.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Verification flowchart: Source check, date check, secondary news confirmation]",
+      "toastGuidance": {
+        "tap_prompt": "Run the 3-step fact check before forwarding the viral video.",
+        "great_job": "Verification complete! Video was proven to be synthetic media from an old event.",
+        "try_again": "Pause before forwarding: Check if any major verified news portal reported this."
+      },
+      "examples": [
+        {
+          "title": "Verifying the Cyclone School Closure Announcement",
+          "description": "When a chat message claims schools are shut due to Cyclone Vardah, a student checks the Indian Meteorological Department (mausam.imd.gov.in) and confirms the cyclone hit years ago.",
+          "realLifeScenario": "Study desk • Verifying weather alerts on official government meteorological portals"
+        },
+        {
+          "title": "Reverse Image Searching a 'Giant Snake' Photo",
+          "description": "A viral photo claims a 50-foot anaconda was captured near the Yamuna river; reverse image search reveals the photo was taken from an art exhibition in Brazil in 2014.",
+          "realLifeScenario": "Search engine tab • Dropping a screenshot into Google Lens to find the original 2014 source"
+        },
+        {
+          "title": "Applying the Two-Source Rule to Space Discoveries",
+          "description": "A YouTube short claims NASA discovered a city on the Moon; checking NASA's official website and BBC Science reveals zero reporting, debunking the clickbait.",
+          "realLifeScenario": "Science class tablet • Cross-referencing space claims against verified astronomical portals"
+        },
+        {
+          "title": "Spotting Out-of-Context Earthquake Footage",
+          "description": "Video claims a massive earthquake struck New Delhi today, but background signboards are written in Turkish, revealing the video is old footage from the 2023 Turkey earthquake.",
+          "realLifeScenario": "Family living room • Pointing out foreign street signs and language banners in the video background"
+        }
+      ],
+      "keyPoints": [
+        "The 3-Step Verification Shield consists of Source Origin Check, Date/Context Audit, and the 2-Source Rule.",
+        "Step 1: Verify whether the claimed official institution actually published the notice on their verified domain.",
+        "Step 2: Check dates and temporal context; many hoaxes are real old videos recirculated with false captions.",
+        "Reverse Image Search allows students to trace photographs and video frames back to their original historical upload.",
+        "Step 3: The 2-Source Rule requires independent confirmation from two credible, recognized news organizations.",
+        "If breaking news appears only on an anonymous chat forward and nowhere in legitimate media, it is false."
+      ],
+      "algoVoice": "A detective never arrests a suspect based on a single anonymous rumor; they gather multiple verified clues. Treat every viral forward like a detective case!"
+    },
+    {
+      "sectionId": "section4",
+      "sectionNumber": 4,
+      "title": "Spotting Deepfakes & AI Audio Clones — Detective Clues",
+      "subtitle": "Visual glitches, anatomical errors, and audio artifacts that give synthetic media away",
+      "content": "While artificial intelligence models are getting more sophisticated every year, generating seamless, physically accurate human video and audio is remarkably difficult. The physical world is full of intricate laws of light, physics, and biology that neural networks frequently fumble!\n\nIf you look closely with a trained detective eye, you can spot the 'Digital Tell-Tale Clues' that expose a synthetic deepfake:\n\n1. The Unnatural Blink & Eye Reflections:\nHuman eyes blink naturally every two to ten seconds, and the pupils reflect tiny pinpoint reflections of surrounding light sources (called Specular Highlights). In deepfakes, the eyes often look glassy, fail to blink naturally, or the left eye reflects a completely different room light than the right eye!\n\n2. The Blurry Boundary & Hair Edges:\nLook at the border where the person's face meets their hair, neck, and ears. When the subject turns their head quickly, AI models struggle to blend the edges. You will often see a faint, shimmering blur, ghosting artifacts, or earrings that mysteriously vanish and reappear!\n\n3. The Teeth and Hand Anatomy Glitches:\nNeural networks struggle with complex geometric repeating structures like human fingers and teeth. Deepfake teeth often look like a solid white picket fence with no individual gaps. AI-generated hands often feature six fingers, fused thumbs, or fingers of impossible lengths!\n\n4. Audio Cadence & Breathing Pauses in Voice Clones:\nWhen real humans speak, we take natural breaths between sentences, our voice pitch fluctuates with emotion, and we make subtle tongue clicks. AI voice clones often speak with an eerie, flat rhythm, flawless pace without pauses for breath, or strange robotic buzzing on consonant sounds.\n\n5. The Golden Verification for Audio Scams (The Family Safe Word):\nIf you ever receive an emergency phone call from a friend or relative asking for urgent money: PAUSE! Ask a question that only the real person could know: 'What is our pet dog's secret nickname?' or agree on a private 'Family Safe Word' in advance!",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Split comparison showing authentic video vs synthetic deepfake video with artifacts]",
+      "toastGuidance": {
+        "tap_prompt": "Examine the subject's ears, teeth, and blinking pattern to detect subtle generative artifacts.",
+        "great_job": "Glitches spotted! Blurry hair boundaries and unnatural blinking exposed the synthetic deepfake.",
+        "try_again": "Remember: Check for lighting inconsistencies, unnatural eye reflections, and missing breath pauses in audio."
+      },
+      "examples": [
+        {
+          "title": "Spotting the Six-Fingered Politician Photo",
+          "description": "An AI-generated viral photo showed a political leader eating street food; an alert 6th grader zoomed in on the leader's left hand and noticed six distinct fingers, proving it was synthetic AI art.",
+          "realLifeScenario": "Classroom media workshop • Zooming in on hand anatomy to expose generative image generation"
+        },
+        {
+          "title": "Catching Mismatched Earring Glitches in a Deepfake",
+          "description": "In an AI face-swap video of an actress, her right earring was a traditional gold jhumka, but her left earring was a modern silver hoop that flickered whenever she shook her head.",
+          "realLifeScenario": "Video inspection screen • Pointing out boundary flicker and disappearing jewelry accessories"
+        },
+        {
+          "title": "The Family Secret Safe Word Defense",
+          "description": "A family agrees that any real emergency call must include the codeword 'Alphonso'. When a scammer calls using an AI voice clone of the son, the father asks for the word; the scammer hangs up.",
+          "realLifeScenario": "Home telephone • Neutralizing sophisticated AI voice cloning attacks with zero tech equipment"
+        },
+        {
+          "title": "Analyzing Audio Cadence in Suspicious Voice Notes",
+          "description": "Listening to a suspicious viral audio clip of a teacher, students notice the speaker talks for two full minutes without taking a single breath, confirming it was generated by a text-to-speech engine.",
+          "realLifeScenario": "Student council meeting • Identifying mechanical speech synthesis through acoustic cadence analysis"
+        }
+      ],
+      "keyPoints": [
+        "Synthetic media generation struggles with complex physical biology: eye reflections, teeth, and hands.",
+        "Deepfake visual clues include glassy unblinking eyes, shimmering face boundaries, and disappearing jewelry.",
+        "AI hands frequently exhibit anatomical anomalies: six fingers, unnatural joints, or fused digits.",
+        "Voice clones often exhibit flat cadence, metallic consonant buzz, and an absence of natural breath pauses.",
+        "Establishing an offline 'Family Safe Word' protects households against emergency AI voice cloning scams.",
+        "Zooming in on fine physical details (ears, teeth, fingernails) quickly exposes synthetic images."
+      ],
+      "algoVoice": "Artificial intelligence can copy human words, but it struggles with the subtle, beautiful messiness of real human biology—like breathing, blinking, and messy hair. Look for the human details!"
+    },
+    {
+      "sectionId": "section5",
+      "sectionNumber": 5,
+      "title": "Trusted Verifiers & PIB Fact Check — Using National Resources",
+      "subtitle": "How independent fact-checking organizations and official government portals fight digital deception",
+      "content": "When you feel sick, you don't ask a random stranger on a street corner for medical diagnosis—you visit a qualified, licensed doctor. In the same way, when you encounter confusing, controversial, or viral claims online, you don't rely on random chat forwards—you turn to Professional Fact-Checking Organizations!\n\nIn India and around the world, dedicated teams of investigative journalists, data scientists, and public officials work 24 hours a day to verify viral claims and debunk hoaxes.\n\nKey National and Global Fact-Checking Resources:\n1. PIB Fact Check (Press Information Bureau, Government of India):\n- Website: factcheck.pib.gov.in / Twitter: @PIBFactCheck\n- This official government agency monitors viral social media messages related to government policies, exams, recruitment scams, and public health.\n- Whenever a fake circular claiming exam cancellations or false scholarship schemes goes viral, PIB issues a clear, red-stamped 'FAKE' or 'TRUE' verdict with official circular links!\n\n2. Independent Certified Fact-Checkers:\nIn India, independent newsrooms like Alt News, BOOM Live, Vishvas News, and Quint WebQoof are certified by the International Fact-Checking Network (IFCN). They follow strict non-partisan ethics, publishing detailed step-by-step forensic investigations showing exactly how an image was manipulated or where an audio clip originated.\n\n3. The WhatsApp Fact-Checking Tip Lines:\nMajor fact-checking organizations maintain official WhatsApp tip-line numbers. If your family receives a confusing forwarded video or rumor, you can forward it directly to an IFCN-certified tip line, and an automated bot or researcher will reply with a verified report within hours!\n\nKnowing where to find verified ground truth turns you into a pillar of calm and wisdom in your home, your school, and your neighborhood.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Official PIB Fact Check banner disproving a viral message]",
+      "toastGuidance": {
+        "tap_prompt": "Check the viral claim against the official PIB Fact Check database to verify government policy claims.",
+        "great_job": "Fact-check confirmed! Official portals provide verified, transparent public evidence.",
+        "try_again": "Always check certified fact-checking registries when evaluating claims about public exams or policies."
+      },
+      "examples": [
+        {
+          "title": "PIB Debunking the Fake Army Recruitment Scheme",
+          "description": "Scammers circulated a fake notification charging 500 rupees for 'Urgent Agniveer Army Recruitment'; PIB Fact Check published an alert confirming the circular was 100% fraudulent.",
+          "realLifeScenario": "PIB Fact Check Twitter feed • Saving rural job applicants thousands of rupees from online fraud"
+        },
+        {
+          "title": "BOOM Live Investigating a Viral Weather Video",
+          "description": "Fact-checkers used satellite metadata and meteorological logs to prove that a dramatic tsunami video was actually a computer-generated special effects animation made for a Hollywood film.",
+          "realLifeScenario": "Fact-check article • Showing side-by-side screenshots of the Hollywood CGI project file"
+        },
+        {
+          "title": "Using WhatsApp Fact-Checking Tip Lines",
+          "description": "A student forwards a suspicious health forward claiming lemons cure malaria to an IFCN tipline, receiving an instant verified medical debunking with citations from the World Health Organization.",
+          "realLifeScenario": "Messaging app screen • Receiving an automated, verified fact-checking dossier in seconds"
+        },
+        {
+          "title": "Verifying Central Board Exam Date Sheets",
+          "description": "A fake CBSE Class 10/12 timetable spread across student groups in November; students checked cbse.gov.in and PIB Fact Check, confirming the schedule was an unofficial fabrication.",
+          "realLifeScenario": "Classroom notice board • Displaying the official verified CBSE date sheet alongside the debunked fake"
+        }
+      ],
+      "keyPoints": [
+        "Professional fact-checking organizations investigate viral claims, synthetic media, and public rumors.",
+        "PIB Fact Check is the official Government of India portal verifying claims about public policies and exams.",
+        "Independent fact-checkers certified by the IFCN adhere to strict non-partisan investigative standards.",
+        "Fact-checking articles publish transparent evidence, reverse search trails, and primary source documents.",
+        "Official WhatsApp tip lines allow citizens to submit suspicious messages for verification.",
+        "Relying on verified institutional sources protects communities from financial fraud and health panic."
+      ],
+      "algoVoice": "You don't have to solve every mystery all by yourself! Professional fact-checkers have already done the heavy lifting on thousands of viral claims. Look up their verified reports!"
+    },
+    {
+      "sectionId": "section6",
+      "sectionNumber": 6,
+      "title": "Becoming a Responsible Digital Citizen — Breaking the Chain of Misinformation",
+      "subtitle": "The courage to pause, the kindness to correct family, and the power of ethical sharing",
+      "content": "Have you ever seen a row of upright dominoes? When you push the first domino, it knocks down the second, which knocks down the third, and in seconds, a hundred dominoes have crashed to the floor. But what happens if you simply remove one single domino from the middle of the line? The entire collapse stops instantly!\n\nIn the digital world, YOU are that crucial domino. Misinformation can only travel across our nation if human beings keep hitting the 'Forward' button!\n\nHere is how you become a Champion Digital Citizen:\n\n1. The Golden Pause Rule:\nWhenever you see a piece of news that makes you gasp, feel terrified, or want to shout at the screen: PAUSE! Count to ten. Do not forward. Do not like. Do not retweet. Give your logical brain ten seconds to ask: 'Who created this? What is their evidence? Have I verified this?'\n\n2. The Rule of Zero Harms:\nAdopt this simple pledge: 'If I am not 100% sure that a piece of information is verified and true, I will NEVER share it.' Sharing unverified rumors is not harmless fun; it causes real-world stampedes, medical emergencies, community hatred, and exam panic.\n\n3. The Gentle Family Truth Ambassador:\nWhen your uncle, grandmother, or cousin shares a fake forward in the family WhatsApp group, how should you respond? Don't insult them or make them feel foolish! They shared it because they care about you and were tricked by the emotional hook.\nRespond with kindness and evidence in private or in the group:\n'Dada-ji, I love you for looking out for our safety! I checked this circular on the official district government website (lucknow.nic.in), and the authorities confirmed this is an old notice from 2018. Here is the official link so nobody in our family gets confused.'\n\nWhen you speak with kindness and back your words with verified evidence, you become a beacon of truth, peace, and wisdom for your entire community.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Inspiring illustration of a student stepping between falling dominoes labeled 'Rumors' and 'Hoaxes', breaking the chain of misinformation with a glowing shield of truth]",
+      "toastGuidance": {
+        "tap_prompt": "Practice the Golden Pause Rule and prepare a kind, evidence-based correction for a family chat.",
+        "great_job": "Misinformation chain broken! Kind, evidence-based corrections protect your family and community.",
+        "try_again": "Remember: Never attack or mock people who share hoaxes; gently share verified links and facts."
+      },
+      "examples": [
+        {
+          "title": "The Kind WhatsApp Group Correction",
+          "description": "An aunt forwards a message claiming drinking hot salt water kills all viruses. A student replies gently with a polite voice note and an official AIIMS doctor's fact-check link.",
+          "realLifeScenario": "Family chat group • Aunt replying with 'Thank you beta for checking! I didn't know' and deleting the post"
+        },
+        {
+          "title": "Stopping an Exam Postponement Rumor in Class Chat",
+          "description": "When classmates start celebrating an unverified rumor that the math exam is cancelled, the class monitor posts the school principal's official portal link, saving peers from failing.",
+          "realLifeScenario": "Student study group • Refocusing classmates on exam revision with calm, verified facts"
+        },
+        {
+          "title": "Refusing to Forward Clickbait Shock Videos",
+          "description": "A student receives an alarming video claiming tap water is toxic; instead of forwarding to friends, they delete the video immediately and notify the group admin.",
+          "realLifeScenario": "Mobile phone screen • Choosing not to participate in the viral amplification of manufactured panic"
+        },
+        {
+          "title": "Creating a School 'Fact-Checking Wall' for Science Fair",
+          "description": "Class 6 students create a colorful interactive bulletin board displaying common internet health and space myths alongside verified scientific facts, educating the whole school.",
+          "realLifeScenario": "School hallway corridor • Younger students reading colorful infographics debunking common internet rumors"
+        }
+      ],
+      "keyPoints": [
+        "Misinformation cannot spread without human forwarding; you have the power to break the chain.",
+        "The Golden Pause Rule: Wait and think before reacting, liking, or forwarding sensational content.",
+        "The Rule of Zero Harms: Never share unverified information; when in doubt, keep it out.",
+        "Act as a Gentle Family Truth Ambassador by correcting hoaxes with kindness, respect, and verified links.",
+        "Never humiliate or mock family members who fall for hoaxes; help them build digital literacy skills.",
+        "Responsible digital citizenship protects public safety, civic harmony, and democratic truth."
+      ],
+      "algoVoice": "Every time you choose not to forward an unverified rumor, you perform an act of digital heroism! Truth is not something that happens by accident—it is something brave people protect every single day. Stand tall for truth!"
+    }
+  ],
+  "realWorldStories": [
+    {
+      "storyId": "story1",
+      "title": "Aarav from Lucknow: The Fake School Holiday Circular and the Principal's Website Check",
+      "location": "Lucknow, Uttar Pradesh",
+      "domain": "Media Literacy & Educational Hoaxes",
+      "summary": "How a 12-year-old student used the 3-Step Verification Shield to uncover a recycled 6-year-old weather circular, saving his classmates from failing a crucial terminal exam.",
+      "content": "On a cold December evening in Lucknow, twelve-year-old Aarav was reviewing chapter summaries for his terminal science examination. At 8:30 PM, his mother's phone chimed with an urgent notification from the colony residents' WhatsApp group.\n\nThe message contained a PDF circular stamped with the state government emblem: 'ORDER OF THE DISTRICT ADMINISTRATION — ALL SCHOOLS CLOSED TILL FRIDAY DUE TO SEVERE COLD WAVE'. Attached was a short video clip showing news anchors discussing freezing temperatures.\n\nAarav's younger brother cheered: 'No school tomorrow! We can stay up late and watch movies!'. Aarav's finger hovered over his class WhatsApp group to forward the wonderful news to fifty classmates.\n\nThen Aarav paused. He remembered his computer teacher's advice: 'Verify before you celebrate!' Aarav opened his laptop and executed the 3-Step Verification Shield.\n\nFirst, he visited the official district administration portal (lucknow.nic.in). The notice board had zero circulars about school holidays. Second, Aarav opened the PDF and examined the circular's date. When he zoomed in on the document metadata and fine print, he noticed the reference order was dated December 2018—someone had digitally blurred the year '2018' to trick parents six years later! Third, he checked two major national news websites; neither reported any closure.\n\nAarav immediately texted his class group: 'Friends, DO NOT CLOSE YOUR BOOKS! The circular circulating in colony groups is a 2018 hoax. Check the official portal lucknow.nic.in. Tomorrow's exam is ON.'\n\nThe next morning, several students from other sections arrived late or skipped school, only to realize the exam was indeed taking place! But Aarav and his friends walked into the examination hall on time, focused, and scored top grades.\n\nThat afternoon, the District Magistrate issued an official tweet warning citizens about the recycled 2018 circular. Aarav's school principal honored him in the morning assembly with the 'Digital Integrity Badge'.\n\n'Aarav showed us that fact-checking isn't just about computers,' the Principal announced. 'It is about taking responsibility for truth and protecting your peers from chaos!'",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Aarav speaking at the school morning assembly in Lucknow, holding an official verified circular alongside a slide showing the debunked 2018 hoax]",
+      "keyTakeaway": "A disciplined 3-step fact check exposes recycled historical hoaxes, preventing academic disruption and establishing students as trusted community truth leaders."
+    },
+    {
+      "storyId": "story2",
+      "title": "Meera from Pune: Defeating the AI Voice Clone Emergency Call Scam",
+      "location": "Pune, Maharashtra",
+      "domain": "Audio Deepfakes & Family Defense",
+      "summary": "How an alert student's pre-arranged 'Family Safe Word' thwarted an overseas cybercriminal using an AI voice clone of her brother to demand emergency ransom money.",
+      "content": "In Pune, twelve-year-old Meera lived with her parents and grandmother, while her older brother Aditya was studying engineering at a college in Bengaluru. Aditya was an active member of the college debate society, frequently posting video clips of his speeches on social media.\n\nOne Thursday afternoon, while Meera and her grandmother were home alone, the landline phone rang. Her grandmother answered. A frantic, weeping voice on the line cried out: 'Dadi! It's Aditya! I was on a bus in Bengaluru and my wallet and phone were stolen by pickpockets. The police are holding me at the station. Please UPI 5,000 rupees to the stationmaster's number right now so they let me go!'\n\nThe voice sounded shockingly real—the exact timbre, pitch, and familiar Marathi accent of Aditya!\n\nHer grandmother began trembling, reaching for her bank passbook in tears. 'Meera, your brother is arrested! We must send money immediately!'\n\nMeera's heart raced, but she noticed subtle clues: the voice spoke without the usual pauses Aditya took when agitated, and there were faint metallic buzzing artifacts on the consonant sounds. Most importantly, Meera remembered their family cybersecurity rule: The Secret Family Safe Word!\n\nMeera took the phone from her grandmother's trembling hands. Calmly, she asked into the receiver: 'Aditya, we will send the money right now. But before we do, what is our cat's secret nickname?'\n\nThe voice on the other end hesitated, stumbled, and stammered: 'Dadi, stop playing games! Just send the money, I am in danger!'\n\nMeera pressed the red button and hung up. She immediately opened WhatsApp on her phone and called her brother Aditya directly on his personal mobile number. Aditya answered on the second ring, laughing with his mouth full of cafeteria lunch: 'Hey Meera! I'm sitting in the college canteen having dosas with my friends. What's up?'\n\nHer grandmother collapsed onto the sofa in overwhelming relief. Meera explained how cybercriminals had downloaded a 10-second speech clip from Aditya's public social media and cloned his voice using generative AI software.\n\n'The technology was so terrifyingly real that it almost broke my heart,' her grandmother said, kissing Meera's forehead. 'Meera's calm head and our secret safe word saved us from a terrible robbery.'",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Meera in Pune comforting her grandmother beside the landline telephone while showing her brother Aditya smiling safely on a video call on her mobile phone]",
+      "keyTakeaway": "Pre-arranged offline family safe words and calm verification questions completely neutralize sophisticated AI voice cloning scams, protecting loved ones from emotional extortion."
+    },
+    {
+      "storyId": "story3",
+      "title": "Dev from Kolkata: Debunking the Miracle Health Cure Viral Video with PIB Fact Check",
+      "location": "Kolkata, West Bengal",
+      "domain": "Public Health Literacy & Official Fact-Checking",
+      "summary": "How a middle school student stopped a dangerous viral home-remedy video from spreading among elderly neighbors by leveraging official PIB and medical fact-checking resources.",
+      "content": "In the cultural heart of North Kolkata, twelve-year-old Dev spent his evenings in his apartment building's rooftop garden, where senior citizens gathered for evening tea and lively discussions (adda). One Saturday, Dev noticed an alarming trend: several elderly neighbors, including his beloved grandfather Dadu, were discussing a sensational video circulating in their neighborhood WhatsApp group.\n\nThe video featured a man dressed in a white doctor's coat standing in front of what looked like an official hospital backdrop. With dramatic music playing, the speaker claimed: 'SHOCKING MEDICAL BREAKTHROUGH! Drinking raw bitter gourd juice mixed with crushed camphor tablets cures high blood pressure in 24 hours! Stop taking your prescribed pharmacy tablets immediately!'\n\nDadu, who had taken blood pressure medication for fifteen years, was seriously considering stopping his pills. 'The doctor in the video speaks with such authority, Dev. Camphor is natural, so it must be safe.'\n\nDev felt a knot of worry in his stomach. He knew from science class that camphor is toxic if ingested! He immediately opened his laptop in his study room and went to work.\n\nFirst, Dev searched the official portal of the Press Information Bureau (factcheck.pib.gov.in). To his astonishment, the exact video had been flagged by PIB Fact Check two days earlier with a massive red 'FAKE & HAZARDOUS' banner! The official government medical panel warned that ingesting camphor can cause severe neurological poisoning, seizures, and liver damage.\n\nSecond, Dev looked up the fact-check investigation on BOOM Live. The researchers had discovered that the 'doctor' in the video was actually a hired commercial actor, and the hospital backdrop was a stock green-screen photograph available on the internet for five dollars!\n\nDev printed out the official PIB Fact Check advisory with its clear warning stamps and hospital citations. That evening, he brought the printouts to the rooftop adda. He gently walked his grandfather and the neighbors through the investigation, explaining how green screens work and showing the medical warnings.\n\nThe neighbors were stunned. Dadu tore up his notes on camphor juice and hugged Dev tightly. 'Dev, you didn't just fact-check a video; you protected our health and saved lives.'\n\nDev's story was featured in the local neighborhood newsletter, inspiring the community to appoint two youth 'Digital Truth Ambassadors' for the building.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Dev presenting official PIB Fact Check printouts to a group of elderly neighbors in a North Kolkata rooftop garden during evening tea]",
+      "keyTakeaway": "Using official national fact-checking portals like PIB Fact Check provides irrefutable public evidence that exposes hazardous medical hoaxes and safeguards public health."
+    }
+  ],
+  "activities": [
+    {
+      "activityId": "activity1",
+      "title": "Fact Checker Media Verification Lab",
+      "description": "Step into the newsroom! Act as a professional investigative fact-checker. Take three viral multimedia claims (a synthetic video, an old recycled weather circular, and an emotional health forward) and run them through the 3-Step Verification Shield.",
+      "duration": "20 mins",
+      "materials": "Verification Lab Worksheet, tablet or computer with internet access, sample viral case dossier cards, red and green highlighter pens",
+      "learningOutcome": "Students master the three investigative pillars: Source Origin Verification, Date/Context Audit, and Two-Source Independent Confirmation, producing an official Fact-Check Verdict Card.",
+      "instructions": [
+        "1. Open Case Dossier #1: Review the viral video claim alleging that a famous monument is sinking into the sea.",
+        "2. Step 1 (Source Origin): Check whether the primary institution (Archaeological Survey of India) has published any official alerts on their verified .gov.in domain.",
+        "3. Step 2 (Date & Context Audit): Conduct a reverse image search on a video screenshot using Google Lens. Identify the original upload date and real geographic location.",
+        "4. Step 3 (Two-Source Rule): Cross-reference the claim across two independent national news publications (e.g. DD News, The Hindu, NDTV).",
+        "5. Forensic Glitch Inspection: Inspect the video for deepfake artifacts—unnatural blinking, blurred ear boundaries, and missing breath pauses in audio.",
+        "6. Write your official Fact-Check Verdict: Label the claim 'VERIFIED TRUE', 'MISLEADING CONTEXT', or 'FABRICATED DEEPFAKE' and draft a polite 2-sentence explanation for a family chat!"
+      ],
+      "toastFeedback": {
+        "tap_prompt": "Run the 3-step fact check before forwarding the viral video.",
+        "great_job": "Verification complete! Video was proven to be synthetic media from an old event.",
+        "try_again": "Pause before forwarding: Check if any major verified news portal reported this."
+      },
+      "tips": [
+        "Always search for the exact keywords plus the word 'fact check' (e.g. 'monument sinking fact check') to find existing investigations.",
+        "Look for domain extensions: official Indian government agencies always use '.gov.in' or '.nic.in'."
+      ]
+    },
+    {
+      "activityId": "activity2",
+      "title": "The Deepfake Artifact Detective Workshop",
+      "description": "Train your visual forensic eye! Inspect high-resolution comparison cards featuring authentic photos versus AI-generated deepfakes to spot subtle anatomical and lighting flaws.",
+      "duration": "15 mins",
+      "materials": "Forensic image comparison deck, magnifying glasses, visual flaw checklists",
+      "learningOutcome": "Students learn how to spot biological, physical, and lighting anomalies in generative AI images and synthetic videos.",
+      "instructions": [
+        "1. Examine Image Pair A: Look closely at the eyes of both portraits. Check pupil reflections (specular highlights) to see if both eyes reflect the same light source.",
+        "2. Inspect Hand and Finger Anatomy: Count fingers on visible hands; check for fused joints, missing fingernails, or impossible angles.",
+        "3. Inspect Background Boundaries: Check where hair strands meet the background. Look for shimmering digital halos or blurring around ears and glasses.",
+        "4. Examine Jewelry and Textures: Check whether earrings, necklace chains, or shirt patterns remain consistent or warp into blurry smears.",
+        "5. Mark each image as 'AUTHENTIC CAPTURE' or 'AI SYNTHETIC GENERATION' with specific forensic evidence notes!"
+      ],
+      "toastFeedback": {
+        "tap_prompt": "Zoom in on eye reflections, hand anatomy, and background hair boundaries to spot synthetic flaws.",
+        "great_job": "Forensic analysis complete! Inconsistent eye lighting and six-finger glitches unmasked the AI portrait.",
+        "try_again": "Remember: Check both eyes carefully; real photos always reflect identical ambient lighting."
+      },
+      "tips": [
+        "Zooming into 200% magnification on teeth and ears quickly reveals whether an image was captured by a camera or generated by an algorithm.",
+        "Natural human skin has pores, tiny wrinkles, and imperfections; AI skin often looks unnaturally plastic and smooth."
+      ]
+    },
+    {
+      "activityId": "activity3",
+      "title": "The Family WhatsApp Fact-Checking Intervention",
+      "description": "Practice the art of constructive digital diplomacy! Craft polite, kind, and evidence-backed response scripts to debunk common viral rumors in family and school messaging groups without causing conflict.",
+      "duration": "15 mins",
+      "materials": "Sample viral family chat message cards, role-play scripts, green highlighter pens",
+      "learningOutcome": "Students develop empathetic communication skills, learning how to share verified truth respectfully without humiliating or alienating loved ones.",
+      "instructions": [
+        "1. Read the sample viral message card: An uncle shares an alarming forward in the family group: 'UNESCO declares tomorrow as National Silence Day—turn off all phones!'.",
+        "2. Analyze the Emotional Hook: Notice that the uncle shared it out of patriotism and concern, not malice.",
+        "3. Draft a 3-Part Diplomatic Response:\n   - Part A: Empathy & Affection ('Thank you, Uncle, for always sharing helpful thoughts with our family!').\n   - Part B: The Verified Fact ('I checked this on UNESCO's official website and PIB Fact Check, and they confirmed it is a recurring internet hoax.').\n   - Part C: The Verified Link (Attach the official factcheck.pib.gov.in link so everyone can see the evidence).",
+        "4. Role-play the conversation with a classmate: practice delivering the message with warmth and respectful tone.",
+        "5. Reflect on how gentle truth-telling builds long-term family trust and digital resilience."
+      ],
+      "toastFeedback": {
+        "tap_prompt": "Draft a diplomatic 3-part response combining affection, verified facts, and official links.",
+        "great_job": "Diplomatic correction mastered! Kind, evidence-based responses stop misinformation without creating family tension.",
+        "try_again": "Avoid condescending phrases like 'You are wrong'; focus on sharing verified institutional sources."
+      },
+      "tips": [
+        "Sending a gentle private message is often even better than correcting someone in a giant public group.",
+        "Always express appreciation for their good intentions before introducing the verified evidence."
+      ]
+    }
+  ],
+  "games": [
+    {
+      "gameId": "game1",
+      "title": "Real or Deepfake? The Visual Artifact Detective",
+      "type": "deepfake_detector",
+      "description": "Inspect close-up portraits and video clips to determine whether each media asset is an authentic camera recording or an AI synthetic deepfake. [IMAGE_PLACEHOLDER: Split comparison showing authentic video vs synthetic deepfake video with artifacts]",
+      "instructions": "Examine the forensic evidence and classify each card as 'Authentic Camera Capture' or 'Synthetic AI Deepfake'.",
+      "cards": [
+        {
+          "id": "df1",
+          "subject": "Portrait of a news anchor delivering a breaking update",
+          "forensicClue": "The anchor speaks for 45 seconds without blinking once, and their teeth appear as a solid white fused bar without individual gaps.",
+          "verdict": "Synthetic AI Deepfake",
+          "explanation": "Unnatural lack of blinking and fused, picket-fence teeth are telltale anatomical errors of generative face synthesis."
+        },
+        {
+          "id": "df2",
+          "subject": "Wildlife photograph of an elephant herd drinking at a riverbank in Kaziranga",
+          "forensicClue": "Individual water droplets splash realistically, skin wrinkles show natural dust texture, and lighting cast shadows match the afternoon sun.",
+          "verdict": "Authentic Camera Capture",
+          "explanation": "Complex, chaotic natural physics—such as fluid dynamics and authentic skin wrinkles—match genuine optical photography."
+        },
+        {
+          "id": "df3",
+          "subject": "Video of a famous cricket captain announcing a giveaway on social media",
+          "forensicClue": "The player's mouth movements lag 0.4 seconds behind the spoken audio, and his left earring flickers and disappears when he turns his head.",
+          "verdict": "Synthetic AI Deepfake",
+          "explanation": "Audio-visual desynchronization and disappearing facial accessories are classic boundary blending errors in deepfake video generation."
+        },
+        {
+          "id": "df4",
+          "subject": "Photograph of an astronaut floating inside the International Space Station",
+          "forensicClue": "Equipment labels show clear readable manufacturer serial numbers, reflections in helmet visor match room modules, hands have 5 distinct fingers.",
+          "verdict": "Authentic Camera Capture",
+          "explanation": "Consistent internal lighting reflections, correct anatomical fingers, and crisp readable typography indicate genuine photography."
+        },
+        {
+          "id": "df5",
+          "subject": "Audio message claiming to be your school principal announcing fee changes",
+          "forensicClue": "The voice speaks in a monotone cadence with zero breathing pauses for two full minutes, accompanied by robotic metallic fuzz on 's' sounds.",
+          "verdict": "Synthetic AI Deepfake",
+          "explanation": "Synthetic text-to-speech models often fail to emulate human respiratory cycles, emotional cadence, and high-frequency sibilants."
+        }
+      ]
+    },
+    {
+      "gameId": "game2",
+      "title": "The Viral Forward Verification Gauntlet",
+      "type": "hoax_verifier",
+      "description": "A barrage of viral forwards lands in your class messaging chat! Deploy the 3-Step Verification Shield to separate factual news from dangerous hoaxes.",
+      "instructions": "Evaluate each viral message and assign the correct verification action.",
+      "cards": [
+        {
+          "id": "vg1",
+          "message": "NASA warns that drinking cold milk tonight will cause immediate poisoning due to cosmic rays reflecting from Jupiter!",
+          "action": "Flag as Absurd Hoax & Delete Immediately",
+          "explanation": "Scientifically impossible; cosmic rays from Jupiter do not interact with dairy products in domestic refrigerators."
+        },
+        {
+          "id": "vg2",
+          "message": "The Ministry of Education issues an official notification updating the Class 10 board exam passing criteria, linking to cbse.gov.in.",
+          "action": "Verify on Official cbse.gov.in Domain",
+          "explanation": "The message cites an official verified government domain (.gov.in); visiting the official portal confirms the authenticity."
+        },
+        {
+          "id": "vg3",
+          "message": "A video claiming the Taj Mahal's minaret collapsed during yesterday's rainstorm, featuring loud dramatic movie siren sound effects.",
+          "action": "Check Two Major News Portals & Archeological Survey of India",
+          "explanation": "Major structural damage to a world monument would be the lead story across every global news agency; absence of reporting proves it is fake."
+        },
+        {
+          "id": "vg4",
+          "message": "Forward this message to 20 people or WhatsApp will start charging 500 rupees per month and turn your icon red!",
+          "action": "Recognize Classic Forwarding Chain Hoax & Stop Chain",
+          "explanation": "Decade-old psychological chain letter hoax designed to manipulate users through artificial threats."
+        },
+        {
+          "id": "vg5",
+          "message": "A viral message claims that the Reserve Bank of India has banned all 10-rupee coins and they are no longer legal currency.",
+          "action": "Check Reserve Bank of India Official Website (rbi.org.in) & PIB Fact Check",
+          "explanation": "The RBI has repeatedly issued public notifications confirming that all 10-rupee coins remain legal tender."
+        }
+      ]
+    },
+    {
+      "gameId": "game3",
+      "title": "The Family WhatsApp Hero — Pause or Forward?",
+      "type": "decision_simulator",
+      "description": "Navigate high-stakes family messaging dilemmas! Choose the mature, ethical digital citizen response that protects loved ones from deception.",
+      "instructions": "Select the optimal response to neutralize misinformation in social chat groups.",
+      "cards": [
+        {
+          "id": "wh1",
+          "scenario": "Your favorite uncle forwards a panic message: 'Emergency: Do not eat poultry this week due to mystery bird fever! Warn all cousins!'.",
+          "bestMove": "Check Official Animal Husbandry Ministry Portal & Reply with PIB Fact Check Link",
+          "explanation": "Verifying with animal health authorities stops unverified food panics that hurt local farmers and distress relatives."
+        },
+        {
+          "id": "wh2",
+          "scenario": "A classmate shares a photo of an exam question paper claiming it was leaked for tomorrow's terminal test.",
+          "bestMove": "Refuse to Forward, Report to School Teacher / Principal Immediately",
+          "explanation": "Circulating fake or leaked exam papers is a serious disciplinary violation; reporting it protects the integrity of the school."
+        },
+        {
+          "id": "wh3",
+          "scenario": "A viral message claims that an old village well in Rajasthan has started pouring sweet milk instead of water.",
+          "bestMove": "Reverse Image Search Video & Spot Movie Promotional Stunt",
+          "explanation": "Reverse searching video frames quickly reveals that sensational miraculous claims are staged PR stunts or edited entertainment clips."
+        },
+        {
+          "id": "wh4",
+          "scenario": "A forwarded message claims that eating green bananas immediately cures venomous snakebites in rural areas.",
+          "bestMove": "Refuse to Forward, Reply with Hospital Emergency Protocol & Alert Group Admin",
+          "explanation": "Dangerous medical hoaxes delay life-saving anti-venom treatment; immediate scientific debunking is mandatory."
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Class 6 Think Before You Trust Mastery Championship",
+    "totalQuestions": 18,
+    "passingScore": 75,
+    "questions": [
+      {
+        "questionNumber": 1,
+        "question": "What is 'Synthetic Media' in modern digital technology?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Media (images, videos, or audio) created or altered using artificial intelligence rather than captured by a physical camera or microphone",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Photographs printed on synthetic plastic paper instead of cardboard",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "News articles that can only be read while wearing virtual reality glasses",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Television channels that broadcast 24 hours of cartoon movies",
+            "correct": false
+          }
+        ],
+        "explanation": "Synthetic media encompasses algorithmically generated or manipulated content, including deepfakes and AI voice clones.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 2,
+        "question": "Why can people no longer rely on the old proverb 'Seeing is believing' when browsing the internet?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because generative AI can create hyper-realistic fake videos, altered faces, and cloned voices that look completely convincing",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Because human eyesight has gotten significantly worse over the last five years",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Because modern smartphones have blurry screens that cannot show real pictures",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because all cameras were removed from smartphones by international law",
+            "correct": false
+          }
+        ],
+        "explanation": "Generative AI enables the creation of photorealistic video and audio simulations, rendering visual appearance insufficient proof of reality.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 3,
+        "question": "What is a 'Deepfake'?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A synthetic video or audio recording where deep neural networks swap faces, alter speech, or fabricate actions that never occurred",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "A very deep hole dug in the ocean floor by underwater submarines",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "A secret password used exclusively by deep-sea divers",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "A computer keyboard that has very deep, noisy mechanical buttons",
+            "correct": false
+          }
+        ],
+        "explanation": "Deepfakes use deep learning architectures (like GANs and diffusion models) to create realistic visual or auditory impersonations.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 4,
+        "question": "According to scientific studies, why does fake news spread significantly faster on social media than truthful news?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because fake news is engineered to exploit intense human emotions: extreme fear, outrage, or miraculous hope",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Because truth travels through cables while fake news travels through the air",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Because computer servers are legally required to give priority to false stories",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because true news stories are always written in secret languages that people cannot read",
+            "correct": false
+          }
+        ],
+        "explanation": "Sensationalized misinformation bypasses critical faculties by targeting emotional triggers, prompting rapid unverified sharing.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionNumber": 5,
+        "question": "What is Step 1 of the 3-Step Verification Shield?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Source Origin Check: Verify whether the claimed official institution actually published the notice on their verified official website",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Forward the message to fifty friends to see what they think",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Delete all contacts from your smartphone immediately",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Turn off your Wi-Fi router for two weeks",
+            "correct": false
+          }
+        ],
+        "explanation": "The first step in verification is tracing the claim directly to the official primary source (.gov.in or verified portal).",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 6,
+        "question": "Why is checking the date and temporal context (Step 2) so vital when evaluating viral videos?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because many viral hoaxes are real old videos from years ago recirculated with false, panic-inducing captions about current events",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Because videos stop working on computers if they are more than three days old",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Because cameras only record accurate colors on weekend afternoons",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because all videos recorded before 2020 are completely fictional",
+            "correct": false
+          }
+        ],
+        "explanation": "Decontextualization—taking authentic historical media and falsely attributing it to current breaking news—is a prevalent misinformation tactic.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionNumber": 7,
+        "question": "What is 'Reverse Image Search' and how does it help fact-checkers?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A search tool (like Google Lens) where you upload an image to discover when and where it was first published on the internet",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "A tool that turns pictures upside down so you can read backwards writing",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "A camera feature that makes photos look like old paintings from the 1800s",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "A printer that prints pictures on the back of paper instead of the front",
+            "correct": false
+          }
+        ],
+        "explanation": "Reverse image search scans the web for identical or similar visual frames, uncovering original upload dates and contexts.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionNumber": 8,
+        "question": "What is the 'Two-Source Rule' (Step 3) in media verification?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Before believing major breaking news, confirm that at least two independent, credible, recognized news organizations report the exact same fact",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Only believe a story if two of your classmates repeat it at lunch",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Make sure you read the news on two different computer monitors at the same time",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Verify that the message contains at least two exclamation marks and two emojis",
+            "correct": false
+          }
+        ],
+        "explanation": "The Two-Source Rule requires independent corroboration across reputable journalistic institutions before accepting extraordinary claims.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 9,
+        "question": "Which of the following visual flaws is a classic telltale sign of an AI-generated synthetic deepfake portrait?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Pupils reflecting inconsistent light sources, fused solid-bar teeth, or hands with six fingers",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "A person smiling warmly while holding a school book",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "A photograph having clear, natural skin pores and realistic fabric wrinkles",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "A photo that was taken in outdoor sunlight beside a real tree",
+            "correct": false
+          }
+        ],
+        "explanation": "Generative neural networks struggle with optical reflections, biological dental separations, and complex hand anatomy.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionNumber": 10,
+        "question": "How can families protect themselves against emergency phone scams using AI voice clones?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Agree on a secret offline 'Family Safe Word' or ask a personal question that only the real family member could answer",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Send money immediately whenever anyone calls in tears",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Throw away all phones and never communicate with family members again",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Shout very loudly into the telephone receiver until the caller hangs up",
+            "correct": false
+          }
+        ],
+        "explanation": "An offline family safe word or personal challenge question instantly neutralizes voice-cloning social engineering scams.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 11,
+        "question": "What is 'PIB Fact Check' in India?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The official Government of India fact-checking agency that investigates viral social media claims regarding public policies and schemes",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "A private gaming company that creates superhero video games",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "A new brand of mobile phones sold across Indian post offices",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "A satellite television network that only broadcasts music videos",
+            "correct": false
+          }
+        ],
+        "explanation": "PIB Fact Check operates under the Ministry of Information and Broadcasting to monitor and debunk viral hoaxes affecting citizens.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 12,
+        "question": "In the story of Aarav in Lucknow, what forensic clue revealed that the viral holiday circular was a hoax?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Zooming in on the reference order line revealed that the circular was originally from 2018 with the date smudged out",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "The circular was written entirely in French and German",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "The circular had a drawing of Mickey Mouse stamped in the center",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "The circular dissolved into smoke when downloaded onto the laptop",
+            "correct": false
+          }
+        ],
+        "explanation": "Aarav's temporal audit uncovered that an old authentic circular from 2018 had been recycled to fabricate false current news.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionNumber": 13,
+        "question": "In Meera's story from Pune, how did she uncover that the crying caller claiming to be her brother was an AI scam?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The caller couldn't provide the family's secret safe word, and her brother was reached safely eating lunch in Bengaluru",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Her brother arrived home in Pune on a helicopter five seconds later",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "The telephone cord suddenly turned bright green and started beeping",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "The caller admitted they were an alien from outer space",
+            "correct": false
+          }
+        ],
+        "explanation": "The safe word challenge and an independent callback to her brother's phone completely debunked the AI voice clone attack.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionNumber": 14,
+        "question": "Why was the viral health remedy debunked by Dev in Kolkata (drinking camphor juice) particularly dangerous?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because camphor is medically toxic when swallowed, and stopping prescribed blood pressure pills can cause life-threatening emergencies",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Because camphor makes your tongue turn purple for twenty years",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Because bitter gourd is illegal to grow in West Bengal gardens",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because medical doctors are not allowed to appear in videos on the internet",
+            "correct": false
+          }
+        ],
+        "explanation": "Medical hoaxes pose direct physical risks by advocating toxic substances and prompting patients to abandon proven treatments.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionNumber": 15,
+        "question": "What is the 'Golden Pause Rule' when encountering sensational news online?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Pause for at least ten seconds before reacting or forwarding, allowing your logical brain to evaluate sources and evidence",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Pause your video game whenever you lose a match",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Never use the internet for more than ten seconds at a time",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Wait ten seconds before answering your teacher's questions in class",
+            "correct": false
+          }
+        ],
+        "explanation": "The Golden Pause breaks the emotional reflexive loop, allowing critical reasoning to interrogate the claim before sharing.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 16,
+        "question": "How should you respectfully correct an elder family member who shares a fake news forward in a WhatsApp group?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Acknowledge their caring intention with affection, share the verified facts politely, and attach an official fact-check link",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Shout at them in all-capital letters and call them silly in front of everyone",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Block them on all phones and refuse to visit them for family festivals",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Forward ten even crazier fake stories to tease them",
+            "correct": false
+          }
+        ],
+        "explanation": "Diplomatic corrections combine empathy, respect, and authoritative verification links to foster collaborative family literacy.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 17,
+        "question": "What is the 'Rule of Zero Harms' in digital citizenship?",
+        "options": [
+          {
+            "id": "a",
+            "text": "If you are not 100% sure that an alarming claim is verified and true, never forward or share it",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Never let your computer battery drop to zero percent charge",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Always score zero mistakes on every math exam you take",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Never use computers when the temperature outside is zero degrees",
+            "correct": false
+          }
+        ],
+        "explanation": "The Rule of Zero Harms establishes personal responsibility: refusing to circulate unverified rumors stops real-world harm.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionNumber": 18,
+        "question": "What is the final message of Algo, the Intelligent Guide, in 'Think Before You Trust'?",
+        "options": [
+          {
+            "id": "a",
+            "text": "You are the vital domino that can break the chain of misinformation: pause, verify with credible sources, and champion truth with courage and kindness",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "You should believe everything you see on the internet as long as it has a nice soundtrack",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Computers are evil machines that should be banned from all schools forever",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Only scientists with university degrees are allowed to ask questions about news",
+            "correct": false
+          }
+        ],
+        "explanation": "The lesson empowers young students to act as discerning, ethical digital citizens who protect their communities through verified truth.",
+        "difficulty": "easy",
+        "points": 10
+      }
+    ],
+    "completionFeedback": {
+      "excellent": {
+        "range": "90-100",
+        "message": "Champion of Truth & Media Detective! You have mastered the 3-Step Verification Shield, spotted synthetic deepfake glitches, and learned how to break misinformation chains with kindness. Algo awards you the Truth Guardian Master Badge!",
+        "badge": "Truth Guardian Master Badge 🔍"
+      },
+      "good": {
+        "range": "70-89",
+        "message": "Terrific fact-checking! You understand the power of verifying sources. Review the specific forensic signs of deepfakes and the 2-Source Rule to achieve a perfect 100% score!",
+        "badge": "Media Literacy Scout 🛡️"
+      },
+      "needsReview": {
+        "range": "0-69",
+        "message": "Good effort! Remember: Seeing is no longer believing. Revisit the stories of Aarav, Meera, and Dev, practice the Golden Pause Rule, and retake the championship!",
+        "badge": "Curious Learner 🌱"
+      }
+    }
+  },
+  "summary": {
+    "keyTakeaways": [
+      "Synthetic media (deepfakes, AI voice clones) makes it easy to fabricate convincing video and audio simulations.",
+      "Viral hoaxes spread rapidly by hijacking intense human emotions: fear, moral outrage, and miraculous hope.",
+      "The 3-Step Verification Shield: Check Source Origin, Audit Dates/Context, and apply the Two-Source Independent Rule.",
+      "Examine forensic visual clues (unnatural blinking, fused teeth, boundary shimmer) and audio breath cadence to spot AI fakes.",
+      "Pre-arranged family safe words provide an unbeatable defense against emergency AI voice cloning scams.",
+      "Practice the Golden Pause Rule: break the misinformation chain with kindness, verified links, and personal integrity."
+    ],
+    "reflectionPrompt": "Think about the last viral forward you saw in a chat group or on social media. Did it trigger fear, anger, or excitement? How would you apply the 3-Step Verification Shield to test whether it was authentic before forwarding it?",
+    "algoWisdom": "In a world flooded with digital noise, truth is the rarest and most precious jewel. You don't need a superpower to be a hero—just a thoughtful pause, a sharp eye, and the courage to verify. Shine brightly, truth guardian!"
+  },
+  "teacherGuide": {
+    "pedagogicalRationale": "This lesson provides Class 6 students (ages 11-12) with essential media literacy defenses in the era of generative synthetic media. By deconstructing the emotional mechanics of viral hoaxes, teaching concrete forensic analysis of deepfakes, and establishing verification routines, educators cultivate critical digital agency and responsible online citizenship.",
+    "classroomDiscussionPrompts": [
+      "Why do you think people are often so eager to forward alarming news to their friends before checking whether it is true?",
+      "If you see a video of a famous leader saying something shocking, what are three concrete steps you can take to verify its authenticity?",
+      "How does having a pre-arranged secret family safe word protect your family from voice cloning telephone scams?",
+      "What is the difference between sharing an unverified rumor 'just in case' versus verifying facts before taking action?",
+      "How can young students help their parents and grandparents navigate confusing WhatsApp forwards with patience and respect?"
+    ],
+    "commonMisconceptions": [
+      {
+        "misconception": "If an event is captured on a video recording with sound, it must have happened in real life.",
+        "correction": "Modern generative AI tools can create realistic synthetic video and clone voices from scratch; video is no longer automatic proof of reality."
+      },
+      {
+        "misconception": "Fact-checking takes hours of advanced computer programming and cannot be done by middle schoolers.",
+        "correction": "A 3-step fact check—source website, reverse image search, and checking two news portals—takes under two minutes using basic free web tools."
+      },
+      {
+        "misconception": "People who share fake news forwards are trying to cause harm on purpose.",
+        "correction": "Most people who forward hoaxes are well-meaning family members tricked by emotional fear; they need gentle evidence, not anger."
+      }
+    ],
+    "differentiatedLearning": "For visual learners, focus on side-by-side forensic photo glitch analysis. For verbal learners, practice role-playing diplomatic WhatsApp intervention scripts. For advanced students, explore the mathematical mechanics of Generative Adversarial Networks (GANs) and analyze international media literacy laws."
+  },
+  "resources": {
+    "furtherReading": [
+      "True or False: A CIA Analyst's Guide to Spotting Fake News by Cindy L. Otis",
+      "Factfulness: Ten Reasons We're Wrong About the World by Hans Rosling (Youth Edition)",
+      "CBSE & PIB Guidelines on Combating Misinformation and Verifying Digital Media"
+    ],
+    "recommendedActivities": [
+      "Host a Classroom 'Fact Check Newsroom Simulation' where teams investigate breaking viral claims and publish verification badges.",
+      "Conduct a 'Deepfake Glitch Hunt' where students examine image pairs and annotate anatomical anomalies with magnifying glasses."
+    ],
+    "glossary": [
+      {
+        "term": "Synthetic Media",
+        "definition": "Digital images, videos, audio, or text generated or manipulated using artificial intelligence rather than physical recording equipment."
+      },
+      {
+        "term": "Deepfake",
+        "definition": "A synthetic video or audio asset created using deep neural networks to realistically alter a person's face, expressions, or voice."
+      },
+      {
+        "term": "Voice Cloning",
+        "definition": "Using machine learning models to replicate a specific person's vocal pitch, timbre, and accent from a short audio sample."
+      },
+      {
+        "term": "Reverse Image Search",
+        "definition": "A search technique where an image is uploaded to locate its earliest appearances, origins, and original captions on the web."
+      },
+      {
+        "term": "The 3-Step Verification Shield",
+        "definition": "A media literacy checklist comprising Source Origin Check, Date/Context Audit, and Two-Source Independent Confirmation."
+      },
+      {
+        "term": "Two-Source Rule",
+        "definition": "The journalistic standard of confirming major breaking news across at least two independent, credible, recognized news organizations."
+      },
+      {
+        "term": "Specular Highlights",
+        "definition": "Pinpoint light reflections visible on human pupils; in deepfakes, inconsistent specular highlights often expose synthetic generation."
+      },
+      {
+        "term": "PIB Fact Check",
+        "definition": "The official verification portal of the Government of India's Press Information Bureau, monitoring viral public policy claims."
+      },
+      {
+        "term": "Golden Pause Rule",
+        "definition": "The habit of pausing for ten seconds upon encountering sensational news to engage critical thinking before reacting or forwarding."
+      },
+      {
+        "term": "Family Safe Word",
+        "definition": "A pre-agreed secret offline word used by family members to confirm real identity during emergency telephone calls."
+      },
+      {
+        "term": "Misinformation",
+        "definition": "False or inaccurate information spread regardless of whether there is an intent to deceive."
+      },
+      {
+        "term": "Disinformation",
+        "definition": "Deliberately fabricated falsehoods created and circulated with the specific malicious intent to deceive, manipulate, or harm."
+      },
+      {
+        "term": "Digital Literacy",
+        "definition": "The practical ability to find, evaluate, verify, and ethically communicate information using digital platforms."
+      },
+      {
+        "term": "Confirmation Bias",
+        "definition": "The psychological human tendency to search for, favor, and recall information that confirms preexisting personal beliefs."
+      }
+    ]
+  }
+}
