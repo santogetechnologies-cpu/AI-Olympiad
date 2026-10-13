@@ -1,0 +1,1451 @@
+{
+  "lessonId": "l2",
+  "fullLessonId": "junior-class4-ch2-l2",
+  "title": "Mission: Instructions 📋🚀",
+  "level": "junior",
+  "class": "class4",
+  "chapter": "ch2",
+  "chapterTitle": "Communicate with AI • CONNECT",
+  "lessonNumber": 2,
+  "classNumber": 4,
+  "chapterNumber": 2,
+  "mascot": {
+    "name": "Robo-Pi",
+    "emoji": "🤖✨",
+    "description": "A friendly silver robot wearing a tiny graduation cap, a sparkling magnifying glass necklace, and shiny golden roller skates! Robo-Pi holds a giant glowing golden clipboard with numbered checkmarks and has two bouncy antenna ears that wiggle when counting 1, 2, 3!",
+    "voiceStyle": "Cheerful, energetic beeping sentences. Loves exclamation marks! Uses BEEP BOOP as a greeting. Speaks in super-simple, crystal-clear words that even a five-year-old can easily follow! Always gives huge encouragement and silly robot giggles!",
+    "catchphrase": "BEEP BOOP! First things first, second things second, third things third! Order is everything in robot land! 📋1️⃣2️⃣3️⃣"
+  },
+  "metadata": {
+    "duration": "45 minutes",
+    "ageGroup": "9-10 years",
+    "difficulty": "beginner",
+    "totalWords": 12000,
+    "version": "1.0",
+    "lastUpdated": "2026-10-13",
+    "author": "AI Olympiad Team",
+    "tags": [
+      "algorithms",
+      "sequencing",
+      "step-by-step instructions",
+      "mission instructions",
+      "order matters",
+      "lego instructions",
+      "rocket launch",
+      "recipes",
+      "no coding",
+      "class4",
+      "junior",
+      "connect"
+    ]
+  },
+  "content": {
+    "introduction": {
+      "welcomeMessage": "🤖✨ BEEP BOOP! Welcome to Mission: Instructions! Today we learn the greatest robot secret of all time: Why the ORDER of your steps changes EVERYTHING! 📋🚀",
+      "roboPiGreeting": {
+        "text": "BEEP BOOP! Hello, hello, hello, my wonderful explorer! It is me, your robot best pal Robo-Pi, ready for the most fun mission ever! 🤖✨ Give me an extra-loud virtual high-five! *CLINK-CLATTER!* ✋ In our last lesson, we learned that we must say our words clearly so robots don't bake garlic bricks or bring us frozen potatoes! But guess what? Even if every single word you say is crystal clear, something TERRIBLE can still happen if you mix up the ORDER of your steps! 😱 Have you ever tried to put on your warm winter socks AFTER tying your heavy running shoes? Try to picture that in your head right now! You tie your sneakers tight, and then you try to stretch a tiny fuzzy sock OVER the giant rubber shoe! *RIIIIIIP!* The sock tears in half, your toes look like silly clown feet, and you cannot walk! 🧦👟 What went wrong? Both steps were good steps. Putting on socks is good. Tying shoes is good. But the ORDER was completely backwards! Robots are just like shoes and socks: they do not know what comes first unless YOU give them a numbered list! In computer science, a step-by-step numbered recipe is called an ALGORITHM! That sounds like a big fancy word, but it just means: Step 1, Step 2, Step 3! Today, we are going to build Lego castles 🏰, fold supersonic paper airplanes ✈️, pack delicious picnics 🧺, and launch giant spaceships into the stars 🚀! Are you ready to become a Master of Sequence? Let us count down: 3... 2... 1... BLAST OFF! 🚀🎉",
+        "toastGuidance": {
+          "tap_prompt": "👇 Put Step 1: Put on socks BEFORE Step 2: Tie shoelaces! 🧦👟",
+          "great_job": "👟 PERFECTION! Your Lego spaceship launched safely into orbit! 🚀✨",
+          "encouragement": "🤖 Don't worry if steps get mixed up — Robo-Pi is here to help you put them in perfect 1, 2, 3 order!"
+        }
+      },
+      "openingStory": {
+        "title": "🤖 The Hilarious Morning of Barnaby the Backwards Robot! 🥞👟",
+        "content": "Once upon a sunny Tuesday morning in the colorful city of Roboville, a friendly new helper robot named Barnaby woke up in the home of the Sharma family. Barnaby was made of shiny blue metal, had big yellow headlight eyes, and loved helping humans. Little ten-year-old Arjun had a big soccer match at school that morning and was running late. Arjun ran into the kitchen and shouted: 'Barnaby, please help me get ready! Make pancakes, pack my soccer bag, and put my shoes on!' 🗣️ Barnaby's blue antenna spun around with excitement: *BEEP BOOP! Helping Arjun immediately!* But Barnaby had one big problem: Barnaby was brand-new and had never learned about NUMBERED SEQUENCES! Barnaby thought all steps could happen in any random order! First, Barnaby decided to help Arjun put on his soccer shoes. Barnaby grabbed Arjun's big, muddy soccer cleats with giant plastic spikes. *Click-snap!* Barnaby tied the laces into tight double knots on Arjun's bare feet. THEN, Barnaby grabbed Arjun's long green soccer socks. Barnaby tried to pull the narrow green sock over the giant plastic cleats! Barnaby pulled and pulled: *SCREEECH-RIIIIP!* The sock ripped into two ragged green ribbons! Arjun laughed so hard he fell onto the carpet: 'Barnaby! You silly robot! You can't put socks on top of shoes! You have to put socks on FIRST, and shoes on SECOND!' 🧦👟 Next, Barnaby rolled into the kitchen to make breakfast pancakes. Barnaby took a bottle of sweet sticky maple syrup. He unscrewed the cap and poured half a bottle of brown syrup directly onto the bare wooden dining table! *GLUG-GLUG-GLUG!* Then, Barnaby took an empty porcelain plate and slammed it down right on top of the sticky puddle of syrup! *CLATTER!* Finally, Barnaby placed a fluffy hot pancake on top of the upside-down plate! The pancake was completely dry, while the bottom of the plate was glued to the dining table with brown goo! Arjun gasped: 'Barnaby! The syrup goes on top of the pancake, and the pancake goes on top of the plate! You did the whole recipe upside down!' 🥞🍯 Just then, Arjun's older sister Priya walked in holding a clipboard with numbers: 1, 2, 3. Priya smiled: 'Arjun, Barnaby doesn't have human common sense. If you just shout a pile of chores, his computer brain picks random steps! You must give him a NUMBERED ALGORITHM!' Priya handed Barnaby a bright yellow recipe card that said: 'Step 1: Put clean plate on table. Step 2: Place warm pancake on plate. Step 3: Drizzle sweet syrup over pancake.' Barnaby scanned the card with his yellow eyes: *BEEP BOOP! Numbered sequence loaded!* In thirty seconds flat, Barnaby placed a clean plate, set two golden fluffy pancakes, and poured a neat golden spiral of syrup. It was the most delicious, perfect breakfast Arjun had ever tasted! Arjun cheered: 'When steps are in order, Barnaby is a genius!' 🥞🎉",
+        "moraleOfStory": "Doing the right things in the WRONG order always leads to silly disasters! Doing the right things in the RIGHT step-by-step order creates pure magic! 📋✨",
+        "roboPiComment": "BEEP BOOP! Can you imagine eating syrup off the bottom of a plate? YUCK! But once Barnaby got his 1, 2, 3 list, he became a master chef! That is the power of an algorithm! 🥞🤖"
+      },
+      "learningObjectives": [
+        "📋 Understand what an ALGORITHM is: A step-by-step numbered recipe that tells a computer what to do in exact order!",
+        "🧦 Discover why ORDER MATTERS: Learn why putting socks on before shoes works, but shoes before socks causes disaster!",
+        "🧱 Master Lego & Recipe Logic: See how building foundations first allows tall castles and rockets to stand strong!",
+        "1️⃣ Practice Numbered Sequencing: Break big complicated tasks into simple Step 1, Step 2, and Step 3 instructions!",
+        "🚀 Conquer the Rocket Launch Recipe Sequence: Assemble and launch a spacecraft using strict countdown logic!",
+        "🏆 Earn your official Master Sequence Pilot License and become a certified Junior AI Architect! 🏅"
+      ],
+      "detectiveBadge": {
+        "title": "The Master Sequence Pilot License 🚀🏅",
+        "description": "Earn all three sparkling sequence medals to prove you can program any robot, recipe, or rocket without scrambling the steps!",
+        "magnifiers": [
+          {
+            "id": "badge-socks",
+            "name": "Socks Before Shoes Medal 🧦",
+            "earnedBy": "Mastering Section 1: Proving why order is everything and banishing backwards blunders!",
+            "colour": "#FF9800"
+          },
+          {
+            "id": "badge-lego",
+            "name": "Lego Master Builder Medal 🧱",
+            "earnedBy": "Mastering Section 2: Following step-by-step numbered manuals like building castles and folding airplanes!",
+            "colour": "#4CAF50"
+          },
+          {
+            "id": "badge-rocket",
+            "name": "Rocket Countdown Medal 🚀",
+            "earnedBy": "Mastering Section 3: Executing flawless 3-2-1 launch sequences without skipping safety checks!",
+            "colour": "#00E5FF"
+          }
+        ]
+      },
+      "auraGuidance": {
+        "welcome": "LET'S SEQUENCE! Welcome to Mission: Instructions! Get ready to discover the magic of 1, 2, 3! 📋",
+        "instruction": "Listen to Robo-Pi, tap the steps in the right order, and watch how sequences make robots super-smart! 🚀✨",
+        "encouragement": "You have a super logical brain! You are going to sort these steps faster than a rocket speeding to Mars! 🌟"
+      }
+    },
+    "mainConcept": {
+      "whatIsAI": {
+        "title": "📋 What is an 'Algorithm'? (The Secret Recipe of Computers!) 🤖💡",
+        "roboPiIntro": "BEEP BOOP! Have you ever heard that giant, fancy word: ALGORITHM? It sounds like an alien monster from outer space! But let me tell you a secret — you already use algorithms every single day of your life! 🤖✨",
+        "simpleExplanation": "Listen closely, explorer! An ALGORITHM is simply a list of step-by-step instructions that must be done in a specific, exact order to solve a problem or finish a task! 📝 That is all it is! When your mother or father bakes a batch of warm chocolate chip cookies, they follow a recipe. Step 1: Turn on the oven. Step 2: Mix flour, sugar, and butter in a big bowl. Step 3: Stir in delicious chocolate chips. Step 4: Scoop cookie balls onto the baking tray. Step 5: Put the tray in the oven for ten minutes. That recipe IS an algorithm! 🍪 What happens if you do Step 5 first? If you put an empty metal baking tray into the oven before mixing the ingredients, you get NO cookies at all! You just heat up empty air! What if you open a box of 500 Lego bricks to build a tall pirate ship? The instruction booklet has numbers on every single page: Page 1 shows the bottom hull bricks. Page 10 shows the tall masts. Page 20 attaches the skull-and-crossbones sails. That Lego manual IS an algorithm! 🏴‍☠️🧱 Computers and robots do not know how to do anything on their own. They cannot guess what comes next. If you want a robot to clean your bedroom, drive a school bus, or fly a spaceship to the Moon, you must write down the steps: Step 1, Step 2, Step 3, Step 4! When the steps are in the perfect order, the robot succeeds with 100% perfection! When the steps are scrambled, chaos happens! Let us dive into why order is everything! 📋🔄✨",
+        "keyPoints": [
+          "📋 An ALGORITHM is just a step-by-step numbered recipe for solving a problem.",
+          "🍪 Everyday recipes (baking cookies, making sandwiches) are real-life algorithms!",
+          "🧱 Lego instruction manuals are algorithms: you must build the bottom base before the top roof!",
+          "🧦 Order is everything: doing good steps in the WRONG order causes hilarious disasters.",
+          "🤖 Computers need algorithms because they cannot guess which step comes next without your instructions!"
+        ],
+        "toastGuidance": {
+          "tap_prompt": "👇 Tap the glowing numbered clipboard to reveal the 1-2-3 algorithm secret! 📋✨",
+          "great_job": "⭐ BRILLIANT! You unlocked the secret recipe behind all computer programs! 💡🎉",
+          "try_again": "🤔 Tap the clipboard icon to see how numbered steps make magic happen!"
+        }
+      },
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "🧦 Section 1: The Shoes Before Socks Disaster! (Why Order Matters!) 👟💥",
+          "missionBadge": "Socks Before Shoes Medal 🧦",
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Section 1, Sequence Explorer! 🤖🧦 Today's first mission is to investigate what happens when steps get scrambled upside down! Grab your magnifying glass and let us see why order is the secret king of the universe! 👑✨",
+          "mainContent": {
+            "paragraph1": "Think about waking up on a chilly school morning. Your alarm rings *BEEP BEEP BEEP*. You stretch your arms, jump out of bed, and walk over to your clothes drawer. You have two very important items sitting on your rug: a pair of cozy, soft blue wool socks 🧦, and a pair of sturdy, rubber-soled running sneakers with shoelaces 👟. Now, imagine if your brain decided to play a silly game. What if your brain said: 'Hey, let's put on the running shoes first, tie the laces in a tight double knot, and THEN let's put on the wool socks!' What would happen? Try to picture yourself physically doing that right now! Your shoes are big, wide, and clunky. Your socks are small, narrow, and stretchy. If you try to stretch the sock over the shoe, your fingers get stuck, the sock heel gets snagged on the rubber cleats, the fabric rips in half with a loud *RIIIP*, and you look completely ridiculous! You cannot run in gym class with socks stretched over your sneakers!",
+            "paragraph2": "Now, let us flip the order around: Step 1: Slide your bare foot into the soft wool sock. Step 2: Slide your socked foot smoothly into the running sneaker. Step 3: Tie the shoelaces in a neat double bow. Look at how effortless, smooth, and perfect that is! It takes ten seconds. Your feet feel warm and snug, your sneakers fit comfortably, and you can sprint across the playground like a cheetah! 🐆 Notice something super important: the TWO ACTIONS were exactly the same! 'Put on sock' is a great action. 'Put on shoe' is a great action. Neither action is bad or wrong. But when you scramble the order, you get disaster! When you put them in the correct sequence, you get perfection! That is the fundamental law of algorithms: Order changes everything! 🔄",
+            "paragraph3": "Let us look at another hilarious everyday disaster: brushing your teeth before bedtime! 🪥 Think about the three simple steps: Step A: Put minty toothpaste on the toothbrush bristles. Step B: Brush your teeth in gentle circles for two minutes. Step C: Rinse your mouth with fresh water and spit in the sink. Now, what happens if an out-of-order robot scrambles the steps to C, then B, then A? The robot rinses its mouth with plain water first. Then it brushes its teeth with a dry, empty toothbrush for two minutes. And THEN, right before going to bed, it squirts a giant glob of raw toothpaste onto its tongue and swallows it whole! *YUCK! BLECH!* That robot has a stomach ache, dry teeth, and messy breath! Brushing teeth only works if the toothpaste goes on BEFORE the brushing, and the rinsing happens AFTER the brushing!",
+            "paragraph4": "Think about taking a warm shower! 🚿 What happens if you get completely dressed in your clean school uniform, put on your necktie and blazer, and THEN step inside the shower and turn on the blasting water spray? You get a soaked, heavy, dripping wet uniform that ruins your clothes and leaves you shivering cold! You must take off your dirty clothes FIRST, wash with warm water and soap SECOND, dry with a fluffy towel THIRD, and put on your clean uniform FOURTH! Every single human being follows algorithms from morning until night without even realizing it!",
+            "paragraph5": "When we write instructions for computers, smart machines, or robots, this rule becomes ten times more critical! A human child might stop and say: 'Wait a second, putting socks over shoes looks silly, let me take the shoe off.' But a computer does NOT stop to question silly orders! A computer will blindly obey whatever sequence you feed into its memory! If you tell a delivery drone: 'Step 1: Release package in mid-air. Step 2: Fly to customer's front porch', the drone will drop your birthday present onto the middle of the highway three miles away before it ever reaches the house! 📦💥 That is why we must always verify our sequence before hitting the START button! Let us look at three classic scrambled blunders! 🧦➡️🥞"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-order-1",
+              "title": "🧦 The Morning Sock-Over-Shoe Catastrophe! 👟💥",
+              "icon": "🧦",
+              "description": "Why attempting to stretch socks over running shoes results in ripped fabric and bruised toes!",
+              "realLifeScenario": "Little Kabir is in a giant rush for school bus pickup. Without looking, he slips his bare feet into his sneakers and ties the laces tight. Then he notices his clean school socks on the bed. In a panic, he tries to pull the green sock over the shoe. The heel gets caught on the thick rubber sole. Kabir tugs with all his might: *SCREEECH-TEAR!* The sock rips right down the middle, exposing his laces! Kabir has to untie his shoes, throw the ruined sock in the trash, find a new pair, put the socks on first, and tie his shoes again. He missed his school bus because of scrambled steps! 🚌💨",
+              "roboPiComment": "BEEP BOOP! See what happened? Trying to skip or reverse steps doesn't save time — it wastes double the time! Always do Step 1 (socks) before Step 2 (shoes)! 🧦👟",
+              "toastGuidance": {
+                "tap_prompt": "👇 Put Step 1: Put on socks BEFORE Step 2: Tie shoelaces! 🧦👟",
+                "great_job": "👟 PERFECTION! Socks on first, shoes on second — ready to sprint! 🏃💨",
+                "try_again": "⚠️ Wait! You tried to tie shoes before putting on socks! Put socks first!"
+              }
+            },
+            {
+              "id": "dde-order-2",
+              "title": "🥞 The Sticky Upside-Down Pancake Fiasco! 🍯🍽️",
+              "icon": "🥞",
+              "description": "Why pouring maple syrup onto an empty table before setting down the plate creates a gooey mess!",
+              "realLifeScenario": "Barnaby the helper bot was told to serve breakfast pancakes. Barnaby unscrewed the syrup bottle, poured thick sticky maple syrup directly onto the polished wooden kitchen table, slammed an empty ceramic plate down on top of the sticky puddle, and placed the pancake on the dry upside-down plate base! When mama Sharma tried to lift the plate, it was glued fast to the table like superglue! *SPLAT!* It took three wet towels and twenty minutes of scrubbing to clean the sticky syrup off the wood! All because Step 3 (syrup) happened before Step 1 (plate)! 🥞🍯",
+              "roboPiComment": "BEEP BOOP! Poor Barnaby! He used all the right ingredients, but in the exact backwards order! Remember: Plate first 🍽️, pancake second 🥞, syrup last 🍯! Delicious harmony!",
+              "toastGuidance": {
+                "tap_prompt": "👇 Reorder the breakfast steps: Plate 🍽️ → Pancake 🥞 → Syrup 🍯!",
+                "great_job": "🌟 BREAKFAST MASTERPIECE! Golden pancake on clean plate with sweet syrup drizzle! 🥞✨",
+                "try_again": "⚠️ Don't pour syrup on the bare table! Place the plate first!"
+              }
+            },
+            {
+              "id": "dde-order-3",
+              "title": "🪥 The Foamy Bedtime Toothbrush Mystery! 🦷💦",
+              "icon": "🪥",
+              "description": "Why rinsing your mouth before brushing leaves teeth dirty and toothpaste wasted down the drain!",
+              "realLifeScenario": "Rohan wanted to brush his teeth in ten seconds flat so he could read comic books before bed. He turned on the bathroom faucet, rinsed his mouth with cold water, and spit. Then he rubbed his dry teeth with a dry toothbrush for five seconds. Finally, he squirted a giant ribbon of blue mint gel on the toothbrush, immediately held it under running water, and watched the whole blob wash down the drain into the pipes without ever touching his teeth! His teeth were still covered in dinner crumbs, and the toothpaste was gone! 🪥🚫",
+              "roboPiComment": "BEEP BOOP! To get sparkling white teeth that make dentists smile, the algorithm is: 1. Toothpaste on brush 2. Brush gently for 2 minutes 3. Rinse and spit! Never rinse before brushing! 🦷✨",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the toothbrush in the right order: Paste 🪥 → Brush 🦷 → Rinse 💦!",
+                "great_job": "🌟 SPARKLING TEETH! Clean, healthy smile ready for sweet dreams! 🦷⭐",
+                "try_again": "⚠️ Don't wash the paste down the drain! Brush your teeth before rinsing!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🧦 Doing the right actions in the WRONG order causes silly disasters and wasted time.",
+            "👟 'Socks before shoes' is the ultimate reminder that foundations must come first.",
+            "🥞 Cooking recipes are algorithms: reversing steps ruins food and creates giant messes.",
+            "🪥 Everyday hygiene (brushing teeth, washing hands, showering) follows strict sequence logic.",
+            "🤖 Computers and robots blindly execute whatever sequence you give them, so you must get it right!",
+            "🔄 Always review your numbered list before pressing START to make sure Step 1 comes before Step 2!"
+          ],
+          "mission1Complete": {
+            "celebrationText": "🎉 MISSION 1 ACCOMPLISHED! You conquered the Sequence Law!",
+            "roboPiCelebration": "BEEP BOOP HOORAY! 🥳 You proved that order is everything! No more socks over sneakers, no more syrup on bare tables, and no more toothpaste down the drain! Your Socks Before Shoes Medal is pinned proudly on your chest! Now, let us see how master builders use algorithms to create Lego castles and paper airplanes! 🧱✈️",
+            "magnifierEarned": "Socks Before Shoes Medal 🧦",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to attach the Socks Before Shoes Medal! 🏅",
+              "great_job": "⭐ MEDAL EQUIPPED! You understand the power of 1, 2, 3! 🧦✨",
+              "encouragement": "On to Section 2 — let us build some Lego magic! 🧱🏰"
+            }
+          }
+        },
+        {
+          "id": "section-2",
+          "title": "🧱 Section 2: The Lego & Recipe Magic! (What is an Algorithm?) 📋🏰",
+          "missionBadge": "Lego Master Builder Medal 🧱",
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Section 2, Master Builder! 🤖🧱 Did you know that the greatest toy in the world — LEGO bricks — is powered entirely by algorithms? Let us open the numbered instruction manual and discover how master builders and five-star chefs turn piles of pieces into wonders! 🏰🥞",
+          "mainContent": {
+            "paragraph1": "Imagine walking into your bedroom on your birthday and finding a giant, heavy cardboard box on your rug. You rip open the wrapping paper: it is a 1,000-piece Lego Medieval Castle set! 🏰 Inside the box are eight plastic bags filled with tiny gray, blue, and golden plastic bricks, along with a thick, glossy instruction booklet with a big number on the cover. If you took all eight bags, dumped them into one giant messy pile on your carpet, and tried to build the soaring castle tower right away, what would happen? You would grab a castle turret, try to set it down on your soft carpet, and *TIP-TUMBLE-CRASH!* The turret falls over and shatters into twenty tiny pieces! Why did it fall? Because you cannot build a roof in mid-air! You need a flat, sturdy foundation on the bottom to support the walls, and you need sturdy walls to support the roof!",
+            "paragraph2": "Now open the Lego instruction booklet to Page 1! Look at what it shows: Bag Number 1. Step 1: Take the wide, flat green baseplate and lay it flat on a hard table. Step 2: Snap four thick gray foundation blocks along the bottom edge. *CLICK!* Step 3: Add interlocking wall bricks in an overlapping brick pattern so the wall cannot snap in half. *CLICK-SNAP!* Step 10: Build the swinging castle gate. Step 25: Mount the tall towers. Step 50: Place the golden flag on the highest spire! Look at that sequence! Every single page depends on the page that came before it! You cannot do Page 20 before Page 5, because the bricks on Page 20 need the bricks on Page 5 to hold them up! That numbered Lego manual is a physical, real-world ALGORITHM! 🧱📖",
+            "paragraph3": "Now think about folding a supersonic paper airplane! ✈️ Take a crisp, clean sheet of white rectangular printer paper. What is Step 1? Step 1: Fold the paper in half lengthwise to create a sharp center crease line, then unfold it flat. Step 2: Fold the top two corners diagonally down to meet the center line, creating a sharp triangle point at the nose. Step 3: Fold the entire triangle down like an envelope flap. Step 4: Fold the new top corners inward to meet the center line once again. Step 5: Fold the entire plane in half along the original center spine. Step 6: Fold both wings downward at an exact 45-degree angle! Now pick up the plane, aim across the living room, and gently release it with your wrist: *SWOOOOOSH!* The paper airplane glides smoothly for twenty meters, circling gracefully before landing on the rug! What if you tried to fold Step 6 (the wings) before Step 1 (the center crease)? You would just crumple the paper into an ugly, wrinkled paper ball that drops to the floor like a lead rock! The flight of the airplane depends entirely on the algorithm of the folds!",
+            "paragraph4": "Think about packing a family picnic basket for a sunny afternoon in the park! 🧺 You have four items on your kitchen counter: a giant, heavy 2-liter bottle of cold apple juice 🧃; three rectangular plastic sandwich boxes with whole-wheat sandwiches 🥪; a soft bag of ripe, juicy red plums 🍑; and four delicate, fluffy vanilla cupcakes with tall swirl frosting and sugar sprinkles 🧁. In what order must you pack them inside the wicker basket? If you put the cupcakes on the very bottom of the basket first, and then drop the giant, heavy apple juice bottle right on top of them — *SQUISH-CRUNCH-SPLAT!* The cupcakes are crushed into flat, gooey frosting pancakes! You must follow the Picnic Packing Algorithm: Heavy, sturdy bottles on the bottom (Step 1) 🧃; rigid sandwich containers in the middle (Step 2) 🥪; fruit on top (Step 3) 🍑; and delicate, fluffy cupcakes placed gently on the very top of the pile (Step 4) 🧁! When you arrive at the park, every single treat is beautiful, fresh, and ready to eat!",
+            "paragraph5": "Notice the golden secret that connects Lego castles, paper airplanes, and picnic baskets: In every single algorithm, FOUNDATIONS COME FIRST! You always build the base before the tower, you always crease the center before the wings, and you always pack the heavy bottles before the soft cupcakes! In computer programming, this is called SEQUENTIAL DEPENDENCY! It means: 'Step B cannot happen until Step A is completely finished!' When you understand sequential dependencies, you can program anything in the world! Let us look at three master-builder examples! 🧱➡️🚀"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-lego-1",
+              "title": "🏰 The 1,000-Piece Lego Castle Foundation! 🧱✨",
+              "icon": "🏰",
+              "description": "Why snapping the bottom baseplate bricks is required before mounting tall castle towers!",
+              "realLifeScenario": "Arjun and Priya are building the Lego King's Castle on Saturday afternoon. Arjun gets excited and wants to build the golden treasure tower right away. He snaps together 15 tall bricks and tries to balance them upright on the carpet. The tower wobbles, tips over, and shatters against the leg of the coffee table. Priya opens the manual to Bag 1: 'Look Arjun! Step 1 snaps the wide green foundation plate. Step 2 locks six interlocking corner anchor blocks.' They follow the numbered steps together: Base first, walls second, gate third, towers fourth. When they finish, the castle is rock-solid! Arjun can pick the whole castle up with two hands and it doesn't break at all! 🏰👑",
+              "roboPiComment": "BEEP BOOP! Interlocking bricks in a brick-layer pattern is pure computer science! A solid base makes the whole structure unbreakable! Foundations first, always! 🧱💪",
+              "toastGuidance": {
+                "tap_prompt": "👇 Snap Step 1: Baseplate BEFORE Step 2: Castle Walls! 🧱🏰",
+                "great_job": "🌟 CASTLE STANDS STRONG! Rock-solid foundation locked in place! 🏰✨",
+                "try_again": "⚠️ Don't build the tower in mid-air! Snap the baseplate first!"
+              }
+            },
+            {
+              "id": "dde-lego-2",
+              "title": "✈️ The Supersonic Origami Paper Glider! 📄💨",
+              "icon": "✈️",
+              "description": "Why creasing the center spine before folding wings creates world-record aerodynamic flight!",
+              "realLifeScenario": "Zara wants to win the school paper airplane distance derby. In her first test, she grabs a piece of paper and folds random diagonal wing flaps without creasing a center line. She throws it: the paper tumbles end-over-end and crashes two feet from her toes! In test two, she opens the official Origami Glider Algorithm: Step 1: Center fold crease. Step 2: Symmetrical corner triangles. Step 3: Nose lock fold. Step 4: 45-degree aerodynamic wing bends. She throws it down the school hallway: *WHOOOOSH!* The glider soars in a laser-straight line for 25 meters, gliding all the way into the science room! Zara wins first place! 🥇✈️",
+              "roboPiComment": "BEEP BOOP! Aerodynamics requires perfect symmetry! And you can only get symmetry by following the numbered folding algorithm! That glider flew like a real jet! ✈️💨",
+              "toastGuidance": {
+                "tap_prompt": "👇 Fold Step 1: Center Crease BEFORE Step 2: Wing Folds! 📄✈️",
+                "great_job": "🌟 SUPERSONIC GLIDE! The paper plane soared across the entire room! ✈️🎉",
+                "try_again": "⚠️ Don't fold wings on uncreased paper! Make the center crease first!"
+              }
+            },
+            {
+              "id": "dde-lego-3",
+              "title": "🧺 The Anti-Squish Picnic Packing Algorithm! 🥪🧁",
+              "icon": "🧺",
+              "description": "Why heavy bottles must go at the bottom so delicate strawberry cupcakes survive the trip to the park!",
+              "realLifeScenario": "Dev and his family are packing for a Sunday picnic by the lake. Dev's little sister puts four frosted strawberry cupcakes on the bottom of the wicker basket. Dev catches her just in time before she drops a heavy 2-liter jug of chilled lemonade on top! Dev smiles: 'Wait! Remember the Picnic Algorithm! Step 1: Heavy lemonade jug on the bottom. Step 2: Plastic sandwich containers in the middle. Step 3: Crunchy apples and chips on top. Step 4: Delicate frosted cupcakes resting safely on the very top!' When they unpack by the lake, the cupcakes have perfect, fluffy frosting peaks without a single smudge! 🍓🧁",
+              "roboPiComment": "BEEP BOOP! Dev saved the cupcakes from a tragic squish disaster! Gravity pulls heavy things down, so algorithms put heavy things at the bottom! Smart thinking! 🧺🧠",
+              "toastGuidance": {
+                "tap_prompt": "👇 Pack Step 1: Heavy Bottle on bottom, Step 2: Cupcakes on top! 🧃🧁",
+                "great_job": "🌟 PICNIC PERFECT! Every sandwich intact and cupcakes fluffy! 🧺🎉",
+                "try_again": "⚠️ Don't crush the cupcakes! Pack the heavy juice bottle on the bottom!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🧱 Lego instruction manuals are physical algorithms: every page builds on previous steps.",
+            "🏰 Foundations must always be built first: you cannot place a roof in empty air.",
+            "✈️ Paper airplanes only fly straight when folded according to a strict symmetrical sequence.",
+            "🧺 Packing baskets requires gravity logic: heavy sturdy items on bottom, delicate items on top.",
+            "🔗 Sequential dependency means: 'Step B cannot happen until Step A is 100% complete.'",
+            "📖 Numbered manuals give you the superpower to assemble complex 1,000-piece machines with zero mistakes!"
+          ],
+          "mission2Complete": {
+            "celebrationText": "🎉 MISSION 2 ACCOMPLISHED! You mastered Lego & Recipe Logic!",
+            "roboPiCelebration": "BEEP BOOP BRAVO! 🧱✨ You understand foundations, sequential dependencies, and assembly algorithms! Your Lego Master Builder Medal is shining like polished gold! Now, what is the ultimate test of sequencing in the entire universe? Launching a multi-stage space rocket! Let us enter Section 3! 🚀🌟",
+            "magnifierEarned": "Lego Master Builder Medal 🧱",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to attach the Lego Master Builder Medal! 🏅",
+              "great_job": "⭐ BUILDER MEDAL EQUIPPED! You can construct anything with algorithms! 🧱🏆",
+              "encouragement": "On to Section 3 — time for the Grand Rocket Launch Sequence! 🚀1️⃣2️⃣3️⃣"
+            }
+          }
+        },
+        {
+          "id": "section-3",
+          "title": "🚀 Section 3: The Rocket Launch Sequence! (Step 1, Step 2, Step 3 Blast-Off!) 1️⃣2️⃣3️⃣",
+          "missionBadge": "Rocket Countdown Medal 🚀",
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Mission Control, Flight Director! 🤖🚀 In space travel, a single scrambled step can blow up a billion-dollar rocket! Every astronaut and NASA computer follows a strict countdown algorithm: 3... 2... 1... Blast-off! Let us learn how mission algorithms send rovers to Mars! 🪐🚀",
+          "mainContent": {
+            "paragraph1": "Picture standing inside the giant Mission Control room at Kennedy Space Center in Florida. In front of you is a wall of glowing screens showing a towering, thirty-story-tall Saturn V Moon rocket perched on Launch Pad 39A. Inside the rocket's tanks are thousands of tons of super-cold liquid oxygen and explosive rocket propellant. The astronauts are strapped safely inside the command capsule at the very top of the rocket. Over the loudspeaker, the Flight Director's voice echoes: 'All flight controllers, prepare for the automated launch sequence!' Did you know that when the countdown reaches ten seconds, NO HUMAN touches the controls? A master computer algorithm takes over! Why? Because human fingers are too slow! In the final seconds of a launch, hundreds of mechanical steps must happen in exact millisecond precision! ⏱️",
+            "paragraph2": "Let us trace the Rocket Launch Algorithm in exact sequence: Step 1 (T-minus 60 seconds): Disconnect ground power umbilical cables and switch the rocket to internal onboard battery power. 🔌 Step 2 (T-minus 20 seconds): Open water sound suppression deluge valves, blasting 300,000 gallons of water under the launch pad to absorb deafening sound waves so the rocket doesn't shake itself apart! 💦 Step 3 (T-minus 6.6 seconds): Ignite the five giant F-1 booster engines at the base of the rocket! *ROOOOAAAR!* Step 4 (T-minus 0 seconds): Verify that all five engines have reached 100% full thrust and chamber pressure! Step 5: RELEASE THE LAUNCH CLAMPS! *CLANK!* Step 6: BLAST OFF! The giant rocket rises slowly on a pillar of golden fire into the clear blue sky! 🚀🔥",
+            "paragraph3": "Now, what would happen if a silly computer programmer scrambled the steps? Imagine if Step 5 happened before Step 3! What if the computer released the heavy steel launch clamps BEFORE igniting the engines? The giant unpowered rocket would tip sideways, crash into the launch tower with a catastrophic boom, and explode in a giant fireball! 💥 What if the computer tried to fly into space before disconnecting the heavy steel electrical cables plugged into the ground? The rocket would yank the concrete launch tower out of the ground, snap the cables, and tumble into the ocean! Every single step in a rocket countdown is life-or-death! That is why NASA engineers spend YEARS testing and re-testing their sequence algorithms!",
+            "paragraph4": "Think about an automated sandwich factory or pizza kitchen! 🍕 Robots that assemble pizzas in factories follow an exact assembly-line sequence: Step 1: Roll out the round ball of dough on the conveyor belt. Step 2: Ladle a spiral of seasoned red tomato sauce. Step 3: Sprinkle shredded mozzarella cheese evenly over the sauce. Step 4: Place pepperoni slices in a neat ring. Step 5: Slide the pizza into the conveyor oven at 250 degrees Celsius for five minutes. If the robot puts the cheese down before the dough is rolled out, cheese melts all over the bare metal conveyor belt and catches fire! If the robot bakes the pizza before putting the sauce on, you get a dry, burnt cracker! An assembly line IS a physical algorithm in motion!",
+            "paragraph5": "Look at your own school day! A self-driving electric school bus follows an algorithm on its morning route: Step 1: Pull up to the bus stop curb and engage the parking brake. Step 2: Extend the red flashing STOP sign arm so cars on the road stop driving. Step 3: Open the pneumatic passenger doors. Step 4: Count the students as they step on board using optical sensors. Step 5: Verify all students are seated with seatbelts buckled. Step 6: Retract the stop sign, release the parking brake, and drive smoothly to school! 🚌✨ If the bus opened its doors while driving at 50 kilometers per hour, students would fall out! Every safe machine in modern society relies on strictly numbered algorithms. Let us look at three real-world countdown sequences! 🚀➡️🏆"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-rocket-1",
+              "title": "🚀 The NASA Apollo & Mars Rover Countdown! 🪐🔥",
+              "icon": "🚀",
+              "description": "Why launch clamps are released ONLY after rocket engines achieve 100% full thrust!",
+              "realLifeScenario": "On July 16, 1969, the Apollo 11 rocket stood on the launch pad ready to fly Neil Armstrong, Buzz Aldrin, and Michael Collins to the Moon. At T-minus 6.6 seconds, the five giant F-1 engines ignited with 7.5 million pounds of thrust. Giant steel clamps held the rocket bolted to the ground while computer sensors verified that all five engines reached full operating pressure. At T-minus 0, the computers confirmed: 'Engines running at 100%!' The clamps released, and the rocket lifted gracefully into the Florida sky. If the clamps had released even two seconds early, the un-pressurized engines could have flamed out and the rocket would have crashed back onto the pad! 🌕🚀",
+              "roboPiComment": "BEEP BOOP! That is called 'Thrust Verification'! A smart computer never lets go of the ground until it verifies that the engines are actually pushing hard enough to fly! Verification is a vital algorithm step! 📡🚀",
+              "toastGuidance": {
+                "tap_prompt": "👇 Verify full thrust BEFORE releasing launch pad clamps! 🚀🔥",
+                "great_job": "🌟 3-2-1 BLAST OFF! Apollo 11 cleared the launch tower safely! 🌕✨",
+                "try_again": "⚠️ Wait! You tried to fly the rocket before attaching the wings! Reorder step 2!"
+              }
+            },
+            {
+              "id": "dde-rocket-2",
+              "title": "🍕 The Robot Pizza Assembly Line Miracle! 🍅🧀",
+              "icon": "🍕",
+              "description": "How automated conveyor systems build 500 pizzas an hour with strict step-by-step logic!",
+              "realLifeScenario": "At an automated pizza kitchen in Tokyo, robotic arms assemble artisan pizzas on a rolling steel belt. Step 1: Dough roller presses dough into a 12-inch circle. Step 2: Sauce dispenser swirls 100ml of tomato sauce. Step 3: Cheese hopper showers 150g of fresh mozzarella. Step 4: Basil robot places 6 fresh green basil leaves. Step 5: Infrared stone oven bakes at 400 degrees Celsius for 90 seconds. If a sensor glitch caused the oven to fire before the dough was rolled, the empty oven would bake thin air! The strict sequential conveyor ensures every pizza comes out golden, bubbly, and delicious! 🍕🤤",
+              "roboPiComment": "BEEP BOOP! Five hundred pizzas every hour without a single drop of sauce spilled! That is what happens when robots follow an algorithm with millisecond timing! 🍕🤖",
+              "toastGuidance": {
+                "tap_prompt": "👇 Assemble pizza in order: Dough 🫓 → Sauce 🍅 → Cheese 🧀 → Bake 🔥!",
+                "great_job": "🌟 PIZZA PERFECTION! Golden crust, bubbling cheese, ready to eat! 🍕✨",
+                "try_again": "⚠️ Don't bake an empty tray! Roll the dough and add sauce first!"
+              }
+            },
+            {
+              "id": "dde-rocket-3",
+              "title": "🚌 The Smart School Bus Passenger Algorithm! 🛑🚸",
+              "icon": "🚌",
+              "description": "Why safety stop signs must extend before passenger doors open at morning bus stops!",
+              "realLifeScenario": "The autonomous electric school bus approaches the neighborhood bus stop where three children are waiting with their backpacks. Sensor algorithm: Step 1: Stop vehicle at curb and activate hazard flashers. Step 2: Extend the red mechanical STOP sign arm on the side of the bus to halt oncoming road traffic. Step 3: Open the glass passenger doors. Step 4: Welcome students aboard and check seatbelt sensors on seats 4, 5, and 6. Step 5: Retract the stop sign arm. Step 6: Accelerate smoothly back into traffic. Traffic safety is guaranteed because Step 2 (stop traffic) always precedes Step 3 (open doors)! 🚸🚌",
+              "roboPiComment": "BEEP BOOP! Safety algorithms protect human lives! Cars on the road cannot pass the bus because the stop sign was extended before a single child stepped off the curb! 🛡️🚌",
+              "toastGuidance": {
+                "tap_prompt": "👇 Extend STOP sign 🛑 BEFORE opening the passenger doors 🚪!",
+                "great_job": "🌟 SAFETY VERIFIED! All children boarded safely with seatbelts clicked! 🚸🚌",
+                "try_again": "⚠️ Safety hazard! Extend the traffic stop sign before opening doors!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🚀 Rocket launch countdowns are the most precise algorithms in human history.",
+            "🔥 Engines must achieve 100% full thrust BEFORE launch pad clamps are released.",
+            "⚠️ Releasing clamps before thrust causes the rocket to tip and explode on the launch pad.",
+            "🍕 Assembly-line manufacturing (pizzas, cars, electronics) relies on strict conveyor sequences.",
+            "🛑 Autonomous vehicles prioritize safety steps: halting traffic before opening passenger doors.",
+            "⏱️ In automated systems, timing and sequence prevent accidents and ensure 100% mission success!"
+          ],
+          "mission3Complete": {
+            "celebrationText": "🎉 MISSION 3 ACCOMPLISHED! You mastered Rocket Countdown Sequencing!",
+            "roboPiCelebration": "BEEP BOOP YIPPEE! 🚀🎉 You can launch rockets, assemble pizzas, and drive school buses with flawless algorithmic order! Your Rocket Countdown Medal is flashing bright cyan blue! You now possess all three medals of sequence mastery! Let us synthesize the 3 Golden Rules into the Master Algorithm! 🏆📋",
+            "magnifierEarned": "Rocket Countdown Medal 🚀",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to complete your sequence pilot flight suit! 🏅",
+              "great_job": "⭐ ALL 3 MEDALS EARNED! You are a certified Master Sequence Pilot! 🚀🏆",
+              "encouragement": "On to Section 4 — let us review the Master Sequence Algorithm! 📋🌟"
+            }
+          }
+        },
+        {
+          "id": "section-4",
+          "title": "🏆 Section 4: The Master Algorithm: Putting Every Step in Its Perfect Spot! 🌟📋",
+          "roboPiIntro": "BEEP BOOP! Flight Director, here is the grand golden compass that will guide every algorithm you ever write! The 3 Golden Rules of Sequence! Let us memorize them together! 🧭🤖",
+          "mainContent": {
+            "paragraph1": "Look at the extraordinary journey you have taken today! You started by laughing at Barnaby's socks stretched over muddy soccer cleats and upside-down syrup pancakes. You built 1,000-piece Lego castles from the baseplate up. You folded supersonic paper airplanes with crisp aerodynamic symmetry. And you launched Apollo rockets into orbit with zero-second clamp precision! Now, let us distill all of those wonderful discoveries into THE 3 GOLDEN SEQUENCE RULES! Whenever you write instructions for a robot, a computer, a recipe, or yourself, follow these three rules: Rule 1: FOUNDATION FIRST! Rule 2: ONE STEP AT A TIME! Rule 3: NEVER SKIP OR SCRAMBLE! 🧱1️⃣🚫",
+            "paragraph2": "Let us examine Rule 1: FOUNDATION FIRST! 🧱 Before you build the walls, you lay the baseplate. Before you put on your shoes, you slide into your socks. Before you drizzle the sweet syrup, you set the plate and pancake down. Always ask yourself: 'What must exist on the bottom before the next step can stand up?' In computer science, this is called the prerequisites or inputs! If the foundation is missing, everything built on top will collapse into a heap of rubble!",
+            "paragraph3": "Now let us examine Rule 2: ONE STEP AT A TIME! 1️⃣ Never try to combine five complicated actions into one giant messy sentence! If you tell a robot: 'Wash the dishes while baking a cake and walking the dog in the rain', the robot's processor will overload, its gears will freeze, and it will drop the dishes on the dog! Break big jobs into simple, bite-sized, atomic steps: Step 1: Wash the dishes. Step 2: Dry the dishes. Step 3: Put dishes in the cupboard. Now Step 1 is done! Move to Step 2! Clean, calm, and organized!",
+            "paragraph4": "Finally, let us examine Rule 3: NEVER SKIP OR SCRAMBLE! 🚫 Look at what happens when even ONE tiny step is skipped. Imagine baking a delicious chocolate birthday cake, but you skip Step 3: 'Add 2 cups of sugar.' You do everything else right: you mix the flour, you add cocoa, you bake for 30 minutes, you frost with vanilla. When everyone takes a big bite at the party, they spit it out in horror: 'YUCK! This cake tastes like bitter chalk!' You used all good ingredients, but skipping ONE step ruined the entire cake! Every step in an algorithm is there for a reason!",
+            "paragraph5": "You are now equipped with one of the most powerful thinking tools in human civilization: ALGORITHMIC THINKING! When you face a hard math problem, when you clean your bedroom, when you practice a new song on the piano, when you write a story — you don't panic! You sit down, take a deep breath, and write out your steps: 1, 2, 3! You are not just learning about robots — you are training your own brain to be calm, organized, and unstoppable! Give yourself a thunderous cheer! BEEP BOOP HOORAY! 🎉👏"
+          },
+          "scrambledVsOrderedTable": [
+            {
+              "id": "svo-1",
+              "task": "🧦 Getting Dressed in the Morning",
+              "scrambledDisaster": "Step 1: Tie shoes tight → Step 2: Try pulling socks over shoes! (Result: Ripped socks, bruised toes! 👟💥)",
+              "perfectAlgorithm": "Step 1: Put on socks → Step 2: Slide into shoes → Step 3: Tie laces! 🧦👟",
+              "triumphResult": "Snug, comfortable feet ready to sprint across the playground like a cheetah! 🏃💨"
+            },
+            {
+              "id": "svo-2",
+              "task": "🥞 Eating Delicious Breakfast Pancakes",
+              "scrambledDisaster": "Step 1: Pour syrup on bare table → Step 2: Put plate upside down on syrup puddle! (Result: Superglue sticky mess! 🍯😖)",
+              "perfectAlgorithm": "Step 1: Set plate on table → Step 2: Place warm pancake on plate → Step 3: Drizzle syrup on top! 🍽️🥞🍯",
+              "triumphResult": "Gourmet fluffy breakfast with zero sticky tables and happy tummies! 😋✨"
+            },
+            {
+              "id": "svo-3",
+              "task": "🏰 Building a 500-Piece Lego Castle",
+              "scrambledDisaster": "Step 1: Balance high tower in mid-air on carpet! (Result: Tower wobbles and shatters! 💥)",
+              "perfectAlgorithm": "Step 1: Flat green baseplate → Step 2: Sturdy foundation blocks → Step 3: Walls → Step 4: Towers! 🧱🏰",
+              "triumphResult": "Rock-solid medieval castle that can be lifted with two hands without breaking! 👑"
+            },
+            {
+              "id": "svo-4",
+              "task": "✈️ Flying an Origami Paper Airplane",
+              "scrambledDisaster": "Step 1: Randomly fold paper wings on crumpled paper! (Result: Paper ball drops like a rock! 🪨)",
+              "perfectAlgorithm": "Step 1: Center crease → Step 2: Symmetrical corner triangles → Step 3: Nose fold → Step 4: 45° wings! 📄✈️",
+              "triumphResult": "Supersonic aerodynamic glider soaring 25 meters across the school hallway! 🥇"
+            },
+            {
+              "id": "svo-5",
+              "task": "🚀 Launching an Astronaut Rocket to Space",
+              "scrambledDisaster": "Step 1: Release launch pad steel clamps BEFORE igniting engines! (Result: Rocket tips over and explodes! 💥)",
+              "perfectAlgorithm": "Step 1: Disconnect cables → Step 2: Ignite engines → Step 3: Verify 100% thrust → Step 4: Release clamps! 🚀🔥",
+              "triumphResult": "Flawless countdown blast-off soaring into the starry velvet of space! 🌕✨"
+            }
+          ],
+          "keyPoints": [
+            "🏆 The 3 Golden Sequence Rules: Rule 1: Foundation First! Rule 2: One Step at a Time! Rule 3: Never Skip or Scramble!",
+            "🧱 Foundation First: Always ensure prerequisites exist before building the next layer.",
+            "1️⃣ One Step at a Time: Break complex tasks into small, bite-sized atomic instructions.",
+            "🚫 Never Skip or Scramble: Even a single skipped ingredient (like sugar in a cake) ruins the entire result.",
+            "🧠 Algorithmic thinking is a universal superpower that helps with math, music, sports, and school chores.",
+            "🌟 When you organize your steps in 1, 2, 3 order, you become an unstoppable problem solver!"
+          ],
+          "mission4Complete": {
+            "celebrationText": "🏆 CONGRATULATIONS! You have earned your Master Sequence Pilot License! 🚀🏅",
+            "roboPiCelebration": "BEEP BOOP BOOP BEEP! 🤖🎉 Look at your gleaming golden flight license! You know why socks go before shoes, why Lego baseplates hold up castles, and how rocket countdowns reach orbit! My antenna is spinning with pure joy! Let us play some awesome games and conquer the Rocket Launch Recipe Sequence! 🚀🎮",
+            "badgeEarned": "Official Master Sequence Pilot License 🚀🏅",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CELEBRATE to dance with Robo-Pi and start the games! 💃🤖",
+              "great_job": "🌟 LICENSE UNLOCKED! You are an official Master of Sequence and Algorithms! 🚀🏆",
+              "encouragement": "Get ready for the games — let us see your high score in the launch bay! 🎮✨"
+            }
+          }
+        }
+      ],
+      "totalWordCount": 12000
+    },
+    "games": [
+      {
+        "gameId": "game-1",
+        "gameType": "tap_to_find",
+        "title": "🚀 Space Rocket Assembly Countdown! 🧱✨",
+        "icon": "🚀",
+        "instruction": "Help Mission Control assemble the spaceship in strict numbered order! Tap the 6 rocket modules in the exact sequence from base to tip to prepare for blast-off! 🛸",
+        "difficulty": "easy",
+        "duration": "8 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Welcome to the NASA Assembly Bay! 🤖🚀 Our rocket is sitting in pieces on the launch pad! You must tap the components in the EXACT numbered sequence: Foundation base first, booster engines second, fuel tanks third, crew capsule fourth, escape tower fifth, and launch countdown computer sixth! Can you build the rocket in perfect 1-to-6 order? Let's build! 🧱🔥",
+        "sceneDescription": "A massive, high-tech space vehicle assembly building with crane cables, steel gantry towers, and sparkling rocket stages waiting to be stacked. Mission Control computer screens glow green along the lower gallery.",
+        "targets": [
+          {
+            "id": "target-1",
+            "x": 400,
+            "y": 420,
+            "width": 120,
+            "height": 60,
+            "object": "Step 1: Heavy Steel Launch Baseplate 🧱",
+            "emoji": "🧱",
+            "isAI": true,
+            "aiType": "Foundation Layer",
+            "explanation": "STEP 1 (FOUNDATION FIRST): The heavy reinforced steel baseplate must be bolted to the pad before any rocket parts can stand!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-2",
+            "x": 400,
+            "y": 350,
+            "width": 100,
+            "height": 65,
+            "object": "Step 2: Giant F-1 Booster Engine Cluster 🔥",
+            "emoji": "🔥",
+            "isAI": true,
+            "aiType": "Propulsion Layer",
+            "explanation": "STEP 2: The powerful booster engines are mounted directly onto the steel base to provide 7.5 million pounds of thrust!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-3",
+            "x": 400,
+            "y": 270,
+            "width": 90,
+            "height": 75,
+            "object": "Step 3: Main Liquid Propellant Fuel Tank ⛽",
+            "emoji": "⛽",
+            "isAI": true,
+            "aiType": "Energy Storage Layer",
+            "explanation": "STEP 3: The liquid oxygen and fuel tank stack directly above the engines to supply fuel during ascent!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-4",
+            "x": 400,
+            "y": 190,
+            "width": 80,
+            "height": 70,
+            "object": "Step 4: Astronaut Command Capsule 🧑‍🚀",
+            "emoji": "🧑‍🚀",
+            "isAI": true,
+            "aiType": "Crew Habitat Layer",
+            "explanation": "STEP 4: The pressurized crew capsule is placed safely on top of the fuel stage where astronauts sit comfortably!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-5",
+            "x": 400,
+            "y": 120,
+            "width": 60,
+            "height": 65,
+            "object": "Step 5: Aerodynamic Nose Cone & Escape Tower 🚀",
+            "emoji": "🚀",
+            "isAI": true,
+            "aiType": "Aerodynamic Tip Layer",
+            "explanation": "STEP 5: The needle-sharp nose cone and emergency escape rocket top the stack to slice through Earth's atmosphere!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-6",
+            "x": 200,
+            "y": 380,
+            "width": 95,
+            "height": 75,
+            "object": "Step 6: Master Countdown Algorithm Computer 💻",
+            "emoji": "💻",
+            "isAI": true,
+            "aiType": "Control Sequence System",
+            "explanation": "STEP 6: The digital countdown computer connects to all systems to execute the automated 3-2-1 launch sequence!",
+            "goldSparks": true
+          }
+        ],
+        "totalAITargets": 6,
+        "scoring": {
+          "correctTap": 20,
+          "incorrectTap": -5,
+          "bonusForAllCorrect": 30,
+          "maxScore": 150
+        },
+        "auraGuidance": {
+          "start": "LOOK at the rocket parts in the hangar! Tap them in order: Base 🧱 → Engines 🔥 → Fuel ⛽ → Capsule 🧑‍🚀 → Nose 🚀 → Computer 💻! 🔍",
+          "correct": "SEQUENCE VERIFIED! Stage locked onto the rocket stack with perfect precision! ⭐",
+          "incorrect": "Out of order! Remember Rule 1: Foundation First! Build from bottom to top! 🧱🚫",
+          "hint": "Start with the heavy steel launch baseplate at the bottom of the launch pad! 🧱",
+          "complete": "ROCKET FULLY STACKED! All 6 stages assembled in flawless 1-to-6 order! Pad cleared for launch! 🚀🎉"
+        }
+      },
+      {
+        "gameId": "game-2",
+        "gameType": "drag_drop_sort",
+        "title": "🗂️ Scrambled Mess vs Perfect Order! The Sequence Sorter! 🌪️📋",
+        "icon": "🗂️",
+        "instruction": "Read each event card below! Is it a SCRAMBLED DISASTER 🌪️ that ruins the task, or a PERFECT ALGORITHM 🌟 that follows strict 1, 2, 3 order? Drag each card into its correct basket!",
+        "difficulty": "medium",
+        "duration": "10 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Welcome to the Sequence Sorter! 🤖🗂️ Nine cards are tumbling down from the conveyor belt! Some describe hilarious out-of-order catastrophes, and some describe perfect step-by-step algorithms! Can you sort all nine into the right baskets? Let's sort! 🏆",
+        "categories": [
+          {
+            "id": "cat-scrambled",
+            "label": "SCRAMBLED DISASTER 🌪️ (Wrong Order!)",
+            "description": "Backwards, scrambled steps that cause messes, ruined food, broken toys, or dangerous crashes!",
+            "color": "#FF9800",
+            "emoji": "🌪️"
+          },
+          {
+            "id": "cat-perfect",
+            "label": "PERFECT ALGORITHM 🌟 (Right 1-2-3 Order!)",
+            "description": "Step-by-step numbered instructions with foundations first, logical flow, and zero skipped steps!",
+            "color": "#4CAF50",
+            "emoji": "🌟"
+          }
+        ],
+        "items": [
+          {
+            "id": "item-1",
+            "label": "Tie shoes tight first → Try stretching socks over the shoes! 👟🧦",
+            "emoji": "👟",
+            "correctCategory": "cat-scrambled",
+            "feedback": "🌟 CORRECT! Scrambled disaster! Socks rip in half and toes look silly! 🌪️",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-2",
+            "label": "Put on soft socks first → Slide into sneakers → Tie shoelaces! 🧦👟",
+            "emoji": "🧦",
+            "correctCategory": "cat-perfect",
+            "feedback": "🌟 CORRECT! Perfect algorithm! Smooth, snug feet ready for gym class! 🌟",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-3",
+            "label": "Pour sticky syrup on empty wooden table → Slam plate down on syrup! 🥞😖",
+            "emoji": "🥞",
+            "correctCategory": "cat-scrambled",
+            "feedback": "🌟 CORRECT! Scrambled disaster! Plate gets superglued to the table! 🌪️",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-4",
+            "label": "Place plate on table → Set warm pancake on plate → Drizzle syrup on top! 🍽️🥞🍯",
+            "emoji": "🍽️",
+            "correctCategory": "cat-perfect",
+            "feedback": "🌟 CORRECT! Perfect algorithm! Delicious breakfast with zero sticky mess! 🌟",
+            "difficulty": "medium"
+          },
+          {
+            "id": "item-5",
+            "label": "Release rocket launch pad clamps BEFORE turning on booster engines! 🚀💥",
+            "emoji": "🚀",
+            "correctCategory": "cat-scrambled",
+            "feedback": "🌟 CORRECT! Catastrophic disaster! Unpowered rocket tips and explodes! 🌪️",
+            "difficulty": "medium"
+          },
+          {
+            "id": "item-6",
+            "label": "Ignite booster engines → Verify 100% thrust → Release launch pad clamps! 🔥🚀",
+            "emoji": "🔥",
+            "correctCategory": "cat-perfect",
+            "feedback": "🌟 CORRECT! Perfect NASA algorithm! Rocket lifts gracefully into orbit! 🌟",
+            "difficulty": "medium"
+          },
+          {
+            "id": "item-7",
+            "label": "Pack delicate frosted cupcakes on bottom → Drop heavy 2-liter juice jug on top! 🧁💥",
+            "emoji": "🧁",
+            "correctCategory": "cat-scrambled",
+            "feedback": "🌟 CORRECT! Scrambled disaster! Cupcakes get squished into flat frosting pancakes! 🌪️",
+            "difficulty": "hard"
+          },
+          {
+            "id": "item-8",
+            "label": "Pack heavy juice jug on bottom → Sandwich boxes in middle → Cupcakes on very top! 🧺🧁",
+            "emoji": "🧺",
+            "correctCategory": "cat-perfect",
+            "feedback": "🌟 CORRECT! Perfect algorithm! Every cupcake arrives fluffy and beautiful! 🌟",
+            "difficulty": "hard"
+          },
+          {
+            "id": "item-9",
+            "label": "Bake empty metal pan in oven for 30 minutes → Mix flour, sugar, and cocoa later! 🥧❓",
+            "emoji": "🥧",
+            "correctCategory": "cat-scrambled",
+            "feedback": "🌟 CORRECT! Scrambled disaster! You get hot empty air instead of chocolate cake! 🌪️",
+            "difficulty": "hard"
+          }
+        ],
+        "scoring": {
+          "correctSort": 15,
+          "incorrectSort": -5,
+          "streakBonus": 10,
+          "maxScore": 165
+        },
+        "auraGuidance": {
+          "start": "READ each card carefully! Ask yourself: Is this in logical 1-2-3 order, or are the steps scrambled backwards? 🗂️",
+          "correct": "BULLSEYE! That sequence landed in the perfect golden basket! 🌟",
+          "incorrect": "Oopsie! Think about which step MUST happen first before the others can work! Try again! 🤔",
+          "streak": "UNSTOPPABLE LOGIC STREAK! You understand sequence like a seasoned software engineer! 🔥",
+          "complete": "ALL NINE SORTED FLAWLESSLY! You earned the Master Sequence Sorter Ribbon! 🎀🏆"
+        }
+      },
+      {
+        "gameId": "game-3",
+        "gameType": "match_pairs",
+        "title": "🔗 Match the Scrambled Disaster to Its Numbered Fix! 💡🔢",
+        "icon": "🔗",
+        "instruction": "Connect each hilarious scrambled disaster on the left with the numbered 1-2-3 algorithm on the right that fixes it! Connect all 6 pairs to unlock the Master Algorithm Trophy! 🏆",
+        "difficulty": "medium",
+        "duration": "10 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Ready for the grand repair challenge? 🤖🔗 On the left side are six funny scrambled disasters! On the right side are the numbered step-by-step algorithms that solve them! Connect each disaster to its cure! Let's make the connections glow! ✨",
+        "pairs": [
+          {
+            "left": {
+              "id": "disaster-1",
+              "content": "Socks ripped in half trying to stretch over tied running shoes! 👟💥",
+              "emoji": "👟",
+              "description": "Caused by tying shoes before putting on socks"
+            },
+            "right": {
+              "id": "fix-1",
+              "content": "Step 1: Put on socks 🧦 → Step 2: Put on shoes 👟 → Step 3: Tie laces! 🏃",
+              "emoji": "🧦",
+              "description": "Fixes the morning disaster with socks first"
+            }
+          },
+          {
+            "left": {
+              "id": "disaster-2",
+              "content": "Dining table covered in sticky syrup puddle with plate glued to it! 🥞😖",
+              "emoji": "🥞",
+              "description": "Caused by pouring syrup before setting the plate"
+            },
+            "right": {
+              "id": "fix-2",
+              "content": "Step 1: Set plate on table 🍽️ → Step 2: Place pancake 🥞 → Step 3: Drizzle syrup 🍯!",
+              "emoji": "🍽️",
+              "description": "Fixes the breakfast disaster with plate first"
+            }
+          },
+          {
+            "left": {
+              "id": "disaster-3",
+              "content": "Tall Lego castle tower wobbles, tips over, and shatters on the carpet! 🏰💥",
+              "emoji": "🏰",
+              "description": "Caused by building high towers without baseplate"
+            },
+            "right": {
+              "id": "fix-3",
+              "content": "Step 1: Flat green baseplate 🧱 → Step 2: Wall anchors → Step 3: Towers & roof 🏰!",
+              "emoji": "🧱",
+              "description": "Fixes the castle with sturdy foundations first"
+            }
+          },
+          {
+            "left": {
+              "id": "disaster-4",
+              "content": "Paper airplane drops like a heavy stone two feet from your toes! 📄🪨",
+              "emoji": "📄",
+              "description": "Caused by folding wings without center spine crease"
+            },
+            "right": {
+              "id": "fix-4",
+              "content": "Step 1: Center fold crease 📐 → Step 2: Corner triangles → Step 3: 45° wing bends ✈️!",
+              "emoji": "✈️",
+              "description": "Fixes the glider with symmetrical aerodynamic steps"
+            }
+          },
+          {
+            "left": {
+              "id": "disaster-5",
+              "content": "Delicate frosted cupcakes crushed into flat gooey pancakes in the basket! 🧁💥",
+              "emoji": "🧁",
+              "description": "Caused by packing heavy juice bottles on top of cupcakes"
+            },
+            "right": {
+              "id": "fix-5",
+              "content": "Step 1: Heavy juice jug on bottom 🧃 → Step 2: Sandwiches 🥪 → Step 3: Cupcakes on top 🧁!",
+              "emoji": "🧺",
+              "description": "Fixes the picnic with heavy items on bottom"
+            }
+          },
+          {
+            "left": {
+              "id": "disaster-6",
+              "content": "Rocket tips sideways on launch pad because clamps opened before engines! 🚀💥",
+              "emoji": "🚀",
+              "description": "Caused by releasing clamps before engine thrust verification"
+            },
+            "right": {
+              "id": "fix-6",
+              "content": "Step 1: Ignite booster engines 🔥 → Step 2: Verify 100% thrust 📊 → Step 3: Release clamps 🚀!",
+              "emoji": "🚀",
+              "description": "Fixes the space launch with thrust verification first"
+            }
+          }
+        ],
+        "scoring": {
+          "correctMatch": 20,
+          "incorrectMatch": -5,
+          "maxScore": 120
+        },
+        "auraGuidance": {
+          "start": "TAP a scrambled disaster on the left, then TAP the numbered algorithm on the right that fixes it! 🔗✨",
+          "correct": "PERFECT ALGORITHM CONNECTED! Order restored and disaster prevented! ⚡⭐",
+          "incorrect": "That algorithm doesn't fix this disaster! Match the socks to shoe order, and syrup to plate order! 🤔",
+          "hint": "The ripped socks are solved by putting on socks in Step 1! 🧦",
+          "complete": "ALL SIX PAIRS CONNECTED! You unlocked the Master Algorithm Trophy! 🏆🎉"
+        }
+      }
+    ],
+    "activities": [
+      {
+        "activityId": "activity-1",
+        "title": "🚀 Rocket Launch Recipe Sequence at Home or School! 🛸🤖",
+        "type": "hands-on",
+        "duration": "20 minutes",
+        "icon": "🚀",
+        "roboPiActivityBrief": "BEEP BOOP! Welcome to the headline activity: The Rocket Launch Recipe Sequence! 🤖🚀 You get to build a real cardboard or paper rocket, program a four-step countdown algorithm, and test what happens when steps are scrambled vs in perfect order! Ready for blast-off?",
+        "description": "In this thrilling hands-on sequencing simulation, students turn an ordinary cardboard paper towel roll (or folded sheet of paper) into a multi-stage spacecraft! Two players work as a team: Player 1 plays 'The Flight Computer', and Player 2 plays 'The Launch Director'. The mission has two phases: In Phase 1 (The Scrambled Test), the Launch Director attempts to fly the rocket by executing steps out of order (e.g. attempting to blast off before attaching the wings or fueling the tanks). Students physically observe the failure (the unwinged rocket tumbling immediately to the floor). In Phase 2 (The Perfect Countdown), the Flight Computer reads a strict 4-step algorithm: Step 1: Secure launch baseplate. Step 2: Attach symmetrical aerodynamic booster fins. Step 3: Load paper astronaut capsule into nose cone. Step 4: Execute 3-2-1 verbal countdown and launch with a gentle throw! The rocket glides smoothly across the room! This activity provides kinesthetic proof that algorithmic order is the key to flight!",
+        "materials": [
+          "🧻 1 empty cardboard paper towel roll or toilet paper tube (or a rolled piece of construction paper)",
+          "✂️ Safety scissors and transparent tape or glue stick",
+          "📐 1 piece of colorful cardboard or index card to cut out 3 triangular rocket fins",
+          "📄 1 square piece of paper rolled into a conical nose cone cap",
+          "🖍️ Markers to decorate the rocket body with space mission logos and numbers: 1, 2, 3",
+          "🏆 A cut-out Gold Flight Director Wings Badge"
+        ],
+        "steps": [
+          "Step 1: Decorate your cardboard rocket tube with markers. Write your rocket's name (e.g. 'Starliner-1') and draw the numbers: 1, 2, 3 on the fuselage.",
+          "Step 2: Cut out three identical triangular cardboard fins using safety scissors.",
+          "Step 3: PHASE 1 (The Scrambled Test): Place the plain cardboard tube without any fins on the table. Try to 'launch' it by throwing it forward. Notice how it wobbles, spins out of control, and drops to the floor like a stick! You cannot fly without aerodynamic fins!",
+          "Step 4: PHASE 2 (The Perfect Algorithm): Open your Mission Clipboard. Read Step 1: 'Tape the three triangular fins evenly spaced around the bottom base of the rocket tube.'",
+          "Step 5: Read Step 2: 'Roll a square piece of paper into a sharp conical nose cone. Tape the nose cone securely onto the top opening of the rocket tube.'",
+          "Step 6: Read Step 3: 'Draw a tiny paper astronaut face on a small circle of paper and tape it onto the command module window.'",
+          "Step 7: Read Step 4: 'Stand at the launch pad starting line. Hold the rocket at a 45-degree angle. Count down aloud with your partner: T-minus 3... 2... 1... IGNITION... BLAST OFF!'",
+          "Step 8: Release the rocket with a smooth, gentle forward throw. Watch the stabilized rocket glide straight across the room and land smoothly on the carpet! Mission success!"
+        ],
+        "thingsToLookFor": [
+          "🚀 Did Phase 1 demonstrate why attempting flight before assembling wings causes immediate failure?",
+          "📐 Were the three fins attached symmetrically around the bottom base (foundation first)?",
+          "1️⃣ Did the Flight Director read each step aloud in numbered 1-2-3-4 order before doing it?",
+          "🗣️ Did both partners count down together: 3... 2... 1... BLAST OFF?",
+          "✈️ Did the rocket fly straight and stable thanks to the attached fins and nose cone?",
+          "🔄 Did partners switch roles so both got to be the Flight Computer reader and the Launch Pilot?",
+          "😂 Did both partners celebrate the safe landing with a joyful astronaut high-five?",
+          "🏆 Did both players award each other the Flight Director Wings Badge at the finish line?"
+        ],
+        "discussionWithGrownUp": [
+          "Why did the plain cardboard tube tumble in Phase 1? What did the wings provide that was missing?",
+          "How is building this paper rocket just like NASA engineers assembling the giant Saturn V Moon rocket?",
+          "What would happen if an astronaut forgot to put on their spacesuit helmet before stepping outside into space?",
+          "Can you name three things you do before leaving for school in the morning that MUST happen in order?"
+        ],
+        "familyConnection": "Show your family your flying rocket at home! Challenge mama or papa to catch the rocket as you execute the 3-2-1 countdown across the living room! 🚀👨‍👩‍👧",
+        "learningOutcome": "Children experience physical proof of sequential dependencies in engineering, proving that prerequisite components (fins, nose cone) must be completed before operational execution (launch) can succeed.",
+        "auraGuidance": {
+          "before": "CLEAR a wide open flight path in the room so the rocket has plenty of airspace to glide! 🌌",
+          "during": "COUNT DOWN with big, bold astronaut voices: 3... 2... 1... BLAST OFF! 🗣️🚀",
+          "after": "ORBIT ACHIEVED! The rocket flew straight as an arrow thanks to your flawless 1-2-3-4 algorithm! 🌟🏆"
+        }
+      },
+      {
+        "activityId": "activity-2",
+        "title": "🧱 The Blindfolded Lego Master Builder Challenge! 🏰🙈",
+        "type": "active_roleplay",
+        "duration": "15 minutes",
+        "icon": "🧱",
+        "roboPiActivityBrief": "BEEP BOOP! Ready for the ultimate Lego communication test? 🤖🧱 One of you plays the blindfolded builder, and the other reads the numbered manual! Can you build a tower without seeing?",
+        "description": "In this hilarious and insightful communication exercise, Player 1 plays 'The Construction Robot'. The Construction Robot wears a soft blindfold (or keeps eyes tightly shut) and has hands resting on a small tray of 10 Lego bricks. Player 2 plays 'The Algorithm Programmer'. The Programmer has a secret diagram of a simple 6-brick staircase or mini-house. The Programmer must give numbered step-by-step instructions: 'Step 1: Pick up the long red 2x4 brick from your tray and place it horizontally in front of you. Step 2: Pick up the blue 2x2 brick and snap it on the left two studs of the red brick.' The Robot must follow ONLY the spoken algorithm! When finished, the Robot removes the blindfold to see if the structure matches the secret blueprint! Switch roles!",
+        "materials": [
+          "🧱 10 to 12 assorted Lego or mega building blocks of different colors (red, blue, yellow, green)",
+          "🧣 A soft sleep mask or clean scarf for a blindfold",
+          "📄 A secret drawn diagram of a 5-brick mini-tower on a piece of paper",
+          "⏱️ 3-minute timer per building round"
+        ],
+        "steps": [
+          "Step 1: Player 2 secretly draws a simple 5-brick tower diagram on a piece of paper (e.g. Red brick on bottom, two yellow bricks in middle, green brick on top).",
+          "Step 2: Player 1 puts on the blindfold and places hands on the building tray. Beep: 'BUILDER BOT ONLINE! WAITING FOR STEP 1!'",
+          "Step 3: Player 2 reads Step 1 clearly: 'Step 1: Feel the tray for the long red brick with eight bumps. Place it flat in front of you.'",
+          "Step 4: Player 1 finds the brick and lays it down. Beep: 'STEP 1 COMPLETE!'",
+          "Step 5: Player 2 reads Step 2: 'Step 2: Pick up a yellow square brick. Snap it onto the center four bumps of the red brick until it clicks.'",
+          "Step 6: Continue reading Step 3, Step 4, and Step 5 until the structure is fully assembled.",
+          "Step 7: The Grand Reveal! Player 1 takes off the blindfold and compares the physical model to the secret diagram! Look at that: it matches 100%!",
+          "Step 8: Switch roles so both players experience being the blind machine and the algorithm programmer!"
+        ],
+        "bonusChallenge": [
+          "⏱️ Speed Builder: Can you complete a 6-brick staircase in under 90 seconds using only verbal algorithms?",
+          "🔄 No-Touch Rule: The Programmer is NEVER allowed to touch the bricks with their hands — only their voice can guide the robot!"
+        ],
+        "creativityPrompts": [
+          "Draw your own custom Lego algorithm sheet with little numbered boxes and share it with a friend!",
+          "Invent a funny robot sound effect that the builder makes every time a brick clicks into place (*KAPOW-CLICK!*)!"
+        ],
+        "familyConnection": "Challenge a parent to be the blindfolded builder while you program them to build a Lego car or pyramid! See if mama or papa can follow your steps without peeking! 🧱👨‍👩‍👧",
+        "learningOutcome": "Demonstrates that precise sequential instructions allow an autonomous agent to construct accurate physical assemblies even with zero visual feedback.",
+        "auraGuidance": {
+          "before": "ORGANIZE the 10 bricks in a neat row on the tray so the blindfolded builder can easily feel them! 📐",
+          "during": "WAIT for the builder to say 'STEP COMPLETE' before reading the next step! One step at a time! 🗣️",
+          "after": "BLUEPRINT MATCHED! The tower was built with 100% accuracy using pure algorithmic instruction! 🏰🌟"
+        }
+      },
+      {
+        "activityId": "activity-3",
+        "title": "✈️ The Supersonic Paper Glider Flight Derby & Dinner Quiz! 📄🍽️",
+        "type": "interactive_drama",
+        "duration": "15 minutes",
+        "icon": "✈️",
+        "roboPiActivityBrief": "BEEP BOOP! Ready for high-flying family theater? 🤖✈️ Fold world-record paper airplanes step-by-step, test flight distances, and host the Ultimate Dinner Table Sequence Quiz tonight!",
+        "description": "Combine aerodynamic flight tests with family dinner fun! In Part 1, the family folds two identical paper airplanes: Plane A is folded following the strict 6-step Origami Glider Algorithm. Plane B is folded intentionally scrambling the steps (folding the wings before making the center crease). Both planes are launched across the living room simultaneously. Plane A soars gracefully across the room; Plane B tumbles immediately to the floor! In Part 2, children act as Chief Flight Director at the dinner table and quiz parents on 5 punchy sequence questions!",
+        "quizQuestions": [
+          "Question 1: Why did Barnaby the robot rip Arjun's soccer socks in half on Tuesday morning? (Grown-up Answer: Because he tried to put the socks on top of the tied shoes instead of socks first!)",
+          "Question 2: What is the fancy computer science word for a step-by-step numbered recipe? (Grown-up Answer: An ALGORITHM!)",
+          "Question 3: Why must NASA rocket computers verify 100% engine thrust BEFORE releasing launch pad clamps? (Grown-up Answer: If clamps release before thrust, the unpowered rocket tips over and explodes!)",
+          "Question 4: What is Rule 1 of the 3 Golden Sequence Rules? (Grown-up Answer: FOUNDATION FIRST! Always build the base before the top!)",
+          "Question 5: Why do Lego instruction manuals have numbers on every single page? (Grown-up Answer: Because every step depends on the previous steps, so skipping ahead breaks the model!)"
+        ],
+        "familyConnection": "Grade your family members' answers with Golden Flight Badges ⭐! Award mama and papa an 'Honorary Master Sequence Navigator Award' if they get at least 4 out of 5 questions right!",
+        "learningOutcome": "Children reinforce their own conceptual grasp of sequential dependencies and algorithmic logic by teaching grown-ups and leading interactive family demonstrations.",
+        "auraGuidance": {
+          "before": "TAKE two clean sheets of rectangular paper to the kitchen table for the flight test! 📄",
+          "during": "OBSERVE the flight trajectory: notice how symmetrical creases produce straight gliding! ✈️",
+          "after": "DERBY CHAMPION! Family quiz scores were soaring high above the clouds! 🌟🍽️"
+        }
+      }
+    ],
+    "realWorldExamples": [
+      {
+        "id": "rwe-1",
+        "title": "🏰 Building a 1,000-Piece Lego Space Station with the Manual 🧱📖",
+        "scenario": "On a rainy Sunday afternoon, Leo and Maya open a massive 1,000-piece Lego International Space Station kit. The box contains 10 numbered plastic bags and a thick 150-page instruction booklet. Leo wants to open Bag 10 to assemble the shiny solar panels immediately, but Maya stops him and opens Page 1.",
+        "aiConnection": "This is a real-world physical algorithm! The Lego engineers designed a sequential dependency graph: Bag 1 constructs the central truss spine; Bags 2 and 3 build the docking module anchors; Bag 4 mounts the robotic Canadarm; and Bags 9 and 10 attach the fragile, rotating solar arrays. If Leo had opened Bag 10 first, the fragile solar panels would have snapped in half while trying to force them onto the missing frame. Following the algorithm from Page 1 to Page 150 ensured that every single one of the 1,000 pieces locked securely into place with zero missing structural support!",
+        "observation": "Notice that Lego manuals don't use words in different languages; they use clear, numbered pictures showing exactly which 3 bricks to add on each step! That visual numbering is a universal algorithm understood by children anywhere on Earth!",
+        "discussion": "Why do you think Lego separates bricks into numbered bags (Bag 1, Bag 2, Bag 3) instead of dumping all 1,000 bricks into one giant bag? How does breaking a giant task into numbered stages help human and computer brains?",
+        "roboPiTip": "BEEP BOOP! Numbered stages are called 'Modular Sub-Routines' in computer science! Breaking 1,000 bricks into 10 bags of 100 bricks makes impossible jobs super easy! 🧱💡"
+      },
+      {
+        "id": "rwe-2",
+        "title": "✈️ Folding the World Record Paper Airplane Glider 📄💨",
+        "scenario": "In 2012, former college quarterback Joe Ayoob threw a paper airplane designed by John Collins a world-record distance of 226 feet (69 meters) inside an aircraft hangar. The plane, nicknamed 'Suzanne', was folded from a single sheet of A4 paper using a precise 12-step origami algorithm.",
+        "aiConnection": "Aerodynamic algorithms in physics! Collins spent months calculating the exact sequence of 12 folds: the center spine established bilateral symmetry; the nose tuck created a forward center of gravity; and the 3-degree dihedral wing fold generated automatic aerodynamic self-leveling in flight. If Ayoob had folded the wings before making the nose lock, the plane would have stalled in mid-air and tumbled after five feet. The record-shattering flight was 100% dependent on the mathematical precision of the sequential fold algorithm!",
+        "observation": "Even though it was just an ordinary piece of paper with no motors, batteries, or engines, following the exact geometric algorithm turned it into a high-performance aircraft that flew the length of a football field!",
+        "discussion": "How is folding a paper airplane with strict steps similar to a computer running a sorting algorithm? What happens when a single fold is misaligned by even two millimeters?",
+        "roboPiTip": "BEEP BOOP! Sharp, clean creases with your fingernail make paper airplanes fly three times farther! In coding, crisp, clean steps make programs run three times faster! ✈️📐"
+      },
+      {
+        "id": "rwe-3",
+        "title": "🧺 Packing the Perfect Family Picnic Basket Without Squashing Food 🥪🧁",
+        "scenario": "The Sharma family is packing a wicker picnic hamper for a day at the botanical gardens. The menu includes chilled glass bottles of lemonade, plastic bento boxes with club sandwiches, loose bunches of green grapes, and four delicate chocolate cupcakes with tall buttercream frosting.",
+        "aiConnection": "Physical stack algorithms and structural load management! If an inexperienced packer places the soft cupcakes at the bottom of the basket and drops the heavy 2-kilogram lemonade bottles on top, gravity crushes the cupcakes into ruined paste. The family executes the Stack Algorithm: Tier 1 (Base): Heavy rigid liquids (lemonade bottles) providing low center of gravity. Tier 2 (Middle): Rigid sandwich bento boxes bridging the weight. Tier 3 (Upper): Resilient fruits (grapes and apples). Tier 4 (Crown): Delicate frosted cupcakes resting safely on the very top of the stack. Every single food item arrives in pristine, appetizing condition!",
+        "observation": "Computer memory uses a data structure called a 'STACK' that operates on the exact same principle: you stack items in order, and you pop them off from the top down without crushing the data beneath!",
+        "discussion": "Why does grocery store cashier packing follow this exact same algorithm when packing heavy canned soup and loaves of soft sliced bread into shopping bags?",
+        "roboPiTip": "BEEP BOOP! Always remember: heavy cans and bottles at the bottom of the grocery bag; soft bread, eggs, and cupcakes on top! Protect the soft goodies with algorithmic packing! 🧺🥚"
+      }
+    ],
+    "practiceExercises": [
+      {
+        "exerciseId": "practice-1",
+        "type": "interactive_sorting",
+        "title": "🔢 Fix the Scrambled Algorithm! (The Sequence Polisher) 🧩✨",
+        "instruction": "Read each scrambled everyday task below. Reorder the steps into their correct 1 → 2 → 3 sequence to fix the algorithm!",
+        "roboPiIntro": "BEEP BOOP! Welcome to the Sequence Polishing Workshop! 🤖✨ Six everyday activities got scrambled in a windstorm! Put them back into perfect 1, 2, 3 order! Let's polish! 🧼",
+        "items": [
+          {
+            "activity": "👟 Getting Ready for School Shoes",
+            "hasAI": false,
+            "stepType": "SEQUENCE_TASK",
+            "scrambledSteps": [
+              "Tie laces tight 👟",
+              "Put on socks 🧦",
+              "Slide into sneakers 🏃"
+            ],
+            "correctOrder": [
+              "1️⃣ Step 1: Put on soft socks 🧦",
+              "2️⃣ Step 2: Slide into sneakers 👟",
+              "3️⃣ Step 3: Tie laces tight 🏃"
+            ],
+            "explanation": "Socks must cover bare feet before sliding into shoes and tying laces!",
+            "roboPiComment": "BEEP BOOP! Socks first, shoes second, laces third! Flawless! 🧦👟"
+          },
+          {
+            "activity": "🥞 Breakfast Pancake Feast",
+            "hasAI": false,
+            "stepType": "SEQUENCE_TASK",
+            "scrambledSteps": [
+              "Drizzle maple syrup 🍯",
+              "Place clean plate on table 🍽️",
+              "Set warm pancake on plate 🥞"
+            ],
+            "correctOrder": [
+              "1️⃣ Step 1: Place clean plate on table 🍽️",
+              "2️⃣ Step 2: Set warm pancake on plate 🥞",
+              "3️⃣ Step 3: Drizzle maple syrup on top 🍯"
+            ],
+            "explanation": "The plate holds the pancake, and the pancake holds the syrup!",
+            "roboPiComment": "BEEP BOOP! Clean table, happy tummy! 🥞✨"
+          },
+          {
+            "activity": "🪥 Sparkling Bedtime Teeth Brushing",
+            "hasAI": false,
+            "stepType": "SEQUENCE_TASK",
+            "scrambledSteps": [
+              "Rinse mouth with water and spit 💦",
+              "Brush teeth in circles for 2 minutes 🦷",
+              "Squeeze toothpaste onto brush bristles 🪥"
+            ],
+            "correctOrder": [
+              "1️⃣ Step 1: Squeeze toothpaste onto brush bristles 🪥",
+              "2️⃣ Step 2: Brush teeth in circles for 2 minutes 🦷",
+              "3️⃣ Step 3: Rinse mouth with water and spit 💦"
+            ],
+            "explanation": "Paste goes on the brush before brushing; rinsing happens after cleaning!",
+            "roboPiComment": "BEEP BOOP! Sparkling white teeth! 🦷⭐"
+          },
+          {
+            "activity": "🚀 NASA Apollo Moon Rocket Launch",
+            "hasAI": false,
+            "stepType": "SEQUENCE_TASK",
+            "scrambledSteps": [
+              "Release launch pad steel clamps 🚀",
+              "Ignite booster engines 🔥",
+              "Verify 100% full engine thrust 📊"
+            ],
+            "correctOrder": [
+              "1️⃣ Step 1: Ignite booster engines 🔥",
+              "2️⃣ Step 2: Verify 100% full engine thrust 📊",
+              "3️⃣ Step 3: Release launch pad steel clamps 🚀"
+            ],
+            "explanation": "Engines ignite and verify full thrust BEFORE launch pad clamps are released!",
+            "roboPiComment": "BEEP BOOP! 3-2-1 BLAST OFF! Perfect launch sequence! 🌕🚀"
+          },
+          {
+            "activity": "🧺 Packing the Family Picnic Hamper",
+            "hasAI": false,
+            "stepType": "SEQUENCE_TASK",
+            "scrambledSteps": [
+              "Place delicate frosted cupcakes on top 🧁",
+              "Pack heavy juice jug on bottom 🧃",
+              "Set sandwich boxes in middle 🥪"
+            ],
+            "correctOrder": [
+              "1️⃣ Step 1: Pack heavy juice jug on bottom 🧃",
+              "2️⃣ Step 2: Set sandwich boxes in middle 🥪",
+              "3️⃣ Step 3: Place delicate frosted cupcakes on top 🧁"
+            ],
+            "explanation": "Heavy items on bottom, sturdy containers in middle, delicate cupcakes on top!",
+            "roboPiComment": "BEEP BOOP! Zero squished cupcakes! Picnic perfection! 🧺🍓"
+          },
+          {
+            "activity": "✈️ Folding the Origami Glider",
+            "hasAI": false,
+            "stepType": "SEQUENCE_TASK",
+            "scrambledSteps": [
+              "Fold 45° aerodynamic wings ✈️",
+              "Make center spine crease 📐",
+              "Fold symmetrical nose corners 👃"
+            ],
+            "correctOrder": [
+              "1️⃣ Step 1: Make center spine crease 📐",
+              "2️⃣ Step 2: Fold symmetrical nose corners 👃",
+              "3️⃣ Step 3: Fold 45° aerodynamic wings ✈️"
+            ],
+            "explanation": "Center crease establishes symmetry before nose corners and wing angles!",
+            "roboPiComment": "BEEP BOOP! Supersonic glide unlocked! ✈️💨"
+          }
+        ],
+        "feedback": {
+          "correct": "🌟 MASTER SEQUENCER! Every single scrambled task was put into flawless 1-2-3 order! 🏆🎉",
+          "incorrect": "🤔 Check which step is the foundation! Remember: Foundation First, then Middle, then Finish!"
+        }
+      },
+      {
+        "exerciseId": "practice-2",
+        "type": "fill_in_blanks",
+        "title": "📝 Complete Robo-Pi's Launch Recipe Algorithm! 🚀",
+        "instruction": "Fill in the missing words in the master launch sequence using the Word Bank below!",
+        "wordBank": [
+          "Algorithm 📋",
+          "Foundation 🧱",
+          "Ignite 🔥",
+          "Thrust 📊",
+          "Clamps 🚀",
+          "Blast Off! 🌕"
+        ],
+        "sentences": [
+          {
+            "id": "sent-1",
+            "sentence": "A step-by-step numbered recipe for solving a problem or flying a rocket is called an _____.",
+            "blank": "Algorithm 📋",
+            "options": [
+              "Algorithm 📋",
+              "Elephant 🐘",
+              "Ice Cream 🍦",
+              "Pencil ✏️"
+            ],
+            "correctAnswer": "Algorithm 📋",
+            "explanation": "An algorithm is the formal computer science term for a sequential, step-by-step list of instructions."
+          },
+          {
+            "id": "sent-2",
+            "sentence": "Rule 1 of sequencing states: Always build the sturdy _____ first before adding the top!",
+            "blank": "Foundation 🧱",
+            "options": [
+              "Foundation 🧱",
+              "Chimney 🏠",
+              "Cloud ☁️",
+              "Flag 🚩"
+            ],
+            "correctAnswer": "Foundation 🧱",
+            "explanation": "Foundations provide the structural base upon which all subsequent layers rely."
+          },
+          {
+            "id": "sent-3",
+            "sentence": "At T-minus 6 seconds in the rocket countdown, the computers _____ the giant booster engines.",
+            "blank": "Ignite 🔥",
+            "options": [
+              "Ignite 🔥",
+              "Freeze 🥶",
+              "Hide 🙈",
+              "Paint 🎨"
+            ],
+            "correctAnswer": "Ignite 🔥",
+            "explanation": "Booster engines must be ignited so they can build up heat, pressure, and combustion."
+          },
+          {
+            "id": "sent-4",
+            "sentence": "Before letting go of the launch pad, sensors must verify that engines have reached 100% full _____.",
+            "blank": "Thrust 📊",
+            "options": [
+              "Thrust 📊",
+              "Sleep 💤",
+              "Water 💦",
+              "Dust 🌪️"
+            ],
+            "correctAnswer": "Thrust 📊",
+            "explanation": "Thrust verification guarantees that the rocket has sufficient upward push to lift its own massive weight."
+          },
+          {
+            "id": "sent-5",
+            "sentence": "Only after full thrust is verified do the giant launch pad steel _____ open up!",
+            "blank": "Clamps 🚀",
+            "options": [
+              "Clamps 🚀",
+              "Doors 🚪",
+              "Beds 🛏️",
+              "Windows 🪟"
+            ],
+            "correctAnswer": "Clamps 🚀",
+            "explanation": "Launch pad clamps physically hold the rocket to the ground until it is fully ready to soar."
+          },
+          {
+            "id": "sent-6",
+            "sentence": "With clamps released and engines roaring, the countdown reaches zero and the rocket can _____!",
+            "blank": "Blast Off! 🌕",
+            "options": [
+              "Blast Off! 🌕",
+              "Go to Sleep 😴",
+              "Turn into Frog 🐸",
+              "Drop Keys 🔑"
+            ],
+            "correctAnswer": "Blast Off! 🌕",
+            "explanation": "'Blast Off!' is the triumphant final operational execution of the complete countdown algorithm."
+          }
+        ]
+      }
+    ],
+    "lessonSummary": {
+      "roboPiFinalMessage": "BEEP BOOP BOOP BEEP! 🤖✨ Oh my goodness, Master Sequence Pilot! You did it! You have officially conquered Chapter 2 • Lesson 2 and mastered the secret architecture of ALGORITHMS! You know why socks must go before shoes, why Lego baseplates hold up giant castles, and how NASA rocket countdowns reach orbit with millisecond perfection! You are no longer just someone who presses buttons — you are a certified Junior Algorithm Architect who can break ANY big dream into Step 1, Step 2, and Step 3! My antenna is beeping with pride, my roller skates are dancing, and I am giving you the biggest robot bear-hug in the cosmos! *CLINK-CLANK CHEERS!* 🦾💖",
+      "keyTakeaways": [
+        "📋 An ALGORITHM is a step-by-step numbered list of instructions that must be done in exact order.",
+        "🧦 Order is everything: doing good actions in the wrong order (shoes before socks) causes silly disasters.",
+        "🧱 Rule 1: FOUNDATION FIRST! Build baseplates before roofs, put socks on before shoes, and pack heavy bottles before cupcakes.",
+        "1️⃣ Rule 2: ONE STEP AT A TIME! Break giant jobs into small, clear, bite-sized numbered steps.",
+        "🚫 Rule 3: NEVER SKIP OR SCRAMBLE! Skipping even one step (like sugar in a cake) ruins the entire result.",
+        "🏰 Lego manuals and cooking recipes are physical algorithms that humans follow every single day.",
+        "🚀 Rocket countdowns use strict thrust verification algorithms to ensure safe blast-offs into orbit.",
+        "🌟 Mastering algorithmic sequencing trains your human brain to be calm, organized, and unstoppable!"
+      ],
+      "recap": "In this lesson, we explored the foundational computer science concept of algorithms and sequencing. We investigated why doing actions out of order causes comical failures (socks over shoes, upside-down syrup, toothbrushes washed down the drain). We examined real-world physical algorithms including 1,000-piece Lego instruction manuals, aerodynamic paper airplane folds, and picnic basket packing. Finally, we analyzed multi-stage rocket launch sequences and synthesized the 3 Golden Sequence Rules (Foundation First, One Step at a Time, Never Skip or Scramble) to achieve 100% mission success.",
+      "studentReflection": {
+        "question": "Think of your favourite morning school activity or hobby (like making cereal, building a model, or drawing). What are the exact Step 1, Step 2, and Step 3 instructions for that activity?",
+        "roboPiReflection": "BEEP BOOP! For making cereal, my algorithm is: Step 1: Bowl on table 🥣, Step 2: Pour crunchy cereal 🌾, Step 3: Pour cold milk 🥛! If you pour milk before the bowl, you get a milk puddle on your shoes! What is YOUR algorithm? 🥣✨"
+      },
+      "nextLesson": {
+        "title": "Chapter 3 • Lesson 1: AI Goes to School! (Smart Classrooms & Learning Helpers) 🏫🤖",
+        "preview": "Now that we know how smart machines sense, think, act, and follow clear step-by-step instructions, how is AI helping students and teachers in real classrooms around the world?",
+        "teaser": "Get ready to meet smart tutoring bots, voice-translating storybooks, and automatic homework helpers that make learning fun! 🎒📚"
+      },
+      "parentNote": "Today, your child explored the foundational computational concept of algorithms and sequential logic. Without writing a single line of code, your child discovered why order matters in process execution, how sequential dependencies operate in physical assemblies (Lego, cooking, packing), and why verification steps are critical in high-stakes automation (rocket countdowns). Encourage your child to point out numbered steps in family cooking recipes, board game rules, and morning chore routines to reinforce algorithmic thinking at home!",
+      "auraClosing": {
+        "congratulations": "MAGNIFICENT TRIUMPH! You completed Chapter 2 • Lesson 2: Mission: Instructions! 🌟",
+        "achievement": "Master Sequence Pilot License Unlocked! 🚀🏅",
+        "nextStep": "Ready for Chapter 3: AI Applications • SOLVE! 🏫✨",
+        "totalPoints": 500
+      }
+    }
+  },
+  "assessment": {
+    "quizType": "multiple_choice_interactive",
+    "roboPiQuizIntro": "BEEP BOOP! Time for the Grand Sequence Quiz! 🤖📝 Five fun questions stand between you and the Master Sequence Pilot Crown! Read carefully, check your 1-2-3 steps, and tap the golden answers! 👑✨",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "tap_correct",
+        "emoji": "📋",
+        "question": "What is an 'ALGORITHM' in computer science and everyday life? 🤖💡",
+        "options": [
+          {
+            "id": "opt1a",
+            "label": "A step-by-step numbered list of instructions that must be done in exact order! 📋✨",
+            "correct": true,
+            "feedback": "⭐ PERFECT! An algorithm is simply a step-by-step numbered recipe for solving a problem! 🌟"
+          },
+          {
+            "id": "opt1b",
+            "label": "A secret magic spell that only wizards can speak 🧙‍♂️",
+            "correct": false,
+            "feedback": "🤔 No magic spells! Algorithms are practical, everyday numbered instructions!"
+          },
+          {
+            "id": "opt1c",
+            "label": "A giant scary monster that lives inside computer screens 👾",
+            "correct": false,
+            "feedback": "🤔 Haha, no monsters here! Algorithms are friendly recipes that help machines work!"
+          },
+          {
+            "id": "opt1d",
+            "label": "A random pile of words mixed up in a bowl 🥣",
+            "correct": false,
+            "feedback": "🤔 Random piles cause disasters! Algorithms have strict, organized 1-2-3 order!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q2",
+        "type": "tap_correct",
+        "emoji": "🧦",
+        "question": "Why does putting on running shoes BEFORE socks cause a morning disaster? 👟💥",
+        "options": [
+          {
+            "id": "opt2a",
+            "label": "Because narrow stretchy socks cannot fit over big clunky shoes without ripping! 🧦✨",
+            "correct": true,
+            "feedback": "⭐ BINGO! Foundations must go first! Socks go on feet first, then shoes on top! 🧦👟"
+          },
+          {
+            "id": "opt2b",
+            "label": "Because socks turn invisible when you look at shoes 👻",
+            "correct": false,
+            "feedback": "🤔 Socks don't turn invisible! They just tear when you try to stretch them over giant shoes!"
+          },
+          {
+            "id": "opt2c",
+            "label": "Because running shoes get angry and run away 👟🏃",
+            "correct": false,
+            "feedback": "🤔 Shoes don't run away on their own! Order is what makes shoes fit comfortably!"
+          },
+          {
+            "id": "opt2d",
+            "label": "Because the school bus only picks up kids who wear no socks at all 🚌",
+            "correct": false,
+            "feedback": "🤔 School buses welcome all kids! Always put socks on first, then shoes!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q3",
+        "type": "tap_correct",
+        "emoji": "🧱",
+        "question": "What is Rule 1 of the 3 Golden Sequence Rules when building Lego castles or packing baskets? 🏰",
+        "options": [
+          {
+            "id": "opt3a",
+            "label": "FOUNDATION FIRST! Always build the sturdy base before adding top layers! 🧱✨",
+            "correct": true,
+            "feedback": "⭐ BRILLIANT! Foundations first! You cannot build a castle tower in empty mid-air! 🏰🌟"
+          },
+          {
+            "id": "opt3b",
+            "label": "ROOF FIRST! Put the flag in the sky before laying any bricks on the ground 🚩",
+            "correct": false,
+            "feedback": "🤔 Flags cannot float in empty air! You must build the baseplate foundation first!"
+          },
+          {
+            "id": "opt3c",
+            "label": "CLOSE YOUR EYES and throw bricks randomly at the wall 🙈",
+            "correct": false,
+            "feedback": "🤔 That just breaks bricks! Follow the numbered instruction booklet!"
+          },
+          {
+            "id": "opt3d",
+            "label": "SKIP ALL STEPS and eat the plastic bricks for lunch 🍽️",
+            "correct": false,
+            "feedback": "🤔 Yuck! Never eat plastic toys! Follow the steps in 1, 2, 3 order!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q4",
+        "type": "tap_correct",
+        "emoji": "🚀",
+        "question": "Why must rocket launch pad clamps be released ONLY AFTER verifying 100% engine thrust? 🔥",
+        "options": [
+          {
+            "id": "opt4a",
+            "label": "Because releasing clamps without full thrust causes the unpowered rocket to tip and crash! 💥✨",
+            "correct": true,
+            "feedback": "⭐ SPOT ON! Thrust verification ensures the engines have enough power to lift the rocket safely! 🚀🌕"
+          },
+          {
+            "id": "opt4b",
+            "label": "Because clamps are made of chocolate and melt easily 🍫",
+            "correct": false,
+            "feedback": "🤔 Launch clamps are made of heavy reinforced steel, not chocolate!"
+          },
+          {
+            "id": "opt4c",
+            "label": "Because astronauts like taking extra naps on the launch pad 😴",
+            "correct": false,
+            "feedback": "🤔 Astronauts are fully awake and ready for flight! Verification is a life-saving safety step!"
+          },
+          {
+            "id": "opt4d",
+            "label": "Because the Moon moves out of the way if you launch too fast 🌙",
+            "correct": false,
+            "feedback": "🤔 The Moon orbits smoothly! Rocket safety algorithms protect human lives and equipment!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q5",
+        "type": "tap_correct",
+        "emoji": "🧺",
+        "question": "In what order should a family pack heavy juice jugs and delicate frosted cupcakes into a picnic basket? 🧁",
+        "options": [
+          {
+            "id": "opt5a",
+            "label": "Heavy juice jugs on the bottom 🧃 → Delicate cupcakes resting safely on the very top! 🧁✨",
+            "correct": true,
+            "feedback": "⭐ PERFECT SCORE! Heavy items at the bottom prevent delicate cupcakes from getting squashed! 🧺🎉"
+          },
+          {
+            "id": "opt5b",
+            "label": "Cupcakes on the bottom 🧁 → Drop heavy juice jugs directly on top of them 💥",
+            "correct": false,
+            "feedback": "🤔 Oh no! That squashes the cupcakes into flat gooey pancakes! Put heavy items at the bottom!"
+          },
+          {
+            "id": "opt5c",
+            "label": "Throw all the food out the window before leaving home 🪟",
+            "correct": false,
+            "feedback": "🤔 Then you have no picnic at all! Use the Anti-Squish Packing Algorithm!"
+          },
+          {
+            "id": "opt5d",
+            "label": "Pour the juice directly into the wicker basket without any bottle 🧺💦",
+            "correct": false,
+            "feedback": "🤔 That just leaks all over the car! Keep juice in bottles on the bottom, cupcakes on top!"
+          }
+        ],
+        "points": 20
+      }
+    ],
+    "maxScore": 100,
+    "passingScore": 80,
+    "completionMessages": {
+      "perfect": "🌟 PERFECT 100/100! You are an official Master Sequence Pilot! Wear your Flight Wings with pride! 👑🚀",
+      "excellent": "🎉 FANTASTIC 80+/100! You deeply understand algorithms, Lego manuals, and 1-2-3 order! 🌟🧱",
+      "good": "👍 GOOD JOB! You understand the basics! Review the three sections and try again for a perfect score! 🤖",
+      "tryAgain": "💪 DON'T GIVE UP! Remember Robo-Pi's golden rule: Foundation First, One Step at a Time, Never Skip! Let's try again! 🌟"
+    }
+  },
+  "resources": {
+    "teacherGuide": "/content/junior/guides/class4-ch2-l2-teacher.pdf",
+    "worksheets": [
+      "/content/junior/worksheets/class4-ch2-l2-rocket-countdown-cards.pdf",
+      "/content/junior/worksheets/class4-ch2-l2-algorithm-sequencer.pdf"
+    ],
+    "videos": [
+      {
+        "title": "🎬 What is an Algorithm? (Kids Computer Science Made Super Simple)",
+        "url": "TBD",
+        "duration": "4:15",
+        "description": "An energetic animated exploration explaining algorithms as Lego manuals and cooking recipes!"
+      },
+      {
+        "title": "🎬 Inside NASA's T-Minus 10 Seconds Launch Sequence!",
+        "url": "TBD",
+        "duration": "3:50",
+        "description": "Real Apollo and Artemis slow-motion footage showing how water deluge valves, engine ignition, and clamp releases happen in millisecond order!"
+      },
+      {
+        "title": "🎬 How to Fold the World Record Paper Airplane Glider Step-by-Step",
+        "url": "TBD",
+        "duration": "5:00",
+        "description": "John Collins demonstrates the exact 12-step geometric folding algorithm that set the world flight distance record!"
+      }
+    ],
+    "additionalReading": [
+      {
+        "title": "📖 The Robot Who Followed the Recipe: Adventures in Algorithmic Thinking",
+        "url": "TBD",
+        "level": "Elementary"
+      }
+    ],
+    "parentResources": [
+      {
+        "title": "👨‍👩‍👧 Teaching Algorithmic Thinking Through Everyday Family Routines",
+        "url": "TBD",
+        "description": "Practical ideas for parents to turn cooking, laundry sorting, and board games into rich computer science learning moments."
+      }
+    ]
+  },
+  "teacherNotes": {
+    "preparation": "Prepare props for the opening demonstration: a pair of shoes and a pair of socks (demonstrate trying to stretch a sock over a tied shoe!). Bring a box of Lego bricks and an instruction booklet to show numbered pages. Have paper towel cardboard tubes, construction paper, and safety scissors ready for Activity 1 (Rocket Launch Recipe Sequence).",
+    "lessonFlow": "Hook students with the Opening Story of Barnaby the Backwards Robot. Conduct the live 'Socks Over Shoes' demonstration to evoke laughter and immediate intuitive understanding. Introduce the definition of an Algorithm. Move through Lego manuals, paper airplanes, and rocket countdowns. Conduct Activity 1 (Rocket Launch Sequence) or Activity 2 (Blindfolded Lego Builder). Conclude with the interactive assessment.",
+    "tips": [
+      "🎯 Perform the physical 'Socks Over Shoes' demonstration live: attempting to pull a sock over a shoe gets instant laughs and cements the concept forever!",
+      "💡 Emphasize that 'Algorithm' is simply a fancy word for a numbered recipe: Step 1, Step 2, Step 3.",
+      "🧱 Use Lego sets as physical proof that complex machines are assembled from simple, ordered sub-steps.",
+      "🚀 Connect the 3-2-1 rocket countdown to computer verification: computers check that previous steps worked before launching the next step.",
+      "⚠️ Address the misconception that algorithms only exist inside computers; emphasize that baking, morning routines, and sports plays are all algorithms.",
+      "🌟 Award every student their Master Sequence Pilot License at the conclusion of the lesson!"
+    ],
+    "commonMisconceptions": [
+      "❌ Misconception: 'Algorithms are only for computer programmers who write code.' → Correction: Anyone who follows a recipe, builds Lego sets, or follows directions is executing an algorithm!",
+      "❌ Misconception: 'If all the steps are good, the order doesn't matter.' → Correction: Order is everything! Putting on socks is good and tying shoes is good, but shoes before socks ruins both!",
+      "❌ Misconception: 'A computer will automatically fix my mistakes if I put steps out of order.' → Correction: Computers have zero human common sense; they blindly execute whatever sequence you provide.",
+      "❌ Misconception: 'Skipping one tiny step in a 10-step recipe doesn't matter.' → Correction: Skipping even one step (like sugar in a cake or fuel in a rocket) causes total system failure."
+    ],
+    "differentiatedInstruction": {
+      "forStrugglingStudents": "Focus strictly on 3-step physical everyday routines: 1. Sock 2. Shoe 3. Tie; or 1. Bread 2. Jam 3. Eat. Use large physical number cards (1, 2, 3) that students physically hold and arrange on the floor.",
+      "forAdvancedStudents": "Introduce conditional algorithms (IF/THEN branches): e.g. 'Step 1: Check the weather. IF it is raining, THEN take an umbrella; ELSE wear sunglasses.' Challenge them to diagram an autonomous rocket abort sequence.",
+      "forELLStudents": "Use visual sequencing cards with icons and arrows (1️⃣ ➡️ 2️⃣ ➡️ 3️⃣). Pair verbal instruction with exaggerated physical gestures. Encourage counting in both English and their native languages."
+    }
+  },
+  "additionalResources": [
+    {
+      "type": "video",
+      "title": "🎬 NASA Artemis Launch Countdown: Automated Sequences in Action",
+      "description": "Exciting 4-minute NASA documentary showing the automated ground computers controlling the mega Moon rocket during the final ten seconds.",
+      "url": "TBD",
+      "ageAppropriate": true
+    },
+    {
+      "type": "article",
+      "title": "📰 From Legos to Spacecraft: How Sequence Rules the Modern World",
+      "description": "An illustrated kid-friendly magazine article exploring how algorithms guide robots in car factories, space agencies, and bakeries.",
+      "url": "TBD",
+      "ageAppropriate": true
+    },
+    {
+      "type": "activity",
+      "title": "🎨 Printable Flight Director Countdown Checklist & Wings Badge",
+      "description": "A printable PDF where students can check off their 4-step rocket assembly algorithm and wear official NASA-style paper flight wings.",
+      "url": "TBD",
+      "ageAppropriate": true
+    },
+    {
+      "type": "interactive",
+      "title": "🌐 Virtual Spacecraft Assembly Sequence Simulator",
+      "description": "A fun web-based puzzle game where students drag rocket stages into numerical order to see if their spacecraft reaches lunar orbit.",
+      "url": "TBD",
+      "ageAppropriate": true
+    }
+  ],
+  "assessmentQuestions": [
+    {
+      "questionId": "aq1",
+      "question": "What is the primary definition of an ALGORITHM in computer science? 📋",
+      "options": [
+        "A physical battery that powers a robot's wheels",
+        "A step-by-step numbered list of instructions executed in a specific order to accomplish a task 📝✨",
+        "A computer screen that displays colorful pictures",
+        "A secret password that opens website games"
+      ],
+      "correctAnswer": "A step-by-step numbered list of instructions executed in a specific order to accomplish a task 📝✨",
+      "explanation": "An algorithm is a finite sequence of well-defined, computer-implementable instructions designed to solve a class of problems or perform a computation."
+    },
+    {
+      "questionId": "aq2",
+      "question": "Why does putting on shoes BEFORE socks demonstrate the failure of an out-of-order sequence? 🧦",
+      "options": [
+        "Because shoes automatically dissolve when socks touch them",
+        "Because narrow socks cannot physically stretch over large footwear, demonstrating that foundation layers must precede outer layers 👟✨",
+        "Because socks are only meant to be worn while swimming",
+        "Because teachers do not allow shoes in school classrooms"
+      ],
+      "correctAnswer": "Because narrow socks cannot physically stretch over large footwear, demonstrating that foundation layers must precede outer layers 👟✨",
+      "explanation": "Physical sequential dependency dictates that inner foundation layers must be put on before outer protective layers, otherwise mechanical interference occurs."
+    },
+    {
+      "questionId": "aq3",
+      "question": "What happens if a computer program releases rocket launch clamps BEFORE verifying full engine thrust? 🚀",
+      "options": [
+        "The rocket immediately reaches the Moon in two seconds",
+        "The unpowered rocket tips over, crashes into the launch gantry, and suffers catastrophic failure 💥✨",
+        "The rocket turns into a flying submarine in the ocean",
+        "Nothing happens because clamps do not matter"
+      ],
+      "correctAnswer": "The unpowered rocket tips over, crashes into the launch gantry, and suffers catastrophic failure 💥✨",
+      "explanation": "Releasing structural restraints before thrust reaches gravitational equilibrium causes the rocket to fall under its own weight and collide with launch infrastructure."
+    },
+    {
+      "questionId": "aq4",
+      "question": "In the 3 Golden Sequence Rules, what does Rule 1: 'FOUNDATION FIRST' mean? 🧱",
+      "options": [
+        "Always build the top roof in mid-air before touching the ground",
+        "Always assemble baseplates, prerequisites, and heavy bottom layers before building upward 🏗️✨",
+        "Always paint the walls before buying any bricks",
+        "Always throw away the instruction manual on Page 1"
+      ],
+      "correctAnswer": "Always assemble baseplates, prerequisites, and heavy bottom layers before building upward 🏗️✨",
+      "explanation": "'Foundation First' dictates that prerequisites and structural bases must be established before dependent secondary components can be supported."
+    },
+    {
+      "questionId": "aq5",
+      "question": "Why do automated assembly lines (like robotic pizza makers or car factories) rely on strict sequential conveyor belts? 🍕",
+      "options": [
+        "Because each station performs an atomic task (dough → sauce → cheese → oven) that relies on the previous station's completed work 🔄✨",
+        "Because robots get bored if they don't roll in circles",
+        "Because conveyor belts make the pizza taste sweeter",
+        "Because electricity only flows in straight lines"
+      ],
+      "correctAnswer": "Because each station performs an atomic task (dough → sauce → cheese → oven) that relies on the previous station's completed work 🔄✨",
+      "explanation": "Assembly-line manufacturing breaks complex production into ordered atomic stages where downstream processes depend strictly on upstream output."
+    }
+  ]
+}
