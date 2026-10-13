@@ -1,0 +1,1219 @@
+{
+  "lessonId": "l2",
+  "title": "Design with AI 🎨✨",
+  "level": "junior",
+  "class": "class4",
+  "chapter": "ch5",
+  "chapterTitle": "AI Tools • CREATE",
+  "lessonNumber": 2,
+  "classNumber": 4,
+  "chapterNumber": 5,
+  "mascot": {
+    "name": "Robo-Pi",
+    "emoji": "🤖✨",
+    "description": "A friendly silver robot wearing a tiny artist's beret, a sparkling magnifying glass necklace, and holding a glowing wooden palette with vibrant digital paint blobs! Robo-Pi wears a stylish golden necktie 👔 and roller skates, waving a sparkling digital paintbrush that leaves rainbow trails in mid-air!",
+    "voiceStyle": "Cheerful, energetic beeping sentences. Loves exclamation marks! Uses BEEP BOOP as a greeting. Uses the simplest, sweetest kindergarten words so that every child instantly understands with zero confusion! Always gives warm robot hugs and huge encouragement!",
+    "catchphrase": "BEEP BOOP! Be the Art Director! Tell me what to draw with descriptive magic words! Together we turn thoughts into pictures! 🎨🦁✨"
+  },
+  "metadata": {
+    "duration": "45 minutes",
+    "ageGroup": "9-10 years",
+    "difficulty": "beginner",
+    "totalWords": 12000,
+    "version": "1.0",
+    "lastUpdated": "2026-10-13",
+    "author": "AI Olympiad Team",
+    "tags": [
+      "AI tools",
+      "visual design",
+      "art director",
+      "prompt engineering",
+      "text to image",
+      "creative arts",
+      "summer lion",
+      "posters",
+      "create",
+      "class4",
+      "junior"
+    ]
+  },
+  "content": {
+    "introduction": {
+      "welcomeMessage": "🤖✨ BEEP BOOP! Welcome to Chapter 5 • Lesson 2: Design with AI! Today you put on the fabulous sunglasses of an Art Director and command computers to paint pictures with descriptive magic words! 🎨🦁🕶️🏖️🖌️🖼️🌈🌟",
+      "roboPiGreeting": {
+        "text": "BEEP BOOP! Hello, hello, hello, my brilliant young artist! It is me, your robot best friend Robo-Pi, spinning with vibrant rainbow joy! 🤖✨ Give me an extra-loud virtual high-five! *CLINK-SHINE!* ✋ Have you ever had a magnificent picture glowing inside your imagination — like a golden lion cub chilling in cool sunglasses on a tropical beach — but when you picked up a crayon, your fingers couldn't quite draw what your mind was seeing? Don't worry, every artist feels that way! But guess what? Today you step into a brand-new, superhero creative role: BEEP BOOP! Be the Art Director! Tell me what to draw with descriptive magic words! In Hollywood movie studios, the Art Director doesn't draw every single brick or paint every cloud; the Art Director is the visionary boss who describes the style, the lighting, the mood, and the characters! When you work with AI image tools, your words are your paintbrushes 🖌️! If you say lazy, boring words like 'draw a lion', the computer draws a plain, sleepy brown blob. But when you use descriptive magic words — 'Cartoon golden lion cub wearing sunglasses on a sandy beach under palm trees, sunny watercolor style' — *KER-BOOM!* A breathtaking summer masterpiece bursts onto your screen! Put on your cool artist beret — BEEP click BOOP — let us open the Art Director Studio! 🎨🦁🕶️🎉",
+        "toastGuidance": {
+          "tap_prompt": "👇 Add the word 'wearing sunglasses' to your lion drawing prompt!",
+          "great_job": "🕶️ SO COOL! The lion looks like a cool cartoon summer star!",
+          "try_again": "🏖️ Where is the lion sitting? Add 'sunny beach with palm trees'!",
+          "encouragement": "🤖 The more descriptive magic words you feed your robot helper, the more breathtaking your art becomes!"
+        }
+      },
+      "openingStory": {
+        "title": "🦁 The Mystery of the Beach Lion and the Art Director's Secret! 🕶️🏖️",
+        "content": "On a bright, breezy Tuesday afternoon at Sunnybrook School, the 4th-grade computer lab was alive with giggles and tapping keyboards. Tomorrow was the grand opening of the School Summer Carnival, and nine-year-old Maya and Leo were in charge of creating the official festival poster! Principal Davis had given them a giant display board in the school lobby, but right now, the board was completely blank white paper. Leo sat in front of the classroom tablet running an AI art generator. Leo typed a short prompt: 'lion'. He hit the big green GENERATE button. *WHIRRR-BEEP!* The screen flashed, and out popped... a photograph of an old, dusty, sleepy lion lying flat on a brown dirt hill in the savanna, snoring with flies buzzing around its ears! Leo groaned: 'Oh no! That looks like a boring nature documentary! It doesn't look fun, sunny, or festive at all! Nobody will want to come to the carnival!' Maya laughed and adjusted her pretend director's sunglasses: 'Leo, you gave the computer a lazy, one-word prompt! You have to be the Art Director! In animation studios, directors use descriptive magic words to describe the character, the accessories, the setting, and the art style!' Maya sat beside Leo and cracked her knuckles: 'Let us rebuild the prompt like true Art Directors! Question 1: Who is the character? Not an old sleepy lion — a cute, fluffy, golden lion cub with big shiny hazel eyes! Question 2: What is he wearing? Cool neon teal sunglasses and a red tropical Hawaiian shirt! Question 3: Where is he? Sitting on a sun-drenched golden beach under swaying green palm trees, building a sandcastle with a blue shovel! Question 4: What is the art style? Vibrant 3D cartoon style, like a Pixar movie, with sparkling sunshine and ocean waves!' Leo watched Maya's fingers fly across the keyboard. Leo gasped: 'Look at all those delicious descriptive words!' They hit GENERATE together. *KER-CHIME!* In five seconds, the screen exploded with dazzling color! There on the screen was the most adorable, joyful 3D cartoon golden lion cub in the world, grinning with cool dark sunglasses, sitting beside a sandcastle under coconut palms while turquoise ocean waves gently lapped at the shore! Principal Davis walked into the lab, pushed his glasses up, and beamed: 'That is the most cheerful, professional carnival poster I have ever seen in twenty years! How did you draw that so fast?' Maya smiled: 'We didn't draw it with our fingers, Principal Davis — we directed it with descriptive magic words!' Leo and Maya printed the poster in high-gloss full color, hung it in the front lobby with glittering gold stars, and the whole school cheered! Students from every grade gathered around the display board pointing excitedly: Look at his cool neon sunglasses! Look at that realistic sandcastle with the little seashells! I want to go to the summer carnival right now! Principal Davis was so delighted that he asked Maya and Leo to teach an after-school workshop on How to Be an Art Director with AI for the entire student council! 🎨🦁🕶️🏖️🌟",
+        "moraleOfStory": "An AI image generator is like a super-talented robot painter who has never seen your imagination! When you act as the Art Director and describe details, lighting, clothing, and styles with descriptive magic words, your imagination comes alive in vivid color! 🖌️✨",
+        "roboPiComment": "BEEP BOOP! Did you see the difference between 'lion' and Maya's magical prompt? One word made a dusty sleeping blob, but descriptive magic words created a sun-drenched cartoon superstar! You are the Art Director! 👑🎨"
+      },
+      "learningObjectives": [
+        "🎬 Master the Art Director Mindset: Learn why descriptive words act as your paintbrushes when commanding AI tools!",
+        "🦁 The 4-Part Prompt Formula: Combining Subject, Accessories/Action, Setting/Background, and Art Style!",
+        "🖌️ Explore Diverse Visual Styles: Discovering 3D cartoon, dreamy watercolor, retro pixel art, and crayon sketches!",
+        "🕶️ Master Lighting & Mood Descriptors: Using sunshine, sunset glow, pastel hues, and neon sparkles to change feelings!",
+        "🎨 Conquer the Art Director Poster Studio: Design, sketch, prompt, and assemble your own Cool Beach Lion poster!",
+        "🏆 Earn your official Master Art Director License and graduate as a certified visual creator! 🚀🏅"
+      ],
+      "detectiveBadge": {
+        "title": "The Master Art Director License 🎨🏅",
+        "description": "Earn all three sparkling design medals to prove you know how to paint breathtaking visual worlds with descriptive magic words!",
+        "magnifiers": [
+          {
+            "id": "badge-director",
+            "name": "Art Director Vision Medal 🎬",
+            "earnedBy": "Mastering Section 1: Learning how to transform lazy one-word prompts into vivid, detailed prompt recipes!",
+            "colour": "#FFD600"
+          },
+          {
+            "id": "badge-style",
+            "name": "Style Wizard Palette Medal 🖌️",
+            "earnedBy": "Mastering Section 2: Commanding watercolors, 3D clay, retro pixels, and magical lighting moods!",
+            "colour": "#00E5FF"
+          },
+          {
+            "id": "badge-refine",
+            "name": "Master Iteration Medal 🖼️",
+            "earnedBy": "Mastering Section 3: Tweaking, polishing, and fixing image details like a professional studio director!",
+            "colour": "#FF4081"
+          }
+        ]
+      }
+    },
+    "mainConcept": {
+      "conceptIntro": {
+        "title": "🎨 How AI Paints Pictures: The Magic of Text-to-Image! 🤖🖼️",
+        "roboPiIntro": "BEEP BOOP! Have you ever wondered how a computer takes words typed on a keyboard and turns them into a full-color painting in five seconds? Let me show you the secret camera inside the machine! 🤖🔍",
+        "simpleExplanation": "An AI image generator (like Midjourney, DALL-E, or Stable Diffusion) does not have a brain, eyes, or hands. It has studied billions of pictures that real human artists and photographers created, along with the words describing them. When you type: 'Cartoon golden lion cub wearing sunglasses on a sandy beach', the computer doesn't search Google for an existing photo. It starts with a canvas of random digital static (like fuzzy gray television snow!) and gently carves away the noise, shaping pixels into fur, lenses, sand, and ocean water until the image matches your descriptive words! It is like sculpting a statue out of digital marble! Imagine a master sculptor holding a fine chisel over a giant block of pristine marble. The sculptor does not just swing the hammer randomly; the sculptor holds a crystal-clear image in their mind of every curve, smile, and texture! When you give the AI rich descriptive words, you are handing the computer the exact blueprint for your masterpiece. The clearer and more evocative your instructions, the sharper, more vibrant, and more magical the digital painting becomes! 🌟🖌️",
+        "keyPoints": [
+          "🖼️ Text-to-image AI turns typed words into brand-new pixels by shaping digital noise into clear pictures.",
+          "🗣️ The computer cannot guess your mind: if you give it vague words, it gives you random, boring pictures.",
+          "🎨 Descriptive magic words are your brushes: they control the subject, clothing, setting, colors, and art style.",
+          "👑 You are the Art Director: the computer is your lightning-fast digital apprentice following your creative vision!"
+        ],
+        "toastGuidance": {
+          "tap_prompt": "👇 Add the word 'wearing sunglasses' to your lion drawing prompt!",
+          "great_job": "🕶️ SO COOL! The lion looks like a cool cartoon summer star!",
+          "try_again": "🏖️ Where is the lion sitting? Add 'sunny beach with palm trees'!"
+        }
+      },
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "🎬 Section 1: You Are the Art Director! (The 4-Part Prompt Formula) 🦁🕶️",
+          "missionBadge": {
+            "name": "Art Director Vision Badge 🎬🦁",
+            "icon": "🎬",
+            "description": "Awarded for mastering the 4-Part Prompt Formula: Subject 🦁, Accessories 🕶️, Setting 🏖️, and Style 🎨!"
+          },
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Mission 1, Art Director! 🤖🎬 Grab your megaphone and golden sunglasses! In this section, we unlock the secret 4-part formula that turns ordinary sentences into Hollywood-grade visual masterpieces! Are you ready to command the canvas? Let us begin! 🔍✨",
+          "mainContent": {
+            "paragraph1": "In major movie studios like Disney and Pixar, the most important person on the animation floor is not the person who clicks the computer mouse all day. The most important person is THE ART DIRECTOR! The Art Director is the creative visionary who decides what the movie should look like. What color is the dragon's fur? Is the sky stormy indigo or golden peach? Are the characters rounded and cute, or sharp and heroic? An Art Director does not need to draw every pixel with their own hands; they know how to communicate their grand vision with crystal-clear, evocative descriptions! When an Art Director walks onto a movie set or into an animation studio, they carry a sketchbook of ideas and a vocabulary full of magical descriptive phrases. They inspire the entire team to see the invisible world that lives inside their imagination, turning fleeting thoughts into tangible, breathtaking reality!",
+            "paragraph2": "When you use an AI image generator, YOU are the Art Director! The AI is your eager, tireless robot assistant sitting at the digital easel. If you give your assistant a lazy, sleepy instruction like 'draw a dog', your assistant shrugs its metal shoulders and draws a generic brown puppy sitting on grass. It's not the computer's fault; you didn't give it any direction! But what happens when you use the 4-PART PROMPT FORMULA? Let us break down the four magical building blocks!",
+            "paragraph3": "PART 1: THE SUBJECT (Who or what is the star of the picture?). Be specific! Instead of 'cat', say 'a fluffy ginger kitten with oversized round ears'. Instead of 'lion', say 'a cheerful golden lion cub with a fluffy mane' 🦁! PART 2: ACCESSORIES & ACTION (What is the star doing or wearing?). This is where personality explodes onto the canvas! Is the lion cub roaring? No, he is 'wearing shiny dark sunglasses, smiling cheerfully, and holding a double-scoop strawberry ice cream cone' 🕶️🍦!",
+            "paragraph4": "PART 3: THE SETTING & BACKGROUND (Where is the scene taking place?). Put your hero somewhere exciting! Don't leave the background blank! Place him on 'a tropical golden sand beach with gentle turquoise ocean waves, a colorful red beach umbrella, and tall coconut palm trees swaying under a bright blue summer sky' 🏖️🌊! PART 4: THE ART STYLE (How should the artwork look and feel?). Tell the computer the medium: '3D Pixar-style cartoon, vibrant saturated colors, soft cinematic lighting, joyful children's book illustration' 🎨✨!",
+            "paragraph5": "Look at what happened when we assembled all four parts together! We started with one boring word: 'lion'. We ended with: 'A cheerful cartoon golden lion cub wearing shiny sunglasses and eating strawberry ice cream, sitting on a tropical sandy beach under coconut palm trees, vibrant 3D cartoon style, bright sunny day!' When the AI reads that rich recipe, it creates an unforgettable, jaw-dropping piece of art! That is the power of the Art Director! You transformed a vague, sleepy idea into an iconic, sun-drenched piece of pop art! When you share that picture with friends, their eyes light up with joy and wonder. They do not just see a drawing; they feel the warm ocean breeze, hear the gentle splashing of the turquoise waves, and smile at the cheerful lion cub who is having the best summer vacation of his life! That is pure visual storytelling magic! 🦁🕶️🏖️🌟"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-1-1",
+              "title": "🦁 Example 1: Leo the Cool Summer Lion Cub! (Subject + Accessory + Setting) 🕶️🏖️",
+              "icon": "🦁",
+              "description": "Transforming a plain wildlife prompt into a cheerful, high-personality cartoon beach icon.",
+              "realLifeScenario": "Nine-year-old Kabir types: 'lion'. The AI draws a fierce, realistic adult lion eating meat in Africa. Kabir laughs: 'That's too scary for a carnival!' Kabir uses the 4-part formula: 'Cute cartoon golden lion cub wearing oversized retro sunglasses, sitting on a tropical white sand beach under palm trees, bright sunny day, watercolor style'. The result is a cheerful, sunny mascot that everyone loves!",
+              "roboPiComment": "BEEP BOOP! Specificity changes everything! Kabir added sunglasses 🕶️, a sandy beach 🏖️, and a watercolor style 🎨, turning a scary predator into an adorable festival mascot! 🦁💖",
+              "toastGuidance": {
+                "tap_prompt": "👇 Add the word 'wearing sunglasses' to your lion drawing prompt!",
+                "great_job": "🕶️ SO COOL! The lion looks like a cool cartoon summer star!",
+                "try_again": "🏖️ Where is the lion sitting? Add 'sunny beach with palm trees'!"
+              }
+            },
+            {
+              "id": "dde-1-2",
+              "title": "🐶 Example 2: The Cosmic Space Beagle! (Action + Cosmic Setting) 👩‍🚀🌌",
+              "icon": "🐶",
+              "description": "Combining domestic pets with unexpected sci-fi settings and gear for instant whimsical delight.",
+              "realLifeScenario": "Maya wants an emblem for the school astronomy club. Instead of typing 'dog in space', Maya directs: 'A joyful beagle puppy wearing a white NASA astronaut helmet with a gold visor, floating weightlessly in deep space, surrounded by colorful spiral galaxies and glowing purple nebulae, 3D digital art style'.",
+              "roboPiComment": "BEEP BOOP! Floating in space with a gold visor! Maya gave the puppy clear gear, deep space lighting, and a distinct 3D style! Instant club logo! 🌌🐾✨",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the gold visor helmet to equip the cosmic space beagle! 👩‍🚀🐶",
+                "great_job": "🌟 SPACE MISSION READY! Floating happily among purple nebulae and stars! 🚀🪐",
+                "try_again": "🤔 Tap the astronaut helmet to send the puppy to outer space!"
+              }
+            },
+            {
+              "id": "dde-1-3",
+              "title": "🏰 Example 3: The Glowing Emerald Treehouse Castle! (Architecture + Lighting) 🌳✨",
+              "icon": "🏰",
+              "description": "Specifying unique materials, environmental architecture, and magical lighting conditions.",
+              "realLifeScenario": "Leo wants a fantasy environment for a video game backdrop. He prompts: 'A multi-level wooden treehouse castle built into a gigantic ancient oak tree, glowing lantern bridges connecting towers, bioluminescent turquoise mushrooms on the bark, warm twilight lighting, fantasy concept art'.",
+              "roboPiComment": "BEEP BOOP! Lantern bridges and glowing turquoise mushrooms! Leo painted an entire fantasy world using rich descriptive nouns and adjectives! 🌳🏰🏮",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the glowing turquoise mushrooms to illuminate the treehouse bridges! 🍄✨",
+                "great_job": "🌟 ILLUMINATION COMPLETE! Lantern bridges glowing warmly in twilight! 🏰🏮🎉",
+                "try_again": "🤔 Tap the magical mushrooms to light up the ancient oak tree!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🎬 The Art Director holds the creative vision: you decide characters, actions, environments, and aesthetic styles.",
+            "🦁 Part 1 - Subject: Choose specific, lovable characters (golden lion cub, fluffy kitten, cheerful dragon).",
+            "🕶️ Part 2 - Accessories & Action: Give your subject personality with clothing, tools, or playful actions.",
+            "🏖️ Part 3 - Setting & Background: Create a rich environment with natural features, weather, and surroundings.",
+            "🎨 Part 4 - Art Style: Specify the medium (3D cartoon, watercolor, crayon sketch, pixel art) to control the visual aesthetic!"
+          ],
+          "mission1Complete": {
+            "celebration": "🎉 MISSION 1 CONQUERED! You have mastered the 4-Part Prompt Formula of an Art Director!",
+            "badgeEarned": "Art Director Vision Badge 🎬🦁",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to attach your Art Director Vision Medal! 🏅",
+              "great_job": "⭐ MEDAL EQUIPPED! You hold the director's megaphone of visual creativity! 🎬🏆",
+              "encouragement": "On to Section 2 — let us explore the magic of styles, palettes, and lighting moods! 🖌️🌈"
+            }
+          }
+        },
+        {
+          "id": "section-2",
+          "title": "🖌️ Section 2: The Style Wizard: Watercolors, Crayon Sketches & 3D Cartoon Clay! 🌈🖼️",
+          "missionBadge": {
+            "name": "Style Wizard Palette Badge 🖌️🌈",
+            "icon": "🖌️",
+            "description": "Awarded for mastering artistic mediums: 3D cartoon, dreamy watercolor, crayon sketch, and retro pixel art!"
+          },
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Mission 2, style wizard! 🤖🖌️ Imagine having a magical art box containing every paintbrush, pastel stick, clay block, and oil tube in the history of the world! In this section, we learn how changing just two style words transforms the entire mood and emotion of your picture! Let us paint! 🎨✨",
+          "mainContent": {
+            "paragraph1": "Here is one of the most astonishing secrets in the art world: THE SAME SUBJECT CAN TELL TEN COMPLETELY DIFFERENT STORIES depending on the art style you choose! Imagine drawing a lion cub wearing sunglasses. If you render him in 'retro 8-bit pixel art', he looks like an awesome arcade game hero from the 1990s 👾! If you render him in 'dreamy pastel watercolor', he looks like a gentle bedtime story illustration in a classic picture book 🎨. If you render him in 'chunky 3D claymation', he looks like a quirky, lovable character from an Aardman animated movie!",
+            "paragraph2": "Let us explore the four most popular art styles that young designers love to command! Style Number 1: 3D CARTOON ANIMATION (PIXAR STYLE) 🧸. This style features soft rounded shapes, glossy eyes with twinkling highlights, smooth velvety textures, and warm studio lighting. It makes characters look friendly, huggable, and bursting with cinematic energy! It is the number-one choice for festival posters, cartoon mascots, and movie heroes!",
+            "paragraph3": "Style Number 2: DREAMY PASTEL WATERCOLOR 🌸. Watercolor painting uses translucent, diluted washes of color on textured rough paper. In an AI prompt, adding 'soft watercolor style, gentle pastel hues, visible paint bleed at the edges' creates an airy, peaceful, nostalgic mood. It is perfect for nature posters, poetry covers, and gentle animal illustrations!",
+            "paragraph4": "Style Number 3: PLAYFUL CRAYON & DOODLE SKETCH 🖍️. Want something that feels handmade, joyful, and childlike? Use 'children's crayon drawing, thick colorful outlines, whimsical scribble textures on brown craft paper'. This style radiates innocence, energetic humor, and unpretentious fun! Style Number 4: RETRO 8-BIT PIXEL ART 🕹️. By adding '16-bit pixel art, nostalgic arcade video game aesthetic, bold pixel grid', your artwork instantly looks like a level from a classic Nintendo game! Perfect for coding clubs and gaming clubs!",
+            "paragraph5": "Do not forget the magic of LIGHTING WORDS 💡! Lighting is the emotional thermostat of your painting! If you add 'golden hour sunset lighting' 🌅, your scene becomes warm, cozy, and nostalgic. If you add 'bright mid-day tropical sunshine' ☀️, it feels energetic, cheerful, and crisp. If you add 'magical glowing bioluminescence' 🌌, it feels mysterious and wondrous! The Art Director chooses the medium and controls the light! Think of lighting like the emotional music score in a movie soundtrack. Bright tropical sunlight sounds like a joyful trumpet fanfare! Warm golden sunset glow sounds like a gentle, sweet acoustic guitar lullaby! Deep bioluminescent moonlight sounds like a shimmering, mysterious harp! When you combine the perfect artistic medium with evocative lighting words, you compose a visual symphony that speaks straight to the human heart! 🖌️🌈🌟"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-2-1",
+              "title": "🧸 Example 1: The Chunky 3D Claymation Safari! (Medium Transformation) 🦁🎨",
+              "icon": "🧸",
+              "description": "Using claymation textures, plasticine fingerprints, and stop-motion lighting to evoke handmade charm.",
+              "realLifeScenario": "Leo wants his lion to look like a clay sculpture. He prompts: 'A golden lion cub wearing sunglasses, handcrafted out of colorful plasticine clay, visible clay fingerprints, miniature diorama setting with miniature paper palm trees, warm stop-motion studio lighting'. The image looks like a real physical sculpture made on an animation table!",
+              "roboPiComment": "BEEP BOOP! You can practically feel the clay between your fingers! Plasticine textures and miniature lighting give digital art a handmade soul! 🧸🦁✨",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the clay lion to mold colorful plasticine textures! 🧸🎨",
+                "great_job": "🌟 CLAYMATION MASTERPIECE! Visible clay fingerprints and studio lighting crafted! 🦁🎉",
+                "try_again": "🤔 Tap the clay sculpture to add stop-motion textures!"
+              }
+            },
+            {
+              "id": "dde-2-2",
+              "title": "🌸 Example 2: The Dreamy Pastel Watercolor Meadow! (Gentle Mood) 🎨🐇",
+              "icon": "🌸",
+              "description": "Using diluted pigment washes, textured cotton paper, and soft pastel palettes for emotional peace.",
+              "realLifeScenario": "Maya creates a Mother's Day card. She prompts: 'A mother rabbit and baby bunny napping under wild lavender flowers, soft watercolor painting on textured cotton paper, gentle lavender and peach pastel palette, loose brushstrokes, serene sunlight'.",
+              "roboPiComment": "BEEP BOOP! So peaceful and tender! Maya's watercolor words created a visual lullaby of gentle love and soft flowers! 🌸🐇💖",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the lavender blossom to paint soft watercolor washes! 🌸🎨",
+                "great_job": "🌟 WATERCOLOR SERENITY! Soft lavender and peach washes blending peacefully! 🐇💐",
+                "try_again": "🤔 Tap the blossom to blend gentle pastel colors!"
+              }
+            },
+            {
+              "id": "dde-2-3",
+              "title": "🕹️ Example 3: The 8-Bit Pixel Arcade Champion! (Retro Video Game) 👾🎮",
+              "icon": "🕹️",
+              "description": "Crafting nostalgic gaming graphics with visible pixel grids, retro palettes, and arcade charm.",
+              "realLifeScenario": "Sam designs a badge for the school Coding Club. He prompts: 'A 16-bit pixel art golden lion wearing sunglasses, standing on a pixel beach with 8-bit palm trees and square block ocean waves, vibrant retro arcade palette, nostalgic video game screen'.",
+              "roboPiComment": "BEEP BOOP! LEVEL UP! The square pixel waves and retro colors look like a classic 90s handheld game! 👾🕹️🏆",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the pixel joystick to render 16-bit arcade graphics! 🕹️👾",
+                "great_job": "🌟 RETRO PIXELS UNLOCKED! Square block waves and nostalgic 8-bit glory! 🎮🎉",
+                "try_again": "🤔 Tap the joystick to generate retro arcade graphics!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🖌️ Art styles change the emotional tone: the exact same subject feels heroic, gentle, or funny depending on the medium.",
+            "🧸 3D Cartoon / Pixar style creates friendly, huggable, cinematic characters with glossy eyes and velvety textures.",
+            "🌸 Watercolor styles evoke gentle peace, nostalgia, and dreaminess through diluted pastel washes and soft bleeds.",
+            "🕹️ Retro pixel art delivers nostalgic gaming energy with bold grids and limited vibrant palettes.",
+            "💡 Lighting words (golden hour, tropical sunshine, twilight glow) set the emotional temperature of the entire scene!"
+          ],
+          "mission2Complete": {
+            "celebration": "🎉 MISSION 2 CONQUERED! You have mastered the palette of artistic styles and lighting moods!",
+            "badgeEarned": "Style Wizard Palette Badge 🖌️🌈",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to attach your Style Wizard Palette Medal! 🏅",
+              "great_job": "⭐ MEDAL EQUIPPED! You hold the rainbow paintbrush of visual styles! 🖌️🏆",
+              "encouragement": "On to Section 3 — let us learn the Art Director's superpower of iteration and refinement! 🖼️🔄"
+            }
+          }
+        },
+        {
+          "id": "section-3",
+          "title": "🖼️ Section 3: Iterate & Refine: The Art Director's Superpower of 'One More Tweak!' 🔄✨",
+          "missionBadge": {
+            "name": "Master Iteration Badge 🖼️🔄",
+            "icon": "🔄",
+            "description": "Awarded for mastering the iterative design cycle: inspecting drafts, tweaking prompt words, and polishing details!"
+          },
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Mission 3, master polisher! 🤖🖼️ Do you know the difference between an amateur and a professional Art Director? An amateur clicks 'generate' once and walks away. A professional inspects the image with sharp detective eyes and says: 'That's good, but let's make it SPECTACULAR with one more tweak!' Let us learn the art of refinement! 🔍✨",
+          "mainContent": {
+            "paragraph1": "Here is a secret that every professional designer in the world knows: NOBODY GETS THE PERFECT IMAGE ON THE VERY FIRST TRY! Even famous directors and world-class digital artists try three, four, or five variations before they find the masterpiece that takes everyone's breath away! This process of inspecting, adjusting words, and generating again is called ITERATION 🔄. Iteration is not failure — iteration is how good ideas evolve into legendary art!",
+            "paragraph2": "Let us walk through a real Art Director iteration session! In Draft Number 1, you typed: 'Cartoon golden lion cub wearing sunglasses on a sandy beach'. The AI generates a cool image, but when you look closely, you notice three things: 1. The beach looks a little empty and lonely. 2. The sky is pale and washed out. 3. The sunglasses are plain black. Do you give up? Absolutely not! You put on your Art Director thinking cap and plan your refinements!",
+            "paragraph3": "In Draft Number 2, you add SPECIFIC ACCESSORIES & VIBRANT WEATHER: 'Cartoon golden lion cub wearing neon teal sunglasses, building a tall three-tower sandcastle with a red flag, colorful beach umbrella in the background, vibrant turquoise ocean waves, bright blue sky with fluffy white clouds'. *BOOM!* You hit generate again. Draft 2 is five times more exciting! The sandcastle adds a story! The red flag adds a splash of contrasting color! The neon sunglasses pop against the golden fur!",
+            "paragraph4": "Now look at Draft Number 3: LIGHTING & COMPOSITION POLISH! You inspect Draft 2 and say: 'The composition is great, but let us make the lighting feel like a warm summer dream!' You add: 'Warm golden hour sunset lighting, soft sunbeams filtering through the palm leaves, cinematic depth of field with gently blurred ocean background'. Now when the image renders, it doesn't just look like a drawing — it looks like a million-dollar movie still! The warm light illuminates the lion cub's fur with a golden halo!",
+            "paragraph5": "What about when AI makes a WEIRD MISTAKE? Sometimes computers get confused: they draw a lion with six paws, or give the sunglasses three lenses! This happens because AI doesn't understand physical anatomy; it just predicts pixel patterns. As the Art Director, when you spot a weird glitch, you don't panic! You can add clarifying words: 'Clean anatomical symmetry, exactly four paws, wearing one pair of sunglasses'. Or you simply generate another variation! You are the boss with the quality control stamp! Never forget that the AI is only a tool, and you are the thinking, feeling, discerning master artist. When you spot a flaw, an awkward shadow, or an extra paw, you have the patience and wisdom to guide the tool back to perfection. Each iteration teaches you something new about language, composition, and visual balance. By the time you reach Draft 3, your artwork radiates professional polish and undeniable charm! 🖼️🔄🏆"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-3-1",
+              "title": "🏖️ Example 1: Adding the Sandcastle & Red Umbrella! (Background Iteration) 🏰⛱️",
+              "icon": "🏖️",
+              "description": "Iterating from a vacant background to a story-rich environment with props, activities, and color accents.",
+              "realLifeScenario": "In Draft 1, Kabir's lion cub sat on empty yellow sand. Kabir iterates: 'Add a multi-tower sandcastle decorated with seashells, a striped red-and-white beach umbrella, and a blue toy pail in the sand'. The refined image tells a complete narrative of a playful summer day at the beach!",
+              "roboPiComment": "BEEP BOOP! Props tell stories! A toy pail and sandcastle turn a posed character into a living, playing summer adventurer! 🏖️🏰✨",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the striped beach umbrella to add story props to the beach! ⛱️🏖️",
+                "great_job": "🌟 PROPS ADDED! Striped umbrella, seashell sandcastle, and blue pail in place! 🏖️🎉",
+                "try_again": "🤔 Tap the beach umbrella to enrich the seaside scene!"
+              }
+            },
+            {
+              "id": "dde-3-2",
+              "title": "🌅 Example 2: Swapping Harsh Noon for Warm Golden Sunset! (Lighting Iteration) ☀️➡️🌇",
+              "icon": "🌅",
+              "description": "Iterating lighting conditions to shift emotional mood from harsh utility to nostalgic warmth.",
+              "realLifeScenario": "Maya's carnival poster looked a bit too bright and glaring. Maya tweaks her prompt from 'bright sunny day' to 'golden hour sunset lighting, warm orange and violet horizon, long soft shadows, glowing fur highlights'. The poster transforms into a cozy, magical evening carnival invitation!",
+              "roboPiComment": "BEEP BOOP! Golden hour lighting adds emotional warmth that pulls at your heartstrings! The lion looks like he is basking in pure magic! 🌅🦁🧡",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the sunset horizon to shift into warm golden hour lighting! 🌅✨",
+                "great_job": "🌟 LIGHTING REFINED! Golden orange sunbeams and glowing fur highlights! 🌇🎉",
+                "try_again": "🤔 Tap the sunset to add warm evening lighting!"
+              }
+            },
+            {
+              "id": "dde-3-3",
+              "title": "🐾 Example 3: Fixing the Six-Paw Glitch! (Quality Control Troubleshooting) 🔍🐾",
+              "icon": "🐾",
+              "description": "Detecting AI anatomical anomalies and applying clarifying prompt constraints and variations.",
+              "realLifeScenario": "Leo's lion rendered with an extra little paw sticking out of his elbow! Leo laughs: 'That's silly!' Leo adds 'clean symmetry, cartoon anatomy, neatly tucked paws' and generates three new variations. Variation #2 is anatomically perfect, with two cute paws holding the sunglasses!",
+              "roboPiComment": "BEEP BOOP! Quality control is the Art Director's badge of honor! Spot the glitch, tweak the words, pick the perfect variation! 🐾🔍👑",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap Variation #2 to select the anatomically perfect cartoon lion! 🐾🦁",
+                "great_job": "🌟 QUALITY APPROVED! Clean symmetry, four fluffy paws, and perfect sunglasses! 🕶️🏆",
+                "try_again": "🤔 Tap the neat variation to approve the quality-checked artwork!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🔄 Iteration is normal and essential: professional art directors refine prompts across multiple drafts.",
+            "🏰 Draft 1 sets the foundation; Draft 2 adds narrative props and accessories; Draft 3 polishes lighting and mood.",
+            "⛱️ Background props (umbrellas, sandcastles, shells) transform static character portraits into rich stories.",
+            "🌅 Adjusting lighting phrases (midday sun vs golden sunset) completely re-tunes the emotional temperature.",
+            "🔍 Be the Quality Control Boss: spot anatomical glitches, clarify prompt words, and select the cleanest variation!"
+          ],
+          "mission3Complete": {
+            "celebration": "🎉 MISSION 3 CONQUERED! You have mastered the iterative polish of a professional studio director!",
+            "badgeEarned": "Master Iteration Badge 🖼️🔄",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to attach your Master Iteration Medal! 🏅",
+              "great_job": "⭐ ALL 3 MEDALS EARNED! You are a certified Master Art Director! 🎨🏆",
+              "encouragement": "On to Section 4 — let us review the Art Director Studio Launchpad Blueprint! 🚀📜"
+            }
+          }
+        },
+        {
+          "id": "section-4",
+          "title": "🚀 Section 4: The Art Director Studio Launchpad: The 4-Step Prompt Blueprint! 🏆📜",
+          "roboPiIntro": "BEEP BOOP! Welcome to the Grand Finale Section! 🤖🌟 Now that you understand vision, artistic styles, lighting moods, and iterative refinement, how do you put it all together into an everyday superpower? Let us unveil the Art Director Blueprint! 📜🚀",
+          "mainContent": {
+            "paragraph1": "Whenever you sit down in front of any modern visual AI tool — whether you are making a poster for the school science fair, designing a cool sports day mascot logo, or creating a personalized birthday invitation for your best friend — you don't have to guess or stare blankly at the screen. You have our golden 4-Step Prompt Formula engraved into your creative memory!",
+            "paragraph2": "STEP 1: THE ART STYLE MEDIUM (What is the artistic medium?). Start your prompt with clarity: '3D Pixar-style digital animation' OR 'Soft dreamy pastel watercolor' OR 'Retro 16-bit arcade pixel art' OR 'Handcrafted plasticine clay sculpture'. This establishes the visual universe right from the start!",
+            "paragraph3": "STEP 2: THE DETAILED SUBJECT (Who is the hero and what are they doing?). Describe your character with personality and emotion: 'A cheerful golden lion cub grinning happily, wearing retro neon teal sunglasses, building a sandcastle with a red plastic shovel'!",
+            "paragraph4": "STEP 3: THE IMMERSIVE SETTING (Where are they located?). Build the world around them: 'On a sun-drenched tropical beach with white sand, gentle turquoise ocean waves, a striped beach umbrella, and swaying green palm trees'!",
+            "paragraph5": "STEP 4: LIGHTING & ATMOSPHERE (What is the mood and light?). Finish with the sparkle: 'Bright warm sunny day, soft cinematic highlights, joyful vibrant colors, high-resolution children's book illustration'. Mix all four steps, hit generate, review your draft, make one tweak, and voila! You have created visual magic that wows your teachers, family, and friends! You are the Art Director! With these four steps, you can design anything your heart desires: superhero badges, fantasy book covers, classroom celebration posters, and dream adventure postcards! Every word you write is an intentional brushstroke that shapes color, form, and emotion. The future of creative visual design belongs to visionaries who know how to direct technology with human imagination, warmth, and artistic soul! 🎨🦁🕶️🏖️🏆"
+          },
+          "artDirectorPromptBlueprintTable": [
+            {
+              "stepNumber": "Step 1: Art Style",
+              "formulaElement": "[STYLE & MEDIUM]",
+              "lionExample": "3D Pixar-style cartoon animation, soft rounded shapes, velvety fur texture",
+              "whyItMatters": "Tells the AI the visual aesthetic, rendering engine, and artistic medium to emulate 🎨"
+            },
+            {
+              "stepNumber": "Step 2: Subject & Action",
+              "formulaElement": "[SUBJECT & ACCESSORIES]",
+              "lionExample": "A cheerful golden lion cub wearing shiny neon teal sunglasses and an unbuttoned Hawaiian shirt",
+              "whyItMatters": "Defines the star of the show, their personality, clothing, props, and facial expression 🦁🕶️"
+            },
+            {
+              "stepNumber": "Step 3: Environment",
+              "formulaElement": "[SETTING & BACKGROUND]",
+              "lionExample": "Sitting on a tropical golden sand beach with a multi-tower sandcastle and swaying coconut palms",
+              "whyItMatters": "Grounds the character in a believable, story-rich world rather than an empty void 🏖️🌴"
+            },
+            {
+              "stepNumber": "Step 4: Lighting & Mood",
+              "formulaElement": "[LIGHTING & MOOD]",
+              "lionExample": "Warm golden hour sunset lighting, glowing orange horizon, gentle turquoise waves, joyful mood",
+              "whyItMatters": "Sets the emotional temperature, contrast, shadows, and color saturation of the entire scene 🌅✨"
+            }
+          ],
+          "keyPoints": [
+            "📜 The 4-Step Prompt Formula: [Style] + [Subject & Gear] + [Setting & Props] + [Lighting & Mood].",
+            "🎬 The human Art Director provides the vision, creative taste, and emotional intent; AI executes the rendering.",
+            "🔄 Real design is iterative: inspect Draft 1, add narrative accessories in Draft 2, and polish lighting in Draft 3.",
+            "🛠️ Real-world superpowers: use this formula for science fair posters, school sports logos, and birthday cards!",
+            "🌟 Celebrate your artistic voice: words are the ultimate creative superpower in the age of artificial intelligence!"
+          ],
+          "mission4Complete": {
+            "celebration": "🎉 ALL 4 MISSIONS CONQUERED! You are officially an Art Director capable of commanding any visual AI!",
+            "badgeEarned": "The Grand Master Art Director Trophy 🏆🎨",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CELEBRATE to dance with Robo-Pi and start the games! 💃🤖",
+              "great_job": "🌟 LICENSE UNLOCKED! You are an official Master Art Director! 🎨🦁🕶️🏆",
+              "encouragement": "Get ready for the games — let us see your high score in the Prompt Ingredient Spotter! 🎮✨"
+            }
+          }
+        }
+      ]
+    },
+    "games": [
+      {
+        "gameId": "game-1",
+        "gameType": "tap-to-reveal",
+        "title": "🌟 The Prompt Ingredient Spotter! (Art Director Recipe Explorer) 🔍🎨",
+        "icon": "🔍",
+        "instruction": "Explore the Art Director Studio! Tap the 6 cards that represent ESSENTIAL PROMPT INGREDIENTS that create breathtaking AI pictures!",
+        "difficulty": "easy",
+        "duration": "5 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Welcome to the Art Director Recipe Studio! 🤖✨ Six glowing cards show the essential ingredients of descriptive magic prompts, while others show lazy mistakes! Can you spot all 6 prompt ingredients? Tap with your golden paintbrush! 🖌️👇",
+        "sceneDescription": "A glowing visual design studio with floating canvas swatches showing subjects, art styles, accessories, settings, lighting moods, and lazy one-word prompts.",
+        "targets": [
+          {
+            "id": "target-1",
+            "name": "Specific Lovable Subject (Golden Lion Cub) 🦁✨",
+            "type": "Prompt Ingredient",
+            "icon": "🦁",
+            "description": "A clear, specific character with personality rather than a vague generic label.",
+            "isAI": false,
+            "explanation": "PROMPT INGREDIENT! Specific subjects give the AI clear anatomical and emotional direction!",
+            "toastGuidance": {
+              "correct": "🦁 SUBJECT LOCKED! Golden lion cub ready for styling and summer fun!",
+              "incorrect": "That is a lazy prompt mistake! Look for descriptive prompt ingredients like specific subjects!"
+            }
+          },
+          {
+            "id": "target-2",
+            "name": "Typing Just One Lazy Word ('lion') 🥱",
+            "type": "Lazy Mistake",
+            "icon": "🥱",
+            "description": "A one-word prompt that leaves the AI guessing, producing random and boring results.",
+            "isAI": true,
+            "explanation": "NOT A GOOD INGREDIENT: One-word prompts produce unpredictable, boring, clichéd images!",
+            "toastGuidance": {
+              "correct": "That is a lazy one-word prompt! Tap the descriptive magic ingredients instead!",
+              "incorrect": "🥱 One-word prompts make sleepy, boring pictures—pick styles, accessories, or settings!"
+            }
+          },
+          {
+            "id": "target-3",
+            "name": "Distinct Accessories (Neon Sunglasses & Hawaiian Shirt) 🕶️🌺",
+            "icon": "🕶️",
+            "type": "Prompt Ingredient",
+            "description": "Clothing, props, and accessories that inject immediate personality and charm into the hero.",
+            "isAI": false,
+            "explanation": "PROMPT INGREDIENT! Accessories add flavor, color contrasts, and character storytelling!",
+            "toastGuidance": {
+              "correct": "🕶️ SO COOL! The lion looks like a cool cartoon summer star!",
+              "incorrect": "Look for accessories and clothing details!"
+            }
+          },
+          {
+            "id": "target-4",
+            "name": "Leaving the Background Blank and Empty 🌫️",
+            "type": "Lazy Mistake",
+            "icon": "🌫️",
+            "description": "Failing to specify a setting, leaving the character floating in empty white space.",
+            "isAI": true,
+            "explanation": "NOT A GOOD INGREDIENT: Blank backgrounds look unfinished and lack world-building context!",
+            "toastGuidance": {
+              "correct": "That is a blank background! Tap the descriptive magic ingredients instead!",
+              "incorrect": "🌫️ Empty backgrounds lack story—pick tropical beaches, settings, or rich lighting!"
+            }
+          },
+          {
+            "id": "target-5",
+            "name": "Immersive Setting (Sunny Beach with Palm Trees) 🏖️🌴",
+            "icon": "🏖️",
+            "type": "Prompt Ingredient",
+            "description": "A rich environmental backdrop with natural features, props, and atmospheric context.",
+            "isAI": false,
+            "explanation": "PROMPT INGREDIENT! Settings transport the viewer into a believable, colorful world!",
+            "toastGuidance": {
+              "correct": "🏖️ SETTING ANCHORED! Golden sand, turquoise waves, and swaying coconut palms! 🌴🎉",
+              "incorrect": "🏖️ Where is the lion sitting? Add 'sunny beach with palm trees'!"
+            }
+          },
+          {
+            "id": "target-6",
+            "name": "Defined Art Medium (3D Pixar-Style Animation) 🎨🧸",
+            "icon": "🎨",
+            "type": "Prompt Ingredient",
+            "description": "Specifying the artistic medium (3D cartoon, watercolor, pixel art, claymation) to control aesthetics.",
+            "isAI": false,
+            "explanation": "PROMPT INGREDIENT! Art mediums determine textures, linework, and visual rendering style!",
+            "toastGuidance": {
+              "correct": "🎨 STYLE LOCKED! Soft 3D cartoon animation with glossy highlights and velvety fur! 🧸✨",
+              "incorrect": "Look for defined art mediums and styles!"
+            }
+          },
+          {
+            "id": "target-7",
+            "name": "Evocative Lighting (Warm Golden Hour Sunset) 🌅✨",
+            "icon": "🌅",
+            "type": "Prompt Ingredient",
+            "description": "Lighting descriptors that set the emotional temperature, shadows, and color saturation.",
+            "isAI": false,
+            "explanation": "PROMPT INGREDIENT! Lighting words act as the emotional thermostat of your artwork!",
+            "toastGuidance": {
+              "correct": "🌅 LIGHTING PERFECTION! Warm golden sunbeams and rich evening glow! 🌇💖",
+              "incorrect": "Look for lighting and atmospheric mood words!"
+            }
+          },
+          {
+            "id": "target-8",
+            "name": "Copying 40 Random Unrelated Hashtags 📱🚫",
+            "icon": "🚫",
+            "type": "Lazy Mistake",
+            "description": "Spamming prompts with meaningless buzzwords that confuse the AI generator.",
+            "isAI": true,
+            "explanation": "NOT A GOOD INGREDIENT: Hashtag spam clutters the prompt without adding clear artistic intent!",
+            "toastGuidance": {
+              "correct": "That is hashtag clutter! Tap the descriptive magic ingredients instead!",
+              "incorrect": "🚫 Hashtags confuse AI models—use clear, descriptive natural language instead!"
+            }
+          },
+          {
+            "id": "target-9",
+            "name": "Storytelling Props (Seashell Sandcastle & Red Umbrella) 🏰⛱️",
+            "icon": "🏰",
+            "type": "Prompt Ingredient",
+            "description": "Interactive props that give the character an activity and tell a complete narrative story.",
+            "isAI": false,
+            "explanation": "PROMPT INGREDIENT! Storytelling props transform a static portrait into an active story!",
+            "toastGuidance": {
+              "correct": "🏰 PROPS INTEGRATED! A three-tower sandcastle with a red festival flag! 🏖️🎉",
+              "incorrect": "Look for storytelling props and interactive objects!"
+            }
+          }
+        ],
+        "totalAITargets": 6,
+        "scoring": {
+          "pointsPerCorrect": 100,
+          "streakBonus": 50,
+          "perfectScoreBonus": 300
+        },
+        "auraGuidance": {
+          "start": "LOOK across the studio! Tap the 6 ingredients that turn words into visual masterpieces! 🔍🎨",
+          "correct": "BULLSEYE! That is an essential Art Director prompt ingredient! 🌟🦁",
+          "incorrect": "🏖️ Where is the lion sitting? Add 'sunny beach with palm trees'!",
+          "streak": "UNSTOPPABLE ART DIRECTOR STREAK! You construct prompt recipes like a Hollywood master! 🔥🏆",
+          "complete": "ALL 6 INGREDIENTS DISCOVERED! You have unlocked your Art Director Ribbon! 🎀🏅"
+        }
+      },
+      {
+        "gameId": "game-2",
+        "gameType": "categorization",
+        "title": "🗂️ Lazy One-Word Prompt 🥱 vs Art Director Magic 🎨🦁! The Sorter! 🤖🎬",
+        "icon": "🗂️",
+        "instruction": "Read each prompt card below! Does it belong in the LAZY LAZY BASKET 🥱 (Vague, Boring & Unclear) or the ART DIRECTOR MAGIC BASKET 🎨🦁 (Rich, Specific & Beautiful)?",
+        "difficulty": "easy",
+        "duration": "6 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Welcome to the Great Prompt Sorter! 🤖🗂️ Ten prompt cards are tumbling into our studio! Drag each card into the right basket: Lazy One-Word Prompt 🥱 or Art Director Magic 🎨🦁! Let us see your critical eye shine! 🌟👇",
+        "categories": [
+          {
+            "id": "cat-lazy",
+            "name": "LAZY LAZY PROMPT 🥱 (Vague, Bare & Boring)",
+            "icon": "🥱",
+            "colour": "#9E9E9E",
+            "description": "Vague, one-or-two-word prompts that leave the computer guessing and produce dull results."
+          },
+          {
+            "id": "cat-magic",
+            "name": "ART DIRECTOR MAGIC 🎨🦁 (Descriptive, Stylized & Vivid)",
+            "icon": "🌟",
+            "colour": "#FFD600",
+            "description": "Rich prompt recipes combining style, detailed subjects, accessories, settings, and lighting."
+          }
+        ],
+        "items": [
+          {
+            "id": "item-1",
+            "label": "'lion' 🥱",
+            "correctCategory": "cat-lazy",
+            "feedback": "🌟 CORRECT! Lazy prompt! Just one word produces a dusty, sleeping savanna photo! 🥱💤"
+          },
+          {
+            "id": "item-2",
+            "label": "'Cartoon golden lion cub wearing sunglasses on a sunny beach, 3D Pixar style' 🦁🕶️",
+            "correctCategory": "cat-magic",
+            "feedback": "🌟 CORRECT! Art Director Magic! Specific subject, cool accessories, beach setting, and 3D style! 🎨🏆"
+          },
+          {
+            "id": "item-3",
+            "label": "'dog' 🥱",
+            "correctCategory": "cat-lazy",
+            "feedback": "🌟 CORRECT! Lazy prompt! The AI has no idea if you want an astronaut beagle or a sleeping bulldog! 🥱🐕"
+          },
+          {
+            "id": "item-4",
+            "label": "'Astronaut beagle puppy floating weightlessly in deep space near purple nebulae, digital art' 👩‍🚀🌌",
+            "correctCategory": "cat-magic",
+            "feedback": "🌟 CORRECT! Art Director Magic! Distinct gear, cosmic space background, and digital art style! 🚀✨"
+          },
+          {
+            "id": "item-5",
+            "label": "'castle' 🥱",
+            "correctCategory": "cat-lazy",
+            "feedback": "🌟 CORRECT! Lazy prompt! Results in a blurry gray stone wall with no magical atmosphere! 🥱🏰"
+          },
+          {
+            "id": "item-6",
+            "label": "'Emerald treehouse castle in an ancient oak tree with glowing turquoise mushroom bridges, fantasy style' 🌳🍄",
+            "correctCategory": "cat-magic",
+            "feedback": "🌟 CORRECT! Art Director Magic! Unique architecture, glowing bioluminescence, and fantasy mood! 🏰🌟"
+          },
+          {
+            "id": "item-7",
+            "label": "'car' 🥱",
+            "correctCategory": "cat-lazy",
+            "feedback": "🌟 CORRECT! Lazy prompt! Produces an ordinary sedan in a parking lot instead of a racecar! 🥱🚗"
+          },
+          {
+            "id": "item-8",
+            "label": "'Retro 8-bit pixel art neon formula-one racecar speeding through a futuristic cyber city at midnight' 🏎️🌆",
+            "correctCategory": "cat-magic",
+            "feedback": "🌟 CORRECT! Art Director Magic! Retro pixel style, high-octane action, neon setting, and midnight lighting! 🕹️⚡"
+          },
+          {
+            "id": "item-9",
+            "label": "'flower' 🥱",
+            "correctCategory": "cat-lazy",
+            "feedback": "🌟 CORRECT! Lazy prompt! Produces a generic single dandelion on a lawn! 🥱🌸"
+          },
+          {
+            "id": "item-10",
+            "label": "'Soft pastel watercolor painting of giant blooming pink peonies in morning dew, textured cotton paper' 🌺💧",
+            "correctCategory": "cat-magic",
+            "feedback": "🌟 CORRECT! Art Director Magic! Specific flower, watercolor medium, cotton paper texture, and morning dew! 🎨💖"
+          }
+        ],
+        "scoring": {
+          "pointsPerCorrect": 100,
+          "streakBonus": 40,
+          "flawlessBonus": 250
+        },
+        "auraGuidance": {
+          "start": "READ each prompt card carefully! Is it a lazy one-word prompt 🥱, or Art Director magic 🎨🦁?",
+          "correct": "BULLSEYE! That prompt landed in the perfect golden basket! 🌟",
+          "incorrect": "Remember: Art Director prompts include style, specific subjects, accessories, and settings!",
+          "streak": "UNSTOPPABLE PROMPT STREAK! You can spot amateur prompts from ten miles away! 🔥🏆",
+          "complete": "ALL TEN SORTED FLAWLESSLY! You earned the Master Prompt Sorter Ribbon! 🎀🏅"
+        }
+      },
+      {
+        "gameId": "game-3",
+        "gameType": "matching",
+        "title": "🔗 The Style & Mood Matchmaker! (Connect Design Goal + Magic Phrase) 🤝🎨",
+        "icon": "🔗",
+        "instruction": "Connect each Visual Design Goal on the left with the Exact Prompt Magic Words on the right that achieve it!",
+        "difficulty": "medium",
+        "duration": "5 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Ready for the style matchmaker challenge? 🤖🔗 On the left are real design goals. On the right are the magical prompt phrases that trigger those visual styles! Connect them into power pairs! 🎨👇",
+        "pairs": [
+          {
+            "pairId": "pair-1",
+            "itemA": {
+              "id": "item-goal-pixar",
+              "content": "Friendly, Huggable Movie Mascot for Kids 🧸🎉",
+              "type": "Design Goal"
+            },
+            "itemB": {
+              "id": "item-phrase-pixar",
+              "content": "'3D Pixar animation style, soft velvety textures, glossy highlighted eyes' 🌟",
+              "type": "Prompt Magic Words"
+            },
+            "connectionMeaning": "Pixar-style descriptors generate rounded, warm, cinematic characters that children immediately fall in love with!"
+          },
+          {
+            "pairId": "pair-2",
+            "itemA": {
+              "id": "item-goal-peaceful",
+              "content": "Peaceful, Dreamy Mother's Day Card 🌸💌",
+              "type": "Design Goal"
+            },
+            "itemB": {
+              "id": "item-phrase-watercolor",
+              "content": "'Soft pastel watercolor on textured cotton paper, gentle paint bleeds' 🎨",
+              "type": "Prompt Magic Words"
+            },
+            "connectionMeaning": "Watercolor phrases trigger translucent washes and gentle pastel palettes that convey warmth, love, and serenity!"
+          },
+          {
+            "pairId": "pair-3",
+            "itemA": {
+              "id": "item-goal-arcade",
+              "content": "Cool Coding Club Badge with Video Game Vibe 👾🕹️",
+              "type": "Design Goal"
+            },
+            "itemB": {
+              "id": "item-phrase-pixel",
+              "content": "'16-bit retro pixel art, nostalgic arcade palette, bold pixel grid' 🎮",
+              "type": "Prompt Magic Words"
+            },
+            "connectionMeaning": "Pixel art descriptors trigger blocky retro game aesthetics that immediately signal gaming and technology fun!"
+          },
+          {
+            "pairId": "pair-4",
+            "itemA": {
+              "id": "item-goal-cozy",
+              "content": "Cozy, Warm Evening Festival Poster 🌅🎪",
+              "type": "Design Goal"
+            },
+            "itemB": {
+              "id": "item-phrase-goldenhour",
+              "content": "'Golden hour sunset lighting, long soft shadows, warm amber sunbeams' 🌇",
+              "type": "Prompt Magic Words"
+            },
+            "connectionMeaning": "Golden hour lighting descriptors infuse the canvas with rich amber, peach, and violet tones that feel inviting and cozy!"
+          },
+          {
+            "pairId": "pair-5",
+            "itemA": {
+              "id": "item-goal-handmade",
+              "content": "Quirky Handmade Clay Sculpture Look 🧸🖐️",
+              "type": "Design Goal"
+            },
+            "itemB": {
+              "id": "item-phrase-clay",
+              "content": "'Plasticine claymation style, visible clay fingerprints, miniature diorama' 🎨",
+              "type": "Prompt Magic Words"
+            },
+            "connectionMeaning": "Claymation and fingerprint descriptors instruct the model to simulate tactile, handcrafted physical materials!"
+          },
+          {
+            "pairId": "pair-6",
+            "itemA": {
+              "id": "item-goal-mystical",
+              "content": "Magical Fantasy Night Scene with Glowing Creatures 🌌🍄",
+              "type": "Design Goal"
+            },
+            "itemB": {
+              "id": "item-phrase-biolum",
+              "content": "'Bioluminescent glowing turquoise lighting, sparkling night atmosphere' ✨",
+              "type": "Prompt Magic Words"
+            },
+            "connectionMeaning": "Bioluminescence descriptors trigger deep indigo shadows paired with neon glowing highlights that look magical!"
+          }
+        ],
+        "scoring": {
+          "pointsPerPair": 120,
+          "completionBonus": 280
+        },
+        "auraGuidance": {
+          "start": "CONNECT each visual design goal on the left with the exact descriptive prompt phrase on the right! 🔗🎨",
+          "correct": "PERFECT STYLE MATCH! That magic phrase commands the exact artistic universe! ⚡🖼️",
+          "incorrect": "Look for the art medium or lighting phrase that matches that emotional design goal!",
+          "complete": "ALL SIX PAIRS CONNECTED! You have earned the Master Stylist Trophy! 🏆🎉"
+        }
+      }
+    ],
+    "activities": [
+      {
+        "activityId": "activity-1",
+        "title": "Art Director Poster Studio 🎨🦁",
+        "type": "hands-on",
+        "duration": "25 minutes",
+        "icon": "🎨",
+        "roboPiActivityBrief": "BEEP BOOP! Time for our headline hands-on activity: The Art Director Poster Studio! 🤖🦁 You get to design, sketch, prompt, and assemble an authentic Art Director Design Board featuring the Cool Summer Beach Lion!",
+        "description": "In this creative multimedia studio project, students act as lead Art Directors for the School Summer Carnival! Students construct a real physical 11x17 or A3 Art Director Design Poster complete with: 1. The Central Artwork (sketched or generated and printed: The Cool Golden Lion Cub in Sunglasses on a Tropical Beach), 2. The Official 4-Part Prompt Recipe Card pasted on the side, 3. Four Swatch Color Palettes (Sand Gold, Ocean Turquoise, Neon Sunglasses Teal, Sunset Peach), 4. The Iteration Log ('Draft 1 vs Draft 2: Why I added the beach umbrella!'), and 5. The Golden Quality Control Approval Stamp! Students present their poster aloud to classmates or family members, explaining their art direction decisions!",
+        "materials": [
+          "📄 1 large sheet of white cardstock or poster board (11x17 or A3)",
+          "🖍️ Colored markers, colored pencils, and fine-line drawing pens",
+          "✂️ Safety scissors and glue stick",
+          "🕶️ Optional: Aluminum foil or black glitter paper to make shiny 3D sunglasses for the lion!",
+          "🏷️ 4 small index cards or sticky notes for the 'Prompt Recipe' and 'Iteration Notes'",
+          "⭐ 1 shiny gold star sticker or ribbon for the 'Art Director Approval Seal'"
+        ],
+        "steps": [
+          "Step 1: SET UP THE POSTER BOARD: Lay your large cardstock horizontally. At the top, write in bold artistic letters: 'SUNNYBROOK SUMMER CARNIVAL — OFFICIAL ART DIRECTOR SPECIFICATION BOARD'. Write your name: 'LEAD ART DIRECTOR: [YOUR NAME] 🎬'.",
+          "Step 2: DRAW OR PASTE THE MAIN ARTWORK: In the large central frame (15cm x 15cm), draw (or generate and paste) your star: The Golden Lion Cub wearing cool sunglasses, sitting on a sandy beach under palm trees!",
+          "Step 3: ADD 3D SUNGLASSES SHINE: Cut two small sunglasses frames from black or dark blue paper (or shiny foil!). Glue them onto your lion's face to make the sunglasses pop in 3D!",
+          "Step 4: WRITE THE 4-PART PROMPT RECIPE: On an index card labeled 'OFFICIAL PROMPT RECIPE', write out all 4 ingredients: 1. Style: [3D Pixar Cartoon], 2. Subject: [Golden Lion Cub in Sunglasses], 3. Setting: [Tropical Beach with Palms], 4. Lighting: [Warm Sunny Day]. Paste this card on the left side!",
+          "Step 5: PAINT THE COLOR PALETTE SWATCHES: At the bottom of the poster, draw 4 square color swatch boxes. Fill them in: Swatch 1: 'Sunbeam Gold', Swatch 2: 'Ocean Turquoise', Swatch 3: 'Sunglasses Neon Teal', Swatch 4: 'Sunset Coral'!",
+          "Step 6: WRITE THE ITERATION LOG: On a second index card, write: 'ITERATION LOG: In Draft 1, the beach was empty. In Draft 2, I added a seashell sandcastle and a red striped umbrella to tell a fun summer story!' Paste this on the right side!",
+          "Step 7: QUALITY CONTROL CHECK: Inspect your poster board. Are there clear lines? Is the lion smiling? Are the colors harmonious? Check all boxes with a green marker!",
+          "Step 8: STAMP WITH THE GOLD SEAL: Affix your golden star sticker in the corner as the 'Approved for Carnival Printing' seal! Practice your director's voice! Stand proudly in front of your family or classmates, hold up your board, and deliver your official Art Director pitch: Welcome to the Sunnybrook Carnival! Here is our star mascot, Leo the Beach Lion, crafted with our 4-part prompt formula! Enjoy the thunderous applause!"
+        ],
+        "thingsToLookFor": [
+          "🎨 Did the student construct a clean, well-organized Art Director Specification Board?",
+          "🦁 Does the central artwork feature the key elements (lion cub, sunglasses, sandy beach)?",
+          "🕶️ Did the student show creativity with the 3D sunglasses or textural accents?",
+          "📜 Is the 4-part prompt recipe clearly documented with Style, Subject, Setting, and Lighting?",
+          "🎨 Are the 4 color palette swatches neatly colored and labeled?",
+          "🔄 Does the Iteration Log explain why changes were made between drafts?",
+          "🗣️ Did the student present their design choices aloud with pride, clarity, and excitement?"
+        ],
+        "discussionWithGrownUp": [
+          "When you see movie posters on buses or billboards, how do you think real art directors choose the colors and lighting?",
+          "Why is communicating clearly with descriptive words just as important as being able to draw with a pencil?",
+          "How did adding the sunglasses change the whole personality of the lion from a wild beast to a friendly cartoon star?",
+          "If you were designing a poster for a Winter Ice Festival next, what subject, setting, and color palette would you direct?"
+        ],
+        "familyConnection": "Hang the Art Director Specification Board on the refrigerator or bedroom wall! Use the same 4-part formula to design real customized family birthday cards or holiday party invitations! 👨‍👩‍👧🎨❤️",
+        "learningOutcome": "Students internalize visual literacy, descriptive prompt engineering, iterative design critique, and intentional artistic direction.",
+        "auraGuidance": {
+          "before": "GATHER your poster cardstock, markers, index cards, and shiny foil sunglasses! 📐🖍️",
+          "after": "POSTER APPROVED! Your Art Director Specification Board looks ready for a Hollywood studio! 🎨🦁🏆"
+        }
+      },
+      {
+        "activityId": "activity-2",
+        "title": "🖍️ The 'Prompt Charades' Art Director Drawing Challenge! 🎭🎨",
+        "type": "roleplay-creative",
+        "duration": "15 minutes",
+        "icon": "🖍️",
+        "roboPiActivityBrief": "BEEP BOOP! Time for hilarious design laughs! 🤖🖍️ In this fast-paced party game, one player acts as the Art Director who can ONLY speak words, while the other player acts as the Robot Painter who can ONLY draw what they hear!",
+        "description": "Player 1 (The Art Director) secretly looks at a prompt card (e.g. 'A skateboarding panda wearing a propeller beanie on a rainbow bridge'). Player 1 must describe the picture using only descriptive words to Player 2 (The Robot Painter), who cannot see the card and must sketch in 90 seconds! When the timer dings, compare the drawing to the secret card! Laugh at the hilarious misinterpretations and celebrate how clear descriptive words make great art!",
+        "materials": [
+          "⏱️ 1 kitchen timer or smartphone stopwatch (90 seconds)",
+          "📄 5 blank sheets of drawing paper and markers",
+          "🃏 6 secret prompt cards (e.g. 'Skateboarding Panda with Propeller Beanie', 'Surfing Giraffe with Pink Scarf')"
+        ],
+        "steps": [
+          "Step 1: Player 1 draws a secret prompt card and keeps it hidden.",
+          "Step 2: Start the 90-second timer! Player 1 describes the character, accessories, action, and setting using clear descriptive words: 'Draw a round chubby panda... he is wearing a red hat with a spinning propeller... he is standing on a wooden skateboard... he is zooming over a colorful rainbow!'",
+          "Step 3: Player 2 draws as fast as possible following ONLY the verbal directions.",
+          "Step 4: Timer dings! Reveal the card and compare! Did the painter capture the propeller? The skateboard? The rainbow?",
+          "Step 5: Switch roles so everyone gets to be the Art Director and the Robot Painter!"
+        ],
+        "thingsToLookFor": [
+          "🗣️ Did the Art Director break the description into clear, sequential steps?",
+          "👂 Did the Robot Painter listen carefully without guessing ahead?",
+          "😂 Did both players laugh joyfully at funny communication surprises?"
+        ],
+        "discussionWithGrownUp": [
+          "Why did giving one detail at a time work so much better than shouting five things at once?",
+          "How is playing Prompt Charades with a human friend exactly like directing an AI image tool?"
+        ],
+        "familyConnection": "Play Prompt Charades at family game night or during holiday gatherings! 👨‍👩‍👧🎲",
+        "learningOutcome": "Develops verbal communication precision, active auditory processing, spatial description, and empathy.",
+        "auraGuidance": {
+          "before": "HIDE your secret prompt card and ready your 90-second timer! ⏱️🃏",
+          "after": "CHALLENGE COMPLETE! Perfect communication between Art Director and Robot Painter! 🎭👏"
+        }
+      },
+      {
+        "activityId": "activity-3",
+        "title": "💌 The Family Event Invitation Design Workshop! 🎂🎉",
+        "type": "family-discussion",
+        "duration": "15 minutes",
+        "icon": "💌",
+        "roboPiActivityBrief": "BEEP BOOP! Put your art direction superpowers to real-world work! 🤖💌 Team up with your family to design a real, customized invitation card for an upcoming family birthday, picnic, or movie night!",
+        "description": "The student leads a 15-minute family design session for an upcoming event. The student interviews family members to establish: 1. The Theme (e.g. 'Outer Space Pizza Night' or 'Grandma's Garden Tea Party'), 2. The Star Mascot (e.g. 'A pug wearing an apron holding a pepperoni pizza'), 3. The Color Palette and Style (e.g. 'Warm watercolor pastel' or 'Bright 3D cartoon'). The student writes the official prompt recipe and sketches the final card layout!",
+        "materials": [
+          "📄 1 folded cardstock card (blank greeting card)",
+          "🖍️ Gel pens, glitter markers, and colored pencils",
+          "📝 1 Design Specification Sheet"
+        ],
+        "steps": [
+          "Step 1: Announce the family event (upcoming birthday, Sunday pancake breakfast, or game night).",
+          "Step 2: Ask Family Member 1: 'What is our fun theme and mascot?'",
+          "Step 3: Ask Family Member 2: 'What color palette should we use (warm sunset, neon party, or gentle pastel)?'",
+          "Step 4: The student drafts the 4-part prompt recipe: [Style] + [Subject] + [Setting] + [Lighting].",
+          "Step 5: Sketch and letter the front of the invitation card, adding the date, time, and location inside.",
+          "Step 6: Present the finished invitation to the family to unanimous applause! 💌🎂🎉"
+        ],
+        "thingsToLookFor": [
+          "💌 Is the invitation card personalized and visually appealing?",
+          "👑 Did the student lead the design interview with confidence and poise?",
+          "💖 Did the activity create warm family excitement for the upcoming celebration?"
+        ],
+        "discussionWithGrownUp": [
+          "How did customized artwork make this invitation feel ten times more special than a store-bought card?",
+          "In what other areas of life can we use creative design to bring joy to people we love?"
+        ],
+        "familyConnection": "Hand-deliver or mail the card to a grandparent or friend to brighten their week! 📬👵❤️",
+        "learningOutcome": "Connects digital literacy to authentic community communication, social empathy, and purposeful design.",
+        "auraGuidance": {
+          "before": "PREPARE your blank folded card and interview your family about the upcoming party! 💌🎂",
+          "after": "INVITATION COMPLETE! Ready to bring smiles and excitement to your celebration! 🌟🎉"
+        }
+      }
+    ],
+    "realWorldExamples": [
+      {
+        "id": "rwe-1",
+        "title": "🔬 Making eye-catching posters for the school science fair 🧪📊",
+        "scenario": "Making eye-catching posters for the school science fair demonstrates how descriptive visual prompts transform dense scientific data into engaging, professional display boards. At Washington Elementary School, ten-year-old student scientists Aarav and Priya were preparing their 4th-grade science fair project: 'How Solar Flares Impact Earth's Magnetic Field.' They had spent three weeks measuring compass needle deflections and recording data in charts. But when they stood back to look at their trifold presentation board, Aarav sighed: 'It looks like a giant wall of black-and-white text and boring data tables. The judges and other kids will just walk right past our table without stopping to read!'",
+        "aiConnection": "Scientific communication design and text-to-image prompt styling! Instead of searching Google Images for copyrighted, low-resolution diagrams, Priya opened an educational AI image design sandbox. Priya and Aarav acted as Art Directors to design the central headline banner. They used the 4-part formula: 'Scientific children's book illustration of a giant glowing golden Sun emitting a dramatic solar flare, glowing coronal loops of magnetic fire, Earth shown in the distance with a shimmering blue-and-green magnetic shield deflecting the solar wind, dark space background filled with distant stars, educational infographic style, crisp high-resolution lighting'. When the image rendered, it was breathtaking! The golden solar flare curved across the blackness of space, while Earth's magnetic shield sparkled like translucent neon armor! They printed the banner across the top of their trifold board, alongside their graphs and compass photos. At the science fair, a crowd of students, parents, and judges gathered around their booth, asking excited questions about how the magnetic shield protects Earth. The judges awarded Aarav and Priya First Place for 'Best Scientific Communication and Visual Presentation'!",
+        "observation": "Notice that the AI didn't conduct the compass experiment or record the data; Aarav and Priya did the scientific research, then used their Art Director superpower to communicate their discoveries with visual brilliance!",
+        "discussion": "Why does having an attractive, visually clear central illustration make people more interested in reading scientific graphs and data tables?",
+        "roboPiTip": "BEEP BOOP! Great science needs great art to tell its story! When you combine real scientific research with Art Director visual design, you can change the world! 🔬🎨🌟"
+      },
+      {
+        "id": "rwe-2",
+        "title": "🏃 Designing school sports day logos and team mascot emblems 🏆🐯",
+        "scenario": "Designing school sports day logos and team mascot emblems reveals how visual style choices instantly build team spirit, energy, and excitement. Every autumn, Lincoln Elementary hosts its legendary Sports Day Track and Field Championship. This year, the 4th-grade class was divided into four colored teams: The Blue Falcons, The Red Dragons, The Green Sharks, and The Gold Cheetahs. Ten-year-old Kabir was elected Team Captain for The Gold Cheetahs. Kabir needed to design the official team emblem to print on 60 yellow T-shirts, team banners, and water bottle stickers. Kabir opened a design tool, but he wasn't sure how to draw a cheetah that looked fast, friendly, and cool without looking like a frightening predator.",
+        "aiConnection": "Vector logo styling and athletic mascot branding! Kabir remembered Robo-Pi's style lessons. Kabir crafted a targeted Art Director prompt: 'Modern sports team mascot logo of a fierce but friendly golden cheetah head, bold dynamic angular lines, wearing red athletic runner's goggles, facing right, minimalist vector art style, thick black outlines, vibrant gold and crimson palette, clean white background, graphic design sticker emblem'. In seconds, the AI generated a spectacular sports emblem! The cheetah's golden fur had sharp, aerodynamic lightning-bolt markings, its red running goggles gave it high-speed athletic energy, and the clean vector linework made it perfect for screen printing on T-shirts! The Gold Cheetahs wore their yellow shirts with immense pride, cheering each other on in the 100-meter dash, the relay race, and the tug-of-war. Other classes crowded around asking where they bought their professional team shirts!",
+        "observation": "Specifying 'minimalist vector art style' and 'clean graphic design emblem' ensured the image had crisp borders suitable for T-shirt printing, proving that style keywords control practical utility!",
+        "discussion": "How does specifying 'minimalist vector art' produce a different result from 'photograph of a cheetah in the savanna'? Why is vector style better for T-shirts and stickers?",
+        "roboPiTip": "BEEP BOOP! Always match the style to the job! Vector logos for T-shirts, 3D cartoons for mascots, and watercolors for cards! You are the master designer! 🏃🐯🏅"
+      },
+      {
+        "id": "rwe-3",
+        "title": "🎂 Creating customized birthday invitation cards for best friends 🎈💌",
+        "scenario": "Creating customized birthday invitation cards for best friends demonstrates how personal affection, inside jokes, and visual storytelling make celebrations deeply meaningful. Ten-year-old Sofia was planning her 10th birthday party. Sofia loved two very specific things: playing the electric guitar and her fluffy black-and-white French Bulldog, Winston. Sofia looked at store-bought birthday invitations at the supermarket, but they were all generic princesses, generic superhero logos, or plain pastel balloons. Sofia told her mother: 'None of these feel like ME! I want an invitation that stars Winston rocking out on an electric guitar!'",
+        "aiConnection": "Personalized narrative illustration and celebratory card design! Sofia sat at her family computer and became the Art Director of her own birthday brand. Sofia constructed a joyful prompt: 'A joyful black-and-white French bulldog puppy wearing miniature sunglasses, jamming on a shiny cherry-red electric guitar, musical notes and confetti floating in the air, colorful party balloons and birthday banners in the background, 3D animated movie style, bright celebratory lighting, high-energy joyful party atmosphere'. When Sofia hit generate, her mouth dropped open in delight! There was Winston, with his adorable bat ears, sporting cool sunglasses, shredding on a red electric guitar with confetti and balloons bursting around him! Sofia printed the image onto cardstock, hand-wrote the party date and bowling alley address inside with glitter pens, and handed them to her classmates. Her friends kept the invitations on their bedroom dressers for months because they were so hilarious, unique, and personal!",
+        "observation": "Sofia didn't settle for store-bought mass-produced cards; she translated her personal passions (her dog and her guitar) into customized visual art that brought joy to all her friends!",
+        "discussion": "Why are customized, personalized invitations cherished by friends so much more than generic store-bought cards?",
+        "roboPiTip": "BEEP BOOP! Design with AI lets you bring your most unique, personal inside jokes to life! Never settle for generic when you can create magic! 🎸🐶🎂🎉"
+      }
+    ],
+    "practiceExercises": [
+      {
+        "id": "pe-1",
+        "title": "🩺 The Prompt Doctor: Transforming Sickly Prompts into Masterpieces! 🧰✨",
+        "instruction": "Read each sick, lazy prompt below. Diagnose what is missing (Style? Setting? Accessories? Lighting?), and select the cured Art Director Masterpiece that fixes it!",
+        "activity": "Read the 6 prompt scenarios below. Match the lazy prompt with its cured Art Director upgrade, and identify which of the 4 formula elements were added!",
+        "items": [
+          {
+            "scenario": "Lazy Sick Prompt: 'draw a cat'.",
+            "type": "Art Director Cure 🐾",
+            "reasoning": "Cure: 'A fluffy calico kitten wearing a tiny wizard hat and holding a glowing star wand, sitting inside an ancient magical library with floating books, 3D Pixar animation style, warm lantern lighting'. Added: Specific subject, wizard accessories, library setting, and 3D style!"
+          },
+          {
+            "scenario": "Lazy Sick Prompt: 'beach scene'.",
+            "type": "Art Director Cure 🏖️",
+            "reasoning": "Cure: 'Tropical white sand beach with turquoise tide pools, colorful sea glass, coconut palm trees swaying in sea breeze, warm golden hour sunset glow, dreamy pastel watercolor style'. Added: Sensory details, natural props, golden hour lighting, and watercolor medium!"
+          },
+          {
+            "scenario": "Lazy Sick Prompt: 'spaceship'.",
+            "type": "Art Director Cure 🚀",
+            "reasoning": "Cure: 'Sleek silver exploration shuttle with glowing cyan ion thrusters, navigating through a glittering asteroid belt near the purple rings of Saturn, cinematic sci-fi concept art, dramatic rim lighting'. Added: Ship details, asteroid setting, Saturn rings, and cinematic lighting!"
+          },
+          {
+            "scenario": "Lazy Sick Prompt: 'robot'.",
+            "type": "Art Director Cure 🤖",
+            "reasoning": "Cure: 'Friendly round silver robot wearing roller skates and a velvet artist beret, painting a rainbow on a canvas with a glowing brush, cozy artist workshop background, 3D claymation style'. Added: Quirky character gear, painting action, workshop setting, and claymation texture!"
+          },
+          {
+            "scenario": "Lazy Sick Prompt: 'forest'.",
+            "type": "Art Director Cure 🌲",
+            "reasoning": "Cure: 'Enchanted mossy forest with giant hollow redwood trees, glowing turquoise mushrooms on the bark, sunbeams breaking through misty canopy, fantasy children's book illustration'. Added: Tree types, glowing mushrooms, atmospheric mist, and sunbeam lighting!"
+          },
+          {
+            "scenario": "Lazy Sick Prompt: 'birthday cake'.",
+            "type": "Art Director Cure 🎂",
+            "reasoning": "Cure: 'A three-tier chocolate birthday cake decorated with fresh strawberries and sparkling sugar crystals, burning candles casting warm flickering glow, colorful party confetti background, vibrant digital food illustration'. Added: Cake tiers, fruit toppings, candle lighting, and food art style!"
+          }
+        ],
+        "scoring": "Score 15 points per correct diagnosis. Perfect score: 90 points!",
+        "feedback": {
+          "correct": "🌟 SPOT ON! You are an expert Prompt Doctor curing lazy words everywhere! 🚀🏆",
+          "incorrect": "🤔 Remember: Always check for the 4 pillars: Subject, Accessories, Setting, and Style!"
+        }
+      },
+      {
+        "id": "pe-2",
+        "title": "📝 Complete Robo-Pi's 4-Step Art Director Formula Blueprint! 🎨🦁",
+        "instruction": "Fill in the missing words in the prompt formula blueprint using the Word Bank below to help Robo-Pi complete the Art Director Master Recipe!",
+        "activity": "Read the blueprint paragraphs and insert the correct word from the Word Bank into each numbered blank space.",
+        "wordBank": [
+          "Art Director 🎬",
+          "Descriptive Words ✍️",
+          "Art Style 🎨",
+          "Subject 🦁",
+          "Accessories 🕶️",
+          "Setting 🏖️",
+          "Lighting 🌅",
+          "Iteration 🔄"
+        ],
+        "sentences": [
+          {
+            "number": 1,
+            "sentence": "In text-to-image design, YOU are the [Blank 1], commanding the canvas with your vision.",
+            "correctAnswer": "Art Director 🎬",
+            "explanation": "The human designer guides the creative concept, composition, and aesthetic intent."
+          },
+          {
+            "number": 2,
+            "sentence": "Instead of crayons, your digital paintbrushes are [Blank 2] that paint pictures with words.",
+            "correctAnswer": "Descriptive Words ✍️",
+            "explanation": "Clear adjectives, sensory details, and nouns instruct the generative model."
+          },
+          {
+            "number": 3,
+            "sentence": "Step 1 of the formula defines the [Blank 3], such as 3D Pixar cartoon, watercolor, or pixel art.",
+            "correctAnswer": "Art Style 🎨",
+            "explanation": "The art style specifies the medium, linework, and visual rendering method."
+          },
+          {
+            "number": 4,
+            "sentence": "Step 2 names the specific [Blank 4], such as a cheerful golden lion cub.",
+            "correctAnswer": "Subject 🦁",
+            "explanation": "The subject is the focal character, animal, or object in the composition."
+          },
+          {
+            "number": 5,
+            "sentence": "Giving your character personality involves adding [Blank 5], like cool neon sunglasses or a chef's hat.",
+            "correctAnswer": "Accessories 🕶️",
+            "explanation": "Props, clothing, and gear convey character personality and narrative intent."
+          },
+          {
+            "number": 6,
+            "sentence": "Step 3 places your character into an immersive [Blank 6], like a sunny beach with coconut palms.",
+            "correctAnswer": "Setting 🏖️",
+            "explanation": "The setting establishes the physical world and background environment."
+          },
+          {
+            "number": 7,
+            "sentence": "Step 4 controls the emotional atmosphere by specifying [Blank 7], like warm golden hour sunset glow.",
+            "correctAnswer": "Lighting 🌅",
+            "explanation": "Lighting descriptors set the mood, shadows, and color temperature."
+          },
+          {
+            "number": 8,
+            "sentence": "Inspecting your first draft and making one more tweak to improve it is called [Blank 8].",
+            "correctAnswer": "Iteration 🔄",
+            "explanation": "Iteration is the professional process of refining drafts toward perfection."
+          }
+        ],
+        "scoring": "Score 12.5 points per correct fill-in. Perfect score: 100 points!",
+        "feedback": {
+          "success": "🌟 BLUEPRINT COMPLETE! You are officially equipped with the 4-Step Art Director Formula! 🚀🏅",
+          "partial": "Almost there! Review the difference between subject, setting, and style elements!"
+        }
+      }
+    ],
+    "lessonSummary": {
+      "title": "🌟 Lesson Summary: The Art Director's Creative Superpower! 🎨✨",
+      "keyTakeaways": [
+        "🎬 You are the Art Director: AI image generators need clear, human guidance to create meaningful art.",
+        "🦁 The 4-Part Prompt Formula: Combine Art Style + Subject & Action + Accessories & Gear + Setting & Lighting.",
+        "🥱 Avoid lazy one-word prompts: one word makes random, boring photos; descriptive magic words create masterpieces.",
+        "🖌️ Styles change everything: 3D cartoon brings friendliness, watercolor brings peace, and pixel art brings gaming energy.",
+        "🔄 Iteration is the secret of champions: inspect Draft 1, add props in Draft 2, and polish lighting in Draft 3.",
+        "🛠️ Real-world superpowers: use design skills for science fair posters, sports day team logos, and birthday cards!"
+      ],
+      "recap": "In this lesson, we discovered that you do not need to be a master draftsman to create jaw-dropping, professional artwork! When you master the Art Director mindset, your words become your paintbrushes. By combining specific subjects, cool accessories, rich settings, distinct art styles, and warm lighting moods, you can command AI tools to bring your wildest, most joyful dreams to life in full color! Wear your sunglasses proudly — you are a master Art Director! 🎨🦁🕶️🏖️🌟",
+      "reflectionPrompt": "What is ONE picture that lives inside your imagination that you will describe with the 4-part formula today?",
+      "parentNote": "Today, your child learned foundational visual design and prompt engineering principles: moving beyond vague search queries to construct multi-layered descriptive prompts (Style, Subject, Setting, Lighting) and iteratively refining visual outputs. Encourage your child to practice being an 'Art Director' for family projects, greeting cards, and school presentations! 👨‍👩‍👧🎨❤️",
+      "badgeEarned": "The Master Art Director Golden Medal 🏅🎨",
+      "achievement": "Master Art Director License Granted! 🎨🦁🕶️🏆"
+    }
+  },
+  "assessment": {
+    "questions": [
+      {
+        "questionId": "q1",
+        "question": "What is the primary role of an 'Art Director' when creating pictures with AI? 🎬🎨",
+        "options": [
+          "To type one word and hope the computer guesses what they want",
+          "To be the creative boss who chooses the subject, accessories, setting, and art style with descriptive words 🌟",
+          "To erase all computer monitors and throw away paintbrushes",
+          "To force the computer to only draw black-and-white triangles"
+        ],
+        "correctOptionIndex": 1,
+        "explanation": "The Art Director provides the creative vision, specifying the character, clothing, environment, and art style with descriptive magic words!",
+        "hint": "Think about who directs the vision like a movie director!"
+      },
+      {
+        "questionId": "q2",
+        "question": "Why does typing 'Cartoon golden lion cub wearing sunglasses on a sandy beach' produce a better image than typing just 'lion'? 🦁🕶️",
+        "options": [
+          "Because descriptive words give the AI clear instructions for the character, accessories, setting, and playful mood ✨",
+          "Because computers refuse to process words shorter than five letters",
+          "Because real lions in Africa always wear sunglasses",
+          "Because one-word prompts are illegal on the internet"
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Descriptive magic words eliminate guesswork, instructing the AI on exact personality traits, accessories, and colorful environments!",
+        "hint": "Think about how sunglasses and a beach make the lion a cool summer star!"
+      },
+      {
+        "questionId": "q3",
+        "question": "What are the four parts of the Golden Prompt Formula? 📜🎨",
+        "options": [
+          "Noise, Static, Glitch, and Error",
+          "Style, Subject & Action, Accessories & Gear, and Setting & Lighting 🌟",
+          "Breakfast, Lunch, Dinner, and Dessert",
+          "Monday, Tuesday, Wednesday, and Thursday"
+        ],
+        "correctOptionIndex": 1,
+        "explanation": "The 4-part formula combines Art Style, Detailed Subject, Accessories, and Setting with Lighting to produce rich artwork!",
+        "hint": "Look for Style, Subject, Accessories, and Setting with Lighting!"
+      },
+      {
+        "questionId": "q4",
+        "question": "What is 'Iteration' in the visual design process? 🔄🖼️",
+        "options": [
+          "Deleting your entire computer hard drive after one try",
+          "Inspecting your first draft, tweaking your descriptive words, and generating a polished new version 🌟",
+          "Copying someone else's drawing without changing anything",
+          "Drawing only with your eyes closed"
+        ],
+        "correctOptionIndex": 1,
+        "explanation": "Iteration is the professional design cycle of reviewing drafts, adjusting descriptive words, and refining artwork to perfection!",
+        "hint": "Think about tweaking Draft 1 to make Draft 2 even cooler!"
+      },
+      {
+        "questionId": "q5",
+        "question": "Which art style would you specify if you wanted your artwork to look like a nostalgic 1990s arcade video game? 🕹️👾",
+        "options": [
+          "Soft pastel watercolor on wet paper",
+          "16-bit retro pixel art with bold pixel grids 🎮",
+          "Realistic oil portrait in a gold frame",
+          "Black-and-white pencil charcoal sketch"
+        ],
+        "correctOptionIndex": 1,
+        "explanation": "Retro pixel art simulates nostalgic video game graphics with blocky grids and vibrant arcade color palettes!",
+        "hint": "Look for retro pixel art and video games!"
+      }
+    ]
+  },
+  "resources": [
+    {
+      "title": "Art Director Poster Studio Printable Specification Board 🎨🦁",
+      "type": "worksheet",
+      "url": "/content/junior/worksheets/class4-ch5-l2-art-director-board.pdf",
+      "description": "Printable poster board template with central art frame, 4-part recipe cards, and color swatch boxes."
+    },
+    {
+      "title": "Robo-Pi's 20 Magic Lighting & Style Prompt Flashcards 💡🖌️",
+      "type": "worksheet",
+      "url": "/content/junior/worksheets/class4-ch5-l2-style-flashcards.pdf",
+      "description": "Pocket flashcards featuring descriptive phrases for Pixar 3D, watercolor, pixel art, and golden hour lighting."
+    },
+    {
+      "title": "Video: How AI Paints with Words: Inside the Art Director Studio 🌟🎬",
+      "type": "video",
+      "url": "https://aiolympiad.org/junior/videos/how-ai-paints-with-words",
+      "description": "An animated walkthrough showing how descriptive prompt words sculpt digital noise into vibrant illustrations."
+    }
+  ],
+  "teacherNotes": {
+    "preparation": "Prepare large cardstock poster paper (11x17 or A3), index cards, colorful markers, safety scissors, glue sticks, and optional aluminum foil/glitter paper for Activity 1 (Art Director Poster Studio). Have sample prompt boards ready to display.",
+    "lessonFlow": "Begin with the Hook Story of Maya, Leo, and the sleepy lion vs the cool beach lion. Introduce the Art Director concept: the student commands the canvas using descriptive language. Break down the 4-Part Prompt Formula (Style, Subject, Accessories, Setting/Lighting). Guide students through exploring artistic mediums and lighting moods, demonstrate the iterative refinement cycle, and facilitate the hands-on poster studio.",
+    "keyDiscussionPoints": [
+      "Why is prompt engineering fundamentally an exercise in descriptive writing and visual literacy?",
+      "How does specifying visual styles (vector, watercolor, pixel art) change the practical utility of an image?",
+      "Why should young designers embrace iteration as an exciting discovery process rather than viewing Draft 1 as final?",
+      "How can students use visual AI tools ethically to augment their own original ideas rather than replace creative effort?"
+    ],
+    "pedagogicalTips": [
+      "Celebrate creative agency: emphasize that the student is the 'Art Director' who makes all aesthetic decisions.",
+      "Encourage sensory vocabulary: push students beyond simple color words into rich textures (velvety fur, seafoam waves, amber glow).",
+      "Demystify the technology: explain that the computer is sculpting pixels based on language patterns, not magical thinking.",
+      "Foster constructive critique: have students pair up to review each other's prompt recipes and suggest one constructive tweak. Encourage students to celebrate mistakes as creative detours! When a prompt generates a three-legged lion or an upside-down umbrella, turn it into a shared classroom laugh and a diagnostic puzzle. Ask: What descriptive keyword could we add or change to guide the robot painter back on track? This demystifies artificial intelligence and builds lifelong problem-solving resilience."
+    ],
+    "commonMisconceptions": [
+      "❌ Misconception: 'AI image generators understand what I am thinking without me saying it.' → Correction: AI only processes the exact words you provide; vague prompts always yield generic, unpredictable results.",
+      "❌ Misconception: 'If an AI picture has a weird mistake, the tool is broken.' → Correction: AI models predict pixel patterns and often make anatomical errors; human art directors iterate and apply clarifying constraints to fix them.",
+      "❌ Misconception: 'Using text-to-image AI means you aren't an artist.' → Correction: Art direction is a recognized creative profession; conceiving composition, style, lighting, and narrative is profound artistic work."
+    ],
+    "differentiation": {
+      "forAdvancedStudents": "Challenge students to explore complex lighting techniques (chiaroscuro, volumetric god rays, rim lighting), camera lens angles (macro, wide-angle bird's eye), and multi-subject compositions.",
+      "forStrugglingStudents": "Use physical sentence-building blocks: provide color-coded cards for [Style], [Subject], [Accessory], and [Setting] so students can physically snap prompts together.",
+      "forELLStudents": "Provide illustrated visual vocabulary cards pairing English style and lighting terms (watercolor, golden hour, neon, vector) with vivid image examples."
+    },
+    "extensionActivities": [
+      "Host a classroom 'Art Director Gallery Walk' where students display their specification boards and vote on categories like 'Most Creative Mascot' and 'Best Lighting'.",
+      "Collaborate with school clubs to design real event posters, sports day banners, or book fair bookmarks using student-directed art.",
+      "Conduct a 'Prompt Translation' exercise where students take classic storybook illustrations and reverse-engineer the prompt recipe that could have created them."
+    ]
+  },
+  "additionalResources": [
+    {
+      "title": "Printable Master Art Director Beret & Badges 🎨🏅",
+      "url": "https://aiolympiad.org/resources/class4/ch5/art-director-badges.pdf",
+      "type": "pdf",
+      "description": "Full-color printable sheets with Art Director badges, beret cutouts, and official design approval stamps."
+    },
+    {
+      "title": "Interactive Prompt Builder Sandbox 🎡💻",
+      "url": "https://aiolympiad.org/junior/simulators/prompt-builder-sandbox",
+      "type": "interactive",
+      "description": "Digital web sandbox where students drag and drop style, subject, setting, and lighting blocks to preview prompt recipes."
+    }
+  ],
+  "assessmentQuestions": [
+    {
+      "questionId": "aq1",
+      "question": "In multimodal generative AI pedagogy, what core competency does the 'Art Director' paradigm cultivate in primary students? 🎬",
+      "options": [
+        "Descriptive linguistic precision and intentional aesthetic curation rather than passive media consumption ✍️🎨",
+        "Memorization of raw binary image compression algorithms",
+        "Exclusively manual dexterity in oil canvas stretching",
+        "The complete abandonment of written language in favor of random clicking"
+      ],
+      "correctAnswer": "Descriptive linguistic precision and intentional aesthetic curation rather than passive media consumption ✍️🎨",
+      "explanation": "The Art Director framework empowers students to use precise descriptive language to articulate visual intent, composition, and aesthetic parameters."
+    },
+    {
+      "questionId": "aq2",
+      "question": "Why does decomposing prompts into Subject, Accessories, Setting, and Style reduce generative ambiguity in diffusion models? 📐",
+      "options": [
+        "It provides structured semantic conditioning tokens across orthogonal visual dimensions, constraining the latent space search 🧠",
+        "It speeds up the user's internet connection bandwidth",
+        "It forces the GPU to operate at lower electrical voltages",
+        "It converts natural language directly into HTML webpage code"
+      ],
+      "correctAnswer": "It provides structured semantic conditioning tokens across orthogonal visual dimensions, constraining the latent space search 🧠",
+      "explanation": "Multi-part prompts condition distinct latent visual features (subject geometry, textural style, background environment), reducing variance and ambiguity."
+    },
+    {
+      "questionId": "aq3",
+      "question": "How does the iterative cycle ('Draft 1 → Tweak → Draft 2') reinforce growth mindset and design thinking in young creators? 🔄",
+      "options": [
+        "It reframes initial discrepancies as diagnostic feedback for refinement rather than immutable creative failure 🌟",
+        "It guarantees that Draft 1 will always be deleted by the computer",
+        "It requires students to spend twenty hours on every single prompt",
+        "It prevents students from ever finishing a project"
+      ],
+      "correctAnswer": "It reframes initial discrepancies as diagnostic feedback for refinement rather than immutable creative failure 🌟",
+      "explanation": "Iteration normalizes continuous evaluation and modification, teaching learners that mastery emerges through deliberate refinement."
+    },
+    {
+      "questionId": "aq4",
+      "question": "Why is specifying 'minimalist vector art' functionally superior to 'photograph' when designing school sports logos for apparel? 👕",
+      "options": [
+        "Vector aesthetics prioritize clean, scalable geometric lines and discrete color palettes optimized for screen printing and embroidery 🏃",
+        "Vector images take up more megabytes of storage on a phone",
+        "Photographs cannot be displayed on computer monitors",
+        "Vector art is only visible during daylight hours"
+      ],
+      "correctAnswer": "Vector aesthetics prioritize clean, scalable geometric lines and discrete color palettes optimized for screen printing and embroidery 🏃",
+      "explanation": "Vector styling creates high-contrast, scalable shapes and limited spot colors that translate cleanly to physical textile fabrication."
+    },
+    {
+      "questionId": "aq5",
+      "question": "What is the primary pedagogical objective of culminating the 'Art Director Poster Studio' with real-world applications (science fairs, invitations)? 💌",
+      "options": [
+        "To contextualize technological agency within authentic social communication and purposeful community contribution 🌟",
+        "To eliminate the need for professional graphic designers in commercial industries",
+        "To ensure students only use computers during holiday seasons",
+        "To test students on printer ink cartridge installation"
+      ],
+      "correctAnswer": "To contextualize technological agency within authentic social communication and purposeful community contribution 🌟",
+      "explanation": "Authentic, purposeful projects connect technological literacy to meaningful communication, civic engagement, and social empathy."
+    }
+  ]
+}
