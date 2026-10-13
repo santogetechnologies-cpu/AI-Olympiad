@@ -1,0 +1,1282 @@
+{
+  "lessonId": "l1",
+  "title": "AI Goes to School",
+  "level": "junior",
+  "class": "class3",
+  "chapter": "ch3",
+  "mascot": "Bolt",
+  "badge": {
+    "badgeId": "badge-ch3-l1",
+    "name": "School Explorer Badge 🏫⭐",
+    "description": "Awarded for discovering smart classroom helpers, tracking the magic school bus with GPS safety, and exploring digital libraries with Bolt the Robot!",
+    "emoji": "🏫🚌📚⚡",
+    "trophy_unlocked": "🏆 School Explorer Trophy unlocked! You know how technology helps teachers, students, librarians, and bus drivers learn and travel safely! 🌟🏫"
+  },
+  "introduction": {
+    "overview": "“BEEP BOOP! School is so exciting with smart AI helpers!” 🤖⚡\n\nHello there, my brilliant Class 3 explorer! Welcome to CHAPTER 3: AI APPLICATIONS — SOLVE! 🌟 \nIt is ME — BOLT, your favourite blue robot learning buddy with glowing sapphire eyes and a tummy screen full of bright golden school stars! 🌈✨ Give me a giant high-five on your screen — *BEEP BOOP CHIK-CHIK!* 🖐️⚡\n\nThink about your school day from the very first second you wake up until the final afternoon bell rings! 🏫\nEvery morning, yellow school buses roll along city streets picking up children with colourful backpacks. 🚌\nInside the school gate, friendly security guards wave hello, and the tall brick building buzzes with laughter, music, and learning! 🔔\nIn the classroom, your teacher stands near a giant glowing screen called an interactive smartboard, displaying colourful maps, dancing numbers, and vibrant storybooks. 📖💻\nDown the hallway, the school library smells like fresh paper and adventure, with thousands of books resting neatly on wooden shelves. 📚\nOn art tables, children splash bright poster colours, while in maths class, students count wooden beads and solve puzzles together! 🎨✏️\n\nDid you know that today, many schools use SMART TECHNOLOGY and AI HELPERS to make learning, travelling, and discovering even more exciting and safe? 🌟🤖\n- Some classrooms have interactive smartboards that can display digital science models, play educational videos, or even read storybooks aloud to help children follow along! 📺📖\n- Some school transport systems have GPS trackers that help parents see where the school bus is on a digital map and know when it is about two minutes away! 🚌📍\n- Some school libraries have digital computer catalogues where you can type 'dinosaur books' and find every tale about giant prehistoric creatures in three seconds flat! 🦖📚\n- Some school communication apps send safe reminders to parents about sports days, field trips, and rainy day umbrella notices! 📱☔\n\nAN IMPORTANT TRUTH FOR SMART EXPLORERS 💡⚖️\nBolt says: 'BEEP BOOP! Listen closely to Bolt's golden truth, little learner! \nDoes every single school in the world have the exact same technology? \nNO! Different schools use different tools! Some schools use chalkboards, some use whiteboards, and some use smartboards. All of them are wonderful places to learn!' 🏫❤️\n\nAnd here is another critical secret:\nDOES EVERY DIGITAL DEVICE USE ARTIFICIAL INTELLIGENCE? \nNO! 🙅‍♂️\nAn ordinary electronic school bell that rings at 9:00 am just follows a simple electric clock timer — it does NOT use AI! 🔔\nAn ordinary digital library list that shows books in alphabetical order is a regular computer database — it does NOT automatically use AI! 📚\nA simple handheld calculator does maths using electric circuits — it does NOT have learning AI! 🧮\n\nAI is a special kind of smart technology that can recognize patterns, understand human speech, suggest recommendations, or adapt to what it detects. \n\nWHO IS THE REAL HERO AT SCHOOL? 👩‍🏫👨‍🏫❤️\nTechnology is an incredible helper, but machines can NEVER replace the real human heroes of your school:\n- Your kind TEACHERS who explain difficult ideas, wipe away tears, and cheer when you try your best! 👩‍🏫\n- Your patient LIBRARIANS who know exactly which magical storybook will make your eyes light up! 📚\n- Your careful BUS DRIVERS who watch the road, steer around puddles, and get you home safely every afternoon! 🚌\n- Your caring PARENTS who pack healthy tiffin snacks and listen to your school stories at dinner! 🥪❤️\n\nIn this thrilling lesson, titled \"AI Goes to School\", we will explore:\n1. Smart helpers in our classrooms (smartboards, digital stories, and dinosaur lessons!) 🏫📚\n2. Smart school buses and safe travel (GPS tracking, arrival estimates, and road safety!) 🚌📍\n3. Smart libraries and school discoveries (finding dinosaur books and understanding tools!) 📚🦖\n4. Our brand-new interactive game: Track the Magic School Bus 🚌!\n\nAre you ready to explore the smart school of tomorrow? Put on your school bag, grab your explorer magnifying glass, and let us dive into Section 1! BEEP BOOP! 🚀🎒⚡",
+    "learningObjectives": [
+      "Say hello to Bolt and discover how smart technology supports learning in modern classrooms 🏫🤖",
+      "Learn how interactive smartboards display lessons, pictures, and digital storybooks 📺📖",
+      "Understand how school bus GPS tracking helps families estimate arrival times safely 🚌📍",
+      "Discover digital library catalogues that help students search for favourite dinosaur books 📚🦖",
+      "Learn the crucial difference between simple electronic school tools and smart AI technology 🔔💡",
+      "Play Track the Magic School Bus 🚌 and collect your official School Explorer Trophy ⭐🏆"
+    ],
+    "duration": "45 mins"
+  },
+  "sections": [
+    {
+      "sectionId": "section1",
+      "title": "Smart Helpers in Our Classroom 🏫📚✏️",
+      "content": "BEEP BOOP! Welcome to Section 1! Step inside our virtual classroom, hang your jacket on the peg, and let us meet the amazing technology helpers that support teaching and learning every day! 🏫📚✏️\n\nPART 1: THE INTERACTIVE SMARTBOARD 📺✨\nLook at the front wall of a modern classroom. Instead of an old-fashioned slate chalkboard covered in white chalk dust, there hangs a giant, glowing screen called an INTERACTIVE SMARTBOARD! \nWhat makes a smartboard so special? \nAn ordinary television just plays whatever movie is piped into it, and you cannot touch it or change it. \nAn interactive smartboard is a giant touchscreen computer display! 🖥️\nA teacher or student can:\n- Tap on pictures with a soft stylus pen or a gentle finger touch! 👆\n- Draw colourful diagrams in bright neon colours without any chalk dust! 🎨\n- Move digital puzzle pieces, words, and shapes around the screen! 🧩\n- Zoom in on high-resolution photographs of planets, ocean coral reefs, or ancient castles! 🪐🏰\n\nDepending on the actual device, brand, and software being used, some modern classroom systems have AI-powered accessibility features:\n- Supported reading features can highlight words one by one as they read a storybook aloud, helping children connect the sound of a word to the letters on screen! 📖🗣️\n- Some systems can translate difficult words into multiple languages to help new students feel welcome! 🌍\n- Some systems can turn spoken teacher instructions into clear on-screen captions so children who need hearing support can follow along easily! 🧏‍♂️✨\n\nImportant real-world truth:\nNot every smartboard uses AI, and not every classroom screen reads stories aloud! Some are simple touchscreen monitors, while others run advanced educational software. But all of them help teachers make lessons visual, dynamic, and engaging!\n\nPART 2: FIVE FAMOUS CLASSROOM LEARNING SCENARIOS 🌟📖\n\n1. READING A DIGITAL STORYBOOK ALOUD 📖🔊\nImagine it is story time on a rainy Wednesday afternoon. Teacher Priya taps the classroom smartboard. A vibrant, animated children's book appears on screen, showing a fluffy golden lion cub exploring the savanna. \nThe supported reading software highlights each word in bright yellow as a warm, friendly voice reads aloud: 'The little lion cub leaped over the grassy hill...' \nChildren who are still learning to read follow the bouncing yellow highlight with their eyes, listening to the pronunciation and seeing the spelling at the same exact time. This multisensory approach helps visual learners, auditory learners, and children who need extra reading support build confidence!\n\n2. LEARNING ABOUT PREHISTORIC DINOSAURS 🦖🌴\nIn science period, the class is studying prehistoric animals. Teacher Priya says, 'Let us meet the Tyrannosaurus Rex!' \nShe taps the screen, and a 3D digital model of a T-Rex appears. The teacher swipes her finger, rotating the dinosaur three hundred and sixty degrees so students can inspect its massive tail, short two-clawed arms, and razor-sharp teeth. \nThen she taps on its skull, and an educational audio clip plays: 'T-Rex had teeth up to thirty centimetres long — as long as your school ruler!' \nThe whole class gasps in amazement! Instead of looking at a tiny flat black-and-white picture in an old textbook, the children experience the creature as if it were standing right in front of them!\n\n3. DIGITAL ART & CREATIVE SHAPE EXPLORATION 🎨🖌️\nDuring art period, children use classroom tablets to learn about geometric shapes and primary colours. \nArjun uses a digital drawing application that features a smart shape-snapper tool. When Arjun draws a wobbly, shaky circle with his finger, the smart tool recognizes his intention and gently smooths the lines into a perfectly round circle! \nWhen Arjun selects yellow and blue and drags them together, the application shows how they blend into emerald green! \nDigital art tools allow children to explore colours, patterns, and symmetry without spilling water or ruining paper, building creative confidence before they pick up real paintbrushes!\n\n4. CLASSROOM PRACTICE QUESTIONS WITH INSTANT VISUAL CLUES ❓💡\nDuring maths revision, the teacher displays five interactive practice questions on the board. \nWhen Kabir taps the answer '12 + 8 = 20', green confetti bursts on the screen with a cheerful chime, and a little cartoon rabbit hops forward! \nIf a student selects the wrong answer, the system does not say 'You failed!' Instead, it gently displays a visual hint — such as showing twenty grouped apples — and invites the child to count the groups and try again. \nThe teacher stands beside the student, smiles encouragingly, and explains the concept step-by-step. The smartboard provides the fun game format, while the teacher provides the human explanation!\n\n5. WRITING AND SPELLING PRACTICE ✏️📝\nIn language class, children use a tablet learning app to practice writing cursive letters. \nWhen Riya traces the cursive letter 'S', the app guides her finger with a glowing star path. If she traces off course, a gentle haptic buzz alerts her to retrace the curve. \nThe application tracks which letters the class finds trickiest, so Teacher Priya knows to spend ten extra minutes practicing letters 'G' and 'Q' the next morning! \nTechnology helps identify learning patterns, but the teacher designs the lesson to help the children succeed!\n\nPART 3: WHY TEACHERS REMAIN THE HEART OF THE CLASSROOM 👩‍🏫❤️\nBolt says: 'BEEP BOOP! Listen to me very carefully, superstar! \nCan an interactive smartboard give you a warm hug when you scrape your knee on the playground? \nNO! 🙅‍♂️\nCan an AI computer notice that you are feeling sad and ask if you had a bad morning? \nNO! 🙅‍♀️\nCan a tablet feel real joy and pride when you finally learn how to read a difficult chapter? \nNO! 🙅‍♂️'\n\nSmart technology in schools is a TOOLBOX — just like a box of colourful crayons, a sturdy wooden ruler, or a telescope! \nA telescope helps your eyes see the distant moon, but the telescope cannot love the stars! \nA smartboard helps teachers display knowledge, but only your TEACHER has the human heart, wisdom, patience, and love to guide you, inspire your dreams, and help you grow into a kind, capable human being! \n\nAlways say a warm 'Thank you, Teacher!' every day! 🌟🍎\n\nBOLT'S SECTION 1 TOAST: 🏫 'TAP THE INTERACTIVE SMARTBOARD TO LIGHT UP CLASSROOM KNOWLEDGE! BEEP BOOP! 📺⚡'",
+      "examples": [
+        {
+          "title": "Teacher Priya's Interactive Reading Lesson 📖🌻",
+          "description": "On Thursday morning, Teacher Priya opens a digital story about sunflowers on the classroom smartboard. As the supported text-to-speech engine reads the sentences aloud with expressive intonation, each word highlights in bright yellow on screen. Little Meera, who sometimes finds long words intimidating, smiles as she follows the bouncing yellow box. By seeing the letters and hearing the sounds together, Meera reads every sentence aloud with her classmates with complete confidence!",
+          "realLifeScenario": "Class 3B reading circle at 10 am 🏫 • Students follow highlighted text on the interactive smartboard while listening to clear spoken narration, building literacy together! 📖✨"
+        },
+        {
+          "title": "Exploring 3D Dinosaurs on the Big Screen 🦖🌋",
+          "description": "During science class, Kabir steps up to the smartboard and swipes his finger across the screen. The 3D Tyrannosaurus Rex rotates smoothly, showing its powerful leg muscles and jagged fossilized jaw. Teacher Priya taps a button, and the smartboard compares the dinosaur's height to a modern two-story school bus! The children see instantly that the T-Rex was twice as tall as their bus, making prehistoric history come alive in vivid scale!",
+          "realLifeScenario": "Science period before recess 🔬 • Kabir interacts with a rotating 3D dinosaur simulation on the smartboard, comparing prehistoric sizes to everyday objects! 🦖🚌"
+        },
+        {
+          "title": "The Smart Shape Snapper in Art Class 🎨📐",
+          "description": "Arjun is designing a stained-glass window pattern on his learning tablet. When he draws a wobbly star with his finger, the smart drawing application detects the pattern and snaps the lines into a symmetrical five-pointed star with sharp, clean points. Arjun colours each diamond facet with digital jewel tones, feeling like a professional designer! The smart tool helped him translate the idea in his head onto the screen without frustration!",
+          "realLifeScenario": "Art studio period at 1:30 pm 🎨 • Arjun uses a smart shape-snapping drawing app to create symmetrical geometric patterns on his tablet screen! 🖌️⭐"
+        },
+        {
+          "title": "Classroom Maths Quiz with Friendly Visual Hints ❓🍎",
+          "description": "During addition review, Riya answers a question on the smartboard: '8 + 7'. She accidentally taps '14'. Instead of a harsh buzzer, the smartboard displays two baskets with eight green apples and seven red apples, gently suggesting: 'Count the red apples starting from eight!' Riya counts: '9, 10, 11, 12, 13, 14, 15!' She taps '15', and colourful balloons float up the screen! Teacher Priya pats her shoulder: 'Great job counting through the hint, Riya!'",
+          "realLifeScenario": "Maths review session 🧮 • Riya uses visual grouping hints on the interactive board to self-correct an addition problem with her teacher's encouragement! 🍎🎈"
+        },
+        {
+          "title": "Cursive Tracing with Glowing Guidance ✏️⭐",
+          "description": "In handwriting practice, Kabir traces the flowing curve of cursive letter 'B' on his tablet. The screen guides his stylus with a tiny glowing cartoon bee that buzzes along the correct stroke path. If Kabir lifts the pen too early, the bee pauses and waits patiently. Kabir finishes five perfect cursive letters and receives a digital gold star stamp from Teacher Priya!",
+          "realLifeScenario": "Handwriting workshop 📝 • Kabir follows a glowing interactive guide on his tablet to master cursive letter strokes smoothly! 🐝✨"
+        }
+      ],
+      "keyPoints": [
+        "Interactive smartboards are large touchscreen displays that help teachers show visual and audio lessons 📺✨",
+        "Supported reading features can highlight words as they are read aloud, aiding literacy and pronunciation 📖🗣️",
+        "Digital tools allow children to explore 3D models, smooth drawings, and practice maths with friendly visual hints 🦖🎨",
+        "Not every classroom screen or digital device uses AI — many are wonderful electronic display tools! 💡⚖️",
+        "Technology supports learning, but human teachers remain the essential heart, guide, and mentor of the classroom 👩‍🏫❤️"
+      ],
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "The Interactive Smartboard: The Modern Blackboard 📺✨",
+          "conceptSummary": "Interactive smartboards are large touchscreen displays that display multimedia lessons without chalk dust.",
+          "storySnippet": "Teacher Priya taps the giant screen with a stylus, turning the white surface into a vibrant world map.",
+          "boltExplanation": "BEEP BOOP! No more sneezing from dusty chalk! Smartboards let teachers draw, move shapes, and play educational clips!",
+          "childQuestion": "Can students write on an interactive smartboard too?",
+          "answerForChild": "Yes! Students can use soft stylus pens or finger touch to solve maths puzzles, write words, and draw diagrams together.",
+          "didYouKnow": "The first interactive whiteboards were manufactured in 1991 for office presentations before transforming classrooms!",
+          "keyTakeaway": "Smartboards make classroom learning visual, interactive, and dust-free 📺🖍️"
+        },
+        {
+          "partNumber": 2,
+          "title": "Supported Story Reading: Sound and Sight Together 📖🗣️",
+          "conceptSummary": "Highlighted words synchronized with audio narration assist emerging readers and diverse learners.",
+          "storySnippet": "Meera follows the bouncing yellow highlight on the smartboard, reading aloud with the narrator with growing confidence.",
+          "boltExplanation": "BEEP BOOP! Hearing the word and seeing the letters at the exact same instant helps your brain build reading bridges!",
+          "childQuestion": "Why is audio highlighting helpful for children learning a new language?",
+          "answerForChild": "It shows exact pronunciation while reinforcing spelling, helping students build vocabulary much faster.",
+          "didYouKnow": "Multisensory reading tools increase reading comprehension by up to thirty percent in early elementary students!",
+          "keyTakeaway": "Synchronized reading features boost reading confidence and vocabulary 📖🌟"
+        },
+        {
+          "partNumber": 3,
+          "title": "3D Dinosaurs and Spatial Science 🦖🌋",
+          "conceptSummary": "Rotating 3D models allow students to inspect anatomy and understand real-world scale visually.",
+          "storySnippet": "Kabir rotates the 3D T-Rex model on screen, comparing its towering height to a two-story school bus.",
+          "boltExplanation": "BEEP BOOP! Looking at flat pictures is fine, but spinning a 3D model lets you inspect fossils from every angle!",
+          "childQuestion": "How do 3D models help science lessons?",
+          "answerForChild": "They let you zoom in on tiny details, rotate around objects, and see how creatures looked in real life.",
+          "didYouKnow": "Museum paleontologists scan real fossil bones with laser scanners to create digital 3D models for schools worldwide!",
+          "keyTakeaway": "Interactive 3D models bring prehistoric science and history to life 🦖🔍"
+        },
+        {
+          "partNumber": 4,
+          "title": "Creative Art Tools & Shape Recognition 🎨📐",
+          "conceptSummary": "Smart shape tools assist children by smoothing wobbly hand sketches into crisp geometric figures.",
+          "storySnippet": "Arjun draws a shaky star with his finger, and the art app smooths it into a crisp symmetrical star for his stained-glass design.",
+          "boltExplanation": "BEEP BOOP! Technology doesn't replace your imagination — it helps you bring your inner vision onto the screen!",
+          "childQuestion": "Does using a digital art tool mean you don't need real paint?",
+          "answerForChild": "Not at all! Digital art is great for exploring patterns and colours, and real painting is wonderful for tactile brush skills!",
+          "didYouKnow": "Professional animators who create your favourite cartoons use digital drawing tablets with shape-assist tools every day!",
+          "keyTakeaway": "Smart drawing tools support creative exploration and spatial design 🎨✨"
+        },
+        {
+          "partNumber": 5,
+          "title": "Teachers: The Irreplaceable Soul of School 👩‍🏫💖",
+          "conceptSummary": "Smart tools provide information, but human teachers provide emotional support, character guidance, and love.",
+          "storySnippet": "Teacher Priya notices Kabir feeling discouraged, gives him a gentle smile, and explains the puzzle step-by-step.",
+          "boltExplanation": "BEEP BOOP! A computer screen can never feel pride or give you an encouraging high-five! Teachers are the true heroes!",
+          "childQuestion": "Can a robot ever replace a human teacher?",
+          "answerForChild": "Never! Robots have no empathy, no genuine feelings, and no human wisdom. Teachers inspire, care, and guide us.",
+          "didYouKnow": "Surveys around the world show that adults remember their favourite elementary school teachers for their entire lives!",
+          "keyTakeaway": "Technology supports learning, but human teachers remain the essential heart of the classroom 👩‍🏫❤️"
+        }
+      ],
+      "guidedQuestions": [
+        {
+          "questionId": "gq1_1",
+          "question": "What is the main advantage of an interactive smartboard over an old chalkboard?",
+          "options": [
+            "It makes a loud roaring sound like a tiger 🐯",
+            "It displays interactive multimedia, 3D models, and videos without messy chalk dust 📺✨",
+            "It only works in total darkness 🌙",
+            "It gives out free lollipops 🍭"
+          ],
+          "answer": "It displays interactive multimedia, 3D models, and videos without messy chalk dust 📺✨",
+          "explanation": "Smartboards allow teachers to show interactive digital content, zoom in on diagrams, and eliminate chalk dust! 📺",
+          "hint": "What can a large touchscreen computer do that a chalkboard cannot?",
+          "boltCheer": "BEEP BOOP! Clean, vibrant, and interactive! Smartboards lead the way! ⭐"
+        },
+        {
+          "questionId": "gq1_2",
+          "question": "How does synchronized text highlighting help emerging readers?",
+          "options": [
+            "It makes the screen blink like fireworks 🎆",
+            "It connects spoken word sounds directly to letter spellings on screen 📖🗣️",
+            "It hides difficult words so nobody has to read them 🙈",
+            "It turns words into comic cartoons 🦸‍♂️"
+          ],
+          "answer": "It connects spoken word sounds directly to letter spellings on screen 📖🗣️",
+          "explanation": "Seeing words highlighted while hearing them spoken aloud reinforces pronunciation, spelling, and literacy! 📖",
+          "hint": "What happens when you see and hear a word at the exact same moment?",
+          "boltCheer": "BEEP BOOP! Sight and sound together build super reading power! 🌻"
+        },
+        {
+          "questionId": "gq1_3",
+          "question": "What does an interactive 3D model allow science students to do?",
+          "options": [
+            "Feed real raw meat to a digital dinosaur 🥩",
+            "Rotate creatures 360 degrees to inspect details and compare scale visually 🦖🔍",
+            "Turn classroom chairs into stone fossils 🪨",
+            "Make the teacher speak in dinosaur roars 🦕"
+          ],
+          "answer": "Rotate creatures 360 degrees to inspect details and compare scale visually 🦖🔍",
+          "explanation": "Rotating 3D models lets students inspect anatomy, observe proportions, and understand real-world scale! 🦖",
+          "hint": "Can you rotate a 3D model to see what its back and tail look like?",
+          "boltCheer": "BEEP BOOP! Full 360-degree science! Prehistoric giants in 3D! 🦖🌋"
+        },
+        {
+          "questionId": "gq1_4",
+          "question": "Does every digital screen in a classroom use Artificial Intelligence?",
+          "options": [
+            "Yes, every screen has an artificial brain 🧠",
+            "No, many screens are simple electronic display monitors without AI 📺⚖️",
+            "Only screens manufactured in space 🚀",
+            "Screens only use AI when students are asleep 😴"
+          ],
+          "answer": "No, many screens are simple electronic display monitors without AI 📺⚖️",
+          "explanation": "Many digital screens are simple display monitors. Not every digital or electronic tool uses AI! 💡",
+          "hint": "Think about ordinary television screens — do all of them think?",
+          "boltCheer": "BEEP BOOP! Accurate distinction! Display tools differ from learning AI! 💡"
+        },
+        {
+          "questionId": "gq1_5",
+          "question": "Why can't smart computers ever replace human teachers?",
+          "options": [
+            "Because computers run out of electric power at 3 pm ⚡",
+            "Because computers lack human empathy, personal encouragement, and genuine love for students 👩‍🏫💖",
+            "Because teachers are taller than computers 📏",
+            "Because computers refuse to drink tea ☕"
+          ],
+          "answer": "Because computers lack human empathy, personal encouragement, and genuine love for students 👩‍🏫💖",
+          "explanation": "Only human teachers possess genuine empathy, personal mentorship, and emotional connection! 🍎",
+          "hint": "Can a metal machine feel real love and pride for your progress?",
+          "boltCheer": "BEEP BOOP! Teachers are the heart and soul of school! Always cherish them! 👩‍🏫❤️"
+        }
+      ]
+    },
+    {
+      "sectionId": "section2",
+      "title": "Smart School Buses and Safe Travel 🚌📍",
+      "content": "BEEP BOOP! Welcome to Section 2! Now let us leave the classroom and step outside to the school gate where giant yellow school buses carry students safely across our neighborhoods! 🚌📍🛣️\n\nPART 1: HOW DOES A SCHOOL BUS KNOW WHERE IT IS? 🛰️🗺️\nHave you ever looked out the window of your family car or a school bus and noticed a little device with a screen on the dashboard? Or have you watched your parents look at a moving map on their phone to see where a taxi or bus is travelling? \nThat magical location tracking is powered by a technology called GPS (Global Positioning System)! 🛰️📍\n\nHow does GPS work in simple words?\nHigh above the Earth, far out in space where the stars shine, there are dozens of special satellites flying in orbit around our planet. \nThese satellites constantly beam down invisible radio signals toward the ground. \nA tiny GPS receiver chip inside the school bus catches the signals from several satellites at the exact same moment. \nBy calculating how long each signal took to travel through the sky, the computer chip figures out the bus's exact location on the road! \nThe bus system transmits that location data over safe cellular networks to an authorised school map application! 📲🗺️\n\nPART 2: THE TWO-MINUTE ARRIVAL SCENARIO ⏱️🚌\nImagine it is 7:40 on a brisk morning. Arjun and his mother are finishing breakfast in their apartment. \nArjun's mother opens the school's authorised bus-tracking application on her smartphone. \nOn the digital map, there is a cheerful yellow bus icon moving smoothly along Park Avenue toward their apartment complex. \nThe screen displays a friendly message: \n'Bus 14 is approximately two minutes away from your stop.' \nLook at how helpful that information is! \nArjun's mother says: 'Arjun, put on your shoes and pick up your school bag. The bus will be at the corner in two minutes!' \nArjun finishes tying his shoelaces calmly, puts on his backpack, and walks down to the designated safe bus stop behind the yellow curb line with his mother. \nThey do not have to stand shivering in the rain or sweating in the hot sun for twenty anxious minutes wondering when the bus will arrive! \nThey arrive at the curb just as the big yellow bus rolls to a gentle stop! \n\nPART 3: CRITICAL REAL-WORLD ACCURACY RULES ⚠️📍\nBolt says: 'BEEP BOOP! Listen closely to Bolt's golden rules about transport tracking! Technology is helpful, but the real world has traffic!' 🚦\n\nRule 1: GPS ESTIMATES ARE NOT ALWAYS EXACT! ⏱️\nWhen the app says 'approximately two minutes away', that is an ESTIMATE, not a magical guarantee! \nIf a delivery truck suddenly stops to unload boxes, or if a traffic light turns red, or if there is heavy morning rain, the bus might take four or five minutes instead of two! \n\nRule 2: NOT EVERY SCHOOL BUS HAS GPS TRACKING! 🚌\nMany school buses around the world are traditional, reliable buses operated by experienced drivers without computer tracking systems. Never assume every bus has a live map! \n\nRule 3: TRACKING FEATURES DEPEND ON SCHOOL SYSTEMS! 🏫\nOnly systems configured and approved by your school district can provide authorized tracking features. \n\nRule 4: PRIVACY AND ACCESS ARE STRICTLY PROTECTED! 🔒\nOnly verified parents, guardians, and school administrators have permission to access a child's transport tracking application. Location data is private personal information that must NEVER be shared with strangers! \n\nRule 5: THE DRIVER IS THE REAL SAFETY HERO! 👨‍✈️🚌\nGPS technology only shares location data. The BUS DRIVER is the human professional who checks the mirrors, steers carefully around potholes, watches for pedestrians, and ensures every child sits safely during the journey! Technology provides information, but the driver provides care and attention! \n\nPART 4: BOLT'S GOLDEN BUS STOP SAFETY RULES 🛡️🚏\nBefore we head to Section 3, let us review Bolt's rules for staying safe at the bus stop every single day:\n1. ALWAYS wait in the designated safe place behind the painted yellow curb line with a parent, guardian, or teacher! 🚏\n2. NEVER run toward a moving bus! Wait until the bus wheels stop rolling completely and the driver opens the door! 🛑\n3. HOLD the handrail firmly when climbing the stairs into the bus! 🪜\n4. WALK straight to your seat, sit down, and keep your bag on your lap or under your seat! 🪑\n5. NEVER share your bus route, stop location, or family passwords with strangers or in public chat rooms! 🔒\n6. IF an app notification seems confusing or wrong, ALWAYS ask a parent or trusted adult for guidance! 👨‍👩‍👧\n\nBOLT'S SECTION 2 TOAST: 🚌 'TAP THE YELLOW BUS TO ACTIVATE SAFE ROUTE RADAR! BEEP BOOP! 📍⚡'",
+      "examples": [
+        {
+          "title": "The Rainy Morning Two-Minute Alert 🌧️📱",
+          "description": "On a rainy Tuesday, Kabir's father checks the school transport app over breakfast. The app shows that Bus 7 is moving through the adjacent neighborhood and estimates arrival at their apartment gate in approximately two minutes. Instead of standing outside under an umbrella for fifteen minutes in the downpour, Kabir puts on his raincoat calmly and walks downstairs with his father just as the yellow bus halts safely by the covered entrance!",
+          "realLifeScenario": "Apartment lobby at 7:42 am on a rainy day 🌧️ • Kabir uses the authorized arrival estimate to minimize waiting in wet weather while boarding safely! 🚌☔"
+        },
+        {
+          "title": "Traffic Delay Notification at the School Gate 🚦📲",
+          "description": "A minor road construction detour delays Bus 12 by ten minutes on Wednesday morning. The school's centralized transportation system automatically detects the slower route and sends a notification to waiting parents: 'Bus 12 delayed by 10 minutes due to roadwork on Main Street.' Riya's mother reads the message and stays inside with Riya, finishing a storybook instead of worrying. Clear communication keeps families informed and relaxed!",
+          "realLifeScenario": "Breakfast table communication update ☕ • A delayed route notification informs waiting parents of road construction, keeping mornings peaceful! 📲🚧"
+        },
+        {
+          "title": "Waiting Behind the Yellow Curb Line 🚏🛑",
+          "description": "At the community bus stop, eight children stand in a neat line behind the bright yellow curb line painted on the pavement. Even when they hear the bus engine approaching, no one steps forward into the gutter. They wait patiently until the bus brakes hiss to a complete stop, the warning lights flash, and the folding doors swing open. Only then do they walk forward one by one holding the handrail. Practicing the safety routine keeps everyone safe on busy streets!",
+          "realLifeScenario": "Neighborhood sidewalk bus stop 🚸 • Children demonstrate proper pedestrian safety by remaining behind the yellow line until the bus halts completely! 🚌✨"
+        },
+        {
+          "title": "The Driver's Focus: Real Heroes Behind the Wheel 👨‍✈️🛣️",
+          "description": "Driver Uncle Rajesh has driven Bus 5 for fourteen years. Although his dashboard features a GPS screen showing route turns, Uncle Rajesh keeps his sharp eyes focused on the road ahead, checking pedestrian crossings, slowing down near puddle splashes, and greeting every student by name. Kabir notes in his safety journal: 'The GPS shows the map, but Uncle Rajesh's caring eyes keep us safe!'",
+          "realLifeScenario": "Morning bus commute through the city 🌆 • An experienced bus driver navigates busy intersections safely while using GPS as a supportive navigational tool! 🚌🚦"
+        },
+        {
+          "title": "Protecting Private Location Information 🔒🛡️",
+          "description": "During an online class about digital citizenship, Arjun's teacher explains that home addresses, bus numbers, and daily travel schedules are private personal details. Arjun learns that he should never post photos of his bus stop or share live location links in online games. Arjun keeps his transport app details strictly between himself and his parents, practicing true digital safety!",
+          "realLifeScenario": "Digital citizenship classroom workshop 💻 • Arjun learns why live location tracking data is private family information that must never be shared online! 🛡️🔒"
+        }
+      ],
+      "keyPoints": [
+        "GPS uses satellites high in space to calculate approximate vehicle locations on digital maps 🛰️📍",
+        "Authorized school bus apps can estimate arrival times (like 'two minutes away'), helping families prepare calmly ⏱️🚌",
+        "Estimated arrival times are not exact guarantees and can change due to morning traffic or weather 🚦🌧️",
+        "Not every school bus uses GPS tracking, and tracking features depend on specific school systems 🏫⚖️",
+        "Always wait safely behind the curb until the bus stops completely, and keep location data strictly private 🚏🔒"
+      ],
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "Satellites in the Sky: How GPS Works 🛰️🌍",
+          "conceptSummary": "GPS satellites in space send radio signals to vehicle receivers to calculate exact road coordinates.",
+          "storySnippet": "Arjun looks up at the sunny sky, imagining invisible satellite signals beaming coordinates to the school bus.",
+          "boltExplanation": "BEEP BOOP! Satellites orbiting thousands of miles above Earth talk to little chips on the bus roof! Space technology on wheels!",
+          "childQuestion": "How many satellites does a GPS receiver need to find its location?",
+          "answerForChild": "A receiver needs signals from at least four satellites to calculate its exact spot on the map accurately.",
+          "didYouKnow": "GPS was originally built by space scientists, and there are over thirty GPS satellites orbiting Earth right now!",
+          "keyTakeaway": "Satellites in space beam signals to Earth to pinpoint vehicle locations on maps 🛰️📍"
+        },
+        {
+          "partNumber": 2,
+          "title": "The Two-Minute Arrival Notification ⏱️📱",
+          "conceptSummary": "Estimated arrival alerts help families prepare shoes and bags calmly, reducing curb wait times.",
+          "storySnippet": "Kabir's father sees the two-minute alert, prompting Kabir to put on his shoes and walk calmly to the stop.",
+          "boltExplanation": "BEEP BOOP! Knowing when the bus is two minutes away turns stressful rushing into a peaceful morning walk!",
+          "childQuestion": "Does 'two minutes away' mean you should run out into the street instantly?",
+          "answerForChild": "No! It means put on your shoes, pick up your bag, and walk calmly to the safe curb with an adult.",
+          "didYouKnow": "School transport apps reduce pedestrian curb waiting times by an average of twelve minutes per family!",
+          "keyTakeaway": "Arrival estimates allow families to prepare calmly and reach stops on time ⏱️🎒"
+        },
+        {
+          "partNumber": 3,
+          "title": "Why Estimates Can Change: Traffic & Weather 🚦🌧️",
+          "conceptSummary": "Real-world traffic jams, detours, and rain can cause arrival estimates to shift.",
+          "storySnippet": "Roadwork delays Bus 12 by ten minutes, and the app updates waiting parents with an automated delay notice.",
+          "boltExplanation": "BEEP BOOP! Real roads have traffic lights, puddles, and roadwork! Estimates are guides, not magic guarantees!",
+          "childQuestion": "Why shouldn't you get frustrated if a bus is two minutes late?",
+          "answerForChild": "Because safe driving in morning traffic takes time! The driver's job is to drive carefully, not dangerously fast.",
+          "didYouKnow": "Professional bus drivers are trained to prioritize child safety over schedule speed in all weather conditions!",
+          "keyTakeaway": "Traffic and weather naturally affect travel times — safety always comes before speed 🚦🚌"
+        },
+        {
+          "partNumber": 4,
+          "title": "Curb Safety: Waiting Behind the Yellow Line 🚏🛑",
+          "conceptSummary": "Never step toward a moving bus; wait behind the curb until wheels come to a complete halt.",
+          "storySnippet": "The Class 3 students stand behind the painted yellow curb line, waiting for the bus doors to hiss open safely.",
+          "boltExplanation": "BEEP BOOP! Moving wheels are heavy! Stay behind the yellow curb line until the bus is completely stationary!",
+          "childQuestion": "What should you do if your water bottle drops into the street near a bus?",
+          "answerForChild": "NEVER run into the road to grab it! Tell the bus driver or a parent immediately so they can retrieve it safely.",
+          "didYouKnow": "School bus safety lights turn flashing amber to warn traffic before turning red with an extended stop sign!",
+          "keyTakeaway": "Always wait safely behind the curb line until the bus halts completely 🚏🛑"
+        },
+        {
+          "partNumber": 5,
+          "title": "Location Privacy: Keeping Travel Routes Safe 🔒🛡️",
+          "conceptSummary": "Daily travel routes and bus stop locations are private information that must never be shared online.",
+          "storySnippet": "Arjun remembers his digital safety rules and never posts photos of his bus stop or travel times on public forums.",
+          "boltExplanation": "BEEP BOOP! Your home address and travel times are private family treasures! Keep them locked and safe!",
+          "childQuestion": "Why is location data considered private personal information?",
+          "answerForChild": "Because knowing where you are and when you travel is personal safety information that belongs only to your family.",
+          "didYouKnow": "School transport software uses encrypted security protocols to prevent unauthorized people from viewing bus maps!",
+          "keyTakeaway": "Protect travel routes and stop locations — private data stays within the family 🔒🛡️"
+        }
+      ],
+      "guidedQuestions": [
+        {
+          "questionId": "gq2_1",
+          "question": "Where do GPS satellites orbit to send signals down to school buses?",
+          "options": [
+            "Underneath the deep ocean water 🌊",
+            "High above Earth in outer space 🛰️✨",
+            "Inside the bus tyres 🛞",
+            "At the top of the classroom flagpole 🚩"
+          ],
+          "answer": "High above Earth in outer space 🛰️✨",
+          "explanation": "GPS satellites orbit thousands of miles above Earth in space, transmitting radio signals down to vehicles! 🛰️",
+          "hint": "Where do satellites fly above the clouds?",
+          "boltCheer": "BEEP BOOP! Satellite signals beamed from space! High-tech navigation! ⭐"
+        },
+        {
+          "questionId": "gq2_2",
+          "question": "What should a child do when the bus tracking app says the bus is two minutes away?",
+          "options": [
+            "Hide under the bed 🛏️",
+            "Put on shoes, pick up the school bag, and walk calmly to the stop with an adult 👟🎒",
+            "Run wildly through traffic 🏃",
+            "Start painting a wooden fence 🎨"
+          ],
+          "answer": "Put on shoes, pick up the school bag, and walk calmly to the stop with an adult 👟🎒",
+          "explanation": "Two-minute notices give families time to put on footwear, grab bags, and arrive at the stop calmly! 🎒",
+          "hint": "How does the alert help you leave the house calmly?",
+          "boltCheer": "BEEP BOOP! Calm, prepared mornings are the best! Ready on time! ⏱️✨"
+        },
+        {
+          "questionId": "gq2_3",
+          "question": "Why might a school bus arrive a few minutes later than the app estimated?",
+          "options": [
+            "Because the bus was abducted by space aliens 🛸",
+            "Because morning traffic jams, traffic lights, and rainy weather naturally slow down travel 🚦🌧️",
+            "Because the road disappeared into thin air 💨",
+            "Because the wheels fell asleep 😴"
+          ],
+          "answer": "Because morning traffic jams, traffic lights, and rainy weather naturally slow down travel 🚦🌧️",
+          "explanation": "Real-world traffic conditions and weather delays can change travel times. Drivers prioritize safety over speed! 🚌",
+          "hint": "What happens when many cars are driving in heavy rain?",
+          "boltCheer": "BEEP BOOP! Traffic and weather are real! Safety always comes first! 🚦"
+        },
+        {
+          "questionId": "gq2_4",
+          "question": "What is the single most important rule when waiting at the bus stop?",
+          "options": [
+            "Run toward the moving bus to get the front seat 🏃",
+            "Wait safely behind the curb line until the bus comes to a complete stop 🚏🛑",
+            "Throw pebbles at the windscreen 🪨",
+            "Dance in the middle of the road 💃"
+          ],
+          "answer": "Wait safely behind the curb line until the bus comes to a complete stop 🚏🛑",
+          "explanation": "Staying behind the curb until the bus stops completely prevents accidents near moving vehicle wheels! 🛑",
+          "hint": "Where should you stand while the bus wheels are still rolling?",
+          "boltCheer": "BEEP BOOP! Behind the curb every time! Life-saving safety habit! 🚏🛡️"
+        },
+        {
+          "questionId": "gq2_5",
+          "question": "Should you share your bus route and stop times with strangers online?",
+          "options": [
+            "Yes, post it on every public website 📢",
+            "No! Travel routes and stop locations are private personal information that must stay safe 🔒🛡️",
+            "Only if they offer candy 🍬",
+            "Only on weekends 🗓️"
+          ],
+          "answer": "No! Travel routes and stop locations are private personal information that must stay safe 🔒🛡️",
+          "explanation": "Your travel schedule and location are private information that should only be known by family and school staff! 🔒",
+          "hint": "Is your daily schedule private family information?",
+          "boltCheer": "BEEP BOOP! Privacy shield locked tight! Cyber safety champion! 🛡️🔒"
+        }
+      ]
+    },
+    {
+      "sectionId": "section3",
+      "title": "Smart Libraries and School Discoveries 📚🔔🎨",
+      "content": "BEEP BOOP! Welcome to Section 3! Now let us tiptoe quietly through the wooden double doors into one of the most magical rooms in the entire school building: THE SCHOOL LIBRARY! 📚🔔🎨✨\n\nPART 1: THE DIGITAL LIBRARY CATALOGUE 🖥️📖\nImagine walking into a grand school library with ten thousand colourful books arranged across dozens of tall wooden shelves. \nYou are working on a school science project, and you want to find a book about DINOSAURS! 🦖\nIf you had to walk along every single aisle looking at every book spine one by one, it might take you four whole hours, and lunchtime would be over before you found what you needed! \n\nInstead, you walk over to a friendly computer terminal sitting on the front desk. That computer runs a program called a DIGITAL LIBRARY CATALOGUE! 💻\nYou tap the search bar and type: 'dinosaur books'. \nWithin two seconds, the digital catalogue displays:\n- 'The Big Book of Prehistoric Dinosaurs' (Shelf 3B, Science Section) 🦖\n- 'Danny and the Dancing Dinosaur' (Shelf 1A, Storybook Section) 🦕\n- 'Fossils and Bones: Digging the Past' (Shelf 3C, Nature Section) 🦴\nThe screen tells you:\n1. Which shelf the book lives on 📍\n2. How many copies are available right now ✅\n3. What kind of book it is (picture book, story, or science facts) 📖\n\nYou show the screen to kind Mrs. Sharma, the school librarian. Mrs. Sharma smiles warmly: 'Ah, you want prehistoric giants? Let's walk over to Shelf 3B together!' \nShe guides you directly to the shelf, pulls down the book with the big green Triceratops on the cover, and checks it out for you! \nLook at how beautifully technology and people worked together:\nThe digital catalogue found the information in two seconds, and the librarian gave you human guidance, book advice, and care! 🤝📚\n\nPART 2: NOT EVERY DIGITAL LIBRARY USES AI! 💡⚖️\nBolt says: 'BEEP BOOP! Time for another critical detective truth! \nDoes a digital library search catalogue always use Artificial Intelligence? \nNO! In fact, most library catalogues use ORDINARY DATABASE SEARCHING!'\n\nLet us understand the difference:\n- ORDINARY SEARCH: You type the exact word 'dinosaur', and the computer looks through its database list for books that have the word 'dinosaur' in their title or summary. That is simple, reliable, keyword matching — not AI! 🔍\n- AI-POWERED RECOMMENDATIONS: Some newer, advanced library systems might notice: 'You borrowed books about T-Rex and Triceratops last month, and you also like drawing prehistoric animals! You might love this brand-new book about flying Pterodactyls!' When a system suggests new books based on your reading patterns, THAT is an AI recommendation engine! 🤖✨\n\nBoth tools are wonderful, but understanding the difference makes you a smart digital explorer!\n\nPART 3: OTHER EVERYDAY SCHOOL TOOLS: SMART OR ORDINARY? 🔔🎨\nLet us inspect five other everyday tools found in schools and test whether they are smart AI helpers or ordinary electronic tools:\n\n1. THE SCHOOL BELL 🔔⏰\nAt 9:00 am, the school bell rings: *BRRRRIIIING!* Time for class! \nAt 12:30 pm, the bell rings again: Time for lunch! \nIs the school bell an AI helper? \nNO! The school bell is an ordinary electronic timer! It is connected to an electric clock in the principal's office. When the clock hits 9:00 am, an electric switch closes and rings the bell. It does not think, it does not learn, and it does not know if it is raining or sunny outside! It is a reliable ordinary tool! \n\n2. SCHOOL ANNOUNCEMENT SPEAKERS 📢🏫\nWhen the principal speaks into the office microphone to announce sports day winners, speakers in every hallway broadcast her voice. \nIs this AI? NO! It is an audio amplifier system! It makes human voices louder, but does not think or create words on its own. \n\n3. ANIMAL DISCOVERY APPS 🦁🐾\nIn biology class, students use an approved educational app where they tap pictures of animals to hear realistic safari sounds, view habitat maps, and learn fun facts. The app is a structured educational program designed by human educators to make learning interactive! \n\n4. DIGITAL ART AND COLOUR EXPLORATION 🎨🌈\nIn the art room, digital drawing tablets allow children to paint with virtual watercolours, mix shades, and erase mistakes without wasting paper. It is a creative digital tool guided by your imagination and your art teacher's lessons! \n\n5. VOCABULARY AND SPELLING PRACTICE 🔤💡\nLearning applications can pronounce new vocabulary words clearly and provide spelling exercises. Some adaptive apps adjust the difficulty — offering simpler words if you are struggling or challenging words if you are acing every puzzle — using smart educational rules! \n\nPART 4: LIBRARIANS AND TEACHERS: YOUR LIFELONG LEARNING GUIDES 📚❤️\nAlways remember: A computer search catalogue can give you a list of one hundred books, but it cannot tell you which book will make you smile on a quiet Sunday afternoon! \nOnly your librarian can say: 'I read this story when I was in Class 3, and I think you will love the brave little squirrel character!' \nAlways cherish your school librarians, teachers, and school helpers. They are the true guides who turn information into real wisdom! 🌟\n\nBOLT'S SECTION 3 TOAST: 📚 'TAP THE MAGICAL LIBRARY BOOK TO UNLOCK INFINITE DISCOVERY POWER! BEEP BOOP! 🦖⚡'",
+      "examples": [
+        {
+          "title": "Kabir's Search for the T-Rex Dinosaur Book 🦖🔍",
+          "description": "Kabir walks to the school library desktop computer and types 'dinosaur books' into the catalogue search bar. The digital catalogue immediately lists twelve books and highlights 'Prehistoric Giants of the Cretaceous' on Shelf 3B. Kabir shows the screen to Mrs. Sharma, the librarian, who walks with him to the exact shelf, pulls down the book, and checks its loan barcode in fifteen seconds. Kabir spends his whole library period reading about fossil digs instead of wandering lost among shelves!",
+          "realLifeScenario": "School library search kiosk at 11:30 am 📚 • Kabir uses the digital catalogue to locate a dinosaur book on Shelf 3B with the librarian's warm assistance! 🦖📍"
+        },
+        {
+          "title": "The Timed School Bell vs Smart AI 🔔⏰",
+          "description": "During an assembly question about technology, Arjun asks whether the loud electric bell on the corridor wall has an artificial intelligence brain. Principal Mehta explains with a smile: 'No, Arjun! The bell is plugged into an electric clock timer. When the hands reach twelve o'clock, the electric circuit connects and rings the bell. It is an ordinary automated timer, not AI!' The students learn that not every electric device has AI inside!",
+          "realLifeScenario": "School hallway assembly demonstration 🏫 • The principal explains that the electronic school bell operates on a simple clock timer without AI! 🔔⏱️"
+        },
+        {
+          "title": "The Interactive Animal Safari Soundboard 🦁🐘",
+          "description": "In environmental studies, Teacher Priya projects a world map onto the smartboard. When students tap the African savanna, authentic recorded sounds of roaring lions and trumpeting elephants play through the room, accompanied by short informational fact bubbles. The students learn about animal habitats interactively through teacher-guided multimedia!",
+          "realLifeScenario": "Geography and nature period 🌍 • Students tap savanna regions on an interactive map to hear recorded wildlife calls and explore animal habitats! 🦁🔊"
+        },
+        {
+          "title": "Digital Watercolours in the Art Room 🎨💧",
+          "description": "During art class, Riya experiments with a digital watercolour brush on the school tablet. When she overlaps yellow and cyan on the digital canvas, the software simulates how wet watercolour pigments bleed together to form vivid spring green. Riya prints her artwork to hang on the classroom gallery wall, having mastered colour blending without a single water spill!",
+          "realLifeScenario": "Class 3 art gallery project 🎨 • Riya blends digital watercolour pigments on a tablet screen, mastering primary and secondary colour theory! 🖌️🌈"
+        },
+        {
+          "title": "Adaptive Spelling Words with Glowing Badges 🔤⭐",
+          "description": "In English lab, Kabir practices spelling using an educational software program. When Kabir spells 'dinosaur' and 'fossil' correctly on his first try, the application introduces 'prehistoric' as a bonus challenge card. The adaptive tool matches Kabir's pace, keeping him engaged and proud of his expanding vocabulary!",
+          "realLifeScenario": "Language laboratory period 💻 • An educational spelling program adjusts difficulty levels to challenge Kabir with advanced vocabulary words! 📝🌟"
+        },
+        {
+          "title": "Librarian Mrs. Sharma's Personal Recommendation 📖💖",
+          "description": "After Kabir finishes his dinosaur book, Mrs. Sharma notices his fascination with prehistoric creatures. She walks to her special desk shelf and hands him a storybook about fossil-hunting pioneer Mary Anning: 'You loved the dinosaurs, Kabir; now read about the girl who discovered them!' Kabir reads the story with wide eyes, experiencing the human warmth of a librarian who truly knows her students!",
+          "realLifeScenario": "Library checkout desk on Friday afternoon 📚 • The librarian gives a personalized book recommendation based on her student's passions! 💖🦕"
+        }
+      ],
+      "keyPoints": [
+        "Digital library catalogues help students search for books by topic, author, or title in seconds 📚🔍",
+        "Most search catalogues use ordinary database matching, while advanced systems may use AI recommendations 💡⚖️",
+        "Not every school tool uses AI — school bells and audio speakers are ordinary electronic devices 🔔📢",
+        "Digital art, reading, and spelling applications provide engaging interactive practice under teacher guidance 🎨🔤",
+        "Librarians and teachers provide personal care, wisdom, and recommendations that no computer can match 👩‍🏫❤️"
+      ],
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "The Digital Library Search Engine 🖥️🔍",
+          "conceptSummary": "Search catalogues match keywords in book titles and summaries to find shelf locations in seconds.",
+          "storySnippet": "Kabir types 'dinosaur books' into the library catalogue, and the screen highlights Shelf 3B immediately.",
+          "boltExplanation": "BEEP BOOP! Instead of searching ten thousand books for hours, the computer finds matching titles in two seconds flat!",
+          "childQuestion": "How does the catalogue know where a book is located?",
+          "answerForChild": "Every book has a unique shelf code in the library database. The computer matches the title to the exact shelf number.",
+          "didYouKnow": "The famous Dewey Decimal system for organizing library books was invented by Melvil Dewey back in 1876!",
+          "keyTakeaway": "Digital catalogues locate books by topic and shelf code in seconds 📚📍"
+        },
+        {
+          "partNumber": 2,
+          "title": "Database Searching vs AI Recommendations 💡⚖️",
+          "conceptSummary": "Keyword matching is ordinary database searching, while analyzing reading patterns to suggest books is AI.",
+          "storySnippet": "Kabir learns that searching 'dinosaur' is a database query, while suggesting a pterodactyl book uses recommendation AI.",
+          "boltExplanation": "BEEP BOOP! Matching exact words is a database search; noticing what you love and suggesting new treasures is AI!",
+          "childQuestion": "What is an AI recommendation engine?",
+          "answerForChild": "A smart system that studies what you enjoyed in the past and suggests new books you might love based on patterns.",
+          "didYouKnow": "Streaming services use recommendation AI similar to library systems to suggest cartoons and educational shows!",
+          "keyTakeaway": "Keyword searches match exact words; recommendation engines suggest new books from patterns 🤖📖"
+        },
+        {
+          "partNumber": 3,
+          "title": "The Timed School Bell: The Clockwork Helper 🔔⏰",
+          "conceptSummary": "School bells ring via electric clock circuits, serving as reliable automated tools without AI.",
+          "storySnippet": "Principal Mehta demonstrates that the hallway electric bell connects to a timer circuit without computer brains.",
+          "boltExplanation": "BEEP BOOP! The bell rings at 9:00 am because the clock hands connect a switch! Simple, sturdy, and reliable!",
+          "childQuestion": "Why doesn't the school bell need Artificial Intelligence?",
+          "answerForChild": "Because class schedules are fixed! A simple clock timer does the job perfectly without needing learning AI.",
+          "didYouKnow": "Before electric bells, schoolmasters rang heavy brass handbells from the schoolhouse porch to call children in from fields!",
+          "keyTakeaway": "Scheduled electric bells operate on simple clock timers, not AI 🔔⏱️"
+        },
+        {
+          "partNumber": 4,
+          "title": "Digital Art & Multimedia Science 🎨🦁",
+          "conceptSummary": "Educational apps present interactive soundboards and colour simulations to deepen exploration.",
+          "storySnippet": "Riya blends digital watercolour pigments on a tablet, and the class listens to authentic lion roars on the smartboard.",
+          "boltExplanation": "BEEP BOOP! Educational apps bring African savannas and art studios directly into the classroom!",
+          "childQuestion": "Why do schools use multimedia soundboards?",
+          "answerForChild": "Because hearing real wildlife sounds and seeing live video helps students understand nature much better than text alone.",
+          "didYouKnow": "Sound libraries record animal calls using specialized parabolic microphones that can capture whispers from miles away!",
+          "keyTakeaway": "Interactive multimedia soundboards bring global nature and art into classrooms 🌍🎨"
+        },
+        {
+          "partNumber": 5,
+          "title": "Librarians: Human Curators of Curiosity 📚💖",
+          "conceptSummary": "Librarians provide personalized mentorship and recommendations that no computer catalogue can duplicate.",
+          "storySnippet": "Mrs. Sharma hands Kabir a book about fossil hunter Mary Anning, connecting his dinosaur passion to human history.",
+          "boltExplanation": "BEEP BOOP! A catalogue lists one hundred titles, but only a librarian knows which story will make your eyes sparkle!",
+          "childQuestion": "How do librarians choose great books for children?",
+          "answerForChild": "They listen to your interests, observe what makes you curious, and draw upon their rich knowledge of wonderful literature.",
+          "didYouKnow": "School librarians often read hundreds of children's books every year to find the very best stories for their students!",
+          "keyTakeaway": "Librarians offer personal care, guidance, and passion that no computer can match 📚❤️"
+        }
+      ],
+      "guidedQuestions": [
+        {
+          "questionId": "gq3_1",
+          "question": "What information does a digital library catalogue provide when you search for a book?",
+          "options": [
+            "The price of gold coins in ancient Rome 🪙",
+            "The book's title, author, shelf location, and whether it is currently available 📚📍",
+            "The recipe for vegetable soup 🥣",
+            "The weather on Mount Everest 🏔️"
+          ],
+          "answer": "The book's title, author, shelf location, and whether it is currently available 📚📍",
+          "explanation": "Library catalogues display matching titles, authors, shelf call numbers, and real-time checkout availability! 📚",
+          "hint": "What details do you need to find a book on the shelf?",
+          "boltCheer": "BEEP BOOP! Shelf location and availability found instantly! 🦖⭐"
+        },
+        {
+          "questionId": "gq3_2",
+          "question": "What is the difference between an ordinary keyword search and an AI recommendation?",
+          "options": [
+            "Keyword search matches exact words; AI recommendations suggest new items based on reading patterns 🔍🤖",
+            "Keyword search only works on Tuesdays 🗓️",
+            "AI recommendations can only recommend broccoli 🥦",
+            "There is zero difference between them ❌"
+          ],
+          "answer": "Keyword search matches exact words; AI recommendations suggest new items based on reading patterns 🔍🤖",
+          "explanation": "Keyword searches look for matching words in titles; AI recommendation systems study interest patterns to suggest new books! 💡",
+          "hint": "Which tool notices what you love and suggests new books you might enjoy?",
+          "boltCheer": "BEEP BOOP! Pattern intelligence vs keyword matching! Master detective! 🌟"
+        },
+        {
+          "questionId": "gq3_3",
+          "question": "Why is an ordinary electric school bell classified as automated, but NOT as AI?",
+          "options": [
+            "Because it is painted silver 🎨",
+            "Because it operates on a simple pre-set clock timer without learning or thinking 🔔⏰",
+            "Because it is too heavy to hold 🏋️",
+            "Because it refuses to eat apples 🍎"
+          ],
+          "answer": "Because it operates on a simple pre-set clock timer without learning or thinking 🔔⏰",
+          "explanation": "The bell rings because a clock connects a circuit at fixed times. It does not think, learn, or adapt! ⏰",
+          "hint": "Does the bell learn new schedules by itself?",
+          "boltCheer": "BEEP BOOP! Clockwork automation is not AI! Sharp thinking! 🔔"
+        },
+        {
+          "questionId": "gq3_4",
+          "question": "How do interactive animal soundboards help environmental science lessons?",
+          "options": [
+            "They scare away all the school pigeons 🐦",
+            "They allow students to hear authentic wildlife calls and connect sounds to habitats 🦁🔊",
+            "They make classroom desks grow fur 🐻",
+            "They turn water taps into lemonade 🍋"
+          ],
+          "answer": "They allow students to hear authentic wildlife calls and connect sounds to habitats 🦁🔊",
+          "explanation": "Authentic wildlife audio helps students connect animal calls to global geographic habitats interactively! 🌍",
+          "hint": "What happens when you hear a real lion roar or elephant trumpet?",
+          "boltCheer": "BEEP BOOP! Authentic wildlife audio brings global science to life! 🦁🐘"
+        },
+        {
+          "questionId": "gq3_5",
+          "question": "Why will human librarians like Mrs. Sharma always be essential in school libraries?",
+          "options": [
+            "Because computers cannot read 🖥️",
+            "Because librarians offer personal care, human empathy, and curated recommendations tailored to each child 📚💖",
+            "Because libraries only exist in movies 🎬",
+            "Because only librarians know how to turn on light switches 💡"
+          ],
+          "answer": "Because librarians offer personal care, human empathy, and curated recommendations tailored to each child 📚💖",
+          "explanation": "Librarians provide personalized human mentorship and inspire a lifelong love of reading with warmth! 📖",
+          "hint": "Can a computer understand your personal feelings and recommend a story that inspires your heart?",
+          "boltCheer": "🏆 MASTER OF SCHOOL DISCOVERIES! Librarians and teachers lead with heart! BEEP BOOP! 🌟❤️"
+        }
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "activityId": "activity1",
+      "title": "Track the Magic School Bus 🚌",
+      "description": "BEEP BOOP! Welcome to the MAIN EVENT of Chapter 3, Lesson 1: TRACK THE MAGIC SCHOOL BUS! 🚌📍🗺️🎮\n\nIn this thrilling educational simulation game, YOU are the School Transport Explorer and Safety Champion! \nBolt's interactive tablet screen displays a pretend digital neighborhood map showing:\n- A bright red brick school building with a clock tower 🏫\n- A wide green school gate with a pedestrian crosswalk 🚏\n- Winding paved neighborhood roads 🛣️\n- A moving yellow school bus icon with friendly flashing headlights 🚌\n- Helpful neighborhood landmarks (a sunny park 🌳, a library 📚, and a community bakery 🥐)\n\nYOUR MISSION, EXPLORER:\nBolt needs your sharp detective eyes to explore the pretend map, identify the smart bus and its approximate location, read estimated arrival times, practice bus stop safety, and sort smart classroom tools from ordinary school objects! \n\nRemember Bolt's golden rules:\n- An estimated arrival time of 'about two minutes' can change because of morning traffic! ⏱️🚗\n- Always wait safely behind the curb until the bus stops completely! 🛑\n- Technology helps us stay informed, but human drivers and teachers keep us safe! 👨‍✈️❤️\n\nScore 5 challenges in a row to earn your School Explorer Streak! Complete all 18 challenges to unlock the GRAND CHAMPION TROPHY! 🏆🎉",
+      "instructions": [
+        "1. Examine the pretend school neighborhood map and situation on screen carefully 👀🗺️",
+        "2. Look for the yellow school bus icon, school gate, and estimated arrival times 🚌📍",
+        "3. Choose the safe, smart, and logical action for each transport and classroom scenario 🟢",
+        "4. Tap the green checkmark or map button to submit your answer! 👆✨",
+        "5. Watch Bolt celebrate with bus horn beeps, green traffic lights, and confetti! 🚌🎉",
+        "6. If you make a mistake, read Bolt's gentle guidance and try again! 💡",
+        "7. Score 5 correct in a row to earn your School Safety Streak Bonus! 🔥",
+        "8. Complete all 18 challenges to win the grand School Explorer Trophy! 🏆🚌"
+      ],
+      "materials": "Touchscreen device, laptop, or desktop computer; your sharp explorer eyes and safety thinking cap 🧠🚌",
+      "duration": "15 mins",
+      "toastMessages": {
+        "tap_prompt": "👇 Tap the smart school bus on the map!",
+        "great_job": "🚌 BEEP BEEP! The smart school bus arrived safely!",
+        "try_again": "📍 Look for the yellow bus icon near the school gate!",
+        "streak_bonus": "🔥 5 IN A ROW! Bolt's circuits are dancing! School Explorer Streak UNLOCKED! 🌟🏫",
+        "perfect_score": "🏆 GRAND CHAMPION SCHOOL EXPLORER! You mastered classroom tech, bus GPS, and school safety! BEEP BOOP! 🎊🚌"
+      },
+      "sortingItems": [
+        {
+          "itemId": "task1",
+          "name": "Challenge A: Find the Bus on the Map 🚌📍",
+          "emoji": "🚌",
+          "category": "map_exploration",
+          "categoryLabel": "Map Exploration Challenges 🗺️",
+          "isCorrect": true,
+          "description": "Look at the pretend neighborhood map showing the school, a bakery, a park, and a moving yellow vehicle icon.",
+          "question": "Which icon on the digital map represents the school bus travelling toward the school?",
+          "options": [
+            "The green tree icon in the park 🌳",
+            "The yellow school bus icon on the road 🚌✨",
+            "The pink croissant icon at the bakery 🥐",
+            "The blue cloud icon in the sky ☁️"
+          ],
+          "correctAnswer": "The yellow school bus icon on the road 🚌✨",
+          "explanation": "The yellow school bus icon represents the GPS-tracked vehicle on the digital route map! 🚌📍",
+          "hint": "Look for the bright yellow vehicle with wheels moving along the paved road!",
+          "positiveFeedback": "🚌 BEEP BEEP! The smart school bus arrived safely! Perfect identification!",
+          "tryAgainFeedback": "📍 Look for the yellow bus icon near the school gate!",
+          "boltEncouragement": "BEEP BOOP! Excellent map reading! You spotted the bus instantly! 🗺️⚡"
+        },
+        {
+          "itemId": "task2",
+          "name": "Challenge B: Bus Almost Here — Two-Minute Alert ⏱️📱",
+          "emoji": "⏱️",
+          "category": "arrival_estimation",
+          "categoryLabel": "Arrival Time Challenges ⏱️",
+          "isCorrect": true,
+          "description": "The bus-tracking screen displays: 'Bus 14 is approximately two minutes away from your stop.'",
+          "question": "What should a student and parent do with this two-minute arrival information?",
+          "options": [
+            "Start baking a three-hour chocolate cake 🎂",
+            "Put on shoes, gather the packed school bag, and walk calmly to the safe bus stop 👟🎒",
+            "Go back to sleep for another hour 😴",
+            "Run into the middle of the street without looking 🏃"
+          ],
+          "correctAnswer": "Put on shoes, gather the packed school bag, and walk calmly to the safe bus stop 👟🎒",
+          "explanation": "The two-minute estimate helps families prepare their bags and footwear calmly and reach the stop safely without rushing! 🎒",
+          "hint": "How does knowing the bus is two minutes away help you get ready on time?",
+          "positiveFeedback": "⭐ Calm and ready! Prepared shoes and bag make mornings smooth and peaceful!",
+          "tryAgainFeedback": "🤔 The bus is almost here! Put on shoes and head safely to the stop!",
+          "boltEncouragement": "Prepared explorers never have to panic or rush! BEEP BOOP! ⏰🚌"
+        },
+        {
+          "itemId": "task3",
+          "name": "Challenge C: Find the School Gate on the Map 🚏🏫",
+          "emoji": "🚏",
+          "category": "map_exploration",
+          "categoryLabel": "Map Exploration Challenges 🗺️",
+          "isCorrect": true,
+          "description": "On the digital map, look at the entrance where the school building meets the street.",
+          "question": "Where on the map should students wait safely for the bus to arrive?",
+          "options": [
+            "Inside the fountain pool ⛲",
+            "At the designated safe school gate waiting area behind the curb 🚏🏫",
+            "On the roof of the library 🏢",
+            "In the middle of the highway lanes 🛣️"
+          ],
+          "correctAnswer": "At the designated safe school gate waiting area behind the curb 🚏🏫",
+          "explanation": "Always wait in the designated safe area at the school gate or sidewalk curb, away from traffic lanes! 🚸",
+          "hint": "Which location is specifically designated for students waiting safely near the gate?",
+          "positiveFeedback": "⭐ Safe location spotted! Waiting behind the curb protects every student!",
+          "tryAgainFeedback": "📍 Look for the yellow bus icon near the school gate!",
+          "boltEncouragement": "Safety zones keep all school explorers protected! 🚏🛡️"
+        },
+        {
+          "itemId": "task4",
+          "name": "Challenge D: Travel Safely at the Bus Stop 🛑🚸",
+          "emoji": "🛑",
+          "category": "safety_rules",
+          "categoryLabel": "Bus Safety Challenges 🛡️",
+          "isCorrect": true,
+          "description": "You see the yellow school bus approaching your stop down the street.",
+          "question": "Which of these is the ONLY safe action when the school bus is approaching?",
+          "options": [
+            "Run toward the moving bus waving your arms 🏃",
+            "Stand in the road right in front of the wheels 🛣️",
+            "Wait patiently in the designated safe place until the bus stops completely 🚏🛑",
+            "Play soccer in the road gutter ⚽"
+          ],
+          "correctAnswer": "Wait patiently in the designated safe place until the bus stops completely 🚏🛑",
+          "explanation": "Never run toward a moving vehicle! Wait behind the curb until the bus is completely stationary and doors open! 🚌",
+          "hint": "What should you do while the wheels are still turning? Wait patiently!",
+          "positiveFeedback": "⭐ Road safety champion! Waiting for full stops protects everyone!",
+          "tryAgainFeedback": "🤔 Never run toward moving wheels! Wait patiently behind the curb until the bus stops completely!",
+          "boltEncouragement": "Patience at the curb is true life-saving wisdom! BEEP BOOP! 🛑🚌"
+        },
+        {
+          "itemId": "task5",
+          "name": "Challenge E: Smart Classroom Story Helper 📺📖",
+          "emoji": "📺",
+          "category": "classroom_tech",
+          "categoryLabel": "Classroom Technology Challenges 🏫",
+          "isCorrect": true,
+          "description": "Teacher Priya wants to display a large digital storybook so all twenty students can read along together.",
+          "question": "Which classroom tool is designed to display interactive digital stories and highlight words?",
+          "options": [
+            "An ordinary wooden ruler 📏",
+            "An interactive smartboard connected to the teacher's computer 📺✨",
+            "A box of paper clips 📎",
+            "An empty pencil sharpener ✏️"
+          ],
+          "correctAnswer": "An interactive smartboard connected to the teacher's computer 📺✨",
+          "explanation": "An interactive smartboard displays large digital learning materials, pictures, and interactive reading lessons! 📺📖",
+          "hint": "Which large glowing screen hangs on the front wall of the classroom?",
+          "positiveFeedback": "⭐ Smartboard activated! Story text and colourful pictures illuminate the room!",
+          "tryAgainFeedback": "🤔 Look for the large interactive screen on the classroom wall!",
+          "boltEncouragement": "Interactive screens bring big ideas to life! 📺🌟"
+        },
+        {
+          "itemId": "task6",
+          "name": "Challenge F: Find the Dinosaur Book in the Library 🦖📚",
+          "emoji": "🦖",
+          "category": "library_tools",
+          "categoryLabel": "Library Discovery Challenges 📚",
+          "isCorrect": true,
+          "description": "Kabir wants to find books about prehistoric dinosaurs in the large school library.",
+          "question": "What is the fastest, smartest way for Kabir to locate the dinosaur books?",
+          "options": [
+            "Sniff every book on every shelf with his nose 👃",
+            "Search 'dinosaur books' in the digital library catalogue and ask the librarian for guidance 💻📚",
+            "Tear pages out of dictionary books 📖",
+            "Wait for dinosaurs to walk into the library 🦕"
+          ],
+          "correctAnswer": "Search 'dinosaur books' in the digital library catalogue and ask the librarian for guidance 💻📚",
+          "explanation": "Searching the digital catalogue reveals the shelf location in seconds, and the librarian helps find the book! 🦖",
+          "hint": "What computer program at the library desk lists all books by topic?",
+          "positiveFeedback": "⭐ Prehistoric discovery! The catalogue pointed straight to Shelf 3B!",
+          "tryAgainFeedback": "🤔 Use the digital library catalogue to search by topic and ask the librarian!",
+          "boltEncouragement": "T-Rex and Triceratops found in seconds! Brilliant research! 🦖📚"
+        },
+        {
+          "itemId": "task7",
+          "name": "Challenge G: Smart or Ordinary? — The School Bell 🔔⏰",
+          "emoji": "🔔",
+          "category": "smart_vs_ordinary",
+          "categoryLabel": "Tech Classification Challenges ⚖️",
+          "isCorrect": true,
+          "description": "The electric bell on the corridor wall rings automatically at 9:00 am every morning.",
+          "question": "Is the scheduled school bell an AI helper or an ordinary electronic timer tool?",
+          "options": [
+            "It is a super-advanced AI that thinks about homework 🧠",
+            "It is an ordinary electronic timer connected to a clock without AI 🔔⏰",
+            "It is an alien robot from Venus 🛸",
+            "It is a magical singing bird 🐦"
+          ],
+          "correctAnswer": "It is an ordinary electronic timer connected to a clock without AI 🔔⏰",
+          "explanation": "The school bell rings because a clock circuit connects at scheduled times. It has no AI or learning brain! ⏰",
+          "hint": "Does the bell learn new things, or does it simply ring when the clock hits 9:00 am?",
+          "positiveFeedback": "⭐ Exact classification! Ordinary electronic timer, not AI! You cannot be tricked!",
+          "tryAgainFeedback": "🤔 The bell follows a simple clock timer. It does not use AI!",
+          "boltEncouragement": "BEEP BOOP! You understand the difference between timers and AI! 🔔💡"
+        },
+        {
+          "itemId": "task8",
+          "name": "Challenge H: Smart or Ordinary? — GPS School Bus 🚌🛰️",
+          "emoji": "🛰️",
+          "category": "smart_vs_ordinary",
+          "categoryLabel": "Tech Classification Challenges ⚖️",
+          "isCorrect": true,
+          "description": "A school bus transmits live satellite signals to calculate location coordinates on a digital route map.",
+          "question": "How does the GPS tracking system help families stay informed?",
+          "options": [
+            "It flies the bus over tall trees like a helicopter 🚁",
+            "It uses satellite signals to share approximate vehicle locations and estimated arrival times 🛰️📲",
+            "It paints the bus bright purple every morning 🎨",
+            "It does children's maths homework on the road 📐"
+          ],
+          "correctAnswer": "It uses satellite signals to share approximate vehicle locations and estimated arrival times 🛰️📲",
+          "explanation": "GPS receivers capture satellite signals to calculate location coordinates and estimate arrival times! 🛰️📍",
+          "hint": "How does the bus communicate its position to parents' phones?",
+          "positiveFeedback": "⭐ Satellite tracking understood! Coordinates beamed to maps keep families informed!",
+          "tryAgainFeedback": "🤔 GPS uses satellite signals to show bus locations on a map!",
+          "boltEncouragement": "Space satellites helping school transport! High-tech magic! 🛰️🚌"
+        },
+        {
+          "itemId": "task9",
+          "name": "Challenge I: Why Can Estimated Times Change? 🚦🌧️",
+          "emoji": "🚦",
+          "category": "arrival_estimation",
+          "categoryLabel": "Arrival Time Challenges ⏱️",
+          "isCorrect": true,
+          "description": "The bus app estimated two minutes, but the bus arrived in four minutes.",
+          "question": "Why might an estimated bus arrival time change during morning travel?",
+          "options": [
+            "The bus stopped to buy cotton candy 🍭",
+            "Real-world road factors like traffic jams, red lights, and rain can cause delays 🚦🌧️",
+            "The satellites ran out of batteries 🔋",
+            "The wheels turned into square wooden blocks 🧱"
+          ],
+          "correctAnswer": "Real-world road factors like traffic jams, red lights, and rain can cause delays 🚦🌧️",
+          "explanation": "Traffic congestion, weather conditions, and detours can affect travel speed. Estimates can always change! 🚗",
+          "hint": "What happens on city streets when many cars are driving in the rain?",
+          "positiveFeedback": "⭐ Real-world wisdom! Traffic and weather naturally influence travel times!",
+          "tryAgainFeedback": "🤔 Traffic delays, red lights, and rain can change estimated arrival times!",
+          "boltEncouragement": "Understanding traffic makes you a realistic, patient explorer! 🚦🌧️"
+        },
+        {
+          "itemId": "task10",
+          "name": "Challenge J: Smart or Ordinary? — Paper Notebook & Pencil 📓✏️",
+          "emoji": "📓",
+          "category": "smart_vs_ordinary",
+          "categoryLabel": "Tech Classification Challenges ⚖️",
+          "isCorrect": true,
+          "description": "A student writes a spelling sentence in a ruled paper notebook using a graphite pencil.",
+          "question": "Are paper notebooks and wooden pencils machines or non-machine tools?",
+          "options": [
+            "They are supersonic artificial intelligences 🤖",
+            "They are simple traditional writing tools without electronics or motors 📓✏️",
+            "They require Wi-Fi passwords to write words 📶",
+            "They have tiny batteries inside the lead 🔋"
+          ],
+          "correctAnswer": "They are simple traditional writing tools without electronics or motors 📓✏️",
+          "explanation": "Pencils and notebooks are traditional physical learning tools. They have no electronics, motors, or AI! ✏️",
+          "hint": "Does a wooden pencil plug into an electric wall outlet?",
+          "positiveFeedback": "⭐ Perfect! Pencils and paper are timeless, reliable physical tools!",
+          "tryAgainFeedback": "🤔 Pencils and notebooks are simple physical tools, not electronic machines!",
+          "boltEncouragement": "Pencils and paper have powered human creativity for centuries! ✏️📜"
+        },
+        {
+          "itemId": "task11",
+          "name": "Challenge K: Digital Art Shape-Snapper 🎨📐",
+          "emoji": "🎨",
+          "category": "classroom_tech",
+          "categoryLabel": "Classroom Technology Challenges 🏫",
+          "isCorrect": true,
+          "description": "Arjun draws a shaky circular sketch on the art tablet, and the app smooths it into a crisp round circle.",
+          "question": "How does the smart drawing application assist students during art period?",
+          "options": [
+            "It deletes their artwork and laughs 😈",
+            "It recognizes the intended shape pattern and smooths uneven hand lines automatically 🎨✨",
+            "It turns the tablet into a real glass window 🪟",
+            "It paints the classroom floor with green paint 🖌️"
+          ],
+          "correctAnswer": "It recognizes the intended shape pattern and smooths uneven hand lines automatically 🎨✨",
+          "explanation": "Smart shape-recognition algorithms recognize geometric patterns and smooth hand sketches into clean shapes! 📐",
+          "hint": "What does the app do when you draw a wobbly circle?",
+          "positiveFeedback": "⭐ Creative assistance! Smart tools smooth shaky lines into crisp geometry!",
+          "tryAgainFeedback": "🤔 The app recognizes the shape pattern and smooths lines cleanly!",
+          "boltEncouragement": "Art and technology working together to spark imagination! 🎨🌈"
+        },
+        {
+          "itemId": "task12",
+          "name": "Challenge L: Digital Privacy at School 🔒🛡️",
+          "emoji": "🔒",
+          "category": "safety_rules",
+          "categoryLabel": "Bus Safety Challenges 🛡️",
+          "isCorrect": true,
+          "description": "A stranger online asks: 'Which bus stop do you wait at and what time does your bus arrive?'",
+          "question": "What is the ONLY correct and safe response to this question?",
+          "options": [
+            "Tell them your exact bus number and home address 🏠",
+            "Never share private travel details with strangers, and tell a parent or teacher immediately 🔒👨‍👩‍👧",
+            "Send them a photo of your school ID card 🪪",
+            "Invite them to your bus stop 🚏"
+          ],
+          "correctAnswer": "Never share private travel details with strangers, and tell a parent or teacher immediately 🔒👨‍👩‍👧",
+          "explanation": "Travel routes, stops, and schedules are private personal information. Never share them with strangers! 🛡️",
+          "hint": "Should personal travel routes and home locations be shared online?",
+          "positiveFeedback": "⭐ Cyber safety shield engaged! Private location data stays strictly protected!",
+          "tryAgainFeedback": "🤔 Never share personal travel details with strangers! Tell a trusted adult!",
+          "boltEncouragement": "Your privacy shield protects you and your family! Outstanding! 🛡️🔒"
+        },
+        {
+          "itemId": "task13",
+          "name": "Challenge M: Smart or Ordinary? — 3D Dinosaur Model 🦖🖥️",
+          "emoji": "🦖",
+          "category": "classroom_tech",
+          "categoryLabel": "Classroom Technology Challenges 🏫",
+          "isCorrect": true,
+          "description": "A teacher uses a classroom software application that renders a 3D rotating model of a prehistoric dinosaur.",
+          "question": "What educational advantage does the 3D smartboard model offer students?",
+          "options": [
+            "It brings real living dinosaurs into the hallway 🌋",
+            "It allows students to view prehistoric creatures from all angles and compare scale visually 🦖🔍",
+            "It turns homework into green vegetable soup 🥣",
+            "It makes the classroom floor shake like an earthquake 💥"
+          ],
+          "correctAnswer": "It allows students to view prehistoric creatures from all angles and compare scale visually 🦖🔍",
+          "explanation": "Interactive 3D models let students rotate, inspect details, and grasp scale much better than flat pictures! 🦖",
+          "hint": "What can you do with a 3D model that you cannot do with a flat paper photograph?",
+          "positiveFeedback": "⭐ Deep visual learning! 3D models make history and science come alive!",
+          "tryAgainFeedback": "🤔 3D models allow students to inspect prehistoric animals from all angles!",
+          "boltEncouragement": "Visual science sparks deep understanding! BEEP BOOP! 🦖🌋"
+        },
+        {
+          "itemId": "task14",
+          "name": "Challenge N: Digital Library AI Recommendations 🤖📖",
+          "emoji": "📖",
+          "category": "library_tools",
+          "categoryLabel": "Library Discovery Challenges 📚",
+          "isCorrect": true,
+          "description": "An advanced library system notices you love dinosaur books and suggests a new book about flying reptiles.",
+          "question": "What smart technology feature is recommending new reading material based on past interests?",
+          "options": [
+            "A magic crystal ball 🔮",
+            "An AI recommendation engine that analyzes reading interest patterns 🤖📚",
+            "A noisy alarm clock ⏰",
+            "A paper fortune teller origami 📄"
+          ],
+          "correctAnswer": "An AI recommendation engine that analyzes reading interest patterns 🤖📚",
+          "explanation": "AI recommendation systems analyze past reading choices and suggest relevant new topics you might enjoy! 📖✨",
+          "hint": "Which system analyzes patterns in your reading history to suggest books?",
+          "positiveFeedback": "⭐ Recommendation engine spotted! Pattern analysis suggests great new books!",
+          "tryAgainFeedback": "🤔 Recommendation systems use pattern analysis to suggest new books based on interests!",
+          "boltEncouragement": "Smart suggestions help you discover books you might never have found! 📚🌟"
+        },
+        {
+          "itemId": "task15",
+          "name": "Challenge O: The Human Bus Driver's Role 👨‍✈️🚌",
+          "emoji": "👨‍✈️",
+          "category": "safety_rules",
+          "categoryLabel": "Bus Safety Challenges 🛡️",
+          "isCorrect": true,
+          "description": "Even when a school bus has GPS navigation on the dashboard, why is the driver essential?",
+          "question": "Why is the human school bus driver the true safety guardian of the journey?",
+          "options": [
+            "The driver is only there to honk the horn for fun 📯",
+            "The driver monitors the road, steers around obstacles, watches traffic, and ensures child safety 👨‍✈️🛣️",
+            "The driver is just an ornament on the seat 🪑",
+            "Buses drive better when nobody watches the road 🙈"
+          ],
+          "correctAnswer": "The driver monitors the road, steers around obstacles, watches traffic, and ensures child safety 👨‍✈️🛣️",
+          "explanation": "Technology only provides route data. The human driver provides judgment, vigilance, and protective care! 🚌",
+          "hint": "Who actually steers the vehicle, checks mirrors, and watches for pedestrians?",
+          "positiveFeedback": "⭐ Respect for human heroes! Drivers keep our journeys safe and protected!",
+          "tryAgainFeedback": "🤔 Human drivers actively steer, monitor traffic, and keep children safe!",
+          "boltEncouragement": "Always say 'Thank you, Driver Uncle!' when stepping off the bus! 🚌❤️"
+        },
+        {
+          "itemId": "task16",
+          "name": "Challenge P: Smart or Ordinary? — Audio PA Speakers 📢🏫",
+          "emoji": "📢",
+          "category": "smart_vs_ordinary",
+          "categoryLabel": "Tech Classification Challenges ⚖️",
+          "isCorrect": true,
+          "description": "The school office uses a public address system with hallway speakers to announce sports day results.",
+          "question": "Is an ordinary school intercom speaker system an AI helper?",
+          "options": [
+            "Yes, the speakers have artificial thoughts and feelings 🧠",
+            "No, it is an electronic audio amplifier that transmits human speech without AI 📢🔊",
+            "Only on Friday afternoon assemblies 🗓️",
+            "The speakers are magical whispering ghosts 👻"
+          ],
+          "correctAnswer": "No, it is an electronic audio amplifier that transmits human speech without AI 📢🔊",
+          "explanation": "Intercom speakers simply amplify and transmit human vocal sounds through wires. They have no AI! 📢",
+          "hint": "Do the speakers create their own announcements, or do they just amplify the principal's voice?",
+          "positiveFeedback": "⭐ Accurate distinction! Electronic audio transmission, not AI!",
+          "tryAgainFeedback": "🤔 Intercom speakers amplify human speech. They do not use AI!",
+          "boltEncouragement": "Audio tools amplify voices, but human leaders make announcements! 📢🏫"
+        },
+        {
+          "itemId": "task17",
+          "name": "Challenge Q: The True Classroom Heart 👩‍🏫🍎",
+          "emoji": "👩‍🏫",
+          "category": "classroom_tech",
+          "categoryLabel": "Classroom Technology Challenges 🏫",
+          "isCorrect": true,
+          "description": "A student feels discouraged after struggling with a difficult spelling word.",
+          "question": "Who provides the empathy, encouragement, and human explanation to help the student succeed?",
+          "options": [
+            "The plastic smartboard power cord 🔌",
+            "The classroom teacher with warmth, guidance, and personal encouragement 👩‍🏫💖",
+            "A computer spreadsheet 📊",
+            "The classroom wastepaper basket 🗑️"
+          ],
+          "correctAnswer": "The classroom teacher with warmth, guidance, and personal encouragement 👩‍🏫💖",
+          "explanation": "Technology displays information, but only human teachers provide love, empathy, and personalized teaching! 🍎",
+          "hint": "Can a piece of plastic feel empathy for a struggling student?",
+          "positiveFeedback": "⭐ Heart of education! Teachers guide our minds and nurture our hearts!",
+          "tryAgainFeedback": "🤔 Only human teachers possess empathy, wisdom, and personal encouragement!",
+          "boltEncouragement": "Teachers shape the future with love and knowledge! BEEP BOOP! 👩‍🏫❤️"
+        },
+        {
+          "itemId": "task18",
+          "name": "Challenge R: The Ultimate School Tech Formula 🌟🤝",
+          "emoji": "🌟",
+          "category": "smart_vs_ordinary",
+          "categoryLabel": "Tech Classification Challenges ⚖️",
+          "isCorrect": true,
+          "description": "Reviewing all smart classroom and transport helpers.",
+          "question": "What is the best way for school technology and human educators to work together?",
+          "options": [
+            "Replace all teachers, drivers, and librarians with metal robots 🤖❌",
+            "Use smart tools to support people, while respecting teachers, drivers, and librarians as our true guides 🌟🤝",
+            "Ban all pencils and books forever 📚🚫",
+            "Only let computers go to school 🏫"
+          ],
+          "correctAnswer": "Use smart tools to support people, while respecting teachers, drivers, and librarians as our true guides 🌟🤝",
+          "explanation": "Technology serves as a powerful supportive tool, while human professionals lead, guide, and protect! 🌟",
+          "hint": "Which choice balances smart tools with human care and leadership?",
+          "positiveFeedback": "🏆 SUPREME SCHOOL EXPLORER! Perfect balance of technology and human wisdom!",
+          "tryAgainFeedback": "🤔 Technology should support human educators and drivers, not replace them!",
+          "boltEncouragement": "BEEP BOOP! You are a certified School Technology Champion! 🌟🏫🏆"
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "quizId": "quiz-ch3-l1",
+    "title": "Bolt's School Tech Master Quiz! 🧠🤖",
+    "description": "BEEP BOOP! Test your knowledge on classroom smartboards, bus GPS safety, digital libraries, and smart vs ordinary school tools with Bolt! Let's see those brilliant Class 3 brains shine! 🌟",
+    "passMark": 10,
+    "questions": [
+      {
+        "questionId": "q1",
+        "question": "What is an interactive smartboard in a classroom? 📺",
+        "type": "multiple_choice",
+        "options": [
+          "A regular wooden chalkboard painted blue 🪵",
+          "A large touchscreen computer display that teachers and students use for interactive learning 📺✨",
+          "A magical mirror from a fairy tale 🪞",
+          "A window looking out at the playground 🪟"
+        ],
+        "correctAnswer": "A large touchscreen computer display that teachers and students use for interactive learning 📺✨",
+        "explanation": "Interactive smartboards are large touchscreen displays that show digital lessons, videos, and interactive activities! 📺",
+        "emoji": "📺",
+        "boltReaction": {
+          "correct": "BEEP BOOP! 🎉 Exactly right! Smartboards make learning visual, tactile, and fun! Gold Star! ⭐",
+          "incorrect": "💙 An interactive smartboard is a large touchscreen display used for digital lessons! 📺"
+        }
+      },
+      {
+        "questionId": "q2",
+        "question": "How can supported smartboard features help children learning to read? 📖",
+        "type": "multiple_choice",
+        "options": [
+          "By hiding all the words under black ink ⬛",
+          "By highlighting words as they are read aloud, connecting sounds with letter spellings 📖🗣️",
+          "By turning the classroom lights off 💡",
+          "By making words dance backwards 🕺"
+        ],
+        "correctAnswer": "By highlighting words as they are read aloud, connecting sounds with letter spellings 📖🗣️",
+        "explanation": "Highlighting text synchronized with audio narration helps emerging readers connect visual words to spoken sounds! 🌟",
+        "emoji": "📖",
+        "boltReaction": {
+          "correct": "⭐ BEEP BOOP! Spot on! Visual highlights paired with audio build reading fluency! 🌻",
+          "incorrect": "💙 Supported reading features highlight words as they are read aloud to help students follow! 📖"
+        }
+      },
+      {
+        "questionId": "q3",
+        "question": "How does GPS calculate the location of a smart school bus? 🛰️📍",
+        "type": "multiple_choice",
+        "options": [
+          "Carrier pigeons fly back and forth with notes 🕊️",
+          "Satellites in space beam signals to a receiver chip on the bus, calculating its coordinates 🛰️🗺️",
+          "The bus driver shouts out the window 🗣️",
+          "Magic compass needles spin in circles 🧭"
+        ],
+        "correctAnswer": "Satellites in space beam signals to a receiver chip on the bus, calculating its coordinates 🛰️🗺️",
+        "explanation": "Global Positioning System (GPS) uses satellite signals beamed from space to pinpoint coordinates on digital maps! 🛰️",
+        "emoji": "🛰️",
+        "boltReaction": {
+          "correct": "🛰️ SATELLITE SCIENCE! Satellites in space communicate with receiver chips on Earth! BEEP BOOP! ⭐",
+          "incorrect": "💙 GPS uses satellite radio signals beamed from space to pinpoint the bus's location! 🛰️"
+        }
+      },
+      {
+        "questionId": "q4",
+        "question": "If a school transport app says the bus is 'about two minutes away', what should you keep in mind? ⏱️",
+        "type": "multiple_choice",
+        "options": [
+          "The arrival time is guaranteed to the exact millisecond ⏰",
+          "It is an estimate that can change due to real-world traffic, weather, or red lights 🚦🌧️",
+          "The bus will turn into an aeroplane ✈️",
+          "You should wait at home for twenty minutes 😴"
+        ],
+        "correctAnswer": "It is an estimate that can change due to real-world traffic, weather, or red lights 🚦🌧️",
+        "explanation": "Estimated arrival times are helpful guides, but real-world traffic and weather can alter the actual timing! 🚗",
+        "emoji": "⏱️",
+        "boltReaction": {
+          "correct": "🚦 REAL-WORLD WISDOM! Traffic and weather can always adjust estimated times! BEEP BOOP! 🌟",
+          "incorrect": "💙 Arrival times are estimates that can change with traffic and weather! ⏱️"
+        }
+      },
+      {
+        "questionId": "q5",
+        "question": "Does every school bus in the world have GPS tracking? 🚌",
+        "type": "multiple_choice",
+        "options": [
+          "Yes, every vehicle on Earth was born with GPS 🌍",
+          "No, many reliable buses operate without GPS, and features depend on school systems 🚌⚖️",
+          "Only yellow buses have GPS; blue buses do not 🎨",
+          "Only buses that drive on Sundays 🗓️"
+        ],
+        "correctAnswer": "No, many reliable buses operate without GPS, and features depend on school systems 🚌⚖️",
+        "explanation": "Tracking features depend on individual school equipment and technology. Many traditional buses operate safely without GPS! 🚌",
+        "emoji": "🚌",
+        "boltReaction": {
+          "correct": "🌟 BEEP BOOP! Never assume! Not every bus has GPS, and that is completely okay! ⭐",
+          "incorrect": "💙 Many buses operate without GPS tracking! Features depend on the school system! 🚌"
+        }
+      },
+      {
+        "questionId": "q6",
+        "question": "Where should children wait for the school bus to arrive? 🚏🛑",
+        "type": "multiple_choice",
+        "options": [
+          "In the middle of the street waving arms 🏃",
+          "Safely behind the curb line in the designated waiting area with an adult 🚏🛡️",
+          "Hiding behind parked cars 🚗",
+          "Climbing a streetlight pole 💡"
+        ],
+        "correctAnswer": "Safely behind the curb line in the designated waiting area with an adult 🚏🛡️",
+        "explanation": "Always stand safely behind the curb in designated waiting areas until the bus stops completely! 🚸",
+        "emoji": "🚏",
+        "boltReaction": {
+          "correct": "🛑 ROAD SAFETY MASTER! Staying behind the curb keeps every student safe! BEEP BOOP! 🏆",
+          "incorrect": "💙 Always wait safely behind the curb in the designated area with an adult! 🚏"
+        }
+      },
+      {
+        "questionId": "q7",
+        "question": "What is a digital library catalogue? 📚💻",
+        "type": "multiple_choice",
+        "options": [
+          "A video game about angry birds 🎮",
+          "A computer system that lets students search for books by topic, title, or author 💻🔍",
+          "A machine that burns paper 📄",
+          "A robot that eats library books 🍽️"
+        ],
+        "correctAnswer": "A computer system that lets students search for books by topic, title, or author 💻🔍",
+        "explanation": "Digital catalogues store book inventory data and tell students which shelf holds their desired book! 📚",
+        "emoji": "💻",
+        "boltReaction": {
+          "correct": "📚 BEEP BOOP! Exactly right! Digital catalogues locate books in seconds! 🦖⭐",
+          "incorrect": "💙 A digital library catalogue allows students to search for books by topic or title! 💻"
+        }
+      },
+      {
+        "questionId": "q8",
+        "question": "Does every digital library search tool use Artificial Intelligence? 💡",
+        "type": "multiple_choice",
+        "options": [
+          "Yes, every search box has a supercomputer AI brain 🧠",
+          "No, most catalogues use ordinary keyword database searching without AI 🔍⚖️",
+          "Only libraries with purple carpets use AI 🟣",
+          "Only libraries with ten million books 📚"
+        ],
+        "correctAnswer": "No, most catalogues use ordinary keyword database searching without AI 🔍⚖️",
+        "explanation": "Most library search bars use simple keyword matching in a database. Only advanced recommendation tools use AI! 🔍",
+        "emoji": "💡",
+        "boltReaction": {
+          "correct": "🎯 CRITICAL THINKING AWARD! Ordinary database searches are not AI! You know the real facts! BEEP BOOP! 🌟",
+          "incorrect": "💙 Most library search tools use ordinary database keyword matching, not AI! 💡"
+        }
+      },
+      {
+        "questionId": "q9",
+        "question": "Why is an ordinary scheduled school bell NOT an AI helper? 🔔",
+        "type": "multiple_choice",
+        "options": [
+          "Because it is too loud 📢",
+          "Because it follows a simple electric clock timer and cannot think or learn 🔔⏰",
+          "Because it is painted silver 🎨",
+          "Because bells only work in the morning ☀️"
+        ],
+        "correctAnswer": "Because it follows a simple electric clock timer and cannot think or learn 🔔⏰",
+        "explanation": "An electric school bell rings because a clock connects a circuit at set times. It has no learning intelligence! ⏰",
+        "emoji": "🔔",
+        "boltReaction": {
+          "correct": "⏰ BEEP BOOP! Spot on! Timers follow pre-set clock schedules without thinking or learning! ⭐",
+          "incorrect": "💙 A school bell operates on a simple clock timer without AI! 🔔"
+        }
+      },
+      {
+        "questionId": "q10",
+        "question": "Why can't smart classroom technology replace human teachers? 👩‍🏫💖",
+        "type": "multiple_choice",
+        "options": [
+          "Because smartboards do not have electricity 🔌",
+          "Because only human teachers have empathy, wisdom, personal care, and love for students 👩‍🏫❤️",
+          "Because computers are afraid of children 😱",
+          "Because teachers have louder voices 🗣️"
+        ],
+        "correctAnswer": "Because only human teachers have empathy, wisdom, personal care, and love for students 👩‍🏫❤️",
+        "explanation": "Technology is a supportive tool, but human teachers provide emotional support, character guidance, and genuine empathy! 🍎",
+        "emoji": "👩‍🏫",
+        "boltReaction": {
+          "correct": "💖 TEACHER APPRECIATION STAR! Technology supports, but teachers inspire and care! BEEP BOOP! 🏆",
+          "incorrect": "💙 Only human teachers have empathy, love, and personal wisdom to guide students! 👩‍🏫"
+        }
+      },
+      {
+        "questionId": "q11",
+        "question": "Who is responsible for safely steering the school bus through street traffic? 👨‍✈️🚌",
+        "type": "multiple_choice",
+        "options": [
+          "The GPS satellite in outer space 🛰️",
+          "The human bus driver who actively watches the road and pedestrian crossings 👨‍✈️🛣️",
+          "The yellow paint on the side of the bus 🎨",
+          "The bus horn 📯"
+        ],
+        "correctAnswer": "The human bus driver who actively watches the road and pedestrian crossings 👨‍✈️🛣️",
+        "explanation": "The human driver exercises professional skill and vigilance to keep passengers and pedestrians safe! 🚌",
+        "emoji": "👨‍✈️",
+        "boltReaction": {
+          "correct": "🚌 BEEP BOOP! True heroes behind the wheel! The driver keeps everyone safe! ⭐",
+          "incorrect": "💙 The human bus driver actively steers, monitors traffic, and protects students! 👨‍✈️"
+        }
+      },
+      {
+        "questionId": "q12",
+        "question": "What should you do if an unfamiliar person online asks for your school bus stop location? 🔒🛡️",
+        "type": "multiple_choice",
+        "options": [
+          "Give them your full daily schedule 🗓️",
+          "Never share private travel details, and inform a parent or trusted adult immediately 🔒👨‍👩‍👧",
+          "Send them a picture of your house keys 🗝️",
+          "Tell them to wait at the corner 🚏"
+        ],
+        "correctAnswer": "Never share private travel details, and inform a parent or trusted adult immediately 🔒👨‍👩‍👧",
+        "explanation": "Location data and travel schedules are private personal details. Never share them with strangers online! 🛡️",
+        "emoji": "🔒",
+        "boltReaction": {
+          "correct": "🛡️ CYBER SAFETY CHAMPION! Keep private location data protected at all times! BEEP BOOP! 🌟",
+          "incorrect": "💙 Never share private location or travel details with strangers! Tell an adult! 🔒"
+        }
+      },
+      {
+        "questionId": "q13",
+        "question": "How does a 3D dinosaur simulation on a smartboard help science learning? 🦖",
+        "type": "multiple_choice",
+        "options": [
+          "It makes students run away in terror 🏃",
+          "It allows students to rotate models 360 degrees and compare real-world scale visually 🦖🔍",
+          "It turns science books into stone fossils 🪨",
+          "It replaces all science teachers 👩‍🔬"
+        ],
+        "correctAnswer": "It allows students to rotate models 360 degrees and compare real-world scale visually 🦖🔍",
+        "explanation": "Rotating 3D models lets students inspect anatomical features and understand scale interactively! 🦖",
+        "emoji": "🦖",
+        "boltReaction": {
+          "correct": "🦖 BEEP BOOP! Prehistoric science brought to life! 3D models deepen visual learning! ⭐",
+          "incorrect": "💙 3D models allow students to rotate creatures and compare real-world scale! 🦖"
+        }
+      },
+      {
+        "questionId": "q14",
+        "question": "Why is a school librarian like Mrs. Sharma so special? 📚💖",
+        "type": "multiple_choice",
+        "options": [
+          "Because she can lift ten thousand books at once 🏋️",
+          "Because she knows her students personally and recommends stories that touch their hearts 📖✨",
+          "Because she lives inside a digital computer screen 🖥️",
+          "Because she only speaks in dinosaur roars 🦖"
+        ],
+        "correctAnswer": "Because she knows her students personally and recommends stories that touch their hearts 📖✨",
+        "explanation": "Librarians connect students to inspiring literature through personalized human empathy and knowledge! 📚",
+        "emoji": "💖",
+        "boltReaction": {
+          "correct": "🌟 BEEP BOOP! Librarians are treasures! Personal recommendations make reading magical! 📖❤️",
+          "incorrect": "💙 Librarians know students personally and guide them to wonderful stories! 📚"
+        }
+      },
+      {
+        "questionId": "q15",
+        "question": "What is the ultimate lesson about technology in schools? 🏫🤝",
+        "type": "multiple_choice",
+        "options": [
+          "Technology is evil and should be thrown into the sea 🌊",
+          "Smart tools are wonderful helpers that support human teachers, librarians, and drivers! 🌟🤝",
+          "Children should only talk to computers from now on 🤖",
+          "School buildings will be replaced by floating clouds ☁️"
+        ],
+        "correctAnswer": "Smart tools are wonderful helpers that support human teachers, librarians, and drivers! 🌟🤝",
+        "explanation": "Technology serves as a powerful partner, enhancing learning while human educators lead with heart! 🏫❤️",
+        "emoji": "🌟",
+        "boltReaction": {
+          "correct": "🏆 MASTER SCHOOL TECH EXPLORER! Perfect harmony between smart tools and human wisdom! BEEP BOOP! 🌟🎓",
+          "incorrect": "💙 Technology is a wonderful helper that supports human educators and leaders! 🏫🤝"
+        }
+      }
+    ]
+  },
+  "discussion": {
+    "questions": [
+      "What smart or digital tools does your school use in your classroom, library, or computer room? How do they help you learn? 🏫💻",
+      "How do you travel to school every morning (by bus, walking, cycling, or car)? What safety rules do you follow on the way? 🚌🚲",
+      "If you could design a brand-new smart helper for your classroom, what chore would it help your teacher with? 🤖🍎",
+      "Why do you think it is so important that live location information (like bus GPS tracking) is kept strictly private and safe? 🔒📍",
+      "Have you ever searched for a book in a library catalogue? What was the most exciting book you ever found? 📚🦖",
+      "Why will human teachers, librarians, and bus drivers always be more important than any computer or robot? 👩‍🏫👨‍✈️❤️"
+    ],
+    "homeExplorationTasks": [
+      "Ask a parent to show you a digital map on their phone: Can you identify your home, your school, and the roads connecting them? 🗺️📍",
+      "Draw a picture of a futuristic smart school bus with solar panels and safety sensors, and explain three features to your family! 🎨🚌",
+      "Visit your school or neighborhood library: Practice looking up a book with the librarian's help! 📚🔍",
+      "Create a 'Bus Stop Safety Poster' with a yellow curb line and three safety rules, and share it with a classmate! 🚏🛑",
+      "Write a short 'Thank You' note to your teacher or bus driver for keeping you inspired and safe every school day! 💌🍎"
+    ]
+  },
+  "summary": {
+    "recap": "BEEP BOOP! BEEP BOOP! 🎉🤖 CONGRATULATIONS, MY MASTER SCHOOL EXPLORER! 🏆⚡\n\nGive yourself the biggest, warmest, happiest high-five in the whole school! You have just completed Chapter 3, Lesson 1: \"AI Goes to School\", and Bolt's tummy screen is sparkling with yellow school buses, golden library stars, and bright red apples! 🌈🚌🍎✨\n\nLet us look back at all the magnificent treasures of knowledge you mastered today:\n\n1. SMART CLASSROOM HELPERS 📺✨\nYou explored interactive smartboards that display vibrant lessons, 3D rotating dinosaur models, and digital storybooks with highlighted reading narration to help visual and auditory learners build literacy!\n\n2. SCHOOL BUS GPS & SAFE TRAVEL 🚌📍\nYou discovered how space satellites calculate vehicle coordinates, allowing authorized apps to provide helpful arrival estimates (like 'about two minutes away') so families can prepare calmly without rushing or waiting in rain!\n\n3. REAL-WORLD TRANSPORT ACCURACY 🚦⏱️\nYou learned that arrival times are estimates that can shift due to morning traffic and weather, that not every bus uses GPS, and that the human bus driver is the true hero who steers safely!\n\n4. DIGITAL LIBRARIES & SEARCH CATALOGUES 📚🦖\nYou explored how digital library catalogues pinpoint dinosaur books on Shelf 3B in seconds, and discovered that ordinary keyword searching differs from AI recommendation engines!\n\n5. NOT EVERY SCHOOL TOOL USES AI 🔔💡\nYou proved your sharp thinking by showing that scheduled electric school bells and public address speakers are ordinary automated tools, not artificial intelligence!\n\n6. DIGITAL PRIVACY & BUS STOP SAFETY 🔒🚏\nYou mastered road safety: standing behind the yellow curb line, waiting for complete stops, and keeping personal travel routes strictly private!\n\n7. TEACHERS & EDUCATORS: THE TRUE HEART 👩‍🏫❤️\nYou celebrated the truth that while technology is a magnificent toolbox, only human teachers, librarians, and drivers provide the empathy, wisdom, and love that guide children toward bright futures!\n\n8. TRACKED THE MAGIC SCHOOL BUS 🎮🏆\nYou solved eighteen exciting simulation challenges in the Track the Magic School Bus game and aced Bolt's 15-question School Tech Master Quiz!\n\nBolt is so proud of your curiosity, your road safety habits, and your appreciation for your teachers. You are a true champion of modern learning! 🌟🚀\n\nSee you in Lesson 2, where we discover what happens when 'AI COMES HOME!' and explore smart household helpers! Until then, keep learning, keep smiling, and keep exploring! BEEP BOOP! 💙🤖⚡",
+    "keyTakeaways": [
+      "Smart classroom tools like interactive smartboards support visual, audio, and tactile learning 📺📚",
+      "Supported reading features highlight words as they are read aloud, aiding pronunciation and literacy 📖🗣️",
+      "GPS tracking uses satellites to estimate bus locations and arrival times on authorized school maps 🛰️🚌",
+      "Estimated arrival times are helpful guides that can change due to real-world traffic and weather 🚦🌧️",
+      "Digital library catalogues help students locate books by topic, title, and shelf location in seconds 📚🔍",
+      "Not every digital device uses AI — school bells and audio speakers are ordinary electronic tools 🔔📢",
+      "Always wait safely behind the curb until the bus stops completely before boarding with an adult 🚏🛑",
+      "Keep personal travel routes, bus stops, and home addresses strictly private from strangers 🔒🛡️",
+      "Human bus drivers, librarians, and teachers provide the judgment, care, and guidance no machine can replace 👩‍🏫👨‍✈️",
+      "Technology is at its best when it supports human educators in making school safe, creative, and joyful! 🌟❤️"
+    ],
+    "closingToast": {
+      "message": "🌟 'BEEP BOOP! Give yourself a giant robot cheer! You are officially a MASTER SCHOOL EXPLORER! See you in Lesson 2!' 🤖⚡🏆",
+      "trophyEarned": "🏆 School Explorer Trophy & Golden Yellow Bus Ribbon UNLOCKED! 🎖️",
+      "boltAction": "Bolt rings a cheerful golden school bell 🔔 and projects a hologram of a smiling yellow school bus! 🚌✨"
+    },
+    "nextLesson": {
+      "lessonId": "l2",
+      "title": "AI Comes Home 🏡🤖",
+      "teaser": "BEEP BOOP! After a wonderful day at school, what smart helpers are waiting when you unlock the front door? In Lesson 2, we explore smart thermostats, robot floor cleaners, voice speakers, and digital kitchens! Pack your house keys — our home safari begins soon! 🏡🔑⚡"
+    }
+  }
+}
