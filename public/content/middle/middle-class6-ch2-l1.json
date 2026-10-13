@@ -1,0 +1,1255 @@
+{
+  "lessonId": "l1",
+  "title": "Think → Plan → Code",
+  "lessonTitle": "Think → Plan → Code",
+  "level": "middle",
+  "class": "class6",
+  "classId": "class6",
+  "className": "Class 6",
+  "ageGroup": "11-12 years",
+  "chapter": "ch2",
+  "chapterId": "ch2",
+  "chapterTitle": "Communicate with AI",
+  "chapterCanonicalKey": "connect",
+  "lessonNumber": 1,
+  "monthNumber": 3,
+  "mascot": {
+    "name": "Algo",
+    "role": "The Intelligent Guide",
+    "emoji": "🧠",
+    "personality": "Calm, patient, curious, and encouraging. Algo speaks like a friendly mentor who loves explaining how the world works. Never uses intimidating jargon. Relates everything to everyday experiences like cricket, cooking, music, and school.",
+    "voiceStyle": "Warm and conversational with clear pauses for thinking. Celebrates discovery and encourages students to ask 'why' and 'how'.",
+    "avatarImage": "/content/middle/images/class6/mascots/algo-guide.png",
+    "avatarDescription": "[IMAGE_PLACEHOLDER: Friendly blue robot character with a warm glowing brain icon on its chest, holding a planning clipboard and magnifying glass with an encouraging smile]"
+  },
+  "metadata": {
+    "duration": "45 minutes",
+    "difficulty": "beginner",
+    "totalWordCount": 12000,
+    "version": "2.0",
+    "lastUpdated": "2026-10-13",
+    "tags": [
+      "computational thinking",
+      "problem decomposition",
+      "step-by-step algorithms",
+      "logic flow",
+      "sequencing",
+      "unambiguous instructions",
+      "debugging",
+      "daily algorithms"
+    ],
+    "curriculum": "CBSE & International Olympiad AI Foundations — Middle School Stage",
+    "prerequisiteKnowledge": "Familiarity with Chapter 1 (How Machines Get Smart & How AI Learns). No coding syntax required.",
+    "standardsAlignment": "CBSE AI Subject Code 417 (Class 6) & NEP 2020 Experiential Computational Thinking",
+    "coreCompetencies": [
+      "Problem decomposition (breaking complex problems into simple parts)",
+      "Logical sequencing and algorithmic flow without coding syntax",
+      "Writing unambiguous, precise step-by-step instructions",
+      "Identifying and debugging logical order mistakes in everyday tasks"
+    ],
+    "teacherNote": "Do not teach programming code or syntax in this lesson. Focus entirely on thinking habits: THINK (understand the goal) → PLAN (break into ordered steps) → CODE (write crystal-clear instructions). Use the famous Robot Sandwich or Making Chai analogies to show that computers follow literal instructions without common-sense assumptions."
+  },
+  "introduction": {
+    "overview": "Have you ever tried to explain how to tie shoelaces to someone who has never worn shoes? Or tried to give directions to a delivery driver over the phone? You quickly realize something surprising: things that feel natural and effortless to your human brain are actually made of dozens of tiny, precise steps. Computers are extraordinary calculation machines, but they cannot read your mind, guess your intentions, or fill in missing common-sense details. If you want to communicate with an AI or a computer, you must learn the universal three-stage superpower: Think → Plan → Code. In this lesson, you will master the art of breaking big problems into bite-sized steps, arranging them in perfect order, and giving crystal-clear instructions that never fail. [IMAGE_PLACEHOLDER: Flowchart showing Think, Plan, and Step-by-Step execution of daily routines, with a friendly robot following a path of glowing puzzle blocks]",
+    "welcomeMessage": "Welcome to Chapter 2! Today, you unlock the communication bridge between human curiosity and computer action: Think → Plan → Code.",
+    "algoSpoken": "Hey there! Algo here. Imagine I am a brand-new robot that just stepped out of the box. If you tell me: 'Make me a butter toast!', I might take the whole stick of butter and throw it at the toaster! Why? Because computers follow instructions literally! Today, you will learn how to think, plan, and guide any machine with crystal-clear logic.",
+    "duration": "45 mins",
+    "learningObjectives": [
+      "Understand the three pillars of computational thinking: Think (understand), Plan (decompose), and Code (instruct).",
+      "Decompose everyday big challenges into manageable, bite-sized mini-tasks without feeling overwhelmed.",
+      "Explain why the sequence and order of instructions matter critically in algorithms.",
+      "Recognize the difference between vague, ambiguous human speech and precise, unambiguous instructions.",
+      "Identify and debug logic errors when steps are missing, scrambled, or out of place.",
+      "Connect computational logic to real-world systems like navigation apps, ISRO rocket countdowns, and commercial kitchens."
+    ],
+    "starterChallenge": {
+      "title": "Warm-Up Mystery: The Confused Robot Butler",
+      "question": "You ask a robot butler to: 'Put on my shoes and socks.' If the robot follows your exact literal order, what mistake will it make?",
+      "options": [
+        "It will put on the shoes first, and then try to stretch the socks over the outside of the shoes",
+        "It will throw the shoes out of the window into the garden",
+        "It will paint the shoes green and turn off its battery",
+        "It will read a book about shoes and forget to do anything"
+      ],
+      "correctOptionIndex": 0,
+      "mascotTip": "Algo says: Order matters! Humans understand that socks go inside shoes, but computers execute your exact sequence word for word."
+    },
+    "openingStory": {
+      "title": "Diya's Robotic Chai Disaster",
+      "wordCount": 520,
+      "content": "Eleven-year-old Diya lives in Bhopal with her family. For the school innovation fair, her elder sister brought home a programmable toy robotic arm designed to assist with kitchen tasks. Diya was thrilled. 'Let us make morning masala chai for Papa using the robot!'\n\nDiya sat at the computer screen to write the instructions for the robot arm. She typed three simple sentences:\n1. Put milk and water in the pot.\n2. Add tea leaves and sugar.\n3. Turn on the gas stove.\n\nDiya pressed the green 'Run' button with a proud smile. What happened next had the whole family laughing for an hour! The robot arm picked up the milk carton, but Diya had not told it to open the carton cap. The arm tried to squeeze the closed carton over the pot! Then, the robot grabbed the box of sugar, but Diya had not specified how much sugar to add. The robot dumped an entire half-kilogram jar into the pot! Finally, when instructed to 'turn on the gas stove', the robot arm pushed the burner knob, but Diya had forgotten to tell it to click the lighter spark. Gas was flowing, but there was no flame.\n\nDiya frantically pressed the red emergency stop button. 'Papa, this robot is completely silly!' she cried.\n\nHer father smiled warmly as he wiped up the spilled sugar. 'The robot is not silly, Diya. The robot followed your exact words with 100% honesty. You assumed the robot possesses human common sense. You knew that carton caps must be opened, that two spoons of sugar are enough, and that a lighter is needed for fire. But a machine knows only what you explicitly tell it.'\n\nDiya sat back down with a notebook and a pencil. She did not touch the computer keyboard. First, she spent ten minutes Thinking about every single detail. Then, she Planned the recipe into twelve tiny, numbered, foolproof steps. Finally, she typed the updated instructions into the machine. When she pressed run, the robotic arm opened the cap, measured exactly two teaspoons of sugar, sparked the flame safely, and brewed a fragrant cup of steaming masala chai.\n\nDiya held up the warm cup proudly: 'I learned the secret today: Before you write a single line of code, you have to Think deeply and Plan every step!'",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Colorful illustration of Diya in a warm Bhopal kitchen laughing with her father while a robotic arm neatly measures two spoonfuls of sugar over a stainless steel chai pot]",
+      "algoNarration": "Diya learned the greatest lesson in computer science: Machines do not fail because they are broken; they fail because human instructions missed a crucial step. Clear thinking creates flawless results!"
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "section1",
+      "sectionNumber": 1,
+      "title": "The Universal Superpower: Think → Plan → Code",
+      "subtitle": "Why the best computer scientists spend most of their time away from keyboards",
+      "content": "When people imagine a computer programmer or an artificial intelligence scientist, they often picture someone furiously hammering away at a glowing keyboard with lines of neon green code flashing across three computer monitors. But in real life, professional software engineers and AI creators spend less than 20% of their working day actually typing code. What do they do with the other 80% of their time? They think, discuss, sketch on whiteboards, and plan.\n\nWelcome to the three-stage formula that powers all modern technology:\n1. THINK: Understand the problem deeply. What is the real goal? Who is this for? What could go wrong? What are the inputs and what is the expected result?\n2. PLAN: Break the big goal into smaller, manageable sub-problems (decomposition). Arrange those sub-problems in the correct chronological order (sequencing).\n3. CODE: Translate your ordered plan into precise, unambiguous instructions that a computer, a robot, or another human can follow without getting confused.\n\nImagine you are building a grand palace out of LEGO blocks. If you immediately dump all two thousand blocks on the floor and start sticking random bricks together without looking at the blueprint, what happens? Your tower becomes lopsided, the walls collapse, and you run out of essential foundation bricks halfway through. You have to tear the whole building down in frustration.\n\nOn the other hand, master builders always look at the blueprint first (Think), sort their pieces by color and shape into small trays (Plan), and then snap the blocks together step by step following the numbered guide (Code). The exact same discipline applies whether you are planning a school science project, training an AI model, or organizing a birthday party.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Three-panel diagram illustrating Think (brain thinking with lightbulb), Plan (notebook with numbered checklist and flowchart), and Code (clean sequential instructions executed by a computer)]",
+      "toastGuidance": {
+        "tap_prompt": "Tap each stage of the formula to see how professional engineers organize their thoughts.",
+        "great_job": "Spot on! Thinking and planning always come before typing instructions.",
+        "try_again": "Remember: Jumping straight to coding without planning leads to confusing bugs."
+      },
+      "examples": [
+        {
+          "title": "NASA Spacecraft Trajectory Planning",
+          "description": "Before launching the James Webb Space Telescope, NASA scientists spent fifteen years planning and simulating every mechanical unfolding step on paper before uploading final flight code.",
+          "realLifeScenario": "Mission control • Engineers testing 300 sequential motor release steps virtually before launch"
+        },
+        {
+          "title": "Planning an Annual School Sports Day",
+          "description": "A sports teacher doesn't just blow a whistle on sports morning. They Think (list events), Plan (schedule track times, medal tables, and water stations), and Execute (call heats in order).",
+          "realLifeScenario": "School playground • Orderly schedule allowing 500 students to complete 20 races in three hours"
+        },
+        {
+          "title": "Building a Mobile Shopping App",
+          "description": "Software developers interview customers and draw pencil sketches of screens (Think & Plan) long before writing a single line of application software.",
+          "realLifeScenario": "Tech design studio • Designers testing paper mockups of a checkout screen with real shoppers"
+        },
+        {
+          "title": "Preparing a Multi-Course Family Wedding Feast",
+          "description": "Catering head chefs calculate ingredient quantities, cooking sequence times, and serving order days before firing up banquet stoves.",
+          "realLifeScenario": "Banquet kitchen • Coordinating rice, curries, breads, and desserts so everything arrives fresh and piping hot"
+        }
+      ],
+      "keyPoints": [
+        "Computational thinking is a universal problem-solving method, not just a way to write computer programs.",
+        "The three stages are: Think (understand goal), Plan (decompose and sequence), and Code (instruct precisely).",
+        "Jumping straight to coding without planning causes confusion, wasted time, and logic errors.",
+        "Professional engineers spend over 80% of their effort understanding problems and designing blueprints.",
+        "Any big, intimidating challenge becomes manageable once broken into a series of smaller mini-tasks.",
+        "Good communication with computers requires the same clear thinking used in daily human planning."
+      ],
+      "algoVoice": "Before your fingers touch a keyboard, let your brain do the heavy lifting. A well-planned five-step algorithm will always beat a rushed, messy hundred-step program!"
+    },
+    {
+      "sectionId": "section2",
+      "sectionNumber": 2,
+      "title": "Step 1: THINK — Problem Decomposition",
+      "subtitle": "How to chop a giant mountain into easy, climbable stepping stones",
+      "content": "Have you ever looked at your school homework planner on a Sunday evening and felt completely overwhelmed? You have a science project due, thirty maths problems to solve, an English essay to write, and your school bag to pack. When you look at the entire mountain of work at once, your brain feels tired before you even start.\n\nWhat do smart students do? They use a computational thinking superpower called Problem Decomposition. Decomposition simply means breaking a large, complicated problem down into smaller, bite-sized pieces that are easy to solve one at a time.\n\nThink about cleaning your bedroom when your parents say: 'Clean this entire room in one hour!' If you look at the messy floor, the unmade bed, the scattered textbooks, and the clothes pile all at once, it feels impossible. But if you decompose the task into four tiny mini-goals:\n- Mini-Goal 1: Put all dirty clothes into the laundry basket (5 minutes).\n- Mini-Goal 2: Stack all textbooks neatly on the study desk (5 minutes).\n- Mini-Goal 3: Pull up the bedsheet and straighten the pillow (3 minutes).\n- Mini-Goal 4: Sweep the open floor with a broom (7 minutes).\n\nSuddenly, the impossible mountain has turned into four easy, friendly steps! You can tackle Mini-Goal 1, tick it off your list with a feeling of victory, and move confidently to Mini-Goal 2.\n\nIn computer science and artificial intelligence, no engineer ever solves a huge problem all at once. When engineers at Google built Google Maps, they did not say: 'Let us build a system that maps the entire planet Earth today!' They decomposed the challenge into smaller modules: Module A measures GPS coordinates. Module B draws street lines. Module C calculates driving speeds. Module D estimates traffic delays. By solving each small module with perfection, the giant system came to life.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Graphic showing a giant boulder labeled 'Big Problem' being broken by a gentle laser into four small, polished gems labeled 'Step 1', 'Step 2', 'Step 3', and 'Step 4']",
+      "toastGuidance": {
+        "tap_prompt": "Examine how decomposing a messy room into four mini-goals makes the task effortless.",
+        "great_job": "Decomposition mastery achieved! Big problems are just collections of small, easy steps.",
+        "try_again": "Remember: Decomposition means splitting one complex task into smaller, solvable sub-tasks."
+      },
+      "examples": [
+        {
+          "title": "Decomposing School Science Exhibition Projects",
+          "description": "Instead of stressing over 'Build a solar energy exhibit', decompose into: 1. Research solar cells, 2. Buy small cardboard and LED, 3. Wire circuit, 4. Paint display board.",
+          "realLifeScenario": "Classroom group work • Four students dividing responsibilities cleanly so project finishes ahead of time"
+        },
+        {
+          "title": "How Ola & Uber Decompose a Ride Booking",
+          "description": "A ride app splits a booking into: Find nearby driver -> Calculate fastest route -> Lock fare estimate -> Track GPS location in real time -> Process digital payment.",
+          "realLifeScenario": "Smartphone screen • App completing five distinct sub-tasks seamlessly in under three seconds"
+        },
+        {
+          "title": "Making Homemade Mango Kulfi",
+          "description": "A complicated traditional dessert decomposes into: Simmer milk to reduce -> Blend mango pulp -> Mix cardamom and nuts -> Pour into molds -> Freeze for six hours.",
+          "realLifeScenario": "Home kitchen • Following five simple stages to produce restaurant-quality dessert"
+        },
+        {
+          "title": "Designing a Video Game Level",
+          "description": "Game developers decompose level creation into: Design terrain map -> Program player movement -> Place enemy obstacles -> Add coin rewards -> Test sound effects.",
+          "realLifeScenario": "Game studio • Team collaborating on separate modules that connect into one smooth level"
+        }
+      ],
+      "keyPoints": [
+        "Decomposition means dividing a complex problem into smaller, simpler, independent sub-problems.",
+        "Solving four small, clear problems is much easier than trying to solve one overwhelming problem all at once.",
+        "Decomposition reduces stress and prevents mistakes in schoolwork, sports, and software development.",
+        "In team projects, decomposition allows different people to work on different pieces simultaneously.",
+        "Complex AI systems like autonomous cars are made of dozens of decomposed subsystems working together.",
+        "Always ask: 'What are the three smaller parts that make up this big goal?'"
+      ],
+      "algoVoice": "How do you eat an elephant? One bite at a time! Whenever a problem looks too big, pull out your mental magnifying glass and chop it into bite-sized pieces."
+    },
+    {
+      "sectionId": "section3",
+      "sectionNumber": 3,
+      "title": "Step 2: PLAN — Sequencing and Logical Flow",
+      "subtitle": "Why the order of instructions makes the difference between success and disaster",
+      "content": "Once you have chopped your big problem into smaller pieces, you might think you are ready to start. But wait! There is a crucial second step in the planning phase: Sequencing.\n\nSequencing means putting your decomposed steps into the exact chronological order in which they must occur. If the order is wrong, even the most perfect steps will lead to complete failure.\n\nConsider this real-life scenario: Suppose your decomposed steps for getting dressed in the morning are:\n- Step A: Put on socks.\n- Step B: Put on shoes.\n- Step C: Tie shoelaces.\n\nIf you execute them in order A → B → C, your feet are comfortable, secure, and ready for school. But what happens if you scramble the sequence into B → A → C? You put on your leather school shoes first, and then you try to pull your white cotton socks over the outside of the shoes! You will look ridiculous, and your socks might rip apart!\n\nHere is another everyday example: Baking a loaf of bread.\n- Step 1: Measure flour, yeast, and water.\n- Step 2: Mix and knead the dough.\n- Step 3: Let the dough rise in a warm bowl for one hour.\n- Step 4: Bake in a hot oven at 180°C for thirty minutes.\n\nWhat happens if an automated bakery robot scrambles the order and tries to execute Step 4 before Step 2? It will put a bag of dry, powdery flour straight into a scorching hot oven! There will be no dough, no rising, and no bread—only a smoky kitchen disaster.\n\nIn computer algorithms, computers follow instructions from top to bottom, one line after another. A computer will never stop and say: 'Wait, this step seems out of order, let me swap it.' It will blindly execute the steps in the exact sequence you provided. Designing the logical flow is the heart of intelligent planning.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Chef following ordered recipe instructions in a commercial kitchen, showing clear numbered sequence cards from measuring ingredients to plating the meal]",
+      "toastGuidance": {
+        "tap_prompt": "Drag the steps into the correct sequence so the morning routine succeeds without errors.",
+        "great_job": "Perfect sequence! Chronological order guarantees smooth algorithmic execution.",
+        "try_again": "Order matters. You cannot bake the bread before you mix the dough."
+      },
+      "examples": [
+        {
+          "title": "School Bag Packing Algorithm the Night Before",
+          "description": "Correct sequence: Check tomorrow's timetable -> Place required notebooks into bag -> Pack geometry box -> Zip main compartment -> Place water bottle in side pouch.",
+          "realLifeScenario": "Bedtime routine • Five-minute organized sequence preventing forgotten homework on test days"
+        },
+        {
+          "title": "Online UPI Payment Verification Sequence",
+          "description": "Banking flow: Scan QR code -> Enter payment amount -> Enter 4-digit secret UPI PIN -> Bank verifies account balance -> Display green payment success checkmark.",
+          "realLifeScenario": "Grocery shop checkout • Sequential security steps ensuring money transfers safely in 0.4 seconds"
+        },
+        {
+          "title": "ISRO Satellite Rocket Countdown Checklist",
+          "description": "Launch order: Check weather conditions -> Fill liquid rocket propellant -> Align navigation gyroscopes -> Ignite main boosters -> Lift off from launchpad.",
+          "realLifeScenario": "Sriharikota space center • Zero-tolerance sequential countdown protecting multi-crore satellite"
+        },
+        {
+          "title": "Car Assembly Line Robotic Sequencing",
+          "description": "Manufacturing order: Weld steel chassis frame -> Paint vehicle body -> Install electric engine -> Mount four rubber wheels -> Conduct safety brake test.",
+          "realLifeScenario": "Automobile factory • Automated robotic arms executing 500 ordered steps every three minutes"
+        }
+      ],
+      "keyPoints": [
+        "Sequencing is the practice of arranging decomposed steps in their proper chronological order.",
+        "Computers execute instructions sequentially from first to last without questioning the order.",
+        "Scrambling the sequence of otherwise correct steps produces broken, nonsensical outcomes.",
+        "Dependencies determine order: you cannot complete a step that depends on the output of an earlier step.",
+        "Flowcharts use directional arrows to visually map out which step happens first, second, and third.",
+        "Mastering sequencing is what prevents logic bugs from sneaking into algorithms."
+      ],
+      "algoVoice": "Think of an algorithm like climbing a flight of stairs. You have to step on step one before you can reach step two. Skipping or scrambling steps will make you trip every time!"
+    },
+    {
+      "sectionId": "section4",
+      "sectionNumber": 4,
+      "title": "Step 3: CODE — Writing Crystal-Clear Instructions",
+      "subtitle": "Why computers hate vague words and how to speak with unambiguous precision",
+      "content": "Now you arrive at the third stage: CODE. In our class, 'coding' does not mean memorizing strange symbols like semicolons, brackets, or Python syntax. Coding means translating your ordered plan into Unambiguous Instructions.\n\nWhat does the word 'unambiguous' mean? Ambiguous means something that can be understood in more than one way. Human beings use ambiguous words all day long because human listeners use context, body language, and common sense to fill in the blanks.\n\nFor example, if your mother asks you: 'Diya, go to the market and buy some good apples', your human brain understands what 'some' and 'good' mean. You look for five or six fresh, unbruised, red apples. You don't buy sixty kilograms, and you don't pick rotten black apples.\n\nNow imagine you gave that exact same instruction to a robot: 'Buy some good apples'. What does the robot do? What does 'some' mean? Is it 1 apple? 50 apples? 10,000 apples? What does 'good' mean? Does it mean the biggest? The shiniest? The cheapest? The sweetest? A computer has no idea! The instruction is ambiguous, so the robot freezes with an error or makes a bizarre choice.\n\nTo make an instruction unambiguous, you must replace vague words with specific measurements, conditions, and numbers:\n- Vague instruction: 'Bake the pizza until it looks nice.'\n- Unambiguous instruction: 'Bake the pizza at 200°C for precisely 12 minutes until the cheese is melted.'\n\n- Vague instruction: 'Walk forward a little bit and turn.'\n- Unambiguous instruction: 'Walk forward 5 meters in a straight line, turn 90 degrees to the right, and stop.'\n\nWhen every instruction is clear, measurable, and specific, any computer in the world can execute your algorithm with 100% precision.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Split comparison showing Vague Instruction ('Draw a nice shape' -> Confused robot drawing scribbles) versus Unambiguous Instruction ('Draw a red square with 10 cm sides' -> Robot drawing perfect square)]",
+      "toastGuidance": {
+        "tap_prompt": "Compare vague instructions with unambiguous instructions to spot the difference in precision.",
+        "great_job": "Clarity achieved! Unambiguous instructions give computers zero room for confusion.",
+        "try_again": "Replace vague words like 'some', 'nice', or 'soon' with specific numbers and measurements."
+      },
+      "examples": [
+        {
+          "title": "Microwave Oven Cooking Instructions",
+          "description": "Vague: 'Heat the samosa a little.' Unambiguous: 'Set microwave power to 800 Watts, set timer to 45 seconds, press Start button.'",
+          "realLifeScenario": "After-school snack • Precise timer reheating food perfectly without burning edges"
+        },
+        {
+          "title": "GPS Navigation Turn-by-Turn Guidance",
+          "description": "Vague: 'Turn near the big tree.' Unambiguous: 'In 200 meters, take the second exit on the roundabout onto Mahatma Gandhi Road.'",
+          "realLifeScenario": "Car dashboard • Driver taking the exact correct turn smoothly in heavy city traffic"
+        },
+        {
+          "title": "Classroom Science Experiment Directions",
+          "description": "Vague: 'Add some salt to the water.' Unambiguous: 'Add 15 grams of table salt into 250 milliliters of distilled water and stir for 30 seconds.'",
+          "realLifeScenario": "Chemistry laboratory • All 30 students achieving identical valid experimental results"
+        },
+        {
+          "title": "ATM Cash Withdrawal Algorithm",
+          "description": "Vague: 'Give the customer their money.' Unambiguous: 'Dispense four 500-rupee notes through the cash slot, wait 20 seconds for retrieval, then sound beep.'",
+          "realLifeScenario": "Bank kiosk • Machine dispensing exact requested currency safely every single time"
+        }
+      ],
+      "keyPoints": [
+        "Coding means communicating your ordered plan through crystal-clear, unambiguous instructions.",
+        "Ambiguous means open to multiple interpretations; unambiguous means having only one possible meaning.",
+        "Computers lack human common sense and cannot guess what vague words like 'nice' or 'some' mean.",
+        "Unambiguous instructions use specific quantities, measurements, durations, and directional coordinates.",
+        "Precision in language prevents costly mistakes in robotics, medicine, aerospace, and banking.",
+        "Clear communication is a skill that improves how you talk to both machines and fellow humans."
+      ],
+      "algoVoice": "Never leave a computer guessing! If you mean two spoons, say two spoons. If you mean turn right, say 90 degrees right. Precision is the language computers love!"
+    },
+    {
+      "sectionId": "section5",
+      "sectionNumber": 5,
+      "title": "Algorithms in Everyday Life — Invisible Logic Systems",
+      "subtitle": "How multi-stop navigation, kitchen recipes, and music queues use sequential logic",
+      "content": "Now that you understand Think → Plan → Code, you will start noticing algorithms operating everywhere in the real world. An Algorithm is simply a step-by-step procedure designed to solve a specific problem or accomplish a specific goal.\n\nEvery time you follow a recipe to make mango lassi, every time an airline flight crew completes their pre-flight safety checklist, and every time a delivery app calculates the quickest way to deliver five packages across the city, an algorithm is at work.\n\nLet us look closely at a delivery routing algorithm used by apps like Swiggy, Zomato, or Amazon. Suppose a delivery driver in Bengaluru has to pick up biryani from Restaurant A and pasta from Restaurant B, and deliver them to Customer X and Customer Y. How does the routing algorithm decide the order of stops?\n- It cannot simply visit Customer X first if the driver has not picked up the food from Restaurant A yet!\n- The algorithm follows strict logical rules:\n  1. Pickup A must happen before Delivery X.\n  2. Pickup B must happen before Delivery Y.\n  3. Between the two pickups, calculate which restaurant is closer to minimize food cooling down.\n  4. Choose the shortest road route considering live traffic congestion.\n\nBy following this logical flowchart of conditions and ordered steps, the algorithm saves thousands of liters of fuel every day and ensures hungry families receive their dinners piping hot.\n\nEven your personal morning routine before school is an algorithm! If you write down your morning checklist—wake up at 6:30, brush teeth, take shower, wear uniform, eat breakfast, pack bag, walk to bus stop—you have created a personal human algorithm that guarantees you never miss the school bus.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Map of a neighborhood showing a delivery motorcycle following an optimized multi-stop route with numbered green checkpoints from restaurants to apartments]",
+      "toastGuidance": {
+        "tap_prompt": "Follow the delivery route checkpoints to see how dependencies determine the algorithm's order.",
+        "great_job": "Logistics logic mastered! Delivery algorithms balance rules, pickup locations, and traffic.",
+        "try_again": "Remember: You must pick up an order from the restaurant before you can deliver it to the customer."
+      },
+      "examples": [
+        {
+          "title": "Multi-Stop Delivery Route Optimization",
+          "description": "Algorithms calculate the most efficient sequence of pickups and drop-offs while obeying strict rules: food must be picked up before delivery.",
+          "realLifeScenario": "Evening delivery • Driver delivering two hot meals to neighboring streets in 18 minutes flat"
+        },
+        {
+          "title": "Airline Pilot Pre-Flight Safety Checklist",
+          "description": "Commercial pilots read an unbending 45-point sequential checklist aloud before every takeoff: check rudder, test hydraulic brakes, verify fuel balance.",
+          "realLifeScenario": "Airport runway • Two pilots verifying every instrument systematically before flight clearance"
+        },
+        {
+          "title": "Automated Car Wash Sequence",
+          "description": "Car wash algorithm: Pre-soak spray (30s) -> Soap scrub (60s) -> High-pressure rinse (45s) -> Wax coat (20s) -> Hot air blower dry (60s).",
+          "realLifeScenario": "Petrol pump service • Vehicle moving through automated wash tunnel with timed water cycles"
+        },
+        {
+          "title": "Traffic Light Intersection Controller",
+          "description": "Intersection logic: North-South Green (45s) -> North-South Yellow (5s) -> All Red Safety Buffer (2s) -> East-West Green (45s).",
+          "realLifeScenario": "Busy city crossroads • Synchronized light cycle preventing vehicle collisions smoothly"
+        }
+      ],
+      "keyPoints": [
+        "An algorithm is a step-by-step sequence of instructions designed to solve a specific problem.",
+        "Algorithms are not just computer software; human recipes, safety checklists, and routines are algorithms too.",
+        "Delivery logistics algorithms rely on dependencies: pickups must always precede deliveries.",
+        "Logical sequencing saves time, reduces energy and fuel waste, and prevents dangerous accidents.",
+        "Flowcharts help visualize decision points: 'IF the road is blocked, THEN take Route B.'",
+        "Developing strong algorithmic thinking makes you more organized, efficient, and reliable in daily life."
+      ],
+      "algoVoice": "An algorithm is like a magical recipe for success. When you know the right steps in the right order, you can solve almost any puzzle the world throws at you!"
+    },
+    {
+      "sectionId": "section6",
+      "sectionNumber": 6,
+      "title": "Debugging Your Logic — Finding and Fixing Mistakes",
+      "subtitle": "Why mistakes are not failures, but clues that help you build stronger algorithms",
+      "content": "In the year 1947, a famous computer scientist named Grace Hopper was working on an early room-sized electromechanical computer called the Harvard Mark II. Suddenly, the machine stopped working properly. The team opened up the back of the computer and looked inside the thousands of electrical switches. Deep inside Relay #70, they discovered a tiny moth trapped between the contacts, blocking the electrical signal! They carefully removed the insect with tweezers and pasted it into their logbook with the note: 'First actual case of bug being found.'\n\nEver since that historic day, computer scientists have used the word Bug to describe any mistake, flaw, or unexpected behavior in an algorithm. And the process of finding and fixing those mistakes is called Debugging.\n\nIn computational thinking, logic bugs usually come in three common flavors:\n1. Missing Step Bug: You forgot an essential step in your plan (like Diya forgetting to open the milk carton cap).\n2. Sequence Bug: All the steps are present, but they are arranged in the wrong chronological order (like putting shoes on before socks).\n3. Ambiguity Bug: The instruction was too vague, allowing the computer to make an unintended choice (like saying 'turn' without specifying left or right).\n\nHere is the most important mindset every young scientist must adopt: Finding a bug is never a failure! Even the greatest computer scientists in the world write programs with bugs every single day. A bug is not a sign that you are bad at technology; a bug is a detective clue! When an algorithm produces an unexpected result, do not get frustrated. Step through your plan one line at a time, check each instruction with your detective magnifying glass, and celebrate when you find the fix.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Historical illustration of Grace Hopper's logbook with the first computer moth bug taped to the page, alongside a young student with a magnifying glass examining a logic flowchart]",
+      "toastGuidance": {
+        "tap_prompt": "Examine the three common types of logic bugs: Missing Step, Sequence Bug, and Ambiguity Bug.",
+        "great_job": "Detective mindset activated! Debugging turns puzzling mistakes into successful solutions.",
+        "try_again": "Trace each step in order from top to bottom to see where the logic breaks down."
+      },
+      "examples": [
+        {
+          "title": "The Mars Climate Orbiter Unit Mix-Up Bug (1999)",
+          "description": "A 125-million-dollar NASA spacecraft was lost because one engineering team calculated force in English pounds, while another team programmed in metric Newtons without unit conversion.",
+          "realLifeScenario": "Space exploration • A missing unit translation instruction causing a satellite trajectory error"
+        },
+        {
+          "title": "The Missing Salt in Bread Baking",
+          "description": "A commercial bakery forgot to include Step 4 ('Add 10 grams of salt') in an automated dough mixer recipe, resulting in 5,000 loaves of tasteless, pale bread.",
+          "realLifeScenario": "Bakery inspection • Quality control catching a missing ingredient step before store distribution"
+        },
+        {
+          "title": "School Timetable Classroom Double-Booking",
+          "description": "A school timetable algorithm assigned both Class 6A and Class 7B to the science lab during Period 3 because it lacked a rule checking room availability.",
+          "realLifeScenario": "School hallway • Teachers catching a schedule conflict and adding an availability check rule"
+        },
+        {
+          "title": "Elevator Door Sensor Logic Bug",
+          "description": "An early elevator closed its doors on passengers because the programmer set the timer to close after 3 seconds without checking if the infrared beam was broken.",
+          "realLifeScenario": "Apartment building • Adding a safety sensor check step before activating the door motor"
+        }
+      ],
+      "keyPoints": [
+        "A 'bug' is any mistake, omission, or logic flaw in an algorithm; 'debugging' is the process of fixing it.",
+        "The term originated in 1947 when Grace Hopper's team found a real moth trapped in an early computer.",
+        "The three most common logic bugs are Missing Step Bugs, Sequence Bugs, and Ambiguity Bugs.",
+        "Debugging requires patience: stepping through instructions one by one to verify their outcomes.",
+        "Mistakes are natural and valuable learning opportunities in computational thinking.",
+        "A great problem solver is not someone who never makes mistakes, but someone who knows how to debug methodically."
+      ],
+      "algoVoice": "Never be afraid of bugs! Treat every bug like a hidden riddle waiting for your detective magnifying glass. When you fix the bug, you make the whole world run smoother!"
+    }
+  ],
+  "realWorldStories": [
+    {
+      "storyId": "story1",
+      "title": "How Swiggy & Zomato Plan Delivery Routes Step-by-Step",
+      "location": "Bengaluru, Karnataka",
+      "domain": "Logistics Optimization & Sequential Algorithms",
+      "summary": "How an eight-step dispatch algorithm delivers over two million hot meals across Indian cities every single day.",
+      "content": "Every Friday evening across Bengaluru, thousands of families open food delivery apps like Swiggy and Zomato to order dinner. In Indiranagar, twelve-year-old Kabir and his parents order paneer butter masala and garlic naan from a Punjabi dhaba two kilometers away. The app screen displays: 'Order assigned to Delivery Partner Suresh. Estimated arrival: 28 minutes.'\n\nBehind that calm screen, a massive routing algorithm is executing a precise sequence of computational steps. Suresh was not picked at random. The dispatch engine evaluated twenty available delivery partners in the neighborhood using an ordered checklist:\n- Step 1 (Filter): Eliminate drivers whose phone battery is under 15% or whose shift ends within thirty minutes.\n- Step 2 (Distance): Calculate the road travel distance from each driver's current GPS location to the restaurant.\n- Step 3 (Kitchen Prep Time): Predict when the chef will package the hot naan (in 14 minutes), timing Suresh's arrival so food does not sit cold on the counter.\n- Step 4 (Route Bundling): Check if a second customer living along Suresh's driving path ordered food from a neighboring restaurant.\n\nSuresh arrives at the restaurant at minute 13, picks up the hot food at minute 14, and the navigation app immediately switches to Step 5: generating turn-by-turn driving directions that bypass an underpass waterlogged by evening rain.\n\nAt minute 27, Suresh rings Kabir's doorbell, handing over the steaming hot meal with a cheerful smile. 'Look at that, Kabir,' his father remarked as they opened the fragrant containers. 'From kitchen flame to our dining table in under half an hour.'\n\n'And it only worked because the computer followed every single step in the exact right order,' Kabir realized. Without problem decomposition and precise sequencing, city food delivery would collapse into utter chaos.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Dynamic digital map of Bengaluru at dusk showing a delivery driver's path with glowing sequential waypoint pins from restaurant pickup to apartment delivery]",
+      "keyTakeaway": "Real-world logistics algorithms coordinate thousands of moving vehicles by executing decomposed rules and ordered dependencies in fractions of a second."
+    },
+    {
+      "storyId": "story2",
+      "title": "The ISRO Satellite Launch Countdown Checklist",
+      "location": "Sriharikota, Andhra Pradesh",
+      "domain": "Aerospace Systems & Critical Sequence Checklists",
+      "summary": "How scientists at the Satish Dhawan Space Centre execute hundreds of ordered steps to send satellites into orbit.",
+      "content": "At the Satish Dhawan Space Centre in Sriharikota, the massive Polar Satellite Launch Vehicle (PSLV) stands tall against the Bay of Bengal coastline. Inside the launch control center, hundreds of ISRO scientists sit before illuminated workstations. The giant countdown digital clock reads: T-minus 2 hours, 15 minutes, 00 seconds.\n\nLaunching a multi-ton rocket into space is one of the most complex human endeavors on Earth. A rocket contains over one hundred thousand interconnected parts, thousands of liters of volatile liquid fuel, and powerful guidance computers. If a single valve opens two seconds too early, or if a cooling pipe fails to disconnect before ignition, the entire mission could be lost.\n\nHow do ISRO scientists ensure complete perfection? They do not rely on memory or verbal guesses. They follow an exhaustive, sequential algorithm known as the Launch Countdown Procedure.\n\nEvery single action is written as an unambiguous, numbered step:\n- Step 142: Verify propellant tank pressure holds steady at 3.2 atmospheres.\n- Step 143: Activate internal satellite solar panel battery heaters.\n- Step 144: Transfer electrical power from ground cables to rocket internal batteries.\n- Step 145: Confirm weather radar reports wind shear under 15 knots.\n\nIf any step reports an error, the algorithm automatically halts the countdown, alerting engineers to debug the issue before proceeding. When the clock hits T-minus 10 seconds, the automated computer takes over the final sequence: 3, 2, 1, Ignition! With a roar that shakes the earth and a brilliant plume of golden fire, the rocket vaults into the heavens, delivering India's satellite safely into Earth's orbit.\n\n'In space science, there are no shortcuts,' Mission Director Dr. Radhakrishnan shared with visiting school students. 'Perfection is not magic. Perfection is having the discipline to plan every step, check every detail, and follow the sequence with complete devotion.'",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Dramatic photograph of an ISRO PSLV rocket ascending majestically into the sky with a glowing exhaust trail, alongside launch controllers monitoring sequential checklist screens]",
+      "keyTakeaway": "In mission-critical aerospace engineering, sequential algorithms and systematic countdown checklists guarantee safety where there is zero room for error."
+    },
+    {
+      "storyId": "story3",
+      "title": "Chef Sanjeev's Kitchen Algorithm — Cooking 500 Meals",
+      "location": "Mumbai, Maharashtra",
+      "domain": "Culinary Operations & Parallel Workflow Planning",
+      "summary": "How a master banquet chef in Mumbai prepares a five-course wedding dinner for five hundred guests without burning a single dish.",
+      "content": "In the bustling industrial kitchen of a grand Mumbai banquet hall, thirty cooks stand ready at their stainless steel prep stations. It is 3:00 PM, and by 7:30 PM, they must serve five hundred hot, delicious meals for a grand wedding reception. The menu includes saffron pulao, slow-cooked dal makhani, paneer tikka, hot tandoori rotis, and warm gulab jamuns.\n\nIf Head Chef Sanjeev simply shouted: 'Everyone start cooking whatever you like!', the kitchen would be an absolute disaster. The rotis would be baked at 4:00 PM and go cold and stiff by evening. The dal would burn while cooks hunted for spices. The kitchen would run out of clean pans halfway through.\n\nInstead, Chef Sanjeev operates like a master software architect. Days before the wedding, he developed the Kitchen Production Algorithm:\n- Phase 1: Think (Decomposition): Break the banquet down into 5 dishes, 18 prep tasks, and 4 cooking stations.\n- Phase 2: Plan (Sequencing & Timing): Calculate preparation times backward from serving hour. The dal takes three hours of slow simmering, so it starts at 3:30 PM. The paneer marination takes two hours, so marinate at 4:00 PM. The tandoori rotis take only 90 seconds to bake, so they must not enter the tandoor until 7:15 PM!\n- Phase 3: Code (Unambiguous Station Recipes): Every cook receives a laminated card with precise measurements: 'Station 2: Add precisely 40 grams of crushed ginger to 20 liters of dal at 4:15 PM.'\n\nWhen the banquet hall doors swing open at 7:30 PM, the food service runs like clockwork. Trays of steaming pulao, velvety dal makhani, and sizzling rotis arrive on the buffet tables simultaneously, fresh, fragrant, and perfectly cooked.\n\n'People think cooking is just passion and taste,' Chef Sanjeev laughed warmly as he checked the final dessert trays. 'Passion gives food its soul, but algorithmic planning gets 500 meals to the table on time!'",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Vibrant commercial kitchen in Mumbai showing cooks in white chef hats working at organized stations, with Chef Sanjeev checking a large wall-mounted workflow sequence board]",
+      "keyTakeaway": "Complex culinary operations succeed by calculating timing backward, decomposing recipes into stations, and executing synchronized sequential plans."
+    }
+  ],
+  "activities": [
+    {
+      "activityId": "activity1",
+      "title": "Logic Flow Architecture — The Robot Sandwich Challenge",
+      "description": "Step into the shoes of an algorithm designer! Write a foolproof step-by-step instruction set for making a jam sandwich, then watch your teacher or classmate act as a literal robot following your exact words. [IMAGE_PLACEHOLDER: Interactive classroom board showing sandwich ingredients (bread, butter, jam jar, butter knife) with drag-and-drop instruction step blocks]",
+      "duration": "15 mins",
+      "materials": "Activity worksheet, pencil, sample sandwich step cards",
+      "learningOutcome": "Students can identify hidden assumptions in everyday instructions and translate vague human speech into unambiguous sequential steps.",
+      "instructions": [
+        "1. Write down a 6-to-8 step instruction set for making a slice of bread with jam.",
+        "2. Avoid vague words like 'spread some jam' or 'open the jar'. Specify which hand holds the jar, how to unscrew the lid, and how much jam to scoop.",
+        "3. Hand your written instructions to your partner, who must act as a 'Literal Robot'.",
+        "4. The robot is allowed to follow ONLY your written words. If you did not write 'open the bag', the robot tries to take bread through the plastic!",
+        "5. Count how many logic bugs your robot discovered and rewrite your instructions to make them 100% bug-free."
+      ],
+      "toastFeedback": {
+        "tap_prompt": "Place Step 1: 'Identify destination' into the planning box first.",
+        "great_job": "Correct logic flow! Breaking the goal into steps prevented errors.",
+        "try_again": "Order matters. You cannot package the product before manufacturing it."
+      }
+    },
+    {
+      "activityId": "activity2",
+      "title": "The Multi-Stop School Bus Route Planner",
+      "description": "Design an optimized route algorithm for a school bus picking up students across four neighborhoods. Obey pickup dependencies and traffic constraints to create the fastest route! [IMAGE_PLACEHOLDER: City street grid map showing School, Stop A (Rohini), Stop B (Pitampura), Stop C (Model Town), and Stop D (Civil Lines) with one-way street arrows]",
+      "duration": "15 mins",
+      "materials": "City grid worksheet, colored markers, distance calculation table",
+      "learningOutcome": "Students can model logistical dependencies and apply sequential reasoning to multi-point routing challenges.",
+      "instructions": [
+        "1. Examine the city street map showing your school and four student pickup bus stops (A, B, C, D).",
+        "2. Note the constraints: Stop B has road construction before 7:15 AM; Stop D must be picked up before 7:35 AM.",
+        "3. Test two alternative route sequences: Route 1 (School -> A -> B -> C -> D -> School) vs Route 2 (School -> C -> D -> B -> A -> School).",
+        "4. Calculate total travel time and kilometers for both routes using the road distance chart.",
+        "5. Explain which sequence is the superior algorithm and justify your choice based on fuel efficiency and on-time arrival."
+      ],
+      "toastFeedback": {
+        "tap_prompt": "Select the starting bus terminal before choosing your first student pickup stop.",
+        "great_job": "Optimal route verified! You calculated dependencies and saved 12 minutes of travel time.",
+        "try_again": "Check the road construction constraint on Stop B before finalizing your arrival sequence."
+      }
+    },
+    {
+      "activityId": "activity3",
+      "title": "The Morning Routine Debugger — Fixing the Scrambled Checklist",
+      "description": "An automated smart home assistant has scrambled a student's morning routine checklist! Find the three misplaced steps and restore the correct sequence before the school bus arrives. [IMAGE_PLACEHOLDER: Smart home dashboard showing eight scrambled morning routine blocks with drag-and-drop handles and error flags]",
+      "duration": "15 mins",
+      "materials": "Scrambled checklist cards, error highlight marker",
+      "learningOutcome": "Students develop the ability to detect sequence errors and dependency conflicts in existing algorithms.",
+      "instructions": [
+        "1. Read the scrambled 8-step morning checklist displayed on your worksheet.",
+        "2. Spot Bug 1: Step 2 says 'Tie shoelaces' before Step 6 'Put on shoes'.",
+        "3. Spot Bug 2: Step 3 says 'Pack lunchbox into bag' before Step 7 'Prepare sandwich in kitchen'.",
+        "4. Spot Bug 3: Step 8 says 'Turn off bathroom lights' after Step 1 'Walk out front door'.",
+        "5. Reorder all eight steps into a clean, logical sequence and test it with your lab partner."
+      ],
+      "toastFeedback": {
+        "tap_prompt": "Drag 'Put on shoes' before 'Tie shoelaces' to resolve the dependency conflict.",
+        "great_job": "Bug resolved! The morning routine sequence now flows with flawless logic.",
+        "try_again": "You cannot pack the lunchbox before making the sandwich in the kitchen."
+      }
+    }
+  ],
+  "games": [
+    {
+      "gameId": "game1",
+      "title": "The Sequence Builder — Daily Logic Flow",
+      "type": "sequence_ordering",
+      "description": "Arrange the scrambled steps of everyday processes into their correct chronological order. [IMAGE_PLACEHOLDER: Interactive algorithm ordering board with sequence blocks for Planting a Seed, Making Lemonade, and Boiling an Egg]",
+      "instructions": "Drag the blocks into slots 1 through 5 to complete the algorithm in the correct logical sequence.",
+      "steps": [
+        {
+          "order": 1,
+          "label": "Take a clean pot with soil",
+          "detail": "Fill a ceramic pot with nutrient-rich garden soil and ensure drainage hole is clear."
+        },
+        {
+          "order": 2,
+          "label": "Poke a small hole in soil",
+          "detail": "Use your finger to make a small hole about two centimeters deep in the center."
+        },
+        {
+          "order": 3,
+          "label": "Place seed into the hole",
+          "detail": "Drop the tomato seed gently into the hole and cover it lightly with loose soil."
+        },
+        {
+          "order": 4,
+          "label": "Water the soil gently",
+          "detail": "Sprinkle 100 milliliters of fresh water over the soil without washing the seed away."
+        },
+        {
+          "order": 5,
+          "label": "Place pot in sunny spot",
+          "detail": "Move the pot to a balcony where it receives at least four hours of morning sunlight."
+        }
+      ]
+    },
+    {
+      "gameId": "game2",
+      "title": "Spot the Logic Bug — Code Inspector",
+      "type": "bug_hunter",
+      "description": "Inspect three algorithm snippets designed for home robots and identify the exact logic bug causing a failure. [IMAGE_PLACEHOLDER: Inspector detective screen highlighting flawed steps in algorithm flowcharts]",
+      "instructions": "Read the scenario, spot where the sequence breaks down, and select the correct fix.",
+      "scenarios": [
+        {
+          "id": "b1",
+          "task": "Robot watering classroom plants",
+          "flawedSequence": "1. Walk to garden tap -> 2. Fill watering can with 2 liters -> 3. Walk to classroom -> 4. Pour water on potted plant -> 5. Turn on garden tap.",
+          "bugType": "Sequence Bug",
+          "explanation": "Step 5 ('Turn on tap') happens after Step 2 ('Fill can'). The robot tried to fill an empty can from a closed tap!",
+          "fix": "Move 'Turn on garden tap' to before 'Fill watering can'."
+        },
+        {
+          "id": "b2",
+          "task": "Robot washing school floor",
+          "flawedSequence": "1. Fill bucket with soapy water -> 2. Dip mop in bucket -> 3. Mop the floor -> 4. Let floor dry.",
+          "bugType": "Missing Step Bug",
+          "explanation": "The robot dipped the soaking wet mop into the bucket and mopped immediately without wringing it out, flooding the floor with water!",
+          "fix": "Insert 'Wring out excess water from mop' between dipping and mopping."
+        },
+        {
+          "id": "b3",
+          "task": "Robot sending exam reminder",
+          "flawedSequence": "1. Open messaging app -> 2. Type reminder text -> 3. Send message to student.",
+          "bugType": "Ambiguity Bug",
+          "explanation": "Step 3 says 'Send message to student', but does not specify which student, which class, or which contact phone number!",
+          "fix": "Specify 'Select Class 6 student group from contact list' before sending."
+        }
+      ]
+    },
+    {
+      "gameId": "game3",
+      "title": "The Precision Challenge — Vague vs Unambiguous",
+      "type": "card_sorting",
+      "description": "Classify incoming instruction cards into 'Vague & Ambiguous (Computer Fails)' or 'Crystal-Clear & Unambiguous (Computer Succeeds)'. [IMAGE_PLACEHOLDER: Two sorting baskets labeled 'Vague (Error)' and 'Unambiguous (Success)']",
+      "instructions": "Drag each instruction card into the correct basket based on whether it provides exact measurements.",
+      "cards": [
+        {
+          "id": "p1",
+          "text": "Walk forward a little bit and look around.",
+          "category": "Vague",
+          "reason": "What does 'a little bit' mean? 2 steps? 10 meters? Computer cannot measure 'a little bit'."
+        },
+        {
+          "id": "p2",
+          "text": "Move forward 3 meters at a speed of 1 m/s, then turn 90 degrees right.",
+          "category": "Unambiguous",
+          "reason": "Contains exact distance, speed, and degree of rotation."
+        },
+        {
+          "id": "p3",
+          "text": "Make the soup nice and warm.",
+          "category": "Vague",
+          "reason": "What temperature is 'nice and warm'? 40°C? 70°C? 90°C? Ambiguous subjective term."
+        },
+        {
+          "id": "p4",
+          "text": "Heat soup in stainless steel saucepan until temperature reaches 75°C on digital thermometer.",
+          "category": "Unambiguous",
+          "reason": "Provides exact container, target temperature, and measurement instrument."
+        },
+        {
+          "id": "p5",
+          "text": "Add some sugar to the lemonade.",
+          "category": "Vague",
+          "reason": "'Some' could be half a grain or five cups. Lacks measurement."
+        },
+        {
+          "id": "p6",
+          "text": "Add 15 grams of refined white sugar to 250 milliliters of lemonade and stir for 20 seconds.",
+          "category": "Unambiguous",
+          "reason": "Specifies weight in grams, volume in milliliters, and stirring duration in seconds."
+        },
+        {
+          "id": "p7",
+          "text": "Draw a big circle on the screen.",
+          "category": "Vague",
+          "reason": "Does 'big' mean 100 pixels, full screen, or 5 centimeters? Screen resolution unknown."
+        },
+        {
+          "id": "p8",
+          "text": "Draw a blue circle with radius of 150 pixels centered at screen coordinates (400, 300).",
+          "category": "Unambiguous",
+          "reason": "Specifies exact color, pixel radius, and coordinate anchor point."
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Class 6 AI Foundations — Chapter 2 Lesson 1 Olympiad Challenge",
+    "totalQuestions": 18,
+    "passingScore": 70,
+    "questions": [
+      {
+        "questionId": "q1",
+        "questionNumber": 1,
+        "question": "What are the three core stages of the universal computational thinking formula?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Guess → Hope → Pray",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Think (understand) → Plan (decompose & sequence) → Code (instruct precisely)",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Type → Print → Delete",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Speak → Shout → Whisper",
+            "correct": false
+          }
+        ],
+        "explanation": "The formula is Think → Plan → Code: understanding the problem deeply, planning the steps, and writing unambiguous instructions.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q2",
+        "questionNumber": 2,
+        "question": "What does 'Problem Decomposition' mean in computational thinking?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Leaving food outside in the sun until it rots",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Breaking a large, complex problem down into smaller, manageable sub-problems",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Erasing all files from a computer hard drive permanently",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Using a calculator to multiply large numbers",
+            "correct": false
+          }
+        ],
+        "explanation": "Decomposition means dividing a complex problem into smaller, simpler parts that can be solved one by one.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q3",
+        "questionNumber": 3,
+        "question": "Why is 'Sequencing' critical when writing instructions for a computer or robot?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because computers automatically know what you meant, regardless of what you wrote",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Because computers execute instructions in the exact chronological order given, without questioning the sequence",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Because computer screens only display letters in alphabetical order",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because sequencing makes computer hardware run at colder temperatures",
+            "correct": false
+          }
+        ],
+        "explanation": "Computers execute instructions sequentially from top to bottom. If the order is wrong, the outcome will fail.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q4",
+        "questionNumber": 4,
+        "question": "Which of the following instructions is UNAMBIGUOUS and safe for a robot to execute?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Put some water in the cup and make it nice and warm",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Walk forward 10 steps, turn around, and stop soon",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Pour 200 milliliters of water into the glass and heat at 80°C for 30 seconds",
+            "correct": true
+          },
+          {
+            "id": "d",
+            "text": "Draw a big drawing of a flower on the paper",
+            "correct": false
+          }
+        ],
+        "explanation": "Option C provides exact volume (200 ml), temperature (80°C), and duration (30 s), leaving zero room for misinterpretation.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q5",
+        "questionNumber": 5,
+        "question": "In the story of Diya's robotic chai disaster, why did the robotic arm try to squeeze the milk carton without opening it?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The robot was deliberately trying to misbehave and play a prank",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Diya forgot to include an explicit step telling the robot to unscrew the cap first",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "The robot arm ran out of electrical battery power",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "The milk carton was made of heavy iron steel",
+            "correct": false
+          }
+        ],
+        "explanation": "Computers have no common sense. If a human forgets to include a step, the machine cannot guess that the step is needed.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q6",
+        "questionNumber": 6,
+        "question": "Where did the computer science term 'Bug' famously originate?",
+        "options": [
+          {
+            "id": "a",
+            "text": "From a video game character that looked like a beetle",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "When Grace Hopper's team found a real moth trapped inside a relay of the Harvard Mark II computer in 1947",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "From an ancient Greek word meaning 'broken wheel'",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "From a brand of computer keyboards manufactured in Japan",
+            "correct": false
+          }
+        ],
+        "explanation": "In 1947, Grace Hopper's team extracted an actual moth trapped between electrical contacts in Relay #70 of the Harvard Mark II.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q7",
+        "questionNumber": 7,
+        "question": "What is an 'Ambiguity Bug' in an instruction set?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A physical spider crawling across the computer keyboard",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "A flaw where an instruction is open to multiple interpretations, leading to unpredictable results",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "A battery voltage drop that turns off the monitor",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "A virus that translates English sentences into French",
+            "correct": false
+          }
+        ],
+        "explanation": "Ambiguity bugs happen when words like 'some', 'near', or 'soon' leave room for the computer to guess the wrong action.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q8",
+        "questionNumber": 8,
+        "question": "In food delivery routing (like Swiggy or Zomato), why must Pickup from Restaurant A always precede Delivery to Customer X?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because customer addresses are always listed in alphabetical order",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Because of a dependency: a driver cannot physically deliver an item before obtaining it from the vendor",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Because restaurants pay more money than delivery drivers",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because navigation satellites only work when vehicles travel in straight lines",
+            "correct": false
+          }
+        ],
+        "explanation": "Dependencies dictate order: you cannot deliver food that has not yet been picked up from the kitchen.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q9",
+        "questionNumber": 9,
+        "question": "Why do ISRO scientists follow a strict sequential countdown checklist before launching a rocket?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To make the launch television broadcast look dramatic and exciting",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Because each critical mechanical system depends on previous steps holding valid status, leaving zero room for error",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Because rockets can only fly if scientists shout numbers out loud",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "To allow the rocket fuel to warm up under sunlight for six hours",
+            "correct": false
+          }
+        ],
+        "explanation": "In aerospace launches, hundreds of systems depend on previous checks passing successfully to ensure total mission safety.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q10",
+        "questionNumber": 10,
+        "question": "What is the primary reason professional software engineers spend most of their time planning before writing code?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because keyboards are too expensive to use for more than one hour a day",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Because fixing a design mistake on paper takes minutes, while fixing a mistake in coded software can take weeks",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Because computer screens emit invisible rays that slow down typing",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because computer programming languages change their spelling every midnight",
+            "correct": false
+          }
+        ],
+        "explanation": "Planning prevents costly errors. Fixing an idea on a whiteboard takes moments, while untangling broken code is difficult and slow.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q11",
+        "questionNumber": 11,
+        "question": "In the Robot Sandwich challenge, what happens if an algorithm says 'Put jam on bread' without specifying to open the jar or use a knife?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The robot places the unopened glass jar on top of the bread slice",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "The robot opens the refrigerator and eats all the fruit",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "The robot immediately orders food from an online app",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "The computer screen turns off automatically",
+            "correct": false
+          }
+        ],
+        "explanation": "A literal robot follows words exactly. Without instructions to open the lid and scoop jam with a knife, it places the whole jar on bread.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q12",
+        "questionNumber": 12,
+        "question": "Which of the following is an everyday human algorithm that most students execute without thinking?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Brushing teeth: wet brush -> apply pea-sized paste -> brush all teeth for 2 mins -> rinse mouth with water",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Staring blankly at the wall for three hours without moving",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Sleeping for eight hours without dreaming",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Dropping a pencil on the floor accidentally",
+            "correct": false
+          }
+        ],
+        "explanation": "Brushing teeth is an ordered, step-by-step algorithm designed to achieve a clean, healthy outcome.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q13",
+        "questionNumber": 13,
+        "question": "What caused the catastrophic failure of NASA's 125-million-dollar Mars Climate Orbiter in 1999?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A collision with an unexpected Martian asteroid",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "An ambiguity bug: one engineering team calculated force in English pounds, while another used metric Newtons without unit conversion",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "The spacecraft ran out of solar battery power",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Aliens disabled the radio communication antennas",
+            "correct": false
+          }
+        ],
+        "explanation": "A unit mismatch bug between English imperial pounds and metric Newtons caused the spacecraft to descend too low into the Martian atmosphere.",
+        "difficulty": "hard",
+        "points": 10
+      },
+      {
+        "questionId": "q14",
+        "questionNumber": 14,
+        "question": "What is a 'Sequence Bug' in an algorithm?",
+        "options": [
+          {
+            "id": "a",
+            "text": "When all the necessary steps exist in the plan, but they are arranged in the wrong chronological order",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "When a step is completely missing from the plan",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "When the computer monitor displays text upside down",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "When the internet connection drops below 10 Mbps",
+            "correct": false
+          }
+        ],
+        "explanation": "A sequence bug occurs when the order of execution is scrambled (such as tying shoelaces before putting on shoes).",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q15",
+        "questionNumber": 15,
+        "question": "Why is finding a bug in an algorithm considered a normal and valuable part of learning?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because bugs help computer manufacturers sell new computers",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Because bugs act as clues that reveal hidden logical flaws, helping engineers build more robust and resilient systems",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Because programs run faster when they contain at least ten bugs",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because school teachers give extra marks for writing broken code",
+            "correct": false
+          }
+        ],
+        "explanation": "Debugging is a core problem-solving habit. Analyzing where logic failed helps creators build deeper understanding.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q16",
+        "questionNumber": 16,
+        "question": "How did Chef Sanjeev coordinate preparing 500 meals for a wedding reception on time?",
+        "options": [
+          {
+            "id": "a",
+            "text": "He ordered 500 fast-food burgers from a nearby restaurant",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "He calculated timing backward from the 7:30 PM serving hour and decomposed recipes into synchronized station checklists",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "He cooked all dishes at 9:00 AM and let them sit in cold pans all day",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "He guessed ingredient quantities by looking at the ceiling",
+            "correct": false
+          }
+        ],
+        "explanation": "Chef Sanjeev planned backward from serving time, decomposed tasks into stations, and used precise recipe instructions.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q17",
+        "questionNumber": 17,
+        "question": "What is the difference between a human communicating with another human versus communicating with an AI or computer?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Humans use common sense and context to resolve ambiguity, while computers require explicit, literal, and unambiguous instructions",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Humans speak only in numbers, while computers speak only in poetry",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Humans do not understand spoken words, but computers understand all languages natively",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "There is no difference whatsoever",
+            "correct": false
+          }
+        ],
+        "explanation": "Humans instinctively interpret context and body language, whereas computers execute literal commands without common-sense assumptions.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q18",
+        "questionNumber": 18,
+        "question": "What mindset should a student adopt when an algorithm or project does not work as expected on the first try?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Give up immediately and decide they are bad at technology",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Adopt a detective mindset: step through the plan line by line, locate the logic break, and debug methodically",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Blame the computer and refuse to do science homework again",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Delete the entire project without reading the error message",
+            "correct": false
+          }
+        ],
+        "explanation": "Resilience and methodical debugging are the superpowers of great problem solvers. Stepping through logic reveals the solution.",
+        "difficulty": "easy",
+        "points": 10
+      }
+    ],
+    "completionFeedback": {
+      "excellent": {
+        "range": "90-100",
+        "message": "Logic Architect Mastery achieved! You think, plan, and sequence with the precision of a NASA flight director. Algo awards you the Master Logic Architect badge!",
+        "badge": "Master Logic Architect"
+      },
+      "good": {
+        "range": "70-89",
+        "message": "Great work! You have a solid grasp of decomposition, sequencing, and unambiguous instructions. Review logic bugs to score 100%!",
+        "badge": "Sequence Scout"
+      },
+      "needsReview": {
+        "range": "0-69",
+        "message": "Good effort! Revisit the sections on problem decomposition and the three types of logic bugs, then retry the challenge.",
+        "badge": "Curious Learner"
+      }
+    }
+  },
+  "summary": {
+    "recap": "Algo: Incredible thinking today! You discovered the universal superpower shared by master chefs, NASA flight directors, and AI researchers: Think → Plan → Code. You proved that real programming is not about memorizing complex syntax—it is about clear thinking! You learned to chop giant problem mountains into easy, climbable stepping stones using Problem Decomposition. You saw why Sequencing matters, proving that putting on shoes before socks leads to hilarious disaster. You replaced fuzzy, vague human words with sharp, Unambiguous Instructions that leave zero room for computer confusion. And finally, you adopted the detective mindset of Debugging, knowing that bugs are not failures, but friendly clues. Keep this superpower in your pocket every day!",
+    "keyTakeaways": [
+      "Think → Plan → Code is the universal problem-solving formula: understand goal, decompose into steps, and instruct precisely.",
+      "Problem Decomposition turns intimidating challenges into small, manageable, bite-sized mini-tasks.",
+      "Sequencing is the chronological order of execution; computers execute steps sequentially without guessing.",
+      "Unambiguous instructions use specific measurements, numbers, and clear conditions rather than vague subjective words.",
+      "A bug is a logic flaw or omission; debugging is the detective process of stepping through code to fix it.",
+      "Algorithmic thinking powers real-world systems from Swiggy delivery routes to ISRO rocket launches and kitchen banquets."
+    ],
+    "studentReflection": "Think about an activity you do every day, like making tea or packing your school bag. If you had to write instructions for an alien robot, what hidden step might you accidentally forget?",
+    "parentDiscussionPrompt": "Share the story of Diya's Robotic Chai Disaster with your family. Try writing instructions for making a sandwich together and see if anyone catches a funny logic bug!"
+  },
+  "teacherGuide": {
+    "lessonDuration": "45 minutes",
+    "recommendedClassFormat": "10 mins interactive Robot Sandwich hook -> 15 mins concept breakdown with visual analogies -> 10 mins hands-on Multi-Stop Route activity -> 10 mins mastery quiz and reflection",
+    "openingHookDemonstration": "Bring two slices of bread, a jar of jam, and a butter knife to the front of the classroom. Tell students: 'I am a Robot that follows instructions literally. Tell me how to make a jam sandwich!' When a student says 'Put jam on bread', pick up the entire unopened glass jar and place it on the bread slice. When they say 'Spread it', slide the glass jar across the bread. Let the room erupt in laughter. Then ask: 'Why did the robot do that?' Use this unforgettable hook to introduce literal computer execution and unambiguous instructions.",
+    "discussionPrompts": [
+      "Why is it harder to explain how to tie shoelaces than how to add two numbers together?",
+      "Can you think of a situation where putting the steps of a task in the wrong order could be dangerous in real life?",
+      "Why do you think NASA spends years planning checklists on paper before writing spaceflight software?",
+      "If you had a robot helper at home, what household chore would you decompose into steps for it first?"
+    ],
+    "commonMisconceptions": [
+      {
+        "misconception": "Coding means typing complex computer programming syntax like Python or C++.",
+        "correction": "Coding is simply communicating precise, unambiguous instructions. The core skill is logical thinking and sequencing, which requires zero syntax."
+      },
+      {
+        "misconception": "Computers have common sense and will automatically correct obvious human mistakes.",
+        "correction": "Computers have zero common sense. They will faithfully execute a foolish or scrambled instruction word for word."
+      },
+      {
+        "misconception": "If an algorithm fails, it means the programmer is bad at technology.",
+        "correction": "All algorithms contain bugs initially. Debugging is the standard, normal detective process that leads to robust solutions."
+      },
+      {
+        "misconception": "You can solve a big problem faster by jumping straight to typing without a plan.",
+        "correction": "Jumping ahead without planning leads to tangled logic and wasted hours. A five-minute blueprint saves weeks of debugging."
+      }
+    ],
+    "differentiatedInstruction": {
+      "forAdvancedLearners": "Introduce the concept of conditional branching ('IF the traffic is heavy, THEN take Route B, ELSE take Route A') and looping ('REPEAT stirring until sugar dissolves').",
+      "forDevelopingLearners": "Use physical tactile props (recipe cards, Lego brick assembly steps) to reinforce chronological sequencing before moving to written instructions."
+    }
+  },
+  "resources": {
+    "teacherGuideDocument": "/content/middle/guides/class6-ch2-l1-teacher.pdf",
+    "worksheets": [
+      "/content/middle/worksheets/class6-ch2-l1-activity1-robot-sandwich.pdf",
+      "/content/middle/worksheets/class6-ch2-l1-activity2-bus-routing.pdf",
+      "/content/middle/worksheets/class6-ch2-l1-activity3-routine-debugger.pdf"
+    ],
+    "supplementaryVideos": [
+      {
+        "title": "Exact Instructions Challenge — The Peanut Butter & Jelly Sandwich",
+        "url": "https://www.youtube.com/watch?v=cDA3_5982h8",
+        "duration": "5:12",
+        "suitableFor": "Hilarious classroom demonstration of literal robot execution"
+      },
+      {
+        "title": "How Delivery Apps Optimize Multi-Stop Routes with Algorithms",
+        "url": "https://www.youtube.com/watch?v=kU_Ua08L-hA",
+        "duration": "4:45",
+        "suitableFor": "Visual explanation of logistical sequencing and graph optimization"
+      }
+    ],
+    "classroomProjectIdeas": [
+      {
+        "projectTitle": "School Library Book Sorting Algorithm",
+        "concept": "Design a step-by-step flowchart for classroom monitors to sort return-shelf books by subject, height, and author surname."
+      },
+      {
+        "projectTitle": "The Morning Assembly Micro-Schedule",
+        "concept": "Decompose a 20-minute school morning assembly into timed sequential blocks (Prayer, News, Speech, Anthem) with transition buffers."
+      },
+      {
+        "projectTitle": "Treasure Hunt Direction Algorithm",
+        "concept": "Write unambiguous navigation steps (paces, compass headings, landmark triggers) leading classmates to a hidden clue on the school playground."
+      }
+    ],
+    "glossary": [
+      {
+        "term": "Computational Thinking",
+        "definition": "A structured problem-solving approach using decomposition, pattern recognition, abstraction, and algorithmic design."
+      },
+      {
+        "term": "Problem Decomposition",
+        "definition": "The practice of breaking down a large, complex challenge into smaller, manageable sub-problems."
+      },
+      {
+        "term": "Algorithm",
+        "definition": "A step-by-step set of ordered, unambiguous instructions designed to achieve a specific goal or solve a problem."
+      },
+      {
+        "term": "Sequencing",
+        "definition": "Arranging instructions or actions in their correct chronological order from first to last."
+      },
+      {
+        "term": "Unambiguous Instructions",
+        "definition": "Clear, precise directions that have only one possible interpretation, leaving zero room for guessing."
+      },
+      {
+        "term": "Bug",
+        "definition": "Any error, flaw, or unexpected behavior in an algorithm, procedure, or computer program."
+      },
+      {
+        "term": "Debugging",
+        "definition": "The methodical process of identifying, isolating, and correcting logic flaws or bugs in an algorithm."
+      },
+      {
+        "term": "Dependency",
+        "definition": "A relationship where a step cannot begin or succeed until an earlier prerequisite step has been completed."
+      },
+      {
+        "term": "Flowchart",
+        "definition": "A visual diagram using connected shapes and arrows to illustrate the sequence of steps and decision points in an algorithm."
+      }
+    ]
+  }
+}
