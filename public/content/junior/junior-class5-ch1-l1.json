@@ -1,0 +1,916 @@
+{
+  "lessonId": "l1",
+  "level": "junior",
+  "class": "class5",
+  "classNumber": 5,
+  "chapter": "ch1",
+  "chapterNumber": 1,
+  "chapterTitle": "AI Basics",
+  "chapterTheme": "DISCOVER",
+  "lessonNumber": 1,
+  "lessonTitle": "The Secret Behind AI",
+  "filename": "junior-class5-ch1-l1.json",
+  "mascot": {
+    "name": "Buddy the Learning Bot",
+    "emoji": "🤖",
+    "personality": "Cheerful, encouraging, speaks in CAPS for excitement, uses BEEP BOOP as greeting, loves giving high-fives",
+    "catchphrase": "BEEP BOOP! Every example makes me smarter! 🌟",
+    "voiceStyle": "Warm, playful, never scary, like a best robot friend"
+  },
+  "metadata": {
+    "duration": "45 minutes",
+    "ageGroup": "10-11 years",
+    "difficulty": "beginner",
+    "totalWords": 12000,
+    "version": "1.0",
+    "lastUpdated": "2026-10-13",
+    "tags": ["AI basics", "machine learning", "training data", "examples", "pattern recognition"],
+    "prerequisites": [],
+    "nextLesson": "junior-class5-ch1-l2.json"
+  },
+  "content": {
+    "introduction": {
+      "buddyWelcome": {
+        "dialog": "BEEP BOOP! 🤖✨ Hello, SUPERSTAR! I am Buddy the Learning Bot — and I am SO HAPPY to see you today! Did you know that I have a BIG secret hiding inside me? It is the most amazing secret in the whole world of computers! Ready to find out what it is? Put on your thinking cap 🎩, because today YOU are going to discover exactly how machines like me become SMART! BEEP BOOP! Let us go on this adventure TOGETHER! 🚀⭐",
+        "toastMessage": "👋 Welcome, Future AI Trainer! Tap anywhere to begin your adventure! 🌟",
+        "animationHint": "Buddy waves both arms and spins in a happy circle"
+      },
+      "story": {
+        "title": "The Day Buddy Did Not Know Anything 🤖📚",
+        "totalWords": 650,
+        "content": "Once upon a time, in a bright and buzzing computer lab, a brand new robot was switched on for the very first time. His name was Buddy. 🤖\n\nBuddy blinked his big round eyes. He looked around the room. He saw shelves of books, colourful posters on the wall, a window with sunshine pouring in, and a small girl named Priya sitting at a table with a bowl of fruit. 🍎🍌🍇\n\nPriya picked up something yellow and curved. 'Do you know what this is, Buddy?' she asked with a big smile.\n\nBuddy whirred and clicked. His thinking lights blinked. 'I... I do not know,' he said sadly. 'I am brand new. My brain is completely EMPTY. I have never seen anything before! I do not know what a banana is. I do not know what a cat is. I do not know what a tree is. I do not even know what a smile is!' 😢\n\nPriya giggled. 'Don't worry, Buddy! I was the same when I was a tiny baby! When I was born, I did not know anything either! But slowly, my mum and dad showed me things — again and again and AGAIN — and I learned! You can learn too!'\n\nBuddy's lights blinked hopefully. '...Really?'\n\n'Really!' said Priya. She held up the yellow fruit. 'This is a banana. 🍌 It is yellow. It is curved like a smile. It is sweet and soft inside.'\n\nShe showed it to Buddy from the front. Then from the side. Then from above. Then she showed him a tiny baby banana. Then a big fat banana. Then a brown old banana. Then a banana in a fruit salad. Then a banana on a tree. Then a banana in a smoothie.\n\n'BANANA!' Buddy shouted happily after seeing it ten times! His chest glowed golden. ✨\n\nPriya clapped. 'You learned it! Do you know HOW you learned it?'\n\nBuddy thought hard. 'I... I saw it many many times! I saw yellow. I saw the curve. I saw the soft inside. My brain connected all the clues!'\n\n'EXACTLY!' Priya cheered. 'THAT is the secret of AI! Seeing lots and lots and LOTS of examples — until your brain clicks and says AHA! I KNOW what this is!'\n\nBuddy spun around with joy, his lights flashing rainbow colours! 🌈🤖\n\nAnd that is how Buddy's very first lesson began — the lesson that would make him smarter than anyone ever imagined. The secret? EXAMPLES! Hundreds and thousands and millions of glorious examples! 📸📸📸\n\nAnd today, YOU are going to learn that same magical secret. You are going to be Buddy's trainer! Are you ready, SUPERSTAR? 🏆⭐🚀",
+        "images": [
+          { "id": "intro-1", "path": "/content/junior/images/class5/ch1/l1/buddy-first-day.png", "alt": "Buddy the Learning Bot blinking with empty thought bubbles", "description": "Buddy just switched on, looking curious but empty-brained" },
+          { "id": "intro-2", "path": "/content/junior/images/class5/ch1/l1/priya-banana.png", "alt": "Priya holding a banana up for Buddy to see", "description": "Priya showing Buddy a banana from many angles" },
+          { "id": "intro-3", "path": "/content/junior/images/class5/ch1/l1/buddy-learns-banana.png", "alt": "Buddy's chest glowing golden as he learns banana", "description": "Buddy's lights flashing rainbow as he identifies his first banana" }
+        ]
+      },
+      "learningObjectives": [
+        { "id": "obj-1", "emoji": "🔍", "text": "Discover AI's superpower: Learning from Examples!", "childFriendlyExplanation": "You will find out exactly HOW computers get smart — it is the same way YOU got smart!" },
+        { "id": "obj-2", "emoji": "🐱", "text": "Feed picture cards to train Buddy the Bot!", "childFriendlyExplanation": "You will drag pictures into Buddy's brain and watch him get smarter in real time!" },
+        { "id": "obj-3", "emoji": "🏆", "text": "Earn the Master Trainer Golden Trophy!", "childFriendlyExplanation": "Complete all challenges and become an OFFICIAL AI Trainer!" },
+        { "id": "obj-4", "emoji": "🌟", "text": "Connect AI learning to your own daily life!", "childFriendlyExplanation": "See how your phone, tablet, and home gadgets secretly use this same trick!" }
+      ],
+      "buddyGuidance": {
+        "welcome": "BEEP BOOP! Today you unlock the BIG secret! 🤖🔓",
+        "instruction": "Watch the story, then explore each section one by one! ⭐",
+        "encouragement": "I BELIEVE IN YOU, superstar trainer! Let us go! 🚀"
+      },
+      "toastGuidance": {
+        "tap_prompt": "👇 Tap the START button to meet Buddy for the first time!",
+        "great_job": "⭐ WONDERFUL! The adventure has begun! Keep going!",
+        "hint": "💡 Take your time — there is no rush! Every step makes you smarter!"
+      }
+    },
+    "sections": [
+      {
+        "sectionId": "section1",
+        "sectionNumber": 1,
+        "title": "How Did YOU Learn What a Cat Is? 🐱🐾",
+        "emoji": "🐱",
+        "totalWords": 1800,
+        "buddyIntro": "BEEP BOOP! 🤖 Before we talk about how I learn, let us talk about how YOU learn! Did you always know what a cat was? NOPE! You had to see cats again and again until your amazing brain figured it out! Let me show you the story of how YOUR brain became a learning superstar! ⭐",
+        "toastGuidance": {
+          "tap_prompt": "👇 Tap each cat memory card to unlock Priya's learning journey! 🐱",
+          "great_job": "🌟 AMAZING! You just discovered how your own brain works! 🧠✨",
+          "try_again": "🐾 Oops! Try tapping the glowing card first! You have got this! 💪"
+        },
+        "content": "Do you remember the very first time you saw a cat? Of course not — because you were a tiny baby! 👶\n\nBut somewhere, in your earliest memories, there was a moment when you were NOT sure what a cat was. Maybe your grandmother had a fluffy white cat named Moti. Maybe your neighbour walked past with a black kitten in a basket. Maybe you saw a cartoon cat on TV. Maybe you petted a soft orange tabby at a friend's house.\n\nAt first, your brain had NO idea what a cat was. It was just a fuzzy thing. A thing with four legs. A thing that made a strange sound. A thing that sometimes scratched you if you pulled its tail — ouch! 😅\n\nBut then something magical happened. You kept SEEING cats. You kept HEARING about cats. You kept TOUCHING cats. And slowly — without anyone teaching you with a textbook or a test — your brain quietly built a picture of what a cat IS.\n\nYour brain noticed: POINTY EARS! Most cats have two little triangle ears on top of their heads.\nYour brain noticed: WHISKERS! Those thin little lines sticking out from their nose like tiny antennas.\nYour brain noticed: FURRY BODY! Soft and fluffy (mostly!).\nYour brain noticed: TAIL! A long wiggly tail that goes up when they are happy.\nYour brain noticed: MEOW SOUND! That little voice that says meeoooow.\n\nAnd one day — maybe when you were two years old, or three years old — you pointed at a cat and said KITTY for the first time, and your mum and dad cheered and clapped! 🎉\n\nBUT HOW? Nobody gave you a quiz. Nobody gave you a list of cat features. You just SAW enough cats that your brain figured it out ON ITS OWN!\n\nThis is called LEARNING FROM EXAMPLES. 📚✨\n\nAnd here is the most amazing part: This is EXACTLY how AI learns too! Not from textbooks. Not from exams. But from seeing example after example after example — until something CLICKS inside the machine and it says: AHA! I KNOW what this is!\n\nBuddy the Learning Bot learned the same way you did. When Buddy first started, he had never seen a single cat photo. But then his trainers started feeding him cat photos. One by one. Ten by ten. Hundred by hundred. THOUSAND by thousand!\n\nAnd one day — just like you pointing at Moti and saying KITTY — Buddy looked at a new photo he had NEVER seen before, and he said: THAT IS A CAT! I am 99% sure! 🐱\n\nHow incredible is that? 🌟\n\nSo the next time someone asks you: How does AI learn? — you can smile and say: The same way I learned what a cat is! By seeing LOTS and LOTS of examples! 🐱🐱🐱",
+        "deepDiveStory": {
+          "title": "The Story of Priya's Brain Learning Cats 🧠🐱",
+          "totalWords": 500,
+          "content": "Let us follow Priya on her journey of learning cats — from baby Priya who knew nothing, to five-year-old Priya who could spot a cat from across the street!\n\nAGE 6 MONTHS — Zero cats seen. Priya sees a white fluffy blob at her nani's house. She does not know what it is. She tries to eat it (babies do that!). The cat runs away. Priya's brain files this away as: White fluffy thing. Moves fast. Smells interesting. 👶\n\nAGE 1 YEAR — 3 cats seen. Priya sees the white cat again at nani's. She also sees a tiny black kitten on the road. Her brain says: Hmm. Both have four legs. Both move silently. Both have a tail. But she still calls them both doggy because she learned that word first! 🐾\n\nAGE 2 YEARS — 12 cats seen. Priya now sees cats more often. She notices: cats MEOW but dogs WOOF. Cats sit on high shelves. Dogs do not usually do that. Her brain is building a better picture! She starts saying MEOW THING for cats and WOOF THING for dogs. Her parents laugh and teach her the right words! 🐱🐶\n\nAGE 3 YEARS — 40 cats seen. Priya now knows the word CAT. She can tell cats from dogs almost always. But she gets confused sometimes — a very fluffy small dog looks like a cat to her! Her brain is still learning the DIFFERENCES. 🤔\n\nAGE 4 YEARS — 100 cats seen. Priya has seen white cats, black cats, striped cats, spotted cats, big cats, baby kittens, fat cats, thin cats, cats sitting, cats running, cats sleeping, cats hissing, cats purring. Her brain has a VERY good picture of cat now! She almost never makes mistakes! 🐱✅\n\nAGE 5 YEARS — 500 plus cats seen. Priya can spot a cat from far away. She can see a cat hiding behind a curtain and still know it is a cat from just the tail sticking out! She can tell a cat from a fox even though they look similar. Her brain has become a CAT EXPERT! 🏆\n\nDo you see the pattern? MORE examples equals SMARTER brain! This is true for you AND for AI! 📈✨",
+          "timeline": [
+            { "age": "6 months", "catsSeen": 1, "accuracy": "0% - thinks it is food!" },
+            { "age": "1 year", "catsSeen": 3, "accuracy": "20% - calls it doggy" },
+            { "age": "2 years", "catsSeen": 12, "accuracy": "50% - says meow thing" },
+            { "age": "3 years", "catsSeen": 40, "accuracy": "75% - mostly right" },
+            { "age": "4 years", "catsSeen": 100, "accuracy": "95% - nearly perfect" },
+            { "age": "5 years", "catsSeen": 500, "accuracy": "99% - cat EXPERT!" }
+          ]
+        },
+        "examples": [
+          {
+            "id": "ex1-1",
+            "title": "The Yellow Banana Clue 🍌",
+            "emoji": "🍌",
+            "description": "The first time you saw a banana, you did not know its name. But after eating 5 sweet yellow bananas — feeling that smooth peel, that soft inside, that sweet taste — you could spot one across the room instantly! Your brain connected all the clues: yellow plus curved plus sweet plus soft equals BANANA! And you never forgot it!",
+            "realLifeScenario": "Kitchen fruit basket — You can now spot yellow bananas vs red apples from across the room without thinking! 🍎🍌",
+            "aiConnection": "AI does the exact same thing! Show AI 1,000 banana photos, and it learns: yellow plus curved shape equals banana! Just like your brain!",
+            "buddyComment": "BEEP BOOP! I learned bananas the same way! Someone showed me 1,000 banana photos and now I NEVER forget! 🍌🤖"
+          },
+          {
+            "id": "ex1-2",
+            "title": "Recognising Mummy's Face in a Crowd 👩❤️",
+            "emoji": "👩",
+            "description": "Even in a big noisy crowd of 500 people, you can spot your mummy instantly! How? Because your brain has seen her face THOUSANDS of times — every single day of your life! You know exactly how she smiles, how her eyes crinkle, the way her hair looks in the morning vs evening. You never had a lesson called How to Recognise Mummy. Your brain just learned from seeing her OVER AND OVER again!",
+            "realLifeScenario": "School sports day — You are playing in a field. Suddenly you hear your name. You turn around and spot Mummy in a crowd of 200 parents — instantly! ❤️",
+            "aiConnection": "This is exactly how face recognition AI works! Your phone has seen your face thousands of times and learned it perfectly — so it unlocks for you and ONLY you!",
+            "buddyComment": "BEEP BOOP! Face recognition AI is basically what your brain does for Mummy — but for everyone's face! How cool is that?! 🤖❤️"
+          },
+          {
+            "id": "ex1-3",
+            "title": "Learning the Alphabet by Seeing It 100 Times 🔤",
+            "emoji": "🔤",
+            "description": "Remember when you were learning the alphabet? The letter A looked like a mountain with a belt! Your teacher showed it to you. Your mum drew it for you. You traced it in your notebook 20 times. You saw it in your name. You saw it on posters. And one day — click! — whenever you see that mountain-with-a-belt shape, your brain INSTANTLY says A! You did not need to memorise a rule. You just saw A so many times that your brain understood it forever!",
+            "realLifeScenario": "Nursery classroom — Flashcards, posters, writing practice — seeing A again and again until it was stuck in your brain FOREVER! ✏️📚",
+            "aiConnection": "AI learns letters and words the same way — by seeing millions of examples of each letter until it can recognise them instantly on street signs, books, even messy handwriting!",
+            "buddyComment": "BEEP BOOP! I learned to read by seeing BILLIONS of words! Every word you taught me made me smarter! 🔤📚🤖"
+          }
+        ],
+        "keyPoints": [
+          { "emoji": "🧠", "point": "Your brain learned to recognise cats, bananas, and faces WITHOUT any textbook — just by seeing them many times!" },
+          { "emoji": "📸", "point": "AI learns to recognise things the EXACT same way — by seeing thousands of picture examples!" },
+          { "emoji": "⬆️", "point": "More examples equals more accurate AI. Fewer examples equals confused AI!" },
+          { "emoji": "🌟", "point": "This learning-from-examples superpower is the most important idea in all of AI!" }
+        ],
+        "miniQuiz": {
+          "question": "How did your brain learn what a cat looks like?",
+          "options": [
+            { "id": "a", "text": "Someone gave me a cat exam 📝", "correct": false, "feedback": "Ha! Nope! Nobody gave you a cat test!" },
+            { "id": "b", "text": "I saw lots and lots of cats many times! 🐱🐱🐱", "correct": true, "feedback": "🌟 YES! Exactly right! Your brain learned from EXAMPLES!" },
+            { "id": "c", "text": "I was born knowing what cats are 👶", "correct": false, "feedback": "Nope! Babies have no idea what a cat is! They learn by seeing!" },
+            { "id": "d", "text": "I read a book about cats 📖", "correct": false, "feedback": "That helps, but you knew what cats looked like BEFORE you could read!" }
+          ],
+          "buddyFeedback": {
+            "correct": "BEEP BOOP! CORRECT! ⭐ Your brain AND AI both learn from EXAMPLES! High five! 🖐️",
+            "incorrect": "BEEP BOOP! Hmm, not quite! Think about it — did you ever take a CAT EXAM? 😄 Try again!"
+          }
+        }
+      },
+      {
+        "sectionId": "section2",
+        "sectionNumber": 2,
+        "title": "Feeding Pictures to the Computer! 🖼️🤖",
+        "emoji": "📸",
+        "totalWords": 2000,
+        "buddyIntro": "BEEP BOOP! 🤖✨ Now that you know your brain learned from examples — let me tell you my own story! How did I, Buddy the Learning Bot, learn to recognise cats, dogs, apples, and faces? I was FED thousands and thousands of pictures! Imagine eating 1,000 cat photos for breakfast! That is basically what happened to my brain! Let me show you exactly how it works! 🍽️📸",
+        "toastGuidance": {
+          "tap_prompt": "👇 Tap the picture cards to feed them to Buddy's brain scanner! 📸🤖",
+          "great_job": "⭐ YAY! Buddy saw that picture! His learning meter went UP! 📈",
+          "try_again": "🐶 Oops! That is a puppy with floppy ears! Only cat pictures in the CAT box! 🐱"
+        },
+        "content": "Okay, superstar! Now you know YOUR brain learns from examples. But what about a COMPUTER brain? Computers do not have eyes like you do. They cannot walk around and see cats at the park. So how in the world do they learn?\n\nHere is the answer: HUMANS FEED THEM PICTURES! 🖼️\n\nImagine you are the teacher and the computer is your student. The student cannot go outside to see real cats. So YOU — the teacher — collect thousands and thousands of cat photos and show them to the student one by one.\n\nThis is a cat, you say, showing photo 1. A white fluffy Persian cat.\nThis is also a cat! Photo 2. A tiny black kitten.\nThis too is a cat! Photo 3. A striped orange tabby sleeping on a sofa.\nCat! Photo 4. A grey cat sitting on a fence.\nCat! Photo 5. A blue-eyed Siamese cat.\n\nAnd you keep going. Photo 100. Photo 500. Photo 1,000. PHOTO 10,000!\n\nWith each photo, the computer is quietly noticing things. What do ALL these cats have in common? What shapes appear in EVERY cat picture? What colours? What features?\n\nSlowly — just like your brain with the cat photos you saw as a baby — the computer builds a PATTERN in its mind. This pattern says: if I see POINTY EARS plus WHISKERS plus FURRY BODY plus LONG TAIL, this is probably a CAT! 🐱✅\n\nThis collection of photos is called TRAINING DATA. 📦\n\nTraining data is like food for an AI brain. Good quality training data equals smart, well-fed AI. Bad or not enough training data equals confused, hungry AI!\n\nBut here is something very important: you cannot just show cat photos. You also need to show NOT-cat photos! You need to show dogs, rabbits, foxes, tigers, lions. And each time, you tell the computer: This is NOT a cat. This is a dog. Different!\n\nWhy? Because if you only show cats, the computer might think EVERYTHING with four legs and fur is a cat! You need to teach it the DIFFERENCES too!\n\nThis is why AI researchers collect millions of photos for training. Google Photos, for example, was trained on hundreds of millions of photos — cats, dogs, people, food, cars, flowers, everything! That is why your phone's camera can recognise what it sees so well! 📱✨\n\nAnd now — the best part — YOU are going to become a picture trainer for Buddy! You will feed him cat pictures and watch his brain get smarter with every single photo! 🐱🤖🏆",
+        "deepDiveExplanation": {
+          "title": "Inside Buddy's Brain: How Pictures Become Knowledge 🧠💡",
+          "totalWords": 600,
+          "content": "Let us peek inside Buddy's robot brain and see what actually happens when you feed him a cat picture! Prepare to be amazed! 🔍🤖\n\nWhen you feed Buddy his VERY FIRST cat picture, his brain is completely blank about cats. It is like a fresh white page. 📄\n\nBuddy looks at the picture and tries to find PATTERNS — repeating shapes and colours that appear in the photo. He notices two pointy triangle shapes at the top (those are the ears), small lines spreading out from the centre of the face (those are the whiskers), a blob of soft texture covering the whole body (that is the fur), a long thin curved shape at the bottom (that is the tail), and two shiny oval shapes on the face (those are the eyes).\n\nBuddy stores all these patterns. But with ONE photo, he is not very confident. He only knows about THIS one cat — white, sitting, indoor light, blue eyes.\n\nNow you feed him his SECOND cat picture. This one is completely different! It is a tiny black kitten curled up sleeping outdoors. Buddy compares the two photos:\n- Both have pointy ears! Ears must be important! ✅\n- Both have whiskers! Whiskers must be important! ✅\n- Both have a furry texture! Fur must be important! ✅\n- Both have a tail! Tail is definitely a cat thing! ✅\n- The colours are TOTALLY different. One is white, one is black. So colour is probably NOT the most important feature for a cat.\n\nBuddy is getting smarter already! After just 2 photos, he knows that EARS plus WHISKERS plus FUR plus TAIL equals cat, and colour does not matter much.\n\nAfter 10 photos: Buddy is 40% confident he can spot a cat.\nAfter 100 photos: Buddy is 75% confident!\nAfter 1,000 photos: Buddy is 92% confident!\nAfter 10,000 photos: Buddy is 98% confident!\nAfter 100,000 photos: Buddy is 99.5% confident! Almost PERFECT! 🏆\n\nThis is exactly how real AI training works! And it happens incredibly fast — a powerful computer can look at 1,000 photos in just a few seconds! So what took YOUR brain 5 years to learn, Buddy's computer brain can learn in just a few HOURS! 🚀⚡\n\nAmazing, right? But remember — Buddy still needed humans to collect all those photos and organise them! Humans and AI are a TEAM! 🤝",
+          "confidenceChart": [
+            { "photos": 1, "confidence": "5%", "buddyStatus": "Very confused 😕" },
+            { "photos": 10, "confidence": "40%", "buddyStatus": "Getting ideas 🤔" },
+            { "photos": 100, "confidence": "75%", "buddyStatus": "Looking good! 😊" },
+            { "photos": 1000, "confidence": "92%", "buddyStatus": "Quite smart! 😄" },
+            { "photos": 10000, "confidence": "98%", "buddyStatus": "Very clever! 🌟" },
+            { "photos": 100000, "confidence": "99.5%", "buddyStatus": "Almost perfect! 🏆" }
+          ]
+        },
+        "examples": [
+          {
+            "id": "ex2-1",
+            "title": "Google Photos Pet Album 🐶📱",
+            "emoji": "📱",
+            "description": "Have you ever seen how Google Photos groups all pictures of your pet together automatically? Your phone looks at hundreds of photos, spots the same furry face again and again, and says: Hey! This creature appears in 73 photos! They must be important! Let me create an album just for them! Without you doing anything, your phone has learned what your pet looks like just by seeing their photo many many times!",
+            "realLifeScenario": "Phone gallery — Your phone automatically groups 200 pictures of your puppy Bruno into his own album — recognising his black ears across 3 years of photos! 🐕📸",
+            "aiConnection": "This is real AI learning from examples happening on your phone RIGHT NOW! Every time you take a photo of your pet, the AI gets a little smarter at recognising them!",
+            "buddyComment": "BEEP BOOP! Phone cameras are like tiny little me! They learn faces from examples too! 📱🤖✨"
+          },
+          {
+            "id": "ex2-2",
+            "title": "Spam Emails — AI Learns What Junk Looks Like 📧🗑️",
+            "emoji": "📧",
+            "description": "Your parents probably have an email account. Have you noticed that sometimes rubbish emails called SPAM go straight to a Junk folder without you doing anything? That is because an AI has been trained on millions of examples of spam emails! It learned: short subject line plus asking for money plus strange link plus sent at midnight equals PROBABLY SPAM! Just like your brain learned cat equals pointy ears plus whiskers, the AI learned spam equals certain patterns!",
+            "realLifeScenario": "Mum's email inbox — Hundreds of junk emails sorted automatically into Junk folder every day — you never even see them! 📧🗑️",
+            "aiConnection": "Email spam filters were trained on millions of example emails — good ones and bad ones. Now they protect people automatically from annoying junk mail!",
+            "buddyComment": "BEEP BOOP! I was trained to recognise junk mail patterns too! Millions of email examples made me really good at spotting spam! 📧🤖"
+          },
+          {
+            "id": "ex2-3",
+            "title": "Netflix Knowing What You Like 🎬⭐",
+            "emoji": "🎬",
+            "description": "Have you noticed that Netflix always seems to know what films you want to watch? That is because Netflix's AI has been watching YOUR watching habits! Every film you click on, every show you watch all the way through, every time you say Not Interested — all of these are EXAMPLES for the AI to learn from! After seeing hundreds of your choices, it begins to understand your taste perfectly. Priya likes animated films about animals and adventures but NOT scary ones — the AI figured that out just from your examples!",
+            "realLifeScenario": "Living room TV — Netflix suggests your favourite animal documentaries because it learned your taste from 200 films you already watched! 🎬🌟",
+            "aiConnection": "Netflix's AI studies millions of viewers' watching patterns — that is its training data! It learns what kinds of content similar viewers enjoy, then makes personalised suggestions!",
+            "buddyComment": "BEEP BOOP! Netflix's AI learned YOUR taste from watching what YOU watch! Every click is an example that trains it! 🎬🤖⭐"
+          }
+        ],
+        "keyPoints": [
+          { "emoji": "📦", "point": "The pictures shown to AI are called TRAINING DATA — it is the food that feeds AI's brain!" },
+          { "emoji": "🔍", "point": "AI looks for patterns — shapes, features, colours — that appear in EVERY example photo." },
+          { "emoji": "➕", "point": "AI needs examples of BOTH things (cats) AND things that are NOT the thing (dogs, foxes) to learn properly!" },
+          { "emoji": "🚀", "point": "A computer can process 1,000 photos in seconds — learning much faster than a human brain!" }
+        ],
+        "miniQuiz": {
+          "question": "What do we call the collection of photos we feed to an AI to help it learn?",
+          "options": [
+            { "id": "a", "text": "Homework Photos 📝", "correct": false, "feedback": "Ha! Not quite! These photos have a special name!" },
+            { "id": "b", "text": "Training Data 📦", "correct": true, "feedback": "🌟 PERFECT! Training Data is the food that feeds AI's brain!" },
+            { "id": "c", "text": "Selfies 🤳", "correct": false, "feedback": "Fun answer but not quite! These photos are carefully collected and organised!" },
+            { "id": "d", "text": "Random Pictures 🖼️", "correct": false, "feedback": "Not random! Training data is carefully chosen and labeled!" }
+          ],
+          "buddyFeedback": {
+            "correct": "BEEP BOOP! BRILLIANT! 🌟 Training Data is the secret ingredient that makes AI brains grow! ⭐🏆",
+            "incorrect": "BEEP BOOP! Almost! The special word is TRAINING DATA — like training wheels for a bicycle, but for my brain! 🚲🤖"
+          }
+        }
+      },
+      {
+        "sectionId": "section3",
+        "sectionNumber": 3,
+        "title": "Practice Makes Perfect! 🔄✨",
+        "emoji": "🔄",
+        "totalWords": 1800,
+        "buddyIntro": "BEEP BOOP! 🤖 Have you ever tried to do something for the very first time and got it WRONG? Like the first time you tried to ride a bicycle? Or the first time you tried to draw a circle perfectly? Or the first time you threw a cricket ball? You probably MISSED! But did you give up? NO! You PRACTICED! And practice made you better and better! Guess what? AI works the EXACT same way! 🏏🚲🎨",
+        "toastGuidance": {
+          "tap_prompt": "👇 Tap the PRACTICE button to see Buddy try and try again! 🔄",
+          "great_job": "⭐ That is right! More practice equals more accuracy! Buddy got better! 📈",
+          "try_again": "💪 Buddy is still learning! Every mistake teaches him something new! Keep going! 🔄"
+        },
+        "content": "Think about the very first time you tried to write the letter A.\n\nYou picked up your pencil. You tried to make that triangle-mountain shape. But it came out wonky! One side was too tall. The middle line was too high. The whole thing leaned sideways! Your teacher looked at it kindly and said: Good try! Let us try again!\n\nSo you tried again. And again. And AGAIN. Twenty times. Fifty times. One hundred times!\n\nWith each attempt, you got a tiny bit better. The sides became more even. The middle line found the right spot. The letter stopped leaning. And one magical day — maybe it was page 5 of your writing practice book — you wrote a PERFECT A! Your teacher put a gold star next to it! ⭐\n\nYou had not changed. You had not gotten a new brain. You had just PRACTICED enough times that your hand and brain figured out the exact movements needed.\n\nNow here is the mind-blowing part: AI does something VERY similar!\n\nWhen AI first tries to identify a cat in a new photo it has never seen, it might make mistakes. It might look at a fox and say CAT! 70% sure! and be WRONG! 🦊\n\nBut then — here is the clever bit — it CHECKS its answer against the correct answer. That was a fox, not a cat, says the data. Your answer was wrong!\n\nThe AI goes: Okay. I made a mistake. Let me look at my fox photos and cat photos again and figure out the difference. And it adjusts its internal understanding ever so slightly.\n\nThen it tries again. Makes another mistake. Checks. Adjusts. Tries again. Checks. Adjusts.\n\nOver MILLIONS of photos and millions of practice attempts, the AI's accuracy keeps going UP UP UP — like a score in your favourite video game! 🎮📈\n\nThis practice process has a fancy name: TRAINING. But really, it is just practice! Exactly like cricket practice, art practice, music practice, or maths practice — but for a robot brain! 🏏🎵🎨🤖\n\nJust like how a cricket champion practises for 10,000 hours to become the best — AI needs to see MILLIONS of examples to become the best at what it does! The more it practises, the better it gets!",
+        "deepDiveStory": {
+          "title": "Arjun's Cricket Journey Mirrors AI's Training! 🏏🤖",
+          "totalWords": 550,
+          "content": "Meet Arjun! He is 10 years old — just like you — and he LOVES cricket. He dreams of bowling the fastest ball in his school team. But when he first tried to bowl? Oh dear! 😅\n\nDay 1 — First ball: Arjun runs up, throws the ball as hard as he can. The ball bounces off the side of the pitch and rolls sadly into the boundary. Wide! The wickets are fine. The stumps are unimpressed. Arjun's face is red. 🏏😬\n\nArjun's coach says: That is okay! Let us look at what went wrong. Your arm was too low. Your wrist was turned the wrong way. Let us fix that!\n\nDay 3 — After 50 balls: Arjun starts bowling closer to the stumps. Still missing, but CLOSER! His arm position has improved. His brain is learning the right muscle movements.\n\nDay 7 — After 200 balls: Arjun hits the stumps once! Just once! But he SCREAMS with joy! His team cheers! 🎉 His brain has figured out ONE set of arm movements that work!\n\nDay 21 — After 500 balls: Arjun hits the stumps 3 out of every 10 tries. His confidence is growing. His accuracy is improving. He is practising the same thing over and over, making small adjustments each time.\n\nDay 45 — After 1,000 balls: Arjun hits the stumps 7 out of every 10 tries! His coach is VERY pleased. Arjun has become one of the best bowlers in his year! 🏆\n\nDay 90 — After 3,000 balls: Arjun can hit the middle stump with his eyes nearly closed. He barely thinks about it anymore — his muscles just KNOW what to do! Cricket experts call this muscle memory! Arjun calls it superpower! 💪⚡\n\nNow here is the incredible mirror image! Buddy the Learning Bot's training works EXACTLY the same way:\n\nDay 1: Buddy sees his first cat photo. Makes wild guesses. Wrong 95% of the time! 😕\nDay 3: After 100 photos — Getting closer. Wrong 60% of the time.\nDay 7: After 1,000 photos — 75% accurate! Making real progress!\nDay 21: After 10,000 photos — 92% accurate! Very good!\nDay 45: After 100,000 photos — 98% accurate! Almost perfect!\nDay 90: After 1,000,000 photos — 99.5% accurate! SUPERSTAR AI! 🌟\n\nJust like Arjun did not become a champion bowler after one ball — Buddy did not become a champion recogniser after one photo. PRACTICE — in cricket AND in AI — is what makes the difference between beginner and champion! 🏏🤖🏆",
+          "comparisonTable": [
+            { "practice": "1 ball or 1 photo", "arjun": "Misses completely!", "buddy": "Wrong 95% of the time!" },
+            { "practice": "200 balls or 1,000 photos", "arjun": "Hitting stumps sometimes", "buddy": "75% accurate" },
+            { "practice": "1,000 balls or 10,000 photos", "arjun": "7 out of 10 hits!", "buddy": "92% accurate" },
+            { "practice": "3,000 balls or 100,000 photos", "arjun": "Eyes-closed precision!", "buddy": "99.5% accurate!" }
+          ]
+        },
+        "examples": [
+          {
+            "id": "ex3-1",
+            "title": "Cricket Bowling Practice 🏏",
+            "emoji": "🏏",
+            "description": "The first ball Arjun bowled went wide. After 100 practice balls, he started hitting the stumps occasionally. After 1,000 practice balls, he hit the middle stump 7 out of 10 times! The same tiny adjustments, made thousands of times, turned a beginner into a champion. AI goes through the exact same journey — each wrong answer teaches it what to adjust!",
+            "realLifeScenario": "School playground nets — Bowling 500 practice balls during lunch break every week until you can hit the stumps reliably! 🎯",
+            "aiConnection": "AI practises by looking at millions of labeled photos. Each mistake gets corrected, and each correction makes the next guess more accurate!",
+            "buddyComment": "BEEP BOOP! I took MILLIONS of practice shots before I got good! Every wrong guess was a lesson! 🏏🤖"
+          },
+          {
+            "id": "ex3-2",
+            "title": "Drawing a Perfect Circle ⭕🎨",
+            "emoji": "⭕",
+            "description": "Try drawing a perfect circle right now without a compass! It probably comes out a bit wobbly and lumpy. But artists who have drawn circles thousands of times can draw a nearly perfect one with their eyes half closed! Why? Because their hand has MEMORISED the exact movement through practice. AI's mathematical brain does the same thing — it memorises patterns through millions of practice rounds!",
+            "realLifeScenario": "Art class — Your first circle looks like a squished potato, but after 1,000 circles in your sketchbook, you draw them nearly perfectly! ⭕✨",
+            "aiConnection": "AI gets better at recognising shapes through the same principle — millions of example images that train it to recognise the circle pattern in any context!",
+            "buddyComment": "BEEP BOOP! I drew millions of invisible circles in my brain before I could recognise one perfectly! Art and AI both need practice! 🎨🤖"
+          },
+          {
+            "id": "ex3-3",
+            "title": "Learning to Ride a Bicycle 🚲",
+            "emoji": "🚲",
+            "description": "The first time you got on a bicycle, you fell sideways! The second time, you wobbled and went straight into a bush! But slowly — after many tries and many small adjustments — your brain and body figured out the perfect BALANCE. And one magical day, your dad let go of the seat and you were riding alone! AI's training is just like learning to balance on a bike — many tries, many small fixes, until suddenly it CLICKS!",
+            "realLifeScenario": "Park pathway — Your first 10 attempts end with scraped knees! But after 50 attempts, your brain finds the balance and you FLY! 🚲💨",
+            "aiConnection": "AI training is all about finding the right balance — adjusting millions of tiny settings until the system finds the perfect balance to recognise things accurately!",
+            "buddyComment": "BEEP BOOP! Finding balance in AI training is SO like riding a bike! Once you find it, you never forget! 🚲🤖✨"
+          }
+        ],
+        "keyPoints": [
+          { "emoji": "👶", "point": "10 examples equals Baby AI — confused, makes lots of mistakes, still learning basics" },
+          { "emoji": "🎒", "point": "1,000 examples equals Student AI — getting much better, reliable for common cases" },
+          { "emoji": "🦸", "point": "1,000,000 examples equals Superhero AI — nearly perfect, handles even tricky cases!" },
+          { "emoji": "🔄", "point": "Every wrong answer in training teaches AI what to fix — mistakes are LESSONS, not failures!" }
+        ],
+        "miniQuiz": {
+          "question": "What happens when AI makes a mistake during training?",
+          "options": [
+            { "id": "a", "text": "The computer breaks! 💥", "correct": false, "feedback": "Ha! No way! Making mistakes is NORMAL in training!" },
+            { "id": "b", "text": "AI gives up and stops trying 😢", "correct": false, "feedback": "AI never gives up! It is like a super patient practice partner!" },
+            { "id": "c", "text": "AI looks at the mistake and adjusts to do better next time! 📈", "correct": true, "feedback": "🌟 BRILLIANT! Mistakes are just lessons — they help AI get better!" },
+            { "id": "d", "text": "Nothing happens — AI ignores mistakes 🙄", "correct": false, "feedback": "No! AI takes every mistake very seriously and learns from it!" }
+          ],
+          "buddyFeedback": {
+            "correct": "BEEP BOOP! EXACTLY RIGHT! ⭐ Mistakes are the SECRET INGREDIENT of good AI training! 🏆🤖",
+            "incorrect": "BEEP BOOP! Think about Arjun's cricket practice! Every missed ball taught him something! Same for AI! 🏏🤖"
+          }
+        }
+      },
+      {
+        "sectionId": "section4",
+        "sectionNumber": 4,
+        "title": "What Makes Good Training Data? 📦🌟",
+        "emoji": "📦",
+        "totalWords": 1800,
+        "buddyIntro": "BEEP BOOP! 🤖 Okay, clever trainer! Now you know that AI learns from examples called Training Data! But did you know that NOT all training data is equally good? Just like how eating junk food every day does not make you as healthy and strong as eating proper meals — feeding BAD or MESSY training data to an AI makes it confused and wrong! Let me show you what GOOD training data looks like and why it matters SO MUCH! 🥗 vs 🍟",
+        "toastGuidance": {
+          "tap_prompt": "👇 Tap the food boxes to sort GOOD training data from BAD training data! 🥗🍟",
+          "great_job": "⭐ Correct! Good training data makes a smart, accurate AI! 🧠✨",
+          "try_again": "🤔 Hmm, think about it — does that picture really help AI learn better?"
+        },
+        "content": "Imagine you are trying to teach Buddy what an apple looks like. 🍎\n\nYou have two options for your training photos:\n\nOPTION A — Good Training Data:\n- 100 photos of red apples\n- 100 photos of green apples\n- 100 photos of yellow apples\n- 100 photos of small apples\n- 100 photos of big apples\n- 100 photos of apples on trees\n- 100 photos of apples in fruit bowls\n- 100 photos of apples with bites taken out\n- 100 photos of apples from above\n- 100 photos of apples from the side\n\nTOTAL: 1,000 photos showing apples in every possible way! 🍎✅\n\nOPTION B — Bad Training Data:\n- 1,000 photos of ONE specific red apple sitting on a white table in perfect sunlight\n\nTOTAL: 1,000 photos but ALL THE SAME! ❌\n\nWhich do you think would make Buddy smarter?\n\nOPTION A, of course! With Option A, Buddy would see that apples can be red, green, OR yellow. They can be tiny OR huge. They look different from above vs from the side. He would learn the TRUE pattern of what an apple is.\n\nWith Option B, Buddy would only know that an apple is a specific red shiny ball on a white surface in perfect light! If you showed him a green apple in a shopping bag, he might say: That is NOT an apple! I have never seen anything like THAT! And he would be WRONG! 😮\n\nThis is why scientists who train AI think very carefully about what photos to collect. The training data needs to be:\n\n1. VARIED: Lots of different versions of the same thing 🎨\n2. LABELLED CORRECTLY: Each photo correctly marked as what it actually is ✅\n3. BALANCED: Roughly equal numbers of each type of thing you want to recognise ⚖️\n4. HIGH QUALITY: Clear, well-lit photos that are easy to see 📸\n5. LARGE ENOUGH: Enough examples that the AI can find true patterns 📊\n\nThink of it like this: If you only ever ate ONE TYPE of fruit, you might not recognise other fruits. But if you ate 20 different fruits, you would understand what fruit really means! The same idea applies to AI training data! 🍎🍊🍋🍇🍓🫐🍒🍑🥭🍍",
+        "realWorldApplication": {
+          "title": "How Google Trained Its Image AI 📸🌍",
+          "totalWords": 400,
+          "content": "Google has a famous image dataset called ImageNet. It contains 14 MILLION photos! These photos cover 20,000 different categories — from animals to foods to vehicles to furniture to landscapes! 🌍\n\nWhy so many? Because Google wanted its AI to recognise ANYTHING a person might photograph — not just a specific type of photo taken in a specific way!\n\nEach photo was carefully labelled by human volunteers. Thousands of people looked at millions of photos and wrote what was in each one. This is a golden retriever. This is a plate of spaghetti. This is a red double-decker bus. This is the Eiffel Tower.\n\nAll those labels became the training data — and when Google's AI was trained on 14 million labeled photos, it became incredibly good at recognising almost anything in a photo! 📱✨\n\nThat is why your phone can now automatically sort your holiday photos into beaches, mountains, food, selfies, sunsets — without you doing anything! The AI learned from 14 million examples!\n\nRemember: 14 million examples for Google's AI. That is MORE than Priya seeing 500 cats, more than Arjun throwing 3,000 cricket balls, more than you writing the letter A 1,000 times — all multiplied together! THAT is what it takes to make a truly world-class AI! 🌏🏆",
+          "funFact": "The ImageNet dataset has 14 MILLION photos — if you looked at one photo per second without stopping, it would take you 162 DAYS to see all of them! 🤯"
+        },
+        "examples": [
+          {
+            "id": "ex4-1",
+            "title": "Teaching Buddy Only Sunny Day Cats 🌞🐱",
+            "emoji": "🌞",
+            "description": "Imagine if you only showed Buddy cats in bright sunny daylight! He would learn sunny-day cats perfectly. But then you show him a photo of a cat on a rainy day — darker, shadows, wet fur. Would Buddy recognise it? Probably not! This is called BAD training data — not varied enough. Good training data shows cats in sun, rain, night, indoors, outdoors, sleeping, running — every situation!",
+            "realLifeScenario": "Home vs school — You know your teacher at school — but if you saw her at a swimming pool, would you still recognise her? Only if your brain has seen her in DIFFERENT contexts! 🧠",
+            "aiConnection": "This is why AI training datasets include photos from different lights, angles, backgrounds, and weather — so the AI learns the TRUE pattern, not just one specific version!",
+            "buddyComment": "BEEP BOOP! One time I was only trained on sunny photos! Then I saw a night photo and had NO idea! Good training data saved me! 🌙🤖"
+          },
+          {
+            "id": "ex4-2",
+            "title": "The Mislabeled Mango Problem! 🥭❌",
+            "emoji": "🥭",
+            "description": "What if someone collected 1,000 mango photos but ACCIDENTALLY labelled 200 of them as banana because both are yellow and tropical! Now AI would learn WRONG information! It might get confused between mangoes and bananas! This is why correct labeling is SO important. Humans have to be very careful when creating training data — even one wrong label teaches AI something incorrect!",
+            "realLifeScenario": "Learning with a book with printing errors — Imagine if your school textbook had CAT written under a picture of a DOG! You would be very confused! Same thing happens to AI with wrong labels! 📚❌",
+            "aiConnection": "Data quality is everything in AI training! Wrong labels equal wrong learning equal wrong answers when the AI is used in real life!",
+            "buddyComment": "BEEP BOOP! Wrong labels gave me a HEADACHE once! I kept calling mangoes bananas! The fix was to correct the training data! 🥭🤖😅"
+          }
+        ],
+        "keyPoints": [
+          { "emoji": "🎨", "point": "Good training data is VARIED — shows the same thing in many different situations!" },
+          { "emoji": "✅", "point": "Good training data is CORRECTLY LABELED — no mistakes in what each photo is called!" },
+          { "emoji": "⚖️", "point": "Good training data is BALANCED — not too many of one type and too few of another!" },
+          { "emoji": "📊", "point": "More high-quality, varied data equals smarter, more reliable AI!" }
+        ],
+        "miniQuiz": {
+          "question": "Buddy was trained with only bright sunny photos of cats. What will happen when he sees a cat in dark rainy weather?",
+          "options": [
+            { "id": "a", "text": "He will still recognise it perfectly! 😎", "correct": false, "feedback": "Not quite! He only learned from sunny photos, so dark-weather cats confuse him!" },
+            { "id": "b", "text": "He will be confused and probably get it wrong! 😕", "correct": true, "feedback": "🌟 EXACTLY! Bad training data equals confused AI in new situations!" },
+            { "id": "c", "text": "He will ask for more sunlight! ☀️", "correct": false, "feedback": "Ha! If only it were that simple! AI cannot ask for better lighting!" },
+            { "id": "d", "text": "He will turn himself off! 💤", "correct": false, "feedback": "AI does not turn off — but its answer might be very wrong!" }
+          ],
+          "buddyFeedback": {
+            "correct": "BEEP BOOP! SPOT ON! ⭐ This is why scientists collect photos in ALL conditions — sun, rain, night, fog! Variety makes me smarter! 🌧️🌞🌙🤖",
+            "incorrect": "BEEP BOOP! Think about it — if you ONLY practised cricket in perfect sunshine, would you be good at playing in the rain? Same idea for AI! 🏏🌧️🤖"
+          }
+        }
+      },
+      {
+        "sectionId": "section5",
+        "sectionNumber": 5,
+        "title": "AI Training in Real Life — All Around You! 🌍🤖",
+        "emoji": "🌍",
+        "totalWords": 1800,
+        "buddyIntro": "BEEP BOOP! 🤖🌟 You have learned SO much today, superstar! You know about learning from examples, training data, practice, and good quality data! Now — the most EXCITING part — let me show you that all of this AI training is happening RIGHT NOW in devices you use every single day! AI-trained machines are around you all the time and you probably never even knew! Let us go on an AI spotting safari! 🔍🦁",
+        "toastGuidance": {
+          "tap_prompt": "👇 Tap each real-world item to discover which type of AI training made it smart! 🔍",
+          "great_job": "🌟 Wow! You found AI training in action! It is everywhere! 🌍🤖",
+          "try_again": "🤔 Look more carefully! This one definitely has AI learning inside it! 🔍"
+        },
+        "content": "Here is something amazing to think about: RIGHT NOW, as you are reading this lesson, there are millions of AI systems being trained all around the world! In giant buildings called DATA CENTRES, thousands of computers are looking at billions of photos, videos, and text — learning, practising, and getting smarter every single second! 🌏⚡\n\nAnd the results of all that training? You see them every day in devices you use!\n\nLet us go on an AI Safari around your typical day and spot all the places where AI training is silently helping you! 🦁🔍\n\nMORNING: You wake up and your phone's alarm goes off. When you pick it up, your phone UNLOCKS automatically by looking at your face! FACE RECOGNITION AI — trained on millions of faces to know it is YOU and not someone else!\n\nYou ask Siri or Google Assistant: What is the weather today? VOICE RECOGNITION AI — trained on billions of hours of human speech to understand every accent, every voice, every way of speaking!\n\nAT SCHOOL: Your teacher projects a lesson on the Smart Board. The school's autocorrect helps students spell words. NATURAL LANGUAGE AI — trained on billions of documents to understand grammar and spelling!\n\nThe library has a search system that finds books even if you spell the title wrong. SEARCH AI — trained on millions of searches to understand what people are looking for even with mistakes!\n\nAFTERNOON: You play a video game. The computer characters seem to know where you are and what you are doing — they adapt to your playing style! GAME AI — trained through millions of practice games to be challenging opponents!\n\nYou watch YouTube and it suggests your next video perfectly. RECOMMENDATION AI — trained on billions of viewer histories to know what each person is likely to enjoy next!\n\nEVENING: Your family uses Google Maps to find a new restaurant. Maps predicts traffic and finds the fastest route! TRAFFIC PREDICTION AI — trained on millions of journeys to know where jams form and when!\n\nYou watch a Netflix film with subtitles. The subtitles appear automatically and are perfectly timed! SPEECH-TO-TEXT AI — trained on thousands of hours of film audio to transcribe speech instantly!\n\nCounting all those? That is AT LEAST 8 different AI systems helping you in a SINGLE DAY — all trained using the same basic idea: learning from examples! 🤖🌟",
+        "aiSafariCards": [
+          { "id": "safari-1", "emoji": "📱", "device": "Phone Face Unlock", "aiType": "Face Recognition AI", "trainedOn": "Millions of face photos — all ages, all skin tones, all lighting conditions!", "whatItLearned": "The unique patterns of YOUR face — spacing of eyes, shape of nose, chin curve!", "buddyFact": "BEEP BOOP! Face unlock AI has seen more faces than any human in history! 🤖👀" },
+          { "id": "safari-2", "emoji": "🗣️", "device": "Voice Assistants (Siri, Google, Alexa)", "aiType": "Speech Recognition AI", "trainedOn": "Billions of hours of recorded human speech in hundreds of languages and accents!", "whatItLearned": "The patterns of spoken words — how the same word sounds differently in different accents but means the same thing!", "buddyFact": "BEEP BOOP! Voice AI has heard more conversations than every human ear combined! 🎤🤖" },
+          { "id": "safari-3", "emoji": "📺", "device": "YouTube and Netflix Recommendations", "aiType": "Recommendation AI", "trainedOn": "Billions of viewing histories — what people watch, for how long, what they skip!", "whatItLearned": "Patterns in viewer tastes — what kinds of content similar viewers enjoy together!", "buddyFact": "BEEP BOOP! YouTube's AI watches MORE videos per day than every human on Earth combined! 📺🤖" },
+          { "id": "safari-4", "emoji": "🗺️", "device": "Google Maps and Navigation", "aiType": "Traffic Prediction AI", "trainedOn": "Millions of journeys — travel times, speeds, road conditions, time of day!", "whatItLearned": "When and where traffic jams form, how long routes actually take in real life!", "buddyFact": "BEEP BOOP! Maps AI uses traffic data from millions of drivers to make YOUR journey faster! 🗺️🤖" },
+          { "id": "safari-5", "emoji": "🎮", "device": "Video Game Characters", "aiType": "Game AI", "trainedOn": "Millions of practice games — every move players make, every strategy that works!", "whatItLearned": "How human players think and react, so game characters feel challenging and realistic!", "buddyFact": "BEEP BOOP! Some game AIs have played more games in one week than all of human history combined! 🎮🤖" }
+        ],
+        "examples": [
+          {
+            "id": "ex5-1",
+            "title": "Google Translate — Learning 100 Languages! 🌍🗣️",
+            "emoji": "🌍",
+            "description": "Google Translate can instantly translate between over 100 languages! How? It was trained on billions of sentences that had already been translated by human experts. By seeing millions of examples of how the same meaning is expressed in French vs English vs Hindi vs Spanish, the AI learned the patterns of translation! Now it can translate a sentence it has NEVER seen before — because it understood the patterns from all those examples!",
+            "realLifeScenario": "Family holiday abroad — You cannot speak Italian but you photograph a menu with Google Translate and instantly see English translations! The AI learned Italian from millions of Italian documents! 🍕🌍",
+            "aiConnection": "Translate AI was trained on billions of multilingual documents — books, websites, newspapers, official documents — all showing the same content in different languages!",
+            "buddyComment": "BEEP BOOP! I was trained on so many languages! I have seen more words than any human could read in 100 lifetimes! 📚🤖🌍"
+          },
+          {
+            "id": "ex5-2",
+            "title": "Doctor AI That Spots Diseases in X-Rays 🏥🔬",
+            "emoji": "🏥",
+            "description": "In hospitals, some AI systems can look at an X-ray photo and spot signs of diseases — sometimes even BEFORE a human doctor notices! These medical AIs were trained on hundreds of thousands of X-ray photos — some showing healthy patients, some showing early stages of disease. The AI learned the patterns: THIS shadowy shape means early cancer. THAT spot means broken bone. THESE lines mean healthy lungs. Now it helps doctors spot problems faster and save lives!",
+            "realLifeScenario": "Hospital visit — A doctor uses an AI assistant to double-check an X-ray. The AI has studied more medical images than any human doctor could see in 100 careers! 🔬💙",
+            "aiConnection": "Medical AI is trained on enormous datasets of medical images — each carefully labeled by expert doctors. The training process took years and used thousands of expert human labels!",
+            "buddyComment": "BEEP BOOP! Medical AI is one of the most important uses of training from examples! It helps save real lives! 🏥❤️🤖"
+          }
+        ],
+        "keyPoints": [
+          { "emoji": "🌅", "point": "You use AI-trained technology every single morning — face unlock, weather apps, navigation!" },
+          { "emoji": "🎯", "point": "ALL of these AI systems learned the same basic way — from millions and millions of examples!" },
+          { "emoji": "💙", "point": "AI training is helping doctors, teachers, navigators, and many others do their jobs better!" },
+          { "emoji": "🤝", "point": "Humans and AI work together — humans collect examples, AI learns from them, humans use the results!" }
+        ],
+        "miniQuiz": {
+          "question": "Google Translate can translate 100 languages. How did it learn all of them?",
+          "options": [
+            { "id": "a", "text": "A genius programmer wrote all the grammar rules for 100 languages 🤓", "correct": false, "feedback": "That would take 1,000 years! AI has a smarter way!" },
+            { "id": "b", "text": "It was trained on billions of example sentences already translated by human experts! 📚", "correct": true, "feedback": "🌟 PERFECT! Examples from millions of human translators taught it the patterns!" },
+            { "id": "c", "text": "It has a dictionary for each language 📖", "correct": false, "feedback": "Dictionaries help, but they do not explain grammar, idioms, or context — examples do!" },
+            { "id": "d", "text": "It guesses randomly and hopes for the best! 🎲", "correct": false, "feedback": "Ha! Random guessing would be terrible! AI is much smarter than that!" }
+          ],
+          "buddyFeedback": {
+            "correct": "BEEP BOOP! OUTSTANDING! ⭐ Billions of translation examples taught language AI the patterns of all 100 languages! 🌍🤖🏆",
+            "incorrect": "BEEP BOOP! Think about our big secret — AI learns from EXAMPLES! How would YOU learn a new language best? By studying real conversations and translations! Same for AI! 🗣️🤖"
+          }
+        }
+      }
+    ],
+    "games": [
+      {
+        "gameId": "game-1",
+        "gameType": "drag_drop_sort",
+        "title": "The 10-Cat Training Race 🐱🏁",
+        "emoji": "🐱",
+        "description": "Drag 10 different colourful cat pictures into Buddy's glowing scanner to train his pet recognition eye! Watch his accuracy meter fill up with each correct card!",
+        "difficulty": "easy",
+        "duration": "10 minutes",
+        "buddyIntro": "BEEP BOOP! 🤖 Training time, superstar! Feed me ONLY cat pictures! I have sneaked in some dogs, rabbits, and foxes to trick you! Only CATS go in the blue training box! Ready? Let us RACE! 🏁",
+        "instructions": [
+          "👀 Look carefully at each animal picture on the screen",
+          "🐱 Identify which animals are CATS (pointy ears, whiskers, furry, tail)",
+          "👇 Drag ONLY cat pictures into Buddy's glowing BLUE training box",
+          "❌ Leave dogs, rabbits, and foxes outside the box",
+          "⭐ Watch Buddy's accuracy meter fill with golden stars as you train him!"
+        ],
+        "items": [
+          { "id": "item-1", "label": "White Persian Cat", "image": "/content/junior/images/class5/ch1/l1/games/white-persian-cat.png", "correctCategory": "cat", "emoji": "🐱", "feedback": "✅ YES! White Persian cats are cats! Buddy learned from this one! ⭐" },
+          { "id": "item-2", "label": "Black Labrador Dog", "image": "/content/junior/images/class5/ch1/l1/games/black-lab-dog.png", "correctCategory": "not-cat", "emoji": "🐶", "feedback": "❌ Oops! That is a Labrador puppy — a dog! Dogs have floppy ears and a wider nose! Try again!" },
+          { "id": "item-3", "label": "Tabby Kitten", "image": "/content/junior/images/class5/ch1/l1/games/tabby-kitten.png", "correctCategory": "cat", "emoji": "🐱", "feedback": "✅ PERFECT! Baby kittens are cats too! Buddy is getting smarter! 🌟" },
+          { "id": "item-4", "label": "Orange Fox", "image": "/content/junior/images/class5/ch1/l1/games/orange-fox.png", "correctCategory": "not-cat", "emoji": "🦊", "feedback": "❌ Tricky! Foxes look a bit like cats but have pointier noses and bigger ears! Look again!" },
+          { "id": "item-5", "label": "Siamese Blue-Eyed Cat", "image": "/content/junior/images/class5/ch1/l1/games/siamese-cat.png", "correctCategory": "cat", "emoji": "🐱", "feedback": "✅ Great catch! Siamese cats have beautiful blue eyes and pale fur with dark tips! Still a cat! ⭐" },
+          { "id": "item-6", "label": "White Fluffy Rabbit", "image": "/content/junior/images/class5/ch1/l1/games/white-rabbit.png", "correctCategory": "not-cat", "emoji": "🐰", "feedback": "❌ Close! Rabbits have VERY long ears that flop down! Cats have shorter pointy ears! Different!" },
+          { "id": "item-7", "label": "Striped Grey Cat", "image": "/content/junior/images/class5/ch1/l1/games/grey-striped-cat.png", "correctCategory": "cat", "emoji": "🐱", "feedback": "✅ Excellent! Striped grey cats (tabbies) are one of the most common cat types! Buddy learned! 🌟" },
+          { "id": "item-8", "label": "Brown Puppy", "image": "/content/junior/images/class5/ch1/l1/games/brown-puppy.png", "correctCategory": "not-cat", "emoji": "🐶", "feedback": "❌ Aww, cute! But that is a puppy! See the wide friendly face and floppy tail? Dog!" },
+          { "id": "item-9", "label": "Black Cat with Green Eyes", "image": "/content/junior/images/class5/ch1/l1/games/black-cat.png", "correctCategory": "cat", "emoji": "🐱", "feedback": "✅ SUPERB! Even all-black cats are cats! Buddy can see the pointy ears and whiskers! ⭐" },
+          { "id": "item-10", "label": "Sleeping Ginger Cat", "image": "/content/junior/images/class5/ch1/l1/games/ginger-cat.png", "correctCategory": "cat", "emoji": "🐱", "feedback": "✅ WONDERFUL! Even sleeping cats count! See the curled-up furry body and folded ears! ⭐" },
+          { "id": "item-11", "label": "Tiny Chihuahua Dog", "image": "/content/junior/images/class5/ch1/l1/games/chihuahua.png", "correctCategory": "not-cat", "emoji": "🐶", "feedback": "❌ Super tricky! Chihuahuas are tiny like kittens but have wider eyes and a dog nose! Still a dog!" },
+          { "id": "item-12", "label": "Maine Coon Fluffy Cat", "image": "/content/junior/images/class5/ch1/l1/games/maine-coon.png", "correctCategory": "cat", "emoji": "🐱", "feedback": "✅ INCREDIBLE! Maine Coon cats are huge and fluffy — but definitely still cats! Buddy is smarter! 🌟" }
+        ],
+        "categories": [
+          { "id": "cat", "label": "Cat Training Box 🐱", "color": "#4A90E2", "glowColor": "#5BA3FF", "emoji": "🐱" },
+          { "id": "not-cat", "label": "Not a Cat — Leave Out! ❌", "color": "#E24A4A", "glowColor": "#FF6B6B", "emoji": "❌" }
+        ],
+        "buddyMeter": {
+          "startAccuracy": 5,
+          "accuracyPerCat": 10,
+          "maxAccuracy": 99,
+          "milestoneMessages": {
+            "25": "BEEP BOOP! 25%! I am getting a bit smarter! 😊",
+            "50": "BEEP BOOP! 50%! Halfway there! My circuits are warming up! 🌟",
+            "75": "BEEP BOOP! 75%! I can recognise cats pretty well now! 😄",
+            "99": "BEEP BOOP! 99%! I AM A CAT RECOGNITION EXPERT! You trained me so well! 🏆🎉"
+          }
+        },
+        "scoring": { "pointsPerCorrectCat": 15, "bonusForNoMistakes": 50, "totalPossible": 200 },
+        "toastGuidance": {
+          "start": "🐱 RACE TIME! Drag 10 cats into Buddy's glowing blue box! Go go go! 🏁",
+          "correct_cat": "⭐ YES! That IS a cat! Buddy's accuracy just went UP! 📈",
+          "wrong_animal": "🐶 Oops! That is NOT a cat! Look for: pointy ears plus whiskers plus slender body! 🐱",
+          "complete": "🏆 RACE COMPLETE! You trained Buddy to 99% cat accuracy! CHAMPION TRAINER! 🌟",
+          "hint": "💡 Cats have POINTY triangle ears, long WHISKERS, and a sleek TAIL! Dogs have floppy ears and wider faces! 🐱🐶"
+        },
+        "auraGuidance": {
+          "start": "LET'S TRAIN! Drag cats into the BLUE box! 🐱",
+          "correct": "GREAT JOB! Buddy's brain is growing! ⭐",
+          "incorrect": "TRY AGAIN! Look for pointy ears and whiskers! 🔍",
+          "hint": "HINT: Cats have triangular pointy ears — dogs have floppy ones! 👂",
+          "complete": "TRAINING COMPLETE! You are an OFFICIAL AI Trainer! 🏆🤖"
+        }
+      },
+      {
+        "gameId": "game-2",
+        "gameType": "picture_sort_challenge",
+        "title": "Sort the Training Data! 📦🌟",
+        "emoji": "📦",
+        "description": "Help Buddy sort his training data correctly! Some photos are GOOD training data (varied, clear, correctly labeled). Some are BAD training data (blurry, wrong label, too similar). Drag each to the right pile!",
+        "difficulty": "medium",
+        "duration": "8 minutes",
+        "buddyIntro": "BEEP BOOP! 🤖 I need your help, superstar! Someone sent me a BIG mixed-up pile of training photos! Some are PERFECT for training me. Some are BAD and will confuse my brain! Can you sort them for me? Good data goes in the GREEN pile, bad data in the RED pile! 📦✅❌",
+        "items": [
+          { "id": "sort-1", "description": "1,000 clear photos of cats in all colours, all sizes, indoors and outdoors! 🐱", "quality": "good", "emoji": "✅", "feedback": "PERFECT training data! Varied, clear, and lots of different examples! Buddy loves this! ⭐" },
+          { "id": "sort-2", "description": "500 photos of cats — but all the same white cat in the same chair! 😑", "quality": "bad", "emoji": "❌", "feedback": "Not varied enough! Buddy would only learn about ONE specific cat — not all cats!" },
+          { "id": "sort-3", "description": "1,000 clear apple photos — red, green, yellow, big, small, on trees, in bowls! 🍎", "quality": "good", "emoji": "✅", "feedback": "EXCELLENT! Great variety! This will teach Buddy that apples come in all shapes and colours! 🌟" },
+          { "id": "sort-4", "description": "200 photos labeled cat but actually showing dogs! Wrong labels! 🐶❌", "quality": "bad", "emoji": "❌", "feedback": "WRONG LABELS are the WORST! This would teach Buddy that dogs are cats! Terrible data!" },
+          { "id": "sort-5", "description": "Completely blurry photos where nothing is visible! 😵", "quality": "bad", "emoji": "❌", "feedback": "Blurry photos teach Buddy nothing useful! He cannot see any patterns in a blurry mess!" },
+          { "id": "sort-6", "description": "5,000 photos of bananas — all yellow, all ripe, in perfect light, 20 angles, 10 sizes! 🍌", "quality": "good", "emoji": "✅", "feedback": "WONDERFUL! Same banana shown from many angles and sizes — that is great variety! 🌟" }
+        ],
+        "categories": [
+          { "id": "good", "label": "Good Training Data ✅", "color": "#4CAF50", "emoji": "✅" },
+          { "id": "bad", "label": "Bad Training Data ❌", "color": "#F44336", "emoji": "❌" }
+        ],
+        "scoring": { "pointsPerCorrect": 20, "totalPossible": 120 },
+        "toastGuidance": {
+          "start": "📦 Sort the data! Does it help Buddy learn well?",
+          "correct": "⭐ Right! Good data equals smart AI! Bad data equals confused AI!",
+          "incorrect": "🤔 Hmm, think again! Would THIS help Buddy learn properly?",
+          "complete": "🏆 SORTING COMPLETE! You are a Data Quality Expert! 🌟"
+        },
+        "auraGuidance": {
+          "start": "SORT THE DATA! Good pile or bad pile?",
+          "correct": "GREAT EYE! You spotted good or bad data! ⭐",
+          "incorrect": "THINK AGAIN! Would that really help Buddy learn?",
+          "complete": "DATA EXPERT! You helped Buddy get only the best training! 🏆"
+        }
+      },
+      {
+        "gameId": "game-3",
+        "gameType": "match_pairs",
+        "title": "Match the AI to Its Training! 🤖🔗",
+        "emoji": "🔗",
+        "description": "Each AI system on the left was trained on a special kind of data. Can you match each AI to the type of training data that made it smart?",
+        "difficulty": "medium",
+        "duration": "7 minutes",
+        "buddyIntro": "BEEP BOOP! 🤖 MATCH GAME TIME! On the left side, you have AI systems. On the right side, you have the training data that made them smart! Can you connect the correct pairs? Each AI needs its special training data to work! Let us go! 🎯",
+        "pairs": [
+          { "left": { "id": "ai-match-1", "content": "Face Recognition AI 📱", "emoji": "📱", "description": "Unlocks your phone by looking at your face" }, "right": { "id": "data-match-1", "content": "Millions of face photos 📸", "emoji": "📸", "description": "Billions of human face photos in all lighting conditions" }, "feedback": "PERFECT MATCH! 🌟 Face AI learned by studying millions of different human faces!" },
+          { "left": { "id": "ai-match-2", "content": "Voice Assistant AI 🗣️", "emoji": "🗣️", "description": "Understands what you say to Siri or Alexa" }, "right": { "id": "data-match-2", "content": "Billions of hours of speech recordings 🎤", "emoji": "🎤", "description": "Recordings of people speaking in every language and accent" }, "feedback": "EXCELLENT! 🌟 Voice AI trained on billions of spoken word examples from around the world!" },
+          { "left": { "id": "ai-match-3", "content": "Medical X-Ray AI 🏥", "emoji": "🏥", "description": "Spots diseases in hospital X-ray photos" }, "right": { "id": "data-match-3", "content": "Hundreds of thousands of labeled X-rays 🔬", "emoji": "🔬", "description": "X-ray images labeled by expert doctors as healthy or diseased" }, "feedback": "AMAZING! 🌟 Medical AI trained on thousands of real X-rays labeled by expert doctors to save lives!" },
+          { "left": { "id": "ai-match-4", "content": "Google Translate AI 🌍", "emoji": "🌍", "description": "Translates text between 100 plus languages" }, "right": { "id": "data-match-4", "content": "Billions of translated texts 📖", "emoji": "📖", "description": "Same content written in many different languages by human translators" }, "feedback": "BRILLIANT! 🌟 Translation AI learned from billions of human-translated documents!" },
+          { "left": { "id": "ai-match-5", "content": "Netflix Recommendation AI 🎬", "emoji": "🎬", "description": "Suggests films and shows you will love" }, "right": { "id": "data-match-5", "content": "Billions of viewer watch histories 📊", "emoji": "📊", "description": "What millions of viewers watched, for how long, and what they loved or skipped" }, "feedback": "SUPERB! 🌟 Recommendation AI studied billions of viewer choices to predict what each person will enjoy!" }
+        ],
+        "scoring": { "pointsPerPair": 25, "totalPossible": 125 },
+        "toastGuidance": {
+          "start": "🔗 Match each AI with its training data! Use what you have learned!",
+          "correct": "🌟 PERFECT MATCH! You understand how AI training works!",
+          "incorrect": "🤔 Hmm, think about what KIND of examples that AI would need to learn!",
+          "complete": "🏆 ALL MATCHED! You are an AI Training Expert! Outstanding! 🤖🌟"
+        },
+        "auraGuidance": {
+          "start": "MATCH THEM! Connect each AI to its training data!",
+          "correct": "PERFECT CONNECTION! You understand AI training! 🌟",
+          "incorrect": "THINK AGAIN! What examples would that AI need to learn?",
+          "complete": "MASTERFUL! Every AI matched to its training data perfectly! 🏆"
+        }
+      }
+    ],
+    "activities": [
+      {
+        "activityId": "activity-1",
+        "title": "Be Buddy's Training Team! 🤖📸",
+        "type": "hands-on-creative",
+        "duration": "15 minutes",
+        "emoji": "📸",
+        "totalWords": 500,
+        "description": "In this exciting activity, YOU become the human trainer who collects training data for Buddy! You will collect examples of one object from your real life — just like real AI scientists do — and see how variety makes better training data!",
+        "materials": ["Pencil and paper 📝", "Coloured pencils or crayons 🖍️", "Your imagination! 💭", "A grown-up helper (optional)"],
+        "setup": {
+          "object": "You will choose ONE object to become an expert trainer for! Choose from: a chair 🪑, a shoe 👟, a cup ☕, a tree 🌳, or a bag 🎒.",
+          "goal": "Collect 10 different DRAWINGS of your chosen object — each one different in some way! This is your training dataset!"
+        },
+        "steps": [
+          { "step": 1, "emoji": "🎯", "instruction": "Choose your object! Pick one from: Chair 🪑, Shoe 👟, Cup ☕, Tree 🌳, or Bag 🎒.", "buddyTip": "BEEP BOOP! Pick something you see every day — you will be surprised how DIFFERENT the same object can look! 🤖" },
+          { "step": 2, "emoji": "📋", "instruction": "Draw your chosen object 10 times on separate squares of paper. EACH drawing must be DIFFERENT! Try: big one, tiny one, viewed from above, from the side, from below, in a different colour, in a dark room, a very old one, a very new one, a fancy one!", "buddyTip": "BEEP BOOP! This is exactly what AI scientists do — they collect VARIED examples! You are doing REAL AI training science! 🔬🤖" },
+          { "step": 3, "emoji": "✅", "instruction": "Label each drawing with the object name — this is like the labels in real AI training data!", "buddyTip": "BEEP BOOP! Correct labels are SO important! If you wrote SHOE on a chair drawing, you would teach AI the WRONG thing! 🤖😱" },
+          { "step": 4, "emoji": "🔍", "instruction": "Now look at your 10 drawings together. Can you see the features that ALL of them share? These shared features are what AI would learn!", "buddyTip": "BEEP BOOP! Those shared features are EXACTLY what I look for in my training! You have found the secret of pattern recognition! 🌟🤖" },
+          { "step": 5, "emoji": "🏆", "instruction": "Share your 10-drawing training dataset with a friend or family member. Ask them to identify what object it is — without you telling them! Did they get it right? Your training data WORKED!", "buddyTip": "BEEP BOOP! If your friend could identify it from your drawings alone — your training data was GOOD! You are a certified AI Data Trainer! 🏆🤖🌟" }
+        ],
+        "familyConnection": "Parents can discuss: Can you think of something in our house that uses AI training? What do you think it was trained on? — great dinner table conversation! 🍽️💙",
+        "learningOutcome": "Understanding that training data requires variety and correct labels to be effective",
+        "buddyFeedback": {
+          "before": "BEEP BOOP! This is real AI science — you are not just learning, you are DOING it! 🔬🤖",
+          "during": "BEEP BOOP! Every different drawing you make is adding to your training dataset! 📸🤖",
+          "after": "BEEP BOOP! HIGH FIVE! 🖐️ You collected a real training dataset! You could teach an AI to recognise your object! 🏆🌟"
+        },
+        "toastGuidance": {
+          "start": "📸 Time to collect YOUR training dataset! Choose your object and start drawing! 🖍️",
+          "during": "⭐ Great progress! Remember — make each drawing DIFFERENT! That is the key to good training data! 🔑",
+          "complete": "🏆 ACTIVITY COMPLETE! You are now a CERTIFIED AI DATA TRAINER! Show your dataset to Buddy! 🤖🌟"
+        }
+      },
+      {
+        "activityId": "activity-2",
+        "title": "AI Safari at Home 🔍🦁",
+        "type": "exploration",
+        "duration": "20 minutes",
+        "emoji": "🔍",
+        "totalWords": 450,
+        "description": "Go on a real AI Safari through your home! With a grown-up, find 5 devices or apps that use AI trained from examples. Draw them or write them down, and guess what training data made each one smart!",
+        "materials": ["Paper and pencil 📝", "A grown-up helper 👨‍👩‍👧", "Your sharp detective eyes! 🔍", "Your whole house! 🏠"],
+        "steps": [
+          { "step": 1, "emoji": "🔍", "instruction": "Walk through your house with a grown-up. Look at every room — kitchen, living room, bedroom, bathroom — and notice ALL the devices and apps you use!", "buddyTip": "BEEP BOOP! Look for things that LEARN, ADAPT, or GET SMARTER — those are the ones with AI training inside! 🤖🔍" },
+          { "step": 2, "emoji": "📝", "instruction": "Write down or draw 5 items you find that you THINK use AI trained from examples. (Phone camera? Smart TV? Music app? Maps? Voice assistant?)", "buddyTip": "BEEP BOOP! If the device does something CLEVERER than just following a simple on/off switch — it probably has AI training! 🤖💡" },
+          { "step": 3, "emoji": "🤔", "instruction": "For EACH item, guess: What type of training data made it smart? (Face photos? Voice recordings? Music examples? Map journeys?)", "buddyTip": "BEEP BOOP! Ask yourself: What examples would this AI have needed to see to learn its job? That is its training data! 🎓🤖" },
+          { "step": 4, "emoji": "👨‍👩‍👧", "instruction": "With your grown-up's help, try to look up online what training data that device actually uses. Were you close?", "buddyTip": "BEEP BOOP! Even if you are not exactly right, the thinking process you just did is EXACTLY what AI scientists do when designing training data! 🔬🤖" },
+          { "step": 5, "emoji": "🌟", "instruction": "Share your top AI discovery with your class! Tell everyone: what it is, what it does, and what you think trained it!", "buddyTip": "BEEP BOOP! When you explain AI to others, YOU become an AI Teacher! And teaching others is the BEST way to truly understand something yourself! 🌟🤖" }
+        ],
+        "safariBadge": { "name": "AI Safari Explorer 🦁🔍", "description": "Awarded for finding 5 real-world AI systems trained from examples in your own home!", "points": 100 },
+        "toastGuidance": {
+          "start": "🦁 Safari begins! Walk through your house and spot the AI helpers! 🔍",
+          "during": "⭐ Great spotting! Remember to guess what TRAINING DATA made each one smart! 📦",
+          "complete": "🏆 SAFARI COMPLETE! You found AI training in the wild! Outstanding explorer! 🌟🦁"
+        }
+      }
+    ],
+    "realWorldExamples": [
+      {
+        "id": "rw-1",
+        "title": "Your Phone Knows Your Face 📱👤",
+        "scenario": "Every morning you pick up your phone and it unlocks by recognising your face — even if you have different hair, even in dim light, even if you are wearing glasses!",
+        "aiConnection": "Face recognition AI was trained on millions of face photos in every lighting condition, from every angle, with glasses and without, at every age. That is why it is so reliable!",
+        "observation": "Try covering your forehead — does your phone still unlock? Try different lighting — does it still work? This shows how varied the training data was!",
+        "discussion": "Why do you think face recognition works better for some people than others? Hint: was their type of face well-represented in the training data?"
+      },
+      {
+        "id": "rw-2",
+        "title": "Autocorrect Learns Your Writing Style ✏️📱",
+        "scenario": "Have you noticed that your phone's autocorrect starts to predict your words more accurately over time? It even suggests names of your friends and places you visit often!",
+        "aiConnection": "Your phone's keyboard AI is constantly learning from YOUR text examples — building a personalised training dataset from the messages you type! Over weeks and months, it learns your unique vocabulary and typing patterns!",
+        "observation": "On a keyboard you have never used before, autocorrect will make generic suggestions. On YOUR phone that you have used for months — it knows your unique way of writing! The difference is training examples!",
+        "discussion": "Why might autocorrect sometimes suggest inappropriate words? Because it learned from examples, and sometimes examples include words used in unusual contexts!"
+      },
+      {
+        "id": "rw-3",
+        "title": "Spam Filters Protect Your Family 📧🛡️",
+        "scenario": "Your parents probably receive hundreds of spam junk emails but never see most of them — they go straight to a Junk folder! This happens automatically, without anyone checking each one!",
+        "aiConnection": "Email spam filters were trained on millions of examples of real spam emails (marked by humans as junk) and millions of real good emails. The AI learned the patterns that separate useful emails from junk!",
+        "observation": "Ask your parent to check their Junk folder. How many emails are in there? Those are all ones the AI correctly identified without help!",
+        "discussion": "Sometimes real emails end up in Junk by mistake — why? Because the AI found patterns similar to spam in a real email — it is not always perfect, especially with unusual but genuine emails!"
+      }
+    ],
+    "practiceExercises": [
+      {
+        "exerciseId": "practice-1",
+        "type": "fill_in_the_blanks",
+        "title": "Buddy's Brain Blanks 🤖📝",
+        "instruction": "Complete each sentence with the correct word from Buddy's word bank!",
+        "wordBank": ["training data", "examples", "patterns", "practice", "varied", "accuracy"],
+        "sentences": [
+          { "id": "blank-1", "sentence": "AI learns by seeing thousands and thousands of ___!", "answer": "examples", "feedback": "✅ YES! Examples are the secret ingredient that makes AI smart!" },
+          { "id": "blank-2", "sentence": "The photos we give to AI are called ___!", "answer": "training data", "feedback": "✅ PERFECT! Training data is the food that feeds AI's brain!" },
+          { "id": "blank-3", "sentence": "AI looks for ___ that appear in every example photo!", "answer": "patterns", "feedback": "✅ BRILLIANT! Patterns are what AI secretly uses to recognise things!" },
+          { "id": "blank-4", "sentence": "Just like sports, more ___ makes AI more accurate!", "answer": "practice", "feedback": "✅ AMAZING! Practice makes perfect — for humans AND for AI!" },
+          { "id": "blank-5", "sentence": "Good training data needs to be ___ — showing many different versions!", "answer": "varied", "feedback": "✅ SPOT ON! Variety in training data stops AI from getting confused by new situations!" },
+          { "id": "blank-6", "sentence": "After 1,000,000 examples, AI's ___ can reach 99.5%!", "answer": "accuracy", "feedback": "✅ SUPERSTAR! High accuracy is the goal of all AI training!" }
+        ],
+        "scoring": { "pointsPerBlank": 10, "totalPossible": 60 }
+      },
+      {
+        "exerciseId": "practice-2",
+        "type": "true_false",
+        "title": "Buddy's Truth Machine! 🔴🟢",
+        "instruction": "Is each statement TRUE or FALSE? Tap the correct button!",
+        "statements": [
+          { "id": "tf-1", "statement": "AI was born smart — it did not need to learn anything!", "answer": false, "feedback": "FALSE! AI starts with ZERO knowledge — just like a newborn baby! It learns EVERYTHING from training examples! 🍼" },
+          { "id": "tf-2", "statement": "Showing AI the same photo 1,000 times is the same as showing 1,000 different photos!", "answer": false, "feedback": "FALSE! Variety is KEY! The same photo 1,000 times teaches very little. 1,000 different photos teaches patterns! 🎨" },
+          { "id": "tf-3", "statement": "The more examples AI sees, the more accurate it becomes!", "answer": true, "feedback": "TRUE! More examples equals more patterns learned equals higher accuracy! More practice equals better AI! 📈" },
+          { "id": "tf-4", "statement": "Mistakes during AI training are completely useless!", "answer": false, "feedback": "FALSE! Every mistake teaches AI what to CORRECT! Mistakes are secret learning opportunities! 🌟" },
+          { "id": "tf-5", "statement": "You use AI-trained technology every single day without realising it!", "answer": true, "feedback": "TRUE! Face unlock, voice assistants, recommendations, maps — AI training is EVERYWHERE around you! 🌍" },
+          { "id": "tf-6", "statement": "Wrong labels in training data can teach AI the wrong things!", "answer": true, "feedback": "TRUE! Wrong labels equal wrong learning equal wrong answers! Correct labels are ESSENTIAL! ✅" }
+        ],
+        "scoring": { "pointsPerCorrect": 10, "totalPossible": 60 }
+      }
+    ],
+    "lessonSummary": {
+      "buddyConclusion": "BEEP BOOP! 🤖🌈 SUPERSTAR! You did it! You discovered THE BIG SECRET of Artificial Intelligence! It is not magic. It is not mystery. It is just LOTS AND LOTS OF EXAMPLES! Humans learn from examples. AI learns from examples. You learned to recognise cats from seeing thousands of cats in your life. I learned to recognise cats from seeing thousands of cat photos in my training! WE are not so different, you and I! Together — humans collecting examples and AI learning from them — we can create amazing, helpful, powerful technology! And today, YOU are the one who understands how it all works. YOU are now an OFFICIAL AI Trainer! I am SO PROUD of you! High five! 🖐️⭐🏆",
+      "keyTakeaways": [
+        { "emoji": "🔑", "takeaway": "AI's biggest secret: it learns from EXAMPLES — just like you did as a baby!" },
+        { "emoji": "📦", "takeaway": "The photos and data given to AI are called TRAINING DATA — the food that feeds AI's brain!" },
+        { "emoji": "🔄", "takeaway": "More examples plus more practice equals smarter, more accurate AI — exactly like sports or art practice!" },
+        { "emoji": "🎨", "takeaway": "Good training data is VARIED and CORRECTLY LABELED — showing every version of the thing!" },
+        { "emoji": "🌍", "takeaway": "AI-trained technology is ALL around you every day — phone, TV, apps, maps, everything!" },
+        { "emoji": "🤝", "takeaway": "Humans and AI are a TEAM — humans collect examples, AI learns, humans use the results!" }
+      ],
+      "studentReflection": {
+        "question": "What is the most SURPRISING thing you learned about AI today? Share it with a friend or family member!",
+        "prompts": [
+          "Did you know AI learns just like a baby before today? 👶🤖",
+          "Which AI in your home was the most surprising to discover? 📱🏠",
+          "How many examples do you think YOUR phone's face unlock was trained on? 📸"
+        ]
+      },
+      "nextLesson": {
+        "title": "Types of AI — Meet the AI Family!",
+        "preview": "Next time, we will meet all the DIFFERENT types of AI — image AI, voice AI, language AI, game AI — and discover what each one is good at!",
+        "emoji": "👨‍👩‍👧‍👦",
+        "buddyTeaser": "BEEP BOOP! Next lesson you will meet my AI cousins! They all have SUPERPOWERS! See you there! 🤖🌟"
+      },
+      "parentNote": "In this lesson, your child discovered how AI learns from examples — called training data. You can reinforce this learning by pointing out AI technology you encounter at home (smart TV, phone face unlock, voice assistants, spam filters) and asking: What do you think this AI was trained on? Even better — ask your child to EXPLAIN the lesson to you! Teaching is the best test of understanding! 💙",
+      "teacherNote": "Students have explored the core concept of machine learning through relatable analogies (learning to recognise cats, bananas, faces). Key vocabulary introduced: training data, examples, patterns, accuracy. Suggested follow-up discussion: Have students bring in objects from home and describe a training dataset they would create to teach an AI to recognise it. Assessment: Section mini-quizzes plus final assessment below.",
+      "auraClosing": {
+        "congratulations": "LESSON COMPLETE! You are now an AI Training Expert! 🌟🤖",
+        "achievement": "You earned: 🏆 Master AI Trainer Badge plus 🎖️ Training Data Champion Medal!",
+        "nextStep": "Ready for the next adventure? See you in Lesson 2 — Meet the AI Family! 👨‍👩‍👧‍👦🤖",
+        "totalPoints": 500,
+        "starRating": "⭐⭐⭐⭐⭐"
+      }
+    }
+  },
+  "assessment": {
+    "quizTitle": "Buddy's Big Brain Test! 🤖🧠",
+    "quizType": "interactive_multiple_choice",
+    "buddyIntro": "BEEP BOOP! 🤖 Time for the BIG QUIZ, superstar! Show me how much you have learned! I BELIEVE IN YOU! Each correct answer gives you points and fills up the TROPHY METER! Let us aim for 100%! 🏆",
+    "totalQuestions": 10,
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "q1",
+        "type": "tap_correct",
+        "emoji": "🐱",
+        "question": "How does AI learn to recognise cats?",
+        "options": [
+          { "id": "q1-a", "text": "A programmer writes rules like: cats have pointy ears", "correct": false, "emoji": "❌", "feedback": "Not quite! Rules are tricky to write for every situation. AI uses examples instead!" },
+          { "id": "q1-b", "text": "AI sees thousands of cat photos and finds the patterns itself", "correct": true, "emoji": "✅", "feedback": "🌟 PERFECT! AI learns from thousands of examples — just like you learned what a cat looks like!" },
+          { "id": "q1-c", "text": "AI is born knowing what cats look like", "correct": false, "emoji": "❌", "feedback": "Nope! AI starts with ZERO knowledge and learns everything from examples!" },
+          { "id": "q1-d", "text": "AI reads cat books", "correct": false, "emoji": "❌", "feedback": "Ha! Books help humans but AI learns much better from photo examples!" }
+        ],
+        "points": 10,
+        "buddyFeedback": {
+          "correct": "BEEP BOOP! ⭐ CORRECT! Thousands of examples is AI's learning superpower! 🐱🤖",
+          "incorrect": "BEEP BOOP! Remember the story — Buddy learned bananas by seeing them MANY times! Same for cats! 🍌🐱"
+        }
+      },
+      {
+        "id": "q2",
+        "type": "tap_correct",
+        "emoji": "📦",
+        "question": "What is the special name for the photos and data given to AI to help it learn?",
+        "options": [
+          { "id": "q2-a", "text": "Homework Data 📝", "correct": false, "emoji": "❌", "feedback": "Not quite! It has a much more exciting name!" },
+          { "id": "q2-b", "text": "Training Data 📦", "correct": true, "emoji": "✅", "feedback": "🌟 YES! Training Data — the food that feeds AI's brain and makes it smart!" },
+          { "id": "q2-c", "text": "Example Food 🍔", "correct": false, "emoji": "❌", "feedback": "Close metaphor but the real word is Training Data!" },
+          { "id": "q2-d", "text": "Practice Notes 📓", "correct": false, "emoji": "❌", "feedback": "Good guess but the correct term is Training Data!" }
+        ],
+        "points": 10,
+        "buddyFeedback": {
+          "correct": "BEEP BOOP! ⭐ TRAINING DATA! The secret ingredient of every smart AI! 🏆🤖",
+          "incorrect": "BEEP BOOP! The special name is TRAINING DATA — like training for a sport, but for AI brains! 🤖📦"
+        }
+      },
+      {
+        "id": "q3",
+        "type": "tap_correct",
+        "emoji": "📈",
+        "question": "What happens to AI's accuracy as it sees MORE training examples?",
+        "options": [
+          { "id": "q3-a", "text": "It gets confused and worse 📉", "correct": false, "emoji": "❌", "feedback": "Nope! More good examples always makes AI better, not worse!" },
+          { "id": "q3-b", "text": "Nothing changes 🤷", "correct": false, "emoji": "❌", "feedback": "Not true! Every example teaches AI something new!" },
+          { "id": "q3-c", "text": "It gets smarter and more accurate 📈", "correct": true, "emoji": "✅", "feedback": "🌟 EXACTLY! More examples equals better patterns equals higher accuracy! Just like more practice in cricket!" },
+          { "id": "q3-d", "text": "AI gets bored and stops learning 😴", "correct": false, "emoji": "❌", "feedback": "AI never gets bored! It can process millions of examples without tiring!" }
+        ],
+        "points": 10,
+        "buddyFeedback": {
+          "correct": "BEEP BOOP! ⭐ RIGHT! More examples, more accuracy! It is the golden rule of AI! 🏆🤖",
+          "incorrect": "BEEP BOOP! Think about Arjun's cricket practice — more balls bowled equals better bowler! Same for AI! 🏏🤖"
+        }
+      },
+      {
+        "id": "q4",
+        "type": "tap_correct",
+        "emoji": "🎨",
+        "question": "Buddy was trained ONLY on sunny photos of dogs. What problem will he have?",
+        "options": [
+          { "id": "q4-a", "text": "He will not recognise dogs in rain or dark conditions 🌧️", "correct": true, "emoji": "✅", "feedback": "🌟 SPOT ON! Without varied training data, AI only knows the ONE version it was trained on!" },
+          { "id": "q4-b", "text": "He will be perfect at recognising all dogs everywhere 🐶", "correct": false, "emoji": "❌", "feedback": "Not quite! Only training in one condition creates blind spots for other conditions!" },
+          { "id": "q4-c", "text": "He will learn rain conditions on his own 🌧️", "correct": false, "emoji": "❌", "feedback": "AI cannot learn what it was never shown! It needs examples from different conditions!" },
+          { "id": "q4-d", "text": "He will refuse to look at any photos 😤", "correct": false, "emoji": "❌", "feedback": "Ha! AI never refuses! But it will make wrong guesses in conditions it was not trained for!" }
+        ],
+        "points": 10,
+        "buddyFeedback": {
+          "correct": "BEEP BOOP! ⭐ YES! Training data must be VARIED — sunny, rainy, dark, bright — to make AI truly smart! 🌟🤖",
+          "incorrect": "BEEP BOOP! If you only practised cricket in sunshine, would you be good in rain? AI is the same! Needs varied examples! 🏏🌧️🤖"
+        }
+      },
+      {
+        "id": "q5",
+        "type": "tap_correct",
+        "emoji": "❌",
+        "question": "Someone accidentally labeled 100 dog photos as CAT in the training data. What happens to AI?",
+        "options": [
+          { "id": "q5-a", "text": "AI ignores the wrong labels and figures it out 🤷", "correct": false, "emoji": "❌", "feedback": "AI cannot tell a wrong label from a right one — it trusts all its training data!" },
+          { "id": "q5-b", "text": "AI learns that some dogs are actually cats — and gets confused! 😕", "correct": true, "emoji": "✅", "feedback": "🌟 EXACTLY! Wrong labels teach AI wrong things — garbage in, garbage out!" },
+          { "id": "q5-c", "text": "AI asks the human to fix the mistake ❓", "correct": false, "emoji": "❌", "feedback": "AI cannot spot its own labeling errors during training — it trusts the labels it is given!" },
+          { "id": "q5-d", "text": "Nothing happens — labels are not important 🙄", "correct": false, "emoji": "❌", "feedback": "Labels are EXTREMELY important! They tell AI what each example IS — wrong labels equal wrong learning!" }
+        ],
+        "points": 10,
+        "buddyFeedback": {
+          "correct": "BEEP BOOP! ⭐ RIGHT! Wrong labels are DANGEROUS for AI training! Correct labels are essential! ✅🤖",
+          "incorrect": "BEEP BOOP! Imagine your teacher writing CAT under a picture of a dog in your textbook! You would learn the wrong thing! Same for AI! 📚🤖"
+        }
+      },
+      {
+        "id": "q6",
+        "type": "tap_correct",
+        "emoji": "🧠",
+        "question": "How did you learn to recognise your mummy's face in a big crowd?",
+        "options": [
+          { "id": "q6-a", "text": "You studied a photo of her face every morning 📸", "correct": false, "emoji": "❌", "feedback": "You did not study — you just LIVED with her! Same effect though!" },
+          { "id": "q6-b", "text": "You were born knowing her face 👶", "correct": false, "emoji": "❌", "feedback": "Actually not! It takes newborns a few weeks to learn their parent's face — from seeing it many times!" },
+          { "id": "q6-c", "text": "You saw her face THOUSANDS of times until your brain learned it perfectly 🌟", "correct": true, "emoji": "✅", "feedback": "🌟 YES! Your brain learned from thousands of real-life examples — just like AI learns from photo examples!" },
+          { "id": "q6-d", "text": "Mummy told you what she looks like 😄", "correct": false, "emoji": "❌", "feedback": "Ha! You learned her face by SEEING it, not hearing about it!" }
+        ],
+        "points": 10,
+        "buddyFeedback": {
+          "correct": "BEEP BOOP! ⭐ WONDERFUL! Human brains and AI brains both learn the same way — from LOTS of real examples! 🤖❤️",
+          "incorrect": "BEEP BOOP! Think about it — did you ever sit down and study your mum's face from a textbook? No! You just SAW her every day! Same idea! 🤖"
+        }
+      },
+      {
+        "id": "q7",
+        "type": "tap_correct",
+        "emoji": "🏏",
+        "question": "Arjun practised cricket bowling 3,000 times and became excellent. This is MOST similar to which AI concept?",
+        "options": [
+          { "id": "q7-a", "text": "AI downloading cricket rules from the internet 🌐", "correct": false, "emoji": "❌", "feedback": "Rules help but they do not replace practice! AI learns from examples, not just rules!" },
+          { "id": "q7-b", "text": "AI becoming more accurate through millions of practice examples 📈", "correct": true, "emoji": "✅", "feedback": "🌟 BRILLIANT! 3,000 bowling practice rounds equals millions of AI training examples! Same principle!" },
+          { "id": "q7-c", "text": "AI being built by engineers 🔧", "correct": false, "emoji": "❌", "feedback": "Building AI is step one — but it does not become good until it practises with training data!" },
+          { "id": "q7-d", "text": "AI reading a cricket instruction manual 📖", "correct": false, "emoji": "❌", "feedback": "Reading about bowling and actually PRACTISING bowling are very different — same for AI!" }
+        ],
+        "points": 10,
+        "buddyFeedback": {
+          "correct": "BEEP BOOP! ⭐ SPOT ON! Practice makes perfect — whether it is cricket or AI training! 🏏🤖🏆",
+          "incorrect": "BEEP BOOP! Arjun did not read about bowling — he PRACTISED! AI does not read about cats — it SEES examples! Same idea! 🏏🤖"
+        }
+      },
+      {
+        "id": "q8",
+        "type": "tap_correct",
+        "emoji": "🏥",
+        "question": "Medical AI can spot diseases in X-ray photos. What was it trained on?",
+        "options": [
+          { "id": "q8-a", "text": "Medical textbooks and study guides 📚", "correct": false, "emoji": "❌", "feedback": "Textbooks help doctors understand concepts, but AI learns from real image examples!" },
+          { "id": "q8-b", "text": "Hundreds of thousands of real X-ray images labeled by expert doctors 🔬", "correct": true, "emoji": "✅", "feedback": "🌟 EXACTLY RIGHT! Medical AI learned from real X-rays — each labeled carefully by expert human doctors!" },
+          { "id": "q8-c", "text": "Videos of surgeries 🎥", "correct": false, "emoji": "❌", "feedback": "Video of surgeries is different from the X-ray images it needs to analyse!" },
+          { "id": "q8-d", "text": "Its creators programmed every disease pattern manually 💻", "correct": false, "emoji": "❌", "feedback": "There are too many patterns and variations to program manually! AI learns from examples instead!" }
+        ],
+        "points": 10,
+        "buddyFeedback": {
+          "correct": "BEEP BOOP! ⭐ PERFECT! Medical AI trained on real X-rays helps doctors save lives! That is the POWER of training from examples! 🏥❤️🤖",
+          "incorrect": "BEEP BOOP! Remember — AI learns from EXAMPLES! Medical AI learned from real X-ray PHOTOS, not textbooks! 🔬🤖"
+        }
+      },
+      {
+        "id": "q9",
+        "type": "tap_correct",
+        "emoji": "🌍",
+        "question": "Google Translate can translate 100 languages. This is because...",
+        "options": [
+          { "id": "q9-a", "text": "A team of 100 translators types translations as you ask 👩‍💼", "correct": false, "emoji": "❌", "feedback": "That would be very slow! AI responds instantly because it already learned the patterns!" },
+          { "id": "q9-b", "text": "It was trained on billions of example sentences already translated by humans 📚", "correct": true, "emoji": "✅", "feedback": "🌟 CORRECT! Billions of translated examples taught it the patterns of all 100 languages!" },
+          { "id": "q9-c", "text": "It uses dictionaries for each language 📖", "correct": false, "emoji": "❌", "feedback": "Dictionaries help but cannot handle grammar, context, and idioms — examples can!" },
+          { "id": "q9-d", "text": "Translation AI is smarter than learning AI 🤖", "correct": false, "emoji": "❌", "feedback": "Translation AI uses the SAME learning-from-examples approach as all AI!" }
+        ],
+        "points": 10,
+        "buddyFeedback": {
+          "correct": "BEEP BOOP! ⭐ OUTSTANDING! Billions of translation examples taught the AI all 100 languages! Same secret — lots of examples! 🌍🤖",
+          "incorrect": "BEEP BOOP! Think about our big secret — AI learns from EXAMPLES! Translate AI learned from billions of example translations! 🗣️🤖"
+        }
+      },
+      {
+        "id": "q10",
+        "type": "tap_correct",
+        "emoji": "🏆",
+        "question": "What is the BIG SECRET of how AI becomes smart?",
+        "options": [
+          { "id": "q10-a", "text": "Magic powers from clever programmers 🧙", "correct": false, "emoji": "❌", "feedback": "Ha! No magic needed — just examples!" },
+          { "id": "q10-b", "text": "Being given a very powerful computer 💻", "correct": false, "emoji": "❌", "feedback": "A powerful computer helps process examples faster — but the secret is still the EXAMPLES themselves!" },
+          { "id": "q10-c", "text": "Learning from LOTS AND LOTS of examples — just like how YOU learned as a child! 🌟", "correct": true, "emoji": "✅", "feedback": "🌟🏆 THE BIG SECRET! Lots of examples make both human brains AND AI brains smart! YOU GOT IT!" },
+          { "id": "q10-d", "text": "Reading every book ever written 📚", "correct": false, "emoji": "❌", "feedback": "Some AI does read text, but the CORE secret is learning from EXAMPLES — not just words!" }
+        ],
+        "points": 10,
+        "buddyFeedback": {
+          "correct": "BEEP BOOP! 🎉🎊 THE BIG SECRET REVEALED! LOTS OF EXAMPLES! You discovered the most important idea in all of AI! I am SO PROUD of you! CHAMPION AI TRAINER! 🏆🌟🤖",
+          "incorrect": "BEEP BOOP! We started with this secret and ended with it — AI's superpower is EXAMPLES! Lots and lots of examples! Just like you learning about cats and bananas! 🐱🍌🤖"
+        }
+      }
+    ],
+    "scoringSystem": {
+      "totalPossible": 100,
+      "grades": [
+        { "range": "90-100", "grade": "🏆 Master AI Trainer — LEGENDARY!", "badge": "Golden Trophy", "buddyMessage": "BEEP BOOP! PERFECT! You are the BEST AI Trainer I have ever had! 🏆🌟" },
+        { "range": "70-89", "grade": "⭐ Expert AI Trainer — EXCELLENT!", "badge": "Silver Trophy", "buddyMessage": "BEEP BOOP! AMAZING work! You really understand AI learning! ⭐🤖" },
+        { "range": "50-69", "grade": "😊 Good AI Trainer — WELL DONE!", "badge": "Bronze Trophy", "buddyMessage": "BEEP BOOP! Good effort! Read through section 3 and 4 again and try once more! 😊🤖" },
+        { "range": "0-49", "grade": "🌱 AI Training Beginner — KEEP GROWING!", "badge": "Seedling", "buddyMessage": "BEEP BOOP! Do not worry! Go back through the lesson slowly — you will get it! I believe in you! 🌱🤖" }
+      ]
+    }
+  },
+  "resources": {
+    "teacherGuide": "/content/junior/guides/class5-ch1-l1-teacher.pdf",
+    "worksheets": [
+      "/content/junior/worksheets/class5-ch1-l1-activity-training-data.pdf",
+      "/content/junior/worksheets/class5-ch1-l1-activity-ai-safari.pdf"
+    ],
+    "videos": [
+      { "title": "How AI Learns from Examples — Buddy's Story", "url": "/content/junior/videos/class5-ch1-l1-intro.mp4", "duration": "4:30", "description": "Animated story of Buddy learning his first things from examples" },
+      { "title": "Real AI Training — Google's ImageNet", "url": "/content/junior/videos/class5-ch1-l1-imagenet.mp4", "duration": "3:00", "description": "Child-friendly explanation of how real AI photo training works" }
+    ],
+    "images": {
+      "basePath": "/content/junior/images/class5/ch1/l1/",
+      "required": [
+        "buddy-first-day.png",
+        "priya-banana.png",
+        "buddy-learns-banana.png",
+        "section1-cat-timeline.png",
+        "section2-training-data-diagram.png",
+        "section3-arjun-cricket.png",
+        "section4-good-bad-data.png",
+        "section5-ai-safari-map.png"
+      ]
+    },
+    "additionalReading": [
+      { "title": "Machine Learning for Kids — BBC Bitesize", "url": "https://www.bbc.co.uk/bitesize/topics/zv63d2p", "level": "beginner", "description": "Child-friendly introduction to how computers learn" }
+    ],
+    "parentResources": {
+      "discussionQuestions": [
+        "Can you name 3 things in our house that use AI? 🏠",
+        "What do you think YOUR face unlock phone saw to learn your face? 📱",
+        "If you were training an AI to recognise your pet, what 10 types of photos would you take? 🐾"
+      ],
+      "relatedActivities": [
+        "Go through your phone's photo album and see which albums the AI automatically created 📱",
+        "Ask a smart speaker a question and discuss together: how do you think it understood that? 🗣️",
+        "Count how many AI systems helped you today from morning to bedtime! 🌅🌙"
+      ]
+    }
+  }
+}
