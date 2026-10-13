@@ -1,0 +1,1276 @@
+{
+  "lessonId": "l2",
+  "title": "Learning from Examples",
+  "lessonTitle": "Learning from Examples",
+  "level": "middle",
+  "class": "class6",
+  "classId": "class6",
+  "className": "Class 6",
+  "ageGroup": "11-12 years",
+  "chapter": "ch1",
+  "chapterId": "ch1",
+  "chapterTitle": "AI Basics",
+  "chapterCanonicalKey": "discover",
+  "lessonNumber": 2,
+  "monthNumber": 2,
+  "mascot": {
+    "name": "Algo",
+    "role": "The Intelligent Guide",
+    "emoji": "🧠",
+    "personality": "Calm, patient, curious, and encouraging. Algo speaks like a friendly mentor who loves explaining how the world works. Never uses intimidating jargon. Relates everything to everyday experiences like cricket, cooking, music, and school.",
+    "voiceStyle": "Warm and conversational with clear pauses for thinking. Celebrates discovery and encourages students to ask 'why' and 'how'.",
+    "avatarImage": "/content/middle/images/class6/mascots/algo-guide.png",
+    "avatarDescription": "[IMAGE_PLACEHOLDER: Friendly blue robot character with a warm glowing brain icon on its chest, holding a magnifying glass, standing with an encouraging smile]"
+  },
+  "metadata": {
+    "duration": "45 minutes",
+    "difficulty": "beginner",
+    "totalWordCount": 12000,
+    "version": "2.0",
+    "lastUpdated": "2026-10-13",
+    "tags": [
+      "training data",
+      "labels",
+      "supervised learning",
+      "dataset quality",
+      "clean data",
+      "noisy data",
+      "accuracy",
+      "google photos",
+      "spam filtering"
+    ],
+    "curriculum": "CBSE & International Olympiad AI Foundations — Middle School Stage",
+    "prerequisiteKnowledge": "Familiarity with Lesson 1 (How Machines Get Smart) and everyday smartphone apps.",
+    "standardsAlignment": "CBSE AI Subject Code 417 (Class 6) & NEP 2020 Experiential Computational Thinking",
+    "coreCompetencies": [
+      "Understanding what training data and labels mean in everyday language",
+      "Distinguishing high-quality clean datasets from noisy or biased data",
+      "Understanding why accuracy increases with diverse, well-labeled examples",
+      "Recognizing real-world supervised learning in Google Photos, email spam, and voice search"
+    ],
+    "teacherNote": "Use the flashcard analogy throughout this lesson. Show students that teaching a machine is exactly like a teacher showing flashcards with pictures on the front and names on the back. Emphasize that wrong labels lead to a confused computer."
+  },
+  "introduction": {
+    "overview": "In Lesson 1, you discovered that computers get smart by finding patterns rather than by magic. But where do those patterns come from? How does an algorithm know that a photo of a mango is actually a mango, and not a tennis ball? The answer is: examples and labels! Just like you learned the alphabet using colorful picture flashcards with words printed beneath each picture, computers learn from large collections of labeled examples known as Training Data. In this lesson, we will uncover how computers learn from examples, what makes a dataset good or bad, and how your daily actions help train some of the smartest apps in the world. [IMAGE_PLACEHOLDER: An eleven-year-old student holding up picture flashcards of fruits while a friendly robot character examines the name tags on each card]",
+    "welcomeMessage": "Welcome back to your AI journey! Today, you will discover the secret food that makes artificial intelligence smart: training data and labels.",
+    "algoSpoken": "Hello young explorers! Algo here. Think about how you learned what an elephant looks like when you were three years old. Nobody gave you a list of mathematical formulas about trunks and ears. Your parents showed you picture books and pointed: 'Look, elephant!' Today, you will see how we teach computers using the exact same friendly method!",
+    "duration": "45 mins",
+    "learningObjectives": [
+      "Explain what training data and labels mean using simple everyday flashcard analogies.",
+      "Understand the basic concept of supervised learning without any complicated mathematics.",
+      "Distinguish between clean, high-quality data and noisy, mislabeled data.",
+      "Explain the famous computer science rule: Garbage In, Garbage Out (GIGO).",
+      "Discover how everyday apps like Google Photos and Gmail learn from user corrections and tags.",
+      "Identify the three essential ingredients of a great training dataset: variety, volume, and correctness."
+    ],
+    "starterChallenge": {
+      "title": "Warm-Up Mystery: The Baby Robot's First Word",
+      "question": "If you want to teach a baby robot to recognize a bicycle, what is the best thing to do?",
+      "options": [
+        "Read it a poem about riding bikes in the rain",
+        "Show it thousands of photos of bicycles from different angles with the label 'Bicycle' written on each one",
+        "Leave the robot outside near a bicycle stand and hope it figures it out magically",
+        "Type the word 'BICYCLE' in giant capital letters ten times on its screen"
+      ],
+      "correctOptionIndex": 1,
+      "mascotTip": "Algo says: Computers learn from examples! The more photos with clear labels you show, the faster the computer spots the pattern."
+    },
+    "openingStory": {
+      "title": "Aarav's School Science Fair Flashcards",
+      "wordCount": 520,
+      "content": "Twelve-year-old Aarav lives in Jaipur. For his school science exhibition, he wanted to build a simple digital camera program that could identify healthy neem leaves versus dried, damaged leaves. He borrowed his cousin's laptop and installed a beginner-friendly image recognition tool.\n\nOn the first day, Aarav took just three photos of green leaves from the garden and tested his program. When he showed the camera a new leaf from a different branch, the computer displayed a big red question mark: 'Unknown Object'. Aarav felt disappointed. 'Why can't it recognize a leaf? Even a toddler knows this is a leaf!'\n\nHis science teacher, Mrs. Sharma, smiled and walked over. 'Aarav, imagine if you were preparing for a spelling bee, but your teacher gave you only three words to study. Would you be able to pass the entire exam?' Aarav shook his head. 'Of course not. I need to practice hundreds of words.'\n\n'Computers are just like that,' Mrs. Sharma explained. 'Three photos are not enough for the computer to understand what makes a leaf a leaf. Leaves come in different sizes, shades of green, sunlight angles, and backgrounds. You need to give the computer a whole album of labeled flashcards.'\n\nAarav spent the afternoon photographing forty different neem leaves: big leaves, small leaves, leaves in bright sunlight, leaves in shadow, and leaves held at different angles. Below every photo, he carefully typed the label: 'Healthy Neem Leaf'. He also photographed forty dried brown leaves and labeled them: 'Damaged Leaf'.\n\nWhen he ran the training program again, something wonderful happened. When Aarav held up a brand-new leaf that the camera had never seen before, the screen chimed happily: 'Healthy Neem Leaf — 96% Match!' Aarav learned an unforgettable lesson: A machine is only as smart as the examples you give it.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Illustration of Aarav in a Jaipur school laboratory, happily holding a fresh neem branch in front of a laptop webcam while his teacher Mrs. Sharma smiles in encouragement]",
+      "algoNarration": "Aarav discovered the golden rule of AI: Examples are the teachers, and labels are the answers! Without good examples, even the most expensive computer remains completely clueless."
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "section1",
+      "sectionNumber": 1,
+      "title": "What is Training Data? The Fuel of AI",
+      "subtitle": "Why computers need thousands of examples to learn anything at all",
+      "content": "Have you ever wondered how a car moves? You can have the most expensive engine, shiny leather seats, and high-tech wheels, but without petrol or electricity, the car will not move an inch. Petrol is the fuel that powers the vehicle.\n\nIn the world of Artificial Intelligence, Training Data is the fuel. A machine learning algorithm is like an empty engine waiting in a garage. It has the ability to learn, but it knows absolutely nothing when it is first created. It does not know what a cat looks like. It does not know what spoken words sound like. It does not even know the difference between an apple and a football.\n\nTo give this empty engine intelligence, scientists feed it thousands—sometimes millions—of real-world examples. This collection of examples is called Training Data.\n\nThink about how a human baby learns. When a baby sees a fluffy golden retriever walking in the park, someone says: 'Look, a doggy!' The next day, the baby sees a tiny black pug, and someone says: 'Another doggy!' A week later, the baby sees a big white poodle. Gradually, after seeing dozens of different dogs in real life, in books, and on television, the child's brain builds a general concept of 'dog'.\n\nMachine learning works in the exact same way. If you want a computer to recognize dogs in photos, you do not write instructions describing paws, wet noses, and wagging tails. Instead, you feed the computer ten thousand photos of different dogs. The computer studies these examples, compares them with photos of cats, rabbits, and cars, and discovers the common features on its own. Training data is the experience that turns an empty program into a smart assistant.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Labeled image training deck showing photos tagged with 'apple', 'orange', and 'banana', with glowing arrows feeding them into an algorithm]",
+      "toastGuidance": {
+        "tap_prompt": "Tap each card below to see what training data looks like in different real-world apps.",
+        "great_job": "Terrific! You understand that training data is the foundation of all machine learning.",
+        "try_again": "Remember: Training data is the collection of examples used to teach an AI system."
+      },
+      "examples": [
+        {
+          "title": "Language Learning Apps (Duolingo)",
+          "description": "Duolingo trains its voice pronunciation models by analyzing millions of voice recordings from native speakers speaking English, Hindi, Spanish, and French.",
+          "realLifeScenario": "Speaking into phone • The app grading your accent by comparing it with thousands of native speaker audio files"
+        },
+        {
+          "title": "Self-Driving Car Vision Systems",
+          "description": "Autonomous cars are fed millions of hours of highway video recordings showing pedestrians, red traffic lights, lane stripes, and rainy nighttime roads.",
+          "realLifeScenario": "Highway traffic • Vehicle cameras detecting a pedestrian crossing the road in dense fog"
+        },
+        {
+          "title": "Weather Prediction Datasets",
+          "description": "Meteorological models study forty years of daily humidity, air pressure, wind velocity, and temperature recordings from thousands of weather stations.",
+          "realLifeScenario": "Monsoon morning • App predicting a sudden cloudburst two hours before rain starts falling"
+        },
+        {
+          "title": "Cricket Bowling Speed Radar",
+          "description": "High-speed camera tracking models study tens of thousands of recorded cricket deliveries to accurately trace ball speed and seam position.",
+          "realLifeScenario": "IPL match broadcast • TV screen showing 145 km/h bowling speed within one second of delivery"
+        }
+      ],
+      "keyPoints": [
+        "Training data is the collection of real-world examples used to teach a machine learning model.",
+        "Without training data, a machine learning algorithm is like a car with no petrol—it cannot do anything.",
+        "Computers learn by studying patterns across thousands of examples, just like humans learn from life experience.",
+        "Training data can be photos, recorded audio, typed sentences, numbers, or sensor readings.",
+        "The more diverse and realistic the training examples are, the smarter the AI model becomes.",
+        "AI does not possess inborn knowledge; everything it knows comes strictly from the data humans provide."
+      ],
+      "algoVoice": "Never forget: An AI model never knows anything on its own. Every smart answer it gives is directly fueled by the examples humans fed into its memory!"
+    },
+    {
+      "sectionId": "section2",
+      "sectionNumber": 2,
+      "title": "The Magic of Labels — Giving Meaning to Data",
+      "subtitle": "How tags and answers transform raw pictures and sounds into useful knowledge",
+      "content": "Imagine walking into a school library where all ten thousand books have their covers ripped off, leaving blank brown paper. There are no titles, no author names, and no subject categories. If you wanted to find a book about Indian freedom fighters for your history project, how would you find it? You would have to open every single book and read page after page. It would take weeks!\n\nNow imagine the library has neat, colorful stickers on every spine: 'History • Class 6', 'Science • Biology', 'Maths • Puzzles'. Instantly, you can walk straight to the correct shelf and grab the book you need. Those stickers are labels.\n\nIn machine learning, a Label is the correct answer or name tag attached to a piece of training data. When a scientist prepares training data for a computer vision model, they do not just dump a pile of photos into the computer. They provide pairs of information:\n- The Input: A photograph of an orange.\n- The Label: The text tag 'Orange'.\n\nWhen a machine learning algorithm trains on labeled data, the process is called Supervised Learning. Why is it called 'supervised'? Because it is like a teacher supervising a student with flashcards. The teacher shows the photo of the orange, the student makes a guess ('Is it a tomato?'), and the teacher checks the label on the back: 'No, look at the label: this is an orange.' Over thousands of flashcards, the student learns to recognize oranges effortlessly.\n\nWithout labels, data is just a jumble of raw numbers. Labels provide the ground truth—the correct answers that allow the algorithm to measure its mistakes and improve its pattern predictions.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Visual diagram of supervised learning flashcards showing front of card (Input Photo) and back of card (Correct Label Tag), with a teacher checking the answer]",
+      "toastGuidance": {
+        "tap_prompt": "Examine how input data and labels pair up to create supervised learning flashcards.",
+        "great_job": "Spot on! Labels provide the correct answers that guide model training.",
+        "try_again": "Remember: A label is the true answer or category tag attached to an example."
+      },
+      "examples": [
+        {
+          "title": "Google Photos Album Tagging",
+          "description": "When Google Photos sorts your family pictures, it looks for faces that you have labeled 'Mom', 'Dad', or 'Rohan', automatically creating dedicated person albums.",
+          "realLifeScenario": "Family smartphone • Searching 'Dad at the beach' and instantly seeing fifty matching photos"
+        },
+        {
+          "title": "YouTube Video Category Tags",
+          "description": "Content creators add tags like 'Science Project', 'Class 6', and 'DIY Crafts' to their uploads, helping the recommendation engine match videos to interested students.",
+          "realLifeScenario": "Video search • Typing 'class 6 physics' and getting relevant educational tutorials"
+        },
+        {
+          "title": "Voice Assistant Contact Lists",
+          "description": "When you tell your phone: 'Call Dadi', the phone's speech system matches the sound of 'Dadi' to the label tagged against your grandmother's telephone number.",
+          "realLifeScenario": "Car dashboard • Voice command dialing family members without touching the phone screen"
+        },
+        {
+          "title": "Hospital Chest X-Ray Diagnosis Tags",
+          "description": "Radiologists label thousands of medical lung scans as 'Healthy' or 'Pneumonia Present', allowing AI screening tools to assist rural clinics.",
+          "realLifeScenario": "Village medical camp • Automated scanner flagging suspicious lung scans for urgent doctor review"
+        }
+      ],
+      "keyPoints": [
+        "A label is the correct answer, category, or tag attached to a training data example.",
+        "Supervised Learning is the process of training an algorithm using pairs of inputs and correct labels.",
+        "Inputs are what the computer sees (like photos or audio), while labels are what the computer must learn to predict.",
+        "Labels act like the answers on the back of flashcards, allowing the computer to check if its guess was right.",
+        "Human experts usually create the initial labels by manually inspecting and tagging samples.",
+        "Without accurate labels, a computer cannot measure its errors or learn which patterns matter."
+      ],
+      "algoVoice": "Think of labels as name tags at a big birthday party. Without name tags, you might confuse Rohan with Rahul. Labels give every example a clear identity!"
+    },
+    {
+      "sectionId": "section3",
+      "sectionNumber": 3,
+      "title": "Clean Data vs Noisy Data — The GIGO Rule",
+      "subtitle": "Why bad or messy data ruins artificial intelligence: Garbage In, Garbage Out",
+      "content": "Imagine your grandmother is teaching you how to bake a delicious chocolate cake. She gives you a recipe book, but someone spilled ink all over the pages. The page says: 'Add 2 cups of sugar', but the word 'sugar' is smudged and looks like 'salt'. If you follow the messy recipe and dump two cups of salt into the mixing bowl, what will your cake taste like? Disastrous! Even though you followed the instructions carefully, bad ingredients led to an inedible cake.\n\nIn computer science, this fundamental principle is called GIGO: Garbage In, Garbage Out. If you feed messy, incorrect, or confusing training data into a machine learning algorithm, the resulting AI model will make terrible, confusing predictions.\n\nWhat does 'garbage' look like in machine learning data? Scientists call it Noisy Data. Noise can take several forms:\n1. Blurry or low-quality photos: A camera photo where the object is too dark, out of focus, or hidden behind shadows.\n2. Mislabeled examples: A photo of a wolf accidentally tagged as 'German Shepherd Dog'.\n3. Irrelevant distractions: A photo of a cat where 90% of the image is a red sofa, causing the computer to think red sofas are cats.\n4. Duplicate or repetitive data: Showing the exact same photo five hundred times instead of showing diverse examples.\n\nIn contrast, Clean Data consists of sharp, well-lit, correctly tagged, and diverse examples. AI engineers spend up to 80% of their work time cleaning datasets—removing blurry images, fixing incorrect tags, and balancing categories. High-quality data is the secret weapon behind every successful AI breakthrough.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Comparison of accurate high-quality dataset vs noisy, mislabeled dataset, showing clean labeled apples versus smudged, wrongly tagged fruit cards]",
+      "toastGuidance": {
+        "tap_prompt": "Compare clean data cards against noisy data cards to spot common training flaws.",
+        "great_job": "Sharp eyes! You can now identify noisy data that ruins model accuracy.",
+        "try_again": "Look for blurriness, wrong labels, or confusing backgrounds in the examples."
+      },
+      "examples": [
+        {
+          "title": "Mislabeled Fruit Sorting in Grocery Warehouses",
+          "description": "When a human worker accidentally tagged green capsicums as green apples in a warehouse scanner dataset, the robotic sorter sent capsicums to fruit salad factories.",
+          "realLifeScenario": "Packing facility • Automated robot packing spicy peppers into fruit boxes due to bad training tags"
+        },
+        {
+          "title": "Blurry Road Sign Recognition in Heavy Rain",
+          "description": "If an autonomous vehicle's vision model is trained only on sunny daytime speed signs, it fails to recognize signs splattered with road mud or blurred by windshield rain.",
+          "realLifeScenario": "Expressway commute • Car dashboard failing to update speed limit when passing a weathered sign"
+        },
+        {
+          "title": "Audio Noise in Voice Search Commands",
+          "description": "A voice assistant struggles to understand a student if its training data only included recordings made in quiet recording studios, ignoring kitchen blenders and traffic horns.",
+          "realLifeScenario": "Home kitchen • Smart speaker misunderstanding a recipe timer request while pressure cooker whistles"
+        },
+        {
+          "title": "Duplicate Review Spam in Online Shopping",
+          "description": "E-commerce sentiment models get tricked when sellers copy-paste the exact same five-star review five thousand times using automated bot accounts.",
+          "realLifeScenario": "Online marketplace • Product rating artificially inflated by duplicate bot reviews"
+        }
+      ],
+      "keyPoints": [
+        "GIGO stands for 'Garbage In, Garbage Out'—bad training data leads directly to bad AI predictions.",
+        "Noisy data includes blurry images, background clutter, incorrect labels, and duplicate entries.",
+        "Clean data consists of sharp, accurate, representative, and correctly labeled examples.",
+        "Data engineers spend up to 80% of their project time cleaning, filtering, and verifying datasets.",
+        "A simple algorithm trained on pristine clean data will easily outperform a complex algorithm trained on messy data.",
+        "Quality matters just as much as quantity when gathering training examples."
+      ],
+      "algoVoice": "Remember the master chef rule: You cannot cook a five-star meal with spoiled vegetables! The best AI models always start with fresh, clean data."
+    },
+    {
+      "sectionId": "section4",
+      "sectionNumber": 4,
+      "title": "How More Examples Lead to Better Accuracy",
+      "subtitle": "The learning curve: why volume, variety, and balance matter",
+      "content": "Suppose your school starts a brand-new sport that nobody has ever seen before: kabaddi on roller skates. On your very first day of practice, how good will you be? You will probably wobble, lose balance, and make mistakes. But what happens after ten practice sessions? You improve. What happens after one hundred practice sessions? You become confident and skilled. Practice turns clumsy guesses into mastery.\n\nA machine learning model goes through the exact same journey. In the beginning, when the model has studied only twenty examples, its accuracy is very low—perhaps only 40%. It guesses wrong more than half the time! But as data engineers add more and more examples, the model's accuracy climbs upward in what scientists call a Learning Curve.\n\nHowever, simply adding more of the same thing is not enough. Imagine practicing cricket batting, but the bowler throws the exact same gentle slow ball to your off-stump every single time. You might become a master at hitting that one specific delivery, but the moment a real match begins and someone bowls a fast bouncer or a spinning yorker, you will be bowled out immediately!\n\nTo become truly accurate, an AI model needs three crucial data ingredients:\n1. Volume: A large total number of examples (thousands or millions of samples).\n2. Variety: Examples covering all possible real-world conditions (different colors, lighting, angles, sizes, and weather).\n3. Balance: Equal representation across categories. If you train a model on 990 photos of cats and only 10 photos of dogs, the model will just guess 'cat' every time to achieve 99% score without actually learning to recognize dogs!\n\nWhen a dataset has volume, variety, and balance, the model learns general patterns that hold true in the wild, not just in classroom tests.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: A line graph showing the Learning Curve: training examples on the horizontal axis from 10 to 10,000, and model accuracy rising from 30% to 98% on the vertical axis]",
+      "toastGuidance": {
+        "tap_prompt": "Observe how model accuracy climbs as you increase volume, variety, and balance.",
+        "great_job": "Outstanding! You understand why diverse practice makes both humans and algorithms smarter.",
+        "try_again": "Remember: A great dataset needs three things: volume (size), variety (diversity), and balance (fairness)."
+      },
+      "examples": [
+        {
+          "title": "Speech Recognition Across Indian Accents",
+          "description": "When early voice assistants launched in India, their accuracy was under 60%. After tech companies collected millions of voice samples from Delhi, Tamil Nadu, Bengal, and Punjab, accuracy climbed to over 95%.",
+          "realLifeScenario": "Classroom tablet • Voice search understanding regional English accents effortlessly"
+        },
+        {
+          "title": "Handwriting Digit Recognition (MNIST)",
+          "description": "The classic MNIST dataset contains 70,000 handwritten digits (0 to 9) written by high school students and bank clerks, allowing postal sorting machines to read envelopes accurately.",
+          "realLifeScenario": "Post office sorting hub • Automated conveyor belt reading handwritten PIN codes on envelopes"
+        },
+        {
+          "title": "Plant Disease Recognition Scaling",
+          "description": "An agricultural AI app that started with 500 leaf photos had 65% accuracy. When farming communities contributed 100,000 photos from across 20 states, accuracy jumped to 98%.",
+          "realLifeScenario": "Farmer field • Mobile phone correctly identifying leaf rust disease across different seasons"
+        },
+        {
+          "title": "Language Translation Vocabulary Growth",
+          "description": "Online translation engines improve each year as they ingest millions of bilingual government documents, news articles, and translated books, mastering rare idioms and slang.",
+          "realLifeScenario": "Web browser • Translating complex science articles from German into fluent Hindi"
+        }
+      ],
+      "keyPoints": [
+        "A learning curve illustrates how model prediction accuracy increases as more training data is added.",
+        "Volume means providing a large quantity of training samples to reveal subtle statistical patterns.",
+        "Variety ensures the model learns to handle real-world variations: angles, lighting, accents, and sizes.",
+        "Balance ensures that all categories have roughly equal numbers of examples so no group is ignored.",
+        "A model trained on narrow data will suffer from 'overfitting'—memorizing test cards without real understanding.",
+        "Diverse real-world examples allow machine learning models to generalize accurately to brand-new situations."
+      ],
+      "algoVoice": "Think of variety like studying for a science test. If you only practice question number one, you will fail question number two! Variety builds true intelligence."
+    },
+    {
+      "sectionId": "section5",
+      "sectionNumber": 5,
+      "title": "Real-World Labeled Systems in Everyday Life",
+      "subtitle": "How Google Photos, Gmail, and smartphone keyboards learn from you every day",
+      "content": "Did you know that every single time you use your smartphone, you might be helping to label training data for an artificial intelligence system? Supervised learning is not confined to university research laboratories. It is humming quietly inside the apps you open every single day.\n\nConsider Google Photos. Have you ever searched the word 'sunset', 'beach', or 'birthday cake' inside your family photo gallery? Even if you never typed a caption on those photos, Google Photos immediately brings up all matching pictures. How? Years ago, Google engineers used millions of public photos labeled by humans to train a giant computer vision model. The model learned what birthday candles, ocean waves, and golden skies look like. When you upload your family vacation pictures, the model scans each image, spots the visual patterns, and attaches invisible internal tags.\n\nNow consider your email inbox. Every day, millions of spam emails try to flood users with fake lottery scams and fraudulent links. At the top of your email screen, there is a small button that says: 'Report Spam'. When you click that button, you are acting as a human supervisor! You are giving the email system a brand-new labeled example: 'Input = This email text, Label = SPAM'. Gmail's learning algorithms take your report, combine it with reports from millions of other users worldwide, and immediately update their spam filters.\n\nAnother example is predictive typing. When your keyboard suggests the next word and you tap it, you confirm the prediction. When you backspace and type a different word, you provide a negative correction. Your daily interactions constantly refine the models that serve you.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Split screen showing Google Photos search bar finding 'beach' memories on the left, and Gmail's 'Report Spam' button sending a labeled threat to the filter on the right]",
+      "toastGuidance": {
+        "tap_prompt": "Discover how your everyday taps and clicks provide valuable labels to modern AI apps.",
+        "great_job": "Fascinating! You realize that users and algorithms collaborate every single day.",
+        "try_again": "Notice how clicking 'Report Spam' gives the email filter a clear negative label."
+      },
+      "examples": [
+        {
+          "title": "Google Photos Semantic Search",
+          "description": "Allows users to search their photo libraries by typing visual concepts like 'swimming pool', 'bicycle', or 'dogs' without needing manual album sorting.",
+          "realLifeScenario": "Home smartphone • Finding all pictures of school sports day by typing 'running track' in the search bar"
+        },
+        {
+          "title": "Gmail 'Report Spam' Feedback Loop",
+          "description": "When users report scam messages, the spam filter extracts new deceptive phrases and sender domain patterns to protect hundreds of millions of other accounts.",
+          "realLifeScenario": "Office computer • Catching a newly invented phishing scam email within minutes of its first appearance"
+        },
+        {
+          "title": "CAPTCHA Security Checkboxes ('Select all traffic lights')",
+          "description": "When websites ask you to click all squares containing crosswalks or fire hydrants, your clicks are verified and used to help train autonomous vehicle navigation models.",
+          "realLifeScenario": "Website login • Tapping six squares showing pedestrian crossings to prove you are human"
+        },
+        {
+          "title": "Music Streaming 'Thumbs Up / Thumbs Down' Buttons",
+          "description": "Tapping 'Thumbs Down' on a song gives the recommendation engine a strong negative label, ensuring similar tracks are excluded from your personal mix.",
+          "realLifeScenario": "Headphones on commute • Disliking an opera track so the app returns to energetic pop songs"
+        }
+      ],
+      "keyPoints": [
+        "Everyday smartphone apps continuously learn from user interactions, confirmations, and corrections.",
+        "Google Photos automatically categorizes photos using computer vision models trained on labeled libraries.",
+        "The 'Report Spam' button in Gmail is a direct human-in-the-loop labeling tool that protects global users.",
+        "Website CAPTCHAs use human clicks on crosswalks and traffic lights to generate labeled training data.",
+        "Thumbs-up and thumbs-down buttons provide explicit feedback labels to recommendation engines.",
+        "Modern technology is a collaborative partnership between human users and learning algorithms."
+      ],
+      "algoVoice": "Every time you report a spam email or skip an unwanted song, you are acting as an AI teacher! Your feedback teaches the algorithm what to do next time."
+    },
+    {
+      "sectionId": "section6",
+      "sectionNumber": 6,
+      "title": "Becoming a Data Champion — Spotting and Fixing Bad Labels",
+      "subtitle": "Why human judgment, fairness, and ethical labeling matter more than ever",
+      "content": "As you have learned, machines do not possess opinions, moral values, or personal worldviews. They simply absorb whatever patterns exist inside their training data. If the humans who create that training data make mistakes, are careless, or hold unfair prejudices, the machine learning model will faithfully copy and amplify those exact same mistakes.\n\nThis phenomenon is called Algorithmic Bias. For example, if a company trains a hiring AI using ten years of past job applications from an era when only men were hired as software engineers, the model will notice the pattern: 'Most hired candidates were men.' The model might mistakenly conclude that being male is a necessary qualification for the job, unfairly rejecting qualified female candidates! The algorithm was not born sexist or evil; it was simply reflecting a biased, unbalanced dataset.\n\nThis is why the world desperately needs Data Champions—thoughtful students like you who ask critical questions before trusting an AI system:\n1. Who created this dataset, and what were their goals?\n2. Are all groups of people represented fairly and equally in the examples?\n3. Were the labels assigned carefully by verified experts, or were they rushed and full of errors?\n4. What kinds of real-world harm could occur if this model makes a mistake?\n\nBeing a data champion also means respecting privacy. When collecting examples, ethical researchers always ask for permission, protect personal identities, and ensure data cannot be misused to track or harm individuals. The future of artificial intelligence depends not just on fast computer chips, but on fair, compassionate humans who build clean, honest datasets.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: A diverse group of young students wearing detective hats inspecting data charts with magnifying glasses, checking for fairness, balance, and privacy badges]",
+      "toastGuidance": {
+        "tap_prompt": "Review the checklist of four critical questions every Data Champion should ask.",
+        "great_job": "Empowerment unlocked! You have the critical mindset needed to keep AI fair and honest.",
+        "try_again": "Remember: AI copies human biases present in the data. We must actively audit datasets for fairness."
+      },
+      "examples": [
+        {
+          "title": "Fair Representation in Medical Skin Datasets",
+          "description": "Early skin cancer detection AI models were trained mostly on fair skin tones, performing poorly on darker skin. Global medical researchers collected diverse datasets to ensure accurate diagnosis for everyone.",
+          "realLifeScenario": "Dermatology clinic • AI screening tool working with equal 98% accuracy across all skin tones"
+        },
+        {
+          "title": "Multilingual Voice Assistants in Rural India",
+          "description": "Initiatives like Project Bhashini gather voice samples across 22 official Indian languages, ensuring voice technology serves farmers and village communities, not just urban English speakers.",
+          "realLifeScenario": "Village bank kiosk • A farmer speaking in Marathi to check government crop subsidy status"
+        },
+        {
+          "title": "Balanced Gender Roles in School Text Recognition",
+          "description": "AI educational software is audited to ensure image recognition tools associate both boys and girls with roles like doctors, astronauts, teachers, and athletes equally.",
+          "realLifeScenario": "School smartboard • Educational app showing diverse role models in career exploration lessons"
+        },
+        {
+          "title": "Protecting Student Privacy in School Apps",
+          "description": "Responsible schools ensure learning apps anonymize student homework and test scores before feeding data into recommendation models, preventing private data leaks.",
+          "realLifeScenario": "School administration • Student report cards encrypted and protected from commercial advertising scrapers"
+        }
+      ],
+      "keyPoints": [
+        "Algorithmic bias occurs when AI models learn and amplify unfair human patterns from skewed training data.",
+        "AI does not possess moral judgment; it simply mirrors the historical data provided to it.",
+        "Data Champions critically evaluate datasets for fairness, balance, accuracy, and ethical sourcing.",
+        "Diverse datasets ensure technology serves all people equally regardless of background, gender, or language.",
+        "Privacy and consent are essential ethical requirements when collecting training examples.",
+        "The most powerful way to make AI better is to ensure the training data is fair, balanced, and truthful."
+      ],
+      "algoVoice": "Computers follow our lead. If we give them biased examples, they learn prejudice. If we give them fair, truthful examples, they become helpful tools for everyone!"
+    }
+  ],
+  "realWorldStories": [
+    {
+      "storyId": "story1",
+      "title": "How Google Photos Organizes Ten Thousand Memories in Jaipur",
+      "location": "Jaipur, Rajasthan",
+      "domain": "Computer Vision & Semantic Search",
+      "summary": "How an eleven-year-old helped his grandfather find a lost wedding photograph from forty years ago using semantic label search.",
+      "content": "During the Diwali holidays in Jaipur, twelve-year-old Meera was visiting her grandparents' home. Her grandfather, Dada-ji, was searching through old digitized photo albums on his tablet, trying to find a precious photograph of his younger brother standing in front of the Amer Fort during a family wedding in 1984. The digital folder contained over eight thousand unorganized scanned family photos, all named with random codes like 'IMG_49201.JPG'. Dada-ji had spent two hours scrolling in frustration.\n\nMeera sat down beside him. 'Dada-ji, let me try something.' She opened the search bar in Google Photos and typed: 'Fort turban wedding'.\n\nWithin two seconds, the screen refreshed, displaying exactly twelve photographs out of the eight thousand. The third picture was the exact photo Dada-ji had been seeking: his brother smiling proudly in a bright saffron turban with the sandstone arches of Amer Fort glowing in the background!\n\nTears of joy came to Dada-ji's eyes. 'Meera, did you spend all night organizing these pictures with secret names?' Meera laughed. 'No, Dada-ji! The computer vision program did the work. Scientists trained it on millions of labeled photos from around the world. The algorithm learned the visual pattern of what turbans look like, what ancient stone forts look like, and what wedding garlands look like. When you typed those words, it matched your search terms to the visual features it spotted in the photo.'\n\nDada-ji marvelled at the screen: 'So the machine learned from thousands of other photos so it could help me find my brother's smile today.'",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Warm illustration of Meera and her grandfather sitting in a decorated Jaipur living room with Diwali lamps, smiling happily at a tablet displaying a vintage wedding photo at Amer Fort]",
+      "keyTakeaway": "Semantic image search turns messy, unlabeled digital archives into searchable treasures by recognizing visual features trained on millions of labeled examples."
+    },
+    {
+      "storyId": "story2",
+      "title": "The School Canteen AI That Counted Balanced Meals in Chennai",
+      "location": "Chennai, Tamil Nadu",
+      "domain": "Edge AI & Nutrition Monitoring",
+      "summary": "How a middle school robotics team built a cafeteria tray scanner that encourages students to eat colorful vegetables.",
+      "content": "At a middle school in Chennai, the student health council noticed that many sixth graders were skipping green vegetables and lentils during lunch, filling their plates only with fried snacks and white rice. Three eighth-grade students—Karthik, Priya, and David—decided to use artificial intelligence to make healthy eating fun.\n\nThey mounted a small webcam above the cafeteria tray return window and connected it to a low-cost computer board. But before the system could recognize anything, it needed training data. Over two weeks, the team photographed five hundred lunch trays, carefully labeling every food item: 'Spinach Kootu', 'Sambar Dal', 'Steamed Rice', 'Carrot Salad', and 'Fried Chips'.\n\nAt first, the scanner made funny mistakes: it labeled orange carrot slices as tomato slices because both were reddish-orange vegetables. The students realized their dataset was noisy and lacked variety. They took fifty more close-up photos of carrots showing the distinct triangular shapes and ridged textures, updating the labels.\n\nWithin a month, the system achieved 96% accuracy. Whenever a student placed their tray under the camera, the screen flashed an encouraging green mascot message: 'Awesome job! 3 out of 3 food groups detected today: Protein, Fiber, and Vitamins!' Students earned digital badges on their school ID cards for balanced eating. Vegetable consumption in the canteen increased by 40%.\n\n'The camera didn't know what nutrition meant,' Karthik explained at the school assembly. 'We taught it to recognize colors and textures with clear labels. Good data helped our entire school make healthier choices!'",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Energetic school canteen scene in Chennai showing students returning lunch trays under a smart camera scanner that displays glowing nutrition badges on an overhead screen]",
+      "keyTakeaway": "Accurate local datasets solve community challenges. By collecting and refining specific training photos, students built a practical tool that improved school health."
+    },
+    {
+      "storyId": "story3",
+      "title": "The Wildlife Camera Traps of Kaziranga",
+      "location": "Kaziranga National Park, Assam",
+      "domain": "Conservation AI & Automated Ecology",
+      "summary": "How forest rangers use labeled camera trap photos to protect one-horned rhinoceroses and track Bengal tigers.",
+      "content": "Deep in the misty grasslands of Kaziranga National Park in Assam, wildlife rangers protect one of the world's most endangered animals: the great one-horned rhinoceros. To monitor animal populations and spot poachers, rangers installed three hundred motion-sensor camera traps strapped to tree trunks throughout the reserve.\n\nEvery month, the cameras captured over one million photographs. But there was a major challenge: over 800,000 of those photos were completely empty! Wind would blow tall elephant grass in front of the lens, triggering the motion sensor without any animal present. Human rangers had to spend hundreds of tedious hours clicking through empty pictures just to find five photos of a rhino.\n\nA team of Indian conservationists partnered with AI researchers to solve the bottleneck. They gathered two hundred thousand historical photos from Assam and labeled them into categories: 'Rhinoceros', 'Bengal Tiger', 'Asian Elephant', 'Swamp Deer', and 'False Trigger (Wind/Grass)'.\n\nThey trained a deep learning vision model called Wildlife-Net. Now, the moment memory cards are retrieved from the jungle, the AI sorts the entire million-photo archive in under forty minutes. It automatically discards the empty grass photos and flags high-priority pictures showing rhinos or unauthorized nighttime intruders, sending alerts directly to ranger patrols.\n\n'Before AI, we spent weeks clicking through blank photos,' said Ranger Barua. 'Now, the algorithm does the sorting, giving us more hours in the field protecting our wildlife. The accurate labels we created saved our rhinos.'",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Misty Assam forest landscape with a motion camera strapped to a tree, capturing a mother one-horned rhino and calf, with bounding box overlays and classification tags]",
+      "keyTakeaway": "AI camera traps process massive datasets in minutes, filtering out noise and allowing wildlife rangers to focus their energy on real-world conservation protection."
+    }
+  ],
+  "activities": [
+    {
+      "activityId": "activity1",
+      "title": "Dataset Labeling Challenge — Building a Fruit Classifier",
+      "description": "Step into the shoes of an AI data annotator! Examine ten unlabelled fruit photos, assign accurate tags, and identify two mislabeled cards that would confuse the algorithm. [IMAGE_PLACEHOLDER: Interactive card-sorting board showing unlabelled fruits with drag-and-drop label tags and a confidence meter]",
+      "duration": "15 mins",
+      "materials": "Observation worksheet, colored stickers, sample fruit flashcards",
+      "learningOutcome": "Students can assign consistent categorical labels to visual data and understand the impact of annotation consistency.",
+      "instructions": [
+        "1. Examine the ten unlabelled fruit cards on your desk: five apples, three oranges, and two bananas.",
+        "2. Carefully inspect the subtle features: color, stem presence, curvature, and surface texture.",
+        "3. Attach the correct adhesive label to each card: 'Apple (Gala)', 'Apple (Granny Smith)', 'Orange', or 'Banana'.",
+        "4. Look out for the two 'trick cards': a yellow pear that looks like an apple, and a wax plastic fruit.",
+        "5. Discuss with your group: If an annotator labels the wax fruit as a real apple, what mistake will a robotic grocery scanner make later?"
+      ],
+      "toastFeedback": {
+        "tap_prompt": "Drag the correctly labeled card into the AI training queue.",
+        "great_job": "Accurate label verified! Model training accuracy increased.",
+        "try_again": "This image contains noise or wrong tags. Re-check the label."
+      }
+    },
+    {
+      "activityId": "activity2",
+      "title": "The Noise Hunter — Cleaning a Messy Photo Album",
+      "description": "Help clean a municipal traffic camera dataset! Inspect twelve incoming camera snapshots and filter out blurry, dark, or obstructed images before they ruin the speed detection model. [IMAGE_PLACEHOLDER: Inspection screen with twelve traffic photos showing checkmarks for clean data and red dustbins for noisy data]",
+      "duration": "15 mins",
+      "materials": "Traffic photo inspection deck, dataset audit worksheet",
+      "learningOutcome": "Students can identify visual noise, motion blur, and occlusions, applying the Garbage In, Garbage Out principle in practice.",
+      "instructions": [
+        "1. Open your audit worksheet containing twelve camera snapshots taken on a city flyover.",
+        "2. Classify each image into either 'Clean Data (Keep)' or 'Noisy Data (Discard/Retake)'.",
+        "3. Identify the specific type of noise for discarded images: Motion Blur, Heavy Sun Glare, Occlusion by Tree Branch, or Night Darkness.",
+        "4. Calculate the dataset clean percentage: (Clean Photos / 12) × 100.",
+        "5. Write down a recommendation for the camera maintenance team on how to improve camera placement."
+      ],
+      "toastFeedback": {
+        "tap_prompt": "Tap the discard icon on any image that suffers from severe blur or glare.",
+        "great_job": "Noise filtered out! Clean training dataset saved.",
+        "try_again": "Look closely at the license plate: Can numbers be read clearly through the blur?"
+      }
+    },
+    {
+      "activityId": "activity3",
+      "title": "Supervised Flashcards — Training a Human Neural Net",
+      "description": "Pair up with a classmate to simulate supervised learning! One student acts as the 'Algorithm' with eyes closed to the label, while the other acts as the 'Teacher' providing instant label feedback. [IMAGE_PLACEHOLDER: Two students at school desks holding flashcards, simulating the training feedback cycle with a score tally board]",
+      "duration": "15 mins",
+      "materials": "Set of 20 geometric shape cards with complex patterns, score tracker sheet",
+      "learningOutcome": "Students can simulate the iterative feedback loop of supervised learning and experience how error corrections build pattern knowledge.",
+      "instructions": [
+        "1. Student A holds the stack of 20 shape cards (triangles with dots, squares with stripes, hexagons with crosses).",
+        "2. Student A shows Card 1 to Student B. Student B makes a guess: 'Is this Category Alpha?'",
+        "3. Student A checks the back of the card and provides feedback: 'Correct!' or 'Wrong, the label is Category Beta.'",
+        "4. Record Student B's accuracy across Card 1 to 5, Card 6 to 10, Card 11 to 15, and Card 16 to 20.",
+        "5. Plot the four accuracy scores on a line graph to witness Student B's personal learning curve climb from 40% to 90%!"
+      ],
+      "toastFeedback": {
+        "tap_prompt": "Enter your round-by-round accuracy score into the learning curve tracker.",
+        "great_job": "Learning curve verified! Practice and feedback increased your partner's accuracy.",
+        "try_again": "Ensure the teacher checks the label on the back before confirming the answer."
+      }
+    }
+  ],
+  "games": [
+    {
+      "gameId": "game1",
+      "title": "Label It Right! — The Tag Master",
+      "type": "card_sorting",
+      "description": "Match the correct labels to incoming data items to train an automated school library assistant. [IMAGE_PLACEHOLDER: Interactive sorting game interface with labels and classification bins: Science Book, Fiction Story, Atlas Map, Math Puzzle]",
+      "instructions": "Drag each book cover icon into the matching category bin before the timer expires.",
+      "cards": [
+        {
+          "id": "c1",
+          "name": "The Solar System & Planets",
+          "category": "Science Book",
+          "explanation": "Contains astronomy photos and planetary data tables, matching the science category."
+        },
+        {
+          "id": "c2",
+          "name": "The Mystery of the Secret Cave",
+          "category": "Fiction Story",
+          "explanation": "A creative adventure narrative with fictional dialogue and plot twists."
+        },
+        {
+          "id": "c3",
+          "name": "Topographical World Map & Rivers",
+          "category": "Atlas Map",
+          "explanation": "Geographical charts and river coordinate matrices, matching atlas reference."
+        },
+        {
+          "id": "c4",
+          "name": "Fun with Fractions & Shapes",
+          "category": "Math Puzzle",
+          "explanation": "Arithmetic challenges and geometry problems, matching mathematics."
+        },
+        {
+          "id": "c5",
+          "name": "How Plants Breathe (Photosynthesis)",
+          "category": "Science Book",
+          "explanation": "Botanical biology diagrams explaining plant respiration and chlorophyll."
+        },
+        {
+          "id": "c6",
+          "name": "Tales of Tenali Raman",
+          "category": "Fiction Story",
+          "explanation": "Folkloric humorous historical stories, matching fiction literature."
+        },
+        {
+          "id": "c7",
+          "name": "National Highway Route Guide",
+          "category": "Atlas Map",
+          "explanation": "Road transport maps and interstate highway distance charts."
+        },
+        {
+          "id": "c8",
+          "name": "Sudoku & Logic Riddles",
+          "category": "Math Puzzle",
+          "explanation": "Numerical logic grids requiring analytical deduction, matching math puzzles."
+        }
+      ]
+    },
+    {
+      "gameId": "game2",
+      "title": "Spot the Noisy Data — The Cleaner's Quest",
+      "type": "quality_audit",
+      "description": "An AI company accidentally mixed eight bad images into their cat-recognition dataset. Find the four noisy cards to boost training accuracy from 60% to 98%! [IMAGE_PLACEHOLDER: Inspection grid with eight photo cards showing noise indicators and a clean-up button]",
+      "instructions": "Select the four cards that contain noise, bad tags, or distracting clutter.",
+      "cards": [
+        {
+          "id": "n1",
+          "name": "Completely pitch-black photo taken in dark room with no flash",
+          "isNoise": true,
+          "reason": "Zero visible pixel information; camera captured pure black noise."
+        },
+        {
+          "id": "n2",
+          "name": "Crisp, sunlit portrait of an orange tabby cat sitting on a rug",
+          "isNoise": false,
+          "reason": "High-quality clean data with sharp edges and clear facial features."
+        },
+        {
+          "id": "n3",
+          "name": "Photo of a teddy bear labeled 'Cat'",
+          "isNoise": true,
+          "reason": "Mislabeled ground truth; teaches the model that stuffed toys are live cats."
+        },
+        {
+          "id": "n4",
+          "name": "Close-up photo of cat whiskers and green eyes in natural light",
+          "isNoise": false,
+          "reason": "Excellent detailed feature training sample for eye and whisker detectors."
+        },
+        {
+          "id": "n5",
+          "name": "Heavy motion-blurred smear of a cat running past the camera",
+          "isNoise": true,
+          "reason": "Motion blur destroys geometric edges and pixel coordinates."
+        },
+        {
+          "id": "n6",
+          "name": "White Persian cat sleeping on a plain wooden chair",
+          "isNoise": false,
+          "reason": "Clean contrast between subject and background with clear anatomy."
+        },
+        {
+          "id": "n7",
+          "name": "Photo of an empty sofa with a tiny cat paw barely visible in the corner",
+          "isNoise": true,
+          "reason": "98% of the photo is furniture; model will learn that sofas are cats."
+        },
+        {
+          "id": "n8",
+          "name": "Calico kitten drinking milk from a shallow ceramic bowl",
+          "isNoise": false,
+          "reason": "Sharp, distinctive training example showing realistic feeding posture."
+        }
+      ]
+    },
+    {
+      "gameId": "game3",
+      "title": "The Accuracy Ladder — Build the Ultimate Dataset",
+      "type": "dataset_balancer",
+      "description": "Watch your model climb the Accuracy Ladder from 20% to 100% by picking the best balanced data packs. [IMAGE_PLACEHOLDER: Vertical ladder meter showing accuracy percentages rising as diverse data packs are added to the training tray]",
+      "instructions": "Choose which data pack to add next to solve the model's weakest blind spot.",
+      "stages": [
+        {
+          "stageNumber": 1,
+          "currentAccuracy": 25,
+          "problem": "The model only knows what red cars look like and fails on all blue, white, and black cars.",
+          "bestChoice": "Add 1,000 photos of cars in blue, white, silver, and black colors.",
+          "resultScore": 60
+        },
+        {
+          "stageNumber": 2,
+          "currentAccuracy": 60,
+          "problem": "The model recognizes cars only when photographed straight from the front, failing on side views.",
+          "bestChoice": "Add 2,000 photos of vehicles captured from side angles, diagonal angles, and rear views.",
+          "resultScore": 85
+        },
+        {
+          "stageNumber": 3,
+          "currentAccuracy": 85,
+          "problem": "The model struggles during heavy evening monsoon rains and twilight conditions.",
+          "bestChoice": "Add 1,500 photos taken during rainy conditions, dusk, and nighttime with headlights on.",
+          "resultScore": 98
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Class 6 AI Foundations — Lesson 2 Olympiad Mastery Challenge",
+    "totalQuestions": 18,
+    "passingScore": 70,
+    "questions": [
+      {
+        "questionId": "q1",
+        "questionNumber": 1,
+        "question": "In machine learning, what is 'Training Data'?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The physical battery electricity used to power a desktop monitor",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "The large collection of real-world examples used to teach a machine learning model",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "A list of secret cheat codes used by video game developers",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "The plastic cables connecting a printer to a computer processor",
+            "correct": false
+          }
+        ],
+        "explanation": "Training data is the collection of examples (photos, sounds, text, or numbers) that an AI studies to discover patterns.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q2",
+        "questionNumber": 2,
+        "question": "What is a 'Label' in the context of supervised machine learning?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A price tag stuck to a computer box in an electronics store",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "The correct answer or category tag attached to a training data example",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "A brand logo painted on the plastic casing of a smartphone",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "The serial number of an internet Wi-Fi router",
+            "correct": false
+          }
+        ],
+        "explanation": "A label is the ground-truth answer attached to an input (such as tagging a photo of a mango with the word 'Mango').",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q3",
+        "questionNumber": 3,
+        "question": "What does the famous computer science rule 'GIGO' stand for?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Google In, Google Out",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Garbage In, Garbage Out",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Games Inside, Games Outside",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Gigabytes In, Gigabytes Out",
+            "correct": false
+          }
+        ],
+        "explanation": "GIGO means Garbage In, Garbage Out: if you feed bad or noisy data into a computer, it will produce bad, unreliable predictions.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q4",
+        "questionNumber": 4,
+        "question": "Why is the process of training with labeled inputs and answers called 'Supervised Learning'?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because a school principal must stand in the computer room watching the monitor at all times",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Because the algorithm is guided by correct answers (labels), like a student being guided by a teacher's answer key",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Because the computer uses superpowers to fly into outer space satellites",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because the algorithm only operates when police officers are supervising the office",
+            "correct": false
+          }
+        ],
+        "explanation": "It is called supervised learning because the labels act like a supervisor or teacher providing the correct answers to guide learning.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q5",
+        "questionNumber": 5,
+        "question": "Which of the following is an example of 'Noisy Data' in an image training dataset?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A sharp, clear, well-lit photo of an elephant from a side angle",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "A blurry, pitch-black photo where the subject is completely invisible",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "A high-resolution photo of a peacock with the label 'Peacock'",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "A digital spreadsheet containing verified daily temperature numbers",
+            "correct": false
+          }
+        ],
+        "explanation": "Blurry, pitch-black, or obscured images contain no recognizable features and act as confusing noise in training data.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q6",
+        "questionNumber": 6,
+        "question": "What happens to an AI model's accuracy as you feed it more high-quality, diverse training examples?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The accuracy generally climbs upward along a learning curve",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "The computer gets bored and permanently erases its memory",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "The accuracy instantly drops to 0% because computers dislike large datasets",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "The computer screen turns green and starts speaking German",
+            "correct": false
+          }
+        ],
+        "explanation": "As a model processes more clean, diverse examples, its ability to spot underlying patterns improves, increasing accuracy.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q7",
+        "questionNumber": 7,
+        "question": "How do everyday email users help train Gmail's spam filter algorithm?",
+        "options": [
+          {
+            "id": "a",
+            "text": "By sending emails to their school teachers every morning",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "By clicking the 'Report Spam' button on scam messages, providing labeled negative examples",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "By changing their account password once every six months",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "By downloading attachments without reading the sender name",
+            "correct": false
+          }
+        ],
+        "explanation": "Clicking 'Report Spam' is a human-in-the-loop action that gives the algorithm a verified label: 'This message is unwanted spam.'",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q8",
+        "questionNumber": 8,
+        "question": "If a fruit classifier dataset contains 9,000 photos of red apples and only 10 photos of green apples, what problem exists in the dataset?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The dataset has high noise in pixel resolution",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "The dataset is unbalanced, so the model may fail to recognize green apples",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "The computer processor will run twice as fast",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "The apples will turn into oranges inside the hard drive",
+            "correct": false
+          }
+        ],
+        "explanation": "An unbalanced dataset causes the model to favor the dominant category while failing on underrepresented variations.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q9",
+        "questionNumber": 9,
+        "question": "Why do websites present users with CAPTCHAs asking them to select photos containing 'crosswalks' or 'traffic lights'?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To test whether users have passed their driving license examination",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "To verify the user is human while simultaneously gathering human-labeled training data for navigation models",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "To slow down internet browsing so servers can cool down",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "To force users to memorize city traffic rules",
+            "correct": false
+          }
+        ],
+        "explanation": "CAPTCHAs verify human identity and simultaneously create high-quality human-verified labels for computer vision systems.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q10",
+        "questionNumber": 10,
+        "question": "What is 'Algorithmic Bias'?",
+        "options": [
+          {
+            "id": "a",
+            "text": "When a computer screen leans slightly to the left on a desk",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "When an AI makes unfair or inaccurate predictions because its training data was skewed or unrepresentative",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "When a computer battery discharges faster on cold winter mornings",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "When a printer runs out of yellow ink during a school project print",
+            "correct": false
+          }
+        ],
+        "explanation": "Algorithmic bias occurs when an AI mirrors and magnifies historical imbalances or stereotypes present in its training dataset.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q11",
+        "questionNumber": 11,
+        "question": "Why did early voice assistants struggle to understand diverse regional Indian English accents?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because mobile phone microphones cannot transmit Indian sound waves",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Because their training datasets contained mostly North American accent voice recordings",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Because English can only be spoken by computers in the United States",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because satellite signals do not operate in southern Asia",
+            "correct": false
+          }
+        ],
+        "explanation": "The models lacked training variety; they had never listened to Indian accent patterns, so they could not accurately recognize them.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q12",
+        "questionNumber": 12,
+        "question": "What are the three essential pillars of a high-quality machine learning training dataset?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Volume (quantity), Variety (diversity), and Balance (fairness)",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Weight, Length, and Color",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Price, Advertising, and Sponsorship",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Plastic, Copper, and Glass",
+            "correct": false
+          }
+        ],
+        "explanation": "A robust dataset requires sufficient volume of samples, broad variety of real-world conditions, and balanced category distributions.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q13",
+        "questionNumber": 13,
+        "question": "If a photo of a cute puppy is accidentally tagged with the label 'Persian Cat' in a training set, what type of flaw is this?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A hardware graphics processor failure",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "A mislabeled data error (bad annotation)",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "An internet Wi-Fi disconnection bug",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "A software virus downloading spyware",
+            "correct": false
+          }
+        ],
+        "explanation": "Assigning the wrong name tag to an input photo is a mislabeling error, which teaches the model incorrect associations.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q14",
+        "questionNumber": 14,
+        "question": "Why do AI data engineers spend up to 80% of their project time cleaning and auditing data?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because cleaning data is the only part of computer science that pays money",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Because high-quality clean data has a far bigger impact on AI performance than just tweaking algorithm code",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Because computer programming tools take three weeks to download",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because algorithms refuse to run unless all files are colored purple",
+            "correct": false
+          }
+        ],
+        "explanation": "Clean, high-quality data is the primary driver of model accuracy. Removing noise and fixing errors prevents catastrophic failures.",
+        "difficulty": "hard",
+        "points": 10
+      },
+      {
+        "questionId": "q15",
+        "questionNumber": 15,
+        "question": "How does Google Photos allow you to search for 'beach' memories even if you never typed that word on the photo?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A secret team of human workers reads your private phone photos every midnight",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Its computer vision models recognize visual patterns (sand, waves, blue ocean) learned from millions of labeled photos",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "The phone detects sand grains stuck inside the charging port",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "It guesses based on your phone's battery temperature",
+            "correct": false
+          }
+        ],
+        "explanation": "Google Photos uses pre-trained visual recognition models that identify semantic features (sand, ocean, umbrellas) directly from pixels.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q16",
+        "questionNumber": 16,
+        "question": "What does 'Human-in-the-Loop' mean in machine learning systems?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A person trapped inside a circular computer server rack",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "A process where human experts review, label, verify, or correct AI decisions to maintain high safety and accuracy",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "A gymnastics exercise performed by computer programmers during lunch breaks",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "A roller coaster ride inside a technology theme park",
+            "correct": false
+          }
+        ],
+        "explanation": "Human-in-the-loop ensures human judgment audits training data and double-checks sensitive predictions to ensure safety and ethical quality.",
+        "difficulty": "hard",
+        "points": 10
+      },
+      {
+        "questionId": "q17",
+        "questionNumber": 17,
+        "question": "In the Kaziranga camera trap story, why was AI classification so valuable to forest rangers?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It allowed the rangers to play video games during night shifts",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "It automatically sorted a million photos in minutes, filtering out empty wind-triggered grass shots so rangers could protect rhinos",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "It replaced all forest rangers with flying robot helicopters",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "It forced wild animals to walk in straight lines along paved roads",
+            "correct": false
+          }
+        ],
+        "explanation": "The AI eliminated over 800,000 blank false-trigger photos in minutes, freeing rangers to spend their time patrolling the reserve.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q18",
+        "questionNumber": 18,
+        "question": "What is the most responsible action a student can take when building an AI dataset for a science fair project?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Secretly download private photos of classmates without asking for their permission",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Ask for informed consent, protect personal privacy, verify labels carefully, and ensure diverse representation",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Make up fake numbers so the science teacher gives an A grade",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Use only photos of oneself and ignore all other examples",
+            "correct": false
+          }
+        ],
+        "explanation": "Ethical AI researchers always respect privacy, obtain consent, verify annotations, and seek diverse, balanced representation.",
+        "difficulty": "easy",
+        "points": 10
+      }
+    ],
+    "completionFeedback": {
+      "excellent": {
+        "range": "90-100",
+        "message": "Dataset Mastery achieved! You understand training data and labels like a seasoned machine learning engineer. Algo awards you the Data Champion badge!",
+        "badge": "Data Champion"
+      },
+      "good": {
+        "range": "70-89",
+        "message": "Great work! You have a solid grasp of clean data, labels, and learning curves. Review noisy data and dataset balance to score 100%!",
+        "badge": "Dataset Scout"
+      },
+      "needsReview": {
+        "range": "0-69",
+        "message": "Good effort! Revisit the sections on flashcards, labels, and the GIGO rule, then retry the challenge.",
+        "badge": "Curious Learner"
+      }
+    }
+  },
+  "summary": {
+    "recap": "Algo: Incredible job today! You solved the second big mystery of artificial intelligence: where machines get their knowledge. You learned that computers do not possess magic brains—they are fueled by Training Data and guided by Labels. Through the simple flashcard model of Supervised Learning, you saw how clear examples turn raw pixels and sounds into smart predictions. You uncovered the famous GIGO rule (Garbage In, Garbage Out) and discovered why clean, balanced, and diverse data matters so much. Whether you are searching memories in Google Photos or flagging spam in Gmail, you now see the invisible labeled data powering our world. Keep your curiosity sharp and always champion fair, clean data!",
+    "keyTakeaways": [
+      "Training data is the fuel of machine learning; algorithms learn patterns by studying thousands of real-world examples.",
+      "A label is the ground-truth answer or tag paired with an input (like 'Mango' paired with a fruit photo).",
+      "Supervised learning works like studying with flashcards: the model makes a guess and checks against the label.",
+      "The GIGO rule (Garbage In, Garbage Out) reminds us that noisy, blurry, or mislabeled data creates faulty AI models.",
+      "A great training dataset requires Volume (quantity), Variety (diversity of conditions), and Balance (fair representation).",
+      "Everyday apps like Google Photos, Gmail spam filters, and voice assistants constantly learn from user tags and corrections."
+    ],
+    "studentReflection": "Think about an app you use every week: What kind of examples did engineers have to collect and label so that app could understand you?",
+    "parentDiscussionPrompt": "Show your parents how Google Photos can search memories by typing words like 'sunset' or 'car'. Explain to them how labeled training data makes that magic possible!"
+  },
+  "teacherGuide": {
+    "lessonDuration": "45 minutes",
+    "recommendedClassFormat": "10 mins interactive flashcard hook -> 15 mins concept breakdown with visual analogies -> 10 mins hands-on Fruit Classifier activity -> 10 mins mastery quiz and reflection",
+    "openingHookDemonstration": "Bring 10 physical picture flashcards to class (5 dogs, 5 cats) with names hidden. Show only the pictures and ask students to write down their guesses. Then flip the cards to reveal the labels. Ask: 'How did you know the difference between a cat and a dog before you even saw the label?' Use this to demonstrate how prior examples train human intuition, bridging into machine learning.",
+    "discussionPrompts": [
+      "If you train an AI to recognize school uniforms using photos taken only on sunny mornings, what might happen on a cloudy or rainy day?",
+      "Why is clicking the 'Report Spam' button in your email account helpful not just for you, but for millions of people around the world?",
+      "Can an AI ever become smarter than the training data given to it? Why or why not?",
+      "How can students make sure their science project datasets are fair and do not leave out any group of people?"
+    ],
+    "commonMisconceptions": [
+      {
+        "misconception": "A computer already knows what words and objects mean when it is plugged in.",
+        "correction": "A computer chip knows only binary electrical signals (0s and 1s). It has zero knowledge until humans feed labeled training examples into its memory."
+      },
+      {
+        "misconception": "If you have a billion examples, it does not matter if many of them are blurry or wrong.",
+        "correction": "Garbage In, Garbage Out! A small dataset of pristine, clean, diverse examples always beats a giant dataset filled with noise and wrong tags."
+      },
+      {
+        "misconception": "Supervised learning means a human is actively typing commands into the computer 24 hours a day.",
+        "correction": "The human 'supervises' by providing the initial labeled dataset. Once trained, the algorithm runs its predictions automatically."
+      },
+      {
+        "misconception": "Labels are created automatically by computers without human effort.",
+        "correction": "The vast majority of ground-truth labels are created by human annotators, radiologists, linguists, and everyday users tagging content."
+      }
+    ],
+    "differentiatedInstruction": {
+      "forAdvancedLearners": "Introduce the difference between Supervised Learning (labeled data) and Unsupervised Learning (finding clusters in unlabeled data without predefined answers).",
+      "forDevelopingLearners": "Rely heavily on physical flashcards and the cooking recipe analogy (salt vs sugar) to reinforce the GIGO rule and input-label pairs."
+    }
+  },
+  "resources": {
+    "teacherGuideDocument": "/content/middle/guides/class6-ch1-l2-teacher.pdf",
+    "worksheets": [
+      "/content/middle/worksheets/class6-ch1-l2-activity1-fruit-labels.pdf",
+      "/content/middle/worksheets/class6-ch1-l2-activity2-noise-hunter.pdf",
+      "/content/middle/worksheets/class6-ch1-l2-activity3-flashcard-loop.pdf"
+    ],
+    "supplementaryVideos": [
+      {
+        "title": "What is Supervised Learning? — Explained with Flashcards",
+        "url": "https://www.youtube.com/watch?v=k2P_pHQDlp0",
+        "duration": "4:30",
+        "suitableFor": "Classroom projection or home extension exploration"
+      },
+      {
+        "title": "How Google Photos Searches Your Pictures — Behind the Scenes",
+        "url": "https://www.youtube.com/watch?v=uK8f6qI3xG4",
+        "duration": "5:15",
+        "suitableFor": "Visual reinforcement of semantic image labels and computer vision"
+      }
+    ],
+    "classroomProjectIdeas": [
+      {
+        "projectTitle": "School Library Book Genre Classifier",
+        "concept": "Collect 100 book titles and summaries, label them into genres (Mystery, Science, History), and test an NLP classifier using Google Teachable Machine."
+      },
+      {
+        "projectTitle": "Classroom Clean-Desk Camera Inspector",
+        "concept": "Take 50 photos of neat desks and 50 photos of cluttered desks, label them, and build a simple visual cleanliness checker."
+      },
+      {
+        "projectTitle": "Hand Gesture Quiz Buzzer",
+        "concept": "Train a webcam model with labeled hand signs (Thumbs Up = True, Thumbs Down = False) to create an interactive classroom quiz buzzer."
+      }
+    ],
+    "glossary": [
+      {
+        "term": "Training Data",
+        "definition": "The collection of real-world examples (photos, audio, text, numbers) fed into a machine learning algorithm to help it learn patterns."
+      },
+      {
+        "term": "Label",
+        "definition": "The verified correct answer, name tag, or category assigned to a specific piece of training data."
+      },
+      {
+        "term": "Supervised Learning",
+        "definition": "A method of machine learning where the algorithm learns by studying pairs of inputs and corresponding correct labels."
+      },
+      {
+        "term": "Noisy Data",
+        "definition": "Data that contains errors, severe blurriness, confusing background clutter, or incorrect labels that degrade model accuracy."
+      },
+      {
+        "term": "GIGO (Garbage In, Garbage Out)",
+        "definition": "The core computer science rule stating that poor-quality or incorrect inputs will always produce poor-quality, flawed outputs."
+      },
+      {
+        "term": "Learning Curve",
+        "definition": "A graph showing how an AI model's accuracy steadily rises as more training data examples are processed over time."
+      },
+      {
+        "term": "Overfitting",
+        "definition": "When a model memorizes its training examples too specifically, causing it to fail on brand-new, unseen real-world examples."
+      },
+      {
+        "term": "Human-in-the-Loop",
+        "definition": "A design approach where human judgment and oversight are integrated into the AI training, labeling, and verification cycle."
+      },
+      {
+        "term": "Dataset Balance",
+        "definition": "Ensuring all categories in a training dataset have roughly equal representation so no group is ignored or favored unfairly."
+      }
+    ]
+  }
+}
