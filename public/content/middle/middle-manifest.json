@@ -1,0 +1,97 @@
+﻿{
+  "levelId": "middle",
+  "levelName": "Middle Level",
+  "description": "Classes 6-8: Simple AI concepts with everyday examples",
+  "classes": [
+    {
+      "classId": "class6",
+      "className": "Class 6",
+      "chapters": [
+        { "chapterId": "ch1", "title": "AI Basics", "lessons": [
+          { "lessonId": "l1", "title": "What is AI?", "filename": "middle-class6-ch1-l1.json" },
+          { "lessonId": "l2", "title": "How AI Learns", "filename": "middle-class6-ch1-l2.json" }
+        ]},
+        { "chapterId": "ch2", "title": "Communicate with AI", "lessons": [
+          { "lessonId": "l1", "title": "Talking to AI", "filename": "middle-class6-ch2-l1.json" },
+          { "lessonId": "l2", "title": "AI Understands Us", "filename": "middle-class6-ch2-l2.json" }
+        ]},
+        { "chapterId": "ch3", "title": "AI Applications", "lessons": [
+          { "lessonId": "l1", "title": "AI in Daily Life", "filename": "middle-class6-ch3-l1.json" },
+          { "lessonId": "l2", "title": "AI Helps Everyone", "filename": "middle-class6-ch3-l2.json" }
+        ]},
+        { "chapterId": "ch4", "title": "AI & Career", "lessons": [
+          { "lessonId": "l1", "title": "Future Jobs", "filename": "middle-class6-ch4-l1.json" },
+          { "lessonId": "l2", "title": "Skills for Tomorrow", "filename": "middle-class6-ch4-l2.json" }
+        ]},
+        { "chapterId": "ch5", "title": "AI Tools", "lessons": [
+          { "lessonId": "l1", "title": "Using AI Tools", "filename": "middle-class6-ch5-l1.json" },
+          { "lessonId": "l2", "title": "Fun with AI", "filename": "middle-class6-ch5-l2.json" }
+        ]},
+        { "chapterId": "ch6", "title": "Responsible AI", "lessons": [
+          { "lessonId": "l1", "title": "Being Safe", "filename": "middle-class6-ch6-l1.json" },
+          { "lessonId": "l2", "title": "Using AI Wisely", "filename": "middle-class6-ch6-l2.json" }
+        ]}
+      ]
+    },
+    {
+      "classId": "class7",
+      "className": "Class 7",
+      "chapters": [
+        { "chapterId": "ch1", "title": "AI Basics", "lessons": [
+          { "lessonId": "l1", "title": "AI Systems", "filename": "middle-class7-ch1-l1.json" },
+          { "lessonId": "l2", "title": "Machine Learning Intro", "filename": "middle-class7-ch1-l2.json" }
+        ]},
+        { "chapterId": "ch2", "title": "Communicate with AI", "lessons": [
+          { "lessonId": "l1", "title": "AI Language", "filename": "middle-class7-ch2-l1.json" },
+          { "lessonId": "l2", "title": "Voice and Text AI", "filename": "middle-class7-ch2-l2.json" }
+        ]},
+        { "chapterId": "ch3", "title": "AI Applications", "lessons": [
+          { "lessonId": "l1", "title": "AI in Education", "filename": "middle-class7-ch3-l1.json" },
+          { "lessonId": "l2", "title": "AI in Healthcare", "filename": "middle-class7-ch3-l2.json" }
+        ]},
+        { "chapterId": "ch4", "title": "AI & Career", "lessons": [
+          { "lessonId": "l1", "title": "AI Career Paths", "filename": "middle-class7-ch4-l1.json" },
+          { "lessonId": "l2", "title": "Preparing for AI Jobs", "filename": "middle-class7-ch4-l2.json" }
+        ]},
+        { "chapterId": "ch5", "title": "AI Tools", "lessons": [
+          { "lessonId": "l1", "title": "Popular AI Apps", "filename": "middle-class7-ch5-l1.json" },
+          { "lessonId": "l2", "title": "Creating with AI", "filename": "middle-class7-ch5-l2.json" }
+        ]},
+        { "chapterId": "ch6", "title": "Responsible AI", "lessons": [
+          { "lessonId": "l1", "title": "Privacy Matters", "filename": "middle-class7-ch6-l1.json" },
+          { "lessonId": "l2", "title": "Ethical AI Use", "filename": "middle-class7-ch6-l2.json" }
+        ]}
+      ]
+    },
+    {
+      "classId": "class8",
+      "className": "Class 8",
+      "chapters": [
+        { "chapterId": "ch1", "title": "AI Basics", "lessons": [
+          { "lessonId": "l1", "title": "AI Intelligence Types", "filename": "middle-class8-ch1-l1.json" },
+          { "lessonId": "l2", "title": "How AI Makes Decisions", "filename": "middle-class8-ch1-l2.json" }
+        ]},
+        { "chapterId": "ch2", "title": "Communicate with AI", "lessons": [
+          { "lessonId": "l1", "title": "Advanced AI Chat", "filename": "middle-class8-ch2-l1.json" },
+          { "lessonId": "l2", "title": "AI Translation", "filename": "middle-class8-ch2-l2.json" }
+        ]},
+        { "chapterId": "ch3", "title": "AI Applications", "lessons": [
+          { "lessonId": "l1", "title": "AI in Business", "filename": "middle-class8-ch3-l1.json" },
+          { "lessonId": "l2", "title": "AI in Entertainment", "filename": "middle-class8-ch3-l2.json" }
+        ]},
+        { "chapterId": "ch4", "title": "AI & Career", "lessons": [
+          { "lessonId": "l1", "title": "Building AI Skills", "filename": "middle-class8-ch4-l1.json" },
+          { "lessonId": "l2", "title": "AI Competitions", "filename": "middle-class8-ch4-l2.json" }
+        ]},
+        { "chapterId": "ch5", "title": "AI Tools", "lessons": [
+          { "lessonId": "l1", "title": "AI for Students", "filename": "middle-class8-ch5-l1.json" },
+          { "lessonId": "l2", "title": "Simple AI Projects", "filename": "middle-class8-ch5-l2.json" }
+        ]},
+        { "chapterId": "ch6", "title": "Responsible AI", "lessons": [
+          { "lessonId": "l1", "title": "AI Bias Awareness", "filename": "middle-class8-ch6-l1.json" },
+          { "lessonId": "l2", "title": "Responsible Innovation", "filename": "middle-class8-ch6-l2.json" }
+        ]}
+      ]
+    }
+  ]
+}

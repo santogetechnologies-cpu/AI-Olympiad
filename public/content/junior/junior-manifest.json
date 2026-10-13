@@ -1,0 +1,137 @@
+﻿{
+  "level": "junior",
+  "classes": [
+    {
+      "classId": "class3",
+      "classNumber": 3,
+      "className": "Class 3",
+      "ageGroup": "8-9 years",
+      "mascot": "Bolt",
+      "theme": "My First AI Adventure",
+      "description": "Playful introduction to AI concepts",
+      "chapters": [
+        {
+          "chapterNumber": 1,
+          "chapterTitle": "AI Basics",
+          "theme": "DISCOVER",
+          "months": [1, 2],
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTitle": "Meet My AI Friend",
+              "contentFile": "junior-class3-ch1-l1.json",
+              "status": "template_ready"
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTitle": "Machines That Help Us",
+              "contentFile": "junior-class3-ch1-l2.json",
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "chapterNumber": 2,
+          "chapterTitle": "Communicate with AI",
+          "theme": "CONNECT",
+          "months": [3, 4],
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTitle": "Give Me a Command!",
+              "contentFile": "junior-class3-ch2-l1.json",
+              "status": "pending"
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTitle": "Put It in Order!",
+              "contentFile": "junior-class3-ch2-l2.json",
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "chapterNumber": 3,
+          "chapterTitle": "AI Applications",
+          "theme": "SOLVE",
+          "months": [5, 6],
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTitle": "AI Goes to School",
+              "contentFile": "junior-class3-ch3-l1.json",
+              "status": "pending"
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTitle": "AI Comes Home",
+              "contentFile": "junior-class3-ch3-l2.json",
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "chapterNumber": 4,
+          "chapterTitle": "AI and Career",
+          "theme": "RISE",
+          "months": [7, 8],
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTitle": "When I Grow Up",
+              "contentFile": "junior-class3-ch4-l1.json",
+              "status": "pending"
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTitle": "People Behind Technology",
+              "contentFile": "junior-class3-ch4-l2.json",
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "chapterNumber": 5,
+          "chapterTitle": "AI Tools",
+          "theme": "CREATE",
+          "months": [9, 10],
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTitle": "Ask & Explore",
+              "contentFile": "junior-class3-ch5-l1.json",
+              "status": "pending"
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTitle": "Draw & Imagine",
+              "contentFile": "junior-class3-ch5-l2.json",
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "chapterNumber": 6,
+          "chapterTitle": "Responsible AI",
+          "theme": "CARE",
+          "months": [11, 12],
+          "lessons": [
+            {
+              "lessonNumber": 1,
+              "lessonTitle": "My AI Safety Rules",
+              "contentFile": "junior-class3-ch6-l1.json",
+              "status": "pending"
+            },
+            {
+              "lessonNumber": 2,
+              "lessonTitle": "Share with Care",
+              "contentFile": "junior-class3-ch6-l2.json",
+              "status": "pending"
+            }
+          ]
+        }
+      ],
+      "totalLessons": 12
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+﻿import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { Toaster } from 'react-hot-toast'
 import { AuthProvider } from './contexts/AuthContext'
 import { ProtectedRoute, PublicRoute } from './components/layout/ProtectedRoute'
@@ -23,14 +23,11 @@ import ContentManagerAnalyticsPage from './pages/content-manager/ContentManagerA
 
 // Student pages
 import StudentDashboard from './pages/student/StudentDashboard'
-import StudentLearningPage from './pages/student/StudentLearningPage'
-import ChapterLearningPage from './pages/student/ChapterLearningPage'
 import StudentProgressPage from './pages/student/StudentProgressPage'
 import StudentAssignmentsPage from './pages/student/StudentAssignmentsPage'
 import StudentQuizzesPage from './pages/student/StudentQuizzesPage'
 import StudentProfilePage from './pages/student/StudentProfilePage'
-import GaioBookPage from './pages/student/GaioBookPage'
-import MiddleLevelBookPage from './pages/student/MiddleLevelBookPage'
+import UnifiedLearningPage from './pages/student/UnifiedLearningPage'
 
 export default function App() {
   return (
@@ -68,22 +65,28 @@ export default function App() {
           <Route path="/content-manager/chapters/:chapterId/content" element={<ProtectedRoute allowedRoles={['admin', 'academic_content_manager']}><ContentBuilderPage /></ProtectedRoute>} />
           <Route path="/content-manager/analytics" element={<ProtectedRoute allowedRoles={['admin', 'academic_content_manager']}><ContentManagerAnalyticsPage /></ProtectedRoute>} />
 
-          {/* Student routes */}
+          {/* Student routes - NEW UNIFIED SYSTEM */}
           <Route path="/student" element={<ProtectedRoute allowedRoles={['student']}><StudentDashboard /></ProtectedRoute>} />
-          <Route path="/student/learning" element={<ProtectedRoute allowedRoles={['student']}><ChapterLearningPage /></ProtectedRoute>} />
-          <Route path="/student/learning/chapters" element={<ProtectedRoute allowedRoles={['student']}><ChapterLearningPage /></ProtectedRoute>} />
-          <Route path="/student/learning/chapters/:itemId" element={<ProtectedRoute allowedRoles={['student']}><ChapterLearningPage /></ProtectedRoute>} />
-          <Route path="/student/learning/:chapterId" element={<ProtectedRoute allowedRoles={['student']}><ChapterLearningPage /></ProtectedRoute>} />
-          <Route path="/student/learning/:chapterId/:itemId" element={<ProtectedRoute allowedRoles={['student']}><ChapterLearningPage /></ProtectedRoute>} />
+          
+          {/* Unified Learning Routes for ALL levels */}
+          <Route path="/student/learning" element={<ProtectedRoute allowedRoles={['student']}><UnifiedLearningPage /></ProtectedRoute>} />
+          <Route path="/student/learning/:level" element={<ProtectedRoute allowedRoles={['student']}><UnifiedLearningPage /></ProtectedRoute>} />
+          <Route path="/student/learning/:level/:classId" element={<ProtectedRoute allowedRoles={['student']}><UnifiedLearningPage /></ProtectedRoute>} />
+          <Route path="/student/learning/:level/:classId/:chapterId" element={<ProtectedRoute allowedRoles={['student']}><UnifiedLearningPage /></ProtectedRoute>} />
+          <Route path="/student/learning/:level/:classId/:chapterId/:lessonId" element={<ProtectedRoute allowedRoles={['student']}><UnifiedLearningPage /></ProtectedRoute>} />
+          
+          {/* Legacy routes redirected to new system */}
+          <Route path="/student/book" element={<Navigate to="/student/learning/junior" replace />} />
+          <Route path="/book" element={<Navigate to="/student/learning/junior" replace />} />
+          <Route path="/student/middle" element={<Navigate to="/student/learning/middle" replace />} />
+          <Route path="/middle" element={<Navigate to="/student/learning/middle" replace />} />
+          <Route path="/middle-level" element={<Navigate to="/student/learning/middle" replace />} />
+          
+          {/* Other Student Routes */}
           <Route path="/student/progress" element={<ProtectedRoute allowedRoles={['student']}><StudentProgressPage /></ProtectedRoute>} />
           <Route path="/student/assignments" element={<ProtectedRoute allowedRoles={['student']}><StudentAssignmentsPage /></ProtectedRoute>} />
           <Route path="/student/quizzes" element={<ProtectedRoute allowedRoles={['student']}><StudentQuizzesPage /></ProtectedRoute>} />
           <Route path="/student/profile" element={<ProtectedRoute allowedRoles={['student']}><StudentProfilePage /></ProtectedRoute>} />
-          <Route path="/student/book" element={<ProtectedRoute allowedRoles={['student']}><GaioBookPage /></ProtectedRoute>} />
-          <Route path="/book" element={<ProtectedRoute allowedRoles={['student']}><GaioBookPage /></ProtectedRoute>} />
-          <Route path="/student/middle" element={<ProtectedRoute allowedRoles={['student']}><MiddleLevelBookPage /></ProtectedRoute>} />
-          <Route path="/middle" element={<ProtectedRoute allowedRoles={['student']}><MiddleLevelBookPage /></ProtectedRoute>} />
-          <Route path="/middle-level" element={<ProtectedRoute allowedRoles={['student']}><MiddleLevelBookPage /></ProtectedRoute>} />
 
           {/* Default redirect */}
           <Route path="/" element={<Navigate to="/login" replace />} />

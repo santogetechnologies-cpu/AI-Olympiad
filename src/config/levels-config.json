@@ -1,0 +1,88 @@
+﻿{
+  "levels": {
+    "junior": {
+      "id": "junior",
+      "name": "Junior Level",
+      "description": "Very Simple AI Learning for Young Students",
+      "ageGroup": "8-11 years",
+      "classes": [3, 4, 5],
+      "mascot": "Bolt",
+      "theme": "Playful & Colorful",
+      "contentPath": "/content/junior"
+    },
+    "middle": {
+      "id": "middle",
+      "name": "Middle Level",
+      "description": "Simple AI Learning Through Everyday Examples",
+      "ageGroup": "11-14 years",
+      "classes": [6, 7, 8],
+      "mascot": "Aura",
+      "theme": "Engaging & Practical",
+      "contentPath": "/content/middle"
+    },
+    "senior": {
+      "id": "senior",
+      "name": "Senior Level",
+      "description": "Understanding AI Through Real-World Applications",
+      "ageGroup": "14-18 years",
+      "classes": [9, 10, 11, 12],
+      "mascot": "Neo",
+      "theme": "Professional & Modern",
+      "contentPath": "/content/senior"
+    },
+    "supersenior": {
+      "id": "supersenior",
+      "name": "Super Senior Level",
+      "description": "Practical AI for Real-World Impact",
+      "ageGroup": "18+ years",
+      "classes": ["UG1", "UG2", "UG3", "UG4", "PG1", "PG2"],
+      "mascot": "Mentor AI",
+      "theme": "Academic & Research",
+      "contentPath": "/content/supersenior"
+    }
+  },
+  "curriculum": {
+    "chaptersPerClass": 6,
+    "lessonsPerChapter": 2,
+    "totalLessonsPerClass": 12,
+    "monthsPerYear": 12,
+    "structure": [
+      {
+        "chapterNumber": 1,
+        "title": "AI Basics",
+        "theme": "DISCOVER",
+        "months": [1, 2]
+      },
+      {
+        "chapterNumber": 2,
+        "title": "Communicate with AI",
+        "theme": "CONNECT",
+        "months": [3, 4]
+      },
+      {
+        "chapterNumber": 3,
+        "title": "AI Applications",
+        "theme": "SOLVE",
+        "months": [5, 6]
+      },
+      {
+        "chapterNumber": 4,
+        "title": "AI and Career",
+        "theme": "RISE",
+        "months": [7, 8]
+      },
+      {
+        "chapterNumber": 5,
+        "title": "AI Tools",
+        "theme": "CREATE",
+        "months": [9, 10]
+      },
+      {
+        "chapterNumber": 6,
+        "title": "Responsible AI",
+        "theme": "CARE",
+        "months": [11, 12]
+      }
+    ]
+  }
+}

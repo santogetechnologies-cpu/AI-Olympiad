@@ -1,0 +1,361 @@
+﻿{
+  "lessonId": "junior-class3-ch1-l1",
+  "level": "junior",
+  "classNumber": 3,
+  "chapterNumber": 1,
+  "chapterTitle": "AI Basics",
+  "lessonNumber": 1,
+  "lessonTitle": "Meet My AI Friend",
+  "monthNumber": 1,
+  "monthTheme": "AI DISCOVER",
+  "metadata": {
+    "duration": "45 minutes",
+    "ageGroup": "8-9 years",
+    "difficulty": "beginner",
+    "totalWords": 12000,
+    "version": "1.0",
+    "lastUpdated": "2026-10-13"
+  },
+  "content": {
+    "introduction": {
+      "welcomeMessage": "LET'S START! Welcome to your first AI adventure!",
+      "story": {
+        "title": "Bolt's First Day",
+        "content": "[500 words engaging story introducing AI concepts]",
+        "characterVoice": "Hi! I am Bolt, your robot friend...",
+        "images": [
+          {
+            "id": "intro-1",
+            "path": "/content/junior/images/class3/ch1/l1/intro-bolt.png",
+            "alt": "Bolt the friendly robot",
+            "description": "Colorful robot with big friendly eyes"
+          }
+        ]
+      },
+      "learningGoals": [
+        "Understand what AI is in simple terms",
+        "Recognize AI helpers in daily life",
+        "Feel excited about learning AI"
+      ],
+      "auraGuidance": {
+        "welcome": "LET'S START! Today you'll meet AI!",
+        "instruction": "WATCH the story carefully",
+        "encouragement": "You're going to LOVE this!"
+      }
+    },
+    "mainConcept": {
+      "sections": [
+        {
+          "id": "concept-1",
+          "title": "What is AI?",
+          "simpleExplanation": "[200 words VERY simple explanation]",
+          "realLifeExample": {
+            "scenario": "When mom asks Alexa for weather",
+            "aiConnection": "Alexa is an AI helper that listens and answers",
+            "observation": "Notice how Alexa understands speech"
+          },
+          "visualAid": {
+            "type": "illustration",
+            "path": "/content/junior/images/class3/ch1/l1/what-is-ai.png",
+            "description": "Simple diagram showing AI as smart helper"
+          },
+          "auraGuidance": {
+            "intro": "NOW let's understand what AI really is!",
+            "key": "AI is like a SMART HELPER in machines",
+            "check": "Do you see AI helpers at your home?"
+          }
+        },
+        {
+          "id": "concept-2",
+          "title": "AI Helpers Around You",
+          "simpleExplanation": "[200 words]",
+          "realLifeExample": {
+            "scenario": "YouTube knowing what videos you like",
+            "aiConnection": "AI watches what you watch and suggests similar",
+            "observation": "More you watch, smarter it gets!"
+          },
+          "visualAid": {
+            "type": "interactive-image",
+            "path": "/content/junior/images/class3/ch1/l1/ai-helpers.png",
+            "hotspots": [
+              {"x": 100, "y": 150, "label": "Phone AI"},
+              {"x": 300, "y": 200, "label": "Smart Speaker"}
+            ]
+          },
+          "auraGuidance": {
+            "intro": "LET'S FIND AI helpers everywhere!",
+            "activity": "TAP on each helper to learn more",
+            "complete": "AMAZING! You found all AI helpers!"
+          }
+        }
+      ],
+      "totalWordCount": 2000
+    },
+    "games": [
+      {
+        "gameId": "game-1",
+        "gameType": "drag_drop_sort",
+        "title": "AI or Not AI?",
+        "instruction": "Drag items to correct bucket: AI Helper or Regular Tool",
+        "difficulty": "easy",
+        "timeLimit": null,
+        "items": [
+          {
+            "id": "item-1",
+            "label": "Face Recognition Camera",
+            "image": "/content/junior/images/class3/ch1/l1/games/camera.png",
+            "correctCategory": "ai",
+            "feedback": "YES! Camera uses AI to recognize faces"
+          },
+          {
+            "id": "item-2",
+            "label": "Regular Fan",
+            "image": "/content/junior/images/class3/ch1/l1/games/fan.png",
+            "correctCategory": "not-ai",
+            "feedback": "Correct! Fan just spins, no AI needed"
+          },
+          {
+            "id": "item-3",
+            "label": "Voice Assistant",
+            "image": "/content/junior/images/class3/ch1/l1/games/alexa.png",
+            "correctCategory": "ai",
+            "feedback": "GREAT! Voice assistants use AI to understand you"
+          }
+        ],
+        "categories": [
+          {
+            "id": "ai",
+            "label": "AI Helper 🤖",
+            "color": "#4CAF50"
+          },
+          {
+            "id": "not-ai",
+            "label": "Regular Tool 🔧",
+            "color": "#9E9E9E"
+          }
+        ],
+        "scoring": {
+          "pointsPerCorrect": 10,
+          "totalPossible": 100
+        },
+        "auraGuidance": {
+          "start": "LET'S PLAY! Drag items to correct bucket",
+          "correct": "GREAT JOB! That's right!",
+          "incorrect": "TRY AGAIN! Think about what AI does",
+          "hint": "AI learns and thinks, regular tools just follow switches",
+          "complete": "GAME COMPLETE! You earned 100 points! 🌟"
+        }
+      },
+      {
+        "gameId": "game-2",
+        "gameType": "tap_to_find",
+        "title": "Find AI in the House",
+        "instruction": "Tap on objects that use AI",
+        "difficulty": "easy",
+        "sceneImage": "/content/junior/images/class3/ch1/l1/games/house-scene.png",
+        "targets": [
+          {
+            "id": "target-1",
+            "x": 120,
+            "y": 200,
+            "width": 80,
+            "height": 100,
+            "object": "Smart TV",
+            "isAI": true,
+            "explanation": "Smart TV uses AI to recommend shows!"
+          },
+          {
+            "id": "target-2",
+            "x": 400,
+            "y": 150,
+            "width": 60,
+            "height": 60,
+            "object": "Table Lamp",
+            "isAI": false,
+            "explanation": "Regular lamp, no AI here!"
+          }
+        ],
+        "totalTargets": 5,
+        "scoring": {
+          "correctTap": 20,
+          "incorrectTap": -5
+        },
+        "auraGuidance": {
+          "start": "LOOK AROUND! Tap objects with AI",
+          "correct": "YES! You found one! 🎯",
+          "incorrect": "Oops! That's not AI",
+          "complete": "EXCELLENT! You found all AI helpers!"
+        }
+      },
+      {
+        "gameId": "game-3",
+        "gameType": "match_pairs",
+        "title": "Match AI with What It Does",
+        "instruction": "Match each AI helper with its job",
+        "difficulty": "easy",
+        "pairs": [
+          {
+            "left": {
+              "id": "ai-1",
+              "content": "Face Recognition",
+              "image": "/content/junior/images/class3/ch1/l1/games/face-rec.png"
+            },
+            "right": {
+              "id": "job-1",
+              "content": "Unlocks your phone",
+              "image": "/content/junior/images/class3/ch1/l1/games/unlock-phone.png"
+            }
+          },
+          {
+            "left": {
+              "id": "ai-2",
+              "content": "Voice Assistant",
+              "image": "/content/junior/images/class3/ch1/l1/games/voice.png"
+            },
+            "right": {
+              "id": "job-2",
+              "content": "Answers questions",
+              "image": "/content/junior/images/class3/ch1/l1/games/answer.png"
+            }
+          }
+        ],
+        "scoring": {
+          "pointsPerPair": 15
+        },
+        "auraGuidance": {
+          "start": "MATCH them! Connect AI with what it does",
+          "correct": "PERFECT MATCH! 🎉",
+          "complete": "ALL MATCHED! You're amazing!"
+        }
+      }
+    ],
+    "activities": [
+      {
+        "activityId": "activity-1",
+        "title": "AI Detective at Home",
+        "type": "hands-on",
+        "duration": "15 minutes",
+        "description": "[300 words detailed activity]",
+        "materials": [
+          "Paper and pencil",
+          "Adult helper",
+          "Your home!"
+        ],
+        "steps": [
+          "Walk around your house with an adult",
+          "Look for devices that might use AI",
+          "Draw or write down 5 things you find",
+          "Ask adult if each one uses AI",
+          "Circle the ones that do"
+        ],
+        "familyConnection": "Parents can explain how each device works and whether it uses AI",
+        "learningOutcome": "Recognizing AI in everyday objects",
+        "auraGuidance": {
+          "before": "TIME for home detective mission!",
+          "during": "Look for smart helpers everywhere",
+          "after": "GREAT WORK! Share what you found!"
+        }
+      }
+    ],
+    "realWorldExamples": [
+      {
+        "id": "example-1",
+        "title": "Mom's Smart Speaker",
+        "scenario": "Every morning, mom asks Alexa for weather",
+        "aiConnection": "Alexa uses AI to understand speech and find weather info",
+        "observation": "Notice: Alexa gets better at understanding your voice over time",
+        "discussion": "Why does Alexa sometimes misunderstand? (AI is learning!)"
+      },
+      {
+        "id": "example-2",
+        "title": "YouTube Recommendations",
+        "scenario": "YouTube shows videos similar to what you watched",
+        "aiConnection": "AI watches your watching patterns and suggests similar content",
+        "observation": "More you watch cartoons, more cartoon suggestions you get",
+        "discussion": "Is this helpful or does it limit what you discover?"
+      }
+    ],
+    "practiceExercises": [
+      {
+        "exerciseId": "practice-1",
+        "type": "interactive_sorting",
+        "title": "Daily AI Spotter",
+        "instruction": "Sort these daily activities by whether AI helps",
+        "items": [
+          {
+            "activity": "Brushing teeth",
+            "hasAI": false,
+            "explanation": "Regular toothbrush, no AI"
+          },
+          {
+            "activity": "Watching Netflix",
+            "hasAI": true,
+            "explanation": "Netflix uses AI to recommend shows"
+          }
+        ],
+        "feedback": {
+          "correct": "RIGHT! You understand AI!",
+          "incorrect": "Think again: Does this learn or adapt?"
+        }
+      }
+    ],
+    "lessonSummary": {
+      "keyTakeaways": [
+        "AI is like a smart helper in machines",
+        "AI learns from examples and gets smarter",
+        "We use AI every day without noticing",
+        "Not all machines use AI - some just follow switches"
+      ],
+      "studentReflection": "What was the coolest AI helper you learned about today?",
+      "nextLesson": {
+        "title": "Machines That Help Us",
+        "preview": "Next time, we'll see even more amazing AI helpers and how they work!"
+      },
+      "parentNote": "Talk with your child about AI devices at home and how they make life easier",
+      "auraClosing": {
+        "congratulations": "LESSON COMPLETE! You're an AI expert now! 🌟",
+        "achievement": "You earned: AI Discoverer Badge 🏆",
+        "nextStep": "Ready for next adventure? See you in Lesson 2!",
+        "totalPoints": 300
+      }
+    }
+  },
+  "assessment": {
+    "quizType": "interactive",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "tap_correct",
+        "question": "Which one uses AI?",
+        "options": [
+          {
+            "id": "opt1",
+            "image": "/content/junior/images/class3/ch1/l1/quiz/camera.png",
+            "label": "Smart Camera",
+            "correct": true
+          },
+          {
+            "id": "opt2",
+            "image": "/content/junior/images/class3/ch1/l1/quiz/pencil.png",
+            "label": "Pencil",
+            "correct": false
+          }
+        ]
+      }
+    ]
+  },
+  "resources": {
+    "teacherGuide": "/content/junior/guides/class3-ch1-l1-teacher.pdf",
+    "worksheets": [
+      "/content/junior/worksheets/class3-ch1-l1-activity.pdf"
+    ],
+    "videos": [
+      {
+        "title": "What is AI? - Animated Video",
+        "url": "/content/junior/videos/class3-ch1-l1-intro.mp4",
+        "duration": "3:30"
+      }
+    ],
+    "additionalReading": []
+  }
+}

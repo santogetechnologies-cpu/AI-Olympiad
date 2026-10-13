@@ -1,0 +1,157 @@
+﻿{
+  "levelId": "supersenior",
+  "levelName": "Super Senior Level",
+  "description": "UG-PG2: Simple AI overview for undergraduate and postgraduate",
+  "classes": [
+    {
+      "classId": "ug1",
+      "className": "UG Year 1",
+      "chapters": [
+        { "chapterId": "ch1", "title": "AI Basics", "lessons": [
+          { "lessonId": "l1", "title": "AI Foundations", "filename": "supersenior-ug1-ch1-l1.json" },
+          { "lessonId": "l2", "title": "ML Fundamentals", "filename": "supersenior-ug1-ch1-l2.json" }
+        ]},
+        { "chapterId": "ch2", "title": "Communicate with AI", "lessons": [
+          { "lessonId": "l1", "title": "Human-AI Interaction", "filename": "supersenior-ug1-ch2-l1.json" },
+          { "lessonId": "l2", "title": "AI Communication", "filename": "supersenior-ug1-ch2-l2.json" }
+        ]},
+        { "chapterId": "ch3", "title": "AI Applications", "lessons": [
+          { "lessonId": "l1", "title": "Enterprise AI", "filename": "supersenior-ug1-ch3-l1.json" },
+          { "lessonId": "l2", "title": "AI Solutions", "filename": "supersenior-ug1-ch3-l2.json" }
+        ]},
+        { "chapterId": "ch4", "title": "AI & Career", "lessons": [
+          { "lessonId": "l1", "title": "Professional Path", "filename": "supersenior-ug1-ch4-l1.json" },
+          { "lessonId": "l2", "title": "Industry Roles", "filename": "supersenior-ug1-ch4-l2.json" }
+        ]},
+        { "chapterId": "ch5", "title": "AI Tools", "lessons": [
+          { "lessonId": "l1", "title": "Development Stack", "filename": "supersenior-ug1-ch5-l1.json" },
+          { "lessonId": "l2", "title": "Building Solutions", "filename": "supersenior-ug1-ch5-l2.json" }
+        ]},
+        { "chapterId": "ch6", "title": "Responsible AI", "lessons": [
+          { "lessonId": "l1", "title": "Professional Ethics", "filename": "supersenior-ug1-ch6-l1.json" },
+          { "lessonId": "l2", "title": "Regulatory Compliance", "filename": "supersenior-ug1-ch6-l2.json" }
+        ]}
+      ]
+    },
+    {
+      "classId": "ug2",
+      "className": "UG Year 2",
+      "chapters": [
+        { "chapterId": "ch1", "title": "AI Basics", "lessons": [
+          { "lessonId": "l1", "title": "Advanced ML", "filename": "supersenior-ug2-ch1-l1.json" },
+          { "lessonId": "l2", "title": "Deep Learning", "filename": "supersenior-ug2-ch1-l2.json" }
+        ]},
+        { "chapterId": "ch2", "title": "Communicate with AI", "lessons": [
+          { "lessonId": "l1", "title": "Advanced NLP", "filename": "supersenior-ug2-ch2-l1.json" },
+          { "lessonId": "l2", "title": "Vision AI", "filename": "supersenior-ug2-ch2-l2.json" }
+        ]},
+        { "chapterId": "ch3", "title": "AI Applications", "lessons": [
+          { "lessonId": "l1", "title": "Domain Applications", "filename": "supersenior-ug2-ch3-l1.json" },
+          { "lessonId": "l2", "title": "AI Integration", "filename": "supersenior-ug2-ch3-l2.json" }
+        ]},
+        { "chapterId": "ch4", "title": "AI & Career", "lessons": [
+          { "lessonId": "l1", "title": "Specialization", "filename": "supersenior-ug2-ch4-l1.json" },
+          { "lessonId": "l2", "title": "Research Careers", "filename": "supersenior-ug2-ch4-l2.json" }
+        ]},
+        { "chapterId": "ch5", "title": "AI Tools", "lessons": [
+          { "lessonId": "l1", "title": "Production Systems", "filename": "supersenior-ug2-ch5-l1.json" },
+          { "lessonId": "l2", "title": "MLOps Basics", "filename": "supersenior-ug2-ch5-l2.json" }
+        ]},
+        { "chapterId": "ch6", "title": "Responsible AI", "lessons": [
+          { "lessonId": "l1", "title": "Bias Mitigation", "filename": "supersenior-ug2-ch6-l1.json" },
+          { "lessonId": "l2", "title": "Explainability", "filename": "supersenior-ug2-ch6-l2.json" }
+        ]}
+      ]
+    },
+    {
+      "classId": "ug3",
+      "className": "UG Year 3",
+      "chapters": [
+        { "chapterId": "ch1", "title": "AI Basics", "lessons": [
+          { "lessonId": "l1", "title": "AI Systems Design", "filename": "supersenior-ug3-ch1-l1.json" },
+          { "lessonId": "l2", "title": "Model Optimization", "filename": "supersenior-ug3-ch1-l2.json" }
+        ]},
+        { "chapterId": "ch2", "title": "Communicate with AI", "lessons": [
+          { "lessonId": "l1", "title": "Generative AI", "filename": "supersenior-ug3-ch2-l1.json" },
+          { "lessonId": "l2", "title": "Foundation Models", "filename": "supersenior-ug3-ch2-l2.json" }
+        ]},
+        { "chapterId": "ch3", "title": "AI Applications", "lessons": [
+          { "lessonId": "l1", "title": "Custom Solutions", "filename": "supersenior-ug3-ch3-l1.json" },
+          { "lessonId": "l2", "title": "AI at Scale", "filename": "supersenior-ug3-ch3-l2.json" }
+        ]},
+        { "chapterId": "ch4", "title": "AI & Career", "lessons": [
+          { "lessonId": "l1", "title": "Leadership Roles", "filename": "supersenior-ug3-ch4-l1.json" },
+          { "lessonId": "l2", "title": "Entrepreneurship", "filename": "supersenior-ug3-ch4-l2.json" }
+        ]},
+        { "chapterId": "ch5", "title": "AI Tools", "lessons": [
+          { "lessonId": "l1", "title": "Advanced MLOps", "filename": "supersenior-ug3-ch5-l1.json" },
+          { "lessonId": "l2", "title": "Research Tools", "filename": "supersenior-ug3-ch5-l2.json" }
+        ]},
+        { "chapterId": "ch6", "title": "Responsible AI", "lessons": [
+          { "lessonId": "l1", "title": "AI Safety", "filename": "supersenior-ug3-ch6-l1.json" },
+          { "lessonId": "l2", "title": "Global Standards", "filename": "supersenior-ug3-ch6-l2.json" }
+        ]}
+      ]
+    },
+    {
+      "classId": "pg1",
+      "className": "PG Year 1",
+      "chapters": [
+        { "chapterId": "ch1", "title": "AI Basics", "lessons": [
+          { "lessonId": "l1", "title": "Research Frontiers", "filename": "supersenior-pg1-ch1-l1.json" },
+          { "lessonId": "l2", "title": "Advanced Topics", "filename": "supersenior-pg1-ch1-l2.json" }
+        ]},
+        { "chapterId": "ch2", "title": "Communicate with AI", "lessons": [
+          { "lessonId": "l1", "title": "Advanced AI Systems", "filename": "supersenior-pg1-ch2-l1.json" },
+          { "lessonId": "l2", "title": "Multimodal Systems", "filename": "supersenior-pg1-ch2-l2.json" }
+        ]},
+        { "chapterId": "ch3", "title": "AI Applications", "lessons": [
+          { "lessonId": "l1", "title": "Research Applications", "filename": "supersenior-pg1-ch3-l1.json" },
+          { "lessonId": "l2", "title": "Innovation Projects", "filename": "supersenior-pg1-ch3-l2.json" }
+        ]},
+        { "chapterId": "ch4", "title": "AI & Career", "lessons": [
+          { "lessonId": "l1", "title": "Research Positions", "filename": "supersenior-pg1-ch4-l1.json" },
+          { "lessonId": "l2", "title": "Academic Careers", "filename": "supersenior-pg1-ch4-l2.json" }
+        ]},
+        { "chapterId": "ch5", "title": "AI Tools", "lessons": [
+          { "lessonId": "l1", "title": "Research Stack", "filename": "supersenior-pg1-ch5-l1.json" },
+          { "lessonId": "l2", "title": "Experimentation", "filename": "supersenior-pg1-ch5-l2.json" }
+        ]},
+        { "chapterId": "ch6", "title": "Responsible AI", "lessons": [
+          { "lessonId": "l1", "title": "Research Ethics", "filename": "supersenior-pg1-ch6-l1.json" },
+          { "lessonId": "l2", "title": "Societal Impact", "filename": "supersenior-pg1-ch6-l2.json" }
+        ]}
+      ]
+    },
+    {
+      "classId": "pg2",
+      "className": "PG Year 2",
+      "chapters": [
+        { "chapterId": "ch1", "title": "AI Basics", "lessons": [
+          { "lessonId": "l1", "title": "Cutting-Edge Research", "filename": "supersenior-pg2-ch1-l1.json" },
+          { "lessonId": "l2", "title": "Future Directions", "filename": "supersenior-pg2-ch1-l2.json" }
+        ]},
+        { "chapterId": "ch2", "title": "Communicate with AI", "lessons": [
+          { "lessonId": "l1", "title": "Next-Gen AI", "filename": "supersenior-pg2-ch2-l1.json" },
+          { "lessonId": "l2", "title": "AGI Concepts", "filename": "supersenior-pg2-ch2-l2.json" }
+        ]},
+        { "chapterId": "ch3", "title": "AI Applications", "lessons": [
+          { "lessonId": "l1", "title": "Breakthrough Applications", "filename": "supersenior-pg2-ch3-l1.json" },
+          { "lessonId": "l2", "title": "Transformative AI", "filename": "supersenior-pg2-ch3-l2.json" }
+        ]},
+        { "chapterId": "ch4", "title": "AI & Career", "lessons": [
+          { "lessonId": "l1", "title": "Thought Leadership", "filename": "supersenior-pg2-ch4-l1.json" },
+          { "lessonId": "l2", "title": "Shaping the Future", "filename": "supersenior-pg2-ch4-l2.json" }
+        ]},
+        { "chapterId": "ch5", "title": "AI Tools", "lessons": [
+          { "lessonId": "l1", "title": "Advanced Research", "filename": "supersenior-pg2-ch5-l1.json" },
+          { "lessonId": "l2", "title": "Novel Methodologies", "filename": "supersenior-pg2-ch5-l2.json" }
+        ]},
+        { "chapterId": "ch6", "title": "Responsible AI", "lessons": [
+          { "lessonId": "l1", "title": "Long-term Impact", "filename": "supersenior-pg2-ch6-l1.json" },
+          { "lessonId": "l2", "title": "Leading Ethics", "filename": "supersenior-pg2-ch6-l2.json" }
+        ]}
+      ]
+    }
+  ]
+}

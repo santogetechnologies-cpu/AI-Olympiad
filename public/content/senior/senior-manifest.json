@@ -1,0 +1,127 @@
+﻿{
+  "levelId": "senior",
+  "levelName": "Senior Level",
+  "description": "Classes 9-12: Simple AI fundamentals for high school",
+  "classes": [
+    {
+      "classId": "class9",
+      "className": "Class 9",
+      "chapters": [
+        { "chapterId": "ch1", "title": "AI Basics", "lessons": [
+          { "lessonId": "l1", "title": "Understanding AI", "filename": "senior-class9-ch1-l1.json" },
+          { "lessonId": "l2", "title": "Machine Learning Basics", "filename": "senior-class9-ch1-l2.json" }
+        ]},
+        { "chapterId": "ch2", "title": "Communicate with AI", "lessons": [
+          { "lessonId": "l1", "title": "Natural Language Processing", "filename": "senior-class9-ch2-l1.json" },
+          { "lessonId": "l2", "title": "AI Assistants", "filename": "senior-class9-ch2-l2.json" }
+        ]},
+        { "chapterId": "ch3", "title": "AI Applications", "lessons": [
+          { "lessonId": "l1", "title": "AI in Science", "filename": "senior-class9-ch3-l1.json" },
+          { "lessonId": "l2", "title": "AI in Social Good", "filename": "senior-class9-ch3-l2.json" }
+        ]},
+        { "chapterId": "ch4", "title": "AI & Career", "lessons": [
+          { "lessonId": "l1", "title": "Career Exploration", "filename": "senior-class9-ch4-l1.json" },
+          { "lessonId": "l2", "title": "Educational Pathways", "filename": "senior-class9-ch4-l2.json" }
+        ]},
+        { "chapterId": "ch5", "title": "AI Tools", "lessons": [
+          { "lessonId": "l1", "title": "AI Development Tools", "filename": "senior-class9-ch5-l1.json" },
+          { "lessonId": "l2", "title": "Building Simple AI", "filename": "senior-class9-ch5-l2.json" }
+        ]},
+        { "chapterId": "ch6", "title": "Responsible AI", "lessons": [
+          { "lessonId": "l1", "title": "Ethics in AI", "filename": "senior-class9-ch6-l1.json" },
+          { "lessonId": "l2", "title": "AI and Society", "filename": "senior-class9-ch6-l2.json" }
+        ]}
+      ]
+    },
+    {
+      "classId": "class10",
+      "className": "Class 10",
+      "chapters": [
+        { "chapterId": "ch1", "title": "AI Basics", "lessons": [
+          { "lessonId": "l1", "title": "AI Algorithms", "filename": "senior-class10-ch1-l1.json" },
+          { "lessonId": "l2", "title": "Data in AI", "filename": "senior-class10-ch1-l2.json" }
+        ]},
+        { "chapterId": "ch2", "title": "Communicate with AI", "lessons": [
+          { "lessonId": "l1", "title": "Conversational AI", "filename": "senior-class10-ch2-l1.json" },
+          { "lessonId": "l2", "title": "Prompt Engineering", "filename": "senior-class10-ch2-l2.json" }
+        ]},
+        { "chapterId": "ch3", "title": "AI Applications", "lessons": [
+          { "lessonId": "l1", "title": "AI in Research", "filename": "senior-class10-ch3-l1.json" },
+          { "lessonId": "l2", "title": "AI in Climate", "filename": "senior-class10-ch3-l2.json" }
+        ]},
+        { "chapterId": "ch4", "title": "AI & Career", "lessons": [
+          { "lessonId": "l1", "title": "Industry Overview", "filename": "senior-class10-ch4-l1.json" },
+          { "lessonId": "l2", "title": "Skill Development", "filename": "senior-class10-ch4-l2.json" }
+        ]},
+        { "chapterId": "ch5", "title": "AI Tools", "lessons": [
+          { "lessonId": "l1", "title": "AI Platforms", "filename": "senior-class10-ch5-l1.json" },
+          { "lessonId": "l2", "title": "Hands-on Projects", "filename": "senior-class10-ch5-l2.json" }
+        ]},
+        { "chapterId": "ch6", "title": "Responsible AI", "lessons": [
+          { "lessonId": "l1", "title": "Fairness in AI", "filename": "senior-class10-ch6-l1.json" },
+          { "lessonId": "l2", "title": "Transparency", "filename": "senior-class10-ch6-l2.json" }
+        ]}
+      ]
+    },
+    {
+      "classId": "class11",
+      "className": "Class 11",
+      "chapters": [
+        { "chapterId": "ch1", "title": "AI Basics", "lessons": [
+          { "lessonId": "l1", "title": "Deep Learning Intro", "filename": "senior-class11-ch1-l1.json" },
+          { "lessonId": "l2", "title": "Neural Networks", "filename": "senior-class11-ch1-l2.json" }
+        ]},
+        { "chapterId": "ch2", "title": "Communicate with AI", "lessons": [
+          { "lessonId": "l1", "title": "Advanced NLP", "filename": "senior-class11-ch2-l1.json" },
+          { "lessonId": "l2", "title": "Multimodal AI", "filename": "senior-class11-ch2-l2.json" }
+        ]},
+        { "chapterId": "ch3", "title": "AI Applications", "lessons": [
+          { "lessonId": "l1", "title": "AI in Innovation", "filename": "senior-class11-ch3-l1.json" },
+          { "lessonId": "l2", "title": "AI Startups", "filename": "senior-class11-ch3-l2.json" }
+        ]},
+        { "chapterId": "ch4", "title": "AI & Career", "lessons": [
+          { "lessonId": "l1", "title": "Specializations", "filename": "senior-class11-ch4-l1.json" },
+          { "lessonId": "l2", "title": "Building Portfolio", "filename": "senior-class11-ch4-l2.json" }
+        ]},
+        { "chapterId": "ch5", "title": "AI Tools", "lessons": [
+          { "lessonId": "l1", "title": "Advanced Tools", "filename": "senior-class11-ch5-l1.json" },
+          { "lessonId": "l2", "title": "Real Projects", "filename": "senior-class11-ch5-l2.json" }
+        ]},
+        { "chapterId": "ch6", "title": "Responsible AI", "lessons": [
+          { "lessonId": "l1", "title": "AI Governance", "filename": "senior-class11-ch6-l1.json" },
+          { "lessonId": "l2", "title": "Global Impact", "filename": "senior-class11-ch6-l2.json" }
+        ]}
+      ]
+    },
+    {
+      "classId": "class12",
+      "className": "Class 12",
+      "chapters": [
+        { "chapterId": "ch1", "title": "AI Basics", "lessons": [
+          { "lessonId": "l1", "title": "AI Architecture", "filename": "senior-class12-ch1-l1.json" },
+          { "lessonId": "l2", "title": "Advanced ML", "filename": "senior-class12-ch1-l2.json" }
+        ]},
+        { "chapterId": "ch2", "title": "Communicate with AI", "lessons": [
+          { "lessonId": "l1", "title": "AI Interaction Design", "filename": "senior-class12-ch2-l1.json" },
+          { "lessonId": "l2", "title": "AI APIs", "filename": "senior-class12-ch2-l2.json" }
+        ]},
+        { "chapterId": "ch3", "title": "AI Applications", "lessons": [
+          { "lessonId": "l1", "title": "Industry Applications", "filename": "senior-class12-ch3-l1.json" },
+          { "lessonId": "l2", "title": "Future of AI", "filename": "senior-class12-ch3-l2.json" }
+        ]},
+        { "chapterId": "ch4", "title": "AI & Career", "lessons": [
+          { "lessonId": "l1", "title": "Career Launch", "filename": "senior-class12-ch4-l1.json" },
+          { "lessonId": "l2", "title": "Higher Education", "filename": "senior-class12-ch4-l2.json" }
+        ]},
+        { "chapterId": "ch5", "title": "AI Tools", "lessons": [
+          { "lessonId": "l1", "title": "Professional Tools", "filename": "senior-class12-ch5-l1.json" },
+          { "lessonId": "l2", "title": "Capstone Project", "filename": "senior-class12-ch5-l2.json" }
+        ]},
+        { "chapterId": "ch6", "title": "Responsible AI", "lessons": [
+          { "lessonId": "l1", "title": "AI Policy", "filename": "senior-class12-ch6-l1.json" },
+          { "lessonId": "l2", "title": "Leading Change", "filename": "senior-class12-ch6-l2.json" }
+        ]}
+      ]
+    }
+  ]
+}
