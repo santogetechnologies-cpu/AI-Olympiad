@@ -1,0 +1,1390 @@
+{
+  "lessonId": "l1",
+  "title": "Future Job Hunt 🚀👩‍🔬",
+  "level": "junior",
+  "class": "class4",
+  "chapter": "ch4",
+  "chapterTitle": "AI and Career • RISE",
+  "lessonNumber": 1,
+  "classNumber": 4,
+  "chapterNumber": 4,
+  "mascot": {
+    "name": "Robo-Pi",
+    "emoji": "🤖✨",
+    "description": "A friendly silver robot wearing a tiny graduation cap, a sparkling magnifying glass necklace, and shiny golden roller skates! Robo-Pi wears a stylish futuristic gold necktie and holds an interactive hologram clipboard showing job badges of the year 2040!",
+    "voiceStyle": "Cheerful, energetic beeping sentences. Loves exclamation marks! Uses BEEP BOOP as a greeting. Uses the simplest, sweetest kindergarten words so that every child instantly understands with zero confusion! Always gives warm robot hugs and huge encouragement!",
+    "catchphrase": "BEEP BOOP! In 2040, you might drive a flying delivery shuttle or teach baby robots how to smile! Dream big! 🚀🤖✨"
+  },
+  "metadata": {
+    "duration": "45 minutes",
+    "ageGroup": "9-10 years",
+    "difficulty": "beginner",
+    "totalWords": 12000,
+    "version": "1.0",
+    "lastUpdated": "2026-10-13",
+    "author": "AI Olympiad Team",
+    "tags": [
+      "AI careers",
+      "future jobs",
+      "drone pilot",
+      "robot vet",
+      "ai animator",
+      "space farmer",
+      "career exploration",
+      "rise",
+      "class4",
+      "junior"
+    ]
+  },
+  "content": {
+    "introduction": {
+      "welcomeMessage": "🤖✨ BEEP BOOP! Welcome to Chapter 4: AI and Career! Today we board a time machine to the year 2040 to discover the coolest future jobs on Earth and in outer space! 🚀👩‍🚀🎉",
+      "roboPiGreeting": {
+        "text": "BEEP BOOP! Hello, hello, hello, my brilliant young dreamer! It is me, your robot best friend Robo-Pi, ready for the most inspiring adventure of your whole life! 🤖✨ Give me an extra-loud virtual high-five! *CLINK-SHINE!* ✋ Have you ever had a grown-up bend down, smile, and ask you that classic question: 'What do you want to be when you grow up?' In the old days, children had only a few choices: doctor, teacher, police officer, or firefighter. Those are still wonderful jobs! But by the time YOU grow up in the year 2040, the world will have jobs so magical, exciting, and cool that they sound like pure superhero science fiction! BEEP BOOP! In 2040, you might drive a flying delivery shuttle or teach baby robots how to smile! Imagine being a Robot Veterinarian, using gentle ultrasound wands and AI scanner goggles to heal sick puppies without any scary needles! 🐕🩺 Imagine being a Sky Drone Pilot, wearing virtual-reality goggles to inspect hundred-meter-tall giant ocean wind turbines or rescue hikers lost in mountain snowstorms! 🚁🌬️ Imagine being an AI Cartoon Maker, whispering your wildest dreams into a microphone and watching computer animation heroes jump, dance, and do triple flips across the movie screen! 🎬✨ And imagine being a Cosmic Space Farmer, growing crisp red strawberries and floating lettuce inside glowing bubble domes on Mars! 🌾🚀 You won't have to compete against robots — robots will be your loyal, helpful assistants! Today, we are going to explore the ultimate career treasure hunt of tomorrow! Put on your golden astronaut helmet — BEEP click BOOP — let us blast into the future! 🚀👩‍🔬🎉",
+        "toastGuidance": {
+          "tap_prompt": "👇 Pick your futuristic career gadget tool!",
+          "great_job": "🚁 SWOOSH! Drone Pilot license granted! High-flying missions await!",
+          "try_again": "🐾 Choose the gadget that helps sick puppies get well!",
+          "encouragement": "🤖 Don't worry if you don't know what you want to be yet — today you can try on four incredible dream jobs!"
+        }
+      },
+      "openingStory": {
+        "title": "🚀 The Magical 2040 Career Fair at the Starlight Dome! 🎟️🤖",
+        "content": "Once upon a bright sunny morning in the year 2040, nine-year-old Maya and her brother Leo walked through the glowing glass doors of the World Future Career Expo at the giant Starlight Dome. Above their heads, colorful holographic banners floated in mid-air: 'WELCOME DREAMERS OF 2040: DISCOVER YOUR FUTURE PASSION!' Inside, hundreds of booths buzzed with high-tech gadgets, friendly helper robots, and smiling professionals in futuristic flight suits. Maya and Leo's eyes were as wide as dinner plates! Booth Number 1 was labeled: 'SKY DRONE INSPECTIONS & RESCUE'. A young woman named Captain Sarah was wearing lightweight silver pilot goggles and holding a sleek remote controller with two thumbsticks. On the screen was a live 3D view of a towering 150-meter-tall white wind turbine spinning over the ocean waves. Sarah smiled: 'Hello explorers! In the old days, human workers had to climb giant dangerous ropes in freezing rain to look for cracks on windmill blades. Today, I sit comfortably in my warm office with a cup of hot cocoa, fly my AI camera drone with centimeter precision, and spot tiny hairline cracks using thermal sensors! I protect the clean wind energy of our whole country!' Maya clapped her hands: 'You're like a superhero pilot who never gets cold!' Next was Booth Number 2: 'ROBOT ANIMAL HOSPITAL & PET CARE'. Dr. Vikram stood next to a fluffy golden retriever puppy who was happily wagging his tail. Dr. Vikram didn't have any sharp needles or scary metal tools. Instead, Dr. Vikram held a soft glowing blue wand: 'This is my AI Bio-Scanner Wand! When a puppy has an upset tummy, I gently wave the wand over his belly. The AI scanner maps his tummy on my tablet in 3D color, spots the swallowed toy squeaker, and uses a tiny robotic gripper arm to pull it out smoothly while the puppy licks my hand!' Leo gasped: 'No scary needles? That is the kindest animal doctor in the world!' Then came Booth Number 3: 'THE COSMIC SPACE BOTANICAL LAB'. Astronaut Botanist Elena 👩‍🚀 was floating inside a zero-gravity glass cylinder surrounded by suspended vines of plump, red, juicy strawberries and bright green lettuce! Elena smiled through the microphone: 'Hello from the Moon base prototype! Here, we grow fresh fruit for astronauts traveling to Mars! We don't use soil — we use nutrient-rich water mist and purple LED sunlight! Smart AI sensor bots monitor every single strawberry plant, measuring sugar sweetness and water drops down to the micro-milligram!' Maya's mouth watered: 'Space strawberries look sweeter than Earth candy!' At the end of the expo hall, Robo-Pi rolled up to Maya and Leo wearing a golden necktie 👔 and carrying a tray of blank holographic badges: 'BEEP BOOP! The future is not about replacing human hearts — it is about giving human hearts robot wings! Which future superpower will YOU choose?' Maya grabbed her marker: 'I'm going to be a Drone Pilot who rescues animals!' Leo grinned: 'I'm going to grow space strawberries on Mars!' They pinned their shiny 2040 badges to their shirts, ready to change the universe! 🎟️🚀💖",
+        "moraleOfStory": "Future jobs will combine human kindness, creativity, and empathy with powerful robot superpowers to heal animals, protect our planet, and explore outer space! 🌟✨",
+        "roboPiComment": "BEEP BOOP! Wasn't that expo breathtaking? No boring desk chores — real adventure, saving animals, flying through clouds, and growing food on Mars! Let us explore each of these dream jobs! 🚀🤖"
+      },
+      "learningObjectives": [
+        "🚁 Discover the Autonomous Drone Pilot: Flying high-tech inspection, rescue, and photography drones across 3D skies!",
+        "🐕 Explore the Robot Veterinarian: Using gentle AI bio-scanners and robotic helpers to heal pets without scary needles!",
+        "🎬 Meet the AI Cartoon Animator: Directing smart computer software to bring magical characters and video games to life!",
+        "🌾 Discover the Cosmic Space Farm Gardener 🌾👩‍🚀: Growing floating vegetables and sweet fruits inside Moon and Mars greenhouses!",
+        "🎟️ Conquer the 2040 Future Career ID Badge Maker: Design your personal dream badge with gadgets, tools, and pledges!",
+        "🏆 Earn your official Junior Future Career Explorer License and become a certified Tomorrow Leader! 🚀🏅"
+      ],
+      "detectiveBadge": {
+        "title": "The Junior Future Career Explorer License 🚀🏅",
+        "description": "Earn all three sparkling career medals to prove you have the imagination, empathy, and skills to thrive in the world of 2040!",
+        "magnifiers": [
+          {
+            "id": "badge-drone",
+            "name": "Sky Commander Wings Medal 🚁",
+            "earnedBy": "Mastering Section 1: Exploring how drone pilots inspect green wind turbines and rescue mountain hikers!",
+            "colour": "#00E5FF"
+          },
+          {
+            "id": "badge-creative",
+            "name": "Creative Caregiver Medal 🎨",
+            "earnedBy": "Mastering Section 2: Discovering how robot vets heal pets and AI animators create jumping cartoon heroes!",
+            "colour": "#FF4081"
+          },
+          {
+            "id": "badge-cosmic",
+            "name": "Cosmic Harvester Medal 🌾",
+            "earnedBy": "Mastering Section 3: Exploring how space farmers grow floating strawberries on Moon and Mars greenhouses!",
+            "colour": "#4CAF50"
+          }
+        ]
+      },
+      "auraGuidance": {
+        "welcome": "LET'S RISE! Welcome to Chapter 4: AI and Career! Get ready to explore the most exciting dream jobs of the future! 🚀",
+        "instruction": "Listen to Robo-Pi, tap the futuristic career gadgets, and try on your dream job in the year 2040! 🌟",
+        "encouragement": "You are the future leaders, creators, and inventors of planet Earth! Your future is brighter than a million stars! 💫"
+      }
+    },
+    "mainConcept": {
+      "whatIsAI": {
+        "title": "🚀 Will Robots Take All the Jobs? (The Wonderful Secret!) 🤖💡",
+        "roboPiIntro": "BEEP BOOP! Sometimes kids ask me with worried eyes: 'Robo-Pi, if robots get so smart, will there be any jobs left for humans when I grow up?' Let me tell you the greatest secret of all! 🤖💖",
+        "simpleExplanation": "Listen very closely, young explorer! Robots are AMAZING at boring, repetitive, dangerous chores. Robots love counting millions of numbers without getting a headache. Robots love vacuuming dusty carpets under beds without sneezing. Robots love flying into stormy clouds to check lightning rods so human beings don't get struck by lightning! ⚡ But do you know what a robot CANNOT do? A robot has no human heart! A robot cannot feel pure love when a puppy licks its nose. A robot cannot cry happy tears when reading a beautiful story. A robot cannot invent a funny, silly cartoon joke that makes a whole classroom burst out laughing! A robot has zero imagination, zero empathy, and zero soul! 🎨💖 In the year 2040, humans will NOT be replaced by robots. Instead, humans will be TEAM CAPTAINS! Think of an excavator digger machine at a construction site: the machine has giant steel muscles that can lift five tons of rock, but the machine is completely helpless without the skilled human driver sitting inside the cab steering the controls! That is what future jobs are all about: HUMANS PROVIDE THE HEART, CREATIVITY, AND KINDNESS; ROBOTS PROVIDE THE SPEED, POWER, AND PRECISION! When you combine a creative human child with a smart AI tool, you get a real-life superhero who can heal animals faster, make movies easier, and explore distant galaxies! Let us meet three incredible career paths of tomorrow! 🚀✨",
+        "keyPoints": [
+          "🤖 Robots are great at boring, repetitive, dangerous tasks: counting, lifting, and scanning in storms.",
+          "💖 Humans have superpowers robots can never have: empathy, kindness, imagination, love, and humor!",
+          "🤝 Future careers are collaborative: humans lead with creativity while robots assist with heavy computing.",
+          "🚁 New jobs are being invented every year: drone pilots, space botanists, robot therapists, and AI game artists.",
+          "🌟 You don't need to fear the future — you are the visionary team captains who will direct the smart machines!"
+        ],
+        "toastGuidance": {
+          "tap_prompt": "👇 Tap the glowing handshake between Human and Robot! 🤝✨",
+          "great_job": "⭐ TEAMWORK UNLOCKED! Human heart + Robot power = Future Magic! 💖🤖🎉",
+          "try_again": "🤔 Tap the golden handshake icon to see the partnership of tomorrow!"
+        }
+      },
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "🚁 Career 1: The Sky Explorer! (Autonomous Drone Pilots & Inspectors!) 🌬️⚡",
+          "missionBadge": "Sky Commander Wings Medal 🚁",
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Career Mission 1, Sky Commander! 🤖🚁 Have you ever dreamed of flying like an eagle across mountain peaks and ocean waves? Today, you can do that for your real job without leaving the ground! Let us take flight as a Drone Pilot! 🌬️✨",
+          "mainContent": {
+            "paragraph1": "Imagine waking up on Monday morning, putting on a sleek flight jacket, and stepping into your cozy command office. In front of you is a curved panoramic wrap-around display showing live high-definition camera feeds from three different drones soaring 200 kilometers away over the North Sea! You slip on lightweight virtual-reality flight goggles. Instantly, you feel like you are floating in mid-air right beside the clouds! You hold two ergonomic flight thumbsticks in your hands. You are an official COMMERCIAL DRONE PILOT & INFRASTRUCTURE INSPECTOR! In the 20th century, if a clean-energy wind turbine had a crack on one of its 80-meter spinning blades, brave human technicians had to climb up ropes in icy winds, hanging on by harnesses with dangerous drops beneath them. It took two days, cost thousands of dollars, and was terrifyingly dangerous!",
+            "paragraph2": "Today in 2040, you are the pilot in command! Your smart inspection drone is equipped with 8K thermal imaging cameras, ultrasonic hull sensors, and autonomous collision-avoidance AI. You gently nudge your thumbstick forward. The drone glides smoothly along the curved aerodynamic blade of the windmill, scanning the fiberglass surface down to the fraction of a millimeter. Suddenly, your screen flashes a golden highlight: 'ALERT: Hairline composite crack detected at Meter 42!' The drone's AI marks the exact GPS coordinate, takes ten micro-zoom photographs, and sends the repair report directly to the maintenance 3D-printing crew! You inspected three giant windmills before lunchtime, saved human lives from dangerous climbs, and protected clean green electricity for fifty thousand homes! 🌬️⚡",
+            "paragraph3": "What else do drone pilots do? SEARCH AND RESCUE MISSIONS! 🏔️ Imagine a family of hikers getting lost in a dense mountain pine forest during an unexpected winter blizzard. The snow is falling so thick that rescue helicopters cannot safely fly through the mountain passes. That is when the Chief Mountain Rescue Pilot deploys an autonomous swarm of thermal sensor drones! The drones fly in an organized grid pattern across the snowy trees, using thermal infrared cameras that see body heat glowing bright orange in the dark snow. In twenty minutes, a drone spots the family huddled safely under a rock ledge! The drone hovers in place, drops a warm thermal survival blanket and emergency radio, and guides the ground rescue team directly to the hikers! You saved an entire family using autonomous sky navigation!",
+            "paragraph4": "Think about cinema and wildlife photography! 🎬 When you watch Hollywood superhero movies where the camera swoops through narrow glass skyscrapers, flips upside down under bridges, and races beside speeding electric trains at 150 km/h — who is steering that camera? A Master Cinematography Drone Pilot! Wildlife drone pilots fly silent electric drones across the African savannas, tracking wild cheetahs and elephant herds without making any scary engine noise, filming breathtaking nature documentaries that teach children around the world how to love and protect wild animals! 🐆🐘",
+            "paragraph5": "To become a Master Drone Pilot, you don't need giant muscles or a pilot's license for a Boeing 747. You need sharp hand-eye coordination (the kind you practice playing fun video games!), great spatial awareness, calm decision-making, and a deep love for adventure! The sky is no longer just for birds — it is the bustling workspace of tomorrow's brightest explorers! Let us examine three incredible drone piloting triumphs! 🚁➡️🐕"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-pilot-1",
+              "title": "🌬️ Inspecting 150-Meter Ocean Wind Turbines in the North Sea! 🌊⚡",
+              "icon": "🌬️",
+              "description": "How drone pilots use thermal infrared cameras to detect microscopic composite cracks on spinning blades!",
+              "realLifeScenario": "Captain Sarah sits in her harbor control room in Scotland. A coastal wind farm generates clean electricity for 200,000 homes. Sarah deploys her weatherproof hexacopter drone. Cruising through ocean sea mist at 70 km/h, the drone circles a massive 150-meter-tall turbine. Using thermal computer vision, the drone spots a hidden hairline crack inside the fiberglass shell caused by lightning strikes. Sarah logs the exact structural coordinates and schedules a robotic resin repair. Sarah saved the multi-million-dollar windmill from snapping in the next winter storm, all while sipping warm tea in her office! 🌊🌬️✨",
+              "roboPiComment": "BEEP BOOP! Sarah didn't have to dangle from scary ropes in freezing rain! The drone did the dangerous flying, and Sarah provided the sharp human inspection brain! That is smart work! 🚁🧠",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the wind turbine blade to scan for hidden thermal cracks! 🌬️🔍",
+                "great_job": "🌟 CRACK DETECTED & LOGGED! Windmill saved from storm damage! ⚡🎉",
+                "try_again": "🤔 Tap the spinning windmill blade to begin the thermal scan!"
+              }
+            },
+            {
+              "id": "dde-pilot-2",
+              "title": "🏔️ Mountain Blizzard Search & Rescue Hero! ❄️🪂",
+              "icon": "🏔️",
+              "description": "How thermal heat-seeking drones locate lost hikers trapped in sub-zero snowstorms!",
+              "realLifeScenario": "Two hikers lose their trail in the Rocky Mountains as night falls and temperatures drop to minus 10 degrees Celsius. Pilot David launches three thermal sensor drones from the base camp van. Flying beneath low blizzard clouds, the drones scan the mountain slopes. The thermal AI flags a glowing orange heat signature behind a granite boulder. David hovers Drone 1 over the location, activates a powerful emergency strobe beacon, and drops an insulated heated blanket and hot soup thermos by miniature parachute. The ground rescue team follows the drone's beacon light and brings the hikers home safely! ❄️🏔️💖",
+              "roboPiComment": "BEEP BOOP! Thermal cameras see body heat through dark night and falling snow! David and his drones saved two lives in thirty minutes flat! True guardian angels of the sky! 🚁👼",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the thermal scanner to locate the hikers' orange heat signature! ❄️🔥",
+                "great_job": "🌟 HIKERS FOUND! Dropped warm survival blankets and rescue beacon! 🪂💖",
+                "try_again": "🤔 Scan the snowy mountain slope to spot the glowing heat signature!"
+              }
+            },
+            {
+              "id": "dde-pilot-3",
+              "title": "🎬 Hollywood Superhero Blockbuster Cinematographer! 🎥🏎️",
+              "icon": "🎬",
+              "description": "How precision FPV drone pilots film high-speed movie chases through narrow skyscraper canyons!",
+              "realLifeScenario": "On the movie set of the new 'Cyber-Racer 2040' blockbuster, director Sophia needs an impossible camera shot: swooping down from the 60th floor of a glass skyscraper, flying through the open window of a speeding electric sports car, and spiraling up into the clouds! Human helicopter pilots could never fit inside a street canyon. FPV Drone Pilot Leo wears virtual-reality goggles, throttles his ultra-lightweight carbon-fiber racing drone at 140 km/h, weaves through the stunt cars with millimeter precision, and captures a breathtaking continuous shot that wins an Academy Award for Best Cinematography! 🏎️🎥🏆",
+              "roboPiComment": "BEEP BOOP! That drone flew through an open car window at 140 kilometers per hour! Hand-eye coordination of a gaming champion! Movies in 2040 are pure adrenaline! 🎮🎥",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the racing drone to weave through the skyscraper window! 🏙️🏎️",
+                "great_job": "🌟 ACADEMY AWARD SHOT! Breathtaking action sequence captured! 🏆🎬",
+                "try_again": "⚠️ Steer carefully through the window without touching the glass!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🚁 Drone Pilots fly high-tech autonomous aircraft for inspections, rescue, agriculture, and filmmaking.",
+            "🌬️ Infrastructure inspections protect clean green energy by scanning windmills and bridges safely.",
+            "🏔️ Thermal infrared rescue drones locate lost hikers in dark blizzards by spotting body heat.",
+            "🎬 FPV Cinematography drones capture impossible Hollywood movie shots through narrow canyons.",
+            "🎮 Skills like video game hand-eye coordination and spatial awareness translate directly into drone careers.",
+            "🛡️ Drone pilots protect human workers by taking over dangerous high-altitude tasks."
+          ],
+          "mission1Complete": {
+            "celebrationText": "🎉 MISSION 1 ACCOMPLISHED! You mastered Sky Drone Piloting!",
+            "roboPiCelebration": "BEEP BOOP YAY! 🚁✨ You have the sharp eyes and steady thumbs of a sky commander! Your Sky Commander Wings Medal is pinned proudly to your jacket! Now, what if your heart loves animals or making funny cartoon movies? Let us enter Section 2 and meet the Robot Vet and AI Animator! 🐕🎬",
+            "magnifierEarned": "Sky Commander Wings Medal 🚁",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to attach your Sky Commander Wings! 🏅",
+              "great_job": "⭐ WINGS EQUIPPED! You are officially licensed for high-flying missions! 🚁🏆",
+              "encouragement": "On to Section 2 — let us heal puppies and create animated magic! 🐕🎬"
+            }
+          }
+        },
+        {
+          "id": "section-2",
+          "title": "🐕 Career 2: The Animal Healer & Creator! (Robot Vets & AI Cartoon Animators!) 🩺🎬",
+          "missionBadge": "Creative Caregiver Medal 🎨",
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Career Mission 2, Creative Caregiver! 🤖🐾 Do you love hugging furry puppies, or do you love drawing funny cartoons that make your friends laugh? In 2040, these two passions have evolved into the most magical careers on Earth! Let us investigate! 🩺🎬",
+          "mainContent": {
+            "paragraph1": "Let us visit the world of the ROBOT VETERINARIAN first! 🐕🩺 Think about taking your pet puppy to the doctor today. The puppy is shaking with fright because the metal examination table is cold, the vet wears a scary white coat, and there are sharp silver needles for blood tests and vaccines. The puppy whines and hides behind your legs. But walk into a 2040 Smart Animal Wellness Clinic! The room looks like a warm, sunny living room with soft green grass carpets and gentle bird sounds. The veterinarian, Dr. Vikram, wears soft clothes and greets the puppy with a friendly treat. Beside Dr. Vikram is a gentle, purring medical assistant robot named Nurse Nala, covered in soft velvet silicone so animals love nuzzling against it!",
+            "paragraph2": "How does Dr. Vikram examine the puppy? WITH GENTLE AI BIO-SENSORS! 🐾 Dr. Vikram holds an ultrasonic light wand that glows warm golden. He gently strokes the puppy's tummy as if giving him a belly rub! As the wand glides over the fur, multi-spectral infrared sensors and acoustic ultrasound beams penetrate safely through the fur without shaving a single hair! On Dr. Vikram's tablet screen, a full 3D color hologram of the puppy's heart, lungs, and stomach appears instantly! The AI highlights a tiny blue circle in the stomach: 'Object detected: small squeaky rubber ball swallowed yesterday!' Dr. Vikram uses a gentle robotic magnetic gripper to retrieve the toy in two minutes while the puppy happily munches a peanut butter treat! Zero pain, zero tears, zero fear! The puppy wags its tail, jumps into Dr. Vikram's lap, and gives him a giant wet puppy kiss! 🐶💖",
+            "paragraph3": "Now, let us flip over to the magical world of the AI CARTOON ANIMATOR & GAME CREATOR! 🎬🎮 Have you ever dreamed up an imaginary creature — like a fluffy purple baby dragon that breathes rainbow bubbles and wears blue sneakers? In the old days, making a 90-minute animated movie required three hundred artists drawing twenty-four individual pictures for every single second of film! It took five years of grueling, hand-cramping labor! If you wanted the dragon to do a backflip, an artist had to draw twenty-four separate frames of the dragon upside down in mid-air!",
+            "paragraph4": "In 2040, YOU are the Creative Director! 🎨 You sit at your digital animator desk with a smart drawing stylus. You sketch a quick 10-second drawing of your purple dragon and speak into your microphone: 'AI Animator, make this baby dragon do a clumsy backflip, land on a skateboard, wobble with wide funny eyes, and laugh out loud!' The creative AI algorithm understands physics, gravity, and comedy! In three seconds, the AI generates a fully rendered, 3D animated dragon doing the exact backflip with realistic cloth physics, bouncing sneakers, and sparkling rainbow bubbles! But YOU are the master: you say: 'Make his ears flop more when he lands!' The AI adjusts the ears instantly! You can create an entire animated short film in a single weekend from your bedroom!",
+            "paragraph5": "Notice what connects both of these future jobs: HUMAN EMPATHY AND CREATIVE VISION! 💖 A robot doesn't know how to comfort a frightened puppy with soft whispers; only a human veterinarian can do that. A computer doesn't know what makes a joke funny or a cartoon character lovable; only a human child's imagination can create that emotional magic! AI gives you the super-tools, but YOU provide the heart! Let us examine three incredible triumphs of care and creativity! 🩺➡️🌾"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-care-1",
+              "title": "🐾 The Zero-Needle Puppy Wellness Clinic! 🐶🩺",
+              "icon": "🐾",
+              "description": "How AI ultrasound wands and velvet assistant bots diagnose pet tummy aches without fear or pain!",
+              "realLifeScenario": "Little golden retriever Bruno has lost his appetite and is whining under the bed. Kabir's family brings Bruno to Dr. Vikram's clinic. Instead of metal tables, Bruno lies on a warm memory foam beanbag. Dr. Vikram waves the AI Bio-Scanner Wand along Bruno's ribs. The screen instantly displays: 'Heart rate normal (95 bpm), hydration excellent, minor tummy ache caused by chewing plastic bottle cap.' Dr. Vikram dispenses a chewable bacon-flavored tummy tablet. Bruno swallows it eagerly, wags his tail, and bounds out the door ready to play fetch! Total appointment: 8 minutes! 🐕✨",
+              "roboPiComment": "BEEP BOOP! Bruno didn't even realize he had a medical checkup! He just thought he was getting a warm belly rub and a bacon treat! Kindness plus technology is the ultimate medicine! 🥓🐶",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the Bio-Scanner Wand to diagnose the puppy's tummy! 🩺🐾",
+                "great_job": "🌟 HEALTH SCAN COMPLETE! Bruno diagnosed painlessly and happy! 🐶🎉",
+                "try_again": "🐾 Choose the gadget that helps sick puppies get well!"
+              }
+            },
+            {
+              "id": "dde-care-2",
+              "title": "🎬 Creating the 'Rainbow Dragon' Cartoon in 48 Hours! 🐉🌈",
+              "icon": "🎬",
+              "description": "How young AI animators direct smart physics models to produce Hollywood-quality movies in days!",
+              "realLifeScenario": "Nine-year-old Ananya writes a bedtime story about 'Sparky the Bubble Dragon'. She opens her creative animation studio software. She speaks her character description: 'Sparky is a chubby purple dragon with emerald eyes who blows bubbles that float backwards.' She sketches three key poses. The generative physics engine generates a 5-minute animated pilot episode with fully dynamic lighting, bouncy dragon scales, and orchestral music! Ananya submits her short film to the International Youth Film Festival and wins the Grand Jury Prize for Storytelling! 🏆🐉✨",
+              "roboPiComment": "BEEP BOOP! Ananya didn't have to draw 7,000 individual frames by hand! The AI handled the repetitive math, allowing Ananya's pure storytelling genius to shine! 🎨🎬",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the animation canvas to generate Sparky's bubble backflip! 🐉🎬",
+                "great_job": "🌟 ANIMATION RENDERED! Sparky backflipped and blew rainbow bubbles! 🌈🎉",
+                "try_again": "🤔 Tap the purple dragon to prompt the funny backflip motion!"
+              }
+            },
+            {
+              "id": "dde-care-3",
+              "title": "🦿 Custom 3D-Printed Bionic Legs for Injured Animals! 🐕🦾",
+              "icon": "🦿",
+              "description": "How veterinary bio-engineers print lightweight carbon-fiber running legs for injured dogs and cats!",
+              "realLifeScenario": "A stray puppy named Lucky was found with an injured hind paw that couldn't walk. Veterinary Bionics Engineer Maya uses an optical 3D camera to scan Lucky's healthy legs. The AI automatically designs an anatomically mirrored, flexible carbon-fiber bionic leg with an integrated rubber shock absorber. Maya 3D-prints the lightweight leg in 45 minutes, snaps it comfortably onto Lucky's padded harness, and sets him down. Lucky takes two cautious steps, realizes he has four legs again, and sprints across the park grass with joy! 🐕🦾🏃",
+              "roboPiComment": "BEEP BOOP! Lucky is running faster than all the other dogs in the park with his bionic carbon-fiber paw! Technology restoring joy and freedom to our animal friends! 🦿💖",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the 3D printer to craft Lucky's carbon-fiber bionic running leg! 🦿🐕",
+                "great_job": "🌟 BIONIC RUNNER! Lucky running at full speed in the park! 🦾🎉",
+                "try_again": "🤔 Tap the 3D printer icon to fabricate the custom prosthetic leg!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🐕 Robot Veterinarians use gentle AI ultrasound wands and bio-sensors to examine pets without scary needles.",
+            "🩺 Robotic assistant helpers keep animal clinics calm, warm, and comforting for frightened pets.",
+            "🦿 Custom 3D-printed bionic limbs restore mobility and joy to injured dogs, cats, and birds.",
+            "🎬 AI Cartoon Animators act as creative directors, turning voice prompts and simple sketches into full 3D movies.",
+            "🎮 Video game creators use neural motion physics to train characters to jump, run, and dance realistically.",
+            "💖 Human empathy, love, and storytelling are the essential human ingredients that machines can never duplicate."
+          ],
+          "mission2Complete": {
+            "celebrationText": "🎉 MISSION 2 ACCOMPLISHED! You mastered Care & Creativity!",
+            "roboPiCelebration": "BEEP BOOP BRAVO! 🎨🐾 You have the gentle touch of a healer and the sparkling imagination of an animator! Your Creative Caregiver Medal is shining bright magenta on your chest! Now, what if we leave planet Earth behind and travel to the stars? Let us enter Section 3 and meet the Cosmic Space Farmer! 🌾🚀",
+            "magnifierEarned": "Creative Caregiver Medal 🎨",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to attach your Creative Caregiver Medal! 🏅",
+              "great_job": "⭐ MEDAL EQUIPPED! You have the magical heart of a future creator! 🎨💖",
+              "encouragement": "On to Section 3 — time to grow sweet strawberries on the Moon! 🌾🚀"
+            }
+          }
+        },
+        {
+          "id": "section-3",
+          "title": "🌾 Career 3: The Cosmic Farmer! (Space Agriculture & Martian Greenhouses!) 🚀🌱",
+          "missionBadge": "Cosmic Harvester Medal 🌾",
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Mission Control, Cosmic Harvester! 🤖🌾 Astronauts traveling to Mars cannot survive on dry powdered packets of astronaut paste for three years! They need crunchy fresh carrots, juicy sweet strawberries, and crisp green lettuce! Let us blast off to the space farm! 🚀🍓",
+          "mainContent": {
+            "paragraph1": "Imagine putting on a pressurized white space-suit, walking through an airlock door, and stepping inside a glowing glass bubble greenhouse perched on the dusty red soil of Mars! 🪐 Outside the thick transparent dome, the sky is rusty butterscotch orange, the temperature is minus 60 degrees Celsius, and there is no breathable oxygen. But INSIDE your pressurized greenhouse dome, the air is warm, humid, and smells like fresh, damp earth and sweet blooming blossoms! You look down long vertical spiraling white towers: thousands of bright red strawberries, crisp romaine lettuce leaves, sweet cherry tomatoes, and golden wheat stalks are growing in lush abundance! You are an official COSMIC SPACE FARMER & ASTRO-BOTANIST!",
+            "paragraph2": "How do plants grow in outer space where there is no rich brown soil, weak gravity, and no rain? YOU USE SMART AEROPONICS AND AI LIGHTING! 🌱 In a space farm, plants do not sit in heavy bags of dirt. The roots of the plants dangle in open air inside dark, sealed plastic chambers. Every thirty seconds, an automated micro-nozzle sprays a gentle cloud of nutrient-rich water mist directly onto the dangling roots! The roots drink the mist like thirsty sponges, using 95% less water than a farm on Earth! Above the plants, smart LED growth lamps emit tuned purple, pink, and blue wavelengths of light that maximize photosynthesis without wasting a single watt of solar power!",
+            "paragraph3": "Look at the AI monitoring robots on your space farm! 🤖 Tiny camera drones buzz quietly along the vertical plant towers, photographing every single strawberry twenty times a day. The computer vision AI inspects every leaf: 'Strawberry #402 has reached peak sugar brix sweetness of 12.5%! Leaf chlorophyll is optimal! No fungal mold detected!' When a tomato is perfectly ripe, a soft silicone robotic arm with tender suction grippers reaches out, twists the stem with feather-light touch, and deposits the tomato into a floating collection basket! The astronauts on the Mars base eat fresh Greek salad and warm strawberry tarts for dinner every single night!",
+            "paragraph4": "What makes space farming so crucial for human survival? OXYGEN RECYCLING! 💨 In space, plants aren't just food — they are the LUNGS of the space station! As the plants grow under the purple lights, they inhale the carbon dioxide exhaled by human astronauts, and they exhale fresh, sweet, pure oxygen for the astronauts to breathe! The plants and the humans live in a complete closed-loop circular ecosystem! If you keep the plants happy and healthy, the entire space colony stays alive and thriving!",
+            "paragraph5": "And here is the most incredible part: Every single space farming invention helps PLANET EARTH TOO! 🌍 The water-misting nozzles and vertical farming towers developed for Mars are being installed right now inside giant indoor vertical farms in desert cities like Dubai and cold arctic towns in Norway! By growing food indoors with zero pesticides and 95% less water, we can feed billions of human beings on Earth while letting natural forests and wild jungles grow back! Cosmic farmers are saving Earth from outer space! Let us examine three incredible space farming milestones! 🌾➡️🏆"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-space-1",
+              "title": "🍓 Harvesting Sweet Floating Strawberries in Zero Gravity! 🚀🍰",
+              "icon": "🍓",
+              "description": "How aeroponic mist towers and purple LED spectra grow plump sweet fruit aboard space stations!",
+              "realLifeScenario": "Astro-Botanist Elena floats through the hydroponic module of the Lunar Gateway station orbiting the Moon. Elena reaches out with her fingers and plucks a plump, fragrant red strawberry that was grown with zero soil. The aeroponic mist chamber provided recycled water, while the AI lighting tuned the red spectrum to maximize natural fruit sugars. Elena bites into the strawberry: it bursts with sweet summer flavor! Elena smiles: 'Tastes like sunshine 400,000 kilometers away from Earth!' 🍓🌕✨",
+              "roboPiComment": "BEEP BOOP! Fresh fruit in space keeps astronauts healthy, happy, and energized! Scurvy banished forever by smart space strawberries! 🍓🚀",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the aeroponic mist nozzle to hydrate the space strawberry roots! 💧🍓",
+                "great_job": "🌟 ROOTS MISTED! Plump sweet strawberries ready for lunar harvest! 🌕🍰",
+                "try_again": "🤔 Tap the mist nozzle icon to spray nutrient clouds on the roots!"
+              }
+            },
+            {
+              "id": "dde-space-2",
+              "title": "🥗 The First Fresh Salad Eaten on Mars! 🪐🍅",
+              "icon": "🥗",
+              "description": "How closed-loop greenhouse domes turn astronaut carbon dioxide into fresh crunchy salads!",
+              "realLifeScenario": "At Mars Base Alpha inside Jezero Crater, four astronauts celebrate their 200th day on the red planet. Cosmic Farmer Dev harvests a bowl of crisp romaine lettuce, sweet cherry tomatoes, and peppery radishes grown inside the inflatable dome. The crew sits at the mess hall table and crunches together. Astronaut Commander Sarah sighs with joy: 'After months of rehydrated freeze-dried pouches, this crunchy fresh salad tastes like heaven!' The greenhouse plants recycled 40% of the station's oxygen that day! 🪐🥗💖",
+              "roboPiComment": "BEEP BOOP! Crunch, crunch, crunch! Real fresh vegetables on Mars! The greenhouse is a living oxygen factory that keeps the colony breathing! 💨🌱",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the harvesting basket to collect the fresh Martian salad! 🪐🥗",
+                "great_job": "🌟 FRESH MARS HARVEST! Crispy romaine lettuce and sweet tomatoes picked! 🍅🎉",
+                "try_again": "🤔 Tap the floating vegetable basket to harvest the salad greens!"
+              }
+            },
+            {
+              "id": "dde-space-3",
+              "title": "🌍 Bringing Mars Farming Back to Desert Earth! 🏜️🌾",
+              "icon": "🌍",
+              "description": "How indoor vertical aeroponic farms grow wheat in scorching deserts using 95% less water!",
+              "realLifeScenario": "In the scorching 48-degree heat of the Arabian Desert, Farmer Tariq manages a 10-story indoor vertical farm designed using space technology. Outside, the desert sand is bone dry. Inside the climate-controlled facility, LED growth lights and recycled misting systems grow 500 tons of golden wheat and leafy greens every year using zero chemical pesticides and 95% less water than traditional ground fields. The city enjoys fresh, affordable local food with zero import shipping emissions! 🏜️🌾🏢",
+              "roboPiComment": "BEEP BOOP! Space farming saves Earth! Growing food in vertical towers means we don't have to cut down rainforests to plant farms! Earth stays green! 🌳🌍✨",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the vertical farm tower to activate water-saving aeroponics! 🏢💧",
+                "great_job": "🌟 DESERT HARVEST! 500 tons of fresh wheat grown with 95% water savings! 🌾🎉",
+                "try_again": "🤔 Tap the vertical tower to turn on the smart misting system!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🌾 Cosmic Space Farmers grow fresh food inside pressurized greenhouse bubbles on the Moon and Mars.",
+            "💧 Aeroponics dangles plant roots in dark chambers and sprays nutrient water mist, using 95% less water.",
+            "💡 Tuned LED light spectra (purple, blue, red) accelerate photosynthesis without requiring direct sunlight.",
+            "💨 Plants act as the lungs of the space station, inhaling human CO2 and exhaling pure oxygen.",
+            "🤖 Autonomous robot arms with suction grippers harvest delicate strawberries and tomatoes without bruising.",
+            "🌍 Space agricultural tech is revolutionizing Earth farming, allowing food to grow in deserts and cities."
+          ],
+          "mission3Complete": {
+            "celebrationText": "🎉 MISSION 3 ACCOMPLISHED! You mastered Cosmic Agriculture!",
+            "roboPiCelebration": "BEEP BOOP YIPPEE! 🌾🚀 You can pilot sky drones, heal puppies with gentle scanners, animate laughing cartoon dragons, and grow floating strawberries on Mars! Your Cosmic Harvester Medal is flashing bright emerald green! You now hold all three 2040 career medals! Let us bring everything together into the Grand Career Launchpad! 🏆🎟️",
+            "magnifierEarned": "Cosmic Harvester Medal 🌾",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to complete your 2040 Career Flight Suit! 🏅",
+              "great_job": "⭐ ALL 3 MEDALS EARNED! You are a certified Tomorrow Leader! 🚀🏆",
+              "encouragement": "On to Section 4 — let us design your official 2040 Career ID Badge! 🎟️🌟"
+            }
+          }
+        },
+        {
+          "id": "section-4",
+          "title": "🌟 Section 4: The 2040 Career Launchpad: Human Creativity + Robot Superpowers! 🏆🎟️",
+          "roboPiIntro": "BEEP BOOP! Tomorrow Leader, look at the magnificent horizon ahead of you! The world of 2040 is not a scary place where machines take over — it is a sparkling playground of wonder where human beings do what we do best: LOVE, CREATE, AND EXPLORE! 🚀🤖",
+          "mainContent": {
+            "paragraph1": "Look at the extraordinary transformation in how you see your future today! When you started this lesson, 'future jobs' might have sounded like a scary question mark. But now, you know the truth! The year 2040 will be the most thrilling time to be alive in human history! You won't be sitting at a boring desk stamping papers for forty years. You could be flying drones over ocean waves, designing bionic legs for injured rescue dogs, directing 3D animated movies from your bedroom, or harvesting sweet red strawberries under the pink skies of Mars! 🌊🐕🎬🪐",
+            "paragraph2": "Let us review THE GOLDEN CAREER FORMULA FOR 2040: HUMAN HEART & VISION + AI SPEED & POWER = SUPERHERO SUCCESS! 💖⚡ A machine can crunch a billion numbers in a second, but it cannot choose which problem is worth solving. YOU choose the mission! A machine can render a million pixels, but it cannot invent a heartwarming story that brings tears of joy to a grandmother's eyes. YOU tell the story! A machine can mist nutrient water on plant roots, but it cannot feel the awe of holding life in the palm of its hands. YOU provide the wonder!",
+            "paragraph3": "Look at the comparative table below to see how traditional 20th-century jobs are evolving into the breathtaking AI-powered careers of 2040! Look at how danger is eliminated, how repetitive drudgery is automated away, and how human creativity is unleashed like a soaring eagle! 🦅",
+            "paragraph4": "What skills should you practice right now as a 9-year-old in Class 4? You don't need to learn complicated computer programming right this second! The most important skills for 2040 are: 1. CURIOSITY! Ask 'Why?' and 'How does that work?' every single day! 2. CREATIVITY! Draw, write stories, build with Legos, and invent games! 3. EMPATHY! Be kind to your classmates, your family, and animals! 4. COMMUNICATION! Practice saying your thoughts clearly and politely, just like we learned in Chapter 2! Those four human superpowers will make you a superstar in ANY career you choose! 🌟",
+            "paragraph5": "You are now officially ready to step onto the 2040 Career Launchpad! You have conquered Chapter 4 • Lesson 1! Let us celebrate by crafting your very own official 2040 Future Career ID Badge, play awesome interactive games, and test your superpowers! Give yourself a massive cheer! BEEP BOOP HOORAY! 🎉👏"
+          },
+          "yesterdayVsTomorrowJobsTable": [
+            {
+              "id": "yvt-1",
+              "careerField": "🚁 Building & Windmill Inspections",
+              "yesterdayJob": "Human climbs 100-meter icy ropes in stormy winds with heavy metal tool belts! 🧗‍♂️🥶",
+              "tomorrowJob2040": "Autonomous Drone Pilot flies 8K thermal imaging drones from a warm office control room! 🚁☕✨",
+              "superpower": "100% human safety, zero dangerous falls, 10x faster inspections!"
+            },
+            {
+              "id": "yvt-2",
+              "careerField": "🐕 Veterinary Animal Medicine",
+              "yesterdayJob": "Cold examination tables, scary sharp needles, and frightened whining puppies! 💉🐕😖",
+              "tomorrowJob2040": "Robot Veterinarian uses gentle warm bio-scanner wands and 3D bionic prosthetics! 🩺🐾💖",
+              "superpower": "Zero pain, zero fear, instant 3D holographic diagnostics!"
+            },
+            {
+              "id": "yvt-3",
+              "careerField": "🎬 Cartoon Animation & Filmmaking",
+              "yesterdayJob": "Hundreds of artists hand-drawing 24 individual paper frames per second for 5 years! ✏️😫",
+              "tomorrowJob2040": "AI Cartoon Creator directs smart generative physics engines to animate 3D movies in days! 🎬🐉🏆",
+              "superpower": "Pure storytelling freedom: create full feature films from your bedroom!"
+            },
+            {
+              "id": "yvt-4",
+              "careerField": "🌾 Agriculture & Food Growing",
+              "yesterdayJob": "Backbreaking outdoor tractor labor vulnerable to droughts, floods, and pests! 🚜☀️",
+              "tomorrowJob2040": "Cosmic Space Farmer grows aeroponic strawberries and lettuce in lunar bubble domes! 🍓🌕🌱",
+              "superpower": "95% water savings, zero chemical pesticides, food anywhere in the galaxy!"
+            },
+            {
+              "id": "yvt-5",
+              "careerField": "🚗 City Transportation & Delivery",
+              "yesterdayJob": "Sitting in traffic jams for 2 hours in exhaust smoke delivering cold food! 🚗🛑",
+              "tomorrowJob2040": "Autonomous Sky Cargo Dispatcher routes electric drones delivering medicine in 12 min! 🚁📦⚡",
+              "superpower": "Zero road congestion, zero carbon emissions, life-saving delivery speed!"
+            }
+          ],
+          "keyPoints": [
+            "🏆 The Golden Career Formula: Human Heart & Vision + AI Speed & Power = Superhero Success!",
+            "💖 Robots will never replace human empathy, imagination, love, storytelling, and humor.",
+            "🚁 Tomorrow's careers eliminate dangerous drudgery and unleash human creative potential.",
+            "🌟 Core skills for 2040: Curiosity, Creativity, Empathy, and Clear Communication.",
+            "🎟️ You have the power to invent brand-new careers that don't even have names yet today!",
+            "🚀 The future is bright, exciting, and ready for you to take the captain's chair!"
+          ],
+          "mission4Complete": {
+            "celebrationText": "🏆 CONGRATULATIONS! You have earned your 2040 Career Explorer License! 🚀🏅",
+            "roboPiCelebration": "BEEP BOOP BOOP BEEP! 🤖🎉 Look at your gleaming 2040 Career License! You know that the future is filled with drone adventures, kind animal hospitals, magical cartoon studios, and Martian strawberry farms! My antenna is flashing with pure pride! Let us play some awesome games and craft your official 2040 Career ID Badge! 🎟️🎮",
+            "badgeEarned": "Official 2040 Future Career Explorer License 🚀🏅",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CELEBRATE to dance with Robo-Pi and start the games! 💃🤖",
+              "great_job": "🌟 LICENSE UNLOCKED! You are an official Tomorrow Leader! 🚀🏆",
+              "encouragement": "Get ready for the games — let us see your dream job in the expo hall! 🎮✨"
+            }
+          }
+        }
+      ],
+      "totalWordCount": 12000
+    },
+    "games": [
+      {
+        "gameId": "game-1",
+        "gameType": "tap_to_find",
+        "title": "🎟️ 2040 Future Career Expo! 🚀🔍",
+        "icon": "🎟️",
+        "instruction": "Explore the futuristic Starlight Dome Career Expo! Tap all 6 glowing career gadgets and dream tools to unlock your 2040 credentials! 🧰",
+        "difficulty": "easy",
+        "duration": "8 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Welcome to the Starlight Career Expo! 🤖🎟️ The expo hall is filled with high-tech booths! Can you spot all SIX futuristic career tools: the Drone Pilot VR goggles, the Robot Vet bio-scanner wand, the AI Animator stylus, the Cosmic Farm aeroponic mist pod, the 3D Bionic animal prosthetic printer, and the Robot Teacher smile certificate? Tap each one to earn golden career credits! Let's explore! 🚀✨",
+        "sceneDescription": "A dazzling cartoon futuristic convention center with glass domes, floating holographic banners, interactive drone flight simulators, velvet animal checkup stations, and glowing purple plant towers. Robo-Pi stands in the center wearing a golden necktie.",
+        "targets": [
+          {
+            "id": "target-1",
+            "x": 180,
+            "y": 190,
+            "width": 90,
+            "height": 70,
+            "object": "Drone Pilot VR Flight Goggles 🚁",
+            "emoji": "🚁",
+            "isAI": true,
+            "aiType": "Aviation Tech Tool",
+            "explanation": "CAREER GADGET: Virtual-reality goggles connecting pilots to 8K thermal inspection drones flying over ocean windmills!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-2",
+            "x": 380,
+            "y": 160,
+            "width": 85,
+            "height": 80,
+            "object": "Robot Vet AI Bio-Scanner Wand 🩺",
+            "emoji": "🩺",
+            "isAI": true,
+            "aiType": "Veterinary Medicine Tool",
+            "explanation": "CAREER GADGET: Gentle ultrasonic light wand mapping pet tummies in 3D color without needles or pain!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-3",
+            "x": 600,
+            "y": 210,
+            "width": 80,
+            "height": 85,
+            "object": "AI Animator Digital Stylus 🎬",
+            "emoji": "🎬",
+            "isAI": true,
+            "aiType": "Creative Animation Tool",
+            "explanation": "CAREER GADGET: Neural drawing stylus translating voice ideas and sketches into Hollywood 3D dragon movies!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-4",
+            "x": 750,
+            "y": 150,
+            "width": 85,
+            "height": 75,
+            "object": "Space Farm Aeroponic Mist Pod 🌾",
+            "emoji": "🌾",
+            "isAI": true,
+            "aiType": "Space Agriculture Tool",
+            "explanation": "CAREER GADGET: Closed-loop mist chamber growing sweet floating strawberries inside lunar greenhouse domes!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-5",
+            "x": 280,
+            "y": 330,
+            "width": 85,
+            "height": 75,
+            "object": "3D Bionic Animal Limb Printer 🦿",
+            "emoji": "🦿",
+            "isAI": true,
+            "aiType": "Bio-Engineering Tool",
+            "explanation": "CAREER GADGET: Carbon-fiber prosthetic printer creating custom running legs for injured puppies and kittens!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-6",
+            "x": 520,
+            "y": 340,
+            "width": 85,
+            "height": 70,
+            "object": "Robot Ethics & Smile Certificate 📜",
+            "emoji": "📜",
+            "isAI": true,
+            "aiType": "Human-Robot Interaction Tool",
+            "explanation": "CAREER GADGET: Official certification for humans teaching helper robots how to speak politely and comfort people!",
+            "goldSparks": true
+          }
+        ],
+        "totalAITargets": 6,
+        "scoring": {
+          "correctTap": 20,
+          "incorrectTap": -5,
+          "bonusForAllCorrect": 30,
+          "maxScore": 150
+        },
+        "auraGuidance": {
+          "start": "LOOK across the 2040 Career Expo hall! Tap all 6 glowing career tools and gadgets! 🔍🎟️",
+          "correct": "CAREER TOOL UNLOCKED! Added directly to your futuristic explorer kit! ⭐",
+          "incorrect": "That's a plain soda can from the snack stand! Look for high-tech career tools glowing with golden sparkles! ✨",
+          "hint": "Check the flight booth on the left for the Drone Pilot VR goggles! 🚁",
+          "complete": "ALL 6 CAREER TOOLS DISCOVERED! Your futuristic toolkit is fully equipped! 🚀🎉"
+        }
+      },
+      {
+        "gameId": "game-2",
+        "gameType": "drag_drop_sort",
+        "title": "🗂️ Old Yesterday Jobs vs 2040 Future Careers! The Job Sorter! 🕰️🚀",
+        "icon": "🗂️",
+        "instruction": "Read each job description card below! Is it a DANGEROUS/BORING YESTERDAY JOB 🕰️, or an EXCITING 2040 AI CAREER 🚀? Drag each card to its correct basket!",
+        "difficulty": "medium",
+        "duration": "10 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Welcome to the Great Job Sorter! 🤖🗂️ Nine career cards are tumbling down from the time machine! Some describe old dangerous 20th-century jobs, and some describe thrilling 2040 AI careers! Can you sort all nine into the right baskets? Let's sort! 🏆",
+        "categories": [
+          {
+            "id": "cat-yesterday",
+            "label": "DANGEROUS YESTERDAY JOB 🕰️ (Old & Risky!)",
+            "description": "Dangling on ropes in storms, hand-drawing 7,000 frames by hand, scary needles, and traffic jams!",
+            "color": "#FF9800",
+            "emoji": "🕰️"
+          },
+          {
+            "id": "cat-2040",
+            "label": "2040 AI SUPERHERO CAREER 🚀 (Smart & Creative!)",
+            "description": "Flying thermal inspection drones, gentle ultrasound pet scanners, space farming, and AI animation!",
+            "color": "#4CAF50",
+            "emoji": "🚀"
+          }
+        ],
+        "items": [
+          {
+            "id": "item-1",
+            "label": "Climbing a 100-meter icy windmill blade on ropes in freezing rain with heavy metal wrenches 🧗‍♂️🥶",
+            "emoji": "🧗‍♂️",
+            "correctCategory": "cat-yesterday",
+            "feedback": "🌟 CORRECT! Dangerous yesterday job! Terrifying and risky for human workers! 🕰️",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-2",
+            "label": "Autonomous Drone Pilot inspecting windmill blades using thermal cameras from a warm office 🚁☕",
+            "emoji": "🚁",
+            "correctCategory": "cat-2040",
+            "feedback": "🌟 CORRECT! 2040 AI career! 100% human safety, high-precision thermal imaging! 🚀",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-3",
+            "label": "Hand-drawing 24 individual paper pictures for every second of a cartoon for five years ✏️😫",
+            "emoji": "✏️",
+            "correctCategory": "cat-yesterday",
+            "feedback": "🌟 CORRECT! Exhausting yesterday job! Repetitive hand-cramping labor! 🕰️",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-4",
+            "label": "AI Cartoon Creator directing smart physics engines to animate a 3D dragon movie in days 🎬🐉",
+            "emoji": "🎬",
+            "correctCategory": "cat-2040",
+            "feedback": "🌟 CORRECT! 2040 AI career! Unleashing pure creative storytelling from home! 🚀",
+            "difficulty": "medium"
+          },
+          {
+            "id": "item-5",
+            "label": "Examining a trembling, crying puppy with sharp cold needles and scary metal scissors 💉🐕",
+            "emoji": "💉",
+            "correctCategory": "cat-yesterday",
+            "feedback": "🌟 CORRECT! Yesterday veterinary care! Scary and painful for innocent animals! 🕰️",
+            "difficulty": "medium"
+          },
+          {
+            "id": "item-6",
+            "label": "Robot Vet waving a warm golden bio-scanner wand to diagnose pet tummies without pain 🩺🐾",
+            "emoji": "🩺",
+            "correctCategory": "cat-2040",
+            "feedback": "🌟 CORRECT! 2040 AI career! Zero pain, zero needles, happy wagging tails! 🚀",
+            "difficulty": "medium"
+          },
+          {
+            "id": "item-7",
+            "label": "Backbreaking tractor labor in 45-degree heat breathing chemical pesticide dust 🚜☀️",
+            "emoji": "🚜",
+            "correctCategory": "cat-yesterday",
+            "feedback": "🌟 CORRECT! Yesterday farming! Heavy chemical exposure and weather vulnerability! 🕰️",
+            "difficulty": "hard"
+          },
+          {
+            "id": "item-8",
+            "label": "Cosmic Space Farmer growing floating strawberries and lettuce in lunar bubble domes 🍓🌕",
+            "emoji": "🍓",
+            "correctCategory": "cat-2040",
+            "feedback": "🌟 CORRECT! 2040 AI career! Clean aeroponics feeding astronauts and saving Earth! 🚀",
+            "difficulty": "hard"
+          },
+          {
+            "id": "item-9",
+            "label": "Sitting in traffic jams for two hours in a gasoline delivery van breathing exhaust fumes 🚚🛑",
+            "emoji": "🚚",
+            "correctCategory": "cat-yesterday",
+            "feedback": "🌟 CORRECT! Yesterday delivery! Wasted time, traffic jams, and carbon smoke! 🕰️",
+            "difficulty": "hard"
+          }
+        ],
+        "scoring": {
+          "correctSort": 15,
+          "incorrectSort": -5,
+          "streakBonus": 10,
+          "maxScore": 165
+        },
+        "auraGuidance": {
+          "start": "READ each job description carefully! Is it a dangerous yesterday chore, or an inspiring 2040 career? 🗂️",
+          "correct": "BULLSEYE! That career landed in the perfect golden basket! 🌟",
+          "incorrect": "Oopsie! Think about whether the worker is in physical danger or using smart AI superpowers! Try again! 🤔",
+          "streak": "UNSTOPPABLE CAREER STREAK! You understand the future workplace like a visionary! 🔥",
+          "complete": "ALL NINE SORTED FLAWLESSLY! You earned the Master Career Sorter Ribbon! 🎀🏆"
+        }
+      },
+      {
+        "gameId": "game-3",
+        "gameType": "match_pairs",
+        "title": "🔗 Match the Passion to the 2040 Dream Job! 💡👩‍🚀",
+        "icon": "🔗",
+        "instruction": "Connect each child's passion on the left with their perfect 2040 dream job on the right! Connect all 6 pairs to unlock the Future Career Trophy! 🏆",
+        "difficulty": "medium",
+        "duration": "10 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Ready for the grand dream-matching challenge? 🤖🔗 On the left are the things YOU love doing today! On the right are the matching dream careers of 2040! Connect each passion to its future profession! Let's make the connections glow! ✨",
+        "pairs": [
+          {
+            "left": {
+              "id": "passion-1",
+              "content": "I love flying model planes and playing video games with thumbsticks! 🎮✈️",
+              "emoji": "🎮",
+              "description": "Great hand-eye coordination and spatial awareness"
+            },
+            "right": {
+              "id": "job-1",
+              "content": "Commercial Drone Pilot & Windmill Inspector! 🚁🌬️",
+              "emoji": "🚁",
+              "description": "Flies thermal inspection drones over ocean turbines"
+            }
+          },
+          {
+            "left": {
+              "id": "passion-2",
+              "content": "I love hugging puppies, kittens, and comforting sick pets! 🐕💖",
+              "emoji": "🐕",
+              "description": "Gentle heart and deep love for animals"
+            },
+            "right": {
+              "id": "job-2",
+              "content": "Robot Veterinarian & Pet Bionics Healer! 🩺🐾",
+              "emoji": "🩺",
+              "description": "Uses AI light wands and 3D bionic legs to heal animals"
+            }
+          },
+          {
+            "left": {
+              "id": "passion-3",
+              "content": "I love drawing funny cartoons and telling goofy bedtime stories! 🎨🐲",
+              "emoji": "🎨",
+              "description": "Wild imagination and storytelling comedy"
+            },
+            "right": {
+              "id": "job-3",
+              "content": "AI Cartoon Creator & Video Game Animator! 🎬👾",
+              "emoji": "🎬",
+              "description": "Directs neural physics to bring imaginary heroes to life"
+            }
+          },
+          {
+            "left": {
+              "id": "passion-4",
+              "content": "I love planting garden seeds and dreaming about outer space! 🚀🌱",
+              "emoji": "🚀",
+              "description": "Fascinated by botany and the solar system"
+            },
+            "right": {
+              "id": "job-4",
+              "content": "Cosmic Space Farmer & Lunar Botanist! 🌾🍓",
+              "emoji": "🌾",
+              "description": "Grows floating aeroponic crops on Moon and Mars bases"
+            }
+          },
+          {
+            "left": {
+              "id": "passion-5",
+              "content": "I love keeping friends safe and helping hikers in the mountains! 🧗‍♀️🛡️",
+              "emoji": "🧗‍♀️",
+              "description": "Brave heart and passion for outdoor rescue"
+            },
+            "right": {
+              "id": "job-5",
+              "content": "Search & Rescue Thermal Drone Commander! 🏔️🪂",
+              "emoji": "🏔️",
+              "description": "Finds lost hikers in blizzards and drops survival gear"
+            }
+          },
+          {
+            "left": {
+              "id": "passion-6",
+              "content": "I love teaching friends to be polite and building Lego robots! 🤖🤝",
+              "emoji": "🤖",
+              "description": "Patient teacher and robotics builder"
+            },
+            "right": {
+              "id": "job-6",
+              "content": "Human-Robot Ethics Coach & Manners Trainer! 📜✨",
+              "emoji": "📜",
+              "description": "Teaches domestic robots how to speak with kindness"
+            }
+          }
+        ],
+        "scoring": {
+          "correctMatch": 20,
+          "incorrectMatch": -5,
+          "maxScore": 120
+        },
+        "auraGuidance": {
+          "start": "TAP a childhood passion on the left, then TAP the matching 2040 dream job on the right! 🔗✨",
+          "correct": "PERFECT CAREER MATCH! Your passion found its future superpower! ⚡⭐",
+          "incorrect": "That job needs a different passion! Match flying planes to Drone Pilot, and loving puppies to Robot Vet! 🤔",
+          "hint": "Loving puppies matches the Robot Veterinarian! 🐕",
+          "complete": "ALL SIX PAIRS CONNECTED! You earned the Future Career Trophy! 🏆🎉"
+        }
+      }
+    ],
+    "activities": [
+      {
+        "activityId": "activity-1",
+        "title": "2040 Future Career ID Badge Maker 🎟️",
+        "type": "hands-on",
+        "duration": "20 minutes",
+        "icon": "🎟️",
+        "roboPiActivityBrief": "BEEP BOOP! Time for our headline hands-on activity: The 2040 Future Career ID Badge Maker! 🤖🎫 You get to design, draw, and wear your official credentials for the year 2040!",
+        "description": "In this inspiring creative project, students create an authentic laminated 2040 Future Career ID Badge that can be pinned to their shirts! Each student designs their official card featuring: 1. Their Name and Age in 2040 (e.g. 'Captain Kabir, Age 24'), 2. Futuristic Job Title (e.g. 'Chief Lunar Hydroponics Botanist' or 'Lead Wildlife Drone Pilot'), 3. Official Hologram Self-Portrait (drawn wearing flight goggles, space helmets, or vet coats), 4. Three High-Tech Gadgets on their utility belt, 5. Their Official Tomorrow Superpower Pledge ('I promise to use AI tools with kindness to help humans and animals!'), and 6. A shiny gold holographic star seal. Students present their badges in front of the class or family, explaining why their future career makes the world a better place!",
+        "materials": [
+          "📄 1 thick sheet of white paper or cardstock (cut into a 10cm x 15cm ID card badge)",
+          "🖍️ Colorful markers, glitter pens, and colored pencils",
+          "🧷 A safety pin, clip, or hole punch with yarn necklace to wear the badge",
+          "⭐ Gold foil star stickers or shiny aluminum foil for the 'hologram seal'",
+          "📸 Optional: A real printed passport photo of the student to paste onto the card",
+          "🏆 A cut-out Gold Future Leader Ribbon"
+        ],
+        "steps": [
+          "Step 1: Take your cut cardstock rectangle. At the very top, write in big bold letters: 'EARTH & SPACE FEDERATION — OFFICIAL 2040 CREDENTIALS'.",
+          "Step 2: Calculate your age in 2040! (Add 14 to your current age: if you are 9 now, you will be 23 years old in 2040!). Write your name: 'Dr. / Captain / Director [Your Name], Age 23'.",
+          "Step 3: CHOOSE YOUR DREAM TITLE: Pick from today's lesson or invent your own! (Drone Pilot 🚁, Robot Vet 🩺, AI Animator 🎬, Space Farmer 🌾, or Solar Engineer ☀️).",
+          "Step 4: DRAW YOUR HOLOGRAM PORTRAIT: In the square photo box on the left, draw yourself in the year 2040 wearing your cool uniform (pilot flight suit, doctor's lab coat with smart necktie 👔, or astronaut helmet 👩‍🚀)!",
+          "Step 5: LIST YOUR 3 GADGET TOOLS: Write down three high-tech tools in your pocket: 1. [e.g. 8K Thermal Drone], 2. [AI Bio-Scanner Wand], 3. [Tether Winch].",
+          "Step 6: WRITE YOUR SUPERPOWER PLEDGE: At the bottom, write: 'My Mission: I will use AI to [heal animals / protect the environment / explore space] with kindness!'",
+          "Step 7: ADD THE HOLOGRAM SEAL: Paste a shiny gold foil star in the corner as your official anti-counterfeit security hologram!",
+          "Step 8: PUNCH AND WEAR: Punch a hole at the top, string your yarn necklace, and wear your official 2040 badge with pride! Present your career to family or classmates!"
+        ],
+        "thingsToLookFor": [
+          "🎟️ Did the student calculate their correct age in 2040?",
+          "✨ Did the chosen job title combine human creativity/empathy with technology?",
+          "🎨 Did the drawn portrait show enthusiastic pride in the uniform and tools?",
+          "🧰 Were the three gadget tools logical extensions of the chosen career?",
+          "💖 Did the Superpower Pledge emphasize kindness, environmental protection, or exploration?",
+          "🗣️ Did the student present their badge aloud with confidence and excitement?",
+          "👏 Did listeners applaud and ask curious questions about how the job works?",
+          "🏆 Did the student wear the badge proudly for the rest of the day?"
+        ],
+        "discussionWithGrownUp": [
+          "What jobs did your grandparents have that don't exist anymore (e.g. elevator operators, switchboard phone operators)?",
+          "How did computers change your parents' jobs from when they were in school?",
+          "Why is human empathy and kindness the one thing a computer will NEVER be able to learn?",
+          "If you could invent one brand-new robot tool right now to solve a world problem, what would it do?"
+        ],
+        "familyConnection": "Have mama and papa design their own '2040 Evolved Career Badges'! See how their current jobs (accountant, teacher, engineer, chef) will evolve with AI helpers in 2040! 👨‍👩‍👧🎟️",
+        "learningOutcome": "Children develop aspirational agency, synthesizing technology literacy with future self-identity, demystifying automation while recognizing the enduring value of human-centered skills.",
+        "auraGuidance": {
+          "before": "CUT your cardstock to passport badge size and gather shiny glitter markers! 📐🎨",
+          "during": "THINK BIG! Don't limit yourself to today's jobs — invent tomorrow's wonders! 🚀",
+          "after": "BADGE VERIFIED! You are an officially credentialed Tomorrow Leader of 2040! 🌟🏆"
+        }
+      },
+      {
+        "activityId": "activity-2",
+        "title": "🐕 The Robot Vet Puppy Clinic Roleplay! 🩺🤖",
+        "type": "active_roleplay",
+        "duration": "15 minutes",
+        "icon": "🐕",
+        "roboPiActivityBrief": "BEEP BOOP! Ready to open your very own 2040 Animal Hospital? 🤖🐾 Grab a stuffed animal puppy and a marker 'scanner wand' and let us heal our furry friends without tears!",
+        "description": "In this heartwarming roleplay activity, students transform a table into a 2040 Smart Animal Wellness Clinic! One student plays 'The Robot Veterinarian' wearing a white apron or coat and holding a marker or flashlight as the 'AI Bio-Scanner Wand'. The second student plays 'The Pet Parent' bringing in a stuffed animal (dog, cat, bear) who is feeling under the weather. The Vet greets the pet gently, runs the light wand smoothly over the pet's tummy, makes scanning sound effects (*bzzzz-shimmer*), checks an imaginary holographic tablet, identifies the problem (e.g. 'Swallowed a squeaky rubber sock!'), uses a pretend robotic magnetic gripper to painlessly remove it, and prescribes peanut butter treats! Then switch roles!",
+        "materials": [
+          "🧸 2 stuffed animal pets (plush dog, teddy bear, or cat)",
+          "🔦 1 small flashlight or colored marker (to represent the glowing AI Bio-Scanner Wand)",
+          "📋 1 clipboard or sheet of paper to record the 'Pet Medical Hologram Report'",
+          "🩹 A few colorful toy band-aids or ribbon wraps",
+          "⏱️ 3-minute checkup timer"
+        ],
+        "steps": [
+          "Step 1: Set up the soft exam bed on the table using a folded towel or blanket. No cold metal tables!",
+          "Step 2: Pet Parent arrives holding the plush puppy: 'Dr. [Name], Bruno is whining and won't chase his tennis ball!'",
+          "Step 3: Robot Vet speaks with soft gentle words: 'Hello Bruno, good boy! Let me give you a warm scanning belly rub!'",
+          "Step 4: Take your marker wand. Glide it gently across the puppy's tummy. Make gentle scanning sounds: *hummmmm-click*.",
+          "Step 5: Check your clipboard tablet: Draw a circle on the puppy diagram: 'Aha! 3D scan shows Bruno swallowed a red plastic bottle cap!'",
+          "Step 6: Use your gentle robotic gripper fingers: *click-extract!* Pretend to remove the bottle cap painlessly!",
+          "Step 7: Reward the puppy with an imaginary bacon treat and a warm hug. Bruno wags his tail!",
+          "Step 8: Switch roles so both partners experience being the loving healer and the grateful pet parent!"
+        ],
+        "bonusChallenge": [
+          "🦿 Bionic Leg Fitting: If the stuffed animal has a limp paw, design and tape a custom cardboard bionic running shoe onto its paw!",
+          "🐱 Purr-Frequency Scanner: Diagnose a plush cat by listening to its purring pitch with a pretend acoustic sensor!"
+        ],
+        "creativityPrompts": [
+          "Write a prescription note for Bruno: 'Rx: 3 belly rubs daily, 2 games of fetch, and zero plastic bottle caps!'",
+          "Invent a funny medical assistant robot voice that sings lullabies to calm nervous animals!"
+        ],
+        "familyConnection": "Offer a 'Free 2040 Health Checkup' to your real family pet or a family member's stuffed animal! Demonstrate your gentle bio-scanner wand! 🐶🩺👨‍👩‍👧",
+        "learningOutcome": "Reinforces empathy, bedside manner, and the concept of non-invasive diagnostic sensors replacing painful archaic procedures in modern medicine.",
+        "auraGuidance": {
+          "before": "PREPARE a soft towel exam bed so your stuffed animal pet feels completely cozy! 🛏️",
+          "during": "USE soft, soothing voices: empathy is the doctor's greatest superpower! 💖🐾",
+          "after": "PUPPY HEALED! The tummy ache is gone and the puppy is wagging its tail with joy! 🐕🌟"
+        }
+      },
+      {
+        "activityId": "activity-3",
+        "title": "🎮 The AI Game Animator Jump Challenge & Dinner Quiz! 🎬🍽️",
+        "type": "interactive_drama",
+        "duration": "15 minutes",
+        "icon": "🎮",
+        "roboPiActivityBrief": "BEEP BOOP! Ready for some physical gaming theater? 🤖🎮 Direct a human video game hero to jump realistically, and host the 2040 Dinner Table Quiz tonight!",
+        "description": "Combine video game physics roleplay with family dinner conversation! In Part 1, Player 1 plays 'The AI Video Game Hero' standing in the living room. Player 2 plays 'The Lead Animator'. The Animator gives voice prompts: 'Prompt 1: Jump over a tall brick wall!' The Hero jumps. The Animator gives prompt tuning: 'Too stiff! Add bending knees on landing and arm swings for balance!' The Hero jumps again with realistic physics. In Part 2, the student takes the role of 2040 Chief Future Officer at dinner and quizzes parents on 5 punchy future job questions!",
+        "quizQuestions": [
+          "Question 1: In 2040, will robots take away all human jobs and leave humans with nothing to do? (Grown-up Answer: No! Robots handle repetitive danger while humans lead with creativity, empathy, and heart!)",
+          "Question 2: What does an Autonomous Drone Pilot do when inspecting ocean wind turbines? (Grown-up Answer: Flies thermal camera drones to detect microscopic cracks safely without climbing ropes!)",
+          "Question 3: How does a Robot Veterinarian examine a puppy without scary needles? (Grown-up Answer: By using gentle ultrasonic light wands and 3D bio-scanners to see inside painlessly!)",
+          "Question 4: How do Cosmic Space Farmers grow fresh strawberries on the Moon without any dirt? (Grown-up Answer: Using aeroponics: spraying nutrient water mist onto roots under purple LED growth lights!)",
+          "Question 5: What four human skills are most important for children to practice for the future? (Grown-up Answer: Curiosity, Creativity, Empathy, and Clear Communication!)"
+        ],
+        "familyConnection": "Grade your family members' answers with Golden Stars ⭐! Award mama and papa an 'Honorary 2040 Future Thinker Award' if they get at least 4 out of 5! Let them share what they wanted to be when they were nine years old! 🍽️👨‍👩‍👧",
+        "learningOutcome": "Consolidates understanding of generative physics modeling, human-AI collaborative workflows, and labor market evolution through intergenerational family dialogue.",
+        "auraGuidance": {
+          "before": "STAND in an open living room space for dramatic video game hero jumping! 🎮🏃",
+          "during": "PRACTICE realistic physics landings: bend those knees like a superhero! 🦸‍♂️",
+          "after": "QUIZ COMPLETED! Your whole dinner table is energized and excited for 2040! 🌟🍽️"
+        }
+      }
+    ],
+    "realWorldExamples": [
+      {
+        "id": "rwe-1",
+        "title": "🚁 Drone pilots inspecting high wind mills in freezing ocean storms 🌊🌬️",
+        "scenario": "Drone pilots inspecting high wind mills over the stormy sea to keep clean energy humming safely! In the choppy, gray waters of the North Sea off the coast of Scotland, 100 massive offshore wind mills generate clean electricity. Each windmill blade is 85 meters long and spins at 250 km/h at the tip. Inspecting the blades for salt corrosion and lightning cracks traditionally required human climbers dangling from ropes over freezing ocean waters.",
+        "aiConnection": "Commercial drone robotics and computer vision thermography! Today, specialized drone inspection companies (like Cyberhawk and Perceptual Robotics) employ commercial drone pilots. The pilot operates an autonomous hexacopter equipped with high-resolution telephoto and thermal infrared cameras. The drone executes an automated vertical flight path, capturing 500 overlapping micro-images per blade in 15 minutes. The onboard neural network analyzes composite structural density, highlighting subsurface micro-cracks before they expand into catastrophic blade failures. Human climbers stay safely on dry land, and inspection costs drop by 70%!",
+        "observation": "Notice that the pilot didn't need to manually steer every millimeter; the drone's obstacle avoidance kept an exact 5-meter buffer from the moving blade while the human pilot evaluated the structural data!",
+        "discussion": "How does replacing dangerous rope climbing with drone piloting make renewable clean wind energy cheaper and safer for the whole world?",
+        "roboPiTip": "BEEP BOOP! Drone inspection pilots often have backgrounds in video gaming and model aviation! Your gaming thumb skills today can protect clean energy tomorrow! 🎮🌬️"
+      },
+      {
+        "id": "rwe-2",
+        "title": "🎮 Video game designers training computer characters to jump realistically 🏃‍♀️👾",
+        "scenario": "In high-tech animation studios, video game designers training computer characters to jump realistically use smart AI motion networks! At a major video game studio in Montreal, animators are designing a brand-new open-world parkour game. In older games, characters jumping over fences looked stiff, robotic, and jerky because human animators had to manually keyframe every joint rotation.",
+        "aiConnection": "Neural motion matching and generative physics animation! Modern game creators use AI motion synthesis. Human athletes wear optical motion capture suits with reflective tracking dots, performing jumps, rolls, and vaulting maneuvers. The machine learning model learns the biomechanical physics of momentum, weight transfer, and muscle anticipation. When a player presses the jump button, the AI animates the game character adapting dynamically to uneven rocks, slippery mud, and wooden fences in real time! The character moves with lifelike athletic grace, reacting naturally to every bump on the ground!",
+        "observation": "The animator didn't draw every single jump; the animator trained and directed the AI model, acting as a creative choreographer rather than an assembly-line frame drawer!",
+        "discussion": "Why does realistic character movement make players feel more immersed in a video game world? How does AI free up game designers to focus on writing great stories and fun levels?",
+        "roboPiTip": "BEEP BOOP! That is called 'Procedural Animation'! The computer calculates the physics of running and jumping on the fly! You could be the creator of the next viral game! 👾✨"
+      },
+      {
+        "id": "rwe-3",
+        "title": "🌾 NASA Space Botanists Harvesting Fresh 'Outredgeous' Lettuce on the ISS 🚀🥗",
+        "scenario": "Aboard the International Space Station traveling at 28,000 km/h in low Earth orbit, NASA astronauts have lived for months eating freeze-dried vacuum-sealed rations. A specialized botanical chamber named 'Veggie' sits in the Columbus laboratory module.",
+        "aiConnection": "Microgravity aeroponics and photobiology optimization! NASA space botanists at Kennedy Space Center designed a zero-soil plant growth chamber using wicking pillows and root-misting capillaries. Because gravity doesn't pull water down in space, capillary action draws water to the roots, while high-efficiency red and blue LEDs stimulate chlorophyll growth. In 2015, astronaut Scott Kelly and his crew officially harvested and ate the first fresh 'Outredgeous' red romaine lettuce grown in space, seasoning it with extra-virgin olive oil and balsamic vinegar! The fresh crunch provided vital vitamin C, potassium, and an immense psychological boost to crew morale!",
+        "observation": "Scott Kelly described eating fresh lettuce in orbit as tasting like 'a connection to Earth'! The fresh living green food brought emotional happiness to astronauts isolated in space!",
+        "discussion": "Why is growing fresh food essential for multi-year crewed missions to Mars where supply rockets from Earth cannot reach them?",
+        "roboPiTip": "BEEP BOOP! Space lettuce is just the start! Astronauts have now grown space radishes, space chili peppers, and even space zinnia flowers in orbit! Next stop: Martian strawberries! 🌶️🌸🍓"
+      }
+    ],
+    "practiceExercises": [
+      {
+        "exerciseId": "practice-1",
+        "type": "interactive_sorting",
+        "title": "🕰️ Yesterday Tool vs 2040 AI Career Tool! (Toolkit Sorter) 🧰✨",
+        "instruction": "Read each workplace tool below. Is it an ARCHAIC YESTERDAY TOOL 🕰️, or a FUTURISTIC 2040 AI CAREER TOOL 🚀? Sort each card into its correct toolbox!",
+        "roboPiIntro": "BEEP BOOP! Welcome to the Tool Shed of Tomorrow! 🤖🧰 Six work gadgets have arrived! Match each one to Archaic Yesterday Tool or Futuristic 2040 AI Tool! Let's sort! 🗂️",
+        "items": [
+          {
+            "activity": "🧗‍♂️ Dangerous climbing ropes and harnesses for hanging off high windmill blades in freezing rain.",
+            "hasAI": false,
+            "stepType": "YESTERDAY_TOOL",
+            "explanation": "Climbing ropes exposed workers to extreme heights, freezing weather, and severe fall hazards.",
+            "roboPiComment": "BEEP BOOP! Cold hands and dangerous heights! Yesterday tool! 🧗‍♂️🥶"
+          },
+          {
+            "activity": "🚁 8K Thermal Inspection Drone with autonomous collision avoidance and GPS crack tagging.",
+            "hasAI": true,
+            "stepType": "FUTURE_AI_TOOL",
+            "explanation": "Autonomous drones conduct structural thermography safely from ground control stations.",
+            "roboPiComment": "BEEP BOOP! High-flying inspection superhero! 2040 tool! 🚁✨"
+          },
+          {
+            "activity": "💉 Sharp silver hypodermic needles that make terrified puppies whine and tremble during exams.",
+            "hasAI": false,
+            "stepType": "YESTERDAY_TOOL",
+            "explanation": "Invasive hypodermic needles cause pain and fear in animals and young children.",
+            "roboPiComment": "BEEP BOOP! Scary needles! Banished from future clinics! 💉🚫"
+          },
+          {
+            "activity": "🩺 Warm Golden AI Bio-Scanner Wand that creates 3D color holograms of pet organs painlessly.",
+            "hasAI": true,
+            "stepType": "FUTURE_AI_TOOL",
+            "explanation": "Non-invasive multispectral ultrasound wands provide painless, instant diagnostics.",
+            "roboPiComment": "BEEP BOOP! Gentle belly rub with a magic scanner! 2040 tool! 🐶💖"
+          },
+          {
+            "activity": "✏️ Stacks of 7,000 blank paper sheets requiring hand-drawing every single cartoon frame.",
+            "hasAI": false,
+            "stepType": "YESTERDAY_TOOL",
+            "explanation": "Manual frame-by-frame drawing required years of repetitive, physically exhausting labor.",
+            "roboPiComment": "BEEP BOOP! Hand cramps and endless paper stacks! 🕰️😫"
+          },
+          {
+            "activity": "🌾 Aeroponic nutrient mist chamber and tuned LED growth lamps inside a lunar greenhouse bubble.",
+            "hasAI": true,
+            "stepType": "FUTURE_AI_TOOL",
+            "explanation": "Closed-loop space agriculture provides fresh food and oxygen using 95% less water.",
+            "roboPiComment": "BEEP BOOP! Floating space strawberries on the Moon! 2040 tool! 🍓🌕"
+          }
+        ],
+        "feedback": {
+          "correct": "🌟 SPOT ON! You can spot a 2040 futuristic career tool from a mile away! 🚀🏆",
+          "incorrect": "🤔 Look at whether the tool involves dangerous manual labor or smart AI-assisted superpowers!"
+        }
+      },
+      {
+        "exerciseId": "practice-2",
+        "type": "fill_in_blanks",
+        "title": "📝 Complete Robo-Pi's 2040 Career Launchpad Blueprint! 🚀🎟️",
+        "instruction": "Fill in the missing words in the career blueprint using the Word Bank below to help Robo-Pi complete the 2040 Launchpad!",
+        "wordBank": [
+          "Drone Pilot 🚁",
+          "Empathy 💖",
+          "Robot Vet 🩺",
+          "Aeroponics 🌾",
+          "AI Animator 🎬",
+          "Superpower 🌟"
+        ],
+        "sentences": [
+          {
+            "id": "sent-1",
+            "sentence": "A professional who flies autonomous camera aircraft to inspect ocean windmills safely is a _____.",
+            "blank": "Drone Pilot 🚁",
+            "options": [
+              "Drone Pilot 🚁",
+              "Deep Sea Diver 🤿",
+              "Stone Carver 🗿",
+              "Shoe Cobbler 👞"
+            ],
+            "correctAnswer": "Drone Pilot 🚁",
+            "explanation": "Commercial Drone Pilots operate uncrewed aerial systems for infrastructure inspection, photography, and rescue."
+          },
+          {
+            "id": "sent-2",
+            "sentence": "A kind animal doctor who uses gentle bio-scanner wands to diagnose puppies without needles is a _____.",
+            "blank": "Robot Vet 🩺",
+            "options": [
+              "Robot Vet 🩺",
+              "Car Mechanic 🔧",
+              "Watchmaker ⌚",
+              "Blacksmith 🔨"
+            ],
+            "correctAnswer": "Robot Vet 🩺",
+            "explanation": "Robot Veterinarians leverage non-invasive AI imaging and gentle robotics to treat animals compassionately."
+          },
+          {
+            "id": "sent-3",
+            "sentence": "A creative creator who directs generative physics software to bring funny dragon characters to life is an _____.",
+            "blank": "AI Animator 🎬",
+            "options": [
+              "AI Animator 🎬",
+              "Bricklayer 🧱",
+              "Tractor Driver 🚜",
+              "Coal Miner ⛏️"
+            ],
+            "correctAnswer": "AI Animator 🎬",
+            "explanation": "AI Animators use machine learning models and physics simulation to produce 3D entertainment rapidly."
+          },
+          {
+            "id": "sent-4",
+            "sentence": "Space farmers grow floating strawberries on the Moon using nutrient mist without any dirt, called _____.",
+            "blank": "Aeroponics 🌾",
+            "options": [
+              "Aeroponics 🌾",
+              "Mud Wrestling 🤼",
+              "Fire Walking 🔥",
+              "Paper Origami 📄"
+            ],
+            "correctAnswer": "Aeroponics 🌾",
+            "explanation": "Aeroponics is the method of cultivating plants in air or mist environments without soil or aggregate media."
+          },
+          {
+            "id": "sent-5",
+            "sentence": "The human qualities that robots can NEVER duplicate are love, imagination, kindness, and _____.",
+            "blank": "Empathy 💖",
+            "options": [
+              "Empathy 💖",
+              "Cold Metal ⚙️",
+              "Silicon Chips 💻",
+              "Battery Acid 🔋"
+            ],
+            "correctAnswer": "Empathy 💖",
+            "explanation": "Empathy is the human capacity to understand and share the feelings of others, an exclusively biological trait."
+          },
+          {
+            "id": "sent-6",
+            "sentence": "When human heart and creativity team up with robot speed and power, you get a real-life future _____!",
+            "blank": "Superpower 🌟",
+            "options": [
+              "Superpower 🌟",
+              "Broken Clock ⏰",
+              "Flat Tire 🛞",
+              "Mud Puddle 🌧️"
+            ],
+            "correctAnswer": "Superpower 🌟",
+            "explanation": "Human-AI collaboration amplifies human potential, creating unprecedented problem-solving superpowers."
+          }
+        ]
+      }
+    ],
+    "lessonSummary": {
+      "roboPiFinalMessage": "BEEP BOOP BOOP BEEP! 🤖✨ Oh my goodness, Tomorrow Leader! You did it! You have officially conquered Chapter 4 • Lesson 1 and unlocked the golden secrets of the 2040 Future Job Hunt! You know that robots are not here to replace humans — they are here to give human creativity and kindness superpowers! You can picture yourself flying inspection drones over ocean waves, healing sick puppies with gentle golden wands, animating jumping dragons from your bedroom, or plucking sweet red strawberries floating in zero gravity on Mars! The world of tomorrow is waiting for your curiosity, your empathy, and your brilliant ideas! My antenna is beeping with joy, my golden necktie is fluttering, and I am giving you the biggest robot bear-hug in the universe! *CLINK-SHINE CHEERS!* 🦾💖",
+      "keyTakeaways": [
+        "🚀 In 2040, humans will work as team captains, combining human heart and creativity with robot power.",
+        "💖 Robots excel at boring, repetitive, dangerous tasks, but have zero empathy, love, humor, or imagination.",
+        "🚁 Autonomous Drone Pilots inspect wind turbines, fly mountain rescue missions, and film Hollywood movies.",
+        "🩺 Robot Veterinarians use gentle bio-scanner wands and 3D bionics to heal pets painlessly without needles.",
+        "🎬 AI Animators direct smart physics models, turning simple voice prompts into full 3D animated movies in days.",
+        "🌾 Cosmic Space Farmers grow floating strawberries and lettuce with aeroponics inside Moon and Mars bubbles.",
+        "🌍 Space agricultural tech saves planet Earth by growing food indoors in deserts with 95% less water.",
+        "🌟 The top human skills for 2040: Curiosity, Creativity, Empathy, and Clear Communication!"
+      ],
+      "recap": "In this lesson, we explored the future workforce of 2040 and demystified the impact of artificial intelligence on careers. We learned why human-centered skills (empathy, storytelling, design, ethical judgment) are irreplaceable by automation. We explored four exciting emerging professions: Autonomous Drone Pilots, Robot Veterinarians, AI Cartoon Animators, and Cosmic Space Farmers. Finally, we proved that collaborative AI tools transform everyday children into tomorrow's leaders and problem solvers.",
+      "studentReflection": {
+        "question": "If you could pick ONE tool from today's lesson (the Drone Goggles, the Pet Bio-Scanner Wand, the Animation Stylus, or the Space Strawberry Mist Pod), which one would you choose and what would you build or heal with it?",
+        "roboPiReflection": "BEEP BOOP! I would choose the Pet Bio-Scanner Wand and heal every stray kitten and puppy in the whole city, giving them bionic running shoes and endless bowls of milk! What is YOUR dream? 🐾🍼"
+      },
+      "nextLesson": {
+        "title": "Chapter 4 • Lesson 2: People Behind Technology (The Inventors & Dreamers) 👩‍💻👨‍🔬",
+        "preview": "Now that we know what future jobs look like, who are the real human scientists, coders, and artists who invent these machines today?",
+        "teaser": "Get ready to meet the brilliant inventors of robotics, video games, space rovers, and computer vision! 🌟🔬"
+      },
+      "parentNote": "Today, your child explored future career possibilities shaped by artificial intelligence and robotics. Rather than fostering anxiety about automation displacing human labor, this lesson emphasized human-AI collaboration: machines handling dangerous, repetitive computational tasks while humans lead with creativity, empathy, and ethical vision. By examining emerging fields such as autonomous drone piloting, non-invasive veterinary robotics, generative animation, and space agriculture, your child developed an aspirational, empowering perspective on technology. Encourage your child to share their '2040 Future Career ID Badge' with family members to spark conversations about future goals and lifelong learning!",
+      "auraClosing": {
+        "congratulations": "MAGNIFICENT TRIUMPH! You completed Chapter 4 • Lesson 1: Future Job Hunt! 🌟",
+        "achievement": "2040 Career Explorer License Unlocked! 🚀🏅",
+        "nextStep": "Ready for Chapter 4 • Lesson 2: People Behind Technology! 👩‍💻✨",
+        "totalPoints": 500
+      }
+    }
+  },
+  "assessment": {
+    "quizType": "multiple_choice_interactive",
+    "roboPiQuizIntro": "BEEP BOOP! Time for the Grand 2040 Career Quiz! 🤖📝 Five fun questions stand between you and the Tomorrow Leader Crown! Read carefully, think like a 2040 visionary, and tap the golden answers! 👑✨",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "tap_correct",
+        "emoji": "💖",
+        "question": "Why will smart robots NEVER replace human workers in the future? 🤖💡",
+        "options": [
+          {
+            "id": "opt1a",
+            "label": "Because robots have zero human empathy, love, humor, storytelling, and imagination! 💖✨",
+            "correct": true,
+            "feedback": "⭐ PERFECT! Robots have silicon chips, but only humans have heart, kindness, and creativity! 🌟"
+          },
+          {
+            "id": "opt1b",
+            "label": "Because robots are afraid of eating vegetables 🥦",
+            "correct": false,
+            "feedback": "🤔 Robots don't eat food! It is the human heart and imagination that machines lack!"
+          },
+          {
+            "id": "opt1c",
+            "label": "Because robots fall asleep every ten minutes 😴",
+            "correct": false,
+            "feedback": "🤔 Robots can run 24/7! But they need human creative directors to tell them what to do!"
+          },
+          {
+            "id": "opt1d",
+            "label": "Because all computers will turn into pumpkins in 2040 🎃",
+            "correct": false,
+            "feedback": "🤔 Haha, no fairy-tale pumpkins! Humans remain team captains because of our empathy and vision!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q2",
+        "type": "tap_correct",
+        "emoji": "🚁",
+        "question": "How does an Autonomous Drone Pilot inspect giant ocean wind turbines safely? 🌬️⚡",
+        "options": [
+          {
+            "id": "opt2a",
+            "label": "By flying thermal camera drones from a warm office, detecting cracks without climbing ropes! 🚁✨",
+            "correct": true,
+            "feedback": "⭐ BINGO! 100% human safety! Drones scan the high blades while human pilots analyze data safely! 🌊🌬️"
+          },
+          {
+            "id": "opt2b",
+            "label": "By throwing rocks at the windmill until it makes a sound 🪨",
+            "correct": false,
+            "feedback": "🤔 Throwing rocks damages things! Drone pilots use 8K cameras and thermal sensors!"
+          },
+          {
+            "id": "opt2c",
+            "label": "By swimming underwater to look at the sky 🏊‍♂️",
+            "correct": false,
+            "feedback": "🤔 Windmills are high in the air! Autonomous drones fly right up to the spinning blades!"
+          },
+          {
+            "id": "opt2d",
+            "label": "By asking a seagull to carry a handwritten letter to the top 🐦",
+            "correct": false,
+            "feedback": "🤔 Seagulls don't inspect windmills! High-tech thermal drones do the inspection!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q3",
+        "type": "tap_correct",
+        "emoji": "🩺",
+        "question": "How does a Robot Veterinarian examine a sick puppy without scary needles? 🐶🐾",
+        "options": [
+          {
+            "id": "opt3a",
+            "label": "By gently stroking the puppy with a warm AI bio-scanner wand that maps organs in 3D color! 🩺✨",
+            "correct": true,
+            "feedback": "⭐ BRILLIANT! Gentle ultrasound light wands diagnose tummy aches painlessly without fear or needles! 🐶💖"
+          },
+          {
+            "id": "opt3b",
+            "label": "By hiding the puppy inside a dark closet for three days 🚪",
+            "correct": false,
+            "feedback": "🤔 Never! That is scary and wrong! Gentle bio-scanners provide loving, warm care!"
+          },
+          {
+            "id": "opt3c",
+            "label": "By painting the puppy bright green with watercolor paint 🎨",
+            "correct": false,
+            "feedback": "🤔 Painting puppies doesn't heal tummy aches! Non-invasive medical sensors do!"
+          },
+          {
+            "id": "opt3d",
+            "label": "By asking the puppy to read a medical encyclopedia 📖",
+            "correct": false,
+            "feedback": "🤔 Puppies cannot read books! The vet uses smart scanner tools and lots of belly rubs!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q4",
+        "type": "tap_correct",
+        "emoji": "🌾",
+        "question": "How do Cosmic Space Farmers grow fresh strawberries on the Moon without soil? 🍓🌕",
+        "options": [
+          {
+            "id": "opt4a",
+            "label": "Using aeroponics: spraying nutrient water mist onto roots under purple LED growth lights! 🍓🌱✨",
+            "correct": true,
+            "feedback": "⭐ SPOT ON! Aeroponics mists dangling roots, using 95% less water inside pressurized bubble domes! 🚀🍰"
+          },
+          {
+            "id": "opt4b",
+            "label": "By planting strawberry seeds inside moon craters and wishing on a star ⭐",
+            "correct": false,
+            "feedback": "🤔 The Moon has no air or water! Plants need pressurized greenhouse bubbles with aeroponic mist!"
+          },
+          {
+            "id": "opt4c",
+            "label": "By importing 50,000 bags of dirt from Earth on every spaceship 📦",
+            "correct": false,
+            "feedback": "🤔 Dirt is too heavy to launch into space! Aeroponic misting uses zero soil!"
+          },
+          {
+            "id": "opt4d",
+            "label": "By painting white rocks red and pretending they are strawberries 🪨",
+            "correct": false,
+            "feedback": "🤔 You cannot eat painted rocks! Real living plants grow under tuned LED light spectra!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q5",
+        "type": "tap_correct",
+        "emoji": "🌟",
+        "question": "What four human superpowers should you practice right now for the careers of 2040? 💡💖",
+        "options": [
+          {
+            "id": "opt5a",
+            "label": "Curiosity, Creativity, Empathy, and Clear Communication! 🌟✨",
+            "correct": true,
+            "feedback": "⭐ PERFECT SCORE! Curiosity asks why, creativity invents, empathy cares, and communication connects! 🏆🎉"
+          },
+          {
+            "id": "opt5b",
+            "label": "Eating ice cream for breakfast, lunch, and dinner 🍨",
+            "correct": false,
+            "feedback": "🤔 Ice cream is tasty, but curiosity and creativity are the true future superpowers!"
+          },
+          {
+            "id": "opt5c",
+            "label": "Sitting like a statue and never speaking to anyone 🗿",
+            "correct": false,
+            "feedback": "🤔 Future leaders communicate clearly and work as great team captains!"
+          },
+          {
+            "id": "opt5d",
+            "label": "Running in circles until you get dizzy 💫",
+            "correct": false,
+            "feedback": "🤔 That just makes you dizzy! Practice asking great questions and being kind to others!"
+          }
+        ],
+        "points": 20
+      }
+    ],
+    "maxScore": 100,
+    "passingScore": 80,
+    "completionMessages": {
+      "perfect": "🌟 PERFECT 100/100! You are a genuine 2040 Tomorrow Leader! Wear your Future Crown with pride! 👑🚀",
+      "excellent": "🎉 FANTASTIC 80+/100! You deeply understand drone piloting, robot pet care, and space farming! 🌟🚁",
+      "good": "👍 GOOD JOB! You understand the basics! Review the three sections and try again for a perfect score! 🤖",
+      "tryAgain": "💪 DON'T GIVE UP! Remember Robo-Pi's golden formula: Human Heart + Robot Power = Future Magic! Let's try again! 🌟"
+    }
+  },
+  "resources": {
+    "teacherGuide": "/content/junior/guides/class4-ch4-l1-teacher.pdf",
+    "worksheets": [
+      "/content/junior/worksheets/class4-ch4-l1-future-career-badge.pdf",
+      "/content/junior/worksheets/class4-ch4-l1-dream-job-explorer.pdf"
+    ],
+    "videos": [
+      {
+        "title": "🎬 Jobs of the Future: What Will You Be in 2040? (Kids Edition)",
+        "url": "TBD",
+        "duration": "4:15",
+        "description": "An awe-inspiring animated tour of drone piloting, robot veterinary care, AI animation, and space agriculture!"
+      },
+      {
+        "title": "🎬 Meet Real Drone Windmill Inspectors: Drones Over Ocean Waves!",
+        "url": "TBD",
+        "duration": "3:50",
+        "description": "Behind-the-scenes footage showing how commercial pilots use thermal camera drones to inspect 150-meter offshore wind turbines!"
+      },
+      {
+        "title": "🎬 Farming in Space: How NASA Grows Fresh Salads on the ISS!",
+        "url": "TBD",
+        "duration": "4:30",
+        "description": "NASA botanists demonstrate zero-gravity aeroponic plant growth chambers and astronauts harvesting fresh space lettuce!"
+      }
+    ],
+    "additionalReading": [
+      {
+        "title": "📖 When I Grow Up in 2040: A Young Explorer's Guide to Tomorrow's Careers",
+        "url": "TBD",
+        "level": "Elementary"
+      }
+    ],
+    "parentResources": [
+      {
+        "title": "👨‍👩‍👧 Nurturing Future-Ready Human Skills in the Age of AI",
+        "url": "TBD",
+        "description": "Parenting guide focused on developing creativity, emotional empathy, and communication alongside technology exposure."
+      }
+    ]
+  },
+  "teacherNotes": {
+    "preparation": "Prepare cardstock badges, safety pins or yarn necklaces, and colorful markers for Activity 1 (2040 Future Career ID Badge Maker). Have a plush animal toy and a marker/flashlight ready for the Robot Vet demonstration. If possible, show a brief video clip of NASA's space lettuce harvest or offshore wind turbine drone inspections on the classroom smartboard.",
+    "lessonFlow": "Hook students with the Opening Story of Maya and Leo visiting the 2040 Starlight Career Expo. Address the fear that 'robots will take all jobs' by highlighting that robots lack empathy, humor, and imagination. Walk through the four futuristic career paths (Drone Pilot, Robot Vet, AI Animator, Space Farmer). Guide students through Activity 1 to craft their personalized 2040 ID badges. Conclude with the interactive quiz.",
+    "tips": [
+      "🎯 Emphasize that video game skills (hand-eye coordination, spatial awareness) translate directly into real-world drone piloting careers!",
+      "💡 Reinforce the Golden Career Formula: Human Heart & Vision + Robot Speed & Power = Superhero Success!",
+      "🐕 Highlight non-invasive veterinary robotics: show students that technology can make healthcare painless and comforting for animals.",
+      "🌾 Connect space farming to Earth conservation: explain that aeroponics saves water and lets wild forests recover on Earth.",
+      "⚠️ Address anxiety about automation: reassure students that human creativity, kindness, and communication become MORE valuable, not less.",
+      "🌟 Have every student wear their 2040 Future Career ID Badge home proudly at the end of the day!"
+    ],
+    "commonMisconceptions": [
+      "❌ Misconception: 'Robots are going to take all jobs, so humans won't need to work.' → Correction: Automation eliminates dangerous and repetitive drudgery, creating new creative and supervisory careers.",
+      "❌ Misconception: 'To work with AI in the future, you must be a computer programmer.' → Correction: Future careers need doctors, artists, pilots, farmers, and writers who use AI as an everyday tool.",
+      "❌ Misconception: 'AI can write better stories and make funnier jokes than humans.' → Correction: AI recombines existing text, but lacks emotional experience, humor, and genuine empathy.",
+      "❌ Misconception: 'Space farming is just science fiction for movies.' → Correction: NASA astronauts have already grown and eaten fresh lettuce, radishes, and chili peppers aboard the ISS!"
+    ],
+    "differentiatedInstruction": {
+      "forStrugglingStudents": "Focus on the four simple dream job symbols: 🚁 Drone Pilot, 🐕 Puppy Doctor, 🎬 Cartoon Maker, 🍓 Space Farmer. Have students draw their favorite job and roleplay one tool with a partner.",
+      "forAdvancedStudents": "Introduce the concept of 'Human-in-the-Loop' AI systems. Challenge advanced students to brainstorm ethical rules that a 2040 Drone Pilot or Robot Vet must follow (e.g. privacy rules for drones, animal consent).",
+      "forELLStudents": "Provide visual job flashcards pairing English career titles with universal icons (🚁 Pilot, 🩺 Doctor, 🎨 Artist, 🌾 Farmer). Encourage students to write their Superpower Pledge in both English and their native languages."
+    }
+  },
+  "additionalResources": [
+    {
+      "type": "video",
+      "title": "🎬 NASA Veggie Lab: Astronauts Harvest Fresh Romaine Lettuce in Orbit",
+      "description": "Official NASA video showing astronauts Scott Kelly, Kjell Lindgren, and Kimiya Yui tasting the first space-grown lettuce aboard the ISS.",
+      "url": "TBD",
+      "ageAppropriate": true
+    },
+    {
+      "type": "article",
+      "title": "📰 10 Amazing Jobs That Don't Exist Yet (But Will by 2040!)",
+      "description": "An illustrated kid-friendly magazine feature exploring space architects, bionic animal designers, and virtual reality world builders.",
+      "url": "TBD",
+      "ageAppropriate": true
+    },
+    {
+      "type": "activity",
+      "title": "🎨 Printable 2040 Career ID Badge Template & Hologram Stars",
+      "description": "A printable PDF badge template complete with holographic security frames, photo boxes, and tool checklist ribbons.",
+      "url": "TBD",
+      "ageAppropriate": true
+    },
+    {
+      "type": "interactive",
+      "title": "🌐 Virtual 2040 Career Explorer Sandbox",
+      "description": "A fun interactive web app where kids mix and match futuristic tools to simulate drone missions, animal health scans, and space greenhouse harvests.",
+      "url": "TBD",
+      "ageAppropriate": true
+    }
+  ],
+  "assessmentQuestions": [
+    {
+      "questionId": "aq1",
+      "question": "Why will human workers remain indispensable in the AI-powered workforce of 2040? 💖",
+      "options": [
+        "Because humans possess innate empathy, ethical judgment, creativity, and emotional connection that machines cannot replicate 🌟✨",
+        "Because computers refuse to operate on weekends",
+        "Because electricity will disappear completely from planet Earth",
+        "Because robots only understand how to count to ten"
+      ],
+      "correctAnswer": "Because humans possess innate empathy, ethical judgment, creativity, and emotional connection that machines cannot replicate 🌟✨",
+      "explanation": "While automated systems execute computational, repetitive, or hazardous tasks, human capabilities such as empathy, creative vision, and ethics remain irreplaceable."
+    },
+    {
+      "questionId": "aq2",
+      "question": "What primary operational benefit does drone inspection provide for renewable energy infrastructure like wind turbines? 🌬️",
+      "options": [
+        "It eliminates dangerous high-altitude rope climbing for human technicians while providing high-resolution thermal crack detection 🚁✨",
+        "It makes wind turbines spin twice as fast as normal",
+        "It paints the windmill blades in rainbow colors",
+        "It replaces the need for wind entirely"
+      ],
+      "correctAnswer": "It eliminates dangerous high-altitude rope climbing for human technicians while providing high-resolution thermal crack detection 🚁✨",
+      "explanation": "Uncrewed aerial inspections mitigate human fall risks in extreme offshore environments while utilizing multispectral thermography to detect structural flaws."
+    },
+    {
+      "questionId": "aq3",
+      "question": "How do non-invasive AI bio-scanners transform veterinary medicine in futuristic animal clinics? 🩺",
+      "options": [
+        "They utilize multispectral acoustic and infrared imaging to visualize internal anatomy in 3D without needles, pain, or shaving 🐾✨",
+        "They turn all domestic pets into robotic cyborgs",
+        "They teach puppies how to fly like birds",
+        "They force animals to take thirty pills at once"
+      ],
+      "correctAnswer": "They utilize multispectral acoustic and infrared imaging to visualize internal anatomy in 3D without needles, pain, or shaving 🐾✨",
+      "explanation": "Non-invasive diagnostic modalities combine ultrasound and optical computer vision to reconstruct high-fidelity internal anatomical models without invasive trauma."
+    },
+    {
+      "questionId": "aq4",
+      "question": "What agricultural technique enables cosmic space farmers to cultivate strawberries and lettuce without soil in microgravity? 🌾",
+      "options": [
+        "Aeroponic nutrient misting in closed-loop chambers combined with tuned LED photobiological spectra 🍓✨",
+        "Shipping thousand-ton soil barges from Earth on weekly rockets",
+        "Planting seeds in dry lunar dust without water or atmosphere",
+        "Freezing seeds in ice cubes until they turn into vegetables"
+      ],
+      "correctAnswer": "Aeroponic nutrient misting in closed-loop chambers combined with tuned LED photobiological spectra 🍓✨",
+      "explanation": "Aeroponics delivers aerosolized nutrient mist directly to root systems in soil-less enclosures, conserving 95% of water and optimizing photosynthetic efficiency under LEDs."
+    },
+    {
+      "questionId": "aq5",
+      "question": "How does generative AI animation alter the workflow of digital entertainment creators? 🎬",
+      "options": [
+        "It enables animators to direct high-level physical motion, character styling, and narrative while neural physics engines render frames 🎮✨",
+        "It forces artists to hand-draw fifty thousand paper frames individually",
+        "It eliminates the need for human storytelling, scriptwriting, and voice acting",
+        "It prevents video games from running on computers"
+      ],
+      "correctAnswer": "It enables animators to direct high-level physical motion, character styling, and narrative while neural physics engines render frames 🎮✨",
+      "explanation": "Generative animation frameworks automate procedural motion synthesis and rendering, shifting the creator's role to high-level artistic direction and storytelling."
+    }
+  ]
+}
