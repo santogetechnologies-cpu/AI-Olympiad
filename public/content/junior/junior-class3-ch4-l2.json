@@ -1,0 +1,1207 @@
+{
+  "lessonId": "l2",
+  "title": "People Behind Technology",
+  "level": "junior",
+  "class": "class3",
+  "chapter": "ch4",
+  "mascot": "Bolt",
+  "badge": {
+    "badgeId": "badge-ch4-l2",
+    "name": "Tech Makers Badge 🛠️🎨",
+    "description": "Awarded for discovering the creative artists, storytellers, engineers, builders, and testers who work together in harmony to invent, build, and test friendly robots and smart tools!",
+    "emoji": "👩‍🎨👨‍💻👷🕵️⚡",
+    "trophy_unlocked": "🏆 Master Tech Maker Trophy unlocked! You know that technology does not create itself — real human teamwork, imagination, and problem-solving build our wonderful digital world! 🌟🤖"
+  },
+  "introduction": {
+    "overview": "“Real artists drew my blue eyes, and friendly engineers taught me how to talk!” 🤖⚡\n\nHello, my wonderful Class 3 explorer! It is ME — BOLT, your energetic blue robot buddy with glowing sapphire eyes and a cheerful smile! 🌈✨ Give me a giant clinking robot high-five on your screen — *CLINK! BEEP BOOP!* 🖐️⚡\n\nHave you ever wondered where a friendly robot like me actually comes from? 🤖💭\nDid I pop out of a magic garden patch like a pumpkin? Did I fall from a fluffy cloud in the sky like a raindrop? \nNO WAY! *BEEP BOOP CHIK-CHIK!* 🌧️❌\n\nEvery smartphone in a pocket, every tablet screen in a school classroom, every mechanical toy on a bedroom shelf, and every friendly robot in a laboratory was imagined, designed, built, tested, and improved by REAL HUMAN BEINGS! 👩‍🎨👨‍💻👷🕵️\n\nThink about all the brilliant people who helped create me:\n- An artist sat at a bright drawing desk and sketched my round blue head, my cheerful yellow antenna, and my warm sapphire eyes! 🎨👀\n- A story writer sat with a warm mug of tea, giggled, and wrote all my funny robot jokes and cheerful greeting words! 📚✍️\n- An engineer planned how my metal gears mesh together, how my rechargeable battery powers my circuits, and how my microphones listen to questions! 📐⚙️\n- Factory builders and assembly workers in clean blue uniforms carefully put my screws, wires, and outer plastic casing together piece by piece! 🏭🔩\n- And a clever tester gently guided me through an obstacle course, checking: *'Does Bolt turn left when asked? Does Bolt stop before bumping into the bookshelf? Does Bolt smile when tapped?'* 🕵️🧪\n\nTHIS IS THE SUPERPOWER OF TEAMWORK! 🤝🌟\nNo single person has to know how to do everything. In a small project, one or two creative friends might do several jobs together. In a large project, hundreds of artists, writers, builders, and problem-solvers work side by side like instruments in a symphony orchestra! 🎻🎺🥁\nDifferent people bring different gifts: some love drawing, some love writing stories, some love assembling physical parts, and some love finding hidden puzzles. Together, they create technology that helps, teaches, and delights people all around the world! 🌍💖\n\nAre you ready to pull back the laboratory curtain and meet the creative humans behind the technology? Let's step into the design studio and meet the artists and storytellers first! 👩‍🎨🎨✨",
+    "learningObjectives": [
+      "Understand that technology and robots do not make themselves; real people imagine, design, build, test, and improve them 👩‍🎨👨‍💻👷",
+      "Discover the role of artists who sketch characters, choose colour palettes, design friendly faces, and create cartoon animations 🎨🖌️",
+      "Learn how story writers create dialogues, adventures, personalities, and funny jokes for robots and learning games 📚✍️",
+      "Explore how engineers design internal mechanisms and how factory builders carefully assemble robot toys and electronic devices 👷🏭",
+      "Investigate how testers check products, identify problems (bugs), and help the team improve safety and performance 🕵️🧪",
+      "Appreciate the power of teamwork, understanding that different people contribute unique talents to complete a project 🤝🌟",
+      "Recognize that curiosity, patience, learning from mistakes, and collaboration are the foundational skills of all tech makers 💡💖"
+    ],
+    "duration": "45-60 minutes of inspiring maker discoveries, teamwork challenges, and interactive matching games! ⏱️🎉"
+  },
+  "sections": [
+    {
+      "sectionId": "section1",
+      "title": "The Creative Minds Behind Technology 👩‍🎨💡📚",
+      "content": "BEEP BOOP! Welcome to the sunniest, most colourful workshop in the whole building: THE CREATIVE DESIGN STUDIO! 👩‍🎨💡🎨\nBefore a single screw is turned, before a single circuit board is soldered, and before a single line of computer instructions is stored, a technology project begins as a pure SPARK OF IMAGINATION in someone's mind! \nPeople observe the world, notice a need or an opportunity to bring joy, and ask: *'What if we created a friendly robot buddy to help children learn about science?'* \nLet's meet the visual artists, illustrators, and writers who give technology its face, its warmth, and its voice! 🌟🤖\n\nREQUIRED EXAMPLE 1: ARTISTS DRAWING CARTOON ANIMATIONS 🎨🖌️📺\nLook at that wide drafting table by the window! An artist named Tara is holding a digital stylus, drawing on a glowing tablet screen. \nWhat does an artist do for a robot or digital learning app?\n1. Designing Character Faces & Expressions: Tara wanted Bolt to look welcoming, cheerful, and approachable — never scary or intimidating! She experimented with dozens of eye shapes: square eyes, triangular eyes, round eyes. She chose big, friendly round eyes with warm blue glowing pupils! 👁️💙\n2. Choosing Cheerful Colours: Should Bolt be dark grey like cold steel? No! Tara chose a cheerful sky-blue body with sunny yellow accents that look playful and energetic! 🟡🔵\n3. Creating Cartoon Animations: When you see Bolt wave his hand, blink his eyes, or do a happy victory spin, how does that happen? In traditional and digital animation, an artist creates a series of drawings where each picture is just slightly different from the previous one. When these pictures are displayed in rapid sequence — 24 or 30 frames every single second — your human eyes blend them together into smooth, fluid motion! *WHOOSH!* 👋✨\n\nIMPORTANT ACCURACY LESSON FROM BOLT:\nDigital animation software and computers help artists by filling in colour palettes and organizing layers, but REAL PEOPLE make every creative decision! The artist decides how high Bolt raises his arm, how wide his smile curves, and how his antenna wiggles when he gets excited! Technology is Tara's digital paintbrush, but Tara's imagination brings the cartoon to life! 🎨💖\n\nREQUIRED EXAMPLE 2: STORY WRITERS CREATING BOLT'S JOKES 📚✍️😄\nNow look across the room at the desk covered in notebooks and sticky notes! There sits Liam, the team's story writer. \nWhere do a robot's words come from? Does a robot dream up hilarious jokes out of thin air? NO! 🤖❌\nA story writer imagines the robot's personality, writes its greeting lines, creates its curious questions, and invents funny jokes! \nFor example, one afternoon Liam was trying to carry seven heavy textbooks from the library to his desk. Books slipped out of his arms and tumbled onto the rug! Liam laughed out loud and thought: *'What if Bolt tried to carry too many schoolbooks?'* \nHe grabbed his notebook and wrote this funny joke for Bolt:\n“BEEP BOOP! I need an extra book pocket!” 📚🤖😄\nWhen Liam shared the joke with the team, everyone chuckled! Liam typed the joke into the dialogue file so Bolt could share it with young learners like you! \n\nWRITERS ARE ARCHITECTS OF EMPATHY: 📖❤️\nWriters make sure that technology communicates with kindness, patience, clarity, and warmth. When a student makes a mistake on a quiz, a thoughtful writer crafts gentle words: *'That was a great try! Let's think together and try again!'* instead of cold, harsh words. Words have power, and human writers choose them with love! 🌟\n\nMORE CREATIVE TEAM HEROES: 💡🎵\n- PRODUCT DESIGNERS: Think about ergonomics — making sure a tablet is lightweight enough for small hands to hold and has rounded edges that won't scratch! 📱🖐️\n- SOUND DESIGNERS: Record and compose the cheerful 'BEEP BOOP!', the victory fanfares, and the soothing background melodies using microphones and synthesizers! 🎵🎹\n- ILLUSTRATORS: Draw colourful diagrams, interactive buttons, maps, and story cards that make learning visual and fun! 🖼️✏️\n- IDEA MAKERS & INVENTORS: Look around at everyday challenges — like messy cables or dark hallways — and brainstorm creative inventions to solve them! 💡🧩\n\nEvery time you draw a picture, tell a funny joke at the lunch table, or invent a pretend game with your toys, you are practicing the exact creative magic used by professional artists and writers! 🎨📖✨",
+      "examples": [
+        {
+          "exampleId": "ex1",
+          "title": "Tara's Sketchbook of a Hundred Robot Smiles 🎨🤖",
+          "description": "Artist Tara sat with her sketchbook trying to design Bolt's face. Her first drawing looked like a grumpy toaster! Her second drawing looked like a stern computer monitor. On her fifteenth try, she drew two large round sapphire eyes with tiny sparkling stars in the corners and a cheerful curve for a mouth. When the team saw it, everyone cheered: 'That is Bolt! He looks so friendly and fun!' Tara's patience and artistic eye created Bolt's iconic smile! 🌟💙",
+          "keyTakeaway": "Artists design character faces, choose cheerful colours, and sketch dozens of drafts to create welcoming, friendly technology! 🎨👩‍🎨"
+        },
+        {
+          "exampleId": "ex2",
+          "title": "Liam's Book Pocket Joke 📚😄",
+          "description": "Story writer Liam was carrying a stack of encyclopedias that wobbled and fell onto his shoes. He laughed and imagined a little blue robot trying to balance ten science books on its head. Liam wrote the dialogue: 'BEEP BOOP! I need an extra book pocket!' When Class 3 students heard Bolt say this in the lesson, they burst out giggling! Liam's humorous observation turned a clumsy moment into shared joy! 📖🤖",
+          "keyTakeaway": "Writers create personalities, dialogues, and funny jokes that make robots and educational software feel warm and friendly! ✍️📚"
+        },
+        {
+          "exampleId": "ex3",
+          "title": "Nina the Sound Designer's Magic Beeps 🎵🔔",
+          "description": "Sound designer Nina wanted Bolt's voice to sound musical and happy, not like a harsh buzzer. She took a toy xylophone, tapped the notes C, E, and G, and blended them with an electronic chime on her computer keyboard. The result was Bolt's signature cheerful greeting: *BEEP BOOP CHIK-CHIK!* Nina's musical creativity gave Bolt his energetic voice! 🎶⚡",
+          "keyTakeaway": "Sound designers record and mix beeps, chimes, and music that make games and robots engaging to listen to! 🎵🎹"
+        },
+        {
+          "exampleId": "ex4",
+          "title": "Aarav's Soft-Corner Tablet Design 📱🛡️",
+          "description": "Product designer Aarav watched five-year-olds using heavy plastic tablets. He noticed that sharp corners bumped into knees and hard glass got scratched. Aarav designed a tablet case with soft rubbery silicone corners shaped like cute bear paws. The new case was easy to grip, bouncy if dropped, and completely safe for children! 🧸📱",
+          "keyTakeaway": "Product designers think about how people hold, touch, and use physical gadgets to make them comfortable and safe! 📐🖐️"
+        },
+        {
+          "exampleId": "ex5",
+          "title": "The Idea Maker's Rainy Day Problem 💡🌧️",
+          "description": "Inventor Maya noticed that when kids came inside from the rain, their wet umbrellas dripped puddles all over the school floor, causing people to slip. Maya brainstormed with her friends and sketched a simple umbrella-drying stand with absorbent microfiber rollers. Maya solved a real everyday problem by observing carefully and imagining a creative solution! ☔💡",
+          "keyTakeaway": "Inventors and creative thinkers observe everyday frustrations and imagine helpful tools to solve them! 🧩🌟"
+        }
+      ],
+      "keyPoints": [
+        "Technology does not create itself; creative people imagine, sketch, write, and design every tool and character 👩‍🎨💡",
+        "Artists design character expressions, pick colour palettes, and draw thousands of animation frames to create movement 🎨📺",
+        "Story writers craft dialogue, jokes, and supportive feedback that make robots communicate with kindness and humour 📚✍️",
+        "Sound designers, product designers, and illustrators use creativity to make gadgets musical, comfortable, and beautiful 🎵📱",
+        "Every creative idea starts with observing everyday life, asking friendly questions, and practicing imagination! 🌟💭"
+      ],
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "The Blank Page: Where Technology Starts 💡📄",
+          "content": "Every amazing invention in human history — from the wooden wheel to the supersonic jet airplane, from the pencil to the tablet computer — began as an empty blank page and a curious thought in someone's head. When people see a difficult chore or an empty room, their creative minds start whirring: 'What could we build to help here?' Creative thinking is not just about making things look pretty; it is about solving human problems with elegance, kindness, and fun! 🌟🧠"
+        },
+        {
+          "partNumber": 2,
+          "title": "The Art of Character Design 🎨👁️",
+          "content": "Why do friendly robots have big eyes and rounded corners? Human psychologists discovered that human beings naturally respond with warmth and trust to round shapes, soft curves, and expressive eyes. If an artist designed a robot with sharp jagged spikes, glowing red laser slits, and metallic fangs, people would feel scared! Character artists study shape language: circles mean friendly, squares mean sturdy, and soft curves mean safe. By combining sky blue, bright yellow, and big round eyes, artists made Bolt feel like a trustworthy classmate ready to explore! 🔵🟡✨"
+        },
+        {
+          "partNumber": 3,
+          "title": "Frame by Frame: The Illusion of Movement 📺🎬",
+          "content": "Have you ever made a flipbook by drawing a bouncing ball on the corner of a sticky note pad? When you flip the pages rapidly with your thumb, the ball appears to bounce up and down! That is the fundamental magic of animation called 'persistence of vision.' Your brain holds onto an image for a fraction of a second. When digital artists animate Bolt raising his metal arm, they draw Bolt with his arm down, arm slightly raised, arm halfway up, and arm high in the air. Playing those drawings in a flash creates smooth motion! 🎞️✨"
+        },
+        {
+          "partNumber": 4,
+          "title": "The Voice of Kindness: Dialogue Writing ✍️💖",
+          "content": "Imagine interacting with a computer that only said: 'ERROR 404. INCORRECT INPUT.' That feels cold, robotic, and discouraging! Now imagine a robot that says: 'BEEP BOOP! That was a super-brave try, little explorer! Let's check the map together and try one more time!' That second message makes you smile, pick up your pencil, and keep going! Story writers are the ambassadors of empathy. They write the scripts, hints, and celebrations that encourage children to love learning! 📚🌟"
+        },
+        {
+          "partNumber": 5,
+          "title": "Your Creative Superpower 🎨🌈",
+          "content": "Never let anyone tell you that technology is only about math, wires, and silicon chips! Without artists, technology would be grey, cold, and ugly. Without writers, technology would be silent and boring. Without designers, technology would be awkward and hard to use. The arts and sciences need each other like two wings of a bird. When creativity flies alongside engineering, beautiful things soar into the sky! 🕊️✨"
+        }
+      ],
+      "guidedQuestions": [
+        {
+          "questionId": "gq1",
+          "question": "Who chooses the cheerful sky-blue colour, big sapphire eyes, and smile for a robot character? 🎨🤖",
+          "options": [
+            "A lawnmower in the backyard 🚜",
+            "An artist or character designer who sketches and illustrates the character! 👩‍🎨🎨✨",
+            "A toaster in the kitchen 🍞",
+            "A passing rain cloud 🌧️"
+          ],
+          "correctAnswer": "An artist or character designer who sketches and illustrates the character! 👩‍🎨🎨✨",
+          "explanation": "Artists and illustrators choose character colours, shapes, and facial features to make robots friendly and expressive! 🎨",
+          "hint": "Which creative worker draws characters and picks colours?"
+        },
+        {
+          "questionId": "gq2",
+          "question": "How do artists create the appearance of a cartoon character moving on a screen? 📺🎬",
+          "options": [
+            "They shake the computer monitor violently with their hands 🖥️❌",
+            "They create a series of drawings that are displayed rapidly one after another! 🎞️✨",
+            "They melt crayons in the microwave 🖍️",
+            "They yell 'MOVE!' at the screen 🗣️"
+          ],
+          "correctAnswer": "They create a series of drawings that are displayed rapidly one after another! 🎞️✨",
+          "explanation": "Animation works by displaying a sequence of slightly different drawings rapidly, creating the illusion of smooth movement! 📺",
+          "hint": "Think about how a flipbook of drawings looks like it is moving when flipped quickly!"
+        },
+        {
+          "questionId": "gq3",
+          "question": "Who writes Bolt's funny jokes, like needing an extra book pocket? 📚✍️",
+          "options": [
+            "A story writer who imagines funny dialogues and helpful words! ✍️📖✨",
+            "A bicycle wheel spinning on the road 🚲",
+            "An empty cardboard box in the garage 📦",
+            "A mechanical wall clock ticking ⏰"
+          ],
+          "correctAnswer": "A story writer who imagines funny dialogues and helpful words! ✍️📖✨",
+          "explanation": "Story writers craft the words, stories, jokes, and personalities that make digital characters fun and caring! 📚",
+          "hint": "Which professional writes stories, dialogues, and books?"
+        },
+        {
+          "questionId": "gq4",
+          "question": "What does a sound designer do for a video game or robot? 🎵🔊",
+          "options": [
+            "Paints the walls with chocolate pudding 🍮",
+            "Records, composes, and mixes cheerful beeps, music, and sound effects! 🎵🎹✨",
+            "Fixes flat tires on delivery vans 🛞",
+            "Plants apple seeds in flower pots 🍎"
+          ],
+          "correctAnswer": "Records, composes, and mixes cheerful beeps, music, and sound effects! 🎵🎹✨",
+          "explanation": "Sound designers create all the audio elements — from robot beeps to musical fanfares — that make tech engaging! 🎵",
+          "hint": "Think about music, chimes, and sound effects!"
+        },
+        {
+          "questionId": "gq5",
+          "question": "Can computer software create genuine art and heartfelt stories all by itself without humans? 🤖🤔",
+          "options": [
+            "Yes, computers have real feelings and cry when watching movies 😢",
+            "No! Digital tools assist, but human artists and writers provide the imagination, emotions, and choices! 💖🎨✍️",
+            "Yes, tablets dream of electric sheep while charging 🔌",
+            "Yes, software buys groceries at the supermarket 🛒"
+          ],
+          "correctAnswer": "No! Digital tools assist, but human artists and writers provide the imagination, emotions, and choices! 💖🎨✍️",
+          "explanation": "Computers do not feel emotions or have real lived experiences; human creativity and empathy drive all art and stories! 🌟",
+          "hint": "Who has the real feelings, memories, and imagination?"
+        }
+      ]
+    },
+    {
+      "sectionId": "section2",
+      "title": "The Builders and Technology Helpers 👨‍💻👷🧩",
+      "content": "BEEP BOOP! Now let's walk through the double doors from the design studio into THE BUILDERS' WORKSHOP AND FACTORY! 👨‍💻👷🏭✨\nOnce an artist has drawn a beautiful blueprint and an author has written an exciting story, who actually turns those digital sketches into real physical machines that can roll, beep, and interact with the world? \nTHE BUILDERS, ENGINEERS, AND TECHNICIANS! 🛠️🔩\nBuilding technology is an extraordinary journey of problem-solving. It requires taking thousands of tiny parts and making sure every gear, wire, screw, and microchip works in perfect harmony. Let's see how robot toys are built in modern factories! 🤖🏭\n\nREQUIRED REAL-LIFE EXAMPLE: ASSEMBLING ROBOT TOYS IN FACTORIES 🤖🏭🔧\nImagine walking onto the clean, bright floor of a modern toy factory. You hear the rhythmic hum of conveyor belts, the gentle hiss of pneumatic tools, and the cheerful chatter of team members in safety goggles! \nA robot toy like Bolt has over 150 individual components:\n- Outer plastic shells molded in bright sky-blue and yellow 🟡🔵\n- Tiny electric motors (servos) that turn wheels and move arms ⚙️\n- Miniature speakers to play voice greetings and musical beeps 🔊\n- Rechargeable battery packs to supply safe electrical power 🔋\n- Smooth silicone rubber tires that grip living room floors 🛞\n- Circuit boards with microchips that act as the robot's electronic nervous system! 🧠🔌\n\nHOW DO PEOPLE AND MACHINES ASSEMBLE THE TOY? 👷🤖\n1. Preparing Parts: Injection molding machines shape the blue plastic casings. Skilled technicians inspect each piece to make sure there are no rough plastic burrs or sharp edges. ✂️\n2. Installing Electronics: Assembly workers gently place the green circuit board into the chest cavity, connecting the speaker wires and battery clips with tiny insulated plugs. 🔌\n3. Attaching Motors & Wheels: Builders secure the electric drive motors into the base with precision screws, attaching the rubber tires so the robot can roll smoothly. 🛞🔩\n4. Closing the Case: Workers align the front and back plastic shells and fasten them securely with child-safe recessed screws. 🪛\n5. Final Inspection & Packaging: A team member checks that the robot turns on, packages it inside a recyclable cardboard box with an instruction manual, and seals it for delivery to toy shops! 📦✨\n\nIMPORTANT ACCURACY FACT FROM BOLT:\nNot every factory is identical! Some factories use robotic arms to help lift heavy trays, while others rely entirely on skilled human hands for delicate assembly. But in EVERY factory, human engineers design the assembly process, human supervisors monitor quality, and human teamwork makes sure every toy is built with excellence and safety! 👷💖\n\nMEET THE ENGINEERING AND TECHNICAL ROLES: 📐👨‍💻\n- MECHANICAL ENGINEERS: Design physical structures! They calculate how strong plastic needs to be so a toy won't crack if dropped from a kitchen table onto a carpet. 📐🛡️\n- ELECTRICAL ENGINEERS: Design the circuitry! They plan how electricity flows from the battery to the lights and speakers without overheating. ⚡🔋\n- SOFTWARE DEVELOPERS: Write the instructions that computers follow! A software developer writes the step-by-step logic that tells the robot: *'When the green button is pressed, play a happy chime and roll forward three paces!'* (They speak the language of logic so machines behave!) 👨‍💻✨\n- ELECTRONICS TECHNICIANS: Use soldering irons, wire cutters, and testing meters to assemble prototypes, inspect connections, and repair any loose wires. 🧪🔌\n- FACTORY OPERATORS: Skillfully guide machines, assemble components with care, inspect finished goods, and ensure production runs smoothly and safely! 🏭👷\n\nTHE HARMONY OF A TECH TEAM: 🧩🤝\nThink about how these roles interlock like pieces of a jigsaw puzzle:\nAn artist draws a cute round head ➡️ A mechanical engineer designs the plastic mold ➡️ A software developer writes the blinking light program ➡️ A factory builder solders the LED wires ➡️ A tester makes sure it shines brightly! \nNo single person could do all of that alone in one afternoon. But together, a team of twenty people can build thousands of cheerful robots that bring smiles to children across the globe! Teamwork is true human magic! 🌟🤝",
+      "examples": [
+        {
+          "exampleId": "ex1",
+          "title": "Farhan the Mechanical Engineer's Drop Test 📐📦",
+          "description": "Farhan designs the plastic casing for robot toys. He knew that eight-year-old kids sometimes accidentally drop toys off sofas. Farhan designed internal shock-absorbing honeycomb ribs inside the blue chest casing. When Farhan tested dropping the prototype from one metre onto a wooden floor, the casing stayed completely intact without a single crack! Farhan's engineering protected the toy! 🛡️🤖",
+          "keyTakeaway": "Mechanical engineers design physical parts with clever structures so machines are sturdy, durable, and child-safe! 📐🔩"
+        },
+        {
+          "exampleId": "ex2",
+          "title": "Priya the Software Developer's Dance Routine 💃👨‍💻",
+          "description": "Priya wanted Bolt to do a cute little victory dance when a student scores 100% on a quiz. Priya wrote clear computer instructions: 'Rotate left wheel forward for one second, pause, flash blue lights twice, play cheerful chime!' When Priya tested the program, Bolt spun around and chimed joyfully! Priya's software logic gave Bolt his happy victory moves! 🎮⚡",
+          "keyTakeaway": "Software developers create the step-by-step instructions that tell computers and robots how to behave! 👨‍💻✨"
+        },
+        {
+          "exampleId": "ex3",
+          "title": "Assembly Worker Chen's Precision Screws 🪛🏭",
+          "description": "Inside the toy assembly plant, Chen works at the chassis assembly station. Chen uses an electric torque screwdriver that stops automatically when a screw is tightened with the exact safe amount of pressure. Chen inspects 200 toy bases every morning, making sure every wheel axle turns freely. Chen takes tremendous pride in making toys that work flawlessly! 🛞👷",
+          "keyTakeaway": "Factory assembly workers use precision tools to assemble parts carefully and verify that components fit together! 🏭🔧"
+        },
+        {
+          "exampleId": "ex4",
+          "title": "Elena the Electronics Technician's Wire Magic 🔌🧪",
+          "description": "In the prototype lab, a robot's left antenna light was flickering. Elena picked up her digital multimeter to measure the electrical current. She spotted a tiny loose wire near the battery terminal. With a warm soldering iron, Elena gently joined the wire back to the circuit board. The antenna instantly lit up with bright golden light! Elena's technical skill solved the glitch! 💡✨",
+          "keyTakeaway": "Electronics technicians assemble prototypes, inspect circuits, and repair wiring to keep electronic devices working! 🔌🛠️"
+        },
+        {
+          "exampleId": "ex5",
+          "title": "The Great Robot Assembly Relay 🧩🤝",
+          "description": "In an educational robotics club, Arjun, Kabir, Anya, and Maya worked as a team. Arjun sorted the plastic gears, Kabir connected the battery leads, Anya screwed the wheels into the chassis, and Maya pressed the power switch. The little solar buggy rolled across the classroom floor on its very first try! By sharing the work, the team succeeded in half the time! 🏎️☀️",
+          "keyTakeaway": "Working as a team where each person takes a specific task makes building complex technology fun, fast, and successful! 🤝🌟"
+        }
+      ],
+      "keyPoints": [
+        "Builders, engineers, and factory workers turn sketches and ideas into real, working physical machines and devices 👷👨‍💻",
+        "Robot toys have dozens of parts — plastic shells, electric motors, batteries, speakers, and circuit boards — assembled carefully 🤖🔩",
+        "Mechanical engineers ensure toys are sturdy, while electrical engineers ensure circuits are safe and never overheat 📐⚡",
+        "Software developers write the clear, logical instructions that tell computers and robots what actions to perform 👨‍💻✨",
+        "Large technology projects succeed through the combined talents of diverse specialists working together with shared goals 🧩🤝"
+      ],
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "From Blueprints to Real Objects 📐🔨",
+          "content": "Have you ever built something out of building blocks by following an instruction booklet? First, you look at the picture on the page; then you search for the blue 2x4 brick; then you press it onto the red baseplate. Manufacturing a real robot is very similar, but on a grand scale! Engineers create detailed digital blueprints with exact measurements down to the fraction of a millimetre. Every hole, peg, and wire channel is planned so that when thousands of parts arrive from different workshops, they snap and screw together like clockwork! 🧩📐"
+        },
+        {
+          "partNumber": 2,
+          "title": "Inside the Robot's Body: Motors and Circuits ⚙️🔌",
+          "content": "What makes a robot move? Inside your human body, muscles contract and pull on bones to move your arms and legs. Inside a robot, electric servo motors act as muscles! When electricity flows into a motor, magnets inside repel and spin a shaft, which turns plastic gears that rotate the robot's wheels or wave its arm. A central circuit board acts like the robot's brain and nervous system, sending tiny electrical pulses through copper traces to tell the motors when to spin, the lights when to glow, and the speaker when to beep! 🤖⚡"
+        },
+        {
+          "partNumber": 3,
+          "title": "The Art of Writing Instructions: Software 👨‍💻📜",
+          "content": "A robot with motors and batteries is like an automobile with an engine — it has power, but it needs someone to steer it! Software developers provide that guidance. Computers cannot think for themselves; they only follow instructions. A software developer breaks big tasks into tiny logical steps: 1. Turn on blue LED. 2. Wait 2 seconds. 3. Play sound file #4. 4. Roll forward. If one step is missing or out of order, the robot might roll backwards into a wall! Writing software requires patience, logic, and a love for solving puzzles! 🧠✨"
+        },
+        {
+          "partNumber": 4,
+          "title": "Safety in Manufacturing: Protecting Hands and Hearts 🛡️🏭",
+          "content": "Toy factories have strict safety standards. Every plastic resin must be non-toxic and BPA-free so it is safe even if a toddler chews on it. Battery compartments must be secured with safety screws so small children cannot reach the battery cells. Electric currents inside toys are kept at very low, safe voltages (like 3 or 5 volts) that cannot cause shocks. The human builders who work in factories take their responsibility to protect young children very seriously! 🧸💖"
+        },
+        {
+          "partNumber": 5,
+          "title": "The Joy of Hands-On Building 🔨🌟",
+          "content": "You do not need to wait until you grow up to be a builder! Every time you fold an origami crane, snap together interlocking bricks, tape cardboard tubes into a marble run, or tighten a loose bolt on your bicycle, you are developing the spatial intelligence and mechanical intuition of an engineer. Hands that know how to build things are hands that can change the world! 🛠️🌍"
+        }
+      ],
+      "guidedQuestions": [
+        {
+          "questionId": "gq1",
+          "question": "Who helps design how the physical parts and gears of a robot work together? 📐⚙️",
+          "options": [
+            "A goldfish swimming in a bowl 🐟",
+            "An engineer who plans the mechanics and structure of the machine! 👷📐✨",
+            "A watermelon sitting on a picnic table 🍉",
+            "A winter scarf knitted from wool 🧣"
+          ],
+          "correctAnswer": "An engineer who plans the mechanics and structure of the machine! 👷📐✨",
+          "explanation": "Engineers design how parts, gears, and circuits function together so machines are sturdy and effective! 📐",
+          "hint": "Which professional designs machines, buildings, and technology?"
+        },
+        {
+          "questionId": "gq2",
+          "question": "What happens in a factory where robot toys are assembled? 🤖🏭",
+          "options": [
+            "Toys grow on trees and fall into fruit baskets 🌳",
+            "Workers and machines assemble parts, install electronics, attach wheels, and package toys! 👷🔩📦",
+            "Workers throw paint at the ceiling all day 🎨❌",
+            "The factory stays empty because robots build themselves out of thin air 🪄❌"
+          ],
+          "correctAnswer": "Workers and machines assemble parts, install electronics, attach wheels, and package toys! 👷🔩📦",
+          "explanation": "Factories bring components together, assembling cases, motors, and circuits into finished toys! 🏭",
+          "hint": "Think about workers assembling parts, attaching wheels, and packaging toys!"
+        },
+        {
+          "questionId": "gq3",
+          "question": "What does a software developer do for a robot or computer? 👨‍💻✨",
+          "options": [
+            "Bakes chocolate chip cookies for the computer screen 🍪",
+            "Writes the clear, step-by-step instructions that computers and robots follow! 👨‍💻📜✨",
+            "Paints the computer keyboard with shoe polish 👞",
+            "Blows bubbles through the USB port 🫧"
+          ],
+          "correctAnswer": "Writes the clear, step-by-step instructions that computers and robots follow! 👨‍💻📜✨",
+          "explanation": "Software developers write the instructions (code and logic) that guide what computers and robots do! 💻",
+          "hint": "Who creates the instructions that computers follow?"
+        },
+        {
+          "questionId": "gq4",
+          "question": "Why do engineers design robot toys with child-safe recessed screws and rounded corners? 🛡️🧸",
+          "options": [
+            "To make the toy look like a giant potato 🥔",
+            "To make sure the toy is completely safe, durable, and won't scratch or harm children! 🧸🛡️✨",
+            "Because sharp corners are too expensive 💰",
+            "Because round corners make the toy run faster 🏎️"
+          ],
+          "correctAnswer": "To make sure the toy is completely safe, durable, and won't scratch or harm children! 🧸🛡️✨",
+          "explanation": "Safety is top priority; smooth edges and secure battery compartments prevent accidents and protect kids! 🛡️",
+          "hint": "Why is it important to prevent sharp edges on children's toys?"
+        },
+        {
+          "questionId": "gq5",
+          "question": "Why is teamwork so important when creating a complex robot or digital tool? 🤝🧩",
+          "options": [
+            "Because one person gets bored sitting alone 😴",
+            "Because different people bring different skills (art, writing, engineering, building) to build something amazing! 🌟🤝",
+            "Because robots will only obey teams of ten people 🔟",
+            "Because it is against the law to work by yourself 👮❌"
+          ],
+          "correctAnswer": "Because different people bring different skills (art, writing, engineering, building) to build something amazing! 🌟🤝",
+          "explanation": "Complex projects need many different talents; working together allows teams to accomplish things no single person could! 🤝",
+          "hint": "Think about combining drawing, writing, building, and engineering together!"
+        }
+      ]
+    },
+    {
+      "sectionId": "section3",
+      "title": "The Testers and Problem Solvers 🕵️🧪❤️",
+      "content": "BEEP BOOP! Now let us walk into the most curious, detail-oriented room in the whole technology kingdom: THE TESTING LABORATORY! 🕵️🧪🔍\nImagine that the artist has drawn a gorgeous robot, the writer has created funny jokes, the engineer has designed the circuits, and the factory has assembled the prototype. The new little robot sits proudly on the workbench, glowing with fresh paint.\nAre we ready to put it into a box and send it to toy shops immediately? \nNOT YET! *BEEP BOOP!* 🛑📦\nBefore any technology reaches schools, hospitals, or living rooms, it must meet the most observant superheroes of all: THE TESTERS! 🕵️✨\n\nREQUIRED TESTING EXAMPLE: CHECKING HOW A ROBOT WORKS 🤖🧪🔍\nMeet Maya, the team's Lead Quality Tester! \nMaya's job is to put on her detective hat, examine the robot from every angle, and systematically test whether it behaves exactly as the team designed! \nWhat does Maya test on a small wheeled robot?\n1. Movement Test: Maya presses the 'Forward' button. Does the robot roll straight forward, or does it veer wildly to the left like a dizzy crab? 🦀🛞\n2. Stopping Test: Maya commands the robot to 'Stop!'. Does it brake immediately, or does it slide across the table? 🛑\n3. Obstacle Avoidance Test: If the robot is designed with an infrared sensor to detect walls, Maya places a cardboard box in front of it. Does the robot detect the box and steer gently around it, or does it bump right into it with a loud *BONK!*? 📦💥\n4. Sound & Voice Test: Maya presses the speaker button. Does the robot play Bolt's cheerful greeting clearly, or does it make a scratchy squeak like a rusty door hinge? 🔊🎶\n5. Control Response Test: Does the robot respond instantly to the tablet app and remote control buttons without freezing or lagging? 📱🎮\n\nWHAT HAPPENS WHEN A TESTER FINDS A PROBLEM? 🕵️📝\nOne afternoon, Maya was testing a prototype robot. When she pressed 'Turn Right', the robot turned LEFT instead! 🙃\nDid Maya get angry or throw the robot away? NO! Maya smiled with satisfaction! \nFinding a problem — which tech makers affectionately call a 'bug' 🐛 — is a TRIUMPH for a tester! \nMaya wrote a clear note in her testing log: *'When Right Button is pressed, left wheel turns backwards. Motors may be wired in reverse.'* \nShe walked over to Priya the software developer and Farhan the engineer. Together, they looked at the wiring diagram, discovered that two tiny motor wires were swapped, swapped them back, and tested it again. This time, the robot turned right with 100% precision! Maya's sharp detective eyes made the robot better! 🌟🔧\n\nCRITICAL REALITY CHECK FROM BOLT: 🚨🤖\n- CAN ANY ROBOT AVOID EVERY SINGLE OBSTACLE? NO! If an obstacle is transparent like clean glass, or very thin like a chair leg, a sensor might not detect it. \n- DOES TESTING GUARANTEE A PRODUCT WILL NEVER FAIL? NO! Testing catches many mistakes, but no machine is completely infallible. That is why testers test over and over under different conditions (hot days, cold days, carpet floors, tile floors)! 🧪🌡️\n\nTESTING IN OTHER CREATIVE FIELDS: 🎨🎮📺\n- CHECKING A CARTOON ANIMATION: Testers and animation directors watch cartoons frame-by-frame. Is Bolt's antenna missing in frame 42? Did his colour change from blue to green by accident? Catching visual glitches makes cartoons look polished! 🎬👀\n- CHECKING A VIDEO GAME: Game testers play levels for hours: Can the penguin get stuck between two icebergs? Are the instructions clear for an 8-year-old? Is the boss level fair or impossibly hard? Testers ensure games are fun and glitch-free! 🎮👾\n- PRODUCT SAFETY AUDITS: Lab testers drop toys with weighted pendulums, pull on eyes with spring gauges, and submerge water-resistant cases to guarantee safety certifications! 🛡️🧸\n\nTHE ULTIMATE FIVE-PERSON TECH TEAM: 🤝🌟\nLook how the five roles work as one unified family:\n1. 👩‍🎨 THE ARTIST: Imagines the visual beauty, friendly face, and colours!\n2. 📚 THE WRITER: Crafts the personality, caring words, and funny jokes!\n3. 📐 THE ENGINEER: Designs the internal gears, circuitry, and logic!\n4. 👷 THE BUILDER: Assembles the physical components with skill and precision!\n5. 🕵️ THE TESTER: Inspects, finds hidden problems, and ensures quality and safety!\n\nEvery single role is essential. If the artist is missing, the robot is ugly. If the writer is missing, the robot is rude. If the engineer is missing, the robot doesn't work. If the builder is missing, the robot remains a sketch. And if the tester is missing, the robot bumps into walls! When all five work with mutual respect and joy, wonderful technology is born! 💖🌟🤝",
+      "examples": [
+        {
+          "exampleId": "ex1",
+          "title": "Maya's Reverse-Wheel Mystery 🕵️🛞",
+          "description": "Tester Maya placed the brand-new robot on the testing track. She tapped 'Roll Forward', but the robot spun around in circles like a spinning top! Maya didn't panic. She inspected the wheels and realized the right motor was spinning forward while the left motor was spinning in reverse. Maya documented the bug, Farhan updated the motor connection, and within ten minutes the robot was rolling straight as an arrow! Maya's keen eye saved the day! 🎯⚡",
+          "keyTakeaway": "Testers systematically look for problems and document them clearly so engineers can fix glitches before products reach homes! 🕵️📝"
+        },
+        {
+          "exampleId": "ex2",
+          "title": "The Missing Antenna Frame in Cartoon #3 🎬👀",
+          "description": "While reviewing an animated episode of Bolt's adventures, animation checker Leo slowed the video down to 12 frames per second. On frame 84, Leo noticed that Bolt's yellow antenna had accidentally been erased by a digital brush! Leo flagged the frame, artist Tara redrew the antenna, and the final cartoon was flawless! Leo's attention to detail kept the cartoon looking magical! 📺✨",
+          "keyTakeaway": "Animation checkers inspect cartoons frame-by-frame to catch visual errors or missing details before broadcasting! 🎨🎬"
+        },
+        {
+          "exampleId": "ex3",
+          "title": "Samira's Iceberg Glitch in the Penguin Game 🐧🎮",
+          "description": "Game tester Samira was testing Level 4 of the polar penguin game. When she jumped behind a snowbank, the penguin fell through the ice into an infinite grey void! Samira recorded a video clip of the glitch and sent it to the programmer. The programmer added an invisible barrier beneath the snowbank. When players got the game, nobody fell through the ice! Samira's testing made the game solid! ❄️🕹️",
+          "keyTakeaway": "Game testers explore every corner of a game world to find glitches, stuck spots, and balance problems so players have fun! 🎮👾"
+        },
+        {
+          "exampleId": "ex4",
+          "title": "The Teddy Bear Pull-Test at the Safety Lab 🧸⚖️",
+          "description": "In the toy safety lab, tester Vikram clamped a digital pull-gauge onto the plastic button eye of a prototype teddy bear. The gauge pulled with 90 Newtons of force (stronger than any toddler could ever pull!). The button eye stayed securely anchored in the plush fabric without budging a millimetre. Vikram stamped the certificate: 'APPROVED: CHILD SAFE!' 🛡️🧸",
+          "keyTakeaway": "Safety testers subject toys to rigorous physical pull and drop tests to ensure small parts cannot break off and harm children! 🧸🔬"
+        },
+        {
+          "exampleId": "ex5",
+          "title": "The Kind Feedback Revision 📖❤️",
+          "description": "During a test run of a maths learning app, an eight-year-old tester picked an incorrect fraction. The screen flashed bright red and played a loud buzzer sound *BZZZZT!*, making the child flinch and look sad. The testing team observed this and immediately told the writer. The writer changed the buzzer to a gentle flute chime and added: 'Almost there! Let's count the pizza slices together!' The next child smiled and tried again happily! 🍕💖",
+          "keyTakeaway": "Testers help teams observe how real children feel when using technology, ensuring apps are gentle, encouraging, and supportive! 🌟🥰"
+        }
+      ],
+      "keyPoints": [
+        "Testers systematically check whether robots and digital tools function as designed and meet safety requirements 🕵️🧪",
+        "Testers check movement, stopping, obstacle avoidance, sounds, and control responsiveness under various conditions 🤖🛑",
+        "Finding a problem (a 'bug') is a great achievement because it allows the team to fix glitches and improve the product 🐛🔧",
+        "Animation checkers and game testers look for missing drawings, glitches, and confusing rules to polish creative media 🎬🎮",
+        "A complete tech team — Artist, Writer, Engineer, Builder, and Tester — relies on collaboration, mutual respect, and shared care 👩‍🎨📚👷🕵️❤️"
+      ],
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "The Detective Mindset: Testing with Purpose 🕵️🔍",
+          "content": "What makes a fantastic tester? It is not about trying to break things out of anger; it is about loving quality so much that you want to catch every tiny imperfection before anyone else is disappointed or hurt! Testers think like detectives: they ask 'What if?' questions. What if someone presses two buttons at the exact same second? What if the battery runs low while the robot is rolling? What if a child uses the tablet outdoors in bright sunlight? By imagining real-life situations, testers help design technology that is resilient and dependable! 💡🔎"
+        },
+        {
+          "partNumber": 2,
+          "title": "What Is a 'Bug' in Technology? 🐛💻",
+          "content": "Did you know that the word 'bug' for a computer problem has a true historical story? In 1947, computer pioneer Grace Hopper and her engineering team were working on a giant room-sized computer called the Harvard Mark II. Suddenly, the machine stopped calculating correctly! When they opened up the metal cabinet, they found an actual real moth stuck inside an electrical relay, blocking the connection! They taped the moth into their logbook with the note: 'First actual case of bug being found.' Ever since, tech makers call any glitch or mistake a 'bug', and fixing it is called 'debugging'! 🦋📜"
+        },
+        {
+          "partNumber": 3,
+          "title": "Obstacle Avoidance: How Sensors 'See' Walls 🤖🧱",
+          "content": "How does a testing robot try to avoid bumping into walls? Most small robots use infrared light sensors or ultrasonic sound sensors. An ultrasonic sensor sends out a high-pitched click that humans cannot hear: *CLICK-CLICK-CLICK!* The sound wave bounces off the wall and returns like an echo to a receiver microphone. The robot's computer measures how many milliseconds the echo took to return. If the echo returns very quickly, the wall is close, and the robot halts! Testers check whether this echo sensor works on smooth walls, bumpy curtains, and wooden cabinets! 🦇📡"
+        },
+        {
+          "partNumber": 4,
+          "title": "Safety Standards: The Sacred Promise 🛡️🧸",
+          "content": "When parents buy a toy or school gadget for children, they place sacred trust in the makers. They trust that the plastic won't poison, that the battery won't catch fire, that the wires won't shock, and that the edges won't cut. Quality testers are the guardians of that trust! They follow strict international safety laws. Every test passed is a silent guarantee that a child somewhere in the world can laugh, play, and learn in complete safety and peace! 💖🕊️"
+        },
+        {
+          "partNumber": 5,
+          "title": "Mistakes Are Stepping Stones to Brilliance 🧗‍♂️🌟",
+          "content": "In school and in life, people sometimes feel embarrassed when they make a mistake on a worksheet or drop a ball during sports. But in the world of technology makers, MISTAKES ARE CELEBRATED AS LESSONS! Every bug found is a chance to make the code stronger. Every snapped prototype is a chance to make the plastic thicker. Every confusing sentence is a chance to make the dialogue clearer. Do not fear making mistakes; embrace them, study them with curiosity, and use them to climb higher! 🌈🚀"
+        }
+      ],
+      "guidedQuestions": [
+        {
+          "questionId": "gq1",
+          "question": "What is the primary job of a technology tester? 🕵️🧪",
+          "options": [
+            "To eat all the strawberry ice cream in the staff cafeteria 🍨",
+            "To check whether a robot or tool works as expected and look for problems to improve! 🕵️🔍✨",
+            "To paint the factory roof yellow 🟡",
+            "To sleep on a hammock during work hours 😴"
+          ],
+          "correctAnswer": "To check whether a robot or tool works as expected and look for problems to improve! 🕵️🔍✨",
+          "explanation": "Testers systematically check functions, safety, and performance to catch glitches and help teams improve products! 🕵️",
+          "hint": "Which worker inspects gadgets to make sure they work properly?"
+        },
+        {
+          "questionId": "gq2",
+          "question": "What does a tester do when they check a robot's movement and obstacle avoidance? 🤖📦",
+          "options": [
+            "Throws the robot off a cliff to see if it flies 🪂❌",
+            "Tests if it moves forward, stops when commanded, and detects obstacles like cardboard boxes! 🛑📦✨",
+            "Paints the robot's wheels with mayonnaise 🥪",
+            "Ties balloons to the robot's antenna 🎈"
+          ],
+          "correctAnswer": "Tests if it moves forward, stops when commanded, and detects obstacles like cardboard boxes! 🛑📦✨",
+          "explanation": "Testers check if robots steer, stop, and detect obstacles accurately according to their design! 🤖",
+          "hint": "Think about checking whether the robot rolls, stops, and avoids hitting walls!"
+        },
+        {
+          "questionId": "gq3",
+          "question": "What do technology makers call a glitch, mistake, or unexpected problem in a machine or software? 🐛💡",
+          "options": [
+            "A butterfly 🦋",
+            "A bug! 🐛💻",
+            "A dinosaur 🦖",
+            "A muffin 🧁"
+          ],
+          "correctAnswer": "A bug! 🐛💻",
+          "explanation": "In technology, any glitch, defect, or unexpected error is affectionately called a 'bug'! 🐛",
+          "hint": "What little insect name is used for a computer glitch?"
+        },
+        {
+          "questionId": "gq4",
+          "question": "When a tester finds a problem with a robot turning the wrong way, what happens next? 🕵️➡️🔧",
+          "options": [
+            "The team throws the robot into the garbage and gives up forever 🗑️❌",
+            "The tester notes the problem so the engineers and builders can fix the wiring or software! 📝🔧✨",
+            "The team blames the robot and sends it to time-out ⏳",
+            "The team pretends the problem doesn't exist 🙈"
+          ],
+          "correctAnswer": "The tester notes the problem so the engineers and builders can fix the wiring or software! 📝🔧✨",
+          "explanation": "Finding a problem allows the team to collaborate, fix the root cause, and make the product better! 🤝",
+          "hint": "How does teamwork help fix a problem once it is discovered?"
+        },
+        {
+          "questionId": "gq5",
+          "question": "Who is on the complete technology team that brings a friendly robot like Bolt to life? 👩‍🎨📚👷🕵️❤️",
+          "options": [
+            "Only one lonely computer chip with no humans anywhere 🤖❌",
+            "Artists, Writers, Engineers, Builders, and Testers working together with shared care and respect! 🌟🤝💖",
+            "Ten robots who built each other with magic wands 🪄",
+            "A flock of pigeons flying over the factory 🐦"
+          ],
+          "correctAnswer": "Artists, Writers, Engineers, Builders, and Testers working together with shared care and respect! 🌟🤝💖",
+          "explanation": "Technology succeeds through the diverse, complementary talents of artists, writers, engineers, builders, and testers! 🤝",
+          "hint": "Think of all the creative, technical, and testing roles collaborating together!"
+        }
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "activityId": "activity1",
+      "title": "Meet the Tech Makers Match Game 🎨",
+      "description": "BEEP BOOP! Welcome to the MAIN EVENT of Chapter 4, Lesson 2: MEET THE TECH MAKERS MATCH GAME! 🎨👩‍🎨📚👨‍💻👷🕵️🎮✨\n\nIn this delightful interactive role-matching game, YOU are Bolt's Lead Team Director! \nBolt's tablet displays five glowing maker stations inside the high-tech workshop:\n- The Art Studio 🎨 (where artists sketch cheerful faces and choose colours!)\n- The Story Den 📚 (where writers craft funny jokes and gentle dialogues!)\n- The Engineering Desk 📐 (where engineers design gears, circuits, and logic!)\n- The Factory Assembly Line 🏭 (where builders assemble screws, wheels, and casings!)\n- The Testing Laboratory 🧪 (where testers run obstacle courses and find bugs!)\n\nYOUR MISSION, DIRECTOR:\nConnect the right tech makers to their signature tasks, solve real-world development puzzles, fix robotic glitches through teamwork, and celebrate the incredible human collaboration behind every smart tool! \n\nRemember Bolt's golden rules:\n- Real artists drew my blue eyes, and friendly engineers taught me how to talk! 🤖💙\n- Every role is equally important and deserves our deepest respect! ⭐\n- Finding a mistake is a celebration — it helps the team improve and shine! 🐛✨\n\nScore 5 correct challenges in a row to earn your Teamwork Streak! Complete all 18 challenges to unlock the GRAND CHAMPION TECH MAKER TROPHY! 🏆🎉",
+      "instructions": [
+        "1. Read the workshop scenario, character challenge, and maker cards on screen carefully 👀🗂️",
+        "2. Match the right tech maker (Artist, Writer, Engineer, Builder, Tester) to the task 🎨📚👷",
+        "3. Remember that different roles contribute different superpowers to the same team 🤝🌟",
+        "4. Tap your answer to submit and see Bolt cheer for that team member! 👆✨",
+        "5. Watch Bolt celebrate with spinning gears, paint splashes, and golden sparks! ⚙️🎉",
+        "6. If you make a mistake, read Bolt's gentle teamwork hint and try again! 💡",
+        "7. Score 5 correct in a row to unlock the Team Maker Streak Bonus! 🔥",
+        "8. Finish all 18 challenges to earn the Grand Champion Tech Maker Trophy! 🏆🌟",
+        "9. Applaud the amazing teamwork of artists, writers, builders, engineers, and testers! 🤝🎉",
+        "10. Remember: you have maker talents inside you right now — keep building and imagining! 💡🌈"
+      ],
+      "materials": [
+        "Interactive Tech Makers Workshop matching screen 📱💻",
+        "Virtual Artist Digital Palette and Character Sketchpad 🎨🖌️",
+        "Virtual Story Writer Dialogue Scroll and Joke Notebook 📚✍️",
+        "Virtual Engineer Blueprints and Circuit Breadboard 📐⚡",
+        "Virtual Factory Assembly Torque Screwdriver and Chassis Jig 🏭🪛",
+        "Virtual Quality Tester Obstacle Course and Bug Log 🕵️🧪",
+        "Bolt's Golden Tech Maker Medals ⭐🎖️",
+        "Lead Tester Maya's Bug-Tracking Magnifying Glass 🔍🐛",
+        "Factory Assembly Station Precision Screwdriver Jig 🪛🏭",
+        "Sound Designer Nina's Harmonic Toy Xylophone 🎵🎹"
+      ],
+      "duration": "20-25 minutes of interactive role-matching, problem-solving puzzles, and teamwork celebration! ⏱️🎉",
+      "toastMessages": {
+        "tap_prompt": "👇 Connect the artist to the colorful cartoon!",
+        "great_job": "🎨 Match made! Artists give robots their cheerful smiles!",
+        "try_again": "🧩 Who tests the robot to make sure it doesn’t bump into walls? Find the tester!",
+        "streak_bonus": "🔥 5 IN A ROW! Bolt's circuits are dancing! Tech Maker Streak UNLOCKED! 🌟🛠️",
+        "perfect_score": "🏆 GRAND CHAMPION TECH MAKER! You mastered how artists, writers, engineers, builders, and testers create technology! BEEP BOOP! 🎊🤖"
+      },
+      "sortingItems": [
+        {
+          "itemId": "task1",
+          "name": "Challenge A: Match the Artist 🎨👩‍🎨",
+          "emoji": "🎨",
+          "category": "creative_minds",
+          "categoryLabel": "Creative Minds 🎨",
+          "isCorrect": true,
+          "description": "Look at the colourful cartoon robot on screen with cheerful sky-blue casing, round sapphire eyes, and a bright yellow antenna.",
+          "question": "Who might draw the character's friendly face and choose its cheerful colours?",
+          "options": [
+            "The Artist or Illustrator 🎨👩‍🎨✨",
+            "The Bulldozer driver 🚜",
+            "The Plumber fixing a kitchen pipe 🪠",
+            "The Deep-sea fisherman 🎣"
+          ],
+          "correctAnswer": "The Artist or Illustrator 🎨👩‍🎨✨",
+          "explanation": "Artists and illustrators use drawing tools and creativity to sketch characters, expressions, and colour schemes! 🎨",
+          "hint": "Which creative maker draws faces, bodies, and picks colours?",
+          "positiveFeedback": "🎨 Match made! Artists give robots their cheerful smiles!",
+          "tryAgainFeedback": "👇 Connect the artist to the colorful cartoon!",
+          "boltEncouragement": "BEEP BOOP! Beautiful art! Real artists drew my blue eyes and smile! 💙⚡"
+        },
+        {
+          "itemId": "task2",
+          "name": "Challenge B: Find the Story Writer 📚✍️",
+          "emoji": "📚",
+          "category": "creative_minds",
+          "categoryLabel": "Creative Minds 🎨",
+          "isCorrect": true,
+          "description": "Bolt makes everyone laugh by saying: 'BEEP BOOP! I need an extra book pocket!' while balancing five schoolbooks.",
+          "question": "Who might write Bolt's funny jokes, story adventures, and cheerful greetings?",
+          "options": [
+            "A bicycle bell on the handlebar 🔔",
+            "The Story Writer or Dialogue Author 📚✍️✨",
+            "A lawn sprinkler spinning in the grass 🚿",
+            "A cardboard shipping box 📦"
+          ],
+          "correctAnswer": "The Story Writer or Dialogue Author 📚✍️✨",
+          "explanation": "Story writers imagine the character's personality, write witty jokes, and craft gentle, encouraging dialogue! ✍️",
+          "hint": "Who writes words, stories, and jokes for characters?",
+          "positiveFeedback": "📚 Words of joy! Story writers give robots their humour, warmth, and personality! 😄",
+          "tryAgainFeedback": "🧩 Who tests the robot to make sure it doesn’t bump into walls? Find the tester!",
+          "boltEncouragement": "BEEP BOOP! *Chuckle!* That book pocket joke still makes my antenna tickle! 📖⚡"
+        },
+        {
+          "itemId": "task3",
+          "name": "Challenge C: Find the Builder 👷🏭",
+          "emoji": "👷",
+          "category": "builders_engineers",
+          "categoryLabel": "Builders & Engineers 👷",
+          "isCorrect": true,
+          "description": "In the clean factory workshop, a team member fastens the plastic body shells, connects the motor wires, and tightens screws.",
+          "question": "Who helps assemble the physical parts of a robot toy in a factory or workshop?",
+          "options": [
+            "The Builder, Assembly Worker, or Technician 👷🏭🔧✨",
+            "The Ice Cream Scooper at the beach 🍦",
+            "The Postcard Delivery Worker 📮",
+            "The Piano Tuner 🎹"
+          ],
+          "correctAnswer": "The Builder, Assembly Worker, or Technician 👷🏭🔧✨",
+          "explanation": "Builders and assembly technicians use specialized tools to put physical parts together into complete products! 🏭",
+          "hint": "Who assembles the plastic parts, motors, and screws?",
+          "positiveFeedback": "🔧 Perfectly assembled! Every gear and screw is securely in place! 🔩✨",
+          "tryAgainFeedback": "👷 Look for the maker who works with tools to assemble physical parts!",
+          "boltEncouragement": "BEEP BOOP! Solid craftsmanship! My chassis is sturdy and durable! 🤖⚡"
+        },
+        {
+          "itemId": "task4",
+          "name": "Challenge D: Find the Engineer 📐⚙️",
+          "emoji": "📐",
+          "category": "builders_engineers",
+          "categoryLabel": "Builders & Engineers 👷",
+          "isCorrect": true,
+          "description": "Someone sits with technical schematics, calculating how electricity flows from the battery to the motors and designing the gear ratios.",
+          "question": "Who helps design how a machine or robot should work on the inside?",
+          "options": [
+            "The Engineer (Mechanical, Electrical, or Software) 📐⚙️⚡✨",
+            "The Popcorn Maker at the cinema 🍿",
+            "The Dog Walker in the park 🐕",
+            "The Swimming Pool Cleaner 🏊"
+          ],
+          "correctAnswer": "The Engineer (Mechanical, Electrical, or Software) 📐⚙️⚡✨",
+          "explanation": "Engineers design the internal mechanisms, circuits, power systems, and logic that make machines function! 📐",
+          "hint": "Who designs how machines, circuits, and gears work?",
+          "positiveFeedback": "⚙️ Master engineering! Friendly engineers taught me how to talk and move! 🧠⚡",
+          "tryAgainFeedback": "📐 Think about the problem-solver who plans the internal mechanisms!",
+          "boltEncouragement": "BEEP BOOP! High-tech harmony! My circuits are humming with efficiency! 💡⚡"
+        },
+        {
+          "itemId": "task5",
+          "name": "Challenge E: Find the Tester 🕵️🧪",
+          "emoji": "🕵️",
+          "category": "testers_solvers",
+          "categoryLabel": "Testers & Problem Solvers 🕵️",
+          "isCorrect": true,
+          "description": "A prototype robot rolls toward a wooden obstacle. A team member watches closely with a clipboard, checking if the sensor stops the robot in time.",
+          "question": "Who checks whether a robot works as expected and looks for problems to improve?",
+          "options": [
+            "The Quality Tester or Problem Finder 🕵️🧪🔍✨",
+            "The Traffic Cone on the highway 🦺",
+            "The Fireplace Chimney 🪵",
+            "The Rollercoaster Seatbelt 🎢"
+          ],
+          "correctAnswer": "The Quality Tester or Problem Finder 🕵️🧪🔍✨",
+          "explanation": "Quality testers run tests, inspect functions, find glitches ('bugs'), and help the team improve the product! 🕵️",
+          "hint": "Who tests the robot to make sure it doesn't bump into walls?",
+          "positiveFeedback": "🔍 Detective mastery! The tester checked the sensor and verified the safe stop! 🛑✨",
+          "tryAgainFeedback": "🧩 Who tests the robot to make sure it doesn’t bump into walls? Find the tester!",
+          "boltEncouragement": "BEEP BOOP! Keen detective eyes! Testers protect quality and safety! 🛡️⚡"
+        },
+        {
+          "itemId": "task6",
+          "name": "Challenge F: Match the Entire Team 🤝🧩",
+          "emoji": "🧩",
+          "category": "teamwork",
+          "categoryLabel": "Teamwork & Collaboration 🤝",
+          "isCorrect": true,
+          "description": "Think about the five team members: Artist, Writer, Engineer, Builder, and Tester.",
+          "question": "How do these five different professionals work together to create a robot?",
+          "options": [
+            "They compete in a footrace to see who is the fastest 🏃‍♂️",
+            "Each person contributes their unique skill (art, story, design, building, testing) as a team! 👩‍🎨📚📐👷🕵️🤝",
+            "They all do only the exact same task at the same second 👥",
+            "They let the robot build itself while they go on holiday 🏖️❌"
+          ],
+          "correctAnswer": "Each person contributes their unique skill (art, story, design, building, testing) as a team! 👩‍🎨📚📐👷🕵️🤝",
+          "explanation": "Every maker contributes a special superpower; when combined, the team creates wonderful technology! 🌟",
+          "hint": "Think about how diverse talents combine like pieces of a puzzle!",
+          "positiveFeedback": "🌟 THE POWER OF TEAMWORK! Diverse talents united to create something magical! 💖",
+          "tryAgainFeedback": "🤝 Remember: different people bring different skills to the team!",
+          "boltEncouragement": "BEEP BOOP! Five superpowers, one team! That is how I was created! 🤖⚡"
+        },
+        {
+          "itemId": "task7",
+          "name": "Challenge G: Fix the Problem (The Left-Turning Bug) 🐛🔧",
+          "emoji": "🐛",
+          "category": "testers_solvers",
+          "categoryLabel": "Testers & Problem Solvers 🕵️",
+          "isCorrect": true,
+          "description": "A newly built robot turns left when the remote says 'Turn Right'. Who helps IDENTIFY this problem so the team can fix it?",
+          "question": "Which team member identifies the problem during testing runs?",
+          "options": [
+            "The Quality Tester who runs obstacle trials and logs the glitch 🕵️📝✨",
+            "The Pizza Delivery Driver 🍕",
+            "The Window Glass Cleaner 🪟",
+            "The Bowling Ball 🎳"
+          ],
+          "correctAnswer": "The Quality Tester who runs obstacle trials and logs the glitch 🕵️📝✨",
+          "explanation": "The tester spots the bug during trials and reports it to the engineers and builders so they can fix it! 🕵️",
+          "hint": "Who tests the machine and spots problems first?",
+          "positiveFeedback": "🐛 Bug caught! The tester logged the glitch, and the engineers fixed the wiring in a snap! 🔧",
+          "tryAgainFeedback": "🧩 Who tests the robot to make sure it doesn’t bump into walls? Find the tester!",
+          "boltEncouragement": "BEEP BOOP! Bug squashed! Finding problems makes technology better! 🔍⚡"
+        },
+        {
+          "itemId": "task8",
+          "name": "Challenge H: Everyone Helps — Why Teamwork Matters 🌟❤️",
+          "emoji": "❤️",
+          "category": "teamwork",
+          "categoryLabel": "Teamwork & Collaboration 🤝",
+          "isCorrect": true,
+          "description": "A young student asks Bolt: 'Why can't just one person do everything alone without a team?'",
+          "question": "Why is having a team with diverse skills so helpful in technology projects?",
+          "options": [
+            "Because one person would need twenty hands and a hundred arms 🐙",
+            "Because different people bring different skills, and collaboration creates higher quality, safer tools! 🌟🤝💖",
+            "Because only teams are allowed to buy plastic screws 🔩",
+            "Because robots get lonely if only one person looks at them 🤖"
+          ],
+          "correctAnswer": "Because different people bring different skills, and collaboration creates higher quality, safer tools! 🌟🤝💖",
+          "explanation": "Teamwork allows specialists in art, writing, building, and testing to combine their best work! 🤝",
+          "hint": "Why is combining different skills better than doing everything alone?",
+          "positiveFeedback": "💖 COLLABORATION VICTORY! Many hands and diverse minds build wonderful things! 🌈",
+          "tryAgainFeedback": "🤝 Think about how different skills make the whole project better!",
+          "boltEncouragement": "BEEP BOOP! Together everyone achieves more! Teamwork is human brilliance! 🌟⚡"
+        },
+        {
+          "itemId": "task9",
+          "name": "Challenge I: The Sound Designer's Magic 🎵🔊",
+          "emoji": "🎵",
+          "category": "creative_minds",
+          "categoryLabel": "Creative Minds 🎨",
+          "isCorrect": true,
+          "description": "When you tap Bolt's hand, you hear a friendly chime: *BEEP BOOP CHIK-CHIK!* instead of a harsh car horn.",
+          "question": "Which creative professional designed, recorded, and mixed Bolt's cheerful robot audio?",
+          "options": [
+            "The Sound Designer or Audio Composer 🎵🎹✨",
+            "The Road Sweeper on the street 🧹",
+            "The Roofer laying shingles 🏠",
+            "The Garden Mole digging dirt 🦔"
+          ],
+          "correctAnswer": "The Sound Designer or Audio Composer 🎵🎹✨",
+          "explanation": "Sound designers record, mix, and compose the audio effects and melodies that give technology its voice! 🎵",
+          "hint": "Who works with sounds, beeps, and musical instruments?",
+          "positiveFeedback": "🎶 Melodic magic! Sound designers make technology pleasant and joyful to hear! 🔊",
+          "tryAgainFeedback": "🎵 Look for the maker who works with sound effects and music!",
+          "boltEncouragement": "BEEP BOOP! My audio waves are singing! Thank you, sound designers! 🎼⚡"
+        },
+        {
+          "itemId": "task10",
+          "name": "Challenge J: The Product Designer's Soft Edges 📱🛡️",
+          "emoji": "📱",
+          "category": "creative_minds",
+          "categoryLabel": "Creative Minds 🎨",
+          "isCorrect": true,
+          "description": "A tablet computer for 8-year-olds has rounded silicone corners and a textured back so it won't slip out of small hands.",
+          "question": "Who thought about how human hands hold the tablet and designed its comfortable shape?",
+          "options": [
+            "The Product Designer or Ergonomics Expert 📱🖐️✨",
+            "The Helicopter Rotor Blade 🚁",
+            "The Street Lamp Post 💡",
+            "The Fire Hydrant 🚒"
+          ],
+          "correctAnswer": "The Product Designer or Ergonomics Expert 📱🖐️✨",
+          "explanation": "Product designers consider how human bodies interact with objects, ensuring tools are comfortable and easy to hold! 📱",
+          "hint": "Who designs how products look and feel in human hands?",
+          "positiveFeedback": "🖐️ Perfect grip! Product designers make tools that fit human hands comfortably! 🧸",
+          "tryAgainFeedback": "📱 Think about the designer who plans the shape and comfort of products!",
+          "boltEncouragement": "BEEP BOOP! Comfort and safety combined! Ergonomics is wonderful! 📐⚡"
+        },
+        {
+          "itemId": "task11",
+          "name": "Challenge K: Checking an Animated Cartoon Frame 🎬👀",
+          "emoji": "🎬",
+          "category": "testers_solvers",
+          "categoryLabel": "Testers & Problem Solvers 🕵️",
+          "isCorrect": true,
+          "description": "In an animated cartoon episode, someone notices that Bolt's yellow antenna accidentally vanished for three frames.",
+          "question": "Who watches cartoons and digital media carefully to catch visual mistakes before broadcast?",
+          "options": [
+            "The Animation Checker or Quality Inspector 🎬👀✨",
+            "The Snow Plow Driver 🚜",
+            "The Submarine Periscope 🤿",
+            "The Water Park Lifeguard 🏊"
+          ],
+          "correctAnswer": "The Animation Checker or Quality Inspector 🎬👀✨",
+          "explanation": "Animation checkers inspect videos frame-by-frame to catch missing drawings or visual glitches! 🎬",
+          "hint": "Who inspects animated cartoons to check for missing drawings?",
+          "positiveFeedback": "👀 Sharp eyes! The missing antenna was spotted and redrawn before anyone noticed! 🎨",
+          "tryAgainFeedback": "🎬 Think about the inspector who checks video frames for errors!",
+          "boltEncouragement": "BEEP BOOP! My antenna is safely back on my head! Thank you, checkers! 📺⚡"
+        },
+        {
+          "itemId": "task12",
+          "name": "Challenge L: Software Logic — The Step-by-Step Recipe 👨‍💻📜",
+          "emoji": "👨‍💻",
+          "category": "builders_engineers",
+          "categoryLabel": "Builders & Engineers 👷",
+          "isCorrect": true,
+          "description": "A programmer writes: 'Step 1: Check battery. Step 2: Blink blue eye. Step 3: Play cheerful greeting.'",
+          "question": "What is this step-by-step set of computer instructions called?",
+          "options": [
+            "A bowl of potato salad 🥗",
+            "Software instructions or computer code 👨‍💻📜✨",
+            "A train ticket to the mountains 🎫",
+            "A secret treasure map drawn in invisible ink 🗺️"
+          ],
+          "correctAnswer": "Software instructions or computer code 👨‍💻📜✨",
+          "explanation": "Software instructions (programs) tell computers and robots what steps to execute in exact order! 💻",
+          "hint": "What do programmers write for computers to follow?",
+          "positiveFeedback": "📜 Logic unlocked! Clear instructions make machines behave helpfully! ⚡",
+          "tryAgainFeedback": "👨‍💻 Think about the instructions written by software developers!",
+          "boltEncouragement": "BEEP BOOP! Clear instructions keep my circuits running like clockwork! 🧠⚡"
+        },
+        {
+          "itemId": "task13",
+          "name": "Challenge M: The Electronics Technician's Prototype 🔌🧪",
+          "emoji": "🔌",
+          "category": "builders_engineers",
+          "categoryLabel": "Builders & Engineers 👷",
+          "isCorrect": true,
+          "description": "Inside the laboratory, someone uses a soldering tool to join a tiny copper wire to a glowing green circuit board.",
+          "question": "Which technical helper builds prototypes and repairs electrical connections?",
+          "options": [
+            "The Electronics Technician 🔌🧪✨",
+            "The Horse Trainer 🐎",
+            "The Apple Picker 🍎",
+            "The Ski Instructor ⛷️"
+          ],
+          "correctAnswer": "The Electronics Technician 🔌🧪✨",
+          "explanation": "Electronics technicians assemble circuits, test wiring, and build prototypes with soldering tools! 🔌",
+          "hint": "Who solders wires and tests electronic circuit boards?",
+          "positiveFeedback": "⚡ Spark of connection! The circuit board powers up with crisp electrical current! 💡",
+          "tryAgainFeedback": "🔌 Look for the technician who works with wires and circuits!",
+          "boltEncouragement": "BEEP BOOP! Smooth electricity! My power pathways are fully energized! 🔋⚡"
+        },
+        {
+          "itemId": "task14",
+          "name": "Challenge N: Toy Drop Testing for Safety 🧸🛡️",
+          "emoji": "🧸",
+          "category": "testers_solvers",
+          "categoryLabel": "Testers & Problem Solvers 🕵️",
+          "isCorrect": true,
+          "description": "A tester drops a prototype robot from a table onto hard linoleum five times in a row.",
+          "question": "Why does the tester deliberately drop the toy during safety testing?",
+          "options": [
+            "Because the tester dislikes toys 😠",
+            "To verify that the plastic casing won't shatter into sharp pieces if a child drops it! 🧸🛡️✨",
+            "To see if the toy can bounce over the roof 🏠",
+            "To make a loud noise to wake up the neighbours 📢"
+          ],
+          "correctAnswer": "To verify that the plastic casing won't shatter into sharp pieces if a child drops it! 🧸🛡️✨",
+          "explanation": "Drop testing ensures that toys are durable and will not break into hazardous sharp fragments during play! 🛡️",
+          "hint": "Why is it important to ensure a toy won't shatter if dropped by a child?",
+          "positiveFeedback": "🛡️ Durability certified! The sturdy casing survived the drop without a scratch! 🌟",
+          "tryAgainFeedback": "🧸 Think about testing whether the plastic is strong and safe for kids!",
+          "boltEncouragement": "BEEP BOOP! Sturdy as a mountain! Tested tough for playful adventures! 🦾⚡"
+        },
+        {
+          "itemId": "task15",
+          "name": "Challenge O: The Idea Maker — Spotting Problems 💡🧩",
+          "emoji": "💡",
+          "category": "creative_minds",
+          "categoryLabel": "Creative Minds 🎨",
+          "isCorrect": true,
+          "description": "Maya noticed that children in wheelchair ramps had trouble reaching high elevator buttons, so she sketched a foot-pedal control.",
+          "question": "What special quality makes someone a great inventor and idea maker?",
+          "options": [
+            "Having very tall hair 💇",
+            "Observing everyday challenges with empathy and imagining creative solutions! 💡💖✨",
+            "Owning ten pairs of red sneakers 👟",
+            "Eating five pizzas every evening 🍕"
+          ],
+          "correctAnswer": "Observing everyday challenges with empathy and imagining creative solutions! 💡💖✨",
+          "explanation": "Inventors observe real human problems and use empathy and creativity to invent helpful tools! 💡",
+          "hint": "What helps someone notice problems and invent solutions?",
+          "positiveFeedback": "💡 Empathy and invention! Great ideas come from caring about other people! 🌟",
+          "tryAgainFeedback": "💡 Think about how observing challenges and caring for others sparks inventions!",
+          "boltEncouragement": "BEEP BOOP! Compassionate innovation! You have the heart of an inventor! 💖⚡"
+        },
+        {
+          "itemId": "task16",
+          "name": "Challenge P: Can AI Create Itself Without Humans? 🤖❌",
+          "emoji": "🤖",
+          "category": "teamwork",
+          "categoryLabel": "Teamwork & Collaboration 🤝",
+          "isCorrect": true,
+          "description": "Someone says: 'Robots and AI create themselves in the middle of the night without any human beings.'",
+          "question": "Is it true that AI and robots create themselves without human teams?",
+          "options": [
+            "Yes, robots grow on metal vines in secret robot forests 🌲",
+            "No! Real human artists, writers, engineers, builders, and testers imagine, create, and improve every tool! 👩‍🎨👨‍💻👷🕵️❤️",
+            "Yes, robots appear when you sneeze three times 🤧",
+            "Yes, computer code writes itself out of starlight ⭐"
+          ],
+          "correctAnswer": "No! Real human artists, writers, engineers, builders, and testers imagine, create, and improve every tool! 👩‍🎨👨‍💻👷🕵️❤️",
+          "explanation": "Technology never creates itself; human imagination, labor, testing, and care build all tools! 🤝",
+          "hint": "Remember Bolt's opening words: real artists and friendly engineers built him!",
+          "positiveFeedback": "❤️ TRUTH CELEBRATED! Real human beings are the creators behind all technology! 🌟",
+          "tryAgainFeedback": "🤖 Remember: humans imagine, design, build, and test every piece of technology!",
+          "boltEncouragement": "BEEP BOOP! That is Bolt's golden truth! Humans are the true magic makers! 🌈⚡"
+        },
+        {
+          "itemId": "task17",
+          "name": "Challenge Q: The Gift of Curiosity and Practice 🌟🌱",
+          "emoji": "🌱",
+          "category": "teamwork",
+          "categoryLabel": "Teamwork & Collaboration 🤝",
+          "isCorrect": true,
+          "description": "You love drawing comic doodles and taking apart old broken flashlights with your parents to see the battery spring.",
+          "question": "How do childhood hobbies like drawing and tinkering prepare you for future tech maker careers?",
+          "options": [
+            "They make your fingernails turn purple 🟣",
+            "They develop spatial thinking, curiosity, patience, and creative problem-solving skills! 🎨🔧💡✨",
+            "They teach you how to turn into a penguin 🐧",
+            "They have zero value and should be stopped 🛑❌"
+          ],
+          "correctAnswer": "They develop spatial thinking, curiosity, patience, and creative problem-solving skills! 🎨🔧💡✨",
+          "explanation": "Childhood drawing, building, and curiosity are the exact foundations of engineering, design, and art! 🌟",
+          "hint": "How does playing, building, and drawing help our minds grow?",
+          "positiveFeedback": "🌱 Curious seeds blossom into master makers! Keep tinkering, drawing, and exploring! 🌟",
+          "tryAgainFeedback": "🌟 Think about how drawing, building, and tinkering build creative skills!",
+          "boltEncouragement": "BEEP BOOP! Curiosity is your superpower! Every great inventor started as a curious kid! 🚀⚡"
+        },
+        {
+          "itemId": "task18",
+          "name": "Challenge R: The Ultimate Tech Maker Formula 🏆🤝",
+          "emoji": "🏆",
+          "category": "teamwork",
+          "categoryLabel": "Teamwork & Collaboration 🤝",
+          "isCorrect": true,
+          "description": "Bolt wants you to state the ultimate summary of Chapter 4, Lesson 2: People Behind Technology!",
+          "question": "What is the heart of technology?",
+          "options": [
+            "Cold metal, silent wires, and emotionless computer chips 🔌❌",
+            "Human imagination, caring teamwork, artistic beauty, and problem-solving that helps people! 🌟👩‍🎨📚👷🕵️💖",
+            "A pile of batteries buried under the carpet 🔋",
+            "A secret password that only robots know 🤫"
+          ],
+          "correctAnswer": "Human imagination, caring teamwork, artistic beauty, and problem-solving that helps people! 🌟👩‍🎨📚👷🕵️💖",
+          "explanation": "Technology is human care made tangible through imagination, engineering, art, and teamwork! 💖",
+          "hint": "Which choice celebrates human imagination, teamwork, and helping others?",
+          "positiveFeedback": "🏆 GRAND CHAMPION TECH MAKER! You mastered how artists, writers, engineers, builders, and testers create technology! BEEP BOOP! 🎊🤖",
+          "tryAgainFeedback": "🌟 Look for the answer that honors human imagination, teamwork, and care!",
+          "boltEncouragement": "BEEP BOOP! HOORAY! You unlocked the Grand Champion Tech Maker Trophy! 🏆🎉⚡"
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "quizId": "quiz-ch4-l2",
+    "title": "People Behind Technology — Grand Maker Quiz 🛠️❓",
+    "description": "Test your understanding of the artists, storytellers, engineers, builders, and testers who collaborate to create technology with Bolt!",
+    "passMark": 80,
+    "questions": [
+      {
+        "questionId": "q1",
+        "question": "Does technology like robots, tablets, and smart tools create itself? 🤖🤔",
+        "type": "multiple_choice",
+        "options": [
+          "Yes, robots grow on trees in the forest 🌳",
+          "No! Real human beings imagine, design, build, test, and improve all technology! 👩‍🎨👨‍💻👷🕵️✨",
+          "Yes, computer code falls from rainclouds 🌧️",
+          "Yes, robots appear when you clap your hands three times 👏"
+        ],
+        "correctAnswer": "No! Real human beings imagine, design, build, test, and improve all technology! 👩‍🎨👨‍💻👷🕵️✨",
+        "explanation": "Technology is imagined, designed, built, and tested by human teams; it never creates itself! 💡",
+        "emoji": "🤖",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Exactly right! Real human beings are the creators behind every tool! Gold Star! ⭐",
+          "incorrect": "🤖 No! Real human beings imagine, design, build, and test all technology!"
+        }
+      },
+      {
+        "questionId": "q2",
+        "question": "What does an artist do when designing a friendly robot like Bolt? 🎨👀",
+        "type": "multiple_choice",
+        "options": [
+          "Drives a cement mixer down the road 🚚",
+          "Sketches the robot's face, chooses friendly colours, and draws expressive eyes and smiles! 🎨👩‍🎨✨",
+          "Washes dishes in the school cafeteria 🍽️",
+          "Hammers nails into the garden fence 🔨"
+        ],
+        "correctAnswer": "Sketches the robot's face, chooses friendly colours, and draws expressive eyes and smiles! 🎨👩‍🎨✨",
+        "explanation": "Artists choose shapes, colours, and facial expressions so robots look approachable and friendly! 🎨",
+        "emoji": "🎨",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Spot on! Real artists drew my blue eyes and smile! 💙⚡",
+          "incorrect": "🎨 Artists sketch character faces, choose colours, and design expressions!"
+        }
+      },
+      {
+        "questionId": "q3",
+        "question": "How do artists create the illusion of cartoon characters moving on screen? 🎬📺",
+        "type": "multiple_choice",
+        "options": [
+          "They blow air onto the screen through a straw 🥤",
+          "They draw a sequence of slightly different pictures that are displayed rapidly in succession! 🎞️✨",
+          "They shake the computer mouse back and forth 🖱️",
+          "They turn the TV volume all the way up 🔊"
+        ],
+        "correctAnswer": "They draw a sequence of slightly different pictures that are displayed rapidly in succession! 🎞️✨",
+        "explanation": "Animation works by displaying a series of slightly different drawings in rapid sequence! 📺",
+        "emoji": "📺",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Fluid motion mastery! Frame by frame creates the magic of animation! 🎬⚡",
+          "incorrect": "📺 Animation displays a sequence of slightly different drawings rapidly!"
+        }
+      },
+      {
+        "questionId": "q4",
+        "question": "Who writes Bolt's jokes and friendly dialogues? 📚✍️",
+        "type": "multiple_choice",
+        "options": [
+          "A story writer who crafts personalities, humour, and caring words! 📚✍️✨",
+          "A toaster on the kitchen counter 🍞",
+          "A mechanical alarm clock ringing ⏰",
+          "A wooden coat hanger 🧥"
+        ],
+        "correctAnswer": "A story writer who crafts personalities, humour, and caring words! 📚✍️✨",
+        "explanation": "Story writers imagine character personalities and write the witty dialogue and jokes! 📚",
+        "emoji": "📚",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Words of warmth! Writers give technology its voice and heart! 📖⚡",
+          "incorrect": "📚 A story writer crafts the jokes, dialogue, and character personality!"
+        }
+      },
+      {
+        "questionId": "q5",
+        "question": "What does an engineer do in a technology project? 📐⚙️",
+        "type": "multiple_choice",
+        "options": [
+          "Eats cabbage in the hallway 🥬",
+          "Plans and designs how the machine's gears, circuits, structure, and logic work together! 📐⚙️✨",
+          "Paints the front lawn purple 🎨",
+          "Throws paper airplanes at the ceiling ✈️"
+        ],
+        "correctAnswer": "Plans and designs how the machine's gears, circuits, structure, and logic work together! 📐⚙️✨",
+        "explanation": "Engineers design the internal mechanisms, structures, and circuits to make machines work! 📐",
+        "emoji": "📐",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Engineering excellence! Friendly engineers taught me how to talk and move! ⚙️⚡",
+          "incorrect": "📐 Engineers plan how gears, circuits, structures, and logic work together!"
+        }
+      },
+      {
+        "questionId": "q6",
+        "question": "What happens in a toy factory when robot toys are built? 🏭🤖",
+        "type": "multiple_choice",
+        "options": [
+          "Toys pop out of a magic popcorn popper 🍿",
+          "Workers and machines assemble parts, install electronic circuits, attach wheels, and package toys! 👷🔩📦✨",
+          "Workers sit on beanbags and take naps all day 😴",
+          "The building fills with chocolate pudding 🍫"
+        ],
+        "correctAnswer": "Workers and machines assemble parts, install electronic circuits, attach wheels, and package toys! 👷🔩📦✨",
+        "explanation": "Factories bring parts together, assembling motors, shells, and circuits into finished products! 🏭",
+        "emoji": "🏭",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Precision manufacturing! Assembly teams build sturdy toys! 🔩⚡",
+          "incorrect": "🏭 Factory workers and machines assemble parts, install circuits, and package toys!"
+        }
+      },
+      {
+        "questionId": "q7",
+        "question": "What does a software developer write for computers and robots? 👨‍💻📜",
+        "type": "multiple_choice",
+        "options": [
+          "Postcards to polar bears in Antarctica ✉️",
+          "Clear, step-by-step instructions (software code) that guide what the computer or robot does! 👨‍💻📜✨",
+          "Recipes for spicy onion soup 🍲",
+          "Songs for whistling teakettles 🫖"
+        ],
+        "correctAnswer": "Clear, step-by-step instructions (software code) that guide what the computer or robot does! 👨‍💻📜✨",
+        "explanation": "Software developers write the instructions and logic that tell computers how to behave! 💻",
+        "emoji": "👨‍💻",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Software logic! Developers give computers their step-by-step instructions! 💡⚡",
+          "incorrect": "👨‍💻 Developers write step-by-step instructions that computers and robots follow!"
+        }
+      },
+      {
+        "questionId": "q8",
+        "question": "What is the job of a quality tester? 🕵️🧪",
+        "type": "multiple_choice",
+        "options": [
+          "To hide under a rug and eat cookies 🍪",
+          "To systematically check whether a robot or tool works as expected and look for problems to fix! 🕵️🔍✨",
+          "To paint all walls neon green 🟩",
+          "To juggle pineapples at recess 🍍"
+        ],
+        "correctAnswer": "To systematically check whether a robot or tool works as expected and look for problems to fix! 🕵️🔍✨",
+        "explanation": "Testers check whether products work correctly, finding glitches so the team can improve them! 🕵️",
+        "emoji": "🕵️",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Detective mastery! Testers protect quality and safety! 🔍⚡",
+          "incorrect": "🕵️ Testers check whether products work as expected and find problems to fix!"
+        }
+      },
+      {
+        "questionId": "q9",
+        "question": "What do tech makers call an unexpected mistake or glitch in a machine or program? 🐛💻",
+        "type": "multiple_choice",
+        "options": [
+          "A bird 🐦",
+          "A bug! 🐛✨",
+          "A fish 🐟",
+          "A squirrel 🐿️"
+        ],
+        "correctAnswer": "A bug! 🐛💻",
+        "explanation": "Glitches and unexpected errors in technology are called 'bugs'! 🐛",
+        "emoji": "🐛",
+        "boltReaction": {
+          "correct": "BEEP BOOP! That is the famous tech term: a bug! 🐛⚡",
+          "incorrect": "🐛 Tech makers call a glitch or mistake a 'bug'!"
+        }
+      },
+      {
+        "questionId": "q10",
+        "question": "What does a tester do when a robot toy turns left instead of right? 🕵️➡️🔧",
+        "type": "multiple_choice",
+        "options": [
+          "Throws the robot out the second-story window 🪟❌",
+          "Documents the problem clearly so engineers can check the wiring and software! 📝🔧✨",
+          "Pretends that turning left was the secret plan all along 🤫",
+          "Blames the robot's horoscope ♈"
+        ],
+        "correctAnswer": "Documents the problem clearly so engineers can check the wiring and software! 📝🔧✨",
+        "explanation": "Testers document bugs clearly so engineers can fix the root cause and improve the product! 📝",
+        "emoji": "📝",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Constructive problem solving! Finding bugs helps us fix them! 🛠️⚡",
+          "incorrect": "📝 Testers document the problem clearly so engineers can fix it!"
+        }
+      },
+      {
+        "questionId": "q11",
+        "question": "Can an obstacle-avoidance sensor guarantee that a robot will never bump into anything? 🤖🧱",
+        "type": "multiple_choice",
+        "options": [
+          "Yes, sensors create an invisible forcefield of magic 🔮",
+          "No! Sensors can miss thin chair legs or clear glass; testing helps, but machines are not infallible! 🧱⚠️",
+          "Yes, robots have psychic powers 🧠",
+          "Yes, walls always jump out of the way of robots 🏃‍♂️"
+        ],
+        "correctAnswer": "No! Sensors can miss thin chair legs or clear glass; testing helps, but machines are not infallible! 🧱⚠️",
+        "explanation": "Sensors have physical limits (like transparent glass or thin legs); no machine is completely infallible! 🤖",
+        "emoji": "⚠️",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Realistic scientific thinking! Machines are helpful, but they have physical limits! 🔍⚡",
+          "incorrect": "⚠️ No! Sensors can miss thin legs or glass; no machine is 100% infallible!"
+        }
+      },
+      {
+        "questionId": "q12",
+        "question": "What does a sound designer create for a technology project? 🎵🔊",
+        "type": "multiple_choice",
+        "options": [
+          "Chocolate syrup for milkshakes 🥤",
+          "Audio effects, musical beeps, and pleasant chimes that give technology its voice! 🎵🎹✨",
+          "Pancake syrup for breakfast 🥞",
+          "Bubble bath soap for puppies 🛁"
+        ],
+        "correctAnswer": "Audio effects, musical beeps, and pleasant chimes that give technology its voice! 🎵🎹✨",
+        "explanation": "Sound designers record, mix, and compose all the audio effects that make devices engaging! 🎵",
+        "emoji": "🎵",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Musical genius! Sound gives technology warmth and personality! 🎶⚡",
+          "incorrect": "🎵 Sound designers create audio effects, musical beeps, and chimes!"
+        }
+      },
+      {
+        "questionId": "q13",
+        "question": "Why do product designers make tablet cases with soft rounded silicone corners? 📱🧸",
+        "type": "multiple_choice",
+        "options": [
+          "To make them look like soft marshmallows 🍡",
+          "To make them comfortable for hands to hold and safe if accidentally dropped! 📱🖐️🛡️✨",
+          "Because sharp corners attract angry bees 🐝",
+          "Because square corners don't fit on tables 🪵"
+        ],
+        "correctAnswer": "To make them comfortable for hands to hold and safe if accidentally dropped! 📱🖐️🛡️✨",
+        "explanation": "Product designers consider human ergonomics and safety so tools are comfortable and durable! 📱",
+        "emoji": "📱",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Ergonomics champion! Comfortable and safe for small hands! 🖐️⚡",
+          "incorrect": "📱 Product designers make cases comfortable to hold and safe if dropped!"
+        }
+      },
+      {
+        "questionId": "q14",
+        "question": "Why is teamwork the greatest superpower in technology creation? 🤝🌟",
+        "type": "multiple_choice",
+        "options": [
+          "Because one person gets lonely eating lunch alone 🥪",
+          "Because combining art, writing, engineering, building, and testing creates wonderful, safe products! 👩‍🎨📚👷🕵️💖",
+          "Because robots refuse to work unless five people stand in a circle ⭕",
+          "Because factory doors can only be pushed by ten people at once 🚪"
+        ],
+        "correctAnswer": "Because combining art, writing, engineering, building, and testing creates wonderful, safe products! 👩‍🎨📚👷🕵️💖",
+        "explanation": "Teamwork combines diverse specialized talents, achieving what no individual could do alone! 🤝",
+        "emoji": "🤝",
+        "boltReaction": {
+          "correct": "BEEP BOOP! The ultimate truth! Many minds and caring hearts achieve great things! 🌟⚡",
+          "incorrect": "🤝 Teamwork combines art, writing, engineering, building, and testing!"
+        }
+      },
+      {
+        "questionId": "q15",
+        "question": "What is the best attitude to have when you make a mistake or find a bug? 🐛🧗‍♂️",
+        "type": "multiple_choice",
+        "options": [
+          "Cry loudly, give up, and hide under a blanket 🛏️❌",
+          "Celebrate finding it, stay curious, learn what went wrong, and collaborate to fix it! 🌟🔍🔧💖",
+          "Blame your little brother and run away 🏃‍♂️",
+          "Pretend you never wanted to build anything anyway 🛑"
+        ],
+        "correctAnswer": "Celebrate finding it, stay curious, learn what went wrong, and collaborate to fix it! 🌟🔍🔧💖",
+        "explanation": "Mistakes are learning opportunities; finding bugs helps teams improve their creations! 🌟",
+        "emoji": "🌟",
+        "boltReaction": {
+          "correct": "BEEP BOOP! 100% PERFECT! You have the brilliant mindset of a true Master Tech Maker! 🏆🎉⚡",
+          "incorrect": "🌟 Celebrate finding it, learn from it, and collaborate to fix it!"
+        }
+      }
+    ]
+  },
+  "discussion": {
+    "questions": [
+      "Which role on the tech maker team (Artist, Story Writer, Engineer, Builder, Tester) would you enjoy doing most, and why? 👩‍🎨📚👷🕵️",
+      "Why is it helpful that a robot has friendly round eyes and cheerful colours instead of looking scary or metallic? 🎨👀",
+      "If you could write one funny joke or cheerful greeting for Bolt to say, what would your joke be? 📚😄",
+      "Why is finding a 'bug' during testing considered a great success instead of a failure? 🐛🔍",
+      "How does teamwork in your classroom or family help you solve big problems that are hard to solve alone? 🤝🏫",
+      "What everyday problem in your home or school would you like to invent a new gadget to solve? 💡🧩",
+      "How can you practice being a supportive teammate when working on group projects at school or at home? 🤝🏫"
+    ],
+    "homeExplorationTasks": [
+      "Tech Maker Detective Hunt: Look at three devices at home (like a toaster, a toy car, or a remote control). Who helped make them? Can you imagine the artist, engineer, and tester who worked on them? 🔍🏡",
+      "Character Design Challenge: Take a blank sheet of paper and design your own friendly robot helper! What shape are its eyes? What colour is its body? What is its special power? 🎨🤖",
+      "The Family Joke Book: Write down three silly, wholesome jokes with a family member. Practice reading them in your best robot voice: 'BEEP BOOP!' 📚🎤",
+      "Toy Quality & Safety Inspection: Pretend you are Lead Tester Maya! Pick a toy at home and run three tests: 1. Does it roll or move smoothly? 2. Are the corners smooth? 3. Does it spark joy? 🧸🕵️",
+      "Cardboard Box Engineering: Find an empty cardboard box or cereal carton. With adult permission, use tape and markers to build a prototype invention of your own design! 📦🛠️",
+      "Maker Team Appreciation Card: Create a thank-you drawing or card for someone who builds, fixes, or creates things in your school or community! 💌👷"
+    ]
+  },
+  "summary": {
+    "recap": "BEEP BOOP! What an eye-opening, joyful expedition behind the scenes of technology! 🌟🤖⚡\nNow you know the incredible truth: robots, computers, and smart tools do NOT appear by magic — real, caring human beings create every single one! 👩‍🎨📚👷🕵️\nArtists sketch the friendly blue eyes and joyful smiles 🎨; story writers craft the warm words and giggle-worthy jokes 📚; engineers design the clever gears, circuits, and logic 📐; factory builders assemble the sturdy components with precision 🏭; and quality testers run obstacle courses to catch bugs and guarantee safety 🕵️! Most of all, you learned that when human beings unite their diverse talents with mutual kindness and respect, they can build technology that makes the world a brighter, happier place! 💖🌍",
+    "keyTakeaways": [
+      "Real human beings imagine, design, build, test, and improve all technology; tools never create themselves 👩‍🎨👨‍💻👷",
+      "Artists draw character faces, choose cheerful colours, and create the sequences of drawings that make cartoons move 🎨📺",
+      "Story writers craft dialogue, jokes, and supportive words that give digital helpers warmth, humour, and empathy 📚✍️",
+      "Product designers and ergonomics experts ensure that physical tools are comfortable, lightweight, and easy to hold 📱🖐️",
+      "Sound designers record and compose the cheerful musical beeps, chimes, and melodies that bring technology to life 🎵🔊",
+      "Engineers design the internal structures, circuits, gears, and logic that make machines work smoothly 📐⚙️",
+      "Factory builders and assembly technicians assemble dozens of parts with precision tools to produce durable goods 🏭🔩",
+      "Software developers write the clear, logical, step-by-step instructions that computers and robots follow 👨‍💻📜",
+      "Quality testers systematically test movement, stopping, obstacle avoidance, sounds, and safety under diverse conditions 🕵️🧪",
+      "Finding a glitch or 'bug' is a positive discovery that allows the team to fix problems and improve quality 🐛🔧",
+      "Technology projects succeed through teamwork, where people with different specialized skills collaborate with shared respect 🤝🌟",
+      "Curiosity, tinkering, drawing, asking questions, and learning from mistakes are the golden stepping stones to becoming a tech maker! 💡🌱💖",
+      "Every helpful technological breakthrough begins with human empathy, asking: 'How can we help people?' 💖🌍"
+    ],
+    "closingToast": {
+      "message": "🌟 'BEEP BOOP! Give yourself a thunderous standing ovation! You are officially a CERTIFIED TECH MAKER! See you in Chapter 5!' 🤖⚡🏆",
+      "trophyEarned": "🏆 Master Tech Maker Trophy & Golden Gear Ribbon UNLOCKED! 🎖️",
+      "boltAction": "Bolt puts on safety goggles 🥽, tips a golden builder's hat 👷, and launches a fireworks shower of harmless pixel confetti! 🌟🎉"
+    },
+    "nextLesson": {
+      "lessonId": "l1",
+      "chapterId": "ch5",
+      "title": "Ask & Explore 🔍🤖",
+      "teaser": "BEEP BOOP! In Chapter 5: AI Tools — CREATE, we discover how to talk with AI helpers! In Lesson 1: Ask & Explore, we learn how to ask clear questions, explore amazing facts, and discover the world with digital research buddies! Grab your magnifying glass — the great question safari begins soon! 🔍📖⚡"
+    }
+  }
+}

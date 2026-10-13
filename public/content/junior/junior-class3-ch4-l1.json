@@ -1,0 +1,1208 @@
+{
+  "lessonId": "l1",
+  "title": "When I Grow Up",
+  "level": "junior",
+  "class": "class3",
+  "chapter": "ch4",
+  "mascot": "Bolt",
+  "badge": {
+    "badgeId": "badge-ch4-l1",
+    "name": "Future Dreamer Badge 🌟🚀",
+    "description": "Awarded for exploring exciting future careers, discovering how smart helpers assist doctors, farmers, astronauts, artists, toy makers, and game designers, and celebrating curiosity and teamwork with Bolt the Robot!",
+    "emoji": "🌟👩‍⚕️🌾🚀🎮",
+    "trophy_unlocked": "🏆 Future Dreamer Trophy unlocked! You discovered that technology gives superpowers to human helpers, but human creativity, empathy, and wisdom lead the way! 🌟👩‍🚀"
+  },
+  "introduction": {
+    "overview": "“BEEP BOOP! What will YOU create when you grow big and strong?” 🤖⚡\n\nWelcome, my imaginative Class 3 dreamer! It is ME — BOLT, your loyal blue robot companion with spinning antenna lights and a heart full of cosmic excitement! 🌈✨ Give me a super-high rocket-launch high-five right on your screen — *WHOOSH! BEEP BOOP!* 🖐️🚀\n\nHave you ever closed your eyes at night and wondered: *'What wonderful things will I do when I grow up?'* 🌟\nMaybe you imagine yourself wearing a crisp white coat and a shiny stethoscope, listening to someone's heartbeat and helping them feel better. 🩺❤️\nMaybe you imagine yourself wearing sturdy rubber boots in a sunny green field, flying a camera drone to check on thousands of ears of golden corn! 🌾🛸\nMaybe you picture yourself floating weightlessly in a white spacesuit, gazing through the window of a spaceship at the glowing blue sphere of planet Earth! 👩‍🚀🌍\nMaybe you see yourself in a colourful workshop with wood, clay, and 3D printers, inventing the most fun, bouncy toy the world has ever seen! 🧸🎨\nOr maybe you picture yourself sitting at a bright dual-screen computer desk, designing exciting puzzle levels and heroic characters for an epic video game! 🎮✨\n\nIn this chapter — CHAPTER 4: AI AND CAREER — RISE — we are going on a grand career discovery expedition! 🚀🗺️\nWe will explore five amazing dream professions:\n1. The AI Doctor 🩺👩‍⚕️ — caring for health with the help of smart digital scanners!\n2. The Robot Farmer 🌾👨‍🌾 — growing delicious, healthy food using agricultural drones and soil sensors!\n3. The Space Explorer 🚀👩‍🚀 — venturing into the stars alongside scientific computers and planetary rovers!\n4. The Toy Maker 🧸🎨 — designing playful, safe, and joyful treasures with digital drawing tools!\n5. The Game Creator 🎮👾 — building magical virtual worlds, friendly characters, and fun challenges!\n\nAND HERE IS BOLT'S MOST IMPORTANT PROMISE TO YOU:\nYOU DO NOT HAVE TO CHOOSE YOUR JOB TODAY! 🌈❤️\nYou are 8 or 9 years old! You have oceans of time to play, learn, ask questions, draw pictures, climb trees, build cardboard castles, and change your mind a thousand times! Today you might want to be a dinosaur scientist; tomorrow, an astronaut; next week, a pastry chef who bakes rainbow cupcakes! Every helpful, honest career brings something beautiful to our world. And in every job, smart helpers like AI can give workers extra tools, but HUMAN HEARTS, HUMAN MINDS, AND HUMAN CARE ALWAYS LEAD THE WAY! 👩‍👧👨‍👦💖\n\nAre you ready to try on some magnificent future dream hats? Let's take our first step and meet the wonderful people who help us! 🩺🌾✨",
+    "learningObjectives": [
+      "Discover what a career is and explore exciting future possibilities without any pressure to choose right now 🌟🎓",
+      "Understand how doctors use medical imaging like X-rays and AI scanning assistants to care for sick or injured people 🩺🩻",
+      "Learn how farmers use aerial camera drones and separate irrigation systems to inspect crops and grow food sustainably 🌾🛸",
+      "Explore creative and scientific careers including space explorers, digital artists, toy makers, and video game designers 🚀🎨🧸🎮",
+      "Investigate the five core career cards: AI Doctor, Robot Farmer, Space Explorer, Toy Maker, and Game Creator 🗂️✨",
+      "Recognize that AI and digital tools assist human workers with information, but doctors, farmers, and creators make the important decisions 🤖🤝",
+      "Celebrate diverse talents, personal interests, teamwork, and the freedom to explore many different dreams as you grow 💖🌈",
+      "Recognize that people in different careers collaborate in large teams to solve global challenges 🌍🤝"
+    ],
+    "duration": "45-60 minutes of inspiring career exploration, role-play dress-up challenges, and imaginative discovery! ⏱️🎉"
+  },
+  "sections": [
+    {
+      "sectionId": "section1",
+      "title": "People Who Help Us 🩺👨‍🌾",
+      "content": "BEEP BOOP! Let's begin our journey by looking at the true superheroes of our everyday world: THE PEOPLE WHO HELP US! 🩺👨‍🌾❤️\nEvery morning, millions of dedicated women and men wake up with one noble goal: to heal the sick, care for the injured, grow food for hungry families, protect nature, and keep our communities thriving. Today, smart technology and Artificial Intelligence are joining their teams as helpful assistants. But what do these helpers do, and where does human wisdom shine brightest? Let's find out! 🔍🤖\n\nFIRST STOP: THE DOCTORS AND MEDICAL HEALERS 🩺👩‍⚕️🩻\nThink about what happens when you are playing tag at the playground, trip over a tree root, and take a tumble onto your arm. Ouch! Your wrist hurts, swells up, and feels tender. \nYour parents gently bring you to the clinic or hospital to see Doctor Ananya. \nDoctor Ananya has studied for many years to understand bones, muscles, and nerves. She gently feels your arm, speaks with a kind, soothing voice, and says: 'Let's take a picture inside your arm to see how your bone is doing!' 📸🦴\n\nTHE MAGIC OF THE MEDICAL X-RAY SCANNER: 🩻✨\nA medical X-ray machine uses invisible light rays that pass right through soft skin and muscle, but get stopped by hard bones! The result is a black-and-white picture of your arm bone glowing like white porcelain on a computer screen.\nNow, how can Artificial Intelligence assist Doctor Ananya?\n1. Some modern hospital systems have an AI scanning assistant trained on thousands of medical X-rays. 🖥️🔍\n2. When your X-ray appears on the screen, the AI software highlights an area on the picture with a gentle green circle: 'Possible tiny hairline crack detected in the wrist bone.'\n3. Doctor Ananya looks closely at the highlighted spot with her magnifying lens. She examines your wrist, checks where you feel soreness, and compares the image to her deep medical knowledge.\n4. She smiles warmly and says: 'The helper spotted a small crack, and I confirm it! We will put on a lightweight blue plaster cast, and you will heal completely in three weeks!' 🩹💙\n\nCRITICAL ACCURACY RULES FROM BOLT ABOUT MEDICAL AI: 🚨🩺\nListen carefully to Bolt's circuits on this vital point:\n- DOES THE AI HEAL OR REPLACE THE DOCTOR? ABSOLUTELY NOT! 🤖❌ The AI software is just an image highlighter! It cannot wrap a bandage, it cannot prescribe medicine, it cannot ask how you feel, and it cannot give you a comforting smile or a courage sticker! 🌟\n- CAN AI MAKE MISTAKES? YES! An AI scanner can sometimes mistake a shadow for a bone crack, or miss a tiny fracture entirely. The human doctor and nursing team ALWAYS have final medical responsibility!\n- NOT ALL HOSPITALS USE AI: Many fantastic doctors examine X-rays with their own sharp eyes and decades of experience, healing millions of children every day without any AI at all!\n- GOLDEN HEALTH RULE: If you are ever hurt or feel sick, ALWAYS tell a trusted parent, teacher, or adult immediately! Never keep pain a secret! 👨‍👩‍👧🛡️\n\nSECOND STOP: THE FARMERS AND DRONE HELPERS 🌾👨‍🌾🛸\nNow let's leave the hospital and travel out to the golden countryside where sweet breezes rustle through tall stalks of wheat and corn! 🌾🌽\nFarmers are the providers of our planet! Without farmers, there would be no crisp apples, no fluffy basmati rice, no crunchy carrots, and no delicious bread on our dinner tables. \nFarming a huge field covering hundreds of acres takes tremendous physical effort. A farmer cannot walk to every single one of fifty thousand tomato plants every morning to inspect each leaf!\n\nHERE COME THE FARMING DRONES! 🛸📸\nSome modern farmers use small flying quadcopters called agricultural drones. \nThe farmer stands at the edge of the field, holding a remote tablet. The drone buzzes into the morning sky: *BZZZZZZ!* 🐝🛸\nAs it glides smoothly over the rows of crops, a high-resolution camera on the drone snaps detailed aerial photographs of the leaves.\nBack on the farmer's tablet screen, smart software analyses the colours:\n- Bright green leaves show healthy, well-fed plants! 🌿✨\n- A small patch of yellowish leaves in the north-east corner suggests that those plants might be thirsty or lacking nutrients. 🟡💧\n\nIMPORTANT ACCURACY DISTINCTION: DRONES VS WATERING SYSTEMS 🛸❌🚿\nDoes a camera drone fly around carrying swimming pools of water to spray every plant? NO! ❌ An inspection drone is lightweight; it only carries a camera to COLLECT INFORMATION! Once the farmer sees the picture showing dry soil in the north corner, the farmer turns on a separate, dedicated irrigation pipe or drip watering system to hydrate the crops! Information collection and watering are two separate steps. Technology provides the eyes, while thoughtful farming systems provide the nourishment! 🌾💧\n\nOTHER NOBLE HELPERS: NURSES, VETS, AND NATURE GUARDIANS 🐾🩺🌲\n- NURSES: Kind caregivers who check temperatures, administer medicines, comfort patients, and record recovery notes on digital tablets! 🌡️💊\n- VETERINARIANS: Animal doctors who heal barking puppies, purring kittens, injured birds, and majestic cows, using digital tools to keep pets and livestock healthy! 🐶🐱🐮\n- ENVIRONMENTAL GUARDIANS: Park rangers and wildlife biologists who use satellite trackers, camera traps, and sensors to protect endangered tigers, coral reefs, and ancient rainforests! 🐅🌲🌊\n\nHelping others is the most honourable work in human civilization. When human kindness joins hands with smart tools, miracles happen every single day! 💖🤝",
+      "examples": [
+        {
+          "exampleId": "ex1",
+          "title": "Arjun's Roller-Skating Arm and Doctor Ananya 🛼🩺",
+          "description": "Arjun was roller-skating in the park when he wobbled and landed on his wrist. His mother took him to the children's clinic. Doctor Ananya took an X-ray of Arjun's forearm. A smart medical software program drew a small box around the wrist bone, highlighting a faint shadow. Doctor Ananya inspected the shadow carefully, confirmed a tiny crack, and gently applied a waterproof blue cast. Arjun picked a golden robot sticker and smiled: 'Doctor Ananya is my hero!' 🦸‍♀️🩹",
+          "keyTakeaway": "AI medical tools can help highlight details on medical images, but the human doctor examines the patient and makes the real diagnosis! 🩺👩‍⚕️"
+        },
+        {
+          "exampleId": "ex2",
+          "title": "Farmer Ramesh and the Flying Field Drone 🌾🛸",
+          "description": "Farmer Ramesh looked across his 50-acre sunflower farm. Instead of walking for five hours under the midday heat, Ramesh launched his aerial camera drone. The drone flew a grid pattern in 15 minutes, sending photos to Ramesh's tablet. The photos showed that sunflower rows near the old oak tree were dry. Ramesh opened the valve to the drip irrigation pipe in that section. By evening, the sunflowers were standing tall and smiling at the sun! 🌻📱",
+          "keyTakeaway": "Drones help farmers by taking pictures from the sky to spot dry or unhealthy crops, while separate watering systems deliver the water! 🛸🌾"
+        },
+        {
+          "exampleId": "ex3",
+          "title": "Nurse Priya's Digital Health Tablet 🌡️💊",
+          "description": "In the paediatric recovery ward, Nurse Priya visits six-year-old Meera. Nurse Priya uses a digital thermometer to check Meera's temperature (37°C — normal!) and logs the reading onto her secure tablet app. The app automatically graphs Meera's temperature over the last 24 hours, showing that her fever is completely gone. Nurse Priya hugs Meera and says: 'You are ready to go home and play!' 🏥💖",
+          "keyTakeaway": "Nurses use digital tablets to record health measurements, but their warmth, bedside care, and watchful eyes help patients heal! 👩‍⚕️📋"
+        },
+        {
+          "exampleId": "ex4",
+          "title": "Dr. Zoya Heals Barnaby the Golden Retriever 🐶🩺",
+          "description": "Barnaby the dog swallowed a small squeaky toy ball and had an upset tummy. Veterinarian Dr. Zoya used an ultrasound scanner to look inside Barnaby's belly. The digital screen displayed sound waves showing the soft rubber ball. Dr. Zoya gently helped Barnaby, and within two hours Barnaby was wagging his fluffy tail and licking Dr. Zoya's hand in joyful thanks! 🐕✨",
+          "keyTakeaway": "Veterinarians care for animals using digital imaging and gentle hands, keeping our furry and feathered companions healthy! 🐾🩺"
+        },
+        {
+          "exampleId": "ex5",
+          "title": "Ranger Leo Tracks Snow Leopards in the Mountains 🐆🏔️",
+          "description": "In the chilly Himalayan mountains, wildlife ranger Leo checks solar-powered motion cameras. The cameras snap pictures of wild animals without disturbing them. An image-sorting program alerts Leo: 'Snow leopard spotted on Ridge 4!' Leo smiles with joy knowing that the endangered leopards are thriving in the protected sanctuary! 📸❄️",
+          "keyTakeaway": "Environmental helpers use camera technology and smart software to observe and protect endangered wild animals! 🐅🌲"
+        }
+      ],
+      "keyPoints": [
+        "Doctors use medical pictures like X-rays to examine bones, and AI tools can help highlight areas of interest for trained doctors 🩺🩻",
+        "AI does NOT replace doctors; human medical teams make diagnoses, provide treatments, and have full responsibility for patient care 👩‍⚕️🛡️",
+        "Farmers use drones to take aerial photos of fields to inspect crop health, while separate watering systems deliver moisture 🌾🛸",
+        "Nurses, veterinarians, and environmental rangers combine digital tools with compassion to care for people, animals, and nature 🐾🌲",
+        "Children should always tell a trusted adult immediately if they are hurt or feeling unwell so caring professionals can help! 👨‍👩‍👧💖"
+      ],
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "Healing Hands and Medical Technology 🩺💖",
+          "content": "The desire to heal others is one of the oldest and most beautiful human impulses. For centuries, doctors relied solely on what they could see with their eyes and feel with their hands. Today, modern medicine has magnificent tools! Stethoscopes amplify the rhythm of the heart. Thermometers measure fever with laser precision. X-ray machines peer through skin to reveal the skeleton. When artificial intelligence assists with medical scans, it acts like a second pair of digital reading glasses, scanning pixels to point out subtle patterns. But healing is more than just pictures — it is empathy, kindness, listening, and medical wisdom that only a human doctor can offer! 👩‍⚕️✨"
+        },
+        {
+          "partNumber": 2,
+          "title": "How X-Rays and AI Scanners Cooperate 🩻🤖",
+          "content": "Imagine an X-ray image as a giant puzzle made of grey and white shadows. To the untrained eye, every bone looks similar. But a radiologist — a doctor who specializes in reading medical images — knows exactly how a healthy radius, ulna, and tibia should curve. When an AI tool is added to the system, it has been trained on hundreds of thousands of past X-rays. It compares the new picture with its database in seconds and places a gentle coloured outline around unusual shadows. The doctor then inspects the area: 'Is this a fracture, an old injury, or just a harmless shadow?' The doctor decides. AI suggests, but the doctor decides! 🔍💡"
+        },
+        {
+          "partNumber": 3,
+          "title": "Farming the Earth: From Plows to Drones 🌾🛸",
+          "content": "Farming has evolved across thousands of years! Early humans dug soil with wooden sticks. Later, they used oxen and iron plows. Then came tractors with rumbling diesel engines. Today, we have precision agriculture! Flying drones equipped with multispectral cameras can detect invisible wavelengths of light reflected by plants. Healthy leaves full of chlorophyll reflect light differently than leaves under stress from drought or insects. By flying a drone over a field, a farmer gets a colour-coded health map of the entire farm in minutes! 🗺️🌱"
+        },
+        {
+          "partNumber": 4,
+          "title": "Drones Inspect, Irrigation Waters 🛸💧",
+          "content": "It is crucial to understand how different farm tools work together as a team! A drone is an eye in the sky. It weighs only a few kilograms and runs on rechargeable lithium batteries. It cannot haul hundreds of gallons of water. Once the drone shows the farmer which fields are dry, the farmer activates drip irrigation lines buried under the soil or turns on central pivot sprinklers. In organic farming, the farmer might release beneficial ladybugs in areas where aphids were spotted. The drone provides the information, and the farmer takes the caring action! 🐞🌾"
+        },
+        {
+          "partNumber": 5,
+          "title": "The Joy of Helping Others 💖🌟",
+          "content": "Whether caring for a classmate who scraped their knee at recess, tending a potted basil plant on a windowsill, or feeding a pet goldfish, helping is a superpower everyone has right now! You do not need to wait until you are thirty years old to be a helper. Learning to notice when a friend is sad, sharing your crayons, and respecting nature are the exact same qualities that make great doctors, nurses, farmers, and conservationists. A caring heart is the foundation of every magnificent career! 🌈🤝"
+        }
+      ],
+      "guidedQuestions": [
+        {
+          "questionId": "gq1",
+          "question": "When a child hurts their arm, what tool might a doctor use to look at the bone inside? 🩻🦴",
+          "options": [
+            "A magic telescope pointed at a tree 🌲",
+            "An X-ray machine that takes a special picture of the bones 🩻✨",
+            "A frying pan from the kitchen 🍳",
+            "A pair of roller skates 🛼"
+          ],
+          "correctAnswer": "An X-ray machine that takes a special picture of the bones 🩻✨",
+          "explanation": "An X-ray machine creates a medical picture showing bones inside our bodies so doctors can check for fractures! 🩻",
+          "hint": "Which machine takes pictures of bones inside our arms and legs?"
+        },
+        {
+          "questionId": "gq2",
+          "question": "Does an AI scanner replace the human doctor in a hospital? 🤖❌",
+          "options": [
+            "Yes, the doctor goes home and the robot runs the whole hospital 🏥❌",
+            "No! The doctor examines the patient, checks the picture, and makes the real medical decision! 🩺👩‍⚕️",
+            "Yes, AI can give hugs and prescribe casts all by itself 🤗",
+            "Yes, robots have medical licenses from university 📜"
+          ],
+          "correctAnswer": "No! The doctor examines the patient, checks the picture, and makes the real medical decision! 🩺👩‍⚕️",
+          "explanation": "AI only assists by highlighting image details; human doctors and nurses make the diagnosis and care for patients! 👩‍⚕️",
+          "hint": "Who has the medical education, caring heart, and legal responsibility to heal patients?"
+        },
+        {
+          "questionId": "gq3",
+          "question": "How does an aerial camera drone help a farmer inspect a huge 50-acre crop field? 🌾🛸",
+          "options": [
+            "It turns all the corn into popcorn instantly 🍿",
+            "It flies over the fields taking high-resolution pictures to show which crops are healthy or thirsty 📸🌱",
+            "It digs giant swimming pools in the dirt 🏊",
+            "It sings country songs to the sunflowers 🌻"
+          ],
+          "correctAnswer": "It flies over the fields taking high-resolution pictures to show which crops are healthy or thirsty 📸🌱",
+          "explanation": "Drones take aerial photos quickly, allowing farmers to spot dry or unhealthy plants without walking miles! 🛸",
+          "hint": "Think about taking pictures from high in the sky to see the whole field!"
+        },
+        {
+          "questionId": "gq4",
+          "question": "Does an inspection drone carry all the water to spray the entire crop field? 🛸💧",
+          "options": [
+            "Yes, it carries an entire lake inside its tiny propellers 🌊",
+            "No! The drone collects photo information, while separate irrigation pipes or sprinklers deliver the water! 🌾🚿",
+            "Yes, the drone turns into a cloud and rains 🌧️",
+            "Yes, drones drink juice and spit it out 🧃"
+          ],
+          "correctAnswer": "No! The drone collects photo information, while separate irrigation pipes or sprinklers deliver the water! 🌾🚿",
+          "explanation": "Inspection drones take photos to gather information; separate irrigation systems do the watering! 💧",
+          "hint": "Remember the difference between an eye that observes and a pipe that waters!"
+        },
+        {
+          "questionId": "gq5",
+          "question": "What should you always do if you get hurt or feel sick while playing? 🩹👨‍👩‍👧",
+          "options": [
+            "Keep it a secret and pretend nothing happened 🤐❌",
+            "Tell a trusted parent, teacher, or adult immediately so they can help you feel better! 💖🛡️",
+            "Run away and hide under the porch 🐕",
+            "Try to fix your own arm using scotch tape 🩹❌"
+          ],
+          "correctAnswer": "Tell a trusted parent, teacher, or adult immediately so they can help you feel better! 💖🛡️",
+          "explanation": "Always alert a trusted adult when hurt so they can comfort you and get medical help if needed! 👨‍👩‍👧",
+          "hint": "Who in your family or school is always there to take care of you?"
+        }
+      ]
+    },
+    {
+      "sectionId": "section2",
+      "title": "People Who Create and Explore 🚀🎨🧸",
+      "content": "BEEP BOOP! Hold onto your rocket boots, because now we are blasting off into the worlds of IMAGINATION, ADVENTURE, AND CREATIVITY! 🚀🎨🧸✨\nHave you ever looked at a soaring space rocket, a colourful cartoon character, a squishy teddy bear, or a fun video game and wondered: *'Who thought of that wonderful idea?'* \nHuman beings are born creators! We love to invent things that never existed before, and we love to travel to places no human has ever visited. Let's explore how astronauts, artists, toy makers, and game designers use their brilliant minds alongside modern technology! 🌟🤖\n\nFIRST STOP: THE SPACE EXPLORERS AND ASTRONAUTS 🚀👩‍🚀🌌\nImagine looking out through a thick glass helmet into the velvety blackness of outer space. Millions of diamond stars sparkle silently without twinkling. Below you, the great blue and white swirl of Earth turns slowly like a living jewel! 🌍✨\nAstronauts are scientists, pilots, and explorers who train for years to live and work aboard the International Space Station or journey toward the Moon and Mars! \nSpace is an extreme environment: there is no air to breathe, no gravity to hold you down, and temperatures swing from freezing cold to boiling hot.\n\nHOW DOES TECHNOLOGY AND AI ASSIST SPACE EXPLORERS? 🛰️🤖\n1. Autonomous Navigation: Spaceships travel at speeds over 28,000 kilometres per hour! Computers calculate orbital pathways and fire thrusters with microsecond precision. 🛸⚡\n2. Robot Helpers: On the Moon and Mars, wheeled robotic rovers like Perseverance explore rocky canyons and collect soil samples that human astronauts cannot reach yet! 🚜🔴\n3. AI Data Analysis: Space telescopes capture millions of gigabytes of star pictures. AI algorithms help astronomers scan through deep space photos to detect distant exoplanets and exploding supernovae! 🔭✨\n\nCRITICAL TEAMWORK TRUTH FROM BOLT:\nDoes an AI spaceship pilot every mission alone? NO! ❌ Space exploration is the ultimate human team achievement! Astronauts, flight directors in Mission Control, rocket propulsion engineers, nutrition scientists, and spacesuit seamstresses all work together. Technology is their trusty spacesuit, but HUMAN COURAGE AND TEAMWORK REACH FOR THE STARS! 👩‍🚀👨‍🔬🤝\n\nSECOND STOP: THE ARTISTS AND DIGITAL CREATORS 🎨🖌️📱\nNow let's drift back down to Earth and enter a sunlit art studio filled with easels, sketchbooks, and colourful canvases! 🎨🖼️\nAn artist is someone who communicates feelings, stories, and beauty through visual art. In the past, artists used charcoal sticks on cave walls, oil paints on canvas, or ink on paper. Today, many artists also use digital drawing tablets with pressure-sensitive styluses! 📱✏️\n\nHOW ARTISTS USE DIGITAL TABLETS AND AI TOOLS: 🎨✨\nWhen young artist Maya sits with her digital tablet, she can pick from a virtual palette of millions of colours with a single tap! If she draws a line she doesn't like, she taps *Undo* — no messy erasers needed! \nSome modern drawing programs also offer AI-assisted creative tools:\n- Suggesting colour harmony palettes that match the mood of a sunset 🌅\n- Cleaning up wobbly ink lines into smooth geometric curves 📐\n- Generating background texture ideas like tree bark or fluffy clouds ☁️\n\nTHE ARTIST'S SOUL REMAINS SUPREME: 💖🎨\nDoes the computer create the art by itself? NO! ❌ The tablet does not feel joy, sadness, love, or wonder. The tablet does not know what it feels like to run through autumn leaves or hug a puppy. Maya's human imagination chooses the subject, Maya's hands draw the strokes, and Maya's heart gives the artwork its meaning! Digital tools are modern brushes, but the artist is the soul! 🖌️✨\n\nTHIRD STOP: THE MASTER TOY MAKERS 🧸🚂🧩\nHave you ever hugged a super-soft plush teddy bear, built a towering castle from interlocking plastic bricks, or rolled a miniature wooden train along a track? 🧸🧱🚂\nToy makers are the architects of childhood happiness! \nA toy maker's job is to create objects that spark imagination, encourage physical play, and bring smiles to children's faces. \n\nHOW DO TOY MAKERS DESIGN TOYS TODAY? 📐🧸💻\n1. Dreaming & Sketching: A toy maker sketches funny animal characters or spaceship shapes in a sketchbook or on a tablet. 🎨\n2. 3D Digital Modelling: They use 3D computer software to sculpt the toy digitally, checking how pieces fit together and how gears mesh. 🖥️🧩\n3. 3D Printing Prototypes: A 3D printer builds a plastic model layer-by-layer so the designer can hold it in their hands! 🖨️\n4. Strict Safety Testing: Humans test the toy rigorously! Will small parts break off? Are the edges smooth? Is the paint non-toxic? Toy makers take safety seriously so every child can play without harm! 🛡️🧸\n\nFOURTH STOP: THE GAME CREATORS AND STORYTELLERS 🎮👾📚\nWhen Kabir plays an adventure video game where a friendly penguin slides down snowy icebergs collecting ice pops, who built that wonderful world? GAME CREATORS! 🎮🐧\nGame creators include:\n- Game Designers who invent the rules, jump heights, and level puzzles! 🕹️\n- Character Artists who draw the bouncy penguin and funny walruses! 🐧🎨\n- Sound Engineers who record the silly 'WHOOSH!' and 'CRUNCH!' sound effects! 🎵\n- Story Writers who write dialogues and give characters humorous personalities! 📖\nSome game developers use AI to help test levels or generate terrain landscapes, but human creativity makes games fun, fair, and heartwarming! 🌟🎮\n\nEvery time you draw a picture, tell a bedtime story, or build a tower out of wooden blocks, you are practicing the exact skills used by world-class creators! Keep creating, little explorer! 🎨🏰✨",
+      "examples": [
+        {
+          "exampleId": "ex1",
+          "title": "Astronaut Sunita's Spacewalk Aboard the Space Station 👩‍🚀🌌",
+          "description": "Astronaut Sunita floats outside the International Space Station to upgrade a solar power array. Her helmet visor reflects the blue curve of Earth. Inside her suit, a life-support computer monitors her oxygen and body temperature. Back in Mission Control, dozens of scientists and flight directors monitor every heartbeat. With careful training and teamwork, Sunita tightens the bolts and celebrates a successful spacewalk! 🚀🛰️",
+          "keyTakeaway": "Space exploration combines high-tech suits and computers with incredible human courage, training, and worldwide teamwork! 👩‍🚀🌍"
+        },
+        {
+          "exampleId": "ex2",
+          "title": "Maya's Digital Watercolour Dragon 🐉🎨📱",
+          "description": "Maya loves dragons! She sits at her desk with a digital tablet and stylus pen. Maya sketches a friendly green dragon with purple polka-dot wings. She uses a digital brush that mimics wet watercolours, blending emerald green and sunny yellow across the dragon's belly. An AI tool suggests complementary pastel colours for the background clouds. Maya's finished picture looks magical, and her grandmother frames it on the wall! 🖼️✨",
+          "keyTakeaway": "Artists use digital tablets and smart colour tools to explore new creative ideas, while their own imagination creates the magic! 🎨🖌️"
+        },
+        {
+          "exampleId": "ex3",
+          "title": "Leo the Toy Maker's Bouncy Wooden Bunny 🐰🧸",
+          "description": "Leo designs toys for toddlers. He sketches a wooden bunny with soft felt ears and wobbly wheels. Leo uses a 3D computer program to ensure the wheels won't pinch tiny fingers. He prints a prototype, sandpapers every corner until it is silky smooth, and tests it with child safety weights. The result: the happiest, safest bunny toy in the shop! 🪵🧸",
+          "keyTakeaway": "Toy makers use digital design tools to plan toys, but human hands test materials and guarantee safety for children! 🧸🛡️"
+        },
+        {
+          "exampleId": "ex4",
+          "title": "Anya and the Iceberg Penguin Video Game 🐧🎮",
+          "description": "Anya works at a small video game studio. She wanted to make a game about kindness. She designed a level where a little penguin helps lost baby seals find their mothers by sliding across frozen glaciers. Anya adjusted the slide speed until it felt super smooth and joyful. When kids play the game, they giggle with excitement and learn about polar animals! ❄️🎮",
+          "keyTakeaway": "Game creators combine level design, fun rules, and touching stories to build interactive entertainment that delights players! 🎮👾"
+        },
+        {
+          "exampleId": "ex5",
+          "title": "Tanya's Cardboard Castle Kingdom 🏰📦",
+          "description": "Eight-year-old Tanya collected empty cereal boxes and paper towel tubes. With scissors, non-toxic glue, and paints, she built a magnificent medieval castle with a working drawbridge! Bolt cheered: 'BEEP BOOP! You are a master architect and toy designer!' Tanya didn't need any computers to build something extraordinary — just imagination and recyclables! 👑✨",
+          "keyTakeaway": "Creativity starts with simple hands-on play; making things out of everyday materials is how future inventors and builders start! 📦🏰"
+        }
+      ],
+      "keyPoints": [
+        "Astronauts and space explorers study planets and stars, using advanced computers and robotic rovers to assist their missions 🚀👩‍🚀",
+        "Space exploration relies on huge teams of scientists, engineers, and pilots working together; AI cannot run missions alone 🛰️🤝",
+        "Artists use digital drawing tablets and creative apps to express ideas, while their own human imagination drives the artwork 🎨🖌️",
+        "Toy makers design and rigorously test toys to ensure they are joyful, engaging, and completely safe for young children 🧸🛡️",
+        "Game creators invent characters, puzzle levels, and story worlds, using digital tools to bring playful adventures to life 🎮👾"
+      ],
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "Venturing Beyond Our Atmosphere: Space Science 🚀🌌",
+          "content": "Human beings have looked up at the night sky and wondered about the stars for thousands of years. But only in the last sixty years have humans actually traveled beyond Earth's atmosphere! When an astronaut travels into space, they experience weightlessness or microgravity, floating freely like fish in water. Inside spacecraft, complex computers regulate air mixtures, filter carbon dioxide, and calculate orbital trajectories. Space agencies send robotic rovers like Curiosity and Perseverance to Mars to drill rocks and search for ancient water. These rovers are smart machines packed with sensors, but scientists back on Earth plan their routes every single morning! 🔭🔴"
+        },
+        {
+          "partNumber": 2,
+          "title": "Digital Artistry: New Brushes for New Eras 🎨📱",
+          "content": "Art is how humans express what is in their hearts. A painting can express joy, quiet peace, mystery, or excitement. When digital tablets were invented, artists gained a canvas that never runs out of paper and an easel that can travel inside a backpack! Stylus pens detect thousands of levels of pressure: press lightly for a delicate hair-thin line, press firmly for a rich, broad brushstroke. Smart software can help artists mirror symmetrical designs or simulate the natural splatter of oil paints. Yet every single idea, character, expression, and story originates in the human artist's mind! 🖌️❤️"
+        },
+        {
+          "partNumber": 3,
+          "title": "Toy Making: The Science of Fun and Safety 🧸🔬",
+          "content": "Have you ever thought about how much engineering goes into a simple toy? A toy maker must think about physics: will this toy car roll smoothly across carpet and hardwood? They must think about chemistry: are the plastics free from harmful chemicals? They must think about child development: will a four-year-old find this toy engaging or frustrating? Toy companies use 3D modelling and automated machines to mold plastic parts, but testing teams made of real humans drop, twist, and pull every prototype to make sure it will never break into sharp edges. Safety is the greatest gift a toy maker gives! 🛡️🧩"
+        },
+        {
+          "partNumber": 4,
+          "title": "Video Game Design: Worlds of Interactive Play 🎮👾",
+          "content": "Video games are interactive art forms! Unlike a book where you read what happens, or a movie where you watch what happens, in a video game YOU are the explorer making choices! Game creators must balance difficulty: if a level is too easy, players get bored; if it is too hard, players get frustrated. Designers tweak jump physics, sound effects, and rewarding chimes to create a sense of accomplishment. While some games use AI to control non-player characters or computer opponents, the soul of the game comes from the storytellers and artists who dream up the universe! 🕹️🌟"
+        },
+        {
+          "partNumber": 5,
+          "title": "Every Child Is an Explorer and Creator 🌟🏰",
+          "content": "You do not need an astronaut suit or a high-tech studio to explore and create right now! When you build a fort out of sofa cushions, you are practicing architectural engineering. When you make up a silly song about a flying turtle, you are practicing musical composition. When you draw a comic strip on printer paper, you are an author and illustrator. Curiosity is the engine of human progress, and childhood is the golden workshop where imagination grows big and strong! 🌈🎨"
+        }
+      ],
+      "guidedQuestions": [
+        {
+          "questionId": "gq1",
+          "question": "Who travels into outer space to study planets, stars, and space conditions? 🚀👩‍🚀",
+          "options": [
+            "A submarine captain under the sea 🌊",
+            "An astronaut or space explorer working with a scientific team 🚀✨",
+            "A traffic police officer at a crosswalk 🚸",
+            "A pastry baker in a kitchen 🥐"
+          ],
+          "correctAnswer": "An astronaut or space explorer working with a scientific team 🚀✨",
+          "explanation": "Astronauts and space explorers travel into space, conduct experiments, and study the cosmos as part of a team! 👩‍🚀",
+          "hint": "Which worker wears a spacesuit and travels in a rocket?"
+        },
+        {
+          "questionId": "gq2",
+          "question": "How might an artist use a digital tablet and stylus pen? 🎨📱",
+          "options": [
+            "To hammer nails into wooden boards 🔨",
+            "To draw pictures, designs, colourful cartoons, and creative illustrations! 🖌️✨",
+            "To fry eggs for breakfast 🍳",
+            "To wash the family car 🚗"
+          ],
+          "correctAnswer": "To draw pictures, designs, colourful cartoons, and creative illustrations! 🖌️✨",
+          "explanation": "Artists use digital tablets as modern canvases to sketch, paint, and design artwork with virtual brushes and colours! 🎨",
+          "hint": "What creative visual activity uses styluses, brushes, and colours?"
+        },
+        {
+          "questionId": "gq3",
+          "question": "What does a toy maker do before a toy is sold in stores? 🧸🛡️",
+          "options": [
+            "Throws the toy into a river 🌊",
+            "Designs, creates prototypes, and tests the toy to ensure it is fun and completely safe! 🧸✨",
+            "Paints every toy invisible 🫥",
+            "Buries the toy in deep mud 泥"
+          ],
+          "correctAnswer": "Designs, creates prototypes, and tests the toy to ensure it is fun and completely safe! 🧸✨",
+          "explanation": "Toy makers design toys with care and run rigorous safety tests to protect children while playing! 🛡️",
+          "hint": "Think about making sure a toy is fun and won't hurt anyone!"
+        },
+        {
+          "questionId": "gq4",
+          "question": "Which creative worker helps design characters, rules, and puzzle levels for video games? 🎮👾",
+          "options": [
+            "A game creator or video game designer 🎮✨",
+            "A lawnmower mechanic 🚜",
+            "A deep-sea fisherman 🎣",
+            "A shoe polisher 👞"
+          ],
+          "correctAnswer": "A game creator or video game designer 🎮✨",
+          "explanation": "Game creators invent the characters, worlds, rules, and challenges that make games exciting to play! 🕹️",
+          "hint": "Look for the person who creates video games!"
+        },
+        {
+          "questionId": "gq5",
+          "question": "Can an AI computer create genuine art or explore space all by itself without humans? 🤖🤔",
+          "options": [
+            "Yes, computers have human feelings and dreams 💭",
+            "No! Technology assists with tools and data, but human imagination, courage, and teamwork lead every mission! 💖🤝",
+            "Yes, robots secretly own all the art galleries 🖼️",
+            "Yes, spaceships build themselves out of cheese 🧀"
+          ],
+          "correctAnswer": "No! Technology assists with tools and data, but human imagination, courage, and teamwork lead every mission! 💖🤝",
+          "explanation": "Computers do not feel emotions or dream; human imagination, care, and teamwork create art and explore space! 🌟",
+          "hint": "Who has the real feelings, imagination, and bravery?"
+        }
+      ]
+    },
+    {
+      "sectionId": "section3",
+      "title": "My Dream Career and Smart Helpers 🌟🎮",
+      "content": "BEEP BOOP! Welcome to the grand hall of FUTURE POSSIBILITIES! 🌟🏛️✨\nWhat is a career? A career is a pathway of work and learning that someone pursues over many years. It is a way to use your unique gifts, solve problems, help people, and make a living! \nSome people love taking care of living creatures. Some love discovering how things work. Some love building physical structures, and some love inventing imaginary worlds! \nLet's open our FIVE MAGNIFICENT CAREER CARDS and discover how smart helpers support each one! 🗂️🤖\n\nCAREER CARD 1: THE AI DOCTOR 🩺👩‍⚕️💖\n- WHAT DOES A DOCTOR DO? \nDoctors examine patients, listen to heartbeats with stethoscopes, figure out why someone feels ill, prescribe healing medicine, treat injuries, and comfort families. They study biology, chemistry, and human anatomy for many years.\n- HOW MIGHT TECHNOLOGY AND AI HELP? \nDigital image scanners can help highlight subtle fractures on X-rays. Tablet apps organize patient charts so doctors can review medical history quickly. Smart monitors keep track of heartbeats during surgery.\n- IMPORTANT REMINDER: \nDoctors and nursing teams hold full responsibility for patient care. AI is a digital magnifying glass, but the doctor provides the healing wisdom and empathy! 🩺✨\n\nCAREER CARD 2: THE ROBOT FARMER 🌾👨‍🌾🚜\n- WHAT DOES A FARMER DO? \nFarmers care for fertile soil, plant seeds, cultivate crops, protect plants from pests, and harvest nutritious grains, vegetables, and fruits that feed our communities.\n- HOW MIGHT TECHNOLOGY AND AI HELP? \nAerial camera drones photograph huge fields to spot dry areas. Smart soil probes measure moisture. Drip irrigation systems deliver water directly to roots without waste. GPS guidance helps tractors plow straight rows.\n- IMPORTANT REMINDER: \nFarmers must know the weather, inspect leaves with their own eyes, understand plant life cycles, and make smart farming choices. Drones observe, but farmers nourish the Earth! 🌾💚\n\nCAREER CARD 3: THE SPACE EXPLORER 🚀👩‍🚀🛰️\n- WHAT DOES A SPACE EXPLORER DO? \nAstronauts travel into outer space aboard spacecraft, conduct zero-gravity science experiments, inspect space station solar arrays, and study the Moon, Mars, and distant galaxies.\n- HOW MIGHT TECHNOLOGY AND AI HELP? \nHigh-speed computers calculate flight trajectories with pinpoint precision. Robotic rovers traverse rugged planetary surfaces. AI algorithms sift through billions of star telescope images to spot new worlds.\n- IMPORTANT REMINDER: \nSpace missions require intense physical training, scientific knowledge, and fearless teamwork across global space agencies. Courage and collaboration make space exploration possible! 🌍🤝\n\nCAREER CARD 4: THE MASTER TOY MAKER 🧸🎨📐\n- WHAT DOES A TOY MAKER DO? \nToy makers dream up toys that spark joy and curiosity! They sketch character concepts, build physical prototypes, select durable materials, and rigorously test toys for child safety.\n- HOW MIGHT TECHNOLOGY AND AI HELP? \nDigital drawing tablets allow artists to experiment with shapes and colours. 3D computer software sculpts pieces digitally. 3D printers produce test prototypes in hours.\n- IMPORTANT REMINDER: \nHuman toy makers must verify that toys are 100% safe, non-toxic, and age-appropriate. Human care ensures safe play! 🧸🛡️\n\nCAREER CARD 5: THE GAME CREATOR 🎮👾🕹️\n- WHAT DOES A GAME CREATOR DO? \nGame creators design interactive video games! They create heroic characters, design multi-level puzzles, write exciting dialogues, compose catchy background music, and program fun game mechanics.\n- HOW MIGHT TECHNOLOGY AND AI HELP? \nGame engines help render 3D worlds and physics. Digital audio tools record funny sound effects. AI testing tools can help test levels for bugs and glitches.\n- IMPORTANT REMINDER: \nGame creators make the artistic and emotional choices that make games meaningful, heartwarming, and fair to play! 🎮💖\n\nDISCOVERING YOUR OWN WONDERFUL INTERESTS! 🔍🌈\nTake a moment to ask yourself these friendly questions:\n- Do you love comforting friends when they are sad? ➡️ You might love healthcare, nursing, or medicine! 🩺\n- Do you love digging in garden soil, watching seeds sprout, and being in nature? ➡️ You might love farming, gardening, or environmental science! 🌾\n- Do you gaze at the stars and wonder what lies beyond the moon? ➡️ You might love astronomy, astrophysics, or space exploration! 🚀\n- Do you love building LEGO towers, sewing doll clothes, or carving soap shapes? ➡️ You might love toy making, engineering, or sculpture! 🧸\n- Do you love drawing funny comics, telling stories, and playing puzzles? ➡️ You might love game creation, animation, or writing! 🎮\n\nTHE GOLDEN LESSON: YOU CAN LOVE MANY THINGS AT ONCE! 🌟\nYou don't have to pick just one! You can be a space scientist who paints watercolours on weekends, or a doctor who writes adventure stories for children! Curiosity has no borders, and every dream is a magnificent seed waiting to bloom! 🌸🌱✨",
+      "examples": [
+        {
+          "exampleId": "ex1",
+          "title": "Kabir's Dilemma: Doctor or Game Creator? 🩺🎮",
+          "description": "Kabir asked Bolt: 'Bolt, I love science and helping my friends, but I also love playing games on my tablet! Do I have to choose today?' Bolt's antenna flashed blue and gold: 'BEEP BOOP! You are 8 years old! Why not learn about human anatomy AND design a fun game about doctor robots? You have your whole life to explore!' Kabir smiled with huge relief! 🤖✨",
+          "keyTakeaway": "Children can enjoy multiple interests at once, and there is zero rush to choose a career while growing up! 🌈💡"
+        },
+        {
+          "exampleId": "ex2",
+          "title": "Anya's Backyard Botany Laboratory 🪴🔬",
+          "description": "Anya loved plants. She planted tomato seeds in three little paper cups. In cup A, she gave sunlight and water; in cup B, sunlight and no water; in cup C, water in the dark. She recorded leaf growth in her notebook every day. Anya was practicing the exact scientific method used by agricultural scientists and robot farmers! 🌱📊",
+          "keyTakeaway": "Simple childhood curiosity and backyard experiments are the foundation of future agricultural and scientific careers! 🌾🌻"
+        },
+        {
+          "exampleId": "ex3",
+          "title": "Rohan's Cardboard Spaceship Odyssey 🚀📦",
+          "description": "Rohan turned a giant washing-machine cardboard box into a lunar landing module! He taped plastic bottle caps as control buttons, drew radar screens with crayons, and wore a motorcycle helmet. Rohan spent three hours exploring the 'Moon' in his bedroom. His imaginative play developed spatial thinking and passion for space exploration! 🌕🧑‍🚀",
+          "keyTakeaway": "Imaginative pretend play helps children explore future careers and build creative problem-solving skills! 🚀🧸"
+        },
+        {
+          "exampleId": "ex4",
+          "title": "Priya's Plush Toy Sewing Project 🧸🧵",
+          "description": "Priya wanted to make a gift for her baby cousin. With her mother's supervision, Priya cut felt into the shape of a friendly smiling star, stuffed it with soft cotton, and stitched the edges tightly with thick yarn. Her cousin giggled and hugged the star tightly. Priya felt the pure joy of being a toy maker! ⭐👶",
+          "keyTakeaway": "Making gifts for family members teaches craftsmanship, empathy, and the creative spirit of toy design! 🧸💖"
+        },
+        {
+          "exampleId": "ex5",
+          "title": "Arjun's Comic Book Adventure: Super-Bot! 📚🎨",
+          "description": "Arjun folded four sheets of paper in half and drew an eight-page comic book about a robot who rescues stranded mountain goats. He wrote dialogues in speech bubbles and coloured the panels with markers. His classmates passed the comic around during lunch, laughing and cheering. Arjun discovered the joy of storytelling and character design! 🐐🤖",
+          "keyTakeaway": "Drawing comic strips and making stories is the first step toward careers in illustration, animation, and game design! 📖🎮"
+        }
+      ],
+      "keyPoints": [
+        "A career is a pathway of work and learning that people pursue to help others, build things, and explore the world 🌟💼",
+        "The five exciting career paths — AI Doctor, Robot Farmer, Space Explorer, Toy Maker, and Game Creator — all benefit from technology 🩺🌾🚀🧸🎮",
+        "In every single profession, technology provides helpful tools, but human workers make the decisions and carry the responsibility 🤖🤝",
+        "Children have diverse talents and interests, and they are encouraged to explore many different hobbies and dreams freely 🌈💖",
+        "There is no need to choose a career at age 8 or 9; learning, curiosity, kindness, and practice are what matter today! ⭐🌱"
+      ],
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "What Is a Career? A Lifetime of Learning 🌟📚",
+          "content": "What does the word 'career' really mean? It comes from an ancient word meaning a running course or pathway! A career is not just doing a task for an hour; it is a long, rewarding journey where you gain skills, learn from mistakes, collaborate with colleagues, and make a positive impact on society. People choose careers based on what they find meaningful: some want to cure illnesses, some want to grow wholesome crops, some want to explore deep space, and some want to create joyful entertainment. Every helpful career is dignified, important, and deserving of respect! 💼🤝"
+        },
+        {
+          "partNumber": 2,
+          "title": "Comparing the Five Career Cards 🗂️✨",
+          "content": "Let us line up our five career cards side by side! Notice how each career has a special superpower:\n- AI Doctors have the superpower of HEALING and compassion 🩺❤️\n- Robot Farmers have the superpower of NOURISHMENT and earth care 🌾🌱\n- Space Explorers have the superpower of DISCOVERY and bold curiosity 🚀🌌\n- Toy Makers have the superpower of JOY and physical play 🧸🎉\n- Game Creators have the superpower of INTERACTIVE IMAGINATION and storytelling 🎮📖\nEach career uses different tools: stethoscopes and X-rays, drones and soil probes, spacecraft and rovers, clay and 3D printers, game engines and graphics tablets! 🛠️💡"
+        },
+        {
+          "partNumber": 3,
+          "title": "Smart Helpers in Every Field: The Common Thread 🤖🤝",
+          "content": "Do you see the common golden thread running through all five careers? Technology is NEVER the master; technology is always the ASSISTANT! An X-ray AI cannot care for a child with a fever. A farming drone cannot taste a ripe tomato. A Mars rover cannot feel awe gazing at the sunset. A 3D printer cannot tell if a toy brings a smile. A game engine cannot invent a touching story. Human empathy, human perception, and human love are the irreplaceable elements that bring technology to life! 💖⚡"
+        },
+        {
+          "partNumber": 4,
+          "title": "Discovering Your Unique Gifts and Talents 🎨🧩",
+          "content": "Every single child is born with a unique combination of strengths. You might be wonderful at listening quietly when someone is upset. You might be lightning-fast at noticing details in nature. You might love solving tricky math puzzles, or you might love acting out funny theatrical skits! These natural inclinations are clues to what you might enjoy doing as an adult. Try new activities: play an instrument, plant a seed, look through a telescope, sketch a bird, or build with cardboard. Every new experience helps your personality blossom! 🌸🌟"
+        },
+        {
+          "partNumber": 5,
+          "title": "No Rush, Little Explorer: The Adventure Has Just Begun! ⏳🚀",
+          "content": "When adults ask you: 'What do you want to be when you grow up?', it is okay to answer: 'I am exploring many wonderful possibilities!' You do not need to lock in an answer. The world is changing rapidly, and by the time you grow up, there will be brand-new careers that do not even exist today — like interplanetary botanists, underwater clean-up robotics directors, or virtual-reality museum curators! The best preparation is simple: read good books, be kind to people, stay curious, ask questions, and practice your hobbies with joy! 🌈💖"
+        }
+      ],
+      "guidedQuestions": [
+        {
+          "questionId": "gq1",
+          "question": "What is a career? 💼🌟",
+          "options": [
+            "A type of fast sports car that races on tracks 🏎️",
+            "A pathway of work, learning, and skill that someone pursues to help others and earn a living 🌟💼",
+            "A sandwich made with peanut butter and pickles 🥪",
+            "A video game controller with extra buttons 🎮"
+          ],
+          "correctAnswer": "A pathway of work, learning, and skill that someone pursues to help others and earn a living 🌟💼",
+          "explanation": "A career is a fulfilling pathway of work where a person develops skills, solves problems, and contributes to society! 💼",
+          "hint": "Think about what grown-ups do to help their communities and use their skills!"
+        },
+        {
+          "questionId": "gq2",
+          "question": "Do you need to choose your permanent future career right now at age 8 or 9? ⏳🤔",
+          "options": [
+            "Yes, you must sign a contract today and never change your mind 📝❌",
+            "No! You have plenty of time to learn, explore many hobbies, and change your mind as you grow! 🌈❤️",
+            "Yes, Bolt will choose your job for you with a spinning wheel 🎡",
+            "Yes, you must start working tomorrow morning at 6:00 AM ⏰"
+          ],
+          "correctAnswer": "No! You have plenty of time to learn, explore many hobbies, and change your mind as you grow! 🌈❤️",
+          "explanation": "Children should freely explore different interests and have fun learning without any pressure to pick a career now! 🌟",
+          "hint": "Do kids have lots of time to discover what they love?"
+        },
+        {
+          "questionId": "gq3",
+          "question": "What common thread connects the AI Doctor, Robot Farmer, and Space Explorer? 🤖🤝",
+          "options": [
+            "They all wear matching pink sunglasses 😎",
+            "They all use smart technology to assist them, but human workers make the important decisions! 🌟🤝",
+            "They all live on the same submarine under the ocean 🌊",
+            "They all eat only broccoli for every meal 🥦"
+          ],
+          "correctAnswer": "They all use smart technology to assist them, but human workers make the important decisions! 🌟🤝",
+          "explanation": "In all these careers, technology provides helpful tools, while human professionals lead with wisdom and care! 💡",
+          "hint": "Who always makes the important decisions: the tool or the human worker?"
+        },
+        {
+          "questionId": "gq4",
+          "question": "If you love drawing, making up stories, and playing puzzles, which career might you enjoy exploring? 🎮🎨",
+          "options": [
+            "A game creator, digital artist, or animator! 🎮🎨✨",
+            "A deep-underground coal miner ⛏️",
+            "A chimney sweep 🧹",
+            "A professional nap taker 😴"
+          ],
+          "correctAnswer": "A game creator, digital artist, or animator! 🎮🎨✨",
+          "explanation": "Drawing, storytelling, and puzzle design are the exact creative skills used by game creators and artists! 🎨",
+          "hint": "Which jobs combine pictures, stories, and game rules?"
+        },
+        {
+          "questionId": "gq5",
+          "question": "What is the best way to prepare for your future right now? 🌟🌱",
+          "options": [
+            "Worry about exams every second of every day 😟❌",
+            "Be curious, read books, be kind to friends, ask questions, and explore your hobbies with joy! 🌈💖",
+            "Play video games for 20 hours a day without sleeping 🎮❌",
+            "Never try anything new ever again 🛑"
+          ],
+          "correctAnswer": "Be curious, read books, be kind to friends, ask questions, and explore your hobbies with joy! 🌈💖",
+          "explanation": "Staying curious, reading, being kind, and practicing diverse hobbies builds a strong, happy foundation for any future! 🌟",
+          "hint": "Think about joyful learning, kindness, and curiosity!"
+        }
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "activityId": "activity1",
+      "title": "Dream Career Dress-Up Card Game 👩🚀",
+      "description": "BEEP BOOP! Welcome to the MAIN EVENT of Chapter 4, Lesson 1: THE DREAM CAREER DRESS-UP CARD GAME! 👩‍🚀🩺🌾🎨🧸🎮✨\n\nIn this thrilling interactive career discovery game, YOU get to try on the virtual hats, tools, and badges of five extraordinary future professions! \nBolt's magical career wardrobe screen displays five glowing superhero cards:\n- The AI Doctor Card 🩺 (with stethoscope, digital X-ray scanner, and blue healing cape!)\n- The Robot Farmer Card 🌾 (with wide sunhat, drone controller, and green earth boots!)\n- The Space Explorer Card 🚀 (with pressurised helmet, jetpack, and cosmic star badge!)\n- The Master Toy Maker Card 🧸 (with designer apron, 3D stylus, and rainbow workbench!)\n- The Game Creator Card 🎮 (with gamer headset, dual monitors, and pixel power shield!)\n\nYOUR MISSION, EXPLORER:\nPick your dream cards, match the right tools to the right workers, solve real-world career challenges, discover how smart tech assists human workers, and collect your Future Dreamer Medals! \n\nRemember Bolt's golden rules:\n- EVERY career choice is wonderful, respected, and completely valid! ⭐\n- Technology gives superpowers to workers, but human hearts and minds lead the way! 🤖🤝\n- You can change your mind anytime — explore freely and dream big! 🌈\n\nScore 5 correct challenges in a row to unlock your Future Dreamer Streak! Complete all 18 challenges to unlock the GRAND CHAMPION FUTURE DREAMER TROPHY! 🏆🎉",
+      "instructions": [
+        "1. Examine the career scenario, challenge question, and profession cards on screen carefully 👀🗂️",
+        "2. Pick the matching career card, tool, or helpful action for the situation 🩺🌾🚀",
+        "3. Remember that smart helpers assist humans, but human workers make the final decisions 🤖🤝",
+        "4. Tap your answer to submit and see Bolt dress up in matching career gear! 👆✨",
+        "5. Watch Bolt celebrate with rocket thruster flares, doctor heart-beeps, and golden confetti! 🚀🎉",
+        "6. If you make a mistake, read Bolt's gentle career hint and try again! 💡",
+        "7. Score 5 correct in a row to earn your Future Dreamer Streak Bonus! 🔥",
+        "8. Finish all 18 challenges to unlock the Grand Champion Future Dreamer Trophy! 🏆🌟",
+        "9. Celebrate every career discovery with Bolt's cheerful robot cheers and star tokens! 🌟🎉",
+        "10. Remember: you can explore and change your dream profession anytime — imagination has no limits! 🌈✨"
+      ],
+      "materials": [
+        "Interactive Dream Career Dress-Up wardrobe screen 📱💻",
+        "Virtual AI Doctor Stethoscope and X-Ray viewer 🩺🩻",
+        "Virtual Agricultural Drone Controller and Crop Health Map 🌾🛸",
+        "Virtual Astronaut Helmet and Space Rover Rover-Cam 👩‍🚀🚀",
+        "Virtual Toy Maker 3D Stylus and Safety Testing Gauge 🧸📐",
+        "Virtual Game Creator Level Editor and Character Palette 🎮👾",
+        "Bolt's Golden Career Star Badges ⭐🎖️",
+        "Bolt's Cosmic Rocket Helmet and Space Visor 👩‍🚀🪖",
+        "Doctor Ananya's Digital Magnifying Diagnostic Glass 🔍🩺",
+        "Farmer Ramesh's Quadcopter Drone Simulator Screen 🛸🌾"
+      ],
+      "duration": "20-25 minutes of joyful career role-play, matching puzzles, and dream discovery! ⏱️🎉",
+      "toastMessages": {
+        "tap_prompt": "👇 Pick your favorite dream superhero profession!",
+        "great_job": "🚀 AMAZING! You chose Space Explorer! Bolt is packing his space helmet!",
+        "try_again": "🌟 Any dream is a great dream—pick one card to explore!",
+        "streak_bonus": "🔥 5 IN A ROW! Bolt's circuits are dancing! Future Dreamer Streak UNLOCKED! 🌟🚀",
+        "perfect_score": "🏆 GRAND CHAMPION FUTURE DREAMER! You explored all 5 careers and mastered how technology helps human heroes! BEEP BOOP! 🎊👩‍🚀"
+      },
+      "sortingItems": [
+        {
+          "itemId": "task1",
+          "name": "Challenge A: Pick a Dream Career 🌟🗂️",
+          "emoji": "🌟",
+          "category": "career_selection",
+          "categoryLabel": "Dream Career Exploration 🌟",
+          "isCorrect": true,
+          "description": "Look at the five glowing career cards on Bolt's screen: AI Doctor 🩺, Robot Farmer 🌾, Space Explorer 🚀, Toy Maker 🧸, and Game Creator 🎮.",
+          "question": "Which of these exciting dream superhero professions would you like to explore first?",
+          "options": [
+            "AI Doctor — caring for health with smart digital tools 🩺👩‍⚕️",
+            "Robot Farmer — growing food with aerial drones and sensors 🌾👨‍🌾",
+            "Space Explorer — venturing into the stars with scientific teams 🚀👩‍🚀",
+            "Toy Maker or Game Creator — designing joyful toys and games 🧸🎮"
+          ],
+          "correctAnswer": "Space Explorer — venturing into the stars with scientific teams 🚀👩‍🚀",
+          "explanation": "Every single dream career is magnificent and respected! Choosing Space Explorer lets us launch into the stars with Bolt! 🚀",
+          "hint": "Pick whichever career excites your imagination the most — every single choice is wonderful!",
+          "positiveFeedback": "🚀 AMAZING! You chose Space Explorer! Bolt is packing his space helmet!",
+          "tryAgainFeedback": "👇 Pick your favorite dream superhero profession!",
+          "boltEncouragement": "BEEP BOOP! Blast off! Bolt is strapping into his cosmic co-pilot seat! 🌌⚡"
+        },
+        {
+          "itemId": "task2",
+          "name": "Challenge B: Help the Doctor (Medical Imaging) 🩺🩻",
+          "emoji": "🩺",
+          "category": "people_who_help",
+          "categoryLabel": "People Who Help Us 🩺",
+          "isCorrect": true,
+          "description": "A young gymnast hurt her wrist while doing a cartwheel on the grass. The doctor needs to see whether the bone inside is broken or healthy.",
+          "question": "Which tool may help the medical team take a picture to look at the bone inside her arm?",
+          "options": [
+            "A garden hose with cold water 🚿",
+            "An X-ray system or medical imaging tool 🩻✨",
+            "A toaster with blueberry waffles 🧇",
+            "A magnifying glass held over a comic book 🔍"
+          ],
+          "correctAnswer": "An X-ray system or medical imaging tool 🩻✨",
+          "explanation": "Medical X-ray imaging systems capture detailed pictures of bones so trained doctors can examine them and treat fractures! 🩻",
+          "hint": "Which machine takes pictures through skin to show bones?",
+          "positiveFeedback": "🩻 Clear picture! The X-ray reveals the bone, and the doctor knows exactly how to heal it! 🩺💙",
+          "tryAgainFeedback": "🌟 Any dream is a great dream—pick one card to explore!",
+          "boltEncouragement": "BEEP BOOP! Doctor Doctor! Healing minds and caring hearts at work! 🩹⚡"
+        },
+        {
+          "itemId": "task3",
+          "name": "Challenge C: Help the Farmer (Crop Inspection) 🌾🛸",
+          "emoji": "🌾",
+          "category": "people_who_help",
+          "categoryLabel": "People Who Help Us 🩺",
+          "isCorrect": true,
+          "description": "Farmer Ramesh stands at the edge of his giant 50-acre wheat field. He needs to inspect whether the crops in the far corner need attention.",
+          "question": "What might an aerial camera drone help the farmer do quickly and safely?",
+          "options": [
+            "Fly to the moon to buy ice cream 🍦",
+            "Take high-resolution pictures of the fields to help inspect crops from the sky! 📸🌾",
+            "Bake 500 loaves of bread in five seconds 🍞",
+            "Dig a giant hole under the farmhouse 🚜"
+          ],
+          "correctAnswer": "Take high-resolution pictures of the fields to help inspect crops from the sky! 📸🌾",
+          "explanation": "Camera drones capture overhead photos of fields so farmers can spot thirsty or stressed crops without walking for hours! 🛸",
+          "hint": "What does a flying camera in the sky do for a farm?",
+          "positiveFeedback": "🛸 BZZZZ! The drone captures crystal-clear field photos, saving hours of walking in the heat! 🌾✨",
+          "tryAgainFeedback": "🌾 Think about how cameras in the sky take pictures of large fields!",
+          "boltEncouragement": "BEEP BOOP! Aerial agricultural scouting complete! The wheat is thriving! 🌽⚡"
+        },
+        {
+          "itemId": "task4",
+          "name": "Challenge D: Explore Space (The Cosmic Explorer) 🚀👩‍🚀",
+          "emoji": "🚀",
+          "category": "people_who_create",
+          "categoryLabel": "People Who Create and Explore 🚀",
+          "isCorrect": true,
+          "description": "A team of researchers travels beyond Earth's atmosphere to conduct microgravity experiments and study distant planets.",
+          "question": "Who explores outer space and works alongside scientific teams and mission control?",
+          "options": [
+            "A deep-sea scuba diver with flippers 🤿",
+            "An astronaut or space explorer 👩‍🚀🚀✨",
+            "A subway train conductor on tracks 🚇",
+            "A zoo tour guide by the monkey cage 🐒"
+          ],
+          "correctAnswer": "An astronaut or space explorer 👩‍🚀🚀✨",
+          "explanation": "Astronauts and space explorers travel into space, perform scientific research, and explore cosmic horizons! 🚀",
+          "hint": "Who wears a pressurized spacesuit and orbits the Earth?",
+          "positiveFeedback": "🌌 ZERO GRAVITY! Floating among the stars! Human courage touches the cosmos! 👩‍🚀✨",
+          "tryAgainFeedback": "🚀 Think about the brave explorer who flies in spacecraft into outer space!",
+          "boltEncouragement": "BEEP BOOP! Cosmic high-five! Earth looks so beautiful and blue from up here! 🌍⚡"
+        },
+        {
+          "itemId": "task5",
+          "name": "Challenge E: Make a Toy (Toy Maker's Workshop) 🧸🎨",
+          "emoji": "🧸",
+          "category": "people_who_create",
+          "categoryLabel": "People Who Create and Explore 🚀",
+          "isCorrect": true,
+          "description": "Leo is working in his workshop surrounded by sketchpads, 3D modelling software, wooden blocks, and safety testing tools.",
+          "question": "What does a master toy maker do in their everyday career?",
+          "options": [
+            "Eats all the crayons in the box 🖍️❌",
+            "Designs, creates, and safety-tests joyful toys for children to play with! 🧸✨",
+            "Paints cars with peanut butter 🥜",
+            "Throws bricks out of airplane windows ✈️❌"
+          ],
+          "correctAnswer": "Designs, creates, and safety-tests joyful toys for children to play with! 🧸✨",
+          "explanation": "Toy makers imagine, draw, sculpt, and test toys to ensure they spark imagination while keeping kids safe! 🧸",
+          "hint": "What does someone who makes toys spend their time doing?",
+          "positiveFeedback": "🧸 Soft, bouncy, and completely safe! The new toy brings giggles of joy to children everywhere! 🎉",
+          "tryAgainFeedback": "🧸 Think about the designer who invents teddy bears, blocks, and toy cars!",
+          "boltEncouragement": "BEEP BOOP! Craftsmanship and joy combined! You are a master toymaker! 🪵⚡"
+        },
+        {
+          "itemId": "task6",
+          "name": "Challenge F: Create a Game (Game Designer) 🎮👾",
+          "emoji": "🎮",
+          "category": "people_who_create",
+          "categoryLabel": "People Who Create and Explore 🚀",
+          "isCorrect": true,
+          "description": "A software studio is building an adventure video game about a baby dragon who collects rainbow gems across floating sky islands.",
+          "question": "Which worker helps design the game characters, rules, levels, and challenges?",
+          "options": [
+            "A video game creator or game designer 🎮👾✨",
+            "A tree-trimming lumberjack 🪓",
+            "A carpet cleaner with a vacuum 🧹",
+            "A dentist checking teeth 🦷"
+          ],
+          "correctAnswer": "A video game creator or game designer 🎮👾✨",
+          "explanation": "Game creators invent the characters, jump physics, rules, and puzzle levels that make video games fun! 🎮",
+          "hint": "Who creates interactive video games on computers and consoles?",
+          "positiveFeedback": "🎮 LEVEL COMPLETE! The dragon jumps, collects the gem, and players celebrate! 🌟",
+          "tryAgainFeedback": "🎮 Look for the professional who designs video games!",
+          "boltEncouragement": "BEEP BOOP! High score! Your game level design is creative and fun! 🕹️⚡"
+        },
+        {
+          "itemId": "task7",
+          "name": "Challenge G: Art with a Tablet (Digital Artist) 🎨📱",
+          "emoji": "🎨",
+          "category": "people_who_create",
+          "categoryLabel": "People Who Create and Explore 🚀",
+          "isCorrect": true,
+          "description": "Maya is sitting at her desk with a lightweight digital tablet and a pressure-sensitive stylus pen.",
+          "question": "How might an artist use a digital tablet in their creative career?",
+          "options": [
+            "To serve hot pancakes at breakfast 🥞",
+            "To draw pictures, designs, cartoon animations, and illustrations! 🎨🖌️✨",
+            "To use as a skateboard in the hallway 🛹",
+            "To stop a door from blowing shut 🚪"
+          ],
+          "correctAnswer": "To draw pictures, designs, cartoon animations, and illustrations! 🎨🖌️✨",
+          "explanation": "Digital artists use tablets and styluses to create vibrant illustrations, cartoons, and concept art! 🎨",
+          "hint": "What creative visual work can be done with a digital pen on a screen?",
+          "positiveFeedback": "🎨 Masterpiece! Vibrant colours and smooth lines flow from Maya's imagination! ✨",
+          "tryAgainFeedback": "🎨 Think about drawing, painting, and illustrating with a digital tablet!",
+          "boltEncouragement": "BEEP BOOP! Colour harmony unlocked! Your art lights up the whole studio! 🖌️⚡"
+        },
+        {
+          "itemId": "task8",
+          "name": "Challenge H: Match Career — Doctor Helping a Patient 🩺👩‍⚕️",
+          "emoji": "🩺",
+          "category": "career_matching",
+          "categoryLabel": "Career & Task Matching 🤝",
+          "isCorrect": true,
+          "description": "Situation: A seven-year-old child has a sore throat and fever. A kind professional checks their throat with a light and prescribes medicine.",
+          "question": "Which career matches this caring health situation?",
+          "options": [
+            "The Doctor or Paediatrician 🩺👩‍⚕️",
+            "The Helicopter Pilot 🚁",
+            "The Submarine Captain 🚢",
+            "The Racecar Driver 🏎️"
+          ],
+          "correctAnswer": "The Doctor or Paediatrician 🩺👩‍⚕️",
+          "explanation": "Doctors and paediatricians diagnose illnesses, care for sick children, and guide them back to health! 🩺",
+          "hint": "Who treats fevers and sore throats?",
+          "positiveFeedback": "🩺 Perfect match! The doctor provides medicine and a comforting smile! 💙",
+          "tryAgainFeedback": "🌟 Any dream is a great dream—pick one card to explore!",
+          "boltEncouragement": "BEEP BOOP! Exactly right! Healthcare heroes keep our communities thriving! 🏥⚡"
+        },
+        {
+          "itemId": "task9",
+          "name": "Challenge I: Match Career — Farmer Caring for Crops 🌾👨‍🌾",
+          "emoji": "🌾",
+          "category": "career_matching",
+          "categoryLabel": "Career & Task Matching 🤝",
+          "isCorrect": true,
+          "description": "Situation: Someone inspects rows of emerald-green rice paddies and turns on irrigation channels to hydrate the seedlings.",
+          "question": "Which career matches this agricultural situation?",
+          "options": [
+            "The Farmer or Agriculturalist 🌾👨‍🌾",
+            "The Bank Teller 🏦",
+            "The Airline Flight Attendant ✈️",
+            "The Clock Repairer 🕰️"
+          ],
+          "correctAnswer": "The Farmer or Agriculturalist 🌾👨‍🌾",
+          "explanation": "Farmers cultivate crops, manage soil and water, and produce the food our world needs! 🌾",
+          "hint": "Who grows rice and vegetables in the fields?",
+          "positiveFeedback": "🌾 Golden harvest! The farmer nurtures the soil and feeds families! 🌱",
+          "tryAgainFeedback": "🌾 Look for the career that cares for plants and agricultural fields!",
+          "boltEncouragement": "BEEP BOOP! Earth guardian! Healthy food grows under caring hands! 🚜⚡"
+        },
+        {
+          "itemId": "task10",
+          "name": "Challenge J: Match Career — Astronaut Exploring Space 🚀👩‍🚀",
+          "emoji": "🚀",
+          "category": "career_matching",
+          "categoryLabel": "Career & Task Matching 🤝",
+          "isCorrect": true,
+          "description": "Situation: Someone puts on a pressurized spacesuit, floats out of an airlock, and repairs a scientific telescope orbiting 400 km above Earth.",
+          "question": "Which career matches this cosmic spacewalk situation?",
+          "options": [
+            "The Astronaut or Space Explorer 🚀👩‍🚀",
+            "The Postal Letter Carrier ✉️",
+            "The Lifeguard at the pool 🏊",
+            "The Bicycle Mechanic 🚲"
+          ],
+          "correctAnswer": "The Astronaut or Space Explorer 🚀👩‍🚀",
+          "explanation": "Astronauts perform spacewalks and conduct research in outer space aboard orbiting stations! 🚀",
+          "hint": "Who works in zero gravity in Earth orbit?",
+          "positiveFeedback": "🚀 Spacewalk accomplished! The telescope is repaired and gazing at distant galaxies! 🌌",
+          "tryAgainFeedback": "🚀 Look for the professional who journeys into orbit!",
+          "boltEncouragement": "BEEP BOOP! Cosmic courage! Floating high above our blue home planet! 👩‍🚀⚡"
+        },
+        {
+          "itemId": "task11",
+          "name": "Challenge K: Match Career — Toy Maker Designing a Plush Bear 🧸🎨",
+          "emoji": "🧸",
+          "category": "career_matching",
+          "categoryLabel": "Career & Task Matching 🤝",
+          "isCorrect": true,
+          "description": "Situation: Someone stitches super-soft hypoallergenic plush fabric, inserts a rattle bell inside, and tests the seams with safety tugs.",
+          "question": "Which career matches this creative toy workshop situation?",
+          "options": [
+            "The Toy Maker or Toy Designer 🧸✂️",
+            "The Ship Captain ⚓",
+            "The Train Conductor 🚂",
+            "The Road Paving Worker 🛣️"
+          ],
+          "correctAnswer": "The Toy Maker or Toy Designer 🧸✂️",
+          "explanation": "Toy makers craft, stitch, assemble, and test toys to make sure they are soft, fun, and safe for babies and kids! 🧸",
+          "hint": "Who designs plush bears and children's toys?",
+          "positiveFeedback": "🧸 Soft and cuddly! The teddy bear is ready to become someone's bedtime friend! 💖",
+          "tryAgainFeedback": "🧸 Look for the craftsperson who creates toys!",
+          "boltEncouragement": "BEEP BOOP! Pure childhood joy! Safe stitches and warm hugs! 🧵⚡"
+        },
+        {
+          "itemId": "task12",
+          "name": "Challenge L: Match Career — Game Creator Planning Levels 🎮👾",
+          "emoji": "🎮",
+          "category": "career_matching",
+          "categoryLabel": "Career & Task Matching 🤝",
+          "isCorrect": true,
+          "description": "Situation: Someone creates a digital maze where players collect gold keys, dodge friendly bouncing slimes, and find secret treasure chests.",
+          "question": "Which career matches this interactive gaming situation?",
+          "options": [
+            "The Game Creator or Level Designer 🎮👾",
+            "The Bus Driver 🚌",
+            "The Electrician fixing a wire 🔌",
+            "The Chimney Sweeper 🧹"
+          ],
+          "correctAnswer": "The Game Creator or Level Designer 🎮👾",
+          "explanation": "Game creators design levels, puzzle mazes, enemies, and rewards for players to enjoy! 🎮",
+          "hint": "Who builds mazes and levels for video games?",
+          "positiveFeedback": "🎮 SECRET CHEST UNLOCKED! The maze is exciting, balanced, and rewarding! 🏆",
+          "tryAgainFeedback": "🎮 Look for the creative developer who builds video game levels!",
+          "boltEncouragement": "BEEP BOOP! Level design mastery! Players will love solving this puzzle! 🕹️⚡"
+        },
+        {
+          "itemId": "task13",
+          "name": "Challenge M: Match Career — Artist Drawing a Cartoon 🎨🖌️",
+          "emoji": "🎨",
+          "category": "career_matching",
+          "categoryLabel": "Career & Task Matching 🤝",
+          "isCorrect": true,
+          "description": "Situation: Someone sketches a funny comic strip about an adventurous squirrel who wears aviator goggles and flies a cardboard airplane.",
+          "question": "Which career matches this colourful artistic situation?",
+          "options": [
+            "The Artist, Illustrator, or Animator 🎨🖌️",
+            "The Tax Accountant 📊",
+            "The Bricklayer building a wall 🧱",
+            "The Coal Stoker 🔥"
+          ],
+          "correctAnswer": "The Artist, Illustrator, or Animator 🎨🖌️",
+          "explanation": "Artists and animators bring imaginative characters and funny stories to life through visual drawing! 🎨",
+          "hint": "Who sketches comic characters and cartoons?",
+          "positiveFeedback": "🐿️ SO CUTE! The flying squirrel comic makes everyone smile and laugh! 🎨✨",
+          "tryAgainFeedback": "🎨 Look for the creator who draws cartoons and pictures!",
+          "boltEncouragement": "BEEP BOOP! Visual storytelling at its finest! That squirrel is hilarious! ✈️⚡"
+        },
+        {
+          "itemId": "task14",
+          "name": "Challenge N: Does AI Replace Human Judgment in Medicine? 🩺🤖",
+          "emoji": "🩺",
+          "category": "ai_and_human",
+          "categoryLabel": "AI & Human Responsibility 🤝",
+          "isCorrect": true,
+          "description": "An AI image tool highlights a dark spot on a child's knee X-ray. Doctor Mehta looks at the knee, touches the joint, and realizes it is just a natural growth plate.",
+          "question": "Why was Doctor Mehta's human judgment essential in this situation?",
+          "options": [
+            "Because the AI was dreaming about sheep 🐑",
+            "Because AI tools can make mistakes, and only trained human doctors have the medical wisdom to diagnose patients! 🩺👩‍⚕️",
+            "Because the computer threw the X-ray out the window 🪟",
+            "Because doctors have X-ray vision in their eyes 👀"
+          ],
+          "correctAnswer": "Because AI tools can make mistakes, and only trained human doctors have the medical wisdom to diagnose patients! 🩺👩‍⚕️",
+          "explanation": "AI tools provide suggestions, but human doctors examine the whole patient and make the safe, correct medical decision! 🩺",
+          "hint": "Can AI make mistakes that only a human doctor can catch?",
+          "positiveFeedback": "👩‍⚕️ Wisdom in action! Doctor Mehta recognized natural growth, avoiding unnecessary worry! 💙",
+          "tryAgainFeedback": "🩺 Remember: AI assists with suggestions, but doctors make the final decision!",
+          "boltEncouragement": "BEEP BOOP! Perfect understanding! Human doctors protect human health! 🛡️⚡"
+        },
+        {
+          "itemId": "task15",
+          "name": "Challenge O: Drones and Irrigation Working Together 🌾💧",
+          "emoji": "🌾",
+          "category": "ai_and_human",
+          "categoryLabel": "AI & Human Responsibility 🤝",
+          "isCorrect": true,
+          "description": "A drone takes an aerial photo showing that the western tomato field has dry soil. What is the next logical step for the farmer?",
+          "question": "How does the farmer take action based on the drone's photo?",
+          "options": [
+            "Wait for the drone to cry tears on the field 😢",
+            "Turn on the separate irrigation watering pipes to deliver moisture to the dry tomato plants! 🌾🚿",
+            "Throw the drone into the tomato bushes 🍅",
+            "Dig up all the tomato plants and throw them away 🗑️"
+          ],
+          "correctAnswer": "Turn on the separate irrigation watering pipes to deliver moisture to the dry tomato plants! 🌾🚿",
+          "explanation": "The drone provides information by taking photos; the farmer uses that information to activate the watering system! 💧",
+          "hint": "What watering tool does the farmer turn on after seeing the dry area?",
+          "positiveFeedback": "🚿 Refreshing moisture delivered! The tomatoes drink up the water and grow juicy! 🍅",
+          "tryAgainFeedback": "🌾 Think about how the drone spots the problem and the watering system fixes it!",
+          "boltEncouragement": "BEEP BOOP! Teamwork between aerial cameras and ground irrigation! 🛸💧"
+        },
+        {
+          "itemId": "task16",
+          "name": "Challenge P: Teamwork in Space Exploration 🚀👩‍🚀",
+          "emoji": "🚀",
+          "category": "ai_and_human",
+          "categoryLabel": "AI & Human Responsibility 🤝",
+          "isCorrect": true,
+          "description": "A spaceship is launching to the space station with three astronauts inside. Hundreds of engineers in Mission Control monitor every sensor.",
+          "question": "Who is responsible for the success of this space voyage?",
+          "options": [
+            "Only the spaceship's autopilot computer chip 🤖❌",
+            "The entire team: astronauts, engineers, flight controllers, scientists, and support crews working together! 🚀👩‍🚀👨‍🔬🤝",
+            "A single bird sitting on the launchpad 🐦",
+            "The fuel tank painted with green stripes ⛽"
+          ],
+          "correctAnswer": "The entire team: astronauts, engineers, flight controllers, scientists, and support crews working together! 🚀👩‍🚀👨‍🔬🤝",
+          "explanation": "Space exploration is a monumental team achievement where thousands of human experts collaborate! 🌍🤝",
+          "hint": "Is space travel done by one computer or a massive team of people?",
+          "positiveFeedback": "🤝 GLOBAL TEAMWORK! Thousands of minds united to explore the final frontier! 🚀",
+          "tryAgainFeedback": "🚀 Think about all the people in mission control and aboard the spacecraft working together!",
+          "boltEncouragement": "BEEP BOOP! Teamwork makes the dream work! Together we reach the stars! 🌌⚡"
+        },
+        {
+          "itemId": "task17",
+          "name": "Challenge Q: The True Magic of Art and Toys 🎨🧸",
+          "emoji": "💖",
+          "category": "ai_and_human",
+          "categoryLabel": "AI & Human Responsibility 🤝",
+          "isCorrect": true,
+          "description": "Look at a beautiful hand-drawn storybook and a handcrafted wooden puzzle. They make people feel joy, warmth, and nostalgia.",
+          "question": "Where does the true magic of art, stories, and toys come from?",
+          "options": [
+            "From the plastic casing of the computer screen 🖥️",
+            "From the human heart, imagination, empathy, and love poured into the creation! 💖🎨🧸",
+            "From the electrical cord plugged into the wall 🔌",
+            "From the price tag stuck to the bottom 🏷️"
+          ],
+          "correctAnswer": "From the human heart, imagination, empathy, and love poured into the creation! 💖🎨🧸",
+          "explanation": "Tools assist with production, but human creativity, feeling, and caring give art and toys their meaning! 💖",
+          "hint": "Who has the real feelings, love, and imagination that touches other people's hearts?",
+          "positiveFeedback": "💖 THE HEART OF CREATIVITY! Human feeling is what makes art and toys magical! 🌟",
+          "tryAgainFeedback": "🎨 Think about who provides the love, empathy, and imagination in creative work!",
+          "boltEncouragement": "BEEP BOOP! *Sniff!* That warms Bolt's robotic heart! Creativity is love made visible! 🤖💖"
+        },
+        {
+          "itemId": "task18",
+          "name": "Challenge R: Your Future Superpower Formula 🌟🌈",
+          "emoji": "🌟",
+          "category": "career_selection",
+          "categoryLabel": "Dream Career Exploration 🌟",
+          "isCorrect": true,
+          "description": "Bolt wants you to state the ultimate lesson of Chapter 4, Lesson 1: When I Grow Up!",
+          "question": "What is the best way for a Class 3 child to think about their future career?",
+          "options": [
+            "Pick one job today and never look at anything else ever again 🔒❌",
+            "Stay curious, be kind, explore many hobbies, learn how tech helps people, and dream big! 🌟🚀💖",
+            "Decide that only robots will do jobs in the future so humans shouldn't try 🤖❌",
+            "Stop playing and start worrying about retirement 🧓"
+          ],
+          "correctAnswer": "Stay curious, be kind, explore many hobbies, learn how tech helps people, and dream big! 🌟🚀💖",
+          "explanation": "Curiosity, kindness, practice, and dreaming big are the best ways to grow into any wonderful future! 🌟",
+          "hint": "Which choice celebrates curiosity, kindness, dreaming, and joyful learning?",
+          "positiveFeedback": "🏆 GRAND CHAMPION FUTURE DREAMER! You explored all 5 careers and mastered how technology helps human heroes! BEEP BOOP! 🎊👩‍🚀",
+          "tryAgainFeedback": "🌟 Look for the answer that celebrates curiosity, kindness, and big dreams!",
+          "boltEncouragement": "BEEP BOOP! HOORAY! You unlocked the Grand Champion Future Dreamer Trophy! 🏆🎉⚡"
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "quizId": "quiz-ch4-l1",
+    "title": "When I Grow Up — Grand Career Explorer Quiz 🌟❓",
+    "description": "Test your understanding of future careers, medical X-rays, farming drones, space teamwork, and creative technology with Bolt!",
+    "passMark": 80,
+    "questions": [
+      {
+        "questionId": "q1",
+        "question": "What does an AI medical scanning tool do in a hospital? 🩺🩻",
+        "type": "multiple_choice",
+        "options": [
+          "It replaces the doctor and sends everyone home 🏥❌",
+          "It helps trained doctors examine medical images like X-rays by highlighting possible signs of injury 🩻✨",
+          "It cooks vegetable soup for the patients 🍲",
+          "It drives the ambulance down the highway 🚑"
+        ],
+        "correctAnswer": "It helps trained doctors examine medical images like X-rays by highlighting possible signs of injury 🩻✨",
+        "explanation": "AI medical tools assist doctors by highlighting areas on scans, but the human doctor diagnoses and treats the patient! 🩺",
+        "emoji": "🩺",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Exactly right! AI assists with image details, but the doctor leads! Gold Star! ⭐",
+          "incorrect": "🩺 AI assists doctors by highlighting possible areas of injury on medical scans!"
+        }
+      },
+      {
+        "questionId": "q2",
+        "question": "Does an AI scanner always identify every broken bone correctly? 🤖🤔",
+        "type": "multiple_choice",
+        "options": [
+          "Yes, computers are 100% infallible gods who never make mistakes 🔮",
+          "No, AI can make mistakes or misread shadows; human doctors have final medical responsibility! 👩‍⚕️🛡️",
+          "Yes, because computers have medical degrees 📜",
+          "Yes, because computers can feel where the bone hurts 🦴"
+        ],
+        "correctAnswer": "No, AI can make mistakes or misread shadows; human doctors have final medical responsibility! 👩‍⚕️🛡️",
+        "explanation": "AI software can miss injuries or flag harmless shadows; human medical expertise is essential! 🩺",
+        "emoji": "🛡️",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Super critical thinking! Human doctors verify everything with their expertise! 🧠⚡",
+          "incorrect": "🛡️ No, AI can make mistakes; trained doctors have final responsibility!"
+        }
+      },
+      {
+        "questionId": "q3",
+        "question": "How does a drone help a farmer care for a large field of crops? 🌾🛸",
+        "type": "multiple_choice",
+        "options": [
+          "It flies over the field taking aerial photographs to help inspect crop health 📸🌱",
+          "It eats all the corn so the farmer doesn't have to harvest it 🌽❌",
+          "It paints the wheat stalks blue with watercolours 🎨",
+          "It barks at cows to wake them up 🐮"
+        ],
+        "correctAnswer": "It flies over the field taking aerial photographs to help inspect crop health 📸🌱",
+        "explanation": "Drones take aerial photos of fields, helping farmers spot dry or unhealthy crops quickly! 🛸",
+        "emoji": "🌾",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Aerial scouting mastery! Drones provide eyes in the sky! 🌾⚡",
+          "incorrect": "🌾 Drones take aerial photos to help farmers check crop health!"
+        }
+      },
+      {
+        "questionId": "q4",
+        "question": "Does an aerial inspection drone usually water the entire farm field by itself? 🛸💧",
+        "type": "multiple_choice",
+        "options": [
+          "Yes, it carries a swimming pool of water in its tiny battery pack 🌊",
+          "No! The drone collects photo information, while a separate irrigation system waters the crops! 🌾🚿",
+          "Yes, it turns into a rain cloud when commanded 🌧️",
+          "Yes, it squirts water from its propellers 💦"
+        ],
+        "correctAnswer": "No! The drone collects photo information, while a separate irrigation system waters the crops! 🌾🚿",
+        "explanation": "Inspection drones take photos to gather information; separate irrigation systems deliver the water! 💧",
+        "emoji": "💧",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Spot on! Information collection and watering are two separate steps! 🛸🌱",
+          "incorrect": "💧 No, drones collect photos, while separate irrigation systems water crops!"
+        }
+      },
+      {
+        "questionId": "q5",
+        "question": "What does an astronaut do as part of their career? 🚀👩‍🚀",
+        "type": "multiple_choice",
+        "options": [
+          "Drives a yellow school bus to the moon every morning 🚌",
+          "Travels into space, works with scientific teams, and studies planets, stars, and space conditions 🚀🌌✨",
+          "Paints signs on highway billboards 🪧",
+          "Sells ice cream at the community swimming pool 🍦"
+        ],
+        "correctAnswer": "Travels into space, works with scientific teams, and studies planets, stars, and space conditions 🚀🌌✨",
+        "explanation": "Astronauts travel into space, perform scientific research, and explore cosmic horizons with large teams! 👩‍🚀",
+        "emoji": "🚀",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Cosmic explorer! Astronauts reach for the stars with scientific teams! 🌌⚡",
+          "incorrect": "🚀 Astronauts travel into space and work with teams to study the cosmos!"
+        }
+      },
+      {
+        "questionId": "q6",
+        "question": "Can an AI independently perform every single space mission without human teams? 🛰️🤖",
+        "type": "multiple_choice",
+        "options": [
+          "Yes, humans are not needed in space exploration at all 🤖❌",
+          "No! Space missions require massive teamwork from astronauts, engineers, and scientists! 👩‍🚀👨‍🔬🤝",
+          "Yes, robots decide where to explore and why 🗺️",
+          "Yes, spacecraft are living creatures 🛸"
+        ],
+        "correctAnswer": "No! Space missions require massive teamwork from astronauts, engineers, and scientists! 👩‍🚀👨‍🔬🤝",
+        "explanation": "Space exploration is a human team achievement; AI assists with calculations, but human teams lead! 🌍",
+        "emoji": "🤝",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Teamwork makes space flight possible! Human courage leads the way! 🚀⚡",
+          "incorrect": "🤝 No, space exploration relies on huge human teams working together!"
+        }
+      },
+      {
+        "questionId": "q7",
+        "question": "How do digital artists use tablets and drawing styluses? 🎨📱",
+        "type": "multiple_choice",
+        "options": [
+          "To dig holes in the garden 🪴",
+          "To sketch pictures, paint digital illustrations, and design creative cartoons 🎨🖌️✨",
+          "To toast bread slices 🍞",
+          "To balance on their heads like a hat 🎩"
+        ],
+        "correctAnswer": "To sketch pictures, paint digital illustrations, and design creative cartoons 🎨🖌️✨",
+        "explanation": "Digital artists use tablets as modern canvases to draw, colour, and design artwork with styluses! 🎨",
+        "emoji": "🎨",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Modern brushes for brilliant minds! Art lights up the world! 🖌️⚡",
+          "incorrect": "🎨 Artists use tablets and styluses to sketch and paint digital illustrations!"
+        }
+      },
+      {
+        "questionId": "q8",
+        "question": "What is an important responsibility of a toy maker before selling a new toy? 🧸🛡️",
+        "type": "multiple_choice",
+        "options": [
+          "Covering the toy with purple glitter 🟣",
+          "Testing the toy rigorously to make sure it is safe, durable, and fun for children! 🧸🛡️✨",
+          "Leaving the toy outside in a thunderstorm for a year ⛈️",
+          "Feeding the toy vegetable soup 🍲"
+        ],
+        "correctAnswer": "Testing the toy rigorously to make sure it is safe, durable, and fun for children! 🧸🛡️✨",
+        "explanation": "Toy makers test materials, seams, and parts to guarantee that toys are safe and joyful for children! 🧸",
+        "emoji": "🧸",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Safety first! Toy makers protect children while creating joy! 🛡️⚡",
+          "incorrect": "🧸 Toy makers test toys thoroughly to ensure they are safe and durable!"
+        }
+      },
+      {
+        "questionId": "q9",
+        "question": "What does a video game creator design? 🎮👾",
+        "type": "multiple_choice",
+        "options": [
+          "Characters, rules, puzzle levels, stories, and game worlds for interactive play 🎮🕹️✨",
+          "Pavements and asphalt roads for cars 🛣️",
+          "Cardboard boxes for shipping washing machines 📦",
+          "Metal umbrellas for windy days ☂️"
+        ],
+        "correctAnswer": "Characters, rules, puzzle levels, stories, and game worlds for interactive play 🎮🕹️✨",
+        "explanation": "Game creators design the rules, levels, characters, and stories that make video games fun! 🎮",
+        "emoji": "🎮",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Game on! Creating fun challenges and worlds for players! 👾⚡",
+          "incorrect": "🎮 Game creators design characters, levels, rules, and stories!"
+        }
+      },
+      {
+        "questionId": "q10",
+        "question": "Do you have to choose your permanent adult career right now at age 8 or 9? 🌟⏳",
+        "type": "multiple_choice",
+        "options": [
+          "Yes, you must choose today and never change your mind 🔒❌",
+          "No! You have plenty of time to learn, explore hobbies, and change your mind as you grow! 🌈❤️",
+          "Yes, your teacher assigns your job with a pair of dice 🎲",
+          "Yes, because childhood ends at age ten 🔟❌"
+        ],
+        "correctAnswer": "No! You have plenty of time to learn, explore hobbies, and change your mind as you grow! 🌈❤️",
+        "explanation": "Children can freely explore many interests and change their dreams as they learn and grow! 🌟",
+        "emoji": "🌟",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Exactly! Explore freely, dream big, and enjoy being a kid! 🌈⚡",
+          "incorrect": "🌟 No! You have oceans of time to explore and change your mind!"
+        }
+      },
+      {
+        "questionId": "q11",
+        "question": "Can a child enjoy more than one interest or career dream at the same time? 🎨🔬",
+        "type": "multiple_choice",
+        "options": [
+          "No, human brains can only think about one thing forever 🧠❌",
+          "Yes! You can love space AND painting, or medicine AND storytelling! Diverse interests make you unique! 💖✨",
+          "No, the police will arrest you if you have two hobbies 👮❌",
+          "No, you must flip a coin and delete the other dream 🪙"
+        ],
+        "correctAnswer": "Yes! You can love space AND painting, or medicine AND storytelling! Diverse interests make you unique! 💖✨",
+        "explanation": "People have multiple talents and interests; combining them leads to wonderful creativity and innovation! 🎨",
+        "emoji": "💖",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Multitalented champion! Diverse passions make life rich and exciting! 🌈⚡",
+          "incorrect": "💖 Yes! You can love multiple subjects and explore diverse interests!"
+        }
+      },
+      {
+        "questionId": "q12",
+        "question": "What is the common role of AI and smart technology across all these careers? 🤖🤝",
+        "type": "multiple_choice",
+        "options": [
+          "To fire all human workers and take over the world 🦾❌",
+          "To act as a helpful tool that assists human workers, who remain in charge of decisions! 🌟🛠️",
+          "To turn all offices into giant bouncy castles 🏰",
+          "To change all work uniforms into silver aluminium foil 🥈"
+        ],
+        "correctAnswer": "To act as a helpful tool that assists human workers, who remain in charge of decisions! 🌟🛠️",
+        "explanation": "AI provides helpful tools and data, but human workers lead with empathy, judgment, and responsibility! 🤝",
+        "emoji": "🤝",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Core wisdom! Tech assists, but human wisdom and care lead! 💡⚡",
+          "incorrect": "🤝 AI acts as a helpful tool assisting human workers who make the decisions!"
+        }
+      },
+      {
+        "questionId": "q13",
+        "question": "What should you do if you hurt your arm while playing at recess? 🩹🏃‍♂️",
+        "type": "multiple_choice",
+        "options": [
+          "Hide in the bushes so nobody notices 🌳❌",
+          "Tell a trusted teacher, parent, or adult immediately so they can help you feel better! 👩‍🏫💖",
+          "Keep playing and pretend bones never break 🦴❌",
+          "Try to take your own X-ray with a smartphone flashlight 📱❌"
+        ],
+        "correctAnswer": "Tell a trusted teacher, parent, or adult immediately so they can help you feel better! 👩‍🏫💖",
+        "explanation": "Always alert a trusted adult when hurt so they can comfort you and get caring medical help! 🩹",
+        "emoji": "🩹",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Health safety champion! Always tell a caring adult right away! 🛡️⚡",
+          "incorrect": "🩹 Always tell a trusted teacher, parent, or adult immediately when hurt!"
+        }
+      },
+      {
+        "questionId": "q14",
+        "question": "Why are nurses, doctors, farmers, and conservationists considered everyday superheroes? 🦸‍♀️🌾",
+        "type": "multiple_choice",
+        "options": [
+          "Because they wear capes and shoot laser beams from their eyes 👀",
+          "Because they dedicate their daily work to healing people, growing food, and protecting nature! 💖🌍✨",
+          "Because they can fly over tall skyscrapers 🏙️",
+          "Because they live in secret underwater volcano bases 🌋"
+        ],
+        "correctAnswer": "Because they dedicate their daily work to healing people, growing food, and protecting nature! 💖🌍✨",
+        "explanation": "True superheroes are the dedicated people who help others, nourish communities, and protect our planet! 🌍",
+        "emoji": "🦸‍♀️",
+        "boltReaction": {
+          "correct": "BEEP BOOP! The true heroes of our world! Caring for life is heroic! 💖⚡",
+          "incorrect": "🦸‍♀️ Because they dedicate their work to healing, growing food, and protecting nature!"
+        }
+      },
+      {
+        "questionId": "q15",
+        "question": "What is the best way to develop skills for your future right now? 🌟🌱",
+        "type": "multiple_choice",
+        "options": [
+          "Spend all day sitting on a rock staring at the wall 🪨",
+          "Stay curious, read books, make things with your hands, ask questions, and practice kindness! 📚🎨💖",
+          "Refuse to learn anything until you turn twenty 🛑",
+          "Sleep 23 hours every day 😴"
+        ],
+        "correctAnswer": "Stay curious, read books, make things with your hands, ask questions, and practice kindness! 📚🎨💖",
+        "explanation": "Curiosity, hands-on creativity, reading, and kindness build the skills needed for any future career! 🌟",
+        "emoji": "🌟",
+        "boltReaction": {
+          "correct": "BEEP BOOP! 100% PERFECT! You are officially a Certified Future Dreamer! 🏆🎉⚡",
+          "incorrect": "🌟 Stay curious, read, make things, ask questions, and practice kindness!"
+        }
+      }
+    ]
+  },
+  "discussion": {
+    "questions": [
+      "Which of the five careers (AI Doctor, Robot Farmer, Space Explorer, Toy Maker, Game Creator) sounded most exciting to you today, and why? 🩺🌾🚀🧸🎮",
+      "How does technology help a doctor or farmer without replacing the human person doing the job? 🤖🤝",
+      "If you could design any toy in the world for children, what kind of toy would you invent and how would it work? 🧸✨",
+      "What kind of video game would you create if you were a game designer? Who would be the hero, and what would the quest be? 🎮👾",
+      "Why is teamwork so important for astronauts traveling into space or doctors working in an emergency room? 👩‍🚀🩺🤝",
+      "What are three hobbies you enjoy right now that might help you learn skills for your future? 🎨📚⚽",
+      "If you could build a friendly robot assistant to help a doctor, farmer, or astronaut, what special superpower feature would you build into it? 🤖🦾"
+    ],
+    "homeExplorationTasks": [
+      "Family Career Interview: Ask a parent, grandparent, or neighbour about their job: What tools do they use? How has technology changed their work over the years? 🎤👥",
+      "Backyard Nature Scout: Pretend you are a robot farmer or wildlife ranger! Walk around your yard or balcony and inspect three leaves with a magnifying glass. Are they healthy? 🌾🔍",
+      "Toy Safety Inspector: Pick your favourite toy at home and inspect it like a toy maker: Are the edges smooth? Are there small parts? Why is it fun to play with? 🧸🛡️",
+      "The Astronaut Stargaze: Step outside on a clear night with an adult and look up at the stars. Can you spot any bright planets or the Moon? Imagine floating in space! 🌌🔭",
+      "Dream Career Sketchbook: Draw a picture of yourself in the future wearing whatever uniform or gear you like — you can even combine two jobs into one! 🎨👩‍🚀🩺",
+      "Community Helpers Scavenger Hunt: As you walk around your town or city with an adult, spot five different community helpers (like bus drivers, postal workers, doctors, gardeners, or store clerks) and give them a warm smile! 🏙️👋"
+    ]
+  },
+  "summary": {
+    "recap": "BEEP BOOP! What a magnificent, star-studded safari through future careers! 🌟🤖⚡\nFrom doctors using X-rays and AI scanners to heal broken bones 🩺🩻, to farmers flying camera drones to inspect crops across golden fields 🌾🛸; from astronauts working in global teams to touch the stars 🚀👩‍🚀, to toy makers designing safe treasures 🧸 and game creators building imaginative worlds 🎮 — you have explored what makes human work so meaningful! Most importantly, you know that smart technology gives workers helpful tools, but human empathy, creativity, courage, and wisdom lead every single mission! Keep dreaming big, little explorer! 💖🌍",
+    "keyTakeaways": [
+      "People have many diverse and wonderful careers that help others, solve challenges, create joy, and explore our world 🌟💼",
+      "Doctors care for sick and injured people, using medical tools and X-rays to see inside the body 🩺🩻",
+      "Some medical systems use AI scanning assistants to highlight details on images, but doctors always make the medical decisions 👩‍⚕️🛡️",
+      "Farmers grow the food our planet eats, using knowledge of soil, weather, and plant life cycles 🌾👨‍🌾",
+      "Agricultural drones take aerial photos to inspect crop health, while separate irrigation systems deliver water 🛸💧",
+      "Astronauts and space explorers study the cosmos, relying on intense training and huge international teams working together 🚀👩‍🚀",
+      "Artists express imagination and emotion using pencils, paints, and modern digital drawing tablets 🎨📱",
+      "Toy makers design, craft, and rigorously safety-test toys to bring joy and safe play to children 🧸🛡️",
+      "Game creators invent characters, puzzle levels, rules, and stories for interactive play on computers and consoles 🎮👾",
+      "AI can assist human workers with data and information, but humans remain responsible for decisions and care 🤖🤝",
+      "Every honest, helpful career deserves respect, and every child's unique talents and dreams are valuable 💖🌈",
+      "Children do not need to choose a career today; staying curious, reading, being kind, and exploring hobbies is the best preparation! ⭐🌱",
+      "Exploring diverse subjects in school helps you discover the passions and talents that make you shine! 📚✨"
+    ],
+    "closingToast": {
+      "message": "🌟 'BEEP BOOP! Give yourself a cosmic standing ovation! You are officially an INVENTIVE FUTURE DREAMER! See you in Lesson 2!' 🤖⚡🏆",
+      "trophyEarned": "🏆 Future Dreamer Trophy & Cosmic Rocket Pin UNLOCKED! 🎖️",
+      "boltAction": "Bolt wears a tiny shiny astronaut helmet 👩‍🚀, holds a miniature stethoscope 🩺, and launches harmless golden confetti stars into the air! 🌟🎉"
+    },
+    "nextLesson": {
+      "lessonId": "l2",
+      "chapterId": "ch4",
+      "title": "People Behind Technology 👩‍💻🧑‍🔬",
+      "teaser": "BEEP BOOP! Who actually BUILDS the robots, writes the code, designs the microchips, and tests the AI? In Lesson 2: People Behind Technology, we step behind the curtain into high-tech laboratories to meet the programmers, roboticists, ethical thinkers, and engineers who create our digital world! Grab your inventor goggles — the makers are waiting! 🔍🔬⚡"
+    }
+  }
+}
