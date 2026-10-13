@@ -73,7 +73,7 @@
         ]},
         { "chapterId": "ch2", "title": "Communicate with AI", "lessons": [
           { "lessonId": "l1", "title": "Python Playground", "filename": "middle-class8-ch2-l1.json" },
-          { "lessonId": "l2", "title": "AI Translation", "filename": "middle-class8-ch2-l2.json" }
+          { "lessonId": "l2", "title": "Code a Solution", "filename": "middle-class8-ch2-l2.json" }
         ]},
         { "chapterId": "ch3", "title": "AI Applications", "lessons": [
           { "lessonId": "l1", "title": "AI in Business", "filename": "middle-class8-ch3-l1.json" },
