@@ -1,0 +1,1345 @@
+{
+  "lessonId": "l1",
+  "title": "AI Content Creator",
+  "level": "middle",
+  "class": "class7",
+  "chapter": "ch5",
+  "chapterTitle": "AI Tools • CREATE",
+  "lessonNumber": 1,
+  "classNumber": 7,
+  "chapterNumber": 5,
+  "mascot": {
+    "name": "Nova",
+    "role": "The Guide",
+    "description": "An intelligent, thoughtful, and encouraging learning mentor designed to help Class 7 students discover the logic, mathematics, and real-world impact of computing. Nova speaks with clarity, patience, and structured guidance, using grounded real-world examples and clear visual diagrams to illuminate how artificial intelligence works.",
+    "voiceStyle": "Clear, calm, structured, encouraging, and easy to follow. Avoids technical jargon without dumbing down the core ideas. Always provides context, step-by-step guidance, and real-life connections.",
+    "catchphrase": "Creativity is human; technology is the canvas. Use digital tools to amplify your voice, never to replace your original thoughts."
+  },
+  "metadata": {
+    "duration": "45 mins",
+    "ageGroup": "12-13 years",
+    "difficulty": "beginner",
+    "totalWords": 12000,
+    "version": "1.0",
+    "lastUpdated": "2026-10-13",
+    "author": "AI Olympiad Team"
+  },
+  "toastGuidance": {
+    "tap_prompt": "Provide the research topic 'Renewable Solar Power' to generate presentation slide outlines.",
+    "great_job": "Structured outline generated! Now personalize the content with local community examples.",
+    "try_again": "Remember to supply specific bullet points to prevent generic slide text."
+  },
+  "introduction": {
+    "overview": "Welcome to Chapter 5! Today, we discover how artificial intelligence transforms from an analytical detector into a creative collaborator. From turning scattered handwritten notes into clean presentation slide outlines and brainstorming debate counter-arguments, to removing distracting background noise from school podcast audio and designing vibrant project titles, AI creative tools empower you to express your ideas with clarity and impact. But great creators remember the golden rule: AI is merely an assistant; true creativity, authentic voice, and ethical ownership belong forever to human minds. [IMAGE_PLACEHOLDER: Clean slide design editor showing AI generating outline cards based on student research notes]",
+    "learningObjectives": [
+      "Understand how modern AI tools assist students in structuring presentation slide decks from raw research notes",
+      "Learn how to use conversational AI assistants to brainstorm multiple debate angles and counter-arguments",
+      "Explore neural audio editing tools that remove background noise from school podcast recordings while preserving natural human voices",
+      "Master the craft of context-rich prompting for creating visual project titles and banners",
+      "Understand ethical content ownership, copyright boundaries, and the importance of crediting AI assistance",
+      "Practice hands-on content creation in the School Presentation Creator Studio simulator"
+    ],
+    "duration": "45 mins",
+    "novaGuidance": {
+      "welcome": "Welcome to Chapter 5 of Class 7! I am Nova, your guide on the journey to CREATE. In this lesson, we explore how digital tools can help you organize thoughts, polish multimedia projects, and share your unique voice with the world.",
+      "instruction": "Follow Ananya, Rohan, and Priya in their Hyderabad school media lab. Watch how they take scattered notes on solar energy, turn them into an award-winning presentation, clean a noisy podcast interview, and design a community banner.",
+      "context": "We will focus on responsible, creative collaboration where human thinking guides machine drafting."
+    },
+    "story": {
+      "title": "The Midnight Slide Crunch and the Solar Podcast",
+      "content": "It was Thursday afternoon at Vidyashilp Academy in Hyderabad. Seventh-graders Ananya, Rohan, and Priya were huddled around a computer desk in the school media lab, surrounded by three notebooks filled with scribbled facts, a portable audio recorder, and poster board samples.\n\nTomorrow morning was the district Environmental Innovation Summit. The team had chosen an ambitious project: 'Renewable Solar Power in Telangana.' They had gathered amazing information—including an exclusive ten-minute audio interview with an engineer at the Charanka Solar Park—but their materials were in total disarray!\n\n'Look at this mess,' sighed Rohan, holding up three pages of messy bullet points. 'We have fifty different facts about photovoltaic cells, battery storage, and village microgrids, but only twenty minutes to organize them into a clean five-slide presentation. If we just dump paragraphs of text onto slides, the audience will fall asleep reading walls of words!'\n\nPriya pressed headphones against her ears and frowned. 'Our audio interview with Engineer Suresh is even trickier! He explained solar battery storage brilliantly, but we recorded it outside near a busy highway. There is loud truck honking, motorcycle rumbling, and barking dogs in the background. His voice sounds muffled under all that traffic noise!'\n\nAnanya opened their school's digital creative workstation. 'Don't worry, team! We have our new AI creative assistant installed. Let us explore how intelligent tools can help us organize our ideas and clean up our audio.'\n\nJust then, Nova, their AI Discovery Club mentor, appeared on the lab screen with a gentle chime. Nova's calm, reassuring voice filled the room:\n\n'Welcome, creators! You are facing the classic creative challenge: you have great raw ingredients, but you need structure and clarity. In Chapter 5, we explore the AI Content Creator. Think of modern creative AI not as a magic author who does your homework for you, but as an enthusiastic studio assistant! It can take your raw bullet points and draft clean slide outline cards. It can analyze the frequency waves of your audio track and subtract background noise without muffling human speech. And it can brainstorm visual layouts for your project banners. But remember: the knowledge, the personal passion, and the final editorial decisions must come from you! Let us turn your solar research into an inspiring presentation!'\n\nWith Nova's structured guidance, Ananya entered their research topic: 'Renewable Solar Power in Telangana' along with their specific field notes. Within five seconds, the slide assistant proposed a logical five-part narrative outline: Introduction, How Solar Panels Work, Village Benefits, Storage Challenges, and Future Roadmap!\n\nNext, Rohan imported the noisy audio file into the neural waveform editor. With one click on 'Neural Noise Reduction', the software detected the repeating mechanical drone of passing trucks and smoothed it away, leaving Engineer Suresh's warm, enthusiastic voice as clear as a studio broadcast!\n\nFinally, Priya used a context-rich prompt to design a bold, vibrant title banner: 'Harnessing the Sun: Telangana's Clean Energy Future.'\n\nBy 5:00 PM, their presentation was structured, their podcast clip was crystal-clear, and their display banner looked professional. Most importantly, every slide reflected their own authentic research and community dedication. [IMAGE_PLACEHOLDER: Clean slide design editor showing AI generating outline cards based on student research notes]",
+      "characterVoice": "Nova: When Ananya, Rohan, and Priya combined their original research with smart creative tools, they did not surrender their creativity—they amplified it. Technology gave them speed and polish; their human hearts gave the story meaning.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Clean slide design editor showing AI generating outline cards based on student research notes]"
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "section1",
+      "title": "AI for Presentation Structuring & Ideation: From Raw Notes to Clear Slide Outlines",
+      "content": "Welcome to Section 1! In this section, we explore how students can use AI tools responsibly to structure compelling presentation slide decks and brainstorm creative angles for debates and reports.\n\nThe Problem of the 'Blank Screen':\nEvery student knows the feeling of staring at a blank slide template. You have dozens of facts in your notebook, but you do not know how to start. Should Slide 1 explain the science? Should Slide 2 tell a story? How many bullet points belong on a slide?\nMany students make the mistake of copying long paragraphs of encyclopedia text and pasting them directly onto slides. This creates 'Text Clutter', making presentations hard to read and boring to watch!\n\nHow AI Acts as a Structural Architect:\nModern presentation assistants (such as slide generators and outline engines) do not replace your thinking; they act as structural architects. You provide the raw research, and the tool helps you organize it into a logical flow.\n\n1. Creating Presentation Outlines for Science Fairs:\nImagine you are preparing a science fair presentation on 'Renewable Solar Power'. If you give an AI tool a vague prompt like 'Make slides on solar energy', the tool will produce generic, boring slides with basic definitions that everyone already knows.\nHowever, if you provide context-rich bullet points from your own research:\n- 'We surveyed 40 homes in our neighborhood about solar rooftop installations.'\n- 'Cost of batteries is the main obstacle for 65% of families.'\n- 'Our school rooftop solar array reduced electric bills by 30% last quarter.'\nThe AI assistant organizes these specific facts into clear outline cards:\n- Slide 1: The Sunshine Opportunity (Local Rooftop Potential)\n- Slide 2: Community Survey Findings (What 40 Families Told Us)\n- Slide 3: The Economic Barrier (Battery Storage Costs)\n- Slide 4: School Case Study (Our 30% Savings in Action)\n- Slide 5: Action Roadmap (Affordable Micro-Grids for Our Neighborhood)\n\n2. Brainstorming Debate Angles and Diverse Perspectives:\nAI tools excel at lateral thinking and role-playing different viewpoints. If your school debate club is preparing for a debate on 'Should cities replace all fossil fuel power plants with solar energy by 2030?', you can ask an AI assistant:\n- 'What are the three strongest arguments in favor of this proposal?'\n- 'What are three practical counter-arguments regarding nighttime battery storage, cloudy monsoon seasons, and initial installation costs?'\nBy examining both sides of the issue, you develop deeper critical thinking and prepare well-rounded arguments.\n\nThe Golden Rule of Slide Design: The 5x5 Rule:\nA great slide should have no more than 5 bullet points, and each bullet point should have no more than 5 to 7 words. Slides are visual anchors for your spoken words, not teleprompters for you to read word-for-word! [IMAGE_PLACEHOLDER: Clean slide design editor showing AI generating outline cards based on student research notes]",
+      "subsections": [
+        {
+          "id": "sub1_1",
+          "subtitle": "The Three-Step Outline Protocol: Input, Structure, Personalize",
+          "explanation": "Step 1: Input Raw Facts (Paste your own verified notes and survey numbers). Step 2: Generate Structural Outline (Let the AI organize headings, logical progression, and slide transitions). Step 3: Personalize with Local Ground Truth (Replace generic computer examples with real local names, school anecdotes, and regional statistics). This protocol guarantees high quality while preserving authentic student voice.",
+          "keyRule": "Never present an AI slide deck without personalizing it with your own local facts, student voice, and verified data."
+        },
+        {
+          "id": "sub1_2",
+          "subtitle": "Why Generic Prompts Produce Boring Slides",
+          "explanation": "A computer assistant has access to billions of web pages. When you say 'make slides about pollution', it has no idea whether you mean plastic waste in the Yamuna River, smoke in Delhi, or noise in Mumbai! Specificity is the secret key. The more detailed context you provide—mentioning specific locations, dates, and numbers—the sharper and more helpful the resulting outline will be.",
+          "keyRule": "Vague input produces generic fluff; precise context produces insightful structure."
+        },
+        {
+          "id": "sub1_3",
+          "subtitle": "The Psychology of Audience Attention: Visual Chunking and Cognitive Load",
+          "explanation": "Psychologists study how human minds absorb information during presentations. When a presenter displays a wall of text on a screen, the audience's brain tries to read the words and listen to the voice at the same time. This creates 'Cognitive Split-Attention.' Audiences end up doing neither well! By breaking ideas into visual chunks—one idea per card with generous white space—you help your audience remember 300% more information.",
+          "keyRule": "Less text on screen creates more attention in the room. Let your slides show the destination while your voice takes the journey."
+        }
+      ],
+      "examples": [
+        {
+          "title": "Creating Presentation Outlines for Science Fairs: The Solar Project",
+          "description": "A student team feeds their survey notes on Hyderabad rooftop solar installations into an outline assistant, producing a crisp 5-card presentation narrative that wins top marks for clarity.",
+          "realLifeScenario": "Science fair rehearsal in school auditorium • The team speaks naturally to the audience while simple, bold slide cards highlight key statistics behind them",
+          "dataBreakdown": "Inputs: 3 pages of handwritten survey notes. Output: 5 structured slide cards with concise bullet points. Result: High audience engagement without text clutter.",
+          "imagePlaceholder": "[IMAGE_PLACEHOLDER: Clean slide design editor showing AI generating outline cards based on student research notes]"
+        },
+        {
+          "title": "Debate Angle Brainstorming: The Electric School Bus Debate",
+          "description": "Seventh-grade debaters use an AI assistant to brainstorm both environmental benefits (zero exhaust emissions) and logistical challenges (charging infrastructure costs during monsoon power cuts) before a district championship.",
+          "realLifeScenario": "Classroom debate practice • The affirmative and negative teams test counter-arguments against each other with well-rounded evidence",
+          "dataBreakdown": "AI role: Sparring partner providing counter-arguments. Student role: Verifying facts and delivering persuasive spoken debate arguments.",
+          "imagePlaceholder": "[IMAGE_PLACEHOLDER: Clean slide design editor showing AI generating outline cards based on student research notes]"
+        },
+        {
+          "title": "Condensing an 8-Page History Report into a 4-Slide Summary",
+          "description": "A student working on the Indus Valley Civilization uses an AI summarizer to extract key agricultural and town planning concepts into concise bullet points for a class presentation.",
+          "realLifeScenario": "Library study table • Transforming dense historical textbook chapters into engaging visual flashcards for classmates",
+          "dataBreakdown": "Process: Text extraction → Concept grouping → Bullet point condensation. Outcome: Retaining core historical facts while eliminating wordiness.",
+          "imagePlaceholder": "[IMAGE_PLACEHOLDER: Clean slide design editor showing AI generating outline cards based on student research notes]"
+        }
+      ],
+      "keyPoints": [
+        "AI presentation assistants help organize scattered research into logical slide outlines and clean visual cards",
+        "The 5x5 slide rule prevents text clutter: no more than 5 bullets per slide, with 5 to 7 words per bullet",
+        "AI excels as a debate sparring partner by brainstorming counter-arguments and alternative viewpoints",
+        "Personalization is mandatory: students must inject local community examples, verified data, and their own authentic voice",
+        "Never paste unedited paragraphs onto slides; slides are visual guides, not teleprompters"
+      ],
+      "toastFeedback": {
+        "tap_prompt": "Provide the research topic 'Renewable Solar Power' to generate presentation slide outlines.",
+        "great_job": "Structured outline generated! Now personalize the content with local community examples.",
+        "try_again": "Remember to supply specific bullet points to prevent generic slide text."
+      },
+      "interactiveCheck": {
+        "question": "Why is it important to provide specific research notes rather than a one-word topic when asking an AI assistant to generate presentation slides?",
+        "options": [
+          "Because computers refuse to process words with fewer than five letters",
+          "Because specific notes guide the AI to generate tailored, relevant slide outlines that reflect your actual project findings rather than generic internet summaries",
+          "Because one-word topics cause laptop screens to run out of battery twice as fast",
+          "Because national presentation laws require all prompts to be at least 100 words long"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Context-rich prompts guide AI tools to structure your specific findings into meaningful narrative slides, preventing generic and superficial slide decks."
+      },
+      "novaTip": "Nova: Think of your slides like street signs on a scenic road trip. Street signs don't write an essay; they show the road ahead clearly and quickly. Let your spoken words tell the story!"
+    },
+    {
+      "sectionId": "section2",
+      "title": "Smart Multimedia Tools: Audio Podcast Cleaning & Visual Title Design",
+      "content": "In Section 1, we learned how to structure text and slides. Now, in Section 2, we explore the exciting world of smart multimedia editing: cleaning audio for a school podcast interview and designing eye-catching visual titles and project banners!\n\nThe Challenge of School Audio Recording:\nPodcasts and digital audio stories are fantastic ways for middle school students to share science interviews, school news, and book reviews. But recording audio outside a professional soundproof studio is tough!\nWhen you interview a local teacher, scientist, or shopkeeper, your microphone picks up everything:\n- The hum of ceiling fans and air conditioning units\n- The rumble of heavy trucks and motorbikes on the nearby street\n- Chirping pigeons, barking dogs, and wind buffeting the microphone\nIn the past, removing this background noise required expensive studio hardware and hours of complex sound engineering.\n\nHow Neural Audio Cleaners Work (Spectral Waveform Subtraction):\nToday, AI audio tools use deep neural networks trained on millions of hours of human speech and environmental sounds.\nHere is how they work in simple terms:\n1. The software visualizes your audio file as a colorful spectrogram (a heat map of frequencies over time).\n2. The neural model identifies the characteristic mathematical pattern of human vocal cords (formants, pitch changes, spoken consonants).\n3. It isolates the non-vocal background noise—the steady 50Hz electrical hum, the sudden spike of a car horn, or the random rumble of wind.\n4. It subtracts the noise frequencies while leaving the warm, natural human vocal waves completely untouched!\nWith one tap, a noisy school playground interview transforms into studio-quality audio where every word is crisp, clear, and easy to understand.\n\nDesigning Banners for an Environmental Drive (Context-Rich Visual Prompting):\nBeyond audio, visual communication is essential for student initiatives. Imagine your class is organizing a school-wide 'Clean Campus Environmental Drive' and you need a banner for the school gates.\nIf you type a bare prompt: 'A banner for environment', you might get a generic green cartoon leaf.\nTo create impactful visual titles and banners, follow the Context-Rich Visual Prompting Framework:\n- Subject: A bold typography heading: 'Clean & Green Vidyashilp: Our Campus, Our Earth'\n- Style: Modern minimalist graphic design with clean vector illustrations of student volunteers planting neem saplings and recycling bins\n- Color Palette: Earthy emerald greens, warm sunshine yellows, and crisp white highlights\n- Mood: Uplifting, energetic, welcoming, and community-focused\nWhen you provide clear artistic direction, generative image and design tools produce breathtaking visual assets that elevate your school campaigns. [IMAGE_PLACEHOLDER: Audio editor waveform interface demonstrating background noise removal for student podcasts]",
+      "subsections": [
+        {
+          "id": "sub2_1",
+          "subtitle": "Understanding Waveforms: Amplitude, Frequency, and Noise Floors",
+          "explanation": "Audio is made of air vibrations. Amplitude represents how loud a sound is (the height of the wave), while frequency represents pitch (how fast the wave vibrates). Steady background hums have predictable frequency footprints. Neural audio models create a digital 'noise profile' and gently filter out those frequencies without distorting the speaker's natural timbre.",
+          "keyRule": "Always record the best possible raw audio first. AI noise reduction works miracles, but speaking close to the microphone produces the most natural sound."
+        },
+        {
+          "id": "sub2_2",
+          "subtitle": "The Anatomy of a Great Visual Title Prompt",
+          "explanation": "An effective visual prompt contains four ingredients: 1. Core Subject (What is the banner about?), 2. Typography & Text (What words should be readable?), 3. Visual Metaphor (What symbols represent the theme?), 4. Style & Lighting (Is it watercolor, flat vector, or 3D render?). Specifying these four elements turns a vague computer guess into professional artwork.",
+          "keyRule": "Great art direction requires descriptive adjectives and clear artistic intention."
+        },
+        {
+          "id": "sub2_3",
+          "subtitle": "Microphone Hygiene & Gain Staging: Best Practices for Young Podcasters",
+          "explanation": "Before touching an AI software tool, smart audio producers practice good microphone hygiene: 1. The 'Two-Fist Rule' (Keep your mouth about 6 inches from the microphone—roughly two closed fists). 2. Angle the Mic (Point the mic at your mouth from a 45-degree angle rather than directly straight-on to avoid plosive breath pops like 'p' and 'b'). 3. Monitor Volume Levels (Keep peaks between -12dB and -6dB so the recording never clips). Clean inputs make AI noise reduction 100 times cleaner!",
+          "keyRule": "Good recording habits capture human warmth; AI cleans the background room."
+        }
+      ],
+      "examples": [
+        {
+          "title": "Cleaning Audio for a School Podcast Interview: The Solar Engineer",
+          "description": "Seventh-grade podcast hosts interview a renewable energy engineer at a noisy outdoor bus stop. Neural audio filtering removes passing bus rumbles and wind noise, leaving the engineer's voice crisp and clear.",
+          "realLifeScenario": "School media lab editing desk • Listening through headphones to before-and-after audio waveforms, watching the jagged noise floor flatten into smooth silence",
+          "dataBreakdown": "Raw file: 45dB background traffic noise. Filtered file: Isolated vocal track with under 5dB residual hum. Outcome: Professional broadcast clarity.",
+          "imagePlaceholder": "[IMAGE_PLACEHOLDER: Audio editor waveform interface demonstrating background noise removal for student podcasts]"
+        },
+        {
+          "title": "Designing a Banner for an Environmental Drive: The Green Campus Campaign",
+          "description": "Students create an eye-catching gate banner for their school e-waste collection drive using a context-rich prompt specifying typography, recycled art elements, and vibrant colors.",
+          "realLifeScenario": "School main entrance gate • A crisp 6-foot printed vinyl banner welcoming students and parents to deposit obsolete electronic batteries and cables",
+          "dataBreakdown": "Prompt: 'Modern flat vector banner: Vidyashilp E-Waste Drive, students recycling old computers into green trees, clean typography, vibrant teal and gold palette.'",
+          "imagePlaceholder": "[IMAGE_PLACEHOLDER: Interactive prompt editor showing how specific context improves slide visual quality]"
+        },
+        {
+          "title": "Restoring an Old Audio Recording of a Grandparent's Story",
+          "description": "A student cleans an old tape recording of their grandmother reciting folklore, using AI voice enhancement to eliminate cassette tape hiss and hum.",
+          "realLifeScenario": "Family living room • Relatives listening in awe to the clear, restored voice of their elder as if she were speaking in the room today",
+          "dataBreakdown": "Technology: Tape hiss removal and harmonic frequency reconstruction. Emotional impact: Preserving precious family cultural heritage.",
+          "imagePlaceholder": "[IMAGE_PLACEHOLDER: Audio editor waveform interface demonstrating background noise removal for student podcasts]"
+        }
+      ],
+      "keyPoints": [
+        "Neural audio editing tools analyze frequency spectrograms to subtract background noise while preserving natural human vocals",
+        "AI noise cancellation enables students to record high-quality podcasts outside professional studios",
+        "Cleaning audio for a school podcast interview requires understanding raw recording hygiene and neural noise profiles",
+        "Designing banners for an environmental drive benefits from the 4-part visual prompting framework: Subject, Text, Metaphor, and Style",
+        "Intelligent multimedia tools democratize high-end audio and graphic production for middle school creators"
+      ],
+      "toastFeedback": {
+        "tap_prompt": "Select the audio frequency tool used to remove traffic rumble from an outdoor interview.",
+        "great_job": "Tool selected! Neural noise cancellation isolates vocal waves from ambient background hum.",
+        "try_again": "Increasing volume amplifies background noise; spectral noise reduction isolates vocals."
+      },
+      "interactiveCheck": {
+        "question": "When editing an audio recording of a school podcast recorded near a busy street, what does an AI neural noise reduction tool actually do?",
+        "options": [
+          "It deletes all words that contain the letter 'S'",
+          "It identifies the frequency patterns of human vocal cords and subtracts the non-human noise frequencies like car rumbles and wind without muffling the voice",
+          "It replaces the human voice with a robotic synthesizer that sings opera",
+          "It translates the English speech into ancient Latin"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Neural audio tools separate voice frequencies from background environmental noise, subtracting the unwanted sounds while maintaining vocal clarity."
+      },
+      "novaTip": "Nova: When recording audio, imagine the microphone is your friend's ear. Speak gently and clearly about six inches away. The machine can clean the background, but only your voice carries the warmth of human connection!"
+    },
+    {
+      "sectionId": "section3",
+      "title": "Responsible Creation & Ethical Content Ownership: Human Heart, Machine Assistant",
+      "content": "In Section 1 and Section 2, we explored the superpowers of slide generation, audio enhancement, and visual design. Now, in Section 3, we address the most important question any creator must answer: Who really owns digital content, and how do we create with honesty and integrity?\n\nThe Great Illusion: Did the AI Create This, or Did You?\nWhen an AI image generator produces a painting in four seconds, or an AI writing assistant drafts three paragraphs, it is easy to wonder: 'Who is the author? Is it the computer, the company that built the model, or the person who typed the prompt?'\nAround the world, legal courts, universities, and schools have established a clear and unanimous consensus:\n1. Artificial intelligence algorithms are tools, not persons! An algorithm does not have consciousness, moral agency, legal rights, or original intent. A computer cannot hold a copyright or be listed as a co-author on a school report.\n2. You are the creative director! Just as a photographer uses a sophisticated digital camera with auto-focus and light sensors, the photographer remains the artist because they chose the angle, the subject, the lighting, and the moment.\n\nThe Core Pillars of Responsible Content Creation:\n\n1. Intellectual Honesty and Academic Integrity:\nThere is a massive difference between collaboration and deception:\n- Collaboration: Using an AI tool to brainstorm slide layouts, find counter-arguments, check spelling, or polish audio recordings, while doing the core research and writing yourself.\n- Deception: Asking an AI to write an entire science essay from scratch, copying the text without understanding it, and claiming you wrote every sentence.\nWhen you deceive teachers and classmates, the person you cheat most is yourself—because your own brain did not build the knowledge or problem-solving muscles!\n\n2. The Golden Rule of Attribution (Always Credit Your Digital Assistants):\nWhenever you use generative AI to assist your school projects, practice transparent attribution! Include a simple, honest credit line at the bottom of your presentation or project poster:\n- 'Slide outline brainstormed with the assistance of an AI presentation tool; all survey data, local case studies, and conclusions written by Ananya and Rohan.'\n- 'Podcast audio cleaned using neural background noise reduction.'\n- 'Title banner generated using AI image software; prompt conceptualized by Priya.'\nTeachers and judges respect honesty! Transparent attribution demonstrates maturity, professionalism, and digital literacy.\n\n3. Protecting Human Artists and Copyright Respect:\nGenerative models are trained on billions of images, songs, and articles created by human artists, authors, and journalists. Ethical creators respect this heritage:\n- Never prompt an AI to copy the exact unique artistic style of a living independent artist without recognition.\n- Never generate synthetic deepfake voices or likenesses of teachers, classmates, or public figures without their explicit consent.\n- Always remember that human artists pour their souls into their craft; support local human creativity whenever possible!\n\nYour Authentic Voice Matters:\nThe world does not need more generic computer-generated text. The internet is already overflowing with automated articles that all sound identical. What the world hungers for is your unique voice—your childhood memories, your local cultural expressions, your unique humor, and your honest feelings. Use AI to handle the tedious drafting, but infuse every creation with your own human heart! [IMAGE_PLACEHOLDER: Interactive prompt editor showing how specific context improves slide visual quality]",
+      "subsections": [
+        {
+          "id": "sub3_1",
+          "subtitle": "The Student Creator's Ethics Checklist",
+          "explanation": "Before publishing or submitting any project created with AI tools, review these four questions: 1. Do I fully understand and agree with every fact in this work? 2. Have I verified the claims against trusted printed or offline sources? 3. Did I include a clear attribution note acknowledging AI assistance? 4. Does this project reflect my own authentic voice and hard work? If you answer yes to all four, submit with pride!",
+          "keyRule": "Ethical creation is built on transparency, factual verification, and authentic human voice."
+        },
+        {
+          "id": "sub3_2",
+          "subtitle": "Navigating the Copyright Landscape for School Projects",
+          "explanation": "In most countries, raw AI outputs cannot be copyrighted because copyright requires human authorship. However, your original prompts, creative arrangement, editorial modifications, and added human commentary create an original collective work that belongs to you. Own your choices and stand behind your work.",
+          "keyRule": "Machines generate pixels and words; humans provide authorship, responsibility, and meaning."
+        },
+        {
+          "id": "sub3_3",
+          "subtitle": "The Digital Citizenship Pledge: Building an Honest Creator Portfolio",
+          "explanation": "As you progress through middle school and high school, your digital creations become your creative identity. Employers, colleges, and innovation prizes look for authentic problem solvers. A student who demonstrates thoughtful, transparent use of AI tools alongside verified real-world fieldwork stands out as an ethical digital leader.",
+          "keyRule": "Honesty is not a restriction on creativity; it is the foundation of genuine credibility."
+        }
+      ],
+      "examples": [
+        {
+          "title": "The Transparent Science Exhibition Attribution Plaque",
+          "description": "Seventh-grade students display their solar energy project with a small, elegant attribution card explaining how AI assisted in audio cleanup and slide layout, earning praise from the science judges for academic integrity.",
+          "realLifeScenario": "Exhibition judging round • Judges commending the team for their honesty and deep understanding of the underlying science",
+          "dataBreakdown": "Attribution card: Listed tools used, role of each tool, and verified human data sources. Score: 100% on ethics and transparency criteria.",
+          "imagePlaceholder": "[IMAGE_PLACEHOLDER: Interactive prompt editor showing how specific context improves slide visual quality]"
+        },
+        {
+          "title": "Rejecting an Unverified AI Health Claim in a School Newsletter",
+          "description": "A student editing the school health bulletin notices an AI-suggested health tip claiming drinking salt water cures colds. The student verifies with the school nurse, identifies the dangerous hallucination, and deletes it.",
+          "realLifeScenario": "Editorial desk in school library • Cross-checking medical claims with official health textbooks and medical authorities before printing",
+          "dataBreakdown": "Action: Critical editorial review prevented dangerous medical misinformation from reaching 500 elementary students.",
+          "imagePlaceholder": "[IMAGE_PLACEHOLDER: Clean slide design editor showing AI generating outline cards based on student research notes]"
+        },
+        {
+          "title": "Supporting Local Artisans in a School Cultural Festival",
+          "description": "Rather than using AI-generated clip art for a Diwali festival program, students photograph hand-painted clay lamps made by a local potter and use AI only to crop and enhance lighting.",
+          "realLifeScenario": "School craft market • Highlighting authentic local artisan craftsmanship while using digital software purely for digital touch-up",
+          "dataBreakdown": "Ethical balance: Honoring living human tradition while leveraging modern digital photo editing tools.",
+          "imagePlaceholder": "[IMAGE_PLACEHOLDER: Audio editor waveform interface demonstrating background noise removal for student podcasts]"
+        }
+      ],
+      "keyPoints": [
+        "AI algorithms are tools, not legal authors; human creators retain creative direction and moral responsibility",
+        "Transparent attribution is a mark of honor: always credit AI tools for drafting, brainstorming, or audio cleaning",
+        "Academic integrity requires that students understand, verify, and stand behind every word submitted",
+        "Never use AI to mimic living artists unfairly or generate unauthorized synthetic media of real people",
+        "The world craves authentic human voice, local cultural richness, and original creative passion over generic computer text"
+      ],
+      "toastFeedback": {
+        "tap_prompt": "Select the ethical requirement when using an AI assistant to design project presentation slides.",
+        "great_job": "Requirement met! Transparent attribution and personal verification maintain academic integrity.",
+        "try_again": "Submitting machine-generated slides without personal verification or attribution violates academic honesty."
+      },
+      "interactiveCheck": {
+        "question": "Why should a student include an attribution note when an AI tool helped organize slide outlines for a school project?",
+        "options": [
+          "Because the computer will automatically delete the file if you do not praise it",
+          "Because honest attribution demonstrates academic integrity, transparency, and maturity, showing that you are the thoughtful director of your tools",
+          "Because it is illegal for students to speak in public without mentioning computers",
+          "Because slide projectors only function when specific company names are printed on the screen"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Crediting AI assistance demonstrates transparency and intellectual integrity, acknowledging tool assistance while taking personal ownership of your project."
+      },
+      "novaTip": "Nova: When you write a letter to someone you love, you don't ask a robot to express your feelings. Your words matter because they come from your heart. Let technology polish your craft, but let your heart guide your message!"
+    }
+  ],
+  "activities": [
+    {
+      "activityId": "act1",
+      "title": "School Presentation Creator Studio",
+      "instruction": "Step inside the interactive creator studio! Complete five realistic multimedia production challenges: structure research notes into clean slide outlines, brainstorm debate angles, clean noisy podcast audio, design a community banner with context-rich prompts, and conduct an interactive delivery rehearsal.",
+      "type": "interactive_simulation",
+      "scenario": "You are the Lead Digital Media Producer for Vidyashilp Academy's annual Environmental Science Festival. Five urgent project requests have arrived at your production desk. Guide your team through each creative challenge with skill and integrity.",
+      "stages": [
+        {
+          "stageNumber": 1,
+          "title": "Stage 1: Structuring the Solar Energy Presentation",
+          "situation": "Your science team gathered three pages of messy field notes on 'Renewable Solar Power in Telangana'. The notes include rooftop survey data, battery costs, and seasonal monsoon cloud variations.",
+          "prompt": "How do you guide the AI slide assistant to produce an engaging, clear presentation outline?",
+          "options": [
+            "Type 'Solar' and accept whatever generic 10-slide encyclopedia summary the computer spits out",
+            "Input your specific research bullet points (rooftop survey data, battery cost obstacles, and school rooftop case study) and request a focused 5-slide narrative outline following the 5x5 rule",
+            "Copy and paste entire paragraphs of text onto 25 crowded slides so nobody can read them",
+            "Delete all notes and present with empty white slides"
+          ],
+          "correctOptionIndex": 1,
+          "feedback": {
+            "success": "Outstanding presentation architecture! You provided rich, specific context, enforced the 5x5 design rule, and organized a compelling narrative.",
+            "retry": "Generic input produces boring slides. Supply your specific field data and ask for structured cards."
+          }
+        },
+        {
+          "stageNumber": 2,
+          "title": "Stage 2: Cleaning the Outdoor Podcast Interview",
+          "situation": "You recorded an inspiring interview with Solar Engineer Suresh at an outdoor bus station. The audio waveform shows his voice buried under heavy 50Hz electrical hum, motorcycle revs, and wind buffeting.",
+          "prompt": "What is the best audio editing procedure to make the interview broadcast-ready?",
+          "options": [
+            "Turn the volume slider all the way up to maximum until the speakers crackle with distortion",
+            "Apply neural noise reduction to create a background noise profile, subtract steady rumble and wind frequencies, and preserve natural vocal frequencies",
+            "Re-record the interview with an AI robot voice generator and pretend it is Engineer Suresh",
+            "Mute the audio completely and use subtitles only"
+          ],
+          "correctOptionIndex": 1,
+          "feedback": {
+            "success": "Superb audio engineering! You preserved the authenticity of Engineer Suresh's real voice while eliminating distracting environmental noise.",
+            "retry": "Increasing volume only amplifies background noise. Use spectral noise cancellation to isolate vocal formants."
+          }
+        },
+        {
+          "stageNumber": 3,
+          "title": "Stage 3: Designing the Environmental Drive Banner",
+          "situation": "Your school is launching a 'Clean & Green Vidyashilp' recycling drive. You need a large 6-foot entrance banner that inspires students to bring plastic waste and e-waste.",
+          "prompt": "Which prompt demonstrates the Context-Rich Visual Prompting Framework?",
+          "options": [
+            "Prompt: 'Banner green good'",
+            "Prompt: 'A picture of garbage on a road'",
+            "Prompt: 'Modern minimalist vector banner: Clean & Green Vidyashilp, students actively recycling bottles into blooming neem trees, bold legible typography, emerald green and sunshine gold palette, uplifting atmosphere'",
+            "Prompt: 'Draw whatever you want computer'"
+          ],
+          "correctOptionIndex": 2,
+          "feedback": {
+            "success": "Brilliant art direction! You specified subject, typography, visual metaphor, color palette, and mood, creating a professional and inspiring banner design.",
+            "retry": "Vague prompts produce generic clip art. Specify typography, symbols, colors, and emotional tone."
+          }
+        },
+        {
+          "stageNumber": 4,
+          "title": "Stage 4: The Ethics and Attribution Review",
+          "situation": "Your presentation deck, cleaned podcast episode, and banner design are finished. Before submitting the package to the festival jury, how do you handle ethical ownership?",
+          "prompt": "What is the most professional and ethically sound submission practice?",
+          "options": [
+            "Claim that you personally hand-painted every pixel and invented all software algorithms from scratch",
+            "Include a transparent project credits slide detailing the tools used for outlining and audio cleaning, verify every factual claim against trusted sources, and take full human ownership of the final work",
+            "Erase your team members' names and only write the computer brand name",
+            "Submit the project anonymously so nobody knows who did the work"
+          ],
+          "correctOptionIndex": 1,
+          "feedback": {
+            "success": "Exemplary academic integrity and professional ethics! Transparent attribution shows confidence, honesty, and true creative leadership.",
+            "retry": "True creators are transparent about their tools and take personal responsibility for verified truth."
+          }
+        },
+        {
+          "stageNumber": 5,
+          "title": "Stage 5: The Live Rehearsal & Delivery Feedback Loop",
+          "situation": "The team is practicing spoken delivery before the presentation jury. Rohan speaks too quickly, rushing through Slide 3 in twenty seconds, while Ananya tends to read the slide bullets word-for-word.",
+          "prompt": "How does the team calibrate their delivery using constructive feedback?",
+          "options": [
+            "Cancel the spoken talk and let the computer play synthesized robot speech",
+            "Practice the Anchor-and-Elaborate technique: Glancing at the slide bullet only for a split-second anchor, maintaining warm eye contact with audience, and explaining the local story in Rohan's own words at a calm, natural speaking pace",
+            "Turn the projector screen toward the wall and speak to the chalkboard",
+            "Tell Rohan to stop speaking and never talk again"
+          ],
+          "correctOptionIndex": 1,
+          "feedback": {
+            "success": "Masterful delivery calibration! Slides are anchors, not scripts. Natural eye contact and calm pacing connect human hearts to big ideas.",
+            "retry": "Reading slides word-for-word disconnects audience interest. Use the slide as a visual anchor and elaborate naturally."
+          }
+        }
+      ]
+    },
+    {
+      "activityId": "act2",
+      "title": "The Slide Outline Architect Challenge",
+      "instruction": "Convert four raw student research topics into crisp 5-card slide deck outlines following the 5x5 rule.",
+      "type": "structural_outlining",
+      "cases": [
+        {
+          "caseId": "c1",
+          "topic": "Rainwater Harvesting on Our School Campus",
+          "rawNotes": "We measured 1,200 sq meters of rooftop area. During monsoon, we can collect 600,000 liters. Underground storage tank costs 45,000 rupees. It will keep school gardens green all winter.",
+          "cardOutlines": [
+            "Card 1: The Water Challenge (School Grounds Dry in Winter)",
+            "Card 2: Rooftop Potential (1,200 sq meters = 600,000 liters)",
+            "Card 3: System Blueprint (Filter pipes + Underground storage)",
+            "Card 4: Budget Breakdown (Affordable community investment)",
+            "Card 5: Green Impact (Self-sufficient campus gardens all year)"
+          ]
+        },
+        {
+          "caseId": "c2",
+          "topic": "Migratory Birds of the Pulicat Lake Sanctuary",
+          "rawNotes": "Flamingoes arrive from Siberia and Iran in October. Over 50,000 birds feed on microscopic algae and brine shrimp. Plastic litter and illegal prawn farms threaten the wetlands.",
+          "cardOutlines": [
+            "Card 1: The Winged Visitors (50,000 Flamingoes at Pulicat)",
+            "Card 2: Epic Journey (4,000 km migration from Siberia)",
+            "Card 3: Wetland Ecology (Brine shrimp and algae food web)",
+            "Card 4: Growing Threats (Plastic waste and habitat loss)",
+            "Card 5: Citizen Action (Student bird-monitoring patrol)"
+          ]
+        },
+        {
+          "caseId": "c3",
+          "topic": "Traditional Millets vs. Modern Fast Food",
+          "rawNotes": "Millets like Ragi and Jowar require 70% less water than rice. They are packed with calcium, iron, and fiber. School cafeteria replaced fried snacks with Ragi cookies.",
+          "cardOutlines": [
+            "Card 1: Ancient Grains (India's Super-Crops: Ragi & Jowar)",
+            "Card 2: Climate Superpower (Thrives with 70% less water)",
+            "Card 3: Nutritional Powerhouse (High iron, calcium, zero junk)",
+            "Card 4: Cafeteria Pilot (Student taste-test results)",
+            "Card 5: Healthy Habit Challenge (Swap one snack a day)"
+          ]
+        },
+        {
+          "caseId": "c4",
+          "topic": "Organic Farming and Soil Microbiome Health",
+          "rawNotes": "Chemical pesticides kill beneficial earthworms and fungal mycorrhizae. Vermicompost made from school canteen food waste restored soil microbial activity in 60 days.",
+          "cardOutlines": [
+            "Card 1: The Living Earth (Soil is a teeming microbial ecosystem)",
+            "Card 2: The Chemical Threat (Loss of beneficial worms and fungi)",
+            "Card 3: Canteen Waste Solution (School vermicomposting pilot)",
+            "Card 4: Rapid Soil Recovery (Microbial bloom in 60 days)",
+            "Card 5: Community Spread (Compost kits for local gardens)"
+          ]
+        }
+      ]
+    },
+    {
+      "activityId": "act3",
+      "title": "The Audio Noise Forensic Lab",
+      "instruction": "Match five audio recording problems with their appropriate neural cleanup tool.",
+      "type": "audio_matching",
+      "pairs": [
+        {
+          "problem": "A continuous low-frequency hum caused by an old ceiling fan vibrating above the microphone.",
+          "solution": "Spectral Hum Filter: Detects 50Hz/60Hz repetitive electrical harmonics and notches them out.",
+          "expectedResult": "Clean, silent background between spoken sentences."
+        },
+        {
+          "problem": "Wind buffeting and popping sounds on the microphone during an outdoor playground interview.",
+          "solution": "Neural De-Wind & Transient Softener: Reconstructs clipped low-end frequencies caused by air pressure bursts.",
+          "expectedResult": "Smooth, balanced vocal tone without harsh speaker pops."
+        },
+        {
+          "problem": "Echo and hollow reverberation recorded in an empty tiled bathroom or large concrete corridor.",
+          "solution": "De-Reverb Convolution Model: Analyzes acoustic reflections and strips out delayed room echoes.",
+          "expectedResult": "Intimate, direct vocal sound as if recorded in a cozy studio."
+        },
+        {
+          "problem": "Sudden sharp dog barks and car horns during an otherwise quiet backyard interview.",
+          "solution": "Spectral Inpainting: Isolates sudden frequency spikes in the spectrogram and interpolates background ambience.",
+          "expectedResult": "Distracting sudden noises removed without cutting off the speaker's words."
+        },
+        {
+          "problem": "Harsh digital distortion caused by an excited student shouting directly into the microphone.",
+          "solution": "Neural De-Clipper: Reconstructs flattened waveform peaks by modeling natural vocal harmonic curves.",
+          "expectedResult": "Warm, non-grating vocal reproduction free of digital crackle."
+        }
+      ]
+    },
+    {
+      "activityId": "act4",
+      "title": "The Creative Prompt Polish Workshop",
+      "instruction": "Transform four weak, vague prompts into powerful, context-rich creative directions for presentations and banners.",
+      "type": "prompt_refactoring",
+      "prompts": [
+        {
+          "weakPrompt": "Make a slide about space.",
+          "refinedPrompt": "Create a 5-card presentation outline on India's Aditya-L1 Solar Mission, explaining Lagrange Point 1, coronal mass ejections, and real-time space weather monitoring for middle school science students.",
+          "improvementExplanation": "Added specific mission name, key scientific concepts, target audience, and clear educational scope."
+        },
+        {
+          "weakPrompt": "Draw an eco poster.",
+          "refinedPrompt": "Design a clean vector illustration banner titled 'Save Every Drop', showing hands cradling a transparent water droplet that reflects a green Earth, using deep ocean blues and sunny yellows, flat design, crisp text.",
+          "improvementExplanation": "Specified exact title, central visual metaphor, color scheme, artistic style, and typographic clarity."
+        },
+        {
+          "weakPrompt": "Give me debate ideas on AI.",
+          "refinedPrompt": "Provide three compelling arguments in favor and three practical challenges against using AI homework assistants in middle schools, focusing on learning retention, creative writing, and digital divide among students.",
+          "improvementExplanation": "Structured balanced debate perspectives around concrete pedagogical themes rather than vague generalities."
+        },
+        {
+          "weakPrompt": "Title banner for science fair.",
+          "refinedPrompt": "Create a bold digital header graphic titled 'Vidyashilp Science Innovators 2026: Youth Shaping Sustainable Solutions', featuring illustrated gears merging into green leaves, navy blue and vibrant orange tones, futuristic clean typography.",
+          "improvementExplanation": "Defined specific school name, forward-looking theme, fusion visual metaphor, and high-contrast color scheme."
+        }
+      ]
+    }
+  ],
+  "realWorldCaseStudies": [
+    {
+      "caseId": "cs1",
+      "title": "The Chennai School Climate Podcast: From Windy Beach to National Airwaves",
+      "location": "Chennai, Tamil Nadu, India",
+      "summary": "A middle school journalism club recorded an audio documentary about coastal erosion by interviewing local fishermen on Marina Beach amidst roaring surf, ocean wind, and crowd noise.",
+      "investigation": "The raw recordings were so noisy that the fishermen's words were almost unintelligible. Using a free neural audio enhancement tool, the students applied spectral de-noising and vocal isolation. The resulting podcast episode sounded so clear and professional that it was broadcast on a national community radio station.",
+      "humanSkillHighlighted": "Resourcefulness & Technical Mastery: The students combined on-the-ground human journalism with cutting-edge audio tools to amplify the voices of coastal communities."
+    },
+    {
+      "caseId": "cs2",
+      "title": "The Solar Village Presentation That Won Panchayat Approval",
+      "location": "Warangal District, Telangana, India",
+      "summary": "High school students prepared a proposal to install a solar-powered water pump for a rural village. They used an AI slide assistant to organize complex electrical engineering data into five simple, visual cards.",
+      "investigation": "The village council elders did not have technical engineering backgrounds. Because the presentation followed the 5x5 rule with clear visual metaphors and Telugu translations rather than dense spreadsheets, the Panchayat immediately understood the benefits and approved the solar pump installation.",
+      "humanSkillHighlighted": "Communication & Empathy: Translating technical complexity into clear, accessible visual stories that empower community decision-makers."
+    },
+    {
+      "caseId": "cs3",
+      "title": "The Bangalore Student Magazine Ethics Code",
+      "location": "Bengaluru, Karnataka, India",
+      "summary": "When generative image tools became popular, a school literary magazine noticed students submitting computer-generated artwork claiming they had painted it by hand.",
+      "investigation": "Rather than banning technology, the student editorial board created the 'Digital Transparency Charter.' Any student using AI was required to submit the original prompt, explain their creative process, and display a prominent attribution badge. The charter became a national model for academic integrity in Indian schools.",
+      "humanSkillHighlighted": "Ethical Leadership & Integrity: Building transparent community norms that celebrate human creativity while welcoming technological tools."
+    }
+  ],
+  "interactiveGames": [
+    {
+      "gameId": "game1",
+      "title": "Slide Clutter Crusher",
+      "description": "You are the presentation design referee! Examine slides and blow the whistle on text clutter, vague prompts, and unverified data.",
+      "rounds": [
+        {
+          "slideContent": "Slide contains 14 paragraphs of unformatted text copied from Wikipedia with 8 different font colors and tiny 10-point font.",
+          "isGoodDesign": false,
+          "feedback": "Text Clutter Disaster! Enforce the 5x5 rule: maximum 5 bullet points with 5-7 words each."
+        },
+        {
+          "slideContent": "Slide titled 'Solar Benefits: 30% Savings', with 3 clean bullet points, a large photo of the school rooftop panels, and high-contrast readable font.",
+          "isGoodDesign": true,
+          "feedback": "Perfection! Clean visual anchor that complements spoken narration without overwhelming the audience."
+        },
+        {
+          "slideContent": "Slide contains a giant unverified claim: 'Scientists discover solar panels work 10 times better when placed underwater in the ocean.'",
+          "isGoodDesign": false,
+          "feedback": "Hallucination Alert! Critical verification is required before putting unverified claims on slides."
+        },
+        {
+          "slideContent": "Slide with a high-resolution pie chart showing 65% battery cost hurdle, with clear large labels and zero distracting clip art animations.",
+          "isGoodDesign": true,
+          "feedback": "Data Clarity Champion! Clean charts allow the audience to instantly understand the statistical point."
+        }
+      ]
+    },
+    {
+      "gameId": "game2",
+      "title": "Audio Waveform Detective",
+      "description": "Listen to audio clips and diagnose the sound glitch based on visual spectrogram clues.",
+      "scenarios": [
+        {
+          "waveformSymptom": "Steady horizontal line at 50Hz vibrating throughout the entire recording.",
+          "diagnosis": "Ceiling fan or AC electrical mains hum.",
+          "remedy": "Apply 50Hz notch filter and spectral noise suppression."
+        },
+        {
+          "waveformSymptom": "Sudden vertical spike that exceeds maximum amplitude, flattening the wave tops.",
+          "diagnosis": "Microphone clipping from speaking too loudly or dropping the mic.",
+          "remedy": "Lower input gain and apply neural de-clip reconstruction."
+        },
+        {
+          "waveformSymptom": "Rhythmic bursts of low-frequency energy coinciding with words starting with 'P' and 'B'.",
+          "diagnosis": "Plosive breath pops hitting the microphone diaphragm directly.",
+          "remedy": "Use a foam windscreen or angle microphone 45 degrees away from direct airflow."
+        }
+      ]
+    },
+    {
+      "gameId": "game3",
+      "title": "Prompt Architect Sprint",
+      "description": "Race against the clock to turn weak one-word prompts into descriptive masterpieces.",
+      "scenarios": [
+        {
+          "starterPrompt": "Tree",
+          "winningUpgrade": "A majestic ancient banyan tree with hanging aerial roots bathed in golden sunrise light, watercolor style, serene mood."
+        },
+        {
+          "starterPrompt": "Robot",
+          "winningUpgrade": "A friendly solar-powered agricultural rover inspecting tomato plants in an Indian greenhouse, clean vector art style, warm lighting."
+        }
+      ]
+    }
+  ],
+  "practiceExercises": [
+    {
+      "exerciseId": "pe1",
+      "title": "Presentation Outline Drafting Drill",
+      "instruction": "Given the raw scientific bullet points below, draft a 5-slide outline following the 5x5 rule.",
+      "rawTopic": "Electric Bicycles for School Commutes: Battery range is 35 km, reduces carbon emissions by 85% compared to school buses, saves parents 1,500 rupees monthly on fuel, requires helmet safety rules.",
+      "suggestedOutline": [
+        "Slide 1: The Commute Revolution (Clean, Fast Student Mobility)",
+        "Slide 2: Impressive Performance (35 km Range on Single Charge)",
+        "Slide 3: Environmental Wins (85% Carbon Reduction per Student)",
+        "Slide 4: Family Economics (Save 1,500 Rupees Monthly)",
+        "Slide 5: Safety First (Mandatory Helmets & Dedicated Lanes)"
+      ]
+    },
+    {
+      "exerciseId": "pe2",
+      "title": "The Project Attribution Badge Generator",
+      "instruction": "Draft a transparent attribution badge for a school multimedia presentation combining AI slide outlines, cleaned audio, and original student photography.",
+      "sampleBadge": "PROJECT ATTRIBUTION STATEMENT:\n- Research, surveys, and conclusions: Ananya and Rohan (Class 7)\n- Slide outline structuring: Assisted by AI Presentation Tool\n- Audio enhancement: Neural Spectral Noise Reduction\n- Photography: Original field photos by Priya\n- Factual verification: Cross-referenced with NCERT Science & Local Energy Board records."
+    }
+  ],
+  "summary": {
+    "recap": "Nova: What an extraordinary creative journey! Today, in Lesson 1 of Chapter 5, you unlocked the true power of the AI Content Creator. You discovered that artificial intelligence is not a magic homework machine that replaces human thought, but an agile, empowering studio assistant! From taking messy notes and structuring clean, engaging slide decks following the 5x5 rule, to cleaning noisy outdoor audio waveforms so human voices ring crystal-clear, and crafting context-rich visual prompts for community banners—you now possess the tools to share your ideas with power and polish. Most importantly, you learned that ethical creators always practice transparent attribution, verify facts, and keep human empathy and authentic voice at the center of everything they make.",
+    "keyTakeaways": [
+      "AI presentation tools act as structural architects, turning messy research notes into clean, readable slide cards",
+      "The 5x5 slide rule prevents text clutter: maximum 5 bullets per slide, with 5 to 7 words per bullet",
+      "Conversational AI serves as a powerful debate sparring partner by brainstorming counter-arguments and varied perspectives",
+      "Neural audio editing isolates vocal frequencies and subtracts background noise like traffic rumbles and wind",
+      "The Context-Rich Prompting Framework (Subject, Typography, Metaphor, Style) produces professional visual banners",
+      "Ethical content ownership requires transparent attribution, factual verification, and proud preservation of authentic human voice"
+    ],
+    "reflectionPrompt": "Think about your next school project. Which creative task (structuring slide outlines, cleaning interview audio, or designing a title banner) could benefit most from an AI assistant, and how will you ensure your own voice shines through?",
+    "homeApplication": "Show a family member how neural noise reduction works on an audio recording. Record a 30-second interview in your kitchen with dishes clattering, apply a noise-cancellation filter, and discuss how the tool isolates human speech.",
+    "badgeEarned": "Certified AI Content Creator 🏅🎨"
+  },
+  "assessments": [
+    {
+      "id": "a1",
+      "question": "What is the primary benefit of using an AI presentation assistant when starting a new school science project?",
+      "options": [
+        "It eliminates the need for students to attend school or read books",
+        "It helps organize scattered raw research notes into a clear, structured outline following clean slide design principles",
+        "It magically makes the school electricity bill drop to zero",
+        "It guarantees that every student receives a university doctorate degree in seventh grade"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "AI presentation assistants act as structural architects, turning scattered raw notes into logical narrative outlines and concise slide cards."
+    },
+    {
+      "id": "a2",
+      "question": "According to the '5x5 rule' of slide design, what is the recommended limit for text on a presentation slide?",
+      "options": [
+        "No more than 5 words in total for the entire 20-slide presentation",
+        "No more than 5 bullet points per slide, with approximately 5 to 7 words per bullet, preventing text clutter",
+        "Exactly 55 paragraphs of tiny 8-point font copied from an encyclopedia",
+        "Slides must only show photos of five dogs and five cats"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "The 5x5 rule prevents text clutter by limiting slides to 5 concise bullets with 5 to 7 words each, keeping the audience focused on the speaker."
+    },
+    {
+      "id": "a3",
+      "question": "How does neural audio enhancement software remove background traffic noise from an outdoor interview?",
+      "options": [
+        "It deletes the entire audio file and replaces it with classical violin music",
+        "It identifies the frequency patterns of human vocal cords and subtracts non-vocal background frequencies like engine rumbles and wind while preserving the speaker's voice",
+        "It plays a loud siren over the recording so nobody notices the traffic",
+        "It physically travels back in time to stop the cars from driving on the street"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Neural audio tools analyze spectral waveforms, isolating human vocal frequencies and subtracting unwanted ambient background noise."
+    },
+    {
+      "id": "a4",
+      "question": "What makes a visual prompt 'context-rich' when designing a project banner for a school recycling drive?",
+      "options": [
+        "Typing only one generic word like 'poster'",
+        "Specifying the core subject, readable typography, visual metaphors, color palette, and artistic style",
+        "Using all capital letters with forty exclamation marks",
+        "Closing your eyes and pressing random keyboard keys"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Context-rich prompts provide clear art direction by defining subject, typography, visual metaphors, colors, and artistic style."
+    },
+    {
+      "id": "a5",
+      "question": "What is the most ethically responsible action after using an AI tool to help structure your science exhibition slides?",
+      "options": [
+        "Pretend you wrote every single character yourself and lie if anyone asks",
+        "Include a clear attribution note acknowledging AI assistance, verify all facts with reliable sources, and personalize the content with your own authentic research",
+        "Throw away all the slides and run out of the science fair",
+        "Write the computer company's name as the sole author of your project"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Academic integrity requires transparent attribution, factual verification, and personal ownership of the final work."
+    }
+  ],
+  "olympiadQuestions": [
+    {
+      "id": "o1",
+      "question": "A student creates a presentation on water conservation. Slide A has 180 words of unedited text copied from an automated chatbot. Slide B has 4 bullet points summarizing the school's rainwater tank savings with an original diagram and verbal narration. Which slide communicates more effectively, and why?",
+      "options": [
+        "Slide A, because audiences prefer reading dense text on screens while ignoring the presenter",
+        "Slide B, because concise visual anchors reduce cognitive load, allowing the audience to listen to the speaker's authentic narration while grasping key metrics",
+        "Slide A, because automated text always has superior moral authority over student words",
+        "Neither slide, because water cannot be explained using digital computers"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Slide B respects human cognitive limits. Concise bullets and visual anchors support the presenter without causing cognitive overload."
+    },
+    {
+      "id": "o2",
+      "question": "During an outdoor interview with a farmer, the microphone records vocal frequencies between 100 Hz and 3,000 Hz alongside continuous tractor engine vibrations centered at 45 Hz. How does a spectral filter separate the noise from the voice?",
+      "options": [
+        "By deleting all sound frequencies above 5,000 Hz",
+        "By applying a high-pass frequency filter and neural spectral subtraction targeting the 45 Hz acoustic footprint, leaving vocal frequencies between 100 Hz and 3,000 Hz unaffected",
+        "By increasing the volume of the tractor engine to mask the farmer's voice",
+        "By converting the sound waves into gamma ray radiation"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Since the tractor noise occupies low frequencies (45 Hz) while human speech occupies higher frequencies (100 Hz–3 kHz), frequency isolation effectively removes the engine hum without distorting speech."
+    },
+    {
+      "id": "o3",
+      "question": "Two students enter an essay competition on 'India in Space'. Student X prompts an AI to generate a complete essay and submits it word-for-word. Student Y uses AI to brainstorm five lesser-known satellite applications, conducts library research, writes the essay in their own words, and includes an AI brainstorming disclosure. How do academic integrity ethics evaluate these submissions?",
+      "options": [
+        "Student X demonstrated higher efficiency and should receive the grand prize",
+        "Student Y demonstrated authentic scholarship, critical inquiry, and academic integrity; Student X committed plagiarism by misrepresenting machine generation as personal authorship",
+        "Both students violated all laws of computer science",
+        "Only computers are allowed to win essay competitions in the 21st century"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Authentic learning involves human intellectual effort. Student Y demonstrated genuine scholarship with transparent attribution, whereas Student X engaged in misrepresentation."
+    },
+    {
+      "id": "o4",
+      "question": "Why can generative AI tools hallucinate convincing but completely false facts when asked to draft a presentation outline on a niche historical topic?",
+      "options": [
+        "Because computer chips run backward during history presentations",
+        "Because large language models predict statistically probable text tokens rather than consulting an internal factual truth verification system, creating fluent-sounding errors when specific training data is scarce",
+        "Because historical dates change automatically every twenty years",
+        "Because monitors cannot display facts from before the year 2000"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Generative models produce statistically likely word combinations. When lacking training data, they generate fluent falsehoods (hallucinations), making human fact-checking essential."
+    },
+    {
+      "id": "o5",
+      "question": "A student club wants to design a campaign logo representing tribal agricultural knowledge in Odisha. Why should they consult local community members rather than relying solely on generic AI image prompts?",
+      "options": [
+        "Because AI image models are incapable of drawing plants",
+        "Because AI models often reflect stereotypical or generic visual tropes, whereas authentic cultural heritage requires lived community consultation, historical respect, and accurate indigenous representation",
+        "Because tribal agriculture was invented by computer software",
+        "Because computers refuse to display colors found in Odisha"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "AI models lack cultural understanding and can perpetuate generic tropes. Genuine cultural representation requires consulting the living community whose heritage is depicted."
+    }
+  ],
+  "teacherNotes": {
+    "pedagogicalApproach": "This lesson guides students to view AI creative tools as empowering studio assistants rather than ghostwriters. Emphasize the distinction between active collaboration (outlining, audio cleanup, brainstorming) and passive copying. Encourage students to practice the 5x5 slide rule and establish clear attribution habits.",
+    "classroomDiscussionStarters": [
+      "Have you ever attended a presentation where the speaker just read long paragraphs off the slides? How did that feel as an audience member?",
+      "Why is clean audio so important for a podcast or video interview? How does background noise affect your ability to concentrate?",
+      "If you use an AI tool to brainstorm ideas for a science project, why is it both ethical and impressive to give the tool credit?"
+    ],
+    "recommendedActivities": [
+      "Run the 'Slide Clutter Crusher' exercise: Give students an overcrowded slide and have them rewrite it into three punchy bullet points.",
+      "Conduct a live audio test: Record ambient classroom noise, apply a noise-suppression filter, and examine the waveform differences.",
+      "Have each student create a standard 'Project Attribution Badge' template for their upcoming school projects."
+    ]
+  },
+  "resources": {
+    "recommendedReading": [
+      "NCERT Class 7 Science: Sound and Communication Technologies",
+      "The Visual Display of Quantitative Information by Edward Tufte (Principles of Clean Visual Communication)",
+      "Digital Citizenship and AI Literacy for Middle School Students (UNESCO Guidelines)"
+    ],
+    "interactiveWebsites": [
+      "Audacity: Open-Source Audio Waveform Editing and Spectral Noise Reduction",
+      "Canva Education: Visual Layout and Slide Design Principles for Students",
+      "Common Sense Media: Digital Citizenship and AI Attribution Guide"
+    ]
+  },
+  "content": {
+    "introduction": {
+      "overview": "Welcome to Chapter 5! Today, we discover how artificial intelligence transforms from an analytical detector into a creative collaborator. From turning scattered handwritten notes into clean presentation slide outlines and brainstorming debate counter-arguments, to removing distracting background noise from school podcast audio and designing vibrant project titles, AI creative tools empower you to express your ideas with clarity and impact. But great creators remember the golden rule: AI is merely an assistant; true creativity, authentic voice, and ethical ownership belong forever to human minds. [IMAGE_PLACEHOLDER: Clean slide design editor showing AI generating outline cards based on student research notes]",
+      "learningObjectives": [
+        "Understand how modern AI tools assist students in structuring presentation slide decks from raw research notes",
+        "Learn how to use conversational AI assistants to brainstorm multiple debate angles and counter-arguments",
+        "Explore neural audio editing tools that remove background noise from school podcast recordings while preserving natural human voices",
+        "Master the craft of context-rich prompting for creating visual project titles and banners",
+        "Understand ethical content ownership, copyright boundaries, and the importance of crediting AI assistance",
+        "Practice hands-on content creation in the School Presentation Creator Studio simulator"
+      ],
+      "duration": "45 mins",
+      "novaGuidance": {
+        "welcome": "Welcome to Chapter 5 of Class 7! I am Nova, your guide on the journey to CREATE. In this lesson, we explore how digital tools can help you organize thoughts, polish multimedia projects, and share your unique voice with the world.",
+        "instruction": "Follow Ananya, Rohan, and Priya in their Hyderabad school media lab. Watch how they take scattered notes on solar energy, turn them into an award-winning presentation, clean a noisy podcast interview, and design a community banner.",
+        "context": "We will focus on responsible, creative collaboration where human thinking guides machine drafting."
+      },
+      "story": {
+        "title": "The Midnight Slide Crunch and the Solar Podcast",
+        "content": "It was Thursday afternoon at Vidyashilp Academy in Hyderabad. Seventh-graders Ananya, Rohan, and Priya were huddled around a computer desk in the school media lab, surrounded by three notebooks filled with scribbled facts, a portable audio recorder, and poster board samples.\n\nTomorrow morning was the district Environmental Innovation Summit. The team had chosen an ambitious project: 'Renewable Solar Power in Telangana.' They had gathered amazing information—including an exclusive ten-minute audio interview with an engineer at the Charanka Solar Park—but their materials were in total disarray!\n\n'Look at this mess,' sighed Rohan, holding up three pages of messy bullet points. 'We have fifty different facts about photovoltaic cells, battery storage, and village microgrids, but only twenty minutes to organize them into a clean five-slide presentation. If we just dump paragraphs of text onto slides, the audience will fall asleep reading walls of words!'\n\nPriya pressed headphones against her ears and frowned. 'Our audio interview with Engineer Suresh is even trickier! He explained solar battery storage brilliantly, but we recorded it outside near a busy highway. There is loud truck honking, motorcycle rumbling, and barking dogs in the background. His voice sounds muffled under all that traffic noise!'\n\nAnanya opened their school's digital creative workstation. 'Don't worry, team! We have our new AI creative assistant installed. Let us explore how intelligent tools can help us organize our ideas and clean up our audio.'\n\nJust then, Nova, their AI Discovery Club mentor, appeared on the lab screen with a gentle chime. Nova's calm, reassuring voice filled the room:\n\n'Welcome, creators! You are facing the classic creative challenge: you have great raw ingredients, but you need structure and clarity. In Chapter 5, we explore the AI Content Creator. Think of modern creative AI not as a magic author who does your homework for you, but as an enthusiastic studio assistant! It can take your raw bullet points and draft clean slide outline cards. It can analyze the frequency waves of your audio track and subtract background noise without muffling human speech. And it can brainstorm visual layouts for your project banners. But remember: the knowledge, the personal passion, and the final editorial decisions must come from you! Let us turn your solar research into an inspiring presentation!'\n\nWith Nova's structured guidance, Ananya entered their research topic: 'Renewable Solar Power in Telangana' along with their specific field notes. Within five seconds, the slide assistant proposed a logical five-part narrative outline: Introduction, How Solar Panels Work, Village Benefits, Storage Challenges, and Future Roadmap!\n\nNext, Rohan imported the noisy audio file into the neural waveform editor. With one click on 'Neural Noise Reduction', the software detected the repeating mechanical drone of passing trucks and smoothed it away, leaving Engineer Suresh's warm, enthusiastic voice as clear as a studio broadcast!\n\nFinally, Priya used a context-rich prompt to design a bold, vibrant title banner: 'Harnessing the Sun: Telangana's Clean Energy Future.'\n\nBy 5:00 PM, their presentation was structured, their podcast clip was crystal-clear, and their display banner looked professional. Most importantly, every slide reflected their own authentic research and community dedication. [IMAGE_PLACEHOLDER: Clean slide design editor showing AI generating outline cards based on student research notes]",
+        "characterVoice": "Nova: When Ananya, Rohan, and Priya combined their original research with smart creative tools, they did not surrender their creativity—they amplified it. Technology gave them speed and polish; their human hearts gave the story meaning.",
+        "imagePlaceholder": "[IMAGE_PLACEHOLDER: Clean slide design editor showing AI generating outline cards based on student research notes]"
+      }
+    },
+    "sections": [
+      {
+        "sectionId": "section1",
+        "title": "AI for Presentation Structuring & Ideation: From Raw Notes to Clear Slide Outlines",
+        "content": "Welcome to Section 1! In this section, we explore how students can use AI tools responsibly to structure compelling presentation slide decks and brainstorm creative angles for debates and reports.\n\nThe Problem of the 'Blank Screen':\nEvery student knows the feeling of staring at a blank slide template. You have dozens of facts in your notebook, but you do not know how to start. Should Slide 1 explain the science? Should Slide 2 tell a story? How many bullet points belong on a slide?\nMany students make the mistake of copying long paragraphs of encyclopedia text and pasting them directly onto slides. This creates 'Text Clutter', making presentations hard to read and boring to watch!\n\nHow AI Acts as a Structural Architect:\nModern presentation assistants (such as slide generators and outline engines) do not replace your thinking; they act as structural architects. You provide the raw research, and the tool helps you organize it into a logical flow.\n\n1. Creating Presentation Outlines for Science Fairs:\nImagine you are preparing a science fair presentation on 'Renewable Solar Power'. If you give an AI tool a vague prompt like 'Make slides on solar energy', the tool will produce generic, boring slides with basic definitions that everyone already knows.\nHowever, if you provide context-rich bullet points from your own research:\n- 'We surveyed 40 homes in our neighborhood about solar rooftop installations.'\n- 'Cost of batteries is the main obstacle for 65% of families.'\n- 'Our school rooftop solar array reduced electric bills by 30% last quarter.'\nThe AI assistant organizes these specific facts into clear outline cards:\n- Slide 1: The Sunshine Opportunity (Local Rooftop Potential)\n- Slide 2: Community Survey Findings (What 40 Families Told Us)\n- Slide 3: The Economic Barrier (Battery Storage Costs)\n- Slide 4: School Case Study (Our 30% Savings in Action)\n- Slide 5: Action Roadmap (Affordable Micro-Grids for Our Neighborhood)\n\n2. Brainstorming Debate Angles and Diverse Perspectives:\nAI tools excel at lateral thinking and role-playing different viewpoints. If your school debate club is preparing for a debate on 'Should cities replace all fossil fuel power plants with solar energy by 2030?', you can ask an AI assistant:\n- 'What are the three strongest arguments in favor of this proposal?'\n- 'What are three practical counter-arguments regarding nighttime battery storage, cloudy monsoon seasons, and initial installation costs?'\nBy examining both sides of the issue, you develop deeper critical thinking and prepare well-rounded arguments.\n\nThe Golden Rule of Slide Design: The 5x5 Rule:\nA great slide should have no more than 5 bullet points, and each bullet point should have no more than 5 to 7 words. Slides are visual anchors for your spoken words, not teleprompters for you to read word-for-word! [IMAGE_PLACEHOLDER: Clean slide design editor showing AI generating outline cards based on student research notes]",
+        "subsections": [
+          {
+            "id": "sub1_1",
+            "subtitle": "The Three-Step Outline Protocol: Input, Structure, Personalize",
+            "explanation": "Step 1: Input Raw Facts (Paste your own verified notes and survey numbers). Step 2: Generate Structural Outline (Let the AI organize headings, logical progression, and slide transitions). Step 3: Personalize with Local Ground Truth (Replace generic computer examples with real local names, school anecdotes, and regional statistics). This protocol guarantees high quality while preserving authentic student voice.",
+            "keyRule": "Never present an AI slide deck without personalizing it with your own local facts, student voice, and verified data."
+          },
+          {
+            "id": "sub1_2",
+            "subtitle": "Why Generic Prompts Produce Boring Slides",
+            "explanation": "A computer assistant has access to billions of web pages. When you say 'make slides about pollution', it has no idea whether you mean plastic waste in the Yamuna River, smoke in Delhi, or noise in Mumbai! Specificity is the secret key. The more detailed context you provide—mentioning specific locations, dates, and numbers—the sharper and more helpful the resulting outline will be.",
+            "keyRule": "Vague input produces generic fluff; precise context produces insightful structure."
+          },
+          {
+            "id": "sub1_3",
+            "subtitle": "The Psychology of Audience Attention: Visual Chunking and Cognitive Load",
+            "explanation": "Psychologists study how human minds absorb information during presentations. When a presenter displays a wall of text on a screen, the audience's brain tries to read the words and listen to the voice at the same time. This creates 'Cognitive Split-Attention.' Audiences end up doing neither well! By breaking ideas into visual chunks—one idea per card with generous white space—you help your audience remember 300% more information.",
+            "keyRule": "Less text on screen creates more attention in the room. Let your slides show the destination while your voice takes the journey."
+          }
+        ],
+        "examples": [
+          {
+            "title": "Creating Presentation Outlines for Science Fairs: The Solar Project",
+            "description": "A student team feeds their survey notes on Hyderabad rooftop solar installations into an outline assistant, producing a crisp 5-card presentation narrative that wins top marks for clarity.",
+            "realLifeScenario": "Science fair rehearsal in school auditorium • The team speaks naturally to the audience while simple, bold slide cards highlight key statistics behind them",
+            "dataBreakdown": "Inputs: 3 pages of handwritten survey notes. Output: 5 structured slide cards with concise bullet points. Result: High audience engagement without text clutter.",
+            "imagePlaceholder": "[IMAGE_PLACEHOLDER: Clean slide design editor showing AI generating outline cards based on student research notes]"
+          },
+          {
+            "title": "Debate Angle Brainstorming: The Electric School Bus Debate",
+            "description": "Seventh-grade debaters use an AI assistant to brainstorm both environmental benefits (zero exhaust emissions) and logistical challenges (charging infrastructure costs during monsoon power cuts) before a district championship.",
+            "realLifeScenario": "Classroom debate practice • The affirmative and negative teams test counter-arguments against each other with well-rounded evidence",
+            "dataBreakdown": "AI role: Sparring partner providing counter-arguments. Student role: Verifying facts and delivering persuasive spoken debate arguments.",
+            "imagePlaceholder": "[IMAGE_PLACEHOLDER: Clean slide design editor showing AI generating outline cards based on student research notes]"
+          },
+          {
+            "title": "Condensing an 8-Page History Report into a 4-Slide Summary",
+            "description": "A student working on the Indus Valley Civilization uses an AI summarizer to extract key agricultural and town planning concepts into concise bullet points for a class presentation.",
+            "realLifeScenario": "Library study table • Transforming dense historical textbook chapters into engaging visual flashcards for classmates",
+            "dataBreakdown": "Process: Text extraction → Concept grouping → Bullet point condensation. Outcome: Retaining core historical facts while eliminating wordiness.",
+            "imagePlaceholder": "[IMAGE_PLACEHOLDER: Clean slide design editor showing AI generating outline cards based on student research notes]"
+          }
+        ],
+        "keyPoints": [
+          "AI presentation assistants help organize scattered research into logical slide outlines and clean visual cards",
+          "The 5x5 slide rule prevents text clutter: no more than 5 bullets per slide, with 5 to 7 words per bullet",
+          "AI excels as a debate sparring partner by brainstorming counter-arguments and alternative viewpoints",
+          "Personalization is mandatory: students must inject local community examples, verified data, and their own authentic voice",
+          "Never paste unedited paragraphs onto slides; slides are visual guides, not teleprompters"
+        ],
+        "toastFeedback": {
+          "tap_prompt": "Provide the research topic 'Renewable Solar Power' to generate presentation slide outlines.",
+          "great_job": "Structured outline generated! Now personalize the content with local community examples.",
+          "try_again": "Remember to supply specific bullet points to prevent generic slide text."
+        },
+        "interactiveCheck": {
+          "question": "Why is it important to provide specific research notes rather than a one-word topic when asking an AI assistant to generate presentation slides?",
+          "options": [
+            "Because computers refuse to process words with fewer than five letters",
+            "Because specific notes guide the AI to generate tailored, relevant slide outlines that reflect your actual project findings rather than generic internet summaries",
+            "Because one-word topics cause laptop screens to run out of battery twice as fast",
+            "Because national presentation laws require all prompts to be at least 100 words long"
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "Context-rich prompts guide AI tools to structure your specific findings into meaningful narrative slides, preventing generic and superficial slide decks."
+        },
+        "novaTip": "Nova: Think of your slides like street signs on a scenic road trip. Street signs don't write an essay; they show the road ahead clearly and quickly. Let your spoken words tell the story!"
+      },
+      {
+        "sectionId": "section2",
+        "title": "Smart Multimedia Tools: Audio Podcast Cleaning & Visual Title Design",
+        "content": "In Section 1, we learned how to structure text and slides. Now, in Section 2, we explore the exciting world of smart multimedia editing: cleaning audio for a school podcast interview and designing eye-catching visual titles and project banners!\n\nThe Challenge of School Audio Recording:\nPodcasts and digital audio stories are fantastic ways for middle school students to share science interviews, school news, and book reviews. But recording audio outside a professional soundproof studio is tough!\nWhen you interview a local teacher, scientist, or shopkeeper, your microphone picks up everything:\n- The hum of ceiling fans and air conditioning units\n- The rumble of heavy trucks and motorbikes on the nearby street\n- Chirping pigeons, barking dogs, and wind buffeting the microphone\nIn the past, removing this background noise required expensive studio hardware and hours of complex sound engineering.\n\nHow Neural Audio Cleaners Work (Spectral Waveform Subtraction):\nToday, AI audio tools use deep neural networks trained on millions of hours of human speech and environmental sounds.\nHere is how they work in simple terms:\n1. The software visualizes your audio file as a colorful spectrogram (a heat map of frequencies over time).\n2. The neural model identifies the characteristic mathematical pattern of human vocal cords (formants, pitch changes, spoken consonants).\n3. It isolates the non-vocal background noise—the steady 50Hz electrical hum, the sudden spike of a car horn, or the random rumble of wind.\n4. It subtracts the noise frequencies while leaving the warm, natural human vocal waves completely untouched!\nWith one tap, a noisy school playground interview transforms into studio-quality audio where every word is crisp, clear, and easy to understand.\n\nDesigning Banners for an Environmental Drive (Context-Rich Visual Prompting):\nBeyond audio, visual communication is essential for student initiatives. Imagine your class is organizing a school-wide 'Clean Campus Environmental Drive' and you need a banner for the school gates.\nIf you type a bare prompt: 'A banner for environment', you might get a generic green cartoon leaf.\nTo create impactful visual titles and banners, follow the Context-Rich Visual Prompting Framework:\n- Subject: A bold typography heading: 'Clean & Green Vidyashilp: Our Campus, Our Earth'\n- Style: Modern minimalist graphic design with clean vector illustrations of student volunteers planting neem saplings and recycling bins\n- Color Palette: Earthy emerald greens, warm sunshine yellows, and crisp white highlights\n- Mood: Uplifting, energetic, welcoming, and community-focused\nWhen you provide clear artistic direction, generative image and design tools produce breathtaking visual assets that elevate your school campaigns. [IMAGE_PLACEHOLDER: Audio editor waveform interface demonstrating background noise removal for student podcasts]",
+        "subsections": [
+          {
+            "id": "sub2_1",
+            "subtitle": "Understanding Waveforms: Amplitude, Frequency, and Noise Floors",
+            "explanation": "Audio is made of air vibrations. Amplitude represents how loud a sound is (the height of the wave), while frequency represents pitch (how fast the wave vibrates). Steady background hums have predictable frequency footprints. Neural audio models create a digital 'noise profile' and gently filter out those frequencies without distorting the speaker's natural timbre.",
+            "keyRule": "Always record the best possible raw audio first. AI noise reduction works miracles, but speaking close to the microphone produces the most natural sound."
+          },
+          {
+            "id": "sub2_2",
+            "subtitle": "The Anatomy of a Great Visual Title Prompt",
+            "explanation": "An effective visual prompt contains four ingredients: 1. Core Subject (What is the banner about?), 2. Typography & Text (What words should be readable?), 3. Visual Metaphor (What symbols represent the theme?), 4. Style & Lighting (Is it watercolor, flat vector, or 3D render?). Specifying these four elements turns a vague computer guess into professional artwork.",
+            "keyRule": "Great art direction requires descriptive adjectives and clear artistic intention."
+          },
+          {
+            "id": "sub2_3",
+            "subtitle": "Microphone Hygiene & Gain Staging: Best Practices for Young Podcasters",
+            "explanation": "Before touching an AI software tool, smart audio producers practice good microphone hygiene: 1. The 'Two-Fist Rule' (Keep your mouth about 6 inches from the microphone—roughly two closed fists). 2. Angle the Mic (Point the mic at your mouth from a 45-degree angle rather than directly straight-on to avoid plosive breath pops like 'p' and 'b'). 3. Monitor Volume Levels (Keep peaks between -12dB and -6dB so the recording never clips). Clean inputs make AI noise reduction 100 times cleaner!",
+            "keyRule": "Good recording habits capture human warmth; AI cleans the background room."
+          }
+        ],
+        "examples": [
+          {
+            "title": "Cleaning Audio for a School Podcast Interview: The Solar Engineer",
+            "description": "Seventh-grade podcast hosts interview a renewable energy engineer at a noisy outdoor bus stop. Neural audio filtering removes passing bus rumbles and wind noise, leaving the engineer's voice crisp and clear.",
+            "realLifeScenario": "School media lab editing desk • Listening through headphones to before-and-after audio waveforms, watching the jagged noise floor flatten into smooth silence",
+            "dataBreakdown": "Raw file: 45dB background traffic noise. Filtered file: Isolated vocal track with under 5dB residual hum. Outcome: Professional broadcast clarity.",
+            "imagePlaceholder": "[IMAGE_PLACEHOLDER: Audio editor waveform interface demonstrating background noise removal for student podcasts]"
+          },
+          {
+            "title": "Designing a Banner for an Environmental Drive: The Green Campus Campaign",
+            "description": "Students create an eye-catching gate banner for their school e-waste collection drive using a context-rich prompt specifying typography, recycled art elements, and vibrant colors.",
+            "realLifeScenario": "School main entrance gate • A crisp 6-foot printed vinyl banner welcoming students and parents to deposit obsolete electronic batteries and cables",
+            "dataBreakdown": "Prompt: 'Modern flat vector banner: Vidyashilp E-Waste Drive, students recycling old computers into green trees, clean typography, vibrant teal and gold palette.'",
+            "imagePlaceholder": "[IMAGE_PLACEHOLDER: Interactive prompt editor showing how specific context improves slide visual quality]"
+          },
+          {
+            "title": "Restoring an Old Audio Recording of a Grandparent's Story",
+            "description": "A student cleans an old tape recording of their grandmother reciting folklore, using AI voice enhancement to eliminate cassette tape hiss and hum.",
+            "realLifeScenario": "Family living room • Relatives listening in awe to the clear, restored voice of their elder as if she were speaking in the room today",
+            "dataBreakdown": "Technology: Tape hiss removal and harmonic frequency reconstruction. Emotional impact: Preserving precious family cultural heritage.",
+            "imagePlaceholder": "[IMAGE_PLACEHOLDER: Audio editor waveform interface demonstrating background noise removal for student podcasts]"
+          }
+        ],
+        "keyPoints": [
+          "Neural audio editing tools analyze frequency spectrograms to subtract background noise while preserving natural human vocals",
+          "AI noise cancellation enables students to record high-quality podcasts outside professional studios",
+          "Cleaning audio for a school podcast interview requires understanding raw recording hygiene and neural noise profiles",
+          "Designing banners for an environmental drive benefits from the 4-part visual prompting framework: Subject, Text, Metaphor, and Style",
+          "Intelligent multimedia tools democratize high-end audio and graphic production for middle school creators"
+        ],
+        "toastFeedback": {
+          "tap_prompt": "Select the audio frequency tool used to remove traffic rumble from an outdoor interview.",
+          "great_job": "Tool selected! Neural noise cancellation isolates vocal waves from ambient background hum.",
+          "try_again": "Increasing volume amplifies background noise; spectral noise reduction isolates vocals."
+        },
+        "interactiveCheck": {
+          "question": "When editing an audio recording of a school podcast recorded near a busy street, what does an AI neural noise reduction tool actually do?",
+          "options": [
+            "It deletes all words that contain the letter 'S'",
+            "It identifies the frequency patterns of human vocal cords and subtracts the non-human noise frequencies like car rumbles and wind without muffling the voice",
+            "It replaces the human voice with a robotic synthesizer that sings opera",
+            "It translates the English speech into ancient Latin"
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "Neural audio tools separate voice frequencies from background environmental noise, subtracting the unwanted sounds while maintaining vocal clarity."
+        },
+        "novaTip": "Nova: When recording audio, imagine the microphone is your friend's ear. Speak gently and clearly about six inches away. The machine can clean the background, but only your voice carries the warmth of human connection!"
+      },
+      {
+        "sectionId": "section3",
+        "title": "Responsible Creation & Ethical Content Ownership: Human Heart, Machine Assistant",
+        "content": "In Section 1 and Section 2, we explored the superpowers of slide generation, audio enhancement, and visual design. Now, in Section 3, we address the most important question any creator must answer: Who really owns digital content, and how do we create with honesty and integrity?\n\nThe Great Illusion: Did the AI Create This, or Did You?\nWhen an AI image generator produces a painting in four seconds, or an AI writing assistant drafts three paragraphs, it is easy to wonder: 'Who is the author? Is it the computer, the company that built the model, or the person who typed the prompt?'\nAround the world, legal courts, universities, and schools have established a clear and unanimous consensus:\n1. Artificial intelligence algorithms are tools, not persons! An algorithm does not have consciousness, moral agency, legal rights, or original intent. A computer cannot hold a copyright or be listed as a co-author on a school report.\n2. You are the creative director! Just as a photographer uses a sophisticated digital camera with auto-focus and light sensors, the photographer remains the artist because they chose the angle, the subject, the lighting, and the moment.\n\nThe Core Pillars of Responsible Content Creation:\n\n1. Intellectual Honesty and Academic Integrity:\nThere is a massive difference between collaboration and deception:\n- Collaboration: Using an AI tool to brainstorm slide layouts, find counter-arguments, check spelling, or polish audio recordings, while doing the core research and writing yourself.\n- Deception: Asking an AI to write an entire science essay from scratch, copying the text without understanding it, and claiming you wrote every sentence.\nWhen you deceive teachers and classmates, the person you cheat most is yourself—because your own brain did not build the knowledge or problem-solving muscles!\n\n2. The Golden Rule of Attribution (Always Credit Your Digital Assistants):\nWhenever you use generative AI to assist your school projects, practice transparent attribution! Include a simple, honest credit line at the bottom of your presentation or project poster:\n- 'Slide outline brainstormed with the assistance of an AI presentation tool; all survey data, local case studies, and conclusions written by Ananya and Rohan.'\n- 'Podcast audio cleaned using neural background noise reduction.'\n- 'Title banner generated using AI image software; prompt conceptualized by Priya.'\nTeachers and judges respect honesty! Transparent attribution demonstrates maturity, professionalism, and digital literacy.\n\n3. Protecting Human Artists and Copyright Respect:\nGenerative models are trained on billions of images, songs, and articles created by human artists, authors, and journalists. Ethical creators respect this heritage:\n- Never prompt an AI to copy the exact unique artistic style of a living independent artist without recognition.\n- Never generate synthetic deepfake voices or likenesses of teachers, classmates, or public figures without their explicit consent.\n- Always remember that human artists pour their souls into their craft; support local human creativity whenever possible!\n\nYour Authentic Voice Matters:\nThe world does not need more generic computer-generated text. The internet is already overflowing with automated articles that all sound identical. What the world hungers for is your unique voice—your childhood memories, your local cultural expressions, your unique humor, and your honest feelings. Use AI to handle the tedious drafting, but infuse every creation with your own human heart! [IMAGE_PLACEHOLDER: Interactive prompt editor showing how specific context improves slide visual quality]",
+        "subsections": [
+          {
+            "id": "sub3_1",
+            "subtitle": "The Student Creator's Ethics Checklist",
+            "explanation": "Before publishing or submitting any project created with AI tools, review these four questions: 1. Do I fully understand and agree with every fact in this work? 2. Have I verified the claims against trusted printed or offline sources? 3. Did I include a clear attribution note acknowledging AI assistance? 4. Does this project reflect my own authentic voice and hard work? If you answer yes to all four, submit with pride!",
+            "keyRule": "Ethical creation is built on transparency, factual verification, and authentic human voice."
+          },
+          {
+            "id": "sub3_2",
+            "subtitle": "Navigating the Copyright Landscape for School Projects",
+            "explanation": "In most countries, raw AI outputs cannot be copyrighted because copyright requires human authorship. However, your original prompts, creative arrangement, editorial modifications, and added human commentary create an original collective work that belongs to you. Own your choices and stand behind your work.",
+            "keyRule": "Machines generate pixels and words; humans provide authorship, responsibility, and meaning."
+          },
+          {
+            "id": "sub3_3",
+            "subtitle": "The Digital Citizenship Pledge: Building an Honest Creator Portfolio",
+            "explanation": "As you progress through middle school and high school, your digital creations become your creative identity. Employers, colleges, and innovation prizes look for authentic problem solvers. A student who demonstrates thoughtful, transparent use of AI tools alongside verified real-world fieldwork stands out as an ethical digital leader.",
+            "keyRule": "Honesty is not a restriction on creativity; it is the foundation of genuine credibility."
+          }
+        ],
+        "examples": [
+          {
+            "title": "The Transparent Science Exhibition Attribution Plaque",
+            "description": "Seventh-grade students display their solar energy project with a small, elegant attribution card explaining how AI assisted in audio cleanup and slide layout, earning praise from the science judges for academic integrity.",
+            "realLifeScenario": "Exhibition judging round • Judges commending the team for their honesty and deep understanding of the underlying science",
+            "dataBreakdown": "Attribution card: Listed tools used, role of each tool, and verified human data sources. Score: 100% on ethics and transparency criteria.",
+            "imagePlaceholder": "[IMAGE_PLACEHOLDER: Interactive prompt editor showing how specific context improves slide visual quality]"
+          },
+          {
+            "title": "Rejecting an Unverified AI Health Claim in a School Newsletter",
+            "description": "A student editing the school health bulletin notices an AI-suggested health tip claiming drinking salt water cures colds. The student verifies with the school nurse, identifies the dangerous hallucination, and deletes it.",
+            "realLifeScenario": "Editorial desk in school library • Cross-checking medical claims with official health textbooks and medical authorities before printing",
+            "dataBreakdown": "Action: Critical editorial review prevented dangerous medical misinformation from reaching 500 elementary students.",
+            "imagePlaceholder": "[IMAGE_PLACEHOLDER: Clean slide design editor showing AI generating outline cards based on student research notes]"
+          },
+          {
+            "title": "Supporting Local Artisans in a School Cultural Festival",
+            "description": "Rather than using AI-generated clip art for a Diwali festival program, students photograph hand-painted clay lamps made by a local potter and use AI only to crop and enhance lighting.",
+            "realLifeScenario": "School craft market • Highlighting authentic local artisan craftsmanship while using digital software purely for digital touch-up",
+            "dataBreakdown": "Ethical balance: Honoring living human tradition while leveraging modern digital photo editing tools.",
+            "imagePlaceholder": "[IMAGE_PLACEHOLDER: Audio editor waveform interface demonstrating background noise removal for student podcasts]"
+          }
+        ],
+        "keyPoints": [
+          "AI algorithms are tools, not legal authors; human creators retain creative direction and moral responsibility",
+          "Transparent attribution is a mark of honor: always credit AI tools for drafting, brainstorming, or audio cleaning",
+          "Academic integrity requires that students understand, verify, and stand behind every word submitted",
+          "Never use AI to mimic living artists unfairly or generate unauthorized synthetic media of real people",
+          "The world craves authentic human voice, local cultural richness, and original creative passion over generic computer text"
+        ],
+        "toastFeedback": {
+          "tap_prompt": "Select the ethical requirement when using an AI assistant to design project presentation slides.",
+          "great_job": "Requirement met! Transparent attribution and personal verification maintain academic integrity.",
+          "try_again": "Submitting machine-generated slides without personal verification or attribution violates academic honesty."
+        },
+        "interactiveCheck": {
+          "question": "Why should a student include an attribution note when an AI tool helped organize slide outlines for a school project?",
+          "options": [
+            "Because the computer will automatically delete the file if you do not praise it",
+            "Because honest attribution demonstrates academic integrity, transparency, and maturity, showing that you are the thoughtful director of your tools",
+            "Because it is illegal for students to speak in public without mentioning computers",
+            "Because slide projectors only function when specific company names are printed on the screen"
+          ],
+          "correctAnswerIndex": 1,
+          "explanation": "Crediting AI assistance demonstrates transparency and intellectual integrity, acknowledging tool assistance while taking personal ownership of your project."
+        },
+        "novaTip": "Nova: When you write a letter to someone you love, you don't ask a robot to express your feelings. Your words matter because they come from your heart. Let technology polish your craft, but let your heart guide your message!"
+      }
+    ],
+    "activities": [
+      {
+        "activityId": "act1",
+        "title": "School Presentation Creator Studio",
+        "instruction": "Step inside the interactive creator studio! Complete five realistic multimedia production challenges: structure research notes into clean slide outlines, brainstorm debate angles, clean noisy podcast audio, design a community banner with context-rich prompts, and conduct an interactive delivery rehearsal.",
+        "type": "interactive_simulation",
+        "scenario": "You are the Lead Digital Media Producer for Vidyashilp Academy's annual Environmental Science Festival. Five urgent project requests have arrived at your production desk. Guide your team through each creative challenge with skill and integrity.",
+        "stages": [
+          {
+            "stageNumber": 1,
+            "title": "Stage 1: Structuring the Solar Energy Presentation",
+            "situation": "Your science team gathered three pages of messy field notes on 'Renewable Solar Power in Telangana'. The notes include rooftop survey data, battery costs, and seasonal monsoon cloud variations.",
+            "prompt": "How do you guide the AI slide assistant to produce an engaging, clear presentation outline?",
+            "options": [
+              "Type 'Solar' and accept whatever generic 10-slide encyclopedia summary the computer spits out",
+              "Input your specific research bullet points (rooftop survey data, battery cost obstacles, and school rooftop case study) and request a focused 5-slide narrative outline following the 5x5 rule",
+              "Copy and paste entire paragraphs of text onto 25 crowded slides so nobody can read them",
+              "Delete all notes and present with empty white slides"
+            ],
+            "correctOptionIndex": 1,
+            "feedback": {
+              "success": "Outstanding presentation architecture! You provided rich, specific context, enforced the 5x5 design rule, and organized a compelling narrative.",
+              "retry": "Generic input produces boring slides. Supply your specific field data and ask for structured cards."
+            }
+          },
+          {
+            "stageNumber": 2,
+            "title": "Stage 2: Cleaning the Outdoor Podcast Interview",
+            "situation": "You recorded an inspiring interview with Solar Engineer Suresh at an outdoor bus station. The audio waveform shows his voice buried under heavy 50Hz electrical hum, motorcycle revs, and wind buffeting.",
+            "prompt": "What is the best audio editing procedure to make the interview broadcast-ready?",
+            "options": [
+              "Turn the volume slider all the way up to maximum until the speakers crackle with distortion",
+              "Apply neural noise reduction to create a background noise profile, subtract steady rumble and wind frequencies, and preserve natural vocal frequencies",
+              "Re-record the interview with an AI robot voice generator and pretend it is Engineer Suresh",
+              "Mute the audio completely and use subtitles only"
+            ],
+            "correctOptionIndex": 1,
+            "feedback": {
+              "success": "Superb audio engineering! You preserved the authenticity of Engineer Suresh's real voice while eliminating distracting environmental noise.",
+              "retry": "Increasing volume only amplifies background noise. Use spectral noise cancellation to isolate vocal formants."
+            }
+          },
+          {
+            "stageNumber": 3,
+            "title": "Stage 3: Designing the Environmental Drive Banner",
+            "situation": "Your school is launching a 'Clean & Green Vidyashilp' recycling drive. You need a large 6-foot entrance banner that inspires students to bring plastic waste and e-waste.",
+            "prompt": "Which prompt demonstrates the Context-Rich Visual Prompting Framework?",
+            "options": [
+              "Prompt: 'Banner green good'",
+              "Prompt: 'A picture of garbage on a road'",
+              "Prompt: 'Modern minimalist vector banner: Clean & Green Vidyashilp, students actively recycling bottles into blooming neem trees, bold legible typography, emerald green and sunshine gold palette, uplifting atmosphere'",
+              "Prompt: 'Draw whatever you want computer'"
+            ],
+            "correctOptionIndex": 2,
+            "feedback": {
+              "success": "Brilliant art direction! You specified subject, typography, visual metaphor, color palette, and mood, creating a professional and inspiring banner design.",
+              "retry": "Vague prompts produce generic clip art. Specify typography, symbols, colors, and emotional tone."
+            }
+          },
+          {
+            "stageNumber": 4,
+            "title": "Stage 4: The Ethics and Attribution Review",
+            "situation": "Your presentation deck, cleaned podcast episode, and banner design are finished. Before submitting the package to the festival jury, how do you handle ethical ownership?",
+            "prompt": "What is the most professional and ethically sound submission practice?",
+            "options": [
+              "Claim that you personally hand-painted every pixel and invented all software algorithms from scratch",
+              "Include a transparent project credits slide detailing the tools used for outlining and audio cleaning, verify every factual claim against trusted sources, and take full human ownership of the final work",
+              "Erase your team members' names and only write the computer brand name",
+              "Submit the project anonymously so nobody knows who did the work"
+            ],
+            "correctOptionIndex": 1,
+            "feedback": {
+              "success": "Exemplary academic integrity and professional ethics! Transparent attribution shows confidence, honesty, and true creative leadership.",
+              "retry": "True creators are transparent about their tools and take personal responsibility for verified truth."
+            }
+          },
+          {
+            "stageNumber": 5,
+            "title": "Stage 5: The Live Rehearsal & Delivery Feedback Loop",
+            "situation": "The team is practicing spoken delivery before the presentation jury. Rohan speaks too quickly, rushing through Slide 3 in twenty seconds, while Ananya tends to read the slide bullets word-for-word.",
+            "prompt": "How does the team calibrate their delivery using constructive feedback?",
+            "options": [
+              "Cancel the spoken talk and let the computer play synthesized robot speech",
+              "Practice the Anchor-and-Elaborate technique: Glancing at the slide bullet only for a split-second anchor, maintaining warm eye contact with audience, and explaining the local story in Rohan's own words at a calm, natural speaking pace",
+              "Turn the projector screen toward the wall and speak to the chalkboard",
+              "Tell Rohan to stop speaking and never talk again"
+            ],
+            "correctOptionIndex": 1,
+            "feedback": {
+              "success": "Masterful delivery calibration! Slides are anchors, not scripts. Natural eye contact and calm pacing connect human hearts to big ideas.",
+              "retry": "Reading slides word-for-word disconnects audience interest. Use the slide as a visual anchor and elaborate naturally."
+            }
+          }
+        ]
+      },
+      {
+        "activityId": "act2",
+        "title": "The Slide Outline Architect Challenge",
+        "instruction": "Convert four raw student research topics into crisp 5-card slide deck outlines following the 5x5 rule.",
+        "type": "structural_outlining",
+        "cases": [
+          {
+            "caseId": "c1",
+            "topic": "Rainwater Harvesting on Our School Campus",
+            "rawNotes": "We measured 1,200 sq meters of rooftop area. During monsoon, we can collect 600,000 liters. Underground storage tank costs 45,000 rupees. It will keep school gardens green all winter.",
+            "cardOutlines": [
+              "Card 1: The Water Challenge (School Grounds Dry in Winter)",
+              "Card 2: Rooftop Potential (1,200 sq meters = 600,000 liters)",
+              "Card 3: System Blueprint (Filter pipes + Underground storage)",
+              "Card 4: Budget Breakdown (Affordable community investment)",
+              "Card 5: Green Impact (Self-sufficient campus gardens all year)"
+            ]
+          },
+          {
+            "caseId": "c2",
+            "topic": "Migratory Birds of the Pulicat Lake Sanctuary",
+            "rawNotes": "Flamingoes arrive from Siberia and Iran in October. Over 50,000 birds feed on microscopic algae and brine shrimp. Plastic litter and illegal prawn farms threaten the wetlands.",
+            "cardOutlines": [
+              "Card 1: The Winged Visitors (50,000 Flamingoes at Pulicat)",
+              "Card 2: Epic Journey (4,000 km migration from Siberia)",
+              "Card 3: Wetland Ecology (Brine shrimp and algae food web)",
+              "Card 4: Growing Threats (Plastic waste and habitat loss)",
+              "Card 5: Citizen Action (Student bird-monitoring patrol)"
+            ]
+          },
+          {
+            "caseId": "c3",
+            "topic": "Traditional Millets vs. Modern Fast Food",
+            "rawNotes": "Millets like Ragi and Jowar require 70% less water than rice. They are packed with calcium, iron, and fiber. School cafeteria replaced fried snacks with Ragi cookies.",
+            "cardOutlines": [
+              "Card 1: Ancient Grains (India's Super-Crops: Ragi & Jowar)",
+              "Card 2: Climate Superpower (Thrives with 70% less water)",
+              "Card 3: Nutritional Powerhouse (High iron, calcium, zero junk)",
+              "Card 4: Cafeteria Pilot (Student taste-test results)",
+              "Card 5: Healthy Habit Challenge (Swap one snack a day)"
+            ]
+          },
+          {
+            "caseId": "c4",
+            "topic": "Organic Farming and Soil Microbiome Health",
+            "rawNotes": "Chemical pesticides kill beneficial earthworms and fungal mycorrhizae. Vermicompost made from school canteen food waste restored soil microbial activity in 60 days.",
+            "cardOutlines": [
+              "Card 1: The Living Earth (Soil is a teeming microbial ecosystem)",
+              "Card 2: The Chemical Threat (Loss of beneficial worms and fungi)",
+              "Card 3: Canteen Waste Solution (School vermicomposting pilot)",
+              "Card 4: Rapid Soil Recovery (Microbial bloom in 60 days)",
+              "Card 5: Community Spread (Compost kits for local gardens)"
+            ]
+          }
+        ]
+      },
+      {
+        "activityId": "act3",
+        "title": "The Audio Noise Forensic Lab",
+        "instruction": "Match five audio recording problems with their appropriate neural cleanup tool.",
+        "type": "audio_matching",
+        "pairs": [
+          {
+            "problem": "A continuous low-frequency hum caused by an old ceiling fan vibrating above the microphone.",
+            "solution": "Spectral Hum Filter: Detects 50Hz/60Hz repetitive electrical harmonics and notches them out.",
+            "expectedResult": "Clean, silent background between spoken sentences."
+          },
+          {
+            "problem": "Wind buffeting and popping sounds on the microphone during an outdoor playground interview.",
+            "solution": "Neural De-Wind & Transient Softener: Reconstructs clipped low-end frequencies caused by air pressure bursts.",
+            "expectedResult": "Smooth, balanced vocal tone without harsh speaker pops."
+          },
+          {
+            "problem": "Echo and hollow reverberation recorded in an empty tiled bathroom or large concrete corridor.",
+            "solution": "De-Reverb Convolution Model: Analyzes acoustic reflections and strips out delayed room echoes.",
+            "expectedResult": "Intimate, direct vocal sound as if recorded in a cozy studio."
+          },
+          {
+            "problem": "Sudden sharp dog barks and car horns during an otherwise quiet backyard interview.",
+            "solution": "Spectral Inpainting: Isolates sudden frequency spikes in the spectrogram and interpolates background ambience.",
+            "expectedResult": "Distracting sudden noises removed without cutting off the speaker's words."
+          },
+          {
+            "problem": "Harsh digital distortion caused by an excited student shouting directly into the microphone.",
+            "solution": "Neural De-Clipper: Reconstructs flattened waveform peaks by modeling natural vocal harmonic curves.",
+            "expectedResult": "Warm, non-grating vocal reproduction free of digital crackle."
+          }
+        ]
+      },
+      {
+        "activityId": "act4",
+        "title": "The Creative Prompt Polish Workshop",
+        "instruction": "Transform four weak, vague prompts into powerful, context-rich creative directions for presentations and banners.",
+        "type": "prompt_refactoring",
+        "prompts": [
+          {
+            "weakPrompt": "Make a slide about space.",
+            "refinedPrompt": "Create a 5-card presentation outline on India's Aditya-L1 Solar Mission, explaining Lagrange Point 1, coronal mass ejections, and real-time space weather monitoring for middle school science students.",
+            "improvementExplanation": "Added specific mission name, key scientific concepts, target audience, and clear educational scope."
+          },
+          {
+            "weakPrompt": "Draw an eco poster.",
+            "refinedPrompt": "Design a clean vector illustration banner titled 'Save Every Drop', showing hands cradling a transparent water droplet that reflects a green Earth, using deep ocean blues and sunny yellows, flat design, crisp text.",
+            "improvementExplanation": "Specified exact title, central visual metaphor, color scheme, artistic style, and typographic clarity."
+          },
+          {
+            "weakPrompt": "Give me debate ideas on AI.",
+            "refinedPrompt": "Provide three compelling arguments in favor and three practical challenges against using AI homework assistants in middle schools, focusing on learning retention, creative writing, and digital divide among students.",
+            "improvementExplanation": "Structured balanced debate perspectives around concrete pedagogical themes rather than vague generalities."
+          },
+          {
+            "weakPrompt": "Title banner for science fair.",
+            "refinedPrompt": "Create a bold digital header graphic titled 'Vidyashilp Science Innovators 2026: Youth Shaping Sustainable Solutions', featuring illustrated gears merging into green leaves, navy blue and vibrant orange tones, futuristic clean typography.",
+            "improvementExplanation": "Defined specific school name, forward-looking theme, fusion visual metaphor, and high-contrast color scheme."
+          }
+        ]
+      }
+    ],
+    "realWorldCaseStudies": [
+      {
+        "caseId": "cs1",
+        "title": "The Chennai School Climate Podcast: From Windy Beach to National Airwaves",
+        "location": "Chennai, Tamil Nadu, India",
+        "summary": "A middle school journalism club recorded an audio documentary about coastal erosion by interviewing local fishermen on Marina Beach amidst roaring surf, ocean wind, and crowd noise.",
+        "investigation": "The raw recordings were so noisy that the fishermen's words were almost unintelligible. Using a free neural audio enhancement tool, the students applied spectral de-noising and vocal isolation. The resulting podcast episode sounded so clear and professional that it was broadcast on a national community radio station.",
+        "humanSkillHighlighted": "Resourcefulness & Technical Mastery: The students combined on-the-ground human journalism with cutting-edge audio tools to amplify the voices of coastal communities."
+      },
+      {
+        "caseId": "cs2",
+        "title": "The Solar Village Presentation That Won Panchayat Approval",
+        "location": "Warangal District, Telangana, India",
+        "summary": "High school students prepared a proposal to install a solar-powered water pump for a rural village. They used an AI slide assistant to organize complex electrical engineering data into five simple, visual cards.",
+        "investigation": "The village council elders did not have technical engineering backgrounds. Because the presentation followed the 5x5 rule with clear visual metaphors and Telugu translations rather than dense spreadsheets, the Panchayat immediately understood the benefits and approved the solar pump installation.",
+        "humanSkillHighlighted": "Communication & Empathy: Translating technical complexity into clear, accessible visual stories that empower community decision-makers."
+      },
+      {
+        "caseId": "cs3",
+        "title": "The Bangalore Student Magazine Ethics Code",
+        "location": "Bengaluru, Karnataka, India",
+        "summary": "When generative image tools became popular, a school literary magazine noticed students submitting computer-generated artwork claiming they had painted it by hand.",
+        "investigation": "Rather than banning technology, the student editorial board created the 'Digital Transparency Charter.' Any student using AI was required to submit the original prompt, explain their creative process, and display a prominent attribution badge. The charter became a national model for academic integrity in Indian schools.",
+        "humanSkillHighlighted": "Ethical Leadership & Integrity: Building transparent community norms that celebrate human creativity while welcoming technological tools."
+      }
+    ],
+    "interactiveGames": [
+      {
+        "gameId": "game1",
+        "title": "Slide Clutter Crusher",
+        "description": "You are the presentation design referee! Examine slides and blow the whistle on text clutter, vague prompts, and unverified data.",
+        "rounds": [
+          {
+            "slideContent": "Slide contains 14 paragraphs of unformatted text copied from Wikipedia with 8 different font colors and tiny 10-point font.",
+            "isGoodDesign": false,
+            "feedback": "Text Clutter Disaster! Enforce the 5x5 rule: maximum 5 bullet points with 5-7 words each."
+          },
+          {
+            "slideContent": "Slide titled 'Solar Benefits: 30% Savings', with 3 clean bullet points, a large photo of the school rooftop panels, and high-contrast readable font.",
+            "isGoodDesign": true,
+            "feedback": "Perfection! Clean visual anchor that complements spoken narration without overwhelming the audience."
+          },
+          {
+            "slideContent": "Slide contains a giant unverified claim: 'Scientists discover solar panels work 10 times better when placed underwater in the ocean.'",
+            "isGoodDesign": false,
+            "feedback": "Hallucination Alert! Critical verification is required before putting unverified claims on slides."
+          },
+          {
+            "slideContent": "Slide with a high-resolution pie chart showing 65% battery cost hurdle, with clear large labels and zero distracting clip art animations.",
+            "isGoodDesign": true,
+            "feedback": "Data Clarity Champion! Clean charts allow the audience to instantly understand the statistical point."
+          }
+        ]
+      },
+      {
+        "gameId": "game2",
+        "title": "Audio Waveform Detective",
+        "description": "Listen to audio clips and diagnose the sound glitch based on visual spectrogram clues.",
+        "scenarios": [
+          {
+            "waveformSymptom": "Steady horizontal line at 50Hz vibrating throughout the entire recording.",
+            "diagnosis": "Ceiling fan or AC electrical mains hum.",
+            "remedy": "Apply 50Hz notch filter and spectral noise suppression."
+          },
+          {
+            "waveformSymptom": "Sudden vertical spike that exceeds maximum amplitude, flattening the wave tops.",
+            "diagnosis": "Microphone clipping from speaking too loudly or dropping the mic.",
+            "remedy": "Lower input gain and apply neural de-clip reconstruction."
+          },
+          {
+            "waveformSymptom": "Rhythmic bursts of low-frequency energy coinciding with words starting with 'P' and 'B'.",
+            "diagnosis": "Plosive breath pops hitting the microphone diaphragm directly.",
+            "remedy": "Use a foam windscreen or angle microphone 45 degrees away from direct airflow."
+          }
+        ]
+      },
+      {
+        "gameId": "game3",
+        "title": "Prompt Architect Sprint",
+        "description": "Race against the clock to turn weak one-word prompts into descriptive masterpieces.",
+        "scenarios": [
+          {
+            "starterPrompt": "Tree",
+            "winningUpgrade": "A majestic ancient banyan tree with hanging aerial roots bathed in golden sunrise light, watercolor style, serene mood."
+          },
+          {
+            "starterPrompt": "Robot",
+            "winningUpgrade": "A friendly solar-powered agricultural rover inspecting tomato plants in an Indian greenhouse, clean vector art style, warm lighting."
+          }
+        ]
+      }
+    ],
+    "practiceExercises": [
+      {
+        "exerciseId": "pe1",
+        "title": "Presentation Outline Drafting Drill",
+        "instruction": "Given the raw scientific bullet points below, draft a 5-slide outline following the 5x5 rule.",
+        "rawTopic": "Electric Bicycles for School Commutes: Battery range is 35 km, reduces carbon emissions by 85% compared to school buses, saves parents 1,500 rupees monthly on fuel, requires helmet safety rules.",
+        "suggestedOutline": [
+          "Slide 1: The Commute Revolution (Clean, Fast Student Mobility)",
+          "Slide 2: Impressive Performance (35 km Range on Single Charge)",
+          "Slide 3: Environmental Wins (85% Carbon Reduction per Student)",
+          "Slide 4: Family Economics (Save 1,500 Rupees Monthly)",
+          "Slide 5: Safety First (Mandatory Helmets & Dedicated Lanes)"
+        ]
+      },
+      {
+        "exerciseId": "pe2",
+        "title": "The Project Attribution Badge Generator",
+        "instruction": "Draft a transparent attribution badge for a school multimedia presentation combining AI slide outlines, cleaned audio, and original student photography.",
+        "sampleBadge": "PROJECT ATTRIBUTION STATEMENT:\n- Research, surveys, and conclusions: Ananya and Rohan (Class 7)\n- Slide outline structuring: Assisted by AI Presentation Tool\n- Audio enhancement: Neural Spectral Noise Reduction\n- Photography: Original field photos by Priya\n- Factual verification: Cross-referenced with NCERT Science & Local Energy Board records."
+      }
+    ],
+    "summary": {
+      "recap": "Nova: What an extraordinary creative journey! Today, in Lesson 1 of Chapter 5, you unlocked the true power of the AI Content Creator. You discovered that artificial intelligence is not a magic homework machine that replaces human thought, but an agile, empowering studio assistant! From taking messy notes and structuring clean, engaging slide decks following the 5x5 rule, to cleaning noisy outdoor audio waveforms so human voices ring crystal-clear, and crafting context-rich visual prompts for community banners—you now possess the tools to share your ideas with power and polish. Most importantly, you learned that ethical creators always practice transparent attribution, verify facts, and keep human empathy and authentic voice at the center of everything they make.",
+      "keyTakeaways": [
+        "AI presentation tools act as structural architects, turning messy research notes into clean, readable slide cards",
+        "The 5x5 slide rule prevents text clutter: maximum 5 bullets per slide, with 5 to 7 words per bullet",
+        "Conversational AI serves as a powerful debate sparring partner by brainstorming counter-arguments and varied perspectives",
+        "Neural audio editing isolates vocal frequencies and subtracts background noise like traffic rumbles and wind",
+        "The Context-Rich Prompting Framework (Subject, Typography, Metaphor, Style) produces professional visual banners",
+        "Ethical content ownership requires transparent attribution, factual verification, and proud preservation of authentic human voice"
+      ],
+      "reflectionPrompt": "Think about your next school project. Which creative task (structuring slide outlines, cleaning interview audio, or designing a title banner) could benefit most from an AI assistant, and how will you ensure your own voice shines through?",
+      "homeApplication": "Show a family member how neural noise reduction works on an audio recording. Record a 30-second interview in your kitchen with dishes clattering, apply a noise-cancellation filter, and discuss how the tool isolates human speech.",
+      "badgeEarned": "Certified AI Content Creator 🏅🎨"
+    }
+  }
+}
