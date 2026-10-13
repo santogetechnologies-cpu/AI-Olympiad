@@ -1,0 +1,1234 @@
+{
+  "lessonId": "l1",
+  "title": "Secret or Share? 🔒🛡️",
+  "level": "junior",
+  "class": "class4",
+  "chapter": "ch6",
+  "chapterTitle": "Responsible AI • CARE",
+  "lessonNumber": 1,
+  "classNumber": 4,
+  "chapterNumber": 6,
+  "mascot": {
+    "name": "Robo-Pi",
+    "emoji": "🤖✨",
+    "description": "A friendly silver robot wearing a tiny graduation cap, a sparkling magnifying glass necklace, and a golden knight's privacy shield 🛡️ with a glowing green heart 💚! Robo-Pi wears a stylish golden necktie 👔 and roller skates, carrying a heavy digital treasure chest with a big brass lock 🔒 and golden key 🔑!",
+    "voiceStyle": "Cheerful, energetic beeping sentences. Loves exclamation marks! Uses BEEP BOOP as a greeting. Uses the simplest, sweetest kindergarten words so that every child instantly understands with zero confusion! Always gives warm robot hugs and huge encouragement!",
+    "catchphrase": "BEEP BOOP! Your privacy is your treasure chest! Keep the key locked safe! Together we guard our personal data! 🔒🛡️✨"
+  },
+  "metadata": {
+    "duration": "45 minutes",
+    "ageGroup": "9-10 years",
+    "difficulty": "beginner",
+    "totalWords": 12000,
+    "version": "1.0",
+    "lastUpdated": "2026-10-13",
+    "author": "AI Olympiad Team",
+    "tags": [
+      "responsible AI",
+      "privacy",
+      "data protection",
+      "online safety",
+      "passwords",
+      "secret vs share",
+      "digital citizenship",
+      "care",
+      "class4",
+      "junior"
+    ]
+  },
+  "content": {
+    "introduction": {
+      "welcomeMessage": "🤖✨ BEEP BOOP! Welcome to Chapter 6 • Lesson 1: Secret or Share! Today we equip your golden data shield and lock your private treasures safe from sneaky internet popups! 🔒🏠🔑🦖🛡️🛑🟢💚✨",
+      "roboPiGreeting": {
+        "text": "BEEP BOOP! Hello, hello, hello, my wonderful young digital guardian! It is me, your robot best friend Robo-Pi, standing tall with my shiny protective armor! 🤖🛡️ Give me an extra-loud virtual high-five! *CLINK-SHINE!* ✋ Have you ever had a secret treasure box under your bed where you keep your most precious rocks, shiny coins, or special birthday cards? You don't leave that box open on the sidewalk for random strangers to look inside, do you? Of course not! You keep it locked safe in your room! Well, guess what? Inside your computer, tablet, and smartphone, you have a digital treasure chest too! BEEP BOOP! Your privacy is your treasure chest! Keep the key locked safe! 🔒🔑 Your home address 🏠, your school name 🏫, your phone number 📞, and your secret passwords 🔑 are sacred treasures that must NEVER be shared with strangers, games, or AI popups! But other fun things — like your favorite dinosaur 🦖, a colorful drawing of a tree 🌳, or a cool science question 🔬 — are safe and joyful to share with the whole world! Today, we are going to learn how to activate your Data Shield and become the master guardian of your personal information! Put on your golden privacy helmet — BEEP click BOOP — let us lock the safe! 🔒🛡️💚🎉",
+        "toastGuidance": {
+          "tap_prompt": "👇 Sort 'My Home Address' into the Locked Secret Safe 🔒!",
+          "great_job": "🛡️ SHIELD ACTIVATED! Home address is locked safe and sound!",
+          "try_again": "🛑 Danger! Never share your phone number with a game popup!",
+          "encouragement": "🤖 When in doubt, always stop, keep it locked, and ask Mama, Papa, or Teacher!"
+        }
+      },
+      "openingStory": {
+        "title": "🦖 The Mystery of the Free Dino-Coins and the Sneaky Popup! 🎮🛑",
+        "content": "On a rainy Saturday afternoon, nine-year-old Kabir and his sister Maya were sitting on the living room rug playing their favorite tablet video game: 'Dinosaur Island Explorer' 🦖🏝️. In the game, you build a prehistoric theme park full of roaring T-Rexes, gentle Brachiosauruses, and flying Pterodactyls! Kabir was on Level 12, trying to adopt a rare baby golden Triceratops. But the game screen flashed: 'YOU NEED 500 DINO-COINS TO ADOPT THIS BABY DINOSAUR!' Kabir had only 40 coins left. He sighed: 'Aw man! It will take three weeks of chores to earn enough coins!' Suddenly, a bright neon-yellow popup window exploded onto the screen: *DING-DING-DING!* 'CONGRATULATIONS LUCKY EXPLORER! YOU HAVE BEEN CHOSEN TO WIN 10,000 FREE DINO-COINS! 🎁✨ TO CLAIM YOUR PRIZE IMMEDIATELY, PLEASE FILL IN THREE QUICK DETAILS: 1. Your full home street address 🏠, 2. Your parent's mobile phone number 📞, 3. The name of your elementary school 🏫!' Kabir's eyes lit up with excitement. He raised his index finger to start typing his home street: 'Maya, look! Free dino-coins! We can get the baby Triceratops right now!' But Maya leaped forward and gently tapped Kabir's wrist: 'STOP, Kabir! 🛑 Look at the screen! That is a sneaky popup trap!' Kabir blinked in surprise: 'Why is it a trap, Maya? It says free coins!' Maya adjusted her pretend detective glasses: 'Kabir, remember what Robo-Pi taught us in class? Your home address, school name, and phone number are private treasure keys 🔑! A game company never needs to know where our house is just to give us digital coins! If we give them our address, strangers on the internet could find out where we live!' Kabir gasped, his tummy dropping: 'Whoa... you are totally right! That is dangerous!' Right then, their father, Papa, walked into the living room with a bowl of warm popcorn. Kabir turned the tablet around: 'Papa! Look at this popup! It asked for our address and your phone number to give us free coins!' Papa looked at the screen, smiled proudly at Maya, and ruffled Kabir's hair: 'I am so proud of you both for stopping! This popup is a classic scam trying to collect private family data. Watch what we do.' Papa tapped the big red CANCEL button 🛑, closed the app, and opened the tablet's privacy settings to turn on 'Strict Child Safe Mode' 🛡️. Papa explained: 'You see, children, games should be about strategy, puzzles, and fun. Any game that refuses to let you play unless you hand over your real-world street address or parents private phone number is not a respectful game. It is a data collector disguised as a toy.' Kabir nodded thoughtfully: 'From now on, I will always check with you before typing anything into any box!' Then Papa smiled: 'Because you two protected our family's privacy so wisely, let's make homemade blueberry pancakes together, and I will buy you the baby Triceratops fair and square!' Kabir and Maya cheered, locking their secret treasures safe and sound! 🔒🥞🦖💚",
+        "moraleOfStory": "Never trade your private personal information for digital game coins, free gifts, or online prizes! Real treasures like your home address, school, and phone number belong locked inside your family privacy safe! 🛡️🔒💖",
+        "roboPiComment": "BEEP BOOP! Maya was an absolute privacy superhero! She stopped Kabir's typing finger before a single secret could escape! When a popup asks for your secrets: STOP 🛑, CANCEL ❌, and SHOW A GROWN-UP! 🤖🛡️"
+      },
+      "learningObjectives": [
+        "🔒 Understand Private Personal Data: Identifying secrets that must NEVER be shared online (address 🏠, school 🏫, phone 📞, passwords 🔑)!",
+        "🟢 Discover Green Light Safe Sharing: Recognizing safe, fun things you CAN share (favorite dinosaur 🦖, tree drawings 🌳, science questions 🔬)!",
+        "🛑 Spot Sneaky Online Traps: Recognizing fake popups, free coin scams, and stranger chat questions asking for personal details!",
+        "🛡️ Master the 3-Step Privacy Action: STOP 🛑 → SHIELD 🔒 → TELL A GROWN-UP 👨‍👩‍👧 whenever an app asks for secrets!",
+        "📦 Conquer The Safe vs Secret Sorter: Build physical sorting boxes and categorize 10 real-world data cards!",
+        "🏆 Earn your official Master Privacy Guardian License and graduate as a certified digital citizen! 🚀🏅"
+      ],
+      "detectiveBadge": {
+        "title": "The Master Privacy Guardian License 🔒🏅",
+        "description": "Earn all three sparkling privacy medals to prove you know how to guard your personal data vault with courage and wisdom!",
+        "magnifiers": [
+          {
+            "id": "badge-vault",
+            "name": "Golden Privacy Vault Medal 🔒",
+            "earnedBy": "Mastering Section 1: Identifying the four golden secrets that must stay locked inside your family treasure chest!",
+            "colour": "#FFD600"
+          },
+          {
+            "id": "badge-green",
+            "name": "Green Light Share Medal 🟢",
+            "earnedBy": "Mastering Section 2: Discovering creative, safe, and joyful things you can share with the world without risk!",
+            "colour": "#00E676"
+          },
+          {
+            "id": "badge-shield",
+            "name": "Data Shield Guardian Medal 🛡️",
+            "earnedBy": "Mastering Section 3: Defeating sneaky popups, phishing scams, and stranger chat traps with swift caution!",
+            "colour": "#00E5FF"
+          }
+        ]
+      }
+    },
+    "mainConcept": {
+      "conceptIntro": {
+        "title": "🔒 The Digital Treasure Chest: What is Privacy? 🤖🛡️",
+        "roboPiIntro": "BEEP BOOP! Did you know that every human being on planet Earth has an invisible protective bubble around them called PRIVACY? Let me show you how your digital bubble works! 🤖✨",
+        "simpleExplanation": "Privacy means having the power to decide what parts of your life stay secret and what parts you choose to share! In the real world, you wear clothes, you close the bathroom door, and you lock your front door at night because you value your safety and privacy. In the digital world of computers, tablets, and AI, your personal data is just like your front door! Personal data includes your real full name, where you live, where you go to school, your phone number, and your secret passwords. If a computer game or stranger gets that data, your protective bubble pops! That is why we build a heavy steel Privacy Vault inside your mind. When an app asks for your secrets, your vault door slams shut: *CLANG-LOCK!* 🔒 You keep your keys safe, and you stay protected forever! 💚🛡️",
+        "keyPoints": [
+          "🔒 Privacy is your invisible protective shield that keeps you, your family, and your home safe.",
+          "🏠 Private Data includes your home address, school name, phone number, passwords, and birthday.",
+          "🛑 Never give private data to game popups, chat boxes, AI prompts, or strangers online.",
+          "🟢 Safe sharing includes favorite animals, hobbies, science questions, and artwork that reveal zero personal secrets."
+        ],
+        "toastGuidance": {
+          "tap_prompt": "👇 Sort 'My Home Address' into the Locked Secret Safe 🔒!",
+          "great_job": "🛡️ SHIELD ACTIVATED! Home address is locked safe and sound!",
+          "try_again": "🛑 Danger! Never share your phone number with a game popup!"
+        }
+      },
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "🔒 Section 1: The Privacy Vault: The 4 Golden Secrets to NEVER Share Online! 🏠🔑",
+          "missionBadge": {
+            "name": "Golden Privacy Vault Badge 🔒🏠",
+            "icon": "🔒",
+            "description": "Awarded for locking the 4 Golden Secrets: Home Address 🏠, School Name 🏫, Phone Number 📞, and Passwords 🔑!"
+          },
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Mission 1, Privacy Guardian! 🤖🔒 Open up your mental safe! In this section, we are going to inspect the four most precious personal treasures you own. Why are they so dangerous to give away? Let us discover the truth! 🔍✨",
+          "mainContent": {
+            "paragraph1": "Imagine if you walked down a crowded city street, wearing a giant cardboard sign around your neck with your home address, the key to your front door taped to the sign, and your bedroom window schedule written in big red letters! Would you ever do that? 'No way, Robo-Pi! That is crazy and dangerous!' you say. Exactly! In the physical world, nobody shares their house keys with strangers walking past on the sidewalk. You lock your front door when you leave for school, and your family keeps the car doors locked in the parking lot. But did you know that typing your residential address, your apartment number, or your street into an online game or random website is the EXACT same thing as handing your front door key to a total stranger? The digital world feels like a game, but the connections reach right back into your real, physical home!",
+            "paragraph2": "Let us examine THE 4 GOLDEN SECRETS that must stay locked inside your Privacy Vault forever! SECRET NUMBER 1: YOUR HOME ADDRESS 🏠. Your home is where you sleep, eat breakfast in your pajamas, play with your toys, and snuggle with your family. It is your safe haven. Strangers on the internet have zero reason to know what street you live on or what your house number is. If an online game asks 'Where do you live?', the only safe answer is: CANCEL and ask a parent!",
+            "paragraph3": "SECRET NUMBER 2: YOUR SCHOOL NAME & PLAYGROUND 🏫. Where do you go to school? That is private! If a stranger online knows you attend 'Oak Creek Elementary' and know what time recess happens, that gives an unknown person clues about where you are in the real world every single day! Keep your school mascot, your teacher's name, and your school building private!",
+            "paragraph4": "SECRET NUMBER 3: YOUR PHONE NUMBER & FAMILY BIRTHDAYS 📞🎂. Your phone number is a private communication line reserved for your parents, grandparents, and trusted real-life friends. If you post your phone number online, automated robot dialers and scammers can send noisy spam calls, fake prize texts, and sneaky links to your family's phone! And your birthday (month, day, and year) is a piece of data used by banks and doctors to verify identity. Don't give it away!",
+            "paragraph5": "SECRET NUMBER 4: YOUR SECRET PASSWORDS 🔑! A password is the golden master key to your digital bedroom! If someone gets your password, they can log into your school account, delete your Minecraft worlds, spend your parents' money, or pretend to be you! Real companies, teachers, and moderators will NEVER ask you for your password in a chat message. Keep your passwords as secret as your deepest wishes! Lock the safe door and throw away the key! 🔒🔑🛡️"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-1-1",
+              "title": "🏠 Example 1: The Home Address Lockbox! (Physical Safety First) 🚪🔒",
+              "icon": "🏠",
+              "description": "Understanding why residential street addresses must remain strictly confidential within the family.",
+              "realLifeScenario": "Nine-year-old Aarav is using a new AI drawing chatbot. The bot says: 'To customize your picture, tell me what street you live on!' Aarav pauses, remembers his golden privacy rules, and types: 'That is private information!' Instead, Aarav describes: 'Draw a house on a fantasy cloud with a rainbow roof!' The AI draws the fantasy house without ever knowing Aarav's real street.",
+              "roboPiComment": "BEEP BOOP! Brilliant move, Aarav! You don't need to give your real street address to make art! A fantasy cloud house is 1,000 times cooler and 100% safe! 🏠☁️🌈",
+              "toastGuidance": {
+                "tap_prompt": "👇 Sort 'My Home Address' into the Locked Secret Safe 🔒!",
+                "great_job": "🛡️ SHIELD ACTIVATED! Home address is locked safe and sound!",
+                "try_again": "🛑 Danger! Never share your phone number with a game popup!"
+              }
+            },
+            {
+              "id": "dde-1-2",
+              "title": "🔑 Example 2: The Password Golden Key! (Never Share With Friends) 🗝️🛡️",
+              "icon": "🔑",
+              "description": "Recognizing that even best friends should never share account passwords or security codes.",
+              "realLifeScenario": "In the computer lab, Kabir's best friend Sam says: 'Hey Kabir, tell me your school login password so I can download the math game for you!' Kabir smiles kindly: 'Sam, you are my best friend, but my teacher and parents taught me that passwords are like toothbrushes — you never share them with anyone, not even your best buddy!' Kabir logs in himself and helps Sam from his own screen.",
+              "roboPiComment": "BEEP BOOP! Passwords are like toothbrushes! Keep them clean, change them regularly, and NEVER share them with friends! Kabir handled that with kindness and wisdom! 🔑🪥✨",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the brass key to lock your password into the vault! 🔑🔒",
+                "great_job": "🌟 PASSWORD SECURED! Like a golden toothbrush, kept private and safe! 🪥🗝️",
+                "try_again": "🤔 Tap the key to keep your login secret from everyone!"
+              }
+            },
+            {
+              "id": "dde-1-3",
+              "title": "🏫 Example 3: The School Playground Shield! (Protecting Daily Routine) 🛑🎒",
+              "icon": "🏫",
+              "description": "Shielding school names, sports team locations, and daily schedules from online gaming lobbies.",
+              "realLifeScenario": "While playing a multiplayer racing game, another player types in chat: 'Hey, anyone here go to Lincoln Elementary in Springfield?' Ten-year-old Nina sees the message. Nina attends that school, but Nina stays silent, types nothing, and reports the user to the game moderator for asking personal questions.",
+              "roboPiComment": "BEEP BOOP! Silence is a superpower! Nina didn't take the bait. She guarded her school playground and protected her classmates! 🏫🛡️👏",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the red mute button to silence strangers asking for school names! 🔇🛑",
+                "great_job": "🌟 CHAT MUTED! School playground location shielded from strangers! 🏫🛡️🎉",
+                "try_again": "🤔 Tap the mute button to protect your school location!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🔒 Personal privacy is your digital armor: keep your personal keys locked away from strangers.",
+            "🏠 Home Address: never share your house number, street name, city, or apartment number online.",
+            "🏫 School Name: keep the building where you learn and play safe by never naming it in public forums.",
+            "📞 Phone Number: protect your family communication line from spam dialers and sneaky marketing scams.",
+            "🔑 Passwords: like a toothbrush, never share your password with anyone, not even your closest friend!"
+          ],
+          "mission1Complete": {
+            "celebration": "🎉 MISSION 1 CONQUERED! The 4 Golden Secrets are locked securely in your Privacy Vault!",
+            "badgeEarned": "Golden Privacy Vault Badge 🔒🏠",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to attach your Golden Privacy Vault Medal! 🏅",
+              "great_job": "⭐ MEDAL EQUIPPED! You hold the heavy brass key of digital protection! 🔒🏆",
+              "encouragement": "On to Section 2 — let us discover all the wonderful things that ARE safe to share! 🟢🦖"
+            }
+          }
+        },
+        {
+          "id": "section-2",
+          "title": "🟢 Section 2: Green Light Share! The Wonderful Things That ARE Safe to Share! 🦖🌳🔬",
+          "missionBadge": {
+            "name": "Green Light Share Badge 🟢🦖",
+            "icon": "🟢",
+            "description": "Awarded for mastering Safe Sharing: Favorite Dinosaurs 🦖, Tree Drawings 🌳, and Science Questions 🔬!"
+          },
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Mission 2, joyful sharer! 🤖🟢 Does protecting privacy mean you have to be afraid of the internet and never talk to anyone? NO WAY, SILLY GOOSE! The internet is full of wonder, learning, creativity, and fun! In this section, we discover all the magnificent things you CAN share with complete freedom and joy! 🌈✨",
+          "mainContent": {
+            "paragraph1": "Sometimes, when children hear about online privacy, they think: 'Oh dear, does that mean I cannot share anything? Should I never talk, never draw, and never ask questions?' Absolutely not! The internet is a gigantic global library, art gallery, and science lab! Protecting your privacy does NOT mean hiding under a blanket; it means knowing the clear difference between SECRET KEYS 🔑 and SAFE SHARING 🟢!",
+            "paragraph2": "Let us shine a bright green spotlight on all the wonderful things you CAN share with complete safety! CATEGORY 1: FAVORITE THINGS & FUN OPINIONS 🦖! Can a stranger on the internet track down your house if they know your favorite dinosaur is a Tyrannosaurus Rex? No! Can they harm you if they know you love pistachio ice cream, think purple is the coolest color in the rainbow, or cheer for the blue soccer team? Not at all! Sharing your favorite hobbies, sports, and prehistoric creatures shows your vibrant personality with ZERO danger! When you tell someone online: 'I love the Triceratops because it has three giant horns and a protective frill!', you are sharing an intellectual interest. There are millions of children all around the world who love Triceratops! Nobody can use that fact to find your house, guess your school password, or send spam calls to your parents. It is pure, safe, joyful communication!",
+            "paragraph3": "CATEGORY 2: ORIGINAL CREATIVE ARTWORK & STORIES 🌳🎨! Did you paint a whimsical picture of a purple dragon baking blueberry cupcakes? Share it! Did you write a poem about autumn leaves fluttering in the wind? Share it! Did you draw an emerald green oak tree with friendly birds nesting in the branches? Share it! Just remember the one golden rule of art: NEVER sign your artwork with your real full last name, your school name, or your home address! Sign it with a fun artist nickname like 'StarPainter24'!",
+            "paragraph4": "CATEGORY 3: SCIENTIFIC CURIOSITY & ACADEMIC QUESTIONS 🔬🌌! One of the greatest uses of modern artificial intelligence is asking questions about the universe! You can ask an AI assistant: 'Why is the ocean salty?', 'How do black holes bend light?', 'What did Velociraptors eat for breakfast?', or 'Can you explain long division using pizza slices?'. Curiosity questions teach your brain, inspire your imagination, and carry zero personal risk!",
+            "paragraph5": "Notice the difference between the Red Safe and the Green Share! The Red Safe holds data that connects to your physical body and real-world bedroom. The Green Share holds ideas, creativity, learning, and fun that live inside your mind and imagination! When you share your creativity, you make the digital world brighter, kinder, and more magical for everyone! Green light ahead — share your spark! 🟢🦖🌳🔬✨"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-2-1",
+              "title": "🦖 Example 1: The Dinosaur Explorer Forum! (Sharing Hobbies & Passions) 🦕💬",
+              "icon": "🦖",
+              "description": "Expressing genuine enthusiasm for prehistoric paleontology without disclosing identity.",
+              "realLifeScenario": "In a moderated school science chat, Leo types: 'My all-time favorite dinosaur is the Ankylosaurus because its tail club could smash through solid rock! What is your favorite armored dinosaur?' Three classmates reply with fun facts about Stegosaurs.",
+              "roboPiComment": "BEEP BOOP! Dinosaur debates are 100% green light safe! Leo shared his passion, made his classmates smile, and kept all private secrets locked! 🦖💬🌟",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the Ankylosaurus to share your favorite dinosaur fact! 🦖💚",
+                "great_job": "🌟 GREEN LIGHT SHARED! Tail club facts shared with zero personal risk! 🦕🎉",
+                "try_again": "🤔 Tap the friendly dinosaur to share your passion safely!"
+              }
+            },
+            {
+              "id": "dde-2-2",
+              "title": "🌳 Example 2: The Emerald Tree Drawing Gallery! (Sharing Artwork Safely) 🎨🖼️",
+              "icon": "🌳",
+              "description": "Showcasing student visual art online using creative pseudonyms rather than real identifying information.",
+              "realLifeScenario": "Maya paints a stunning watercolor of a weeping willow tree next to a sparkling brook. When submitting it to the district online art gallery, Maya signs the bottom corner: 'Artist Maya P. - The Willow Dream'. She does not include her home address, phone, or grade number.",
+              "roboPiComment": "BEEP BOOP! A breathtaking piece of art shared with an artist pseudonym! Maya's tree drawing inspires thousands of people safely! 🌳🎨✨",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the watercolor willow tree to hang it in the digital gallery! 🌳🖼️",
+                "great_job": "🌟 ARTWORK DISPLAYED! Beautiful tree shared safely under an artist nickname! 🎨💖",
+                "try_again": "🤔 Tap the tree painting to share your creative art!"
+              }
+            },
+            {
+              "id": "dde-2-3",
+              "title": "🔬 Example 3: Asking AI How Volcanoes Erupt! (Curiosity & Learning) 🌋💡",
+              "icon": "🔬",
+              "description": "Using AI chatbots and educational search tools to investigate academic questions without personal data.",
+              "realLifeScenario": "Kabir is doing homework on geology. He asks an educational AI: 'Can you explain the difference between magma and lava using simple words and a funny volcano analogy?' The AI gives a wonderful explanation about melted rock inside vs outside a cake.",
+              "roboPiComment": "BEEP BOOP! Science questions are the superpower of the internet! Kabir used AI to learn about geology without giving away any private data! 🌋🔬🧠",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the bubbling volcano to ask AI an exciting science question! 🌋🔬",
+                "great_job": "🌟 SCIENCE DISCOVERED! Magma vs lava explained with zero private data shared! 💡🎉",
+                "try_again": "🤔 Tap the volcano to explore scientific curiosity safely!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🟢 Green Light Sharing celebrates ideas, creativity, learning, and fun without compromising your safety.",
+            "🦖 Favorite Things: hobbies, sports teams, favorite dinosaurs, ice cream flavors, and colors are 100% safe.",
+            "🌳 Creative Art & Stories: poems, drawings, and comic books can be shared freely using a fun pseudonym.",
+            "🔬 Curiosity & Science: asking AI questions about space, volcanoes, animals, and math carries zero personal risk.",
+            "💡 Golden Boundary: share what you THINK and what you CREATE; never share where you LIVE or who you ARE in private!"
+          ],
+          "mission2Complete": {
+            "celebration": "🎉 MISSION 2 CONQUERED! You have mastered the joyful art of Green Light Safe Sharing!",
+            "badgeEarned": "Green Light Share Badge 🟢🦖",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to attach your Green Light Share Medal! 🏅",
+              "great_job": "⭐ MEDAL EQUIPPED! You hold the bright green beacon of creative sharing! 🟢🏆",
+              "encouragement": "On to Section 3 — let us activate your Red Light Alert against sneaky online traps! 🛑🛡️"
+            }
+          }
+        },
+        {
+          "id": "section-3",
+          "title": "🛑 Section 3: The Red Light Alert: Spotting Sneaky Popups & Stranger Danger Online! 🚨🛡️",
+          "missionBadge": {
+            "name": "Data Shield Guardian Badge 🛑🛡️",
+            "icon": "🛡️",
+            "description": "Awarded for defeating sneaky popups, free coin scams, stranger chat traps, and phishing tricks!"
+          },
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Mission 3, shield commander! 🤖🚨 Not everything on the internet is honest and friendly. Sometimes, sneaky computer programs try to trick you into opening your treasure chest! In this section, we train your sharp detective eyes to spot online traps from a mile away! Shields up! 🛡️⚡",
+          "mainContent": {
+            "paragraph1": "Have you ever seen a mouse trap? A mouse trap does not look dangerous to a mouse; it looks like a delicious, sweet piece of yellow cheddar cheese sitting on a little wooden board! The mouse runs toward the cheese because it smells so tasty, and *SNAP!* The trap closes! In the digital world, sneaky scammers and automated data-harvesting programs build digital mouse traps all over the internet. What is the digital cheese? Free video game coins, free skins, free iPads, and quiz prizes!",
+            "paragraph2": "Let us learn how to spot TRAP NUMBER 1: THE TOO-GOOD-TO-BE-TRUE PRIZE POPUP 🎁🛑! If a popup suddenly explodes on your screen screaming: 'YOU WON 50,000 ROBUX / V-BUCKS! CLICK HERE AND ENTER YOUR MOTHER'S PHONE NUMBER TO CLAIM!', remember this golden rule: NO REAL COMPANY EVER GIVES AWAY EXPENSIVE PRIZES TO RANDOM STRANGERS FOR FREE! That is digital cheese! The moment you see 'Enter your phone number' or 'Enter your address', your internal alarm should ring: *BEEP-BEEP-BEEP!* RED LIGHT ALERT! Real game developers sell currency through official app store payment systems managed by parents; they NEVER ask an eight-year-old child to type their home street or parent mobile number into an unverified webpage! That is a giant red flag! Tap CANCEL immediately, close the browser, and alert an adult!",
+            "paragraph3": "TRAP NUMBER 2: THE FRIENDLY STRANGER IN GAME CHAT 🎮🕵️. When you play online games with other players, you might meet someone who seems super nice. They say: 'Hey, you are really good at this game! What school do you go to? What city do you live in? Can you send me a picture of your bedroom?' Stop right there! An online gamer who plays video games with you only needs to know your gamer tag. They NEVER need to know your real city, your school, or your photos! A true friend in a video game respects your privacy!",
+            "paragraph4": "TRAP NUMBER 3: THE SECRET SURVEY / QUIZ TRAP 📝❓. Sometimes, fun online quizzes ask: 'Which Disney Princess are you?' Question 1: 'What is your favorite color?' Fun! Question 2: 'What is your favorite animal?' Fun! But then Question 7 asks: 'What is your full home address and mother's maiden name?' Sneaky! They hide private questions inside a fun quiz! Whenever an online quiz asks for real-world personal keys, close the tab immediately!",
+            "paragraph5": "What is your 3-Step Superhero Action Plan whenever you encounter a digital trap? STEP 1: STOP 🛑! Don't click 'OK' and don't type a single letter. STEP 2: SHIELD 🛡️! Tap CANCEL or close the browser tab. STEP 3: TELL A GROWN-UP 👨‍👩‍👧! Tell Mama, Papa, or your teacher right away: 'A popup asked for my private information!' When you tell a grown-up, you protect not only yourself, but your whole family and school! You are a certified Privacy Guardian! 🛑🛡️💚🏆"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-3-1",
+              "title": "💎 Example 1: The '10,000 Free Gems' Game Popup Trap! (Phishing Scam) 🎮🛑",
+              "icon": "💎",
+              "description": "Identifying fraudulent prize popups designed to harvest family phone numbers and billing information.",
+              "realLifeScenario": "While playing a puzzle app, an ad appears: 'WIN 10,000 GEMS! Enter your phone number below!' Nine-year-old Kabir remembers Maya's lesson. Kabir does not type the phone number; he immediately taps the small 'X' in the corner and shows his father. Papa confirms it was a scam.",
+              "roboPiComment": "BEEP BOOP! Free gem popups are digital cheese! Kabir tapped the X like a pro and told Papa! His family's phone bill is protected! 💎🛑👏",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the red X to close the fake free gems popup! ❌🛑",
+                "great_job": "🛡️ POPUP DEFLECTED! No phone numbers given to sneaky scammers! 🛑🎉",
+                "try_again": "🛑 Danger! Never share your phone number with a game popup!"
+              }
+            },
+            {
+              "id": "dde-3-2",
+              "title": "🎮 Example 2: The Online Chat 'Where Do You Live?' Interrogation! (Social Engineering) 💬🕵️",
+              "icon": "🎮",
+              "description": "Responding safely when unfamiliar multiplayer gamers ask probing personal geographic questions.",
+              "realLifeScenario": "In a multiplayer sandbox building game, a player named 'MegaBuilder99' asks ten-year-old Nina: 'Where do you live in real life? Are you home alone right now?' Nina gets a strange feeling in her stomach. Nina immediately leaves the server, blocks the user, and tells her mother.",
+              "roboPiComment": "BEEP BOOP! Always trust your gut feeling! If a chat question makes your tummy feel weird, leave the game and tell Mom immediately! 🛑🛡️💖",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the BLOCK & REPORT button to shut down the prying stranger! 🚫🛡️",
+                "great_job": "🌟 USER BLOCKED! Stranger reported to game safety moderators! 🛡️👮‍♂️",
+                "try_again": "🤔 Tap the block button to shield yourself from intrusive questions!"
+              }
+            },
+            {
+              "id": "dde-3-3",
+              "title": "🏫 Example 3: Filling an Online School Quiz ONLY with Teacher's Guidance! 📝👩‍🏫",
+              "icon": "🏫",
+              "description": "Differentiating legitimate educational assessments on verified school platforms from rogue web surveys.",
+              "realLifeScenario": "During computer class, Mrs. Gable says: 'Class, please open Google Classroom and complete the 5-question science quiz.' A popup appears on Kabir's screen offering a 'Bonus Math Prize Quiz'. Kabir raises his hand: 'Mrs. Gable, is this bonus quiz part of our class assignment?' Mrs. Gable inspects it: 'No Kabir, that is an outside ad! Close it immediately.'",
+              "roboPiComment": "BEEP BOOP! Always verify with your teacher! Real school quizzes are assigned on official school portals, never random popup ads! 🏫📝👩‍🏫",
+              "toastGuidance": {
+                "tap_prompt": "👇 Raise your hand to ask Mrs. Gable about the unexpected quiz popup! 🙋‍♂️👩‍🏫",
+                "great_job": "🌟 TEACHER GUIDANCE RECEIVED! Ad dismissed, official school quiz completed! 🏫⭐",
+                "try_again": "🤔 Raise your hand to check with the teacher before clicking!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🛑 Digital Mouse Traps: free game coins, free skins, and prizes are used as bait to steal personal family data.",
+            "🎁 No real company gives away 10,000 free coins in exchange for home addresses or parent phone numbers.",
+            "🎮 Game Chat Safety: online gaming buddies only need your gamer tag; never reveal your real city, school, or bedroom.",
+            "🚨 The 3-Step Superhero Action Plan: STOP 🛑 → SHIELD 🛡️ (Cancel/Close) → TELL A GROWN-UP 👨‍👩‍👧 immediately.",
+            "🏫 School Verification: only complete online surveys and quizzes on official school platforms with your teacher's guidance!"
+          ],
+          "mission3Complete": {
+            "celebration": "🎉 MISSION 3 CONQUERED! You have activated your Red Light Alert against sneaky digital traps!",
+            "badgeEarned": "Data Shield Guardian Badge 🛑🛡️",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to attach your Data Shield Guardian Medal! 🏅",
+              "great_job": "⭐ ALL 3 MEDALS EARNED! You are an officially licensed Master Privacy Guardian! 🔒🏆",
+              "encouragement": "On to Section 4 — let us review the Red-Green Data Shield Blueprint! 🚀📜"
+            }
+          }
+        },
+        {
+          "id": "section-4",
+          "title": "🚀 Section 4: The Privacy Guardian Launchpad: The Red-Green Data Shield Blueprint! 🏆📜",
+          "roboPiIntro": "BEEP BOOP! Welcome to the Grand Finale Section! 🤖🌟 Now that you hold all three master skills (The Privacy Vault 🔒, Green Light Sharing 🟢, and Red Light Alerts 🛑), how do you put them together into an everyday digital shield? Let us unveil the Data Shield Blueprint! 📜🚀",
+          "mainContent": {
+            "paragraph1": "Every superhero in comic books has an operating manual for their gadgets! Batman has his utility belt blueprint, Iron Man has his armor schematics, and YOU now have the Red-Green Data Shield Blueprint! Whenever you are using a computer, playing a tablet game, chatting with an AI assistant, or doing homework online, you can pull up this mental blueprint in two seconds flat!",
+            "paragraph2": "THE RED SHIELD (NEVER SHARE ONLINE 🛑🔒): Home address 🏠, street name, apartment number, real school name 🏫, playground schedule, parent mobile phone number 📞, home landline, account passwords 🔑, security PIN codes, full legal birthdate, real full last name, and photos showing your house or school uniform! These belong locked inside your steel safe forever!",
+            "paragraph3": "THE GREEN SHIELD (SAFE TO SHARE WITH JOY 🟢✨): Your favorite dinosaur (T-Rex, Triceratops 🦖), favorite video game strategies, original drawings of trees 🌳, poems about dragons, science curiosity questions about space and volcanoes 🔬, favorite ice cream flavors, favorite colors, and creative writing stories! These show your personality with zero physical risk!",
+            "paragraph4": "THE YELLOW CAUTION ZONE (ASK A GROWN-UP FIRST ⚠️👨‍👩‍👧): Downloading any new game app, clicking on an email link from someone you don't know, turning on your device's web camera 📷, sharing audio voice recordings, or signing up for a new website! In the Yellow Zone, you don't click alone — you invite Mama, Papa, or Teacher to look at the screen with you!",
+            "paragraph5": "Here is your golden motto as a Master Privacy Guardian: MY PRIVACY IS MY TREASURE! I KEEP MY KEYS LOCKED SAFE! Wear your golden shield with pride, play with confidence, explore with joy, and help your friends and family stay safe in the wonderful digital world of tomorrow! You are a digital superhero! 🔒🛡️🟢💚🏆"
+          },
+          "redVsGreenDataShieldTable": [
+            {
+              "dataItem": "Home Street Address & House Number 🏠",
+              "shieldCategory": "RED LIGHT: NEVER SHARE 🛑🔒",
+              "whyItMatters": "Reveals the physical location where you sleep and live; must stay 100% confidential."
+            },
+            {
+              "dataItem": "Favorite Dinosaur (T-Rex vs Stegosaurus) 🦖",
+              "shieldCategory": "GREEN LIGHT: SAFE TO SHARE 🟢✨",
+              "whyItMatters": "Expresses your fun personality and interests with zero physical or personal risk."
+            },
+            {
+              "dataItem": "School Account Login Password & PIN 🔑",
+              "shieldCategory": "RED LIGHT: NEVER SHARE 🛑🔒",
+              "whyItMatters": "The master key to your digital account; sharing it lets others impersonate or delete your work."
+            },
+            {
+              "dataItem": "Drawing of a Magical Treehouse on Paper 🌳🎨",
+              "shieldCategory": "GREEN LIGHT: SAFE TO SHARE 🟢✨",
+              "whyItMatters": "Creative imagination that inspires others; safe to post using an artist nickname."
+            },
+            {
+              "dataItem": "Real School Name & Daily Recess Time 🏫",
+              "shieldCategory": "RED LIGHT: NEVER SHARE 🛑🔒",
+              "whyItMatters": "Provides real-world tracking clues about where you spend your weekdays."
+            },
+            {
+              "dataItem": "Asking AI 'Why do volcanoes erupt with lava?' 🔬🌋",
+              "shieldCategory": "GREEN LIGHT: SAFE TO SHARE 🟢✨",
+              "whyItMatters": "Academic curiosity that expands your brain without revealing any personal identity."
+            },
+            {
+              "dataItem": "Parent Mobile Phone Number & Work Address 📞",
+              "shieldCategory": "RED LIGHT: NEVER SHARE 🛑🔒",
+              "whyItMatters": "Protects family communication from automated spam dialers, identity theft, and phishing."
+            },
+            {
+              "dataItem": "Favorite Ice Cream Flavor (Mint Chocolate Chip) 🍦",
+              "shieldCategory": "GREEN LIGHT: SAFE TO SHARE 🟢✨",
+              "whyItMatters": "Harmless culinary opinion that makes friends smile with zero security risk."
+            }
+          ],
+          "keyPoints": [
+            "📜 The Red-Green Data Shield separates physical identity secrets from joyful creative ideas.",
+            "🛑 Red Light: Home Address 🏠, School 🏫, Phone 📞, Passwords 🔑 stay locked forever.",
+            "🟢 Green Light: Favorite Dinosaurs 🦖, Tree Drawings 🌳, Science Questions 🔬 can be shared freely.",
+            "⚠️ Yellow Caution: Always ask a grown-up before downloading apps, clicking links, or turning on cameras.",
+            "🏆 True digital citizenship combines bold creative exploration with wise, watchful privacy protection!"
+          ],
+          "mission4Complete": {
+            "celebration": "🎉 ALL 4 MISSIONS CONQUERED! You have activated your Master Privacy Shield for life!",
+            "badgeEarned": "The Grand Master Privacy Guardian Trophy 🏆🔒",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CELEBRATE to dance with Robo-Pi and start the games! 💃🤖",
+              "great_job": "🌟 LICENSE UNLOCKED! You are an official Master Privacy Guardian! 🔒🛡️🟢🏆",
+              "encouragement": "Get ready for the games — let us see your high score in the Privacy Shield Tap-to-Lock! 🎮✨"
+            }
+          }
+        }
+      ]
+    },
+    "games": [
+      {
+        "gameId": "game-1",
+        "gameType": "tap-to-reveal",
+        "title": "🌟 The Privacy Shield Tap-to-Lock! (Vault Defender Challenge) 🔍🔒",
+        "icon": "🔍",
+        "instruction": "Explore the Digital Security Arena! Tap the 6 cards that represent PRIVATE SECRETS that must be locked in the steel safe immediately!",
+        "difficulty": "easy",
+        "duration": "5 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Welcome to the Privacy Vault Arena! 🤖✨ Six glowing cards show dangerous private secrets that must be locked away, while others show safe green-light shares! Can you spot all 6 private secrets? Tap to lock them safe! 🔒👇",
+        "sceneDescription": "A high-tech digital security control room with glowing floating data cards showing home addresses, favorite dinosaurs, passwords, school names, tree drawings, and phone numbers.",
+        "targets": [
+          {
+            "id": "target-1",
+            "name": "My Real Home Street Address 🏠🔒",
+            "type": "Private Secret",
+            "icon": "🏠",
+            "description": "The physical house and street where you and your family live.",
+            "isAI": false,
+            "explanation": "PRIVATE SECRET! Locking your home address protects your physical home and family safety!",
+            "toastGuidance": {
+              "correct": "🛡️ SHIELD ACTIVATED! Home address is locked safe and sound!",
+              "incorrect": "That is a safe green-light item! Look for private secrets like your home address!"
+            }
+          },
+          {
+            "id": "target-2",
+            "name": "My Favorite Dinosaur is the T-Rex 🦖",
+            "type": "Safe Share",
+            "icon": "🦖",
+            "description": "A fun prehistoric opinion that reveals zero personal identity secrets.",
+            "isAI": true,
+            "explanation": "SAFE TO SHARE: Telling people you love the T-Rex carries zero physical risk and shows your fun interests!",
+            "toastGuidance": {
+              "correct": "That is safe to share! Tap the private secrets that must be locked away!",
+              "incorrect": "🦖 Dinosaurs are green-light safe—pick home address, passwords, or phone numbers to lock!"
+            }
+          },
+          {
+            "id": "target-3",
+            "name": "My School Account Secret Password 🔑🔒",
+            "icon": "🔑",
+            "type": "Private Secret",
+            "description": "The private login key that grants access to your digital files and schoolwork.",
+            "isAI": false,
+            "explanation": "PRIVATE SECRET! Passwords must never be shared with anyone, not even friends in class!",
+            "toastGuidance": {
+              "correct": "🔑 PASSWORD LOCKED! Your digital room key is protected from unauthorized access! 🛡️✨",
+              "incorrect": "Look for passwords and security keys!"
+            }
+          },
+          {
+            "id": "target-4",
+            "name": "A Colorful Crayon Drawing of a Tree 🌳🎨",
+            "icon": "🌳",
+            "type": "Safe Share",
+            "description": "An original piece of student artwork showing nature and imagination.",
+            "isAI": true,
+            "explanation": "SAFE TO SHARE: Original tree artwork is wonderful and safe to display using an artist nickname!",
+            "toastGuidance": {
+              "correct": "That is safe to share! Tap the private secrets that must be locked away!",
+              "incorrect": "🌳 Tree drawings are green-light safe—look for private data like school names or phone numbers!"
+            }
+          },
+          {
+            "id": "target-5",
+            "name": "My Real Elementary School Name & Building 🏫🔒",
+            "icon": "🏫",
+            "type": "Private Secret",
+            "description": "The physical school campus where you attend classes and play during recess.",
+            "isAI": false,
+            "explanation": "PRIVATE SECRET! Shielding your school location keeps your daily physical schedule safe from strangers!",
+            "toastGuidance": {
+              "correct": "🏫 SCHOOL SHIELDED! Playground location locked away from online strangers! 🛡️🎉",
+              "incorrect": "Look for school names and physical locations!"
+            }
+          },
+          {
+            "id": "target-6",
+            "name": "Asking AI 'How hot is the center of the Sun?' 🔬☀️",
+            "icon": "🔬",
+            "type": "Safe Share",
+            "description": "An educational scientific curiosity query that expands academic knowledge.",
+            "isAI": true,
+            "explanation": "SAFE TO SHARE: Asking science questions carries zero personal risk and feeds your brilliant mind!",
+            "toastGuidance": {
+              "correct": "That is safe to share! Tap the private secrets that must be locked away!",
+              "incorrect": "🔬 Science questions are green-light safe—pick phone numbers or addresses to lock!"
+            }
+          },
+          {
+            "id": "target-7",
+            "name": "Mama's Personal Mobile Phone Number 📞🔒",
+            "icon": "📞",
+            "type": "Private Secret",
+            "description": "A private communication line that must be protected from spam dialers and scammers.",
+            "isAI": false,
+            "explanation": "PRIVATE SECRET! Phone numbers must never be entered into unverified online games or popup windows!",
+            "toastGuidance": {
+              "correct": "📞 PHONE SECURED! Family communication line shielded from spam and scammers! 🛡️💖",
+              "incorrect": "Look for phone numbers and family contact info!"
+            }
+          },
+          {
+            "id": "target-8",
+            "name": "My Full Legal Birthdate and Year 🎂🔒",
+            "icon": "🎂",
+            "type": "Private Secret",
+            "description": "Official identity verification data used by banks, doctors, and government agencies.",
+            "isAI": false,
+            "explanation": "PRIVATE SECRET! Full birthdates with years can be used by identity thieves; keep them strictly confidential!",
+            "toastGuidance": {
+              "correct": "🎂 BIRTHDATE LOCKED! Personal identity credentials kept safe in the vault! 🔒✨",
+              "incorrect": "Look for birthdates and official identity data!"
+            }
+          },
+          {
+            "id": "target-9",
+            "name": "A Photo Showing My Front Door and Street Sign 📷🔒",
+            "icon": "📷",
+            "type": "Private Secret",
+            "description": "Visual imagery that pinpoints the exact geographic coordinates of your home.",
+            "isAI": false,
+            "explanation": "PRIVATE SECRET! Photos showing street signs or house numbers reveal physical residential location!",
+            "toastGuidance": {
+              "correct": "📷 PHOTO VAULTED! Never post photos showing your street sign or house number! 🏠🛡️",
+              "incorrect": "Look for photos that reveal home street signs!"
+            }
+          }
+        ],
+        "totalAITargets": 6,
+        "scoring": {
+          "pointsPerCorrect": 100,
+          "streakBonus": 50,
+          "perfectScoreBonus": 300
+        },
+        "auraGuidance": {
+          "start": "LOOK across the Security Arena! Tap the 6 private secrets that must be locked in the steel safe! 🔍🔒",
+          "correct": "CLANG-LOCK! That secret is sealed safe inside the titanium vault! 🌟🛡️",
+          "incorrect": "🛑 Danger! Never share your phone number with a game popup!",
+          "streak": "UNSTOPPABLE PRIVACY STREAK! You guard personal data like a master cyber-knight! 🔥🏆",
+          "complete": "ALL 6 SECRETS LOCKED! You have unlocked your Privacy Vault Ribbon! 🎀🏅"
+        }
+      },
+      {
+        "gameId": "game-2",
+        "gameType": "categorization",
+        "title": "🗂️ Locked Secret Safe 🔒 vs Green Light Share 🟢! The Data Sorter! 📦🛡️",
+        "icon": "🗂️",
+        "instruction": "Read each data card below! Does it belong in the LOCKED SECRET SAFE 🔒 (Never Share Online) or the GREEN LIGHT SHARE BASKET 🟢 (Safe, Creative & Fun)?",
+        "difficulty": "easy",
+        "duration": "6 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Welcome to the Great Data Sorter! 🤖🗂️ Ten data cards are tumbling into our sorting chamber! Drag each card into the right container: Locked Secret Safe 🔒 or Green Light Share 🟢! Guard your treasures! 🌟👇",
+        "categories": [
+          {
+            "id": "cat-secret",
+            "name": "LOCKED SECRET SAFE 🔒 (Never Share Online)",
+            "icon": "🔒",
+            "colour": "#FF1744",
+            "description": "Physical identity keys: home address, passwords, school name, phone number, and private photos."
+          },
+          {
+            "id": "cat-share",
+            "name": "GREEN LIGHT SHARE 🟢 (Safe, Creative & Joyful)",
+            "icon": "🟢",
+            "colour": "#00E676",
+            "description": "Hobbies, opinions, original artwork, science curiosity, and educational inquiries."
+          }
+        ],
+        "items": [
+          {
+            "id": "item-1",
+            "label": "Home street address and apartment number 🏠",
+            "correctCategory": "cat-secret",
+            "feedback": "🌟 CORRECT! Locked Safe! Never share where you live with online games or strangers! 🔒🏠"
+          },
+          {
+            "id": "item-2",
+            "label": "My favorite dinosaur is the Spinosaurus 🦖",
+            "correctCategory": "cat-share",
+            "feedback": "🌟 CORRECT! Green Light Share! Sharing your favorite prehistoric beast is 100% safe and fun! 🟢🦖"
+          },
+          {
+            "id": "item-3",
+            "label": "My secret tablet password and PIN code 🔑",
+            "correctCategory": "cat-secret",
+            "feedback": "🌟 CORRECT! Locked Safe! Passwords are like toothbrushes — never share them with anyone! 🔒🔑"
+          },
+          {
+            "id": "item-4",
+            "label": "A crayon drawing of a smiling tree with birds 🌳🎨",
+            "correctCategory": "cat-share",
+            "feedback": "🌟 CORRECT! Green Light Share! Original artwork shared under a fun nickname inspires others! 🟢🌳"
+          },
+          {
+            "id": "item-5",
+            "label": "Papa's mobile phone number 📞",
+            "correctCategory": "cat-secret",
+            "feedback": "🌟 CORRECT! Locked Safe! Protect your family phone line from spam and scams! 🔒📞"
+          },
+          {
+            "id": "item-6",
+            "label": "Asking AI: 'How do solar panels turn sunlight into electricity?' 🔬☀️",
+            "correctCategory": "cat-share",
+            "feedback": "🌟 CORRECT! Green Light Share! Science questions build your brain without risking privacy! 🟢🔬"
+          },
+          {
+            "id": "item-7",
+            "label": "My elementary school name and dismissal time 🏫",
+            "correctCategory": "cat-secret",
+            "feedback": "🌟 CORRECT! Locked Safe! Keep your physical daily school schedule private from strangers! 🔒🏫"
+          },
+          {
+            "id": "item-8",
+            "label": "My favorite flavor of ice cream is mint chocolate chip 🍦",
+            "correctCategory": "cat-share",
+            "feedback": "🌟 CORRECT! Green Light Share! Fun culinary opinions reveal zero private identity data! 🟢🍦"
+          },
+          {
+            "id": "item-9",
+            "label": "My full legal birthday with the exact year 🎂",
+            "correctCategory": "cat-secret",
+            "feedback": "🌟 CORRECT! Locked Safe! Official birthdates are identity verification keys; keep them safe! 🔒🎂"
+          },
+          {
+            "id": "item-10",
+            "label": "A creative fairy tale about a dragon who bakes cupcakes 🐉🧁",
+            "correctCategory": "cat-share",
+            "feedback": "🌟 CORRECT! Green Light Share! Creative writing stories can be shared freely with the world! 🟢🐉"
+          }
+        ],
+        "scoring": {
+          "pointsPerCorrect": 100,
+          "streakBonus": 40,
+          "flawlessBonus": 250
+        },
+        "auraGuidance": {
+          "start": "READ each data card carefully! Is it a locked secret safe item 🔒, or a green light share 🟢?",
+          "correct": "BULLSEYE! That data card landed in the perfect container! 🌟",
+          "incorrect": "🛑 Danger! Never share your phone number with a game popup!",
+          "streak": "UNSTOPPABLE PRIVACY STREAK! You classify data like a senior cybersecurity director! 🔥🏆",
+          "complete": "ALL TEN SORTED FLAWLESSLY! You earned the Master Data Sorter Ribbon! 🎀🏅"
+        }
+      },
+      {
+        "gameId": "game-3",
+        "gameType": "matching",
+        "title": "🔗 The Red Light / Green Light Scenario Matcher! (Defend Your Digital Life) 🤝🛡️",
+        "icon": "🔗",
+        "instruction": "Connect each Tricky Online Situation on the left with the Superhero Protective Action on the right!",
+        "difficulty": "medium",
+        "duration": "5 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Ready for the scenario matcher challenge? 🤖🔗 On the left are tricky real-life online situations. On the right are the smart superhero protective actions! Match them into power pairs! 🛡️👇",
+        "pairs": [
+          {
+            "pairId": "pair-1",
+            "itemA": {
+              "id": "item-popup-coins",
+              "content": "Game Popup: 'Enter home address for 10,000 Free Coins!' 🎁🛑",
+              "type": "Online Situation"
+            },
+            "itemB": {
+              "id": "item-action-cancel",
+              "content": "Tap CANCEL immediately and tell Mama or Papa! 🛑👨‍👩‍👧",
+              "type": "Superhero Action"
+            },
+            "connectionMeaning": "Free coin popups asking for addresses are phishing scams; canceling and alerting parents protects the home!"
+          },
+          {
+            "pairId": "pair-2",
+            "itemA": {
+              "id": "item-chat-school",
+              "content": "Stranger in Game Chat: 'What school do you go to?' 💬🕵️",
+              "type": "Online Situation"
+            },
+            "itemB": {
+              "id": "item-action-block",
+              "content": "Mute, block the user, and report to game moderators! 🔇🛡️",
+              "type": "Superhero Action"
+            },
+            "connectionMeaning": "Gamers never need to know your real-world school; blocking and reporting shuts down predatory questioning!"
+          },
+          {
+            "pairId": "pair-3",
+            "itemA": {
+              "id": "item-friend-password",
+              "content": "Best Friend in Class: 'Tell me your password so I can log in!' 🔑🏫",
+              "type": "Online Situation"
+            },
+            "itemB": {
+              "id": "item-action-toothbrush",
+              "content": "Kindly say: 'Passwords are like toothbrushes — we never share!' 🪥🗝️",
+              "type": "Superhero Action"
+            },
+            "connectionMeaning": "Politely refusing to share passwords preserves account security while educating friends on healthy digital boundaries!"
+          },
+          {
+            "pairId": "pair-4",
+            "itemA": {
+              "id": "item-homework-ai",
+              "content": "Doing Science Homework: 'Why does ice float on water?' 🔬🧊",
+              "type": "Online Situation"
+            },
+            "itemB": {
+              "id": "item-action-askai",
+              "content": "GREEN LIGHT: Ask AI freely with zero personal data! 🟢💡",
+              "type": "Superhero Action"
+            },
+            "connectionMeaning": "Academic science inquiries are completely safe to explore using educational AI tools!"
+          },
+          {
+            "pairId": "pair-5",
+            "itemA": {
+              "id": "item-art-post",
+              "content": "Sharing an Original Drawing of a Forest Treehouse 🎨🌳",
+              "type": "Online Situation"
+            },
+            "itemB": {
+              "id": "item-action-nickname",
+              "content": "GREEN LIGHT: Post using a fun artist nickname like 'TreeDino44'! 🟢✨",
+              "type": "Superhero Action"
+            },
+            "connectionMeaning": "Displaying artwork under an anonymous artist pseudonym inspires others without compromising identity!"
+          },
+          {
+            "pairId": "pair-6",
+            "itemA": {
+              "id": "item-camera-app",
+              "content": "New Game Download asks: 'Allow camera & location access?' 📷📍",
+              "type": "Online Situation"
+            },
+            "itemB": {
+              "id": "item-action-askgrownup",
+              "content": "YELLOW LIGHT: Pause and ask a grown-up before enabling permissions! ⚠️👨‍👩‍👧",
+              "type": "Superhero Action"
+            },
+            "connectionMeaning": "Device sensor permissions (camera, microphone, GPS) should always be verified by an adult!"
+          }
+        ],
+        "scoring": {
+          "pointsPerPair": 120,
+          "completionBonus": 280
+        },
+        "auraGuidance": {
+          "start": "CONNECT each online situation on the left with the smart protective action on the right! 🔗🛡️",
+          "correct": "PERFECT PROTECTIVE MATCH! You defused the online trap like a digital superhero! ⚡🔒",
+          "incorrect": "Look for the smart protective action that keeps private keys locked safe!",
+          "complete": "ALL SIX PAIRS CONNECTED! You have earned the Digital Guardian Trophy! 🏆🎉"
+        }
+      }
+    ],
+    "activities": [
+      {
+        "activityId": "activity-1",
+        "title": "The Safe vs Secret Sorter 🔒📦",
+        "type": "hands-on",
+        "duration": "25 minutes",
+        "icon": "🔒",
+        "roboPiActivityBrief": "BEEP BOOP! Time for our headline hands-on activity: The Safe vs Secret Sorter! 🤖📦 You get to construct two real physical sorting containers — a Red Locked Treasure Vault 🔒 and a Green Light Community Mailbox 🟢 — and sort 10 tangible data cards with your family!",
+        "description": "In this engaging tactile workshop, students construct two physical sorting boxes (or decorated envelopes): 1. The Red Secret Vault 🔒 (decorated with drawn steel chains, a paper padlock, and a secret cutout key 🔑), and 2. The Green Light Share Mailbox 🟢 (decorated with smiling dinosaurs 🦖, green trees 🌳, and stars ✨). Students cut out 10 pre-designed Data Cards (Home Address, Passwords, Favorite Dinosaur, School Name, Tree Drawing, Phone Number, etc.), test them with a parent or partner, and physically deposit each card into the correct container! Students then sign the official Family Digital Privacy Pledge card to display proudly near the family computer!",
+        "materials": [
+          "📦 2 small cardboard tissue boxes, shoe boxes, or sturdy paper envelopes",
+          "📄 2 sheets of colored construction paper (one Red, one Green)",
+          "🖍️ Colored markers, colored pencils, and drawing pens",
+          "✂️ Safety scissors and glue stick",
+          "🏷️ 10 index cards or cut paper rectangles for the 'Data Cards'",
+          "🔑 1 small cardboard cutout of a 'Golden Privacy Key'",
+          "⭐ 1 gold star sticker for the 'Family Privacy Pledge' seal"
+        ],
+        "steps": [
+          "Step 1: BUILD THE RED SECRET VAULT: Wrap Box #1 in red construction paper. Draw heavy steel chains and a giant padlock on the front! Label it in bold black letters: 'THE LOCKED SECRET VAULT 🔒 (NEVER SHARE ONLINE!)'. Cut a coin-slot opening on top.",
+          "Step 2: CRAFT THE GOLDEN KEY: Cut a 10cm golden key from yellow cardstock. Write your family name on it: '[YOUR FAMILY] MASTER PRIVACY KEY 🔑'. Tape it beside the red vault as a reminder that only family holds the key!",
+          "Step 3: BUILD THE GREEN SHARE MAILBOX: Wrap Box #2 in bright green construction paper. Draw friendly smiling dinosaurs 🦖, green trees 🌳, and lightbulbs 💡 on the sides! Label it in bold letters: 'THE GREEN LIGHT SHARE BOX 🟢 (IDEAS, ART & QUESTIONS!)'. Cut a slot on top.",
+          "Step 4: CRAFT THE 10 DATA CARDS: Take 10 paper cards and write one item on each card: Card 1: 'My Home Address 🏠', Card 2: 'My Favorite Dinosaur 🦖', Card 3: 'My School Password 🔑', Card 4: 'A Drawing of a Tree 🌳', Card 5: 'My School Name 🏫', Card 6: 'Science Question About Space 🔬', Card 7: 'Papa's Phone Number 📞', Card 8: 'My Favorite Ice Cream 🍦', Card 9: 'My Full Birthdate 🎂', Card 10: 'A Funny Poem I Wrote 📜'.",
+          "Step 5: THE FAMILY SORTING CEREMONY: Sit with Mama, Papa, or a sibling. Read each card aloud: 'Where does this card belong?'. When a secret is announced (like Home Address), slide it through the red vault slot: *CLANG! LOCKED!* When a safe share is announced, slide it into the green mailbox: *WHOOSH! SHARED!*",
+          "Step 6: INSPECT THE RESULTS: Open both containers and verify that zero secrets ended up in the green box! Celebrate that all physical home keys are 100% locked and safe!",
+          "Step 7: SIGN THE FAMILY PRIVACY PLEDGE: On a fresh card, write: 'OUR FAMILY PLEDGE: We promise to keep our passwords, home address, and phone numbers locked safe. We will always ask a grown-up before filling online forms!' Every family member signs their name!",
+          "Step 8: DISPLAY BY THE COMPUTER: Affix your gold star seal ⭐ to the pledge card. Place the pledge and the Red Vault beside the family tablet or computer desk as a permanent guardian!"
+        ],
+        "thingsToLookFor": [
+          "📦 Did the student construct two clearly distinct physical containers: Red Vault vs Green Mailbox?",
+          "🔑 Was the golden key crafted and explained as a symbol of family-only access?",
+          "🏷️ Were all 10 data cards accurately classified without confusing private secrets and safe shares?",
+          "🗣️ Did the student explain aloud why home addresses and passwords must stay locked?",
+          "📜 Did family members participate in signing the Family Digital Privacy Pledge?",
+          "⭐ Is the finished pledge displayed proudly in a visible digital work area?"
+        ],
+        "discussionWithGrownUp": [
+          "When you were a child, how did people protect their privacy before internet computers and smartphones existed?",
+          "Why do companies and apps want to collect people's personal data, and why should we protect our family information?",
+          "What is our family rule if an unfamiliar popup or chat message appears on our tablet screen?",
+          "How can we help younger siblings or grandparents stay safe from sneaky online phone scams?"
+        ],
+        "familyConnection": "Review tablet and phone privacy settings together! Check that location services (GPS) are turned off for camera and gaming apps unless specifically needed! 👨‍👩‍👧📱🔒",
+        "learningOutcome": "Children internalize data categorization, tactile boundary reinforcement, family cyber-safety collaboration, and critical discernment of digital solicitations.",
+        "auraGuidance": {
+          "before": "GATHER your two cardboard boxes, red and green paper, markers, and scissors! 📐✂️",
+          "after": "SORTER COMPLETED! Your family privacy vault is officially locked, guarded, and pledged! 🔒📦🏆"
+        }
+      },
+      {
+        "activityId": "activity-2",
+        "title": "🎭 The 'Stop, Shield & Tell' Roleplay Drama! 🛑🎬",
+        "type": "roleplay-creative",
+        "duration": "15 minutes",
+        "icon": "🎭",
+        "roboPiActivityBrief": "BEEP BOOP! Time for dramatic superhero rehearsals! 🤖🎭 In this fast-paced theater game, we practice the 3-Step Privacy Action Plan against sneaky popups and chat traps!",
+        "description": "One player (the Sneaky Popup Actor) holds a cardboard sign pretending to be a scam game popup: 'WIN A FREE IPAD! TYPE YOUR MOTHER'S PHONE NUMBER!'. The student actor holds a pretend tablet. The student must act out the three superhero steps: 1. STOP! (freeze hand in mid-air with a loud gasp 🛑), 2. SHIELD! (tap the pretend red cancel button with dramatic confidence 🛡️), 3. TELL! (run over to the parent actor and report the situation clearly: 'Papa! A sneaky popup asked for your phone number!' 👨‍👩‍👧). Switch roles so everyone practices defusing digital traps!",
+        "materials": [
+          "📋 3 cardboard prompt signs ('Free iPad Scam', 'Stranger Chat: Where Do You Live?', 'Secret Password Phishing')",
+          "🛑 A small red paper circle for the 'Cancel Button' prop"
+        ],
+        "steps": [
+          "Step 1: Assign roles: Sneaky Popup, Student Explorer, and Parent/Teacher.",
+          "Step 2: The Sneaky Popup leaps forward with a funny dramatic villain laugh: 'Mwahaha! I am the Free Robux Popup! Give me your home address!'",
+          "Step 3: The Student Explorer freezes in mid-air: 'STEP 1: STOP! That is my private home address!'",
+          "Step 4: The Student slaps the red cancel button: 'STEP 2: SHIELD! Tap CANCEL! Access denied!'",
+          "Step 5: The Student turns to the Parent actor: 'STEP 3: TELL! Mama, a sneaky ad asked for our street address!'",
+          "Step 6: The Parent actor celebrates: 'Great job, Privacy Hero!' High-fives all around! Switch roles and repeat for 3 rounds! 🎭👏"
+        ],
+        "thingsToLookFor": [
+          "🛑 Did the student execute all 3 steps: Stop, Shield (Cancel), and Tell?",
+          "😂 Did participants enjoy the dramatic comedy while internalizing the serious safety muscle-memory?",
+          "🗣️ Did the student articulate clearly what private data was requested?"
+        ],
+        "discussionWithGrownUp": [
+          "Why does practicing a roleplay out loud make it so much easier to remember what to do when a real popup appears?",
+          "How does staying calm help us make smarter decisions when computers show flashing messages?"
+        ],
+        "familyConnection": "Practice a quick 30-second 'Privacy Drill' once a month just like a school fire drill! 🚨🛡️",
+        "learningOutcome": "Builds automatic procedural muscle memory for threat recognition, refusal assertion, and adult reporting.",
+        "auraGuidance": {
+          "before": "PREPARE your sneaky popup signs and get into your superhero acting positions! 🎭🛑",
+          "after": "ROLEPLAY MASTERED! Your 3-step privacy reflexes are lightning-fast and impenetrable! 🛡️⚡👏"
+        }
+      },
+      {
+        "activityId": "activity-3",
+        "title": "📱 The Family Device Privacy Checkup! 🔍👨‍👩‍👧",
+        "type": "family-discussion",
+        "duration": "15 minutes",
+        "icon": "📱",
+        "roboPiActivityBrief": "BEEP BOOP! Turn into a certified Cyber Security Inspector! 🤖🔍 Team up with your parents to inspect the privacy settings on the family tablet, phone, or computer!",
+        "description": "The student acts as Chief Privacy Inspector, holding a checklist and pen. Together with a parent, they check three essential digital security settings: 1. Passwords (Are they strong, unique, and not saved on sticky notes on the screen?), 2. App Permissions (Are games tracking real-time GPS location unnecessarily?), 3. Web Camera Covers (Is there a small sliding cover or sticker over the laptop camera when not in use?). The student awards the family device a 'Gold Privacy Safety Certificate'!",
+        "materials": [
+          "📋 1 Inspector's Clipboard or paper checklist",
+          "🖊️ A green marker for checking off safety items",
+          "🩹 A small sliding camera cover or clean sticker for webcams"
+        ],
+        "steps": [
+          "Step 1: Put on your inspector badge: 'Attention family! It is time for our Official Device Privacy Audit!'",
+          "Step 2: Checkpoint 1 - PASSWORDS: Ask a parent: 'Do we use strong passwords that contain numbers and symbols?' Check the box: [PASS]! 🔑",
+          "Step 3: Checkpoint 2 - LOCATION PERMISSIONS: Open tablet settings. Check which apps have GPS access. Turn off location for simple games and drawing apps: [SHIELDED]! 📍🛡️",
+          "Step 4: Checkpoint 3 - CAMERA PRIVACY: Inspect the laptop or tablet webcam. Place a neat sliding sticker cover over the lens when not on school video calls: [PROTECTED]! 📷🔒",
+          "Step 5: Sign the 'Family Device Safety Certificate' with a green marker.",
+          "Step 6: Celebrate a safer, more secure home digital environment! 📱🎉"
+        ],
+        "thingsToLookFor": [
+          "🔍 Did the student actively participate in inspecting real device settings with a parent?",
+          "🛡️ Were unnecessary location permissions identified and disabled?",
+          "💖 Did the activity foster teamwork and shared responsibility for family cybersecurity?"
+        ],
+        "discussionWithGrownUp": [
+          "Why should we check our privacy settings at least twice a year?",
+          "How do strong passwords protect our family photos, bank accounts, and school records?"
+        ],
+        "familyConnection": "Help grandparents do a quick privacy checkup on their smartphones during your next family visit! 👵📱❤️",
+        "learningOutcome": "Translates conceptual privacy principles into practical technical hygiene and family cybersecurity agency.",
+        "auraGuidance": {
+          "before": "GRAB your inspector clipboard and ask Papa or Mama to open device settings! 🔍📋",
+          "after": "AUDIT COMPLETE! Family devices certified 100% shielded and secure! 📱🛡️🏆"
+        }
+      }
+    ],
+    "realWorldExamples": [
+      {
+        "id": "rwe-1",
+        "title": "📱 Game app asking 'Where do you live?' → Tap Cancel and ask Papa immediately 🛑🏠",
+        "scenario": "Game app asking 'Where do you live?' → Tap Cancel and ask Papa immediately illustrates the vital real-world reflex that prevents accidental data leakage in everyday mobile gaming. On a sunny Sunday morning, eight-year-old Lucas downloaded a brand-new free puzzle game called 'Marble Mania World' onto the family iPad. Lucas solved the first three marble mazes with huge smiles. But right before Level 4, the game locked the screen and presented a brightly colored registration dialog box: 'TO ENTER THE LEADERBOARD AND WIN BONUS MARBLE SKINS, PLEASE ENTER: 1. YOUR FULL HOME ADDRESS 🏠, 2. CITY AND ZIP CODE, 3. PARENT'S EMAIL ADDRESS.' The green 'SUBMIT' button was pulsing with sparkling animations.",
+        "aiConnection": "Commercial data-harvesting in mobile advertising networks vs Student threat recognition! Many free mobile applications use third-party marketing software development kits (SDKs) designed to scrape demographic and geographic data from young users for targeted ad profiling. This violates children's digital privacy standards (like COPPA), but sneaky developers often disguise these forms as 'bonus game features'. Lucas looked at the prompt. He was tempted by the shiny gold marble skin, but he remembered the golden rule taught by Robo-Pi: 'Your home address is a private treasure locked in the family safe!' Lucas didn't touch the keyboard. He looked around the living room, pressed the iPad home button, walked into the kitchen where his father was making breakfast, and held up the screen: 'Papa, this marble game says I have to type where I live to unlock Level 4. Can you look at it?' His father inspected the app, immediately recognized that it was an unverified, ad-heavy copycat game, tapped 'Cancel', and deleted the app from the iPad. Papa gave Lucas a giant bear hug: 'Lucas, you made the exact right choice! That game had no right to ask for our home address. Let's download an official, approved school puzzle app instead!' Lucas protected his family's privacy through calm, swift caution!",
+        "observation": "Notice that Lucas didn't try to guess or negotiate with the popup; he stopped typing, tapped cancel, and brought the device straight to an adult, neutralising the trap before any data was sent!",
+        "discussion": "Why do free mobile games try to trick kids into sharing their addresses? How does telling an adult immediately protect your home from spam and marketing trackers?",
+        "roboPiTip": "BEEP BOOP! Always remember: if a free game asks for real-world secrets, the price of that game is your privacy! Tap CANCEL, delete the app, and tell Papa right away! 📱🛑🛡️"
+      },
+      {
+        "id": "rwe-2",
+        "title": "🏫 Filling an online school quiz ONLY with teacher's guidance on verified portals 📝👩‍🏫",
+        "scenario": "Filling an online school quiz ONLY with teacher's guidance on verified portals highlights how authorized educational platforms safeguard student records while rogue third-party quizzes harvest personal profiles. During 4th-grade social studies in Room 204, Mrs. Gable instructed her 25 students to log into their district portal: 'Class, please open our verified school platform and take our 5-question quiz on state geography.' Student Priya clicked on the link. While Priya was completing Question 3 about state rivers, a flashing banner ad appeared on the side of the browser window: 'DISTRICT SCHOLAR CHALLENGE! TAKE THE POPULARITY QUIZ! WHAT IS YOUR FULL NAME, BIRTHDAY, AND SCHOOL NAME TO WIN A $50 BOOK FAIR GIFT CARD!'",
+        "aiConnection": "Authorized institutional data ecosystems vs Malicious phishing popups! Official school educational portals (like Google Classroom, Canvas, or district LMS platforms) are legally bound by student privacy regulations (like FERPA and COPPA). They use encrypted, firewalled servers that never sell student data or ask inappropriate personal questions. Rogue advertising networks, however, often inject deceptive banner ads that mimic school graphics to trick students into surrendering identity credentials. Priya noticed that the flashing quiz was asking for her full legal birthday and home school name. Priya raised her hand high: 'Mrs. Gable, is the District Scholar Challenge part of our geography quiz? It is asking for my birthday and school.' Mrs. Gable immediately walked to Priya's desk, looked at the screen, and closed the ad tab: 'Priya, excellent catch! That is an unverified third-party ad trying to look like our school. You did the exact right thing by asking me instead of typing your information!' Mrs. Gable then addressed the whole class, reminding all students to verify every external prompt with their teacher. Priya earned the classroom's 'Cyber Star of the Week' award!",
+        "observation": "Priya verified the unexpected prompt with her teacher before inputting a single letter, demonstrating that adult verification is the ultimate shield against deceptive online ads!",
+        "discussion": "How can you tell the difference between an official school assignment and an unexpected outside ad trying to steal your identity?",
+        "roboPiTip": "BEEP BOOP! When at school, your teacher is your digital air traffic controller! If an ad or quiz doesn't come from your teacher's assignment, raise your hand and ask! 🏫📝👩‍🏫⭐"
+      },
+      {
+        "id": "rwe-3",
+        "title": "🦖 Sharing your favorite dinosaur in a kids' coding forum vs refusing to give your real birthday 🦕🔒",
+        "scenario": "Sharing your favorite dinosaur in a kids' coding forum vs refusing to give your real birthday demonstrates how young creators can participate enthusiastically in online communities while maintaining ironclad data boundaries. Ten-year-old Sam joined 'Scratch Jr. Creators', an online coding community for elementary school students. Sam was building an animated video game about a time-traveling velociraptor. In the project comments section, another young coder typed: 'Hey Sam! Cool game! I love dinosaurs too! What is your favorite dinosaur species? And also, when is your real birthday? Maybe we have the same birthday!'",
+        "aiConnection": "Community social sharing vs Identity disclosure boundary management! Online creative communities thrive when children share creative ideas, coding tips, artistic feedback, and shared interests. That is healthy peer collaboration! However, birthdates (especially month, day, and year) are sensitive personal identifying information (PII) that must remain confidential to prevent identity theft and profiling. Sam sat at his keyboard and applied his Red-Green Data Shield. Sam thought: 'My favorite dinosaur is green-light safe! My real birthday is red-light secret!' Sam typed back into the forum: 'Thanks for playing my game! My favorite dinosaur is the Spinosaurus because it had a giant sail and swam in prehistoric rivers! But I keep my real birthday private for online safety! What dinosaur are you coding next?' The other student replied: 'Awesome! Spinosaurus is so cool! I am coding a Stegosaurus!' Sam shared his paleontology passion, made a coding buddy, and kept his private identity keys locked tight!",
+        "observation": "Sam successfully separated the safe public interest (dinosaurs) from the private personal key (birthday), proving that you can be friendly and social online while maintaining strict privacy boundaries!",
+        "discussion": "Why was Sam able to make a fun online coding friend without giving away his real birthday or where he lives?",
+        "roboPiTip": "BEEP BOOP! You can share your creative soul and your favorite dinosaurs with the whole world while keeping your private keys locked safe! That is the mark of a true master digital citizen! 🦖💬🔒🌟"
+      }
+    ],
+    "practiceExercises": [
+      {
+        "id": "pe-1",
+        "title": "🛡️ The Data Shield Radar: Red Secret 🛑 or Green Share 🟢? (Quick Decision) 🧰✨",
+        "instruction": "Read each piece of information below. Determine whether it belongs in the RED LOCKED VAULT 🛑🔒 (Never Share Online) or the GREEN LIGHT SHARE 🟢✨ (Safe, Fun & Creative)!",
+        "activity": "Read the 6 scenario prompts below. Classify each piece of data, and write down the protective reason why!",
+        "items": [
+          {
+            "scenario": "Your home street address where you and your family live.",
+            "type": "RED LOCKED VAULT 🛑🔒",
+            "reasoning": "Physical residential location that must remain strictly private to protect home safety."
+          },
+          {
+            "scenario": "The fact that your favorite dinosaur is the armored Ankylosaurus.",
+            "type": "GREEN LIGHT SHARE 🟢✨",
+            "reasoning": "Harmless personal interest and scientific preference that carries zero physical risk."
+          },
+          {
+            "scenario": "Your private password used to log into the school tablet.",
+            "type": "RED LOCKED VAULT 🛑🔒",
+            "reasoning": "Confidential digital access key that must never be revealed to prevent account compromise."
+          },
+          {
+            "scenario": "An original crayon drawing of an autumn oak tree with squirrels.",
+            "type": "GREEN LIGHT SHARE 🟢✨",
+            "reasoning": "Creative artistic expression that can be shared safely under an artist pseudonym."
+          },
+          {
+            "scenario": "Your mother's private mobile phone number.",
+            "type": "RED LOCKED VAULT 🛑🔒",
+            "reasoning": "Private family telecommunication line that must be protected from spam and phishing scams."
+          },
+          {
+            "scenario": "Asking an AI assistant how bees make sweet honey inside a hive.",
+            "type": "GREEN LIGHT SHARE 🟢✨",
+            "reasoning": "Educational scientific inquiry that enriches knowledge without disclosing personal data."
+          }
+        ],
+        "scoring": "Score 15 points per correct classification. Perfect score: 90 points!",
+        "feedback": {
+          "correct": "🌟 SPOT ON! Your Data Shield Radar detects private secrets with 100% accuracy! 🚀🏆",
+          "incorrect": "🤔 Remember: Silicon calculates data, but your family safe locks physical secrets like addresses and passwords!"
+        }
+      },
+      {
+        "id": "pe-2",
+        "title": "📝 Complete Robo-Pi's Privacy Guardian Blueprint! 🔒🛡️",
+        "instruction": "Fill in the missing words in the privacy blueprint using the Word Bank below to help Robo-Pi complete the Master Security Plan!",
+        "activity": "Read the blueprint paragraphs and insert the correct word from the Word Bank into each numbered blank space.",
+        "wordBank": [
+          "Privacy Vault 🔒",
+          "Home Address 🏠",
+          "Favorite Dinosaur 🦖",
+          "Passwords 🔑",
+          "Green Light 🟢",
+          "Red Light Alert 🛑",
+          "Tell a Grown-up 👨‍👩‍👧",
+          "Data Shield 🛡️"
+        ],
+        "sentences": [
+          {
+            "number": 1,
+            "sentence": "Your personal information is a treasure that must be stored safely inside your [Blank 1].",
+            "correctAnswer": "Privacy Vault 🔒",
+            "explanation": "The Privacy Vault represents the mental boundary protecting sensitive personal identity."
+          },
+          {
+            "number": 2,
+            "sentence": "You must never tell online games or strangers your [Blank 2] where your family lives.",
+            "correctAnswer": "Home Address 🏠",
+            "explanation": "Residential street addresses must remain strictly confidential to safeguard physical security."
+          },
+          {
+            "number": 3,
+            "sentence": "Sharing that your [Blank 3] is the T-Rex is completely safe, fun, and green-light approved.",
+            "correctAnswer": "Favorite Dinosaur 🦖",
+            "explanation": "Hobbies, paleontology interests, and opinions carry zero identity risk."
+          },
+          {
+            "number": 4,
+            "sentence": "Like a personal toothbrush, your [Blank 4] must never be shared with anyone, even best friends.",
+            "correctAnswer": "Passwords 🔑",
+            "explanation": "Account credentials must remain confidential to prevent unauthorized access and impersonation."
+          },
+          {
+            "number": 5,
+            "sentence": "Original drawings of trees and science questions are classified as [Blank 5] sharing.",
+            "correctAnswer": "Green Light 🟢",
+            "explanation": "Green Light data represents creative, non-identifying content that enriches digital communities."
+          },
+          {
+            "number": 6,
+            "sentence": "When a game popup promises free coins in exchange for personal secrets, trigger your [Blank 6] immediately.",
+            "correctAnswer": "Red Light Alert 🛑",
+            "explanation": "The Red Light Alert prompts immediate cessation of data entry upon encountering solicitations."
+          },
+          {
+            "number": 7,
+            "sentence": "Whenever an unexpected website asks for your phone number, tap Cancel and [Blank 7] right away.",
+            "correctAnswer": "Tell a Grown-up 👨‍👩‍👧",
+            "explanation": "Adult notification neutralizes cyber threats and ensures proper technical countermeasures."
+          },
+          {
+            "number": 8,
+            "sentence": "Combining careful secrets with joyful creative sharing activates your permanent [Blank 8].",
+            "correctAnswer": "Data Shield 🛡️",
+            "explanation": "The Data Shield embodies balanced, responsible digital citizenship and proactive privacy hygiene."
+          }
+        ],
+        "scoring": "Score 12.5 points per correct fill-in. Perfect score: 100 points!",
+        "feedback": {
+          "success": "🌟 BLUEPRINT COMPLETE! You are officially equipped with the Master Privacy Shield Formula! 🚀🏅",
+          "partial": "Almost there! Review the difference between secret keys and safe green-light shares!"
+        }
+      }
+    ],
+    "lessonSummary": {
+      "title": "🌟 Lesson Summary: The Master Privacy Guardian Formula! 🔒🛡️",
+      "keyTakeaways": [
+        "🔒 Privacy is your treasure chest: keep your personal keys locked safe from unknown online screens.",
+        "🏠 The 4 Golden Secrets: NEVER share Home Address 🏠, School Name 🏫, Phone Number 📞, or Passwords 🔑.",
+        "🟢 Green Light Sharing: joyful things like Favorite Dinosaurs 🦖, Tree Drawings 🌳, and Science Questions 🔬 are 100% safe.",
+        "🛑 Digital Mouse Traps: free game coin popups and quiz prizes asking for personal data are phishing scams.",
+        "🚨 The 3-Step Superhero Action Plan: STOP 🛑 → SHIELD 🛡️ (Cancel/Close) → TELL A GROWN-UP 👨‍👩‍👧 immediately.",
+        "🛡️ Balance is power: be a bold creative explorer who shares ideas while keeping physical identity keys locked tight!"
+      ],
+      "recap": "In this lesson, we discovered that protecting your privacy does not mean being afraid of the internet. The digital world is full of magical art, thrilling science, and joyful games! True digital mastery means knowing what to lock and what to share. When you guard your home address, school, and passwords inside your steel Privacy Vault, while freely sharing your dinosaur enthusiasm, colorful tree drawings, and scientific curiosity, you become an unstoppable, confident, and safe digital superhero! Keep the key locked safe — you are a certified Privacy Guardian! 🔒🛡️🦖🟢💚🏆",
+      "reflectionPrompt": "What is ONE private secret that you will always keep locked in your safe, and ONE fun creative idea you will share with joy?",
+      "parentNote": "Today, your child learned foundational data privacy and digital citizenship principles: distinguishing non-identifying creative content (Green Light) from sensitive Personally Identifiable Information (Red Light: address, school, phone, passwords), identifying deceptive phishing solicitations, and practicing the 'Stop, Cancel, Tell an Adult' protocol. Review your family device privacy settings and celebrate your child's data guardian skills! 👨‍👩‍👧📱🔒❤️",
+      "badgeEarned": "The Master Privacy Guardian Golden Medal 🏅🔒",
+      "achievement": "Master Privacy Guardian License Granted! 🔒🛡️🟢🏆"
+    }
+  },
+  "assessment": {
+    "questions": [
+      {
+        "questionId": "q1",
+        "question": "Which piece of information is a private secret that must NEVER be shared with online games or popups? 🏠🔒",
+        "options": [
+          "Your favorite prehistoric dinosaur species 🦖",
+          "Your real home street address and apartment number 🏠",
+          "Your favorite color in the rainbow 🌈",
+          "A drawing of a smiling tree you painted in art class 🌳"
+        ],
+        "correctOptionIndex": 1,
+        "explanation": "Your home street address reveals where you live and sleep; it must remain locked inside your family privacy safe!",
+        "hint": "Think about where your family lives and sleeps at night!"
+      },
+      {
+        "questionId": "q2",
+        "question": "Why are passwords compared to personal toothbrushes in online safety? 🪥🔑",
+        "options": [
+          "Because passwords should be kept clean, changed regularly, and NEVER shared with anyone, not even friends 🌟",
+          "Because you should brush your computer screen with toothpaste twice a day",
+          "Because passwords are only used in the bathroom",
+          "Because computers can only understand words that start with the letter T"
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Passwords are confidential access keys; just like a personal toothbrush, sharing them compromises hygiene and security!",
+        "hint": "Think about keeping things private and never sharing with friends!"
+      },
+      {
+        "questionId": "q3",
+        "question": "What should you do immediately if a game popup says: 'Enter your phone number for 10,000 Free Coins!'? 🛑📱",
+        "options": [
+          "Type your mother's phone number as fast as possible to get the coins",
+          "Tap CANCEL or close the window, and tell a parent or teacher immediately 🛑👨‍👩‍👧",
+          "Type your home street address instead",
+          "Leave the computer on and walk away without telling anyone"
+        ],
+        "correctOptionIndex": 1,
+        "explanation": "Free coin popups asking for phone numbers are phishing traps; canceling and telling an adult prevents scam charges and spam!",
+        "hint": "Look for the 3-step action: Stop, Cancel, and Tell a Grown-up!"
+      },
+      {
+        "questionId": "q4",
+        "question": "Which of the following is completely SAFE (Green Light) to share on a school creative forum? 🟢🎨",
+        "options": [
+          "Your school account login password and secret PIN code 🔑",
+          "Your real elementary school building name and recess time 🏫",
+          "An original drawing of an oak tree signed with a fun artist nickname 🌳✨",
+          "A photo of your front door showing your house number and street sign 🏠"
+        ],
+        "correctOptionIndex": 2,
+        "explanation": "Original artwork shared under an anonymous pseudonym expresses creativity without disclosing any personal identity data!",
+        "hint": "Look for the creative artwork that reveals zero personal secrets!"
+      },
+      {
+        "questionId": "q5",
+        "question": "What is the 3-Step Superhero Action Plan when you encounter a tricky or suspicious online request? 🛑🛡️👨‍👩‍👧",
+        "options": [
+          "Type, Click, and Guess",
+          "STOP 🛑, SHIELD (Cancel/Close) 🛡️, and TELL A GROWN-UP 👨‍👩‍👧",
+          "Delete all homework files and turn off the power",
+          "Share the popup link with fifty classmates on chat"
+        ],
+        "correctOptionIndex": 1,
+        "explanation": "STOP, SHIELD (Cancel), and TELL A GROWN-UP provides an infallible protective reflex against digital threats and scams!",
+        "hint": "Remember: Stop, Shield, and Tell Mama, Papa, or Teacher!"
+      }
+    ]
+  },
+  "resources": [
+    {
+      "title": "The Safe vs Secret Sorter Printable Workshop Kit 🔒📦",
+      "type": "worksheet",
+      "url": "/content/junior/worksheets/class4-ch6-l1-safe-vs-secret-sorter.pdf",
+      "description": "Printable cutout kit containing box labels, 10 data cards, a golden privacy key, and the Family Privacy Pledge."
+    },
+    {
+      "title": "Robo-Pi's Red-Green Data Shield Pocket Guide 🛡️🟢",
+      "type": "worksheet",
+      "url": "/content/junior/worksheets/class4-ch6-l1-data-shield-guide.pdf",
+      "description": "Pocket-sized reference card summarizing Red Light secrets vs Green Light shares for elementary students."
+    },
+    {
+      "title": "Video: Guarding Your Digital Treasure Chest: Privacy with Robo-Pi 🌟🎬",
+      "type": "video",
+      "url": "https://aiolympiad.org/junior/videos/guarding-your-digital-treasure",
+      "description": "An animated video explaining personal privacy vaults, popup scams, and safe online creative sharing."
+    }
+  ],
+  "teacherNotes": {
+    "preparation": "Prepare two tissue boxes or envelopes per student pair (one red, one green), safety scissors, colored markers, glue sticks, and pre-printed Data Card sheets for Activity 1 (The Safe vs Secret Sorter). Have sample pledge cards ready to display.",
+    "lessonFlow": "Hook students with the Story of Kabir, Maya, and the Free Dino-Coin popup trap. Introduce the core distinction between Private Identity Keys (home address, passwords, school name, phone number) and Green Light Creative Shares (dinosaurs, art, science questions). Demonstrate the 3-Step Action Plan (Stop, Shield, Tell). Facilitate the hands-on sorting box activity, and conclude with the Family Privacy Pledge.",
+    "keyDiscussionPoints": [
+      "Why is personal privacy fundamentally about physical safety, emotional peace, and family security?",
+      "How do free mobile games use deceptive design patterns ('digital cheese') to harvest children's data?",
+      "Why does protecting privacy empower children to be MORE creative online rather than fearful?",
+      "How does signing and displaying a family privacy pledge foster shared household cybersecurity norms?"
+    ],
+    "pedagogicalTips": [
+      "Avoid alarmism: frame privacy as an empowering superpower (holding the golden key to your treasure chest) rather than an internet terror narrative.",
+      "Emphasize the nuance: ensure students understand that sharing art, stories, and science questions is encouraged, provided identifying PII is omitted.",
+      "Incorporate somatic reflexes: practice the physical 'Stop, Cancel, Tell' gesture sequence repeatedly until it becomes automatic muscle memory.",
+      "Celebrate transparency: remind students that if they ever accidentally click something, they should NEVER hide it; grown-ups are there to help without judgment."
+    ],
+    "commonMisconceptions": [
+      "❌ Misconception: 'If a game looks fun and cute, it must be safe to give it my address.' → Correction: Many predatory marketing games use cute cartoon aesthetics specifically to trick children into surrendering data.",
+      "❌ Misconception: 'Sharing passwords with my best friend proves our friendship.' → Correction: Passwords are like personal hygiene items; keeping them private protects both friends from account compromise.",
+      "❌ Misconception: 'To be safe online, I can never share my drawings or talk to anyone.' → Correction: Creative sharing under anonymous pseudonyms is safe, healthy, and celebrated!"
+    ],
+    "differentiation": {
+      "forAdvancedStudents": "Challenge students to analyze real app privacy policies (translated into plain language), explore browser cookie tracking concepts, and design anti-phishing posters for younger grades.",
+      "forStrugglingStudents": "Use high-contrast visual color-coding: place red stop-sign stickers on physical address/password cards and green checkmark stickers on dinosaur/art cards.",
+      "forELLStudents": "Provide bilingual flashcards pairing core safety terms (Private, Secret, Address, Password, Share) with universal emojis (🔒, 🏠, 🔑, 🛑, 🟢)."
+    },
+    "extensionActivities": [
+      "Host a school-wide 'Cybersecurity Fair' where 4th graders present their Safe vs Secret Sorters to 1st and 2nd graders.",
+      "Create a classroom 'Privacy Wall of Fame' where students display signed digital citizenship pledges.",
+      "Conduct a supervised classroom audit of school tablet privacy settings to verify camera and microphone permissions."
+    ]
+  },
+  "additionalResources": [
+    {
+      "title": "Printable Master Privacy Guardian Shield & Badges 🛡️🏅",
+      "url": "https://aiolympiad.org/resources/class4/ch6/privacy-guardian-badges.pdf",
+      "type": "pdf",
+      "description": "Full-color printable sheets with Privacy Guardian badges, chest emblems, and official pledge certificates."
+    },
+    {
+      "title": "Interactive Privacy Vault Simulator 🕹️💻",
+      "url": "https://aiolympiad.org/junior/simulators/privacy-vault-simulator",
+      "type": "interactive",
+      "description": "Digital web sandbox where students drag data cards into virtual titanium vaults and defuse simulated popup scams."
+    }
+  ],
+  "assessmentQuestions": [
+    {
+      "questionId": "aq1",
+      "question": "In elementary digital citizenship pedagogy, what core operational distinction separates Personally Identifiable Information (PII) from non-sensitive creative content? 🔒",
+      "options": [
+        "PII possesses deterministic real-world linkage to an individual's physical location, legal identity, or secure credentials, whereas creative content reflects non-identifying intellectual expression 🏠✨",
+        "PII can only be typed on desktop computers rather than tablets",
+        "Creative content must always be encrypted with 256-bit AES algorithms",
+        "PII refers exclusively to mathematical equations"
+      ],
+      "correctAnswer": "PII possesses deterministic real-world linkage to an individual's physical location, legal identity, or secure credentials, whereas creative content reflects non-identifying intellectual expression 🏠✨",
+      "explanation": "PII encompasses data points (address, school, phone, passwords) that uniquely identify or locate a physical person, requiring strict confidentiality."
+    },
+    {
+      "questionId": "aq2",
+      "question": "Why do deceptive dark patterns (such as 'free game currency in exchange for residential data') pose significant regulatory and developmental hazards for child users? 🛑",
+      "options": [
+        "They exploit children's nascent executive function and delayed gratification by leveraging gamified bait to harvest unauthorized demographic data 🎮",
+        "They cause tablets to permanently lose battery charge",
+        "They violate international copyright laws regarding dinosaur terminology",
+        "They force computers to uninstall web browsers"
+      ],
+      "correctAnswer": "They exploit children's nascent executive function and delayed gratification by leveraging gamified bait to harvest unauthorized demographic data 🎮",
+      "explanation": "Deceptive dark patterns exploit developmental vulnerabilities in impulse control, trading nominal virtual rewards for sensitive personal data."
+    },
+    {
+      "questionId": "aq3",
+      "question": "What behavioral psychology mechanism explains why establishing the 'Stop, Shield, and Tell' protocol creates durable cybersecurity habits? 🛡️",
+      "options": [
+        "It establishes an automatic affective deceleration pause (Stop), followed by decisive mechanical refusal (Shield), and adult scaffolding (Tell), bypassing impulsive compliance 🛑",
+        "It requires students to memorize 50-digit password hashes",
+        "It eliminates the need for adult supervision entirely",
+        "It forces devices to automatically disconnect from Wi-Fi networks"
+      ],
+      "correctAnswer": "It establishes an automatic affective deceleration pause (Stop), followed by decisive mechanical refusal (Shield), and adult scaffolding (Tell), bypassing impulsive compliance 🛑",
+      "explanation": "The protocol interrupts impulsive clicking behavior through affective deceleration and provides concrete behavioral actions paired with adult guidance."
+    },
+    {
+      "questionId": "aq4",
+      "question": "Why is pseudonymous creative contribution (e.g., publishing dinosaur art under an artist handle) developmentally vital for young learners? 🎨",
+      "options": [
+        "It enables self-efficacy, authentic peer engagement, and digital voice while fully mitigating exposure of personal identity vectors 🌟",
+        "It prevents other students from seeing the artwork",
+        "It reduces the file size of uploaded images",
+        "It is legally required by all art supply manufacturers"
+      ],
+      "correctAnswer": "It enables self-efficacy, authentic peer engagement, and digital voice while fully mitigating exposure of personal identity vectors 🌟",
+      "explanation": "Pseudonymous participation fosters agency, communal collaboration, and creative expression without compromising personal safety or privacy."
+    },
+    {
+      "questionId": "aq5",
+      "question": "What is the primary pedagogical rationale for involving parents in 'The Safe vs Secret Sorter' pledge and device privacy audits? 👨‍👩‍👧",
+      "options": [
+        "To establish cohesive intergenerational digital norms and bridge classroom privacy literacy with authentic household device governance 📱❤️",
+        "To ensure parents complete the student's homework assignments",
+        "To eliminate all technology use within the home environment",
+        "To test parents on elementary school science curricula"
+      ],
+      "correctAnswer": "To establish cohesive intergenerational digital norms and bridge classroom privacy literacy with authentic household device governance 📱❤️",
+      "explanation": "Parental involvement bridges classroom pedagogy with home technical governance, creating unified expectations and supportive scaffolding."
+    }
+  ]
+}
