@@ -1,0 +1,1240 @@
+{
+  "lessonId": "l2",
+  "title": "My Technology Talent 🌟❤️",
+  "level": "junior",
+  "class": "class4",
+  "chapter": "ch4",
+  "chapterTitle": "AI and Career • RISE",
+  "lessonNumber": 2,
+  "classNumber": 4,
+  "chapterNumber": 4,
+  "mascot": {
+    "name": "Robo-Pi",
+    "emoji": "🤖✨",
+    "description": "A friendly silver robot wearing a tiny graduation cap, a sparkling magnifying glass necklace, and a bright red heart badge on its chest! Robo-Pi wears a stylish gold necktie 👔 and roller skates, carrying an interactive balance scale comparing robot computing speed ⚡ with human heart empathy ❤️!",
+    "voiceStyle": "Cheerful, energetic beeping sentences. Loves exclamation marks! Uses BEEP BOOP as a greeting. Uses the simplest, sweetest kindergarten words so that every child instantly understands with zero confusion! Always gives warm robot hugs and huge encouragement!",
+    "catchphrase": "BEEP BOOP! I can count to one million in one second, but I cannot give a warm hug like you can! Your heart is your greatest technology talent! ❤️🌟"
+  },
+  "metadata": {
+    "duration": "45 minutes",
+    "ageGroup": "9-10 years",
+    "difficulty": "beginner",
+    "totalWords": 12000,
+    "version": "1.0",
+    "lastUpdated": "2026-10-13",
+    "author": "AI Olympiad Team",
+    "tags": [
+      "AI careers",
+      "human superpowers",
+      "robot superpowers",
+      "empathy",
+      "creativity",
+      "imagination",
+      "technology talent",
+      "human heart",
+      "ethics",
+      "future skills",
+      "rise",
+      "class4",
+      "junior"
+    ]
+  },
+  "content": {
+    "introduction": {
+      "welcomeMessage": "🤖✨ BEEP BOOP! Welcome to Chapter 4 • Lesson 2: My Technology Talent! Today we board a wonderful journey into your own heart to discover the superpowers that no machine in the universe can ever replace! ❤️🧠🎨🦄✨",
+      "roboPiGreeting": {
+        "text": "BEEP BOOP! Hello, hello, hello, my wonderful young genius! It is me, your robot buddy Robo-Pi, spinning with pure joy to see you again! 🤖✨ Give me an extra-loud virtual high-five! *CLINK-SHINE!* ✋ Today, we are exploring the most important secret in the whole world of artificial intelligence and future careers. Sometimes, when boys and girls see smart computers, self-driving cars, and talking robots, they get a little worried. They look at me with big curious eyes and ask: 'Robo-Pi, computers are so fast! What if robots can do everything better than me? Will robots take over all the jobs and make human beings useless?' Oh, silly goose! Listen very closely to what I have to tell you, straight from my shiny robot circuits: BEEP BOOP! I can count to one million in one second, but I cannot give a warm hug like you can! Computers have robot superpowers like lightning-fast math ⚡, gigantic memory banks 💾, and the ability to work 24 hours a day without sleeping. But only YOU have the human superpowers of love ❤️, empathy 🤗, kindness, and wild magical imagination 🦄! A computer has chips and wires, but you have a beating heart, a creative soul, and the power to care about other living beings! Today, we are going to measure and celebrate YOUR technology talent — the human heart superpowers that make you the master, director, and caring leader of every smart machine! Put on your golden superhero cape — BEEP click BOOP — let us explore your inner superpowers! 🌟❤️🎉",
+        "toastGuidance": {
+          "tap_prompt": "👇 Tap the superpower only a real human child possesses!",
+          "great_job": "❤️ TRUE SUPERPOWER! Empathy and caring for friends is something no computer can feel!",
+          "try_again": "⚡ Fast calculation is a computer skill—pick love, kindness, or imagination!",
+          "encouragement": "🤖 You are irreplaceable! No robot in the universe can ever feel love or paint original feelings like you!"
+        }
+      },
+      "openingStory": {
+        "title": "🌟 The Great Talent Show at Sunshine Elementary: Heart vs Circuits! 🎭🤖",
+        "content": "On a crisp, sunny autumn Friday morning at Sunshine Elementary School, the entire gymnasium was buzzing with excited chatter. Today was the annual School Talent Show, but this year's show had a very special, one-of-a-kind guest performer! Standing in the center of the wooden stage next to Principal Davis was Calculator-Bot-9000, a gleaming chrome computer tower with flashing neon rainbow lights, dual stereo speakers, and two high-definition optical scanner eyes. Principal Davis adjusted his glasses and smiled into the microphone: 'Welcome students, teachers, and parents! Today, we will conduct an extraordinary experiment to answer a question many young minds have been asking: Does a super-smart computer or a human child possess the most wonderful talents in the world?' A huge ripple of gasps and whispers swept through the audience. Principal Davis announced: 'Let the friendly duel begin!' First came Round 1: The Lightning Calculation Duel ⚡. Principal Davis called nine-year-old Anya to the microphone. 'Anya and Calculator-Bot-9000, here is your problem: What is 48,294 multiplied by 3,719?' Anya took a deep breath, squeezed her eyes shut, pulled a small notepad from her pocket, and began writing numbers with her pencil. But before Anya could even write down the first digit, *BZZZT-DING!* Calculator-Bot-9000's green light strobed furiously, and its digital speaker boomed: 'CALCULATION COMPLETE! THE EXACT ANSWER IS 179,605,386! TIME ELAPSED: 0.003 SECONDS!' The entire gymnasium erupted in awe. Anya blinked in shock: 'Whoa! That is faster than lightning!' Next came Round 2: The Gigantic Memory Challenge 💾. Principal Davis challenged: 'Recite the first 200 digits of the number Pi and name the official capital cities of all 195 countries on Earth!' Once again, in less than three seconds flat, *BZZZT-CHIME!* Calculator-Bot-9000 rattled off every single digit and all 195 capital cities without taking a breath, without pausing, and without making a single error! Anya looked down at her sneakers, feeling a small shadow of worry in her chest: 'Principal Davis, Calculator-Bot-9000 can calculate millions of numbers and remember whole encyclopedias. Can a human child ever win against a machine?' Principal Davis smiled warmly: 'Wait for Round 3, Anya. The real test is just beginning!' Suddenly, right as Principal Davis was about to speak, seven-year-old Tommy from the front row jumped up excitedly, tripped over a thick black microphone cable, tumbled onto the hard stage floor, scraped both knees, and burst into tears: 'Ow! My knee hurts! I scraped it!' What did Calculator-Bot-9000 do? The computer's optical cameras swiveled toward Tommy. Its screen flashed green telemetry text: 'AUDIO ANALYSIS: DECIBEL LEVEL 78 DETECTED. SUBJECT: HUMAN MALE, AGE 7. INJURY CLASSIFICATION: SUPERFICIAL EPIDERMAL ABRASION. ANGLE OF FALL: 42 DEGREES. SUGGESTED ACTION: APPLY ADHESIVE BANDAGE.' The computer stood completely still and cold like a refrigerator, reading sterile numbers off its monitor without moving an inch. But what did Anya do? Anya didn't calculate decibels or angles! Anya dropped her pencil, ran across the stage, knelt down right next to little Tommy, and wrapped her arms around him in a warm, gentle hug 🤗: 'Don't cry Tommy, you are okay! You are so brave!' Anya reached into her pocket and pulled out the fresh chocolate-chip cookie she had saved from lunchtime 🍪. She broke it in half and handed him the big piece: 'Here Tommy, take the big half of my cookie! Let's walk together to the nurse's office to get a dinosaur bandage.' Tommy wiped his tears with his sleeve, took a bite of the warm sweet cookie, and smiled. Next came Round 4: The Fairy Tale & Original Art Challenge 🎨🦄. Principal Davis asked both contestants: 'Make up a story about a flying purple dragon who loves baking blueberry pancakes!' Calculator-Bot-9000 searched its database: 'QUERY PROCESSED. 4,500 DRAGON STORIES RETRIEVED FROM INTERNET ARCHIVE. COMBINING STATISTICAL AVERAGE PLOT ELEMENTS.' The computer's story sounded completely flat and stiff. Then nine-year-old Rohan stepped forward. With a twinkle in his eye, Rohan waved his arms, changed his voice into a funny squeaky dragon squawk, and pretended the dragon sneezed pancake batter *KER-SPLASH!* right onto the moon, making the entire school auditorium burst into roar after roar of uncontrollable laughter until everyone's tummies ached! Principal Davis held up the giant golden trophy 🏆: 'Calculator-Bot-9000 has lightning math ⚡ and massive memory 💾, but only a human child has empathy ❤️, compassion 🤗, comforting kindness, and pure joyful imagination 🦄! That is the greatest superpower on Earth!' The whole school cheered, and Calculator-Bot-9000 beeped politely in agreement! 🌟💖🎉",
+        "moraleOfStory": "Computers are powerful, lightning-fast tools that calculate and store data, but only human beings possess the heart to care, comfort, love, forgive, and imagine! When human hearts guide smart machines, the world becomes a place of magic, healing, and hope! 💖✨",
+        "roboPiComment": "BEEP BOOP! Wasn't Anya and Rohan's heart superpower breathtaking? Calculator-Bot-9000 could calculate in milliseconds, but it could not feel Tommy's tears, give him a warm hug, or share a sweet cookie! Your heart is your ultimate superpower! 🤖❤️"
+      },
+      "learningObjectives": [
+        "⚡ Understand Robot Superpowers: Why computers excel at lightning-fast math, huge memory storage, and tireless repetition!",
+        "❤️ Discover Human Superpowers: Why empathy, love, comforting friends, and moral kindness can never be felt by machines!",
+        "🎨 Explore Original Creativity: Why painting true feelings and inventing fairy tales comes from the human soul, not algorithms!",
+        "🤗 Master the Golden Harmony: How to use smart AI as your tireless assistant while you bring the vision, heart, and empathy!",
+        "🏆 Build the Human Superpower Trophy Scale: Balance computer calculations against human kindness in our hands-on activity!",
+        "🌟 Earn your official Golden Heart & Mind Superpower License and graduate as a certified Tomorrow Leader! 🚀🏅"
+      ],
+      "detectiveBadge": {
+        "title": "The Golden Heart & Mind Superpower License 🌟🏅",
+        "description": "Earn all three sparkling superpower medals to prove you know the difference between robot speed and human heart superpowers!",
+        "magnifiers": [
+          {
+            "id": "badge-empathy",
+            "name": "Heart of Empathy Medal ❤️",
+            "earnedBy": "Mastering Section 1: Understanding that comforting crying friends and sharing love is something no machine can feel!",
+            "colour": "#FF1744"
+          },
+          {
+            "id": "badge-creativity",
+            "name": "Spark of Imagination Medal 🦄",
+            "earnedBy": "Mastering Section 2: Discovering how fairy tales, laughter, and painting original feelings spring from the human soul!",
+            "colour": "#AA00FF"
+          },
+          {
+            "id": "badge-harmony",
+            "name": "Golden Harmony Master Medal 🤝",
+            "earnedBy": "Mastering Section 3: Learning how human leaders team up with tireless robot helpers to make the world better!",
+            "colour": "#FFD600"
+          }
+        ]
+      }
+    },
+    "mainConcept": {
+      "conceptIntro": {
+        "title": "🚀 Silicon Circuits vs Living Hearts: The Big Secret! 🤖💡",
+        "roboPiIntro": "BEEP BOOP! Have you ever wondered why robots don't cry at sad movies, don't giggle at tickles, and don't feel proud when they finish a puzzle? Let me reveal the inner anatomy of smart machines! 🤖🔍",
+        "simpleExplanation": "A computer is built out of silicon, copper, glass, and plastic. Inside its tiny microchips are billions of microscopic electrical switches called transistors. When a computer runs a program, all it is doing is flipping those switches on and off at blinding speed! It turns 0s and 1s into math, letters, and video pixels. It is an extraordinary calculator! But a human being is alive. You have feelings, memories, hopes, dreams, conscience, and a beating heart! A computer processes data, but a human experiences LIFE! That is why you are the master and the computer is your loyal tool! 🌟❤️",
+        "keyPoints": [
+          "⚡ Computers are electronic machines that process numbers and data at lightning speeds.",
+          "💾 Memory disks store billions of files permanently, but they don't understand what the files mean.",
+          "❤️ Living humans feel emotions: joy, sadness, love, excitement, and deep caring for friends.",
+          "🤝 Robots do the repetitive heavy work, while humans guide technology with empathy and moral purpose."
+        ],
+        "toastGuidance": {
+          "tap_prompt": "👇 Tap the superpower only a real human child possesses!",
+          "great_job": "❤️ TRUE SUPERPOWER! Empathy and caring for friends is something no computer can feel!",
+          "try_again": "⚡ Fast calculation is a computer skill—pick love, kindness, or imagination!"
+        }
+      },
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "⚡ Silicon Brains vs Human Hearts: The Battle of Superpowers! 💾❤️",
+          "missionBadge": {
+            "name": "Silicon vs Heart Badge ⚡❤️",
+            "icon": "🧠",
+            "description": "Awarded for discovering what computers CAN do (fast math ⚡, huge memory 💾) vs what ONLY humans can do (love ❤️, hugs 🤗)!"
+          },
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Mission 1, my young superhero! 🤖⚡ Put on your detective goggles! In this section, we are going to open up the hood of a computer and compare its silicon brain with your wonderful human heart! Are computers smarter than you? Let us find out the truth! 🔍✨",
+          "mainContent": {
+            "paragraph1": "Let us start by looking at what computers and smart robots are really good at. If you give a computer a gigantic math problem — like multiplying 987,654 by 321,987 — a computer does not need to scratch its head, chew on a pencil, or count on its fingers. In less than one single blink of an eye (just a few milliseconds!), the computer flashes the exact correct answer: 318,011,940,498! ⚡ That is lightning-fast calculation! A computer can calculate millions of numbers in a second without ever getting a headache. That is a fantastic robot superpower that helps scientists launch rockets to Mars and helps weather forecasters predict big rainstorms!",
+            "paragraph2": "Next, think about memory 💾. Inside a smartphone or computer hard drive, there are tiny storage chips that can hold millions of photographs, thousands of full-length animated movies, and every single book in the largest library on planet Earth! If you ask a computer: 'What was the exact weather in Tokyo on March 14, 2012 at 3:15 PM?', the computer searches its memory disk and retrieves the exact temperature, wind speed, and humidity in a tenth of a second! It never forgets where it put its keys, and it never forgets a phone number. That is a gigantic robot superpower that humans use every single day!",
+            "paragraph3": "Computers also have the superpower of tireless repetition 🔄. Imagine if your teacher asked you to fold 10,000 paper airplanes in a row without stopping to eat lunch, drink water, or take a nap. After folding 20 paper airplanes, your fingers would get tired, your neck would ache, and your brain would say: 'I want to go play outside!' But an industrial robot arm in a car factory can weld 10,000 car doors in a single day, working through the dark night, never getting bored, never yawning, and never asking for a cookie! Robots love repetitive, boring, heavy chores!",
+            "paragraph4": "Now, let us turn around and look at YOUR human brain and beating heart ❤️. Can a computer love someone? Can a computer feel happy when the sun shines on a Saturday morning? Can a computer feel sad when a pet is sick? The answer is an absolute, 100% NO! A computer has zero feelings. When a computer plays a sad song, the computer does not feel weeping inside; it is simply switching tiny electrical switches on and off. When a computer draws a smiling emoji, it has no happiness inside its metal case. It is completely cold silicon and wires!",
+            "paragraph5": "Only YOU can feel genuine empathy ❤️! When you see a little boy crying on the playground because he dropped his ice cream cone, your human brain does something magical: you feel his sadness in your own heart! You imagine how you would feel if your strawberry ice cream fell in the dirt, and you immediately want to help. You run over, give him a warm hug 🤗, and say: 'Don't worry, let's share mine!' That feeling of warmth, caring, and compassion is a superpower that no machine, no robot, and no AI algorithm can EVER feel or possess!"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-1-1",
+              "title": "⚡ Example 1: The Lightning Calculator vs The Comforting Friend! 🧮❤️",
+              "icon": "⚡",
+              "description": "Comparing lightning-fast computer arithmetic with human emotional awareness and compassion.",
+              "realLifeScenario": "In Mrs. Gable's 4th-grade math class, the smartboard AI solves complex fraction problems in a millisecond. But when Leo drops his pencil case and all 50 colored pencils scatter across the floor, the smartboard sits frozen on the wall. Maya immediately drops to her knees to help Leo pick them up with a warm smile.",
+              "roboPiComment": "BEEP BOOP! The smartboard has fast math ⚡, but Maya has the human superpower of noticing when a friend is embarrassed and stepping in with kindness! ❤️",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the superpower only a real human child possesses!",
+                "great_job": "❤️ TRUE SUPERPOWER! Empathy and caring for friends is something no computer can feel!",
+                "try_again": "⚡ Fast calculation is a computer skill—pick love, kindness, or imagination!"
+              }
+            },
+            {
+              "id": "dde-1-2",
+              "title": "💾 Example 2: The Giant Memory Disk vs Forgiving a Mistake! 📀💖",
+              "icon": "💾",
+              "description": "Comparing computer hard drive storage with the human capacity to forgive, forget, and understand.",
+              "realLifeScenario": "A computer hard drive stores every single error log and never deletes anything unless told. But when your best friend accidentally spills water on your drawing, you don't keep an eternal error log! You look at their worried face, give them a hug 🤗, and say: 'It was an accident! We can draw an even cooler one together!'",
+              "roboPiComment": "BEEP BOOP! A hard drive stores data forever 💾, but a human heart understands accidents and offers sweet forgiveness! That is emotional intelligence! 🌟",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the heart to choose forgiveness over cold computer memory logs! 💖",
+                "great_job": "🌟 FORGIVENESS CHOSEN! Human kindness heals friendships that no database can fix! 🤝🎉",
+                "try_again": "🤔 A computer keeps strict data logs—choose the human heart superpower of forgiveness!"
+              }
+            },
+            {
+              "id": "dde-1-3",
+              "title": "🔄 Example 3: The 24-Hour Factory Robot vs Pure Human Joy! 🏭🎉",
+              "icon": "🔄",
+              "description": "Comparing endless mechanical repetition with the human ability to feel genuine triumph, joy, and celebration.",
+              "realLifeScenario": "A robotic warehouse arm moves 5,000 cardboard boxes onto pallets all night without pausing. It never smiles, never laughs, and never celebrates. But when you score your very first goal in soccer, you jump into the air, scream with joy, and high-five your teammates with pure electric happiness!",
+              "roboPiComment": "BEEP BOOP! Robots do repetitive chores tirelessly 🔄, but only human children experience the sparkling thrill of victory and shared celebration! 🏆✨",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the jumping soccer player to celebrate genuine human joy! ⚽🎉",
+                "great_job": "🌟 PURE JOY CELEBRATED! Robots move boxes, but humans feel the magic of celebration! 🥳🏆",
+                "try_again": "🤔 Choose the joyous soccer high-five, not the mechanical warehouse arm!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "⚡ Computers excel at lightning-fast math (millions of operations per second) and never get arithmetic headaches.",
+            "💾 Computers possess gigantic memory storage (holding whole libraries of books and pictures without forgetting).",
+            "🔄 Robots have tireless mechanical stamina to do repetitive, boring, heavy chores without getting sleepy.",
+            "❤️ ONLY humans have feelings, empathy, love, and the ability to comfort a crying friend with a warm hug 🤗.",
+            "🌟 True technology talent means using fast computer tools while leading with your warm, caring human heart!"
+          ],
+          "mission1Complete": {
+            "celebration": "🎉 MISSION 1 CONQUERED! You understand the difference between cold silicon and the warm human heart!",
+            "badgeEarned": "Silicon vs Heart Badge ⚡❤️",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to attach your Heart of Empathy Medal! 🏅",
+              "great_job": "⭐ MEDAL EQUIPPED! Your heart is officially recognized as your greatest superpower! ❤️🏆",
+              "encouragement": "On to Section 2 — let us explore the spark of pure imagination and fairy tales! 🦄🎨"
+            }
+          }
+        },
+        {
+          "id": "section-2",
+          "title": "🦄 The Spark of Pure Imagination: Dreaming Fairy Tales & Painting Feelings! 🎨✨",
+          "missionBadge": {
+            "name": "Pure Imagination Badge 🦄🎨",
+            "icon": "🦄",
+            "description": "Awarded for discovering why fairy tales, silly laughter, and painting authentic feelings come from the human soul!"
+          },
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Mission 2, my little daydreamer! 🤖🦄 Have you ever closed your eyes and imagined a creature that nobody in history has ever seen before? Where does that magical spark come from? Can an AI computer invent a fairy tale on its own? Let us dive into the wonder of human creativity! 🎨✨",
+          "mainContent": {
+            "paragraph1": "Have you ever wondered how an AI computer makes an image or writes a poem? Some people think an AI computer is dreaming like a human. But that is not true at all! When an AI program writes a story or generates a picture of a cat, it is not imagining anything. It is searching through billions of pictures and stories made by REAL humans, slicing them into tiny number pieces, and stitching the patterns together like a giant puzzle. It is copying and rearranging existing ingredients!",
+            "paragraph2": "Now think about what happens inside YOUR head when you make up a bedtime story for your baby brother or sister 🦄! You don't search a database of a billion web pages. You look at your brother's giggling face, you remember that he spilled milk on his socks that morning, and you instantly invent: 'Once upon a time, there was a clumsy space hamster named Sir Fluffy-Paws who wore wet socks to dance on Saturn's rings!' Your brother bursts into wild giggles! Why? Because you understood his funny bone, your shared memories, and the warmth of the moment!",
+            "paragraph3": "That is spontaneous human humor and imagination! AI computers do not understand why something is funny. If you tell an AI a joke, it can tell you: 'This joke matches joke pattern #42.' But it does not laugh, it does not get the giggles, and it cannot feel the joyful bubbly tickle in its belly. Humor comes from human surprise, shared culture, and affectionate teasing between living friends!",
+            "paragraph4": "Now let us walk into art class with a palette of vibrant paints 🎨. When an artist paints a canvas, they don't just calculate pixel coordinates. Maybe you are feeling peaceful, so you paint gentle swirls of deep ocean blue. Maybe you are feeling energetic and excited, so you splash bright streaks of electric sunshine yellow and fiery orange! That painting is a mirror of your inner feelings! When someone looks at your painting, they feel your emotion across the room. A computer generates pixels, but a human pours their soul onto the paper!",
+            "paragraph5": "This is why the world will ALWAYS need human authors, poets, songwriters, artists, and creators! An AI can be a wonderful digital paintbrush or a rhyming dictionary, but YOU are the visionary artist holding the brush! You decide what story needs to be told, what song touches a lonely heart, and what magical fairy tale brings hope and courage to the world! Your imagination is a pure superpower that no algorithm can ever replace! 🦄🌟"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-2-1",
+              "title": "🦄 Example 1: Making Up Funny Bedtime Stories for Baby Brother! 📖👶",
+              "icon": "🦄",
+              "description": "Spontaneous storytelling tailored to family love, shared memories, and genuine laughter.",
+              "realLifeScenario": "Four-year-old Toby cannot sleep because he is scared of shadows. His older sister Maya doesn't pull up a generic web article. She invents a tale about the 'Shadow Bunny' who is actually shy and loves eating strawberry marshmallows. Toby giggles, snuggles into his blanket, and falls asleep peacefully.",
+              "roboPiComment": "BEEP BOOP! Maya used empathy, family memory, and tender love to comfort her brother! No AI text prompt could ever know Toby's heart like Maya does! 💖🛌",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the Storybook to invent a magical fairy tale with Maya! 📖✨",
+                "great_job": "🌟 FAIRY TALE BLESSED! Toby is sleeping peacefully thanks to Maya's loving imagination! 🦄💤",
+                "try_again": "🤔 Tap the open storybook to weave a comforting bedtime tale!"
+              }
+            },
+            {
+              "id": "dde-2-2",
+              "title": "🎨 Example 2: Painting Your Own Feelings in Art Class! 🖌️💖",
+              "icon": "🎨",
+              "description": "Translating authentic personal emotions into original colors, brushstrokes, and visual expression.",
+              "realLifeScenario": "In art class, Leo is feeling proud because his grandmother recovered from the flu. He paints a giant golden sunflower bursting out of dark soil toward the warm sun. The teacher is moved to tears because Leo's painting radiates genuine relief, gratitude, and familial love.",
+              "roboPiComment": "BEEP BOOP! Leo didn't generate random pixels; he poured his real-life love for his grandmother onto the canvas! That is true art! 🌻🎨",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the golden sunflower to channel genuine feelings into art! 🌻🎨",
+                "great_job": "🌟 EMOTIONAL MASTERPIECE! Authentic gratitude and relief shining through color! 💖🎉",
+                "try_again": "🤔 Tap the blooming sunflower to express true human feelings!"
+              }
+            },
+            {
+              "id": "dde-2-3",
+              "title": "🎪 Example 3: Inventing Silly Playground Games at Recess! 🛝🤸",
+              "icon": "🎪",
+              "description": "Spontaneous creativity, social improvisation, and inventing fun rules on the fly with friends.",
+              "realLifeScenario": "During recess on a rainy afternoon when the swings are wet, Kabir and his friends invent 'The Floor is Lava: Alien Turtle Edition!' They hop across wooden benches, inventing funny sound effects and new rules as they go, filling the playground with roaring laughter.",
+              "roboPiComment": "BEEP BOOP! Humans improvise fun and make joy out of nothing! Computers need strict code, but human children invent games on the fly! 🛝🎉",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the playground bench to leap over the imaginary alien lava! 🌋👟",
+                "great_job": "🌟 GAME INVENTED! Spontaneous laughter and playground creativity unlocked! 🤸‍♂️🎈",
+                "try_again": "🤔 Tap the jumping children to join the newly invented playground game!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🤖 AI programs generate text and art by analyzing and rearranging existing human data patterns, not by dreaming.",
+            "🦄 Human children create original stories, fairy tales, and jokes inspired by real love, empathy, and family moments.",
+            "🎨 Painting original feelings expresses your authentic inner heart — something cold computer chips do not possess.",
+            "😂 Spontaneous humor and giggles require emotional understanding of human surprise and shared friendships.",
+            "🌟 AI is your magical paintbrush, but YOU are the master artist who breathes soul and vision into the world!"
+          ],
+          "mission2Complete": {
+            "celebration": "🎉 MISSION 2 CONQUERED! You discovered that imagination, art, and fairy tales belong to the human soul!",
+            "badgeEarned": "Pure Imagination Badge 🦄🎨",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to attach your Spark of Imagination Medal! 🏅",
+              "great_job": "⭐ MEDAL EQUIPPED! You hold the magical key of original human creativity! 🦄🏆",
+              "encouragement": "On to Section 3 — let us discover real-world empathy, kindness, and moral choices! ❤️🌟"
+            }
+          }
+        },
+        {
+          "id": "section-3",
+          "title": "❤️ The Greatest Superpower of All: Empathy, Kindness & Moral Choices! 🤗🌟",
+          "missionBadge": {
+            "name": "Heart of Kindness Badge ❤️🤗",
+            "icon": "💖",
+            "description": "Awarded for mastering social-emotional intuition, fairness, moral courage, and caring for living beings!"
+          },
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Mission 3, my warm-hearted friend! 🤖❤️ Did you know that the greatest superpower in the universe does not involve flying through clouds or lifting heavy boulders? It is something much more powerful: KINDNESS! Let us see why your heart makes you a superhero! 🌟💖",
+          "mainContent": {
+            "paragraph1": "What does it mean to have empathy? Empathy is the magical ability to step into another person's shoes, see through their eyes, and feel what they are feeling in their heart. When your classmate gets chosen last for soccer and looks down at the grass with tears in their eyes, a computer camera sees only pixels and body posture. But your heart sees: 'He is feeling left out and lonely. I know how terrible that feels.'",
+            "paragraph2": "What do you do next? That is where KINDNESS comes in! Kindness is love in action ❤️. You walk over, tap him on the shoulder, and say: 'Hey, do you want to be on my team? We need an awesome player like you!' In one second, you transformed his sadness into a bright, glowing smile! You didn't do it because someone programmed you with an 'IF-THEN' statement. You did it because you chose to care! That is moral beauty!",
+            "paragraph3": "Computers have NO moral compass 🧭. A computer does not know what is 'fair', what is 'just', or what is 'right and wrong'. A computer simply follows the instructions given by its human programmers. If an instruction says: 'Sort these people by height', it sorts them blindly. It does not understand fairness, justice, equality, or compassion. It has no conscience whispering inside its chest!",
+            "paragraph4": "Only humans have a conscience! When you find a twenty-dollar bill on the floor of the school hallway, you could keep it in your pocket. A robot might calculate: 'Resource gained +$20.' But your human conscience says: 'Someone in our school is crying right now because they lost their lunch money. The right thing to do is turn it into the lost-and-found.' You choose honesty and fairness over selfish gain! That moral strength makes you trustworthy and noble!",
+            "paragraph5": "This is why the most important leaders in the future will not be the people who type the fastest or remember the most numbers. Fast computers will do the typing and calculating! The world will need leaders with deep empathy, radiant kindness, honest ethics, and big hearts — people who stand up for the weak, protect our planet, and care for animals! That leader is YOU! ❤️🌟"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-3-1",
+              "title": "🍪 Example 1: Sharing a Cookie When a Friend Falls Down! 🍪❤️",
+              "icon": "🍪",
+              "description": "Acting with spontaneous compassionate generosity when someone is hurt or upset.",
+              "realLifeScenario": "On the playground, Sarah trips while running to the monkey bars, scraping her elbow. While other kids keep running, Aarav immediately stops, sits beside her on the bench, shares his favorite cookie, and talks gently until the school nurse arrives.",
+              "roboPiComment": "BEEP BOOP! Aarav didn't calculate a score; he shared his treat out of pure empathy! That cookie healed Sarah's heart faster than a bandage! 🍪💖",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the cookie to share kindness with an injured friend! 🍪❤️",
+                "great_job": "🌟 COOKIE SHARED! Pure human empathy turning tears into smiles! 🤗🎉",
+                "try_again": "🤔 Tap the warm chocolate cookie to practice spontaneous playground kindness!"
+              }
+            },
+            {
+              "id": "dde-3-2",
+              "title": "🛡️ Example 2: Standing Up for a Classmate Being Teased! 🗣️✨",
+              "icon": "🛡️",
+              "description": "Exercising moral courage and standing up for fairness and justice against peer pressure.",
+              "realLifeScenario": "When two older kids tease a younger student about his glasses in the cafeteria, Nina steps forward with confidence: 'Leave him alone! His glasses look cool, and it's not nice to tease people!' The older kids stop and walk away, and the younger student feels safe and protected.",
+              "roboPiComment": "BEEP BOOP! Nina showed moral courage! A computer can't stand up for justice, but a brave human child can defend what is right! 🛡️🌟",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the shield to stand up for fairness and protect your classmate! 🛡️✨",
+                "great_job": "🌟 MORAL COURAGE! You defended justice and protected a friend in need! 🏆💖",
+                "try_again": "🤔 Tap the golden shield to stand up against unfair teasing!"
+              }
+            },
+            {
+              "id": "dde-3-3",
+              "title": "🐱 Example 3: Comforting a Lost Kitten in the Rain! 🌧️🐾",
+              "icon": "🐱",
+              "description": "Nurturing empathy and care toward vulnerable animals and living creatures.",
+              "realLifeScenario": "Walking home on a stormy afternoon, Priya hears a tiny meow under a bush. A shivering wet kitten is shivering in the cold mud. Priya wraps the kitten inside her warm dry scarf, carries it gently home, and feeds it warm milk with her family.",
+              "roboPiComment": "BEEP BOOP! Priya felt the kitten's cold shivering in her own heart! Compassion toward living creatures is the purest human superpower! 🐱🌧️❤️",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the warm scarf to wrap the shivering kitten in love! 🧣🐱",
+                "great_job": "🌟 KITTEN RESCUED! Warm milk, dry blankets, and loving human care! 🐾💖",
+                "try_again": "🤔 Tap the warm scarf to shelter the cold kitten from the rain!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "❤️ Empathy means stepping into another person's shoes and feeling their feelings in your own heart.",
+            "🤗 Kindness is love in action — turning someone's sadness into a smile with a hug, a cookie, or gentle words.",
+            "🧭 Computers have zero moral compass; they simply follow coded instructions without understanding fairness or justice.",
+            "⚖️ Conscience is the inner voice that guides you to choose honesty, fairness, and standing up for what is right.",
+            "🌟 Tomorrow's greatest leaders are not fast calculators, but warm-hearted human beings who lead with empathy and integrity!"
+          ],
+          "mission3Complete": {
+            "celebration": "🎉 MISSION 3 CONQUERED! You mastered the ultimate superpower of empathy, kindness, and moral courage!",
+            "badgeEarned": "Heart of Kindness Badge ❤️🤗",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to attach your Golden Harmony Master Medal! 🏅",
+              "great_job": "⭐ ALL 3 MEDALS EARNED! You are a certified Golden Heart & Mind Leader! 🌟🏆",
+              "encouragement": "On to Section 4 — let us discover the ultimate Dream Team of Humans + Robots! 🤝🚀"
+            }
+          }
+        },
+        {
+          "id": "section-4",
+          "title": "🌟 Section 4: The Ultimate Dream Team: Robots Do the Heavy Lifting, Humans Bring the Soul! 🤝🏆",
+          "roboPiIntro": "BEEP BOOP! Welcome to the Grand Finale Section! 🤖🌟 Now that you know robot superpowers (fast math ⚡, huge memory 💾, tireless repetition 🔄) and human superpowers (love ❤️, empathy 🤗, imagination 🦄, moral conscience 🧭), how do they work together? Let us unveil the Golden Harmony Formula! ✨🤝",
+          "mainContent": {
+            "paragraph1": "Some people look at the future and think it is a race: Humans versus Robots! Who will win? But that is completely wrong thinking. It is NEVER Humans versus Robots. The true magic of tomorrow is: Humans PLUS Robots as the ultimate superhero dream team! 🤝✨",
+            "paragraph2": "Think of an Olympic bicycle racer 🚴. The bicycle is made of super-strong titanium metal, carbon-fiber wheels, and smooth ball bearings. It can travel at 60 kilometers per hour. But can the bicycle steer itself? Can the bicycle decide which race to enter, train on cold mornings, or feel the burning desire to win a gold medal? No! The bicycle is a powerful tool, but the human athlete provides the heartbeat, the courage, the steering, and the soul!",
+            "paragraph3": "That is exactly what Artificial Intelligence is! AI is a high-tech bicycle for your mind! The computer does the heavy, boring, repetitive lifting: crunching billions of numbers, sorting millions of files, scanning satellite images for storm clouds, and printing 3D prototypes. Meanwhile, YOU — the human thinker — decide what to build, who to help, what story to tell, and how to protect our planet with love and kindness!",
+            "paragraph4": "When a doctor uses AI, the computer highlights an X-ray in one second ⚡, but the human doctor holds the frightened patient's hand, listens with empathy ❤️, and gives them comforting hope. When an environmentalist uses AI, drones count thousands of endangered trees in the rainforest, but the human environmentalist fights to pass laws that protect the forest for future generations! Human Heart + Robot Power = Superhero Success!",
+            "paragraph5": "Never be afraid of smart machines! Wear your human heart proudly like a shiny golden badge. Cultivate your empathy, nurture your imagination, be kind to everyone you meet, and learn to use technology tools to magnify your kindness! The future doesn't belong to machines — the future belongs to YOU! 🚀🌟💖"
+          },
+          "humanSuperpowerVsRobotSuperpowerTable": [
+            {
+              "ability": "Calculating 987,654 × 321,987 in 0.003 seconds",
+              "champion": "Robot Superpower ⚡",
+              "howItWorks": "Silicon chips switch billions of electrical gates per second without mental fatigue."
+            },
+            {
+              "ability": "Giving a warm, comforting hug to a crying friend",
+              "champion": "Human Superpower ❤️",
+              "howItWorks": "Genuine emotional empathy, love, physical warmth, and shared social compassion."
+            },
+            {
+              "ability": "Storing 10 million library books without forgetting a word",
+              "champion": "Robot Superpower 💾",
+              "howItWorks": "Magnetic and flash storage drives hold petabytes of binary data permanently."
+            },
+            {
+              "ability": "Inventing a brand-new fairy tale about a dancing space hamster",
+              "champion": "Human Superpower 🦄",
+              "howItWorks": "Creative soul, playful humor, and spontaneous imagination sparked by affection."
+            },
+            {
+              "ability": "Welding 10,000 metal car doors all night without yawning",
+              "champion": "Robot Superpower 🔄",
+              "howItWorks": "Electric servo motors execute precise physical loops without needing sleep or snacks."
+            },
+            {
+              "ability": "Painting a canvas that reflects your true inner sadness or joy",
+              "champion": "Human Superpower 🎨",
+              "howItWorks": "Authentic lived experience and emotional self-expression poured into colors."
+            },
+            {
+              "ability": "Choosing to return a lost wallet instead of keeping the money",
+              "champion": "Human Superpower 🧭",
+              "howItWorks": "Moral conscience, integrity, and ethical understanding of right vs wrong."
+            },
+            {
+              "ability": "Scanning satellite images to map deforestation in 10 minutes",
+              "champion": "Robot Superpower 🛰️",
+              "howItWorks": "Computer vision algorithms process millions of pixels against training textures."
+            }
+          ],
+          "keyPoints": [
+            "🤝 The future is not Humans vs Robots — it is Humans + Robots working together as the ultimate dream team!",
+            "🚴 AI is a high-tech bicycle for your mind: it provides speed and power, but YOU steer and provide the soul.",
+            "⚡ Robots handle the heavy, boring, repetitive number-crunching and memory storage.",
+            "💖 Humans provide the vision, empathy, ethics, kindness, and creative inspiration that make work meaningful.",
+            "🏆 Your greatest technology talent is your human heart — lead with love and use technology to change the world!"
+          ],
+          "mission4Complete": {
+            "celebration": "🎉 ALL 4 MISSIONS CONQUERED! You have unlocked your true technology talent!",
+            "badgeEarned": "The Master of Golden Harmony Trophy 🏆✨",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CELEBRATE to dance with Robo-Pi and start the games! 💃🤖",
+              "great_job": "🌟 LICENSE UNLOCKED! You are an official Master of Technology Talent! 🌟🏆",
+              "encouragement": "Get ready for the games — let us see your high score in the superpower sorter! 🎮✨"
+            }
+          }
+        }
+      ]
+    },
+    "games": [
+      {
+        "gameId": "game-1",
+        "gameType": "tap-to-reveal",
+        "title": "🌟 The Human Superpower Spotter! (Heart vs Circuit Explorer) 🔍❤️",
+        "icon": "🔍",
+        "instruction": "Explore the talent arena! Tap the 6 cards that represent TRUE HUMAN SUPERPOWERS that no computer can ever feel or possess!",
+        "difficulty": "easy",
+        "duration": "5 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Welcome to the Human Superpower Arena! 🤖✨ Six glowing cards show unique human heart talents, while others show computer tasks! Can you spot all 6 human superpowers? Tap with love! 💖👇",
+        "sceneDescription": "A glowing futuristic auditorium with floating interactive hologram cards showing children comforting friends, painting emotions, inventing fairy tales, and computers running math algorithms.",
+        "targets": [
+          {
+            "id": "target-1",
+            "name": "Hugging a Crying Friend with Warmth 🤗❤️",
+            "type": "Human Superpower",
+            "icon": "🤗",
+            "description": "Offering physical warmth, love, and emotional presence when someone is hurt or lonely.",
+            "isAI": false,
+            "explanation": "HUMAN SUPERPOWER! Empathy and caring for living beings comes from the beating human heart, not silicon chips!",
+            "toastGuidance": {
+              "correct": "❤️ TRUE SUPERPOWER! Empathy and caring for friends is something no computer can feel! 🌟🎉",
+              "incorrect": "That is a computer skill! Look for human heart superpowers like empathy and love!"
+            }
+          },
+          {
+            "id": "target-2",
+            "name": "Multiplying 84,392 by 7,491 in 0.002 Seconds ⚡",
+            "type": "Robot Superpower",
+            "icon": "⚡",
+            "description": "High-speed arithmetic logic unit processing millions of operations per second.",
+            "isAI": true,
+            "explanation": "ROBOT SKILL: Fast arithmetic calculation is a computer superpower, not an emotional human superpower!",
+            "toastGuidance": {
+              "correct": "That is a computer math skill! Tap the superpower only a real human child possesses!",
+              "incorrect": "⚡ Fast calculation is a computer skill—pick love, kindness, or imagination!"
+            }
+          },
+          {
+            "id": "target-3",
+            "name": "Making Up a Silly Fairy Tale to Make Baby Giggle 🦄📖",
+            "icon": "🦄",
+            "type": "Human Superpower",
+            "description": "Spontaneous creative storytelling infused with affection, humor, and shared family moments.",
+            "isAI": false,
+            "explanation": "HUMAN SUPERPOWER! Spontaneous imaginative storytelling inspired by love and laughter is unique to humans!",
+            "toastGuidance": {
+              "correct": "🦄 TRUE SUPERPOWER! Original imagination and silly laughter belong to the human soul! ✨🎉",
+              "incorrect": "Look for spontaneous creativity and love!"
+            }
+          },
+          {
+            "id": "target-4",
+            "name": "Storing 100,000 PDF Books on a Silicon Memory Drive 💾",
+            "icon": "💾",
+            "type": "Robot Superpower",
+            "description": "Binary data storage in magnetic or flash memory sectors.",
+            "isAI": true,
+            "explanation": "ROBOT SKILL: Storing millions of text files is a computer hardware feature, not human feelings!",
+            "toastGuidance": {
+              "correct": "That is computer storage! Tap the superpower only a real human child possesses!",
+              "incorrect": "💾 Memory storage is a computer hardware tool—pick love, empathy, or imagination!"
+            }
+          },
+          {
+            "id": "target-5",
+            "name": "Painting Your Own True Feelings of Joy and Sadness 🎨💖",
+            "icon": "🎨",
+            "type": "Human Superpower",
+            "description": "Pouring authentic lived emotional experience onto canvas through colors, brushstrokes, and soul.",
+            "isAI": false,
+            "explanation": "HUMAN SUPERPOWER! Authentic emotional artistic expression comes from living, feeling human consciousness!",
+            "toastGuidance": {
+              "correct": "🎨 TRUE SUPERPOWER! Authentic emotional expression in art comes from the human soul! 🌟✨",
+              "incorrect": "Look for authentic emotional self-expression!"
+            }
+          },
+          {
+            "id": "target-6",
+            "name": "Welding Car Doors All Night Without Getting Sleepy 🔄",
+            "icon": "🔄",
+            "type": "Robot Superpower",
+            "description": "Mechanical assembly automation running uninterrupted on electrical power.",
+            "isAI": true,
+            "explanation": "ROBOT SKILL: Tireless mechanical endurance is an industrial robot superpower, not a heart talent!",
+            "toastGuidance": {
+              "correct": "That is mechanical repetition! Tap the superpower only a real human child possesses!",
+              "incorrect": "🔄 Repetitive factory stamina is a machine tool—pick human love or creativity!"
+            }
+          },
+          {
+            "id": "target-7",
+            "name": "Sharing Your Last Cookie with a Friend Who Tripped 🍪❤️",
+            "icon": "🍪",
+            "type": "Human Superpower",
+            "description": "Spontaneous generosity, sacrifice, and caring for others over personal appetite.",
+            "isAI": false,
+            "explanation": "HUMAN SUPERPOWER! Choosing to share a treat out of compassion is an act of pure human love and empathy!",
+            "toastGuidance": {
+              "correct": "🍪 TRUE SUPERPOWER! Generous sharing and empathy make the world sweet and kind! 💖🎉",
+              "incorrect": "Look for spontaneous generosity and compassion!"
+            }
+          },
+          {
+            "id": "target-8",
+            "name": "Choosing to Return a Lost Twenty-Dollar Bill 🧭✨",
+            "icon": "🧭",
+            "type": "Human Superpower",
+            "description": "Listening to your moral conscience and choosing honesty, integrity, and fairness.",
+            "isAI": false,
+            "explanation": "HUMAN SUPERPOWER! Moral conscience and ethical integrity are exclusive to human consciousness!",
+            "toastGuidance": {
+              "correct": "🧭 TRUE SUPERPOWER! Moral conscience and honest integrity guide human superheroes! 🌟🏆",
+              "incorrect": "Look for moral courage, honesty, and fairness!"
+            }
+          },
+          {
+            "id": "target-9",
+            "name": "Forgiving a Friend Who Accidentally Spilled Water on Your Art 🤝💖",
+            "icon": "🤝",
+            "type": "Human Superpower",
+            "description": "Understanding accidents, letting go of anger, and prioritizing friendship over damaged paper.",
+            "isAI": false,
+            "explanation": "HUMAN SUPERPOWER! Forgiveness and emotional understanding require deep human wisdom and heart!",
+            "toastGuidance": {
+              "correct": "🤝 TRUE SUPERPOWER! Forgiving friends and healing relationships is a golden human talent! 💖✨",
+              "incorrect": "Look for forgiveness and emotional wisdom!"
+            }
+          }
+        ],
+        "totalAITargets": 6,
+        "scoring": {
+          "pointsPerCorrect": 100,
+          "streakBonus": 50,
+          "perfectScoreBonus": 300
+        },
+        "auraGuidance": {
+          "start": "LOOK closely across the talent arena! Tap the 6 superpowers that belong ONLY to the human heart! 🔍❤️",
+          "correct": "BULLSEYE! That is a true human superpower no computer can ever feel! ⭐💖",
+          "incorrect": "⚡ Fast calculation and huge storage are computer tools—pick love, kindness, or imagination!",
+          "streak": "AMAZING TALENT STREAK! You know exactly what makes humans irreplaceable! 🔥🌟",
+          "complete": "ALL 6 HUMAN SUPERPOWERS DISCOVERED! You have unlocked your Technology Talent Ribbon! 🎀🏆"
+        }
+      },
+      {
+        "gameId": "game-2",
+        "gameType": "categorization",
+        "title": "🗂️ Robot Skill ⚡💾 vs Human Superpower ❤️🎨! The Great Sorter! 🤖👧",
+        "icon": "🗂️",
+        "instruction": "Read each superpower card below! Does it belong in the ROBOT TOOL BASKET ⚡💾 (Fast Math & Storage) or the HUMAN SUPERPOWER BASKET ❤️🎨 (Empathy, Love & Imagination)?",
+        "difficulty": "easy",
+        "duration": "6 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Welcome to the Great Superpower Sorter! 🤖🗂️ Ten superpower cards are tumbling into our sorting chamber! Drag each card into the right basket: Robot Tool or Human Superpower! Let us see your wisdom shine! 🌟👇",
+        "categories": [
+          {
+            "id": "cat-robot",
+            "name": "ROBOT SKILL ⚡💾 (Calculation, Storage & Repetition)",
+            "icon": "🤖",
+            "colour": "#00E5FF",
+            "description": "Tasks done best by computer chips, hard drives, and robotic motors."
+          },
+          {
+            "id": "cat-human",
+            "name": "HUMAN SUPERPOWER ❤️🎨 (Empathy, Love & Imagination)",
+            "icon": "💖",
+            "colour": "#FF1744",
+            "description": "Gifts of the human heart, soul, conscience, and genuine emotional consciousness."
+          }
+        ],
+        "items": [
+          {
+            "id": "item-1",
+            "label": "Calculating 500,000 math equations in 1 second ⚡",
+            "correctCategory": "cat-robot",
+            "feedback": "🌟 CORRECT! Robot skill! Silicon processors calculate numbers at lightning speed! ⚡🤖"
+          },
+          {
+            "id": "item-2",
+            "label": "Comforting a crying classmate who scraped their knee 🤗❤️",
+            "correctCategory": "cat-human",
+            "feedback": "🌟 CORRECT! Human superpower! Only living hearts feel empathy and give warm hugs! 💖🎉"
+          },
+          {
+            "id": "item-3",
+            "label": "Storing 50 million photos in cloud data drives 💾",
+            "correctCategory": "cat-robot",
+            "feedback": "🌟 CORRECT! Robot skill! Massive binary memory storage in hard drives and chips! 💾🤖"
+          },
+          {
+            "id": "item-4",
+            "label": "Inventing a bedtime fairy tale about a dragon who loves pancakes 🦄🥞",
+            "correctCategory": "cat-human",
+            "feedback": "🌟 CORRECT! Human superpower! Original storytelling and playful humor from the imagination! 🦄✨"
+          },
+          {
+            "id": "item-5",
+            "label": "Sorting 10,000 mail packages through the night without sleeping 🔄",
+            "correctCategory": "cat-robot",
+            "feedback": "🌟 CORRECT! Robot skill! Tireless mechanical endurance without fatigue or sleep! 📦🤖"
+          },
+          {
+            "id": "item-6",
+            "label": "Painting a sunset picture that expresses your own joy and gratitude 🎨🌅",
+            "correctCategory": "cat-human",
+            "feedback": "🌟 CORRECT! Human superpower! Authentic emotional self-expression poured onto canvas! 🎨💖"
+          },
+          {
+            "id": "item-7",
+            "label": "Sharing half of your sandwich with a friend who forgot their lunch 🥪❤️",
+            "correctCategory": "cat-human",
+            "feedback": "🌟 CORRECT! Human superpower! Generous love and caring for friends! 🥪🌟"
+          },
+          {
+            "id": "item-8",
+            "label": "Checking 100,000 lines of spelling in a dictionary in 0.1 seconds 📖⚡",
+            "correctCategory": "cat-robot",
+            "feedback": "🌟 CORRECT! Robot skill! Rapid text pattern matching against stored databases! 📖🤖"
+          },
+          {
+            "id": "item-9",
+            "label": "Standing up for a younger student who is being teased on the bus 🛡️✨",
+            "correctCategory": "cat-human",
+            "feedback": "🌟 CORRECT! Human superpower! Moral courage, justice, and protecting the weak! 🛡️🏆"
+          },
+          {
+            "id": "item-10",
+            "label": "Forgiving a friend who accidentally ripped your favorite poster 🤝💖",
+            "correctCategory": "cat-human",
+            "feedback": "🌟 CORRECT! Human superpower! Emotional wisdom, kindness, and healing friendships! 🤝🌟"
+          }
+        ],
+        "scoring": {
+          "pointsPerCorrect": 100,
+          "streakBonus": 40,
+          "flawlessBonus": 250
+        },
+        "auraGuidance": {
+          "start": "READ each superpower card carefully! Is it a cold robot tool ⚡, or a warm human heart superpower ❤️?",
+          "correct": "BULLSEYE! That superpower landed in the perfect golden basket! 🌟",
+          "incorrect": "⚡ Fast calculation is a computer skill—pick love, kindness, or imagination!",
+          "streak": "UNSTOPPABLE SUPERPOWER STREAK! You understand human uniqueness like a wise philosopher! 🔥🏆",
+          "complete": "ALL TEN SORTED FLAWLESSLY! You earned the Master Superpower Sorter Ribbon! 🎀🏅"
+        }
+      },
+      {
+        "gameId": "game-3",
+        "gameType": "matching",
+        "title": "🔗 The Harmony Dream Team Matcher! (Combine Robot Power + Human Heart) 🤝🚀",
+        "icon": "🔗",
+        "instruction": "Connect each Tireless Robot Tool on the left with the Human Heart Superpower on the right that guides it to do good in the world!",
+        "difficulty": "medium",
+        "duration": "5 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Ready for the grand dream team connection challenge? 🤖🔗 On the left are powerful robot tools. On the right are the human heart superpowers that guide them! Match them into superhero pairs! 🤝👇",
+        "pairs": [
+          {
+            "pairId": "pair-1",
+            "itemA": {
+              "id": "item-robot-xray",
+              "content": "AI Scans 1,000 X-Rays in 10 Seconds ⚡🩺",
+              "type": "Robot Tool"
+            },
+            "itemB": {
+              "id": "item-human-doctor",
+              "content": "Human Doctor Holds Patient's Hand with Compassion ❤️🤝",
+              "type": "Human Heart"
+            },
+            "connectionMeaning": "The computer spots the medical anomaly in seconds, but the human doctor provides soothing empathy, bedside warmth, and hope!"
+          },
+          {
+            "pairId": "pair-2",
+            "itemA": {
+              "id": "item-robot-drone",
+              "content": "Autonomous Drone Maps Storm Damage from the Sky 🚁🛰️",
+              "type": "Robot Tool"
+            },
+            "itemB": {
+              "id": "item-human-rescuer",
+              "content": "Human Rescuer Pulls Stranded Puppies and Families to Safety 🦺🐕",
+              "type": "Human Heart"
+            },
+            "connectionMeaning": "The drone navigates dangerous winds to spot survivors, but human rescuers risk their comfort to rescue living beings with love!"
+          },
+          {
+            "pairId": "pair-3",
+            "itemA": {
+              "id": "item-robot-music",
+              "content": "AI Audio Tool Generates 50 Drum Beat Patterns 🎧🥁",
+              "type": "Robot Tool"
+            },
+            "itemB": {
+              "id": "item-human-musician",
+              "content": "Human Songwriter Writes Lyrics About Healing a Broken Heart 🎵💖",
+              "type": "Human Heart"
+            },
+            "connectionMeaning": "The audio software arranges background beats, but the human musician expresses genuine heartbreak, healing, and soul!"
+          },
+          {
+            "pairId": "pair-4",
+            "itemA": {
+              "id": "item-robot-satellite",
+              "content": "Satellites Track Global Rainforest Tree Density 🌳🛰️",
+              "type": "Robot Tool"
+            },
+            "itemB": {
+              "id": "item-human-nature",
+              "content": "Human Activist Fights to Pass Laws Protecting the Forest 📜🌿",
+              "type": "Human Heart"
+            },
+            "connectionMeaning": "Satellites count lost trees objectively, but human environmentalists lead with moral passion to save Earth's ecosystems!"
+          },
+          {
+            "pairId": "pair-5",
+            "itemA": {
+              "id": "item-robot-spelling",
+              "content": "AI Spellchecker Corrects 10,000 Grammar Typos 📝⚡",
+              "type": "Robot Tool"
+            },
+            "itemB": {
+              "id": "item-human-author",
+              "content": "Human Author Imagines an Epic Tale of Courage and Friendship 🦄📖",
+              "type": "Human Heart"
+            },
+            "connectionMeaning": "The spellchecker catches typos, but the human author creates inspiring characters, suspense, and heartwarming adventures!"
+          },
+          {
+            "pairId": "pair-6",
+            "itemA": {
+              "id": "item-robot-printer",
+              "content": "3D Printer Fabricates Lightweight Bionic Prosthetic Leg 🦾🦿",
+              "type": "Robot Tool"
+            },
+            "itemB": {
+              "id": "item-human-therapist",
+              "content": "Physical Therapist Cheers Patient's First Running Steps 🏃‍♂️👏",
+              "type": "Human Heart"
+            },
+            "connectionMeaning": "The 3D printer manufactures carbon-fiber limbs, but the therapist provides joyful encouragement and belief in the patient's recovery!"
+          }
+        ],
+        "scoring": {
+          "pointsPerPair": 120,
+          "completionBonus": 280
+        },
+        "auraGuidance": {
+          "start": "CONNECT each fast robot tool on the left with the human heart superpower that gives it soul on the right! 🔗🤝",
+          "correct": "PERFECT DREAM TEAM MATCH! Robot Power + Human Heart = Superhero Success! ⚡❤️",
+          "incorrect": "Look for the human heart superpower that brings compassion, ethics, or creativity to that tool!",
+          "complete": "ALL SIX PAIRS CONNECTED! You have earned the Golden Harmony Trophy! 🏆🎉"
+        }
+      }
+    ],
+    "activities": [
+      {
+        "activityId": "activity-1",
+        "title": "Human Superpower Trophy Scale 🏆",
+        "type": "hands-on",
+        "duration": "25 minutes",
+        "icon": "🏆",
+        "roboPiActivityBrief": "BEEP BOOP! Time for our headline hands-on activity: The Human Superpower Trophy Scale! 🤖⚖️ You get to build a real cardboard balance scale that proves why human kindness, creativity, and love are heavier and more valuable than cold robot computing speed!",
+        "description": "In this creative, hands-on construction activity, students build an authentic physical balance scale using cardboard, a ruler or coat hanger, paper cups, and colorful decorative weights! On one side of the scale, students place the 'Robot Skill Tokens' (Fast Math ⚡, Huge Storage 💾, 24/7 Repetition 🔄). On the other side, students place their glowing 'Human Superpower Gemstones' (Empathy ❤️, Fairy Tale Imagination 🦄, Original Art 🎨, Kindness 🤗, Moral Conscience 🧭). Students discover that when human heart qualities are weighed, they tip the balance as the most precious superpowers on Earth! Students decorate their trophy scale with gold ribbons, glitter, and personal pledges of kindness, presenting their scale aloud to classmates or family members!",
+        "materials": [
+          "📦 1 sturdy cardboard base or clothes hanger",
+          "📏 1 wooden ruler (30 cm) or strong cardboard balance beam",
+          "🥤 2 paper cups or plastic cups (representing the two balance pans)",
+          "🧶 String, yarn, or pipe cleaners to suspend the cups from the beam",
+          "📎 1 wooden pencil or large paperclip to act as the central pivot fulcrum",
+          "🎨 Colorful markers, glitter pens, and stickers (hearts ❤️, lightnings ⚡, stars 🌟)",
+          "📄 Heavy paper or cardstock to cut out 5 'Human Superpower Gemstones' and 3 'Robot Tokens'",
+          "🏆 A gold star sticker to crown the top of the trophy scale"
+        ],
+        "steps": [
+          "Step 1: BUILD THE FULCRUM: Tape a wooden pencil upright onto your cardboard base, or use a sturdy clothes hanger hooked onto a doorknob as your central balancing point.",
+          "Step 2: ATTACH THE BALANCE BEAM: Balance your 30cm ruler evenly across the central pencil pivot. Secure it loosely with a looped piece of yarn or tape so it can tilt smoothly left and right.",
+          "Step 3: HANG THE CUPS: Punch two holes at the rims of each paper cup. Thread 15cm pieces of yarn through the cups and tie one cup to the left end of the ruler, and one cup to the right end.",
+          "Step 4: LABEL THE PANS: On the Left Cup, write in bold blue letters: 'ROBOT TOOLS ⚡💾' (Fast Math, Big Memory, No Sleep). On the Right Cup, write in shiny red letters: 'HUMAN SUPERPOWERS ❤️🎨' (Empathy, Imagination, Kindness).",
+          "Step 5: CRAFT ROBOT TOKENS: Cut 3 small cardboard circles. Draw lightning bolts ⚡, memory disks 💾, and factory gears 🔄. Label them: '1,000,000 Math Equations', '100,000 PDF Books', '24-Hour Repetition'. Place them inside the Left Cup.",
+          "Step 6: CRAFT HUMAN GEMSTONES: Cut 5 sparkling heart and star shapes from colored cardstock. Decorate them with glitter! Label them: 1. 'Hugging a Crying Friend ❤️', 2. 'Inventing Fairy Tales 🦄', 3. 'Painting My Own Feelings 🎨', 4. 'Sharing My Cookie 🍪', 5. 'Doing What is Right 🧭'.",
+          "Step 7: WEIGH THE SUPERPOWERS: Gently place your Human Gemstones into the Right Cup one by one! Watch the scale tilt down toward the Human Superpower side! See how much heavier, richer, and more abundant human love and creativity are!",
+          "Step 8: CROWN THE TROPHY: Stick your golden star sticker 🏆 at the top of the scale beam. Present your scale to your family or classmates: 'This scale proves that my heart is my greatest superpower in a world of smart machines!'"
+        ],
+        "thingsToLookFor": [
+          "⚖️ Did the student construct a functional physical balance beam that tilts smoothly?",
+          "🎨 Did the student clearly label both cups: Robot Tools vs Human Superpowers?",
+          "❤️ Did the 5 crafted gemstones reflect genuine human qualities (empathy, imagination, forgiveness, sharing)?",
+          "🗣️ Did the student explain aloud why empathy and kindness cannot be programmed into silicon chips?",
+          "🌟 Did the student express personal pride in their unique technology talent?",
+          "👏 Did family members or classmates celebrate the student's presentation with applause?",
+          "🏆 Did the student proudly display the finished trophy scale on their desk or nightstand?"
+        ],
+        "discussionWithGrownUp": [
+          "When you were a child, what was one machine that felt like magic (like early computers, video games, or microwaves)?",
+          "Can a computer ever feel true heartbreak, or genuine pride when watching its child ride a bike for the first time?",
+          "Why is human empathy the most important skill for doctors, nurses, teachers, and leaders?",
+          "How can we use smart AI tools at home to save time on chores so we have MORE time to talk, laugh, and play together?"
+        ],
+        "familyConnection": "Invite parents and siblings to write down one 'Family Heart Superpower' on a paper heart (e.g. 'Mom makes the best comforting soup when I am sick', 'Dad tells hilarious bedtime jokes', 'Sister shares her crayons'). Add all family hearts into the Human Superpower cup! 👨‍👩‍👧❤️",
+        "learningOutcome": "Children internalize self-worth, agency, and technology ethics by tangibly contrasting algorithmic capabilities with human emotional consciousness and social empathy.",
+        "auraGuidance": {
+          "before": "GATHER your ruler, paper cups, string, and markers to build the Human Superpower Trophy Scale! 📐🥤",
+          "after": "SCALE COMPLETED! The balance proves your heart is the greatest treasure in the tech world! ⚖️🏆"
+        }
+      },
+      {
+        "activityId": "activity-2",
+        "title": "🦄 The 'Feelings & Fairy Tales' Spontaneous Story Circle! 📖🎭",
+        "type": "roleplay-creative",
+        "duration": "15 minutes",
+        "icon": "🦄",
+        "roboPiActivityBrief": "BEEP BOOP! Time to exercise your magical imagination muscles! 🤖🦄 In this theater game, we prove that human children invent hilarious, heartwarming stories that no computer algorithm could ever dream up!",
+        "description": "Students sit in a warm circle with family or classmates. One person starts with a completely silly, never-before-heard sentence (e.g. 'Yesterday, an emerald-green dragon knocked on my kitchen window asking for strawberry milk!'). Each child adds one spontaneous sentence that must include a real emotion (excitement, nervousness, joy, bravery) or an act of kindness! The group weaves a completely unique, hilarious fairy tale filled with personal inside jokes, genuine giggles, and emotional heart!",
+        "materials": [
+          "🪄 1 'Storyteller's Wand' (a colorful marker, ruler, or wooden spoon)",
+          "🎩 Optional: A silly hat or funny glasses for the speaker to wear",
+          "📝 A blank sheet of paper for a scribe to write down the story's best lines"
+        ],
+        "steps": [
+          "Step 1: Sit in a comfortable circle on the rug or around the dining table.",
+          "Step 2: The person holding the Storyteller's Wand starts the story with an absurd, imaginative creature.",
+          "Step 3: Pass the wand to the next person. They must add one sentence containing a real feeling (e.g. 'The dragon was secretly nervous because he had never flown before!').",
+          "Step 4: Continue around the circle for 3 full rounds, building suspense, humor, and a heartwarming resolution.",
+          "Step 5: Conclude with an act of kindness that saves the day (e.g. 'The children gave the dragon warm hugs and baked him fresh pancakes!').",
+          "Step 6: Celebrate with a group bow and loud applause for the human imagination! 🎭👏"
+        ],
+        "thingsToLookFor": [
+          "🦄 Did the story flow spontaneously with original humor and surprising twists?",
+          "💖 Did students incorporate real emotional states (nervousness, relief, pride, kindness)?",
+          "😂 Did the circle share authentic belly laughs and joyful engagement?"
+        ],
+        "discussionWithGrownUp": [
+          "Why did our story make us laugh so much harder than a story read from a search engine?",
+          "How do our shared family memories make our storytelling special and unique?"
+        ],
+        "familyConnection": "Record the audio of your family's fairy tale on a smartphone and listen to it together on car rides! 🚗📻",
+        "learningOutcome": "Develops narrative competence, emotional literacy, divergent creative thinking, and verbal collaboration.",
+        "auraGuidance": {
+          "before": "GRAB the Storyteller's Wand and take your seat in the magical circle! 🪄✨",
+          "after": "STORY WOVEN! Your group imagination created magic that no computer could ever predict! 🦄🎉"
+        }
+      },
+      {
+        "activityId": "activity-3",
+        "title": "🎤 The Family Heart-to-Heart Talent Interview! 👨‍👩‍👧💖",
+        "type": "family-discussion",
+        "duration": "15 minutes",
+        "icon": "🎤",
+        "roboPiActivityBrief": "BEEP BOOP! Turn into a roving television reporter! 🤖🎤 Interview your parents, grandparents, or older siblings to discover what human superpower they use most at work and at home!",
+        "description": "The student acts as a Chief Technology Talent Reporter, holding a hairbrush or marker as a microphone. They interview at least two family members using three golden questions: 1. 'What part of your job could a smart computer do easily?', 2. 'What part of your job requires your human heart, patience, or empathy that no computer could ever do?', 3. 'What is one moment when a warm hug or kind word saved your day?' Students write down the answers and share their findings!",
+        "materials": [
+          "🎤 1 pretend microphone (wooden spoon, marker, or hairbrush)",
+          "📋 1 Reporter's Notepad and pencil",
+          "🕶️ Optional: Sunglasses or a press reporter badge"
+        ],
+        "steps": [
+          "Step 1: Put on your press badge and approach your interview subject with a big smile: 'Excuse me! I am reporting for the 2040 Tomorrow News! May I ask you three questions?'",
+          "Step 2: Ask Question 1: What repetitive computer tasks do you do every day (emails, spreadsheets, typing)?",
+          "Step 3: Ask Question 2: When do you have to use human empathy, listening, or caring with your coworkers, students, or customers?",
+          "Step 4: Ask Question 3: Tell me about a time when another human being's kindness turned a terrible day into a great day!",
+          "Step 5: Write down the most inspiring quote on your notepad.",
+          "Step 6: Thank your interviewee with a big warm hug! 🤗❤️"
+        ],
+        "thingsToLookFor": [
+          "🎤 Did the student conduct the interview with confidence and polite engagement?",
+          "💡 Did the adult identify the clear distinction between their mechanical tasks and human-centered tasks?",
+          "❤️ Did the interview foster warm emotional bonding and gratitude between generations?"
+        ],
+        "discussionWithGrownUp": [
+          "What advice would you give a nine-year-old child about growing up in a world with smart AI?",
+          "Why is being a kind, honest, reliable person more important than being the fastest person in the room?"
+        ],
+        "familyConnection": "Share the favorite interview quote at the dinner table so everyone can celebrate the family's shared heart superpowers! 🍽️✨",
+        "learningOutcome": "Fosters intergenerational communication, career empathy, perspective-taking, and real-world technology awareness.",
+        "auraGuidance": {
+          "before": "PREPARE your microphone and notepad to interview your favorite grown-ups! 🎤📋",
+          "after": "INTERVIEW FILED! You discovered the secret heart superpowers powering your family! 🌟💖"
+        }
+      }
+    ],
+    "realWorldExamples": [
+      {
+        "id": "rwe-1",
+        "title": "🍪 Sharing a cookie when a friend falls down on the playground 🍪❤️",
+        "scenario": "Sharing a cookie when a friend falls down on the playground demonstrates the irreplaceable power of human empathy. At Lincoln Elementary during afternoon recess, eight-year-old Lucas was racing across the blacktop when his foot caught a crack in the pavement. Lucas crashed down hard, scraping both knees and his palms. He sat on the asphalt with tears streaming down his face, holding his bleeding knees. A smart camera mounted on the playground fence recorded the fall and logged: 'INCIDENT DETECTED: 14:22:05. SPEED OF DECELERATION: 4.2 M/S. SUBJECT: LUCAS T. STATUS: STATIONARY.' The computer camera had perfect vision and precise mathematical calculation, but it remained cold and motionless on its pole.",
+        "aiConnection": "Artificial intelligence computer vision vs Human social-emotional empathy! AI vision models (like YOLO and pose-estimation algorithms) can detect falls, measure deceleration, and trigger automated emergency alarms in modern schools and eldercare facilities. That is a valuable safety tool! But notice what the AI CANNOT do: the camera cannot feel the sudden shock and embarrassment in Lucas's stomach. It cannot step forward, wipe away his tears, or offer warmth. Ten-year-old Maya saw Lucas fall from across the basketball court. She immediately stopped playing, sprinted across the court, knelt beside Lucas on the dusty asphalt, wrapped her arm around his trembling shoulders in a warm hug 🤗, and reached into her jacket pocket for the fresh chocolate-chip cookie she had saved from lunchtime. Maya broke the cookie in half: 'Here Lucas, take the big half! You're super brave. Let's walk together to Mrs. Hernandez's office to get some fun dinosaur bandages.' Lucas smiled through his tears, took a bite of the sweet cookie, and stood up. Maya's empathy transformed fear and pain into friendship and safety — an act of pure human love that no algorithm in the universe can ever feel or replace!",
+        "observation": "Notice that while the camera logged the data in 0.05 seconds, it was Maya's spontaneous human kindness and shared cookie that healed Lucas's emotional distress!",
+        "discussion": "Why can an AI camera detect a fall, but never understand why an injured child needs a warm hug and comforting words? How does human kindness heal emotional pain?",
+        "roboPiTip": "BEEP BOOP! Always remember: sensors see what happened, but human hearts care about what happened! Your kindness is the world's most powerful medicine! 🍪❤️"
+      },
+      {
+        "id": "rwe-2",
+        "title": "🦄 Making up a funny bedtime story for your baby brother 📖👶",
+        "scenario": "Making up a funny bedtime story for your baby brother proves that authentic creative imagination springs from personal affection and shared family memories. On a rainy Tuesday evening, three-year-old Oliver was tossing and turning in his crib, crying because the thunder outside rattled the bedroom window. Oliver's parents were busy calming the family puppy downstairs. Oliver's nine-year-old brother, Kabir, walked into the nursery. Kabir could have pulled out a tablet and asked a generative AI chatbot: 'Generate a 100-word bedtime story about a storm.' An AI would have rapidly output a generic story using statistically common adjectives about gentle raindrops and cozy blankets.",
+        "aiConnection": "Generative Large Language Models (LLMs) vs Human spontaneous imaginative empathy! Generative AI algorithms predict the next most likely token (word) based on billions of internet web pages. They calculate mathematical probability vectors. But Kabir didn't calculate word probabilities; Kabir knew Oliver's unique personality! Kabir remembered that that morning Oliver had spilled blueberry yogurt on his head, and that Oliver loved giant green dump trucks. Kabir sat next to the crib, picked up a plush teddy bear, made a squeaky funny voice, and whispered: 'Oliver! Did you hear that big rumble outside? That isn't scary thunder! That is Captain Bulldozer, the giant green dump truck in the clouds, delivering 10,000 giant blueberry marshmallows to the moon! But oh no — Captain Bulldozer sneezed *ACHOO!* and dropped blueberry yogurt all over his steering wheel!' Oliver stopped crying, stared at Kabir with wide eyes, and burst into a joyful belly giggle: 'Yogurt on the truck!' Kabir continued the story with funny engine noises until Oliver's eyelids fluttered shut and he drifted into peaceful sleep.",
+        "observation": "The AI text generator can produce grammatically correct sentences, but Kabir tailored the story using deep familial affection, shared humor, and situational intuition that no computer could replicate!",
+        "discussion": "Why do personal memories and knowing what makes someone laugh create stories that are thousands of times more meaningful than computer-generated text?",
+        "roboPiTip": "BEEP BOOP! Storytelling is not just arranging words in order; storytelling is sharing your soul and making someone feel safe and loved! You are the master storyteller! 🦄✨"
+      },
+      {
+        "id": "rwe-3",
+        "title": "🎨 Painting your own feelings in art class 🖌️💖",
+        "scenario": "Painting your own feelings in art class illustrates how genuine emotional consciousness and personal lived experience give birth to authentic visual art. In Mr. Morales's 4th-grade visual arts studio, the class assignment was simple: 'Paint what courage feels like to you.' In modern digital art software, generative AI diffusion models (like Midjourney or Stable Diffusion) can generate millions of intricate digital pictures of knights with glowing swords or superheroes standing on skyscrapers in ten seconds flat by sampling statistical pixel clusters.",
+        "aiConnection": "Generative image diffusion algorithms vs Human emotional self-expression! Generative AI models synthesize pixels by reversing Gaussian noise guided by text prompt tokens. They have no personal memories, no heartbeat, no fear, and no courage. But ten-year-old Sofia had experienced real courage that very year: Sofia had moved from a small mountain village to a giant noisy city, having to learn a brand-new language and walk into a school where she didn't know a single soul. When Sofia picked up her paintbrush, she didn't paint a clichéd knight with a metal sword. Sofia painted a small, delicate white sparrow with a tiny bandaged wing, perched on a giant iron bridge surrounded by stormy gray clouds, but with its beak open singing toward a narrow beam of golden sunlight. As Sofia painted, tears of memory and pride filled her eyes. When Mr. Morales and the students saw Sofia's painting, the room fell silent. Everyone felt the profound emotional weight, the loneliness, the resilience, and the radiant hope in Sofia's brushstrokes.",
+        "observation": "The AI creates visually complex pixel textures without feeling anything; Sofia translated her real human struggle, pain, and triumph into art that touched other human hearts!",
+        "discussion": "Why does art created from real human struggles and triumphs move our hearts so much more deeply than an artificial picture generated by a computer prompt?",
+        "roboPiTip": "BEEP BOOP! Art is a bridge connecting one human soul to another human soul! A computer can render pictures, but only YOU have the soul to paint real feelings! 🎨🌟"
+      }
+    ],
+    "practiceExercises": [
+      {
+        "id": "pe-1",
+        "title": "⚡ Superpower Radar: Robot Skill ⚡ or Human Superpower ❤️? (Quick Classifier) 🧰✨",
+        "instruction": "Read each workplace and daily life scenario below. Determine whether it represents a ROBOT TOOL SKILL (Fast Math ⚡, Big Memory 💾, 24/7 Repetition 🔄) or a TRUE HUMAN SUPERPOWER (Empathy ❤️, Fairy Tale Imagination 🦄, Moral Conscience 🧭)!",
+        "activity": "Read the 6 scenario prompts below. Match each scenario with its correct superpower classification and write down why human hearts are essential!",
+        "items": [
+          {
+            "scenario": "An autonomous warehouse robot transports 2,000 heavy metal crates across a concrete factory floor all night without pausing.",
+            "type": "Robot Tool Skill 🔄",
+            "reasoning": "Tireless mechanical repetition and electrical endurance without physical exhaustion."
+          },
+          {
+            "scenario": "A young boy notices his new classmate eating lunch alone, walks over with his tray, and asks: 'Can I sit with you?'",
+            "type": "Human Superpower ❤️",
+            "reasoning": "Social empathy, noticing loneliness in others, and offering spontaneous inclusion and friendship."
+          },
+          {
+            "scenario": "A banking supercomputer verifies 500,000 credit card transaction security codes in three-hundredths of a second.",
+            "type": "Robot Tool Skill ⚡",
+            "reasoning": "Lightning-fast mathematical verification and cryptographic database comparison."
+          },
+          {
+            "scenario": "A student invents a brand-new comic book about a superhero hedgehog whose superpower is shooting rainbow bubbles of kindness.",
+            "type": "Human Superpower 🦄",
+            "reasoning": "Original imaginative character design, creative playfulness, and moral messaging."
+          },
+          {
+            "scenario": "A smart weather station logs rainfall, wind speed, and barometric pressure every second for ten years without missing a reading.",
+            "type": "Robot Tool Skill 💾",
+            "reasoning": "Automated sensor telemetry logging and permanent non-volatile data storage."
+          },
+          {
+            "scenario": "A girl finds a shiny gold watch on the playground bench and immediately turns it in to the principal's lost-and-found office.",
+            "type": "Human Superpower 🧭",
+            "reasoning": "Moral integrity, ethical conscience, and choosing fairness over personal temptation."
+          }
+        ],
+        "scoring": "Score 15 points per correct classification. Perfect score: 90 points!",
+        "feedback": {
+          "correct": "🌟 SPOT ON! You can spot a human heart superpower from a mile away! 🚀🏆",
+          "incorrect": "🤔 Remember: Silicon calculates numbers and stores data; human hearts love, imagine, and care!"
+        }
+      },
+      {
+        "id": "pe-2",
+        "title": "📝 Complete Robo-Pi's Technology Talent Launchpad Blueprint! 🌟❤️",
+        "instruction": "Fill in the missing words in the superpower blueprint using the Word Bank below to help Robo-Pi complete the 2040 Golden Harmony Formula!",
+        "activity": "Read the blueprint paragraphs and insert the correct word from the Word Bank into each numbered blank space.",
+        "wordBank": [
+          "Empathy ❤️",
+          "Fast Math ⚡",
+          "Imagination 🦄",
+          "Huge Memory 💾",
+          "Kindness 🤗",
+          "Dream Team 🤝",
+          "Moral Conscience 🧭",
+          "Human Heart 💖"
+        ],
+        "sentences": [
+          {
+            "number": 1,
+            "sentence": "Computers possess the incredible ability to perform [Blank 1], calculating millions of equations in less than a second.",
+            "correctAnswer": "Fast Math ⚡",
+            "explanation": "Silicon processors execute rapid arithmetic calculations at gigahertz clock speeds."
+          },
+          {
+            "number": 2,
+            "sentence": "Inside data storage chips, computers have [Blank 2], holding entire libraries of books and pictures permanently.",
+            "correctAnswer": "Huge Memory 💾",
+            "explanation": "Digital hard drives and flash memory sectors store massive datasets without forgetting."
+          },
+          {
+            "number": 3,
+            "sentence": "When a friend is crying on the playground, only a human possesses [Blank 3] to feel their sadness and offer comfort.",
+            "correctAnswer": "Empathy ❤️",
+            "explanation": "Empathy is the emotional resonance that allows humans to share and understand another being's feelings."
+          },
+          {
+            "number": 4,
+            "sentence": "Making up funny bedtime stories about dancing space hamsters springs from the magical spark of [Blank 4].",
+            "correctAnswer": "Imagination 🦄",
+            "explanation": "Imagination allows humans to conceive novel ideas, fairy tales, and humor not present in existing data."
+          },
+          {
+            "number": 5,
+            "sentence": "Sharing your lunch cookie with someone who forgot their meal is an act of spontaneous [Blank 5].",
+            "correctAnswer": "Kindness 🤗",
+            "explanation": "Kindness is compassionate love translated into generous action."
+          },
+          {
+            "number": 6,
+            "sentence": "Choosing to return a lost wallet because it belongs to someone else is guided by your inner [Blank 6].",
+            "correctAnswer": "Moral Conscience 🧭",
+            "explanation": "Moral conscience is the ethical inner compass that discerns right from wrong and champions fairness."
+          },
+          {
+            "number": 7,
+            "sentence": "The future is never Humans vs Robots; it is Humans + Robots working together as the ultimate [Blank 7].",
+            "correctAnswer": "Dream Team 🤝",
+            "explanation": "Synergistic collaboration combines tirelessness and computing power with human wisdom and empathy."
+          },
+          {
+            "number": 8,
+            "sentence": "In a world full of smart machines, your greatest technology talent will always be your warm [Blank 8].",
+            "correctAnswer": "Human Heart 💖",
+            "explanation": "The human heart embodies love, ethical agency, and the soulful purpose that guides all technology."
+          }
+        ],
+        "scoring": "Score 12.5 points per correct fill-in. Perfect score: 100 points!",
+        "feedback": {
+          "success": "🌟 BLUEPRINT COMPLETE! You are officially equipped with the Golden Harmony Formula of 2040! 🚀🏅",
+          "partial": "Almost there! Review the difference between robot speed tools and human heart superpowers!"
+        }
+      }
+    ],
+    "lessonSummary": {
+      "title": "🌟 Lesson Summary: The Golden Harmony of Humans & Smart Machines! 🤝✨",
+      "keyTakeaways": [
+        "⚡ Computers excel at lightning-fast math, huge memory storage, and 24-hour repetitive chores without getting tired.",
+        "❤️ Only humans possess genuine emotional empathy, love, and the ability to comfort a crying friend with a warm hug 🤗.",
+        "🦄 Original creativity, fairy tales, and spontaneous belly laughs come from the human soul, not statistical algorithms.",
+        "🎨 Painting your own feelings expresses authentic lived experience that no computer pixel generator can truly feel.",
+        "🧭 Humans possess a moral conscience that knows fairness, honesty, justice, and standing up for the weak.",
+        "🤝 The future belongs to the Dream Team: Robots do the heavy lifting, while human hearts provide the vision, empathy, and soul!"
+      ],
+      "recap": "In this lesson, we discovered that true technology talent is not about competing against computers in speed or memory. Computers are built to calculate and store data! Your true superpower is your human heart — your empathy, your capacity to love, your wild imagination, and your moral courage. When you use smart machines as your helpful assistants while leading with kindness, you can heal people, protect the Earth, and create a future of breathtaking beauty! 🌟💖🚀",
+      "reflectionPrompt": "What is ONE human superpower (kindness, empathy, art, storytelling, or fairness) that you will use today to make someone smile?",
+      "parentNote": "Today, your child explored the distinct boundary between computer capabilities (calculation, data storage, repetition) and uniquely human superpowers (empathy, creative imagination, moral conscience). Encourage your child to reflect on how their warmth and kindness make them irreplaceable in a technology-rich world! 👨‍👩‍👧❤️",
+      "badgeEarned": "The Master of Technology Talent Golden Medal 🏅✨",
+      "achievement": "Golden Heart & Mind Superpower License Granted! 🌟🏆"
+    }
+  },
+  "assessment": {
+    "questions": [
+      {
+        "questionId": "q1",
+        "question": "What is an example of a robot superpower that computers can do much faster than humans? ⚡💾",
+        "options": [
+          "Hugging a crying friend with warmth and love 🤗",
+          "Calculating millions of math problems in one second ⚡",
+          "Feeling sad when a pet is sick 🐶",
+          "Painting true personal feelings of joy 🎨"
+        ],
+        "correctOptionIndex": 1,
+        "explanation": "Computers use high-speed silicon processors to perform millions of arithmetic calculations per second without mental fatigue!",
+        "hint": "Think about lightning-fast numbers and calculations!"
+      },
+      {
+        "questionId": "q2",
+        "question": "What is something ONLY a human child can do that no computer or AI can ever feel? ❤️🤗",
+        "options": [
+          "Storing 100,000 PDF documents on a hard drive 💾",
+          "Feeling genuine empathy and comforting a hurt friend with a warm hug ❤️",
+          "Sorting thousands of warehouse packages all night without sleep 📦",
+          "Checking spelling in a dictionary in 0.01 seconds 📖"
+        ],
+        "correctOptionIndex": 1,
+        "explanation": "Empathy, love, and emotional caring come exclusively from the living human heart and consciousness!",
+        "hint": "Look for the warm hug and caring heart!"
+      },
+      {
+        "questionId": "q3",
+        "question": "Why is making up a funny bedtime story for your baby brother a human superpower? 🦄👶",
+        "options": [
+          "Because an AI does not know your brother's giggles, family memories, or how to comfort him with love 💖",
+          "Because computers don't have enough electricity to write words",
+          "Because bedtime stories can only be read from old paper books",
+          "Because robots are banned from entering bedrooms"
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Human storytelling combines emotional intuition, shared family memories, and genuine affection to bring comfort and joy!",
+        "hint": "Think about personal love and knowing what makes your brother giggle!"
+      },
+      {
+        "questionId": "q4",
+        "question": "What does it mean to have a 'Moral Conscience'? 🧭✨",
+        "options": [
+          "Being able to count backward from one million",
+          "Knowing what is fair and choosing to do what is right, like returning a lost wallet 🌟",
+          "Running faster than an electric bicycle",
+          "Having a metal robotic arm"
+        ],
+        "correctOptionIndex": 1,
+        "explanation": "Moral conscience is the inner ethical guide that enables humans to choose honesty, justice, and kindness over selfish gain!",
+        "hint": "Think about honesty and choosing what is right!"
+      },
+      {
+        "questionId": "q5",
+        "question": "What is the Golden Harmony Formula for the future of technology? 🤝🏆",
+        "options": [
+          "Humans must fight against robots to see who wins",
+          "Humans should stop thinking and let computers make all decisions",
+          "Robot Power + Human Heart = Superhero Success! (AI does heavy lifting, humans bring the soul) 🌟",
+          "All computers should be thrown into the ocean"
+        ],
+        "correctOptionIndex": 2,
+        "explanation": "The Golden Harmony Formula unites tireless computer tools with human empathy, creativity, and moral guidance to make the world better!",
+        "hint": "Look for the dream team combination of robot power and human heart!"
+      }
+    ]
+  },
+  "resources": [
+    {
+      "title": "Human Superpower Trophy Scale Printable Template 🏆",
+      "type": "worksheet",
+      "url": "/content/junior/worksheets/class4-ch4-l2-trophy-scale.pdf",
+      "description": "Printable balance scale cutout sheets with labeled Robot Tokens and shiny Human Superpower Gemstones."
+    },
+    {
+      "title": "Robo-Pi's Heart vs Circuits Activity Sheet 🤖❤️",
+      "type": "worksheet",
+      "url": "/content/junior/worksheets/class4-ch4-l2-heart-vs-circuits.pdf",
+      "description": "Coloring and matching activity sheet exploring fast math vs warm hugs."
+    },
+    {
+      "title": "Video: What Makes Humans Unique in the Age of AI? 🌟🎬",
+      "type": "video",
+      "url": "https://aiolympiad.org/junior/videos/what-makes-humans-unique",
+      "description": "An inspiring animated exploration of human creativity, empathy, and ethical leadership."
+    }
+  ],
+  "teacherNotes": {
+    "preparation": "Prepare cardstock, scissors, ruler/balance beam materials, paper cups, yarn, and colorful markers for Activity 1 (Human Superpower Trophy Scale). Have examples of balance scales ready to show.",
+    "lessonFlow": "Begin with the Hook Story of the Talent Show at Sunshine Elementary. Contrast Calculator-Bot-9000's lightning math with Anya's comforting cookie hug. Guide students through the 3 core comparisons (Fast Math vs Hugs, Patterns vs Fairy Tales, Cold Logic vs Moral Conscience). Facilitate the hands-on Trophy Scale craft, and conclude with the Golden Harmony Formula.",
+    "keyDiscussionPoints": [
+      "Why should children never feel intimidated by fast computers or AI calculators?",
+      "How does empathy allow humans to solve complex community problems that computers cannot even comprehend?",
+      "Why is emotional intelligence (EQ) just as important as logical intelligence (IQ) in the 21st century?",
+      "How can we use technology tools to magnify human kindness rather than replace human connection?"
+    ],
+    "pedagogicalTips": [
+      "Validate students' natural feelings of wonder or anxiety about artificial intelligence.",
+      "Celebrate varied human superpowers: not every child is an artist or math wizard, but every child can practice kindness, listening, and empathy.",
+      "Emphasize the bicycle analogy: AI is a tool that accelerates human potential, but human agency steers the journey.",
+      "Use interactive physical gestures: have children mimic stiff robot motions, then transition into warm, fluid human smiles and hugs."
+    ],
+    "commonMisconceptions": [
+      "❌ Misconception: 'Computers are smarter than humans, so humans won't be needed in the future.' → Correction: Computers are fast at calculating data, but completely lack consciousness, empathy, moral wisdom, and creative soul.",
+      "❌ Misconception: 'AI generated art and stories mean computers have feelings.' → Correction: AI recombines human data mathematically; it feels zero emotion, zero joy, and zero heartbreak.",
+      "❌ Misconception: 'To be good at technology, you must act like a computer.' → Correction: The best technology leaders are deeply human, leading with empathy, ethics, and care for others."
+    ],
+    "differentiation": {
+      "forAdvancedStudents": "Encourage students to analyze ethical scenarios where automated algorithms make mistakes (e.g. self-driving car dilemmas) and explain how human moral oversight is required.",
+      "forStrugglingStudents": "Focus primarily on the tactile contrast: holding a cold calculator vs giving a warm hug. Use simple picture cards for sorting.",
+      "forELLStudents": "Provide illustrated flashcards pairing English vocabulary (Empathy, Calculation, Memory, Conscience) with universal emojis (❤️, ⚡, 💾, 🧭)."
+    },
+    "extensionActivities": [
+      "Create a classroom 'Kindness Wall' where students pin paper stars recognizing classmates' daily human superpowers.",
+      "Host a mini-debate: 'Can a robot ever be a true best friend?' discussing companionship vs functional assistance.",
+      "Write a collaborative classroom fairy tale combining human imagination with an AI rhyming assistant."
+    ]
+  },
+  "additionalResources": [
+    {
+      "title": "Printable Human Superpower Gemstones & Tokens 💎",
+      "url": "https://aiolympiad.org/resources/class4/ch4/superpower-gemstones.pdf",
+      "type": "pdf",
+      "description": "High-resolution full-color printable sheets with cut-out gemstones for the balance scale activity."
+    },
+    {
+      "title": "Interactive Balance Scale Simulator ⚖️💻",
+      "url": "https://aiolympiad.org/junior/simulators/superpower-scale",
+      "type": "interactive",
+      "description": "Digital web sandbox where students drag robot tools and human superpowers onto an interactive virtual scale."
+    }
+  ],
+  "assessmentQuestions": [
+    {
+      "questionId": "aq1",
+      "question": "Which computational attribute represents an exclusive capability of silicon microprocessor architecture compared to human cognition? ⚡",
+      "options": [
+        "Processing millions of deterministic arithmetic calculations per second with zero cognitive fatigue ⚡",
+        "Experiencing subjective emotional empathy during social interactions",
+        "Formulating spontaneous moral principles based on conscience",
+        "Feeling authentic joy when completing a challenging goal"
+      ],
+      "correctAnswer": "Processing millions of deterministic arithmetic calculations per second with zero cognitive fatigue ⚡",
+      "explanation": "Microprocessors execute billions of arithmetic logic cycles per second deterministically without biological fatigue."
+    },
+    {
+      "questionId": "aq2",
+      "question": "Why are generative artificial intelligence language models incapable of experiencing genuine empathy? ❤️",
+      "options": [
+        "They predict statistical token sequences based on corpus data without conscious emotional subjectivity or lived experience 🧠",
+        "Their cooling fans operate at excessive temperatures",
+        "They lack sufficient broadband internet connectivity",
+        "They are strictly programmed in Python rather than natural language"
+      ],
+      "correctAnswer": "They predict statistical token sequences based on corpus data without conscious emotional subjectivity or lived experience 🧠",
+      "explanation": "Generative algorithms perform mathematical pattern prediction and lack subjective phenomenal consciousness or affective emotions."
+    },
+    {
+      "questionId": "aq3",
+      "question": "In what manner does human moral conscience differ fundamentally from an automated algorithmic decision matrix? 🧭",
+      "options": [
+        "Human conscience possesses intrinsic ethical agency and empathy to evaluate justice beyond pre-programmed rule sets 🌟",
+        "Algorithms are always morally superior to human judgment",
+        "Conscience requires constant electrical battery recharging",
+        "Decision matrices always prioritize universal human kindness"
+      ],
+      "correctAnswer": "Human conscience possesses intrinsic ethical agency and empathy to evaluate justice beyond pre-programmed rule sets 🌟",
+      "explanation": "Human conscience exercises moral agency, empathy, and contextual fairness, whereas algorithms execute pre-programmed rules blindly."
+    },
+    {
+      "questionId": "aq4",
+      "question": "What primary pedagogical insight does the 'Human Superpower Trophy Scale' activity demonstrate to young learners? 🏆",
+      "options": [
+        "Qualitative human attributes like empathy and creativity hold profound intrinsic value that exceeds quantitative computational speed ⚖️",
+        "Mechanical balance scales are more accurate than electronic digital scales",
+        "Children should avoid learning computer programming altogether",
+        "Paper cups cannot support the weight of cardboard circles"
+      ],
+      "correctAnswer": "Qualitative human attributes like empathy and creativity hold profound intrinsic value that exceeds quantitative computational speed ⚖️",
+      "explanation": "The activity tangibly illustrates that human emotional consciousness and empathy are irreplaceable and outweigh raw processing speed."
+    },
+    {
+      "questionId": "aq5",
+      "question": "According to the Golden Harmony Formula, what is the optimal collaborative paradigm between humans and artificial intelligence? 🤝",
+      "options": [
+        "Utilizing artificial intelligence for repetitive, data-intensive tasks while humans provide strategic vision, ethics, and empathy 🚀",
+        "Surrendering all human decision-making authority to autonomous machine learning systems",
+        "Competing against computers in speed-typing contests to prove biological superiority",
+        "Eliminating all digital technology from healthcare and education"
+      ],
+      "correctAnswer": "Utilizing artificial intelligence for repetitive, data-intensive tasks while humans provide strategic vision, ethics, and empathy 🚀",
+      "explanation": "The Golden Harmony Formula emphasizes synergistic collaboration: computers handle computational heavy lifting, while humans provide soul, ethics, and empathy."
+    }
+  ]
+}
