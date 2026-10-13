@@ -1,0 +1,1237 @@
+{
+  "lessonId": "l1",
+  "title": "Explore Tech Careers",
+  "lessonTitle": "Explore Tech Careers",
+  "level": "middle",
+  "class": "class6",
+  "classId": "class6",
+  "className": "Class 6",
+  "ageGroup": "11-12 years",
+  "chapter": "ch4",
+  "chapterId": "ch4",
+  "chapterTitle": "AI & Career",
+  "chapterCanonicalKey": "rise",
+  "lessonNumber": 1,
+  "monthNumber": 7,
+  "mascot": {
+    "name": "Algo",
+    "role": "The Intelligent Guide",
+    "emoji": "🧠",
+    "personality": "Calm, patient, curious, and encouraging. Algo speaks like a friendly mentor who loves explaining how the world works. Never uses intimidating jargon. Relates everything to everyday experiences like cricket, cooking, music, and school.",
+    "voiceStyle": "Warm and conversational with clear pauses for thinking. Celebrates discovery and encourages students to ask 'why' and 'how'.",
+    "avatarImage": "/content/middle/images/class6/mascots/algo-guide.png",
+    "avatarDescription": "[IMAGE_PLACEHOLDER: Friendly blue robot character with a warm glowing brain icon on its chest, holding a colorful team compass and smiling encouragingly]"
+  },
+  "metadata": {
+    "duration": "45 minutes",
+    "difficulty": "beginner",
+    "totalWordCount": 12000,
+    "version": "2.0",
+    "lastUpdated": "2026-10-13",
+    "tags": [
+      "tech careers",
+      "ai roles",
+      "ui ux design",
+      "data annotation",
+      "qa testing",
+      "product management",
+      "tech team roles",
+      "collaborative technology"
+    ],
+    "curriculum": "CBSE & International Olympiad AI Foundations — Middle School Stage",
+    "prerequisiteKnowledge": "Familiarity with Chapters 1, 2, and 3. No coding experience required.",
+    "standardsAlignment": "CBSE AI Subject Code 417 (Class 6) & NEP 2020 Vocational Exploration & Experiential Learning",
+    "coreCompetencies": [
+      "Understanding diverse technology careers beyond programming syntax",
+      "Analyzing the multi-stage lifecycle of creating digital products",
+      "Connecting personal interests (art, writing, logic, empathy) to tech roles",
+      "Appreciating teamwork, communication, and human-centered design in technology"
+    ],
+    "teacherNote": "Shatter the myth that tech careers are only for coding geniuses. Use the cricket team or movie production analogy: a blockbuster movie needs directors, actors, costume designers, camera operators, and music composers. Similarly, an AI app needs designers, testers, data curators, writers, and engineers. Every student has a superpower that fits into tech."
+  },
+  "introduction": {
+    "overview": "When someone says the words 'working in technology', what picture pops into your head? Many students imagine a quiet person sitting alone in a dim room typing lines of code into a computer for ten hours straight. But in real life, building technology is one of the most social, creative, and exciting team sports on Earth! Think about your favorite smartphone app: Who decided where the colorful buttons go? Who made sure the app is easy for your grandparents to use? Who checked that the app doesn't crash when ten million people log in at once? Who trained the AI voice assistant to understand regional Indian accents? In this lesson, we will step inside a modern innovation studio. You will meet Data Annotators, UI/UX Designers, Model Trainers, Quality Assurance Testers, and Tech Communicators. You will discover how your unique talents—whether drawing, storytelling, puzzle solving, or helping friends—can lead to an incredible future career in tech! [IMAGE_PLACEHOLDER: Modern Indian collaborative technology workspace with designers sketching on whiteboards, developers collaborating, and testers holding mobile devices with smiling expressions]",
+    "welcomeMessage": "Welcome to Chapter 4: AI & Career! Today, we open the doors to the exciting, multidisciplinary world of technology teams.",
+    "algoSpoken": "Hey there, future creator! Algo here. Let me tell you something wonderful: You don't have to be a pure coding wizard to build the future! Are you good at drawing? You can design beautiful app interfaces. Are you good at spotting mistakes in books? You can be a world-class Quality Assurance tester. Are you a great listener? You can be a Product Manager. Today, we find your tech superpower!",
+    "duration": "45 mins",
+    "learningObjectives": [
+      "Shatter the myth that technology careers are restricted to pure computer programming.",
+      "Identify the five core roles in an AI product team: Data Annotator, Model Trainer, UI/UX Designer, QA Tester, and Tech Communicator.",
+      "Understand the step-by-step lifecycle of creating an AI product from initial human problem to final launch.",
+      "Analyze how human empathy and user research make technology accessible to elderly and rural users.",
+      "Connect personal interests (creativity, organization, communication, and logic) to high-value tech pathways.",
+      "Experience collaborative teamwork in a simulated tech product design sprint."
+    ],
+    "starterChallenge": {
+      "title": "Warm-Up Mystery: The Million-Dollar Movie Set",
+      "question": "If a movie director only hired actors and forgot to hire camera operators, lighting artists, costume designers, and sound engineers, what would happen to the film?",
+      "options": [
+        "The movie would be an incomplete disaster because great films require a multidisciplinary team with diverse talents",
+        "The movie would win an Oscar because fewer people make better movies",
+        "The actors would magically transform into cameras and microphones",
+        "The film would be twice as long because everyone talks more"
+      ],
+      "correctOptionIndex": 0,
+      "mascotTip": "Algo says: Exactly right! Building an AI app is just like making a blockbuster film. Developers write the engine, but designers, testers, writers, and data specialists bring it to life!"
+    },
+    "openingStory": {
+      "title": "Priya's Dream App Team in Bengaluru",
+      "wordCount": 520,
+      "content": "Twelve-year-old Priya loved three things: doodling colorful cartoon characters in her sketchbook, listening to her grandmother tell traditional folklore stories in Kannada, and solving logic puzzles with her school friends. But when relatives asked what she wanted to be when she grew up, she felt uncertain. 'I like technology,' she told her uncle, 'but I don't want to sit alone writing code all day.'\n\nDuring her October school break, Priya's older cousin Deepa invited her to visit her workplace: a bustling technology startup in the Koramangala tech hub of Bengaluru. The company was building an AI voice storytelling app designed for rural school libraries across Karnataka.\n\nWhen Priya walked into the bright, sunlit office, she was astonished. Nobody was sitting alone in the dark! One corner had beanbags where three people were sketching colorful screen layouts on digital tablets with stylus pens. In the center, a sound recording booth had students testing regional Kannada voice accents. On the whiteboard, a flowchart was covered with colorful sticky notes.\n\nDeepa introduced Priya to the team:\n'Meet Vikram,' Deepa said, pointing to a young man holding a sketchbook. 'Vikram is our UI/UX Designer. He doesn't write code; he studies human empathy. He tests button sizes so five-year-olds and sixty-year-olds can tap easily without squinting.'\n\nNext, Deepa introduced Kavita: 'Kavita is our Lead Data Curator. She travels to villages recording elderly storytellers and oversees the team of Data Annotators who label each audio clip with emotional tone, character names, and vocabulary tags so our AI model can learn to speak with warmth.'\n\nThen came Sameer: 'Sameer is our Quality Assurance Tester. His superpower is trying to break our app! He types random gibberish, turns off the Wi-Fi halfway through a download, and drops test phones to see if the software crashes. If Sameer can't break it, our app is ready for the world.'\n\nFinally, Deepa smiled: 'And I am the Product Manager. I don't write the algorithms either. My job is to listen to teachers, connect all our team members, and ensure we solve real problems for children.'\n\nPriya looked around the room with shining eyes. She saw artists, writers, listeners, and detectives, all collaborating like an orchestra to build something magical.\n\n'Deepa,' Priya smiled, pulling out her sketchbook. 'There is a place for my drawings and stories in tech after all!'",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Modern Indian collaborative technology workspace with designers and developers]",
+      "algoNarration": "Priya discovered the biggest secret in modern technology: Tech is not a one-person show! Every great app is born from a symphony of artists, detectives, listeners, and builders working hand in hand."
+    }
+  },
+  "sections": [
+    {
+      "sectionId": "section1",
+      "sectionNumber": 1,
+      "title": "Beyond the Lone Coder Myth — Tech is a Team Sport",
+      "subtitle": "Why the world's greatest digital breakthroughs are created by multidisciplinary crews",
+      "content": "For years, popular culture has promoted the myth of the 'Lone Genius Coder'—a solitary figure who invents a world-changing app overnight in their bedroom while eating cold pizza. But if you talk to anyone who builds real software at Google, ISRO, Microsoft, Swiggy, or Zoho, they will tell you that the lone coder myth is pure fiction.\n\nModern digital products are vastly too complex for any single human to build alone. Think about an app like Swiggy, YouTube, or Google Maps. Building an app like that requires answering dozens of different questions:\n- What real-world problem are we trying to solve for human users? (Strategy & Empathy)\n- What should the screens look like, and how should buttons feel when tapped? (Art & Visual Psychology)\n- Where will we find high-quality, diverse training data to teach the AI? (Data Curation & Linguistics)\n- How do we translate that data into mathematical neural network models? (Machine Learning Engineering)\n- How do we make sure the app works smoothly on slow 2G internet connections without crashing? (Software Engineering)\n- What happens if someone tries to hack the app or steal user passwords? (Cybersecurity)\n- How do we test every single button, link, and feature before releasing it to fifty million users? (Quality Assurance)\n- How do we write simple, friendly user guides so everyone understands how to use it? (Tech Communication)\n\nNo single person possesses all of these diverse skills! A brilliant mathematical engineer might be terrible at choosing harmonious color palettes. An extraordinary visual artist might have no interest in optimizing database queries. A skilled communicator might not know how to tune neural networks.\n\nWhen these diverse minds join forces, magic happens. Just like a championship cricket team needs opening batsmen, fast bowlers, spinners, wicketkeepers, and a tactical captain, a technology team thrives on diversity of thought, background, and talent.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Infographic showing the 5 core roles in an AI product lifecycle]",
+      "toastGuidance": {
+        "tap_prompt": "Tap each team member icon to see how their unique talent contributes to the final app.",
+        "great_job": "Teamwork unlocked! Tech products succeed when diverse talents collaborate.",
+        "try_again": "Remember: Technology requires designers, writers, and testers just as much as engineers."
+      },
+      "examples": [
+        {
+          "title": "The Team Behind the Chandrayaan-3 Moon Landing",
+          "description": "Over 500 ISRO scientists collaborated across disciplines: trajectory mathematicians, mechanical metal fabricators, software simulation coders, and communications engineers.",
+          "realLifeScenario": "Sriharikota mission control • Diverse specialists celebrating together as lander touches lunar south pole"
+        },
+        {
+          "title": "Duolingo Language App Team Structure",
+          "description": "Duolingo combines software engineers with professional linguists, cartoon animators, behavioral psychologists, and voice actors to make learning addictive and fun.",
+          "realLifeScenario": "Smartphone screen • Green owl mascot cheering your five-day Spanish streak"
+        },
+        {
+          "title": "PhonePe / GPay Digital Payment Teams",
+          "description": "Fintech payment apps employ fraud detectives, banking legal experts, graphic designers, and cybersecurity analysts alongside core server developers.",
+          "realLifeScenario": "Marketplace tea stall • QR code payment clearing securely in 0.3 seconds"
+        },
+        {
+          "title": "Cricket Gaming Simulation Development (EA Sports)",
+          "description": "Creating a realistic cricket video game requires 3D motion-capture athletes, stadium acoustic engineers, physics modelers, and gameplay testers.",
+          "realLifeScenario": "Gaming console • Virtual stadium echoing with crowd chants as bowler delivers an inswinging yorker"
+        }
+      ],
+      "keyPoints": [
+        "The 'Lone Coder' is a fictional myth; modern technology is built by multidisciplinary teams.",
+        "Creating an app requires strategy, visual art, linguistics, psychology, testing, and engineering.",
+        "Diversity of skills and perspectives is what prevents blind spots and ensures high product quality.",
+        "Just like a cricket team needs bowlers and batsmen, tech teams need designers, writers, and engineers.",
+        "Anyone with curiosity, empathy, and problem-solving drive has a valuable role in the tech ecosystem.",
+        "Communication and collaboration are the most prized professional skills in modern technology studios."
+      ],
+      "algoVoice": "If you have a voice, a creative spark, or a love for solving puzzles, the tech world has a seat waiting at the table for you!"
+    },
+    {
+      "sectionId": "section2",
+      "sectionNumber": 2,
+      "title": "The Data Explorers & Annotators — Teaching the AI",
+      "subtitle": "The patient educators who curate, clean, and label the world's digital training fuel",
+      "content": "As you learned in Chapter 1, artificial intelligence cannot learn without Training Data. But where does high-quality training data actually come from? Does it magically appear inside computer servers? Not at all! It is carefully gathered, organized, and labeled by human professionals known as Data Annotators, Data Curators, and Knowledge Engineers.\n\nThink about a high school biology textbook. Before that textbook could be printed and distributed to students, someone had to gather crisp photographs of microscope cells, draw neat arrows pointing to the cell nucleus, and print clear labels explaining what each organelle does. Without those labeled diagrams, students would just stare at blurry green circles without learning anything.\n\nData Annotators are the teachers of artificial intelligence. Their daily work involves examining raw information and giving it structure:\n- In Computer Vision: An annotator draws precise digital boxes (bounding boxes) around pedestrians, traffic lights, and potholes on highway video footage so autonomous vehicles learn road safety.\n- In Healthcare: Medical data specialists label thousands of CT scans, marking the exact boundaries of healthy lungs versus pneumonia shadows so screening algorithms can assist doctors.\n- In Voice Technology: Linguists listen to audio recordings of people speaking in Marathi, Bhojpuri, Bengali, or Tamil, typing out exact phonetics and emotional tags so voice assistants understand real Indian accents.\n\nThis career requires sharp observation, patience, attention to detail, and deep cultural knowledge. In India, initiative programs like Project Bhashini employ thousands of linguists and rural language specialists to build digital datasets for 22 scheduled Indian languages, ensuring that future AI tools work for everyone across our nation.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: High-tech annotation interface showing a specialist using a digital stylus to outline pedestrian crosswalks on road video frames with label tags]",
+      "toastGuidance": {
+        "tap_prompt": "Examine how data annotators tag raw images with bounding boxes and categorical labels.",
+        "great_job": "Data labeling verified! High-quality labels ensure AI models learn accurate patterns.",
+        "try_again": "Remember: Machine learning algorithms rely completely on accurate human-provided labels."
+      },
+      "examples": [
+        {
+          "title": "Project Bhashini Indian Language Crowdsourcing",
+          "description": "A national initiative employing language scholars and rural youth across India to record, transcribe, and label voice data in 22 official Indian languages.",
+          "realLifeScenario": "Rural community center • College student recording folk stories in Odia to train translation models"
+        },
+        {
+          "title": "Autonomous Vehicle Annotation Studios in Pune",
+          "description": "Specialized teams annotate millions of driving video frames, labeling street dogs, auto-rickshaws, handcarts, and unpaved road boundaries for global car makers.",
+          "realLifeScenario": "Data studio • Labeling complex Indian street scenes that European driving models never encountered"
+        },
+        {
+          "title": "Medical Imaging Annotation (Apollo & AI Startups)",
+          "description": "Trained radiology technicians review retinal eye scans, labeling micro-aneurysms to train diabetic retinopathy screening models for rural primary health centers.",
+          "realLifeScenario": "Eye hospital clinic • Tagging eye blood vessel patterns to save diabetic patients from blindness"
+        },
+        {
+          "title": "E-Commerce Fashion Catalog Tagging",
+          "description": "Catalog specialists tag clothing photos with precise style attributes: 'Sanganeri Print', 'Pure Cotton', 'Mandarin Collar', 'Festive Wear' to power fashion search.",
+          "realLifeScenario": "Online shopping portal • Shoppers finding specific regional kurta styles with single-word searches"
+        }
+      ],
+      "keyPoints": [
+        "Data Annotators and Curators are the foundational educators of artificial intelligence models.",
+        "They inspect raw images, audio, and text, attaching accurate labels, bounding boxes, and tags.",
+        "High-quality data annotation requires patience, sharp observation, and deep cultural and linguistic knowledge.",
+        "Initiatives like Project Bhashini employ thousands of Indian language specialists to bridge the digital divide.",
+        "Without human data annotators, machine learning models have zero ground truth to learn from.",
+        "Data curation is a rapidly growing global career field that bridges human humanities with high tech."
+      ],
+      "algoVoice": "Every time an AI gets something right, say thank you to a data annotator! They are the patient teachers who sat down and labeled the flashcards."
+    },
+    {
+      "sectionId": "section3",
+      "sectionNumber": 3,
+      "title": "The Model Builders & ML Engineers — The Engine Architects",
+      "subtitle": "How machine learning engineers turn data patterns into working prediction engines",
+      "content": "Once data annotators have prepared millions of clean, labeled flashcards, who builds the mathematical engine that actually learns the patterns? Enter the Machine Learning (ML) Engineers and Data Scientists!\n\nThink about an automobile factory. The data annotators provide the high-octane fuel and the steel parts. But the Machine Learning Engineer is the mechanical architect who designs the engine pistons, the combustion chamber, and the gearbox so that fuel is converted into smooth, powerful movement.\n\nWhat does a Machine Learning Engineer do all day?\n1. Model Architecture Selection: They decide what kind of neural network structure to use. For recognizing images, they pick Convolutional Neural Networks (CNNs). For understanding language or voice, they pick Transformers. For predicting numbers (like house prices or temperatures), they pick Regression trees.\n2. Training & Tuning: They write computer programs to feed the training data into the model. They monitor the error loss curve, tuning mathematical knobs called hyperparameters to help the model learn faster without getting confused.\n3. Preventing Overfitting: They make sure the model isn't just memorizing the practice cards like a student cramming for an exam without understanding concepts. They test the model on holdout test datasets to verify that it works on brand-new real-world examples.\n4. Deployment to Devices: They optimize the model so it can run smoothly inside a small smartphone chip without draining the battery or overheating the phone.\n\nThis career is perfect for students who love logic, patterns, mathematics, and building engines that solve mysteries. ML engineers turn static data into living, responsive intelligence.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Machine learning engineer reviewing colorful loss convergence curves and neural network layer nodes on dual monitor screens in a clean tech office]",
+      "toastGuidance": {
+        "tap_prompt": "Observe how ML engineers tune model parameters to guide prediction error down to zero.",
+        "great_job": "Model optimization verified! The neural network achieved 98% accuracy on test data.",
+        "try_again": "Remember: ML engineers design the mathematical architecture and train models on data."
+      },
+      "examples": [
+        {
+          "title": "Cricket Bowling Trajectory Engineers (Hawk-Eye)",
+          "description": "Engineers program computer vision models that fuse feeds from six high-speed stadium cameras, predicting ball bounce and path within millimeters in real time.",
+          "realLifeScenario": "Television broadcast • Instant DRS ball-tracking replay determining an LBW wicket decision"
+        },
+        {
+          "title": "UPI Instant Fraud Detection Engineering",
+          "description": "Engineers build streaming machine learning models that evaluate 40 risk parameters for 300 million daily UPI digital transactions in under 200 milliseconds.",
+          "realLifeScenario": "Banking server • Blocking a suspicious unauthorized midnight withdrawal instantly"
+        },
+        {
+          "title": "Smartphone Camera Night Sight Engineering",
+          "description": "Engineers train deep neural networks to merge nine rapid, underexposed camera frames into a single bright, noise-free night photo.",
+          "realLifeScenario": "Diwali night celebration • Taking a crisp, glowing photo of fireworks without a tripod"
+        },
+        {
+          "title": "Automated Crop Yield Forecasting Models",
+          "description": "Data scientists at agricultural research institutes build regression models combining satellite vegetation indices with rainfall numbers to predict national wheat harvests.",
+          "realLifeScenario": "Government grain planning • Ensuring buffer food stocks are allocated properly across states"
+        }
+      ],
+      "keyPoints": [
+        "Machine Learning Engineers design the neural network architectures that learn from training data.",
+        "They select appropriate algorithms (CNNs for images, Transformers for language, Regression for numbers).",
+        "Engineers tune mathematical parameters to reduce prediction errors and prevent memorization (overfitting).",
+        "They optimize models to run efficiently on small devices like smartphones and drones without lag.",
+        "This career suits students who enjoy mathematical reasoning, pattern recognition, and system building.",
+        "ML engineers turn raw data into active, intelligent tools that solve complex computational problems."
+      ],
+      "algoVoice": "Think of an ML engineer as a master watchmaker. Inside the computer, they assemble millions of tiny mathematical gears until the whole machine ticks in harmony!"
+    },
+    {
+      "sectionId": "section4",
+      "sectionNumber": 4,
+      "title": "UI/UX Designers & Empathy Champions — The Human Touch",
+      "subtitle": "Why the most powerful algorithm is useless if humans cannot understand or use it",
+      "content": "Imagine the world's most brilliant team of engineers builds a miraculous home robot. It can cook gourmet meals, clean windows, and fold laundry. But when you look at the robot, there is no touchscreen, no voice speaker, and no power button. The only way to operate it is by flipping forty tiny unmarked black toggle switches on the back in a secret sequence! Would your family buy that robot? Of course not! Nobody could figure out how to use it.\n\nThis brings us to one of the most exciting, creative, and essential careers in technology: UI/UX Designers (User Interface & User Experience Designers).\n\nWhat do these letters mean?\n- UI (User Interface): The visual look of an app. The colors, button shapes, fonts, icons, animations, and screen illustrations that you see with your eyes.\n- UX (User Experience): How the app feels to use. Is it intuitive? Is it fast? Can an eleven-year-old or an eighty-year-old grandmother accomplish their goal without getting confused or frustrated?\n\nUI/UX Designers are Empathy Champions. They don't spend their day writing mathematical algorithms. They spend their day understanding human beings:\n- User Research: They sit down with real people—farmers in villages, students in schools, doctors in clinics—and watch how they interact with screens. If a user hesitates or clicks the wrong icon, the designer notes it down as a challenge to solve.\n- Accessibility Design: They make sure apps work for people with color blindness, visual impairments, or hand tremors. They choose high-contrast colors, large readable text, and voice-guided navigation.\n- Visual Storytelling: They use colors and friendly mascot characters (like me, Algo!) to guide users through complicated processes step by step.\n\nIf you love drawing, sketching, painting, psychology, listening to people, and making the world more beautiful and accessible, UI/UX design is your dream tech career!",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Interactive career role cards showing daily responsibilities and tools]",
+      "toastGuidance": {
+        "tap_prompt": "Assign the UI/UX Designer to create the intuitive mobile app interface.",
+        "great_job": "Role assigned! User research confirmed interface is accessible and clear.",
+        "try_again": "QA Testers verify bugs and errors, while designers shape user experience."
+      },
+      "examples": [
+        {
+          "title": "Designing Banking Apps for Senior Citizens",
+          "description": "UI/UX designers created simplified banking modes with extra-large text, high-contrast buttons, and voice-assisted confirmations so grandparents can transfer money without fear.",
+          "realLifeScenario": "Living room sofa • Grandmother successfully sending birthday money to grandson on her phone"
+        },
+        {
+          "title": "Icon-Based Agricultural Interfaces for Farmers",
+          "description": "Designing farming apps for users who may have limited reading literacy, using clear visual icons (sun for weather, drip for water, leaf for disease) and voice prompts.",
+          "realLifeScenario": "Farm field • Farmer navigating an irrigation app effortlessly using picture icons"
+        },
+        {
+          "title": "Swiggy / Zomato Food Order Tracking UX",
+          "description": "Designers created the intuitive live delivery screen: glowing delivery motorcycle moving along a line, cheerful progress milestones, and one-tap driver calling.",
+          "realLifeScenario": "Dinner time • Family tracking hot pizza delivery with excitement and zero confusion"
+        },
+        {
+          "title": "Educational Game Design for Middle Schoolers",
+          "description": "Designers use game elements (points, badges, friendly mascot guides, celebratory sound chimes) to turn dry mathematics practice into an engaging adventure.",
+          "realLifeScenario": "Classroom tablet • Student celebrating with a cheer as they unlock the 'Master Pattern Spotter' badge"
+        }
+      ],
+      "keyPoints": [
+        "A brilliant algorithm is useless if ordinary human beings cannot figure out how to use it comfortably.",
+        "UI (User Interface) focuses on visual aesthetics: colors, typography, buttons, layout, and iconography.",
+        "UX (User Experience) focuses on human feelings and usability: making journeys seamless, intuitive, and stress-free.",
+        "Designers conduct user research to understand how different people interact with screens in real life.",
+        "Accessibility design ensures apps are usable for people with disabilities, diverse languages, and varying literacy.",
+        "This career is an ideal match for students with creative artistic talents, empathy, and visual curiosity."
+      ],
+      "algoVoice": "Design is where art meets kindness. When a designer makes an app so simple that a grandparent can use it with a smile, they have performed true magic!"
+    },
+    {
+      "sectionId": "section5",
+      "sectionNumber": 5,
+      "title": "The QA Testers & Bug Hunters — Quality Assurance",
+      "subtitle": "The professional digital detectives who break software so it never breaks for users",
+      "content": "Imagine an aerospace company manufactures a brand-new passenger airplane. The engineers are finished, the paint is dry, and the seats look plush. Would the company immediately load three hundred passengers on board and take off? Absolutely not! First, a fearless team of test pilots and safety inspectors takes the plane into the sky. They test the plane in heavy storms, intentionally shut down an engine mid-air to see if backup systems kick in, slam on the brakes on icy runways, and inspect every rivet with ultrasound scanners.\n\nIn the technology world, those fearless safety inspectors are called Quality Assurance (QA) Testers and Bug Hunters!\n\nQA Testers are professional digital detectives. While software developers build things, QA testers have one joyful mission: Try to break the software in every creative way possible!\n\nWhat does a day in the life of a QA tester look like?\n- Stress Testing: What happens if ten million cricket fans all tap the 'Watch Live' button at the exact same millisecond during an India-Pakistan match? Does the server handle the load, or does the screen freeze into an error?\n- Boundary Testing: What happens if a user types a negative number for their age? What if someone enters an essay of ten thousand words into a box meant for a name? Does the app handle the mistake gracefully, or does it crash?\n- Device & Network Compatibility: Does the app look beautiful on a giant tablet, a tiny budget smartphone, an old Android phone, and a computer screen? Does it work smoothly on high-speed 5G, spotty 3G in a moving train, and when completely offline?\n- Security Penetration: Can a hacker pretend to be another student and peek at their report card? Testers hunt for security loopholes and seal them before criminals can exploit them.\n\nWithout QA testers, every app launch would be a disaster filled with crashes, lost payments, and leaked data. If you love solving mysteries, finding hidden flaws in puzzles, and asking 'What if this goes wrong?', QA testing is an exhilarating tech career!",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: QA tester holding three different smartphone test devices displaying automated test scripts, with a digital detective magnifying glass icon on screen]",
+      "toastGuidance": {
+        "tap_prompt": "Review the QA tester's checklist: Stress testing, Boundary testing, and Device compatibility.",
+        "great_job": "Bug discovered and reported! Fixing this flaw prevented a major app crash at launch.",
+        "try_again": "Remember: QA testers hunt for errors and vulnerabilities before products reach the public."
+      },
+      "examples": [
+        {
+          "title": "Cricket World Cup Live Streaming Load Testing",
+          "description": "Hotstar / JioCinema QA teams simulated 35 million simultaneous simulated video viewers using automated cloud bot swarms before the ICC World Cup final.",
+          "realLifeScenario": "Living room television • 32 million simultaneous viewers watching live final ball without buffering"
+        },
+        {
+          "title": "ISRO Spaceflight Software Simulation Testing",
+          "description": "Software testing engineers ran over 100,000 simulated lunar landing scenarios, testing engine failures and sensor noise before uploading code to Chandrayaan-3.",
+          "realLifeScenario": "Moon landing • Lander autonomously correcting trajectory after encountering unexpected boulder crater"
+        },
+        {
+          "title": "Banking Security Bug Bounty Programs",
+          "description": "Ethical hackers and security testers find vulnerabilities in digital payment gateways, earning cash rewards for helping banks patch holes safely.",
+          "realLifeScenario": "Banking portal • Securing billions of rupees in customer deposits from unauthorized digital intrusions"
+        },
+        {
+          "title": "Video Game Glitch Hunting (Playtesting)",
+          "description": "Game testers run into virtual walls, jump at weird angles, and test every item combination for hundreds of hours to eliminate glitches before games ship.",
+          "realLifeScenario": "Gaming console • Smooth, glitch-free adventure game experience on launch day"
+        }
+      ],
+      "keyPoints": [
+        "Quality Assurance (QA) testers systematically test software to find and fix bugs before launch.",
+        "Their job is to intentionally try to break the product using unexpected, creative user inputs.",
+        "Stress testing ensures apps don't crash when millions of users log in at the exact same moment.",
+        "Boundary testing checks how systems respond to extreme, unusual, or invalid data inputs.",
+        "Device compatibility testing verifies that apps look and function well across hundreds of phone models.",
+        "This career is an exciting fit for curious students who love puzzles, detective work, and attention to detail."
+      ],
+      "algoVoice": "A QA tester is like a superhero with a magnifying glass! When they find a bug before launch, they save millions of users from frustration and headaches."
+    },
+    {
+      "sectionId": "section6",
+      "sectionNumber": 6,
+      "title": "The Tech Communicators & Leaders — Vision & Words",
+      "subtitle": "How Product Managers and Technical Writers connect technology to real human hearts",
+      "content": "Have you ever tried to read an instruction manual that came with a home appliance, and it was filled with baffling jargon, tiny font, and sentences that made zero sense? You probably felt frustrated and gave up. That is what happens when brilliant engineers build technology without Tech Communicators!\n\nTechnology cannot succeed in the world without two essential human leadership roles:\n\n1. Technical Writers & Content Strategists:\nTechnical writers are the translators between engineering brains and human hearts. They take complex mathematical algorithms and turn them into crystal-clear user guides, friendly error messages, helpful tooltips, and educational tutorials. When an app pops up a message saying: 'Oops! Your Wi-Fi seems sleepy. Let us try reconnecting' instead of 'Error Code 0x8004100E: Socket Connection Timeout', a skilled technical writer wrote that friendly message! They ensure that technology speaks with warmth, clarity, and respect.\n\n2. Product Managers (PMs) & Team Leaders:\nIf a tech team is an orchestra, the Product Manager is the Conductor! The conductor doesn't play the violin, the trumpet, or the drums during the concert. Instead, the conductor knows the musical score, keeps everyone in tempo, and ensures that all instruments blend together to create breathtaking harmony.\n\nA Product Manager:\n- Listens deeply to users to discover their greatest everyday frustrations.\n- Sets the vision: 'We are going to build a tool that helps rural students practice English speaking with confidence.'\n- Coordinates the team: Connects designers with engineers, testers with data curators, and ensures deadlines are met.\n- Makes tough decisions: Balances what features to build first when time and resources are limited.\n\nIf you love organizing school group projects, listening to friends, telling stories, and bringing people together to accomplish a shared dream, you have the natural makings of a future Product Manager or Tech Communicator!",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Collaborative meeting room showing a Product Manager presenting a colorful project roadmap timeline while team members nod in agreement]",
+      "toastGuidance": {
+        "tap_prompt": "Discover the leadership role of Product Managers and the clarity of Technical Writers.",
+        "great_job": "Leadership unlocked! Product managers align teams around a shared human vision.",
+        "try_again": "Remember: Product managers guide the overall vision, while technical writers ensure clarity of language."
+      },
+      "examples": [
+        {
+          "title": "Writing Friendly Error Messages for Millions",
+          "description": "Content strategists replaced terrifying technical error codes with helpful, reassuring messages that guide users to fix problems without feeling foolish.",
+          "realLifeScenario": "Smartphone screen • 'Password needs 8 letters and a number' instead of 'Validation Failure #41'"
+        },
+        {
+          "title": "Leading an EdTech App for Indian Schools",
+          "description": "A Product Manager interviews rural school principals, student councils, and parents, prioritizing offline-download features for schools with spotty internet.",
+          "realLifeScenario": "Classroom tablet • App downloading lessons overnight so students learn uninterrupted during school day"
+        },
+        {
+          "title": "Creating Interactive Educational Coding Tutorials",
+          "description": "Technical writers create engaging step-by-step guides with colorful diagrams and friendly mascot guidance (like this AI Olympiad curriculum!).",
+          "realLifeScenario": "Student study desk • Learning AI concepts smoothly without getting lost in technical jargon"
+        },
+        {
+          "title": "Public Health Awareness Campaigns",
+          "description": "Tech communicators translate complex medical epidemiology algorithms into simple, viral infographic posters that inform communities during health crises.",
+          "realLifeScenario": "Village health clinic • Clear posters showing three simple steps to keep families safe"
+        }
+      ],
+      "keyPoints": [
+        "Technical writers translate complex engineering concepts into friendly, accessible human language.",
+        "They write clear documentation, intuitive error messages, and helpful onboarding tutorials.",
+        "Product Managers act like orchestra conductors, guiding diverse specialists toward a shared vision.",
+        "PMs listen to user needs, prioritize feature roadmaps, and balance timelines and resources.",
+        "Empathy, active listening, and organized communication are the superpowers of tech leaders.",
+        "These roles prove that storytelling, social leadership, and language arts are central to modern technology."
+      ],
+      "algoVoice": "Words have the power to turn cold machinery into warm, helpful companions. When you combine clear thinking with kind words, you lead the future!"
+    }
+  ],
+  "realWorldStories": [
+    {
+      "storyId": "story1",
+      "title": "Building 'BhashaSetu' — Voice AI for Ten Indian Languages",
+      "location": "Bengaluru, Karnataka",
+      "domain": "Multidisciplinary Startup & Vernacular AI",
+      "summary": "How a team of eight diverse specialists built an app allowing rural artisans to sell handicrafts across India using spoken mother tongues.",
+      "content": "In a cozy two-room startup office in HSR Layout, Bengaluru, a passionate eight-person team was tackling a huge challenge: How can rural artisans—who weave beautiful sarees in Varanasi or craft terracotta pottery in Bankura—sell their goods on digital e-commerce platforms if they cannot type in English?\n\nThey called their project 'BhashaSetu' (Language Bridge). If you peeked inside their office, you would see the complete tech ecosystem in action:\n\nKavita, a cultural anthropologist and linguist, was the Data Curator. She traveled through rural markets in Uttar Pradesh, West Bengal, and Tamil Nadu with a portable microphone, recording elder artisans describing their crafts in local dialects of Hindi, Bengali, and Tamil. She created a clean, culturally rich audio dataset of over ten thousand voice clips.\n\nNext came Ashwin, the Machine Learning Engineer. Ashwin trained an automatic speech recognition transformer model, tuning it to understand diverse regional pronunciations, background market noises, and local craft vocabulary.\n\nThen came Tanvi, the UI/UX Designer. Tanvi knew that many artisans were first-time smartphone users. She eliminated typed search boxes entirely! Instead, she designed an interface dominated by a giant, glowing microphone button shaped like a traditional brass diya lamp. When an artisan tapped the lamp, the screen pulsed with friendly warm ripples and spoke encouraging audio prompts in their mother tongue.\n\nNext was Deepak, the Quality Assurance Tester. Deepak tested the app on sixty different budget Android smartphones. He simulated weak 2G cellular connections, interrupted downloads mid-sentence, and tested audio recordings with loud rooster crows and motorcycle horns in the background, ensuring the AI never crashed.\n\nFinally, Priya, the Product Manager, tied everything together. She spent weeks in artisan villages showing paper prototypes to weavers, listening to their feedback, and coordinating the sprint timeline.\n\nWhen BhashaSetu launched, a weaver named Shanti Devi in Varanasi spoke into her phone in Bhojpuri: 'I have three pure silk blue Banarasi sarees ready for delivery.' Within four seconds, the app transcribed her words, translated them into English for city buyers, and created an online product listing with photographs! Within a week, all three sarees were sold to customers in Mumbai at fair, proud prices.\n\n'Our developers wrote amazing code,' Priya reflected at the launch party. 'But BhashaSetu succeeded because our linguist listened, our designer cared, our tester hunted bugs, and our whole team moved as one family.'",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Inspiring photograph of the BhashaSetu startup team in Bengaluru celebrating around a laptop displaying a Banarasi saree online listing created via voice AI]",
+      "keyTakeaway": "Inclusive technology succeeds when linguists, designers, engineers, and testers unite their unique talents to solve real human challenges."
+    },
+    {
+      "storyId": "story2",
+      "title": "How Neha the UI Designer Redesigned Banking for Grandparents",
+      "location": "Pune, Maharashtra",
+      "domain": "Human-Centered Design & Accessibility",
+      "summary": "How a young designer's empathy transformed an intimidating mobile banking app into an accessible tool for two million senior citizens.",
+      "content": "Twenty-four-year-old Neha was a junior UI/UX designer at a leading digital bank in Pune. One Sunday evening, she visited her seventy-two-year-old grandfather, Ajoba. She found him sitting at his dining table, holding his smartphone with trembling hands, his forehead beaded with nervous sweat.\n\n'Ajoba, what happened?' Neha asked gently.\n\nAjoba looked up with embarrassed eyes. 'Neha, I was trying to send five hundred rupees to the local vegetable vendor using our bank app. But the text is so tiny, the screen is cluttered with fifty flashing promotional banners, and the confirmation button says 'Authorize Transaction 0x4B'. I am terrified that if I press the wrong button, all my pension savings will disappear!'\n\nNeha's heart ached. Her grandfather had worked as an accountant for forty years; he was brilliant with numbers. Yet a poorly designed app made him feel helpless and foolish.\n\nThe next morning, Neha walked into her team's sprint planning meeting with a bold proposal: 'Let us build 'Saral Mode' (Simple Mode) designed specifically for senior citizens and users with visual challenges.'\n\nHer engineering manager was supportive, and Neha led the human-centered design sprint:\n1. User Empathy Interviews: Neha invited twelve grandparents to the office. She observed where their fingers tapped, noticed that bright red error alerts caused panic, and saw that tiny 10-point fonts were impossible to read with bifocal glasses.\n2. Radical Visual Simplification: Neha redesigned the main dashboard. She eliminated all forty promotional banners. She increased the font size to 20 points, used high-contrast navy blue on cream backgrounds, and created four giant, self-explanatory square buttons: 'Send Money', 'Check Balance', 'Pay Electricity Bill', and 'Call Helper'.\n3. Reassuring Human Language: She replaced cold banking jargon with warm, clear confirmations: 'You are sending Rs 500 to Ramesh Kumar (Vegetable Vendor). Press the green button below to confirm.'\n4. Audio Confirmation: She added a gentle, clear voice chime that spoke: 'Success! Your payment of 500 rupees was sent safely.'\n\nWhen Saral Mode rolled out, it was an instant nationwide sensation. Over two million senior citizens activated the mode within sixty days. Letters of gratitude flooded the bank from families across India.\n\nAjoba called Neha on her phone, his voice brimming with pride: 'Neha, I just paid my electricity bill all by myself in two minutes! Your kindness made this screen feel like a trusted friend.'",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: Split comparison of a cluttered, stressful mobile banking screen versus Neha's clean, accessible 'Saral Mode' with large high-contrast buttons and friendly text]",
+      "keyTakeaway": "UI/UX designers are empathy champions. By simplifying interfaces and choosing kind, clear language, designers empower millions of overlooked users."
+    },
+    {
+      "storyId": "story3",
+      "title": "The High-Stakes QA Testing Squad Behind the World Cup Final",
+      "location": "Mumbai, Maharashtra",
+      "domain": "Quality Assurance & Extreme Load Testing",
+      "summary": "How a team of dedicated bug hunters stress-tested a live streaming platform to deliver uninterrupted cricket to 35 million simultaneous fans.",
+      "content": "On a Sunday in November, the Narendra Modi Stadium in Ahmedabad was an electric sea of blue. Over one hundred thousand spectators packed the stands for the ICC Cricket World Cup Final. But outside the stadium, an even bigger crowd was waiting: an estimated thirty-five million fans were preparing to stream the match live on their smartphones and smart TVs across India.\n\nInside the Mumbai engineering headquarters of the streaming network, thirty-year-old Lead QA Engineer Ankit and his ten-member testing squad had been preparing for this high-stakes day for five months.\n\nStreaming live high-definition video to thirty-five million simultaneous viewers is one of the most brutal engineering stress tests in world history. If the servers crash during the final over, millions of fans will erupt in fury, social media will explode with complaints, and advertisers will demand millions of dollars in refunds.\n\nAnkit's QA squad didn't just hope things would work; they spent months trying to destroy their own platform in simulated testing labs:\n1. Automated Bot Invasions: Ankit's team wrote automated testing scripts that created 40 million simulated digital 'phantom viewers'. They instructed the bots to log in, search for streams, and switch between Hindi, English, and Tamil audio tracks at the exact same second, pushing server processors to 95% capacity.\n2. Network Chaos Injection: QA engineers tested the video player on spotty 2G mobile internet in rural villages, on vibrating trains moving through railway tunnels, and during sudden Wi-Fi disconnections. They programmed the video player to buffer ahead by fifteen seconds and seamlessly step down video quality to standard definition instead of freezing the picture.\n3. The 'Six-Wicket Surge': They simulated what happens when Virat Kohli hits a six: three million new viewers open the app within three seconds. They verified that the cloud auto-scaling algorithms spun up two hundred additional server clusters in seconds to absorb the traffic spike.\n\nDuring the live final, as the stadium roared, the real viewer count climbed past twenty million, then thirty million, and peaked at a world-record 35.3 million simultaneous viewers!\n\nAnkit and his QA squad watched the telemetry dashboard. The server latency line held steady at 22 milliseconds. Across the nation, from small tea stalls in Assam to family living rooms in Kerala, the video played with pristine, stutter-free clarity.\n\nWhen the winning runs were scored, Ankit and his team stood up and cheered, hugging each other with relief and joy. They were invisible to the millions of cheering fans, but their meticulous testing had delivered happiness to an entire subcontinent.",
+      "imagePlaceholder": "[IMAGE_PLACEHOLDER: QA engineering control center in Mumbai with engineers cheering in front of server latency monitoring screens showing a world-record 35.3 million simultaneous live stream viewers]",
+      "keyTakeaway": "Rigorous quality assurance and proactive stress testing ensure that complex digital platforms operate flawlessly when millions of real human lives depend on them."
+    }
+  ],
+  "activities": [
+    {
+      "activityId": "activity1",
+      "title": "Tech Product Team Assembly — The Homework Helper Sprint",
+      "description": "Step into the shoes of a technology studio leader! Assemble a five-member multidisciplinary dream team to build an AI Homework Voice Helper for middle school students, assigning specific roles and tools. [IMAGE_PLACEHOLDER: Interactive team whiteboard showing five role slots (Data Annotator, ML Engineer, UI/UX Designer, QA Tester, Product Manager) with drag-and-drop specialist cards]",
+      "duration": "15 mins",
+      "materials": "Team role assignment worksheet, specialist profile cards, colored markers",
+      "learningOutcome": "Students can articulate the distinct responsibilities, daily tools, and collaborative interactions of the five core tech product roles.",
+      "instructions": [
+        "1. Form a group of five students or work individually with the five specialist profile cards.",
+        "2. Review the mission: Design an AI Homework Voice Helper that speaks Hindi, English, and regional languages.",
+        "3. Assign Member 1 as the UI/UX Designer: Sketch the main screen with large buttons and friendly mascot illustrations.",
+        "4. Assign Member 2 as the Data Annotator: List ten sample homework questions and label them by subject (Maths, Science, History).",
+        "5. Assign Member 3 as the ML Engineer: Choose the speech recognition and question-answering model architectures.",
+        "6. Assign Member 4 as the QA Tester: Write five creative tests to break the helper (e.g., asking questions in a whisper, asking two questions at once).",
+        "7. Assign Member 5 as the Product Manager: Present your team's complete product plan to the classroom in a two-minute pitch!"
+      ],
+      "toastFeedback": {
+        "tap_prompt": "Assign the UI/UX Designer to create the intuitive mobile app interface.",
+        "great_job": "Role assigned! User research confirmed interface is accessible and clear.",
+        "try_again": "QA Testers verify bugs and errors, while designers shape user experience."
+      }
+    },
+    {
+      "activityId": "activity2",
+      "title": "The UI/UX Empathy Audit — Redesigning for Grandparents",
+      "description": "Examine a terribly designed mobile banking screen filled with tiny text and confusing icons. Redesign it using empathy principles so an elderly citizen can use it with total confidence! [IMAGE_PLACEHOLDER: Split worksheet showing Cluttered Bad Design with red critique circles on the left, and a blank phone template for redesign on the right]",
+      "duration": "15 mins",
+      "materials": "Bad design audit sheet, redesign blank phone template, sketch pens",
+      "learningOutcome": "Students can apply accessibility principles, visual hierarchy, and empathetic language to simplify complex digital interfaces.",
+      "instructions": [
+        "1. Inspect the 'Terrible Screen' on your worksheet. Circle four bad design flaws: 1. Tiny 8-point font, 2. Confusing red error text, 3. Hidden menu buttons, 4. Cold technical jargon.",
+        "2. Put on your 'Empathy Hat': Imagine your grandparent using this screen with bifocal glasses and slightly shaky hands.",
+        "3. On the blank phone template, sketch your redesigned interface using only four large, friendly buttons.",
+        "4. Write clear, reassuring button labels in simple plain language (e.g., 'Send Money to Family' instead of 'Wire Transfer Protocol').",
+        "5. Share your redesign with your partner and test if they can complete a transfer in under ten seconds without hesitation."
+      ],
+      "toastFeedback": {
+        "tap_prompt": "Select the large high-contrast button to replace the tiny hidden menu icon.",
+        "great_job": "Empathy audit passed! The redesigned interface is accessible, clear, and reassuring.",
+        "try_again": "Avoid small 8-point fonts; senior citizens need large 18-point readable text."
+      }
+    },
+    {
+      "activityId": "activity3",
+      "title": "The QA Bug Bounty Hunt — Finding Hidden App Flaws",
+      "description": "Act as a digital detective! Inspect a prototype school cafeteria ordering app and find five hidden logic, boundary, and visual bugs before launch day. [IMAGE_PLACEHOLDER: Interactive tablet mockup of a cafeteria app with five clickable bug trigger zones: negative quantity, missing total, overlapping text, broken back button, currency symbol mismatch]",
+      "duration": "15 mins",
+      "materials": "Prototype app testing worksheet, bug report template, red highlighter",
+      "learningOutcome": "Students develop systematic testing methodologies, distinguishing between boundary flaws, visual bugs, and logic sequence errors.",
+      "instructions": [
+        "1. Open the testing scenario sheet showing five interactive screen states of the cafeteria app.",
+        "2. Test Boundary Bug 1: What happens if a student types '-5' samosas into the quantity box? Does the app subtract money from their account?",
+        "3. Test Visual Bug 2: Notice that the price text overlaps with the 'Order Now' button on small screen sizes.",
+        "4. Test Logic Bug 3: The user can tap 'Order Now' before selecting any food item, generating a blank receipt for Rs 0.",
+        "5. Test Connectivity Bug 4: What happens when Wi-Fi is toggled off while processing payment? Does the screen hang indefinitely?",
+        "6. Fill out a professional Bug Report: Title, Severity Level (Critical/Medium/Low), Steps to Reproduce, and Expected vs Actual Result."
+      ],
+      "toastFeedback": {
+        "tap_prompt": "Flag the negative quantity bug: Ordering -5 samosas causes negative billing.",
+        "great_job": "Critical bug captured! Documenting reproducible steps allows engineers to fix it promptly.",
+        "try_again": "Look closely at the quantity input: An app should never allow negative food numbers."
+      }
+    }
+  ],
+  "games": [
+    {
+      "gameId": "game1",
+      "title": "Match the Tech Superpower — Career Explorer",
+      "type": "career_matcher",
+      "description": "Match students' personal passions and everyday superpowers with their ideal technology career path! [IMAGE_PLACEHOLDER: Five student character cards with speech bubbles describing their hobbies, matching to five tech role badges]",
+      "instructions": "Drag each student's superpower badge to the tech career that matches their unique gifts.",
+      "cards": [
+        {
+          "id": "m1",
+          "student": "Aanya loves drawing comic book characters, arranging colored pencils, and organizing her room neatly.",
+          "idealCareer": "UI/UX Designer",
+          "explanation": "Visual creativity, color harmony, and empathy make Aanya a natural UI/UX designer."
+        },
+        {
+          "id": "m2",
+          "student": "Dev loves solving mathematical riddles, finding number patterns, and building complex Lego gearboxes.",
+          "idealCareer": "Machine Learning Engineer",
+          "explanation": "Strong mathematical intuition and systematic logic are the building blocks of an ML engineer."
+        },
+        {
+          "id": "m3",
+          "student": "Farhan loves finding spelling mistakes in textbooks, asking 'What if this breaks?', and testing game cheat codes.",
+          "idealCareer": "Quality Assurance (QA) Tester",
+          "explanation": "Curiosity, attention to detail, and a detective mindset create a brilliant QA bug hunter."
+        },
+        {
+          "id": "m4",
+          "student": "Meera loves listening to grandmother's dialects, learning languages, and categorizing stamps and leaves.",
+          "idealCareer": "Data Curator / Annotator",
+          "explanation": "Linguistic sensitivity, meticulous categorization, and cultural appreciation power data curation."
+        },
+        {
+          "id": "m5",
+          "student": "Kabir loves organizing school cricket tournaments, resolving disputes between friends, and telling inspiring stories.",
+          "idealCareer": "Product Manager (PM)",
+          "explanation": "Leadership, communication, vision, and empathy make Kabir a wonderful tech team conductor."
+        }
+      ]
+    },
+    {
+      "gameId": "game2",
+      "title": "The Product Lifecycle Sprint — From Idea to Launch",
+      "type": "sequence_ordering",
+      "description": "Arrange the 5 core stages of creating an AI product in their correct chronological order. [IMAGE_PLACEHOLDER: Five colorful puzzle stages: User Research, Data Curation, Model Training, QA Testing, and App Launch]",
+      "instructions": "Drag the product lifecycle blocks into order from Step 1 to Step 5.",
+      "steps": [
+        {
+          "order": 1,
+          "label": "User Research & Problem Discovery",
+          "detail": "Product Managers and UI/UX Designers interview users to understand real-world frustrations and define goals."
+        },
+        {
+          "order": 2,
+          "label": "Data Collection & Annotation",
+          "detail": "Data Curators gather diverse real-world samples and annotate them with verified categorical labels."
+        },
+        {
+          "order": 3,
+          "label": "Model Architecture & Training",
+          "detail": "Machine Learning Engineers train neural networks on the labeled data, tuning hyperparameters to minimize error."
+        },
+        {
+          "order": 4,
+          "label": "Interface Design & App Integration",
+          "detail": "UI/UX Designers build the visual screens and developers integrate the trained AI model into working software."
+        },
+        {
+          "order": 5,
+          "label": "Quality Assurance Stress Testing & Launch",
+          "detail": "QA Testers hunt bugs, test extreme loads, verify security, and approve the product for public release."
+        }
+      ]
+    },
+    {
+      "gameId": "game3",
+      "title": "The Team Role Crisis Solver — Launch Day Rescue",
+      "type": "scenario_solver",
+      "description": "Unexpected crises strike on launch day! Pick the right specialist team member to step in and save the day. [IMAGE_PLACEHOLDER: Interactive crisis board with three emergency scenarios and team specialist rescue buttons]",
+      "instructions": "Read the crisis scenario and select the team member whose superpower solves the problem.",
+      "scenarios": [
+        {
+          "id": "c1",
+          "crisis": "Elderly users in pilot trials are complaining that they can't tell if the green button was clicked because there's no sound or visual feedback.",
+          "heroRole": "UI/UX Designer",
+          "action": "Adds tactile haptic vibration, high-contrast button states, and a cheerful voice confirmation chime.",
+          "result": "Trial satisfaction climbs to 99%; elderly users feel confident and in control."
+        },
+        {
+          "id": "c2",
+          "crisis": "When ten thousand students take an online quiz simultaneously, the timer freezes and submits blank answers for 200 students.",
+          "heroRole": "QA Tester & Performance Engineer",
+          "action": "Identified a database lock bottleneck during stress testing and implemented asynchronous answer caching.",
+          "result": "Quiz server handles 50,000 simultaneous submissions without dropping a single student score."
+        },
+        {
+          "id": "c3",
+          "crisis": "The voice AI assistant understands urban English speakers perfectly, but completely fails on students speaking with regional accents.",
+          "heroRole": "Data Curator & Annotator",
+          "action": "Gathers 5,000 diverse regional speech samples from five states and retrains the model with balanced phonetics.",
+          "result": "Accent recognition accuracy jumps from 54% to 96% across all Indian regions."
+        }
+      ]
+    }
+  ],
+  "assessment": {
+    "title": "Class 6 AI Foundations — Chapter 4 Lesson 1 Olympiad Challenge",
+    "totalQuestions": 18,
+    "passingScore": 70,
+    "questions": [
+      {
+        "questionId": "q1",
+        "questionNumber": 1,
+        "question": "Why is the popular Hollywood idea of the 'Lone Coder' who builds entire digital empires alone considered a myth?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because real software requires a multidisciplinary team combining design, testing, data curation, communication, and engineering",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Because computer companies only hire people who work in pairs with matching clothes",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Because single programmers are legally forbidden from owning computers",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because keyboards break if only one person types on them",
+            "correct": false
+          }
+        ],
+        "explanation": "Modern digital products are vast collaborative efforts requiring diverse skills: art, psychology, testing, and engineering.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q2",
+        "questionNumber": 2,
+        "question": "What is the primary responsibility of a Data Annotator in an AI product team?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Cleaning the dust off computer monitors in the office with soft cloths",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Inspecting raw data examples and attaching accurate, verified labels and tags so AI models can learn patterns",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Selling mobile phones in retail shopping malls",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Ordering pizza for the software engineering team during lunch",
+            "correct": false
+          }
+        ],
+        "explanation": "Data annotators provide the verified ground truth (labels, bounding boxes, phonetic tags) that fuels machine learning.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q3",
+        "questionNumber": 3,
+        "question": "What is the difference between UI (User Interface) and UX (User Experience)?",
+        "options": [
+          {
+            "id": "a",
+            "text": "UI is how the app looks visually (colors, buttons, typography); UX is how the app feels to use (flow, ease, intuitive comfort)",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "UI is used only on iPhones, while UX is used only on Android phones",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "UI stands for Underground Internet, while UX stands for Universal X-ray",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "There is no difference whatsoever; they are identical words",
+            "correct": false
+          }
+        ],
+        "explanation": "UI represents visual visual assets and layout; UX encompasses human psychology, accessibility, and overall journey ease.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q4",
+        "questionNumber": 4,
+        "question": "Why are UI/UX designers often described as 'Empathy Champions'?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because they win gold medals in running marathons",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Because they deeply study human feelings, struggles, and needs to make technology simple, welcoming, and accessible to everyone",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Because they only design apps for pet animals",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because they write computer code twice as fast as other engineers",
+            "correct": false
+          }
+        ],
+        "explanation": "Designers step into the shoes of users (grandparents, children, people with disabilities) to eliminate frustration and create joy.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q5",
+        "questionNumber": 5,
+        "question": "What is the primary mission of a Quality Assurance (QA) Tester on a tech team?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To praise developers and tell them that their code is 100% perfect without testing it",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "To systematically hunt for bugs, test edge cases, and try to break the software so flaws are fixed before real users see them",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "To paint the office walls with bright colors every Monday",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "To answer customer telephone complaints after an app crashes",
+            "correct": false
+          }
+        ],
+        "explanation": "QA testers act as digital detectives who stress-test products and identify bugs proactively to protect the user experience.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q6",
+        "questionNumber": 6,
+        "question": "Why is a Product Manager (PM) often compared to an orchestra conductor?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because they play the violin during engineering meetings",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Because they don't play every single instrument themselves, but coordinate specialists, set vision, and ensure beautiful harmony",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Because they make all software developers wear formal black tuxedos",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because they only build apps that stream classical music",
+            "correct": false
+          }
+        ],
+        "explanation": "Product managers coordinate engineers, designers, testers, and data curators, aligning diverse talents toward a unified goal.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q7",
+        "questionNumber": 7,
+        "question": "In the story of BhashaSetu, how did Tanvi the UI/UX designer help rural artisans who could not read English?",
+        "options": [
+          {
+            "id": "a",
+            "text": "She forced all artisans to attend a two-year English reading course before using the app",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "She replaced typed text boxes with a glowing brass diya microphone icon and intuitive voice prompts in regional languages",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "She deleted all images and replaced them with black-and-white numbers",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "She made the app work only on desktop computers",
+            "correct": false
+          }
+        ],
+        "explanation": "Empathetic design eliminated text friction, using a culturally familiar glowing lamp icon and regional voice interactions.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q8",
+        "questionNumber": 8,
+        "question": "What is 'Stress Testing' in Quality Assurance engineering?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Giving difficult mathematics exams to software engineers to see if they get nervous",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Simulating extreme user loads (like millions of simultaneous viewers during a cricket match) to verify servers don't crash",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Dropping computers into boiling water to test heat resistance",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Playing loud rock music in the office to test headphone noise cancellation",
+            "correct": false
+          }
+        ],
+        "explanation": "Stress testing pushes system capacities to the limit with massive simulated bot traffic, uncovering bottlenecks before live events.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q9",
+        "questionNumber": 9,
+        "question": "What does a Technical Writer do on a technology product team?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Writes fictional comic books about alien space battles",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Translates complex technical algorithms and features into friendly, crystal-clear user guides, error messages, and documentation",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Signs checks to pay office electricity bills",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Repairs broken keyboard keys with glue",
+            "correct": false
+          }
+        ],
+        "explanation": "Technical writers bridge the gap between complex engineering systems and ordinary human understanding with clear, empathetic words.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q10",
+        "questionNumber": 10,
+        "question": "How did Neha's 'Saral Mode' banking redesign help senior citizens in Pune?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It gave free movie tickets to anyone over seventy years old",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "It introduced large 20-point fonts, four simple high-contrast buttons, and reassuring plain-language confirmations",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "It removed all passwords and security checks completely",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "It turned off the smartphone screen to prevent eye strain",
+            "correct": false
+          }
+        ],
+        "explanation": "Saral Mode eliminated visual clutter, enlarged text, and used reassuring human words, enabling 2 million elders to bank independently.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q11",
+        "questionNumber": 11,
+        "question": "What type of student is an ideal match for a career in Machine Learning Engineering?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A student who loves logic, mathematical reasoning, pattern discovery, and building algorithmic engines",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "A student who dislikes computers and never wants to solve puzzles",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "A student who only wants to watch television all day",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "A student who refuses to work with numbers or data",
+            "correct": false
+          }
+        ],
+        "explanation": "ML engineering thrives on analytical problem solving, mathematical curiosity, and finding patterns in complex data.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q12",
+        "questionNumber": 12,
+        "question": "What is 'Boundary Testing' in QA software testing?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Drawing chalk lines around the perimeter of the office building",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "Testing how software behaves when given extreme, unusual, or invalid inputs (like negative numbers or 10,000 words in a name box)",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Checking if a smartphone works when crossing state borders on a highway",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Measuring the length of electrical charging cables",
+            "correct": false
+          }
+        ],
+        "explanation": "Boundary testing probes extreme values and edge conditions to ensure software doesn't crash on unexpected inputs.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q13",
+        "questionNumber": 13,
+        "question": "Why is Project Bhashini in India employing thousands of language specialists and cultural annotators?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To build comprehensive voice and text datasets across 22 official Indian languages, making AI accessible to all citizens",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "To replace all school textbooks with English-only digital screens",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "To teach computer programming in Latin",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "To shut down regional radio stations across India",
+            "correct": false
+          }
+        ],
+        "explanation": "Project Bhashini democratizes AI by curating massive open datasets in Indian vernacular languages, empowering non-English speakers.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q14",
+        "questionNumber": 14,
+        "question": "If an artistically gifted student who loves drawing wants to enter the tech industry, which career path is their most natural fit?",
+        "options": [
+          {
+            "id": "a",
+            "text": "UI/UX Designer or Product Visual Artist",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Database Hardware Technician",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Electrical Wire Solderer",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Server Battery Recycler",
+            "correct": false
+          }
+        ],
+        "explanation": "Visual arts, illustration, color theory, and layout are the foundational superpowers of user interface (UI) design.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q15",
+        "questionNumber": 15,
+        "question": "How did Ankit's QA team ensure that 35.3 million simultaneous cricket fans could stream the World Cup Final without crashing?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They prayed and crossed their fingers during the match",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "They conducted months of proactive bot stress testing, simulated network drops, and tuned cloud auto-scaling servers in advance",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "They asked 30 million people to turn off their phones during the final over",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "They lowered video quality to black-and-white radio audio",
+            "correct": false
+          }
+        ],
+        "explanation": "Months of systematic load simulations and network chaos testing allowed the platform to handle world-record traffic smoothly.",
+        "difficulty": "medium",
+        "points": 10
+      },
+      {
+        "questionId": "q16",
+        "questionNumber": 16,
+        "question": "What is the very FIRST step in the creation lifecycle of any great AI product?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Writing 50,000 lines of complex Python code immediately",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "User Research & Problem Discovery: understanding the real human frustration and defining the goal clearly",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "Designing an expensive advertising television commercial",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Printing thousands of cardboard packaging boxes",
+            "correct": false
+          }
+        ],
+        "explanation": "Every successful product starts by understanding the human problem through empathetic user research before building anything.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q17",
+        "questionNumber": 17,
+        "question": "Why are soft skills like active listening, teamwork, and clear communication just as valuable as coding skills in tech companies?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because tech companies are collaborative environments where diverse specialists must share ideas and align toward shared goals",
+            "correct": true
+          },
+          {
+            "id": "b",
+            "text": "Because computer programming languages will be completely banned next year",
+            "correct": false
+          },
+          {
+            "id": "c",
+            "text": "Because soft skills allow employees to avoid doing any actual work",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "Because computers only respond to people who speak with polite accents",
+            "correct": false
+          }
+        ],
+        "explanation": "Great technology is a team effort. Clear communication and collaborative empathy prevent misunderstandings and build better tools.",
+        "difficulty": "easy",
+        "points": 10
+      },
+      {
+        "questionId": "q18",
+        "questionNumber": 18,
+        "question": "What is the ultimate takeaway of 'Explore Tech Careers' for a middle school student?",
+        "options": [
+          {
+            "id": "a",
+            "text": "That only students who score 100% in mathematics can ever work in the technology sector",
+            "correct": false
+          },
+          {
+            "id": "b",
+            "text": "That the technology ecosystem needs artists, writers, detectives, listeners, and organizers just as much as coders—there is a place for everyone",
+            "correct": true
+          },
+          {
+            "id": "c",
+            "text": "That all jobs will be replaced by robots so students shouldn't care about careers",
+            "correct": false
+          },
+          {
+            "id": "d",
+            "text": "That students must pick one single career today and never change their mind",
+            "correct": false
+          }
+        ],
+        "explanation": "Technology thrives on diverse human strengths. Art, storytelling, empathy, logic, and leadership all have vital pathways in tech.",
+        "difficulty": "easy",
+        "points": 10
+      }
+    ],
+    "completionFeedback": {
+      "excellent": {
+        "range": "90-100",
+        "message": "Tech Career Architect! You understand that modern technology is a vibrant team sport where design, testing, data curation, and engineering unite. Algo awards you the Innovation Studio Leader badge!",
+        "badge": "Innovation Studio Leader"
+      },
+      "good": {
+        "range": "70-89",
+        "message": "Great work! You have a solid grasp of tech roles beyond coding. Review the difference between UI and UX, and how QA testing works to score 100%!",
+        "badge": "Tech Team Explorer"
+      },
+      "needsReview": {
+        "range": "0-69",
+        "message": "Good effort! Revisit the sections on UI/UX empathy design, data annotation, and QA bug hunting, then retry the challenge.",
+        "badge": "Curious Learner"
+      }
+    }
+  },
+  "summary": {
+    "recap": "Algo: What an eye-opening adventure today! You busted the 'Lone Coder' myth wide open and stepped inside the vibrant, collaborative world of modern technology studios! You met the Data Annotators—the patient teachers who curate and label the training flashcards that make AI possible. You saw how Machine Learning Engineers turn mathematical patterns into working prediction engines. You walked in the shoes of UI/UX Designers, the Empathy Champions who ensure that apps are welcoming, beautiful, and accessible to everyone from kindergarteners to grandparents. You teamed up with QA Testers—the fearless digital detectives who stress-test systems so they never break during high-stakes moments like the Cricket World Cup. And you explored how Product Managers and Technical Writers connect technology to human hearts with clear vision and friendly words. Remember: Technology has a home for your unique gifts!",
+    "keyTakeaways": [
+      "Modern technology is a team sport; building successful products requires diverse talents beyond computer programming.",
+      "Data Annotators and Curators are the educators of AI, providing verified ground-truth labels and culturally rich data.",
+      "Machine Learning Engineers design neural network architectures and tune models to achieve high accuracy without memorization.",
+      "UI/UX Designers champion human empathy, creating intuitive, accessible, and beautiful interfaces for diverse users.",
+      "Quality Assurance (QA) Testers act as digital detectives who stress-test systems to find and fix bugs before launch.",
+      "Product Managers and Technical Writers guide vision and craft clear, kind language that connects machines to human lives."
+    ],
+    "studentReflection": "Think about your own unique talents: Do you love drawing (UI/UX), finding puzzle mistakes (QA), organizing friends (Product Management), languages (Data Curation), or math logic (ML Engineering)? Which tech superpower excites you most?",
+    "parentDiscussionPrompt": "Share the story of Neha's 'Saral Mode' redesign with your parents. Ask them about an app they find confusing or cluttered, and discuss how a UI/UX designer could redesign it with empathy to make their lives easier!"
+  },
+  "teacherGuide": {
+    "lessonDuration": "45 minutes",
+    "recommendedClassFormat": "10 mins interactive Movie Set vs Tech Team hook -> 15 mins concept breakdown with visual analogies -> 10 mins hands-on Product Team Assembly sprint -> 10 mins mastery quiz and reflection",
+    "openingHookDemonstration": "Ask five students to come to the front of the classroom. Assign them roles for making a sandwich: Student A is the Baker (makes bread), Student B is the Artist (spreads butter in a neat pattern), Student C is the Taste Tester (checks flavor), Student D is the Menu Writer (writes description), and Student E is the Captain (organizes timing). Ask: 'Can the Baker make the whole sandwich shop work alone?' Connect this directly to how tech teams combine developers, designers, testers, writers, and product managers.",
+    "discussionPrompts": [
+      "Why is having people from different states, languages, and backgrounds on a tech team essential when building an app for all of India?",
+      "How does designing an app with empathy for elderly citizens or people with disabilities make the app better for everyone?",
+      "If you were a QA tester on a video game, what is the funniest or weirdest glitch you would try to trigger on purpose?",
+      "Why do companies like Google and Apple value students who know how to collaborate and communicate just as much as those who know math?"
+    ],
+    "commonMisconceptions": [
+      {
+        "misconception": "You cannot work in a technology company unless you have a university degree in computer programming.",
+        "correction": "Technology companies hire thousands of designers, psychologists, linguists, writers, testers, and project managers who never write code."
+      },
+      {
+        "misconception": "Software developers do not need designers because they can choose app colors and button sizes themselves.",
+        "correction": "Designing intuitive, accessible human interfaces is a specialized scientific discipline rooted in psychology, human perception, and visual art."
+      },
+      {
+        "misconception": "Finding a bug during testing means the software developer did a terrible job.",
+        "correction": "All complex software contains bugs initially. Finding bugs during testing is celebrated because it proves QA testing is working effectively."
+      },
+      {
+        "misconception": "Data annotation is an automated job done entirely by computers.",
+        "correction": "Ground-truth labels require human judgment, linguistic understanding, and cultural context that computers cannot generate independently."
+      }
+    ],
+    "differentiatedInstruction": {
+      "forAdvancedLearners": "Introduce Agile development methodologies (Scrum, Sprints, User Stories, and Kanban boards), discussing how tech teams manage two-week iterative cycles.",
+      "forDevelopingLearners": "Use physical craft supplies (colored index cards, stickers, markers) to let students physically design and test button layouts on paper mobile templates."
+    }
+  },
+  "resources": {
+    "teacherGuideDocument": "/content/middle/guides/class6-ch4-l1-teacher.pdf",
+    "worksheets": [
+      "/content/middle/worksheets/class6-ch4-l1-activity1-team-assembly.pdf",
+      "/content/middle/worksheets/class6-ch4-l1-activity2-empathy-audit.pdf",
+      "/content/middle/worksheets/class6-ch4-l1-activity3-bug-bounty.pdf"
+    ],
+    "supplementaryVideos": [
+      {
+        "title": "A Day in the Life of a UI/UX Designer — Designing with Empathy",
+        "url": "https://www.youtube.com/watch?v=0xL3G7_PzE",
+        "duration": "4:45",
+        "suitableFor": "Classroom projection or home extension exploration"
+      },
+      {
+        "title": "How Tech Teams Build an App — From Idea to App Store",
+        "url": "https://www.youtube.com/watch?v=kY9V88_V4cE",
+        "duration": "5:20",
+        "suitableFor": "Visual reinforcement of product management and quality assurance testing"
+      }
+    ],
+    "classroomProjectIdeas": [
+      {
+        "projectTitle": "School Canteen Paper App Redesign",
+        "concept": "Interview younger primary students about canteen lunch ordering challenges, designing a paper-prototype app with large food icons."
+      },
+      {
+        "projectTitle": "Classroom QA Bug Hunt Day",
+        "concept": "Pick an educational website used in school, create test scenarios, and compile a classroom bug report of formatting or navigation glitches."
+      },
+      {
+        "projectTitle": "My Tech Career Superpower Board",
+        "concept": "Create a personal collage matching your favorite school subjects and personal hobbies to two tech career pathways."
+      }
+    ],
+    "glossary": [
+      {
+        "term": "UI (User Interface)",
+        "definition": "The visual presentation of a software application, including screen layout, buttons, color palettes, fonts, and icons."
+      },
+      {
+        "term": "UX (User Experience)",
+        "definition": "The overall human feeling, ease of navigation, and satisfaction a person experiences while interacting with a digital product."
+      },
+      {
+        "term": "Data Annotator",
+        "definition": "A specialist who inspects raw data examples (images, audio, text) and attaches accurate labels and tags to create training data for AI models."
+      },
+      {
+        "term": "Machine Learning Engineer",
+        "definition": "A technical professional who designs neural network architectures, trains algorithms on data, and optimizes models for deployment."
+      },
+      {
+        "term": "Quality Assurance (QA) Tester",
+        "definition": "A digital investigator who systematically tests software using edge cases, stress testing, and boundary checks to identify bugs before launch."
+      },
+      {
+        "term": "Product Manager (PM)",
+        "definition": "The collaborative leader who defines the product vision, coordinates multidisciplinary team members, and ensures the product solves real user needs."
+      },
+      {
+        "term": "Technical Writer",
+        "definition": "A professional communicator who translates complex technical software and engineering concepts into clear, friendly human documentation."
+      },
+      {
+        "term": "Accessibility Design",
+        "definition": "Designing digital products so they can be easily understood and navigated by people with disabilities, diverse languages, and varying literacy levels."
+      },
+      {
+        "term": "Stress Testing",
+        "definition": "Subjecting software or server infrastructure to extreme simulated user traffic to verify that systems remain stable without crashing."
+      }
+    ]
+  }
+}
