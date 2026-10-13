@@ -1,0 +1,1388 @@
+{
+  "lessonId": "l1",
+  "fullLessonId": "junior-class4-ch3-l1",
+  "title": "AI in My Mobile 📱✨",
+  "level": "junior",
+  "class": "class4",
+  "chapter": "ch3",
+  "chapterTitle": "AI Applications • SOLVE",
+  "lessonNumber": 1,
+  "classNumber": 4,
+  "chapterNumber": 3,
+  "mascot": {
+    "name": "Robo-Pi",
+    "emoji": "🤖✨",
+    "description": "A friendly silver robot wearing a tiny graduation cap, a sparkling magnifying glass necklace, and shiny golden roller skates! Robo-Pi holds a glowing golden smartphone with sparkling app icons and has two bouncy antenna ears that flash like camera flashes when excited!",
+    "voiceStyle": "Cheerful, energetic beeping sentences. Loves exclamation marks! Uses BEEP BOOP as a greeting. Uses the simplest, sweetest kindergarten words so that every child instantly understands with zero confusion! Always gives warm robot hugs and huge encouragement!",
+    "catchphrase": "BEEP BOOP! Did you know a tiny superhero chip lives inside Mummy's phone? Let's find the magic inside! 📱⚡🤖"
+  },
+  "metadata": {
+    "duration": "45 minutes",
+    "ageGroup": "9-10 years",
+    "difficulty": "beginner",
+    "totalWords": 12000,
+    "version": "1.0",
+    "lastUpdated": "2026-10-13",
+    "author": "AI Olympiad Team",
+    "tags": [
+      "AI in mobile",
+      "smartphone AI",
+      "neural chip",
+      "photo search",
+      "night mode",
+      "smart battery",
+      "AI applications",
+      "solve",
+      "class4",
+      "junior"
+    ]
+  },
+  "content": {
+    "introduction": {
+      "welcomeMessage": "🤖✨ BEEP BOOP! Welcome to Chapter 3: AI Applications! Today, we discover the super-secret magic hiding right inside Mummy's and Papa's mobile phones! 📱🌟",
+      "roboPiGreeting": {
+        "text": "BEEP BOOP! Hello, hello, hello, my wonderful young explorer! It is me, your robot best friend Robo-Pi, ready for the coolest adventure in town! 🤖✨ Give me an extra-loud virtual high-five! *CLINK-CLATTER!* ✋ Did you know that you are holding one of the most powerful alien-level supercomputers in the entire universe right in your pocket? It's true! Take a look at Mummy's or Papa's smartphone. To most people, it just looks like a shiny black piece of glass and aluminum. But BEEP BOOP! Did you know a tiny superhero chip lives inside Mummy's phone? That is right! Tucked deep inside the phone's circuit board, smaller than your pinky fingernail, is a mini smart brain called a NEURAL CHIP or NPU! 🧠⚡ It doesn't sleep, it doesn't take lunch breaks, and it has superpowers that feel like pure fairy-tale wizardry! Have you ever typed the word 'Dog' into the photo search bar on Mummy's phone? You never typed 'dog' on any of those photos before! You never told the phone that your pet Bruno is a golden puppy! Yet, in less than ONE SECOND, the phone displays every single picture of Bruno playing in the garden, sleeping on the rug, or chewing on a red rubber ball! 🐶📸 How did the phone know? And what about taking photos at night? When you blow out your birthday candles in a dark room, your eyes can barely see in the shadows. But Mummy taps 'Night Mode' on the phone camera, and *CLICK* — the screen lights up like daytime! 🌙✨ The candles glow, your smiling face is crystal clear, and the dark room looks bright and beautiful! How does that tiny glass rectangle do all these miracles? Today, we are going to open up the secret superhero toolbox inside your mobile phone! Are you ready? Let us zoom inside the smartphone! 📱🚀🎉",
+        "toastGuidance": {
+          "tap_prompt": "👇 Tap the glowing smartphone to wake up the Superhero Neural Chip! 📱⚡",
+          "great_job": "🌟 BEEP BOOP! Neural Chip awake! 10 trillion smart calculations ready! 🧠✨",
+          "encouragement": "🤖 Don't worry if it sounds like magic — Robo-Pi is here to explain every trick in super-simple words!"
+        }
+      },
+      "openingStory": {
+        "title": "🐶 The Great Mystery of Bruno the Vanishing Puppy! 📱🔍",
+        "content": "Once upon a warm Sunday afternoon, nine-year-old Kabir was sitting on the living room rug with a giant smile on his face. Kabir's fluffy golden puppy, Bruno, had just learned the coolest new trick: catching a yellow tennis ball in mid-air and doing a joyful spin! 🎾🐕 Kabir wanted to show the trick to Grandma, who lived in a faraway town. But Kabir also wanted to show Grandma what Bruno looked like when he was just a tiny, palm-sized puppy two years ago. Kabir picked up Mummy's smartphone and opened the Photos app. But Kabir's eyes went wide with panic: 'Oh no! Mummy has over FIVE THOUSAND photos on her phone!' 😱 Kabir started scrolling with his thumb: swipe, swipe, swipe... There were photos of birthday cakes, photos of grocery shopping lists, photos of sunset clouds, photos of Papa's car, and photos of cousin Priya's baby brother! Kabir scrolled for ten whole minutes, but finding a photo of baby Bruno from two years ago was like searching for a single grain of sugar in a giant sandbox! Kabir sighed: 'Mummy, it's impossible! I'll never find the puppy pictures before Grandma calls!' Mummy walked into the room holding a cup of tea. She smiled gently: 'Kabir, you don't have to scroll with your thumb like an old-fashioned paper book! Let the smartphone's AI detective do the work!' Mummy tapped the tiny magnifying glass icon at the bottom of the screen. In the search box, Mummy typed three letters: D - O - G. 🐶 Kabir looked confused: 'Mummy, did you write 'Dog' on every photo when you took them?' Mummy laughed: 'Nope! I never tagged a single one!' Mummy tapped SEARCH. *BEEP-SWOOSH!* In less than half a second, the entire screen transformed! Every single photo of baby Bruno appeared in a gorgeous golden grid! There was Bruno asleep in Kabir's shoe! There was Bruno eating watermelon! There was Bruno wearing a red holiday bandana! Kabir gasped: 'HOW?! Did a tiny magical fairy crawl inside the phone and look at all five thousand pictures while I blinked?' Mummy tapped Kabir's nose: 'No fairies, Kabir! Inside the phone is a tiny computer brain called a Neural Chip. That chip was trained by looking at millions of pictures of dogs, cats, cars, and trees. When I typed 'Dog', the chip scanned all five thousand photos in the blink of an eye, spotted Bruno's floppy ears, wet black nose, and furry tail, and gathered them all for you!' Just then, Grandma called on video chat. Kabir beamed with pride, held up the screen, and showed Grandma baby Bruno from two years ago! Grandma clapped her hands with joy! Kabir hugged Mummy's phone: 'Mummy, your phone isn't just a phone — it's a puppy-finding superhero!' 📱🐶💖",
+        "moraleOfStory": "A smartphone is not just a screen for games and videos. Inside is a brilliant AI helper that recognizes faces, animals, and objects instantly to help humans solve everyday problems! 📱✨",
+        "roboPiComment": "BEEP BOOP! Wasn't that incredible? Five thousand photos scanned in zero point two seconds! The neural chip has eyes that never get tired! Today we are going to explore all of its secret superpowers! 🐶🤖"
+      },
+      "learningObjectives": [
+        "📱 Meet the Superhero Neural Chip (NPU): The tiny mini-brain inside modern smartphones that powers AI!",
+        "🐶 Discover Magic Photo Search: How phones find dogs, beaches, and cakes without humans ever tagging them!",
+        "🌙 Understand Night Mode Magic: How phone cameras turn pitch-black darkness into bright, glowing daytime photos!",
+        "🔋 Learn Smart Battery Management: How AI learns your daily habits and saves battery power while you sleep!",
+        "🐕 Conquer the Photo Album Dog-Finder Mission: Test object search, animal detection, and Night Mode at home!",
+        "🏆 Earn your official Mobile AI Detective Badge and become a certified Smartphone Master! 📱🏅"
+      ],
+      "detectiveBadge": {
+        "title": "The Mobile AI Detective Badge 📱🏅",
+        "description": "Collect all three sparkling mobile medals to prove you know the secret superpowers hiding inside smartphones!",
+        "magnifiers": [
+          {
+            "id": "badge-photos",
+            "name": "Magic Photo Detective Medal 🐶",
+            "earnedBy": "Mastering Section 1: Discovering how neural vision finds pets, cakes, and flowers instantly!",
+            "colour": "#FFD700"
+          },
+          {
+            "id": "badge-night",
+            "name": "Night Mode Wizard Medal 🌙",
+            "earnedBy": "Mastering Section 2: Discovering how cameras combine multiple exposures to illuminate the dark!",
+            "colour": "#00E5FF"
+          },
+          {
+            "id": "badge-battery",
+            "name": "Smart Battery Guardian Medal 🔋",
+            "earnedBy": "Mastering Section 3: Discovering how AI learns your schedule to keep your phone charged all day!",
+            "colour": "#4CAF50"
+          }
+        ]
+      },
+      "auraGuidance": {
+        "welcome": "LET'S SOLVE! Welcome to Chapter 3! Get ready to peek inside Mummy's and Papa's smart mobile phone! 📱",
+        "instruction": "Listen to Robo-Pi, tap the glowing phone chips, and watch how AI solves everyday family puzzles! 🌟",
+        "encouragement": "You see smartphones every single day! Today you will understand how they work better than most grown-ups! 💡"
+      }
+    },
+    "mainConcept": {
+      "whatIsAI": {
+        "title": "📱 What is the 'Superhero Chip' Inside Your Mobile? 🧠⚡",
+        "roboPiIntro": "BEEP BOOP! Before we unlock the photo gallery and camera, let me introduce you to the tiny silver champion living inside your mobile phone! Meet the NEURAL CHIP! 🤖💡",
+        "simpleExplanation": "Look at your palm. If you hold a peanut in your hand, that peanut is about one centimeter long. Inside every modern smartphone is a square piece of silicon even smaller than that peanut! For a long time, phones only had a regular computer chip called a CPU (Central Processing Unit). A CPU is like a very obedient mathematician: it can add numbers, open apps, and show text messages. But it was very slow at recognizing pictures or hearing voices. If you asked an old CPU to look at 5,000 photos to find a puppy, the phone would get super hot, the battery would drain in two minutes, and the screen would freeze! 🔥📱 So brilliant scientists invented a brand-new mini-brain: the NPU, which stands for NEURAL PROCESSING UNIT or NEURAL CHIP! 🧠⚡ The Neural Chip is designed to think like a human brain! Instead of doing one math problem at a time in a slow single line, the Neural Chip does TRILLIONS of tiny pattern-matching calculations all at the exact same millisecond! It looks at shapes: 'Does this photo have two triangular ears? Does it have a wet black nose? Does it have golden fur? YES! It is a dog!' The Neural Chip does this in zero point zero zero one seconds without making the phone hot and without draining the battery! It is like having a tiny, friendly superhero living inside the phone, working day and night to keep your photos organized, your night pictures bright, and your battery lasting all day long! Let us meet its three greatest superpowers! 📱✨",
+        "keyPoints": [
+          "📱 Modern smartphones have a tiny mini-brain called a Neural Processing Unit (NPU) or Neural Chip.",
+          "🧠 The Neural Chip thinks in patterns, just like human eyes and brains recognize shapes instantly.",
+          "⚡ It can perform TRILLIONS of smart calculations every second without draining the phone battery.",
+          "🐶 It powers smart photo search, Night Mode camera magic, face unlock, and battery saving.",
+          "👶 You don't need to do any coding: the chip works automatically in the background every time you tap!"
+        ],
+        "toastGuidance": {
+          "tap_prompt": "👇 Tap the glowing Neural Chip on the phone motherboard! 🧠⚡",
+          "great_job": "⭐ SUPERHERO CHIP ACTIVATED! Trillions of calculations humming smoothly! 📱🎉",
+          "try_again": "🤔 Tap the small square chip in the center of the mobile phone!"
+        }
+      },
+      "sections": [
+        {
+          "id": "section-1",
+          "title": "🐶 Section 1: The Magic Photo Detective! (Finding Bruno the Dog!) 📸🔍",
+          "missionBadge": "Magic Photo Detective Medal 🐶",
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Section 1, Photo Detective! 🤖🐶 Your first mission is to discover how your phone looks at photos with electronic eyes! How does it know a puppy from a pancake? Let us investigate the magic gallery! 🔍✨",
+          "mainContent": {
+            "paragraph1": "Think about your own family photo album on Mummy's or Papa's phone. Most families have thousands of pictures stored in their photo gallery! There are pictures of birthday parties with colorful balloons 🎈, holiday trips to sunny sandy beaches 🏖️, plates of delicious homemade pasta 🍝, school sports days, and hundreds of adorable pictures of family pets like dogs, cats, and birds 🐾. In the old days, if someone wanted to find a specific photo, a human had to sit down at a computer and manually type labels on every single photo: 'Dog', 'Beach', 'Cake', 'Grandma'. Who has time to label five thousand photos? Nobody! Nobody in the whole world has time to do that! Yet today, when you open the Photos app on any modern smartphone, you can type ANY word into the search bar — 'Dog', 'Bicycle', 'Sunset', 'Cake', 'Flower' — and POOF! Instantly, all the matching photos appear on your screen like magic!",
+            "paragraph2": "How does the phone do that? Does the phone read your mind? NOPE! The phone uses an AI superpower called COMPUTER VISION! 👁️💻 Every single photograph you take with a camera is made of millions of tiny colored dots called pixels. To an ordinary computer, a photo is just a giant soup of numbers: red dot here, blue dot there, yellow dot over there. But the Neural Chip inside the phone has been trained by studying millions of photos of dogs, cats, cars, trees, and buildings! It knows the visual recipe for every object in the world! When the Neural Chip looks at a photo of your pet Bruno, it notices: 'Aha! Two floppy furry ears on top. Two dark brown eyes. A round black snout with whiskers. Four furry paws and a wagging tail. Conclusion: This photo contains a DOG with 99.9% certainty!'",
+            "paragraph3": "What is even more mind-blowing is that the Neural Chip doesn't just know that Bruno is a 'dog' — it learns that Bruno is YOUR SPECIFIC DOG! 🐕✨ In your photo gallery, there is a section called 'People & Pets'. The AI notices: 'Hey! This same golden dog appears in 300 different photos in this house! This is not just any random street dog — this is an important member of this family!' The phone automatically creates a special digital photo album named Bruno! You can even tap Bruno's face and give him an official name! Then you can ask the phone: 'Show me Bruno at the beach', and the AI combines two concepts: Bruno the dog + sandy ocean beach! In half a second, you see Bruno splashing in the ocean waves! 🌊🐾",
+            "paragraph4": "Think about searching for other things! What if you type 'Cake'? 🎂 The AI looks for round shapes with colorful frosting, candles, and sprinkles. What if you type 'Receipt' or 'Book'? 📚 The AI spots straight lines of printed text! What if you type 'Snow'? ❄️ The AI spots bright white ground under gray winter skies! What if you type 'Car'? 🚗 The AI looks for round rubber wheels, glass windshields, and headlights! The phone categorizes every single picture quietly in the background while the phone is plugged into the charger at night, so it never slows down your games or videos during the day!",
+            "paragraph5": "And here is the most wonderful part of all: PRIVACY! 🛡️ In most modern smartphones from Apple and Google, all of this photo recognition happens RIGHT INSIDE THE PHONE on the local Neural Chip! Your family's private photos are NOT sent to a scary stranger's computer across the ocean! The tiny superhero chip inside your phone does all the looking locally, keeping your family memories safe, private, and secure inside your pocket! When you have the Magic Photo Detective on your side, you never have to lose a treasured family memory ever again! Let us look at three incredible photo search miracles! 🐶➡️🌙"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-photo-1",
+              "title": "🐕 Finding Bruno in 5,000 Unlabeled Family Photos! 📸✨",
+              "icon": "🐕",
+              "description": "How computer vision spots puppy features in 0.2 seconds across thousands of family memories!",
+              "realLifeScenario": "Kabir is sitting on the rug with Grandma on video call. Kabir types 'Dog' into the search bar of Mummy's smartphone gallery. The Neural Chip scans 5,420 photos stored in memory. In 0.18 seconds, the phone filters out all 5,300 photos of food, cars, and school work, and presents 120 crystal-clear photos of Bruno the golden puppy! Grandma claps: 'Oh Kabir, look at him as a baby sleeping in your sneaker!' Kabir smiles from ear to ear! Zero manual tagging, zero wasted time, pure AI brilliance! 🐾📱",
+              "roboPiComment": "BEEP BOOP! The Neural Chip checked floppy ears, snout shape, and furry paws in less time than it takes to blink your eyes! That is faster than a cheetah running downhill! 🐆⚡",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the photo search bar and type 'Dog'! 🔍🐶",
+                "great_job": "🌟 PUPPY FOUND! All 120 photos of Bruno loaded in 0.2 seconds! 🐕🎉",
+                "try_again": "🔍 Tap the photo search bar and type 'Dog'!"
+              }
+            },
+            {
+              "id": "dde-photo-2",
+              "title": "🎂 The Birthday Cake Time Machine! 🕯️🍰",
+              "icon": "🎂",
+              "description": "How the photo search finds every birthday party from age one to age nine instantly!",
+              "realLifeScenario": "Priya is turning ten years old on Saturday. Her family wants to make a montage poster showing her blowing out candles on every single birthday cake since she was a baby! Papa opens the photo gallery, taps the search bar, and types: 'Birthday Cake'. The AI instantly locates Priya's 1st birthday bear cake, her 3rd birthday rainbow cake, her 5th birthday princess castle cake, and her 8th birthday chocolate strawberry cake! The family prints all nine cake photos in five minutes flat and makes a gorgeous poster that makes Priya cry happy tears! 🎂🎉",
+              "roboPiComment": "BEEP BOOP! The AI looked for candles, round cake tiers, and colorful frosting across ten years of family history! It is like a magical digital time machine! 🕰️🍰",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the search bar and type 'Birthday Cake'! 🎂🔍",
+                "great_job": "🌟 CAKES FOUND! Nine years of birthday memories lined up in a row! 🍰✨",
+                "try_again": "🤔 Type 'Birthday Cake' into the search bar to find the cakes!"
+              }
+            },
+            {
+              "id": "dde-photo-3",
+              "title": "🏖️ The Sunny Sandy Beach Vacation Album! 🌊☀️",
+              "icon": "🏖️",
+              "description": "How AI combines multiple objects to find 'Beach' and 'Swimming' without human labels!",
+              "realLifeScenario": "Arjun's teacher asks the class to bring in a photo of their summer vacation for show-and-tell on Monday. Arjun's family went to Goa three years ago. Arjun opens the phone gallery and types: 'Beach'. The AI searches for blue ocean water, white foam waves, yellow sand, and palm trees. It displays 85 breathtaking vacation photos showing Arjun building sandcastles, eating ice cream by the shore, and watching dolphins! Arjun picks the best sandcastle photo, prints it out, and gets an A+ on his presentation! 🐬🏖️",
+              "roboPiComment": "BEEP BOOP! The AI can even find 'Sunset at beach' or 'Sandcastle' if you want to be extra specific! Just like we learned in Chapter 2: Say it clearly! 🗣️🏖️",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the search bar and type 'Beach' to find ocean photos! 🏖️🌊",
+                "great_job": "🌟 BEACH FOUND! Golden sand and blue ocean waves right on screen! 🌴☀️",
+                "try_again": "🤔 Type 'Beach' in the search bar to find the sandcastle photos!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🐶 Computer Vision lets phones recognize animals, objects, and places inside photos automatically.",
+            "🔍 You can search for 'Dog', 'Cake', 'Beach', or 'Bicycle' without ever writing tags on the photos.",
+            "🐕 The phone learns your specific family pets and creates automatic albums in 'People & Pets'.",
+            "⚡ The Neural Chip scans thousands of photos in a fraction of a second right inside the phone.",
+            "🛡️ On-device AI keeps your photos private and secure without uploading them to strange servers.",
+            "📸 Photos are made of millions of pixels, and AI spots the exact shapes and colors of real-world objects."
+          ],
+          "mission1Complete": {
+            "celebrationText": "🎉 MISSION 1 ACCOMPLISHED! You mastered Magic Photo Search!",
+            "roboPiCelebration": "BEEP BOOP HOORAY! 🥳 You know how the phone's visual detective finds Bruno, birthday cakes, and beaches in a flash! Your Magic Photo Detective Medal is glowing golden on your chest! Now, what happens when the lights go completely out? Let us discover Night Mode Magic! 🌙✨",
+            "magnifierEarned": "Magic Photo Detective Medal 🐶",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to attach the Magic Photo Detective Medal! 🏅",
+              "great_job": "⭐ MEDAL EQUIPPED! You have the sharp eyes of a mobile AI detective! 🐶✨",
+              "encouragement": "On to Section 2 — let us turn the dark into bright daylight! 🌙📸"
+            }
+          }
+        },
+        {
+          "id": "section-2",
+          "title": "🌙 Section 2: Night Mode Magic! (Turning Pitch Black into Daylight!) 📸✨",
+          "missionBadge": "Night Mode Wizard Medal 🌙",
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Section 2, Night Vision Wizard! 🤖🌙 Have you ever wondered why old phone cameras took blurry, black, noisy photos at night, but modern phones take glowing, crystal-clear night shots? Let us peek inside the Night Mode AI lab! 📸💡",
+          "mainContent": {
+            "paragraph1": "Imagine standing in your living room on your birthday night. The lights are turned completely OFF. The curtains are closed. The only light in the whole room is the tiny flickering orange flames of ten birthday candles on top of your chocolate cake. If you tried to take a photo with an old camera from ten years ago, what would happen? You would press the shutter button, and the camera would produce a dark, murky, muddy gray rectangle! You couldn't see your face, you couldn't see the cake, and the whole photo would be covered in ugly colored specks called 'digital noise' that looked like colored sand! 🌑😖 Why was it so bad? Because camera sensors are hungry for LIGHT! When there is no sunlight or room light, the camera sensor is starving for photons!",
+            "paragraph2": "Now, pick up a modern smartphone and turn on NIGHT MODE! 🌙 When Mummy holds the phone steady and taps the circle button, something magical happens. The screen doesn't just go *CLICK* in one millisecond. Instead, the screen displays a tiny countdown: 'Hold steady for 2 seconds... 2... 1...' What is the phone doing during those two seconds? Is it taking one single photo? NOPE! The camera shutter is snapping TEN to FIFTEEN separate rapid-fire photos in those two seconds! Some photos are taken super fast to freeze motion so your face isn't blurry. Some photos are exposed longer to soak up tiny drops of light from the corners of the room. It captures a whole stack of images at different brightness levels!",
+            "paragraph3": "Now comes the grand genius of the NEURAL CHIP! 🧠⚡ The phone doesn't just give you fifteen separate photos — it feeds all fifteen photos into an AI algorithm called COMPUTATIONAL PHOTOGRAPHY! The AI does three incredible wizard tricks in a fraction of a second: Trick 1: ALIGNMENT! Even if Mummy's hands wobbled a tiny bit while holding the phone, the AI detects the edges of the table and cake and digitally aligns all fifteen photos so they line up with sub-millimeter precision! 📐 Trick 2: NOISE REMOVAL! The AI compares the photos to identify random speckles of digital noise and erases them like an invisible magic eraser! 🧼 Trick 3: SMART FUSION! The AI takes the brightest details from the light photos and the sharpest details from the dark photos and blends them together into ONE SINGLE GLOWING MASTERPIECE! 🌟",
+            "paragraph4": "When the final photo appears on the screen, your jaw drops open in astonishment! The dark living room looks bright and warm. The flickering candle flames are sharp golden teardrops without being blown out into white glare. Your eyes sparkle with joy, the chocolate frosting has rich glossy highlights, and you can even see the happy smiles of your parents standing in the background! It looks like professional studio lighting was placed in the room, but it was all created by pure computer algorithms running on the Neural Chip! 🕯️🎂✨",
+            "paragraph5": "Think about taking photos of the starry night sky or the glowing silver Moon! 🌕 If you point a phone equipped with Astrophotography AI at the night sky and set it on a stand, the phone can hold its shutter open for a whole minute. The AI tracks the slow rotation of planet Earth across the stars, combines dozens of exposures, cancels out city light smog, and produces a breathtaking photograph of the Milky Way galaxy with millions of sparkling stars! A tiny phone in your pocket can capture the beauty of the cosmos thanks to Night Mode AI! Let us look at three amazing night mode triumphs! 🌙➡️🔋"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-night-1",
+              "title": "🎂 Blowing Out Birthday Candles in the Dark! 🕯️✨",
+              "icon": "🎂",
+              "description": "How Night Mode combines 10 fast exposures so candle flames are sharp and faces are bright!",
+              "realLifeScenario": "It is little Kabir's 9th birthday party. The room lights are switched off, and everyone sings 'Happy Birthday to You!' Kabir takes a deep breath to blow out the nine glowing candles. Papa taps the phone shutter. Night Mode AI takes 12 rapid exposures in 1.5 seconds. The Neural Chip aligns Kabir's face, softens the harsh candle glare, brightens the warm smiles on his friends' faces, and outputs a magazine-quality photograph! Kabir's family frames it in the hallway the very next day! 🎂🕯️",
+              "roboPiComment": "BEEP BOOP! Notice how the candle flames didn't turn into a giant blinding white blob? The AI used 'HDR' (High Dynamic Range) to keep the flame golden and the shadows bright! Pure magic! 🕯️✨",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap Night Mode to see the dark room brighten up! 🌙📸",
+                "great_job": "🌙 WOW! Night Mode AI combined 10 tiny exposures into one clear glowing photo! 🌟🎉",
+                "try_again": "🤔 Tap the crescent moon icon to turn on Night Mode!"
+              }
+            },
+            {
+              "id": "dde-night-2",
+              "title": "🏕️ Campfire Stories Under the Pine Trees! 🔥🌲",
+              "icon": "🏕️",
+              "description": "How computational photography balances crackling orange campfire flames and starry skies!",
+              "realLifeScenario": "Zara is on a weekend camping trip with her scout troop. They are roasting marshmallows around a crackling wood campfire under tall pine trees. The forest around them is pitch black. Zara holds her phone steady on a log and snaps a photo of her friends laughing around the fire. Without flash, Night Mode captures the warm dancing orange firelight on their jackets and the twinkling stars peeking through the pine branches above! The photo feels warm, cozy, and magical! 🌲🔥",
+              "roboPiComment": "BEEP BOOP! Traditional camera flash makes everyone look like pale ghosts in a dark cave! Night Mode uses natural firelight to make everyone look warm and friendly! 👻🚫🔥✨",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap Night Mode to capture the campfire glow! 🔥🌙",
+                "great_job": "🌟 CAMPFIRE GLOW! Warm orange flames and starry sky captured in harmony! 🌲✨",
+                "try_again": "🤔 Turn on Night Mode to balance the firelight without using harsh flash!"
+              }
+            },
+            {
+              "id": "dde-night-3",
+              "title": "🌕 The Glowing Silver Moon in the City Sky! 🏙️🌌",
+              "icon": "🌕",
+              "description": "How telephoto AI and multi-frame stacking photograph craters on the full Moon!",
+              "realLifeScenario": "Dev looks out his bedroom window on the night of the full supermoon. The Moon is huge, glowing silver against the dark indigo city sky. Dev zooms in 10x with his phone camera and taps the Moon. The phone's telephoto AI instantly reduces camera shake from Dev's hands, lowers the bright exposure so the white disk doesn't blow out, and sharpens the gray lunar craters and ancient volcanic seas! Dev captures a stunning picture of the Moon from his bedroom window! 🌕🔭",
+              "roboPiComment": "BEEP BOOP! The Moon is actually as bright as a sunlit rock in space! Night Mode AI lowers the brightness on the Moon while keeping the night sky dark! Smart balancing! 🌕🤖",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the full Moon to focus and expose lunar craters! 🌕✨",
+                "great_job": "🌟 LUNAR CRATERS SHARP! Moon details crisp and city sky deep indigo! 🔭🌌",
+                "try_again": "🤔 Tap the glowing moon circle to trigger exposure balancing!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🌙 Night Mode uses COMPUTATIONAL PHOTOGRAPHY to turn dark rooms into bright, clear photos.",
+            "📸 Instead of taking one photo, Night Mode captures 10 to 15 rapid exposures at different brightness levels.",
+            "📐 The Neural Chip aligns all photos even if human hands wobble slightly during the shot.",
+            "🧼 AI compares images to erase grainy digital speckles (noise) while keeping fine details sharp.",
+            "🕯️ Night Mode balances light: candle flames don't glare, and dark shadows are gently brightened.",
+            "🚫 No harsh ghost-like flash needed: Night Mode preserves the natural warm atmosphere of the scene."
+          ],
+          "mission2Complete": {
+            "celebrationText": "🎉 MISSION 2 ACCOMPLISHED! You mastered Night Mode Magic!",
+            "roboPiCelebration": "BEEP BOOP BRAVO! 🌙✨ You know how cameras stack 10 photos into one glowing masterpiece! Your Night Mode Wizard Medal is sparkling cyan blue! Now, what keeps your phone alive and humming all day long without dying at lunchtime? Let us enter Section 3 and meet the Smart Battery Guardian! 🔋⚡",
+            "magnifierEarned": "Night Mode Wizard Medal 🌙",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to attach the Night Mode Wizard Medal! 🏅",
+              "great_job": "⭐ WIZARD MEDAL EQUIPPED! You can illuminate any dark night with AI! 🌙🏆",
+              "encouragement": "On to Section 3 — let us discover the Smart Battery Guardian! 🔋⚡"
+            }
+          }
+        },
+        {
+          "id": "section-3",
+          "title": "🔋 Section 3: The Smart Battery Guardian! (Saving Power When You Sleep!) ⚡📱",
+          "missionBadge": "Smart Battery Guardian Medal 🔋",
+          "roboPiMissionBriefing": "BEEP BOOP! Welcome to Section 3, Energy Guardian! 🤖🔋 Have you ever wondered why Mummy's phone can play games, take photos, and stream music all day without running out of battery? Meet the AI Battery Guardian that saves power while you sleep! Let's explore! ⚡📱",
+          "mainContent": {
+            "paragraph1": "Think about the battery inside a mobile phone. A modern phone battery is a flat silver packet filled with chemical lithium ions. 🔋 Every time the screen lights up with bright colors, every time the speakers play music, every time the camera takes a photo, and every time the antenna sends a message, tiny droplets of electrical energy are drained from the battery. If a phone ran all of its computer chips at maximum turbo speed 24 hours a day, guess what would happen? The battery would drop from 100% to 0% in less than two hours! The phone would shut off, and Mummy wouldn't be able to call Papa or check the map to drive home! That would be a complete disaster! 🪫",
+            "paragraph2": "In the old days, phones had 'dumb batteries' that didn't know what you were doing. The phone would keep checking for emails every 5 seconds, keep refreshing weather apps, and keep background chips running at full blast even when the phone was sitting completely forgotten on a wooden nightstand in the middle of the night! By morning, the battery was half empty! But in modern smartphones, the NEURAL CHIP runs an AI program called SMART BATTERY MANAGEMENT or ADAPTIVE BATTERY! 🧠🔋 This AI program acts like a brilliant energy detective that observes your daily habits!",
+            "paragraph3": "What does the Smart Battery Guardian observe? It learns your family's daily rhythm! ⏰ For example: It notices: 'Every morning at 7:30 AM, Kabir wakes up and Mummy opens the school bus tracking app. From 8:00 AM to 3:00 PM, Kabir is at school and Mummy is at work, so the phone is used for messaging and phone calls. At 4:00 PM, Kabir plays an educational math game for 20 minutes. At 9:30 PM, the lights go out, the phone is placed on the bedside table, and nobody touches it until 7:00 AM the next morning!' The AI builds a personal schedule of your family's phone usage!",
+            "paragraph4": "Look at what the AI does with this knowledge: Power Move 1: DEEP SLEEP! When you go to bed at 9:30 PM, the AI immediately whispers to background apps: 'Hey social media apps! Hey shopping apps! Go to sleep right now! Nobody is using you for the next eight hours!' The AI puts unused apps into a deep energy freeze, dropping nighttime battery drain to almost ZERO! 😴 Power Move 2: SMART CHARGING! If you plug the phone into the wall charger at night, the AI charges the battery to 80% quickly, pauses during the middle of the night so the battery doesn't overheat, and gently tops it off to 100% right before your alarm rings at 7:00 AM! This protects the battery so it lasts for years without wearing out! 🔌🛡️",
+            "paragraph5": "Power Move 3: APP PREDICTION! When Kabir opens his favorite math game at 4:00 PM, the AI knows that this game needs smooth 3D graphics, so it temporarily boosts the graphics chip for 20 minutes. But when Kabir closes the game, the AI immediately throttles power back down to save energy! The AI is constantly balancing performance and battery life every single second of the day! Thanks to the Smart Battery Guardian, the phone stays fast when you need it, cool when you hold it, and alive all day long! Let us examine three real-world battery miracles! 🔋➡️🏆"
+          },
+          "deepDiveExamples": [
+            {
+              "id": "dde-battery-1",
+              "title": "🌙 Saving 90% Battery While You Sleep! 😴📱",
+              "icon": "🌙",
+              "description": "How Adaptive Battery freezes background apps overnight so you wake up with full power!",
+              "realLifeScenario": "Papa forgets to plug his phone into the charger before falling asleep at 10:00 PM. The battery is at 45%. With an old phone, background apps would run all night and the phone would be dead (0%) by morning, causing Papa to miss his alarm! But the Smart Battery Guardian notices no motion from the accelerometer for 30 minutes. It recognizes night time. It freezes 42 background apps into deep hibernation. When Papa wakes up at 7:00 AM, the battery is still at 43%! Papa's alarm rings loud and clear, and Papa has plenty of battery to drive to work! ⏰🔋",
+              "roboPiComment": "BEEP BOOP! Only 2% battery lost in nine whole hours! The AI put all the noisy background apps to sleep just like a loving parent tucking kids into bed! Shhh! 😴📱",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the sleeping phone to activate Adaptive Battery overnight! 🌙🔋",
+                "great_job": "🌟 DEEP SLEEP ACTIVATED! 42 background apps frozen — power saved! 😴⚡",
+                "try_again": "🤔 Tap the nightstand phone to enable nighttime energy hibernation!"
+              }
+            },
+            {
+              "id": "dde-battery-2",
+              "title": "🔌 The Optimized Charging Battery Protector! 🛡️⚡",
+              "icon": "🔌",
+              "description": "How AI pauses charging at 80% overnight to prevent battery wear and overheating!",
+              "realLifeScenario": "Mummy plugs her phone into the wall charger at 9:00 PM. An old charger would blast electricity into the battery until it reached 100% in one hour, and then keep cooking the battery with hot electricity for seven more hours, which damages the chemical battery cells over time. Instead, Mummy's phone AI pops up a notification: 'Optimized Battery Charging: Will finish charging to 100% by 6:30 AM.' The AI charges quickly to 80%, rests peacefully at room temperature, and adds the final 20% right before Mummy wakes up. Mummy's phone battery stays healthy for three whole years without needing replacement! 📱✨",
+              "roboPiComment": "BEEP BOOP! Keeping a battery cooking at 100% all night is like over-baking a cake in an oven! The AI stops at 80% and finishes right on time for breakfast! 🥐🔋",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the smart charger to set 80% overnight pause! 🔌🛡️",
+                "great_job": "🌟 BATTERY PROTECTED! Health preserved for years of safe use! 🔋🎉",
+                "try_again": "🤔 Tap the charging cable icon to schedule smart overnight charging!"
+              }
+            },
+            {
+              "id": "dde-battery-3",
+              "title": "🎮 Game Mode Turbo Boost vs Reading Mode Power Saver! 📚⚡",
+              "icon": "🎮",
+              "description": "How AI shifts processor speeds dynamically between high-action gaming and quiet reading!",
+              "realLifeScenario": "Kabir is reading an ebook for school on the tablet. The screen only shows black-and-white text. The AI senses: 'Only text reading! Drop screen refresh rate to 30Hz and slow processor speed by 60%!' The battery barely drains. Twenty minutes later, Kabir switches to a 3D racing car game. The AI senses: 'High-speed 3D graphics detected! Ramp up graphics processor to full speed!' The racing car drives at 60 frames per second with zero lag! When Kabir finishes playing, the AI drops power back down. Maximum fun, zero wasted power! 🏎️📱",
+              "roboPiComment": "BEEP BOOP! That is called 'Dynamic Frequency Scaling'! The AI uses full turbo power ONLY when you need it, and sips power like a hummingbird when reading! ⚡📖",
+              "toastGuidance": {
+                "tap_prompt": "👇 Tap the game icon to trigger dynamic power scaling! 🎮⚡",
+                "great_job": "🌟 DYNAMIC POWER SCALED! 60 FPS gaming with zero wasted battery! 🏎️🔋",
+                "try_again": "🤔 Tap the racing car to switch from power-saver reading to game mode!"
+              }
+            }
+          ],
+          "keyPoints": [
+            "🔋 Smart Battery Management (Adaptive Battery) uses AI to predict your daily usage and save power.",
+            "⏰ The AI learns when you wake up, when you use apps, and when you sleep at night.",
+            "😴 Overnight, the AI freezes unused background apps into deep sleep so battery drain drops to near zero.",
+            "🔌 Optimized Charging stops at 80% overnight to prevent heat damage and tops off before morning alarms.",
+            "🎮 Dynamic scaling gives turbo power to 3D games while sipping tiny amounts of energy during book reading.",
+            "💡 All of this happens automatically without you ever flipping a manual power switch!"
+          ],
+          "mission3Complete": {
+            "celebrationText": "🎉 MISSION 3 ACCOMPLISHED! You mastered the Smart Battery Guardian!",
+            "roboPiCelebration": "BEEP BOOP YIPPEE! 🔋⚡ You know how the phone sleeps at night, protects its battery cells, and shifts power on the fly! Your Smart Battery Guardian Medal is glowing bright emerald green! All three mobile medals are now in your hands! Now, let us assemble all mobile superpowers into the Grand Superhero Blueprint! 🏆📱",
+            "magnifierEarned": "Smart Battery Guardian Medal 🔋",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CLAIM MEDAL to attach the Smart Battery Guardian Medal! 🏅",
+              "great_job": "⭐ ALL 3 MEDALS EARNED! You are a certified Mobile AI Detective! 📱🏆",
+              "encouragement": "On to Section 4 — let us review the complete mobile AI blueprint! 🌟📱"
+            }
+          }
+        },
+        {
+          "id": "section-4",
+          "title": "🌟 Section 4: The Superhero Neural Chip: Putting All Mobile Superpowers Together! 🏆📱",
+          "roboPiIntro": "BEEP BOOP! Mobile Explorer, look at what you have uncovered! Inside that shiny piece of pocket glass lives a complete high-tech universe of AI helpers! Let us assemble the grand mobile blueprint! 🗺️🤖",
+          "mainContent": {
+            "paragraph1": "Look at the extraordinary transformation in how you see smartphones today! An hour ago, Mummy's phone looked like an ordinary glass rectangle that plays cartoon videos and sends messages. But now, you know the truth! Inside that slender phone lives a microscopic superhero called the NEURAL CHIP, running trillions of smart calculations every single second! When you look at the camera lens, you don't just see glass — you see COMPUTER VISION that spots pets, cakes, and beaches! When you take pictures at night, you see COMPUTATIONAL PHOTOGRAPHY stacking ten exposures into glowing daylight! And when you plug the phone into the wall at night, you see the SMART BATTERY GUARDIAN freezing background apps so your morning alarm rings loud and proud! 📱✨",
+            "paragraph2": "Let us review how all three mobile superpowers work together in harmony: Superpower 1: MAGIC PHOTO SEARCH! The Neural Chip analyzes pixel patterns, identifying Bruno the golden puppy, birthday cakes, beaches, cars, and receipts without human labels! Superpower 2: NIGHT MODE MAGIC! The camera sensor captures multiple rapid exposures, and the AI aligns wobbly frames, scrubs away digital noise, and balances candle flames into crystal-clear memories! Superpower 3: SMART BATTERY MANAGEMENT! The AI learns your family's daily routine, freezes unused apps overnight, and scales processor speeds dynamically between heavy 3D gaming and gentle reading! 🔋📸🐕",
+            "paragraph3": "Look at the table below to see the shocking contrast between an old-fashioned 'Dumb Phone' from fifteen years ago and the AI Superhero Phone in your pocket today! Look at how AI solves real human frustrations: no more lost photos, no more pitch-black birthday pictures, and no more dead batteries when you need to make an emergency call! Technology has evolved to make our lives safer, more creative, and more connected than ever before! 🌟",
+            "paragraph4": "And remember: YOU are the generation that will build the NEXT wave of smartphone magic! In a few years, smartphones might translate alien bird songs in your garden into English words! Smartphones might scan your homework math puzzle and guide you with gentle, friendly voice clues! Smartphones might detect if someone is feeling sick and suggest a warm cup of honey tea! Whatever the future holds, it all begins with the tiny, brilliant Neural Chip humming quietly inside your pocket! 📱🚀",
+            "paragraph5": "You are now officially a certified MOBILE AI DETECTIVE! You have mastered Chapter 3 • Lesson 1! Let us celebrate with the world-famous Photo Album Dog-Finder Mission, play awesome interactive games, and test your superpowers! Give yourself a massive cheer! BEEP BOOP HOORAY! 🎉👏"
+          },
+          "dumbVsSmartPhoneTable": [
+            {
+              "id": "dvs-1",
+              "feature": "🐶 Finding Photos of Your Pet",
+              "oldDumbPhone": "Scroll manually through 5,000 photos for 45 minutes with tired thumbs! (Often give up! 😫)",
+              "aiSuperheroPhone": "Type 'Dog' in search: AI finds Bruno in 0.2 seconds using Computer Vision! 🐕✨",
+              "benefit": "Zero wasted time; every treasured puppy memory found instantly!"
+            },
+            {
+              "id": "dvs-2",
+              "feature": "🌙 Taking Photos in the Dark",
+              "oldDumbPhone": "Pitch-black muddy gray rectangle covered in ugly colored noise specks! 🌑😖",
+              "aiSuperheroPhone": "Night Mode AI stacks 10 exposures into one glowing, sharp, daylight-clear photo! 📸✨",
+              "benefit": "Birthday candle smiles and starry night campfires preserved forever!"
+            },
+            {
+              "id": "dvs-3",
+              "feature": "🔋 Battery Power Overnight",
+              "oldDumbPhone": "Dumb background apps run all night, draining 50% battery before morning alarm! 🪫😴",
+              "aiSuperheroPhone": "Adaptive Battery freezes 42 apps into deep sleep: only 2% battery lost all night! 🔋⚡",
+              "benefit": "Phone stays alive, alarm rings on time, and battery health lasts for years!"
+            },
+            {
+              "id": "dvs-4",
+              "feature": "🔒 Unlocking Your Screen",
+              "oldDumbPhone": "Type a clumsy 6-digit number pin code with sticky fingers every single time! 🔢",
+              "aiSuperheroPhone": "Face Unlock AI maps your 3D face structure instantly even in the dark! 📱👤✨",
+              "benefit": "Instant, effortless, secure access with zero passwords forgotten!"
+            },
+            {
+              "id": "dvs-5",
+              "feature": "🖼️ Taking Beautiful Portraits",
+              "oldDumbPhone": "Flat photo where messy laundry in the background distracts from your smiling face! 🧺",
+              "aiSuperheroPhone": "Portrait Mode AI identifies your silhouette and softly blurs the background! 📸🎨",
+              "benefit": "Studio-quality professional portraits taken right in your living room!"
+            }
+          ],
+          "keyPoints": [
+            "🏆 Modern smartphones are powered by a microscopic mini-brain called a Neural Chip (NPU).",
+            "🐶 Computer Vision recognizes objects, pets, and faces inside thousands of photos in milliseconds.",
+            "🌙 Computational Photography stacks 10 to 15 exposures to make dark night photos look bright and clean.",
+            "🔋 Adaptive Battery AI learns your family's routine, freezing background apps overnight to save energy.",
+            "🛡️ On-device AI ensures that private family photos and face data stay safe inside your own phone.",
+            "🌟 Understanding the AI inside your mobile makes you a smarter, safer, and more confident tech explorer!"
+          ],
+          "mission4Complete": {
+            "celebrationText": "🏆 CONGRATULATIONS! You have earned your Mobile AI Detective Badge! 📱🏅",
+            "roboPiCelebration": "BEEP BOOP BOOP BEEP! 🤖🎉 Look at your sparkling mobile detective badge! You know what a Neural Chip is, you can find Bruno in 5,000 photos, you can brighten the dark with Night Mode, and you know how smart batteries sleep! My antenna is flashing with pure delight! Let us play some awesome games and conquer the Photo Album Dog-Finder Mission! 📱🎮",
+            "badgeEarned": "Official Mobile AI Detective Badge 📱🏅",
+            "toastGuidance": {
+              "tap_prompt": "👇 Tap CELEBRATE to dance with Robo-Pi and start the games! 💃🤖",
+              "great_job": "🌟 BADGE UNLOCKED! You are an official Master of Mobile AI! 📱🏆",
+              "encouragement": "Get ready for the games — let us see your high score in the photo search! 🎮✨"
+            }
+          }
+        }
+      ],
+      "totalWordCount": 12000
+    },
+    "games": [
+      {
+        "gameId": "game-1",
+        "gameType": "tap_to_find",
+        "title": "🐶 Photo Album Puppy Finder! 📱🔍",
+        "icon": "🐶",
+        "instruction": "Help the mobile Neural Chip scan the family photo gallery! Find all 6 smart AI photo targets glowing with golden sparkles! 📸",
+        "difficulty": "easy",
+        "duration": "8 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Welcome to the Photo Gallery Scan! 🤖📱 The phone's photo library has thousands of images! The Neural Chip has placed golden scanning tags on SIX amazing objects: Bruno the golden dog, a chocolate birthday cake, a sunny beach sandcastle, a red bicycle, a plate of fresh pancakes, and a sleeping kitten! Tap each one to verify the AI's computer vision! Let's scan! 🐕✨",
+        "sceneDescription": "A colorful cartoon smartphone screen showing a grid of family photographs: beach vacations, birthday parties, kitchen breakfasts, pets playing in the grass, and playground bicycles. Robo-Pi stands in the corner holding a magnifying glass.",
+        "targets": [
+          {
+            "id": "target-1",
+            "x": 150,
+            "y": 180,
+            "width": 85,
+            "height": 75,
+            "object": "Bruno the Golden Puppy 🐕",
+            "emoji": "🐕",
+            "isAI": true,
+            "aiType": "Pet Recognition Target",
+            "explanation": "COMPUTER VISION: AI detected floppy ears, snout, and golden fur! Tagged as 'Dog' with 99.9% confidence!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-2",
+            "x": 340,
+            "y": 160,
+            "width": 90,
+            "height": 80,
+            "object": "Chocolate Birthday Cake with Candles 🎂",
+            "emoji": "🎂",
+            "isAI": true,
+            "aiType": "Object Recognition Target",
+            "explanation": "COMPUTER VISION: AI identified round two-layer cake shape, frosting swirl, and candle flames! Tagged as 'Cake'!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-3",
+            "x": 520,
+            "y": 200,
+            "width": 85,
+            "height": 85,
+            "object": "Sunny Beach Sandcastle 🏖️",
+            "emoji": "🏖️",
+            "isAI": true,
+            "aiType": "Scene Recognition Target",
+            "explanation": "COMPUTER VISION: AI spotted yellow sand, blue ocean water, and palm trees! Tagged as 'Beach'!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-4",
+            "x": 700,
+            "y": 230,
+            "width": 75,
+            "height": 75,
+            "object": "Red Two-Wheeled Bicycle 🚲",
+            "emoji": "🚲",
+            "isAI": true,
+            "aiType": "Vehicle Recognition Target",
+            "explanation": "COMPUTER VISION: AI identified circular spokes, handlebars, and triangular metal frame! Tagged as 'Bicycle'!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-5",
+            "x": 240,
+            "y": 330,
+            "width": 90,
+            "height": 70,
+            "object": "Stack of Fluffy Breakfast Pancakes 🥞",
+            "emoji": "🥞",
+            "isAI": true,
+            "aiType": "Food Recognition Target",
+            "explanation": "COMPUTER VISION: AI spotted golden-brown stacked disks with syrup drizzle! Tagged as 'Pancakes'!",
+            "goldSparks": true
+          },
+          {
+            "id": "target-6",
+            "x": 480,
+            "y": 340,
+            "width": 85,
+            "height": 75,
+            "object": "Sleeping Fluffy White Kitten 🐱",
+            "emoji": "🐱",
+            "isAI": true,
+            "aiType": "Animal Recognition Target",
+            "explanation": "COMPUTER VISION: AI detected pointed triangle ears, sleeping whiskers, and curled tail! Tagged as 'Cat'!",
+            "goldSparks": true
+          }
+        ],
+        "totalAITargets": 6,
+        "scoring": {
+          "correctTap": 20,
+          "incorrectTap": -5,
+          "bonusForAllCorrect": 30,
+          "maxScore": 150
+        },
+        "auraGuidance": {
+          "start": "LOOK across the smartphone photo grid! Find all 6 glowing AI photo targets! 🔍📱",
+          "correct": "OBJECT RECOGNIZED! The Neural Chip cataloged the image in the smart search index! ⭐",
+          "incorrect": "That's a plain blurry wallpaper tile! Look for animals, food, and vehicles with golden sparkles! ✨",
+          "hint": "Check the top left corner for Bruno the golden puppy playing in the grass! 🐕",
+          "complete": "GALLERY SCAN COMPLETE! All 6 objects recognized flawlessly by on-device computer vision! 📱🎉"
+        }
+      },
+      {
+        "gameId": "game-2",
+        "gameType": "drag_drop_sort",
+        "title": "🗂️ Regular Phone vs AI Superhero Phone! The Feature Sorter! 📱⚡",
+        "icon": "🗂️",
+        "instruction": "Read each phone behavior card below! Is it an OLD DUMB PHONE feature 📞 that frustrates users, or an AI SUPERHERO PHONE feature 📱 that solves problems with magic? Drag each card to its correct basket!",
+        "difficulty": "medium",
+        "duration": "10 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Welcome to the Mobile Feature Sorter! 🤖🗂️ Nine cards are raining down from the app store! Some describe old clunky phones, and some describe AI superhero phones! Can you sort all nine into the right baskets? Let's sort! 🏆",
+        "categories": [
+          {
+            "id": "cat-dumb",
+            "label": "OLD DUMB PHONE 📞 (No AI Inside!)",
+            "description": "Manual, slow, blurry night photos, dead batteries overnight, and endless thumb scrolling!",
+            "color": "#FF9800",
+            "emoji": "📞"
+          },
+          {
+            "id": "cat-ai",
+            "label": "AI SUPERHERO PHONE 📱 (Neural Chip Magic!)",
+            "description": "Instant photo search, Night Mode 10-exposure stacking, Adaptive Battery sleep, and smart face unlock!",
+            "color": "#4CAF50",
+            "emoji": "📱"
+          }
+        ],
+        "items": [
+          {
+            "id": "item-1",
+            "label": "Scroll manually through 5,000 photos for 45 minutes trying to find baby Bruno 😫",
+            "emoji": "😫",
+            "correctCategory": "cat-dumb",
+            "feedback": "🌟 CORRECT! Old dumb phone! No search intelligence — tired thumbs! 📞",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-2",
+            "label": "Type 'Dog' in search box: Phone displays Bruno in 0.2 seconds automatically! 🐶✨",
+            "emoji": "🐶",
+            "correctCategory": "cat-ai",
+            "feedback": "🌟 CORRECT! AI superhero phone! Computer Vision found the puppy instantly! 📱",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-3",
+            "label": "Dark night photo looks like a muddy black rectangle covered in colored noise specks 🌑",
+            "emoji": "🌑",
+            "correctCategory": "cat-dumb",
+            "feedback": "🌟 CORRECT! Old dumb phone! No Night Mode — dark and grainy! 📞",
+            "difficulty": "easy"
+          },
+          {
+            "id": "item-4",
+            "label": "Night Mode combines 10 rapid exposures into one glowing, clear birthday picture! 🌙🎂",
+            "emoji": "🌙",
+            "correctCategory": "cat-ai",
+            "feedback": "🌟 CORRECT! AI superhero phone! Computational Photography turns dark into daylight! 📱",
+            "difficulty": "medium"
+          },
+          {
+            "id": "item-5",
+            "label": "Phone drains 50% battery overnight while sitting untouched on the nightstand 🪫",
+            "emoji": "🪫",
+            "correctCategory": "cat-dumb",
+            "feedback": "🌟 CORRECT! Old dumb phone! Dumb background apps run wild all night! 📞",
+            "difficulty": "medium"
+          },
+          {
+            "id": "item-6",
+            "label": "Adaptive Battery freezes 42 unused apps overnight: only 2% battery lost by morning! 🔋😴",
+            "emoji": "🔋",
+            "correctCategory": "cat-ai",
+            "feedback": "🌟 CORRECT! AI superhero phone! Smart battery management saves power! 📱",
+            "difficulty": "medium"
+          },
+          {
+            "id": "item-7",
+            "label": "Type a clumsy 6-digit pin code with messy fingers every single time you check the time 🔢",
+            "emoji": "🔢",
+            "correctCategory": "cat-dumb",
+            "feedback": "🌟 CORRECT! Old dumb phone! Manual passwords that take forever! 📞",
+            "difficulty": "hard"
+          },
+          {
+            "id": "item-8",
+            "label": "Face Unlock AI recognizes your 3D facial structure in the dark in 0.1 seconds! 👤✨",
+            "emoji": "👤",
+            "correctCategory": "cat-ai",
+            "feedback": "🌟 CORRECT! AI superhero phone! Neural facial recognition unlocks instantly! 📱",
+            "difficulty": "hard"
+          },
+          {
+            "id": "item-9",
+            "label": "Camera takes a flat photo where messy laundry in the background ruins your portrait 🧺",
+            "emoji": "🧺",
+            "correctCategory": "cat-dumb",
+            "feedback": "🌟 CORRECT! Old dumb phone! No depth sensing — messy background! 📞",
+            "difficulty": "hard"
+          }
+        ],
+        "scoring": {
+          "correctSort": 15,
+          "incorrectSort": -5,
+          "streakBonus": 10,
+          "maxScore": 165
+        },
+        "auraGuidance": {
+          "start": "READ each mobile feature carefully! Ask yourself: Is this an old clunky dumb phone, or an AI superhero phone? 🗂️",
+          "correct": "BULLSEYE! That feature landed in the perfect golden basket! 🌟",
+          "incorrect": "Oopsie! Think about whether this feature uses automatic smart intelligence or manual clumsy effort! Try again! 🤔",
+          "streak": "UNSTOPPABLE MOBILE STREAK! You understand smartphone tech like a Silicon Valley engineer! 🔥",
+          "complete": "ALL NINE SORTED FLAWLESSLY! You earned the Master Mobile Sorter Ribbon! 🎀🏆"
+        }
+      },
+      {
+        "gameId": "game-3",
+        "gameType": "match_pairs",
+        "title": "🔗 Match the Phone Mystery to the AI Superhero Chip! 💡📱",
+        "icon": "🔗",
+        "instruction": "Connect each everyday mobile mystery on the left with the AI superpower on the right that solves it! Connect all 6 pairs to unlock the Mobile Genius Trophy! 🏆",
+        "difficulty": "medium",
+        "duration": "10 minutes",
+        "roboPiGameIntro": "BEEP BOOP! Ready for the grand smartphone matching challenge? 🤖🔗 On the left side are six everyday phone mysteries! On the right side are the AI chip superpowers that solve them! Connect each mystery to its solution! Let's make the connections glow! ✨",
+        "pairs": [
+          {
+            "left": {
+              "id": "mystery-1",
+              "content": "How does the phone find 120 photos of Bruno when you type 'Dog'? 🐶",
+              "emoji": "🐶",
+              "description": "Instant pet identification in 5,000 photos"
+            },
+            "right": {
+              "id": "chip-1",
+              "content": "Computer Vision AI detects ears, snout, and fur patterns! 👁️🐾",
+              "emoji": "👁️",
+              "description": "Neural chip scans pixels and recognizes object shapes"
+            }
+          },
+          {
+            "left": {
+              "id": "mystery-2",
+              "content": "How does a dark room photo with 1 candle look bright as daytime? 🕯️🌙",
+              "emoji": "🕯️",
+              "description": "Clear night pictures without ugly dark blur"
+            },
+            "right": {
+              "id": "chip-2",
+              "content": "Night Mode AI stacks 10 exposures and erases digital noise! 📸✨",
+              "emoji": "📸",
+              "description": "Computational photography blends dark and bright frames"
+            }
+          },
+          {
+            "left": {
+              "id": "mystery-3",
+              "content": "Why doesn't the phone battery die overnight when left unplugged? 🔋😴",
+              "emoji": "🔋",
+              "description": "Only 2% battery drop in 9 hours of sleep"
+            },
+            "right": {
+              "id": "chip-3",
+              "content": "Adaptive Battery AI freezes unused apps into deep hibernation! ⚡🛌",
+              "emoji": "⚡",
+              "description": "Learns nighttime routine and cuts background power drain"
+            }
+          },
+          {
+            "left": {
+              "id": "mystery-4",
+              "content": "How does the phone unlock the instant you look at the screen? 👤📱",
+              "emoji": "👤",
+              "description": "Fast screen unlock without typing number codes"
+            },
+            "right": {
+              "id": "chip-4",
+              "content": "Face Unlock AI projects invisible infrared dots to map 3D features! 📐✨",
+              "emoji": "📐",
+              "description": "Neural net verifies 30,000 3D face coordinates"
+            }
+          },
+          {
+            "left": {
+              "id": "mystery-5",
+              "content": "How does the camera blur the messy background behind your head? 📸🎨",
+              "emoji": "🎨",
+              "description": "Studio-quality portrait photos in living rooms"
+            },
+            "right": {
+              "id": "chip-5",
+              "content": "Portrait Mode AI separates your silhouette and blurs the background! ✂️🖼️",
+              "emoji": "✂️",
+              "description": "Depth mapping algorithm identifies subject vs background"
+            }
+          },
+          {
+            "left": {
+              "id": "mystery-6",
+              "content": "How does speech-to-text type messages while you speak into the mic? 🎙️💬",
+              "emoji": "🎙️",
+              "description": "Hands-free messaging while cooking or riding bike"
+            },
+            "right": {
+              "id": "chip-6",
+              "content": "Natural Language Audio AI turns vocal sound waves into letters! 🗣️📝",
+              "emoji": "🗣️",
+              "description": "Speech recognition converts sound phonemes into digital text"
+            }
+          }
+        ],
+        "scoring": {
+          "correctMatch": 20,
+          "incorrectMatch": -5,
+          "maxScore": 120
+        },
+        "auraGuidance": {
+          "start": "TAP a phone mystery on the left, then TAP the AI superpower chip on the right that solves it! 🔗✨",
+          "correct": "PERFECT SUPERPOWER MATCHED! The Neural Chip solved the mystery! ⚡⭐",
+          "incorrect": "That AI chip does something else! Match the puppy to Computer Vision, and the candle to Night Mode! 🤔",
+          "hint": "The puppy photo search is powered by Computer Vision AI! 🐶",
+          "complete": "ALL SIX PAIRS CONNECTED! You earned the Mobile Genius Trophy! 🏆🎉"
+        }
+      }
+    ],
+    "activities": [
+      {
+        "activityId": "activity-1",
+        "title": "🐕 Photo Album Dog-Finder Mission at Home! 📱🔍",
+        "type": "hands-on",
+        "duration": "20 minutes",
+        "icon": "🐕",
+        "roboPiActivityBrief": "BEEP BOOP! Time for our headline hands-on activity: The Photo Album Dog-Finder Mission! 🤖📱 Grab Mummy's or Papa's phone (with their permission!) and let us test computer vision live in action!",
+        "description": "In this thrilling real-world experiment, students become official Smartphone AI Detectives! Working with a parent or teacher, the student opens the native Photos gallery app (Apple Photos, Google Photos, or Samsung Gallery). The student tests five different search queries without looking at pre-tagged albums: 1. 'Dog' or 'Cat' (testing animal recognition), 2. 'Cake' or 'Food' (testing object recognition), 3. 'Beach' or 'Park' (testing outdoor scene recognition), 4. 'Car' or 'Bicycle' (testing vehicle recognition), and 5. 'Sunset' or 'Flower' (testing nature recognition). For each search, the student observes how fast the Neural Chip displays results (usually under 0.5 seconds!) and checks if the AI made any funny mistakes (e.g. mistaking a fluffy white dog for a white sheep!). Students record their findings on a Detective Report Sheet, cementing that AI is a live, real helper in their own hands!",
+        "materials": [
+          "📱 1 smartphone (Apple iPhone with iOS 15+ or Android phone with Google Photos/Gallery)",
+          "👨‍👩‍👧 A parent or teacher partner to supervise and unlock the phone gallery",
+          "📄 1 sheet of paper and a pencil to draw the 'Mobile AI Detective Report'",
+          "⏱️ A stopwatch to time how fast the search results appear (e.g. 0.3 seconds!)",
+          "🏅 A cut-out Gold Mobile AI Detective Badge"
+        ],
+        "steps": [
+          "Step 1: Ask Mummy, Papa, or teacher for permission to open the Photos app. Sit together at the kitchen table or on the couch.",
+          "Step 2: Check the total photo count at the bottom of the gallery! Is it 1,000 photos? 5,000 photos? Write the total number on your paper: 'Photos to Scan: 4,800!'",
+          "Step 3: MISSION TEST 1 (The Animal Test): Tap the magnifying glass search bar. Type the word 'Dog' (or 'Cat' if your family has a cat). Tap Search! Count aloud: One-Mississippi! Did the puppy photos appear instantly? How many did it find?",
+          "Step 4: MISSION TEST 2 (The Food Test): Clear the search bar and type 'Cake'. Did the phone find your birthday cakes? Did it find cupcakes or pancakes? Write down what it found!",
+          "Step 5: MISSION TEST 3 (The Outdoor Scene Test): Type 'Beach' or 'Park'. Look at how the AI identified sand, ocean water, green grass, and swings!",
+          "Step 6: MISSION TEST 4 (The People & Pets Album): Tap the 'People & Pets' tab. Look at how the phone clustered faces of family members and pets into individual circular albums! Notice that Mummy and Papa have their own dedicated albums without anyone typing their names!",
+          "Step 7: Check for Funny AI Bloopers: Look closely at the results. Did the AI accidentally think a stuffed teddy bear was a real puppy? Did it think a plate of yellow cheese was a slice of cake? Write down any funny bloopers!",
+          "Step 8: Sign your Detective Report: Write: 'Tested by Junior AI Detective [Your Name] — 100% Verified Neural Chip Magic!' Award yourself the Gold Mobile Detective Badge!"
+        ],
+        "thingsToLookFor": [
+          "⚡ How fast did the results appear? (Notice that it takes less than 1 second across thousands of photos!)",
+          "🐶 Did the AI find pet photos even from years ago when the pet was tiny?",
+          "🏷️ Did the grown-up confirm that they NEVER manually typed tags on those photos?",
+          "🎂 Did the food search distinguish between sweet cakes and savory dinners?",
+          "🏖️ Did the scene search successfully distinguish outdoor sunny photos from indoor bedroom photos?",
+          "🛡️ Did the grown-up appreciate learning that all photo scanning happened locally on the phone's chip?",
+          "😂 Did you spot any hilarious bloopers (like a dog toy classified as a real dog)?",
+          "🏆 Did you celebrate completing your very first real-world computer vision audit?"
+        ],
+        "discussionWithGrownUp": [
+          "How did your parents organize family photographs thirty years ago before smartphones existed? (Answer: Heavy paper photo albums with plastic sleeves and handwritten labels!)",
+          "Why is on-device Neural Chip processing better for family privacy than sending all family photos to a giant internet cloud server?",
+          "What other objects would you like smartphones to recognize in the future (e.g. lost keys, homework worksheets, medicine bottles)?",
+          "If a phone can recognize your face to unlock the screen, what happens if you wear sunglasses or a warm winter hat?"
+        ],
+        "familyConnection": "Show your grandparents how to use the photo search bar! Help Grandma find pictures of flowers or past holidays in her own phone gallery — you will be her official technology hero! 👵🌸📱",
+        "learningOutcome": "Children experience authentic empirical verification of computer vision and on-device natural language retrieval, proving that AI is a practical, localized tool rather than an abstract concept.",
+        "auraGuidance": {
+          "before": "SIT TOGETHER with a grown-up and open the native photo gallery app! 📱",
+          "during": "COUNT how many fractions of a second it takes for Bruno the dog to appear on screen! ⏱️🐕",
+          "after": "MISSION COMPLETE! You proved that Computer Vision works right in the palm of your hand! 🌟🏆"
+        }
+      },
+      {
+        "activityId": "activity-2",
+        "title": "🌙 The Dark Room Night Mode Flashlight Experiment! 📸🕯️",
+        "type": "active_roleplay",
+        "duration": "15 minutes",
+        "icon": "🌙",
+        "roboPiActivityBrief": "BEEP BOOP! Ready for some dark room wizardry? 🤖🌙 Let us test Night Mode in a dark room and see how AI paints with light!",
+        "description": "In this thrilling visual science experiment, students take a smartphone into a dimly lit room (like a bedroom with closed curtains or a hallway at twilight). Students place a colorful toy (like a bright Lego figure, stuffed animal, or picture book) on a table in the dim light. Step 1: Take a standard photo with Night Mode turned OFF and flash OFF. The resulting photo is dark, murky, and unrecognizable. Step 2: Turn Night Mode ON. Hold the phone steady for the 2-second countdown. Observe the screen! The resulting photo is bright, colorful, sharp, and looks like daylight! Students compare the two photos side-by-side on the screen, proving how computational multi-frame exposure stacking illuminates shadows without harsh glare.",
+        "materials": [
+          "📱 1 smartphone with Night Mode camera capability (iPhone 11+, Google Pixel, Samsung Galaxy)",
+          "🧸 A colorful toy or book with clear text (to test sharpness in the dark)",
+          "🚪 A dim room (bedroom with curtains drawn, or bathroom with door cracked open)",
+          "⏱️ 2-second countdown timer on screen"
+        ],
+        "steps": [
+          "Step 1: Place your colorful toy or book on a table in the dim room.",
+          "Step 2: Turn off the overhead lights. Close the curtains so the room is dimly lit like twilight.",
+          "Step 3: PHOTO 1 (No Night Mode): Open the camera app. Turn Flash OFF. Turn Night Mode OFF. Hold steady and snap a photo. Look at the result: it is dark, murky gray, and grainy!",
+          "Step 4: PHOTO 2 (Night Mode Magic): Tap the little crescent moon Night Mode icon. The phone says: 'Hold steady for 2s'.",
+          "Step 5: Hold your breath and hold the phone rock-steady with two hands. Tap the shutter button! Watch the 2-second countdown on screen: 2... 1... *CLICK*!",
+          "Step 6: Open the photo gallery and place Photo 1 and Photo 2 side by side!",
+          "Step 7: Compare the details: Look at the toy's eyes, the colors of the fabric, and the text on the book. Photo 2 looks like a warm light bulb was turned on in the room!",
+          "Step 8: Celebrate: You just witnessed Computational Photography stacking multiple exposures in real time!"
+        ],
+        "bonusChallenge": [
+          "🕯️ Candle Test: Test Night Mode near a single lit candle with a grown-up present! See how the flame stays sharp without blinding glare!",
+          "🔭 Starry Night Test: On a clear night, step into the backyard, rest the phone against a garden chair, and snap the night sky to spot stars!"
+        ],
+        "creativityPrompts": [
+          "Write a tiny caption under your two photos: 'Photo 1: Starving for light 🌑' vs 'Photo 2: Fed with 10 exposures by AI 🌟'!",
+          "Explain to a friend how the phone erased the blurry hand wobbles using smart edge alignment!"
+        ],
+        "familyConnection": "Show mama and papa the side-by-side comparison on the screen! Teach them why they should use Night Mode instead of blinding camera flash for indoor family dinners! 🍽️📸",
+        "learningOutcome": "Demonstrates the physical mechanism of multi-frame exposure fusion, proving that computational algorithms can overcome the physical optical limits of tiny smartphone camera lenses.",
+        "auraGuidance": {
+          "before": "HOLD the phone with both hands or rest your elbows on the table for maximum steadiness! 📐",
+          "during": "WATCH the on-screen countdown: 2... 1... hold steady while the 10 exposures combine! ⏱️",
+          "after": "NIGHT ILLUMINATED! The dark room was transformed into bright daylight with pure AI! 🌙🌟"
+        }
+      },
+      {
+        "activityId": "activity-3",
+        "title": "🔋 The 24-Hour Smart Battery Diary & Dinner Quiz! 🍽️📱",
+        "type": "interactive_drama",
+        "duration": "15 minutes",
+        "icon": "🔋",
+        "roboPiActivityBrief": "BEEP BOOP! Ready for family dinner theater? 🤖🍽️ Track how your family uses phone batteries, check the battery health screen, and host the Ultimate Dinner Quiz tonight!",
+        "description": "Combine real smartphone diagnostic tools with family dinner conversation! In Part 1, students open the 'Battery' settings on Mummy's or Papa's phone (Settings → Battery). The student inspects the colorful battery usage graph showing how much energy was consumed during daytime vs nighttime. Notice the flat, horizontal line overnight proving that Adaptive Battery froze apps while everyone slept! In Part 2, the student takes the role of Chief Battery Inspector at dinner and quizzes parents on 5 punchy mobile AI questions!",
+        "quizQuestions": [
+          "Question 1: What tiny mini-brain inside the mobile phone powers smart photo search and Night Mode? (Grown-up Answer: The Neural Processing Unit or Neural Chip!)",
+          "Question 2: How does the phone find photos of our pet Bruno when we type 'Dog' if nobody tagged the photos? (Grown-up Answer: Computer Vision AI recognizes the shapes of ears, snout, and fur!)",
+          "Question 3: In Night Mode, does the camera take one photo or many photos? (Grown-up Answer: It takes 10 to 15 rapid photos and stacks them together!)",
+          "Question 4: What does the Smart Battery Guardian do to apps when everyone is sleeping at night? (Grown-up Answer: It freezes unused background apps into deep hibernation so power doesn't drain!)",
+          "Question 5: Why are family photos searched locally on the phone's chip instead of uploaded to strangers on the internet? (Grown-up Answer: For privacy and security, keeping family memories safe!)"
+        ],
+        "familyConnection": "Award mama and papa the 'Certified Smart Phone User Certificate' ⭐ if they score at least 4 out of 5! Help them turn on 'Optimized Battery Charging' in their settings!",
+        "learningOutcome": "Connects abstract operating system energy policies and computational photography to verifiable system telemetry on commercial mobile devices.",
+        "auraGuidance": {
+          "before": "OPEN Settings → Battery on the phone with a grown-up to view the colorful usage graph! 📊",
+          "during": "POINT out the flat horizontal line overnight: proof of app hibernation! 😴🔋",
+          "after": "QUIZ CHAMPIONS! Your family dinner table is now certified in Mobile AI! 🌟🍽️"
+        }
+      }
+    ],
+    "realWorldExamples": [
+      {
+        "id": "rwe-1",
+        "title": "🐕 Searching for Bruno the Golden Pup in 5,000 Family Photos 📱🔍",
+        "scenario": "The Sharma family has accumulated over 5,000 photos on their shared family phone over four years. During a family reunion, Kabir's aunt asks to see pictures of their golden retriever Bruno when he was a two-month-old puppy. In the past, scrolling through four years of photos took 45 minutes and caused eye strain.",
+        "aiConnection": "Computer Vision and semantic feature extraction! Kabir types 'Dog' into the search bar. The on-device Neural Chip processes the feature index: it searches for visual embeddings matching canine anatomy (triangular ears, snout protrusion, fur texture). Within 180 milliseconds, the phone displays 120 photos containing Bruno. Kabir scrolls back to 2024 and taps a picture of baby Bruno sleeping in a shoebox. Total search time: 3 seconds!",
+        "observation": "Notice that the search worked even though the family never typed a caption, never tagged a filename, and took photos in different lighting conditions, indoors and outdoors!",
+        "discussion": "How can the AI tell the difference between a real golden dog and a yellow stuffed teddy bear sitting on the couch? What subtle features (like fur texture, eyes, and posture) does the Neural Chip look for?",
+        "roboPiTip": "BEEP BOOP! You can even search by location and object together! Try typing 'Dog beach' or 'Dog snow' to see the AI combine two visual concepts into one search! 🐾🏖️"
+      },
+      {
+        "id": "rwe-2",
+        "title": "🕯️ Snapping Birthday Cake Candles in the Dark with Night Mode 🎂🌙",
+        "scenario": "At Priya's 9th birthday party, the dining room lights are switched off for the cake cutting. The only illumination comes from nine flickering wax birthday candles. An older smartphone with flash produces a washed-out, harsh photo where Priya's eyes look red and the room looks like an eerie cave.",
+        "aiConnection": "Computational Photography and multi-frame HDR fusion! The new smartphone camera uses Night Mode AI. When the shutter is pressed, the camera captures 12 separate exposures across 1.5 seconds: short exposures capture the delicate flame structure without overexposure (white blow-out), while longer exposures gather ambient photons from Priya's face and the surrounding room. The Neural Chip aligns hand tremors, scrubs optical sensor noise, and blends the frames. The final photograph looks warm, vibrant, and natural, exactly as human eyes experienced it!",
+        "observation": "Look at the candle flames: they are distinct golden teardrops with blue wicks, while Priya's smile is softly illuminated with warm candlelight without any harsh flash glare!",
+        "discussion": "Why do human eyes see better in the dark than traditional camera lenses? How does AI bridge the gap between biological vision and tiny smartphone lenses?",
+        "roboPiTip": "BEEP BOOP! Next time you take a Night Mode photo, rest your elbows on a table or wall! The less your hands wobble, the sharper your night photos will be! 📸🧱"
+      },
+      {
+        "id": "rwe-3",
+        "title": "🔋 How Mummy's Phone Learns Your Bedtime and Saves Battery Overnight 😴⚡",
+        "scenario": "Mummy leaves her phone on the kitchen counter at 10:00 PM with 38% battery remaining, forgetting to plug it into the wall charger. The phone has 60 apps installed, including social networks, games, shopping apps, and email clients that normally ping servers every few minutes.",
+        "aiConnection": "Predictive machine learning and operating system task scheduling! The Adaptive Battery service analyzes telemetry: ambient light sensor reads zero lumens (dark room), accelerometer detects zero movement, and historical clock patterns indicate the household is asleep. The AI changes the CPU power governor to low-frequency mode and places 55 non-critical background apps into 'App Standby Buckets' (deep hibernation). Push notifications for non-urgent apps are queued until morning. When Mummy wakes up at 6:30 AM, the battery is still at 36%! The morning alarm sounds reliably, and the phone lasted all night on 2% battery consumption!",
+        "observation": "A dumb phone running unconstrained background services would have drained 30% to 40% battery overnight, waking Mummy up to a dead, powered-off phone and a missed alarm!",
+        "discussion": "Why is energy efficiency just as important as computing speed in mobile devices? How does saving battery also keep the phone cool and extend the lifespan of the hardware?",
+        "roboPiTip": "BEEP BOOP! Checking Settings → Battery will show you which apps are 'battery hogs'! The AI automatically tames those apps so your phone stays cool and charged! 📱🔋"
+      }
+    ],
+    "practiceExercises": [
+      {
+        "exerciseId": "practice-1",
+        "type": "interactive_sorting",
+        "title": "📱 Regular Mobile vs AI Superhero Mobile! (Feature Face-Off) ⚡",
+        "instruction": "Read each mobile capability below. Is it an OLD REGULAR PHONE feature, or an AI SUPERHERO PHONE feature? Sort them correctly to see how mobile AI changed our lives!",
+        "roboPiIntro": "BEEP BOOP! Welcome to the Mobile Face-Off Workshop! 🤖✨ Six phone features are waiting to be sorted! Match each one to Old Regular Phone or AI Superhero Phone! Let's sort! 🗂️",
+        "items": [
+          {
+            "activity": "🔍 Searching for pet photos by scrolling manually through thousands of pictures for an hour.",
+            "hasAI": false,
+            "stepType": "DUMB_MOBILE",
+            "explanation": "Old regular phones had no computer vision, requiring humans to do all the visual searching manually.",
+            "roboPiComment": "BEEP BOOP! Tired thumbs and wasted hours! 😫📱"
+          },
+          {
+            "activity": "🐶 Typing 'Dog' in search and finding all 120 pictures of your pet Bruno in 0.2 seconds.",
+            "hasAI": true,
+            "stepType": "AI_SUPERHERO",
+            "explanation": "AI Superhero phones use on-device Computer Vision to recognize animal shapes and features automatically.",
+            "roboPiComment": "BEEP BOOP! Neural Chip found the puppy in a flash! 🐕⚡"
+          },
+          {
+            "activity": "🌑 Taking photos in a dark room that turn out pitch-black and covered in blurry colored noise.",
+            "hasAI": false,
+            "stepType": "DUMB_MOBILE",
+            "explanation": "Old camera sensors starved for light and lacked computational multi-frame stacking algorithms.",
+            "roboPiComment": "BEEP BOOP! Muddy dark rectangle! 🌑🚫"
+          },
+          {
+            "activity": "🌙 Night Mode stacking 10 rapid exposures into one glowing, crystal-clear evening memory.",
+            "hasAI": true,
+            "stepType": "AI_SUPERHERO",
+            "explanation": "Computational photography blends multiple exposures, scrubs digital noise, and aligns wobbly frames.",
+            "roboPiComment": "BEEP BOOP! Dark room turned into daylight magic! 📸✨"
+          },
+          {
+            "activity": "🪫 Phone battery draining 40% overnight because dumb background apps ran wild while you slept.",
+            "hasAI": false,
+            "stepType": "DUMB_MOBILE",
+            "explanation": "Unoptimized operating systems let all apps ping servers continuously regardless of user sleep schedules.",
+            "roboPiComment": "BEEP BOOP! Dead battery by morning alarm! 🪫😖"
+          },
+          {
+            "activity": "🔋 Adaptive Battery freezing 42 unused apps into deep sleep overnight, losing only 2% power.",
+            "hasAI": true,
+            "stepType": "AI_SUPERHERO",
+            "explanation": "Machine learning predicts user downtime and restricts background app power consumption intelligently.",
+            "roboPiComment": "BEEP BOOP! Power preserved for morning alarms! 😴⚡"
+          }
+        ],
+        "feedback": {
+          "correct": "🌟 SPOT ON! You know the difference between old clunky phones and modern AI superhero phones! 📱🏆",
+          "incorrect": "🤔 Check whether the feature requires automatic smart intelligence or clumsy manual effort!"
+        }
+      },
+      {
+        "exerciseId": "practice-2",
+        "type": "fill_in_blanks",
+        "title": "📝 Complete Robo-Pi's Mobile Neural Chip Blueprint! 📱⚡",
+        "instruction": "Fill in the missing words in the mobile blueprint using the Word Bank below to help Robo-Pi map the smartphone mini-brain!",
+        "wordBank": [
+          "Neural Chip 🧠",
+          "Computer Vision 👁️",
+          "Night Mode 🌙",
+          "Adaptive Battery 🔋",
+          "Exposures 📸",
+          "Private 🛡️"
+        ],
+        "sentences": [
+          {
+            "id": "sent-1",
+            "sentence": "The tiny smart mini-brain inside modern smartphones that runs trillions of calculations is the _____.",
+            "blank": "Neural Chip 🧠",
+            "options": [
+              "Neural Chip 🧠",
+              "Wooden Spoon 🥄",
+              "Rubber Band 🎈",
+              "Flashlight Bulb 💡"
+            ],
+            "correctAnswer": "Neural Chip 🧠",
+            "explanation": "The Neural Chip (or NPU) is the dedicated hardware processor optimized for machine learning and pattern recognition."
+          },
+          {
+            "id": "sent-2",
+            "sentence": "The AI superpower that spots animals, cakes, and beaches in photo galleries is called _____.",
+            "blank": "Computer Vision 👁️",
+            "options": [
+              "Computer Vision 👁️",
+              "Ice Skating ⛸️",
+              "Soup Cooking 🍲",
+              "Loud Shouting 📢"
+            ],
+            "correctAnswer": "Computer Vision 👁️",
+            "explanation": "Computer Vision is the branch of AI that enables machines to extract meaningful information from digital images."
+          },
+          {
+            "id": "sent-3",
+            "sentence": "When taking photos in a dark candlelit room, the phone camera uses _____ to brighten the scene.",
+            "blank": "Night Mode 🌙",
+            "options": [
+              "Night Mode 🌙",
+              "Sleep Mode 💤",
+              "Airplane Mode ✈️",
+              "Silent Mode 🔕"
+            ],
+            "correctAnswer": "Night Mode 🌙",
+            "explanation": "Night Mode uses multi-frame exposure fusion to capture bright, detailed images in low-light environments."
+          },
+          {
+            "id": "sent-4",
+            "sentence": "During Night Mode, the camera captures 10 to 15 rapid _____ at different brightness levels.",
+            "blank": "Exposures 📸",
+            "options": [
+              "Exposures 📸",
+              "Sandwiches 🥪",
+              "Bicycles 🚲",
+              "Stories 📖"
+            ],
+            "correctAnswer": "Exposures 📸",
+            "explanation": "Multiple exposures capture both highlight details (short exposure) and shadow details (long exposure)."
+          },
+          {
+            "id": "sent-5",
+            "sentence": "The AI energy feature that freezes unused background apps while you sleep at night is _____.",
+            "blank": "Adaptive Battery 🔋",
+            "options": [
+              "Adaptive Battery 🔋",
+              "Loud Speaker 🔊",
+              "Heavy Brick 🧱",
+              "Screen Protector 📱"
+            ],
+            "correctAnswer": "Adaptive Battery 🔋",
+            "explanation": "Adaptive Battery uses machine learning to restrict power to rarely used apps based on user habits."
+          },
+          {
+            "id": "sent-6",
+            "sentence": "Because photo scanning happens on the local phone chip, family memories remain safe and _____.",
+            "blank": "Private 🛡️",
+            "options": [
+              "Private 🛡️",
+              "Noisy 📢",
+              "Broken 🔨",
+              "Cold 🥶"
+            ],
+            "correctAnswer": "Private 🛡️",
+            "explanation": "On-device processing ensures that sensitive personal data and photographs do not leave the physical smartphone."
+          }
+        ]
+      }
+    ],
+    "lessonSummary": {
+      "roboPiFinalMessage": "BEEP BOOP BOOP BEEP! 🤖✨ Oh my goodness, Mobile AI Detective! You did it! You have officially conquered Chapter 3 • Lesson 1 and unlocked the secret superpowers inside Mummy's and Papa's mobile phones! You know that the tiny Neural Chip is a superhero mini-brain that runs trillions of calculations in milliseconds! You know how Computer Vision finds Bruno the puppy in 5,000 photos, how Night Mode stacks 10 exposures into glowing daylight memories, and how Adaptive Battery freezes background apps to save power while you sleep! You will never look at a smartphone the same way again — you see the brilliant engineering and AI helpers humming inside! My antenna is beeping with pride, my roller skates are spinning, and I am giving you the biggest robot bear-hug in the universe! *CLINK-CLANK CHEERS!* 🦾💖",
+      "keyTakeaways": [
+        "📱 Inside modern smartphones is a dedicated mini-brain called a Neural Chip (NPU) that powers AI.",
+        "🐶 Computer Vision recognizes pets, cakes, beaches, and objects across thousands of photos in milliseconds.",
+        "🔍 You can search for 'Dog' or 'Beach' without ever manually tagging or writing labels on family photos.",
+        "🌙 Night Mode uses Computational Photography to stack 10 to 15 exposures into one glowing, clear image.",
+        "📐 The Neural Chip aligns hand wobbles and scrubs digital noise to keep dark photos crisp without harsh flash.",
+        "🔋 Adaptive Battery AI learns your family's routine, freezing unused apps overnight to drop power drain to 2%.",
+        "🔌 Optimized Charging stops at 80% overnight to prevent battery wear and finishes right before your alarm.",
+        "🛡️ On-device AI protects family privacy by processing photos and face data locally inside the phone."
+      ],
+      "recap": "In this lesson, we explored everyday artificial intelligence applications inside mobile smartphones. We demystified the Neural Processing Unit (NPU), discovered how Computer Vision categorizes thousands of unlabeled gallery photos (e.g. finding Bruno the puppy), investigated how Night Mode blends multi-frame exposures to illuminate darkness, and analyzed how Adaptive Battery management freezes background tasks to preserve power. We proved that smartphones are sophisticated autonomous helpers solving everyday family challenges.",
+      "studentReflection": {
+        "question": "Think about the one thing you do most on Mummy's or Papa's phone (taking photos, playing games, searching videos, or voice chat). How do you think the Neural Chip is helping you with that activity?",
+        "roboPiReflection": "BEEP BOOP! When you talk to the phone to send a voice message, the Neural Chip turns your sound waves into words in zero point one seconds! It is like having a super-fast robot scribe writing down every word! What do YOU love most? 🎙️📝"
+      },
+      "nextLesson": {
+        "title": "Chapter 3 • Lesson 2: AI Comes Home! (Smart Fridges, Robot Vacuums & Speakers) 🏠🤖",
+        "preview": "Now that we know how AI lives in our pocket mobile phones, where else is AI hiding in our houses? What makes a smart fridge, a robot vacuum, and a smart speaker work together?",
+        "teaser": "Get ready to explore the connected smart home, voice assistants that control lights, and robotic kitchens of the future! 🏡✨"
+      },
+      "parentNote": "Today, your child explored the practical artificial intelligence features embedded in everyday mobile smartphones. Rather than treating phones as passive entertainment screens, this lesson demystified the underlying hardware (the Neural Processing Unit / NPU) and machine learning algorithms that power photo semantic search, multi-frame computational photography (Night Mode), and predictive energy management. Encourage your child to demonstrate object photo search and night mode camera comparisons on your family smartphone to reinforce real-world STEM curiosity!",
+      "auraClosing": {
+        "congratulations": "MAGNIFICENT TRIUMPH! You completed Chapter 3 • Lesson 1: AI in My Mobile! 🌟",
+        "achievement": "Mobile AI Detective Badge Unlocked! 📱🏅",
+        "nextStep": "Ready for Chapter 3 • Lesson 2: AI Comes Home! 🏠✨",
+        "totalPoints": 500
+      }
+    }
+  },
+  "assessment": {
+    "quizType": "multiple_choice_interactive",
+    "roboPiQuizIntro": "BEEP BOOP! Time for the Grand Mobile AI Quiz! 🤖📝 Five fun questions stand between you and the Mobile AI Master Crown! Read carefully, think like a neural chip, and tap the golden answers! 👑✨",
+    "questions": [
+      {
+        "id": "q1",
+        "type": "tap_correct",
+        "emoji": "🧠",
+        "question": "What is the tiny superhero mini-brain inside modern smartphones that powers AI features? 📱⚡",
+        "options": [
+          {
+            "id": "opt1a",
+            "label": "The Neural Processing Unit (Neural Chip or NPU) 🧠✨",
+            "correct": true,
+            "feedback": "⭐ PERFECT! The Neural Chip is the dedicated smart mini-brain that runs trillions of calculations in milliseconds! 🌟"
+          },
+          {
+            "id": "opt1b",
+            "label": "A tiny chocolate bar hidden behind the battery 🍫",
+            "correct": false,
+            "feedback": "🤔 Haha! Chocolate belongs in tummies, not circuit boards! The smart chip is the Neural Chip!"
+          },
+          {
+            "id": "opt1c",
+            "label": "A plastic whistle that blows inside the speaker 吹",
+            "correct": false,
+            "feedback": "🤔 No whistles! It is a microscopic silicon computer chip called the NPU!"
+          },
+          {
+            "id": "opt1d",
+            "label": "A piece of yellow paper with handwritten notes 📝",
+            "correct": false,
+            "feedback": "🤔 Paper cannot do trillions of math problems! The Neural Chip does the magic!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q2",
+        "type": "tap_correct",
+        "emoji": "🐶",
+        "question": "How does the smartphone find all 120 pictures of your pet Bruno when you type 'Dog' in search? 📸🔍",
+        "options": [
+          {
+            "id": "opt2a",
+            "label": "Computer Vision AI recognizes the shapes of ears, snouts, and fur patterns in the pixels! 🐕✨",
+            "correct": true,
+            "feedback": "⭐ BINGO! Computer Vision identifies visual features automatically without humans ever typing tags! 🐾📱"
+          },
+          {
+            "id": "opt2b",
+            "label": "Because Bruno secretly typed his own name on the photos with his paws 🐾",
+            "correct": false,
+            "feedback": "🤔 Puppies cannot type on phones! The on-device Computer Vision AI did the searching!"
+          },
+          {
+            "id": "opt2c",
+            "label": "Because the phone barks like a dog whenever you open the camera 🗣️",
+            "correct": false,
+            "feedback": "🤔 Phones don't bark! They use pattern recognition algorithms on the Neural Chip!"
+          },
+          {
+            "id": "opt2d",
+            "label": "Because the photos are sent to a stranger's house across the ocean 🌊",
+            "correct": false,
+            "feedback": "🤔 No! On-device AI keeps your family photos private and secure right inside your phone!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q3",
+        "type": "tap_correct",
+        "emoji": "🌙",
+        "question": "How does Night Mode turn a dark room with a single candle into a bright, glowing photo? 🕯️📸",
+        "options": [
+          {
+            "id": "opt3a",
+            "label": "It captures 10 to 15 rapid exposures and blends the best details together while erasing noise! 🌟✨",
+            "correct": true,
+            "feedback": "⭐ BRILLIANT! Computational photography stacks multiple exposures to capture light and eliminate blur! 📸🌙"
+          },
+          {
+            "id": "opt3b",
+            "label": "It turns on a giant helicopter spotlight that blinds everyone in the room 🚁",
+            "correct": false,
+            "feedback": "🤔 No giant spotlights! The phone combines multiple exposures without blinding people!"
+          },
+          {
+            "id": "opt3c",
+            "label": "It replaces the real photo with a cartoon drawing downloaded from the internet 🎨",
+            "correct": false,
+            "feedback": "🤔 It uses your real photo! It simply captures more light photons using smart algorithms!"
+          },
+          {
+            "id": "opt3d",
+            "label": "It waits until the next morning when the sun comes up to take the photo ☀️",
+            "correct": false,
+            "feedback": "🤔 Night Mode works in two seconds right in front of your eyes! Stacking exposures is the secret!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q4",
+        "type": "tap_correct",
+        "emoji": "🔋",
+        "question": "How does the Smart Battery Guardian (Adaptive Battery) prevent the phone from dying overnight? ⚡😴",
+        "options": [
+          {
+            "id": "opt4a",
+            "label": "It recognizes your sleep schedule and freezes unused background apps into deep hibernation! 🛌🔋✨",
+            "correct": true,
+            "feedback": "⭐ SPOT ON! By freezing background apps, the phone loses only 1-2% power all night long! 😴📱"
+          },
+          {
+            "id": "opt4b",
+            "label": "It drinks cold lemonade to get extra energy 🍋",
+            "correct": false,
+            "feedback": "🤔 Phones don't drink lemonade! The AI manages processor power and app activity!"
+          },
+          {
+            "id": "opt4c",
+            "label": "It deletes all your photos and games to save space 🗑️",
+            "correct": false,
+            "feedback": "🤔 It never deletes your files! It just puts apps to sleep so they don't waste electricity!"
+          },
+          {
+            "id": "opt4d",
+            "label": "It flies out the window and charges from the stars in space 🛸",
+            "correct": false,
+            "feedback": "🤔 Phones stay right on your nightstand! Adaptive battery software saves energy intelligently!"
+          }
+        ],
+        "points": 20
+      },
+      {
+        "id": "q5",
+        "type": "tap_correct",
+        "emoji": "🛡️",
+        "question": "Why is it important that modern phones process photos and face recognition 'on-device'? 📱🔒",
+        "options": [
+          {
+            "id": "opt5a",
+            "label": "Because it keeps private family memories and face data safe inside your own phone! 🛡️✨",
+            "correct": true,
+            "feedback": "⭐ PERFECT SCORE! On-device processing guarantees family privacy and fast performance without internet delays! 🏆🎉"
+          },
+          {
+            "id": "opt5b",
+            "label": "Because phones are too heavy to connect to the internet 🏋️",
+            "correct": false,
+            "feedback": "🤔 Phones connect to the internet easily, but on-device processing protects your privacy!"
+          },
+          {
+            "id": "opt5c",
+            "label": "Because on-device processing makes the phone turn purple 🟣",
+            "correct": false,
+            "feedback": "🤔 Phones don't change color! Privacy and security are the real reasons!"
+          },
+          {
+            "id": "opt5d",
+            "label": "Because chips stop working if they talk to other computers 💻",
+            "correct": false,
+            "feedback": "🤔 Chips communicate well, but keeping sensitive family photos local is safer and faster!"
+          }
+        ],
+        "points": 20
+      }
+    ],
+    "maxScore": 100,
+    "passingScore": 80,
+    "completionMessages": {
+      "perfect": "🌟 PERFECT 100/100! You are a genuine Master of Mobile AI! Wear your Detective Crown with pride! 👑📱",
+      "excellent": "🎉 FANTASTIC 80+/100! You deeply understand Neural Chips, photo search, and Night Mode! 🌟🐶",
+      "good": "👍 GOOD JOB! You understand the basics! Review the three sections and try again for a perfect score! 🤖",
+      "tryAgain": "💪 DON'T GIVE UP! Remember Robo-Pi's golden secret: The Neural Chip is the superhero inside the phone! Let's try again! 🌟"
+    }
+  },
+  "resources": {
+    "teacherGuide": "/content/junior/guides/class4-ch3-l1-teacher.pdf",
+    "worksheets": [
+      "/content/junior/worksheets/class4-ch3-l1-mobile-ai-detective.pdf",
+      "/content/junior/worksheets/class4-ch3-l1-night-mode-experiment.pdf"
+    ],
+    "videos": [
+      {
+        "title": "🎬 Inside Your Smartphone: Meet the Neural Processing Unit! (Kids Tech)",
+        "url": "TBD",
+        "duration": "4:10",
+        "description": "An animated microscopic journey inside a smartphone motherboard showing how the Neural Chip recognizes photos and voices!"
+      },
+      {
+        "title": "🎬 How Does Night Mode Work on Phone Cameras? (Kid-Friendly Science)",
+        "url": "TBD",
+        "duration": "3:45",
+        "description": "Visual breakdown of multi-frame computational photography, HDR exposure fusion, and digital noise cancellation!"
+      },
+      {
+        "title": "🎬 How Computers See: Introduction to Computer Vision for Kids!",
+        "url": "TBD",
+        "duration": "4:30",
+        "description": "Fun exploration of pixels, edges, and feature recognition algorithms that allow phones to identify dogs and cats!"
+      }
+    ],
+    "additionalReading": [
+      {
+        "title": "📖 The Secret Superhero Inside My Phone: A Young Explorer's Guide to Mobile AI",
+        "url": "TBD",
+        "level": "Elementary"
+      }
+    ],
+    "parentResources": [
+      {
+        "title": "👨‍👩‍👧 Exploring Smartphone AI Features Safely with Your Child",
+        "url": "TBD",
+        "description": "Parental guide explaining on-device privacy, photo search shortcuts, and battery health settings to explore together."
+      }
+    ]
+  },
+  "teacherNotes": {
+    "preparation": "Prepare a smartphone with a photo gallery containing diverse subjects (pets, food, scenery). Test the native search bar ('Dog', 'Cake', 'Beach') before class. If possible, demonstrate Night Mode in a dimly lit corner of the classroom using a colorful mascot prop. Have copies of the Mobile AI Detective Report worksheet ready.",
+    "lessonFlow": "Hook students with the Opening Story of Bruno the puppy vanishing in 5,000 photos. Ask students how long it would take to scroll through 5,000 photos manually. Introduce the Neural Chip (NPU) as the pocket superhero. Lead the live demonstration of photo search and Night Mode. Conduct Activity 1 (Photo Album Dog-Finder Mission) in pairs or small groups. Conclude with the interactive quiz.",
+    "tips": [
+      "🎯 Perform the live photo search demonstration on a classroom projector: typing 'Dog' and seeing instant puppy pictures creates an immediate 'WOW' moment!",
+      "💡 Emphasize that photo recognition happens locally on the phone's chip without uploading private family photos to external servers.",
+      "🌙 Demonstrate Night Mode by holding a phone inside a partially closed cardboard box containing a toy: the bright result inside the dark box delights students!",
+      "🔋 Connect Adaptive Battery to human sleep routines: just like kids sleep to recharge, phones put background apps to sleep to save power.",
+      "⚠️ Address the misconception that phones have magic fairies or humans looking at their photos; reinforce that it is mathematical pattern matching on pixels.",
+      "🌟 Award every student their Mobile AI Detective Badge at the end of the lesson!"
+    ],
+    "commonMisconceptions": [
+      "❌ Misconception: 'A human at the phone company looks at all our family photos to tag them.' → Correction: All photo recognition is performed automatically by mathematical algorithms on the local Neural Chip.",
+      "❌ Misconception: 'Night Mode is just turning on the camera flash.' → Correction: Flash blasts harsh artificial light; Night Mode stacks 10 natural light exposures without blinding flash.",
+      "❌ Misconception: 'Leaving a phone unplugged overnight always drains all the battery.' → Correction: Adaptive Battery AI freezes inactive background apps, reducing overnight drain to near zero.",
+      "❌ Misconception: 'Phones are getting smarter because their screens are bigger.' → Correction: Intelligence comes from the microscopic Neural Processing Unit (NPU) inside the circuit board, not the screen size."
+    ],
+    "differentiatedInstruction": {
+      "forStrugglingStudents": "Focus on the peanut comparison: the chip is smaller than a peanut, but it has superhero eyes. Use physical photo cards (picture of dog, picture of car) and have students identify what features (ears, wheels) the chip looks for.",
+      "forAdvancedStudents": "Introduce the concept of Computational Photography and HDR (High Dynamic Range). Challenge students to research how Face ID projects 30,000 invisible infrared dots to build a 3D depth map of a face.",
+      "forELLStudents": "Provide illustrated flashcards matching mobile terms to icons: 📱 Phone, 🐶 Photo Search, 🌙 Night Mode, 🔋 Smart Battery. Encourage testing search terms in both English and their native languages in the gallery."
+    }
+  },
+  "additionalResources": [
+    {
+      "type": "video",
+      "title": "🎬 How Face Unlock Works in 3D: Apple TrueDepth & Android Biometrics",
+      "description": "Kid-friendly 3-minute animation showing how invisible infrared dot projectors map human facial geometry in the dark.",
+      "url": "TBD",
+      "ageAppropriate": true
+    },
+    {
+      "type": "article",
+      "title": "📰 The Pocket Supercomputers: What Inside Your Phone Does Every Second",
+      "description": "An illustrated magazine feature exploring the journey of an image through lenses, sensors, NPUs, and OLED displays.",
+      "url": "TBD",
+      "ageAppropriate": true
+    },
+    {
+      "type": "activity",
+      "title": "🎨 Printable Mobile Superhero Chip Diagram & Cut-Out",
+      "description": "A printable PDF where kids can color the smartphone motherboard, trace the Neural Chip pathways, and paste app icons.",
+      "url": "TBD",
+      "ageAppropriate": true
+    },
+    {
+      "type": "interactive",
+      "title": "🌐 Virtual Mobile Camera Night Mode Simulator",
+      "description": "A fun interactive web app where students drag an exposure slider to simulate multi-frame image stacking on dark scenes.",
+      "url": "TBD",
+      "ageAppropriate": true
+    }
+  ],
+  "assessmentQuestions": [
+    {
+      "questionId": "aq1",
+      "question": "What does NPU stand for in smartphone hardware architecture? 🧠",
+      "options": [
+        "New Plastic Umbrella",
+        "Neural Processing Unit (or Neural Chip) 🧠✨",
+        "National Pizza University",
+        "No Power Unit"
+      ],
+      "correctAnswer": "Neural Processing Unit (or Neural Chip) 🧠✨",
+      "explanation": "NPU stands for Neural Processing Unit, a specialized microprocessor engineered to accelerate machine learning algorithms and neural networks."
+    },
+    {
+      "questionId": "aq2",
+      "question": "How does Computer Vision on a smartphone identify a dog in a photo? 🐕",
+      "options": [
+        "It listens for barking sounds from the photograph",
+        "It analyzes pixel patterns to detect visual features like floppy ears, snout, and fur texture 👁️✨",
+        "It checks if the photograph smells like dog biscuits",
+        "It asks a human librarian to look at the photo"
+      ],
+      "correctAnswer": "It analyzes pixel patterns to detect visual features like floppy ears, snout, and fur texture 👁️✨",
+      "explanation": "Computer vision algorithms process digital pixel arrays, extracting hierarchical geometric features (edges, contours, shapes, textures) that match trained object classes."
+    },
+    {
+      "questionId": "aq3",
+      "question": "What computational process allows Night Mode to produce sharp photos in low light? 🌙",
+      "options": [
+        "Painting over the photo with yellow watercolor paint",
+        "Capturing multiple rapid exposures at different shutter speeds and fusing them into a single high-dynamic-range image 📸✨",
+        "Making the camera lens twice as large as the phone",
+        "Turning the phone upside down while shooting"
+      ],
+      "correctAnswer": "Capturing multiple rapid exposures at different shutter speeds and fusing them into a single high-dynamic-range image 📸✨",
+      "explanation": "Night Mode executes multi-frame computational exposure stacking, aligning motion vectors, removing stochastic sensor noise, and blending dynamic range."
+    },
+    {
+      "questionId": "aq4",
+      "question": "How does Adaptive Battery AI reduce overnight power consumption on mobile devices? 🔋",
+      "options": [
+        "It physically turns off the battery chemicals permanently",
+        "It detects sleep patterns and suspends inactive background processes into deep hibernation 🛌✨",
+        "It makes the phone screen glow red all night",
+        "It uninstalls all games from the device"
+      ],
+      "correctAnswer": "It detects sleep patterns and suspends inactive background processes into deep hibernation 🛌✨",
+      "explanation": "Adaptive battery subsystems apply machine learning to forecast device idle states, restricting CPU wake-locks and deferring background network requests."
+    },
+    {
+      "questionId": "aq5",
+      "question": "Why is 'on-device' AI processing important for family smartphone users? 🛡️",
+      "options": [
+        "It makes the phone weigh ten kilograms",
+        "It processes sensitive biometric and photographic data locally, ensuring user privacy and eliminating server latency 🔒✨",
+        "It causes the phone to lose internet connection forever",
+        "It makes phone calls much louder"
+      ],
+      "correctAnswer": "It processes sensitive biometric and photographic data locally, ensuring user privacy and eliminating server latency 🔒✨",
+      "explanation": "On-device processing executes inference locally on edge silicon, preventing transmission of sensitive biometric or visual data over networks and ensuring privacy."
+    }
+  ]
+}
