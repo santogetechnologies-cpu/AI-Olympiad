@@ -1,0 +1,1206 @@
+{
+  "lessonId": "l2",
+  "title": "Draw & Imagine",
+  "level": "junior",
+  "class": "class3",
+  "chapter": "ch5",
+  "mascot": "Bolt",
+  "badge": {
+    "badgeId": "badge-ch5-l2",
+    "name": "Master Imagination Artist Badge 🎨✨",
+    "description": "Awarded for turning creative words into vivid pictures, mixing colours, animals, and magical details, exploring AI drawing assistants with Bolt, and creating in the Magic Imagination Sketch Studio!",
+    "emoji": "🎨🐱🦋🪄✨",
+    "trophy_unlocked": "🏆 Grand Imagination Artist Trophy unlocked! You discovered that your human imagination is the true magic wand, and digital tools are just helpful paintbrushes! 🌟🎨"
+  },
+  "introduction": {
+    "overview": "“BEEP BOOP! Your imagination is the magic wand! I am just your little paintbrush!” 🤖🎨✨\n\nWelcome, my imaginative Class 3 creator! It is ME — BOLT, your loyal blue robot buddy with spinning antenna lights and a giant sketchbook tucked under my arm! 🌈✨ Give me a super-colourful, rainbow-splashing high-five on your screen — *SWOOSH! BEEP BOOP!* 🖐️🎨\n\nLook at this magnificent sketchbook I brought with me today! 📖\nI flip open the cover, and guess what? Every single page inside is completely BLANK and pure snow-white! \nBolt looks at you with glowing sapphire eyes and asks with pure wonder:\n*“What would you draw if you could invent anything in the whole wide world?”* 💭🌍\n\nWould you draw:\n- A flying purple kitten with delicate butterfly wings soaring over a strawberry meadow? 🐱🦋🟣\n- A friendly green dinosaur wearing bright rainbow roller skates and dancing to jazz music? 🦖🌈🛼\n- A smiling crescent moon wearing a cozy blue nightcap, eating a scoop of starry ice cream? 🌙🍦⭐\n- A tiny silver robot watering a garden of giant singing sunflowers? 🤖🌻🎵\n- A golden elephant floating across the clouds in a hot air balloon basket? 🐘🎈☁️\n- Or a swift blue rabbit piloting a rocket ship past candy-coloured planets? 🐰🚀🪐\n\nYOUR WORDS ARE CLUES THAT BRING DREAMS TO LIFE! 🔍🖼️\nDid you know that today, special digital helpers called AI DRAWING ASSISTANTS can take a group of written words and try to turn them into a real, colourful picture? \nThink of it as a creative team adventure:\n- Your IMAGINATION is the big idea! 💭\n- Your WORDS are the descriptive clues you give to the tool! 📝\n- The DRAWING ASSISTANT tries to paint the picture based on your words! 🖼️\n- And YOU review the picture, add extra details, and improve your description! ✨\n\nLook at this magic example:\nDescription: *“A flying purple cat with butterfly wings.”* 🐱🦋🟣\nLet's break down those magic clues:\n1. *Flying* tells us the action (what the cat is doing up in the air!). 🕊️\n2. *Purple* tells us the vibrant colour. 🟣\n3. *Cat* tells us the main character and subject. 🐱\n4. *Butterfly wings* tells us the special, surprising imaginary feature! 🦋\nJust seven words turned an empty page into an enchanting, unforgettable creature!\n\nAND REMEMBER BOLT'S GOLDEN CREATIVE TRUTH: 💖🪄\nIn the kingdom of imagination, there are NO wrong answers! You can invent animals that have never walked on Earth, plants that glow like neon signs, and castles made of blueberry gelatin! You are the author, the director, and the visionary artist. Digital tools are just little electronic paintbrushes waiting for your creative spark! 🎨⚡\n\nAre you ready to step into Bolt's art studio and discover how words become magical pictures? Let's dip our brushes and begin! 🖍️🖼️✨",
+    "learningObjectives": [
+      "Understand that imagination is the creative engine that invents new ideas and stories 💭🪄",
+      "Learn how AI drawing assistants can turn descriptive written words (prompts) into pictures 🎨🖼️",
+      "Describe imaginary pictures clearly using subjects, colours, sizes, actions, and special details 📝🟣",
+      "Master the creative prompt recipe: WHO + COLOR + SPECIAL DETAIL + ACTION + BACKGROUND 🐱🌈",
+      "Compare short prompts with detailed prompts, seeing how descriptive words guide the picture 🔍✨",
+      "Explore real-world creative tools like Google AutoDraw, digital colouring apps, and text-to-image assistants ✏️📱",
+      "Recognize that AI drawings can make mistakes and that human artists can adjust words to improve results 🤖🔄",
+      "Practice creative safety by never sharing private personal information in prompts and asking adults before sharing art online 🔒🛡️",
+      "Enjoy building magical picture descriptions in the Magic Imagination Sketch Studio activity! 🎨🎮🌟"
+    ],
+    "duration": "45-60 minutes of joyful artistic experimentation, prompt-crafting challenges, and imaginative studio creation! ⏱️🎉"
+  },
+  "sections": [
+    {
+      "sectionId": "section1",
+      "title": "Words Become Pictures! 🖍️🖼️",
+      "content": "BEEP BOOP! Welcome to the studio where words transform into vibrant visual art! 🖍️🖼️✨\nHave you ever described a fun dream to a friend, and as you spoke, you could see their eyes widen because they were picturing it in their own mind? \nWhen you say: 'Imagine a tiny brown puppy running through a puddle of water!', your friend's brain creates a mental movie! \nAI drawing assistants work in a very similar way: they read the descriptive words you type, search their vast digital memory of shapes, colours, and objects, and try to construct a matching picture on your screen! \nLet's discover how words act as artistic building blocks! 🧱🎨\n\nFROM BARE WORDS TO RICH DESCRIPTIONS: THE CAT PROGRESSION 🐱📈\nLook at what happens when we describe an idea with different amounts of detail:\n\nSTAGE 1: THE VAGUE PROMPT 🌫️\nPrompt: *“Draw a cat.”*\nWhat does the drawing tool know? It knows you want a cat. But what kind of cat? Is it big or small? Is it black, white, orange, or striped? Is it sleeping in a cardboard box, climbing a tree, or chasing a laser pointer? The computer has to guess almost everything! It might draw a plain grey cat sitting on a blank white background. That's okay, but it's not very exciting! 🐱\n\nSTAGE 2: ADDING COLOUR AND OBJECT DETAILS 🎨🛋️\nPrompt: *“Draw a small orange cat sitting on a blue cushion.”*\nLook how much clearer our instructions became! Now the drawing tool knows:\n- The size: *small*\n- The colour: *orange*\n- The animal: *cat*\n- Where it is resting: *on a blue cushion*\nThe computer doesn't have to guess as much! The picture suddenly has vibrant contrasting colours — warm orange fur against a cool blue velvet cushion! 🟧🟦\n\nSTAGE 3: ADDING ENVIRONMENT AND MOOD ☀️🪟\nPrompt: *“Draw a small orange cat sitting on a blue cushion beside a sunny window with dancing dust motes.”*\nNow the picture has warmth, light, and atmosphere! Golden yellow sunshine streams through the window glass, illuminating the kitten's soft whiskers, while outside we might catch a glimpse of green garden leaves. That is the magic of descriptive words! 🪟✨\n\nWHAT IS A PICTURE PROMPT? 📝💡\nA PICTURE PROMPT is a group of words that tells a drawing tool what you want to see! \nThink of a prompt like a delicious recipe for a baker. If you tell a baker 'Bake food', they don't know what you want. But if you tell them 'Bake a warm chocolate cake topped with fresh strawberries', you get exactly the delicious dessert you dreamed of! 🎂🍓\n\nTHE 5 MAGIC ELEMENTS OF A GREAT DESCRIPTION: 🖐️✨\nWhenever you want to describe an imaginary picture to a drawing tool or a friend, remember these five building blocks:\n1. 🐾 WHAT TO DRAW (The Subject): Cat, robot, frog, dragon, castle, spaceship, sunflower, teddy bear.\n2. 🎨 COLOUR: Purple, golden yellow, emerald green, sky blue, ruby red, pastel pink, rainbow.\n3. 📏 SIZE: Tiny, miniature, huge, gigantic, fluffy, tall.\n4. 🏃 ACTION: Flying, dancing, sleeping, jumping, reading, paddling, painting.\n5. ✨ EXTRA DETAILS: Butterfly wings, star-shaped glasses, a rainbow scarf, a tiny backpack, a flower crown.\n\nBEFORE-AND-AFTER PROMPT SHOWDOWN: 🐕🧣\nLet's look at another transformation:\n- First prompt: *“A dog.”* (Too plain! What breed? What is it doing?)\n- Improved prompt: *“A happy brown dog wearing a bright blue scarf.”* (Much better! The blue scarf adds personality!)\n- Master artist prompt: *“A happy brown puppy wearing a bright blue scarf, jumping joyfully beside a colourful flower garden with butterflies.”* (Breathtaking! It paints a whole cheerful story! 🐶🌸)\n\nWHAT IF THE PICTURE DOESN'T LOOK RIGHT? 🤖🤔\nHere is an essential secret from Bolt: AI drawing tools do NOT always understand your words perfectly! Sometimes a tool draws three ears instead of two, or puts the hat on the cat's tail! \nDo we get upset? NEVER! We treat it like a fun puzzle. We read our prompt, change a confusing word, remove extra clutter, and try again! Iteration and experimenting are the true marks of an artist! 🔄🎨",
+      "examples": [
+        {
+          "exampleId": "ex1",
+          "title": "Anya's Teacup Dragon 🐉☕",
+          "description": "Anya wanted to draw a magical creature. She started by typing: 'A dragon.' The computer drew a giant scary fire-breathing beast on a rocky cliff. Anya giggled and said: 'No, I want a cute friendly baby dragon!' She changed her prompt to: 'A tiny emerald-green baby dragon sleeping curled up inside a pink porcelain teacup with white polka dots.' The new picture was adorably cozy and looked like a fairy tale illustration! 🍵✨",
+          "keyTakeaway": "Adding specific words like 'tiny', 'baby', and 'sleeping inside a teacup' changes the entire mood of an image from scary to cozy! 🐉💖"
+        },
+        {
+          "exampleId": "ex2",
+          "title": "Kabir's Duck with the Red Top Hat 🦆🎩",
+          "description": "Kabir experimented with animal accessories. He typed: 'A cheerful yellow duck wearing a red top hat and yellow rainboots, splashing in a clean rain puddle.' The drawing assistant generated a bright, sunny cartoon of a smiling duck standing in a crystal-clear puddle with ripples! Kabir's clear colour and clothing words guided the picture perfectly! 🌧️👢",
+          "keyTakeaway": "Describing clothing, accessories, and actions helps drawing tools create humorous, storybook-style characters! 🦆👔"
+        },
+        {
+          "exampleId": "ex3",
+          "title": "Maya's Space Frog on a Lily Pad 🐸🪐",
+          "description": "Maya wanted to mix nature with outer space. She prompted: 'A smiling green frog sitting on a glowing blue lily pad floating in outer space near ringed Saturn.' The result was surreal and whimsical: a friendly frog calmly floating past starry constellations! Maya proved that imagination can put any animal into any cosmic setting! 🌌🐸",
+          "keyTakeaway": "You can combine everyday creatures with extraordinary imaginary environments to create unique artwork! 🚀✨"
+        },
+        {
+          "exampleId": "ex4",
+          "title": "Arjun's Rainbow Umbrella Robot 🤖🌈",
+          "description": "Arjun wanted to see Bolt on a rainy day. He typed: 'A shiny silver robot holding a big rainbow-striped umbrella in a gentle drizzle.' When the picture appeared, the raindrops sparkled like diamonds on the robot's metallic shoulders, and the rainbow umbrella radiated bright primary colours! Arjun printed the picture to hang on his bedroom door! ☔🤖",
+          "keyTakeaway": "Clear descriptive prompts with contrasting materials (shiny silver metal and rainbow fabric) produce vibrant visual results! 🌈🤖"
+        },
+        {
+          "exampleId": "ex5",
+          "title": "Rohan's Vague Prompt Fix 🍎🌳",
+          "description": "Rohan typed: 'Tree.' The drawing app showed a plain green blob on a brown stick. Rohan remembered Bolt's five elements. He updated the prompt: 'A gigantic ancient oak tree full of red apples and a wooden treehouse with a rope ladder at sunset.' The new picture was rich with golden sunset light and intricate branches! Rohan saw firsthand how details bring pictures to life! 🏡🌅",
+          "keyTakeaway": "Replacing a single vague word with descriptive details transforms a simple drawing into a rich story! 🌳✨"
+        }
+      ],
+      "keyPoints": [
+        "A picture prompt is a group of descriptive words that tells a digital drawing tool what image you want to see 📝🖼️",
+        "Vague prompts leave the computer guessing; adding specific details helps the tool match your imagination 🎯💭",
+        "The 5 core descriptive elements are Subject (What), Colour, Size, Action, and Extra details 🖐️✨",
+        "AI drawing tools can make mistakes or misunderstand words; adjusting your description helps improve the picture 🤖🔄",
+        "There are no wrong ideas in art — mixing unexpected objects sparks joy and original creativity! 🌈🎨"
+      ],
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "The Language of Visual Imagination 💭🎨",
+          "content": "Did you know that long before human beings invented written alphabets, our ancestors drew pictures on cave walls using red ochre and crushed charcoal? Pictures are humanity's first language! When you describe an image with words, you are translating visual dreams into language. Learning to describe things precisely not only helps you use digital tools; it makes you a better writer, a better storyteller, and a more observant scientist in daily life! 🪨🖌️"
+        },
+        {
+          "partNumber": 2,
+          "title": "Adjectives: The Colourful Paint of Grammar 🖍️📚",
+          "content": "In school grammar, words that describe objects are called adjectives. Words like 'fluffy', 'gigantic', 'crimson', 'sparkling', and 'whispering' are adjectives. In a picture prompt, adjectives are like dipping your paintbrush into fresh wet paint! If you just say 'castle', it could be a cold stone fort. But if you say 'a sparkling crystalline castle with candy-striped spires', the adjectives immediately paint a vivid fairytale in the reader's mind! 🏰✨"
+        },
+        {
+          "partNumber": 3,
+          "title": "Size and Scale: Small, Huge, and Miniature 📏🔍",
+          "content": "Words that describe size change the whole story of a picture. Imagine an elephant. Now imagine a 'pocket-sized miniature elephant small enough to balance on an acorn'! That tiny size completely transforms the creature into a whimsical fantasy pet! Or imagine a 'gigantic colossal sunflower taller than a three-story school building'! Playing with size and scale is one of the most delightful tricks in an artist's toolkit! 🐘🌱"
+        },
+        {
+          "partNumber": 4,
+          "title": "Action Words (Verbs) Bring Stills to Life 🏃‍♂️💨",
+          "content": "A picture of a dog standing still can be nice, but a picture of a dog 'leaping over a silver puddle with ears flapping in the wind' captures a frozen moment of pure energy and joy! Action words (verbs) give characters emotion and momentum. Is your robot 'shuffling sleepily with a nightcap' or 'breakdancing under disco lights'? Verbs turn a statue into a living character! 🕺⚡"
+        },
+        {
+          "partNumber": 5,
+          "title": "Quality Over Quantity: Clear Words Win! 🎯💡",
+          "content": "Sometimes students think: 'If I type 100 random words, the picture will be 100 times better!' But that is not true! If you type too many conflicting words — like 'a tiny giant sad happy flying swimming cat' — the drawing tool gets completely confused and creates a messy blur. The best prompts are focused, clear, and harmonious. Choose five to ten brilliant words that work together like a musical chord! 🎵🎹"
+        }
+      ],
+      "guidedQuestions": [
+        {
+          "questionId": "gq1",
+          "question": "What is a 'picture prompt' in digital drawing tools? 📝🖼️",
+          "options": [
+            "A heavy wooden hammer used to crack walnuts 🔨",
+            "A group of descriptive words that tells a drawing tool what you want to see! 📝🎨✨",
+            "A secret password to enter a bank vault 🏦",
+            "A type of shoe worn by soccer players 👟"
+          ],
+          "correctAnswer": "A group of descriptive words that tells a drawing tool what you want to see! 📝🎨✨",
+          "explanation": "A picture prompt is a text description that guides a drawing tool to create an image matching your idea! 📝",
+          "hint": "Which choice describes words that tell a computer what image to draw?"
+        },
+        {
+          "questionId": "gq2",
+          "question": "Which of these prompts gives the clearest, most detailed instruction to a drawing tool? 🎯👀",
+          "options": [
+            "“Animal.” 🐾❌",
+            "“Thing on stuff.” 🌫️❌",
+            "“A happy brown puppy wearing a bright blue scarf, sitting beside a sunny window.” 🐶🧣🪟✨",
+            "“Dog.” 🐕❌"
+          ],
+          "correctAnswer": "“A happy brown puppy wearing a bright blue scarf, sitting beside a sunny window.” 🐶🧣🪟✨",
+          "explanation": "This prompt includes colour, mood, accessory, and environment, giving the tool clear guidance! 🐶",
+          "hint": "Which option has colours, details, and setting instead of just one plain word?"
+        },
+        {
+          "questionId": "gq3",
+          "question": "What are the 5 magic elements that help build a wonderful picture description? 🖐️✨",
+          "options": [
+            "Salt, pepper, sugar, vinegar, and mustard 🧂",
+            "Subject (What), Colour, Size, Action, and Extra details! 🐾🎨📏🏃✨",
+            "Monday, Tuesday, Wednesday, Thursday, and Friday 📅",
+            "Battery, wire, lightbulb, screw, and switch 🔌"
+          ],
+          "correctAnswer": "Subject (What), Colour, Size, Action, and Extra details! 🐾🎨📏🏃✨",
+          "explanation": "Combining subject, colour, size, action, and extra details provides rich, balanced guidance for an image! 🎨",
+          "hint": "Think about the 5 building blocks: What, Colour, Size, Action, and Special Details!"
+        },
+        {
+          "questionId": "gq4",
+          "question": "What should you do if an AI drawing assistant creates a picture that doesn't match your idea? 🤖🔄",
+          "options": [
+            "Cry loudly and throw the tablet onto the carpet 🛏️❌",
+            "Look at the picture, think about what to improve, adjust your descriptive words, and try again! 🔍📝✨",
+            "Decide that drawing is impossible forever 🛑",
+            "Paint on the computer screen with permanent black ink 🖍️❌"
+          ],
+          "correctAnswer": "Look at the picture, think about what to improve, adjust your descriptive words, and try again! 🔍📝✨",
+          "explanation": "Artistic iteration is natural! Refining your descriptive words helps guide the tool closer to your vision. 🔄",
+          "hint": "How does adjusting your words help improve the picture?"
+        },
+        {
+          "questionId": "gq5",
+          "question": "Why is human imagination considered the true magic wand in creating art? 🪄💖",
+          "options": [
+            "Because computers have no feelings, lived experiences, or dreams; human minds spark the ideas! 💭🌟✨",
+            "Because human hands are made of plastic 🦾",
+            "Because pencils can do backflips on their own 🤸",
+            "Because tablets are magical wizards from outer space 🧙‍♂️"
+          ],
+          "correctAnswer": "Because computers have no feelings, lived experiences, or dreams; human minds spark the ideas! 💭🌟✨",
+          "explanation": "Tools follow instructions, but human feelings, memories, and creativity are the true source of all art! 💖",
+          "hint": "Remember Bolt's words: your imagination is the magic wand, tech is just the brush!"
+        }
+      ]
+    },
+    {
+      "sectionId": "section2",
+      "title": "Mix Colors, Shapes & Ideas! 🎨🌈",
+      "content": "BEEP BOOP! Step right up to the MIXING PALETTE OF WONDER! 🎨🌈✨\nDid you know that the greatest inventions and most beloved storybook characters were created by taking two ordinary things and combining them in a completely unexpected way? \nThink about it:\n- A horse + a spiral horn = A MAGICAL UNICORN! 🦄\n- A lizard + wings + fire = A SOARING DRAGON! 🐉\n- A bear + a winter coat + honey = WINNIE THE POOH! 🧸🍯\nIn this section, we are going to become Master Recipe Creators of Imagination! We will learn how to mix subjects, colours, shapes, and actions into unforgettable picture recipes! 🍲🎨\n\nTHE 3-INGREDIENT MAGIC FORMULA: 🧪✨\nLet's start with three simple ingredients from Bolt's creative cupboard:\n- INGREDIENT 1 (Subject): Kitten 🐱\n- INGREDIENT 2 (Colour): Purple 🟣\n- INGREDIENT 3 (Special Detail): Butterfly wings 🦋\nWhen you mix them together in your mental blender, *POOF!* You invent: \n“A purple kitten with butterfly wings!” 🐱🦋🟣\nSuddenly, you have an enchanting fairy-tale creature that has never existed in nature before! That is the pure joy of creative freedom! 🌈\n\nTHE ULTIMATE 5-PART CREATIVE PROMPT RECIPE: 📜🧑‍🍳\nWhen you want to build a truly magnificent scene for an AI drawing helper, use Bolt's 5-Part Recipe:\nWHO + COLOR + SPECIAL DETAIL + ACTION + BACKGROUND\n\nLet's examine how this recipe works across three delightful examples:\n\nEXAMPLE 1: THE FLYING KITTEN 🐱🦋🌸\n- WHO: A kitten\n- COLOR: Soft pastel purple\n- SPECIAL DETAIL: Delicate iridescent butterfly wings\n- ACTION: Flying and chasing dandelion seeds\n- BACKGROUND: Above a sunlit wildflower garden\nCombined Prompt:\n*“Draw a flying soft purple kitten with delicate butterfly wings, chasing dandelion seeds above a sunlit wildflower garden.”* 🌸🍃\nNotice how every single part of the recipe adds flavour to the picture!\n\nEXAMPLE 2: THE RAINBOW ROBOT 🤖🌈🎈\n- WHO: A robot\n- COLOR: Polished silver with neon rainbow stripes\n- SPECIAL DETAIL: Glowing star-shaped eyes\n- ACTION: Dancing happily and juggling colourful balloons\n- BACKGROUND: In a bright playground under a sunny blue sky\nCombined Prompt:\n*“Draw a friendly silver robot with rainbow stripes and glowing star-shaped eyes, dancing and juggling balloons in a sunny playground.”* 🎈☀️\n\nEXAMPLE 3: THE SLEEPY MOON 🌙⭐☁️\n- WHO: The Moon\n- COLOR: Warm golden yellow\n- SPECIAL DETAIL: Wearing a striped knit nightcap with a fluffy pom-pom\n- ACTION: Sleeping peacefully with a gentle smile\n- BACKGROUND: Floating among soft lavender clouds and twinkling stars\nCombined Prompt:\n*“Draw a smiling golden Moon wearing a striped nightcap, sleeping peacefully among soft lavender clouds and bright twinkling stars.”* ☁️⭐\n\nCONTRASTING PROMPTS: SIMPLE VS DETAILED VS IMAGINATIVE 📊🔍\nLook at how our creative thinking expands across three levels:\n- LEVEL 1 (Simple): *“A rabbit.”* (Clear, but ordinary.) 🐰\n- LEVEL 2 (Detailed): *“A white fluffy rabbit sitting on green grass eating an orange carrot.”* (Realistic, clear, and grounded.) 🥕🌿\n- LEVEL 3 (Imaginative): *“A sky-blue rabbit wearing a tiny silver astronaut helmet, driving a carrot-shaped toy rocket past swirling galaxies!”* (Extremely creative, whimsical, and memorable!) 🚀🪐\nNone of these levels is 'bad', but Level 3 unleashes your unique, playful imagination! That is what makes art feel like an adventure! 🌟\n\nAVOID CLUTTER: HARMONY IS BETTER THAN CHAOS 🚫🌪️\nBolt wants you to remember one important caution: do not throw a hundred unrelated objects into one sentence! \nIf someone prompts: *“A cat and a dinosaur and a submarine and five pizzas and a helicopter and a snowman and a volcano in a shoe”*, the drawing assistant gets bewildered. The picture turns into a messy soup where nothing looks clear. \nPick ONE main character, ONE or TWO special details, and ONE clear setting. Let your main character be the star of the show! 🌟🎭\n\nTHE THRILL OF SURPRISES: 🎁😄\nSometimes, the drawing tool interprets your words in a surprising way that you didn't anticipate. You asked for a 'carrot rocket', and it drew the exhaust smoke shaped like little orange carrot tops! When surprises happen, celebrate them! Some of the greatest artistic breakthroughs in human history were happy accidents! Smile, learn, and keep painting! 🎨💖",
+      "examples": [
+        {
+          "exampleId": "ex1",
+          "title": "The Flying Purple Kitten in the Garden 🐱🦋🌸",
+          "description": "Anya combined her three favourite things: cats, butterflies, and purple lilac flowers. She typed: 'A flying soft purple kitten with delicate monarch butterfly wings, hovering over a blooming lilac garden.' The drawing tool produced a whimsical fairy-tale illustration that looked like a cover for a children's fantasy book! Anya printed it out to use as a bookmark for her reading class! 📖✨",
+          "keyTakeaway": "Combining a familiar pet with wings and unusual colours creates an enchanting storybook character! 🐱🦋"
+        },
+        {
+          "exampleId": "ex2",
+          "title": "The Dancing Rainbow Robot 🤖🌈🎈",
+          "description": "Kabir wanted to create a celebration robot. He used Bolt's recipe: 'A friendly silver robot with glowing star eyes and rainbow stripes, dancing happily while juggling floating balloons in a sunny park.' The generated image was burstingly joyful, with confetti and colourful reflections bouncing off the robot's shiny metal belly! Kabir danced along with his screen! 💃⚡",
+          "keyTakeaway": "Specifying cheerful actions like dancing and juggling brings joyful energy and movement to character art! 🤖🎉"
+        },
+        {
+          "exampleId": "ex3",
+          "title": "The Golden Moon's Nightcap 🌙💤⭐",
+          "description": "Maya wanted to draw a soothing bedtime scene for her little brother. She prompted: 'A smiling golden crescent moon wearing a cozy striped nightcap, sleeping peacefully on a fluffy lavender cloud with twinkling yellow stars.' The soft pastel colours and gentle expressions created an instantly calming, peaceful atmosphere perfect for bedtime! 🛌💤",
+          "keyTakeaway": "Choosing soft colours like lavender and gold alongside sleeping actions creates tranquil, calming art! 🌙💜"
+        },
+        {
+          "exampleId": "ex4",
+          "title": "The Carrot-Shaped Space Rocket 🥕🚀🪐",
+          "description": "Arjun wanted to make a silly space vehicle. He prompted: 'A cheerful blue bunny wearing an astronaut visor, piloting a bright orange rocket shaped like a giant crunchy carrot past ringed planets.' The visual joke of a rabbit flying in a carrot rocket made his entire family burst out laughing at the dinner table! 🐰🪐",
+          "keyTakeaway": "Humorous visual combinations (like rabbits flying in carrot-shaped spaceships) make art playful and memorable! 🥕🚀"
+        },
+        {
+          "exampleId": "ex5",
+          "title": "Fixing a Cluttered Prompt Disaster 🥣🧹",
+          "description": "Rohan typed a giant jumble: 'A tiger in a submarine eating ice cream on Mars with a bicycle and balloons.' The generated image was a confusing blob of orange and grey with floating wheels. Rohan laughed, erased the extra words, and simplified: 'A brave orange tiger sitting inside a glass submarine looking at glowing jellyfish.' The simplified prompt produced a gorgeous, clear underwater masterpiece! 🐯🌊",
+          "keyTakeaway": "When a prompt gets too cluttered, removing extra objects and focusing on one clear scene restores beauty! 🎯✨"
+        }
+      ],
+      "keyPoints": [
+        "Creative descriptions combine subjects, colours, special details, actions, and backgrounds in unexpected ways 🎨🧪",
+        "The 5-part creative prompt recipe is: WHO + COLOR + SPECIAL DETAIL + ACTION + BACKGROUND 📜✨",
+        "Contrasting prompt levels show how we can move from simple to detailed to wonderfully imaginative 📈🌟",
+        "Avoid cluttered prompts with too many conflicting objects; a focused scene lets the main character shine 🎯🚫",
+        "Unexpected AI interpretations can be delightful surprises that spark brand-new creative ideas! 🎁💡"
+      ],
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "The Art of Combination: Mash-Up Magic 🧬🎨",
+          "content": "Did you know that in biology, all living things are built from combining different genetic codes? In art, creativity works the exact same way! You take Feature A from one world and graft it onto Feature B from another world. What if trees grew crystals instead of leaves? What if clouds were made of spun cotton candy? What if cars had grasshoppers' legs instead of wheels? Mash-ups break our brain out of ordinary ruts and transport us to worlds of pure wonder! 💎🚗"
+        },
+        {
+          "partNumber": 2,
+          "title": "Colour Psychology in Visual Art 🌈🧠",
+          "content": "Colours have emotional superpowers! Warm colours like sunny yellow, bright orange, and strawberry red make viewers feel excited, hungry, energetic, and cheerful. Cool colours like sky blue, sea green, and lavender make viewers feel tranquil, peaceful, mysterious, and safe. When choosing a colour for your prompt, think about how you want the viewer to feel! A 'dark crimson dragon' feels fierce, while a 'pastel pink baby dragon' feels sweet and cuddly! 🔴🟣"
+        },
+        {
+          "partNumber": 3,
+          "title": "The Background: Setting the Stage 🏞️🎭",
+          "content": "A character without a background is like an actor standing on a bare stage with the lights turned off! The background tells the story of where the character lives and what world they belong to. Is your purple kitten in an enchanted candy forest, on a floating pirate ship, or in a cozy sunlit kitchen? The background gives context, depth, and rich atmosphere to every single drawing! 🏰🌲"
+        },
+        {
+          "partNumber": 4,
+          "title": "Balancing Imagination with Clarity ⚖️🎯",
+          "content": "Being creative does not mean being confusing! The best artists know how to communicate their wild ideas with crisp, clear language. If you want a robot with star eyes, say 'star-shaped eyes'. If you want the wings to look like butterflies, say 'butterfly wings'. Clear words give the digital drawing tool sharp coordinates so it can turn your daydream into a crisp, stunning reality! 🎯✨"
+        },
+        {
+          "partNumber": 5,
+          "title": "Celebrate Your Creative Voice 🗣️💖",
+          "content": "Nobody else in the universe has your exact brain, your exact memories, your exact humour, or your exact dreams! What you choose to imagine and draw is your unique gift to the world. Don't worry about whether your idea sounds silly or strange — the sillier, the better! In the studio of imagination, originality is king, and joyful boldness is the crown! 👑🌈"
+        }
+      ],
+      "guidedQuestions": [
+        {
+          "questionId": "gq1",
+          "question": "What is Bolt's 5-part creative prompt recipe? 📜🧑‍🍳",
+          "options": [
+            "Flour + Sugar + Butter + Eggs + Milk 🧁",
+            "WHO + COLOR + SPECIAL DETAIL + ACTION + BACKGROUND 🐾🎨✨🏃🏞️",
+            "Left + Right + Up + Down + Jump 🕹️",
+            "Red + Yellow + Green + Blue + Black 🖍️"
+          ],
+          "correctAnswer": "WHO + COLOR + SPECIAL DETAIL + ACTION + BACKGROUND 🐾🎨✨🏃🏞️",
+          "explanation": "This 5-part pattern combines subject, colour, unique features, action, and setting into a rich prompt! 📜",
+          "hint": "Which recipe combines who it is, its colour, special features, what it does, and where it is?"
+        },
+        {
+          "questionId": "gq2",
+          "question": "If you combine a kitten + purple + butterfly wings, what imaginary creature do you invent? 🐱🦋🟣",
+          "options": [
+            "A giant green crocodile in a swamp 🐊",
+            "A flying purple kitten with butterfly wings! 🐱🦋✨",
+            "A yellow school bus on the highway 🚌",
+            "A wooden rocking chair 🪵"
+          ],
+          "correctAnswer": "A flying purple kitten with butterfly wings! 🐱🦋✨",
+          "explanation": "Mixing those three ingredients creates an enchanting flying purple kitten with butterfly wings! 🐱",
+          "hint": "Which option combines the kitten, the purple colour, and the butterfly wings?"
+        },
+        {
+          "questionId": "gq3",
+          "question": "Why is a focused prompt better than a cluttered prompt with twenty random objects? 🎯🚫",
+          "options": [
+            "Because computers will explode if you type twenty words 💥❌",
+            "Because a focused prompt keeps the main character clear and avoids creating a confusing visual mess! 🎯🖼️✨",
+            "Because long words make screens turn black ⬛",
+            "Because it is against the law to draw more than two things 👮❌"
+          ],
+          "correctAnswer": "Because a focused prompt keeps the main character clear and avoids creating a confusing visual mess! 🎯🖼️✨",
+          "explanation": "Focused prompts allow the drawing assistant to render a clear, beautiful, and coherent scene! 🎯",
+          "hint": "Why does keeping a prompt focused prevent the picture from looking like a messy soup?"
+        },
+        {
+          "questionId": "gq4",
+          "question": "Which background description creates a peaceful, calming bedtime mood? 🌙💜",
+          "options": [
+            "A noisy demolition derby with crashing racecars 🏎️💥",
+            "A sunny thunderstorm with flashing lightning ⚡",
+            "Soft lavender clouds with bright twinkling stars in a nighttime sky ☁️⭐✨",
+            "A crowded shopping mall with loud sirens 🚨"
+          ],
+          "correctAnswer": "Soft lavender clouds with bright twinkling stars in a nighttime sky ☁️⭐✨",
+          "explanation": "Soft lavender clouds and twinkling nighttime stars naturally create a tranquil, soothing mood! 🌙",
+          "hint": "Which setting sounds gentle, quiet, and perfect for sleeping?"
+        },
+        {
+          "questionId": "gq5",
+          "question": "What should you do when an AI tool creates an unexpected, funny visual surprise in your drawing? 🎁😄",
+          "options": [
+            "Smile, celebrate the happy accident, and see if it sparks a brand-new idea! 🌟💖✨",
+            "Delete the drawing app and never create art again 🛑❌",
+            "Complain to the local police department 🚓",
+            "Stare at the wall in silence for an hour 🪨"
+          ],
+          "correctAnswer": "Smile, celebrate the happy accident, and see if it sparks a brand-new idea! 🌟💖✨",
+          "explanation": "Happy accidents are a natural part of the creative process that can inspire wonderful new ideas! 💡",
+          "hint": "How do artists treat funny, unexpected surprises during creative work?"
+        }
+      ]
+    },
+    {
+      "sectionId": "section3",
+      "title": "Become an Imagination Artist! ✨🖼️",
+      "content": "BEEP BOOP! Welcome to the graduation gallery of THE IMAGINATION ARTIST! ✨🖼️🏛️\nNow that you know how words become pictures and how to mix ingredients into creative recipes, how do real creators use digital tools in the everyday world? \nToday, there are many different kinds of drawing and visual technology tools. Some help you tidy up rough pencil sketches, some provide outlines for digital colouring, some add funny cartoon ears through camera filters, and some generate complete pictures from your written prompts! \nLet's tour these real-world tools, learn how to use them with wisdom, and master the golden rules of digital art safety! 🛡️🎨\n\nTHE 9-STEP CREATIVE ARTIST WORKFLOW: 📋🖌️\nWhen you sit down to create art with a digital assistant, follow this professional 9-step path:\n1. THINK: Close your eyes and dream up an idea. 💭\n2. CHOOSE SUBJECT: Pick your main character or central object. 🐱\n3. PICK COLOURS & DETAILS: Select vibrant colours, textures, and accessories. 🟣✨\n4. DESCRIBE: Write a clear, focused prompt using simple, descriptive words. 📝\n5. CREATE: Ask the tool to generate or assist with the drawing. 🖼️\n6. EXAMINE: Look closely at the result — what looks wonderful? What looks strange? 🔍\n7. REFLECT: Decide what you love and what you want to tweak. 💡\n8. REFINE: Change a word, adjust a colour, and try again! 🔄\n9. SHARE SAFELY: Save and share your creation only with adult permission! 👨‍👩‍👧💖\n\nFOUR REAL-WORLD DIGITAL DRAWING HELPERS: 🛠️📱\nNot every drawing app is identical! Different tools have different superpowers:\n\n1. ✏️ GOOGLE AUTODRAW (The Sketch Polisher):\nHave you ever tried to draw a bicycle on a tablet screen, and your circle wheels looked like wobbly lumpy potatoes? 🥔\nGoogle AutoDraw is a fun, lightweight drawing tool that uses machine learning to recognize your rough doodles! \nWhen you draw a messy circle with six little spiky lines sticking out, AutoDraw's helper bar at the top displays suggestions: *'Did you mean a smiling sun? ☀️ Or a daisy flower? 🌼 Or a gear? ⚙️'* \nIf you tap the smiling sun, *POOF!* Your wobbly doodle transforms into a crisp, professionally drawn cartoon sun! It doesn't generate a whole picture from text; it simply helps turn rough doodles into polished shapes! ☀️✨\n\n2. 🖍️ DIGITAL COLOURING BOOK APPS (The Palette Practice):\nMany children love digital colouring apps on tablets. These apps provide outlines of friendly animals, castles, and underwater reefs. \nWhen you tap a green crayon and touch a dinosaur's tummy, the app fills the bounded area neatly with emerald green, helping children practice colour harmonies without needing physical paints or messy clean-up! But remember: digital colouring is fun practice, but colouring with real wax crayons and paper develops finger muscle strength and tactile joy that no screen can replace! 🖍️📄\n\n3. 🐻 CARTOON CAMERA FILTERS (Playful Digital Masks):\nWhen you look into a camera app on a parent's phone, sometimes a digital filter instantly places fluffy teddy-bear ears on your head, gives you a black puppy nose, or turns your whole face into a 3D cartoon avatar! 🎭\nFilters use computer vision to detect facial landmarks (eyes, nose, mouth) in real time. \nIMPORTANT PRIVACY RULE: Never upload personal photos of your face, family members, or your school uniform to an unfamiliar online app without asking a parent first! Real privacy always comes first! 🔒🛡️\n\n4. 🎨 TEXT-TO-IMAGE AI DRAWING ASSISTANTS:\nSome advanced AI tools can generate an entire picture from a written prompt, like: *“Draw a cheerful blue rabbit riding a tiny rocket through a starry sky.”* 🐰🚀\nThese tools attempt to translate your words into a complete scene. But remember: the tool might draw four rocket fins instead of three, or forget the stars! You are the art director: you review the picture, refine your words, and guide the tool! 🎬\n\nTHE GOLDEN RULES OF RESPONSIBLE DIGITAL CREATIVITY: 🔒🛡️💖\nAs a certified Imagination Artist, Bolt wants you to carry these ethical guidelines in your heart:\n- ASK FIRST: Always get permission from a parent or teacher before opening new drawing apps or websites. 👨‍👩‍👦\n- NO PRIVATE DATA IN PROMPTS: Never write your real full name, home address, school name, phone number, or passwords in a drawing prompt! Prompts are for creative stories, not private secrets. 🔒❌\n- VALUE YOUR OWN HANDS: Never believe that AI drawings are 'better' than your own handmade drawings! When YOU draw a picture with crayons, you pour your own muscle, heart, and personality onto the paper. That physical drawing is a one-of-a-kind treasure that no computer can ever duplicate! 🖍️💖\n- RESPECT OTHERS' WORK: Never copy someone else's drawing and pretend you drew it yourself. Always celebrate and give credit to fellow human artists! 🤝\n- BE KIND IN ART: Use drawing tools to spread laughter, beauty, friendship, and joy — never to make fun of or tease anyone. 🌟\n\nYou have completed your training, little creator! Your sketchbook is now glowing with colours, and your imagination is wide open to the universe! 🎨🌈🚀",
+      "examples": [
+        {
+          "exampleId": "ex1",
+          "title": "Anya's AutoDraw Smiling Sun ☀️✏️",
+          "description": "Anya was drawing a weather poster for school. She tried drawing a sunshine, but her circle was lumpy and egg-shaped. She used AutoDraw. The tool recognized her rough doodle and offered a clean, perfectly symmetrical cartoon sun with smiling cheeks and neat triangular rays. Anya tapped it, coloured it bright yellow, and smiled: 'AutoDraw helped my doodle look like a real book illustration!' ☀️📒",
+          "keyTakeaway": "AutoDraw recognizes rough doodles and suggests clean, polished clip-art shapes to help students communicate ideas! ✏️✨"
+        },
+        {
+          "exampleId": "ex2",
+          "title": "Kabir's Dinosaur Colour Harmony 🦖🖍️",
+          "description": "Kabir opened a digital colouring app featuring a prehistoric Stegosaurus. He chose a palette of mint green for the body and warm amber orange for the back plates. The digital fill tool helped him test whether orange and green looked good together. Kabir loved the combination so much that he took out his real coloured pencils and drew the same dinosaur by hand in his sketchbook! 🦕🎨",
+          "keyTakeaway": "Digital colouring apps allow artists to test colour combinations quickly before creating physical drawings! 🖍️🌈"
+        },
+        {
+          "exampleId": "ex3",
+          "title": "Maya's Teddy Bear Camera Filter 🐻🎭",
+          "description": "Maya and her mother were testing a camera filter on a smartphone. The filter added fluffy brown teddy-bear ears and whiskers that moved whenever Maya tilted her head! Maya laughed with delight. Her mother explained that the app used computer vision to track her face, and reminded Maya that they only use filters inside their home for fun without uploading photos online. 📱🛡️",
+          "keyTakeaway": "Camera filters use face-tracking technology to add playful cartoon effects, and should always be used with adult privacy guidance! 🎭🔒"
+        },
+        {
+          "exampleId": "ex4",
+          "title": "Arjun's Rabbit Rocket Refinement 🐰🚀",
+          "description": "Arjun typed: 'A blue rabbit on a rocket.' The AI tool drew a rabbit sitting inside a giant hollow metal pipe with no stars. Arjun looked at it, thought about what was missing, and refined his prompt: 'A cheerful sky-blue rabbit wearing a clear glass astronaut helmet, riding on top of a red toy rocket past glowing yellow stars.' The new picture was exactly the magical cosmic adventure he imagined! 🌟🐇",
+          "keyTakeaway": "Refining a prompt by adding specific accessories and settings turns a disappointing first result into a masterpiece! 🚀✨"
+        },
+        {
+          "exampleId": "ex5",
+          "title": "Rohan's Handmade Treasure 🖍️❤️",
+          "description": "Rohan made a beautiful digital picture of a castle using a drawing tool. But for his grandmother's 70th birthday, Rohan took out heavy textured paper, wax crayons, and glitter glue. He spent an hour drawing a colourful castle by hand, writing 'Happy Birthday Dadi!' inside. When Dadi opened the card, she cried tears of pure joy and hugged Rohan tightly. Rohan learned that handmade art carries human love that no computer can ever replace! 💌👵",
+          "keyTakeaway": "Handmade drawings carry unique personal love, effort, and warmth that make them irreplaceable family treasures! 💖📄"
+        }
+      ],
+      "keyPoints": [
+        "A 9-step workflow guides creators from dreaming up ideas to refining prompts and sharing art safely 📋🎨",
+        "Different digital tools have different roles: AutoDraw polishes doodles, colouring apps test palettes, filters track faces, and text-to-image tools generate scenes 🛠️📱",
+        "AI drawing assistants are digital tools, not replacements for human imagination and creativity 🤖🪄",
+        "Never enter private personal information (addresses, names, passwords) into a drawing prompt 🔒🛡️",
+        "Handmade drawings created with crayons, pencils, and physical paper carry unique human heart and value! 🖍️💖"
+      ],
+      "parts": [
+        {
+          "partNumber": 1,
+          "title": "How AutoDraw Recognizes Shapes ✏️🤖",
+          "content": "How can a computer tell that your wobbly scribble is supposed to be a cat or a bicycle? Computer scientists trained machine learning models on millions of simple doodles drawn by people all over the world! The algorithm looks at the order of your pen strokes: did you draw a circle first, then two triangles on top? Those stroke patterns match the signature of 'cat ears'! The tool doesn't know what a real furry cat feels like; it simply recognizes the geometric signature of your sketch! 📐🐾"
+        },
+        {
+          "partNumber": 2,
+          "title": "Computer Vision and Camera Filters 🎭👁️",
+          "content": "When a camera app places teddy bear ears on your head, it uses computer vision. The software scans the camera feed for human facial landmarks: the distance between your eyes, the bridge of your nose, and the curve of your chin. Once it maps those 3D coordinates, it pins digital 3D cartoon ears onto your forehead! As you move or turn, the ears rotate with you! It is a fun blend of math, geometry, and playful art! 🐻📸"
+        },
+        {
+          "partNumber": 3,
+          "title": "Digital Art vs Physical Art: Best Friends, Not Rivals 🤝🎨",
+          "content": "Sometimes people ask: 'Will digital drawing replace real crayons and oil paints?' The answer is NO! Just like the invention of the camera did not stop people from painting portraits, digital drawing tools are simply a new medium alongside watercolours, clay, markers, and pastels. Digital tools let you experiment without making a mess, while physical art lets you feel textures, develop fine motor skills, and create tangible originals. Great artists embrace both! 🖌️📱"
+        },
+        {
+          "partNumber": 4,
+          "title": "The Ethics of Creative Attribution 🌟📜",
+          "content": "When you grow up and share art with the world, always be an honourable creator. If you learned an idea from a friend, tell people: 'My friend Maya inspired this drawing!' If an AI tool helped you generate an image, be honest and say: 'I wrote the prompt and generated this with an AI assistant.' Honesty, integrity, and giving credit build a creative community where everyone feels respected and valued! 🤝💖"
+        },
+        {
+          "partNumber": 5,
+          "title": "You Are the Master Artist 👑🎨",
+          "content": "Never forget: the digital tool did not wake up this morning wanting to draw a flying purple kitten. The digital tool had no feelings, no dreams, and no imagination. YOU woke up today with a glowing human mind full of ideas! YOU chose the purple colour. YOU chose the butterfly wings. YOU gave the kitten its joyful heart. The tool was just your little digital paintbrush — YOU are the true artist, now and forever! 🌟🪄✨"
+        }
+      ],
+      "guidedQuestions": [
+        {
+          "questionId": "gq1",
+          "question": "What is Google AutoDraw designed to do? ✏️☀️",
+          "options": [
+            "It turns your computer into a microwave oven 🍲",
+            "It recognizes rough doodles and suggests clean, polished clip-art drawings! ✏️☀️✨",
+            "It drives your car down the street 🚗",
+            "It bakes blueberry muffins in the CD tray 🧁"
+          ],
+          "correctAnswer": "It recognizes rough doodles and suggests clean, polished clip-art drawings! ✏️☀️✨",
+          "explanation": "AutoDraw uses pattern recognition to match rough sketches to clean, polished drawings! ✏️",
+          "hint": "Which tool helps turn a wobbly sketch into a clean, recognizable shape?"
+        },
+        {
+          "questionId": "gq2",
+          "question": "What safety rule must you always follow before uploading a personal photo of your face to an app? 📷🔒",
+          "options": [
+            "Post it on ten public websites without asking anyone 📢❌",
+            "Always ask a parent or trusted adult for permission before uploading face photos! 👨‍👩‍👧🔒✨",
+            "Put peanut butter on your camera lens 🥜",
+            "Wear sunglasses and pretend you are invisible 🕶️"
+          ],
+          "correctAnswer": "Always ask a parent or trusted adult for permission before uploading face photos! 👨‍👩‍👧🔒✨",
+          "explanation": "Always get adult permission before uploading facial photographs to any digital application! 🛡️",
+          "hint": "Who should always give permission before you share pictures online?"
+        },
+        {
+          "questionId": "gq3",
+          "question": "What should you NEVER type into an AI picture prompt? 🔒🛑",
+          "options": [
+            "“A green dragon wearing red boots” 🐉👢",
+            "Private personal details like your home address, school, phone number, or passwords! 🔒🛑✨",
+            "“A happy robot holding flowers” 🤖🌸",
+            "“A purple kitten with butterfly wings” 🐱🦋"
+          ],
+          "correctAnswer": "Private personal details like your home address, school, phone number, or passwords! 🔒🛑✨",
+          "explanation": "Never put sensitive personal information into public prompts or digital tools! 🛡️",
+          "hint": "Which information is private and must never be shared online?"
+        },
+        {
+          "questionId": "gq4",
+          "question": "Can AI drawing tools replace the unique love and value of handmade drawings made with crayons? 🖍️❤️",
+          "options": [
+            "Yes, computers will destroy all paper and crayons in the world 💥❌",
+            "No! Handmade drawings carry unique personal love, physical effort, and warmth that computers cannot copy! 🖍️💖✨",
+            "Yes, digital files give warmer hugs than human beings 🤗❌",
+            "Yes, computers have real human hands 🦾"
+          ],
+          "correctAnswer": "No! Handmade drawings carry unique personal love, physical effort, and warmth that computers cannot copy! 🖍️💖✨",
+          "explanation": "Physical handmade drawings carry human love, effort, and personal touch that cannot be duplicated! 💖",
+          "hint": "Why are handmade cards and crayon drawings so special to families?"
+        },
+        {
+          "questionId": "gq5",
+          "question": "What is the relationship between your imagination and an AI drawing assistant? 🪄🖌️",
+          "options": [
+            "The AI is your boss and tells you what to think 🤖❌",
+            "Your imagination is the magic wand, and the AI is just your little paintbrush! 🪄🖌️✨",
+            "You are not allowed to have your own ideas anymore 🛑❌",
+            "Drawing tools only work if you close your eyes forever 🙈"
+          ],
+          "correctAnswer": "Your imagination is the magic wand, and the AI is just your little paintbrush! 🪄🖌️✨",
+          "explanation": "Bolt reminds us that human imagination is the true creative engine; technology is simply a tool! 🌟",
+          "hint": "Remember Bolt's golden quote: your imagination is the magic wand!"
+        }
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "activityId": "activity1",
+      "title": "Magic Imagination Sketch Studio 🎨",
+      "description": "BEEP BOOP! Welcome to the MAIN EVENT of Chapter 5, Lesson 2: MAGIC IMAGINATION SKETCH STUDIO! 🎨🐱🦋🤖🌈✨\n\nIn this delightful interactive creative studio, YOU are the Lead Imagination Artist! \nBolt's studio table is filled with glowing colourful cards sorted into five magical drawers:\n- Subject Cards 🐾 (Kitten 🐱, Robot 🤖, Dinosaur 🦖, Rabbit 🐰, Dragon 🐉, Rocket 🚀, Teddy Bear 🧸, Elephant 🐘!)\n- Colour Cards 🎨 (Purple 🟣, Sunny Yellow ☀️, Sky Blue 🌤️, Leaf Green 🌿, Bright Pink 🌸, Rainbow 🌈!)\n- Special Detail Cards ✨ (Butterfly Wings 🦋, Star Glasses ⭐, Rainbow Hat 🌈, Sparkling Shoes ✨, Tiny Backpack 🎒, Funny Mustache 🥸!)\n- Action Cards 🏃 (Flying, Dancing, Sleeping, Jumping, Painting, Exploring!)\n- Background Cards 🏞️ (Flower Garden 🌸, Starry Sky ⭐, Candy Castle 🏰, Jungle 🌳, Colorful Playground 🎈, Magical Ocean 🌊!)\n\nYOUR MISSION, ARTIST:\nPick your cards, mix surprising ingredients, build rich 5-part creative prompts, refine descriptions when unexpected results appear, and create an unforgettable digital art gallery! \n\nRemember Bolt's golden rules:\n- Your imagination is the magic wand! I am just your little paintbrush! 🪄🖌️\n- No wrong answers in creative art — celebrate unusual combinations! 🌈\n- Keep personal information private, and have endless fun creating! 🔒💖\n\nScore 5 correct challenges in a row to earn your Imagination Streak! Complete all 18 challenges to unlock the GRAND CHAMPION IMAGINATION ARTIST TROPHY! 🏆🎉",
+      "instructions": [
+        "1. Examine the creative challenge, card categories, and prompt builder on screen carefully 👀🗂️",
+        "2. Select the right card (Subject, Colour, Special Detail, Action, Background) or refine the description 🎨📝",
+        "3. Remember that clear, specific words guide drawing assistants to create magical pictures 🎯✨",
+        "4. Tap your answer to submit and see Bolt paint the creation onto his digital easel! 👆🎨",
+        "5. Watch Bolt celebrate with rainbow paint splashes, glittering stars, and confetti! 🌈🎉",
+        "6. If you make a mistake, read Bolt's gentle artistic hint and try again! 💡",
+        "7. Score 5 correct in a row to unlock the Studio Master Streak Bonus! 🔥",
+        "8. Finish all 18 challenges to earn the Grand Champion Imagination Artist Trophy! 🏆🌟",
+        "9. Applaud your original ideas and share your artistic joy with classmates and family! 🌟🤝",
+        "10. Remember: there is no limit to your imagination — dream bold, colourful, and free! 🌈🪄"
+      ],
+      "materials": [
+        "Interactive Magic Imagination Sketch Studio screen 📱💻",
+        "Virtual Subject Cards (Kitten, Robot, Dinosaur, Rabbit, Dragon, Rocket) 🐾",
+        "Virtual Colour Palette Cards (Purple, Sunny Yellow, Sky Blue, Rainbow) 🎨",
+        "Virtual Special Detail Cards (Butterfly Wings, Star Glasses, Rainbow Hat) ✨",
+        "Virtual Action and Background Cards (Flying in Flower Garden, Dancing in Playground) 🏞️",
+        "Virtual AutoDraw Doodle Polisher and Palette Matcher ✏️🌈",
+        "Bolt's Golden Imagination Artist Star Tokens ⭐🎖️",
+        "Bolt's Holographic Golden Easel and Neon Paintbrushes 🖌️🎨",
+        "The 5-Part Prompt Recipe Master Wheel 🎡📜",
+        "Virtual Iridescent Butterfly Wing Texture Swatch 🦋✨"
+      ],
+      "duration": "20-25 minutes of interactive prompt building, colour mixing, and imaginative studio creation! ⏱️🎉",
+      "toastMessages": {
+        "tap_prompt": "👇 Pick 3 magic words: Purple + Kitten + Wings!",
+        "great_job": "✨ POOF! Look at your flying kitten drawing! You are a master artist!",
+        "try_again": "🖍️ Pick a color card first—try bright sunny yellow!",
+        "streak_bonus": "🔥 5 IN A ROW! Bolt's circuits are dancing! Studio Master Streak UNLOCKED! 🌟🎨",
+        "perfect_score": "🏆 GRAND CHAMPION IMAGINATION ARTIST! You mastered prompt recipes, colour mixing, and creative AI tools! BEEP BOOP! 🎊🪄"
+      },
+      "sortingItems": [
+        {
+          "itemId": "task1",
+          "name": "Challenge A: Pick 3 Magic Words (The Flying Kitten) 🐱🦋🟣",
+          "emoji": "🐱",
+          "category": "prompt_building",
+          "categoryLabel": "Prompt Building 📝",
+          "isCorrect": true,
+          "description": "Bolt opens his sketchbook and asks you to pick three magic words to create a whimsical storybook creature.",
+          "question": "Which three magic words create an enchanting flying fairy-tale pet?",
+          "options": [
+            "Purple + Kitten + Wings! 🐱🦋🟣✨",
+            "Tire + Screwdriver + Asphalt 🛞❌",
+            "Pancake + Fork + Syrup 🥞",
+            "Blanket + Pillow + Mattress 🛏️"
+          ],
+          "correctAnswer": "Purple + Kitten + Wings! 🐱🦋🟣✨",
+          "explanation": "Combining Purple, Kitten, and Wings creates our famous flying purple kitten with butterfly wings! 🐱🦋",
+          "hint": "Pick 3 magic words: Purple + Kitten + Wings!",
+          "positiveFeedback": "✨ POOF! Look at your flying kitten drawing! You are a master artist!",
+          "tryAgainFeedback": "👇 Pick 3 magic words: Purple + Kitten + Wings!",
+          "boltEncouragement": "BEEP BOOP! Masterpiece unlocked! Look at those delicate purple butterfly wings flutter! 🦋⚡"
+        },
+        {
+          "itemId": "task2",
+          "name": "Challenge B: Pick a Colour Card First 🖍️☀️",
+          "emoji": "☀️",
+          "category": "colour_cards",
+          "categoryLabel": "Colour Cards 🎨",
+          "isCorrect": true,
+          "description": "You want to draw a cheerful sunflower or a warm smiling sunshine. Bolt asks you to pick a warm, radiant colour card.",
+          "question": "Which colour card gives our drawing a warm, cheerful, and sunny glow?",
+          "options": [
+            "Dark midnight black ⬛",
+            "Bright sunny yellow! ☀️🟡✨",
+            "Muddy brown 🟫",
+            "Steel grey 🔘"
+          ],
+          "correctAnswer": "Bright sunny yellow! ☀️🟡✨",
+          "explanation": "Sunny yellow radiates warmth, cheerfulness, and light across any drawing! ☀️",
+          "hint": "Pick a color card first—try bright sunny yellow!",
+          "positiveFeedback": "☀️ WARMTH AND SUNSHINE! Golden yellow radiates happiness across the canvas! 🎨",
+          "tryAgainFeedback": "🖍️ Pick a color card first—try bright sunny yellow!",
+          "boltEncouragement": "BEEP BOOP! Radiance! Sunny yellow brings cheerful energy to our sketch! 🟡⚡"
+        },
+        {
+          "itemId": "task3",
+          "name": "Challenge C: The 5-Part Creative Recipe 📜🧑‍🍳",
+          "emoji": "📜",
+          "category": "prompt_recipes",
+          "categoryLabel": "Prompt Recipes 📜",
+          "isCorrect": true,
+          "description": "You want to build a complete scene of a dinosaur dancing. What order does Bolt's recipe follow?",
+          "question": "Which order matches the WHO + COLOR + SPECIAL DETAIL + ACTION + BACKGROUND recipe?",
+          "options": [
+            "Dinosaur + Green + Rainbow Shoes + Dancing + Playground 🦖🟢👟💃🎈✨",
+            "Playground + Dancing + Dinosaur + Green + Shoes 🎈❌",
+            "Shoes + Green + Playground + Dancing + Dinosaur 👟❌",
+            "Dancing + Dinosaur + Green + Playground + Shoes 💃❌"
+          ],
+          "correctAnswer": "Dinosaur + Green + Rainbow Shoes + Dancing + Playground 🦖🟢👟💃🎈✨",
+          "explanation": "This follows WHO (Dinosaur) + COLOR (Green) + DETAIL (Rainbow Shoes) + ACTION (Dancing) + BACKGROUND (Playground)! 🦖",
+          "hint": "Start with WHO (Dinosaur), then COLOR (Green), then DETAIL, ACTION, and BACKGROUND!",
+          "positiveFeedback": "🦖 DANCING DINO! The green dinosaur in rainbow shoes grooves on the playground! 🎶",
+          "tryAgainFeedback": "📜 Remember: WHO + COLOR + SPECIAL DETAIL + ACTION + BACKGROUND!",
+          "boltEncouragement": "BEEP BOOP! Flawless recipe execution! That dino has rhythm! 🪩⚡"
+        },
+        {
+          "itemId": "task4",
+          "name": "Challenge D: Improving a Vague Prompt 🌫️➡️🎯",
+          "emoji": "🎯",
+          "category": "prompt_building",
+          "categoryLabel": "Prompt Building 📝",
+          "isCorrect": true,
+          "description": "You typed 'A robot', and the drawing tool created a plain grey box with no face. How can you improve the prompt?",
+          "question": "Which improved description gives the tool clear, colourful, and fun instructions?",
+          "options": [
+            "“Thing with buttons.” 🔘❌",
+            "“A friendly silver robot with glowing star-shaped eyes, painting flowers beneath a starry sky.” 🤖⭐🌸✨",
+            "“Robot robot robot robot robot.” 🤖❌",
+            "“Metal.” 🔩❌"
+          ],
+          "correctAnswer": "“A friendly silver robot with glowing star-shaped eyes, painting flowers beneath a starry sky.” 🤖⭐🌸✨",
+          "explanation": "Adding specific colours (silver), details (star eyes), actions (painting), and setting (starry sky) creates a rich image! 🤖",
+          "hint": "Which choice describes the robot's colour, eyes, action, and setting?",
+          "positiveFeedback": "🤖 MASTERPIECE PROMPT! The silver robot with star eyes paints beautifully under the stars! 🌟",
+          "tryAgainFeedback": "🎯 Look for the option with rich details: colour, star eyes, painting action, and starry sky!",
+          "boltEncouragement": "BEEP BOOP! You turned a plain metal box into a soulful robot artist! 🎨⚡"
+        },
+        {
+          "itemId": "task5",
+          "name": "Challenge E: Google AutoDraw Doodle Polisher ✏️☀️",
+          "emoji": "✏️",
+          "category": "creative_tools",
+          "categoryLabel": "Creative Tools 🛠️",
+          "isCorrect": true,
+          "description": "A student draws a wobbly, lumpy circle with six wavy lines sticking out on a tablet using Google AutoDraw.",
+          "question": "What does Google AutoDraw do to help the student's rough doodle?",
+          "options": [
+            "It deletes the student's homework 🗑️❌",
+            "It recognizes the doodle and suggests clean, polished drawings like a smiling sun or a flower! ☀️🌼✨",
+            "It turns the tablet into a real toaster 🍞",
+            "It plays loud rock music 🎸"
+          ],
+          "correctAnswer": "It recognizes the doodle and suggests clean, polished drawings like a smiling sun or a flower! ☀️🌼✨",
+          "explanation": "AutoDraw recognizes rough doodle patterns and suggests clean, symmetrical clip-art drawings! ✏️",
+          "hint": "Which tool recognizes rough sketches and offers polished drawings at the top?",
+          "positiveFeedback": "☀️ AutoDraw magic! Wobbly doodles become polished clip-art in one tap! 🌼",
+          "tryAgainFeedback": "✏️ AutoDraw suggests polished shapes based on what it thinks you are drawing!",
+          "boltEncouragement": "BEEP BOOP! Doodle power! Fast, clean, and recognizable art for everyone! 📐⚡"
+        },
+        {
+          "itemId": "task6",
+          "name": "Challenge F: Digital Colouring Book Palettes 🖍️🌸",
+          "emoji": "🖍️",
+          "category": "creative_tools",
+          "categoryLabel": "Creative Tools 🛠️",
+          "isCorrect": true,
+          "description": "You are using a digital colouring book app with an outline of a magical coral reef with tropical fish.",
+          "question": "How does a digital colouring book app support young artists?",
+          "options": [
+            "It forbids children from ever using crayons on paper 🖍️❌",
+            "It helps children test colour combinations and harmonies neatly inside outlines! 🎨🐠✨",
+            "It eats all the paper in your backpack 🎒",
+            "It charges money every time you tap red 💰"
+          ],
+          "correctAnswer": "It helps children test colour combinations and harmonies neatly inside outlines! 🎨🐠✨",
+          "explanation": "Digital colouring apps allow children to experiment with colour harmonies quickly and neatly! 🎨",
+          "hint": "How does tapping colours inside digital outlines help you practice art?",
+          "positiveFeedback": "🐠 CORAL REEF HARMONY! Testing bright blues and yellows creates stunning aquatic art! 🌊",
+          "tryAgainFeedback": "🖍️ Digital colouring apps let you test colour combinations inside outlines!",
+          "boltEncouragement": "BEEP BOOP! Colour theory in action! Warm fish against cool blue waters! 🐟⚡"
+        },
+        {
+          "itemId": "task7",
+          "name": "Challenge G: Cartoon Camera Filters & Privacy 🐻🎭",
+          "emoji": "🎭",
+          "category": "creative_tools",
+          "categoryLabel": "Creative Tools 🛠️",
+          "isCorrect": true,
+          "description": "A fun camera app puts animated teddy-bear ears and a cute brown puppy nose on your face on the screen.",
+          "question": "What is an important family safety rule when using face filters on camera apps?",
+          "options": [
+            "Send your photo to strangers in chat rooms 👥❌",
+            "Always ask a parent or trusted adult before using the app, and never upload photos online without permission! 👨‍👩‍👧🔒✨",
+            "Wear a winter coat in the summer 🧥",
+            "Hide the phone inside the refrigerator 🧊"
+          ],
+          "correctAnswer": "Always ask a parent or trusted adult before using the app, and never upload photos online without permission! 👨‍👩‍👧🔒✨",
+          "explanation": "Protect your facial privacy by always using camera apps with adult supervision and avoiding public uploads! 🛡️",
+          "hint": "Who should always give permission before you use face filters or share photos?",
+          "positiveFeedback": "🔒 Privacy Champion! Face filters are for family fun, not public sharing with strangers! 🛡️",
+          "tryAgainFeedback": "🎭 Remember: always get adult permission before using camera filters or sharing pictures!",
+          "boltEncouragement": "BEEP BOOP! Safety first! Your face and personal data remain protected! 🔐⚡"
+        },
+        {
+          "itemId": "task8",
+          "name": "Challenge H: The Sleepy Golden Moon 🌙💤",
+          "emoji": "🌙",
+          "category": "prompt_recipes",
+          "categoryLabel": "Prompt Recipes 📜",
+          "isCorrect": true,
+          "description": "You want to design a gentle bedtime illustration that makes viewers feel calm, peaceful, and ready to sleep.",
+          "question": "Which creative description creates the most soothing, tranquil bedtime atmosphere?",
+          "options": [
+            "A monster roaring with a megaphone in a loud factory 🏭📢❌",
+            "A smiling golden Moon wearing a tiny striped nightcap, sleeping peacefully among soft lavender clouds and stars 🌙☁️⭐✨",
+            "Fireworks exploding inside a basketball gym 🏀💥",
+            "A bulldozer digging up a highway at noon 🚜"
+          ],
+          "correctAnswer": "A smiling golden Moon wearing a tiny striped nightcap, sleeping peacefully among soft lavender clouds and stars 🌙☁️⭐✨",
+          "explanation": "The golden moon, striped nightcap, sleeping action, and lavender clouds create a soothing bedtime scene! 🌙",
+          "hint": "Which description features a sleeping moon, nightcap, and gentle lavender clouds?",
+          "positiveFeedback": "🌙 SOOTHING SERENITY! Soft pastel lavender clouds and sweet dreams for everyone! 💜",
+          "tryAgainFeedback": "🌙 Look for the gentle description with the sleeping moon and lavender clouds!",
+          "boltEncouragement": "BEEP BOOP! *Yawn!* Bolt's sensors are feeling cozy and tranquil! 💤⚡"
+        },
+        {
+          "itemId": "task9",
+          "name": "Challenge I: The Carrot-Shaped Space Rocket 🥕🚀",
+          "emoji": "🥕",
+          "category": "prompt_recipes",
+          "categoryLabel": "Prompt Recipes 📜",
+          "isCorrect": true,
+          "description": "You want to create a funny, whimsical space vehicle for a cartoon animal character.",
+          "question": "Which creative combination mixes a cute animal with an unusual, humorous vehicle?",
+          "options": [
+            "A grey stone sitting on grey concrete 🪨",
+            "A cheerful sky-blue rabbit piloting a bright orange rocket shaped like a giant crunchy carrot past ringed planets! 🐰🥕🚀🪐✨",
+            "A regular sedan driving on a regular highway 🚗",
+            "An empty plastic bag blowing in the wind 🛍️"
+          ],
+          "correctAnswer": "A cheerful sky-blue rabbit piloting a bright orange rocket shaped like a giant crunchy carrot past ringed planets! 🐰🥕🚀🪐✨",
+          "explanation": "Combining a blue rabbit with a carrot-shaped rocket is pure humorous imagination! 🥕🚀",
+          "hint": "Which option combines a blue bunny and a carrot-shaped rocket in outer space?",
+          "positiveFeedback": "🥕 COSMIC CRUNCH! The carrot rocket zooms past Saturn with rabbit speed! 🚀",
+          "tryAgainFeedback": "🐰 Look for the option with the blue rabbit and carrot-shaped space rocket!",
+          "boltEncouragement": "BEEP BOOP! Visual comedy gold! Imagination turns vegetables into spaceships! 🪐⚡"
+        },
+        {
+          "itemId": "task10",
+          "name": "Challenge J: Avoiding Prompt Clutter 🚫🌪️",
+          "emoji": "🧹",
+          "category": "prompt_building",
+          "categoryLabel": "Prompt Building 📝",
+          "isCorrect": true,
+          "description": "A student typed twenty random objects into a prompt, and the drawing tool generated a blurry, confusing mess.",
+          "question": "What is the best way to fix a cluttered, messy prompt?",
+          "options": [
+            "Add fifty more animals to the sentence 🦁🐘🦓❌",
+            "Remove unrelated objects and focus on one clear main character with one or two special details in a specific setting! 🎯✨",
+            "Turn off the screen and throw the mouse out the window 🖱️❌",
+            "Type in all capital letters with extra exclamation marks 📢❌"
+          ],
+          "correctAnswer": "Remove unrelated objects and focus on one clear main character with one or two special details in a specific setting! 🎯✨",
+          "explanation": "Simplifying to one focused main character and setting creates clear, harmonious, beautiful art! 🎯",
+          "hint": "How does simplifying and focusing on one character help make the picture clear?",
+          "positiveFeedback": "🧹 CLUTTER CLEARED! A focused scene allows the main character to shine brightly! 🌟",
+          "tryAgainFeedback": "🎯 Remember: remove extra objects and focus on one main character and setting!",
+          "boltEncouragement": "BEEP BOOP! Harmony restored! Clean descriptions make breathtaking art! 🖼️⚡"
+        },
+        {
+          "itemId": "task11",
+          "name": "Challenge K: No Private Data in Prompts 🔒🛑",
+          "emoji": "🔒",
+          "category": "creative_tools",
+          "categoryLabel": "Creative Tools 🛠️",
+          "isCorrect": true,
+          "description": "You are describing a house for a drawing tool. A friend suggests: 'Type your real home street address so it draws our house!'",
+          "question": "Why should you NEVER type your real home address or phone number into a drawing prompt?",
+          "options": [
+            "Because the computer will run out of electricity ⚡",
+            "Because prompts are sent over internet servers, and your private address must always remain confidential and safe! 🔒🛡️✨",
+            "Because drawing tools can only draw houses painted purple 🟣",
+            "Because the mouse will start squeaking 🐭"
+          ],
+          "correctAnswer": "Because prompts are sent over internet servers, and your private address must always remain confidential and safe! 🔒🛡️✨",
+          "explanation": "Never put personal addresses or phone numbers in prompts; keep all private data safe! 🛡️",
+          "hint": "Why must private personal information never be typed into internet tools?",
+          "positiveFeedback": "🛡️ DATA GUARDIAN! Describe fantasy castles and imaginary houses, never your real address! 🏰",
+          "tryAgainFeedback": "🔒 Privacy rule: never include private personal information in drawing prompts!",
+          "boltEncouragement": "BEEP BOOP! Castle gate locked! Your private address is safe and sound! 🔐⚡"
+        },
+        {
+          "itemId": "task12",
+          "name": "Challenge L: The Irreplaceable Value of Handmade Art 🖍️💖",
+          "emoji": "💖",
+          "category": "creative_tools",
+          "categoryLabel": "Creative Tools 🛠️",
+          "isCorrect": true,
+          "description": "It is your grandmother's birthday. You could print an AI-generated castle or draw a card by hand with crayons.",
+          "question": "Why is a handmade drawing made with crayons and paper so deeply special to families?",
+          "options": [
+            "Because wax crayons are made of solid gold 🪙",
+            "Because handmade art carries your own physical effort, personal love, and unique human warmth that no computer can copy! 💖📄🖍️✨",
+            "Because printers are not allowed on birthdays 🎂",
+            "Because crayons smell like chocolate cake 🍫"
+          ],
+          "correctAnswer": "Because handmade art carries your own physical effort, personal love, and unique human warmth that no computer can copy! 💖📄🖍️✨",
+          "explanation": "Handmade art carries the artist's personal time, effort, and love, making it a priceless personal gift! 💖",
+          "hint": "What makes a handmade drawing from your own hands so precious to loved ones?",
+          "positiveFeedback": "💖 FROM THE HEART! Real handmade drawings are treasures of human love and effort! 💌",
+          "tryAgainFeedback": "🖍️ Remember: handmade art carries your unique personal effort, love, and care!",
+          "boltEncouragement": "BEEP BOOP! *Sniff!* Love made visible! Handmade art warms the whole universe! 🎨💖"
+        },
+        {
+          "itemId": "task13",
+          "name": "Challenge M: Action Words Make Characters Alive 🏃‍♂️⚡",
+          "emoji": "🏃",
+          "category": "prompt_building",
+          "categoryLabel": "Prompt Building 📝",
+          "isCorrect": true,
+          "description": "Look at two descriptions of a dragon: Description 1: 'A dragon.' Description 2: 'A green dragon doing a joyful somersault over a rainbow.'",
+          "question": "How does adding the action word (somersault) change the picture?",
+          "options": [
+            "It turns the dragon into a potato 🥔",
+            "It gives the character motion, energy, emotion, and dynamic life! 🐉🤸‍♂️🌈✨",
+            "It makes the dragon invisible 🫥",
+            "It breaks the screen into small pieces 🔨"
+          ],
+          "correctAnswer": "It gives the character motion, energy, emotion, and dynamic life! 🐉🤸‍♂️🌈✨",
+          "explanation": "Action verbs transform static figures into living, dynamic, expressive characters! ⚡",
+          "hint": "How do action verbs like jumping, dancing, or somersaulting bring energy to art?",
+          "positiveFeedback": "🤸 DYNAMIC ENERGY! Action verbs turn statues into living, joyful characters! 🐉",
+          "tryAgainFeedback": "🏃 Think about how action words give characters movement and energy!",
+          "boltEncouragement": "BEEP BOOP! Acrobatics in mid-air! Action makes every drawing exciting! 🪂⚡"
+        },
+        {
+          "itemId": "task14",
+          "name": "Challenge N: Comparing Prompt Levels 📊🔍",
+          "emoji": "📊",
+          "category": "prompt_building",
+          "categoryLabel": "Prompt Building 📝",
+          "isCorrect": true,
+          "description": "Level 1: 'Dog.' Level 2: 'Brown dog with blue scarf.' Level 3: 'Sky-blue rabbit driving a carrot rocket past galaxies.'",
+          "question": "What makes Level 3 the most imaginative prompt?",
+          "options": [
+            "It is the shortest sentence 📏",
+            "It combines unexpected, original elements (bunny + carrot spaceship + outer space) that don't exist in reality! 🐰🥕🚀✨",
+            "It has the word 'dog' hidden backwards 🐕",
+            "It was written by a real carrot 🥕"
+          ],
+          "correctAnswer": "It combines unexpected, original elements (bunny + carrot spaceship + outer space) that don't exist in reality! 🐰🥕🚀✨",
+          "explanation": "Level 3 uses imagination to invent surprising mash-ups that transcend ordinary reality! 🌟",
+          "hint": "What makes the bunny in the carrot rocket so wildly imaginative and unusual?",
+          "positiveFeedback": "🚀 PURE ORIGINALITY! Mash-ups break boundaries and unleash wild imagination! 🌌",
+          "tryAgainFeedback": "🐰 Look for why combining a bunny, a carrot rocket, and outer space is so imaginative!",
+          "boltEncouragement": "BEEP BOOP! Cosmic creativity! That is the peak of original thinking! 🪐⚡"
+        },
+        {
+          "itemId": "task15",
+          "name": "Challenge O: Respecting Other Artists' Work 🤝🎨",
+          "emoji": "🤝",
+          "category": "creative_tools",
+          "categoryLabel": "Creative Tools 🛠️",
+          "isCorrect": true,
+          "description": "Your classmate Maya draws a magnificent winged lion. You think it looks super cool.",
+          "question": "What is the honourable, respectful way to celebrate your friend's creative artwork?",
+          "options": [
+            "Erase her name and write your own name on top ✏️❌",
+            "Compliment her creative idea, give her credit, and be inspired to draw your own original creature! 🌟🤝💖",
+            "Hide her drawing inside your locker 🔒❌",
+            "Tell everyone you drew it three years ago 🗣️❌"
+          ],
+          "correctAnswer": "Compliment her creative idea, give her credit, and be inspired to draw your own original creature! 🌟🤝💖",
+          "explanation": "Great creators respect fellow artists, give credit, and let inspiration spark their own original work! 🤝",
+          "hint": "How do we show kindness and respect to our friends' creative drawings?",
+          "positiveFeedback": "💖 ARTIST ALLIANCE! Honouring friends and giving credit creates a joyful creative community! 🎨",
+          "tryAgainFeedback": "🤝 Remember: compliment your friend, give credit, and draw your own original idea!",
+          "boltEncouragement": "BEEP BOOP! Mutual respect is golden! True artists lift each other up! 🌟⚡"
+        },
+        {
+          "itemId": "task16",
+          "name": "Challenge P: The 9-Step Artist Workflow 📋🖌️",
+          "emoji": "📋",
+          "category": "creative_tools",
+          "categoryLabel": "Creative Tools 🛠️",
+          "isCorrect": true,
+          "description": "You wrote a prompt, but the digital drawing helper put three ears on the teddy bear instead of two.",
+          "question": "According to the 9-step workflow, what should you do after examining the result?",
+          "options": [
+            "Throw the tablet into the fish tank 🐟❌",
+            "Reflect on what to tweak, refine your descriptive words, and try again! 🔍📝🔄✨",
+            "Assume the teddy bear is an alien from Mars 👽",
+            "Never try drawing again 🛑"
+          ],
+          "correctAnswer": "Reflect on what to tweak, refine your descriptive words, and try again! 🔍📝🔄✨",
+          "explanation": "Step 7 and 8 of the workflow are Reflect and Refine: adjust your words and try again! 🔄",
+          "hint": "What do steps 7 and 8 (Reflect and Refine) guide you to do when an image has a glitch?",
+          "positiveFeedback": "🔄 REFLECT & REFINE! Adjusting the prompt fixes the extra ear in a flash! 🧸",
+          "tryAgainFeedback": "📋 Think about the workflow: examine, reflect, refine words, and try again!",
+          "boltEncouragement": "BEEP BOOP! Iteration mastery! Artists polish and refine until it shines! 💎⚡"
+        },
+        {
+          "itemId": "task17",
+          "name": "Challenge Q: The Sound of Creative Kindness 🌟🥰",
+          "emoji": "🥰",
+          "category": "creative_tools",
+          "categoryLabel": "Creative Tools 🛠️",
+          "isCorrect": true,
+          "description": "When looking at artwork created by classmates or using digital tools, what should our goal always be?",
+          "options": [
+            "To find things to tease people about 😢❌",
+            "To spread joy, wonder, beauty, and encouragement with kindness! 🌟💖🎨✨",
+            "To win an argument about who has more markers 🖍️",
+            "To keep all drawings locked away where nobody can see them 🔒"
+          ],
+          "correctAnswer": "To spread joy, wonder, beauty, and encouragement with kindness! 🌟💖🎨✨",
+          "explanation": "Art is a bridge of human empathy; we create to bring joy, wonder, and encouragement! 💖",
+          "hint": "How should our artwork and feedback make others feel?",
+          "positiveFeedback": "🌟 RADIANT KINDNESS! Art connects human hearts with empathy and joy! 💖",
+          "tryAgainFeedback": "🥰 Art should spread joy, beauty, and encouragement with kindness!",
+          "boltEncouragement": "BEEP BOOP! That warms every diode in my chassis! Art is kindness made visible! 🎨💖"
+        },
+        {
+          "itemId": "task18",
+          "name": "Challenge R: The Ultimate Imagination Formula 🏆🪄",
+          "emoji": "🏆",
+          "category": "prompt_recipes",
+          "categoryLabel": "Prompt Recipes 📜",
+          "isCorrect": true,
+          "description": "Bolt stands beside his digital easel, beaming with pride, and asks you to state the ultimate summary of Chapter 5, Lesson 2: Draw & Imagine!",
+          "question": "What is the true secret behind every magical piece of art?",
+          "options": [
+            "Only computer chips and electricity create beauty 🔌❌",
+            "Your human imagination is the magic wand, your words are the guides, and digital tools are helpful paintbrushes! 💭🪄📝🖌️💖",
+            "Art is only for people who own expensive computers 💻❌",
+            "There is only one single correct way to draw anything 📏❌"
+          ],
+          "correctAnswer": "Your human imagination is the magic wand, your words are the guides, and digital tools are helpful paintbrushes! 💭🪄📝🖌️💖",
+          "explanation": "Human imagination is the true source of all art; words guide the vision, and tools assist! 🪄",
+          "hint": "Remember Bolt's golden truth: your imagination is the magic wand, tools are paintbrushes!",
+          "positiveFeedback": "🏆 GRAND CHAMPION IMAGINATION ARTIST! You mastered prompt recipes, colour mixing, and creative AI tools! BEEP BOOP! 🎊🪄",
+          "tryAgainFeedback": "🌟 Look for the answer that celebrates human imagination as the magic wand!",
+          "boltEncouragement": "BEEP BOOP! HOORAY! You unlocked the Grand Champion Imagination Artist Trophy! 🏆🎉⚡"
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "quizId": "quiz-ch5-l2",
+    "title": "Draw & Imagine — Grand Artist Quiz 🎨❓",
+    "description": "Test your mastery of picture prompts, colour recipes, creative AI tools, and digital safety with Bolt!",
+    "passMark": 80,
+    "questions": [
+      {
+        "questionId": "q1",
+        "question": "What is a 'picture prompt' in an AI drawing tool? 📝🎨",
+        "type": "multiple_choice",
+        "options": [
+          "A wooden ruler used for measuring tables 📏",
+          "A group of descriptive words that tells a drawing tool what image you want to see! 📝🖼️✨",
+          "A piece of chalk dropped in the mud 🖍️",
+          "A battery charger for a flashlight 🔦"
+        ],
+        "correctAnswer": "A group of descriptive words that tells a drawing tool what image you want to see! 📝🖼️✨",
+        "explanation": "A picture prompt describes the subject, colours, and setting to guide an image generator! 📝",
+        "emoji": "📝",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Exactly right! Prompts are the descriptive clues that guide the paintbrush! Gold Star! ⭐",
+          "incorrect": "📝 A picture prompt is a group of words that tells a tool what image to draw!"
+        }
+      },
+      {
+        "questionId": "q2",
+        "question": "Why is 'A small orange cat on a blue cushion' a better prompt than just 'Cat'? 🐱🟦",
+        "type": "multiple_choice",
+        "options": [
+          "Because orange cats can jump higher than grey cats 🐈",
+          "Because it gives specific colour, size, and location details so the tool doesn't have to guess! 🎯🎨✨",
+          "Because cats dislike plain prompts 😾",
+          "Because the computer will shut down if you only type one word 💻❌"
+        ],
+        "correctAnswer": "Because it gives specific colour, size, and location details so the tool doesn't have to guess! 🎯🎨✨",
+        "explanation": "Adding specific colours and objects gives clear guidance and reduces random guessing! 🎯",
+        "emoji": "🐱",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Precision guidance! Specific words create vivid contrasting images! 🟧🟦⚡",
+          "incorrect": "🐱 It provides specific details like colour, size, and setting so the tool doesn't guess!"
+        }
+      },
+      {
+        "questionId": "q3",
+        "question": "What are the five parts of Bolt's creative prompt recipe? 📜🧑‍🍳",
+        "type": "multiple_choice",
+        "options": [
+          "WHO + COLOR + SPECIAL DETAIL + ACTION + BACKGROUND 🐾🎨✨🏃🏞️",
+          "Sugar + Spice + Everything Nice 🍬",
+          "Circle + Square + Triangle + Oval + Hexagon 🔺",
+          "North + South + East + West + Up 🧭"
+        ],
+        "correctAnswer": "WHO + COLOR + SPECIAL DETAIL + ACTION + BACKGROUND 🐾🎨✨🏃🏞️",
+        "explanation": "This balanced recipe combines the subject, colour, unique feature, action, and environment! 📜",
+        "emoji": "📜",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Master recipe recall! That formula builds magnificent storybook scenes! 🎨⚡",
+          "incorrect": "📜 The recipe is WHO + COLOR + SPECIAL DETAIL + ACTION + BACKGROUND!"
+        }
+      },
+      {
+        "questionId": "q4",
+        "question": "What does Google AutoDraw do when you draw a wobbly doodle? ✏️☀️",
+        "type": "multiple_choice",
+        "options": [
+          "It laughs at your drawing through the speakers 🔊❌",
+          "It recognizes the doodle and suggests clean, polished clip-art shapes like a sun or flower! ✏️☀️✨",
+          "It orders a pizza to your house 🍕",
+          "It prints out a hundred paper airplanes ✈️"
+        ],
+        "correctAnswer": "It recognizes the doodle and suggests clean, polished clip-art drawings like a sun or flower! ✏️☀️✨",
+        "explanation": "AutoDraw matches rough sketch strokes to polished clip-art icons in its database! ✏️",
+        "emoji": "✏️",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Doodle polisher! AutoDraw turns rough sketches into clean shapes! ☀️⚡",
+          "incorrect": "✏️ AutoDraw recognizes rough doodles and suggests clean, polished clip-art shapes!"
+        }
+      },
+      {
+        "questionId": "q5",
+        "question": "What is an important safety rule when using camera apps with face filters? 🎭🔒",
+        "type": "multiple_choice",
+        "options": [
+          "Wear a heavy winter coat while taking photos 🧥",
+          "Always ask a parent or trusted adult for permission, and never share face photos publicly online! 👨‍👩‍👧🔒✨",
+          "Only use the filter while balancing on one foot 🦩",
+          "Close your eyes so the camera cannot see you 🙈"
+        ],
+        "correctAnswer": "Always ask a parent or trusted adult for permission, and never share face photos publicly online! 👨‍👩‍👧🔒✨",
+        "explanation": "Face photos are personal biometric data; always get adult permission and keep them private! 🛡️",
+        "emoji": "🔒",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Safety shield intact! Protect your facial privacy with adult guidance! 🛡️⚡",
+          "incorrect": "🔒 Always get adult permission before using camera filters or sharing photos online!"
+        }
+      },
+      {
+        "questionId": "q6",
+        "question": "What should you NEVER include inside an AI picture prompt? 🔒🛑",
+        "type": "multiple_choice",
+        "options": [
+          "“A purple kitten with butterfly wings” 🐱🦋",
+          "Private personal details like your home address, full name, phone number, or passwords! 🔒🛑✨",
+          "“A smiling golden moon” 🌙",
+          "“A silver robot dancing in a park” 🤖"
+        ],
+        "correctAnswer": "Private personal details like your home address, full name, phone number, or passwords! 🔒🛑✨",
+        "explanation": "Never enter real personal data like addresses or phone numbers into public prompt boxes! 🛡️",
+        "emoji": "🛑",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Privacy master! Prompts are for creative stories, never private secrets! 🔐⚡",
+          "incorrect": "🛑 Never put private personal information (addresses, names, passwords) into prompts!"
+        }
+      },
+      {
+        "questionId": "q7",
+        "question": "Why is a cluttered prompt with twenty unrelated objects often problematic? 🚫🌪️",
+        "type": "multiple_choice",
+        "options": [
+          "Because computers will refuse to turn on tomorrow 💻",
+          "Because it confuses the drawing assistant, resulting in a messy and incoherent image! 🎯🖼️✨",
+          "Because words get tired when there are too many of them 😴",
+          "Because it is against classroom etiquette to use twenty words 🏫"
+        ],
+        "correctAnswer": "Because it confuses the drawing assistant, resulting in a messy and incoherent image! 🎯🖼️✨",
+        "explanation": "Too many competing objects crowd the image and create visual confusion; focus on one main scene! 🎯",
+        "emoji": "🎯",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Quality over chaos! A focused scene lets your main character shine! 🌟⚡",
+          "incorrect": "🎯 Cluttered prompts confuse the tool and create a messy, incoherent image!"
+        }
+      },
+      {
+        "questionId": "q8",
+        "question": "What should you do if an AI drawing tool creates an image with a funny mistake? 🤖🔄",
+        "type": "multiple_choice",
+        "options": [
+          "Throw the computer off a tall building 🏢❌",
+          "Smile, treat it as a learning opportunity, adjust your descriptive words, and try again! 🔍📝🔄✨",
+          "Never draw another picture for the rest of your life 🛑",
+          "Complain to the municipal street department 🛣️"
+        ],
+        "correctAnswer": "Smile, treat it as a learning opportunity, adjust your descriptive words, and try again! 🔍📝🔄✨",
+        "explanation": "Iteration is the heart of art! Adjusting descriptive words helps guide the tool closer to your idea. 🔄",
+        "emoji": "🔄",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Master artist resilience! Refine your words and watch the picture improve! 🎨⚡",
+          "incorrect": "🔄 Smile, treat it as a learning opportunity, adjust your words, and try again!"
+        }
+      },
+      {
+        "questionId": "q9",
+        "question": "What makes handmade art drawn with real crayons so deeply precious to families? 🖍️💖",
+        "type": "multiple_choice",
+        "options": [
+          "It is made with real physical effort, personal love, and human touch that computers cannot duplicate! 💖📄🖍️✨",
+          "Crayons can be traded for video games at the store 🎮❌",
+          "Because paper lasts for 50,000 years 📜",
+          "Because computer files are illegal on birthdays 🎂❌"
+        ],
+        "correctAnswer": "It is made with real physical effort, personal love, and human touch that computers cannot duplicate! 💖📄🖍️✨",
+        "explanation": "Handmade art represents your own time, physical effort, and personal love, making it a priceless treasure! 💖",
+        "emoji": "💖",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Pure human heart! Real drawings carry personal love that no computer can copy! 💌⚡",
+          "incorrect": "💖 Handmade art carries personal effort, love, and human touch that computers cannot duplicate!"
+        }
+      },
+      {
+        "questionId": "q10",
+        "question": "How do action verbs like 'dancing' or 'flying' improve a character drawing? 🏃‍♂️💃",
+        "type": "multiple_choice",
+        "options": [
+          "They make the character look like a motionless rock 🪨",
+          "They give the character energy, movement, emotion, and dynamic visual life! ⚡🎨✨",
+          "They make the image file smaller 💾",
+          "They change the language to French 🇫🇷"
+        ],
+        "correctAnswer": "They give the character energy, movement, emotion, and dynamic visual life! ⚡🎨✨",
+        "explanation": "Action words bring vitality and narrative motion, turning static figures into living characters! 💃",
+        "emoji": "⚡",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Kinetic energy! Action verbs bring characters leaping off the page! 🕺⚡",
+          "incorrect": "⚡ Action verbs give characters energy, movement, emotion, and dynamic life!"
+        }
+      },
+      {
+        "questionId": "q11",
+        "question": "Which of these is a creative mash-up that does not exist in real nature? 🦄✨",
+        "type": "multiple_choice",
+        "options": [
+          "A brown dog barking in a yard 🐕",
+          "A flying purple kitten with monarch butterfly wings! 🐱🦋🟣✨",
+          "A grey elephant eating grass 🐘",
+          "A green frog sitting by a pond 🐸"
+        ],
+        "correctAnswer": "A flying purple kitten with monarch butterfly wings! 🐱🦋🟣✨",
+        "explanation": "Combining a kitten with purple colour and butterfly wings is an imaginative fantasy mash-up! 🐱",
+        "emoji": "🦋",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Whimsical wonder! Fantasy mash-ups are the playground of imagination! 🌈⚡",
+          "incorrect": "🦋 A flying purple kitten with butterfly wings is an imaginative mash-up!"
+        }
+      },
+      {
+        "questionId": "q12",
+        "question": "How should we treat artwork created by classmates and friends? 🤝🎨",
+        "type": "multiple_choice",
+        "options": [
+          "Tease them if their drawing looks unusual 😢❌",
+          "Celebrate their creativity, give encouragement, and respect their original ideas! 🌟🤝💖✨",
+          "Claim that you drew their picture 🗣️❌",
+          "Scribble over their paper with black ink 🖍️❌"
+        ],
+        "correctAnswer": "Celebrate their creativity, give encouragement, and respect their original ideas! 🌟🤝💖✨",
+        "explanation": "True artists build supportive communities by encouraging others and celebrating diverse creativity! 🤝",
+        "emoji": "🤝",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Creative kindness! Encouraging others makes the whole world brighter! 💖⚡",
+          "incorrect": "🤝 Celebrate their creativity, give encouragement, and respect their original ideas!"
+        }
+      },
+      {
+        "questionId": "q13",
+        "question": "What does Bolt mean when he says: 'Your imagination is the magic wand! I am just your little paintbrush!'? 🪄🖌️",
+        "type": "multiple_choice",
+        "options": [
+          "Bolt is made of wood and horsehair 🪵",
+          "Human minds generate the ideas, feelings, and vision; technology is merely a tool that helps paint it! 💭🌟💖✨",
+          "You must buy a real magic wand at the toy store 🪄",
+          "Computers should make all the decisions for you 🤖❌"
+        ],
+        "correctAnswer": "Human minds generate the ideas, feelings, and vision; technology is merely a tool that helps paint it! 💭🌟💖✨",
+        "explanation": "Human imagination provides the creative spark; digital assistants simply follow instructions! 🌟",
+        "emoji": "🪄",
+        "boltReaction": {
+          "correct": "BEEP BOOP! The core truth of creative technology! You are the visionary; tech is the brush! 🎨⚡",
+          "incorrect": "🪄 Human minds generate the ideas and vision; technology is merely a helpful tool!"
+        }
+      },
+      {
+        "questionId": "q14",
+        "question": "What does an AI drawing assistant actually do when it reads your prompt? 🖥️🎨",
+        "type": "multiple_choice",
+        "options": [
+          "It reads your prompt and uses mathematical patterns from data to construct a matching image! 🤖📊🎨✨",
+          "It flies into your bedroom and steals your sketchbook 📖❌",
+          "It calls a human artist on the phone to draw it by hand 📞",
+          "It finds an old photograph in an album and scans it 📷"
+        ],
+        "correctAnswer": "It reads your prompt and uses mathematical patterns from data to construct a matching image! 🤖📊🎨✨",
+        "explanation": "AI drawing tools use algorithms and learned image patterns to generate visuals based on text prompts! 🎨",
+        "emoji": "🖥️",
+        "boltReaction": {
+          "correct": "BEEP BOOP! Algorithmic generation! Translating language tokens into pixel patterns! 🤖⚡",
+          "incorrect": "🖥️ It reads your prompt and uses learned data patterns to construct a matching image!"
+        }
+      },
+      {
+        "questionId": "q15",
+        "question": "What is the most important ingredient in any piece of art you ever create? 🌟💖",
+        "type": "multiple_choice",
+        "options": [
+          "Having an expensive computer with ten monitors 💻❌",
+          "Your unique human heart, original imagination, and joy in creating! 💭💖🎨✨",
+          "Using only the colour grey 🔘",
+          "Copying exactly what someone else drew without changing anything 📋❌"
+        ],
+        "correctAnswer": "Your unique human heart, original imagination, and joy in creating! 💭💖🎨✨",
+        "explanation": "Your unique human imagination, feelings, and love of creation are the soul of all art! 💖",
+        "emoji": "🌟",
+        "boltReaction": {
+          "correct": "BEEP BOOP! 100% PERFECT! You are officially a Certified Master Imagination Artist! 🏆🎉⚡",
+          "incorrect": "🌟 Your unique human heart, original imagination, and joy in creating are the soul of art!"
+        }
+      }
+    ]
+  },
+  "discussion": {
+    "questions": [
+      "What is the wildest, funniest animal mash-up you would love to create using descriptive words? 🐱🦋🦖",
+      "Why is a prompt like 'A small orange cat on a blue cushion' much easier for a computer to draw than just 'Cat'? 🎯🐾",
+      "How does Google AutoDraw help someone who feels like their hand drawing is messy or wobbly? ✏️☀️",
+      "Why is a handmade drawing with crayons so special to family members, even when digital tools exist? 🖍️💖",
+      "What is the difference between sharing an idea with friends and accidentally sharing private information like an address? 🔒🛡️",
+      "How do colours (like sunny yellow vs dark midnight blue) change the way a picture makes you feel? 🌈🎨",
+      "If you were illustrating a storybook about Bolt visiting your school, what funny adventures would you paint? 🏫🤖"
+    ],
+    "homeExplorationTasks": [
+      "The 5-Part Recipe Sketch: Take a piece of paper and write a prompt using Bolt's recipe: WHO + COLOR + DETAIL + ACTION + BACKGROUND. Draw the picture yourself using coloured pencils! 📝🎨",
+      "The AutoDraw Experiment: With an adult's permission, visit Google AutoDraw. Draw a wobbly bicycle, a tree, and a fish. What polished shapes does the helper suggest? ✏️💻",
+      "Camera Filter Face Comedy: With a family member, test a playful cartoon filter (like animal ears) on a phone camera. Laugh together at the real-time tracking! 🐻📱",
+      "The Crayon Masterpiece Gift: Draw a surprise picture for a parent, grandparent, or friend using physical paper and crayons. Write a loving note on the back! 💌🖍️",
+      "Prompt Doctor Challenge: Ask a sibling or parent to give you a boring one-word prompt (like 'Car'). Use your adjectives to turn it into an imaginative Level 3 prompt! 🚗🚀",
+      "Mini Art Gallery Exhibition: Tape three of your favourite drawings onto your bedroom door or refrigerator and give your family a mini guided gallery tour! 🖼️🚪"
+    ]
+  },
+  "summary": {
+    "recap": "BEEP BOOP! What an extraordinary, colour-drenched celebration of creativity and imagination! 🌟🤖⚡\nFrom discovering how words become pictures 🖍️🖼️ to mastering Bolt's 5-part creative recipe (WHO + COLOR + DETAIL + ACTION + BACKGROUND) 📜✨; from inventing flying purple kittens with butterfly wings 🐱🦋 to piloting carrot-shaped rockets past starry galaxies 🥕🚀 — you have proven that your human imagination is the greatest superpower in the universe!\nAlways remember: digital tools and AI drawing assistants are wonderful paintbrushes, but YOU are the visionary artist holding the magic wand! Keep dreaming, keep describing, keep drawing, and keep shining! 💖🎨🌈\n\n“BEEP BOOP! Your imagination is the magic wand! I am just your little paintbrush!”\n\n“BEEP BOOP! AMAZING WORK, Imagination Artist! 🎨✨ You bring the ideas, and your words help tell the story. Keep imagining, drawing, and discovering!”",
+    "keyTakeaways": [
+      "Imagination is our creative superpower that invents original ideas, characters, and worlds 💭🪄",
+      "Some AI drawing assistants can turn written descriptive prompts into colourful pictures 🎨🖼️",
+      "A picture prompt is a group of words that tells a drawing tool what you want to see 📝💡",
+      "The 5 core descriptive elements are Subject (What), Colour, Size, Action, and Extra details 🖐️✨",
+      "Bolt's creative recipe combines WHO + COLOR + SPECIAL DETAIL + ACTION + BACKGROUND 📜🧑‍🍳",
+      "Clear, focused prompts produce better pictures than cluttered sentences with too many conflicting objects 🎯🚫",
+      "AI drawing tools can make mistakes; artists reflect, refine their words, and try again with patience 🤖🔄",
+      "Real-world tools like AutoDraw polish doodles, while colouring apps help test colour harmonies ✏️📱",
+      "Never include private personal information (addresses, full names, passwords) in drawing prompts 🔒🛡️",
+      "Handmade drawings created with real crayons carry unique human love and effort that no computer can copy! 🖍️💖",
+      "True artistic growth comes from experimenting boldly, learning from surprises, and celebrating your voice! 🌟🌱"
+    ],
+    "closingToast": {
+      "message": "🌟 'BEEP BOOP! Give yourself a rainbow standing ovation! You are officially a CERTIFIED IMAGINATION ARTIST! See you in Chapter 6!' 🤖⚡🏆",
+      "trophyEarned": "🏆 Grand Imagination Artist Trophy & Golden Rainbow Paintbrush Ribbon UNLOCKED! 🎖️",
+      "boltAction": "Bolt wears a colourful artist beret 🎨, waves a sparkling digital paintbrush 🪄, and projects a hologram of a flying purple kitten soaring over a rainbow! 🐱🦋🌈✨"
+    },
+    "nextLesson": {
+      "lessonId": "l1",
+      "chapterId": "ch6",
+      "title": "My AI Safety Rules 🛡️🤖",
+      "teaser": "BEEP BOOP! In Chapter 6: Responsible AI — CARE, we become certified Digital Safety Champions! In Lesson 1: My AI Safety Rules, we learn how to protect our private information, treat digital helpers with kindness and respect, and navigate the internet safely! Put on your golden safety shield — our protector quest begins soon! 🛡️🔐⚡"
+    }
+  }
+}
