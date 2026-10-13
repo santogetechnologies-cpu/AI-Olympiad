@@ -3,15 +3,8 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { useLessonContent, useLevelManifest, useLevelsConfig } from '../../hooks/useContentLoader'
 import { ArrowLeft, BookOpen, Clock, CheckCircle2, ChevronRight } from 'lucide-react'
 
-interface RouteParams {
-  level?: string
-  classId?: string
-  chapterId?: string
-  lessonId?: string
-}
-
 export default function UnifiedLearningPage() {
-  const { level = 'junior', classId, chapterId, lessonId } = useParams<Record<string, string>>()
+  const { level = 'junior', classId, chapterId, lessonId } = useParams()
   const navigate = useNavigate()
   
   const levelsConfig = useLevelsConfig()
