@@ -8,7 +8,8 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import type { GaioScreenItem } from './types'
-import { getScreensForAnyGrade } from './config/universalGradeScreens'
+import { getScreensForAnyGrade, invalidateGradeCache } from './config/universalGradeScreens'
+import { loadCurriculumJson } from '../../services/curriculumJsonLoader'
 import type { GradeKey } from '../../services/progressService'
 import { CLASS3_BOOK_ALL_SCREENS } from './config/class3BookScreens'
 import { CLASS4_BOOK_ALL_SCREENS } from './config/class4BookScreens'
@@ -352,9 +353,27 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
     return CLASS3_METADATA
   }, [gradeKey])
 
-  const rawScreens: GaioScreenItem[] = useMemo(() => {
-    return getScreensForAnyGrade(gradeKey)
+  // JSON curriculum loader — runs when gradeKey changes
+  const [jsonVersion, setJsonVersion] = useState(0)
+  useEffect(() => {
+    let cancelled = false
+    loadCurriculumJson(gradeKey).then((data) => {
+      if (cancelled) return
+      if (data) {
+        // Invalidate cached screens so they rebuild from JSON
+        invalidateGradeCache(gradeKey)
+        setJsonVersion(v => v + 1)
+      }
+    })
+    return () => { cancelled = true }
   }, [gradeKey])
+
+  const rawScreens: GaioScreenItem[] = useMemo(() => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+    jsonVersion // subscribe to version for re-run
+    return getScreensForAnyGrade(gradeKey)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gradeKey, jsonVersion])
 
   // 1. When scopedMonth is set, load ONLY that specific chapter's interactive screens!
   const screens: GaioScreenItem[] = useMemo(() => {

@@ -1,0 +1,686 @@
+{
+  "gradeKey": "class6",
+  "gradeTitle": "Class 6",
+  "mascot": "Algo",
+  "mascotEmoji": "🧠",
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterTitle": "AI Basics",
+      "canonicalKey": "discover",
+      "lessons": [
+        {
+          "lessonNumber": 1,
+          "monthNumber": 1,
+          "lessonTitle": "How Machines Get Smart",
+          "intro": "Have you ever wondered why your phone knows which song you like? Or how YouTube recommends your next video? This lesson explains how machines learn — just like you do!",
+          "learnPoints": [
+            "Machines get smart by looking at lots of examples, just like you learned to recognise a cat by seeing many cats.",
+            "AI does NOT think or feel — it finds patterns in data, like noticing that rainy days mean umbrella sales go up.",
+            "Every smart app (Swiggy, YouTube, Maps) was taught using millions of real examples from everyday life."
+          ],
+          "auraScript": "Imagine you are learning to recognise mangoes. First time you see one, you don't know. But after seeing 100 mangoes, you can spot one instantly! Machines learn exactly the same way. We show them thousands of pictures or examples, they find the pattern, and then they can answer questions on their own. That is how machines get smart!",
+          "realLifeTitle": "YouTube Recommendations",
+          "realLifeScenario": "YouTube watches which videos you click and how long you watch, then it learns your taste and suggests the next video you are likely to enjoy.",
+          "realLifeIcon": "📺",
+          "activityTitle": "Spot the Pattern Game",
+          "activitySteps": [
+            "Look at 5 pictures of cats and 5 pictures of dogs. What differences do you notice?",
+            "Now look at 3 new mixed pictures — can you identify each one based on the patterns you spotted?",
+            "Discuss: how many examples did you need before you felt confident? That is exactly how AI learns!"
+          ],
+          "worksheetSortItems": [
+            "YouTube suggests next video 📺",
+            "A plain wooden table",
+            "Face Unlock on phone 📱",
+            "A regular pencil",
+            "Swiggy recommends food 🍕",
+            "A glass of water"
+          ],
+          "worksheetPairs": [
+            { "left": "YouTube", "right": "Suggests videos you will like" },
+            { "left": "Face Unlock", "right": "Recognises your face from pattern" },
+            { "left": "Training Data", "right": "Examples used to teach the machine" },
+            { "left": "Pattern", "right": "Repeated clue AI looks for in examples" }
+          ],
+          "quizMatchPairs": [
+            { "left": "YouTube Recommendations", "right": "Machine Learning", "icon": "📺" },
+            { "left": "Face Unlock", "right": "Pattern Recognition", "icon": "📱" },
+            { "left": "Training Data", "right": "Examples AI learns from", "icon": "📚" },
+            { "left": "Smart App", "right": "Taught using real-life data", "icon": "⭐" }
+          ],
+          "quizSequence": [
+            { "id": "s1", "step": 1, "text": "Collect many real examples", "icon": "📦" },
+            { "id": "s2", "step": 2, "text": "Find the pattern in those examples", "icon": "🔍" },
+            { "id": "s3", "step": 3, "text": "Test with new examples", "icon": "🎯" },
+            { "id": "s4", "step": 4, "text": "Smart app is ready to help!", "icon": "🚀" }
+          ],
+          "completionTask": "Ask one family member: 'Can you name one app that learned from your habits?' Share their answer with the class tomorrow!",
+          "imagePlaceholders": {
+            "intro": "Photo placeholder: A child watching YouTube on a tablet with recommended videos shown on screen",
+            "story": "Illustration placeholder: Side-by-side of a child learning to spot mangoes vs a computer screen showing pattern recognition",
+            "activity": "Visual placeholder: Grid of cat and dog photos with arrows pointing to shared features like ears, nose, fur"
+          }
+        },
+        {
+          "lessonNumber": 2,
+          "monthNumber": 2,
+          "lessonTitle": "Learning from Examples",
+          "intro": "Your brain learned to read by practising the alphabet again and again. AI learns in a very similar way — by practising with thousands of examples until it gets good at a task!",
+          "learnPoints": [
+            "When we give AI a labelled example (like a photo tagged 'cat'), it learns to connect the picture to the word.",
+            "The more examples AI gets, the better it becomes — just like practising cricket makes you a better batter.",
+            "AI needs GOOD examples: if we teach it with wrong or unfair examples, it will give wrong answers."
+          ],
+          "auraScript": "Think about how you learned to write the letter A. First you copied it, then you tried on your own, then someone corrected your mistakes. AI learns the same way! We give it thousands of labelled examples — a photo tagged 'apple', a photo tagged 'orange'. It practises, makes mistakes, gets corrected, and slowly gets very good. That is learning from examples!",
+          "realLifeTitle": "Google Photos",
+          "realLifeScenario": "Google Photos looks at thousands of photos labelled 'beach' or 'birthday' to learn what those look like, so it can automatically sort your photos into albums.",
+          "realLifeIcon": "📸",
+          "activityTitle": "Teach the Classroom AI",
+          "activitySteps": [
+            "On a sheet of paper, draw 5 simple shapes — 3 circles and 2 squares. Label each one correctly.",
+            "Pass your paper to a friend. Can they identify the shape without labels? That is what training data does for AI!",
+            "Now try with just 1 example — is it harder? Discuss why more examples help AI be more accurate."
+          ],
+          "worksheetSortItems": [
+            "Labelled photo of a cat 🐱",
+            "Random noise image",
+            "Labelled photo of a mango 🥭",
+            "Blank white paper",
+            "Album of sorted school photos 📸",
+            "Crumpled paper ball"
+          ],
+          "worksheetPairs": [
+            { "left": "Labelled Example", "right": "Photo + correct tag given to AI" },
+            { "left": "More Practice", "right": "Makes AI more accurate" },
+            { "left": "Wrong Examples", "right": "Make AI give wrong answers" },
+            { "left": "Google Photos", "right": "Sorts photos by learning from labels" }
+          ],
+          "quizMatchPairs": [
+            { "left": "Google Photos Album Sort", "right": "Learned from labelled photos", "icon": "📸" },
+            { "left": "Wrong Training Data", "right": "Makes AI give wrong answers", "icon": "⚠️" },
+            { "left": "More Examples", "right": "Better accuracy", "icon": "📈" },
+            { "left": "Label", "right": "The correct answer tag on an example", "icon": "🏷️" }
+          ],
+          "quizSequence": [
+            { "id": "s1", "step": 1, "text": "Collect labelled examples", "icon": "🏷️" },
+            { "id": "s2", "step": 2, "text": "AI practises and makes mistakes", "icon": "📝" },
+            { "id": "s3", "step": 3, "text": "AI is corrected with right answers", "icon": "✅" },
+            { "id": "s4", "step": 4, "text": "AI becomes accurate on new data", "icon": "🎯" }
+          ],
+          "completionTask": "Tonight, count how many times you practised something new today (writing, sport, music). That is YOUR learning from examples! Tell the class how many times you practised.",
+          "imagePlaceholders": {
+            "intro": "Photo placeholder: A child's exercise book showing practise rows of letter A with corrections",
+            "story": "Illustration placeholder: Split screen — left side labelled photos of fruits, right side AI correctly identifying a new fruit",
+            "activity": "Visual placeholder: Classroom activity with labelled shape cards being sorted into correct groups"
+          }
+        }
+      ]
+    },
+    {
+      "chapterNumber": 2,
+      "chapterTitle": "Communicate with AI",
+      "canonicalKey": "connect",
+      "lessons": [
+        {
+          "lessonNumber": 1,
+          "monthNumber": 3,
+          "lessonTitle": "Think → Plan → Code",
+          "intro": "Before a chef cooks a meal, they think about the recipe, plan the steps, and then follow them in order. Writing instructions for a computer works exactly the same way — think, plan, then write the steps!",
+          "learnPoints": [
+            "THINK: Understand the problem clearly. Like planning a route before leaving home, you must know where you are going.",
+            "PLAN: Break the big problem into small steps. Making a cup of tea = boil water, add tea, add milk, stir, pour.",
+            "CODE (or Instructions): Write the steps clearly so the computer or person can follow them one by one without guessing."
+          ],
+          "auraScript": "Imagine you want to make Maggi noodles. First you THINK — what do I need? Then you PLAN — boil water, open packet, add noodles, add masala, stir. Then you FOLLOW the steps in order. If you skip a step or do it in the wrong order, the Maggi comes out wrong! Giving instructions to a computer is exactly the same. You think, you plan your steps, and you write them in the right order. That is what Think, Plan, Code means!",
+          "realLifeTitle": "Google Maps Route",
+          "realLifeScenario": "Before showing you directions, Maps thinks about your destination, plans the best route through traffic, and shows you the steps in order — just like a recipe.",
+          "realLifeIcon": "🗺️",
+          "activityTitle": "Write Your Recipe Algorithm",
+          "activitySteps": [
+            "Choose a simple daily activity: making tea, packing your school bag, or brushing teeth.",
+            "Write down every single step in order — don't skip even the obvious ones!",
+            "Swap with a friend and follow their steps exactly. Did anything go wrong when steps were unclear?"
+          ],
+          "worksheetSortItems": [
+            "Think about the problem first 🤔",
+            "Jump straight to the last step",
+            "Plan small steps in order 📋",
+            "Do everything at random",
+            "Follow steps one by one ✅",
+            "Skip planning entirely"
+          ],
+          "worksheetPairs": [
+            { "left": "THINK", "right": "Understand what the problem is" },
+            { "left": "PLAN", "right": "Break problem into small ordered steps" },
+            { "left": "CODE / Instructions", "right": "Write steps clearly for others to follow" },
+            { "left": "Google Maps", "right": "Plans the route step by step for you" }
+          ],
+          "quizMatchPairs": [
+            { "left": "Making Maggi Step-by-Step", "right": "Think → Plan → Follow", "icon": "🍜" },
+            { "left": "Google Maps Directions", "right": "Ordered steps from A to B", "icon": "🗺️" },
+            { "left": "Skipping Steps", "right": "Leads to wrong result", "icon": "⚠️" },
+            { "left": "Clear Instructions", "right": "Everyone follows correctly", "icon": "✅" }
+          ],
+          "quizSequence": [
+            { "id": "s1", "step": 1, "text": "THINK — What is the goal?", "icon": "🤔" },
+            { "id": "s2", "step": 2, "text": "PLAN — List the steps", "icon": "📋" },
+            { "id": "s3", "step": 3, "text": "WRITE — Put steps in order", "icon": "✏️" },
+            { "id": "s4", "step": 4, "text": "CHECK — Follow steps and see if it works", "icon": "✅" }
+          ],
+          "completionTask": "Tonight, write the steps for how you get ready for school in the morning. Are your steps in the right order? Share your list tomorrow!",
+          "imagePlaceholders": {
+            "intro": "Photo placeholder: A chef reading a recipe card before cooking, with ingredients arranged in order on the counter",
+            "story": "Illustration placeholder: Flowchart showing Think → Plan → Steps → Done with Maggi noodle images",
+            "activity": "Visual placeholder: A school bag packing activity with numbered step cards that students arrange in order"
+          }
+        },
+        {
+          "lessonNumber": 2,
+          "monthNumber": 4,
+          "lessonTitle": "Coding Made Friendly",
+          "intro": "Coding sounds scary, but you already give instructions every day! When you tell your friend 'meet me at the school gate at 8 AM', that is a clear instruction — computers just need the same thing in their own language.",
+          "learnPoints": [
+            "Coding is simply giving very clear, step-by-step instructions to a machine — no jargon needed at first!",
+            "Computers follow instructions EXACTLY — if you say 'go left', they go left even if right was better. So clarity matters!",
+            "Real life is full of algorithms: traffic lights switching, ATM giving money, smart locks opening — all follow coded steps."
+          ],
+          "auraScript": "Imagine you are directing a robot vacuum cleaner in your house. You say: 'Start at the bedroom. Go to the hall. Turn right. Go to the kitchen. Stop.' If you say 'Go to the hall' before 'Start at bedroom', the robot gets confused! Computers need instructions that are clear, in the right order, and leave nothing to guessing. That is what friendly coding is — just very precise, clear instructions, like directions to your house!",
+          "realLifeTitle": "Robot Vacuum Cleaner",
+          "realLifeScenario": "A robot vacuum follows a coded map of your home — it knows to start at one corner, move in rows, avoid the table legs, and return to charge when its battery is low.",
+          "realLifeIcon": "🤖",
+          "activityTitle": "Be the Robot Game",
+          "activitySteps": [
+            "One student is the 'robot' — they must follow ONLY spoken instructions, no guessing allowed!",
+            "Another student gives directions to move from one corner of the classroom to the door using only: Forward, Back, Left, Right, Stop.",
+            "Did the robot reach the door? What happened when instructions were unclear? Discuss!"
+          ],
+          "worksheetSortItems": [
+            "Clear step-by-step instruction ✅",
+            "Vague instruction 'go somewhere'",
+            "Traffic light switching sequence 🚦",
+            "Random button pressing",
+            "ATM steps: insert card, enter PIN, take cash 💳",
+            "Doing tasks in random order"
+          ],
+          "worksheetPairs": [
+            { "left": "Traffic Light", "right": "Follows coded green-yellow-red sequence" },
+            { "left": "ATM", "right": "Step-by-step: card, PIN, amount, cash" },
+            { "left": "Robot Vacuum", "right": "Follows a coded cleaning map" },
+            { "left": "Vague Instruction", "right": "Confuses the machine or person" }
+          ],
+          "quizMatchPairs": [
+            { "left": "Robot Vacuum", "right": "Coded cleaning instructions", "icon": "🤖" },
+            { "left": "Traffic Light", "right": "Timed colour-change sequence", "icon": "🚦" },
+            { "left": "ATM", "right": "Step-by-step cash dispensing", "icon": "💳" },
+            { "left": "Clear Instructions", "right": "Machine follows correctly", "icon": "✅" }
+          ],
+          "quizSequence": [
+            { "id": "s1", "step": 1, "text": "Understand what the machine needs to do", "icon": "🤔" },
+            { "id": "s2", "step": 2, "text": "Write every step clearly", "icon": "✏️" },
+            { "id": "s3", "step": 3, "text": "Put steps in the right order", "icon": "📋" },
+            { "id": "s4", "step": 4, "text": "Test: does the machine follow correctly?", "icon": "🎯" }
+          ],
+          "completionTask": "Give a family member instructions to make a cup of tea WITHOUT them watching you first. Did they follow your steps correctly? What did you need to add or change?",
+          "imagePlaceholders": {
+            "intro": "Photo placeholder: A child giving verbal directions to a friend pointing toward a school gate",
+            "story": "Illustration placeholder: A robot vacuum with arrows showing its cleaning path around furniture in a room",
+            "activity": "Visual placeholder: Classroom activity with a blindfolded 'robot' student being guided by instruction cards"
+          }
+        }
+      ]
+    },
+    {
+      "chapterNumber": 3,
+      "chapterTitle": "AI Applications",
+      "canonicalKey": "solve",
+      "lessons": [
+        {
+          "lessonNumber": 1,
+          "monthNumber": 5,
+          "lessonTitle": "AI on the Road",
+          "intro": "Every day, millions of cars, buses, and bikes travel on busy roads. AI helps make this safer and faster — from traffic lights that adapt to jams, to apps that find the fastest route to your destination!",
+          "learnPoints": [
+            "AI traffic systems watch cameras at junctions and change the green light timing based on how many vehicles are waiting.",
+            "Google Maps uses AI to look at real-time traffic from millions of phones and calculate the fastest route right now.",
+            "In some cities, AI cameras spot accidents instantly and alert emergency services within seconds — saving lives!"
+          ],
+          "auraScript": "Think about a busy road crossing during school time. Traffic is backed up everywhere! An AI camera counts the vehicles on each road and gives green light for longer to the busiest road. Meanwhile, Google Maps on your dad's phone has already rerouted around that jam using real data from 1000 other phones nearby. AI on the road is not science fiction — it is happening right now in Indian cities!",
+          "realLifeTitle": "Google Maps Live Traffic",
+          "realLifeScenario": "Google Maps collects location data from millions of phones on the road and uses AI to predict traffic jams before they happen, suggesting faster alternate routes.",
+          "realLifeIcon": "🗺️",
+          "activityTitle": "Design Your Smart Crossing",
+          "activitySteps": [
+            "Draw a simple four-way road crossing on paper. Mark where you would place AI cameras.",
+            "For each camera, write one thing it would watch (e.g., number of vehicles, pedestrians waiting).",
+            "Design the rules: if the left road has more than 10 cars, give it extra green time. Share your design!"
+          ],
+          "worksheetSortItems": [
+            "AI camera counts vehicles at junction 🚗",
+            "A static clock without sensors",
+            "Google Maps reroutes around traffic jam 🗺️",
+            "A plain street sign",
+            "Emergency alert sent in seconds after accident 🚨",
+            "A traffic officer with no radio"
+          ],
+          "worksheetPairs": [
+            { "left": "AI Traffic Camera", "right": "Counts vehicles and adjusts green light timing" },
+            { "left": "Google Maps AI", "right": "Finds fastest route using real-time phone data" },
+            { "left": "Accident Detection AI", "right": "Alerts emergency services within seconds" },
+            { "left": "Real-Time Data", "right": "Live information from thousands of phones and sensors" }
+          ],
+          "quizMatchPairs": [
+            { "left": "Smart Traffic Light", "right": "Adjusts timing based on vehicle count", "icon": "🚦" },
+            { "left": "Google Maps", "right": "Uses real-time data for fastest route", "icon": "🗺️" },
+            { "left": "Accident AI", "right": "Detects and alerts within seconds", "icon": "🚨" },
+            { "left": "Real-Time Data", "right": "From millions of phones and cameras", "icon": "📡" }
+          ],
+          "quizSequence": [
+            { "id": "s1", "step": 1, "text": "Camera counts vehicles at junction", "icon": "📷" },
+            { "id": "s2", "step": 2, "text": "AI decides which road needs more green time", "icon": "🧠" },
+            { "id": "s3", "step": 3, "text": "Traffic lights update automatically", "icon": "🚦" },
+            { "id": "s4", "step": 4, "text": "Traffic flows faster, fewer jams!", "icon": "🚗" }
+          ],
+          "completionTask": "On your way home, count how many traffic lights you pass. Are any of them adaptive (longer green when more cars are waiting)? Tell the class what you observed!",
+          "imagePlaceholders": {
+            "intro": "Photo placeholder: Aerial view of a busy Indian city junction with traffic cameras mounted on poles",
+            "story": "Illustration placeholder: Split screen showing Google Maps rerouting and an AI camera counting vehicles",
+            "activity": "Visual placeholder: Student-drawn road crossing with camera positions and rule cards"
+          }
+        },
+        {
+          "lessonNumber": 2,
+          "monthNumber": 6,
+          "lessonTitle": "AI on the Farm",
+          "intro": "Farmers in India grow food for over a billion people! AI is now helping farmers use less water, spot sick plants early, and get better harvests — making farming smarter and more sustainable.",
+          "learnPoints": [
+            "AI soil and weather sensors help farmers know exactly WHEN and HOW MUCH to water their crops — saving up to 30% water!",
+            "Camera drones fly over fields and use AI to spot diseased or yellow plants early, before the disease spreads.",
+            "AI apps on simple smartphones can identify crop disease from a photo and suggest the right treatment immediately."
+          ],
+          "auraScript": "Imagine a farmer in Tamil Nadu who used to water his rice field every day, even on rainy days, wasting water and money. Now a small sensor in the soil measures moisture and sends data to an app. The app uses AI to say: 'No watering needed today — rain is coming and soil is already moist.' The farmer saves water, saves money, and gets a better harvest. That is AI on the farm — simple, practical, and life-changing!",
+          "realLifeTitle": "Plantix Crop Disease App",
+          "realLifeScenario": "A farmer photographs a yellowing leaf on their phone. The Plantix AI app instantly identifies it as a fungal disease and suggests the exact pesticide and dosage needed.",
+          "realLifeIcon": "🌾",
+          "activityTitle": "Farmer's Smart Decision Game",
+          "activitySteps": [
+            "You are an AI system for a farm. Look at 3 scenario cards: 'Soil is dry + no rain forecast', 'Soil is moist + rain expected tomorrow', 'Leaf is yellow + spotty'.",
+            "For each card, decide what AI should recommend: Water now? Wait? Spray pesticide? Alert the farmer?",
+            "Discuss: how did AI make better decisions than random choices? What data did it need?"
+          ],
+          "worksheetSortItems": [
+            "Soil sensor measures moisture 💧",
+            "Watering crops on a rainy day (wasteful)",
+            "Drone spots diseased plant early 🚁",
+            "Ignoring yellow leaves until too late",
+            "Plantix app identifies crop disease from photo 📱",
+            "Random pesticide spraying without checking"
+          ],
+          "worksheetPairs": [
+            { "left": "Soil Moisture Sensor", "right": "Tells AI when to water the crop" },
+            { "left": "Crop Disease App", "right": "Identifies disease from a photo instantly" },
+            { "left": "Drone Camera", "right": "Spots yellowing plants from above the field" },
+            { "left": "AI Recommendation", "right": "Suggests action based on sensor data" }
+          ],
+          "quizMatchPairs": [
+            { "left": "Soil Sensor", "right": "Measures soil moisture for smart watering", "icon": "💧" },
+            { "left": "Plantix App", "right": "AI identifies crop disease from photo", "icon": "📱" },
+            { "left": "Farm Drone", "right": "Spots sick plants from the air", "icon": "🚁" },
+            { "left": "Smart Irrigation", "right": "Waters only when actually needed", "icon": "🌾" }
+          ],
+          "quizSequence": [
+            { "id": "s1", "step": 1, "text": "Sensor collects soil and weather data", "icon": "📡" },
+            { "id": "s2", "step": 2, "text": "AI analyses data in the app", "icon": "🧠" },
+            { "id": "s3", "step": 3, "text": "AI sends recommendation to farmer's phone", "icon": "📱" },
+            { "id": "s4", "step": 4, "text": "Farmer acts — saves water and gets better harvest!", "icon": "🌾" }
+          ],
+          "completionTask": "Ask an elder family member about farming challenges in your region (water, pests, weather). How could AI help solve one of those challenges? Share your idea in class!",
+          "imagePlaceholders": {
+            "intro": "Photo placeholder: A farmer in Tamil Nadu looking at a smartphone app while standing in a paddy field",
+            "story": "Illustration placeholder: Split screen — left: Plantix app identifying a diseased leaf, right: drone flying over a green crop field",
+            "activity": "Visual placeholder: Scenario cards with farm situations and AI decision recommendation cards to match"
+          }
+        }
+      ]
+    },
+    {
+      "chapterNumber": 4,
+      "chapterTitle": "AI and Career",
+      "canonicalKey": "rise",
+      "lessons": [
+        {
+          "lessonNumber": 1,
+          "monthNumber": 7,
+          "lessonTitle": "Explore Tech Careers",
+          "intro": "The world is changing fast! There are exciting new jobs being created every year because of AI and technology. Let us explore what those jobs look like — and you might be surprised how many everyday skills they need!",
+          "learnPoints": [
+            "AI creates new jobs: people are needed to teach AI (train it), check its work, fix its mistakes, and explain it to others.",
+            "Tech careers are not just for 'coding experts' — designers, teachers, writers, doctors, and farmers all work with AI today.",
+            "Skills like curiosity, problem-solving, creativity, and communication are just as important as technical skills in tech jobs."
+          ],
+          "auraScript": "Did you know that when a new AI app is built, it needs a whole team? Someone to collect and clean data. Someone to teach the AI. Someone to design how it looks. Someone to test it for mistakes. Someone to explain it to customers. And someone to make sure it is fair and safe. These are all real jobs that people do today — and many of them did NOT need to be coding experts from age 10!",
+          "realLifeTitle": "AI Training Job",
+          "realLifeScenario": "Companies hire people to label photos, record voice samples, and check AI answers for errors — these data annotation jobs are done by thousands of people worldwide, including many in India.",
+          "realLifeIcon": "💼",
+          "activityTitle": "Tech Team Role Cards",
+          "activitySteps": [
+            "Each student picks one role card: Data Collector, AI Trainer, App Designer, AI Tester, Customer Explainer.",
+            "For the role you picked: write two tasks that person does every day at work.",
+            "Present to the class — which role interests you most and why?"
+          ],
+          "worksheetSortItems": [
+            "AI Trainer teaches the machine with examples 🧑‍💻",
+            "Farming with no technology",
+            "App Designer makes the app look friendly 🎨",
+            "Avoiding all new technology",
+            "AI Tester checks for mistakes 🔍",
+            "Only watching TV all day"
+          ],
+          "worksheetPairs": [
+            { "left": "AI Trainer", "right": "Teaches machine with labelled examples" },
+            { "left": "App Designer", "right": "Makes the app easy and friendly to use" },
+            { "left": "AI Tester", "right": "Finds and reports mistakes in AI output" },
+            { "left": "Data Annotator", "right": "Labels photos and text for AI to learn from" }
+          ],
+          "quizMatchPairs": [
+            { "left": "Data Annotator", "right": "Labels examples for AI training", "icon": "🏷️" },
+            { "left": "App Designer", "right": "Creates user-friendly interface", "icon": "🎨" },
+            { "left": "AI Tester", "right": "Finds errors in AI output", "icon": "🔍" },
+            { "left": "Curiosity", "right": "Key skill for all tech careers", "icon": "💡" }
+          ],
+          "quizSequence": [
+            { "id": "s1", "step": 1, "text": "Data team collects and labels examples", "icon": "📦" },
+            { "id": "s2", "step": 2, "text": "AI team trains the model", "icon": "🧠" },
+            { "id": "s3", "step": 3, "text": "Design team builds the app interface", "icon": "🎨" },
+            { "id": "s4", "step": 4, "text": "Test team checks for errors before launch!", "icon": "✅" }
+          ],
+          "completionTask": "Interview one person you know who works with computers or technology. What do they do every day? Does their job sound like one of the roles we discussed?",
+          "imagePlaceholders": {
+            "intro": "Photo placeholder: A diverse team of young Indian professionals around a laptop in a modern workspace",
+            "story": "Illustration placeholder: Role cards showing Data Collector, AI Trainer, Designer, Tester with simple icons for each",
+            "activity": "Visual placeholder: Students holding role cards and presenting their daily tasks to the class"
+          }
+        },
+        {
+          "lessonNumber": 2,
+          "monthNumber": 8,
+          "lessonTitle": "Discover Your Skills",
+          "intro": "You already have skills that AI careers need! Being good at explaining things, spotting mistakes, or thinking creatively are all valuable in the tech world. Let us discover YOUR strengths!",
+          "learnPoints": [
+            "Everyone has unique strengths — some people are great at spotting patterns, others at explaining clearly, others at creating new ideas.",
+            "AI careers need ALL kinds of skills: logical thinking, creativity, empathy (understanding people), and communication.",
+            "You do not need to know everything right now — curiosity and willingness to learn are the most important starting skills!"
+          ],
+          "auraScript": "Think about what you are good at right now. Are you good at noticing when something does not look right? That is quality checking — a real tech skill! Are you good at explaining things to younger students? That is communication — another real tech skill! Are you good at coming up with new ideas in art or games? That is creativity — used in designing AI apps every day. Your current strengths are already pointing toward your future career!",
+          "realLifeTitle": "Everyday Skills in Tech",
+          "realLifeScenario": "A Class 6 student who loves drawing and design could become a UX Designer who makes AI apps look beautiful and easy to use — combining art with technology.",
+          "realLifeIcon": "🎯",
+          "activityTitle": "My Skill Map",
+          "activitySteps": [
+            "Draw a circle in the middle of a paper and write your name. Draw 4 branches: 'I am good at…', 'I enjoy…', 'People say I'm good at…', 'I notice problems like…'.",
+            "Fill each branch with 2-3 real examples from your daily life (school, games, home).",
+            "Match your skills to one tech role from the previous lesson. Share your map with a friend!"
+          ],
+          "worksheetSortItems": [
+            "Spotting mistakes in a list 🔍",
+            "Never trying new things",
+            "Explaining ideas clearly to others 💬",
+            "Giving up when things are hard",
+            "Coming up with creative solutions 💡",
+            "Ignoring problems around you"
+          ],
+          "worksheetPairs": [
+            { "left": "Spotting Errors", "right": "AI Tester or Quality Checker role" },
+            { "left": "Creative Ideas", "right": "AI Designer or Product Creator role" },
+            { "left": "Explaining Clearly", "right": "AI Communicator or Teacher role" },
+            { "left": "Curiosity", "right": "The most important starting skill for tech" }
+          ],
+          "quizMatchPairs": [
+            { "left": "Loves Drawing & Design", "right": "Could become a UX Designer", "icon": "🎨" },
+            { "left": "Spots Errors Easily", "right": "Could become an AI Tester", "icon": "🔍" },
+            { "left": "Explains Things Well", "right": "Could become an AI Communicator", "icon": "💬" },
+            { "left": "Curious About Everything", "right": "Best starting skill for any tech career", "icon": "💡" }
+          ],
+          "quizSequence": [
+            { "id": "s1", "step": 1, "text": "Discover what you are good at today", "icon": "🔍" },
+            { "id": "s2", "step": 2, "text": "Match your strengths to a tech role", "icon": "🎯" },
+            { "id": "s3", "step": 3, "text": "Build on that strength with new learning", "icon": "📚" },
+            { "id": "s4", "step": 4, "text": "Your skills + curiosity = future career!", "icon": "🚀" }
+          ],
+          "completionTask": "Ask two family members: 'What am I best at?' Write down their answers. Did they match what you think? Share your findings with the class!",
+          "imagePlaceholders": {
+            "intro": "Photo placeholder: A Class 6 student drawing a colourful design on paper, looking proud of their creation",
+            "story": "Illustration placeholder: A skill map with branches showing different student strengths connecting to tech career roles",
+            "activity": "Visual placeholder: Students drawing their personal skill maps with colourful branches and sharing them in pairs"
+          }
+        }
+      ]
+    },
+    {
+      "chapterNumber": 5,
+      "chapterTitle": "AI Tools",
+      "canonicalKey": "create",
+      "lessons": [
+        {
+          "lessonNumber": 1,
+          "monthNumber": 9,
+          "lessonTitle": "AI Learning Lab",
+          "intro": "What if you had a personal tutor available 24 hours a day who never gets tired and always explains things patiently? AI learning tools are becoming exactly that — let us explore how they help students like you!",
+          "learnPoints": [
+            "AI learning tools adapt to YOUR level — if you get a question wrong, they give you an easier version; if you get it right, they make it harder.",
+            "Spelling and grammar checkers use AI to spot mistakes in your writing and suggest better ways to say things.",
+            "AI can read a long text and summarise it in a few simple sentences — helping you study faster and smarter."
+          ],
+          "auraScript": "Imagine you are practising maths on an app. You get a division problem wrong. The AI does not just show 'WRONG' and move on. It looks at your mistake, realises you are confused about remainders, and gives you three easier remainder problems first. When you get those right, it brings back the harder question. That is adaptive learning — AI teaching at exactly your pace. No judgment, no rushing, just patient step-by-step help!",
+          "realLifeTitle": "Duolingo Language App",
+          "realLifeScenario": "Duolingo uses AI to track which words you forget quickly and shows those words more often in practice — personalising your lessons based on exactly where you need help.",
+          "realLifeIcon": "📚",
+          "activityTitle": "Design Your AI Tutor",
+          "activitySteps": [
+            "Think of one subject where you struggle. What would a perfect patient tutor do when you get something wrong?",
+            "Write 3 things your ideal AI tutor would do: how would it explain? What kind of examples would it use? How patient would it be?",
+            "Share your design with the class — what features came up most often across everyone's ideal tutors?"
+          ],
+          "worksheetSortItems": [
+            "AI adjusts question difficulty to your level 📊",
+            "Giving the same lesson to every student no matter what",
+            "Spelling checker suggests better words ✍️",
+            "Ignoring your spelling mistakes",
+            "Duolingo shows forgotten words more often 🔄",
+            "Random topic selection every day"
+          ],
+          "worksheetPairs": [
+            { "left": "Adaptive Learning", "right": "Adjusts difficulty based on your performance" },
+            { "left": "Spelling Checker", "right": "AI spots and fixes writing mistakes" },
+            { "left": "Duolingo", "right": "Repeats the words you forget most often" },
+            { "left": "AI Tutor", "right": "Explains patiently at exactly your level" }
+          ],
+          "quizMatchPairs": [
+            { "left": "Duolingo", "right": "Adapts to words you keep forgetting", "icon": "🦜" },
+            { "left": "Spelling Checker", "right": "AI finds writing mistakes", "icon": "✍️" },
+            { "left": "Adaptive Learning", "right": "Harder when right, easier when wrong", "icon": "📊" },
+            { "left": "AI Summariser", "right": "Turns long text into short key points", "icon": "📝" }
+          ],
+          "quizSequence": [
+            { "id": "s1", "step": 1, "text": "Student answers a question", "icon": "✏️" },
+            { "id": "s2", "step": 2, "text": "AI checks if answer was correct", "icon": "🧠" },
+            { "id": "s3", "step": 3, "text": "AI adjusts difficulty of next question", "icon": "📊" },
+            { "id": "s4", "step": 4, "text": "Student improves at exactly their own pace!", "icon": "📈" }
+          ],
+          "completionTask": "Use a free spelling checker (like Grammarly free version or Google Docs) to check one paragraph you wrote today. How many suggestions did it give? Were they useful?",
+          "imagePlaceholders": {
+            "intro": "Photo placeholder: A student using an educational app on a tablet at home in the evening, looking engaged",
+            "story": "Illustration placeholder: An AI tutor app screen showing a student getting a question wrong and AI giving an easier follow-up question",
+            "activity": "Visual placeholder: Students writing their ideal AI tutor design on cards with features listed in speech bubbles"
+          }
+        },
+        {
+          "lessonNumber": 2,
+          "monthNumber": 10,
+          "lessonTitle": "Create with AI",
+          "intro": "AI can now help you write stories, draw pictures, compose music, and design posters! But here is the exciting part — the best AI creations still need YOUR ideas, YOUR creativity, and YOUR direction.",
+          "learnPoints": [
+            "AI image tools (like simple drawing assistants) can generate pictures from descriptions — you describe what you want, AI draws it.",
+            "AI can help you start a story when you are stuck — you give the first two sentences, AI suggests what could happen next.",
+            "The KEY is that AI creates a first draft — YOU improve it, make it personal, and make it truly yours!"
+          ],
+          "auraScript": "Imagine you want to write a story about a robot who saves a village from floods. You are stuck after the first paragraph. You tell an AI assistant: 'My robot found a dam with a crack. What does it do next?' AI suggests three options. You pick the one you like, add your own details about the village and the people, and continue. AI did not write your story — it helped you when you were stuck. The story is still YOURS!",
+          "realLifeTitle": "AI Story Starter",
+          "realLifeScenario": "A student types the beginning of a story into an AI writing assistant, and the AI suggests what could happen next — helping the student overcome writer's block and continue with their own ideas.",
+          "realLifeIcon": "✍️",
+          "activityTitle": "Human + AI Collaboration Story",
+          "activitySteps": [
+            "Write the first two sentences of a story on paper. Make it YOUR own beginning with real details.",
+            "Ask your teacher or an AI tool for one suggestion for what happens next.",
+            "Take the suggestion and add YOUR twist to it — change details, add characters, make it unique. Read your story aloud!"
+          ],
+          "worksheetSortItems": [
+            "AI suggests story continuation when stuck ✍️",
+            "AI writing the whole story for you",
+            "Using AI image description to get a picture idea 🎨",
+            "Letting AI make all creative decisions",
+            "You improve the AI draft with your personal details 💡",
+            "Copying AI output without changing anything"
+          ],
+          "worksheetPairs": [
+            { "left": "AI Story Starter", "right": "Suggests what could happen next in your story" },
+            { "left": "AI Image Tool", "right": "Creates a picture from your text description" },
+            { "left": "First Draft", "right": "What AI produces — you improve it!" },
+            { "left": "Your Ideas + AI Help", "right": "Best combination for creative work" }
+          ],
+          "quizMatchPairs": [
+            { "left": "AI Story Suggestion", "right": "Helps when you are stuck, not a replacement", "icon": "✍️" },
+            { "left": "AI Image Generator", "right": "Creates from your text description", "icon": "🎨" },
+            { "left": "First Draft", "right": "AI output that YOU then improve", "icon": "📝" },
+            { "left": "Your Creativity", "right": "Still the most important ingredient!", "icon": "💡" }
+          ],
+          "quizSequence": [
+            { "id": "s1", "step": 1, "text": "YOU have a creative idea", "icon": "💡" },
+            { "id": "s2", "step": 2, "text": "AI helps when you get stuck", "icon": "🤖" },
+            { "id": "s3", "step": 3, "text": "You review and improve the AI suggestion", "icon": "✏️" },
+            { "id": "s4", "step": 4, "text": "Final creation is uniquely YOURS!", "icon": "🌟" }
+          ],
+          "completionTask": "Write the first paragraph of a story about your neighbourhood. Share it with a family member and ask them to suggest what happens next. Then YOU decide which direction to take it!",
+          "imagePlaceholders": {
+            "intro": "Photo placeholder: A student writing in a notebook with a laptop showing an AI writing assistant suggestion on the side",
+            "story": "Illustration placeholder: A student's story speech bubble on the left, AI suggestion bubble on the right, with arrow showing student choosing and improving",
+            "activity": "Visual placeholder: Students reading their completed collaborative stories aloud, showing their personalised versions of an AI suggestion"
+          }
+        }
+      ]
+    },
+    {
+      "chapterNumber": 6,
+      "chapterTitle": "Responsible AI",
+      "canonicalKey": "care",
+      "lessons": [
+        {
+          "lessonNumber": 1,
+          "monthNumber": 11,
+          "lessonTitle": "Protect Your Data",
+          "intro": "When you use an app, you share information about yourself — your name, your location, your photos. This information is valuable! Let us learn how to protect it and why it matters.",
+          "learnPoints": [
+            "Your personal data (name, photo, location, date of birth) belongs to YOU — you should choose who gets to see it.",
+            "Many 'free' apps collect your data and use it for advertising — you pay with your information, not money.",
+            "Simple safety rules: use strong passwords, do not share location with unknown apps, never share passwords with friends."
+          ],
+          "auraScript": "Imagine you find a diary with all your secrets. Would you leave it on the school bench for anyone to read? Of course not! Your digital data is exactly like that diary — your photos, your location, your messages. Every time you install an app and tap 'Allow All Permissions', you are handing over that diary to strangers. Protecting your data means choosing wisely what you share, with whom, and when. Your data belongs to YOU!",
+          "realLifeTitle": "App Permissions Check",
+          "realLifeScenario": "A free flashlight app asks for access to your contacts and location — it does not need either of those to work as a torch! This is a red flag that the app may be collecting your data for other purposes.",
+          "realLifeIcon": "🔒",
+          "activityTitle": "Permission Detective",
+          "activitySteps": [
+            "Look at 5 app description cards (flashlight, food delivery, camera, games, maps). What permissions does each one need to actually work?",
+            "Identify which permissions are NECESSARY vs SUSPICIOUS for each app.",
+            "Create a 'Permissions Safety Guide' poster for your classroom showing which permissions are red flags!"
+          ],
+          "worksheetSortItems": [
+            "Flashlight app needs camera permission 📷",
+            "Maps app asking for your location 📍",
+            "Flashlight app asking for contacts 🚨",
+            "Camera app asking for camera access 📷",
+            "A game app asking for your full contact list 🚨",
+            "Music app asking for microphone to listen to hum"
+          ],
+          "worksheetPairs": [
+            { "left": "Strong Password", "right": "Protects your account from strangers" },
+            { "left": "Location Permission", "right": "Necessary for Maps, suspicious for Calculator" },
+            { "left": "Free App", "right": "May collect your data as payment" },
+            { "left": "Data Belongs to You", "right": "You choose who sees your information" }
+          ],
+          "quizMatchPairs": [
+            { "left": "Flashlight asks for Contacts", "right": "Red flag — suspicious permission", "icon": "🚨" },
+            { "left": "Maps asks for Location", "right": "Necessary — it needs location to work", "icon": "✅" },
+            { "left": "Strong Password", "right": "Protects your account", "icon": "🔒" },
+            { "left": "Your Personal Data", "right": "Belongs to you — choose wisely!", "icon": "👤" }
+          ],
+          "quizSequence": [
+            { "id": "s1", "step": 1, "text": "Before installing an app, check permissions", "icon": "🔍" },
+            { "id": "s2", "step": 2, "text": "Ask: does this app NEED this permission?", "icon": "🤔" },
+            { "id": "s3", "step": 3, "text": "Deny unnecessary permissions", "icon": "🚫" },
+            { "id": "s4", "step": 4, "text": "Your data stays safe and private!", "icon": "🔒" }
+          ],
+          "completionTask": "Check one app on your phone or tablet at home. Look at its permissions. Write down any that seem unnecessary and discuss with your parents why those might be concerning.",
+          "imagePlaceholders": {
+            "intro": "Photo placeholder: A child looking at a smartphone with app permission dialogue boxes visible on screen",
+            "story": "Illustration placeholder: A flashlight app icon next to a long list of unnecessary permissions with red warning icons",
+            "activity": "Visual placeholder: Students creating a classroom poster showing permission red flags and green flags with examples"
+          }
+        },
+        {
+          "lessonNumber": 2,
+          "monthNumber": 12,
+          "lessonTitle": "Think Before You Trust",
+          "intro": "AI can generate fake photos, fake videos, and fake news stories that look completely real! In a world full of AI-made content, the most powerful tool you have is your own critical thinking — always ask 'Is this real?'",
+          "learnPoints": [
+            "Deepfakes are videos or photos made by AI that show people doing or saying things they never actually did — they can look very realistic!",
+            "Before sharing any news or photo, ask: Who made this? When? Can I find this same news on a trustworthy website?",
+            "Fake information spreads much faster than true information — stopping to verify before sharing makes you a responsible digital citizen."
+          ],
+          "auraScript": "Imagine you receive a WhatsApp message with a video of a famous politician saying something shocking. Your friends are already sharing it. Before you forward it, stop and ask three questions: Is this politician known for saying such things? Is this video on any news channel? Is the video quality too perfect or does something look wrong? If you cannot confirm it with at least two trustworthy sources, do NOT share it. One pause by you can stop false information from reaching thousands of people!",
+          "realLifeTitle": "WhatsApp Fact Check",
+          "realLifeScenario": "A viral WhatsApp image claims a dangerous new disease is spreading in your city. Before panicking or sharing, checking reliable sources like PIB Fact Check or WHO website can confirm if it is true or false.",
+          "realLifeIcon": "🔍",
+          "activityTitle": "Fact Check Challenge",
+          "activitySteps": [
+            "Read 3 news headlines on cards — some real, some fake. Try to identify which ones might be false just from reading.",
+            "For each suspicious headline, write: what question would you ask to check if it is true? Which website would you check?",
+            "Discuss: how did you decide which headlines needed more checking? What made you suspicious?"
+          ],
+          "worksheetSortItems": [
+            "Checking two trustworthy sources before sharing 🔍",
+            "Forwarding viral news without checking",
+            "Looking for the original source of a photo 📰",
+            "Sharing dramatic news to be first",
+            "Asking 'Is this from a reliable source?' 🤔",
+            "Trusting every image that looks real"
+          ],
+          "worksheetPairs": [
+            { "left": "Deepfake", "right": "AI-made fake video that looks real" },
+            { "left": "Before Sharing", "right": "Always check with two reliable sources" },
+            { "left": "PIB Fact Check", "right": "Government tool to verify fake news" },
+            { "left": "Critical Thinking", "right": "Your best protection against fake content" }
+          ],
+          "quizMatchPairs": [
+            { "left": "Deepfake Video", "right": "AI-made fake that looks completely real", "icon": "🎭" },
+            { "left": "Before Forwarding", "right": "Check two reliable sources first", "icon": "🔍" },
+            { "left": "PIB Fact Check", "right": "Verify government-related fake news", "icon": "🏛️" },
+            { "left": "Stopping to Verify", "right": "Prevents false info from spreading", "icon": "🛡️" }
+          ],
+          "quizSequence": [
+            { "id": "s1", "step": 1, "text": "You receive shocking news or image", "icon": "📱" },
+            { "id": "s2", "step": 2, "text": "STOP — do not share immediately", "icon": "✋" },
+            { "id": "s3", "step": 3, "text": "CHECK with two reliable sources", "icon": "🔍" },
+            { "id": "s4", "step": 4, "text": "Share ONLY if confirmed as true!", "icon": "✅" }
+          ],
+          "completionTask": "Find one piece of news shared in a family WhatsApp group this week. Try to verify it using a reliable news website or fact-check tool. What did you find? Report back to class!",
+          "imagePlaceholders": {
+            "intro": "Photo placeholder: A hand holding a smartphone with a WhatsApp message containing a shocking headline",
+            "story": "Illustration placeholder: Split screen — viral fake image on one side, fact-check website showing 'FALSE' on the other side",
+            "activity": "Visual placeholder: Students examining headline cards with a checklist of verification questions beside them"
+          }
+        }
+      ]
+    }
+  ]
+}

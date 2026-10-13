@@ -16,6 +16,7 @@ import type { GaioScreenItem, GaioInteractionType } from '../types'
 import { SYLLABUS_SPECS } from '../../../services/curriculumData'
 import { CLASS3_BOOK_ALL_SCREENS } from './class3BookScreens'
 import type { GradeKey } from '../../../services/progressService'
+import { getCachedCurriculum, type CurriculumJson, type CurriculumLessonJson } from '../../../services/curriculumJsonLoader'
 
 // 100 Real-life everyday examples mapped by chapter category
 const REAL_LIFE_EXAMPLES_MAP: Record<string, { title: string; scenario: string; icon: string }[]> = {
@@ -702,13 +703,494 @@ export function buildScreensForGrade(gradeKey: string): GaioScreenItem[] {
   return screens
 }
 
-// Global cache for fast retrieval
+// ─────────────────────────────────────────────────────────────────────────────
+// JSON-DRIVEN LESSON SCREEN BUILDER
+// Converts a single CurriculumLessonJson into the 9-screen sequence that
+// exactly matches the Class 3 reference structure.
+// ─────────────────────────────────────────────────────────────────────────────
+function buildLessonScreensFromJson(
+  gradeKey: string,
+  lesson: CurriculumLessonJson,
+  chapterKey: string,
+  chapterTitle: string,
+  startPdfPage: number,
+  screenIndexRef: { v: number }
+): GaioScreenItem[] {
+  const screens: GaioScreenItem[] = []
+  const tNum = lesson.monthNumber
+  const push = (item: Omit<GaioScreenItem, 'screenIndex' | 'screenNumber'>) => {
+    screens.push({ ...item, screenIndex: screenIndexRef.v, screenNumber: screenIndexRef.v + 1 })
+    screenIndexRef.v++
+  }
+
+  // a. Lesson Introduction
+  push({
+    id: `${gradeKey}-t${tNum}-intro`,
+    pdfPageNumber: startPdfPage,
+    pdfPartIndex: 1,
+    pdfTotalParts: 1,
+    monthNumber: lesson.monthNumber,
+    monthTitle: chapterTitle,
+    topicNumber: tNum,
+    topicTitle: lesson.lessonTitle,
+    pageHeaderCategory: `MONTH ${lesson.monthNumber} • ${chapterTitle.toUpperCase()}`,
+    pageHeaderTitle: 'LESSON INTRODUCTION',
+    title: lesson.lessonTitle,
+    subtitle: lesson.intro,
+    contentBlockTitle: 'Lesson Introduction',
+    interactionType: 'lets_learn_intro',
+    sourcePdfImage: `/gaio/${gradeKey}/pages/t${tNum}_intro.png`,
+    payload: {
+      concepts: lesson.learnPoints,
+      helpers: [lesson.realLifeTitle, 'AI in Daily Life', 'Smart Technology', 'Real World Apps'],
+      imagePlaceholder: { caption: lesson.imagePlaceholders.intro, alt: lesson.imagePlaceholders.intro },
+    },
+  })
+
+  // b. Learn with Pictures
+  push({
+    id: `${gradeKey}-t${tNum}-words`,
+    pdfPageNumber: startPdfPage + 1,
+    pdfPartIndex: 1,
+    pdfTotalParts: 1,
+    monthNumber: lesson.monthNumber,
+    monthTitle: chapterTitle,
+    topicNumber: tNum,
+    topicTitle: lesson.lessonTitle,
+    pageHeaderCategory: `MONTH ${lesson.monthNumber} • ${chapterTitle.toUpperCase()}`,
+    pageHeaderTitle: 'LEARN WITH PICTURES',
+    title: `Learn with Pictures: ${lesson.lessonTitle}`,
+    subtitle: 'Visual cards showing how this works in everyday life',
+    contentBlockTitle: 'Learn with Pictures',
+    interactionType: 'lets_learn_words',
+    sourcePdfImage: `/gaio/${gradeKey}/pages/t${tNum}_words.png`,
+    payload: {
+      words: lesson.learnPoints.slice(0, 3).map((pt, i) => ({
+        word: ['Key Idea', 'How It Works', 'Real Impact'][i] || 'Concept',
+        meaning: pt,
+      })),
+      imagePlaceholder: { caption: lesson.imagePlaceholders.story, alt: lesson.imagePlaceholders.story },
+    },
+  })
+
+  // c. Aura AI Teaches Part 1
+  push({
+    id: `${gradeKey}-t${tNum}-story1`,
+    pdfPageNumber: startPdfPage + 2,
+    pdfPartIndex: 1,
+    pdfTotalParts: 2,
+    monthNumber: lesson.monthNumber,
+    monthTitle: chapterTitle,
+    topicNumber: tNum,
+    topicTitle: lesson.lessonTitle,
+    pageHeaderCategory: `MONTH ${lesson.monthNumber} • ${chapterTitle.toUpperCase()}`,
+    pageHeaderTitle: 'AURA AI TEACHES',
+    title: `Aura AI Teaches: ${lesson.lessonTitle}`,
+    subtitle: 'Listen and follow along with the story',
+    contentBlockTitle: 'Aura AI Story Part 1',
+    interactionType: 'picture_story_part1',
+    sourcePdfImage: `/gaio/${gradeKey}/pages/t${tNum}_story1.png`,
+    payload: {
+      storyTitle: lesson.lessonTitle,
+      panels: [
+        { speaker: 'Aura AI', speech: lesson.auraScript },
+        { speaker: 'Student', speech: `Wow, so ${lesson.realLifeTitle} is a great example of this!` },
+      ],
+      imagePlaceholder: { caption: lesson.imagePlaceholders.story, alt: lesson.imagePlaceholders.story },
+    },
+  })
+
+  // d. Real-Life Example
+  push({
+    id: `${gradeKey}-t${tNum}-story2`,
+    pdfPageNumber: startPdfPage + 3,
+    pdfPartIndex: 2,
+    pdfTotalParts: 2,
+    monthNumber: lesson.monthNumber,
+    monthTitle: chapterTitle,
+    topicNumber: tNum,
+    topicTitle: lesson.lessonTitle,
+    pageHeaderCategory: `MONTH ${lesson.monthNumber} • ${chapterTitle.toUpperCase()}`,
+    pageHeaderTitle: 'REAL-LIFE EXAMPLE IN ACTION',
+    title: `Everyday Example: ${lesson.realLifeTitle} ${lesson.realLifeIcon}`,
+    subtitle: `How ${lesson.lessonTitle} shows up in your daily life`,
+    contentBlockTitle: 'Real-Life Example',
+    interactionType: 'picture_story_part2',
+    sourcePdfImage: `/gaio/${gradeKey}/pages/t${tNum}_story2.png`,
+    payload: {
+      storyTitle: lesson.lessonTitle,
+      panels: [
+        { speaker: 'Aura AI', speech: `${lesson.realLifeIcon} ${lesson.realLifeTitle}: ${lesson.realLifeScenario}` },
+        { speaker: 'Student', speech: 'Now I can see AI helping people in real life every single day!' },
+      ],
+      discussionPrompt: `Where else have you seen ${lesson.lessonTitle} in real life?`,
+      drawPrompt: `Draw or describe how ${lesson.realLifeTitle} helps people near you:`,
+      imagePlaceholder: { caption: lesson.imagePlaceholders.activity, alt: lesson.imagePlaceholders.activity },
+    },
+  })
+
+  // e. Guided Activity Steps
+  push({
+    id: `${gradeKey}-t${tNum}-act1`,
+    pdfPageNumber: startPdfPage + 4,
+    pdfPartIndex: 1,
+    pdfTotalParts: 2,
+    monthNumber: lesson.monthNumber,
+    monthTitle: chapterTitle,
+    topicNumber: tNum,
+    topicTitle: lesson.lessonTitle,
+    pageHeaderCategory: `MONTH ${lesson.monthNumber} • ${chapterTitle.toUpperCase()}`,
+    pageHeaderTitle: "GUIDED ACTIVITY • LET'S DO IT!",
+    title: `Activity: ${lesson.activityTitle}`,
+    subtitle: 'Follow the steps with Aura AI',
+    contentBlockTitle: 'Guided Activity Steps',
+    interactionType: 'lets_do_it_steps',
+    sourcePdfImage: `/gaio/${gradeKey}/pages/t${tNum}_act1.png`,
+    payload: {
+      steps: lesson.activitySteps.map((desc, i) => ({ step: i + 1, desc })),
+    },
+  })
+
+  // e2. Guided Activity Interactive Lab
+  push({
+    id: `${gradeKey}-t${tNum}-act2`,
+    pdfPageNumber: startPdfPage + 4,
+    pdfPartIndex: 2,
+    pdfTotalParts: 2,
+    monthNumber: lesson.monthNumber,
+    monthTitle: chapterTitle,
+    topicNumber: tNum,
+    topicTitle: lesson.lessonTitle,
+    pageHeaderCategory: `MONTH ${lesson.monthNumber} • ${chapterTitle.toUpperCase()}`,
+    pageHeaderTitle: 'GUIDED ACTIVITY • LAB ARENA',
+    title: `Interactive Lab: ${lesson.lessonTitle}`,
+    subtitle: 'Complete the mission with Aura AI',
+    contentBlockTitle: 'Interactive Game Challenge',
+    interactionType: 'lets_do_it_reflection',
+    sourcePdfImage: `/gaio/${gradeKey}/pages/t${tNum}_act2.png`,
+    payload: {
+      gameTitle: `${lesson.lessonTitle} Challenge`,
+      objective: `Complete the 3 mission stages to earn bonus XP!`,
+      choices: lesson.activitySteps.slice(0, 3),
+      progression: ['Stage 1 complete (+100 pts)', 'Stage 2 complete (+100 pts)', 'Mission accomplished! (+100 pts)'],
+      points: 300,
+    },
+  })
+
+  // f. Worksheet A — Sort the Cards
+  push({
+    id: `${gradeKey}-t${tNum}-wsa`,
+    pdfPageNumber: startPdfPage + 5,
+    pdfPartIndex: 1,
+    pdfTotalParts: 1,
+    monthNumber: lesson.monthNumber,
+    monthTitle: chapterTitle,
+    topicNumber: tNum,
+    topicTitle: lesson.lessonTitle,
+    pageHeaderCategory: `MONTH ${lesson.monthNumber} • ${chapterTitle.toUpperCase()}`,
+    pageHeaderTitle: 'WORKSHEET • SORT THE CARDS',
+    title: 'Worksheet: Sort the Cards',
+    subtitle: 'Classify each item into the correct category',
+    contentBlockTitle: 'Worksheet Part A',
+    interactionType: 'worksheet_choice',
+    sourcePdfImage: `/gaio/${gradeKey}/pages/t${tNum}_wsa.png`,
+    payload: {
+      taskTitle: 'SORT THE CARDS',
+      instruction: `Sort: which items relate to ${lesson.lessonTitle}?`,
+      items: lesson.worksheetSortItems,
+    },
+  })
+
+  // f. Worksheet B — Match the Pairs
+  push({
+    id: `${gradeKey}-t${tNum}-wsb`,
+    pdfPageNumber: startPdfPage + 6,
+    pdfPartIndex: 1,
+    pdfTotalParts: 1,
+    monthNumber: lesson.monthNumber,
+    monthTitle: chapterTitle,
+    topicNumber: tNum,
+    topicTitle: lesson.lessonTitle,
+    pageHeaderCategory: `MONTH ${lesson.monthNumber} • ${chapterTitle.toUpperCase()}`,
+    pageHeaderTitle: 'WORKSHEET • MATCH THE PAIRS',
+    title: 'Worksheet: Match the Pairs',
+    subtitle: 'Drag or tap matching cards together',
+    contentBlockTitle: 'Worksheet Part B',
+    interactionType: 'worksheet_matching',
+    sourcePdfImage: `/gaio/${gradeKey}/pages/t${tNum}_wsb.png`,
+    payload: {
+      taskTitle: 'MATCH THE PAIRS',
+      pairs: lesson.worksheetPairs,
+    },
+  })
+
+  // g. Quiz Time Part 1 — Match
+  push({
+    id: `${gradeKey}-t${tNum}-qp1`,
+    pdfPageNumber: startPdfPage + 7,
+    pdfPartIndex: 1,
+    pdfTotalParts: 2,
+    monthNumber: lesson.monthNumber,
+    monthTitle: chapterTitle,
+    topicNumber: tNum,
+    topicTitle: lesson.lessonTitle,
+    pageHeaderCategory: `MONTH ${lesson.monthNumber} • ${chapterTitle.toUpperCase()}`,
+    pageHeaderTitle: 'QUIZ TIME • REAL LIFE MATCH',
+    title: 'Quiz Time: Real Life Match',
+    subtitle: 'Match real-life situations with AI concepts — No written test!',
+    contentBlockTitle: 'Quiz Time Part 1',
+    interactionType: 'quiz_part1',
+    sourcePdfImage: `/gaio/${gradeKey}/pages/t${tNum}_qp1.png`,
+    payload: { pairs: lesson.quizMatchPairs },
+  })
+
+  // g. Quiz Time Part 2 — Sequence
+  push({
+    id: `${gradeKey}-t${tNum}-qp2`,
+    pdfPageNumber: startPdfPage + 7,
+    pdfPartIndex: 2,
+    pdfTotalParts: 2,
+    monthNumber: lesson.monthNumber,
+    monthTitle: chapterTitle,
+    topicNumber: tNum,
+    topicTitle: lesson.lessonTitle,
+    pageHeaderCategory: `MONTH ${lesson.monthNumber} • ${chapterTitle.toUpperCase()}`,
+    pageHeaderTitle: 'QUIZ TIME • BUILD THE SEQUENCE',
+    title: 'Quiz Time: Build the Sequence',
+    subtitle: 'Order the steps correctly to earn 5 Gold Stars!',
+    contentBlockTitle: 'Quiz Time Part 2',
+    interactionType: 'quiz_part2',
+    sourcePdfImage: `/gaio/${gradeKey}/pages/t${tNum}_qp2.png`,
+    payload: { sequence: lesson.quizSequence },
+  })
+
+  // h. Completion Feedback
+  push({
+    id: `${gradeKey}-t${tNum}-hc`,
+    pdfPageNumber: startPdfPage + 8,
+    pdfPartIndex: 1,
+    pdfTotalParts: 1,
+    monthNumber: lesson.monthNumber,
+    monthTitle: chapterTitle,
+    topicNumber: tNum,
+    topicTitle: lesson.lessonTitle,
+    pageHeaderCategory: `MONTH ${lesson.monthNumber} • ${chapterTitle.toUpperCase()}`,
+    pageHeaderTitle: 'LESSON COMPLETE! 🎉',
+    title: `Lesson Complete: ${lesson.lessonTitle}`,
+    subtitle: 'Celebrate what you learned and share with family!',
+    contentBlockTitle: 'Home Connect',
+    interactionType: 'home_connect',
+    sourcePdfImage: `/gaio/${gradeKey}/pages/t${tNum}_hc.png`,
+    payload: {
+      task: lesson.completionTask,
+      prompt: 'Who did you share this lesson with today?',
+    },
+  })
+
+  return screens
+}
+
+/**
+ * Build screens from a pre-loaded CurriculumJson.
+ * Returns null if the JSON is not available — caller falls back to template.
+ */
+export function buildScreensFromCurriculumJson(
+  curriculumJson: CurriculumJson
+): GaioScreenItem[] {
+  const { gradeKey, gradeTitle, mascot, mascotEmoji, chapters } = curriculumJson
+  const screens: GaioScreenItem[] = []
+  const indexRef = { v: 0 }
+
+  const push = (item: Omit<GaioScreenItem, 'screenIndex' | 'screenNumber'>) => {
+    screens.push({ ...item, screenIndex: indexRef.v, screenNumber: indexRef.v + 1 })
+    indexRef.v++
+  }
+
+  // ── WELCOME SCREENS (identical to template) ──────────────────────────────
+  push({
+    id: `${gradeKey}-p1-s1`, pdfPageNumber: 1, pdfPartIndex: 1, pdfTotalParts: 1,
+    monthNumber: 0, monthTitle: 'WELCOME',
+    pageHeaderCategory: `AI OLYMPIAD • ${gradeTitle.toUpperCase()}`,
+    pageHeaderTitle: 'COURSEBOOK & INTERACTIVE LAB',
+    title: `Global AI Olympiad: ${gradeTitle}`,
+    subtitle: `Mascot ${mascot} ${mascotEmoji}`,
+    contentBlockTitle: 'Book Cover', interactionType: 'book_cover',
+    sourcePdfImage: `/gaio/${gradeKey}/pages/cover.png`,
+    payload: { gradeKey, gradeTitle, mascotName: mascot, mascotEmoji,
+      tagline: 'See • Learn • Create • Protect',
+      imagePlaceholder: { caption: `${gradeTitle} Coursebook Cover`, alt: 'Cover' } },
+  })
+  push({
+    id: `${gradeKey}-p2-s1`, pdfPageNumber: 2, pdfPartIndex: 1, pdfTotalParts: 1,
+    monthNumber: 0, monthTitle: 'WELCOME',
+    pageHeaderCategory: `AI OLYMPIAD • ${gradeTitle.toUpperCase()}`,
+    pageHeaderTitle: `MEET ${mascot.toUpperCase()}`,
+    title: `Welcome! Meet Your AI Guide ${mascot} ${mascotEmoji}`,
+    subtitle: `Step-by-step companion for ${gradeTitle}`,
+    contentBlockTitle: `Meet ${mascot}`, interactionType: 'welcome_bolt',
+    sourcePdfImage: `/gaio/${gradeKey}/pages/welcome.png`,
+    payload: { mascotName: mascot, mascotEmoji,
+      welcomeSpeech: `Hello! I am ${mascot}, your friendly AI guide. Together we will discover AI all around us!`,
+      skills: ['Real-Life AI Recognition 🔍','Visual Problem Solving 🧩','Responsible AI Citizenship 🛡️','Creative Innovation 🚀'],
+      imagePlaceholder: { caption: `Mascot ${mascot} in the AI Lab`, alt: 'Mascot' } },
+  })
+  push({
+    id: `${gradeKey}-p3-s1`, pdfPageNumber: 3, pdfPartIndex: 1, pdfTotalParts: 1,
+    monthNumber: 0, monthTitle: 'WELCOME',
+    pageHeaderCategory: `AI OLYMPIAD • ${gradeTitle.toUpperCase()}`,
+    pageHeaderTitle: 'HOW TO USE THIS INTERACTIVE APP',
+    title: 'How to Learn with Aura AI',
+    subtitle: 'Every lesson is short, visual, practical, and interactive!',
+    contentBlockTitle: 'Book Guide', interactionType: 'book_guide',
+    sourcePdfImage: `/gaio/${gradeKey}/pages/guide.png`,
+    payload: { signs: [
+      { icon: '💡', title: 'Learn with Pictures', desc: 'Visual examples and real-life situations.' },
+      { icon: '🎙️', title: 'Aura AI Guidance', desc: 'Calm, patient spoken explanations.' },
+      { icon: '🧩', title: 'Visual Worksheets', desc: 'Drag, sort, match, and connect objects.' },
+      { icon: '⭐', title: 'Quiz Time Games', desc: 'Interactive knowledge-check games — no written quizzes.' },
+    ]},
+  })
+  push({
+    id: `${gradeKey}-p4-s1`, pdfPageNumber: 4, pdfPartIndex: 1, pdfTotalParts: 1,
+    monthNumber: 0, monthTitle: 'WELCOME',
+    pageHeaderCategory: `AI OLYMPIAD • ${gradeTitle.toUpperCase()}`,
+    pageHeaderTitle: 'STUDENT EXPLORER BADGE',
+    title: 'My AI Explorer Passport',
+    subtitle: 'Your credentials for the Global AI Olympiad',
+    contentBlockTitle: 'Student Profile', interactionType: 'student_profile',
+    sourcePdfImage: `/gaio/${gradeKey}/pages/profile.png`,
+    payload: { gradeTitle, defaultRank: 'AI Explorer Cadet' },
+  })
+  push({
+    id: `${gradeKey}-p4-s2`, pdfPageNumber: 4, pdfPartIndex: 2, pdfTotalParts: 2,
+    monthNumber: 0, monthTitle: 'WELCOME',
+    pageHeaderCategory: `AI OLYMPIAD • ${gradeTitle.toUpperCase()}`,
+    pageHeaderTitle: '6-CHAPTER LEARNING JOURNEY',
+    title: 'Your 6-Chapter Learning Adventure',
+    subtitle: 'Follow the path: Discover • Connect • Solve • Rise • Create • Care',
+    contentBlockTitle: 'Journey Map', interactionType: 'journey_map',
+    sourcePdfImage: `/gaio/${gradeKey}/pages/journey.png`,
+    payload: { chapters: chapters.map(ch => ({
+      num: ch.chapterNumber, title: ch.chapterTitle,
+      subtitle: ch.lessons.map(l => l.lessonTitle).join(' & '),
+    }))},
+  })
+
+  // ── CHAPTERS (6 × 2 lessons) ─────────────────────────────────────────────
+  chapters.forEach((ch, chIdx) => {
+    const startPdfPage = 20 + chIdx * 20
+
+    // Chapter cover screen
+    push({
+      id: `${gradeKey}-m${ch.chapterNumber}-cover`,
+      pdfPageNumber: startPdfPage,
+      pdfPartIndex: 1, pdfTotalParts: 1,
+      monthNumber: ch.chapterNumber, monthTitle: ch.chapterTitle,
+      pageHeaderCategory: `MONTH ${ch.chapterNumber}: ${ch.chapterTitle.toUpperCase()}`,
+      pageHeaderTitle: `CHAPTER ${ch.chapterNumber} OVERVIEW`,
+      title: `${ch.chapterTitle}: ${ch.lessons.map(l => l.lessonTitle).join(' & ')}`,
+      subtitle: `Explore real-world AI applications for ${gradeTitle}`,
+      contentBlockTitle: 'Chapter Cover', interactionType: 'month_cover',
+      sourcePdfImage: `/gaio/${gradeKey}/pages/m${ch.chapterNumber}_cover.png`,
+      payload: {
+        topics: ch.lessons.map((l, i) => ({ topicNumber: chIdx * 2 + i + 1, title: l.lessonTitle, area: ch.chapterTitle })),
+        imagePlaceholder: { caption: `Chapter ${ch.chapterNumber}: ${ch.chapterTitle}`, alt: ch.chapterTitle },
+      },
+    })
+
+    // Lesson screens (9 screens each)
+    ch.lessons.forEach((lesson) => {
+      const lessonPdfStart = startPdfPage + (lesson.lessonNumber - 1) * 9 + 1
+      const lessonScreens = buildLessonScreensFromJson(
+        gradeKey, lesson, ch.chapterTitle, ch.chapterTitle, lessonPdfStart, indexRef
+      )
+      screens.push(...lessonScreens)
+    })
+
+    // Chapter unit review screens
+    push({
+      id: `${gradeKey}-m${ch.chapterNumber}-rev1`,
+      pdfPageNumber: startPdfPage + 17, pdfPartIndex: 1, pdfTotalParts: 2,
+      monthNumber: ch.chapterNumber, monthTitle: ch.chapterTitle,
+      pageHeaderCategory: `MONTH ${ch.chapterNumber}: ${ch.chapterTitle.toUpperCase()}`,
+      pageHeaderTitle: 'UNIT REVIEW • SPOT THE ANOMALY',
+      title: 'Unit Review: Spot the Outlier',
+      subtitle: 'Identify the unusual pattern that triggers an AI alert!',
+      contentBlockTitle: 'Unit Review Part 1', interactionType: 'unit_review_part1',
+      sourcePdfImage: `/gaio/${gradeKey}/pages/m${ch.chapterNumber}_rev1.png`,
+      payload: { anomalyItems: [
+        { id: 'u_an1', name: 'Normal Pattern A', icon: '📊', isOutlier: false },
+        { id: 'u_an2', name: 'Normal Pattern B', icon: '📊', isOutlier: false },
+        { id: 'u_an3', name: 'UNEXPECTED SPIKE! 🚨', icon: '🚨', isOutlier: true },
+        { id: 'u_an4', name: 'Normal Pattern C', icon: '📊', isOutlier: false },
+      ]},
+    })
+    push({
+      id: `${gradeKey}-m${ch.chapterNumber}-rev2`,
+      pdfPageNumber: startPdfPage + 18, pdfPartIndex: 2, pdfTotalParts: 2,
+      monthNumber: ch.chapterNumber, monthTitle: ch.chapterTitle,
+      pageHeaderCategory: `MONTH ${ch.chapterNumber}: ${ch.chapterTitle.toUpperCase()}`,
+      pageHeaderTitle: 'UNIT REVIEW • FEED THE AI',
+      title: `Unit Review: Feed the AI & Win Trophy`,
+      subtitle: `Feed quality data into the model to unlock Month ${ch.chapterNumber} Trophy!`,
+      contentBlockTitle: 'Unit Review Part 2', interactionType: 'unit_review_part2',
+      sourcePdfImage: `/gaio/${gradeKey}/pages/m${ch.chapterNumber}_rev2.png`,
+      payload: { feedItems: [
+        { id: 'u_fd1', name: 'Verified Examples ✓', icon: '📦', isGoodData: true },
+        { id: 'u_fd2', name: 'Corrupted Data ✗', icon: '🌫️', isGoodData: false },
+        { id: 'u_fd3', name: 'Real-World Samples ✓', icon: '⚡', isGoodData: true },
+        { id: 'u_fd4', name: 'Random Noise ✗', icon: '🔊', isGoodData: false },
+      ]},
+    })
+    push({
+      id: `${gradeKey}-m${ch.chapterNumber}-ws`,
+      pdfPageNumber: startPdfPage + 19, pdfPartIndex: 1, pdfTotalParts: 1,
+      monthNumber: ch.chapterNumber, monthTitle: ch.chapterTitle,
+      pageHeaderCategory: `MONTH ${ch.chapterNumber}: ${ch.chapterTitle.toUpperCase()}`,
+      pageHeaderTitle: 'VISUAL VOCABULARY FINDER',
+      title: `Month ${ch.chapterNumber} Vocabulary Discovery`,
+      subtitle: 'Tap the key AI concepts you explored this month',
+      contentBlockTitle: 'Word Search', interactionType: 'word_search',
+      sourcePdfImage: `/gaio/${gradeKey}/pages/m${ch.chapterNumber}_ws.png`,
+      payload: { words: ['DATA', 'MODEL', 'TRAIN', 'SMART', 'ETHICS'] },
+    })
+  })
+
+  // ── FINALE ────────────────────────────────────────────────────────────────
+  push({
+    id: `${gradeKey}-finale-cert`, pdfPageNumber: 150,
+    pdfPartIndex: 1, pdfTotalParts: 1,
+    monthNumber: 7, monthTitle: 'FINALE',
+    pageHeaderCategory: `AI OLYMPIAD • ${gradeTitle.toUpperCase()}`,
+    pageHeaderTitle: 'OLYMPIAD MASTERY & CERTIFICATION',
+    title: `Olympiad Mastery Certificate: ${gradeTitle}`,
+    subtitle: 'Awarded for completing all 6 chapters with distinction!',
+    contentBlockTitle: 'Certificate of Mastery', interactionType: 'certificate',
+    sourcePdfImage: `/gaio/${gradeKey}/pages/certificate.png`,
+    payload: { gradeTitle, subjectName: gradeTitle, mascotName: mascot, starsCollected: 120 },
+  })
+
+  return screens
+}
+
+// ─── Global screen cache (template-based) ────────────────────────────────────
 const SCREENS_CACHE: Record<string, GaioScreenItem[]> = {}
 
 export function getScreensForAnyGrade(gradeKey: GradeKey | string): GaioScreenItem[] {
   const normKey = (gradeKey || 'class3').toLowerCase()
   if (!SCREENS_CACHE[normKey]) {
-    SCREENS_CACHE[normKey] = buildScreensForGrade(normKey)
+    // If a JSON curriculum was pre-loaded into the loader cache, use it
+    const jsonCurriculum = getCachedCurriculum(normKey)
+    if (jsonCurriculum) {
+      SCREENS_CACHE[normKey] = buildScreensFromCurriculumJson(jsonCurriculum)
+    } else {
+      SCREENS_CACHE[normKey] = buildScreensForGrade(normKey)
+    }
   }
   return SCREENS_CACHE[normKey]
+}
+
+/** Invalidate a specific grade's cached screens (call after new JSON is loaded) */
+export function invalidateGradeCache(gradeKey: string): void {
+  delete SCREENS_CACHE[gradeKey.toLowerCase()]
 }

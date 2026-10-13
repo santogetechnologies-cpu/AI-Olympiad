@@ -599,6 +599,8 @@ export default function ChapterLearningPage() {
     if (assignedGrade === 'ug1' || assignedGrade === 'ug2' || assignedGrade === 'ug3' || assignedGrade === 'ug4') return UG1_GRID_ITEMS
     if (assignedGrade === 'pg1' || assignedGrade === 'pg2') return PG1_GRID_ITEMS
     return CLASS3_GRID_ITEMS
+  }, [assignedGrade])
+
   // 4. Resolve which of the 8 items is requested
   const resolvedItemKey = useMemo(() => {
     const raw = itemId || searchParams.get('item')
