@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useLessonContent, useLevelManifest, useLevelsConfig } from '../../hooks/useContentLoader'
 import { ArrowLeft, BookOpen, Clock, CheckCircle2, ChevronRight } from 'lucide-react'
@@ -55,7 +55,6 @@ export default function UnifiedLearningPage() {
 
   const currentClass = manifest.classes.find(c => c.classId === selectedClass)
   const currentChapter = currentClass?.chapters.find(ch => ch.chapterId === selectedChapter)
-  const currentLessonInfo = currentChapter?.lessons.find(l => l.lessonId === selectedLesson)
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50">

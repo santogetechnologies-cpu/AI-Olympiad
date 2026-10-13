@@ -5,7 +5,7 @@
 
 import React, { useState } from 'react'
 import type { MiddleLessonData } from '../types'
-import { Trophy, CheckCircle2, ArrowRight, Lightbulb, Sparkles, Star } from 'lucide-react'
+import { Trophy, CheckCircle2, ArrowRight } from 'lucide-react'
 import { GaioAiGuideAvatar } from '../GaioAiGuideAvatar'
 import { gameAudio } from '../../../utils/gameAudio'
 import { showAuraToast } from '../../../services/auraGuidanceToast'
@@ -23,26 +23,21 @@ export const StageOlympiadQuiz: React.FC<StageOlympiadQuizProps> = ({
   lesson,
   onProceed,
   onAnswerQuestion,
-  storedAnswers = {},
-  onOpenJargonBuster
 }) => {
   const { olympiad } = lesson
   const questions = olympiad.questions
 
-  const [currentQIdx, setCurrentQIdx] = useState(0)
-  const currentQ = questions[currentQIdx] || questions[0]
-  const currentAnswer = storedAnswers[currentQ?.id]
-
-  // Extract the correct concept text
-  const correctText = currentQ.options[currentQ.correctAnswer] || 'Core AI Concept'
-
   // Pairs for visual matching: map each question premise to its matching AI concept
-  const pairs = questions.map((q, idx) => ({
-    id: q.id,
-    premise: q.question.replace(/^Q\d+\.\s*/, '').slice(0, 70) + (q.question.length > 70 ? '...' : ''),
-    answer: q.options[q.correctAnswer],
-    icon: idx === 0 ? '🧠' : idx === 1 ? '⚡' : idx === 2 ? '🎯' : idx === 3 ? '🔍' : '🚀'
-  }))
+  const pairs = questions.map((q, idx) => {
+    const qText = q.questionText || ''
+    const ansText = q.options.find((o) => o.key === q.correctAnswer)?.text || ''
+    return {
+      id: q.id,
+      premise: qText.replace(/^Q\d+\.\s*/, '').slice(0, 70) + (qText.length > 70 ? '...' : ''),
+      answer: ansText,
+      icon: idx === 0 ? '🧠' : idx === 1 ? '⚡' : idx === 2 ? '🎯' : idx === 3 ? '🔍' : '🚀'
+    }
+  })
 
   const [selectedPremise, setSelectedPremise] = useState<string | null>(null)
   const [matchedPairs, setMatchedPairs] = useState<Record<string, string>>({})
@@ -99,10 +94,10 @@ export const StageOlympiadQuiz: React.FC<StageOlympiadQuizProps> = ({
 
       {/* Guide Avatar */}
       <div className="flex items-center gap-3 p-3 rounded-2xl bg-slate-900/80 border border-slate-800">
-        <GaioAiGuideAvatar size="sm" isPulsing />
-        <p className="text-xs text-slate-300 font-medium">
-          Aura AI: "Tap an Olympiad engineering challenge on the left, then connect it to its exact AI solution on the right!"
-        </p>
+        <GaioAiGuideAvatar
+          conceptTitle="Olympiad Visual Arena"
+          simpleText="Tap an Olympiad engineering challenge on the left, then connect it to its exact AI solution on the right!"
+        />
       </div>
 
       {/* Match Grid */}
