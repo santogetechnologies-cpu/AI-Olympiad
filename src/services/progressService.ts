@@ -84,13 +84,148 @@ export interface SectionCompletionRecord {
   completed_at: string
 }
 
-export function parseGradeKeyFromClass(target: any): 'class3' | 'class4' | 'class5' {
+export type AppGradeKey =
+  | 'class3'
+  | 'class4'
+  | 'class5'
+  | 'class6'
+  | 'class7'
+  | 'class8'
+  | 'class9'
+  | 'class10'
+  | 'class11'
+  | 'class12'
+  | 'ug1'
+  | 'ug2'
+
+export function parseGradeKeyFromClass(target: any): AppGradeKey {
   if (!target) return 'class3'
   const text = (
     typeof target === 'string'
       ? target
       : `${target.name || ''} ${target.code || ''} ${target.id || ''} ${target.gradeKey || ''} ${target.class_id || ''}`
   ).toLowerCase()
+
+  // 1. Check UG Levels
+  if (
+    text.includes('ug 2') ||
+    text.includes('ug2') ||
+    text.includes('ug 2nd') ||
+    text.includes('ug-02') ||
+    text.includes('cml-02')
+  ) {
+    return 'ug2'
+  }
+
+  if (
+    text.includes('ug 1') ||
+    text.includes('ug1') ||
+    text.includes('ug 1st') ||
+    text.includes('ug-01') ||
+    text.includes('cai-01')
+  ) {
+    return 'ug1'
+  }
+
+  // 2. Check Two-Digit Classes (12, 11, 10)
+  if (
+    text.includes('class 12') ||
+    text.includes('class12') ||
+    text.includes('cls-12') ||
+    text.includes('dlt-12') ||
+    text.includes('std 12') ||
+    text.includes('grade 12') ||
+    text.includes('12th') ||
+    /\b(class|std|grade)\s*12\b/.test(text) ||
+    /\b12\b/.test(text)
+  ) {
+    return 'class12'
+  }
+
+  if (
+    text.includes('class 11') ||
+    text.includes('class11') ||
+    text.includes('cls-11') ||
+    text.includes('mmn-11') ||
+    text.includes('std 11') ||
+    text.includes('grade 11') ||
+    text.includes('11th') ||
+    /\b(class|std|grade)\s*11\b/.test(text) ||
+    /\b11\b/.test(text)
+  ) {
+    return 'class11'
+  }
+
+  if (
+    text.includes('class 10') ||
+    text.includes('class10') ||
+    text.includes('cls-10') ||
+    text.includes('mlf-10') ||
+    text.includes('std 10') ||
+    text.includes('grade 10') ||
+    text.includes('10th') ||
+    /\b(class|std|grade)\s*10\b/.test(text) ||
+    /\b10\b/.test(text)
+  ) {
+    return 'class10'
+  }
+
+  // 3. Check Single-Digit Classes (9 down to 3)
+  if (
+    text.includes('class 9') ||
+    text.includes('class9') ||
+    text.includes('cls-09') ||
+    text.includes('ais-09') ||
+    text.includes('std 9') ||
+    text.includes('grade 9') ||
+    text.includes('9th') ||
+    /\b(class|std|grade)\s*9\b/.test(text) ||
+    /\b9\b/.test(text)
+  ) {
+    return 'class9'
+  }
+
+  if (
+    text.includes('class 8') ||
+    text.includes('class8') ||
+    text.includes('cls-08') ||
+    text.includes('aai-08') ||
+    text.includes('std 8') ||
+    text.includes('grade 8') ||
+    text.includes('8th') ||
+    /\b(class|std|grade)\s*8\b/.test(text) ||
+    /\b8\b/.test(text)
+  ) {
+    return 'class8'
+  }
+
+  if (
+    text.includes('class 7') ||
+    text.includes('class7') ||
+    text.includes('cls-07') ||
+    text.includes('dlp-07') ||
+    text.includes('std 7') ||
+    text.includes('grade 7') ||
+    text.includes('7th') ||
+    /\b(class|std|grade)\s*7\b/.test(text) ||
+    /\b7\b/.test(text)
+  ) {
+    return 'class7'
+  }
+
+  if (
+    text.includes('class 6') ||
+    text.includes('class6') ||
+    text.includes('cls-06') ||
+    text.includes('mai-06') ||
+    text.includes('std 6') ||
+    text.includes('grade 6') ||
+    text.includes('6th') ||
+    /\b(class|std|grade)\s*6\b/.test(text) ||
+    /\b6\b/.test(text)
+  ) {
+    return 'class6'
+  }
 
   if (
     text.includes('class 5') ||
@@ -100,6 +235,7 @@ export function parseGradeKeyFromClass(target: any): 'class3' | 'class4' | 'clas
     text.includes('std 5') ||
     text.includes('std5') ||
     text.includes('grade 5') ||
+    text.includes('5th') ||
     /\b(class|std|grade)\s*5\b/.test(text) ||
     /\b5\b/.test(text)
   ) {
@@ -114,6 +250,7 @@ export function parseGradeKeyFromClass(target: any): 'class3' | 'class4' | 'clas
     text.includes('std 4') ||
     text.includes('std4') ||
     text.includes('grade 4') ||
+    text.includes('4th') ||
     /\b(class|std|grade)\s*4\b/.test(text) ||
     /\b4\b/.test(text)
   ) {
@@ -128,6 +265,7 @@ export function parseGradeKeyFromClass(target: any): 'class3' | 'class4' | 'clas
     text.includes('std 3') ||
     text.includes('std3') ||
     text.includes('grade 3') ||
+    text.includes('3rd') ||
     /\b(class|std|grade)\s*3\b/.test(text) ||
     /\b3\b/.test(text)
   ) {
@@ -1147,7 +1285,7 @@ export const enrollmentService = {
   },
 
   async getStudentAssignedGrade(studentId: string, orgId?: string): Promise<{
-    gradeKey: 'class3' | 'class4' | 'class5'
+    gradeKey: AppGradeKey
     className: string
     code?: string
     subjectName?: string

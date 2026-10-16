@@ -34,10 +34,14 @@ export const GaioBookPage: React.FC = () => {
     }
   }, [user?.id, user?.organization_id])
 
+  const isStaff = user?.role === 'admin' || user?.role === 'academic_content_manager'
+  const isGradeLocked = !isStaff
+
   const bookApp = (
     <div className="flex-1 flex flex-col w-full h-full min-h-0 bg-slate-900/5 overflow-hidden">
       <GaioInteractiveBookApp
         gradeKey={gradeKey}
+        isGradeLocked={isGradeLocked}
         studentName={user?.profile?.full_name || 'Super Student'}
         onExit={() => navigate(user ? '/student/learning' : '/')}
         onComplete={() => {

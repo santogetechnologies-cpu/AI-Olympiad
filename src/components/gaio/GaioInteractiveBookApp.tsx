@@ -30,7 +30,11 @@ import {
   Trash2,
   Bot,
   Palette,
-  Check
+  Check,
+  Hand,
+  PaintBucket,
+  Image as ImageIcon,
+  Lock
 } from 'lucide-react'
 import { usePdfBook } from './hooks/usePdfBook'
 import { usePdfInteractiveLayer } from './hooks/usePdfInteractiveLayer'
@@ -50,6 +54,10 @@ export type GradeKey =
   | 'class8'
   | 'class9'
   | 'class10'
+  | 'class11'
+  | 'class12'
+  | 'ug1'
+  | 'ug2'
 
 export interface GaioInteractiveBookAppProps {
   onComplete?: () => void
@@ -61,6 +69,7 @@ export interface GaioInteractiveBookAppProps {
   chapterNumber?: number
   studentName?: string
   gradeKey?: GradeKey | string
+  isGradeLocked?: boolean
 }
 
 const GRADE_OPTIONS: { key: GradeKey; label: string }[] = [
@@ -72,6 +81,10 @@ const GRADE_OPTIONS: { key: GradeKey; label: string }[] = [
   { key: 'class8', label: 'Class 8 • Engineer' },
   { key: 'class9', label: 'Class 9 • Master' },
   { key: 'class10', label: 'Class 10 • Olympian' },
+  { key: 'class11', label: 'Class 11 • Super Senior' },
+  { key: 'class12', label: 'Class 12 • Scholar' },
+  { key: 'ug1', label: 'UG 1st Year • Innovator' },
+  { key: 'ug2', label: 'UG 2nd Year • Lead Innovator' },
 ]
 
 const PALETTE_COLORS = ['#2563eb', '#9333ea', '#059669', '#d97706', '#dc2626', '#1e293b']
@@ -83,7 +96,8 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
   initialMonth,
   scopedMonth,
   studentName = 'AI Explorer',
-  gradeKey: propGradeKey = 'class3'
+  gradeKey: propGradeKey = 'class3',
+  isGradeLocked = false
 }) => {
   // Normalize selected grade
   const initialGrade = useMemo<GradeKey>(() => {
@@ -93,11 +107,19 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
   }, [propGradeKey])
 
   const [currentGrade, setCurrentGrade] = useState<GradeKey>(initialGrade)
+
+  // Enforce grade lock for students
+  useEffect(() => {
+    if (isGradeLocked) {
+      setCurrentGrade(initialGrade)
+    }
+  }, [isGradeLocked, initialGrade])
+
   const currentBookMeta = useMemo(() => {
     return (bookCatalogData as any)[currentGrade] || (bookCatalogData as any)['class3']
   }, [currentGrade])
 
-  // Active Tool: 'pointer' | 'pen' | 'highlighter' | 'eraser' | 'text' | 'stamp'
+  // Active Tool: 'pointer' | 'hand' | 'fill' | 'pen' | 'highlighter' | 'eraser' | 'text' | 'stamp'
   const [activeTool, setActiveTool] = useState<StudioTool>('pointer')
   const [activeColor, setActiveColor] = useState<string>('#2563eb')
   const [strokeWidth, setStrokeWidth] = useState<number>(3)
@@ -301,27 +323,39 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
             </button>
           )}
 
-          {/* Class / Grade Selector */}
-          <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center shadow-md">
-              <BookOpen size={15} className="text-white" />
+          {/* Class / Grade Selector or Locked Badge */}
+          {isGradeLocked ? (
+            <div className="flex items-center gap-2 px-3 py-1.5 bg-slate-800/90 text-white font-bold text-xs sm:text-sm rounded-xl border border-slate-700 shadow-sm">
+              <div className="w-6 h-6 rounded-lg bg-blue-600 flex items-center justify-center">
+                <BookOpen size={13} className="text-white" />
+              </div>
+              <span className="font-extrabold">{currentBookMeta?.title || GRADE_OPTIONS.find(o => o.key === currentGrade)?.label}</span>
+              <span className="text-[10px] px-1.5 py-0.5 rounded bg-blue-500/20 text-blue-300 border border-blue-500/30 font-semibold flex items-center gap-1">
+                <Lock size={10} /> Enrolled
+              </span>
             </div>
-            <select
-              value={currentGrade}
-              onChange={(e) => {
-                setCurrentGrade(e.target.value as GradeKey)
-                goToPage(1)
-                gameAudio.playTap()
-              }}
-              className="bg-slate-800 text-white font-black text-xs sm:text-sm px-2.5 py-1.5 rounded-xl border border-slate-700 outline-none hover:border-blue-500 cursor-pointer"
-            >
-              {GRADE_OPTIONS.map((opt) => (
-                <option key={opt.key} value={opt.key}>
-                  {opt.label}
-                </option>
-              ))}
-            </select>
-          </div>
+          ) : (
+            <div className="flex items-center gap-2">
+              <div className="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center shadow-md">
+                <BookOpen size={15} className="text-white" />
+              </div>
+              <select
+                value={currentGrade}
+                onChange={(e) => {
+                  setCurrentGrade(e.target.value as GradeKey)
+                  goToPage(1)
+                  gameAudio.playTap()
+                }}
+                className="bg-slate-800 text-white font-black text-xs sm:text-sm px-2.5 py-1.5 rounded-xl border border-slate-700 outline-none hover:border-blue-500 cursor-pointer"
+              >
+                {GRADE_OPTIONS.map((opt) => (
+                  <option key={opt.key} value={opt.key}>
+                    {opt.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
 
           {/* Chapter Selector */}
           {currentBookMeta?.chapters && (
@@ -470,6 +504,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
             activeWordId={wordsLayer.activeWordId}
             regions={currentPageRegions}
             isReadingAloud={wordsLayer.isReadingAloud}
+            pdfCanvas={pdfCanvasRef.current}
             onAddStar={() => handleAddStar(1)}
             onWordClick={wordsLayer.speakWord}
             onWordSpell={wordsLayer.spellWord}
@@ -478,7 +513,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
       </div>
 
       {/* ── In-Page Floating Tool Dock ─────────────────────────────────────── */}
-      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-1.5 p-2 bg-slate-900/90 backdrop-blur-md rounded-2xl border border-white/20 shadow-2xl transition-all">
+      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-1.5 p-2 bg-slate-900/90 backdrop-blur-md rounded-2xl border border-white/20 shadow-2xl transition-all max-w-[95vw] overflow-x-auto">
         {/* Tap Word Mode */}
         <button
           onClick={() => {
@@ -486,12 +521,42 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
             gameAudio.playTap()
           }}
           title="Tap Word Mode: Tap any word or sentence on the page to hear it!"
-          className={`px-3 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all ${
+          className={`px-2.5 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all ${
             activeTool === 'pointer' ? 'bg-blue-600 text-white shadow-md scale-105' : 'text-slate-300 hover:bg-white/10'
           }`}
         >
           <span className="text-sm">👆</span>
-          <span>Tap Word</span>
+          <span className="hidden sm:inline">Tap Word</span>
+        </button>
+
+        {/* Hand / Move Tool */}
+        <button
+          onClick={() => {
+            setActiveTool('hand')
+            gameAudio.playTap()
+          }}
+          title="Hand Tool: Move any EMI, image, sticker, or note anywhere on the page!"
+          className={`px-2.5 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all ${
+            activeTool === 'hand' ? 'bg-amber-600 text-white shadow-md scale-105 ring-2 ring-amber-300' : 'text-slate-300 hover:bg-white/10'
+          }`}
+        >
+          <Hand size={16} />
+          <span>Move</span>
+        </button>
+
+        {/* Color Fill Tool */}
+        <button
+          onClick={() => {
+            setActiveTool('fill')
+            gameAudio.playTap()
+          }}
+          title="Color Fill Tool: Click to flood fill colors into worksheets and shapes!"
+          className={`px-2.5 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all ${
+            activeTool === 'fill' ? 'bg-emerald-600 text-white shadow-md scale-105 ring-2 ring-emerald-300' : 'text-slate-300 hover:bg-white/10'
+          }`}
+        >
+          <PaintBucket size={16} />
+          <span>Fill</span>
         </button>
 
         {/* Pen */}
@@ -556,7 +621,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
             setActiveTool('stamp')
             gameAudio.playTap()
           }}
-          title="Stamp Stars ⭐ & Robots"
+          title="Stamp Stars ⭐, Robots & Badges"
           className={`p-2.5 rounded-xl transition-all ${
             activeTool === 'stamp' ? 'bg-amber-600 text-white shadow-md scale-105' : 'text-slate-300 hover:bg-white/10'
           }`}
@@ -564,8 +629,21 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
           <Smile size={18} />
         </button>
 
+        {/* Add Image / EMI */}
+        <button
+          onClick={() => {
+            const input = document.querySelector('input[type="file"][accept*="image"]') as HTMLInputElement
+            input?.click()
+            gameAudio.playTap()
+          }}
+          title="Upload / Place an image or EMI to move around with the Hand Tool"
+          className="p-2.5 rounded-xl text-slate-300 hover:bg-white/10 hover:text-white transition-all"
+        >
+          <ImageIcon size={18} />
+        </button>
+
         {/* Color Palette Selector */}
-        {['pen', 'highlighter'].includes(activeTool) && (
+        {['pen', 'highlighter', 'fill'].includes(activeTool) && (
           <div className="flex items-center gap-1 pl-1">
             {PALETTE_COLORS.map((col) => (
               <button
@@ -575,7 +653,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
                   gameAudio.playTap()
                 }}
                 className={`w-5 h-5 rounded-full border transition-transform ${
-                  activeColor === col ? 'scale-125 border-white shadow-md' : 'border-transparent hover:scale-110'
+                  activeColor === col ? 'scale-125 border-white shadow-md ring-2 ring-blue-400' : 'border-transparent hover:scale-110'
                 }`}
                 style={{ backgroundColor: col }}
               />

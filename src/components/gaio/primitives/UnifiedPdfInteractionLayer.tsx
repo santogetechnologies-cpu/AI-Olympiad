@@ -1,12 +1,13 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// UNIFIED IN-PAGE PDF INTERACTION LAYER
-// 100% In-PDF Interactive Engine for Classes 3 to 10:
-// 1. Word Tap & Speak (bounce animation, emphasis, phonetic spelling)
+// UNIFIED IN-PAGE PDF INTERACTION LAYER (CLASSES 3 TO 12 & UG)
+// 100% In-PDF Interactive Engine:
+// 1. Word Tap & Speak (bounce animation, phonetic spelling)
 // 2. In-Line Typeable Worksheet Blanks (direct on dotted lines)
-// 3. Click-to-Circle & Tick Choices (for "Odd one out!", choices, checkboxes)
+// 3. Click-to-Circle & Tick Choices (choices, checkboxes)
 // 4. Tap-to-Count Objects (voice counting "One! Two! Three!")
-// 5. High-DPR Smooth Drawing & Highlighter Canvas (Pen, Highlighter, Eraser)
-// 6. Drag-and-Drop Stickers & Stamps (Gold Stars, Robots, Trophies)
+// 5. Drawing & Highlighter Canvas (Pen, Highlighter, Eraser)
+// 6. Moveable Elements & Images with Hand Tool (Stickers, EMIs, Custom Images)
+// 7. Instant Flood Fill Tool with outline boundary awareness
 // ─────────────────────────────────────────────────────────────────────────────
 
 import React, { useRef, useState, useEffect, useCallback } from 'react'
@@ -19,19 +20,31 @@ import {
   Target,
   Heart,
   Check,
-  Volume2,
   Sparkles,
-  RotateCcw,
-  Undo2,
+  Zap,
   Trash2,
-  CheckCircle2,
-  Edit3
+  Hand,
+  PaintBucket,
+  Undo2,
+  RotateCcw,
+  Plus,
+  Image as ImageIcon,
+  Move
 } from 'lucide-react'
 import { gameAudio } from '../../../utils/gameAudio'
 import confetti from 'canvas-confetti'
 import toast from 'react-hot-toast'
 
-export type StudioTool = 'pointer' | 'pen' | 'highlighter' | 'eraser' | 'text' | 'stamp' | 'circle'
+export type StudioTool =
+  | 'pointer'
+  | 'hand'
+  | 'fill'
+  | 'pen'
+  | 'highlighter'
+  | 'eraser'
+  | 'text'
+  | 'stamp'
+  | 'circle'
 
 export interface StrokePoint {
   x: number
@@ -50,6 +63,8 @@ export interface PlacedSticker {
   x: number // percentage 0 - 100
   y: number // percentage 0 - 100
   type: string
+  url?: string // custom image URL or EMI data URI
+  label?: string
 }
 
 export interface TypedNote {
@@ -73,18 +88,21 @@ export interface UnifiedPdfInteractionLayerProps {
   activeWordId: string | null
   regions: PageRegion[]
   isReadingAloud: boolean
+  pdfCanvas?: HTMLCanvasElement | null
   onAddStar?: (count?: number) => void
   onWordClick?: (word: PageWordItem) => void
   onWordSpell?: (word: PageWordItem) => void
 }
 
-const STAMP_ICONS: { [key: string]: any } = {
-  star: { icon: Star, color: 'text-amber-500 fill-amber-400' },
-  robot: { icon: Bot, color: 'text-blue-500 fill-blue-100' },
-  trophy: { icon: Trophy, color: 'text-yellow-500 fill-yellow-200' },
-  target: { icon: Target, color: 'text-rose-500' },
-  heart: { icon: Heart, color: 'text-pink-500 fill-pink-400' },
-  check: { icon: Check, color: 'text-emerald-500' }
+export const STAMP_ICONS: { [key: string]: { icon: any; color: string; label: string } } = {
+  star: { icon: Star, color: 'text-amber-500 fill-amber-400', label: 'Star' },
+  robot: { icon: Bot, color: 'text-blue-500 fill-blue-100', label: 'AI Robot' },
+  trophy: { icon: Trophy, color: 'text-yellow-500 fill-yellow-200', label: 'Trophy' },
+  target: { icon: Target, color: 'text-rose-500', label: 'Target' },
+  heart: { icon: Heart, color: 'text-pink-500 fill-pink-400', label: 'Heart' },
+  check: { icon: Check, color: 'text-emerald-500', label: 'Check' },
+  sparkle: { icon: Sparkles, color: 'text-purple-400 fill-purple-300', label: 'Sparkle' },
+  zap: { icon: Zap, color: 'text-amber-400 fill-amber-300', label: 'Energy' }
 }
 
 export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProps> = ({
@@ -100,11 +118,16 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
   activeWordId,
   regions,
   isReadingAloud,
+  pdfCanvas,
   onAddStar,
   onWordClick,
   onWordSpell
 }) => {
+  const containerRef = useRef<HTMLDivElement | null>(null)
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
+  const colorFillCanvasRef = useRef<HTMLCanvasElement | null>(null)
+  const fileInputRef = useRef<HTMLInputElement | null>(null)
+
   const isDrawingRef = useRef<boolean>(false)
   const currentStrokeRef = useRef<StrokePoint[]>([])
 
@@ -118,11 +141,26 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
   const [typedBlanks, setTypedBlanks] = useState<{ [id: string]: string }>({})
   const [circledItems, setCircledItems] = useState<{ [id: string]: boolean }>({})
 
+  // Fill tool history stack
+  const [fillHistory, setFillHistory] = useState<ImageData[]>([])
+
+  // Moving items with Hand Tool state
+  const [draggingItemId, setDraggingItemId] = useState<string | null>(null)
+  const dragStartRef = useRef<{
+    id: string
+    kind: 'sticker' | 'note'
+    startPointerX: number
+    startPointerY: number
+    initX: number
+    initY: number
+  } | null>(null)
+
   // Tap-to-count counter state
   const [countNumber, setCountNumber] = useState<number>(0)
   const [bouncingWordId, setBouncingWordId] = useState<string | null>(null)
 
   const storageKey = `gaio_page_state_${bookKey}_p${pageNumber}`
+  const fillStorageKey = `gaio_fill_${bookKey}_p${pageNumber}`
 
   // Load saved state for this page
   useEffect(() => {
@@ -152,7 +190,31 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     setCountNumber(0)
   }, [storageKey])
 
-  // Save state
+  // Load fill layer for this page
+  useEffect(() => {
+    const canvas = colorFillCanvasRef.current
+    if (!canvas) return
+    const ctx = canvas.getContext('2d', { willReadFrequently: true })
+    if (!ctx) return
+
+    canvas.width = Math.floor(pageWidth)
+    canvas.height = Math.floor(pageHeight)
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+    setFillHistory([])
+
+    try {
+      const dataUrl = localStorage.getItem(fillStorageKey)
+      if (dataUrl) {
+        const img = new Image()
+        img.onload = () => {
+          ctx.drawImage(img, 0, 0)
+        }
+        img.src = dataUrl
+      }
+    } catch {}
+  }, [fillStorageKey, pageWidth, pageHeight])
+
+  // Save drawing state
   const persistState = useCallback(
     (
       newStrokes: DrawingStroke[],
@@ -176,6 +238,14 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     },
     [storageKey]
   )
+
+  const saveFillCanvas = useCallback(() => {
+    const canvas = colorFillCanvasRef.current
+    if (!canvas) return
+    try {
+      localStorage.setItem(fillStorageKey, canvas.toDataURL('image/png'))
+    } catch {}
+  }, [fillStorageKey])
 
   // Redraw canvas with high DPR
   const redrawCanvas = useCallback(() => {
@@ -243,9 +313,210 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     }
   }
 
-  // Pointer event handlers for drawing / stamping / text
+  // ── Drag & Move Logic for Hand Tool ────────────────────────────────────────
+  const handleStartItemDrag = (
+    e: React.PointerEvent,
+    id: string,
+    kind: 'sticker' | 'note',
+    currentX: number,
+    currentY: number
+  ) => {
+    if (activeTool !== 'hand' && activeTool !== 'pointer') return
+    e.stopPropagation()
+    e.preventDefault()
+    setDraggingItemId(id)
+    dragStartRef.current = {
+      id,
+      kind,
+      startPointerX: e.clientX,
+      startPointerY: e.clientY,
+      initX: currentX,
+      initY: currentY
+    }
+  }
+
+  useEffect(() => {
+    const handleGlobalPointerMove = (e: PointerEvent) => {
+      if (!dragStartRef.current || !containerRef.current) return
+      const rect = containerRef.current.getBoundingClientRect()
+      const deltaX = ((e.clientX - dragStartRef.current.startPointerX) / rect.width) * 100
+      const deltaY = ((e.clientY - dragStartRef.current.startPointerY) / rect.height) * 100
+
+      const newX = Math.max(2, Math.min(98, parseFloat((dragStartRef.current.initX + deltaX).toFixed(1))))
+      const newY = Math.max(2, Math.min(98, parseFloat((dragStartRef.current.initY + deltaY).toFixed(1))))
+
+      if (dragStartRef.current.kind === 'sticker') {
+        setStickers((prev) =>
+          prev.map((s) => (s.id === dragStartRef.current!.id ? { ...s, x: newX, y: newY } : s))
+        )
+      } else {
+        setTypedNotes((prev) =>
+          prev.map((n) => (n.id === dragStartRef.current!.id ? { ...n, x: newX, y: newY } : n))
+        )
+      }
+    }
+
+    const handleGlobalPointerUp = () => {
+      if (dragStartRef.current) {
+        dragStartRef.current = null
+        setDraggingItemId(null)
+        persistState(strokes, stickers, typedNotes, typedBlanks, circledItems)
+        gameAudio.playTap()
+      }
+    }
+
+    window.addEventListener('pointermove', handleGlobalPointerMove)
+    window.addEventListener('pointerup', handleGlobalPointerUp)
+    return () => {
+      window.removeEventListener('pointermove', handleGlobalPointerMove)
+      window.removeEventListener('pointerup', handleGlobalPointerUp)
+    }
+  }, [strokes, stickers, typedNotes, typedBlanks, circledItems, persistState])
+
+  // ── Color Fill Tool (Scanline / BFS with PDF boundary detection) ────────────
+  const handleColorFillClick = (e: React.MouseEvent<HTMLCanvasElement>) => {
+    if (activeTool !== 'fill') return
+
+    const canvas = colorFillCanvasRef.current
+    if (!canvas) return
+    const ctx = canvas.getContext('2d', { willReadFrequently: true })
+    if (!ctx) return
+
+    const rect = canvas.getBoundingClientRect()
+    const scaleX = canvas.width / rect.width
+    const scaleY = canvas.height / rect.height
+    const startX = Math.floor((e.clientX - rect.left) * scaleX)
+    const startY = Math.floor((e.clientY - rect.top) * scaleY)
+
+    if (startX < 0 || startX >= canvas.width || startY < 0 || startY >= canvas.height) return
+
+    // Save previous snapshot for Undo
+    const prevData = ctx.getImageData(0, 0, canvas.width, canvas.height)
+    setFillHistory((prev) => [...prev.slice(-8), prevData])
+
+    // Convert activeColor to RGBA
+    let hex = activeColor.replace('#', '')
+    if (hex.length === 3) hex = hex.split('').map((c) => c + c).join('')
+    const r = parseInt(hex.slice(0, 2), 16) || 0
+    const g = parseInt(hex.slice(2, 4), 16) || 0
+    const b = parseInt(hex.slice(4, 6), 16) || 0
+    const a = 220
+
+    const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height)
+    const data = imgData.data
+
+    // Sample PDF canvas pixels if available
+    let pdfData: Uint8ClampedArray | null = null
+    if (pdfCanvas) {
+      try {
+        const pCtx = pdfCanvas.getContext('2d', { willReadFrequently: true })
+        if (pCtx) {
+          pdfData = pCtx.getImageData(0, 0, pdfCanvas.width, pdfCanvas.height).data
+        }
+      } catch {}
+    }
+
+    const startPos = (startY * canvas.width + startX) * 4
+    if (
+      pdfData &&
+      pdfData[startPos] < 60 &&
+      pdfData[startPos + 1] < 60 &&
+      pdfData[startPos + 2] < 60
+    ) {
+      // Clicked on a dark boundary line
+      return
+    }
+
+    const queue: [number, number][] = [[startX, startY]]
+    const visited = new Uint8Array(canvas.width * canvas.height)
+    visited[startY * canvas.width + startX] = 1
+
+    let fillCount = 0
+    const maxPixels = 140000
+
+    while (queue.length > 0 && fillCount < maxPixels) {
+      const [cx, cy] = queue.pop()!
+      const idx = (cy * canvas.width + cx) * 4
+
+      data[idx] = r
+      data[idx + 1] = g
+      data[idx + 2] = b
+      data[idx + 3] = a
+      fillCount++
+
+      const neighbors: [number, number][] = [
+        [cx + 1, cy],
+        [cx - 1, cy],
+        [cx, cy + 1],
+        [cx, cy - 1]
+      ]
+
+      for (const [nx, ny] of neighbors) {
+        if (nx >= 0 && nx < canvas.width && ny >= 0 && ny < canvas.height) {
+          const nIdx = ny * canvas.width + nx
+          if (!visited[nIdx]) {
+            visited[nIdx] = 1
+            const pIdx = nIdx * 4
+            const isDark =
+              pdfData &&
+              pdfData[pIdx] < 65 &&
+              pdfData[pIdx + 1] < 65 &&
+              pdfData[pIdx + 2] < 65
+            if (!isDark) {
+              queue.push([nx, ny])
+            }
+          }
+        }
+      }
+    }
+
+    ctx.putImageData(imgData, 0, 0)
+    saveFillCanvas()
+    gameAudio.playCoin()
+
+    if (fillCount > 100) {
+      onAddStar?.(1)
+      confetti({
+        particleCount: 22,
+        spread: 45,
+        origin: { x: e.clientX / window.innerWidth, y: e.clientY / window.innerHeight }
+      })
+      toast.success('Color filled! 🎨 ⭐')
+    }
+  }
+
+  // ── File upload for custom EMI / image placement ────────────────────────────
+  const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+
+    const reader = new FileReader()
+    reader.onload = (loadEvt) => {
+      const dataUrl = loadEvt.target?.result as string
+      if (!dataUrl) return
+
+      const newSticker: PlacedSticker = {
+        id: `img_${Date.now()}`,
+        x: 45,
+        y: 45,
+        type: 'custom_image',
+        url: dataUrl,
+        label: file.name
+      }
+      const updated = [...stickers, newSticker]
+      setStickers(updated)
+      persistState(strokes, updated, typedNotes, typedBlanks, circledItems)
+      gameAudio.playCoin()
+      onAddStar?.(1)
+      toast.success('Image placed! Use Hand Tool ✋ to move it anywhere.')
+    }
+    reader.readAsDataURL(file)
+    e.target.value = ''
+  }
+
+  // ── Pointer event handlers for drawing / stamping / text ───────────────────
   const handlePointerDown = (e: React.PointerEvent<HTMLCanvasElement>) => {
-    if (activeTool === 'pointer') return
+    if (activeTool === 'pointer' || activeTool === 'hand' || activeTool === 'fill') return
 
     // 1. STAMP TOOL
     if (activeTool === 'stamp') {
@@ -401,31 +672,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     persistState(strokes, stickers, typedNotes, updated, circledItems)
   }
 
-  // 6. TAP-TO-COUNT OBJECTS
-  const handleCountClick = (label: string, e: React.MouseEvent) => {
-    const nextCount = countNumber + 1
-    setCountNumber(nextCount)
-    gameAudio.playCoin()
-
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel()
-      const countWords = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten']
-      const spoken = countWords[nextCount - 1] || String(nextCount)
-      const u = new SpeechSynthesisUtterance(`${spoken}!`)
-      u.rate = 1.0
-      u.pitch = 1.2
-      window.speechSynthesis.speak(u)
-    }
-
-    confetti({
-      particleCount: 15,
-      spread: 35,
-      origin: { x: e.clientX / window.innerWidth, y: e.clientY / window.innerHeight }
-    })
-    onAddStar?.(1)
-  }
-
-  // 7. CIRCLE / CHOOSE ITEM TOGGLE
+  // 6. CIRCLE / CHOOSE ITEM TOGGLE
   const handleCircleToggle = (id: string) => {
     const nextVal = !circledItems[id]
     const updated = { ...circledItems, [id]: nextVal }
@@ -442,36 +689,49 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     }
   }
 
-  // Undo / Clear
-  const handleUndo = () => {
-    if (strokes.length > 0) {
-      const updated = strokes.slice(0, -1)
-      setStrokes(updated)
-      persistState(updated, stickers, typedNotes, typedBlanks, circledItems)
-      gameAudio.playTap()
-    } else if (stickers.length > 0) {
-      const updated = stickers.slice(0, -1)
-      setStickers(updated)
-      persistState(strokes, updated, typedNotes, typedBlanks, circledItems)
-      gameAudio.playTap()
-    }
+  // Delete placed item
+  const handleDeleteSticker = (id: string, e: React.MouseEvent) => {
+    e.stopPropagation()
+    const updated = stickers.filter((s) => s.id !== id)
+    setStickers(updated)
+    persistState(strokes, updated, typedNotes, typedBlanks, circledItems)
+    gameAudio.playTap()
   }
 
-  const handleClearAll = () => {
-    if (window.confirm('Clear all your drawings, typed answers, and circles on this page?')) {
-      setStrokes([])
-      setStickers([])
-      setTypedNotes([])
-      setTypedBlanks({})
-      setCircledItems({})
-      persistState([], [], [], {}, {})
-      gameAudio.playTap()
-      toast.success('Page annotations cleared')
-    }
+  const handleDeleteNote = (id: string, e: React.MouseEvent) => {
+    e.stopPropagation()
+    const updated = typedNotes.filter((n) => n.id !== id)
+    setTypedNotes(updated)
+    persistState(strokes, stickers, updated, typedBlanks, circledItems)
+    gameAudio.playTap()
   }
 
   return (
-    <div className="absolute inset-0 select-none overflow-hidden" style={{ width: `${pageWidth}px`, height: `${pageHeight}px` }}>
+    <div
+      ref={containerRef}
+      className={`absolute inset-0 select-none overflow-hidden ${
+        activeTool === 'hand' ? (draggingItemId ? 'cursor-grabbing' : 'cursor-grab') : ''
+      }`}
+      style={{ width: `${pageWidth}px`, height: `${pageHeight}px` }}
+    >
+      {/* Hidden file input for custom EMI / image placement */}
+      <input
+        ref={fileInputRef}
+        type="file"
+        accept="image/*"
+        onChange={handleImageUpload}
+        className="hidden"
+      />
+
+      {/* ── LAYER A0: Color Flood Fill Layer ──────────────────────────────── */}
+      <canvas
+        ref={colorFillCanvasRef}
+        onClick={handleColorFillClick}
+        className={`absolute inset-0 z-10 ${
+          activeTool === 'fill' ? 'cursor-crosshair pointer-events-auto' : 'pointer-events-none'
+        }`}
+      />
+
       {/* ── LAYER A: High-DPR Drawing Canvas (Pen, Highlighter, Eraser) ───── */}
       <canvas
         ref={canvasRef}
@@ -479,7 +739,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
         className={`absolute inset-0 z-20 touch-none ${
-          activeTool === 'pointer'
+          ['pointer', 'hand', 'fill'].includes(activeTool)
             ? 'pointer-events-none'
             : activeTool === 'pen'
             ? 'cursor-crosshair'
@@ -491,18 +751,47 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
         }`}
       />
 
-      {/* ── LAYER B: Placed Stickers (Stars, Robots, Trophies) ────────────── */}
+      {/* ── LAYER B: Placed Stickers, EMIs & Images (Moveable with Hand Tool) ─ */}
       <div className="absolute inset-0 pointer-events-none z-25">
         {stickers.map((st) => {
+          const isDragging = draggingItemId === st.id
+          const isCustomImage = st.type === 'custom_image' && st.url
           const conf = STAMP_ICONS[st.type] || STAMP_ICONS.star
           const Icon = conf.icon
+
           return (
             <div
               key={st.id}
+              onPointerDown={(e) => handleStartItemDrag(e, st.id, 'sticker', st.x, st.y)}
               style={{ left: `${st.x}%`, top: `${st.y}%` }}
-              className="absolute -translate-x-1/2 -translate-y-1/2 drop-shadow-lg animate-bounce-subtle pointer-events-auto"
+              title={activeTool === 'hand' ? 'Hold and drag to move anywhere' : undefined}
+              className={`absolute -translate-x-1/2 -translate-y-1/2 drop-shadow-xl pointer-events-auto group ${
+                activeTool === 'hand'
+                  ? 'cursor-grab active:cursor-grabbing hover:ring-2 hover:ring-blue-500 rounded-xl p-1'
+                  : ''
+              } ${isDragging ? 'scale-125 z-40 opacity-90' : 'transition-transform duration-100'}`}
             >
-              <Icon className={`w-8 h-8 ${conf.color}`} />
+              {isCustomImage ? (
+                <img
+                  src={st.url}
+                  alt={st.label || 'EMI Image'}
+                  className="w-16 h-16 object-contain rounded-lg border-2 border-white/80 shadow-md bg-white/40 backdrop-blur-xs pointer-events-none"
+                />
+              ) : (
+                <Icon className={`w-8 h-8 ${conf.color} pointer-events-none`} />
+              )}
+
+              {/* Hand Tool delete badge on hover */}
+              {activeTool === 'hand' && (
+                <button
+                  type="button"
+                  onClick={(e) => handleDeleteSticker(st.id, e)}
+                  title="Remove Item"
+                  className="absolute -top-2 -right-2 w-5 h-5 bg-rose-600 hover:bg-rose-700 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-lg"
+                >
+                  <Trash2 size={11} />
+                </button>
+              )}
             </div>
           )
         })}
@@ -608,15 +897,22 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
         })}
       </div>
 
-      {/* ── LAYER E: Freeform Typed Notes on Page ─────────────────────────── */}
+      {/* ── LAYER E: Freeform Typed Notes on Page (Moveable with Hand Tool) ─ */}
       <div className="absolute inset-0 pointer-events-none z-35">
         {typedNotes.map((note) => {
           const isEditing = editingNoteId === note.id
+          const isDragging = draggingItemId === note.id
+
           return (
             <div
               key={note.id}
+              onPointerDown={(e) => handleStartItemDrag(e, note.id, 'note', note.x, note.y)}
               style={{ left: `${note.x}%`, top: `${note.y}%` }}
-              className="absolute -translate-x-2 -translate-y-4 pointer-events-auto"
+              className={`absolute -translate-x-2 -translate-y-4 pointer-events-auto group ${
+                activeTool === 'hand'
+                  ? 'cursor-grab active:cursor-grabbing hover:ring-2 hover:ring-blue-500 rounded-lg'
+                  : ''
+              } ${isDragging ? 'scale-110 opacity-90' : ''}`}
             >
               {isEditing ? (
                 <div className="flex items-center gap-1 bg-white p-1 rounded-lg shadow-xl border-2 border-blue-500">
@@ -651,11 +947,23 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
                 </div>
               ) : (
                 <div
-                  onClick={() => setEditingNoteId(note.id)}
-                  className="px-2.5 py-1 bg-blue-50/95 border border-blue-300 rounded-lg shadow-sm text-sm font-bold text-blue-900 cursor-pointer hover:border-blue-500 transition-all hover:scale-105"
+                  onClick={() => {
+                    if (activeTool !== 'hand') setEditingNoteId(note.id)
+                  }}
+                  className="px-2.5 py-1 bg-blue-50/95 border border-blue-300 rounded-lg shadow-sm text-sm font-bold text-blue-900 cursor-pointer hover:border-blue-500 transition-all hover:scale-105 flex items-center gap-1"
                   style={{ color: note.color }}
                 >
-                  {note.text || '(empty)'}
+                  <span>{note.text || '(empty)'}</span>
+                  {activeTool === 'hand' && (
+                    <button
+                      type="button"
+                      onClick={(e) => handleDeleteNote(note.id, e)}
+                      title="Delete Note"
+                      className="opacity-0 group-hover:opacity-100 p-0.5 hover:bg-rose-100 rounded text-rose-600"
+                    >
+                      <Trash2 size={12} />
+                    </button>
+                  )}
                 </div>
               )}
             </div>
