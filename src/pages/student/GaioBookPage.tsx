@@ -10,7 +10,7 @@ export const GaioBookPage: React.FC = () => {
   const navigate = useNavigate()
   const { user } = useAuth()
 
-  const [gradeKey, setGradeKey] = useState<'class3' | 'class4' | 'class5'>(() => {
+  const [gradeKey, setGradeKey] = useState<string>(() => {
     if (user?.id) {
       try {
         const stored = localStorage.getItem(`nanjil_active_class_${user.id}`)

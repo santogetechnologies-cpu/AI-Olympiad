@@ -1,0 +1,386 @@
+{
+  "class10": {
+    "classId": "class10",
+    "title": "GAIO Class10 Book",
+    "pdfPath": "/books/class10.pdf",
+    "totalPages": 230,
+    "chapters": [
+      {
+        "title": "Welcome & Orientation",
+        "startPage": 1,
+        "endPage": 4
+      },
+      {
+        "title": "Month 1: AI Discover",
+        "startPage": 5,
+        "endPage": 40
+      },
+      {
+        "title": "Month 2: AI Connect",
+        "startPage": 41,
+        "endPage": 75
+      },
+      {
+        "title": "Month 3: AI Solve",
+        "startPage": 76,
+        "endPage": 110
+      },
+      {
+        "title": "Month 4: AI Rise",
+        "startPage": 111,
+        "endPage": 145
+      },
+      {
+        "title": "Month 5: AI Create",
+        "startPage": 146,
+        "endPage": 180
+      },
+      {
+        "title": "Month 6: AI Future",
+        "startPage": 181,
+        "endPage": 217
+      },
+      {
+        "title": "Olympiad Finale & Practice",
+        "startPage": 218,
+        "endPage": 230
+      }
+    ]
+  },
+  "class3": {
+    "classId": "class3",
+    "title": "GAIO Class3 Book",
+    "pdfPath": "/books/class3.pdf",
+    "totalPages": 218,
+    "chapters": [
+      {
+        "title": "Welcome & Orientation",
+        "startPage": 1,
+        "endPage": 4
+      },
+      {
+        "title": "Month 1: AI Discover",
+        "startPage": 5,
+        "endPage": 38
+      },
+      {
+        "title": "Month 2: AI Connect",
+        "startPage": 39,
+        "endPage": 71
+      },
+      {
+        "title": "Month 3: AI Solve",
+        "startPage": 72,
+        "endPage": 104
+      },
+      {
+        "title": "Month 4: AI Rise",
+        "startPage": 105,
+        "endPage": 137
+      },
+      {
+        "title": "Month 5: AI Create",
+        "startPage": 138,
+        "endPage": 170
+      },
+      {
+        "title": "Month 6: AI Future",
+        "startPage": 171,
+        "endPage": 205
+      },
+      {
+        "title": "Olympiad Finale & Practice",
+        "startPage": 206,
+        "endPage": 218
+      }
+    ]
+  },
+  "class4": {
+    "classId": "class4",
+    "title": "GAIO Class4 Book",
+    "pdfPath": "/books/class4.pdf",
+    "totalPages": 218,
+    "chapters": [
+      {
+        "title": "Welcome & Orientation",
+        "startPage": 1,
+        "endPage": 4
+      },
+      {
+        "title": "Month 1: AI Discover",
+        "startPage": 5,
+        "endPage": 38
+      },
+      {
+        "title": "Month 2: AI Connect",
+        "startPage": 39,
+        "endPage": 71
+      },
+      {
+        "title": "Month 3: AI Solve",
+        "startPage": 72,
+        "endPage": 104
+      },
+      {
+        "title": "Month 4: AI Rise",
+        "startPage": 105,
+        "endPage": 137
+      },
+      {
+        "title": "Month 5: AI Create",
+        "startPage": 138,
+        "endPage": 170
+      },
+      {
+        "title": "Month 6: AI Future",
+        "startPage": 171,
+        "endPage": 205
+      },
+      {
+        "title": "Olympiad Finale & Practice",
+        "startPage": 206,
+        "endPage": 218
+      }
+    ]
+  },
+  "class5": {
+    "classId": "class5",
+    "title": "GAIO Class5 Book",
+    "pdfPath": "/books/class5.pdf",
+    "totalPages": 218,
+    "chapters": [
+      {
+        "title": "Welcome & Orientation",
+        "startPage": 1,
+        "endPage": 4
+      },
+      {
+        "title": "Month 1: AI Discover",
+        "startPage": 5,
+        "endPage": 38
+      },
+      {
+        "title": "Month 2: AI Connect",
+        "startPage": 39,
+        "endPage": 71
+      },
+      {
+        "title": "Month 3: AI Solve",
+        "startPage": 72,
+        "endPage": 104
+      },
+      {
+        "title": "Month 4: AI Rise",
+        "startPage": 105,
+        "endPage": 137
+      },
+      {
+        "title": "Month 5: AI Create",
+        "startPage": 138,
+        "endPage": 170
+      },
+      {
+        "title": "Month 6: AI Future",
+        "startPage": 171,
+        "endPage": 205
+      },
+      {
+        "title": "Olympiad Finale & Practice",
+        "startPage": 206,
+        "endPage": 218
+      }
+    ]
+  },
+  "class6": {
+    "classId": "class6",
+    "title": "GAIO Class6 Book",
+    "pdfPath": "/books/class6.pdf",
+    "totalPages": 230,
+    "chapters": [
+      {
+        "title": "Welcome & Orientation",
+        "startPage": 1,
+        "endPage": 4
+      },
+      {
+        "title": "Month 1: AI Discover",
+        "startPage": 5,
+        "endPage": 40
+      },
+      {
+        "title": "Month 2: AI Connect",
+        "startPage": 41,
+        "endPage": 75
+      },
+      {
+        "title": "Month 3: AI Solve",
+        "startPage": 76,
+        "endPage": 110
+      },
+      {
+        "title": "Month 4: AI Rise",
+        "startPage": 111,
+        "endPage": 145
+      },
+      {
+        "title": "Month 5: AI Create",
+        "startPage": 146,
+        "endPage": 180
+      },
+      {
+        "title": "Month 6: AI Future",
+        "startPage": 181,
+        "endPage": 217
+      },
+      {
+        "title": "Olympiad Finale & Practice",
+        "startPage": 218,
+        "endPage": 230
+      }
+    ]
+  },
+  "class7": {
+    "classId": "class7",
+    "title": "GAIO Class7 Book",
+    "pdfPath": "/books/class7.pdf",
+    "totalPages": 230,
+    "chapters": [
+      {
+        "title": "Welcome & Orientation",
+        "startPage": 1,
+        "endPage": 4
+      },
+      {
+        "title": "Month 1: AI Discover",
+        "startPage": 5,
+        "endPage": 40
+      },
+      {
+        "title": "Month 2: AI Connect",
+        "startPage": 41,
+        "endPage": 75
+      },
+      {
+        "title": "Month 3: AI Solve",
+        "startPage": 76,
+        "endPage": 110
+      },
+      {
+        "title": "Month 4: AI Rise",
+        "startPage": 111,
+        "endPage": 145
+      },
+      {
+        "title": "Month 5: AI Create",
+        "startPage": 146,
+        "endPage": 180
+      },
+      {
+        "title": "Month 6: AI Future",
+        "startPage": 181,
+        "endPage": 217
+      },
+      {
+        "title": "Olympiad Finale & Practice",
+        "startPage": 218,
+        "endPage": 230
+      }
+    ]
+  },
+  "class8": {
+    "classId": "class8",
+    "title": "GAIO Class8 Book",
+    "pdfPath": "/books/class8.pdf",
+    "totalPages": 230,
+    "chapters": [
+      {
+        "title": "Welcome & Orientation",
+        "startPage": 1,
+        "endPage": 4
+      },
+      {
+        "title": "Month 1: AI Discover",
+        "startPage": 5,
+        "endPage": 40
+      },
+      {
+        "title": "Month 2: AI Connect",
+        "startPage": 41,
+        "endPage": 75
+      },
+      {
+        "title": "Month 3: AI Solve",
+        "startPage": 76,
+        "endPage": 110
+      },
+      {
+        "title": "Month 4: AI Rise",
+        "startPage": 111,
+        "endPage": 145
+      },
+      {
+        "title": "Month 5: AI Create",
+        "startPage": 146,
+        "endPage": 180
+      },
+      {
+        "title": "Month 6: AI Future",
+        "startPage": 181,
+        "endPage": 217
+      },
+      {
+        "title": "Olympiad Finale & Practice",
+        "startPage": 218,
+        "endPage": 230
+      }
+    ]
+  },
+  "class9": {
+    "classId": "class9",
+    "title": "GAIO Class9 Book",
+    "pdfPath": "/books/class9.pdf",
+    "totalPages": 230,
+    "chapters": [
+      {
+        "title": "Welcome & Orientation",
+        "startPage": 1,
+        "endPage": 4
+      },
+      {
+        "title": "Month 1: AI Discover",
+        "startPage": 5,
+        "endPage": 40
+      },
+      {
+        "title": "Month 2: AI Connect",
+        "startPage": 41,
+        "endPage": 75
+      },
+      {
+        "title": "Month 3: AI Solve",
+        "startPage": 76,
+        "endPage": 110
+      },
+      {
+        "title": "Month 4: AI Rise",
+        "startPage": 111,
+        "endPage": 145
+      },
+      {
+        "title": "Month 5: AI Create",
+        "startPage": 146,
+        "endPage": 180
+      },
+      {
+        "title": "Month 6: AI Future",
+        "startPage": 181,
+        "endPage": 217
+      },
+      {
+        "title": "Olympiad Finale & Practice",
+        "startPage": 218,
+        "endPage": 230
+      }
+    ]
+  }
+}

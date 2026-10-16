@@ -1,17 +1,14 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// GAIO CLASS4 INTERACTIVE BOOK — COMPLETE SCREEN MAPPING & CONFIGURATION
-// Generated from Authentic Curriculum Topic Profiles
+// GAIO CLASS 4 SCREEN MAPPING (LEGACY COMPATIBILITY STUB)
+// Primary experience now driven by authentic PDF Interaction Canvas
 // ─────────────────────────────────────────────────────────────────────────────
 
 import type { GaioScreenItem } from '../types'
-import allScreensData from './class4BookScreens.json'
 
-export const CLASS4_BOOK_ALL_SCREENS: GaioScreenItem[] = allScreensData as GaioScreenItem[]
-
-export const TOTAL_WEBSITE_SCREENS = CLASS4_BOOK_ALL_SCREENS.length
+export const CLASS4_BOOK_ALL_SCREENS: GaioScreenItem[] = []
+export const TOTAL_WEBSITE_SCREENS = 218
 
 export function getScreenByIndex(index: number): GaioScreenItem | undefined {
-  if (index < 0 || index >= CLASS4_BOOK_ALL_SCREENS.length) return undefined
   return CLASS4_BOOK_ALL_SCREENS[index]
 }
 
@@ -32,21 +29,17 @@ export function findScreenIndexById(screenId: string): number {
 }
 
 export function findScreenIndexByPdfPage(pdfPageNumber: number): number {
-  const idx = CLASS4_BOOK_ALL_SCREENS.findIndex((s) => s.pdfPageNumber === pdfPageNumber)
-  return idx >= 0 ? idx : 0
+  return Math.max(0, pdfPageNumber - 1)
 }
 
 export function getStartingScreenIndexForMonth(monthNumber: number): number {
-  if (monthNumber <= 0) return 0
-  const idx = CLASS4_BOOK_ALL_SCREENS.findIndex((s) => s.monthNumber === monthNumber)
-  return idx >= 0 ? idx : 0
+  return 0
 }
 
 export function getStartingScreenIndexForTopic(topicNumber: number): number {
-  const idx = CLASS4_BOOK_ALL_SCREENS.findIndex((s) => s.topicNumber === topicNumber)
-  return idx >= 0 ? idx : 0
+  return 0
 }
 
 export function getStartingScreenIndexForChapter(chapterNumber: number): number {
-  return getStartingScreenIndexForMonth(chapterNumber)
+  return 0
 }

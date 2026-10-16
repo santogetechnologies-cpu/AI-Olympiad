@@ -202,6 +202,10 @@ class GameAudioSynthesizer {
     this.playLevelUp()
   }
 
+  public playFanfare() {
+    this.playLevelUp()
+  }
+
   public playBossHit() {
     this.playTap()
   }
