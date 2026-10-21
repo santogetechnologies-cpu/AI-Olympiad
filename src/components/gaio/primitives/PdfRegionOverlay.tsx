@@ -112,33 +112,11 @@ export const PdfRegionOverlay: React.FC<PdfRegionOverlayProps> = ({
         const sw = w * scale
         const sh = h * scale
 
-        // 1. TYPEABLE INPUT REGIONS
+        // 1. TYPEABLE INPUT REGIONS (Disabled in favor of freeform text/pen tool)
         if (region.type === 'typeable') {
-          const val = typedAnswers[region.id] || ''
-          return (
-            <div
-              key={region.id}
-              style={{
-                left: `${sx}px`,
-                top: `${sy}px`,
-                width: `${Math.max(80, sw)}px`,
-                height: `${Math.max(26, sh)}px`,
-              }}
-              className={`absolute pointer-events-auto transition-all ${
-                showReviewBoxes ? 'ring-2 ring-emerald-400 bg-emerald-500/20' : ''
-              }`}
-            >
-              <input
-                type="text"
-                value={val}
-                onChange={(e) => handleTypeChange(region.id, e.target.value)}
-                placeholder={region.placeholder || 'Type here...'}
-                className="w-full h-full px-2 py-0.5 bg-blue-50/80 hover:bg-white focus:bg-white text-blue-950 font-bold text-xs rounded-lg border border-blue-400/80 focus:border-blue-600 focus:ring-2 focus:ring-blue-300 shadow-xs outline-none transition-all placeholder:text-blue-400/70"
-                style={{ fontSize: `${Math.max(12, (region.fontSize || 14) * 0.9)}px` }}
-              />
-            </div>
-          )
+          return null
         }
+
 
         // 2. CHOOSE / MULTIPLE CHOICE TICK REGIONS
         if (region.type === 'choose') {

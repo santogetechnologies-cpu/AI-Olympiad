@@ -638,9 +638,10 @@ export default function ChapterLearningPage() {
   const activeItem = currentGridItems.find((i) => i.key === resolvedItemKey) || currentGridItems[0]
   return (
     <AppLayout>
-      <div className="w-full h-full max-h-full flex-1 flex flex-col items-center justify-center min-h-0 bg-slate-900/5 overflow-hidden p-1 sm:p-2">
+      <div className="w-full h-full max-h-full flex-1 flex flex-col items-center justify-center min-h-0 bg-slate-900/5 overflow-hidden p-0">
         <GaioInteractiveBookApp
           gradeKey={assignedGrade}
+          isGradeLocked={true}
           scopedMonth={activeItem.monthNumber}
           chapterNumber={activeItem.code}
           chapterTitle={activeItem.title}
@@ -1220,6 +1221,7 @@ export default function ChapterLearningPage() {
         <div className="flex-1 flex flex-col w-full h-full min-h-0 bg-slate-900/5 overflow-hidden">
           <GaioInteractiveBookApp
             gradeKey={gKey}
+            isGradeLocked={true}
             scopedMonth={cNum >= 1 && cNum <= 6 ? cNum : 1}
             chapterNumber={cNum}
             chapterTitle={chapter.title}

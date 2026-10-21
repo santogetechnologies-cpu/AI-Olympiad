@@ -1,12 +1,23 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import {
   Volume2, Check, RefreshCw, Star,
   Trophy, Gift, ArrowRight, Heart,
-  Gamepad2, CheckCircle
+  Gamepad2, CheckCircle, Move, PaintBucket,
+  Trash2, Plus, Minus, RotateCw, Sparkles, Palette
 } from 'lucide-react'
 import { Button } from '../ui'
 import { gamification } from '../../utils/gamification'
+import { gameAudio } from '../../utils/gameAudio'
 import toast from 'react-hot-toast'
+
+export interface PlacedGameEmoji {
+  id: string
+  emoji: string
+  x: number // percentage 0 - 100
+  y: number // percentage 0 - 100
+  size: number
+  rotation: number
+}
 
 export interface Class3PlayfulGameProps {
   chapterNum: string | number
@@ -43,8 +54,21 @@ export function Class3PlayfulGameExperience({
   // Puzzle state
   const [puzzleMatched, setPuzzleMatched] = useState<Record<string, boolean>>({})
 
-  // Sticker playground state
-  const [stickersPlaced, setStickersPlaced] = useState<{ emoji: string; x: number; y: number }[]>([])
+  // Sticker playground state (Draggable Emojis + Canvas Color Fill)
+  const [stickersPlaced, setStickersPlaced] = useState<PlacedGameEmoji[]>([])
+  const [selectedStickerId, setSelectedStickerId] = useState<string | null>(null)
+  const [draggingStickerId, setDraggingStickerId] = useState<string | null>(null)
+  const [canvasBgStyle, setCanvasBgStyle] = useState<string>('from-indigo-950 via-purple-900 to-slate-900')
+  const [activeCanvasTool, setActiveCanvasTool] = useState<'move' | 'fill'>('move')
+  const [activeFillColor, setActiveFillColor] = useState<string>('#6366f1')
+  const gameCanvasRef = useRef<HTMLDivElement | null>(null)
+  const dragStickerRef = useRef<{
+    id: string
+    startPointerX: number
+    startPointerY: number
+    initX: number
+    initY: number
+  } | null>(null)
 
   // Star Quiz state
   const [quizIdx, setQuizIdx] = useState(0)
@@ -236,15 +260,89 @@ export function Class3PlayfulGameExperience({
     toast.success('Matched superpower! ✨')
   }
 
+  const handleStartStickerDrag = (
+    e: React.PointerEvent,
+    id: string,
+    currentX: number,
+    currentY: number
+  ) => {
+    e.stopPropagation()
+    e.preventDefault()
+    setSelectedStickerId(id)
+    setDraggingStickerId(id)
+    dragStickerRef.current = {
+      id,
+      startPointerX: e.clientX,
+      startPointerY: e.clientY,
+      initX: currentX,
+      initY: currentY
+    }
+    try {
+      ;(e.currentTarget as HTMLElement).setPointerCapture(e.pointerId)
+    } catch {}
+  }
+
+  const handleStickerPointerMove = (e: React.PointerEvent) => {
+    if (!dragStickerRef.current || !gameCanvasRef.current) return
+    const rect = gameCanvasRef.current.getBoundingClientRect()
+    const deltaX = ((e.clientX - dragStickerRef.current.startPointerX) / rect.width) * 100
+    const deltaY = ((e.clientY - dragStickerRef.current.startPointerY) / rect.height) * 100
+
+    const newX = Math.max(4, Math.min(92, parseFloat((dragStickerRef.current.initX + deltaX).toFixed(1))))
+    const newY = Math.max(6, Math.min(88, parseFloat((dragStickerRef.current.initY + deltaY).toFixed(1))))
+
+    setStickersPlaced(prev =>
+      prev.map(s => (s.id === dragStickerRef.current!.id ? { ...s, x: newX, y: newY } : s))
+    )
+  }
+
+  const handleStickerPointerUp = (e: React.PointerEvent) => {
+    if (dragStickerRef.current) {
+      try {
+        ;(e.currentTarget as HTMLElement).releasePointerCapture(e.pointerId)
+      } catch {}
+      dragStickerRef.current = null
+      setDraggingStickerId(null)
+      gameAudio.playTap()
+    }
+  }
+
   const handleStickerTap = (emoji: string) => {
-    const newSticker = {
+    const id = `stk_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`
+    const newSticker: PlacedGameEmoji = {
+      id,
       emoji,
-      x: Math.floor(Math.random() * 80) + 10,
-      y: Math.floor(Math.random() * 70) + 15
+      x: Math.floor(Math.random() * 50) + 25,
+      y: Math.floor(Math.random() * 45) + 25,
+      size: 40,
+      rotation: 0
     }
     setStickersPlaced(prev => [...prev, newSticker])
+    setSelectedStickerId(id)
     setStars(s => Math.min(10, s + 1))
-    toast.success('Sticker placed on canvas! 🎨')
+    gameAudio.playCoin()
+    toast.success('Emoji placed! Tap and drag it anywhere! 🎨', { icon: emoji })
+  }
+
+  const handleResizeSticker = (id: string, delta: number) => {
+    setStickersPlaced(prev =>
+      prev.map(s => s.id === id ? { ...s, size: Math.max(24, Math.min(80, s.size + delta)) } : s)
+    )
+    gameAudio.playTap()
+  }
+
+  const handleRotateSticker = (id: string) => {
+    setStickersPlaced(prev =>
+      prev.map(s => s.id === id ? { ...s, rotation: (s.rotation + 45) % 360 } : s)
+    )
+    gameAudio.playTap()
+  }
+
+  const handleDeleteSticker = (id: string) => {
+    setStickersPlaced(prev => prev.filter(s => s.id !== id))
+    if (selectedStickerId === id) setSelectedStickerId(null)
+    gameAudio.playTap()
+    toast('Emoji removed', { icon: '🗑️' })
   }
 
   const handleQuizAnswer = (isCorrect: boolean) => {
@@ -581,57 +679,236 @@ export function Class3PlayfulGameExperience({
         </div>
       )}
 
-      {/* GAME 4: STICKER PLAYGROUND */}
+      {/* GAME 4: STICKER & EMOJI PLAYGROUND */}
       {activeMiniGame === 'sticker' && (
         <div className="bg-white rounded-3xl p-5 sm:p-7 border-3 border-pink-200 shadow-md space-y-4 animate-in fade-in">
-          <div className="flex items-center justify-between">
-            <span className="bg-pink-100 text-pink-800 text-xs font-black px-3 py-1 rounded-full border border-pink-300 flex items-center gap-1">
-              <Gamepad2 size={14} /> Game 4: Sticker Canvas
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <span className="bg-pink-100 text-pink-800 text-xs font-black px-3 py-1 rounded-full border border-pink-300 flex items-center gap-1.5 shadow-xs">
+              <Gamepad2 size={14} /> Game 4: Emoji World Studio
             </span>
-            <span className="text-xs font-bold text-slate-500">
-              Stickers: {stickersPlaced.length}
-            </span>
-          </div>
-
-          <h3 className="text-base sm:text-lg font-black text-slate-900">
-            🎨 Tap any sticker to place your AI friends on the magic canvas!
-          </h3>
-
-          {/* Sticker Palette */}
-          <div className="flex items-center justify-around bg-pink-50 p-3 rounded-2xl border border-pink-200">
-            {['🤖', '⭐', '🚀', '🧠', '🐶', '🌈', '💡', '🐾'].map((em, idx) => (
+            <div className="flex items-center gap-2">
+              {/* Tool Mode Toggles: Drag vs Color Fill */}
               <button
-                key={idx}
-                onClick={() => handleStickerTap(em)}
-                className="text-2xl sm:text-3xl p-1.5 rounded-xl hover:bg-white hover:scale-125 active:scale-90 transition-all cursor-pointer"
-                title={`Place ${em}`}
+                type="button"
+                onClick={() => {
+                  setActiveCanvasTool('move')
+                  gameAudio.playTap()
+                }}
+                className={`px-3 py-1.5 rounded-xl text-xs font-black flex items-center gap-1.5 transition-all cursor-pointer ${
+                  activeCanvasTool === 'move'
+                    ? 'bg-amber-500 text-white shadow-md scale-105 ring-2 ring-amber-300'
+                    : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                }`}
               >
-                {em}
+                <Move size={13} />
+                <span>Move Emojis ✋</span>
               </button>
-            ))}
+
+              <button
+                type="button"
+                onClick={() => {
+                  setActiveCanvasTool('fill')
+                  gameAudio.playTap()
+                }}
+                className={`px-3 py-1.5 rounded-xl text-xs font-black flex items-center gap-1.5 transition-all cursor-pointer ${
+                  activeCanvasTool === 'fill'
+                    ? 'bg-pink-600 text-white shadow-md scale-105 ring-2 ring-pink-300'
+                    : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                }`}
+              >
+                <PaintBucket size={13} />
+                <span>Color Fill Canvas 🎨</span>
+              </button>
+
+              <span className="text-xs font-bold text-slate-500 ml-1">
+                Emojis: {stickersPlaced.length}
+              </span>
+            </div>
           </div>
 
-          {/* Magic Canvas Area */}
-          <div className="relative bg-gradient-to-br from-indigo-900 via-purple-900 to-slate-900 rounded-3xl h-48 sm:h-56 overflow-hidden border-4 border-pink-300 shadow-inner flex items-center justify-center">
-            {stickersPlaced.length === 0 && (
-              <p className="text-white/60 text-xs font-bold text-center px-4">
-                ✨ Tap the stickers above to build your own space robot world!
-              </p>
-            )}
-            {stickersPlaced.map((st, i) => (
-              <span
-                key={i}
-                style={{ left: `${st.x}%`, top: `${st.y}%` }}
-                className="absolute text-3xl sm:text-4xl animate-in zoom-in-75"
-              >
-                {st.emoji}
+          <div className="flex items-center justify-between">
+            <h3 className="text-sm sm:text-base font-black text-slate-900">
+              {activeCanvasTool === 'move'
+                ? '🖐️ Tap an emoji to place, then DRAG it anywhere on the canvas!'
+                : '🎨 Pick a color below, then tap the canvas to flood fill it!'}
+            </h3>
+          </div>
+
+          {/* Color Fill Palette (when in fill mode or choosing background) */}
+          {activeCanvasTool === 'fill' && (
+            <div className="p-3 bg-pink-50 rounded-2xl border-2 border-pink-200 space-y-2 animate-in fade-in">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-black text-pink-900 flex items-center gap-1">
+                  <Palette size={14} /> Tap a color to fill your magic canvas:
+                </span>
+                <span className="text-[11px] font-bold text-pink-700">6 World Themes</span>
+              </div>
+              <div className="flex flex-wrap items-center gap-2">
+                {[
+                  { name: '🌌 Deep Space', style: 'from-indigo-950 via-purple-900 to-slate-900', color: '#1e1b4b' },
+                  { name: '☀️ Sunny Sky', style: 'from-sky-400 via-sky-200 to-amber-100', color: '#38bdf8' },
+                  { name: '🌲 Magic Forest', style: 'from-emerald-900 via-teal-900 to-slate-950', color: '#065f46' },
+                  { name: '🌸 Candy Pink', style: 'from-pink-500 via-rose-300 to-purple-400', color: '#f472b6' },
+                  { name: '⚡ Cyber Neon', style: 'from-violet-950 via-slate-900 to-cyan-950', color: '#581c87' },
+                  { name: '🎨 Clean Canvas', style: 'from-slate-100 via-white to-slate-200', color: '#ffffff' }
+                ].map((th) => (
+                  <button
+                    key={th.name}
+                    type="button"
+                    onClick={() => {
+                      setCanvasBgStyle(th.style)
+                      setActiveFillColor(th.color)
+                      gameAudio.playSuccess()
+                      toast.success(`Canvas filled with ${th.name}! 🎨`)
+                    }}
+                    className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer shadow-xs ${
+                      canvasBgStyle === th.style
+                        ? 'bg-slate-900 text-white ring-2 ring-pink-500 scale-105'
+                        : 'bg-white text-slate-800 hover:bg-slate-50 border border-slate-200'
+                    }`}
+                  >
+                    <span className="w-3.5 h-3.5 rounded-full border border-black/20" style={{ backgroundColor: th.color }} />
+                    {th.name}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Emoji Palette (Categorized Tabs) */}
+          <div className="space-y-1.5">
+            <div className="flex items-center justify-between text-xs font-bold text-slate-600 px-1">
+              <span>Tap to spawn an emoji:</span>
+              <span className="text-[11px] text-pink-600 font-extrabold">Drag anywhere on canvas →</span>
+            </div>
+            <div className="flex items-center justify-around bg-pink-50/80 p-2 sm:p-3 rounded-2xl border border-pink-200 overflow-x-auto gap-1">
+              {[
+                '🤖', '🛸', '🚀', '🧠', '💻', '⚡', '🦾',
+                '🐶', '🐱', '🦁', '🐼', '🦄', '🦊', '🐰',
+                '⭐', '🌟', '🌈', '🎨', '💡', '🏆', '🍕'
+              ].map((em, idx) => (
+                <button
+                  key={idx}
+                  type="button"
+                  onClick={() => handleStickerTap(em)}
+                  className="text-2xl sm:text-3xl p-1.5 rounded-xl hover:bg-white hover:scale-130 active:scale-90 transition-all cursor-pointer flex-shrink-0"
+                  title={`Place ${em}`}
+                >
+                  {em}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Selected Emoji Transformation Bar */}
+          {selectedStickerId && (
+            <div className="bg-amber-50 p-2.5 rounded-2xl border border-amber-300 flex items-center justify-between animate-in zoom-in-95 text-xs font-black text-amber-950">
+              <span className="flex items-center gap-1.5">
+                <Sparkles size={14} className="text-amber-600" />
+                Selected Emoji Controls:
               </span>
-            ))}
+              <div className="flex items-center gap-1">
+                <button
+                  type="button"
+                  onClick={() => handleResizeSticker(selectedStickerId, 8)}
+                  title="Make Bigger"
+                  className="px-2 py-1 bg-white hover:bg-amber-100 rounded-lg border border-amber-300 flex items-center gap-1 cursor-pointer"
+                >
+                  <Plus size={12} /> Bigger
+                </button>
+                <button
+                  type="button"
+                  onClick={() => handleResizeSticker(selectedStickerId, -8)}
+                  title="Make Smaller"
+                  className="px-2 py-1 bg-white hover:bg-amber-100 rounded-lg border border-amber-300 flex items-center gap-1 cursor-pointer"
+                >
+                  <Minus size={12} /> Smaller
+                </button>
+                <button
+                  type="button"
+                  onClick={() => handleRotateSticker(selectedStickerId)}
+                  title="Rotate 45°"
+                  className="px-2 py-1 bg-white hover:bg-amber-100 rounded-lg border border-amber-300 flex items-center gap-1 cursor-pointer"
+                >
+                  <RotateCw size={12} /> Spin
+                </button>
+                <button
+                  type="button"
+                  onClick={() => handleDeleteSticker(selectedStickerId)}
+                  title="Remove Emoji"
+                  className="px-2 py-1 bg-rose-50 hover:bg-rose-100 text-rose-700 rounded-lg border border-rose-300 flex items-center gap-1 cursor-pointer"
+                >
+                  <Trash2 size={12} /> Delete
+                </button>
+              </div>
+            </div>
+          )}
+
+          {/* Magic Canvas Area with Smooth Dragging & Color Fill */}
+          <div
+            ref={gameCanvasRef}
+            onClick={() => {
+              if (activeCanvasTool === 'fill') {
+                gameAudio.playSuccess()
+                toast.success('Canvas filled with color! 🎨')
+              }
+            }}
+            className={`relative bg-gradient-to-br ${canvasBgStyle} rounded-3xl h-64 sm:h-72 overflow-hidden border-4 border-pink-300 shadow-inner select-none transition-all duration-300 ${
+              activeCanvasTool === 'fill' ? 'cursor-cell' : 'cursor-default'
+            }`}
+          >
+            {stickersPlaced.length === 0 && (
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center pointer-events-none">
+                <span className="text-4xl sm:text-5xl mb-2 animate-bounce">🤖 ✨ 🚀</span>
+                <p className="text-white/80 text-xs sm:text-sm font-black drop-shadow-md">
+                  Tap any emoji above to place it here, then DRAG it anywhere!
+                </p>
+                <p className="text-white/60 text-[11px] font-semibold mt-1">
+                  Use "Color Fill" to change the sky & world theme
+                </p>
+              </div>
+            )}
+
+            {/* Draggable Emojis with Pointer Events */}
+            {stickersPlaced.map((st) => {
+              const isSelected = selectedStickerId === st.id
+              const isDragging = draggingStickerId === st.id
+
+              return (
+                <div
+                  key={st.id}
+                  onPointerDown={(e) => handleStartStickerDrag(e, st.id, st.x, st.y)}
+                  onPointerMove={handleStickerPointerMove}
+                  onPointerUp={handleStickerPointerUp}
+                  style={{
+                    left: `${st.x}%`,
+                    top: `${st.y}%`,
+                    fontSize: `${st.size || 40}px`,
+                    transform: `translate(-50%, -50%) rotate(${st.rotation || 0}deg) ${
+                      isDragging ? 'scale(1.25)' : isSelected ? 'scale(1.1)' : 'scale(1)'
+                    }`
+                  }}
+                  className={`absolute touch-none select-none cursor-grab active:cursor-grabbing transition-transform duration-75 flex items-center justify-center rounded-2xl ${
+                    isSelected ? 'ring-4 ring-amber-400 bg-white/20 backdrop-blur-xs p-1 shadow-2xl z-30' : 'z-20 hover:scale-110'
+                  }`}
+                  title="Drag me anywhere!"
+                >
+                  <span className="leading-none drop-shadow-lg pointer-events-none select-none">
+                    {st.emoji}
+                  </span>
+                </div>
+              )
+            })}
           </div>
 
           <div className="flex justify-between items-center pt-2">
             <button
-              onClick={() => setStickersPlaced([])}
+              type="button"
+              onClick={() => {
+                setStickersPlaced([])
+                setSelectedStickerId(null)
+                gameAudio.playTap()
+              }}
               className="text-xs text-slate-500 font-bold flex items-center gap-1 hover:text-slate-800 cursor-pointer"
             >
               <RefreshCw size={13} /> Clear Canvas

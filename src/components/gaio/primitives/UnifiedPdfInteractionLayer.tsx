@@ -22,14 +22,7 @@ import {
   Check,
   Sparkles,
   Zap,
-  Trash2,
-  Hand,
-  PaintBucket,
-  Undo2,
-  RotateCcw,
-  Plus,
-  Image as ImageIcon,
-  Move
+  Trash2
 } from 'lucide-react'
 import { gameAudio } from '../../../utils/gameAudio'
 import confetti from 'canvas-confetti'
@@ -49,6 +42,8 @@ export type StudioTool =
 export interface StrokePoint {
   x: number
   y: number
+  nx?: number
+  ny?: number
 }
 
 export interface DrawingStroke {
@@ -63,6 +58,7 @@ export interface PlacedSticker {
   x: number // percentage 0 - 100
   y: number // percentage 0 - 100
   type: string
+  emoji?: string // Direct emoji character e.g. 🤖, ⭐
   url?: string // custom image URL or EMI data URI
   label?: string
 }
@@ -89,6 +85,7 @@ export interface UnifiedPdfInteractionLayerProps {
   regions: PageRegion[]
   isReadingAloud: boolean
   pdfCanvas?: HTMLCanvasElement | null
+  selectedEmoji?: string
   onAddStar?: (count?: number) => void
   onWordClick?: (word: PageWordItem) => void
   onWordSpell?: (word: PageWordItem) => void
@@ -119,6 +116,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
   regions,
   isReadingAloud,
   pdfCanvas,
+  selectedEmoji = '⭐',
   onAddStar,
   onWordClick,
   onWordSpell
@@ -140,6 +138,22 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
   // In-line typed blanks & circle toggles
   const [typedBlanks, setTypedBlanks] = useState<{ [id: string]: string }>({})
   const [circledItems, setCircledItems] = useState<{ [id: string]: boolean }>({})
+
+  // Synchronous refs to prevent race conditions when writing/drawing quickly
+  const strokesRef = useRef<DrawingStroke[]>(strokes)
+  strokesRef.current = strokes
+
+  const stickersRef = useRef<PlacedSticker[]>(stickers)
+  stickersRef.current = stickers
+
+  const typedNotesRef = useRef<TypedNote[]>(typedNotes)
+  typedNotesRef.current = typedNotes
+
+  const typedBlanksRef = useRef<{ [id: string]: string }>(typedBlanks)
+  typedBlanksRef.current = typedBlanks
+
+  const circledItemsRef = useRef<{ [id: string]: boolean }>(circledItems)
+  circledItemsRef.current = circledItems
 
   // Fill tool history stack
   const [fillHistory, setFillHistory] = useState<ImageData[]>([])
@@ -247,7 +261,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     } catch {}
   }, [fillStorageKey])
 
-  // Redraw canvas with high DPR
+  // Redraw canvas with high DPR and normalized coordinates
   const redrawCanvas = useCallback(() => {
     const canvas = canvasRef.current
     if (!canvas) return
@@ -263,21 +277,16 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
     ctx.clearRect(0, 0, pageWidth, pageHeight)
 
-    strokes.forEach((stroke) => {
-      if (stroke.points.length < 2) return
+    const list = strokesRef.current.length > 0 ? strokesRef.current : strokes
+    list.forEach((stroke) => {
+      if (!stroke.points || stroke.points.length === 0) return
       ctx.save()
-      ctx.beginPath()
-      ctx.moveTo(stroke.points[0].x, stroke.points[0].y)
-
-      for (let i = 1; i < stroke.points.length; i++) {
-        ctx.lineTo(stroke.points[i].x, stroke.points[i].y)
-      }
-
       ctx.lineCap = 'round'
       ctx.lineJoin = 'round'
 
       if (stroke.tool === 'highlighter') {
         ctx.strokeStyle = stroke.color
+        ctx.fillStyle = stroke.color
         ctx.lineWidth = stroke.width * 3.5
         ctx.globalAlpha = 0.35
       } else if (stroke.tool === 'eraser') {
@@ -289,11 +298,32 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
         ctx.setLineDash([6, 3])
       } else {
         ctx.strokeStyle = stroke.color
+        ctx.fillStyle = stroke.color
         ctx.lineWidth = stroke.width
         ctx.globalAlpha = 1.0
       }
 
-      ctx.stroke()
+      const p0 = stroke.points[0]
+      const x0 = p0.nx !== undefined ? p0.nx * pageWidth : p0.x
+      const y0 = p0.ny !== undefined ? p0.ny * pageHeight : p0.y
+
+      if (stroke.points.length === 1) {
+        ctx.beginPath()
+        const r = stroke.tool === 'highlighter' ? stroke.width * 1.75 : stroke.width / 2
+        ctx.arc(x0, y0, Math.max(1, r), 0, Math.PI * 2)
+        ctx.fill()
+      } else {
+        ctx.beginPath()
+        ctx.moveTo(x0, y0)
+        for (let i = 1; i < stroke.points.length; i++) {
+          const pt = stroke.points[i]
+          const px = pt.nx !== undefined ? pt.nx * pageWidth : pt.x
+          const py = pt.ny !== undefined ? pt.ny * pageHeight : pt.y
+          ctx.lineTo(px, py)
+        }
+        ctx.stroke()
+      }
+
       ctx.restore()
     })
   }, [strokes, pageWidth, pageHeight])
@@ -302,18 +332,25 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     redrawCanvas()
   }, [redrawCanvas])
 
-  // Coordinate helper
+  // Coordinate helper with normalized positions
   const getCanvasCoords = (e: React.PointerEvent<HTMLCanvasElement>): StrokePoint => {
     const canvas = canvasRef.current
-    if (!canvas) return { x: 0, y: 0 }
+    if (!canvas) return { x: 0, y: 0, nx: 0, ny: 0 }
     const rect = canvas.getBoundingClientRect()
+    const x = e.clientX - rect.left
+    const y = e.clientY - rect.top
+    const w = rect.width > 0 ? rect.width : pageWidth
+    const h = rect.height > 0 ? rect.height : pageHeight
     return {
-      x: e.clientX - rect.left,
-      y: e.clientY - rect.top
+      x,
+      y,
+      nx: x / w,
+      ny: y / h
     }
   }
 
   // ── Drag & Move Logic for Hand Tool ────────────────────────────────────────
+  // ── Drag & Move Logic for Hand Tool & Emojis ────────────────────────────────────────
   const handleStartItemDrag = (
     e: React.PointerEvent,
     id: string,
@@ -321,7 +358,8 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     currentX: number,
     currentY: number
   ) => {
-    if (activeTool !== 'hand' && activeTool !== 'pointer') return
+    // Only block if currently drawing with pen/highlighter/eraser
+    if (['pen', 'highlighter', 'eraser', 'fill'].includes(activeTool)) return
     e.stopPropagation()
     e.preventDefault()
     setDraggingItemId(id)
@@ -373,7 +411,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     }
   }, [strokes, stickers, typedNotes, typedBlanks, circledItems, persistState])
 
-  // ── Color Fill Tool (Scanline / BFS with PDF boundary detection) ────────────
+  // ── Color Fill Tool (Smart boundary-aware Flood Fill with PDF high-DPI scaling) ─────
   const handleColorFillClick = (e: React.MouseEvent<HTMLCanvasElement>) => {
     if (activeTool !== 'fill') return
 
@@ -385,8 +423,8 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     const rect = canvas.getBoundingClientRect()
     const scaleX = canvas.width / rect.width
     const scaleY = canvas.height / rect.height
-    const startX = Math.floor((e.clientX - rect.left) * scaleX)
-    const startY = Math.floor((e.clientY - rect.top) * scaleY)
+    let startX = Math.floor((e.clientX - rect.left) * scaleX)
+    let startY = Math.floor((e.clientY - rect.top) * scaleY)
 
     if (startX < 0 || startX >= canvas.width || startY < 0 || startY >= canvas.height) return
 
@@ -400,43 +438,122 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     const r = parseInt(hex.slice(0, 2), 16) || 0
     const g = parseInt(hex.slice(2, 4), 16) || 0
     const b = parseInt(hex.slice(4, 6), 16) || 0
-    const a = 220
+    const a = 230
 
     const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height)
     const data = imgData.data
 
     // Sample PDF canvas pixels if available
     let pdfData: Uint8ClampedArray | null = null
+    let pdfW = canvas.width
+    let pdfH = canvas.height
     if (pdfCanvas) {
       try {
         const pCtx = pdfCanvas.getContext('2d', { willReadFrequently: true })
         if (pCtx) {
-          pdfData = pCtx.getImageData(0, 0, pdfCanvas.width, pdfCanvas.height).data
+          pdfW = pdfCanvas.width
+          pdfH = pdfCanvas.height
+          pdfData = pCtx.getImageData(0, 0, pdfW, pdfH).data
         }
       } catch {}
     }
+    const scaleToPdfX = pdfW / canvas.width
+    const scaleToPdfY = pdfH / canvas.height
 
-    const startPos = (startY * canvas.width + startX) * 4
+    // Sample user-drawn strokes canvas as well
+    let drawData: Uint8ClampedArray | null = null
+    let drawW = canvas.width
+    let drawH = canvas.height
+    if (canvasRef.current) {
+      try {
+        const dCtx = canvasRef.current.getContext('2d', { willReadFrequently: true })
+        if (dCtx) {
+          drawW = canvasRef.current.width
+          drawH = canvasRef.current.height
+          drawData = dCtx.getImageData(0, 0, drawW, drawH).data
+        }
+      } catch {}
+    }
+    const scaleToDrawX = drawW / canvas.width
+    const scaleToDrawY = drawH / canvas.height
+
+    const isBoundaryPixel = (x: number, y: number): boolean => {
+      // 1. PDF outline/boundary check (luminance)
+      if (pdfData) {
+        const px = Math.min(pdfW - 1, Math.max(0, Math.floor(x * scaleToPdfX)))
+        const py = Math.min(pdfH - 1, Math.max(0, Math.floor(y * scaleToPdfY)))
+        const pIdx = (py * pdfW + px) * 4
+        const pr = pdfData[pIdx]
+        const pg = pdfData[pIdx + 1]
+        const pb = pdfData[pIdx + 2]
+        const lum = 0.299 * pr + 0.587 * pg + 0.114 * pb
+        if (lum < 115) return true
+      }
+      // 2. User drawing strokes check
+      if (drawData) {
+        const dx = Math.min(drawW - 1, Math.max(0, Math.floor(x * scaleToDrawX)))
+        const dy = Math.min(drawH - 1, Math.max(0, Math.floor(y * scaleToDrawY)))
+        const dIdx = (dy * drawW + dx) * 4
+        if (drawData[dIdx + 3] > 80) return true
+      }
+      return false
+    }
+
+    // If user clicked directly on a boundary line, look around in a 6px radius for open fillable area
+    if (isBoundaryPixel(startX, startY)) {
+      let foundOpen = false
+      for (let rad = 1; rad <= 6 && !foundOpen; rad++) {
+        for (let dy = -rad; dy <= rad && !foundOpen; dy++) {
+          for (let dx = -rad; dx <= rad && !foundOpen; dx++) {
+            const tx = startX + dx
+            const ty = startY + dy
+            if (tx >= 0 && tx < canvas.width && ty >= 0 && ty < canvas.height) {
+              if (!isBoundaryPixel(tx, ty)) {
+                startX = tx
+                startY = ty
+                foundOpen = true
+              }
+            }
+          }
+        }
+      }
+      if (!foundOpen) {
+        toast('Tap inside the shape to color it! 🎨', { icon: '💡' })
+        return
+      }
+    }
+
+    // Check if clicked pixel already has the target color
+    const clickPos = (startY * canvas.width + startX) * 4
     if (
-      pdfData &&
-      pdfData[startPos] < 60 &&
-      pdfData[startPos + 1] < 60 &&
-      pdfData[startPos + 2] < 60
+      Math.abs(data[clickPos] - r) < 5 &&
+      Math.abs(data[clickPos + 1] - g) < 5 &&
+      Math.abs(data[clickPos + 2] - b) < 5 &&
+      Math.abs(data[clickPos + 3] - a) < 10
     ) {
-      // Clicked on a dark boundary line
       return
     }
 
-    const queue: [number, number][] = [[startX, startY]]
-    const visited = new Uint8Array(canvas.width * canvas.height)
-    visited[startY * canvas.width + startX] = 1
+    // High performance typed queue for flood fill
+    const w = canvas.width
+    const h = canvas.height
+    const visited = new Uint8Array(w * h)
+    const queue = new Int32Array(w * h)
+    let head = 0
+    let tail = 0
+
+    const initialPos = startY * w + startX
+    visited[initialPos] = 1
+    queue[tail++] = initialPos
 
     let fillCount = 0
-    const maxPixels = 140000
+    const maxPixels = 650000
 
-    while (queue.length > 0 && fillCount < maxPixels) {
-      const [cx, cy] = queue.pop()!
-      const idx = (cy * canvas.width + cx) * 4
+    while (head < tail && fillCount < maxPixels) {
+      const pos = queue[head++]
+      const cx = pos % w
+      const cy = Math.floor(pos / w)
+      const idx = pos * 4
 
       data[idx] = r
       data[idx + 1] = g
@@ -444,28 +561,33 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       data[idx + 3] = a
       fillCount++
 
-      const neighbors: [number, number][] = [
-        [cx + 1, cy],
-        [cx - 1, cy],
-        [cx, cy + 1],
-        [cx, cy - 1]
-      ]
-
-      for (const [nx, ny] of neighbors) {
-        if (nx >= 0 && nx < canvas.width && ny >= 0 && ny < canvas.height) {
-          const nIdx = ny * canvas.width + nx
-          if (!visited[nIdx]) {
-            visited[nIdx] = 1
-            const pIdx = nIdx * 4
-            const isDark =
-              pdfData &&
-              pdfData[pIdx] < 65 &&
-              pdfData[pIdx + 1] < 65 &&
-              pdfData[pIdx + 2] < 65
-            if (!isDark) {
-              queue.push([nx, ny])
-            }
-          }
+      // 4-way neighbors
+      if (cx + 1 < w) {
+        const npos = pos + 1
+        if (!visited[npos]) {
+          visited[npos] = 1
+          if (!isBoundaryPixel(cx + 1, cy)) queue[tail++] = npos
+        }
+      }
+      if (cx - 1 >= 0) {
+        const npos = pos - 1
+        if (!visited[npos]) {
+          visited[npos] = 1
+          if (!isBoundaryPixel(cx - 1, cy)) queue[tail++] = npos
+        }
+      }
+      if (cy + 1 < h) {
+        const npos = pos + w
+        if (!visited[npos]) {
+          visited[npos] = 1
+          if (!isBoundaryPixel(cx, cy + 1)) queue[tail++] = npos
+        }
+      }
+      if (cy - 1 >= 0) {
+        const npos = pos - w
+        if (!visited[npos]) {
+          visited[npos] = 1
+          if (!isBoundaryPixel(cx, cy - 1)) queue[tail++] = npos
         }
       }
     }
@@ -474,10 +596,10 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     saveFillCanvas()
     gameAudio.playCoin()
 
-    if (fillCount > 100) {
+    if (fillCount > 50) {
       onAddStar?.(1)
       confetti({
-        particleCount: 22,
+        particleCount: 24,
         spread: 45,
         origin: { x: e.clientX / window.innerWidth, y: e.clientY / window.innerHeight }
       })
@@ -518,28 +640,37 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
   const handlePointerDown = (e: React.PointerEvent<HTMLCanvasElement>) => {
     if (activeTool === 'pointer' || activeTool === 'hand' || activeTool === 'fill') return
 
-    // 1. STAMP TOOL
+    // 1. STAMP / STAR RATING TOOL
     if (activeTool === 'stamp') {
       const rect = e.currentTarget.getBoundingClientRect()
       const pctX = ((e.clientX - rect.left) / rect.width) * 100
       const pctY = ((e.clientY - rect.top) / rect.height) * 100
 
+      const isStar = (selectedEmoji === '⭐' || selectedEmoji === '🌟')
       const newSticker: PlacedSticker = {
         id: `st_${Date.now()}`,
         x: pctX,
         y: pctY,
-        type: 'star'
+        type: 'emoji',
+        emoji: selectedEmoji || '⭐'
       }
-      const updated = [...stickers, newSticker]
+      const updated = [...stickersRef.current, newSticker]
       setStickers(updated)
-      persistState(strokes, updated, typedNotes, typedBlanks, circledItems)
+      stickersRef.current = updated
+      persistState(strokesRef.current, updated, typedNotesRef.current, typedBlanksRef.current, circledItemsRef.current)
       gameAudio.playCoin()
       onAddStar?.(1)
       confetti({
-        particleCount: 20,
-        spread: 45,
+        particleCount: isStar ? 32 : 20,
+        spread: 55,
+        colors: isStar ? ['#f59e0b', '#fbbf24', '#fde047', '#ffffff'] : undefined,
         origin: { x: e.clientX / window.innerWidth, y: e.clientY / window.innerHeight }
       })
+      if (isStar) {
+        toast.success('⭐ Star rated! You rated this lesson! (Drag with Hand tool ✋ to position)', { id: 'star-rated' })
+      } else {
+        toast.success(`${selectedEmoji} placed! Drag it anywhere on the page! ✨`)
+      }
       return
     }
 
@@ -557,10 +688,11 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
         text: '',
         color: activeColor
       }
-      const updated = [...typedNotes, newNote]
+      const updated = [...typedNotesRef.current, newNote]
       setTypedNotes(updated)
+      typedNotesRef.current = updated
       setEditingNoteId(newId)
-      persistState(strokes, stickers, updated, typedBlanks, circledItems)
+      persistState(strokesRef.current, stickersRef.current, updated, typedBlanksRef.current, circledItemsRef.current)
       gameAudio.playTap()
       return
     }
@@ -569,7 +701,30 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     isDrawingRef.current = true
     const pt = getCanvasCoords(e)
     currentStrokeRef.current = [pt]
-    e.currentTarget.setPointerCapture(e.pointerId)
+    try {
+      e.currentTarget.setPointerCapture(e.pointerId)
+    } catch {}
+
+    // Immediate visual stroke dot feedback
+    const canvas = canvasRef.current
+    if (canvas) {
+      const ctx = canvas.getContext('2d')
+      if (ctx) {
+        ctx.save()
+        ctx.beginPath()
+        const r = activeTool === 'highlighter' ? strokeWidth * 1.75 : strokeWidth / 2
+        ctx.arc(pt.x, pt.y, Math.max(1, r), 0, Math.PI * 2)
+        if (activeTool === 'eraser') {
+          ctx.globalCompositeOperation = 'destination-out'
+          ctx.fill()
+        } else {
+          ctx.fillStyle = activeColor
+          if (activeTool === 'highlighter') ctx.globalAlpha = 0.35
+          ctx.fill()
+        }
+        ctx.restore()
+      }
+    }
   }
 
   const handlePointerMove = (e: React.PointerEvent<HTMLCanvasElement>) => {
@@ -616,16 +771,24 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       e.currentTarget.releasePointerCapture(e.pointerId)
     } catch {}
 
-    if (currentStrokeRef.current.length > 1) {
+    const pts = currentStrokeRef.current
+    if (pts.length > 0) {
+      const finalPoints = pts.length === 1
+        ? [pts[0], { x: pts[0].x + 0.5, y: pts[0].y + 0.5, nx: pts[0].nx, ny: pts[0].ny }]
+        : [...pts]
+
       const newStroke: DrawingStroke = {
         tool: activeTool as any,
         color: activeColor,
         width: strokeWidth,
-        points: [...currentStrokeRef.current]
+        points: finalPoints
       }
-      const updated = [...strokes, newStroke]
-      setStrokes(updated)
-      persistState(updated, stickers, typedNotes, typedBlanks, circledItems)
+      setStrokes((prev) => {
+        const updated = [...prev, newStroke]
+        strokesRef.current = updated
+        persistState(updated, stickersRef.current, typedNotesRef.current, typedBlanksRef.current, circledItemsRef.current)
+        return updated
+      })
     }
     currentStrokeRef.current = []
   }
@@ -665,12 +828,14 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     }
   }
 
-  // 5. IN-LINE TYPED BLANKS
-  const handleBlankChange = (id: string, text: string) => {
+  // 5. IN-LINE TYPED BLANKS (Preserved for backwards compatibility with saved blanks)
+  const _handleBlankChange = (id: string, text: string) => {
     const updated = { ...typedBlanks, [id]: text }
     setTypedBlanks(updated)
     persistState(strokes, stickers, typedNotes, updated, circledItems)
   }
+  void _handleBlankChange
+
 
   // 6. CIRCLE / CHOOSE ITEM TOGGLE
   const handleCircleToggle = (id: string) => {
@@ -727,6 +892,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       <canvas
         ref={colorFillCanvasRef}
         onClick={handleColorFillClick}
+        style={{ mixBlendMode: 'multiply' }}
         className={`absolute inset-0 z-10 ${
           activeTool === 'fill' ? 'cursor-crosshair pointer-events-auto' : 'pointer-events-none'
         }`}
@@ -738,6 +904,10 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
+        onPointerCancel={handlePointerUp}
+        onPointerLeave={(e) => {
+          if (isDrawingRef.current) handlePointerUp(e)
+        }}
         className={`absolute inset-0 z-20 touch-none ${
           ['pointer', 'hand', 'fill'].includes(activeTool)
             ? 'pointer-events-none'
@@ -752,7 +922,11 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       />
 
       {/* ── LAYER B: Placed Stickers, EMIs & Images (Moveable with Hand Tool) ─ */}
-      <div className="absolute inset-0 pointer-events-none z-25">
+      <div
+        className={`absolute inset-0 pointer-events-none ${
+          activeTool === 'hand' ? 'z-40' : 'z-25'
+        }`}
+      >
         {stickers.map((st) => {
           const isDragging = draggingItemId === st.id
           const isCustomImage = st.type === 'custom_image' && st.url
@@ -764,14 +938,20 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
               key={st.id}
               onPointerDown={(e) => handleStartItemDrag(e, st.id, 'sticker', st.x, st.y)}
               style={{ left: `${st.x}%`, top: `${st.y}%` }}
-              title={activeTool === 'hand' ? 'Hold and drag to move anywhere' : undefined}
-              className={`absolute -translate-x-1/2 -translate-y-1/2 drop-shadow-xl pointer-events-auto group ${
+              title={activeTool === 'hand' ? "Drag to move anywhere" : "Switch to Move tool to drag"}
+              className={`absolute -translate-x-1/2 -translate-y-1/2 drop-shadow-xl pointer-events-auto group touch-none select-none ${
                 activeTool === 'hand'
-                  ? 'cursor-grab active:cursor-grabbing hover:ring-2 hover:ring-blue-500 rounded-xl p-1'
-                  : ''
-              } ${isDragging ? 'scale-125 z-40 opacity-90' : 'transition-transform duration-100'}`}
+                  ? 'cursor-grab active:cursor-grabbing hover:ring-2 hover:ring-blue-500 rounded-xl p-1 bg-white/20 backdrop-blur-xs'
+                  : 'cursor-pointer hover:ring-1 hover:ring-blue-400/50 rounded-xl p-1'
+              } ${
+                isDragging ? 'scale-125 z-50 opacity-95 ring-4 ring-amber-400' : 'transition-transform duration-100'
+              }`}
             >
-              {isCustomImage ? (
+              {st.emoji ? (
+                <span className="text-4xl select-none leading-none drop-shadow-md pointer-events-none">
+                  {st.emoji}
+                </span>
+              ) : isCustomImage ? (
                 <img
                   src={st.url}
                   alt={st.label || 'EMI Image'}
@@ -842,30 +1022,8 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
           const sw = w * scale
           const sh = h * scale
 
-          // Typeable blank directly on worksheet line
-          if (region.type === 'typeable') {
-            const val = typedBlanks[region.id] || ''
-            return (
-              <div
-                key={region.id}
-                style={{
-                  left: `${sx}px`,
-                  top: `${sy}px`,
-                  width: `${Math.max(75, sw)}px`,
-                  height: `${Math.max(26, sh)}px`
-                }}
-                className="absolute pointer-events-auto"
-              >
-                <input
-                  type="text"
-                  value={val}
-                  onChange={(e) => handleBlankChange(region.id, e.target.value)}
-                  placeholder="Type answer..."
-                  className="w-full h-full px-2 py-0.5 bg-blue-50/90 hover:bg-white focus:bg-white text-blue-950 font-bold text-xs rounded-lg border-2 border-blue-400/80 focus:border-blue-600 focus:ring-2 focus:ring-blue-300 shadow-sm outline-none transition-all placeholder:text-blue-400/60"
-                />
-              </div>
-            )
-          }
+          // Note: Pre-filled 'typeable' boxes are disabled per user request since students can use the freeform Text tool (T) or Pen tool.
+
 
           // Choose / Option circle (e.g. A, B, C, D)
           if (region.type === 'choose') {
@@ -898,7 +1056,11 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       </div>
 
       {/* ── LAYER E: Freeform Typed Notes on Page (Moveable with Hand Tool) ─ */}
-      <div className="absolute inset-0 pointer-events-none z-35">
+      <div
+        className={`absolute inset-0 pointer-events-none ${
+          activeTool === 'hand' ? 'z-40' : 'z-35'
+        }`}
+      >
         {typedNotes.map((note) => {
           const isEditing = editingNoteId === note.id
           const isDragging = draggingItemId === note.id

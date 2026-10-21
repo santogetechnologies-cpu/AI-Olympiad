@@ -19,13 +19,9 @@ import {
   Maximize2,
   Minimize2,
   Star,
-  Sparkles,
-  Volume2,
-  Mic,
   Pen,
   Eraser,
   Type,
-  Smile,
   Undo2,
   Trash2,
   Bot,
@@ -33,7 +29,6 @@ import {
   Check,
   Hand,
   PaintBucket,
-  Image as ImageIcon,
   Lock
 } from 'lucide-react'
 import { usePdfBook } from './hooks/usePdfBook'
@@ -87,7 +82,18 @@ const GRADE_OPTIONS: { key: GradeKey; label: string }[] = [
   { key: 'ug2', label: 'UG 2nd Year • Lead Innovator' },
 ]
 
-const PALETTE_COLORS = ['#2563eb', '#9333ea', '#059669', '#d97706', '#dc2626', '#1e293b']
+const PALETTE_COLORS = [
+  '#2563eb', // Blue
+  '#9333ea', // Purple
+  '#059669', // Emerald
+  '#d97706', // Amber
+  '#dc2626', // Red
+  '#ec4899', // Pink
+  '#38bdf8', // Sky Blue
+  '#facc15', // Yellow
+  '#f97316', // Orange
+  '#1e293b'  // Slate
+]
 
 export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
   onComplete,
@@ -97,7 +103,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
   scopedMonth,
   studentName = 'AI Explorer',
   gradeKey: propGradeKey = 'class3',
-  isGradeLocked = false
+  isGradeLocked = true
 }) => {
   // Normalize selected grade
   const initialGrade = useMemo<GradeKey>(() => {
@@ -122,12 +128,81 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
   // Active Tool: 'pointer' | 'hand' | 'fill' | 'pen' | 'highlighter' | 'eraser' | 'text' | 'stamp'
   const [activeTool, setActiveTool] = useState<StudioTool>('pointer')
   const [activeColor, setActiveColor] = useState<string>('#2563eb')
+  const [selectedEmoji, setSelectedEmoji] = useState<string>('⭐')
   const [strokeWidth, setStrokeWidth] = useState<number>(3)
-  const [zoomScale, setZoomScale] = useState<number>(1.35)
-  const [pageDimensions, setPageDimensions] = useState<{ width: number; height: number }>({
-    width: 820,
-    height: 1160
+
+  // Auto-fit scale detection for mobile and desktop screens (reserves space for right-side vertical tool dock on mobile)
+  const getAutoFitScale = useCallback(() => {
+    if (typeof window === 'undefined') return 1.15
+    const screenWidth = window.innerWidth
+    // Reserve horizontal space: 70px on mobile (< 1024px) for right-side vertical tool dock, 48px on desktop
+    const availableW = screenWidth < 1024 ? Math.max(260, screenWidth - 70) : Math.min(screenWidth - 48, 1000)
+    // Standard A4 width is ~595.3 points
+    const fit = parseFloat((availableW / 595.3).toFixed(2))
+    return screenWidth < 1024 ? Math.min(1.1, Math.max(0.42, fit)) : Math.min(1.5, Math.max(0.8, fit))
+  }, [])
+
+  const [zoomScale, setZoomScale] = useState<number>(() => {
+    if (typeof window === 'undefined') return 1.15
+    const w = window.innerWidth
+    if (w < 1024) {
+      const avail = Math.max(260, w - 70)
+      return Math.min(1.1, Math.max(0.42, parseFloat((avail / 595.3).toFixed(2))))
+    }
+    return 1.25
   })
+
+  // Auto-fit on viewport resize if on mobile
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 1024) {
+        setZoomScale(getAutoFitScale())
+      }
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [getAutoFitScale])
+
+  const [pageDimensions, setPageDimensions] = useState<{ width: number; height: number }>(() => {
+    if (typeof window === 'undefined') return { width: 820, height: 1160 }
+    const w = window.innerWidth
+    const s = w < 1024
+      ? Math.min(1.1, Math.max(0.42, parseFloat((Math.max(260, w - 70) / 595.3).toFixed(2))))
+      : 1.25
+    return {
+      width: Math.round(595.3 * s),
+      height: Math.round(841.9 * s)
+    }
+  })
+
+  // Touch swipe gesture tracking for mobile
+  const touchStartRef = useRef<{ x: number; y: number } | null>(null)
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    if (activeTool !== 'pointer' && activeTool !== 'hand') return
+    const touch = e.touches[0]
+    touchStartRef.current = { x: touch.clientX, y: touch.clientY }
+  }
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (!touchStartRef.current) return
+    const touch = e.changedTouches[0]
+    const deltaX = touch.clientX - touchStartRef.current.x
+    const deltaY = touch.clientY - touchStartRef.current.y
+    touchStartRef.current = null
+
+    // Horizontal swipe threshold: 50px, and predominantly horizontal
+    if (Math.abs(deltaX) > 50 && Math.abs(deltaX) > Math.abs(deltaY) * 1.5) {
+      if (deltaX < 0) {
+        nextPage()
+        gameAudio.playTap()
+      } else {
+        prevPage()
+        gameAudio.playTap()
+      }
+    }
+  }
 
   // Start page calculation
   const startPage = useMemo(() => {
@@ -306,9 +381,10 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
       className="w-full h-screen flex flex-col bg-slate-950 text-slate-100 font-sans select-none overflow-hidden relative"
     >
       {/* ── Top Bar ──────────────────────────────────────────────────────── */}
-      <header className="flex-shrink-0 h-14 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 px-4 flex items-center justify-between gap-3 z-30">
-        {/* Left: Exit + Class Selector + Chapter Selector */}
-        <div className="flex items-center gap-3">
+      {/* ── Top Bar ──────────────────────────────────────────────────────── */}
+      <header className="flex-shrink-0 h-11 sm:h-14 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 px-2 sm:px-4 flex items-center justify-between gap-1 sm:gap-3 z-30">
+        {/* Left: Exit + Class Locked Badge */}
+        <div className="flex items-center gap-1 sm:gap-2.5 min-w-0 shrink-0">
           {onExit && (
             <button
               onClick={() => {
@@ -316,48 +392,22 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
                 onExit()
               }}
               title="Exit Book"
-              className="p-1.5 text-slate-400 hover:text-white hover:bg-slate-800 rounded-xl transition-all flex items-center gap-1.5"
+              className="p-1 sm:p-1.5 text-slate-400 hover:text-white hover:bg-slate-800 rounded-xl transition-all flex items-center gap-1 shrink-0"
             >
-              <ArrowLeft size={18} />
-              <span className="text-xs font-bold hidden sm:inline">Exit</span>
+              <ArrowLeft size={16} />
+              <span className="text-xs font-bold hidden md:inline">Exit</span>
             </button>
           )}
 
-          {/* Class / Grade Selector or Locked Badge */}
-          {isGradeLocked ? (
-            <div className="flex items-center gap-2 px-3 py-1.5 bg-slate-800/90 text-white font-bold text-xs sm:text-sm rounded-xl border border-slate-700 shadow-sm">
-              <div className="w-6 h-6 rounded-lg bg-blue-600 flex items-center justify-center">
-                <BookOpen size={13} className="text-white" />
-              </div>
-              <span className="font-extrabold">{currentBookMeta?.title || GRADE_OPTIONS.find(o => o.key === currentGrade)?.label}</span>
-              <span className="text-[10px] px-1.5 py-0.5 rounded bg-blue-500/20 text-blue-300 border border-blue-500/30 font-semibold flex items-center gap-1">
-                <Lock size={10} /> Enrolled
-              </span>
-            </div>
-          ) : (
-            <div className="flex items-center gap-2">
-              <div className="w-7 h-7 rounded-lg bg-blue-600 flex items-center justify-center shadow-md">
-                <BookOpen size={15} className="text-white" />
-              </div>
-              <select
-                value={currentGrade}
-                onChange={(e) => {
-                  setCurrentGrade(e.target.value as GradeKey)
-                  goToPage(1)
-                  gameAudio.playTap()
-                }}
-                className="bg-slate-800 text-white font-black text-xs sm:text-sm px-2.5 py-1.5 rounded-xl border border-slate-700 outline-none hover:border-blue-500 cursor-pointer"
-              >
-                {GRADE_OPTIONS.map((opt) => (
-                  <option key={opt.key} value={opt.key}>
-                    {opt.label}
-                  </option>
-                ))}
-              </select>
-            </div>
-          )}
+          {/* Class / Grade Badge (Locked for students so they cannot view other classes) */}
+          <div className="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-2.5 py-0.5 sm:py-1 bg-blue-600/20 text-blue-300 border border-blue-500/30 font-black text-xs sm:text-sm rounded-xl shrink-0 shadow-xs">
+            <BookOpen size={12} className="text-blue-400 shrink-0" />
+            <span className="whitespace-nowrap font-extrabold capitalize">
+              {GRADE_OPTIONS.find((o) => o.key === currentGrade)?.label?.split('•')[0].trim() || 'Class 3'}
+            </span>
+          </div>
 
-          {/* Chapter Selector */}
+          {/* Chapter Selector (Desktop only) */}
           {currentBookMeta?.chapters && (
             <select
               value={currentChapter?.startPage || 1}
@@ -365,7 +415,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
                 goToPage(parseInt(e.target.value, 10))
                 gameAudio.playTap()
               }}
-              className="hidden md:block max-w-[220px] truncate bg-slate-800/80 text-xs font-bold text-slate-300 px-2.5 py-1.5 rounded-xl border border-slate-700 outline-none cursor-pointer"
+              className="hidden lg:block max-w-[200px] truncate bg-slate-800/80 text-xs font-bold text-slate-300 px-2 py-1.5 rounded-xl border border-slate-700 outline-none cursor-pointer"
             >
               {currentBookMeta.chapters.map((ch: any, idx: number) => (
                 <option key={idx} value={ch.startPage}>
@@ -377,7 +427,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
         </div>
 
         {/* Center: Page Number & Jumper */}
-        <div className="flex items-center gap-2 bg-slate-800/80 px-3 py-1 rounded-xl border border-slate-700">
+        <div className="flex items-center gap-0.5 sm:gap-2 bg-slate-800/80 px-1.5 sm:px-3 py-0.5 sm:py-1 rounded-xl border border-slate-700 shrink-0">
           <button
             onClick={() => {
               prevPage()
@@ -385,13 +435,13 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
             }}
             disabled={currentPage <= 1}
             title="Previous Page (Left Arrow)"
-            className="p-1 text-slate-400 hover:text-white disabled:opacity-30"
+            className="p-1 text-slate-400 hover:text-white disabled:opacity-30 cursor-pointer"
           >
-            <ChevronLeft size={18} />
+            <ChevronLeft size={15} />
           </button>
 
-          <span className="text-xs font-black text-white px-1">
-            Page {currentPage} <span className="text-slate-500 font-normal">/ {numPages || 218}</span>
+          <span className="text-[11px] sm:text-xs font-black text-white px-0.5 whitespace-nowrap">
+            {currentPage} <span className="text-slate-500 font-normal">/ {numPages || 218}</span>
           </span>
 
           <button
@@ -401,51 +451,69 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
             }}
             disabled={currentPage >= (numPages || 218)}
             title="Next Page (Right Arrow)"
-            className="p-1 text-slate-400 hover:text-white disabled:opacity-30"
+            className="p-1 text-slate-400 hover:text-white disabled:opacity-30 cursor-pointer"
           >
-            <ChevronRight size={18} />
+            <ChevronRight size={15} />
           </button>
         </div>
 
-        {/* Right: Stars, Zoom, Fullscreen */}
-        <div className="flex items-center gap-2">
+        {/* Right: Stars & Zoom / Fit */}
+        <div className="flex items-center gap-1 sm:gap-2 shrink-0">
           {/* Stars Collected */}
-          <div className="flex items-center gap-1.5 px-3 py-1 bg-amber-500/20 border border-amber-400/40 rounded-xl text-amber-300 font-black text-xs shadow-sm">
-            <Star size={14} className="fill-amber-400 text-amber-400 animate-spin-slow" />
+          <div className="flex items-center gap-1 px-2 sm:px-2.5 py-1 bg-amber-500/20 border border-amber-400/40 rounded-xl text-amber-300 font-black text-[11px] sm:text-xs shadow-sm">
+            <Star size={13} className="fill-amber-400 text-amber-400 animate-spin-slow" />
             <span>{stars}</span>
           </div>
 
-          {/* Zoom controls */}
-          <div className="hidden lg:flex items-center gap-1 bg-slate-800/60 p-1 rounded-xl border border-slate-700/60">
+          {/* Zoom controls & Fit button */}
+          <div className="flex items-center gap-1 bg-slate-800/60 p-0.5 sm:p-1 rounded-xl border border-slate-700/60">
             <button
               onClick={() => {
-                setZoomScale((z) => Math.max(0.8, parseFloat((z - 0.15).toFixed(2))))
+                setZoomScale(getAutoFitScale())
                 gameAudio.playTap()
+                toast.success('Fitted to screen! 📱', { id: 'fit-zoom' })
               }}
-              title="Zoom Out"
-              className="p-1 text-slate-400 hover:text-white"
+              title="Fit to Screen Width"
+              className="px-1.5 py-0.5 text-[10px] font-black bg-blue-600/80 hover:bg-blue-600 text-white rounded-lg transition-colors cursor-pointer"
             >
-              <ZoomOut size={14} />
+              Fit
             </button>
-            <span className="text-[11px] font-bold text-slate-300 px-1">
-              {Math.round(zoomScale * 100)}%
-            </span>
-            <button
-              onClick={() => {
-                setZoomScale((z) => Math.min(2.2, parseFloat((z + 0.15).toFixed(2))))
-                gameAudio.playTap()
-              }}
-              title="Zoom In"
-              className="p-1 text-slate-400 hover:text-white"
-            >
-              <ZoomIn size={14} />
-            </button>
+            <div className="hidden sm:flex items-center gap-0.5">
+              <button
+                onClick={() => {
+                  setZoomScale((z) => Math.max(0.45, parseFloat((z - 0.15).toFixed(2))))
+                  gameAudio.playTap()
+                }}
+                title="Zoom Out"
+                className="p-1 text-slate-400 hover:text-white cursor-pointer"
+              >
+                <ZoomOut size={13} />
+              </button>
+              <span className="text-[10px] font-bold text-slate-300 px-1">
+                {Math.round(zoomScale * 100)}%
+              </span>
+              <button
+                onClick={() => {
+                  setZoomScale((z) => Math.min(2.2, parseFloat((z + 0.15).toFixed(2))))
+                  gameAudio.playTap()
+                }}
+                title="Zoom In"
+                className="p-1 text-slate-400 hover:text-white cursor-pointer"
+              >
+                <ZoomIn size={13} />
+              </button>
+            </div>
           </div>
         </div>
       </header>
 
       {/* ── Main Viewport (Full-Screen PDF Canvas + Direct In-Page Interaction) */}
-      <div className="flex-1 overflow-auto bg-slate-950 p-4 flex items-start justify-center relative">
+      <div
+        ref={containerRef}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
+        className="flex-1 w-full overflow-x-hidden overflow-y-auto bg-slate-950 p-1 pl-2 pr-16 sm:pl-3 sm:pr-20 lg:p-4 flex flex-col items-center justify-start relative select-none pb-28 lg:pb-16"
+      >
         {isLoading && (
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-950/80 z-40 backdrop-blur-xs">
             <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mb-3" />
@@ -453,7 +521,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
           </div>
         )}
 
-        {/* ── Giant Left Navigation Arrow Paddle ─────────────────────────── */}
+        {/* ── Giant Left Navigation Arrow Paddle (Desktop Only) ──────────────── */}
         <button
           onClick={() => {
             prevPage()
@@ -461,12 +529,12 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
           }}
           disabled={currentPage <= 1}
           title="Previous Page (Left Arrow)"
-          className="fixed left-4 top-1/2 -translate-y-1/2 z-30 w-14 h-24 rounded-2xl bg-slate-900/70 hover:bg-slate-900 backdrop-blur-md border border-white/20 text-white flex items-center justify-center transition-all duration-200 hover:scale-105 hover:border-blue-400 shadow-2xl disabled:opacity-0 disabled:pointer-events-none group"
+          className="hidden md:flex fixed left-4 top-1/2 -translate-y-1/2 z-30 w-14 h-24 rounded-2xl bg-slate-900/70 hover:bg-slate-900 backdrop-blur-md border border-white/20 text-white items-center justify-center transition-all duration-200 hover:scale-105 hover:border-blue-400 shadow-2xl disabled:opacity-0 disabled:pointer-events-none group"
         >
           <ChevronLeft size={36} className="text-slate-300 group-hover:text-white group-hover:-translate-x-1 transition-transform" />
         </button>
 
-        {/* ── Giant Right Navigation Arrow Paddle ────────────────────────── */}
+        {/* ── Giant Right Navigation Arrow Paddle (Desktop Only) ─────────────── */}
         <button
           onClick={() => {
             nextPage()
@@ -474,14 +542,14 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
           }}
           disabled={currentPage >= (numPages || 218)}
           title="Next Page (Right Arrow)"
-          className="fixed right-4 top-1/2 -translate-y-1/2 z-30 w-14 h-24 rounded-2xl bg-slate-900/70 hover:bg-slate-900 backdrop-blur-md border border-white/20 text-white flex items-center justify-center transition-all duration-200 hover:scale-105 hover:border-blue-400 shadow-2xl disabled:opacity-0 disabled:pointer-events-none group"
+          className="hidden md:flex fixed right-4 top-1/2 -translate-y-1/2 z-30 w-14 h-24 rounded-2xl bg-slate-900/70 hover:bg-slate-900 backdrop-blur-md border border-white/20 text-white items-center justify-center transition-all duration-200 hover:scale-105 hover:border-blue-400 shadow-2xl disabled:opacity-0 disabled:pointer-events-none group"
         >
           <ChevronRight size={36} className="text-slate-300 group-hover:text-white group-hover:translate-x-1 transition-transform" />
         </button>
 
         {/* ── Authentic Book Page + Unified In-Page Interaction Layer ──────── */}
         <div
-          className="relative shadow-2xl rounded-2xl overflow-hidden bg-white border border-slate-700 transition-all duration-150 my-auto"
+          className="relative shadow-2xl rounded-xl sm:rounded-2xl overflow-hidden bg-white border border-slate-700 transition-all duration-150 mx-auto my-auto shrink-0 max-w-full"
           style={{
             width: `${pageDimensions.width}px`,
             height: `${pageDimensions.height}px`,
@@ -505,6 +573,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
             regions={currentPageRegions}
             isReadingAloud={wordsLayer.isReadingAloud}
             pdfCanvas={pdfCanvasRef.current}
+            selectedEmoji={selectedEmoji}
             onAddStar={() => handleAddStar(1)}
             onWordClick={wordsLayer.speakWord}
             onWordSpell={wordsLayer.spellWord}
@@ -512,139 +581,126 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
         </div>
       </div>
 
-      {/* ── In-Page Floating Tool Dock ─────────────────────────────────────── */}
-      <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 flex items-center gap-1.5 p-2 bg-slate-900/90 backdrop-blur-md rounded-2xl border border-white/20 shadow-2xl transition-all max-w-[95vw] overflow-x-auto">
-        {/* Tap Word Mode */}
+      {/* ── In-Page Floating Tool Dock (Vertical on Right Side for Mobile, Horizontal on Desktop) ── */}
+      <div className="fixed right-2 top-1/2 -translate-y-1/2 z-40 flex flex-col items-center gap-1 sm:gap-1.5 p-1.5 sm:p-2 bg-slate-900/95 backdrop-blur-md rounded-2xl border border-white/20 shadow-2xl transition-all max-h-[85vh] overflow-y-auto overflow-x-hidden lg:flex-row lg:bottom-6 lg:left-1/2 lg:-translate-x-1/2 lg:top-auto lg:right-auto lg:translate-y-0 lg:max-w-[96vw] lg:max-h-none lg:overflow-x-auto lg:overflow-y-visible">
+        {/* Tap */}
         <button
           onClick={() => {
             setActiveTool('pointer')
             gameAudio.playTap()
           }}
-          title="Tap Word Mode: Tap any word or sentence on the page to hear it!"
-          className={`px-2.5 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all ${
-            activeTool === 'pointer' ? 'bg-blue-600 text-white shadow-md scale-105' : 'text-slate-300 hover:bg-white/10'
+          title="Tap to listen to words"
+          className={`w-11 sm:w-12 py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all ${
+            activeTool === 'pointer' ? 'bg-blue-600 text-white shadow-md scale-105 ring-2 ring-blue-300' : 'text-slate-300 hover:bg-white/10'
           }`}
         >
-          <span className="text-sm">👆</span>
-          <span className="hidden sm:inline">Tap Word</span>
+          <span className="text-base leading-none">👆</span>
+          <span className="text-[9px] font-extrabold mt-1 leading-none tracking-tight">Tap</span>
         </button>
 
-        {/* Hand / Move Tool */}
+        {/* Move */}
         <button
           onClick={() => {
             setActiveTool('hand')
             gameAudio.playTap()
           }}
-          title="Hand Tool: Move any EMI, image, sticker, or note anywhere on the page!"
-          className={`px-2.5 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all ${
+          title="Move items around"
+          className={`w-11 sm:w-12 py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all ${
             activeTool === 'hand' ? 'bg-amber-600 text-white shadow-md scale-105 ring-2 ring-amber-300' : 'text-slate-300 hover:bg-white/10'
           }`}
         >
           <Hand size={16} />
-          <span>Move</span>
+          <span className="text-[9px] font-extrabold mt-1 leading-none tracking-tight">Move</span>
         </button>
 
-        {/* Color Fill Tool */}
+        {/* Color */}
         <button
           onClick={() => {
             setActiveTool('fill')
             gameAudio.playTap()
           }}
-          title="Color Fill Tool: Click to flood fill colors into worksheets and shapes!"
-          className={`px-2.5 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all ${
+          title="Color worksheets and shapes"
+          className={`w-11 sm:w-12 py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all ${
             activeTool === 'fill' ? 'bg-emerald-600 text-white shadow-md scale-105 ring-2 ring-emerald-300' : 'text-slate-300 hover:bg-white/10'
           }`}
         >
           <PaintBucket size={16} />
-          <span>Fill</span>
+          <span className="text-[9px] font-extrabold mt-1 leading-none tracking-tight">Color</span>
         </button>
 
-        {/* Pen */}
+        {/* Write (Pen) */}
         <button
           onClick={() => {
             setActiveTool('pen')
             gameAudio.playTap()
           }}
-          title="Drawing Pen"
-          className={`p-2.5 rounded-xl transition-all ${
-            activeTool === 'pen' ? 'bg-blue-600 text-white shadow-md scale-105' : 'text-slate-300 hover:bg-white/10'
+          title="Write on the page"
+          className={`w-11 sm:w-12 py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all ${
+            activeTool === 'pen' ? 'bg-blue-600 text-white shadow-md scale-105 ring-2 ring-blue-300' : 'text-slate-300 hover:bg-white/10'
           }`}
         >
-          <Pen size={18} />
+          <Pen size={16} />
+          <span className="text-[9px] font-extrabold mt-1 leading-none tracking-tight">Write</span>
         </button>
 
-        {/* Highlighter */}
+        {/* Star */}
         <button
           onClick={() => {
-            setActiveTool('highlighter')
+            setActiveTool('stamp')
+            setSelectedEmoji('⭐')
             gameAudio.playTap()
+            toast('⭐ Star tool active! Tap on the page to rate!', {
+              icon: '⭐',
+              id: 'star-rate-tip'
+            })
           }}
-          title="Highlighter"
-          className={`p-2.5 rounded-xl transition-all ${
-            activeTool === 'highlighter' ? 'bg-amber-500 text-white shadow-md scale-105' : 'text-slate-300 hover:bg-white/10'
+          title="Rate with Stars ⭐"
+          className={`w-11 sm:w-12 py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center relative cursor-pointer transition-all ${
+            activeTool === 'stamp'
+              ? 'bg-amber-500 text-white shadow-lg shadow-amber-500/50 scale-110 ring-2 ring-amber-300'
+              : 'text-amber-300 hover:bg-white/10'
           }`}
         >
-          <Sparkles size={18} />
+          <span className="text-lg leading-none select-none drop-shadow">⭐</span>
+          <span className="text-[9px] font-extrabold mt-1 leading-none tracking-tight">Star</span>
+          {activeTool === 'stamp' && (
+            <span className="absolute top-1 right-1 w-2 h-2 bg-yellow-300 rounded-full animate-ping" />
+          )}
         </button>
 
-        {/* Eraser */}
+        {/* Erase */}
         <button
           onClick={() => {
             setActiveTool('eraser')
             gameAudio.playTap()
           }}
-          title="Eraser"
-          className={`p-2.5 rounded-xl transition-all ${
-            activeTool === 'eraser' ? 'bg-rose-600 text-white shadow-md scale-105' : 'text-slate-300 hover:bg-white/10'
+          title="Erase marks"
+          className={`w-11 sm:w-12 py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all ${
+            activeTool === 'eraser' ? 'bg-rose-600 text-white shadow-md scale-105 ring-2 ring-rose-300' : 'text-slate-300 hover:bg-white/10'
           }`}
         >
-          <Eraser size={18} />
+          <Eraser size={16} />
+          <span className="text-[9px] font-extrabold mt-1 leading-none tracking-tight">Erase</span>
         </button>
 
-        {/* Type Tool */}
+        {/* Type */}
         <button
           onClick={() => {
             setActiveTool('text')
             gameAudio.playTap()
           }}
           title="Type answers anywhere on the page"
-          className={`p-2.5 rounded-xl transition-all ${
-            activeTool === 'text' ? 'bg-indigo-600 text-white shadow-md scale-105' : 'text-slate-300 hover:bg-white/10'
+          className={`w-11 sm:w-12 py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all ${
+            activeTool === 'text' ? 'bg-indigo-600 text-white shadow-md scale-105 ring-2 ring-indigo-300' : 'text-slate-300 hover:bg-white/10'
           }`}
         >
-          <Type size={18} />
-        </button>
-
-        {/* Stamp Tool */}
-        <button
-          onClick={() => {
-            setActiveTool('stamp')
-            gameAudio.playTap()
-          }}
-          title="Stamp Stars ⭐, Robots & Badges"
-          className={`p-2.5 rounded-xl transition-all ${
-            activeTool === 'stamp' ? 'bg-amber-600 text-white shadow-md scale-105' : 'text-slate-300 hover:bg-white/10'
-          }`}
-        >
-          <Smile size={18} />
-        </button>
-
-        {/* Add Image / EMI */}
-        <button
-          onClick={() => {
-            const input = document.querySelector('input[type="file"][accept*="image"]') as HTMLInputElement
-            input?.click()
-            gameAudio.playTap()
-          }}
-          title="Upload / Place an image or EMI to move around with the Hand Tool"
-          className="p-2.5 rounded-xl text-slate-300 hover:bg-white/10 hover:text-white transition-all"
-        >
-          <ImageIcon size={18} />
+          <Type size={16} />
+          <span className="text-[9px] font-extrabold mt-1 leading-none tracking-tight">Type</span>
         </button>
 
         {/* Color Palette Selector */}
-        {['pen', 'highlighter', 'fill'].includes(activeTool) && (
-          <div className="flex items-center gap-1 pl-1">
+        {['pen', 'fill'].includes(activeTool) && (
+          <div className="flex flex-col lg:flex-row items-center gap-1.5 py-1 lg:py-0 lg:pl-1">
             {PALETTE_COLORS.map((col) => (
               <button
                 key={col}
@@ -652,7 +708,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
                   setActiveColor(col)
                   gameAudio.playTap()
                 }}
-                className={`w-5 h-5 rounded-full border transition-transform ${
+                className={`w-4 h-4 sm:w-5 sm:h-5 rounded-full border transition-transform ${
                   activeColor === col ? 'scale-125 border-white shadow-md ring-2 ring-blue-400' : 'border-transparent hover:scale-110'
                 }`}
                 style={{ backgroundColor: col }}
@@ -660,50 +716,10 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
             ))}
           </div>
         )}
-
-        <div className="w-px h-6 bg-white/20 mx-1" />
-
-        {/* Read Page Aloud Button */}
-        <button
-          onClick={() => {
-            if (wordsLayer.isReadingAloud) {
-              wordsLayer.stopReadAloud()
-            } else {
-              setActiveTool('pointer')
-              wordsLayer.startReadAloud()
-            }
-          }}
-          title="Read Whole Page Aloud with Karaoke Highlight"
-          className={`px-3 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 transition-all shadow-md ${
-            wordsLayer.isReadingAloud
-              ? 'bg-amber-500 text-slate-950 animate-pulse'
-              : 'bg-emerald-600 hover:bg-emerald-500 text-white'
-          }`}
-        >
-          <Volume2 size={16} />
-          <span>{wordsLayer.isReadingAloud ? 'Stop' : 'Read Page'}</span>
-        </button>
-
-        {/* Voice Assistant */}
-        <button
-          onClick={() => {
-            if (voice.isListening) {
-              voice.stopListening()
-            } else {
-              voice.startListening()
-            }
-          }}
-          title="Voice Assistant: Speak 'next', 'back', 'read'"
-          className={`p-2.5 rounded-xl transition-all ${
-            voice.isListening ? 'bg-rose-600 text-white animate-pulse' : 'text-slate-300 hover:bg-white/10'
-          }`}
-        >
-          <Mic size={18} />
-        </button>
       </div>
 
-      {/* ── Cute Floating Bolt Avatar (Bottom-Right) ───────────────────────── */}
-      <div className="fixed bottom-6 right-6 z-40 flex flex-col items-end pointer-events-auto">
+      {/* ── Cute Floating Bolt Avatar (Bottom-Left on mobile to avoid blocking lesson or tools) ── */}
+      <div className="fixed bottom-20 left-3 lg:bottom-6 lg:right-6 lg:left-auto z-30 flex flex-col items-start lg:items-end pointer-events-auto">
         {isBoltTalking && (
           <div className="mb-2 max-w-xs p-3 bg-slate-900/95 backdrop-blur-md text-white rounded-2xl shadow-2xl border border-blue-400 text-xs leading-relaxed animate-in fade-in slide-in-from-bottom-2">
             <div className="font-black text-blue-300 text-[10px] uppercase mb-1">Bolt Says:</div>
@@ -714,9 +730,9 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
         <button
           onClick={handleTalkToBolt}
           title="Tap to talk to Bolt!"
-          className="w-14 h-14 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-600 text-white shadow-2xl border-2 border-white/40 flex items-center justify-center transition-transform hover:scale-110 active:scale-95 group"
+          className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-600 text-white shadow-2xl border-2 border-white/40 flex items-center justify-center transition-transform hover:scale-110 active:scale-95 group"
         >
-          <Bot size={28} className="text-white group-hover:rotate-12 transition-transform" />
+          <Bot size={24} className="text-white group-hover:rotate-12 transition-transform sm:w-7 sm:h-7" />
         </button>
       </div>
     </div>
