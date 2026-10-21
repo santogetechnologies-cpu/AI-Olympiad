@@ -389,7 +389,17 @@ export const CLASS5_GRID_ITEMS: ChapterGridItem[] = [
 
 export const CHAPTER_GRID_ITEMS = CLASS3_GRID_ITEMS
 
-const GRADE_TRACK_INFO = {
+export interface GradeTrackMeta {
+  name: string
+  subjectName: string
+  mascot: string
+  theme: {
+    dot: string
+    badge: string
+  }
+}
+
+const GRADE_TRACK_INFO: Record<string, GradeTrackMeta> = {
   class3: {
     name: 'Class 3',
     subjectName: 'Junior AI & Playful Logic',
@@ -417,7 +427,139 @@ const GRADE_TRACK_INFO = {
       badge: 'bg-purple-50 text-purple-700 border-purple-200',
     },
   },
-} as const
+  class6: {
+    name: 'Class 6',
+    subjectName: 'Middle School AI & Computational Thinking',
+    mascot: 'Nova 🌟',
+    theme: {
+      dot: 'bg-amber-500',
+      badge: 'bg-amber-50 text-amber-700 border-amber-200',
+    },
+  },
+  class7: {
+    name: 'Class 7',
+    subjectName: 'Data Logic & Python Foundations',
+    mascot: 'Byte 💻',
+    theme: {
+      dot: 'bg-teal-500',
+      badge: 'bg-teal-50 text-teal-700 border-teal-200',
+    },
+  },
+  class8: {
+    name: 'Class 8',
+    subjectName: 'Applied AI Thinking & Python Coding',
+    mascot: 'Circuit ⚡',
+    theme: {
+      dot: 'bg-cyan-500',
+      badge: 'bg-cyan-50 text-cyan-700 border-cyan-200',
+    },
+  },
+  class9: {
+    name: 'Class 9',
+    subjectName: 'Applied Artificial Intelligence & Statistical Learning',
+    mascot: 'Tensor 🧠',
+    theme: {
+      dot: 'bg-blue-500',
+      badge: 'bg-blue-50 text-blue-700 border-blue-200',
+    },
+  },
+  class10: {
+    name: 'Class 10',
+    subjectName: 'Machine Learning Foundations & Python Engineering',
+    mascot: 'Matrix 🔮',
+    theme: {
+      dot: 'bg-indigo-500',
+      badge: 'bg-indigo-50 text-indigo-700 border-indigo-200',
+    },
+  },
+  class11: {
+    name: 'Class 11',
+    subjectName: 'Mathematical Foundations of ML & Neural Networks',
+    mascot: 'Neural 🌐',
+    theme: {
+      dot: 'bg-violet-500',
+      badge: 'bg-violet-50 text-violet-700 border-violet-200',
+    },
+  },
+  class12: {
+    name: 'Class 12',
+    subjectName: 'Deep Learning, Transformers & Applied Generative AI',
+    mascot: 'Alpha 🚀',
+    theme: {
+      dot: 'bg-fuchsia-500',
+      badge: 'bg-fuchsia-50 text-fuchsia-700 border-fuchsia-200',
+    },
+  },
+  ug1: {
+    name: 'UG 1st Year',
+    subjectName: 'Computational AI & Data Science Engineering',
+    mascot: 'Turing 💻',
+    theme: {
+      dot: 'bg-rose-500',
+      badge: 'bg-rose-50 text-rose-700 border-rose-200',
+    },
+  },
+  ug2: {
+    name: 'UG 2nd Year',
+    subjectName: 'Classical Machine Learning & Applied Statistical Models',
+    mascot: 'Ada 💎',
+    theme: {
+      dot: 'bg-orange-500',
+      badge: 'bg-orange-50 text-orange-700 border-orange-200',
+    },
+  },
+  ug3: {
+    name: 'UG 3rd Year',
+    subjectName: 'Deep Learning, NLP & Enterprise LLM Engineering',
+    mascot: 'Cortex 🧠',
+    theme: {
+      dot: 'bg-emerald-500',
+      badge: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+    },
+  },
+  ug4: {
+    name: 'UG Final Year',
+    subjectName: 'Autonomous AI Agents, Scalable System Architecture & Capstone Systems',
+    mascot: 'Titan ⚡',
+    theme: {
+      dot: 'bg-blue-500',
+      badge: 'bg-blue-50 text-blue-700 border-blue-200',
+    },
+  },
+  pg1: {
+    name: 'PG 1st Year',
+    subjectName: 'Advanced Machine Learning Theory & Statistical Optimization',
+    mascot: 'Quantum 🌌',
+    theme: {
+      dot: 'bg-purple-500',
+      badge: 'bg-purple-50 text-purple-700 border-purple-200',
+    },
+  },
+  pg2: {
+    name: 'PG Final Year',
+    subjectName: 'Frontiers of AI, Mechanistic Interpretability & Research Dissertation',
+    mascot: 'Frontier 🔭',
+    theme: {
+      dot: 'bg-indigo-500',
+      badge: 'bg-indigo-50 text-indigo-700 border-indigo-200',
+    },
+  },
+}
+
+export const getGradeTrackInfo = (gradeKey: string): GradeTrackMeta => {
+  if (gradeKey && GRADE_TRACK_INFO[gradeKey]) {
+    return GRADE_TRACK_INFO[gradeKey]
+  }
+  return {
+    name: gradeKey ? gradeKey.toUpperCase() : 'Class 3',
+    subjectName: 'Artificial Intelligence & Computing',
+    mascot: 'Bolt ⚡',
+    theme: {
+      dot: 'bg-sky-500',
+      badge: 'bg-sky-50 text-sky-700 border-sky-200',
+    },
+  }
+}
 
 export default function ChapterLearningPage() {
   const { chapterId, itemId } = useParams<{ chapterId?: string; itemId?: string }>()
@@ -426,7 +568,7 @@ export default function ChapterLearningPage() {
   const navigate = useNavigate()
 
   // 1. Database-bound assigned grade state (initialized from fast local cache, verified from DB)
-  const [assignedGrade, setAssignedGrade] = useState<'class3' | 'class4' | 'class5'>(() => {
+  const [assignedGrade, setAssignedGrade] = useState<string>(() => {
     if (user?.id) {
       try {
         const stored = localStorage.getItem(`nanjil_active_class_${user.id}`)
@@ -447,7 +589,7 @@ export default function ChapterLearningPage() {
     subjectName: string
     mascot: string
   }>(() => {
-    const meta = GRADE_TRACK_INFO[assignedGrade]
+    const meta = getGradeTrackInfo(assignedGrade)
     return {
       className: meta.name,
       subjectName: meta.subjectName,
@@ -465,7 +607,7 @@ export default function ChapterLearningPage() {
         const res = await enrollmentService.getStudentAssignedGrade(user.id, user.organization_id)
         if (isMounted) {
           setAssignedGrade(res.gradeKey)
-          const meta = GRADE_TRACK_INFO[res.gradeKey]
+          const meta = getGradeTrackInfo(res.gradeKey)
           setAssignedClassInfo({
             className: res.className || meta.name,
             subjectName: res.subjectName || meta.subjectName,
@@ -551,7 +693,7 @@ export default function ChapterLearningPage() {
       navigate(`/student/learning/chapters/${itemKey}`)
     }
 
-    const currentTrackTheme = GRADE_TRACK_INFO[assignedGrade].theme
+    const currentTrackTheme = getGradeTrackInfo(assignedGrade).theme
 
     return (
       <AppLayout>

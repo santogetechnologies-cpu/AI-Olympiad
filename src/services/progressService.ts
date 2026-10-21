@@ -97,6 +97,10 @@ export type AppGradeKey =
   | 'class12'
   | 'ug1'
   | 'ug2'
+  | 'ug3'
+  | 'ug4'
+  | 'pg1'
+  | 'pg2'
 
 export function parseGradeKeyFromClass(target: any): AppGradeKey {
   if (!target) return 'class3'
@@ -106,7 +110,50 @@ export function parseGradeKeyFromClass(target: any): AppGradeKey {
       : `${target.name || ''} ${target.code || ''} ${target.id || ''} ${target.gradeKey || ''} ${target.class_id || ''}`
   ).toLowerCase()
 
-  // 1. Check UG Levels
+  // 1. Check PG Levels
+  if (
+    text.includes('pg 2') ||
+    text.includes('pg2') ||
+    text.includes('pg 2nd') ||
+    text.includes('pg-02') ||
+    text.includes('fai-02') ||
+    text.includes('pg final')
+  ) {
+    return 'pg2'
+  }
+
+  if (
+    text.includes('pg 1') ||
+    text.includes('pg1') ||
+    text.includes('pg 1st') ||
+    text.includes('pg-01') ||
+    text.includes('aml-01')
+  ) {
+    return 'pg1'
+  }
+
+  // 2. Check UG Levels
+  if (
+    text.includes('ug 4') ||
+    text.includes('ug4') ||
+    text.includes('ug 4th') ||
+    text.includes('ug-04') ||
+    text.includes('aaa-04') ||
+    text.includes('ug final')
+  ) {
+    return 'ug4'
+  }
+
+  if (
+    text.includes('ug 3') ||
+    text.includes('ug3') ||
+    text.includes('ug 3rd') ||
+    text.includes('ug-03') ||
+    text.includes('dle-03')
+  ) {
+    return 'ug3'
+  }
+
   if (
     text.includes('ug 2') ||
     text.includes('ug2') ||
@@ -127,7 +174,7 @@ export function parseGradeKeyFromClass(target: any): AppGradeKey {
     return 'ug1'
   }
 
-  // 2. Check Two-Digit Classes (12, 11, 10)
+  // 3. Check Two-Digit Classes (12, 11, 10)
   if (
     text.includes('class 12') ||
     text.includes('class12') ||

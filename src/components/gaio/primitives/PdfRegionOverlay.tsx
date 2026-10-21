@@ -23,6 +23,7 @@ export interface PageRegion {
   label?: string
   optionText?: string
   targetWord?: string
+  imageSrc?: string
 }
 
 export interface PdfRegionOverlayProps {

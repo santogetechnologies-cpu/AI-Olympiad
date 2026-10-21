@@ -53,6 +53,10 @@ export type GradeKey =
   | 'class12'
   | 'ug1'
   | 'ug2'
+  | 'ug3'
+  | 'ug4'
+  | 'pg1'
+  | 'pg2'
 
 export interface GaioInteractiveBookAppProps {
   onComplete?: () => void
@@ -80,6 +84,10 @@ const GRADE_OPTIONS: { key: GradeKey; label: string }[] = [
   { key: 'class12', label: 'Class 12 • Scholar' },
   { key: 'ug1', label: 'UG 1st Year • Innovator' },
   { key: 'ug2', label: 'UG 2nd Year • Lead Innovator' },
+  { key: 'ug3', label: 'UG 3rd Year • AI Specialist' },
+  { key: 'ug4', label: 'UG Final Year • AI Architect' },
+  { key: 'pg1', label: 'PG 1st Year • Research Fellow' },
+  { key: 'pg2', label: 'PG Final Year • Principal Researcher' },
 ]
 
 const PALETTE_COLORS = [

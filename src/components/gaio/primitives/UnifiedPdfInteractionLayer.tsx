@@ -162,18 +162,22 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
   const [draggingItemId, setDraggingItemId] = useState<string | null>(null)
   const dragStartRef = useRef<{
     id: string
-    kind: 'sticker' | 'note'
+    kind: 'sticker' | 'note' | 'image'
     startPointerX: number
     startPointerY: number
     initX: number
     initY: number
   } | null>(null)
 
+  // Moveable authentic book figures extracted from PDF
+  const [imageOffsets, setImageOffsets] = useState<{ [id: string]: { x: number; y: number } }>({})
+
   // Tap-to-count counter state
   const [countNumber, setCountNumber] = useState<number>(0)
   const [bouncingWordId, setBouncingWordId] = useState<string | null>(null)
 
   const storageKey = `gaio_page_state_${bookKey}_p${pageNumber}`
+  const imageOffsetsKey = `gaio_dragged_images_${bookKey}_p${pageNumber}`
   const fillStorageKey = `gaio_fill_${bookKey}_p${pageNumber}`
 
   // Load saved state for this page
@@ -201,8 +205,21 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       setTypedBlanks({})
       setCircledItems({})
     }
+
+    // Load moved book image offsets
+    try {
+      const savedImgs = localStorage.getItem(imageOffsetsKey)
+      if (savedImgs) {
+        setImageOffsets(JSON.parse(savedImgs))
+      } else {
+        setImageOffsets({})
+      }
+    } catch {
+      setImageOffsets({})
+    }
+
     setCountNumber(0)
-  }, [storageKey])
+  }, [storageKey, imageOffsetsKey])
 
   // Load fill layer for this page
   useEffect(() => {
@@ -349,12 +366,11 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     }
   }
 
-  // ── Drag & Move Logic for Hand Tool ────────────────────────────────────────
-  // ── Drag & Move Logic for Hand Tool & Emojis ────────────────────────────────────────
+  // ── Drag & Move Logic for Hand Tool & Emojis & Extracted Figures ───────────
   const handleStartItemDrag = (
     e: React.PointerEvent,
     id: string,
-    kind: 'sticker' | 'note',
+    kind: 'sticker' | 'note' | 'image',
     currentX: number,
     currentY: number
   ) => {
@@ -373,6 +389,19 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     }
   }
 
+  const handleResetImage = (id: string, e: React.MouseEvent) => {
+    e.stopPropagation()
+    setImageOffsets((prev) => {
+      const next = { ...prev }
+      delete next[id]
+      try {
+        localStorage.setItem(imageOffsetsKey, JSON.stringify(next))
+      } catch {}
+      return next
+    })
+    toast.success('Figure returned to original spot! ↺')
+  }
+
   useEffect(() => {
     const handleGlobalPointerMove = (e: PointerEvent) => {
       if (!dragStartRef.current || !containerRef.current) return
@@ -380,25 +409,46 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       const deltaX = ((e.clientX - dragStartRef.current.startPointerX) / rect.width) * 100
       const deltaY = ((e.clientY - dragStartRef.current.startPointerY) / rect.height) * 100
 
-      const newX = Math.max(2, Math.min(98, parseFloat((dragStartRef.current.initX + deltaX).toFixed(1))))
-      const newY = Math.max(2, Math.min(98, parseFloat((dragStartRef.current.initY + deltaY).toFixed(1))))
-
       if (dragStartRef.current.kind === 'sticker') {
+        const newX = Math.max(2, Math.min(98, parseFloat((dragStartRef.current.initX + deltaX).toFixed(1))))
+        const newY = Math.max(2, Math.min(98, parseFloat((dragStartRef.current.initY + deltaY).toFixed(1))))
         setStickers((prev) =>
           prev.map((s) => (s.id === dragStartRef.current!.id ? { ...s, x: newX, y: newY } : s))
         )
-      } else {
+      } else if (dragStartRef.current.kind === 'note') {
+        const newX = Math.max(2, Math.min(98, parseFloat((dragStartRef.current.initX + deltaX).toFixed(1))))
+        const newY = Math.max(2, Math.min(98, parseFloat((dragStartRef.current.initY + deltaY).toFixed(1))))
         setTypedNotes((prev) =>
           prev.map((n) => (n.id === dragStartRef.current!.id ? { ...n, x: newX, y: newY } : n))
         )
+      } else if (dragStartRef.current.kind === 'image') {
+        const deltaPxX = e.clientX - dragStartRef.current.startPointerX
+        const deltaPxY = e.clientY - dragStartRef.current.startPointerY
+        const nextX = parseFloat((dragStartRef.current.initX + deltaPxX).toFixed(1))
+        const nextY = parseFloat((dragStartRef.current.initY + deltaPxY).toFixed(1))
+        setImageOffsets((prev) => ({
+          ...prev,
+          [dragStartRef.current!.id]: { x: nextX, y: nextY }
+        }))
       }
     }
 
     const handleGlobalPointerUp = () => {
       if (dragStartRef.current) {
+        const finishedKind = dragStartRef.current.kind
         dragStartRef.current = null
         setDraggingItemId(null)
-        persistState(strokes, stickers, typedNotes, typedBlanks, circledItems)
+        if (finishedKind === 'image') {
+          setImageOffsets((latest) => {
+            try {
+              localStorage.setItem(imageOffsetsKey, JSON.stringify(latest))
+            } catch {}
+            return latest
+          })
+          toast.success('Figure moved! ✨', { id: 'img-moved' })
+        } else {
+          persistState(strokes, stickers, typedNotes, typedBlanks, circledItems)
+        }
         gameAudio.playTap()
       }
     }
@@ -409,7 +459,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       window.removeEventListener('pointermove', handleGlobalPointerMove)
       window.removeEventListener('pointerup', handleGlobalPointerUp)
     }
-  }, [strokes, stickers, typedNotes, typedBlanks, circledItems, persistState])
+  }, [strokes, stickers, typedNotes, typedBlanks, circledItems, imageOffsetsKey, persistState])
 
   // ── Color Fill Tool (Smart boundary-aware Flood Fill with PDF high-DPI scaling) ─────
   const handleColorFillClick = (e: React.MouseEvent<HTMLCanvasElement>) => {
@@ -920,6 +970,77 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
             : 'cursor-pointer'
         }`}
       />
+
+      {/* ── LAYER D: Extracted Moveable Figures from Stripped PDF ───────── */}
+      <div
+        className={`absolute inset-0 pointer-events-none ${
+          activeTool === 'hand' || activeTool === 'pointer' ? 'z-30' : 'z-20'
+        }`}
+      >
+        {(regions || [])
+          .filter((r) => r.type === 'draggable' && r.imageSrc && r.bbox)
+          .map((reg) => {
+            const [bx, by, bw, bh] = reg.bbox!
+            const offset = imageOffsets[reg.id] || { x: 0, y: 0 }
+            const sx = bx * scale + offset.x
+            const sy = by * scale + offset.y
+            const sw = bw * scale
+            const sh = bh * scale
+            const isDragging = draggingItemId === reg.id
+            const isMoved = Math.abs(offset.x) > 2 || Math.abs(offset.y) > 2
+
+            return (
+              <div
+                key={reg.id}
+                onPointerDown={(e) =>
+                  handleStartItemDrag(e, reg.id, 'image', offset.x, offset.y)
+                }
+                onDoubleClick={(e) => handleResetImage(reg.id, e)}
+                style={{
+                  left: `${sx}px`,
+                  top: `${sy}px`,
+                  width: `${sw}px`,
+                  height: `${sh}px`
+                }}
+                title={
+                  activeTool === 'hand' || activeTool === 'pointer'
+                    ? 'Drag to move this figure anywhere! Double-click or click ↺ to reset.'
+                    : 'Switch to Hand tool to drag'
+                }
+                className={`absolute pointer-events-auto touch-none select-none group ${
+                  activeTool === 'hand' || activeTool === 'pointer'
+                    ? 'cursor-grab active:cursor-grabbing hover:ring-2 hover:ring-blue-400 hover:ring-offset-1 rounded-lg'
+                    : 'cursor-default'
+                } ${
+                  isDragging
+                    ? 'scale-105 z-50 opacity-95 ring-4 ring-amber-400 shadow-2xl drop-shadow-2xl'
+                    : isMoved
+                    ? 'ring-2 ring-emerald-500/80 shadow-md'
+                    : ''
+                }`}
+              >
+                <img
+                  src={reg.imageSrc}
+                  alt={reg.label || 'Book Diagram'}
+                  className="w-full h-full object-contain pointer-events-none drop-shadow-xs"
+                  draggable={false}
+                />
+
+                {/* Reset badge on hover if moved */}
+                {isMoved && (
+                  <button
+                    type="button"
+                    onClick={(e) => handleResetImage(reg.id, e)}
+                    title="Reset to original spot"
+                    className="absolute -top-2.5 -right-2.5 w-6 h-6 bg-slate-900/90 text-white rounded-full flex items-center justify-center text-xs font-bold hover:bg-rose-600 shadow-md ring-1 ring-white/50 opacity-0 group-hover:opacity-100 transition-opacity"
+                  >
+                    ↺
+                  </button>
+                )}
+              </div>
+            )
+          })}
+      </div>
 
       {/* ── LAYER B: Placed Stickers, EMIs & Images (Moveable with Hand Tool) ─ */}
       <div
