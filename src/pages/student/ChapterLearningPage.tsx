@@ -711,9 +711,6 @@ export default function ChapterLearningPage() {
                 </span>
               </div>
             </div>
-            <span className={`text-[10px] sm:text-xs font-black px-2.5 py-1 rounded-xl border ${currentTrackTheme.badge} shrink-0`}>
-              {assignedClassInfo.mascot}
-            </span>
           </div>
 
           {/* Neat, Modern 8-Item Chapter Grid — 2 columns on mobile, 4 columns on desktop */}

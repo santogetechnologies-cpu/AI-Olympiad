@@ -133,11 +133,13 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
     return (bookCatalogData as any)[currentGrade] || (bookCatalogData as any)['class3']
   }, [currentGrade])
 
-  // Active Tool: 'pointer' | 'hand' | 'fill' | 'pen' | 'highlighter' | 'eraser' | 'text' | 'stamp'
-  const [activeTool, setActiveTool] = useState<StudioTool>('pointer')
+  // Active Tool: 'hand' | 'fill' | 'pen' | 'highlighter' | 'eraser' | 'text' | 'stamp'
+  const [activeTool, setActiveTool] = useState<StudioTool>('hand')
   const [activeColor, setActiveColor] = useState<string>('#2563eb')
   const [selectedEmoji, setSelectedEmoji] = useState<string>('⭐')
   const [strokeWidth, setStrokeWidth] = useState<number>(3)
+  const [undoSignal, setUndoSignal] = useState<number>(0)
+  const [clearSignal, setClearSignal] = useState<number>(0)
 
   // Auto-fit scale detection for mobile and desktop screens (reserves space for right-side vertical tool dock on mobile)
   const getAutoFitScale = useCallback(() => {
@@ -188,7 +190,8 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
   const touchStartRef = useRef<{ x: number; y: number } | null>(null)
 
   const handleTouchStart = (e: React.TouchEvent) => {
-    if (activeTool !== 'pointer' && activeTool !== 'hand') return
+    // In Move (hand) or drawing modes, let touch drag/pan freely instead of flipping pages
+    if (activeTool === 'hand' || ['pen', 'fill', 'eraser'].includes(activeTool)) return
     const touch = e.touches[0]
     touchStartRef.current = { x: touch.clientX, y: touch.clientY }
   }
@@ -209,6 +212,43 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
         prevPage()
         gameAudio.playTap()
       }
+    }
+  }
+
+  // Pan & Grab navigation with Hand (Move) tool
+  const panStartRef = useRef<{ startX: number; startY: number; scrollLeft: number; scrollTop: number } | null>(null)
+  const [isPanning, setIsPanning] = useState<boolean>(false)
+
+  const handlePanPointerDown = (e: React.PointerEvent) => {
+    if (activeTool !== 'hand' || !containerRef.current) return
+    if ((e.target as HTMLElement).closest('button, input, textarea, [data-draggable="true"]')) return
+    panStartRef.current = {
+      startX: e.clientX,
+      startY: e.clientY,
+      scrollLeft: containerRef.current.scrollLeft,
+      scrollTop: containerRef.current.scrollTop
+    }
+    setIsPanning(true)
+    try {
+      containerRef.current.setPointerCapture(e.pointerId)
+    } catch {}
+  }
+
+  const handlePanPointerMove = (e: React.PointerEvent) => {
+    if (!panStartRef.current || !containerRef.current) return
+    const dx = e.clientX - panStartRef.current.startX
+    const dy = e.clientY - panStartRef.current.startY
+    containerRef.current.scrollLeft = panStartRef.current.scrollLeft - dx
+    containerRef.current.scrollTop = panStartRef.current.scrollTop - dy
+  }
+
+  const handlePanPointerUp = (e: React.PointerEvent) => {
+    if (panStartRef.current) {
+      panStartRef.current = null
+      setIsPanning(false)
+      try {
+        containerRef.current?.releasePointerCapture(e.pointerId)
+      } catch {}
     }
   }
 
@@ -279,7 +319,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
 
   const handleAddStar = useCallback((count = 1) => {
     setStars((prev) => {
-      const next = prev + count
+      const next = Math.max(0, prev + count)
       try {
         localStorage.setItem('gaio_total_stars', String(next))
       } catch {}
@@ -391,21 +431,8 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
       {/* ── Top Bar ──────────────────────────────────────────────────────── */}
       {/* ── Top Bar ──────────────────────────────────────────────────────── */}
       <header className="flex-shrink-0 h-11 sm:h-14 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 px-2 sm:px-4 flex items-center justify-between gap-1 sm:gap-3 z-30">
-        {/* Left: Exit + Class Locked Badge */}
+        {/* Left: Class Locked Badge */}
         <div className="flex items-center gap-1 sm:gap-2.5 min-w-0 shrink-0">
-          {onExit && (
-            <button
-              onClick={() => {
-                gameAudio.playTap()
-                onExit()
-              }}
-              title="Exit Book"
-              className="p-1 sm:p-1.5 text-slate-400 hover:text-white hover:bg-slate-800 rounded-xl transition-all flex items-center gap-1 shrink-0"
-            >
-              <ArrowLeft size={16} />
-              <span className="text-xs font-bold hidden md:inline">Exit</span>
-            </button>
-          )}
 
           {/* Class / Grade Badge (Locked for students so they cannot view other classes) */}
           <div className="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-2.5 py-0.5 sm:py-1 bg-blue-600/20 text-blue-300 border border-blue-500/30 font-black text-xs sm:text-sm rounded-xl shrink-0 shadow-xs">
@@ -467,25 +494,27 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
 
         {/* Right: Stars & Zoom / Fit */}
         <div className="flex items-center gap-1 sm:gap-2 shrink-0">
+          {/* Undo Action */}
+          <button
+            onClick={() => {
+              setUndoSignal((prev) => prev + 1)
+              gameAudio.playTap()
+            }}
+            title="Undo last action (Ctrl+Z)"
+            className="flex items-center gap-1 px-2 sm:px-2.5 py-1 bg-slate-800 hover:bg-slate-700 active:scale-95 text-slate-300 hover:text-white rounded-xl border border-slate-700 text-xs font-bold transition-all cursor-pointer shadow-xs"
+          >
+            <Undo2 size={13} className="text-amber-400" />
+            <span className="hidden xs:inline text-[11px] font-bold">Undo</span>
+          </button>
+
           {/* Stars Collected */}
           <div className="flex items-center gap-1 px-2 sm:px-2.5 py-1 bg-amber-500/20 border border-amber-400/40 rounded-xl text-amber-300 font-black text-[11px] sm:text-xs shadow-sm">
             <Star size={13} className="fill-amber-400 text-amber-400 animate-spin-slow" />
             <span>{stars}</span>
           </div>
 
-          {/* Zoom controls & Fit button */}
-          <div className="flex items-center gap-1 bg-slate-800/60 p-0.5 sm:p-1 rounded-xl border border-slate-700/60">
-            <button
-              onClick={() => {
-                setZoomScale(getAutoFitScale())
-                gameAudio.playTap()
-                toast.success('Fitted to screen! 📱', { id: 'fit-zoom' })
-              }}
-              title="Fit to Screen Width"
-              className="px-1.5 py-0.5 text-[10px] font-black bg-blue-600/80 hover:bg-blue-600 text-white rounded-lg transition-colors cursor-pointer"
-            >
-              Fit
-            </button>
+          {/* Zoom controls */}
+          <div className="hidden sm:flex items-center gap-1 bg-slate-800/60 p-0.5 sm:p-1 rounded-xl border border-slate-700/60">
             <div className="hidden sm:flex items-center gap-0.5">
               <button
                 onClick={() => {
@@ -518,9 +547,15 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
       {/* ── Main Viewport (Full-Screen PDF Canvas + Direct In-Page Interaction) */}
       <div
         ref={containerRef}
+        onPointerDown={handlePanPointerDown}
+        onPointerMove={handlePanPointerMove}
+        onPointerUp={handlePanPointerUp}
+        onPointerCancel={handlePanPointerUp}
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
-        className="flex-1 w-full overflow-x-hidden overflow-y-auto bg-slate-950 p-1 pl-2 pr-16 sm:pl-3 sm:pr-20 lg:p-4 flex flex-col items-center justify-start relative select-none pb-28 lg:pb-16"
+        className={`flex-1 w-full overflow-auto bg-slate-950 p-1 pl-2 pr-16 sm:pl-3 sm:pr-20 lg:p-4 flex flex-col items-center justify-start relative select-none pb-28 lg:pb-16 ${
+          activeTool === 'hand' ? (isPanning ? 'cursor-grabbing' : 'cursor-grab') : ''
+        }`}
       >
         {isLoading && (
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-950/80 z-40 backdrop-blur-xs">
@@ -582,7 +617,9 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
             isReadingAloud={wordsLayer.isReadingAloud}
             pdfCanvas={pdfCanvasRef.current}
             selectedEmoji={selectedEmoji}
-            onAddStar={() => handleAddStar(1)}
+            undoSignal={undoSignal}
+            clearSignal={clearSignal}
+            onAddStar={(count) => handleAddStar(count ?? 1)}
             onWordClick={wordsLayer.speakWord}
             onWordSpell={wordsLayer.spellWord}
           />
@@ -591,21 +628,6 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
 
       {/* ── In-Page Floating Tool Dock (Vertical on Right Side for Mobile, Horizontal on Desktop) ── */}
       <div className="fixed right-2 top-1/2 -translate-y-1/2 z-40 flex flex-col items-center gap-1 sm:gap-1.5 p-1.5 sm:p-2 bg-slate-900/95 backdrop-blur-md rounded-2xl border border-white/20 shadow-2xl transition-all max-h-[85vh] overflow-y-auto overflow-x-hidden lg:flex-row lg:bottom-6 lg:left-1/2 lg:-translate-x-1/2 lg:top-auto lg:right-auto lg:translate-y-0 lg:max-w-[96vw] lg:max-h-none lg:overflow-x-auto lg:overflow-y-visible">
-        {/* Tap */}
-        <button
-          onClick={() => {
-            setActiveTool('pointer')
-            gameAudio.playTap()
-          }}
-          title="Tap to listen to words"
-          className={`w-11 sm:w-12 py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all ${
-            activeTool === 'pointer' ? 'bg-blue-600 text-white shadow-md scale-105 ring-2 ring-blue-300' : 'text-slate-300 hover:bg-white/10'
-          }`}
-        >
-          <span className="text-base leading-none">👆</span>
-          <span className="text-[9px] font-extrabold mt-1 leading-none tracking-tight">Tap</span>
-        </button>
-
         {/* Move */}
         <button
           onClick={() => {
@@ -613,12 +635,12 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
             gameAudio.playTap()
           }}
           title="Move items around"
-          className={`w-11 sm:w-12 py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all ${
+          className={`w-10 sm:w-12 py-1 sm:py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all ${
             activeTool === 'hand' ? 'bg-amber-600 text-white shadow-md scale-105 ring-2 ring-amber-300' : 'text-slate-300 hover:bg-white/10'
           }`}
         >
-          <Hand size={16} />
-          <span className="text-[9px] font-extrabold mt-1 leading-none tracking-tight">Move</span>
+          <Hand size={15} className="sm:w-4 sm:h-4" />
+          <span className="text-[8px] sm:text-[9px] font-extrabold mt-0.5 sm:mt-1 leading-none tracking-tight">Move</span>
         </button>
 
         {/* Color */}
@@ -628,12 +650,12 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
             gameAudio.playTap()
           }}
           title="Color worksheets and shapes"
-          className={`w-11 sm:w-12 py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all ${
+          className={`w-10 sm:w-12 py-1 sm:py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all ${
             activeTool === 'fill' ? 'bg-emerald-600 text-white shadow-md scale-105 ring-2 ring-emerald-300' : 'text-slate-300 hover:bg-white/10'
           }`}
         >
-          <PaintBucket size={16} />
-          <span className="text-[9px] font-extrabold mt-1 leading-none tracking-tight">Color</span>
+          <PaintBucket size={15} className="sm:w-4 sm:h-4" />
+          <span className="text-[8px] sm:text-[9px] font-extrabold mt-0.5 sm:mt-1 leading-none tracking-tight">Color</span>
         </button>
 
         {/* Write (Pen) */}
@@ -643,12 +665,12 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
             gameAudio.playTap()
           }}
           title="Write on the page"
-          className={`w-11 sm:w-12 py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all ${
+          className={`w-10 sm:w-12 py-1 sm:py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all ${
             activeTool === 'pen' ? 'bg-blue-600 text-white shadow-md scale-105 ring-2 ring-blue-300' : 'text-slate-300 hover:bg-white/10'
           }`}
         >
-          <Pen size={16} />
-          <span className="text-[9px] font-extrabold mt-1 leading-none tracking-tight">Write</span>
+          <Pen size={15} className="sm:w-4 sm:h-4" />
+          <span className="text-[8px] sm:text-[9px] font-extrabold mt-0.5 sm:mt-1 leading-none tracking-tight">Write</span>
         </button>
 
         {/* Star */}
@@ -663,14 +685,14 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
             })
           }}
           title="Rate with Stars ⭐"
-          className={`w-11 sm:w-12 py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center relative cursor-pointer transition-all ${
+          className={`w-10 sm:w-12 py-1 sm:py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center relative cursor-pointer transition-all ${
             activeTool === 'stamp'
               ? 'bg-amber-500 text-white shadow-lg shadow-amber-500/50 scale-110 ring-2 ring-amber-300'
               : 'text-amber-300 hover:bg-white/10'
           }`}
         >
-          <span className="text-lg leading-none select-none drop-shadow">⭐</span>
-          <span className="text-[9px] font-extrabold mt-1 leading-none tracking-tight">Star</span>
+          <span className="text-base sm:text-lg leading-none select-none drop-shadow">⭐</span>
+          <span className="text-[8px] sm:text-[9px] font-extrabold mt-0.5 sm:mt-1 leading-none tracking-tight">Star</span>
           {activeTool === 'stamp' && (
             <span className="absolute top-1 right-1 w-2 h-2 bg-yellow-300 rounded-full animate-ping" />
           )}
@@ -682,14 +704,29 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
             setActiveTool('eraser')
             gameAudio.playTap()
           }}
-          title="Erase marks"
-          className={`w-11 sm:w-12 py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all ${
+          title="Erase marks & color fills (tap color to flood-erase, or drag to erase)"
+          className={`w-10 sm:w-12 py-1 sm:py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all ${
             activeTool === 'eraser' ? 'bg-rose-600 text-white shadow-md scale-105 ring-2 ring-rose-300' : 'text-slate-300 hover:bg-white/10'
           }`}
         >
-          <Eraser size={16} />
-          <span className="text-[9px] font-extrabold mt-1 leading-none tracking-tight">Erase</span>
+          <Eraser size={15} className="sm:w-4 sm:h-4" />
+          <span className="text-[8px] sm:text-[9px] font-extrabold mt-0.5 sm:mt-1 leading-none tracking-tight">Erase</span>
         </button>
+
+        {/* Clear All button visible when Erase is active */}
+        {activeTool === 'eraser' && (
+          <button
+            onClick={() => {
+              setClearSignal((prev) => prev + 1)
+              gameAudio.playTap()
+            }}
+            title="Clear all drawings and color fills on this page"
+            className="w-10 sm:w-12 py-1 sm:py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all bg-rose-700 hover:bg-rose-600 text-white shadow-md active:scale-95 cursor-pointer animate-in fade-in"
+          >
+            <Trash2 size={15} className="sm:w-4 sm:h-4 text-white" />
+            <span className="text-[8px] sm:text-[9px] font-extrabold mt-0.5 sm:mt-1 leading-none tracking-tight">Clear</span>
+          </button>
+        )}
 
         {/* Type */}
         <button
@@ -698,12 +735,25 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
             gameAudio.playTap()
           }}
           title="Type answers anywhere on the page"
-          className={`w-11 sm:w-12 py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all ${
+          className={`w-10 sm:w-12 py-1 sm:py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all ${
             activeTool === 'text' ? 'bg-indigo-600 text-white shadow-md scale-105 ring-2 ring-indigo-300' : 'text-slate-300 hover:bg-white/10'
           }`}
         >
-          <Type size={16} />
-          <span className="text-[9px] font-extrabold mt-1 leading-none tracking-tight">Type</span>
+          <Type size={15} className="sm:w-4 sm:h-4" />
+          <span className="text-[8px] sm:text-[9px] font-extrabold mt-0.5 sm:mt-1 leading-none tracking-tight">Type</span>
+        </button>
+
+        {/* Undo */}
+        <button
+          onClick={() => {
+            setUndoSignal((prev) => prev + 1)
+            gameAudio.playTap()
+          }}
+          title="Undo last star, color fill, or drawing (Ctrl+Z)"
+          className="w-10 sm:w-12 py-1 sm:py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all text-slate-300 hover:bg-white/10 active:scale-95 hover:text-amber-300 cursor-pointer"
+        >
+          <Undo2 size={15} className="text-amber-400 sm:w-4 sm:h-4" />
+          <span className="text-[8px] sm:text-[9px] font-extrabold mt-0.5 sm:mt-1 leading-none tracking-tight">Undo</span>
         </button>
 
         {/* Color Palette Selector */}
@@ -724,24 +774,6 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
             ))}
           </div>
         )}
-      </div>
-
-      {/* ── Cute Floating Bolt Avatar (Bottom-Left on mobile to avoid blocking lesson or tools) ── */}
-      <div className="fixed bottom-20 left-3 lg:bottom-6 lg:right-6 lg:left-auto z-30 flex flex-col items-start lg:items-end pointer-events-auto">
-        {isBoltTalking && (
-          <div className="mb-2 max-w-xs p-3 bg-slate-900/95 backdrop-blur-md text-white rounded-2xl shadow-2xl border border-blue-400 text-xs leading-relaxed animate-in fade-in slide-in-from-bottom-2">
-            <div className="font-black text-blue-300 text-[10px] uppercase mb-1">Bolt Says:</div>
-            <div>{boltMessage}</div>
-          </div>
-        )}
-
-        <button
-          onClick={handleTalkToBolt}
-          title="Tap to talk to Bolt!"
-          className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-600 text-white shadow-2xl border-2 border-white/40 flex items-center justify-center transition-transform hover:scale-110 active:scale-95 group"
-        >
-          <Bot size={24} className="text-white group-hover:rotate-12 transition-transform sm:w-7 sm:h-7" />
-        </button>
       </div>
     </div>
   )

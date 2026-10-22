@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 import { useAuth } from '../../contexts/AuthContext'
 import { AppLayout } from '../../components/layout/AppLayout'
 import { Card, Button, Input, Badge } from '../../components/ui'
-import { Mail, Camera, Zap, Flame, Award, Sparkles, CheckCircle } from 'lucide-react'
+import { Mail, Camera, Zap, Flame, Sparkles, Award } from 'lucide-react'
 import { userService } from '../../services/analyticsService'
 import { storageService } from '../../services/storageService'
 import { gamification, type StudentStats, BADGES } from '../../utils/gamification'
@@ -132,46 +132,6 @@ export default function StudentProfilePage() {
             </div>
           </div>
         </div>
-
-        {/* Badges Showcase Grid */}
-        <Card className="p-4 sm:p-6 bg-white space-y-3.5 sm:space-y-4">
-          <div className="flex items-center justify-between">
-            <h3 className="font-bold text-slate-900 text-xs sm:text-sm flex items-center gap-1.5 sm:gap-2">
-              <Award size={16} className="text-amber-500" />
-              <span>Olympiad Achievement Badges</span>
-            </h3>
-            <span className="text-[11px] sm:text-xs text-slate-400">
-              {stats.unlockedBadges.length} of {BADGES.length} Unlocked
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-            {BADGES.map(b => {
-              const isUnlocked = stats.unlockedBadges.includes(b.id)
-              return (
-                <div
-                  key={b.id}
-                  className={`p-3.5 rounded-2xl border transition-all flex items-start gap-3 ${
-                    isUnlocked
-                      ? 'bg-gradient-to-br from-slate-50 to-blue-50/50 border-blue-200 shadow-xs'
-                      : 'bg-slate-50/60 border-slate-200 opacity-60'
-                  }`}
-                >
-                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl flex-shrink-0 shadow-sm bg-gradient-to-br ${b.color} text-white`}>
-                    {b.icon}
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <div className="flex items-center justify-between gap-1">
-                      <h4 className="font-bold text-xs text-slate-900 truncate">{b.title}</h4>
-                      {isUnlocked && <CheckCircle size={13} className="text-emerald-500 flex-shrink-0" />}
-                    </div>
-                    <p className="text-[11px] text-slate-500 mt-0.5 line-clamp-2 leading-relaxed">{b.description}</p>
-                  </div>
-                </div>
-              )
-            })}
-          </div>
-        </Card>
 
         {/* Personal Details Form */}
         <Card className="p-4 sm:p-6 bg-white">

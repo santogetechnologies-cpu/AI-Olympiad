@@ -86,6 +86,8 @@ export interface UnifiedPdfInteractionLayerProps {
   isReadingAloud: boolean
   pdfCanvas?: HTMLCanvasElement | null
   selectedEmoji?: string
+  undoSignal?: number
+  clearSignal?: number
   onAddStar?: (count?: number) => void
   onWordClick?: (word: PageWordItem) => void
   onWordSpell?: (word: PageWordItem) => void
@@ -117,6 +119,8 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
   isReadingAloud,
   pdfCanvas,
   selectedEmoji = '⭐',
+  undoSignal,
+  clearSignal,
   onAddStar,
   onWordClick,
   onWordSpell
@@ -171,6 +175,11 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
 
   // Moveable authentic book figures extracted from PDF
   const [imageOffsets, setImageOffsets] = useState<{ [id: string]: { x: number; y: number } }>({})
+
+  // Action history stack for robust Undo (stars, color fills, strokes, notes)
+  const [historyStack, setHistoryStack] = useState<
+    Array<{ type: 'fill' } | { type: 'sticker'; id: string } | { type: 'stroke' } | { type: 'note'; id: string }>
+  >([])
 
   // Tap-to-count counter state
   const [countNumber, setCountNumber] = useState<number>(0)
@@ -481,6 +490,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     // Save previous snapshot for Undo
     const prevData = ctx.getImageData(0, 0, canvas.width, canvas.height)
     setFillHistory((prev) => [...prev.slice(-8), prevData])
+    setHistoryStack((prev) => [...prev.slice(-20), { type: 'fill' }])
 
     // Convert activeColor to RGBA
     let hex = activeColor.replace('#', '')
@@ -707,6 +717,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       const updated = [...stickersRef.current, newSticker]
       setStickers(updated)
       stickersRef.current = updated
+      setHistoryStack((prev) => [...prev.slice(-20), { type: 'sticker', id: newSticker.id }])
       persistState(strokesRef.current, updated, typedNotesRef.current, typedBlanksRef.current, circledItemsRef.current)
       gameAudio.playCoin()
       onAddStar?.(1)
@@ -741,13 +752,14 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       const updated = [...typedNotesRef.current, newNote]
       setTypedNotes(updated)
       typedNotesRef.current = updated
+      setHistoryStack((prev) => [...prev.slice(-20), { type: 'note', id: newId }])
       setEditingNoteId(newId)
       persistState(strokesRef.current, stickersRef.current, updated, typedBlanksRef.current, circledItemsRef.current)
       gameAudio.playTap()
       return
     }
 
-    // 3. FREEHAND DRAWING (Pen, Highlighter, Eraser)
+    // 3. FREEHAND DRAWING & ERASING (Pen, Highlighter, Eraser)
     isDrawingRef.current = true
     const pt = getCanvasCoords(e)
     currentStrokeRef.current = [pt]
@@ -755,7 +767,101 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       e.currentTarget.setPointerCapture(e.pointerId)
     } catch {}
 
-    // Immediate visual stroke dot feedback
+    if (activeTool === 'eraser') {
+      const eraseRadius = Math.max(16, strokeWidth * 5)
+
+      // A. Erase strokes on canvasRef
+      const canvas = canvasRef.current
+      if (canvas) {
+        const ctx = canvas.getContext('2d')
+        if (ctx) {
+          ctx.save()
+          ctx.beginPath()
+          ctx.arc(pt.x, pt.y, eraseRadius, 0, Math.PI * 2)
+          ctx.globalCompositeOperation = 'destination-out'
+          ctx.fill()
+          ctx.restore()
+        }
+      }
+
+      // B. Erase / Flood-erase on colorFillCanvasRef
+      const fillCanvas = colorFillCanvasRef.current
+      if (fillCanvas) {
+        const fCtx = fillCanvas.getContext('2d', { willReadFrequently: true })
+        if (fCtx) {
+          const fx = Math.floor(pt.nx * fillCanvas.width)
+          const fy = Math.floor(pt.ny * fillCanvas.height)
+
+          if (fx >= 0 && fx < fillCanvas.width && fy >= 0 && fy < fillCanvas.height) {
+            const imgData = fCtx.getImageData(0, 0, fillCanvas.width, fillCanvas.height)
+            const d = imgData.data
+            const startIdx = (fy * fillCanvas.width + fx) * 4
+
+            // If tapped directly on a filled color area (alpha > 40), flood-erase the entire filled shape!
+            if (d[startIdx + 3] > 40) {
+              const w = fillCanvas.width
+              const h = fillCanvas.height
+              const targetR = d[startIdx]
+              const targetG = d[startIdx + 1]
+              const targetB = d[startIdx + 2]
+              const queue = new Int32Array(w * h)
+              const visited = new Uint8Array(w * h)
+              let head = 0
+              let tail = 0
+              const startPos = fy * w + fx
+              queue[tail++] = startPos
+              visited[startPos] = 1
+
+              while (head < tail) {
+                const pos = queue[head++]
+                const cx = pos % w
+                const cy = Math.floor(pos / w)
+                const pIdx = pos * 4
+                d[pIdx + 3] = 0 // Clear alpha completely
+
+                const neighbors = [
+                  cx + 1 < w ? pos + 1 : -1,
+                  cx - 1 >= 0 ? pos - 1 : -1,
+                  cy + 1 < h ? pos + w : -1,
+                  cy - 1 >= 0 ? pos - w : -1
+                ]
+
+                for (let k = 0; k < 4; k++) {
+                  const npos = neighbors[k]
+                  if (npos >= 0 && !visited[npos]) {
+                    visited[npos] = 1
+                    const nIdx = npos * 4
+                    if (d[nIdx + 3] > 30) {
+                      const diff = Math.abs(d[nIdx] - targetR) + Math.abs(d[nIdx + 1] - targetG) + Math.abs(d[nIdx + 2] - targetB)
+                      if (diff < 120) {
+                        queue[tail++] = npos
+                      }
+                    }
+                  }
+                }
+              }
+
+              fCtx.putImageData(imgData, 0, 0)
+              saveFillCanvas()
+              gameAudio.playTap()
+              toast.success('Color fill erased! 🧼', { id: 'erase-fill' })
+              return
+            } else {
+              // Tap on un-filled area: erase circular patch on fillCanvas
+              fCtx.save()
+              fCtx.beginPath()
+              fCtx.arc(fx, fy, eraseRadius * (fillCanvas.width / pageWidth), 0, Math.PI * 2)
+              fCtx.globalCompositeOperation = 'destination-out'
+              fCtx.fill()
+              fCtx.restore()
+            }
+          }
+        }
+      }
+      return
+    }
+
+    // Immediate visual stroke dot feedback for pen / highlighter
     const canvas = canvasRef.current
     if (canvas) {
       const ctx = canvas.getContext('2d')
@@ -764,14 +870,9 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
         ctx.beginPath()
         const r = activeTool === 'highlighter' ? strokeWidth * 1.75 : strokeWidth / 2
         ctx.arc(pt.x, pt.y, Math.max(1, r), 0, Math.PI * 2)
-        if (activeTool === 'eraser') {
-          ctx.globalCompositeOperation = 'destination-out'
-          ctx.fill()
-        } else {
-          ctx.fillStyle = activeColor
-          if (activeTool === 'highlighter') ctx.globalAlpha = 0.35
-          ctx.fill()
-        }
+        ctx.fillStyle = activeColor
+        if (activeTool === 'highlighter') ctx.globalAlpha = 0.35
+        ctx.fill()
         ctx.restore()
       }
     }
@@ -790,6 +891,46 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     const pts = currentStrokeRef.current
     if (pts.length < 2) return
 
+    if (activeTool === 'eraser') {
+      const eraseWidth = Math.max(32, strokeWidth * 8)
+
+      // 1. Erase strokes on canvasRef
+      ctx.save()
+      ctx.beginPath()
+      ctx.moveTo(pts[pts.length - 2].x, pts[pts.length - 2].y)
+      ctx.lineTo(pts[pts.length - 1].x, pts[pts.length - 1].y)
+      ctx.lineCap = 'round'
+      ctx.lineJoin = 'round'
+      ctx.lineWidth = eraseWidth
+      ctx.globalCompositeOperation = 'destination-out'
+      ctx.stroke()
+      ctx.restore()
+
+      // 2. Erase color fill on colorFillCanvasRef
+      const fillCanvas = colorFillCanvasRef.current
+      if (fillCanvas) {
+        const fCtx = fillCanvas.getContext('2d')
+        if (fCtx) {
+          const fx1 = (pts[pts.length - 2].nx ?? (pts[pts.length - 2].x / pageWidth)) * fillCanvas.width
+          const fy1 = (pts[pts.length - 2].ny ?? (pts[pts.length - 2].y / pageHeight)) * fillCanvas.height
+          const fx2 = (pts[pts.length - 1].nx ?? (pts[pts.length - 1].x / pageWidth)) * fillCanvas.width
+          const fy2 = (pts[pts.length - 1].ny ?? (pts[pts.length - 1].y / pageHeight)) * fillCanvas.height
+
+          fCtx.save()
+          fCtx.beginPath()
+          fCtx.moveTo(fx1, fy1)
+          fCtx.lineTo(fx2, fy2)
+          fCtx.lineCap = 'round'
+          fCtx.lineJoin = 'round'
+          fCtx.lineWidth = eraseWidth * (fillCanvas.width / pageWidth)
+          fCtx.globalCompositeOperation = 'destination-out'
+          fCtx.stroke()
+          fCtx.restore()
+        }
+      }
+      return
+    }
+
     ctx.save()
     ctx.beginPath()
     ctx.moveTo(pts[pts.length - 2].x, pts[pts.length - 2].y)
@@ -801,9 +942,6 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       ctx.strokeStyle = activeColor
       ctx.lineWidth = strokeWidth * 3.5
       ctx.globalAlpha = 0.35
-    } else if (activeTool === 'eraser') {
-      ctx.globalCompositeOperation = 'destination-out'
-      ctx.lineWidth = strokeWidth * 6
     } else {
       ctx.strokeStyle = activeColor
       ctx.lineWidth = strokeWidth
@@ -820,6 +958,10 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     try {
       e.currentTarget.releasePointerCapture(e.pointerId)
     } catch {}
+
+    if (activeTool === 'eraser') {
+      saveFillCanvas()
+    }
 
     const pts = currentStrokeRef.current
     if (pts.length > 0) {
@@ -839,9 +981,169 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
         persistState(updated, stickersRef.current, typedNotesRef.current, typedBlanksRef.current, circledItemsRef.current)
         return updated
       })
+      setHistoryStack((prev) => [...prev.slice(-20), { type: 'stroke' }])
     }
     currentStrokeRef.current = []
   }
+
+  // ── Unified Undo Handler (Reverts stars, color fill, or drawing) ───────────
+  const handleUndo = useCallback(() => {
+    if (historyStack.length === 0) {
+      // Fallback: check if any stickers, strokes, or fill exist
+      if (stickers.length > 0) {
+        const next = stickers.slice(0, -1)
+        setStickers(next)
+        stickersRef.current = next
+        persistState(strokes, next, typedNotes, typedBlanks, circledItems)
+        onAddStar?.(-1)
+        gameAudio.playTap()
+        toast.success('Removed last star / sticker! ↺', { id: 'undo-sticker' })
+        return
+      }
+      if (colorFillCanvasRef.current && (fillHistory.length > 0 || localStorage.getItem(fillStorageKey))) {
+        const prevData = fillHistory.length > 0 ? fillHistory[fillHistory.length - 1] : null
+        const ctx = colorFillCanvasRef.current.getContext('2d')
+        if (ctx) {
+          if (prevData) {
+            ctx.putImageData(prevData, 0, 0)
+            setFillHistory((h) => h.slice(0, -1))
+            try {
+              localStorage.setItem(fillStorageKey, colorFillCanvasRef.current.toDataURL())
+            } catch {}
+          } else {
+            ctx.clearRect(0, 0, colorFillCanvasRef.current.width, colorFillCanvasRef.current.height)
+            setFillHistory([])
+            try {
+              localStorage.removeItem(fillStorageKey)
+            } catch {}
+          }
+          gameAudio.playTap()
+          toast.success('Undid color fill! ↺', { id: 'undo-fill' })
+          return
+        }
+      }
+      if (strokes.length > 0) {
+        const next = strokes.slice(0, -1)
+        setStrokes(next)
+        strokesRef.current = next
+        persistState(next, stickers, typedNotes, typedBlanks, circledItems)
+        gameAudio.playTap()
+        toast.success('Undid last drawing! ↺', { id: 'undo-stroke' })
+        return
+      }
+      toast('Nothing to undo on this page!', { id: 'undo-empty', icon: 'ℹ️' })
+      return
+    }
+
+    const last = historyStack[historyStack.length - 1]
+    setHistoryStack((prev) => prev.slice(0, -1))
+
+    if (last.type === 'sticker') {
+      const next = stickers.filter((s) => s.id !== last.id)
+      setStickers(next)
+      stickersRef.current = next
+      persistState(strokes, next, typedNotes, typedBlanks, circledItems)
+      onAddStar?.(-1)
+      gameAudio.playTap()
+      toast.success('Undid star / sticker! ↺', { id: 'undo-act' })
+    } else if (last.type === 'fill') {
+      if (colorFillCanvasRef.current) {
+        const prevData = fillHistory[fillHistory.length - 1]
+        const ctx = colorFillCanvasRef.current.getContext('2d')
+        if (ctx) {
+          if (prevData) {
+            ctx.putImageData(prevData, 0, 0)
+            setFillHistory((h) => h.slice(0, -1))
+          } else {
+            ctx.clearRect(0, 0, colorFillCanvasRef.current.width, colorFillCanvasRef.current.height)
+            setFillHistory([])
+          }
+          try {
+            localStorage.setItem(fillStorageKey, colorFillCanvasRef.current.toDataURL())
+          } catch {}
+        }
+      }
+      gameAudio.playTap()
+      toast.success('Undid color fill! ↺', { id: 'undo-act' })
+    } else if (last.type === 'stroke') {
+      const next = strokes.slice(0, -1)
+      setStrokes(next)
+      strokesRef.current = next
+      persistState(next, stickers, typedNotes, typedBlanks, circledItems)
+      gameAudio.playTap()
+      toast.success('Undid drawing mark! ↺', { id: 'undo-act' })
+    } else if (last.type === 'note') {
+      const next = typedNotes.filter((n) => n.id !== last.id)
+      setTypedNotes(next)
+      typedNotesRef.current = next
+      persistState(strokes, stickers, next, typedBlanks, circledItems)
+      gameAudio.playTap()
+      toast.success('Undid note! ↺', { id: 'undo-act' })
+    }
+  }, [historyStack, stickers, fillHistory, strokes, typedNotes, typedBlanks, circledItems, fillStorageKey, persistState])
+
+  // Trigger undo on undoSignal change
+  const lastUndoRef = useRef<number>(0)
+  useEffect(() => {
+    if (undoSignal && undoSignal !== lastUndoRef.current) {
+      lastUndoRef.current = undoSignal
+      handleUndo()
+    }
+  }, [undoSignal, handleUndo])
+
+  // ── Clear entire page markings & color fills ──────────────────────────────
+  const handleClearPage = useCallback(() => {
+    // 1. Clear strokes
+    setStrokes([])
+    strokesRef.current = []
+
+    // 2. Clear color fill canvas
+    if (colorFillCanvasRef.current) {
+      const ctx = colorFillCanvasRef.current.getContext('2d')
+      if (ctx) {
+        ctx.clearRect(0, 0, colorFillCanvasRef.current.width, colorFillCanvasRef.current.height)
+      }
+    }
+    setFillHistory([])
+    try {
+      localStorage.removeItem(fillStorageKey)
+    } catch {}
+
+    // 3. Clear drawing canvas
+    if (canvasRef.current) {
+      const ctx = canvasRef.current.getContext('2d')
+      if (ctx) {
+        ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height)
+      }
+    }
+
+    // 4. Save state
+    persistState([], stickersRef.current, typedNotesRef.current, typedBlanksRef.current, circledItemsRef.current)
+    setHistoryStack([])
+    gameAudio.playTap()
+    toast.success('Page markings & colors cleared! 🧼', { id: 'clear-page' })
+  }, [fillStorageKey, persistState])
+
+  const lastClearRef = useRef<number>(0)
+  useEffect(() => {
+    if (clearSignal && clearSignal !== lastClearRef.current) {
+      lastClearRef.current = clearSignal
+      handleClearPage()
+    }
+  }, [clearSignal, handleClearPage])
+
+  // Global Ctrl+Z / Cmd+Z keyboard shortcut
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z' && !e.shiftKey) {
+        if (['INPUT', 'TEXTAREA'].includes((e.target as HTMLElement)?.tagName)) return
+        e.preventDefault()
+        handleUndo()
+      }
+    }
+    window.addEventListener('keydown', handleKeyDown)
+    return () => window.removeEventListener('keydown', handleKeyDown)
+  }, [handleUndo])
 
   // 4. TAP TO SPEAK & WORD INTERACTIONS
   const handleWordTap = (item: PageWordItem) => {
@@ -1098,41 +1400,6 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
         })}
       </div>
 
-      {/* ── LAYER C: Interactive Word Zones (Tap to Speak, Double Tap Spell) ─ */}
-      <div
-        className={`absolute inset-0 z-15 ${
-          activeTool === 'pointer' ? 'pointer-events-auto' : 'pointer-events-none'
-        }`}
-      >
-        {words.map((item) => {
-          const isActive = activeWordId === item.id
-          const isBouncing = bouncingWordId === item.id
-
-          return (
-            <button
-              key={item.id}
-              type="button"
-              onClick={() => handleWordTap(item)}
-              onDoubleClick={() => handleWordDoubleTap(item)}
-              style={{
-                left: `${item.x}px`,
-                top: `${item.y}px`,
-                width: `${item.w}px`,
-                height: `${item.h}px`
-              }}
-              title={`Tap to hear: "${item.cleanWord}" (Double-tap to spell)`}
-              className={`absolute rounded transition-all duration-150 focus:outline-none ${
-                isActive
-                  ? 'bg-amber-400/50 ring-4 ring-amber-300 shadow-xl scale-110 z-30 animate-pulse'
-                  : isBouncing
-                  ? 'bg-blue-400/40 ring-2 ring-blue-500 scale-105 z-20'
-                  : 'hover:bg-blue-400/20 hover:ring-1 hover:ring-blue-400/40 cursor-pointer'
-              }`}
-            />
-          )
-        })}
-      </div>
-
       {/* ── LAYER D: In-Line Worksheet Blanks & Clickable Choices ─────────── */}
       <div className="absolute inset-0 pointer-events-none z-30">
         {regions.map((region) => {
@@ -1191,19 +1458,19 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
               key={note.id}
               onPointerDown={(e) => handleStartItemDrag(e, note.id, 'note', note.x, note.y)}
               style={{ left: `${note.x}%`, top: `${note.y}%` }}
-              className={`absolute -translate-x-2 -translate-y-4 pointer-events-auto group ${
+              className={`absolute -translate-x-1 sm:-translate-x-2 -translate-y-2 sm:-translate-y-4 pointer-events-auto group ${
                 activeTool === 'hand'
                   ? 'cursor-grab active:cursor-grabbing hover:ring-2 hover:ring-blue-500 rounded-lg'
                   : ''
               } ${isDragging ? 'scale-110 opacity-90' : ''}`}
             >
               {isEditing ? (
-                <div className="flex items-center gap-1 bg-white p-1 rounded-lg shadow-xl border-2 border-blue-500">
+                <div className="flex items-center gap-0.5 sm:gap-1 bg-white p-0.5 sm:p-1 rounded-md sm:rounded-lg shadow-xl border border-blue-500 sm:border-2">
                   <input
                     type="text"
                     autoFocus
                     value={note.text}
-                    placeholder="Type note..."
+                    placeholder="Type..."
                     onChange={(e) => {
                       const updated = typedNotes.map((n) =>
                         n.id === note.id ? { ...n, text: e.target.value } : n
@@ -1216,16 +1483,22 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
                         persistState(strokes, stickers, typedNotes, typedBlanks, circledItems)
                       }
                     }}
-                    className="px-2 py-1 text-sm font-bold text-blue-900 outline-none w-44"
+                    style={{
+                      fontSize: `${Math.max(10, Math.min(15, Math.round(13 * Math.max(0.65, scale))))}px`,
+                      width: `${Math.max(84, Math.min(176, Math.round(150 * Math.max(0.6, scale))))}px`
+                    }}
+                    className="px-1 sm:px-2 py-0.5 sm:py-1 font-bold text-blue-900 outline-none"
                   />
                   <button
                     onClick={() => {
                       setEditingNoteId(null)
                       persistState(strokes, stickers, typedNotes, typedBlanks, circledItems)
                     }}
-                    className="p-1 bg-blue-600 text-white rounded hover:bg-blue-700"
+                    className="p-1 sm:p-1.5 bg-blue-600 text-white rounded hover:bg-blue-700 shrink-0"
+                    title="Done"
                   >
-                    <Check size={14} />
+                    <Check size={12} className="sm:hidden" />
+                    <Check size={14} className="hidden sm:block" />
                   </button>
                 </div>
               ) : (
@@ -1233,8 +1506,11 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
                   onClick={() => {
                     if (activeTool !== 'hand') setEditingNoteId(note.id)
                   }}
-                  className="px-2.5 py-1 bg-blue-50/95 border border-blue-300 rounded-lg shadow-sm text-sm font-bold text-blue-900 cursor-pointer hover:border-blue-500 transition-all hover:scale-105 flex items-center gap-1"
-                  style={{ color: note.color }}
+                  style={{
+                    color: note.color,
+                    fontSize: `${Math.max(10, Math.min(15, Math.round(13 * Math.max(0.65, scale))))}px`
+                  }}
+                  className="px-1.5 sm:px-2.5 py-0.5 sm:py-1 bg-white/95 sm:bg-blue-50/95 border border-blue-300 rounded sm:rounded-lg shadow-xs sm:shadow-sm font-bold text-blue-900 cursor-pointer hover:border-blue-500 transition-all hover:scale-105 flex items-center gap-1 max-w-[130px] sm:max-w-none break-words"
                 >
                   <span>{note.text || '(empty)'}</span>
                   {activeTool === 'hand' && (
@@ -1244,7 +1520,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
                       title="Delete Note"
                       className="opacity-0 group-hover:opacity-100 p-0.5 hover:bg-rose-100 rounded text-rose-600"
                     >
-                      <Trash2 size={12} />
+                      <Trash2 size={11} />
                     </button>
                   )}
                 </div>
