@@ -27,7 +27,6 @@ import {
   Bot,
   Palette,
   Check,
-  Hand,
   PaintBucket,
   Lock
 } from 'lucide-react'
@@ -133,8 +132,8 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
     return (bookCatalogData as any)[currentGrade] || (bookCatalogData as any)['class3']
   }, [currentGrade])
 
-  // Active Tool: 'hand' | 'fill' | 'pen' | 'highlighter' | 'eraser' | 'text' | 'stamp'
-  const [activeTool, setActiveTool] = useState<StudioTool>('hand')
+  // Active Tool: 'fill' | 'pen' | 'highlighter' | 'eraser' | 'text' | 'stamp'
+  const [activeTool, setActiveTool] = useState<StudioTool>('pen')
   const [activeColor, setActiveColor] = useState<string>('#2563eb')
   const [selectedEmoji, setSelectedEmoji] = useState<string>('⭐')
   const [strokeWidth, setStrokeWidth] = useState<number>(3)
@@ -628,21 +627,6 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
 
       {/* ── In-Page Floating Tool Dock (Vertical on Right Side for Mobile, Horizontal on Desktop) ── */}
       <div className="fixed right-2 top-1/2 -translate-y-1/2 z-40 flex flex-col items-center gap-1 sm:gap-1.5 p-1.5 sm:p-2 bg-slate-900/95 backdrop-blur-md rounded-2xl border border-white/20 shadow-2xl transition-all max-h-[85vh] overflow-y-auto overflow-x-hidden lg:flex-row lg:bottom-6 lg:left-1/2 lg:-translate-x-1/2 lg:top-auto lg:right-auto lg:translate-y-0 lg:max-w-[96vw] lg:max-h-none lg:overflow-x-auto lg:overflow-y-visible">
-        {/* Move */}
-        <button
-          onClick={() => {
-            setActiveTool('hand')
-            gameAudio.playTap()
-          }}
-          title="Move items around"
-          className={`w-10 sm:w-12 py-1 sm:py-1.5 px-0.5 rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all ${
-            activeTool === 'hand' ? 'bg-amber-600 text-white shadow-md scale-105 ring-2 ring-amber-300' : 'text-slate-300 hover:bg-white/10'
-          }`}
-        >
-          <Hand size={15} className="sm:w-4 sm:h-4" />
-          <span className="text-[8px] sm:text-[9px] font-extrabold mt-0.5 sm:mt-1 leading-none tracking-tight">Move</span>
-        </button>
-
         {/* Color */}
         <button
           onClick={() => {
