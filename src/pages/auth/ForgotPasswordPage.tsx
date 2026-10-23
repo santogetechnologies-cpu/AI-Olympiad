@@ -179,10 +179,12 @@ export default function ForgotPasswordPage() {
 
       <div className="w-full max-w-md relative z-10">
         <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-white/20">
-          <div className="flex flex-col items-center mb-8">
-            <div className="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-blue-500/30">
-              <GraduationCap size={28} className="text-white" />
+          <div className="flex flex-col items-center mb-6">
+            <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-3 p-1 bg-amber-50 border border-amber-200/90 shadow-md">
+              <img src="/mama-ada-logo.png" alt="MAMA ADA LMS" className="w-full h-full object-contain" />
             </div>
+            <span className="text-[11px] font-bold text-amber-600 uppercase tracking-widest mb-0.5">Global AI Olympiad</span>
+            <p className="text-sm font-black text-slate-800 tracking-wide mb-2">MAMA ADA LMS</p>
             <h1 className="text-2xl font-bold text-slate-900">Reset Password</h1>
             <p className="text-sm text-slate-500 mt-1 text-center">
               Enter your registered email and we'll send you a password reset link

@@ -563,7 +563,7 @@ export const getGradeTrackInfo = (gradeKey: string): GradeTrackMeta => {
 
 export default function ChapterLearningPage() {
   const { chapterId, itemId } = useParams<{ chapterId?: string; itemId?: string }>()
-  const [searchParams] = useSearchParams()
+  const [searchParams, setSearchParams] = useSearchParams()
   const { user } = useAuth()
   const navigate = useNavigate()
 
@@ -680,120 +680,6 @@ export default function ChapterLearningPage() {
     return null
   }, [chapterId, itemId, searchParams, currentGridItems])
 
-  // ─── CASE A: CHAPTER SELECTION SCREEN ───
-  // Displays Locked Enrolled Track Banner + the 8 items for the assigned class only.
-  // No switcher buttons are displayed: each student sees only their own assigned class.
-  if (!resolvedItemKey) {
-    const handleNavigateChapter = (itemKey: string, e?: React.SyntheticEvent) => {
-      if (e) {
-        e.preventDefault()
-        e.stopPropagation()
-      }
-      gameAudio.playTap()
-      navigate(`/student/learning/chapters/${itemKey}`)
-    }
-
-    const currentTrackTheme = getGradeTrackInfo(assignedGrade).theme
-
-    return (
-      <AppLayout>
-        <div className="w-full h-full max-h-full flex-1 flex flex-col items-center justify-start sm:justify-center p-2 sm:p-4 lg:p-6 overflow-y-auto overflow-x-hidden pb-24 lg:pb-6">
-          {/* Locked Assigned Class Indicator (Strictly reflects the student's database class assignment) */}
-          <div className="flex items-center justify-between gap-2 p-2 sm:p-2.5 px-3.5 sm:px-4 bg-white/95 rounded-2xl border border-slate-200/90 shadow-2xs mb-2.5 sm:mb-4 max-w-lg w-full shrink-0">
-            <div className="flex items-center gap-2.5 min-w-0">
-              <span className={`w-2.5 h-2.5 rounded-full shrink-0 ${currentTrackTheme.dot} animate-pulse`} />
-              <div className="flex flex-col min-w-0">
-                <span className="text-[10px] sm:text-[11px] font-bold text-slate-400 uppercase tracking-wider truncate">
-                  Enrolled Class Track
-                </span>
-                <span className="text-xs sm:text-sm font-black text-slate-800 truncate">
-                  {assignedClassInfo.className} · {assignedClassInfo.subjectName}
-                </span>
-              </div>
-            </div>
-          </div>
-
-          {/* Neat, Modern 8-Item Chapter Grid — 2 columns on mobile, 4 columns on desktop */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-3.5 lg:gap-4 w-full max-w-5xl mx-auto my-auto min-h-0">
-            {currentGridItems.map((item) => {
-              const Icon = item.icon
-              return (
-                <div
-                  key={item.key}
-                  role="button"
-                  tabIndex={0}
-                  onClick={(e) => handleNavigateChapter(item.key, e)}
-                  onTouchEnd={(e) => handleNavigateChapter(item.key, e)}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                      e.preventDefault()
-                      handleNavigateChapter(item.key)
-                    }
-                  }}
-                  className="group p-2.5 sm:p-3.5 lg:p-4 rounded-2xl bg-white border-2 border-slate-200/90 hover:border-blue-500 hover:shadow-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-400/30 transition-all duration-150 flex flex-col justify-between cursor-pointer pointer-events-auto touch-manipulation min-h-[96px] sm:min-h-[115px] relative shadow-2xs select-none"
-                  aria-label={`Open Chapter ${item.code}: ${item.title}`}
-                >
-                  <div className="flex items-center justify-between gap-1 w-full pointer-events-none">
-                    <div
-                      className={`w-7 h-7 sm:w-8 sm:h-8 rounded-xl flex items-center justify-center text-white bg-gradient-to-br ${item.gradient} shadow-2xs group-hover:scale-105 transition-transform shrink-0`}
-                    >
-                      <Icon size={14} className="stroke-[2.5]" />
-                    </div>
-                    <span
-                      className={`text-[9px] sm:text-[10px] font-black uppercase tracking-wider px-1.5 py-0.5 rounded-md border ${item.badgeColor}`}
-                    >
-                      {item.code}
-                    </span>
-                  </div>
-
-                  <div className="min-w-0 w-full my-auto py-1 pointer-events-none">
-                    <h3 className="text-xs sm:text-sm font-black text-slate-900 group-hover:text-blue-600 transition-colors truncate leading-tight">
-                      {item.title}
-                    </h3>
-                    <p className="text-[9px] sm:text-[10px] text-slate-500 font-medium truncate leading-tight mt-0.5">
-                      {item.subtitle}
-                    </p>
-                  </div>
-
-                  <div className="pt-1 border-t border-slate-100 flex items-center justify-between text-[8px] sm:text-[9px] text-slate-400 font-semibold pointer-events-none">
-                    <span className="font-mono">{item.pageRange}</span>
-                    <span className="text-blue-600 font-bold group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
-                      <span>Open</span>
-                      <ChevronRight size={10} />
-                    </span>
-                  </div>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      </AppLayout>
-    )
-  }
-
-  // ─── CASE B: SEPARATE SCREEN FOR EACH CHAPTER (INTRO, CH1, CH2, CH3, CH4, CH5, CH6, FINALE) ───
-  // Once a chapter is selected, hide the chapter grid completely and show only the selected chapter's page.
-  // Working Back to Chapters button returns to the chapter selection screen.
-  const activeItem = currentGridItems.find((i) => i.key === resolvedItemKey) || currentGridItems[0]
-  return (
-    <AppLayout>
-      <div className="w-full h-full max-h-full flex-1 flex flex-col items-center justify-center min-h-0 bg-slate-900/5 overflow-hidden p-0">
-        <GaioInteractiveBookApp
-          gradeKey={assignedGrade}
-          isGradeLocked={true}
-          scopedMonth={activeItem.monthNumber}
-          chapterNumber={activeItem.code}
-          chapterTitle={activeItem.title}
-          studentName={user?.profile?.full_name || 'Super Student'}
-          onExit={() => navigate('/student/learning/chapters')}
-          onComplete={() => {
-            toast.success(`🎉 You completed ${activeItem.code}: ${activeItem.title}!`)
-          }}
-        />
-      </div>
-    </AppLayout>
-  )
-
   // Initialize active section from URL search param if present (1-indexed ?section=N)
   const getSectionIdxFromUrl = (): number => {
     const sParam = searchParams.get('section')
@@ -812,7 +698,7 @@ export default function ChapterLearningPage() {
   const [mobileViewMode, setMobileViewMode] = useState<'sections' | 'lesson'>(() => {
     return searchParams.has('section') ? 'lesson' : 'sections'
   })
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(() => Boolean(chapterId && !['chapters', 'select'].includes(chapterId.toLowerCase())))
   const mainContainerRef = useRef<HTMLDivElement>(null)
   const [stats, setStats] = useState<StudentStats>(() => gamification.getStats(user?.id))
   const [classUnlockData, setClassUnlockData] = useState<{
@@ -1333,6 +1219,123 @@ export default function ChapterLearningPage() {
       setSearchParams({ section: String(prevIdx + 1) })
       window.scrollTo({ top: 0, behavior: 'smooth' })
     }
+  }
+
+  // ─── CASE A: CHAPTER SELECTION SCREEN ───
+  // Displays Locked Enrolled Track Banner + the 8 items for the assigned class only.
+  // No switcher buttons are displayed: each student sees only their own assigned class.
+  if (!resolvedItemKey) {
+    const handleNavigateChapter = (itemKey: string, e?: React.SyntheticEvent) => {
+      if (e) {
+        e.preventDefault()
+        e.stopPropagation()
+      }
+      gameAudio.playTap()
+      navigate(`/student/learning/chapters/${itemKey}`)
+    }
+
+    const currentTrackTheme = getGradeTrackInfo(assignedGrade).theme
+
+    return (
+      <AppLayout>
+        <div className="w-full h-full max-h-full flex-1 flex flex-col items-center justify-start sm:justify-center p-2 sm:p-4 lg:p-6 overflow-y-auto overflow-x-hidden pb-24 lg:pb-6">
+          {/* Locked Assigned Class Indicator (Strictly reflects the student's database class assignment) */}
+          <div className="flex items-center justify-between gap-2 p-2 sm:p-2.5 px-3.5 sm:px-4 bg-white/95 rounded-2xl border border-slate-200/90 shadow-2xs mb-2.5 sm:mb-4 max-w-lg w-full shrink-0">
+            <div className="flex items-center gap-2.5 min-w-0">
+              <span className={`w-2.5 h-2.5 rounded-full shrink-0 ${currentTrackTheme.dot} animate-pulse`} />
+              <div className="flex flex-col min-w-0">
+                <span className="text-[10px] sm:text-[11px] font-bold text-slate-400 uppercase tracking-wider truncate">
+                  Enrolled Class Track
+                </span>
+                <span className="text-xs sm:text-sm font-black text-slate-800 truncate">
+                  {assignedClassInfo.className} · {assignedClassInfo.subjectName}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Neat, Modern 8-Item Chapter Grid — 2 columns on mobile, 4 columns on desktop */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-3.5 lg:gap-4 w-full max-w-5xl mx-auto my-auto min-h-0">
+            {currentGridItems.map((item) => {
+              const Icon = item.icon
+              return (
+                <div
+                  key={item.key}
+                  role="button"
+                  tabIndex={0}
+                  onClick={(e) => handleNavigateChapter(item.key, e)}
+                  onTouchEnd={(e) => handleNavigateChapter(item.key, e)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault()
+                      handleNavigateChapter(item.key)
+                    }
+                  }}
+                  className="group p-2.5 sm:p-3.5 lg:p-4 rounded-2xl bg-white border-2 border-slate-200/90 hover:border-blue-500 hover:shadow-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-400/30 transition-all duration-150 flex flex-col justify-between cursor-pointer pointer-events-auto touch-manipulation min-h-[96px] sm:min-h-[115px] relative shadow-2xs select-none"
+                  aria-label={`Open Chapter ${item.code}: ${item.title}`}
+                >
+                  <div className="flex items-center justify-between gap-1 w-full pointer-events-none">
+                    <div
+                      className={`w-7 h-7 sm:w-8 sm:h-8 rounded-xl flex items-center justify-center text-white bg-gradient-to-br ${item.gradient} shadow-2xs group-hover:scale-105 transition-transform shrink-0`}
+                    >
+                      <Icon size={14} className="stroke-[2.5]" />
+                    </div>
+                    <span
+                      className={`text-[9px] sm:text-[10px] font-black uppercase tracking-wider px-1.5 py-0.5 rounded-md border ${item.badgeColor}`}
+                    >
+                      {item.code}
+                    </span>
+                  </div>
+
+                  <div className="min-w-0 w-full my-auto py-1 pointer-events-none">
+                    <h3 className="text-xs sm:text-sm font-black text-slate-900 group-hover:text-blue-600 transition-colors truncate leading-tight">
+                      {item.title}
+                    </h3>
+                    <p className="text-[9px] sm:text-[10px] text-slate-500 font-medium truncate leading-tight mt-0.5">
+                      {item.subtitle}
+                    </p>
+                  </div>
+
+                  <div className="pt-1 border-t border-slate-100 flex items-center justify-between text-[8px] sm:text-[9px] text-slate-400 font-semibold pointer-events-none">
+                    <span className="font-mono">{item.pageRange}</span>
+                    <span className="text-blue-600 font-bold group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
+                      <span>Open</span>
+                      <ChevronRight size={10} />
+                    </span>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </AppLayout>
+    )
+  }
+
+  // ─── CASE B: SEPARATE SCREEN FOR EACH CHAPTER (INTRO, CH1, CH2, CH3, CH4, CH5, CH6, FINALE) ───
+  // Once a chapter is selected, hide the chapter grid completely and show only the selected chapter's page.
+  // Working Back to Chapters button returns to the chapter selection screen.
+  const isJunior = assignedGrade === 'class3' || assignedGrade === 'class4' || assignedGrade === 'class5'
+  if (isJunior) {
+    const activeItem = currentGridItems.find((i) => i.key === resolvedItemKey) || currentGridItems[0]
+    return (
+      <AppLayout>
+        <div className="w-full h-full max-h-full flex-1 flex flex-col items-center justify-center min-h-0 bg-slate-900/5 overflow-hidden p-0">
+          <GaioInteractiveBookApp
+            gradeKey={assignedGrade}
+            isGradeLocked={true}
+            scopedMonth={activeItem.monthNumber}
+            chapterNumber={activeItem.code}
+            chapterTitle={activeItem.title}
+            studentName={user?.profile?.full_name || 'Super Student'}
+            onExit={() => navigate('/student/learning/chapters')}
+            onComplete={() => {
+              toast.success(`🎉 You completed ${activeItem.code}: ${activeItem.title}!`)
+            }}
+          />
+        </div>
+      </AppLayout>
+    )
   }
 
   if (loading) return <AppLayout><LoadingState message="Loading chapter..." /></AppLayout>

@@ -1540,7 +1540,7 @@ export const CLASS4_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'Because that is dishonest (plagiarism), and you miss the opportunity to develop your own writing and thinking skills', isCorrect: true },
           { text: 'Because computers will send a letter to your house', isCorrect: false },
           { text: 'Because the font will turn invisible', isCorrect: false },
-          { text: 'Because AI words have a bad smell' },
+          { text: 'Because AI words have a bad smell', isCorrect: false },
         ],
         exp: 'Claiming someone else’s (or an AI’s) work as your own is dishonest. The true value of school writing is training your own brain muscles.'
       },
@@ -2086,7 +2086,7 @@ export const CLASS4_TOPIC_PROFILES: Record<string, TopicProfile> = {
           { text: 'Because dark blueberries on a muffin resemble the black eyes and nose of a puppy in pixel patterns, and AI lacks real understanding', isCorrect: true },
           { text: 'Because puppies love eating blueberries for breakfast', isCorrect: false },
           { text: 'Because muffins bark when they come out of the oven', isCorrect: false },
-          { text: 'Because the camera was hungry' }
+          { text: 'Because the camera was hungry', isCorrect: false }
         ],
         exp: 'Computer vision models analyze pixel contrasts. Dark dots on a golden background create matching mathematical features for both muffins and puppy faces.'
       },

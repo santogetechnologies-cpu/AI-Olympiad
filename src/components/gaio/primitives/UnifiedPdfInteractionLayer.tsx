@@ -789,8 +789,10 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       if (fillCanvas) {
         const fCtx = fillCanvas.getContext('2d', { willReadFrequently: true })
         if (fCtx) {
-          const fx = Math.floor(pt.nx * fillCanvas.width)
-          const fy = Math.floor(pt.ny * fillCanvas.height)
+          const nx = pt.nx !== undefined ? pt.nx : (fillCanvas.width > 0 ? pt.x / fillCanvas.width : 0)
+          const ny = pt.ny !== undefined ? pt.ny : (fillCanvas.height > 0 ? pt.y / fillCanvas.height : 0)
+          const fx = Math.floor(nx * fillCanvas.width)
+          const fy = Math.floor(ny * fillCanvas.height)
 
           if (fx >= 0 && fx < fillCanvas.width && fy >= 0 && fy < fillCanvas.height) {
             const imgData = fCtx.getImageData(0, 0, fillCanvas.width, fillCanvas.height)

@@ -39,6 +39,9 @@ export default function LoginPage() {
     }
   })
 
+  const emailRegister = register('email')
+  const passwordRegister = register('password')
+
   const passwordValue = watch('password')
   const isTypingPassword =
     focusedField === 'password' ||
@@ -104,20 +107,19 @@ export default function LoginPage() {
     <div className="h-screen h-[100dvh] max-h-screen max-h-[100dvh] w-full bg-white text-slate-900 flex flex-col font-sans select-none overflow-hidden">
       
       {/* ──────────────────────────────────────────────────────────── */}
-      {/* TOP HEADER: BLUE & WHITE LOGO IN TOP LEFT                    */}
+      {/* TOP HEADER: MAMA ADA LMS LOGO IN TOP LEFT                    */}
       {/* ──────────────────────────────────────────────────────────── */}
       <header className="w-full shrink-0 px-4 py-2.5 sm:px-8 sm:py-3.5 flex items-center justify-between border-b border-slate-100 bg-white z-10">
-        <div className="flex items-center gap-2.5">
-          {/* Blue & White Icon Badge */}
-          <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white shadow-xs shadow-blue-600/30">
-            <Sparkles className="w-4 h-4 text-white" />
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-xl bg-amber-50/80 border border-amber-200/90 flex items-center justify-center p-0.5 shadow-2xs">
+            <img src="/mama-ada-logo.png" alt="MAMA ADA LMS" className="w-full h-full object-contain" />
           </div>
           <div>
-            <span className="text-sm font-black tracking-tight text-[#0f244a] block leading-tight">
-              Global AI Olympiad
+            <span className="text-base font-black tracking-tight text-[#0f244a] block leading-tight">
+              MAMA ADA LMS
             </span>
-            <span className="text-[10px] font-bold text-blue-600 tracking-wider uppercase block">
-              Learning Portal
+            <span className="text-[10px] font-bold text-amber-600 tracking-wider uppercase block">
+              Global AI Olympiad
             </span>
           </div>
         </div>
@@ -185,12 +187,17 @@ export default function LoginPage() {
                     type="email"
                     placeholder="name@example.com"
                     autoComplete="email"
+                    name={emailRegister.name}
+                    ref={emailRegister.ref}
+                    onChange={emailRegister.onChange}
                     onFocus={() => setFocusedField('email')}
-                    onBlur={() => setFocusedField(null)}
+                    onBlur={(e) => {
+                      emailRegister.onBlur(e)
+                      setFocusedField(null)
+                    }}
                     className={`w-full h-8.5 sm:h-9.5 pl-9 pr-3 text-xs sm:text-sm rounded-lg border bg-white text-slate-900 placeholder:text-slate-400 transition-all focus:outline-hidden focus:ring-2 focus:ring-blue-900/10 focus:border-[#0f244a] ${
                       errors.email ? 'border-rose-400' : 'border-slate-200 hover:border-slate-300'
                     }`}
-                    {...register('email')}
                   />
                 </div>
                 {errors.email && (
@@ -221,12 +228,17 @@ export default function LoginPage() {
                     type={showPassword ? 'text' : 'password'}
                     placeholder="Enter password"
                     autoComplete="current-password"
+                    name={passwordRegister.name}
+                    ref={passwordRegister.ref}
+                    onChange={passwordRegister.onChange}
                     onFocus={() => setFocusedField('password')}
-                    onBlur={() => setFocusedField(null)}
+                    onBlur={(e) => {
+                      passwordRegister.onBlur(e)
+                      setFocusedField(null)
+                    }}
                     className={`w-full h-8.5 sm:h-9.5 pl-9 pr-9 text-xs sm:text-sm rounded-lg border bg-white text-slate-900 placeholder:text-slate-400 transition-all focus:outline-hidden focus:ring-2 focus:ring-blue-900/10 focus:border-[#0f244a] ${
                       errors.password ? 'border-rose-400' : 'border-slate-200 hover:border-slate-300'
                     }`}
-                    {...register('password')}
                   />
                   <button
                     type="button"
@@ -286,7 +298,7 @@ export default function LoginPage() {
       {/* COMPACT FOOTER                                               */}
       {/* ──────────────────────────────────────────────────────────── */}
       <footer className="w-full shrink-0 py-2 sm:py-2.5 px-4 sm:px-8 border-t border-slate-100 flex items-center justify-between text-[10px] sm:text-[11px] text-slate-400 bg-white">
-        <span>© {new Date().getFullYear()} Global AI Olympiad</span>
+        <span>© {new Date().getFullYear()} MAMA ADA LMS • Global AI Olympiad</span>
         <span className="font-medium text-[#0f244a] hidden sm:inline">
           Contact portal Administrator
         </span>

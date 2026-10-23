@@ -133,13 +133,13 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
         {/* Logo Header */}
         <div className={`flex items-center justify-between px-4 h-16 border-b border-slate-700/50 flex-shrink-0 ${collapsed ? 'justify-center' : ''}`}>
           <div className="flex items-center gap-3 min-w-0">
-            <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-              <GraduationCap size={18} className="text-white" />
+            <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 bg-slate-800/90 p-0.5 border border-amber-400/40 shadow-xs">
+              <img src="/mama-ada-logo.png" alt="MAMA ADA LMS" className="w-full h-full object-contain" />
             </div>
             {!collapsed && (
               <div className="min-w-0">
-                <p className="text-sm font-bold text-white truncate">Nanjil LMS</p>
-                <p className="text-xs text-slate-400 truncate">{user?.profile?.full_name || 'Academy'}</p>
+                <p className="text-sm font-black text-white tracking-wide truncate">MAMA ADA LMS</p>
+                <p className="text-[10px] font-bold text-amber-400 uppercase tracking-wider truncate">Global AI Olympiad</p>
               </div>
             )}
           </div>
@@ -246,13 +246,14 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
                 <Menu size={20} />
               </button>
             )}
-            <Link to={isStudent ? "/student" : "/admin"} className="flex items-center gap-2 min-w-0 group">
-              <div className="w-8 h-8 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center shrink-0 shadow-2xs group-hover:scale-105 transition-transform">
-                <GraduationCap size={17} className="text-white" />
+            {/* Brand Logo in Header - Only shown on mobile when sidebar is tucked away */}
+            <Link to={isStudent ? "/student" : "/admin"} className="flex lg:hidden items-center gap-2.5 min-w-0 group">
+              <div className="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 p-0.5 bg-amber-50/80 border border-amber-200/90 shadow-2xs group-hover:scale-105 transition-transform">
+                <img src="/mama-ada-logo.png" alt="MAMA ADA LMS" className="w-full h-full object-contain" />
               </div>
               <div className="min-w-0">
-                <span className="text-sm font-black text-slate-900 leading-tight truncate block">Nanjil LMS</span>
-                <span className="text-[10px] text-blue-600 font-bold leading-tight truncate block">AI Olympiad</span>
+                <span className="text-sm font-black text-slate-900 leading-tight truncate block">MAMA ADA LMS</span>
+                <span className="text-[10px] text-amber-600 font-bold leading-tight uppercase tracking-wider truncate block">Global AI Olympiad</span>
               </div>
             </Link>
           </div>

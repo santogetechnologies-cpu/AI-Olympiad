@@ -64,10 +64,11 @@ export interface GaioInteractiveBookAppProps {
   initialMonth?: number
   scopedMonth?: number
   chapterTitle?: string
-  chapterNumber?: number
+  chapterNumber?: number | string
   studentName?: string
   gradeKey?: GradeKey | string
   isGradeLocked?: boolean
+  topicFilter?: number
 }
 
 const GRADE_OPTIONS: { key: GradeKey; label: string }[] = [
