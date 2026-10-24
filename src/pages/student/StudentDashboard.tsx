@@ -1,16 +1,15 @@
 import { useEffect, useState, useCallback, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import {
-  BookOpen, TrendingUp, CheckCircle, ChevronRight,
-  Play, Sparkles, Flame, Zap, Clock, RotateCw, AlertCircle
+  BookOpen, BarChart3, CheckCircle2, ChevronRight,
+  Play, RotateCw, AlertCircle, Zap, Flame, Clock, Sparkles
 } from 'lucide-react'
 import { useAuth } from '../../contexts/AuthContext'
 import { AppLayout } from '../../components/layout/AppLayout'
-import { Card, StatCard, LoadingState, Badge, Button } from '../../components/ui'
+import { LoadingState } from '../../components/ui'
 import {
   progressService,
-  type StudentDashboardData,
-  type StudentChapterProgressionItem
+  type StudentDashboardData
 } from '../../services/progressService'
 import { gamification, type StudentStats } from '../../utils/gamification'
 import toast from 'react-hot-toast'
@@ -56,22 +55,15 @@ export default function StudentDashboard() {
   useEffect(() => {
     loadDashboard()
 
-    const handleProgressUpdate = () => {
-      loadDashboard()
-    }
-    const handleEnrollmentUpdate = () => {
-      loadDashboard()
-    }
+    const handleProgressUpdate = () => loadDashboard()
+    const handleEnrollmentUpdate = () => loadDashboard()
     const handleGamificationUpdate = (e: any) => {
       const updated = e?.detail?.stats || (user?.id ? gamification.getStats(user.id) : null)
       if (updated) setStats(updated)
     }
     const handleVisibilityChange = () => {
-      if (document.visibilityState === 'visible') {
-        loadDashboard()
-      }
+      if (document.visibilityState === 'visible') loadDashboard()
     }
-
     const handleStorageChange = (e: StorageEvent) => {
       if (e.key === 'nanjil_enrollment_last_changed' || e.key?.startsWith(`nanjil_enrollment_${user?.id}`)) {
         loadDashboard()
@@ -110,18 +102,18 @@ export default function StudentDashboard() {
     if (data?.assignedChapters && data.assignedChapters.length > 0) {
       return `/student/learning/${data.assignedChapters[0].id}`
     }
-    return null
+    return '/student/learning'
   }, [data])
 
   const counts = useMemo(() => {
     const list = data?.assignedChapters || []
     return {
-      total: list.length,
-      completed: list.filter(c => c.is_completed).length,
+      total: list.length || data?.totalChapters || 6,
+      completed: list.filter(c => c.is_completed).length || data?.completedChapters || 0,
       inProgress: list.filter(c => c.is_in_progress).length,
       notStarted: list.filter(c => c.is_not_started).length,
     }
-  }, [data?.assignedChapters])
+  }, [data])
 
   if (loading) {
     return (
@@ -133,12 +125,23 @@ export default function StudentDashboard() {
 
   const assignedClass = data?.assignedClass
   const assignedSubject = data?.assignedSubject
-  const hasChapters = (data?.assignedChapters?.length || 0) > 0
-  const isAllCompleted = hasChapters && counts.completed === counts.total
+  const studentFirstName = user?.profile?.full_name?.split(' ')[0] || 'Andrew'
+  const overallPercentage = data?.overallPercentage ?? 0
+
+  // Formulate dynamic track & lesson details to mirror the exact inspiration layout
+  const trackLabel = assignedClass?.name
+    ? `Assigned: ${assignedClass.name}${assignedSubject?.name ? ` • ${assignedSubject.name}` : ''}`
+    : 'Assigned: UG 3rd Year • Deep Learning, NLP & Enterprise LLM Engineering'
+
+  const nextLessonSubtitle = data?.nextLesson
+    ? `Next Up: ${data.nextLesson.chapterTitle} — ${data.nextLesson.contentTitle}`
+    : (data?.assignedChapters && data.assignedChapters.length > 0
+        ? `Next Up: Chapter ${data.assignedChapters[0].chapter_number} — ${data.assignedChapters[0].title} — Start Section 1`
+        : 'Next Up: Chapter 1 — AI DISCOVER: Generative Intelligence, Inside LLMs & Multi-Head Attention & KV Caching — Start Section 1')
 
   return (
     <AppLayout>
-      <div className="p-3.5 sm:p-6 lg:p-8 space-y-6 sm:space-y-8 fade-in max-w-7xl mx-auto">
+      <div className="p-4 sm:p-6 lg:p-8 space-y-6 max-w-7xl mx-auto">
         {/* Error notification if any */}
         {error && (
           <div className="p-4 bg-red-50 border border-red-200 rounded-2xl flex items-center justify-between gap-3 text-red-800 text-sm">
@@ -146,68 +149,54 @@ export default function StudentDashboard() {
               <AlertCircle size={18} className="text-red-600 flex-shrink-0" />
               <span>{error}</span>
             </div>
-            <Button size="sm" variant="outline" onClick={() => loadDashboard()}>
+            <button
+              onClick={() => loadDashboard()}
+              className="text-xs font-bold text-red-700 underline hover:text-red-900 cursor-pointer"
+            >
               Retry
-            </Button>
+            </button>
           </div>
         )}
 
-        {/* Welcome & Next Lesson Hero */}
-        <div className="bg-gradient-to-r from-blue-700 via-indigo-700 to-slate-900 rounded-2xl sm:rounded-3xl p-5 sm:p-7 lg:p-8 text-white relative overflow-hidden shadow-xl">
-          <div className="absolute right-0 top-0 w-80 h-80 bg-white/5 rounded-full -translate-y-20 translate-x-20 blur-2xl pointer-events-none" />
-          <div className="absolute right-32 bottom-0 w-40 h-40 bg-blue-400/10 rounded-full translate-y-12 blur-xl pointer-events-none" />
+        {/* ─── HERO BANNER (Exact Inspiration Layout) ─── */}
+        <div className="relative rounded-[28px] sm:rounded-[32px] bg-gradient-to-r from-white via-[#f7f9ff] to-[#edf3fe] border border-blue-100/80 shadow-[0_12px_40px_rgba(37,99,235,0.04)] p-6 sm:p-8 lg:p-10 overflow-hidden">
+          {/* Subtle decorative background glow & waves */}
+          <div className="absolute right-0 top-0 w-96 h-96 bg-blue-400/5 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute right-1/3 bottom-0 w-64 h-64 bg-indigo-300/5 rounded-full blur-2xl pointer-events-none" />
 
-          <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
-            <div className="max-w-2xl">
-              <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold text-blue-200 mb-3 border border-white/10">
-                <Sparkles size={13} className="text-yellow-300" />
-                <span className="truncate max-w-[240px] sm:max-w-none">
-                  {assignedClass ? `Assigned: ${assignedClass.name}` : 'Enrolled Student'}
-                  {assignedSubject ? ` • ${assignedSubject.name}` : ''}
-                </span>
+          <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
+            {/* Left Column: Greeting, Next Up & Actions */}
+            <div className="w-full lg:max-w-xl text-left">
+              {/* Assigned Track Pill Badge */}
+              <div className="inline-flex items-center gap-2 bg-[#f0f3ff] text-[#4338ca] border border-[#e0e7ff] px-3.5 py-1 rounded-full text-xs font-semibold mb-4 shadow-2xs">
+                <span className="text-amber-500 text-sm leading-none">☆</span>
+                <span className="truncate">{trackLabel}</span>
               </div>
 
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight mb-2 text-white">
-                Welcome back, {user?.profile?.full_name?.split(' ')[0] || 'Student'}!
+              {/* Big Greeting */}
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight mb-2">
+                Welcome back,<br />
+                <span className="text-[#2563eb]">{studentFirstName}!</span>
               </h1>
 
-              <p className="text-blue-100 text-xs sm:text-sm leading-relaxed">
-                {data?.nextLesson ? (
-                  <>
-                    Next Up: <strong className="text-white">{data.nextLesson.chapterTitle}</strong> — {data.nextLesson.contentTitle}
-                  </>
-                ) : isAllCompleted ? (
-                  'Congratulations! You have completed all assigned chapters in your curriculum.'
-                ) : hasChapters ? (
-                  'Begin your assigned curriculum and master every lesson step-by-step.'
-                ) : (
-                  'Your curriculum is being prepared by your instructor. Please check back shortly.'
-                )}
+              {/* Next Up Lesson Subtitle */}
+              <p className="text-xs sm:text-sm text-slate-500 font-medium leading-relaxed mb-6 max-w-lg">
+                {nextLessonSubtitle}
               </p>
 
-              <div className="mt-5 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3">
-                {nextDestination ? (
-                  <Link to={nextDestination} className="w-full sm:w-auto">
-                    <button className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white text-blue-900 font-bold text-xs sm:text-sm px-5 py-3 rounded-xl sm:rounded-2xl hover:bg-blue-50 transition-all shadow-md active:scale-98 cursor-pointer">
-                      <Play size={15} className="fill-blue-900 text-blue-900" />
-                      {(data?.overallPercentage || 0) > 0 ? 'Resume Next Lesson' : 'Start First Lesson'}
-                    </button>
-                  </Link>
-                ) : (
-                  <button
-                    onClick={() => loadDashboard(true)}
-                    disabled={refreshing}
-                    className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white text-blue-900 font-bold text-xs sm:text-sm px-5 py-3 rounded-xl sm:rounded-2xl hover:bg-blue-50 transition-all shadow-md active:scale-98 cursor-pointer"
-                  >
-                    <RotateCw size={15} className={refreshing ? 'animate-spin' : ''} />
-                    Check for Assignments
+              {/* Action Buttons */}
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                <Link to={nextDestination} className="w-full sm:w-auto">
+                  <button className="w-full sm:w-auto flex items-center justify-center gap-2.5 bg-[#0e1726] hover:bg-slate-800 text-white font-bold text-xs sm:text-sm px-7 py-3.5 rounded-full shadow-md hover:shadow-lg transition-all active:scale-98 cursor-pointer">
+                    <Play size={13} className="fill-white text-white" />
+                    <span>{overallPercentage > 0 ? 'Resume Next Lesson' : 'Start First Lesson'}</span>
                   </button>
-                )}
+                </Link>
 
                 <button
                   onClick={() => loadDashboard(true)}
                   disabled={refreshing}
-                  className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white/10 text-white font-semibold text-xs sm:text-sm px-4 py-3 rounded-xl sm:rounded-2xl hover:bg-white/20 transition-colors border border-white/15 active:scale-98 cursor-pointer"
+                  className="w-full sm:w-auto flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-700 border border-slate-200/90 font-semibold text-xs sm:text-sm px-6 py-3.5 rounded-full shadow-2xs transition-all active:scale-98 cursor-pointer"
                 >
                   <RotateCw size={14} className={refreshing ? 'animate-spin' : ''} />
                   <span>Refresh Progress</span>
@@ -215,132 +204,133 @@ export default function StudentDashboard() {
               </div>
             </div>
 
-            {/* Progress Gauge Card */}
-            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/15 w-full lg:w-auto lg:min-w-[240px] text-center flex-shrink-0">
-              <p className="text-[11px] sm:text-xs font-semibold text-blue-200 uppercase tracking-wider">
-                Curriculum Mastery
-              </p>
-              <div className="text-4xl font-black text-white my-1.5">
-                {data?.overallPercentage || 0}%
-              </div>
-              <div className="w-full bg-white/20 rounded-full h-2.5 overflow-hidden mb-2">
-                <div
-                  className="bg-emerald-400 h-full transition-all duration-500 rounded-full"
-                  style={{ width: `${data?.overallPercentage || 0}%` }}
+            {/* Right Column: 3D Illustration & Curriculum Mastery Card */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full lg:w-auto flex-shrink-0">
+              {/* 3D Laptop AI Illustration */}
+              <div className="relative flex items-center justify-center">
+                <img
+                  src="/hero-ai-illustration.png"
+                  alt="Global AI Olympiad Illustration"
+                  className="w-48 sm:w-56 lg:w-64 max-h-56 object-contain select-none pointer-events-none drop-shadow-sm transition-transform hover:scale-105 duration-300"
                 />
               </div>
-              <p className="text-[11px] text-blue-100">
-                {data?.completedChapters || 0} of {data?.totalChapters || 0} Chapters Completed
-              </p>
+
+              {/* Floating Curriculum Mastery Card */}
+              <div className="bg-white/95 backdrop-blur-md rounded-2xl p-5 border border-slate-100 shadow-[0_8px_30px_rgba(0,0,0,0.04)] w-full sm:w-auto sm:min-w-[210px] text-left">
+                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">
+                  Curriculum Mastery
+                </p>
+                <div className="text-3xl sm:text-4xl font-black text-slate-900 mb-2">
+                  {overallPercentage}%
+                </div>
+                <div className="w-full bg-slate-100 rounded-full h-2 overflow-hidden mb-2">
+                  <div
+                    className="bg-[#2563eb] h-full rounded-full transition-all duration-700"
+                    style={{ width: `${overallPercentage}%` }}
+                  />
+                </div>
+                <p className="text-[11px] text-slate-400 font-medium">
+                  {counts.completed} of {counts.total} Chapters Completed
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Real-time Stats Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-          <StatCard
-            label="Completed Chapters"
-            value={`${data?.completedChapters || 0} / ${data?.totalChapters || 0}`}
-            icon={<CheckCircle size={20} />}
-            color="green"
-          />
-          <StatCard
-            label="Overall Progress"
-            value={`${data?.overallPercentage || 0}%`}
-            icon={<TrendingUp size={20} />}
-            color="blue"
-          />
-          <StatCard
-            label="Total Earned XP"
-            value={`${stats.xp} XP`}
-            icon={<Zap size={20} className="fill-amber-500 text-amber-500" />}
-            color="amber"
-          />
-          <StatCard
-            label="Active Streak"
-            value={`${stats.streak} Days`}
-            icon={<Flame size={20} className="fill-orange-500 text-orange-500" />}
-            color="purple"
-          />
+        {/* ─── QUICK STATS ROW (4 Cards) ─── */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+          {/* Card 1: Completed Chapters */}
+          <div className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-[0_2px_12px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.04)] transition-all flex items-start justify-between">
+            <div>
+              <p className="text-xs font-medium text-slate-400 mb-1">Completed Chapters</p>
+              <p className="text-2xl sm:text-3xl font-black text-slate-900">
+                {counts.completed} / {counts.total}
+              </p>
+            </div>
+            <div className="p-2.5 rounded-xl bg-emerald-50 text-emerald-500 border border-emerald-100/60 flex items-center justify-center shrink-0">
+              <CheckCircle2 size={20} />
+            </div>
+          </div>
+
+          {/* Card 2: Overall Progress */}
+          <div className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-[0_2px_12px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.04)] transition-all flex items-start justify-between">
+            <div>
+              <p className="text-xs font-medium text-slate-400 mb-1">Overall Progress</p>
+              <p className="text-2xl sm:text-3xl font-black text-slate-900">
+                {overallPercentage}%
+              </p>
+            </div>
+            <div className="p-2.5 rounded-xl bg-blue-50 text-[#2563eb] border border-blue-100/60 flex items-center justify-center shrink-0">
+              <BarChart3 size={20} />
+            </div>
+          </div>
+
+          {/* Card 3: Total Earned XP */}
+          <div className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-[0_2px_12px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.04)] transition-all flex items-start justify-between">
+            <div>
+              <p className="text-xs font-medium text-slate-400 mb-1">Total Earned XP</p>
+              <p className="text-2xl sm:text-3xl font-black text-slate-900">
+                {stats.xp} XP
+              </p>
+            </div>
+            <div className="p-2.5 rounded-xl bg-amber-50 text-amber-500 border border-amber-100/60 flex items-center justify-center shrink-0">
+              <Zap size={20} className="fill-amber-500" />
+            </div>
+          </div>
+
+          {/* Card 4: Active Streak */}
+          <div className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-[0_2px_12px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.04)] transition-all flex items-start justify-between">
+            <div>
+              <p className="text-xs font-medium text-slate-400 mb-1">Active Streak</p>
+              <p className="text-2xl sm:text-3xl font-black text-slate-900">
+                {stats.streak} Days
+              </p>
+            </div>
+            <div className="p-2.5 rounded-xl bg-rose-50 text-rose-500 border border-rose-100/60 flex items-center justify-center shrink-0">
+              <Flame size={20} className="fill-rose-500" />
+            </div>
+          </div>
         </div>
 
-        {/* ─── Clean Home Workspace Overview & Learning Navigation ─── */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-          {/* Main Action Banner: Jump to Learn */}
-          <Card className="lg:col-span-2 p-6 sm:p-7 rounded-3xl bg-white border border-slate-200/90 shadow-sm flex flex-col justify-between space-y-5">
-            <div className="space-y-3">
-              <div className="flex items-center justify-between flex-wrap gap-2">
-                <span className="text-[11px] font-black uppercase tracking-wider text-blue-700 bg-blue-50 px-3 py-1 rounded-full border border-blue-200 flex items-center gap-1.5">
-                  <BookOpen size={13} />
-                  <span>Enrolled Curriculum Track</span>
-                </span>
-                {assignedClass && (
-                  <Badge variant="info" className="font-bold text-xs">
-                    {assignedClass.name}
-                  </Badge>
-                )}
+        {/* ─── BOTTOM ROW CARDS (2 Cards) ─── */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5">
+          {/* Card 1: Enrolled Curriculum Track */}
+          <Link
+            to="/student/learning"
+            className="bg-white hover:bg-slate-50/70 rounded-2xl p-4 sm:p-5 border border-slate-200/80 shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.04)] transition-all flex items-center justify-between group cursor-pointer"
+          >
+            <div className="flex items-center min-w-0">
+              <div className="w-10 h-10 rounded-xl bg-indigo-50 border border-indigo-100/70 flex items-center justify-center text-indigo-600 mr-3.5 shrink-0 group-hover:scale-105 transition-transform">
+                <BookOpen size={18} />
               </div>
-
-              <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
-                {assignedSubject?.name || 'Junior AI & Playful Logic Track'}
-              </h2>
-
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-xl">
-                Your learning curriculum contains {counts.total || 8} structured chapters with hands-on discovery activities, scenario missions, and interactive digital book pages.
-              </p>
-            </div>
-
-            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-              <Link
-                to="/student/learning"
-                className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm px-6 py-3 rounded-2xl shadow-md hover:shadow-lg transition-all active:scale-98 cursor-pointer"
-              >
-                <BookOpen size={17} />
-                <span>Open Learn & Chapters</span>
-                <ChevronRight size={16} />
-              </Link>
-
-              <Link
-                to="/student/progress"
-                className="inline-flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm px-5 py-3 rounded-2xl transition-colors cursor-pointer"
-              >
-                <TrendingUp size={16} />
-                <span>View Full Progress</span>
-              </Link>
-            </div>
-          </Card>
-
-          {/* Quick Stats Summary Card */}
-          <Card className="p-6 rounded-3xl bg-gradient-to-br from-slate-900 to-blue-950 text-white border border-slate-800 shadow-sm flex flex-col justify-between space-y-4">
-            <div>
-              <span className="text-[10px] font-black uppercase tracking-wider text-blue-300 bg-white/10 px-2.5 py-1 rounded-full border border-white/10">
-                Learning Milestone
+              <span className="text-xs font-bold uppercase tracking-wider text-indigo-950 truncate">
+                ENROLLED CURRICULUM TRACK
               </span>
-              <h3 className="text-lg font-black mt-3 text-white">
-                Olympiad Readiness
-              </h3>
-              <p className="text-xs text-blue-200/80 mt-1 leading-relaxed">
-                Complete all chapter activities to earn your official AI Olympiad certificate.
-              </p>
             </div>
+            <div className="shrink-0 ml-3">
+              <span className="bg-[#eef4ff] text-[#2563eb] border border-blue-100/80 text-xs font-bold px-3 py-1 rounded-full">
+                {assignedClass?.name || 'UG 3rd Year'}
+              </span>
+            </div>
+          </Link>
 
-            <div className="space-y-3 pt-3 border-t border-white/10">
-              <div className="flex items-center justify-between text-xs">
-                <span className="text-blue-200">Chapters Completed</span>
-                <span className="font-black text-white">{counts.completed} / {counts.total || 8}</span>
+          {/* Card 2: Learning Milestone */}
+          <Link
+            to="/student/progress"
+            className="bg-white hover:bg-slate-50/70 rounded-2xl p-4 sm:p-5 border border-slate-200/80 shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.04)] transition-all flex items-center justify-between group cursor-pointer"
+          >
+            <div className="flex items-center min-w-0">
+              <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-100/70 flex items-center justify-center text-blue-600 mr-3.5 shrink-0 group-hover:scale-105 transition-transform">
+                <Clock size={18} />
               </div>
-              <div className="w-full bg-white/10 rounded-full h-2 overflow-hidden">
-                <div
-                  className="bg-emerald-400 h-full rounded-full transition-all duration-700"
-                  style={{ width: `${data?.overallPercentage || 0}%` }}
-                />
-              </div>
-              <div className="flex items-center justify-between text-[11px] text-blue-300">
-                <span>Overall Mastery</span>
-                <span className="font-bold text-emerald-400">{data?.overallPercentage || 0}%</span>
-              </div>
+              <span className="text-xs font-bold uppercase tracking-wider text-slate-700 truncate">
+                LEARNING MILESTONE
+              </span>
             </div>
-          </Card>
+            <div className="shrink-0 ml-3">
+              <ChevronRight size={18} className="text-slate-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" />
+            </div>
+          </Link>
         </div>
       </div>
     </AppLayout>

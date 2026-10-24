@@ -1,12 +1,13 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import {
   LayoutDashboard, BookOpen, FolderOpen, Users, BarChart3,
   Settings, LogOut, ChevronLeft, ChevronRight, Bell, GraduationCap,
-  FileText, HelpCircle, Home, User, Flame, Zap, X, Menu
+  FileText, HelpCircle, Home, User, Flame, Zap, X, Menu, Search
 } from 'lucide-react'
 import { useAuth } from '../../contexts/AuthContext'
 import { gamification, type StudentStats } from '../../utils/gamification'
+import { progressService, type StudentDashboardData } from '../../services/progressService'
 import toast from 'react-hot-toast'
 
 interface NavItem {
@@ -52,6 +53,12 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [stats, setStats] = useState<StudentStats>(() => gamification.getStats(user?.id))
 
+  // Search state for student top header
+  const [searchQuery, setSearchQuery] = useState('')
+  const [searchOpen, setSearchOpen] = useState(false)
+  const [dashboardData, setDashboardData] = useState<StudentDashboardData | null>(null)
+  const searchContainerRef = useRef<HTMLDivElement>(null)
+
   const userRole = (user?.role || '') as string
   const isAdmin = userRole === 'admin'
   const isContentManager = userRole === 'academic_content_manager' || userRole === 'content_manager'
@@ -82,12 +89,16 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
     ? 'bg-purple-100 text-purple-700'
     : isContentManager
     ? 'bg-blue-100 text-blue-700'
-    : 'bg-green-100 text-green-700'
+    : 'bg-emerald-50 text-emerald-600 border border-emerald-200/60'
 
   useEffect(() => {
     if (user?.id && isStudent) {
       gamification.syncWithDatabase(user.id, user.organization_id)
         .then(s => setStats(s))
+        .catch(() => {})
+
+      progressService.getStudentDetailedDashboard(user.id, user.organization_id)
+        .then(d => setDashboardData(d))
         .catch(() => {})
     }
 
@@ -102,14 +113,38 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
     }
   }, [user?.id, user?.organization_id, isStudent])
 
+  // Close search dropdown on click outside
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (searchContainerRef.current && !searchContainerRef.current.contains(e.target as Node)) {
+        setSearchOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
+
   // Close mobile drawer on route change
   useEffect(() => {
     setMobileOpen(false)
+    setSearchOpen(false)
   }, [location.pathname])
 
+  // Filtered chapters for header search
+  const filteredChapters = searchQuery.trim() && dashboardData?.assignedChapters
+    ? dashboardData.assignedChapters.filter(c =>
+        c.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        c.short_description?.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        String(c.chapter_number).toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    : []
+
+  const studentInitial = user?.profile?.full_name?.charAt(0)?.toUpperCase() || 'A'
+  const studentFirstName = user?.profile?.full_name?.split(' ')[0] || 'Andrew'
+
   return (
-    <div className="flex h-screen bg-slate-50 overflow-hidden">
-      {/* Mobile overlay with backdrop-blur (Only for non-students if opened) */}
+    <div className={`flex h-screen ${isStudent ? 'bg-[#f4f7fc]' : 'bg-slate-50'} overflow-hidden`}>
+      {/* Mobile overlay for non-students */}
       {!isStudent && mobileOpen && (
         <div
           className="fixed inset-0 bg-slate-950/60 backdrop-blur-xs z-[60] lg:hidden transition-opacity duration-300 pointer-events-auto"
@@ -121,25 +156,39 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
         />
       )}
 
-      {/* Sidebar Drawer: Completely removed on mobile for students, desktop-only */}
+      {/* Mobile overlay for student if opened */}
+      {isStudent && mobileOpen && (
+        <div
+          className="fixed inset-0 bg-slate-900/40 backdrop-blur-xs z-[60] lg:hidden transition-opacity duration-300 pointer-events-auto"
+          onClick={() => setMobileOpen(false)}
+          aria-hidden="true"
+        />
+      )}
+
+      {/* ─── SIDEBAR ─── */}
       <aside
         className={`
-          ${isStudent ? 'hidden lg:flex' : 'fixed lg:relative inset-y-0 left-0 z-[70] flex'} flex-col
-          bg-slate-900 text-white transition-all duration-300 ease-in-out
-          ${collapsed ? 'w-16' : 'w-72 max-w-[85vw] lg:w-60'}
-          ${!isStudent && mobileOpen ? 'translate-x-0 shadow-2xl pointer-events-auto' : (!isStudent ? '-translate-x-full lg:translate-x-0 pointer-events-none lg:pointer-events-auto' : '')}
+          ${isStudent ? 'fixed lg:relative inset-y-0 left-0 z-[70] flex' : 'fixed lg:relative inset-y-0 left-0 z-[70] flex'} flex-col
+          ${isStudent ? 'bg-white text-slate-800 border-r border-slate-200/80 shadow-[2px_0_12px_rgba(0,0,0,0.02)]' : 'bg-slate-900 text-white'}
+          transition-all duration-300 ease-in-out
+          ${collapsed ? 'w-16' : (isStudent ? 'w-64' : 'w-72 max-w-[85vw] lg:w-60')}
+          ${mobileOpen ? 'translate-x-0 shadow-2xl pointer-events-auto' : '-translate-x-full lg:translate-x-0 pointer-events-none lg:pointer-events-auto'}
         `}
       >
         {/* Logo Header */}
-        <div className={`flex items-center justify-between px-4 h-16 border-b border-slate-700/50 flex-shrink-0 ${collapsed ? 'justify-center' : ''}`}>
+        <div className={`flex items-center justify-between px-5 h-20 ${isStudent ? 'border-b border-slate-100' : 'border-b border-slate-700/50'} flex-shrink-0 ${collapsed ? 'justify-center' : ''}`}>
           <div className="flex items-center gap-3 min-w-0">
-            <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 bg-slate-800/90 p-0.5 border border-amber-400/40 shadow-xs">
+            <div className={`w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 ${isStudent ? 'bg-amber-50/80 border border-amber-200/80' : 'bg-slate-800/90 border border-amber-400/40'} p-0.5 shadow-2xs`}>
               <img src="/mama-ada-logo.png" alt="MAMA ADA LMS" className="w-full h-full object-contain" />
             </div>
             {!collapsed && (
               <div className="min-w-0">
-                <p className="text-sm font-black text-white tracking-wide truncate">MAMA ADA LMS</p>
-                <p className="text-[10px] font-bold text-amber-400 uppercase tracking-wider truncate">Global AI Olympiad</p>
+                <p className={`text-[13px] font-black tracking-wide truncate ${isStudent ? 'text-slate-900' : 'text-white'}`}>
+                  MAMA ADA LMS
+                </p>
+                <p className={`text-[9.5px] font-bold uppercase tracking-wider truncate ${isStudent ? 'text-amber-500' : 'text-amber-400'}`}>
+                  Global AI Olympiad
+                </p>
               </div>
             )}
           </div>
@@ -150,7 +199,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
               e.stopPropagation()
               setMobileOpen(false)
             }}
-            className="lg:hidden p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 active:bg-slate-700 touch-manipulation cursor-pointer min-h-[38px] min-w-[38px] flex items-center justify-center"
+            className="lg:hidden p-2 rounded-xl text-slate-400 hover:text-slate-600 hover:bg-slate-100 cursor-pointer min-h-[38px] min-w-[38px] flex items-center justify-center"
             aria-label="Close sidebar"
           >
             <X size={20} />
@@ -158,7 +207,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
         </div>
 
         {/* Navigation Items */}
-        <nav className="flex-1 overflow-y-auto py-4 px-2 space-y-1.5 scrollbar-thin">
+        <nav className="flex-1 overflow-y-auto py-5 px-3.5 space-y-1.5 scrollbar-thin">
           {navItems.map(item => {
             const Icon = item.icon
             const isActive = location.pathname === item.href ||
@@ -168,16 +217,20 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
                 key={item.href}
                 to={item.href}
                 onClick={() => setMobileOpen(false)}
-                className={`flex items-center gap-3 px-3.5 py-3 lg:py-2.5 rounded-xl text-sm font-medium transition-all group relative ${
-                  isActive
-                    ? 'bg-blue-600 text-white shadow-xs'
-                    : 'text-slate-300 hover:bg-slate-800 hover:text-white active:bg-slate-750'
+                className={`flex items-center gap-3.5 px-4 py-3 rounded-2xl text-sm font-semibold transition-all group relative ${
+                  isStudent
+                    ? (isActive
+                        ? 'bg-[#eef3ff] text-[#2563eb] shadow-2xs'
+                        : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900 active:bg-slate-100')
+                    : (isActive
+                        ? 'bg-blue-600 text-white shadow-xs'
+                        : 'text-slate-300 hover:bg-slate-800 hover:text-white active:bg-slate-750')
                 } ${collapsed ? 'justify-center' : ''}`}
               >
-                <Icon size={19} className="flex-shrink-0" />
+                <Icon size={19} className={`flex-shrink-0 ${isActive && isStudent ? 'text-[#2563eb] stroke-[2.5]' : ''}`} />
                 {!collapsed && <span className="truncate">{item.label}</span>}
                 {collapsed && (
-                  <div className="absolute left-full ml-2 px-2 py-1 bg-slate-800 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 pointer-events-none whitespace-nowrap z-50 border border-slate-700">
+                  <div className="absolute left-full ml-2 px-2.5 py-1 bg-slate-800 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 pointer-events-none whitespace-nowrap z-50 border border-slate-700 shadow-md">
                     {item.label}
                   </div>
                 )}
@@ -187,50 +240,70 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
         </nav>
 
         {/* User profile & sign out */}
-        <div className={`p-3 border-t border-slate-700/50 flex-shrink-0 bg-slate-900/50 ${collapsed ? 'items-center' : ''}`}>
+        <div className={`p-4 ${isStudent ? 'border-t border-slate-100 bg-white' : 'border-t border-slate-700/50 bg-slate-900/50'} flex-shrink-0 ${collapsed ? 'items-center' : ''}`}>
           {!collapsed && (
-            <div className="flex items-center gap-2.5 mb-2.5 px-1.5 py-1">
-              <div className="w-8 h-8 bg-blue-600/30 text-blue-300 border border-blue-500/40 rounded-full flex items-center justify-center flex-shrink-0 font-bold text-xs">
+            <div className={`flex items-center gap-3 p-2.5 rounded-2xl ${isStudent ? 'bg-slate-50/80 border border-slate-100' : ''}`}>
+              <div className={`w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0 font-bold text-sm shadow-2xs ${
+                isStudent
+                  ? 'bg-[#2563eb] text-white'
+                  : 'bg-blue-600/30 text-blue-300 border border-blue-500/40'
+              }`}>
                 {user?.profile?.avatar_url ? (
                   <img src={user.profile.avatar_url} alt="" className="w-full h-full rounded-full object-cover" />
                 ) : (
-                  <span>
-                    {user?.profile?.full_name?.charAt(0)?.toUpperCase() || 'U'}
-                  </span>
+                  <span>{studentInitial}</span>
                 )}
               </div>
               <div className="min-w-0 flex-1">
-                <p className="text-xs font-semibold text-white truncate">{user?.profile?.full_name || 'User'}</p>
-                <span className={`inline-block text-[10px] px-2 py-0.5 rounded-full font-bold mt-0.5 ${roleColor}`}>{roleLabel}</span>
+                <p className={`text-xs font-bold truncate leading-tight ${isStudent ? 'text-slate-900' : 'text-white'}`}>
+                  {user?.profile?.full_name ? user.profile.full_name : 'Andrew'}
+                </p>
+                <span className={`inline-block text-[10px] px-2 py-0.2 rounded-full font-bold mt-1 ${roleColor}`}>
+                  {roleLabel}
+                </span>
               </div>
             </div>
           )}
           <button
             type="button"
             onClick={handleSignOut}
-            className={`flex items-center gap-2.5 w-full px-3.5 py-2.5 text-slate-300 hover:text-rose-300 hover:bg-rose-950/40 rounded-xl text-sm font-medium transition-colors cursor-pointer active:scale-98 ${collapsed ? 'justify-center' : ''}`}
+            className={`flex items-center gap-2.5 w-full px-3 py-2.5 text-slate-500 hover:text-rose-600 hover:bg-rose-50 rounded-xl text-xs font-semibold transition-colors cursor-pointer active:scale-98 mt-2 ${collapsed ? 'justify-center' : ''}`}
           >
-            <LogOut size={17} />
+            <LogOut size={16} />
             {!collapsed && <span>Sign Out</span>}
           </button>
         </div>
 
-        {/* Desktop Collapse Toggle */}
-        <button
-          type="button"
-          onClick={() => setCollapsed(!collapsed)}
-          className="hidden lg:flex absolute -right-3 top-20 w-6 h-6 bg-slate-700 hover:bg-slate-600 border border-slate-600 rounded-full items-center justify-center text-slate-300 hover:text-white transition-colors cursor-pointer"
-        >
-          {collapsed ? <ChevronRight size={12} /> : <ChevronLeft size={12} />}
-        </button>
+        {/* Desktop Collapse Toggle for Non-Students */}
+        {!isStudent && (
+          <button
+            type="button"
+            onClick={() => setCollapsed(!collapsed)}
+            className="hidden lg:flex absolute -right-3 top-20 w-6 h-6 bg-slate-700 hover:bg-slate-600 border border-slate-600 rounded-full items-center justify-center text-slate-300 hover:text-white transition-colors cursor-pointer"
+          >
+            {collapsed ? <ChevronRight size={12} /> : <ChevronLeft size={12} />}
+          </button>
+        )}
       </aside>
 
-      {/* Main content viewport */}
+      {/* ─── MAIN CONTENT VIEWPORT ─── */}
       <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
         {/* Top Header */}
-        <header className="h-14 sm:h-16 bg-white border-b border-slate-200/90 flex items-center justify-between px-3 sm:px-6 flex-shrink-0 z-20">
-          <div className="flex items-center gap-2.5 min-w-0">
-            {/* Mobile Sidebar Toggle Button - Only shown for non-students (admin) */}
+        <header className={`h-16 sm:h-20 ${isStudent ? 'bg-transparent px-4 sm:px-8' : 'bg-white border-b border-slate-200/90 px-3 sm:px-6'} flex items-center justify-between flex-shrink-0 z-20`}>
+          <div className="flex items-center gap-3 min-w-0 flex-1">
+            {/* Mobile Sidebar Toggle Button for Students */}
+            {isStudent && (
+              <button
+                type="button"
+                onClick={() => setMobileOpen(prev => !prev)}
+                className="lg:hidden p-2 rounded-xl text-slate-700 hover:text-slate-900 bg-white hover:bg-slate-100 border border-slate-200/80 cursor-pointer shrink-0 min-h-[38px] min-w-[38px] flex items-center justify-center shadow-2xs"
+                aria-label="Toggle navigation menu"
+              >
+                <Menu size={19} />
+              </button>
+            )}
+
+            {/* Mobile Sidebar Toggle Button for Admin */}
             {!isStudent && (
               <button
                 type="button"
@@ -239,57 +312,133 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
                   e.stopPropagation()
                   setMobileOpen(prev => !prev)
                 }}
-                className="lg:hidden p-2 rounded-xl text-slate-700 hover:text-slate-900 bg-slate-100 hover:bg-slate-200 active:bg-slate-300 border border-slate-200/80 touch-manipulation cursor-pointer shrink-0 min-h-[38px] min-w-[38px] flex items-center justify-center relative z-30 transition-colors"
+                className="lg:hidden p-2 rounded-xl text-slate-700 hover:text-slate-900 bg-slate-100 hover:bg-slate-200 active:bg-slate-300 border border-slate-200/80 cursor-pointer shrink-0 min-h-[38px] min-w-[38px] flex items-center justify-center relative z-30 transition-colors"
                 aria-label="Toggle navigation menu"
-                aria-expanded={mobileOpen}
               >
                 <Menu size={20} />
               </button>
             )}
-            {/* Brand Logo in Header - Only shown on mobile when sidebar is tucked away */}
-            <Link to={isStudent ? "/student" : "/admin"} className="flex lg:hidden items-center gap-2.5 min-w-0 group">
-              <div className="w-8 h-8 rounded-xl flex items-center justify-center shrink-0 p-0.5 bg-amber-50/80 border border-amber-200/90 shadow-2xs group-hover:scale-105 transition-transform">
+
+            {/* Mobile Brand Logo */}
+            <Link to={isStudent ? "/student" : "/admin"} className="flex lg:hidden items-center gap-2 min-w-0">
+              <div className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 p-0.5 bg-amber-50 border border-amber-200 shadow-2xs">
                 <img src="/mama-ada-logo.png" alt="MAMA ADA LMS" className="w-full h-full object-contain" />
               </div>
-              <div className="min-w-0">
-                <span className="text-sm font-black text-slate-900 leading-tight truncate block">MAMA ADA LMS</span>
-                <span className="text-[10px] text-amber-600 font-bold leading-tight uppercase tracking-wider truncate block">Global AI Olympiad</span>
-              </div>
+              <span className="text-xs font-black text-slate-900 truncate">MAMA ADA LMS</span>
             </Link>
+
+            {/* Student Search Bar (Desktop & Tablet) */}
+            {isStudent && (
+              <div ref={searchContainerRef} className="hidden sm:block relative w-72 sm:w-80 md:w-96 max-w-md">
+                <div className="relative">
+                  <Search size={15} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => {
+                      setSearchQuery(e.target.value)
+                      setSearchOpen(true)
+                    }}
+                    onFocus={() => setSearchOpen(true)}
+                    placeholder="Search lessons, chapters, or topics..."
+                    className="w-full pl-10 pr-4 py-2.5 rounded-full bg-white border border-slate-200/90 text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-all"
+                  />
+                  {searchQuery && (
+                    <button
+                      type="button"
+                      onClick={() => setSearchQuery('')}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-0.5"
+                    >
+                      <X size={14} />
+                    </button>
+                  )}
+                </div>
+
+                {/* Instant Search Dropdown */}
+                {searchOpen && searchQuery.trim() && (
+                  <div className="absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl border border-slate-200 shadow-xl overflow-hidden z-50 p-2 max-h-72 overflow-y-auto">
+                    {filteredChapters.length > 0 ? (
+                      <div className="space-y-1">
+                        <p className="px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-slate-400">
+                          Matching Chapters ({filteredChapters.length})
+                        </p>
+                        {filteredChapters.map((ch) => (
+                          <Link
+                            key={ch.id}
+                            to={`/student/learning/${ch.id}`}
+                            onClick={() => {
+                              setSearchOpen(false)
+                              setSearchQuery('')
+                            }}
+                            className="flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-blue-50/70 text-slate-700 hover:text-blue-700 transition-colors"
+                          >
+                            <BookOpen size={15} className="text-blue-600 flex-shrink-0" />
+                            <div className="min-w-0">
+                              <p className="text-xs font-bold truncate">Chapter {ch.chapter_number}: {ch.title}</p>
+                              {ch.short_description && (
+                                <p className="text-[11px] text-slate-500 truncate">{ch.short_description}</p>
+                              )}
+                            </div>
+                          </Link>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="p-4 text-center">
+                        <p className="text-xs text-slate-500">No matching chapters or topics found</p>
+                        <Link
+                          to="/student/learning"
+                          onClick={() => setSearchOpen(false)}
+                          className="inline-block mt-2 text-xs font-semibold text-blue-600 hover:underline"
+                        >
+                          Browse all curriculum chapters →
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            )}
           </div>
 
           {/* Right Header Badges */}
-          <div className="flex items-center gap-1 sm:gap-2 shrink-0">
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             {isStudent && (
-              <div className="flex items-center gap-1 sm:gap-1.5">
-                <div className="flex items-center gap-1 bg-orange-50 text-orange-700 border border-orange-200/90 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[11px] sm:text-xs font-bold shadow-2xs">
-                  <Flame size={13} className="fill-orange-500 text-orange-500 shrink-0" />
+              <div className="flex items-center gap-1.5 sm:gap-2">
+                <div className="flex items-center gap-1 bg-white border border-slate-200/80 px-2.5 py-1 rounded-full text-xs font-bold text-slate-700 shadow-2xs">
+                  <Flame size={14} className="fill-rose-500 text-rose-500 shrink-0" />
                   <span>{stats.streak}</span>
-                  <span className="hidden xs:inline text-[10px]">d</span>
+                  <span className="text-[10px] text-slate-400 font-medium">d</span>
                 </div>
-                <div className="flex items-center gap-1 bg-amber-50 text-amber-800 border border-amber-200/90 px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-full text-[11px] sm:text-xs font-bold shadow-2xs">
-                  <Zap size={13} className="fill-amber-500 text-amber-500 shrink-0" />
+                <div className="flex items-center gap-1 bg-white border border-slate-200/80 px-2.5 py-1 rounded-full text-xs font-bold text-slate-700 shadow-2xs">
+                  <Zap size={14} className="fill-amber-500 text-amber-500 shrink-0" />
                   <span>{stats.xp}</span>
-                  <span className="hidden xs:inline text-[10px]">XP</span>
-                </div>
-                <div className="hidden sm:flex items-center gap-1 bg-purple-50 text-purple-700 border border-purple-200/90 px-2 py-0.5 rounded-full text-[11px] font-bold">
-                  <span>Lvl {stats.level}</span>
+                  <span className="text-[10px] text-slate-400 font-medium">XP</span>
                 </div>
               </div>
             )}
 
-            <button className="p-2 rounded-xl text-slate-500 hover:text-slate-800 hover:bg-slate-100 touch-manipulation cursor-pointer shrink-0" aria-label="Notifications">
-              <Bell size={18} />
+            {/* Notification Bell with Red Badge Dot */}
+            <button
+              className="relative w-9 h-9 rounded-full bg-white hover:bg-slate-50 border border-slate-200/80 flex items-center justify-center text-slate-600 hover:text-slate-900 shadow-2xs transition-colors cursor-pointer"
+              aria-label="Notifications"
+            >
+              <Bell size={16} />
+              <span className="absolute top-2 right-2 w-2 h-2 rounded-full bg-rose-500 ring-2 ring-white" />
             </button>
 
+            {/* User Avatar Circle */}
             <Link
               to={isStudent ? '/student/profile' : '/admin/settings'}
-              className="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 border border-slate-300 flex items-center justify-center shrink-0 text-xs font-bold text-slate-700 touch-manipulation transition-colors"
+              className={`w-9 h-9 rounded-full flex items-center justify-center shrink-0 text-xs font-bold shadow-2xs transition-all ${
+                isStudent
+                  ? 'bg-[#dbeafe] text-[#1d4ed8] border border-blue-200 hover:ring-2 hover:ring-blue-300/40'
+                  : 'bg-slate-100 hover:bg-slate-200 border border-slate-300 text-slate-700'
+              }`}
             >
               {user?.profile?.avatar_url ? (
                 <img src={user.profile.avatar_url} alt="" className="w-full h-full rounded-full object-cover" />
               ) : (
-                <span>{user?.profile?.full_name?.charAt(0)?.toUpperCase() || 'U'}</span>
+                <span>{studentInitial}</span>
               )}
             </Link>
           </div>
@@ -303,7 +452,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
               className={`flex-1 ${
                 isLearningRoute
                   ? 'overflow-hidden pb-[3.75rem] lg:pb-0 flex flex-col min-h-0'
-                  : `overflow-y-auto overflow-x-hidden ${isStudent ? 'pb-24 lg:pb-0' : ''}`
+                  : `overflow-y-auto overflow-x-hidden ${isStudent ? 'pb-24 lg:pb-8' : ''}`
               }`}
             >
               {children}
@@ -354,14 +503,14 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
                   to={tab.href}
                   className={`flex flex-col items-center justify-center flex-1 min-h-[50px] py-1 px-1 rounded-2xl transition-all duration-200 touch-manipulation active:scale-95 group relative ${
                     isActive
-                      ? 'text-blue-600 font-bold bg-blue-50/80 shadow-2xs'
+                      ? 'text-[#2563eb] font-bold bg-blue-50/80 shadow-2xs'
                       : 'text-slate-500 hover:text-slate-900 hover:bg-slate-50/60'
                   }`}
                 >
                   <div
                     className={`flex items-center justify-center p-1 rounded-xl transition-all duration-200 ${
                       isActive
-                        ? 'bg-blue-600 text-white shadow-xs'
+                        ? 'bg-[#2563eb] text-white shadow-xs'
                         : 'text-slate-500 group-hover:text-slate-800'
                     }`}
                   >
@@ -369,13 +518,13 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
                   </div>
                   <span
                     className={`text-[11px] mt-0.5 leading-none tracking-tight font-semibold ${
-                      isActive ? 'text-blue-600 font-bold' : 'text-slate-500'
+                      isActive ? 'text-[#2563eb] font-bold' : 'text-slate-500'
                     }`}
                   >
                     {tab.label}
                   </span>
                   {isActive && (
-                    <span className="w-1 h-1 rounded-full bg-blue-600 mt-0.5" />
+                    <span className="w-1 h-1 rounded-full bg-[#2563eb] mt-0.5" />
                   )}
                 </Link>
               )
