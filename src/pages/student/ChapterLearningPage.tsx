@@ -10,8 +10,9 @@ import { useAuth } from '../../contexts/AuthContext'
 import { toast } from 'react-hot-toast'
 import { curriculumCatalogService } from '../../services/curriculumCatalogService'
 import { type Chapter, type ChapterContent } from '../../types'
-import { type LevelData, type ChapterData } from '../../services/curriculumData'
+import { type LevelData, type ChapterData, SYLLABUS_SPECS } from '../../services/curriculumData'
 import { gamification, type StudentStats } from '../../utils/gamification'
+import bookCatalogData from '../../components/gaio/config/bookCatalog.json'
 import { ThemeHeaderNavigation } from '../../components/content/fullpage/ThemeHeaderNavigation'
 import { LearningSidebar } from '../../components/learning/LearningSidebar'
 import { LearningExperienceDispatcher } from '../../components/learning/LearningExperienceDispatcher'
@@ -389,6 +390,122 @@ export const CLASS5_GRID_ITEMS: ChapterGridItem[] = [
 
 export const CHAPTER_GRID_ITEMS = CLASS3_GRID_ITEMS
 
+export function getGridItemsForGrade(gradeKey: string): ChapterGridItem[] {
+  if (gradeKey === 'class3') return CLASS3_GRID_ITEMS
+  if (gradeKey === 'class4') return CLASS4_GRID_ITEMS
+  if (gradeKey === 'class5') return CLASS5_GRID_ITEMS
+
+  const spec = SYLLABUS_SPECS.find(s => s.gradeKey === gradeKey)
+  const book = (bookCatalogData as Record<string, any>)[gradeKey]
+
+  const getPageRange = (monthIdx: number, fallback: string) => {
+    if (book?.chapters && book.chapters[monthIdx]) {
+      const ch = book.chapters[monthIdx]
+      return `p. ${ch.startPage}–${ch.endPage}`
+    }
+    return fallback
+  }
+
+  return [
+    {
+      key: 'intro',
+      code: 'INTRO',
+      title: 'Welcome & Orientation',
+      subtitle: `${spec?.name || gradeKey.toUpperCase()} Tools & Foundations`,
+      monthNumber: 0,
+      pageRange: getPageRange(0, 'p. 1–5'),
+      screenCount: 8,
+      icon: Sparkles,
+      gradient: 'from-sky-500 to-blue-600',
+      badgeColor: 'bg-sky-50 text-sky-700 border-sky-200',
+    },
+    {
+      key: 'ch1',
+      code: 'CH1',
+      title: spec?.c1?.[0] || 'AI Discover',
+      subtitle: spec?.c1?.[1] ? `${spec.c1[1]}${spec.c1[2] ? ` & ${spec.c1[2]}` : ''}` : 'Generative Intelligence & Inside LLMs',
+      monthNumber: 1,
+      pageRange: getPageRange(1, 'p. 6–46'),
+      screenCount: 44,
+      icon: Bot,
+      gradient: 'from-blue-600 to-indigo-600',
+      badgeColor: 'bg-blue-50 text-blue-700 border-blue-200',
+    },
+    {
+      key: 'ch2',
+      code: 'CH2',
+      title: spec?.c2?.[0] || 'AI Connect',
+      subtitle: spec?.c2?.[1] ? `${spec.c2[1]}${spec.c2[2] ? ` & ${spec.c2[2]}` : ''}` : 'Connect, Create & Automate',
+      monthNumber: 2,
+      pageRange: getPageRange(2, 'p. 47–87'),
+      screenCount: 44,
+      icon: MessageSquare,
+      gradient: 'from-indigo-600 to-violet-600',
+      badgeColor: 'bg-indigo-50 text-indigo-700 border-indigo-200',
+    },
+    {
+      key: 'ch3',
+      code: 'CH3',
+      title: spec?.c3?.[0] || 'AI Solve',
+      subtitle: spec?.c3?.[1] ? `${spec.c3[1]}${spec.c3[2] ? ` & ${spec.c3[2]}` : ''}` : 'AI Automation at Work',
+      monthNumber: 3,
+      pageRange: getPageRange(3, 'p. 88–128'),
+      screenCount: 44,
+      icon: Compass,
+      gradient: 'from-amber-500 to-orange-600',
+      badgeColor: 'bg-amber-50 text-amber-700 border-amber-200',
+    },
+    {
+      key: 'ch4',
+      code: 'CH4',
+      title: spec?.c4?.[0] || 'AI Rise',
+      subtitle: spec?.c4?.[1] ? `${spec.c4[1]}${spec.c4[2] ? ` & ${spec.c4[2]}` : ''}` : 'Become Industry Ready',
+      monthNumber: 4,
+      pageRange: getPageRange(4, 'p. 129–169'),
+      screenCount: 44,
+      icon: Rocket,
+      gradient: 'from-purple-500 to-violet-600',
+      badgeColor: 'bg-purple-50 text-purple-700 border-purple-200',
+    },
+    {
+      key: 'ch5',
+      code: 'CH5',
+      title: spec?.c5?.[0] || 'AI Create',
+      subtitle: spec?.c5?.[1] ? `${spec.c5[1]}${spec.c5[2] ? ` & ${spec.c5[2]}` : ''}` : 'AI Automation Studio',
+      monthNumber: 5,
+      pageRange: getPageRange(5, 'p. 170–210'),
+      screenCount: 44,
+      icon: Palette,
+      gradient: 'from-rose-500 to-pink-600',
+      badgeColor: 'bg-rose-50 text-rose-700 border-rose-200',
+    },
+    {
+      key: 'ch6',
+      code: 'CH6',
+      title: spec?.c6?.[0] || 'AI Future',
+      subtitle: spec?.c6?.[1] ? `${spec.c6[1]}${spec.c6[2] ? ` & ${spec.c6[2]}` : ''}` : 'Truth, Safety & Alignment',
+      monthNumber: 6,
+      pageRange: getPageRange(6, 'p. 211–251'),
+      screenCount: 44,
+      icon: HeartHandshake,
+      gradient: 'from-emerald-600 to-teal-600',
+      badgeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200',
+    },
+    {
+      key: 'finale',
+      code: 'FINALE',
+      title: 'Olympiad Mastery',
+      subtitle: 'Championship Challenge & Certificate',
+      monthNumber: 7,
+      pageRange: getPageRange(7, 'p. 252–266'),
+      screenCount: 14,
+      icon: Trophy,
+      gradient: 'from-amber-500 to-yellow-500',
+      badgeColor: 'bg-amber-50 text-amber-800 border-amber-200',
+    },
+  ]
+}
+
 export interface GradeTrackMeta {
   name: string
   subjectName: string
@@ -639,19 +756,27 @@ export default function ChapterLearningPage() {
 
   // 3. Filter grid items strictly according to the student's assigned database class
   const currentGridItems = useMemo(() => {
-    if (assignedGrade === 'class4') return CLASS4_GRID_ITEMS
-    if (assignedGrade === 'class5') return CLASS5_GRID_ITEMS
-    return CLASS3_GRID_ITEMS
+    return getGridItemsForGrade(assignedGrade)
   }, [assignedGrade])
 
   // 4. Resolve which of the 8 items is requested
   const resolvedItemKey = useMemo(() => {
     const raw = itemId || searchParams.get('item')
     if (raw) {
+      const lower = raw.toLowerCase()
       const match = currentGridItems.find(
-        (i) => i.key === raw.toLowerCase() || i.code.toLowerCase() === raw.toLowerCase()
+        (i) => i.key === lower || i.code.toLowerCase() === lower
       )
       if (match) return match.key
+      if (['intro', 'ch1', 'ch2', 'ch3', 'ch4', 'ch5', 'ch6', 'finale'].includes(lower)) return lower
+      if (lower === '1' || lower === 'chapter-1') return 'ch1'
+      if (lower === '2' || lower === 'chapter-2') return 'ch2'
+      if (lower === '3' || lower === 'chapter-3') return 'ch3'
+      if (lower === '4' || lower === 'chapter-4') return 'ch4'
+      if (lower === '5' || lower === 'chapter-5') return 'ch5'
+      if (lower === '6' || lower === 'chapter-6') return 'ch6'
+      if (lower === '0' || lower === 'chapter-0') return 'intro'
+      if (lower === '7' || lower === 'chapter-7') return 'finale'
     }
     if (chapterId) {
       const lower = chapterId.toLowerCase()
@@ -662,12 +787,14 @@ export default function ChapterLearningPage() {
       if (match) return match.key
 
       // Legacy, category, and numeric chapter URL mappings
-      if (lower.startsWith('cat-class4-') || lower.startsWith('cat-class5-') || lower.startsWith('cat-class3-')) {
-        const numPart = lower.split('-')[2]
+      if (lower.startsWith('cat-')) {
+        const parts = lower.split('-')
+        const numPart = parts[parts.length - 1]
         if (numPart === '0') return 'intro'
         if (numPart === '7') return 'finale'
         return `ch${numPart}`
       }
+      if (['intro', 'ch1', 'ch2', 'ch3', 'ch4', 'ch5', 'ch6', 'finale'].includes(lower)) return lower
       if (lower === '1' || lower === 'chapter-1') return 'ch1'
       if (lower === '2' || lower === 'chapter-2') return 'ch2'
       if (lower === '3' || lower === 'chapter-3') return 'ch3'
@@ -754,7 +881,10 @@ export default function ChapterLearningPage() {
 
   // Load Chapter & 8 Canonical Sections
   const loadData = useCallback(async () => {
-    if (!chapterId) return
+    if (!chapterId || resolvedItemKey || ['chapters', 'select'].includes(chapterId.toLowerCase())) {
+      setLoading(false)
+      return
+    }
     try {
       setLoading(true)
 
@@ -1065,10 +1195,16 @@ export default function ChapterLearningPage() {
   }, [chapterId, studentId, orgId])
 
   useEffect(() => {
-    loadData()
+    if (chapterId && !resolvedItemKey && !['chapters', 'select'].includes(chapterId.toLowerCase())) {
+      loadData()
+    } else {
+      setLoading(false)
+    }
 
     const handleCmsUpdate = () => {
-      loadData()
+      if (chapterId && !resolvedItemKey && !['chapters', 'select'].includes(chapterId.toLowerCase())) {
+        loadData()
+      }
     }
     const handleGamificationUpdate = () => {
       setStats(gamification.getStats(studentId))
@@ -1081,7 +1217,7 @@ export default function ChapterLearningPage() {
       window.removeEventListener('cms_content_updated', handleCmsUpdate)
       window.removeEventListener('gamification_stats_updated', handleGamificationUpdate)
     }
-  }, [loadData, studentId, orgId])
+  }, [loadData, studentId, orgId, chapterId, resolvedItemKey])
 
   const totalSections = sections.length || 8
   const currentSection = sections[currentSectionIdx] || sections[0]
@@ -1315,8 +1451,7 @@ export default function ChapterLearningPage() {
   // ─── CASE B: SEPARATE SCREEN FOR EACH CHAPTER (INTRO, CH1, CH2, CH3, CH4, CH5, CH6, FINALE) ───
   // Once a chapter is selected, hide the chapter grid completely and show only the selected chapter's page.
   // Working Back to Chapters button returns to the chapter selection screen.
-  const isJunior = assignedGrade === 'class3' || assignedGrade === 'class4' || assignedGrade === 'class5'
-  if (isJunior) {
+  if (resolvedItemKey) {
     const activeItem = currentGridItems.find((i) => i.key === resolvedItemKey) || currentGridItems[0]
     return (
       <AppLayout>
