@@ -1138,21 +1138,38 @@ export const progressService = {
       }
     }
 
-    // 4. Calculate REAL progress for every assigned chapter
+    // 4. Calculate REAL progress for every assigned chapter in parallel
+    const progressResults = await Promise.all(
+      chapList.map(async (chap) => {
+        const prog = await progressService.getChapterProgress(studentId, chap.id)
+        const totalSec = 8
+        const doneSec = Math.min(8, prog.completed)
+        const pct = doneSec === 8 ? 100 : (SECTION_PERCENTAGES[doneSec] ?? Math.min(100, (doneSec / 8) * 100))
+        const isDone = doneSec === 8 && prog.isCompleted
+        const isInProg = !isDone && doneSec > 0
+        const isNotStarted = doneSec === 0
+
+        return {
+          chap,
+          prog,
+          totalSec,
+          doneSec,
+          pct,
+          isDone,
+          isInProg,
+          isNotStarted,
+        }
+      })
+    )
+
     const assignedChapters: StudentChapterProgressionItem[] = []
     let completedChaptersCount = 0
     let totalSectionsPossible = 0
     let totalSectionsDone = 0
     let firstIncompleteChap: any = null
 
-    for (const chap of chapList) {
-      const prog = await progressService.getChapterProgress(studentId, chap.id)
-      const totalSec = 8
-      const doneSec = Math.min(8, prog.completed)
-      const pct = doneSec === 8 ? 100 : (SECTION_PERCENTAGES[doneSec] ?? Math.min(100, (doneSec / 8) * 100))
-      const isDone = doneSec === 8 && prog.isCompleted
-      const isInProg = !isDone && doneSec > 0
-      const isNotStarted = doneSec === 0
+    for (const res of progressResults) {
+      const { chap, totalSec, doneSec, pct, isDone, isInProg, isNotStarted } = res
 
       if (isDone) {
         completedChaptersCount++

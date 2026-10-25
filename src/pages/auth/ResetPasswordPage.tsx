@@ -148,20 +148,20 @@ export default function ResetPasswordPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 flex items-center justify-center p-4 relative overflow-hidden">
+    <div className="h-screen h-[100dvh] max-h-screen max-h-[100dvh] w-full overflow-hidden bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 flex items-center justify-center p-3 sm:p-4 relative">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl" />
         <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl" />
       </div>
 
-      <div className="w-full max-w-md relative z-10">
-        <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-white/20">
+      <div className="w-full max-w-sm sm:max-w-md relative z-10">
+        <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-5 sm:p-7 border border-white/20">
           {/* Header */}
-          <div className="flex flex-col items-center mb-6">
-            <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-3 p-1 bg-amber-50 border border-amber-200/90 shadow-md">
+          <div className="flex flex-col items-center mb-4 sm:mb-5">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl flex items-center justify-center mb-2 p-1 bg-amber-50 border border-amber-200/90 shadow-md">
               {isSuccess ? (
-                <CheckCircle2 size={32} className="text-emerald-500" />
+                <CheckCircle2 size={28} className="text-emerald-500" />
               ) : (
                 <img src="/mama-ada-logo.png" alt="Mamma Ada LMS" className="w-full h-full object-contain" />
               )}

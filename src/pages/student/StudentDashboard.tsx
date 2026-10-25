@@ -16,9 +16,28 @@ import toast from 'react-hot-toast'
 
 export default function StudentDashboard() {
   const { user } = useAuth()
-  const [data, setData] = useState<StudentDashboardData | null>(null)
+  
+  // Instant cache retrieval so student home loads in 0ms
+  const cacheKey = user?.id ? `student_dash_cache_${user.id}` : null
+  const [data, setData] = useState<StudentDashboardData | null>(() => {
+    if (!cacheKey) return null
+    try {
+      const cached = localStorage.getItem(cacheKey)
+      return cached ? JSON.parse(cached) : null
+    } catch {
+      return null
+    }
+  })
   const [stats, setStats] = useState<StudentStats>(() => gamification.getStats(user?.id))
-  const [loading, setLoading] = useState(true)
+  // If we have cached data, don't show full-screen blocking loader
+  const [loading, setLoading] = useState(() => {
+    if (!cacheKey) return true
+    try {
+      return !localStorage.getItem(cacheKey)
+    } catch {
+      return true
+    }
+  })
   const [refreshing, setRefreshing] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
@@ -27,13 +46,20 @@ export default function StudentDashboard() {
     try {
       if (isRefresh) {
         setRefreshing(true)
-      } else {
+      } else if (!data) {
         setLoading(true)
       }
       setError(null)
 
       const dashData = await progressService.getStudentDetailedDashboard(user.id, user.organization_id)
       setData(dashData)
+
+      // Save to localStorage for instant 0ms load next time
+      try {
+        localStorage.setItem(`student_dash_cache_${user.id}`, JSON.stringify(dashData))
+      } catch {
+        // Ignore quota errors
+      }
 
       // Sync real gamification stats
       const currentStats = gamification.getStats(user.id)
@@ -45,12 +71,14 @@ export default function StudentDashboard() {
       }
     } catch (err: unknown) {
       console.error('Failed to load student dashboard:', err)
-      setError(err instanceof Error ? err.message : 'Failed to load curriculum dashboard')
+      if (!data) {
+        setError(err instanceof Error ? err.message : 'Failed to load curriculum dashboard')
+      }
     } finally {
       setLoading(false)
       setRefreshing(false)
     }
-  }, [user])
+  }, [user, data])
 
   useEffect(() => {
     loadDashboard()
@@ -60,9 +88,6 @@ export default function StudentDashboard() {
     const handleGamificationUpdate = (e: any) => {
       const updated = e?.detail?.stats || (user?.id ? gamification.getStats(user.id) : null)
       if (updated) setStats(updated)
-    }
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === 'visible') loadDashboard()
     }
     const handleStorageChange = (e: StorageEvent) => {
       if (e.key === 'nanjil_enrollment_last_changed' || e.key?.startsWith(`nanjil_enrollment_${user?.id}`)) {
@@ -76,8 +101,6 @@ export default function StudentDashboard() {
     window.addEventListener('storage', handleStorageChange)
     window.addEventListener('class_progression_advanced', handleProgressUpdate)
     window.addEventListener('gamification_stats_updated', handleGamificationUpdate)
-    window.addEventListener('focus', handleProgressUpdate)
-    document.addEventListener('visibilitychange', handleVisibilityChange)
 
     return () => {
       window.removeEventListener('chapter_progress_updated', handleProgressUpdate)
@@ -86,10 +109,8 @@ export default function StudentDashboard() {
       window.removeEventListener('storage', handleStorageChange)
       window.removeEventListener('class_progression_advanced', handleProgressUpdate)
       window.removeEventListener('gamification_stats_updated', handleGamificationUpdate)
-      window.removeEventListener('focus', handleProgressUpdate)
-      document.removeEventListener('visibilitychange', handleVisibilityChange)
     }
-  }, [loadDashboard, user?.id])
+  }, [loadDashboard])
 
   // Quick action destination (opens exact current or first assigned chapter)
   const nextDestination = useMemo(() => {

@@ -6,6 +6,7 @@ interface InteractiveRobotMascotProps {
   isPeeking: boolean
   isLoading?: boolean
   customStatus?: string
+  robotClassName?: string
 }
 
 export const InteractiveRobotMascot: React.FC<InteractiveRobotMascotProps> = ({
@@ -13,7 +14,8 @@ export const InteractiveRobotMascot: React.FC<InteractiveRobotMascotProps> = ({
   isEmailFocused = false,
   isPeeking,
   isLoading = false,
-  customStatus
+  customStatus,
+  robotClassName
 }) => {
   const [blink, setBlink] = useState(false)
 
@@ -30,8 +32,8 @@ export const InteractiveRobotMascot: React.FC<InteractiveRobotMascotProps> = ({
   return (
     <div className="flex flex-col items-center justify-center select-none w-full">
       {/* Dynamic Status Pill */}
-      <div className="mb-1.5 sm:mb-2 transition-all duration-300">
-        <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] sm:text-xs font-semibold bg-blue-50/80 border border-blue-100 text-blue-900 shadow-2xs">
+      <div className="mb-1 transition-all duration-300">
+        <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] sm:text-xs font-semibold bg-blue-50/80 border border-blue-100 text-blue-900 shadow-2xs">
           <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
           {isLoading ? (
             <span>Saving new password...</span>
@@ -50,7 +52,7 @@ export const InteractiveRobotMascot: React.FC<InteractiveRobotMascotProps> = ({
       </div>
 
       {/* Sleek Minimalist Robot SVG */}
-      <div className="relative w-28 h-28 sm:w-36 sm:h-36 md:w-52 md:h-52 lg:w-56 lg:h-56 transition-transform duration-300 ease-out">
+      <div className={`relative transition-transform duration-300 ease-out ${robotClassName || 'w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28'}`}>
         <svg
           viewBox="0 0 260 260"
           className="w-full h-full overflow-visible"
