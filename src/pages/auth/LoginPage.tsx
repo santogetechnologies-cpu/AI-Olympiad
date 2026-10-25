@@ -3,10 +3,9 @@ import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
-import { Eye, EyeOff, Lock, Mail, ArrowRight, Sparkles } from 'lucide-react'
+import { Eye, EyeOff, Lock, Mail, ArrowRight } from 'lucide-react'
 import { useAuth } from '../../contexts/AuthContext'
 import { authService } from '../../services/authService'
-import { InteractiveRobotMascot } from '../../components/auth/InteractiveRobotMascot'
 import toast from 'react-hot-toast'
 
 const loginSchema = z.object({
@@ -23,13 +22,9 @@ export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false)
   const [loading, setLoading] = useState(false)
 
-  // Robot interaction states
-  const [focusedField, setFocusedField] = useState<'email' | 'password' | null>(null)
-
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors }
   } = useForm<LoginForm>({
     resolver: zodResolver(loginSchema),
@@ -38,14 +33,6 @@ export default function LoginPage() {
       password: ''
     }
   })
-
-  const emailRegister = register('email')
-  const passwordRegister = register('password')
-
-  const passwordValue = watch('password')
-  const isTypingPassword =
-    focusedField === 'password' ||
-    (passwordValue && passwordValue.length > 0 && focusedField !== 'email')
 
   const from = (location.state as { from?: { pathname: string } })?.from?.pathname || null
 
@@ -66,7 +53,6 @@ export default function LoginPage() {
           ? '/content-manager'
           : '/admin'
 
-      // If redirected from a deep link that matches the user's role, preserve it
       if (
         from &&
         ((role === 'student' && from.startsWith('/student')) ||
@@ -104,206 +90,194 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="h-screen h-[100dvh] max-h-screen max-h-[100dvh] w-full bg-white text-slate-900 flex flex-col font-sans select-none overflow-hidden">
-      
-      {/* ──────────────────────────────────────────────────────────── */}
-      {/* TOP HEADER: MAMMA ADA LMS LOGO IN TOP LEFT                   */}
-      {/* ──────────────────────────────────────────────────────────── */}
-      <header className="w-full shrink-0 px-4 py-2.5 sm:px-8 sm:py-3.5 flex items-center justify-between border-b border-slate-100 bg-white z-10">
+    <div className="relative w-full h-screen h-[100dvh] overflow-hidden select-none bg-[#f1f5f9] flex flex-col justify-between font-sans">
+      {/* ── Background Image of 3D Robot in Futuristic Room ── */}
+      <div
+        className="absolute inset-0 w-full h-full bg-cover bg-center pointer-events-none"
+        style={{ backgroundImage: `url('/login-robot-bg.png')` }}
+      />
+
+      {/* Subtle Ambient Light Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-white/30 pointer-events-none" />
+
+      {/* ── Top-Left Header Branding ── */}
+      <header className="relative z-20 w-full p-4 sm:p-6 lg:p-8 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-xl bg-amber-50/80 border border-amber-200/90 flex items-center justify-center p-1 shadow-xs">
+          <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-white shadow-[0_4px_16px_rgba(15,35,80,0.08)] border border-slate-100 p-1 flex items-center justify-center shrink-0">
             <img src="/mama-ada-logo.png" alt="Mamma Ada LMS" className="w-full h-full object-contain" />
           </div>
           <div>
-            <span className="text-base font-black tracking-tight text-[#0f244a] block leading-tight">
+            <span className="text-sm sm:text-base font-black tracking-tight text-[#0f244a] block leading-tight">
               Mamma Ada LMS
             </span>
-            <span className="text-[10px] font-bold text-amber-600 tracking-wider uppercase block">
+            <span className="text-[10px] sm:text-[11px] font-bold text-amber-600 tracking-wider uppercase block">
               Global AI Olympiad
             </span>
           </div>
         </div>
 
-        {/* Minimalist Top Right Help Link */}
-        <div className="text-xs text-slate-500 hidden sm:block">
-          Need help?{' '}
-          <span className="font-semibold text-[#0f244a]">
-            Contact portal Administrator
-          </span>
+        <div className="hidden sm:block text-xs font-medium text-slate-500 bg-white/70 backdrop-blur-xs px-3.5 py-1.5 rounded-full border border-white/60 shadow-2xs">
+          Olympiad Learning Portal
         </div>
       </header>
 
-      {/* ──────────────────────────────────────────────────────────── */}
-      {/* MAIN NON-SCROLLABLE SPLIT VIEW                               */}
-      {/* ──────────────────────────────────────────────────────────── */}
-      <main className="flex-1 min-h-0 flex flex-col md:flex-row w-full items-center justify-center overflow-hidden">
-        
-        {/* LEFT SIDE (Desktop) / TOP (Mobile) : ROBOT MASCOT */}
-        <div className="w-full md:w-1/2 flex flex-col items-center justify-center py-2 sm:py-4 md:py-6 px-4 md:h-full md:border-r border-slate-100 shrink-0 md:shrink">
-          <InteractiveRobotMascot
-            isPasswordFocused={Boolean(isTypingPassword)}
-            isEmailFocused={focusedField === 'email'}
-            isPeeking={showPassword}
-            isLoading={loading}
-          />
-
-          <div className="mt-1 sm:mt-2 text-center max-w-xs hidden sm:block">
-            <h2 className="text-xs sm:text-sm font-bold text-[#0f244a]">
-              Interactive AI Learning
-            </h2>
-            <p className="text-[11px] text-slate-500 mt-0.5">
-              Your smart companion for Olympiad challenges and lessons.
-            </p>
+      {/* ── Main Canvas Area with Animated Ring & Login Card ── */}
+      <main className="relative z-10 flex-1 flex items-center justify-center lg:justify-end px-4 sm:px-8 lg:px-16 xl:px-28 pb-6 sm:pb-12">
+        {/* ── Animated 3D Holographic Ring around Robot's Waist ── */}
+        <div
+          className="absolute pointer-events-none hidden lg:block"
+          style={{
+            left: '28%',
+            top: '63%',
+            transform: 'translate(-50%, -50%)',
+          }}
+        >
+          <div className="relative w-80 h-36">
+            {/* Outer Glowing Ring with 3D Tilt and Animation */}
+            <div
+              className="absolute inset-0 rounded-full border-[3.5px] border-cyan-300/80 bg-gradient-to-r from-cyan-400/20 via-blue-300/30 to-indigo-400/20 backdrop-blur-[1px] animate-float-ring"
+              style={{
+                boxShadow:
+                  '0 0 35px rgba(56, 189, 248, 0.65), inset 0 0 25px rgba(56, 189, 248, 0.45)',
+              }}
+            />
+            {/* Inner Shimmer Reflection */}
+            <div
+              className="absolute inset-1 rounded-full border border-white/60 opacity-80"
+              style={{
+                transform: 'rotateX(70deg) rotateY(-14deg) rotateZ(-3deg)',
+              }}
+            />
           </div>
         </div>
 
-        {/* RIGHT SIDE (Desktop) / BOTTOM (Mobile) : MINIMAL LOGIN FORM */}
-        <div className="w-full md:w-1/2 flex flex-col items-center justify-center px-4 py-2 sm:py-4 md:py-6 md:h-full overflow-hidden">
-          <div className="w-full max-w-xs sm:max-w-sm space-y-3 sm:space-y-4">
-            
-            {/* Form Header */}
-            <div className="text-left">
-              <h1 className="text-lg sm:text-2xl font-bold tracking-tight text-[#0f244a]">
-                Welcome back
-              </h1>
-              <p className="text-[11px] sm:text-xs text-slate-500 mt-0.5 font-normal">
-                Sign in to access your AI lessons and curriculum
-              </p>
+        {/* ── Floating Hologram Bar Chart near Robot's Tablet ── */}
+        <div
+          className="absolute pointer-events-none hidden lg:block animate-float-holo"
+          style={{
+            left: '43%',
+            top: '40%',
+            transform: 'translate(-50%, -50%)',
+          }}
+        >
+          <div className="bg-white/80 backdrop-blur-md rounded-2xl border border-white/90 shadow-[0_8px_24px_rgba(56,189,248,0.25)] p-2.5 flex items-end gap-1.5">
+            <div className="w-1.5 h-3 rounded-full bg-blue-300" />
+            <div className="w-1.5 h-6 rounded-full bg-blue-500 shadow-xs shadow-blue-400" />
+            <div className="w-1.5 h-4.5 rounded-full bg-cyan-400 shadow-xs shadow-cyan-300" />
+            <div className="w-1.5 h-7 rounded-full bg-indigo-500 shadow-xs shadow-indigo-400" />
+          </div>
+        </div>
+
+        {/* ── Floating Ambient Cyan Sphere ── */}
+        <div
+          className="absolute pointer-events-none hidden lg:block"
+          style={{
+            left: '48%',
+            top: '53%',
+            transform: 'translate(-50%, -50%)',
+          }}
+        >
+          <div className="w-6 h-6 rounded-full bg-gradient-to-tr from-cyan-400 to-blue-200 shadow-[0_0_16px_rgba(56,189,248,0.6)] animate-pulse opacity-90" />
+        </div>
+
+        {/* ── Login Card (As shown in design mockup) ── */}
+        <div className="w-full max-w-[360px] sm:max-w-[400px] bg-white/95 backdrop-blur-md rounded-[32px] p-6 sm:p-9 shadow-[0_24px_60px_rgba(15,35,80,0.1),0_4px_16px_rgba(15,35,80,0.03)] border border-white/80 transition-all">
+          {/* Card Header: Login Text */}
+          <div className="mb-6">
+            <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-[#0f244a]">
+              Login
+            </h1>
+          </div>
+
+          {/* Form */}
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-3.5">
+            {/* Email Field */}
+            <div>
+              <div className="relative">
+                <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+                <input
+                  type="email"
+                  placeholder="name@example.com"
+                  autoComplete="email"
+                  {...register('email')}
+                  className={`w-full h-12 pl-11 pr-4 rounded-2xl bg-[#f4f7fc]/90 hover:bg-[#f4f7fc] focus:bg-white border text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 outline-none transition-all focus:ring-4 focus:ring-blue-900/5 focus:border-[#0f244a] ${
+                    errors.email ? 'border-rose-400' : 'border-[#e2e8f0]'
+                  }`}
+                />
+              </div>
+              {errors.email && (
+                <p className="text-[10px] font-medium text-rose-500 mt-1 pl-1">
+                  {errors.email.message}
+                </p>
+              )}
             </div>
 
-            {/* Login Form */}
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-2.5 sm:space-y-3">
-              
-              {/* Email Address */}
-              <div className="space-y-1 text-left">
-                <label className="text-[11px] sm:text-xs font-semibold text-[#0f244a]">
-                  Email
-                </label>
-                <div className="relative">
-                  <div className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none">
-                    <Mail className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-900/60" />
-                  </div>
-                  <input
-                    type="email"
-                    placeholder="name@example.com"
-                    autoComplete="email"
-                    name={emailRegister.name}
-                    ref={emailRegister.ref}
-                    onChange={emailRegister.onChange}
-                    onFocus={() => setFocusedField('email')}
-                    onBlur={(e) => {
-                      emailRegister.onBlur(e)
-                      setFocusedField(null)
-                    }}
-                    className={`w-full h-8.5 sm:h-9.5 pl-9 pr-3 text-xs sm:text-sm rounded-lg border bg-white text-slate-900 placeholder:text-slate-400 transition-all focus:outline-hidden focus:ring-2 focus:ring-blue-900/10 focus:border-[#0f244a] ${
-                      errors.email ? 'border-rose-400' : 'border-slate-200 hover:border-slate-300'
-                    }`}
-                  />
-                </div>
-                {errors.email && (
-                  <p className="text-[10px] font-medium text-rose-500 mt-0.5">
-                    {errors.email.message}
-                  </p>
-                )}
+            {/* Password Field */}
+            <div>
+              <div className="relative">
+                <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  placeholder="Enter password"
+                  autoComplete="current-password"
+                  {...register('password')}
+                  className={`w-full h-12 pl-11 pr-11 rounded-2xl bg-[#f4f7fc]/90 hover:bg-[#f4f7fc] focus:bg-white border text-xs sm:text-sm text-slate-800 placeholder:text-slate-400 outline-none transition-all focus:ring-4 focus:ring-blue-900/5 focus:border-[#0f244a] ${
+                    errors.password ? 'border-rose-400' : 'border-[#e2e8f0]'
+                  }`}
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700 p-1 rounded-lg transition-colors cursor-pointer"
+                  title={showPassword ? 'Hide password' : 'Show password'}
+                  aria-label={showPassword ? 'Hide password' : 'Show password'}
+                >
+                  {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                </button>
               </div>
+              {errors.password && (
+                <p className="text-[10px] font-medium text-rose-500 mt-1 pl-1">
+                  {errors.password.message}
+                </p>
+              )}
+            </div>
 
-              {/* Password */}
-              <div className="space-y-1 text-left">
-                <div className="flex items-center justify-between">
-                  <label className="text-[11px] sm:text-xs font-semibold text-[#0f244a]">
-                    Password
-                  </label>
-                  <Link
-                    to="/forgot-password"
-                    className="text-[10px] sm:text-xs text-blue-600 hover:text-[#0f244a] hover:underline transition"
-                  >
-                    Forgot?
-                  </Link>
-                </div>
-                <div className="relative">
-                  <div className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none">
-                    <Lock className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-900/60" />
-                  </div>
-                  <input
-                    type={showPassword ? 'text' : 'password'}
-                    placeholder="Enter password"
-                    autoComplete="current-password"
-                    name={passwordRegister.name}
-                    ref={passwordRegister.ref}
-                    onChange={passwordRegister.onChange}
-                    onFocus={() => setFocusedField('password')}
-                    onBlur={(e) => {
-                      passwordRegister.onBlur(e)
-                      setFocusedField(null)
-                    }}
-                    className={`w-full h-8.5 sm:h-9.5 pl-9 pr-9 text-xs sm:text-sm rounded-lg border bg-white text-slate-900 placeholder:text-slate-400 transition-all focus:outline-hidden focus:ring-2 focus:ring-blue-900/10 focus:border-[#0f244a] ${
-                      errors.password ? 'border-rose-400' : 'border-slate-200 hover:border-slate-300'
-                    }`}
-                  />
-                  <button
-                    type="button"
-                    onClick={() => setShowPassword(!showPassword)}
-                    className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700 p-0.5 rounded transition"
-                    title={showPassword ? 'Hide password' : 'Show password'}
-                    aria-label={showPassword ? 'Hide password' : 'Show password'}
-                  >
-                    {showPassword ? (
-                      <EyeOff className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#0f244a]" />
-                    ) : (
-                      <Eye className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                    )}
-                  </button>
-                </div>
-                {errors.password && (
-                  <p className="text-[10px] font-medium text-rose-500 mt-0.5">
-                    {errors.password.message}
-                  </p>
-                )}
-              </div>
-
-              {/* Submit Button in Dark Blue */}
+            {/* Submit Button with Right Arrow as in design */}
+            <div className="pt-1">
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full mt-1.5 h-8.5 sm:h-9.5 px-4 bg-[#0f244a] hover:bg-[#18366d] active:bg-[#0a1833] text-white font-bold text-xs tracking-wide rounded-lg shadow-sm hover:shadow transition-all flex items-center justify-center gap-2 disabled:opacity-60 cursor-pointer"
+                className="w-full h-12 bg-[#203a6a] hover:bg-[#182e56] active:scale-[0.98] text-white rounded-2xl font-bold transition-all shadow-[0_8px_20px_rgba(32,58,106,0.25)] flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60"
               >
                 {loading ? (
-                  <>
-                    <div className="w-3 h-3 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                    <span>Signing in...</span>
-                  </>
+                  <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                 ) : (
-                  <>
-                    <span>Sign In</span>
-                    <ArrowRight className="w-3.5 h-3.5 text-blue-200" />
-                  </>
+                  <ArrowRight size={20} className="text-white" />
                 )}
               </button>
-            </form>
-
-            {/* Mobile Contact Portal Administrator */}
-            <div className="pt-2 text-center text-[10px] text-slate-400 sm:hidden">
-              Need assistance?{' '}
-              <span className="font-semibold text-[#0f244a] block mt-0.5">
-                Contact portal Administrator
-              </span>
             </div>
+          </form>
 
+          {/* Footer inside card */}
+          <div className="mt-4 pt-3 flex items-center justify-between text-xs text-slate-500">
+            <Link
+              to="/forgot-password"
+              className="text-xs text-blue-600 hover:text-[#0f244a] hover:underline transition"
+            >
+              Forgot password?
+            </Link>
+            <span className="text-[11px] text-slate-400">Secure AI Portal</span>
           </div>
         </div>
-
       </main>
 
-      {/* ──────────────────────────────────────────────────────────── */}
-      {/* COMPACT FOOTER                                               */}
-      {/* ──────────────────────────────────────────────────────────── */}
-      <footer className="w-full shrink-0 py-2 sm:py-2.5 px-4 sm:px-8 border-t border-slate-100 flex items-center justify-between text-[10px] sm:text-[11px] text-slate-400 bg-white">
+      {/* ── Footer ── */}
+      <footer className="relative z-20 w-full py-2.5 px-4 sm:px-8 flex items-center justify-between text-[10px] sm:text-[11px] text-slate-500 bg-white/40 backdrop-blur-xs border-t border-slate-200/50">
         <span>© {new Date().getFullYear()} Mamma Ada LMS • Global AI Olympiad</span>
         <span className="font-medium text-[#0f244a] hidden sm:inline">
-          Contact portal Administrator
+          Official Olympiad Learning Platform
         </span>
       </footer>
-
     </div>
   )
 }

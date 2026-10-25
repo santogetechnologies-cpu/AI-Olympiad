@@ -2,16 +2,18 @@ import React, { useState, useEffect } from 'react'
 
 interface InteractiveRobotMascotProps {
   isPasswordFocused: boolean
-  isEmailFocused: boolean
+  isEmailFocused?: boolean
   isPeeking: boolean
   isLoading?: boolean
+  customStatus?: string
 }
 
 export const InteractiveRobotMascot: React.FC<InteractiveRobotMascotProps> = ({
   isPasswordFocused,
-  isEmailFocused,
+  isEmailFocused = false,
   isPeeking,
-  isLoading = false
+  isLoading = false,
+  customStatus
 }) => {
   const [blink, setBlink] = useState(false)
 
@@ -32,15 +34,17 @@ export const InteractiveRobotMascot: React.FC<InteractiveRobotMascotProps> = ({
         <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] sm:text-xs font-semibold bg-blue-50/80 border border-blue-100 text-blue-900 shadow-2xs">
           <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse" />
           {isLoading ? (
-            <span>Verifying credentials...</span>
+            <span>Saving new password...</span>
           ) : isPasswordFocused && !isPeeking ? (
             <span className="text-blue-950 font-bold">No peeking — your password is safe! 🙈</span>
           ) : isPasswordFocused && isPeeking ? (
             <span className="text-amber-700 font-bold">Password visible! 👀</span>
+          ) : customStatus ? (
+            <span className="text-blue-900 font-medium">{customStatus}</span>
           ) : isEmailFocused ? (
             <span>Welcome! Enter your email</span>
           ) : (
-            <span className="text-blue-900 font-medium">AI Companion Ready</span>
+            <span className="text-blue-900 font-medium">AI Security Companion</span>
           )}
         </div>
       </div>

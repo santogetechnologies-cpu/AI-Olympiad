@@ -617,4 +617,42 @@ body {
   animation: scanLineMove 2.5s linear infinite;
 }
 
+/* ── Animated Hologram Ring around Login Robot ── */
+@keyframes floatRing {
+  0%, 100% {
+    transform: rotateX(70deg) rotateY(-14deg) rotateZ(-3deg) translateY(0px);
+    opacity: 0.92;
+  }
+  50% {
+    transform: rotateX(70deg) rotateY(-14deg) rotateZ(-3deg) translateY(-8px);
+    opacity: 1;
+  }
+}
+
+@keyframes pulseGlowRing {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.45), inset 0 0 20px rgba(56, 189, 248, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 45px rgba(56, 189, 248, 0.8), inset 0 0 30px rgba(56, 189, 248, 0.55);
+  }
+}
+
+@keyframes floatHolo {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-6px) scale(1.03);
+  }
+}
+
+.animate-float-ring {
+  animation: floatRing 3.6s ease-in-out infinite, pulseGlowRing 3.6s ease-in-out infinite;
+}
+
+.animate-float-holo {
+  animation: floatHolo 3s ease-in-out infinite;
+}
+
 
