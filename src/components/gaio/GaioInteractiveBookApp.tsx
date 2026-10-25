@@ -141,48 +141,66 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
   const [undoSignal, setUndoSignal] = useState<number>(0)
   const [clearSignal, setClearSignal] = useState<number>(0)
 
-  // Auto-fit scale detection for mobile and desktop screens (reserves space for right-side vertical tool dock on mobile)
-  const getAutoFitScale = useCallback(() => {
-    if (typeof window === 'undefined') return 1.15
-    const screenWidth = window.innerWidth
-    // Reserve horizontal space: 70px on mobile (< 1024px) for right-side vertical tool dock, 48px on desktop
-    const availableW = screenWidth < 1024 ? Math.max(260, screenWidth - 70) : Math.min(screenWidth - 48, 1000)
-    // Standard A4 width is ~595.3 points
-    const fit = parseFloat((availableW / 595.3).toFixed(2))
-    return screenWidth < 1024 ? Math.min(1.1, Math.max(0.42, fit)) : Math.min(1.5, Math.max(0.8, fit))
+  // Auto-fit scale detection: fits BOTH width and height so full page is visible without clipping
+  const computeFitScale = useCallback(() => {
+    if (typeof window === 'undefined') return 0.85
+    const el = containerRef.current
+    const viewportW = el?.clientWidth || window.innerWidth
+    const viewportH = el?.clientHeight || (window.innerHeight - 130)
+
+    const isMobile = window.innerWidth < 1024
+    // Space reserved for comfortable padding and near-page arrow buttons (60px on each side)
+    const paddingX = isMobile ? 36 : 140
+    // Space reserved for margins and floating bottom tool dock
+    const paddingY = isMobile ? 32 : 90
+
+    const availW = Math.max(260, viewportW - paddingX)
+    const availH = Math.max(300, viewportH - paddingY)
+
+    const scaleW = availW / 595.3
+    const scaleH = availH / 841.9
+
+    // Fit BOTH width and height so entire page is fully visible on screen
+    const fit = Math.min(scaleW, scaleH)
+    return Math.min(1.4, Math.max(0.42, parseFloat(fit.toFixed(2))))
   }, [])
 
   const [zoomScale, setZoomScale] = useState<number>(() => {
-    if (typeof window === 'undefined') return 1.15
+    if (typeof window === 'undefined') return 0.85
     const w = window.innerWidth
-    if (w < 1024) {
-      const avail = Math.max(260, w - 70)
-      return Math.min(1.1, Math.max(0.42, parseFloat((avail / 595.3).toFixed(2))))
-    }
-    return 1.25
+    const h = window.innerHeight
+    const isMobile = w < 1024
+    const availW = Math.max(260, w - (isMobile ? 36 : 140))
+    const availH = Math.max(300, h - (isMobile ? 120 : 180))
+    const fit = Math.min(availW / 595.3, availH / 841.9)
+    return Math.min(1.4, Math.max(0.42, parseFloat(fit.toFixed(2))))
   })
 
-  // Auto-fit on viewport resize if on mobile
+  // Measure and apply precise fit to screen once mounted and on resize
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 1024) {
-        setZoomScale(getAutoFitScale())
+        setZoomScale(computeFitScale())
       }
     }
-    handleResize()
+    const timer = setTimeout(() => {
+      const fit = computeFitScale()
+      if (fit) setZoomScale(fit)
+    }, 80)
     window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [getAutoFitScale])
+    return () => {
+      clearTimeout(timer)
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [computeFitScale])
 
   const [pageDimensions, setPageDimensions] = useState<{ width: number; height: number }>(() => {
-    if (typeof window === 'undefined') return { width: 820, height: 1160 }
-    const w = window.innerWidth
-    const s = w < 1024
-      ? Math.min(1.1, Math.max(0.42, parseFloat((Math.max(260, w - 70) / 595.3).toFixed(2))))
-      : 1.25
+    const initialS = typeof window !== 'undefined'
+      ? Math.min(1.4, Math.max(0.42, parseFloat((Math.min(Math.max(260, window.innerWidth - 140) / 595.3, Math.max(300, window.innerHeight - 180) / 841.9)).toFixed(2))))
+      : 0.85
     return {
-      width: Math.round(595.3 * s),
-      height: Math.round(841.9 * s)
+      width: Math.round(595.3 * initialS),
+      height: Math.round(841.9 * initialS)
     }
   })
 
@@ -425,18 +443,16 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
 
   return (
     <div
-      ref={containerRef}
-      className="w-full h-screen flex flex-col bg-slate-950 text-slate-100 font-sans select-none overflow-hidden relative"
+      className="w-full h-full min-h-0 flex-1 flex flex-col bg-[#f8fafc] text-slate-800 font-sans select-none overflow-hidden relative"
     >
       {/* ── Top Bar ──────────────────────────────────────────────────────── */}
-      {/* ── Top Bar ──────────────────────────────────────────────────────── */}
-      <header className="flex-shrink-0 h-11 sm:h-14 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 px-2 sm:px-4 flex items-center justify-between gap-1 sm:gap-3 z-30">
+      <header className="flex-shrink-0 h-11 sm:h-14 bg-white/95 backdrop-blur-md border-b border-slate-200/80 px-2 sm:px-4 flex items-center justify-between gap-1 sm:gap-3 z-30 shadow-2xs">
         {/* Left: Class Locked Badge */}
         <div className="flex items-center gap-1 sm:gap-2.5 min-w-0 shrink-0">
 
           {/* Class / Grade Badge (Locked for students so they cannot view other classes) */}
-          <div className="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-2.5 py-0.5 sm:py-1 bg-blue-600/20 text-blue-300 border border-blue-500/30 font-black text-xs sm:text-sm rounded-xl shrink-0 shadow-xs">
-            <BookOpen size={12} className="text-blue-400 shrink-0" />
+          <div className="flex items-center gap-1 sm:gap-1.5 px-2 sm:px-2.5 py-0.5 sm:py-1 bg-blue-50 text-blue-700 border border-blue-200/90 font-black text-xs sm:text-sm rounded-xl shrink-0 shadow-2xs">
+            <BookOpen size={12} className="text-blue-600 shrink-0" />
             <span className="whitespace-nowrap font-extrabold capitalize">
               {GRADE_OPTIONS.find((o) => o.key === currentGrade)?.label?.split('•')[0].trim() || 'Class 3'}
             </span>
@@ -450,7 +466,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
                 goToPage(parseInt(e.target.value, 10))
                 gameAudio.playTap()
               }}
-              className="hidden lg:block max-w-[200px] truncate bg-slate-800/80 text-xs font-bold text-slate-300 px-2 py-1.5 rounded-xl border border-slate-700 outline-none cursor-pointer"
+              className="hidden lg:block max-w-[220px] truncate bg-slate-50 hover:bg-slate-100 text-xs font-bold text-slate-700 px-2.5 py-1.5 rounded-xl border border-slate-200 outline-none cursor-pointer transition-colors"
             >
               {currentBookMeta.chapters.map((ch: any, idx: number) => (
                 <option key={idx} value={ch.startPage}>
@@ -462,7 +478,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
         </div>
 
         {/* Center: Page Number & Jumper */}
-        <div className="flex items-center gap-0.5 sm:gap-2 bg-slate-800/80 px-1.5 sm:px-3 py-0.5 sm:py-1 rounded-xl border border-slate-700 shrink-0">
+        <div className="flex items-center gap-0.5 sm:gap-1.5 bg-slate-100/90 px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-xl border border-slate-200/90 text-slate-800 shrink-0 shadow-2xs">
           <button
             onClick={() => {
               prevPage()
@@ -470,13 +486,13 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
             }}
             disabled={currentPage <= 1}
             title="Previous Page (Left Arrow)"
-            className="p-1 text-slate-400 hover:text-white disabled:opacity-30 cursor-pointer"
+            className="p-1 text-slate-500 hover:text-slate-900 disabled:opacity-30 cursor-pointer rounded-lg hover:bg-white transition-colors"
           >
             <ChevronLeft size={15} />
           </button>
 
-          <span className="text-[11px] sm:text-xs font-black text-white px-0.5 whitespace-nowrap">
-            {currentPage} <span className="text-slate-500 font-normal">/ {numPages || 218}</span>
+          <span className="text-[11px] sm:text-xs font-black text-slate-800 px-1 whitespace-nowrap">
+            {currentPage} <span className="text-slate-400 font-normal">/ {numPages || 218}</span>
           </span>
 
           <button
@@ -486,7 +502,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
             }}
             disabled={currentPage >= (numPages || 218)}
             title="Next Page (Right Arrow)"
-            className="p-1 text-slate-400 hover:text-white disabled:opacity-30 cursor-pointer"
+            className="p-1 text-slate-500 hover:text-slate-900 disabled:opacity-30 cursor-pointer rounded-lg hover:bg-white transition-colors"
           >
             <ChevronRight size={15} />
           </button>
@@ -501,45 +517,57 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
               gameAudio.playTap()
             }}
             title="Undo last action (Ctrl+Z)"
-            className="flex items-center gap-1 px-2 sm:px-2.5 py-1 bg-slate-800 hover:bg-slate-700 active:scale-95 text-slate-300 hover:text-white rounded-xl border border-slate-700 text-xs font-bold transition-all cursor-pointer shadow-xs"
+            className="flex items-center gap-1 px-2 sm:px-2.5 py-1 bg-white hover:bg-slate-50 active:scale-95 text-slate-700 hover:text-slate-900 rounded-xl border border-slate-200 text-xs font-bold transition-all cursor-pointer shadow-2xs"
           >
-            <Undo2 size={13} className="text-amber-400" />
+            <Undo2 size={13} className="text-amber-500" />
             <span className="hidden xs:inline text-[11px] font-bold">Undo</span>
           </button>
 
           {/* Stars Collected */}
-          <div className="flex items-center gap-1 px-2 sm:px-2.5 py-1 bg-amber-500/20 border border-amber-400/40 rounded-xl text-amber-300 font-black text-[11px] sm:text-xs shadow-sm">
-            <Star size={13} className="fill-amber-400 text-amber-400 animate-spin-slow" />
+          <div className="flex items-center gap-1 px-2 sm:px-2.5 py-1 bg-amber-50 border border-amber-300/80 rounded-xl text-amber-700 font-black text-[11px] sm:text-xs shadow-2xs">
+            <Star size={13} className="fill-amber-400 text-amber-500 animate-spin-slow" />
             <span>{stars}</span>
           </div>
 
-          {/* Zoom controls */}
-          <div className="hidden sm:flex items-center gap-1 bg-slate-800/60 p-0.5 sm:p-1 rounded-xl border border-slate-700/60">
-            <div className="hidden sm:flex items-center gap-0.5">
-              <button
-                onClick={() => {
-                  setZoomScale((z) => Math.max(0.45, parseFloat((z - 0.15).toFixed(2))))
-                  gameAudio.playTap()
-                }}
-                title="Zoom Out"
-                className="p-1 text-slate-400 hover:text-white cursor-pointer"
-              >
-                <ZoomOut size={13} />
-              </button>
-              <span className="text-[10px] font-bold text-slate-300 px-1">
-                {Math.round(zoomScale * 100)}%
-              </span>
-              <button
-                onClick={() => {
-                  setZoomScale((z) => Math.min(2.2, parseFloat((z + 0.15).toFixed(2))))
-                  gameAudio.playTap()
-                }}
-                title="Zoom In"
-                className="p-1 text-slate-400 hover:text-white cursor-pointer"
-              >
-                <ZoomIn size={13} />
-              </button>
-            </div>
+          {/* Zoom controls with Fit to Screen */}
+          <div className="flex items-center gap-0.5 sm:gap-1 bg-slate-100/90 p-0.5 sm:p-1 rounded-xl border border-slate-200/90 text-slate-700 shadow-2xs">
+            <button
+              onClick={() => {
+                setZoomScale((z) => Math.max(0.4, parseFloat((z - 0.1).toFixed(2))))
+                gameAudio.playTap()
+              }}
+              title="Zoom Out"
+              className="p-1 text-slate-500 hover:text-slate-900 hover:bg-white rounded-lg transition-colors cursor-pointer"
+            >
+              <ZoomOut size={13} />
+            </button>
+            <span className="text-[10px] sm:text-[11px] font-bold text-slate-700 px-1 min-w-[34px] sm:min-w-[40px] text-center">
+              {Math.round(zoomScale * 100)}%
+            </span>
+            <button
+              onClick={() => {
+                setZoomScale((z) => Math.min(2.0, parseFloat((z + 0.1).toFixed(2))))
+                gameAudio.playTap()
+              }}
+              title="Zoom In"
+              className="p-1 text-slate-500 hover:text-slate-900 hover:bg-white rounded-lg transition-colors cursor-pointer"
+            >
+              <ZoomIn size={13} />
+            </button>
+            <div className="h-3.5 w-px bg-slate-300 mx-0.5 hidden xs:block" />
+            <button
+              onClick={() => {
+                const fit = computeFitScale()
+                setZoomScale(fit)
+                gameAudio.playTap()
+                toast.success('Fitted to screen!', { id: 'fit-toast', duration: 1500 })
+              }}
+              title="Fit to Screen"
+              className="hidden xs:flex items-center gap-1 px-1.5 py-0.5 text-[10px] sm:text-[11px] font-bold text-blue-600 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-colors cursor-pointer"
+            >
+              <Maximize2 size={11} />
+              <span>Fit</span>
+            </button>
           </div>
         </div>
       </header>
@@ -553,76 +581,87 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
         onPointerCancel={handlePanPointerUp}
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
-        className={`flex-1 w-full overflow-auto bg-slate-950 p-1 pl-2 pr-16 sm:pl-3 sm:pr-20 lg:p-4 flex flex-col items-center justify-start relative select-none pb-28 lg:pb-16 ${
+        className={`flex-1 w-full min-h-0 overflow-auto bg-[#f8fafc] relative select-none scroll-smooth ${
           activeTool === 'hand' ? (isPanning ? 'cursor-grabbing' : 'cursor-grab') : ''
         }`}
       >
+        {/* Modern Professional Loader without any text */}
         {isLoading && (
-          <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-950/80 z-40 backdrop-blur-xs">
-            <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mb-3" />
-            <p className="text-sm font-bold text-blue-300">Rendering {currentBookMeta.title}...</p>
+          <div className="absolute inset-0 flex items-center justify-center bg-white/80 backdrop-blur-sm z-50 transition-all duration-300">
+            <div className="relative flex items-center justify-center w-20 h-20 rounded-2xl bg-white shadow-[0_12px_36px_rgba(0,0,0,0.08)] border border-slate-100">
+              <div className="absolute inset-2 rounded-xl border-2 border-blue-500/20 animate-ping opacity-75" />
+              <div className="w-10 h-10 rounded-full border-[3px] border-slate-200 border-t-blue-600 border-r-indigo-600 animate-spin" />
+              <div className="absolute w-2.5 h-2.5 rounded-full bg-blue-600 shadow-xs shadow-blue-500" />
+            </div>
           </div>
         )}
 
-        {/* ── Giant Left Navigation Arrow Paddle (Desktop Only) ──────────────── */}
-        <button
-          onClick={() => {
-            prevPage()
-            gameAudio.playTap()
-          }}
-          disabled={currentPage <= 1}
-          title="Previous Page (Left Arrow)"
-          className="hidden md:flex fixed left-4 top-1/2 -translate-y-1/2 z-30 w-14 h-24 rounded-2xl bg-slate-900/70 hover:bg-slate-900 backdrop-blur-md border border-white/20 text-white items-center justify-center transition-all duration-200 hover:scale-105 hover:border-blue-400 shadow-2xl disabled:opacity-0 disabled:pointer-events-none group"
-        >
-          <ChevronLeft size={36} className="text-slate-300 group-hover:text-white group-hover:-translate-x-1 transition-transform" />
-        </button>
+        <div className="min-h-full min-w-full flex items-center justify-center p-3 sm:p-6 pb-28 lg:pb-20">
+          {/* ── Authentic Book Page + Unified In-Page Interaction Layer ──────── */}
+          <div
+            className="relative shadow-[0_12px_40px_rgba(0,0,0,0.08),0_4px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_16px_48px_rgba(0,0,0,0.12)] rounded-xl sm:rounded-2xl overflow-visible bg-white border border-slate-200/90 transition-shadow duration-200 shrink-0"
+            style={{
+              width: `${pageDimensions.width}px`,
+              height: `${pageDimensions.height}px`,
+            }}
+          >
+            {/* ── Beautiful Near Navigation Arrow: Left (Previous Page) ──────────── */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation()
+                prevPage()
+                gameAudio.playTap()
+              }}
+              disabled={currentPage <= 1}
+              title="Previous Page (Left Arrow)"
+              className="absolute -left-4 sm:-left-6 md:-left-7 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white/95 hover:bg-white text-slate-700 hover:text-blue-600 shadow-[0_4px_16px_rgba(0,0,0,0.12)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.25)] border border-slate-200/90 flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95 disabled:opacity-0 disabled:pointer-events-none group cursor-pointer backdrop-blur-xs"
+            >
+              <ChevronLeft size={22} className="group-hover:-translate-x-0.5 transition-transform" />
+            </button>
 
-        {/* ── Giant Right Navigation Arrow Paddle (Desktop Only) ─────────────── */}
-        <button
-          onClick={() => {
-            nextPage()
-            gameAudio.playTap()
-          }}
-          disabled={currentPage >= (numPages || 218)}
-          title="Next Page (Right Arrow)"
-          className="hidden md:flex fixed right-4 top-1/2 -translate-y-1/2 z-30 w-14 h-24 rounded-2xl bg-slate-900/70 hover:bg-slate-900 backdrop-blur-md border border-white/20 text-white items-center justify-center transition-all duration-200 hover:scale-105 hover:border-blue-400 shadow-2xl disabled:opacity-0 disabled:pointer-events-none group"
-        >
-          <ChevronRight size={36} className="text-slate-300 group-hover:text-white group-hover:translate-x-1 transition-transform" />
-        </button>
+            {/* ── Beautiful Near Navigation Arrow: Right (Next Page) ─────────── */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation()
+                nextPage()
+                gameAudio.playTap()
+              }}
+              disabled={currentPage >= (numPages || 218)}
+              title="Next Page (Right Arrow)"
+              className="absolute -right-4 sm:-right-6 md:-right-7 top-1/2 -translate-y-1/2 z-30 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white/95 hover:bg-white text-slate-700 hover:text-blue-600 shadow-[0_4px_16px_rgba(0,0,0,0.12)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.25)] border border-slate-200/90 flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95 disabled:opacity-0 disabled:pointer-events-none group cursor-pointer backdrop-blur-xs"
+            >
+              <ChevronRight size={22} className="group-hover:translate-x-0.5 transition-transform" />
+            </button>
 
-        {/* ── Authentic Book Page + Unified In-Page Interaction Layer ──────── */}
-        <div
-          className="relative shadow-2xl rounded-xl sm:rounded-2xl overflow-hidden bg-white border border-slate-700 transition-all duration-150 mx-auto my-auto shrink-0 max-w-full"
-          style={{
-            width: `${pageDimensions.width}px`,
-            height: `${pageDimensions.height}px`,
-          }}
-        >
-          {/* Layer 1: High-DPI Crisp PDF.js Canvas */}
-          <canvas ref={pdfCanvasRef} className="block w-full h-full" />
+            {/* Book Inner Canvas Wrapper (with rounded corners and overflow hidden) */}
+            <div className="w-full h-full rounded-xl sm:rounded-2xl overflow-hidden relative">
+              {/* Layer 1: High-DPI Crisp PDF.js Canvas */}
+              <canvas ref={pdfCanvasRef} className="block w-full h-full" />
 
-          {/* Layer 2: Unified In-Page Interactive Layer */}
-          <UnifiedPdfInteractionLayer
-            pageNumber={currentPage}
-            bookKey={currentGrade}
-            pageWidth={pageDimensions.width}
-            pageHeight={pageDimensions.height}
-            scale={zoomScale}
-            activeTool={activeTool}
-            activeColor={activeColor}
-            strokeWidth={strokeWidth}
-            words={wordsLayer.words}
-            activeWordId={wordsLayer.activeWordId}
-            regions={currentPageRegions}
-            isReadingAloud={wordsLayer.isReadingAloud}
-            pdfCanvas={pdfCanvasRef.current}
-            selectedEmoji={selectedEmoji}
-            undoSignal={undoSignal}
-            clearSignal={clearSignal}
-            onAddStar={(count) => handleAddStar(count ?? 1)}
-            onWordClick={wordsLayer.speakWord}
-            onWordSpell={wordsLayer.spellWord}
-          />
+              {/* Layer 2: Unified In-Page Interactive Layer */}
+              <UnifiedPdfInteractionLayer
+                pageNumber={currentPage}
+                bookKey={currentGrade}
+                pageWidth={pageDimensions.width}
+                pageHeight={pageDimensions.height}
+                scale={zoomScale}
+                activeTool={activeTool}
+                activeColor={activeColor}
+                strokeWidth={strokeWidth}
+                words={wordsLayer.words}
+                activeWordId={wordsLayer.activeWordId}
+                regions={currentPageRegions}
+                isReadingAloud={wordsLayer.isReadingAloud}
+                pdfCanvas={pdfCanvasRef.current}
+                selectedEmoji={selectedEmoji}
+                undoSignal={undoSignal}
+                clearSignal={clearSignal}
+                onAddStar={(count) => handleAddStar(count ?? 1)}
+                onWordClick={wordsLayer.speakWord}
+                onWordSpell={wordsLayer.spellWord}
+              />
+            </div>
+          </div>
         </div>
       </div>
 

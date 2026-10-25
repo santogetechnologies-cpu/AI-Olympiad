@@ -107,16 +107,16 @@ export default function LoginPage() {
     <div className="h-screen h-[100dvh] max-h-screen max-h-[100dvh] w-full bg-white text-slate-900 flex flex-col font-sans select-none overflow-hidden">
       
       {/* ──────────────────────────────────────────────────────────── */}
-      {/* TOP HEADER: MAMA ADA LMS LOGO IN TOP LEFT                    */}
+      {/* TOP HEADER: MAMMA ADA LMS LOGO IN TOP LEFT                   */}
       {/* ──────────────────────────────────────────────────────────── */}
       <header className="w-full shrink-0 px-4 py-2.5 sm:px-8 sm:py-3.5 flex items-center justify-between border-b border-slate-100 bg-white z-10">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-amber-50/80 border border-amber-200/90 flex items-center justify-center p-0.5 shadow-2xs">
-            <img src="/mama-ada-logo.png" alt="MAMA ADA LMS" className="w-full h-full object-contain" />
+            <img src="/mama-ada-logo.png" alt="Mamma Ada LMS" className="w-full h-full object-contain" />
           </div>
           <div>
             <span className="text-base font-black tracking-tight text-[#0f244a] block leading-tight">
-              MAMA ADA LMS
+              Mamma Ada LMS
             </span>
             <span className="text-[10px] font-bold text-amber-600 tracking-wider uppercase block">
               Global AI Olympiad
@@ -298,7 +298,7 @@ export default function LoginPage() {
       {/* COMPACT FOOTER                                               */}
       {/* ──────────────────────────────────────────────────────────── */}
       <footer className="w-full shrink-0 py-2 sm:py-2.5 px-4 sm:px-8 border-t border-slate-100 flex items-center justify-between text-[10px] sm:text-[11px] text-slate-400 bg-white">
-        <span>© {new Date().getFullYear()} MAMA ADA LMS • Global AI Olympiad</span>
+        <span>© {new Date().getFullYear()} Mamma Ada LMS • Global AI Olympiad</span>
         <span className="font-medium text-[#0f244a] hidden sm:inline">
           Contact portal Administrator
         </span>

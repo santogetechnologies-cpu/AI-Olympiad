@@ -179,12 +179,12 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
         <div className={`flex items-center justify-between px-5 h-20 ${isStudent ? 'border-b border-slate-100' : 'border-b border-slate-700/50'} flex-shrink-0 ${collapsed ? 'justify-center' : ''}`}>
           <div className="flex items-center gap-3 min-w-0">
             <div className={`w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 ${isStudent ? 'bg-amber-50/80 border border-amber-200/80' : 'bg-slate-800/90 border border-amber-400/40'} p-0.5 shadow-2xs`}>
-              <img src="/mama-ada-logo.png" alt="MAMA ADA LMS" className="w-full h-full object-contain" />
+              <img src="/mama-ada-logo.png" alt="Mamma Ada LMS" className="w-full h-full object-contain" />
             </div>
             {!collapsed && (
               <div className="min-w-0">
                 <p className={`text-[13px] font-black tracking-wide truncate ${isStudent ? 'text-slate-900' : 'text-white'}`}>
-                  MAMA ADA LMS
+                  Mamma Ada LMS
                 </p>
                 <p className={`text-[9.5px] font-bold uppercase tracking-wider truncate ${isStudent ? 'text-amber-500' : 'text-amber-400'}`}>
                   Global AI Olympiad
@@ -322,9 +322,9 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
             {/* Mobile Brand Logo */}
             <Link to={isStudent ? "/student" : "/admin"} className="flex lg:hidden items-center gap-2 min-w-0">
               <div className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 p-0.5 bg-amber-50 border border-amber-200 shadow-2xs">
-                <img src="/mama-ada-logo.png" alt="MAMA ADA LMS" className="w-full h-full object-contain" />
+                <img src="/mama-ada-logo.png" alt="Mamma Ada LMS" className="w-full h-full object-contain" />
               </div>
-              <span className="text-xs font-black text-slate-900 truncate">MAMA ADA LMS</span>
+              <span className="text-xs font-black text-slate-900 truncate">Mamma Ada LMS</span>
             </Link>
 
             {/* Student Search Bar (Desktop & Tablet) */}

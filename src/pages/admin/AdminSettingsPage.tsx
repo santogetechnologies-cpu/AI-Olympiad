@@ -173,7 +173,7 @@ export default function AdminSettingsPage() {
             <h2 className="text-base font-semibold text-slate-900">Organization Information</h2>
           </div>
           <div className="space-y-4">
-            <Input label="Organization Name" defaultValue="MAMA ADA LMS" disabled />
+            <Input label="Organization Name" defaultValue="Mamma Ada LMS" disabled />
             <Input label="Domain Slug" defaultValue="mama-ada-lms" disabled />
             <Textarea label="Description" defaultValue="Official Learning Management System for the Global AI Olympiad." rows={2} disabled />
           </div>

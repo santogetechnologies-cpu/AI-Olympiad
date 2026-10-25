@@ -163,11 +163,11 @@ export default function ResetPasswordPage() {
               {isSuccess ? (
                 <CheckCircle2 size={32} className="text-emerald-500" />
               ) : (
-                <img src="/mama-ada-logo.png" alt="MAMA ADA LMS" className="w-full h-full object-contain" />
+                <img src="/mama-ada-logo.png" alt="Mamma Ada LMS" className="w-full h-full object-contain" />
               )}
             </div>
             <span className="text-[11px] font-bold text-amber-600 uppercase tracking-widest mb-0.5">Global AI Olympiad</span>
-            <p className="text-sm font-black text-slate-800 tracking-wide mb-2">MAMA ADA LMS</p>
+            <p className="text-sm font-black text-slate-800 tracking-wide mb-2">Mamma Ada LMS</p>
             <h1 className="text-2xl font-bold text-slate-900">
               {isSuccess ? 'Password Reset Complete' : 'Reset Password'}
             </h1>
