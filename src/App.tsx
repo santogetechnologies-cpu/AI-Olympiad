@@ -29,6 +29,8 @@ import StudentProgressPage from './pages/student/StudentProgressPage'
 import StudentAssignmentsPage from './pages/student/StudentAssignmentsPage'
 import StudentQuizzesPage from './pages/student/StudentQuizzesPage'
 import StudentProfilePage from './pages/student/StudentProfilePage'
+import StudentExamsPage from './pages/student/StudentExamsPage'
+import StudentHelpPage from './pages/student/StudentHelpPage'
 import GaioBookPage from './pages/student/GaioBookPage'
 
 export default function App() {
@@ -77,6 +79,8 @@ export default function App() {
           <Route path="/student/progress" element={<ProtectedRoute allowedRoles={['student']}><StudentProgressPage /></ProtectedRoute>} />
           <Route path="/student/assignments" element={<ProtectedRoute allowedRoles={['student']}><StudentAssignmentsPage /></ProtectedRoute>} />
           <Route path="/student/quizzes" element={<ProtectedRoute allowedRoles={['student']}><StudentQuizzesPage /></ProtectedRoute>} />
+          <Route path="/student/exams" element={<ProtectedRoute allowedRoles={['student']}><StudentExamsPage /></ProtectedRoute>} />
+          <Route path="/student/help" element={<ProtectedRoute allowedRoles={['student']}><StudentHelpPage /></ProtectedRoute>} />
           <Route path="/student/profile" element={<ProtectedRoute allowedRoles={['student']}><StudentProfilePage /></ProtectedRoute>} />
           <Route path="/student/book" element={<ProtectedRoute allowedRoles={['student']}><GaioBookPage /></ProtectedRoute>} />
           <Route path="/book" element={<GaioBookPage />} />

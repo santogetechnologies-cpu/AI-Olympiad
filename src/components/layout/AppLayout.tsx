@@ -41,6 +41,8 @@ function StudentNav(): NavItem[] {
     { label: 'Home', href: '/student', icon: Home },
     { label: 'Learn', href: '/student/learning', icon: BookOpen },
     { label: 'Progress', href: '/student/progress', icon: BarChart3 },
+    { label: 'Exams', href: '/student/exams', icon: GraduationCap },
+    { label: 'Help', href: '/student/help', icon: HelpCircle },
     { label: 'Profile', href: '/student/profile', icon: User },
   ]
 }
@@ -178,7 +180,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
         {/* Logo Header */}
         <div className={`flex items-center justify-between px-5 h-20 ${isStudent ? 'border-b border-slate-100' : 'border-b border-slate-700/50'} flex-shrink-0 ${collapsed ? 'justify-center' : ''}`}>
           <div className="flex items-center gap-3 min-w-0">
-            <div className={`w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 ${isStudent ? 'bg-amber-50/80 border border-amber-200/80' : 'bg-slate-800/90 border border-amber-400/40'} p-0.5 shadow-2xs`}>
+            <div className={`w-11 h-11 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center flex-shrink-0 ${isStudent ? 'bg-amber-50/80 border border-amber-200/80' : 'bg-slate-800/90 border border-amber-400/40'} p-1 shadow-xs`}>
               <img src="/mama-ada-logo.png" alt="Mamma Ada LMS" className="w-full h-full object-contain" />
             </div>
             {!collapsed && (
@@ -320,8 +322,8 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
             )}
 
             {/* Mobile Brand Logo */}
-            <Link to={isStudent ? "/student" : "/admin"} className="flex lg:hidden items-center gap-2 min-w-0">
-              <div className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 p-0.5 bg-amber-50 border border-amber-200 shadow-2xs">
+            <Link to={isStudent ? "/student" : "/admin"} className="flex lg:hidden items-center gap-2.5 min-w-0">
+              <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 p-1 bg-amber-50 border border-amber-200 shadow-xs">
                 <img src="/mama-ada-logo.png" alt="Mamma Ada LMS" className="w-full h-full object-contain" />
               </div>
               <span className="text-xs font-black text-slate-900 truncate">Mamma Ada LMS</span>
@@ -487,6 +489,18 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
                 href: '/student/progress',
                 icon: BarChart3,
                 isActive: location.pathname.startsWith('/student/progress'),
+              },
+              {
+                label: 'Exams',
+                href: '/student/exams',
+                icon: GraduationCap,
+                isActive: location.pathname.startsWith('/student/exams'),
+              },
+              {
+                label: 'Help',
+                href: '/student/help',
+                icon: HelpCircle,
+                isActive: location.pathname.startsWith('/student/help'),
               },
               {
                 label: 'Profile',

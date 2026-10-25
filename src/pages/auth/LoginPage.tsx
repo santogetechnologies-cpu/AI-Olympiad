@@ -111,7 +111,7 @@ export default function LoginPage() {
       {/* ──────────────────────────────────────────────────────────── */}
       <header className="w-full shrink-0 px-4 py-2.5 sm:px-8 sm:py-3.5 flex items-center justify-between border-b border-slate-100 bg-white z-10">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-amber-50/80 border border-amber-200/90 flex items-center justify-center p-0.5 shadow-2xs">
+          <div className="w-12 h-12 rounded-xl bg-amber-50/80 border border-amber-200/90 flex items-center justify-center p-1 shadow-xs">
             <img src="/mama-ada-logo.png" alt="Mamma Ada LMS" className="w-full h-full object-contain" />
           </div>
           <div>
