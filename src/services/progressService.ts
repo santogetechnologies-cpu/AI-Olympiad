@@ -1138,38 +1138,84 @@ export const progressService = {
       }
     }
 
-    // 4. Calculate REAL progress for every assigned chapter in parallel
-    const progressResults = await Promise.all(
-      chapList.map(async (chap) => {
-        const prog = await progressService.getChapterProgress(studentId, chap.id)
-        const totalSec = 8
-        const doneSec = Math.min(8, prog.completed)
-        const pct = doneSec === 8 ? 100 : (SECTION_PERCENTAGES[doneSec] ?? Math.min(100, (doneSec / 8) * 100))
-        const isDone = doneSec === 8 && prog.isCompleted
-        const isInProg = !isDone && doneSec > 0
-        const isNotStarted = doneSec === 0
-
-        return {
-          chap,
-          prog,
-          totalSec,
-          doneSec,
-          pct,
-          isDone,
-          isInProg,
-          isNotStarted,
+    // 4. Batch fetch student completions in ONE single query for the entire curriculum
+    const allDbContentIds: string[] = []
+    for (const chap of chapList) {
+      if (Array.isArray(chap.contents)) {
+        for (const c of chap.contents) {
+          if (c && c.id) allDbContentIds.push(c.id)
         }
-      })
-    )
+      }
+    }
 
+    const studentCompletedIdsSet = new Set<string>()
+    if (isUuid(studentId)) {
+      try {
+        let query = supabase
+          .from('student_content_progress')
+          .select('chapter_content_id')
+          .eq('student_id', studentId)
+          .eq('status', 'completed')
+        
+        if (allDbContentIds.length > 0) {
+          query = query.in('chapter_content_id', allDbContentIds)
+        }
+
+        const { data: dbItems } = await query
+        if (dbItems) {
+          dbItems.forEach((p: any) => {
+            if (p.chapter_content_id) studentCompletedIdsSet.add(p.chapter_content_id)
+          })
+        }
+      } catch (err) {
+        console.warn('Notice batch querying student_content_progress:', err)
+      }
+    }
+
+    // Also include local completion records in memory
+    const localCompletionMap = loadLocalCompletionRecords(studentId)
+
+    // Calculate chapter progress synchronously from pre-fetched sets
     const assignedChapters: StudentChapterProgressionItem[] = []
     let completedChaptersCount = 0
     let totalSectionsPossible = 0
     let totalSectionsDone = 0
     let firstIncompleteChap: any = null
 
-    for (const res of progressResults) {
-      const { chap, totalSec, doneSec, pct, isDone, isInProg, isNotStarted } = res
+    for (const chap of chapList) {
+      // Resolve canonical section IDs for this chapter synchronously
+      let canonicalIds: string[] = []
+      if (Array.isArray(chap.contents) && chap.contents.length > 0) {
+        for (let slot = 1; slot <= 8; slot++) {
+          const matched = chap.contents.find((i: any) => i.display_order === slot)
+          canonicalIds.push(matched ? matched.id : `${chap.id}-sec-${slot}`)
+        }
+      } else {
+        canonicalIds = [
+          `${chap.id}-sec-1`,
+          `${chap.id}-sec-2`,
+          `${chap.id}-sec-3`,
+          `${chap.id}-sec-4`,
+          `${chap.id}-sec-5`,
+          `${chap.id}-sec-6`,
+          `${chap.id}-sec-7`,
+          `${chap.id}-sec-8`,
+        ]
+      }
+
+      // Count genuine completed sections from pre-fetched Set and local records
+      let doneSec = 0
+      for (const secId of canonicalIds) {
+        if (studentCompletedIdsSet.has(secId) || localCompletionMap.has(`${chap.id}::${secId}`)) {
+          doneSec++
+        }
+      }
+      doneSec = Math.min(8, doneSec)
+      const totalSec = 8
+      const pct = doneSec === 8 ? 100 : (SECTION_PERCENTAGES[doneSec] ?? Math.min(100, (doneSec / 8) * 100))
+      const isDone = doneSec === 8
+      const isInProg = !isDone && doneSec > 0
+      const isNotStarted = doneSec === 0
 
       if (isDone) {
         completedChaptersCount++

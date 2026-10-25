@@ -17,26 +17,39 @@ import toast from 'react-hot-toast'
 export default function StudentDashboard() {
   const { user } = useAuth()
   
-  // Instant cache retrieval so student home loads in 0ms
-  const cacheKey = user?.id ? `student_dash_cache_${user.id}` : null
+  // Instant cache retrieval so student home loads in 0ms without showing loading state
   const [data, setData] = useState<StudentDashboardData | null>(() => {
-    if (!cacheKey) return null
     try {
-      const cached = localStorage.getItem(cacheKey)
-      return cached ? JSON.parse(cached) : null
+      // Check for user-specific cache or fallback recent cache
+      if (user?.id) {
+        const cached = localStorage.getItem(`student_dash_cache_${user.id}`)
+        if (cached) return JSON.parse(cached)
+      }
+      // Or check if any recent student dashboard is cached
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i)
+        if (key && key.startsWith('student_dash_cache_')) {
+          const val = localStorage.getItem(key)
+          if (val) return JSON.parse(val)
+        }
+      }
     } catch {
-      return null
+      // Fallback
     }
+    return null
   })
+
   const [stats, setStats] = useState<StudentStats>(() => gamification.getStats(user?.id))
   // If we have cached data, don't show full-screen blocking loader
-  const [loading, setLoading] = useState(() => {
-    if (!cacheKey) return true
+  const [loading, setLoading] = useState<boolean>(() => {
     try {
-      return !localStorage.getItem(cacheKey)
-    } catch {
-      return true
-    }
+      if (user?.id && localStorage.getItem(`student_dash_cache_${user.id}`)) return false
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i)
+        if (key && key.startsWith('student_dash_cache_')) return false
+      }
+    } catch {}
+    return true
   })
   const [refreshing, setRefreshing] = useState(false)
   const [error, setError] = useState<string | null>(null)
