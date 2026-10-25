@@ -238,32 +238,23 @@ export default function StudentDashboard() {
               </div>
             </div>
 
-            {/* Right Column: 3D Illustration & Curriculum Mastery Card */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full lg:w-auto flex-shrink-0">
-              {/* 3D Laptop AI Illustration */}
-              <div className="relative flex items-center justify-center">
-                <img
-                  src="/hero-ai-illustration.png"
-                  alt="Global AI Olympiad Illustration"
-                  className="w-48 sm:w-56 lg:w-64 max-h-56 object-contain select-none pointer-events-none drop-shadow-sm transition-transform hover:scale-105 duration-300"
-                />
-              </div>
-
+            {/* Right Column: Curriculum Mastery Card */}
+            <div className="flex items-center justify-center w-full lg:w-auto flex-shrink-0">
               {/* Floating Curriculum Mastery Card */}
-              <div className="bg-white/95 backdrop-blur-md rounded-2xl p-5 border border-slate-100 shadow-[0_8px_30px_rgba(0,0,0,0.04)] w-full sm:w-auto sm:min-w-[210px] text-left">
-                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">
+              <div className="bg-white/95 backdrop-blur-md rounded-2xl p-6 sm:p-7 border border-slate-100 shadow-[0_8px_30px_rgba(0,0,0,0.04)] w-full sm:w-auto sm:min-w-[240px] text-left">
+                <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">
                   Curriculum Mastery
                 </p>
-                <div className="text-3xl sm:text-4xl font-black text-slate-900 mb-2">
+                <div className="text-3xl sm:text-4xl font-black text-slate-900 mb-2.5">
                   {overallPercentage}%
                 </div>
-                <div className="w-full bg-slate-100 rounded-full h-2 overflow-hidden mb-2">
+                <div className="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden mb-2.5">
                   <div
                     className="bg-[#2563eb] h-full rounded-full transition-all duration-700"
                     style={{ width: `${overallPercentage}%` }}
                   />
                 </div>
-                <p className="text-[11px] text-slate-400 font-medium">
+                <p className="text-xs text-slate-500 font-medium">
                   {counts.completed} of {counts.total} Chapters Completed
                 </p>
               </div>
