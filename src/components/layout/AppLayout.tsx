@@ -341,8 +341,8 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
 
       {/* ─── MAIN CONTENT VIEWPORT ─── */}
       <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
-        {/* Top Header */}
-        <header className={`h-16 sm:h-20 ${isStudent ? 'bg-transparent px-4 sm:px-8' : 'bg-white border-b border-slate-200/90 px-3 sm:px-6'} flex items-center justify-between flex-shrink-0 z-20`}>
+        {/* Top Header (Top Nav 1) */}
+        <header data-app-header="true" className={`${isStudent && location.pathname.startsWith('/student/learning') ? 'h-14 sm:h-16 bg-white border-b border-slate-200/80 px-3 sm:px-6' : `h-16 sm:h-20 ${isStudent ? 'bg-transparent px-4 sm:px-8' : 'bg-white border-b border-slate-200/90 px-3 sm:px-6'}`} flex items-center justify-between flex-shrink-0 z-20`}>
           <div className="flex items-center gap-3 min-w-0 flex-1">
             {/* Mobile Sidebar Toggle Button for Students */}
             {isStudent && (
@@ -504,7 +504,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
             <main
               className={`flex-1 ${
                 isLearningRoute
-                  ? 'overflow-hidden pb-[3.75rem] lg:pb-0 flex flex-col min-h-0'
+                  ? 'overflow-hidden flex flex-col min-h-0'
                   : `overflow-y-auto overflow-x-hidden ${isStudent ? 'pb-24 lg:pb-8' : ''}`
               }`}
             >
@@ -517,7 +517,11 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
         {isStudent && (
           <nav
             aria-label="Mobile Bottom Navigation"
-            className="fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200/90 lg:hidden flex items-center justify-around px-2 py-1.5 shadow-[0_-4px_24px_rgba(15,23,42,0.06)] pb-[calc(0.4rem+env(safe-area-inset-bottom,0px))]"
+            className={`${
+              location.pathname.startsWith('/student/learning')
+                ? 'relative shrink-0'
+                : 'fixed bottom-0 inset-x-0'
+            } z-40 bg-white/95 backdrop-blur-md border-t border-slate-200/90 lg:hidden flex items-center justify-around px-2 py-1.5 shadow-[0_-4px_24px_rgba(15,23,42,0.06)] pb-[calc(0.4rem+env(safe-area-inset-bottom,0px))]`}
           >
             {[
               {

@@ -219,7 +219,7 @@ export function usePdfBook({
         canvas.width = Math.floor(viewport.width * dpr)
         canvas.height = Math.floor(viewport.height * dpr)
 
-        const ctx = canvas.getContext('2d')
+        const ctx = canvas.getContext('2d', { willReadFrequently: true })
         if (!ctx || seq !== renderSeqRef.current) return null
 
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0)

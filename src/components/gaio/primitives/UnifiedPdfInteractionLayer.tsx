@@ -301,7 +301,11 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
         newNotes.length > 0 ||
         Object.keys(newBlanks).length > 0
       ) {
-        onPageActivity?.(pageNumber)
+        if (onPageActivity) {
+          queueMicrotask(() => {
+            onPageActivity(pageNumber)
+          })
+        }
       }
     },
     [storageKey, sId, bookKey, pageNumber, onPageActivity]
@@ -1006,12 +1010,10 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
         width: strokeWidth,
         points: finalPoints
       }
-      setStrokes((prev) => {
-        const updated = [...prev, newStroke]
-        strokesRef.current = updated
-        persistState(updated, stickersRef.current, typedNotesRef.current, typedBlanksRef.current)
-        return updated
-      })
+      const updated = [...strokesRef.current, newStroke]
+      strokesRef.current = updated
+      setStrokes(updated)
+      persistState(updated, stickersRef.current, typedNotesRef.current, typedBlanksRef.current)
       setHistoryStack((prev) => [...prev.slice(-20), { type: 'stroke' }])
     }
     currentStrokeRef.current = []

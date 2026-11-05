@@ -166,50 +166,138 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
   const [undoSignal, setUndoSignal] = useState<number>(0)
   const [clearSignal, setClearSignal] = useState<number>(0)
 
-  // Auto-fit scale detection: fits BOTH width and height so full page is visible without clipping
-  // Reserves dedicated horizontal space for the vertical right-side toolbar
+  const containerRef = useRef<HTMLDivElement | null>(null)
+  const headerRef = useRef<HTMLElement | null>(null)
+  const progressRef = useRef<HTMLDivElement | null>(null)
+
+  // Track rendered toolbar width dynamically (defaults: mobile 38px, tablet 58px, laptop/desktop 66px)
+  const [toolbarWidth, setToolbarWidth] = useState<number>(() => {
+    if (typeof window === 'undefined') return 38
+    if (window.innerWidth < 640) return window.innerWidth < 380 ? 36 : 38
+    if (window.innerWidth < 768) return 58
+    return 66
+  })
+
+  // Auto-fit scale detection: fits BOTH width and height dynamically based on surrounding bars
+  // Takes into account Top Nav 1, Top Nav 2, Progress Bar, and Mobile Bottom Navigation
   const computeFitScale = useCallback(() => {
     if (typeof window === 'undefined') return 0.85
+    const w = window.innerWidth
+    const h = window.innerHeight
+    const isMobileBreakpoint = w < 640
+    const isSmallMobile = isMobileBreakpoint && w < 380
+
+    if (isMobileBreakpoint) {
+      // 1. Top Nav 1 (AppLayout header)
+      const topNav1El = document.querySelector('[data-app-header="true"], header[class*="h-14"], header[class*="h-16"]') as HTMLElement | null
+      const topNav1H = topNav1El ? topNav1El.getBoundingClientRect().height : (window.innerWidth < 640 ? 56 : 64)
+
+      // 2. Top Nav 2 (Viewer header)
+      const topNav2H = headerRef.current ? headerRef.current.getBoundingClientRect().height : 40
+
+      // 3. Progress Section (immediately below PDF)
+      const progressH = progressRef.current ? progressRef.current.getBoundingClientRect().height : 38
+
+      // 4. Mobile Bottom Navigation (AppLayout nav)
+      const bottomNavEl = document.querySelector('nav[aria-label="Mobile Bottom Navigation"]') as HTMLElement | null
+      const bottomNavH = bottomNavEl ? bottomNavEl.getBoundingClientRect().height : 54
+
+      // Available vertical space strictly between Top Nav 2 and Progress Bar
+      const availH = Math.max(160, window.innerHeight - topNav1H - topNav2H - progressH - bottomNavH - 4)
+
+      // Vertical Toolbar attached flush to right edge
+      const toolbarEl = document.querySelector('[data-tour="pdf-toolbar"]') as HTMLElement | null
+      const toolbarW = toolbarEl ? toolbarEl.getBoundingClientRect().width : (isSmallMobile ? 36 : 38)
+      const availW = Math.max(180, window.innerWidth - toolbarW)
+
+      const scaleW = availW / 595.3
+      const scaleH = availH / 841.9
+
+      // Use Math.min to use mobile screen width efficiently without cropping or distorting PDF content
+      // Centers PDF only when required by its actual aspect ratio (e.g. landscape where scaleH < scaleW)
+      const fit = Math.min(scaleW, scaleH)
+
+      return Math.min(1.4, Math.max(0.25, parseFloat(fit.toFixed(3))))
+    }
+
+    // Tablet, Laptop, and Desktop screens (w >= 640)
+    // Dynamic measurement using container client dimensions when available
     const el = containerRef.current
-    const viewportW = el?.clientWidth || window.innerWidth
-    const viewportH = el?.clientHeight || (window.innerHeight - 130)
+    const topNav1El = document.querySelector('[data-app-header="true"], header[class*="h-14"], header[class*="h-16"]') as HTMLElement | null
+    const topNav1H = topNav1El ? topNav1El.getBoundingClientRect().height : 64
+    const topNav2H = headerRef.current ? headerRef.current.getBoundingClientRect().height : (w < 768 ? 48 : 56)
+    const progressH = progressRef.current ? progressRef.current.getBoundingClientRect().height : (w < 768 ? 40 : 42)
+    const bottomNavEl = document.querySelector('nav[aria-label="Mobile Bottom Navigation"]') as HTMLElement | null
+    const bottomNavH = (bottomNavEl && w < 1024) ? bottomNavEl.getBoundingClientRect().height : 0
 
-    const isMobile = window.innerWidth < 1024
-    // Space reserved for right-side vertical toolbar (~44px on mobile, ~68px on desktop)
-    const toolbarW = isMobile ? 44 : 68
-    // On mobile: zero extra padding around PDF, toolbar touches right edge
-    const paddingX = isMobile ? toolbarW : (toolbarW + 110)
-    // On mobile: space reserved for bottom progress bar (~42px)
-    const paddingY = isMobile ? 42 : 100
+    const toolbarEl = document.querySelector('[data-tour="pdf-toolbar"]') as HTMLElement | null
+    const toolbarW = toolbarEl ? toolbarEl.getBoundingClientRect().width : (w < 768 ? 58 : 66)
 
-    const availW = Math.max(200, viewportW - paddingX)
-    const availH = Math.max(220, viewportH - paddingY)
+    // Container padding is sm:p-2 md:p-3 (16px to 24px)
+    const paddingX = w < 768 ? 16 : 24
+    const paddingY = w < 768 ? 16 : 24
+
+    let availW: number
+    let availH: number
+
+    if (el && el.clientWidth > 0 && el.clientHeight > 0) {
+      availW = Math.max(200, el.clientWidth - toolbarW - paddingX)
+      availH = Math.max(220, el.clientHeight - progressH - paddingY)
+    } else {
+      const sidebarW = w >= 1024 ? 256 : 0
+      const viewportW = w - sidebarW
+      availW = Math.max(200, viewportW - toolbarW - paddingX)
+      availH = Math.max(220, h - topNav1H - topNav2H - progressH - bottomNavH - paddingY)
+    }
 
     const scaleW = availW / 595.3
     const scaleH = availH / 841.9
 
-    // Fit BOTH width and height so entire page is fully visible on screen without clipping
+    // Fit BOTH width and height so entire page is fully visible on screen without clipping or distortion
     const fit = Math.min(scaleW, scaleH)
-    return Math.min(1.4, Math.max(0.25, parseFloat(fit.toFixed(2))))
+    return Math.min(1.4, Math.max(0.25, parseFloat(fit.toFixed(3))))
   }, [])
 
   const [zoomScale, setZoomScale] = useState<number>(() => {
     if (typeof window === 'undefined') return 0.85
     const w = window.innerWidth
     const h = window.innerHeight
-    const isMobile = w < 1024
-    const toolbarW = isMobile ? 44 : 68
-    const availW = Math.max(200, w - (isMobile ? toolbarW : (toolbarW + 110)))
-    const availH = Math.max(220, h - (isMobile ? 96 : 170))
-    const fit = Math.min(availW / 595.3, availH / 841.9)
-    return Math.min(1.4, Math.max(0.25, parseFloat(fit.toFixed(2))))
+    if (w < 640) {
+      const isSmall = w < 380
+      const availH = Math.max(160, h - 192)
+      const availW = Math.max(180, w - (isSmall ? 36 : 38))
+      const scaleW = availW / 595.3
+      const scaleH = availH / 841.9
+      const fit = Math.min(scaleW, scaleH)
+      return Math.min(1.4, Math.max(0.25, parseFloat(fit.toFixed(3))))
+    }
+    // Tablet, Laptop, and Desktop initial scale
+    const sidebarW = w >= 1024 ? 256 : 0
+    const toolbarW = w < 768 ? 58 : 66
+    const availW = Math.max(200, (w - sidebarW) - toolbarW - (w < 768 ? 16 : 24))
+    const availH = Math.max(220, h - (w < 1024 ? 222 : 186))
+    const scaleW = availW / 595.3
+    const scaleH = availH / 841.9
+    const fit = Math.min(scaleW, scaleH)
+    return Math.min(1.4, Math.max(0.25, parseFloat(fit.toFixed(3))))
   })
 
   // Measure and apply precise fit to screen once mounted and on resize or orientation change
   useEffect(() => {
     const handleResize = () => {
       const fit = computeFitScale()
-      if (fit) setZoomScale(fit)
+      if (fit) {
+        setZoomScale(fit)
+        setPageDimensions({
+          width: Math.round(595.3 * fit),
+          height: Math.round(841.9 * fit)
+        })
+      }
+      const toolbarEl = document.querySelector('[data-tour="pdf-toolbar"]') as HTMLElement | null
+      if (toolbarEl) {
+        const measuredW = toolbarEl.getBoundingClientRect().width
+        if (measuredW > 0) setToolbarWidth(Math.round(measuredW))
+      }
     }
     const timer = setTimeout(() => {
       handleResize()
@@ -225,10 +313,27 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
 
   const [pageDimensions, setPageDimensions] = useState<{ width: number; height: number }>(() => {
     const initialS = typeof window !== 'undefined'
-      ? Math.min(1.4, Math.max(0.25, parseFloat((Math.min(
-          Math.max(200, window.innerWidth - (window.innerWidth < 1024 ? 44 : 178)) / 595.3,
-          Math.max(220, window.innerHeight - (window.innerWidth < 1024 ? 96 : 170)) / 841.9
-        )).toFixed(2))))
+      ? (() => {
+          const w = window.innerWidth
+          const h = window.innerHeight
+          if (w < 640) {
+            const isSmall = w < 380
+            const availH = Math.max(160, h - 192)
+            const availW = Math.max(180, w - (isSmall ? 36 : 38))
+            const scaleW = availW / 595.3
+            const scaleH = availH / 841.9
+            const fit = Math.min(scaleW, scaleH)
+            return Math.min(1.4, Math.max(0.25, parseFloat(fit.toFixed(3))))
+          }
+          const sidebarW = w >= 1024 ? 256 : 0
+          const toolbarW = w < 768 ? 58 : 66
+          const availW = Math.max(200, (w - sidebarW) - toolbarW - (w < 768 ? 16 : 24))
+          const availH = Math.max(220, h - (w < 1024 ? 222 : 186))
+          const scaleW = availW / 595.3
+          const scaleH = availH / 841.9
+          const fit = Math.min(scaleW, scaleH)
+          return Math.min(1.4, Math.max(0.25, parseFloat(fit.toFixed(3))))
+        })()
       : 0.85
     return {
       width: Math.round(595.3 * initialS),
@@ -377,7 +482,6 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
   })
 
   const pdfCanvasRef = useRef<HTMLCanvasElement | null>(null)
-  const containerRef = useRef<HTMLDivElement | null>(null)
 
   // Class Manifest & Region Detection Data
   const [classManifest, setClassManifest] = useState<any>(null)
@@ -899,8 +1003,12 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
     <div
       className="w-full h-full min-h-0 flex-1 flex flex-col bg-[#f8fafc] text-slate-800 font-sans select-none overflow-hidden relative"
     >
-      {/* ── Top Bar ──────────────────────────────────────────────────────── */}
-      <header className="hidden lg:flex flex-shrink-0 h-11 sm:h-14 bg-white/95 backdrop-blur-md border-b border-slate-200/80 px-2 sm:px-4 items-center justify-between gap-1 sm:gap-3 z-30 shadow-2xs">
+      {/* ── Top Bar 2 (Chapter Navigation Header) ────────────────────────── */}
+      <header
+        ref={headerRef}
+        data-viewer-header="true"
+        className="flex flex-shrink-0 h-10 sm:h-12 md:h-14 bg-white/95 backdrop-blur-md border-b border-slate-200/80 px-1.5 sm:px-4 items-center justify-between gap-1 sm:gap-3 z-30 shadow-2xs overflow-x-auto overflow-y-hidden scrollbar-none"
+      >
         {/* Left: Back button + Class Locked Badge */}
         <div className="flex items-center gap-1 sm:gap-2.5 min-w-0 shrink-0">
           {onExit && (
@@ -1085,7 +1193,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
         onPointerCancel={handlePanPointerUp}
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
-        className={`flex-1 w-full min-h-0 overflow-auto bg-[#f8fafc] relative select-none scroll-smooth ${
+        className={`flex-1 w-full min-h-0 bg-[#f8fafc] relative select-none scroll-smooth flex flex-col justify-between overflow-hidden lg:overflow-auto ${
           activeTool === 'hand' ? (isPanning ? 'cursor-grabbing' : 'cursor-grab') : ''
         }`}
       >
@@ -1118,342 +1226,397 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
         )}
 
         {/* ── Main Layout: PDF & Progress Row in Center Column + Complete Vertical Toolbar on the Right ── */}
-        <div className="min-h-full min-w-full flex items-start justify-center p-0 sm:p-4 md:p-6 pb-0 sm:pb-8">
-          <div className="flex flex-row items-start justify-center gap-0 sm:gap-3 md:gap-4 max-w-full">
-            
-            {/* ── Center Column: PDF Canvas + Progress Bar immediately below it ── */}
-            <div className="flex flex-col items-center shrink-0">
-              {/* Authentic Book Page + Unified In-Page Interaction Layer */}
+        <div className="flex-1 min-h-0 w-full flex flex-col justify-between items-center p-0 sm:p-2 md:p-3 overflow-hidden">
+          {/* ── Upper Section: PDF & Exact Matching Right Toolbar ── */}
+          <div className="flex-1 min-h-0 w-full flex items-center justify-center relative overflow-hidden">
+            <div
+              className="relative flex flex-row items-center justify-start sm:justify-center gap-0 w-full sm:w-auto max-w-full"
+              style={{
+                height: `${pageDimensions.height}px`,
+              }}
+            >
+              {/* ── Available PDF Viewer Area (Flush to left screen edge, zero left gap) ── */}
               <div
-                className="relative shadow-none sm:shadow-[0_12px_40px_rgba(0,0,0,0.08),0_4px_12px_rgba(0,0,0,0.04)] sm:hover:shadow-[0_16px_48px_rgba(0,0,0,0.12)] rounded-none sm:rounded-2xl overflow-visible bg-white border-0 sm:border border-slate-200/90 transition-shadow duration-200 shrink-0"
+                className="flex-1 sm:flex-none min-w-0 h-full flex items-center justify-center relative overflow-hidden"
                 style={{
-                  width: `${pageDimensions.width}px`,
                   height: `${pageDimensions.height}px`,
                 }}
               >
-                {/* ── Near Navigation Arrow: Left (Previous Page) ──────────── */}
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation()
-                    prevPage()
-                    saveReadingPosition(Math.max(chapterStartPage, currentPage - 1))
-                    gameAudio.playTap()
+                {/* Authentic Book Page + Unified In-Page Interaction Layer */}
+                <div
+                  className="relative shadow-none sm:shadow-[0_12px_40px_rgba(0,0,0,0.08),0_4px_12px_rgba(0,0,0,0.04)] sm:hover:shadow-[0_16px_48px_rgba(0,0,0,0.12)] rounded-none sm:rounded-2xl overflow-visible bg-white border-0 sm:border border-slate-200/90 transition-shadow duration-200 shrink-0"
+                  style={{
+                    width: `${pageDimensions.width}px`,
+                    height: `${pageDimensions.height}px`,
                   }}
-                  disabled={isAtFirstPageOfChapter}
-                  title="Previous Page (Left Arrow)"
-                  className="absolute left-1 sm:-left-6 md:-left-7 top-1/2 -translate-y-1/2 z-30 w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-white text-slate-700 hover:text-blue-600 shadow-md border border-slate-200 flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95 disabled:opacity-0 disabled:pointer-events-none group cursor-pointer backdrop-blur-xs"
                 >
-                  <ChevronLeft size={22} className="group-hover:-translate-x-0.5 transition-transform" />
-                </button>
+                  {/* ── Near Navigation Arrow: Left (Previous Page) ──────────── */}
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      prevPage()
+                      saveReadingPosition(Math.max(chapterStartPage, currentPage - 1))
+                      gameAudio.playTap()
+                    }}
+                    disabled={isAtFirstPageOfChapter}
+                    title="Previous Page (Left Arrow)"
+                    className="absolute left-1 sm:left-2 md:left-3 top-1/2 -translate-y-1/2 z-30 w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-white text-slate-700 hover:text-blue-600 shadow-md border border-slate-200 flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95 disabled:opacity-0 disabled:pointer-events-none group cursor-pointer backdrop-blur-xs"
+                  >
+                    <ChevronLeft size={22} className="group-hover:-translate-x-0.5 transition-transform" />
+                  </button>
 
-                {/* ── Near Navigation Arrow: Right (Next Page) ─────────── */}
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation()
-                    handleNextPageAction()
-                  }}
-                  disabled={isFinalPageOfChapter}
-                  title="Next Page (Right Arrow)"
-                  className="absolute right-1 sm:-right-6 md:-right-7 top-1/2 -translate-y-1/2 z-30 w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-white text-slate-700 hover:text-blue-600 shadow-md border border-slate-200 flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95 disabled:opacity-0 disabled:pointer-events-none group cursor-pointer backdrop-blur-xs"
-                >
-                  <ChevronRight size={22} className="group-hover:translate-x-0.5 transition-transform" />
-                </button>
+                  {/* ── Near Navigation Arrow: Right (Next Page) ─────────── */}
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      handleNextPageAction()
+                    }}
+                    disabled={isFinalPageOfChapter}
+                    title="Next Page (Right Arrow)"
+                    className="absolute right-1 sm:right-2 md:right-3 top-1/2 -translate-y-1/2 z-30 w-8 h-8 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-white text-slate-700 hover:text-blue-600 shadow-md border border-slate-200 flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95 disabled:opacity-0 disabled:pointer-events-none group cursor-pointer backdrop-blur-xs"
+                  >
+                    <ChevronRight size={22} className="group-hover:translate-x-0.5 transition-transform" />
+                  </button>
 
-                {/* Book Inner Canvas Wrapper (with rounded corners and overflow hidden) */}
-                <div className="w-full h-full rounded-xl sm:rounded-2xl overflow-hidden relative">
-                  {/* Layer 1: High-DPI Crisp PDF.js Canvas */}
-                  <canvas ref={pdfCanvasRef} className="block w-full h-full" />
+                  {/* Book Inner Canvas Wrapper (with rounded corners and overflow hidden) */}
+                  <div className="w-full h-full rounded-none sm:rounded-2xl overflow-hidden relative">
+                    {/* Layer 1: High-DPI Crisp PDF.js Canvas */}
+                    <canvas ref={pdfCanvasRef} className="block w-full h-full" />
 
-                  {/* Layer 2: Unified In-Page Interactive Layer */}
-                  <UnifiedPdfInteractionLayer
-                    studentId={activeStudentId}
-                    pageNumber={currentPage}
-                    bookKey={currentGrade}
-                    pageWidth={pageDimensions.width}
-                    pageHeight={pageDimensions.height}
-                    scale={zoomScale}
-                    activeTool={activeTool}
-                    activeColor={activeColor}
-                    strokeWidth={strokeWidth}
-                    words={wordsLayer.words}
-                    activeWordId={wordsLayer.activeWordId}
-                    regions={currentPageRegions}
-                    isReadingAloud={wordsLayer.isReadingAloud}
-                    pdfCanvas={pdfCanvasRef.current}
-                    selectedEmoji={selectedEmoji}
-                    undoSignal={undoSignal}
-                    clearSignal={clearSignal}
-                    onAddStar={(count) => handleAddStar(count ?? 1)}
-                    onPageActivity={handlePageActivity}
-                    onWordClick={wordsLayer.speakWord}
-                    onWordSpell={wordsLayer.spellWord}
-                  />
-                </div>
-              </div>
-
-              {/* ── PDF Viewer Bottom Progress Bar (Directly below PDF document) ── */}
-              <div
-                className="w-full mt-0 sm:mt-3 flex items-center justify-between gap-1.5 sm:gap-3 px-2 sm:px-4 py-1.5 sm:py-2.5 bg-white/95 backdrop-blur-md rounded-none sm:rounded-2xl border-t border-b-0 sm:border border-slate-200/90 shadow-xs sm:shadow-sm shrink-0 select-none z-20"
-                style={{ width: `${pageDimensions.width}px`, maxWidth: '100%' }}
-              >
-                {/* Left: Progress label and percentage */}
-                <div className="flex items-center gap-1 sm:gap-1.5 shrink-0 min-w-0">
-                  <span className="text-[10px] sm:text-xs md:text-sm font-bold text-slate-700 whitespace-nowrap">
-                    Progress
-                  </span>
-                  <span className="text-[10px] sm:text-xs md:text-sm font-black text-blue-600 whitespace-nowrap">
-                    {chapterProgressFormatted}
-                  </span>
-                  <span className="sm:hidden text-[10px] text-slate-400 font-bold ml-0.5">
-                    ({chapterRelativePage}/{chapterTotalPages})
-                  </span>
-                </div>
-
-                {/* Middle: Progress Bar */}
-                <div className="flex-1 flex items-center min-w-[60px] mx-1 sm:mx-2">
-                  <div className="w-full bg-slate-100 rounded-full h-2 sm:h-2.5 overflow-hidden">
-                    <div
-                      className={`h-full rounded-full transition-all duration-300 ease-out ${
-                        isChapterCompleted ? 'bg-emerald-500' : 'bg-blue-600'
-                      }`}
-                      style={{ width: `${chapterProgressPct}%` }}
+                    {/* Layer 2: Unified In-Page Interactive Layer */}
+                    <UnifiedPdfInteractionLayer
+                      studentId={activeStudentId}
+                      pageNumber={currentPage}
+                      bookKey={currentGrade}
+                      pageWidth={pageDimensions.width}
+                      pageHeight={pageDimensions.height}
+                      scale={zoomScale}
+                      activeTool={activeTool}
+                      activeColor={activeColor}
+                      strokeWidth={strokeWidth}
+                      words={wordsLayer.words}
+                      activeWordId={wordsLayer.activeWordId}
+                      regions={currentPageRegions}
+                      isReadingAloud={wordsLayer.isReadingAloud}
+                      pdfCanvas={pdfCanvasRef.current}
+                      selectedEmoji={selectedEmoji}
+                      undoSignal={undoSignal}
+                      clearSignal={clearSignal}
+                      onAddStar={(count) => handleAddStar(count ?? 1)}
+                      onPageActivity={handlePageActivity}
+                      onWordClick={wordsLayer.speakWord}
+                      onWordSpell={wordsLayer.spellWord}
                     />
                   </div>
                 </div>
+              </div>
 
-                {/* Right: Next Page / Continue to Next Chapter button */}
-                <div className="shrink-0 flex items-center">
-                  {isChapterCompleted ? (
-                    // ── 100% Chapter Progress Reached: Continue to Next Chapter or Course Completed ──
-                    isFinalChapter ? (
-                      <button
-                        onClick={handleContinueToNextChapter}
-                        className="flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3.5 py-1.5 sm:py-2 bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white text-xs sm:text-xs md:text-sm font-bold rounded-lg sm:rounded-xl shadow-xs transition-all cursor-pointer whitespace-nowrap"
-                        title="Course Completed - All chapters finished!"
-                      >
-                        <span>Course Completed</span>
-                        <Check size={14} className="stroke-[2.5]" />
-                      </button>
-                    ) : (
-                      <button
-                        onClick={handleContinueToNextChapter}
-                        className="flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3.5 py-1.5 sm:py-2 bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white text-xs sm:text-xs md:text-sm font-bold rounded-lg sm:rounded-xl shadow-xs transition-all cursor-pointer whitespace-nowrap"
-                        title={`Continue to Next Chapter: ${nextChapter?.title || 'Next'}`}
-                      >
-                        <span>Continue to Next Chapter</span>
-                        <ArrowRight size={14} className="stroke-[2.5]" />
-                      </button>
-                    )
-                  ) : (
-                    // ── Before 100% Progress: Keep existing Next button unchanged ──
-                    <button
-                      onClick={handleNextPageAction}
-                      disabled={isAtLastBookPage && isCurrentPageCompleted}
-                      className="flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3.5 py-1.5 sm:py-2 bg-blue-600 hover:bg-blue-700 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed text-white text-xs sm:text-xs md:text-sm font-bold rounded-lg sm:rounded-xl shadow-xs transition-all cursor-pointer whitespace-nowrap"
-                      title="Next Page"
-                    >
-                      <span>Next</span>
-                      <ArrowRight size={14} className="stroke-[2.5]" />
-                    </button>
+              {/* ── Right Column: Complete Vertical PDF Toolbar (Right Side of PDF Viewer) ── */}
+              {/* Extends from exact PDF top to exact PDF bottom */}
+              <div
+                data-tour="pdf-toolbar"
+                className="shrink-0 flex flex-col items-center justify-between sm:justify-start gap-0.5 sm:gap-1.5 p-0.5 sm:p-1.5 md:p-2 bg-slate-900/95 backdrop-blur-md rounded-none rounded-l-xl sm:rounded-2xl border-y-0 border-r-0 border-l sm:border border-white/15 shadow-2xl z-30 overflow-y-auto overflow-x-hidden scrollbar-none select-none"
+                style={{
+                  height: `${pageDimensions.height}px`,
+                  maxHeight: `${pageDimensions.height}px`,
+                }}
+              >
+                {/* 1. Move (Hand) Tool */}
+                <button
+                  data-tour="tool-move"
+                  onClick={() => {
+                    setActiveTool('hand')
+                    gameAudio.playTap()
+                  }}
+                  title="Move / Pan page"
+                  className={`w-8 sm:w-11 md:w-12 py-0.5 sm:py-1.5 px-0.5 rounded-lg sm:rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all cursor-pointer ${
+                    isToolActive('hand')
+                      ? 'bg-amber-600 text-white shadow-md scale-105 ring-2 ring-amber-300'
+                      : 'text-slate-300 hover:bg-white/10'
+                  }`}
+                >
+                  <Hand size={13} className="sm:w-4 sm:h-4" />
+                  <span className="text-[7.5px] sm:text-[9px] font-extrabold mt-0.5 leading-none tracking-tight">Move</span>
+                </button>
+
+                {/* 2. Color Fill Tool */}
+                <button
+                  data-tour="tool-color"
+                  onClick={() => {
+                    setActiveTool('fill')
+                    gameAudio.playTap()
+                  }}
+                  title="Color worksheets and shapes"
+                  className={`w-8 sm:w-11 md:w-12 py-0.5 sm:py-1.5 px-0.5 rounded-lg sm:rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all cursor-pointer ${
+                    isToolActive('fill')
+                      ? 'bg-emerald-600 text-white shadow-md scale-105 ring-2 ring-emerald-300'
+                      : 'text-slate-300 hover:bg-white/10'
+                  }`}
+                >
+                  <PaintBucket size={13} className="sm:w-4 sm:h-4" />
+                  <span className="text-[7.5px] sm:text-[9px] font-extrabold mt-0.5 leading-none tracking-tight">Color</span>
+                </button>
+
+                {/* 3. Write (Pen) Tool */}
+                <button
+                  data-tour="tool-write"
+                  onClick={() => {
+                    setActiveTool('pen')
+                    gameAudio.playTap()
+                  }}
+                  title="Write and draw on the page"
+                  className={`w-8 sm:w-11 md:w-12 py-0.5 sm:py-1.5 px-0.5 rounded-lg sm:rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all cursor-pointer ${
+                    isToolActive('pen')
+                      ? 'bg-blue-600 text-white shadow-md scale-105 ring-2 ring-blue-300'
+                      : 'text-slate-300 hover:bg-white/10'
+                  }`}
+                >
+                  <Pen size={13} className="sm:w-4 sm:h-4" />
+                  <span className="text-[7.5px] sm:text-[9px] font-extrabold mt-0.5 leading-none tracking-tight">Write</span>
+                </button>
+
+                {/* 4. Highlight Tool */}
+                <button
+                  data-tour="tool-highlighter"
+                  onClick={() => {
+                    setActiveTool('highlighter')
+                    gameAudio.playTap()
+                  }}
+                  title="Highlight text and shapes"
+                  className={`w-8 sm:w-11 md:w-12 py-0.5 sm:py-1.5 px-0.5 rounded-lg sm:rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all cursor-pointer ${
+                    isToolActive('highlighter')
+                      ? 'bg-yellow-500 text-slate-950 shadow-md scale-105 ring-2 ring-yellow-300'
+                      : 'text-slate-300 hover:bg-white/10'
+                  }`}
+                >
+                  <Highlighter size={13} className="sm:w-4 sm:h-4" />
+                  <span className="text-[7.5px] sm:text-[9px] font-extrabold mt-0.5 leading-none tracking-tight">Highlight</span>
+                </button>
+
+                {/* 5. Star Tool */}
+                <button
+                  data-tour="tool-star"
+                  onClick={() => {
+                    setActiveTool('stamp')
+                    setSelectedEmoji('⭐')
+                    gameAudio.playTap()
+                    toast('⭐ Star tool active! Tap on the page to rate!', {
+                      icon: '⭐',
+                      id: 'star-rate-tip'
+                    })
+                  }}
+                  title="Rate with Stars ⭐"
+                  className={`w-8 sm:w-11 md:w-12 py-0.5 sm:py-1.5 px-0.5 rounded-lg sm:rounded-xl text-xs font-bold flex flex-col items-center justify-center relative transition-all cursor-pointer ${
+                    isToolActive('stamp')
+                      ? 'bg-amber-500 text-white shadow-lg shadow-amber-500/50 scale-105 ring-2 ring-amber-300'
+                      : 'text-amber-300 hover:bg-white/10'
+                  }`}
+                >
+                  <span className="text-xs sm:text-base leading-none select-none drop-shadow">⭐</span>
+                  <span className="text-[7.5px] sm:text-[9px] font-extrabold mt-0.5 leading-none tracking-tight">Star</span>
+                  {isToolActive('stamp') && (
+                    <span className="absolute top-1 right-1 w-2 h-2 bg-yellow-300 rounded-full animate-ping" />
                   )}
+                </button>
+
+                {/* 6. Erase Tool */}
+                <button
+                  data-tour="tool-erase"
+                  onClick={() => {
+                    setActiveTool('eraser')
+                    gameAudio.playTap()
+                  }}
+                  title="Erase marks & color fills (tap color to flood-erase, or drag to erase)"
+                  className={`w-8 sm:w-11 md:w-12 py-0.5 sm:py-1.5 px-0.5 rounded-lg sm:rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all cursor-pointer ${
+                    isToolActive('eraser')
+                      ? 'bg-rose-600 text-white shadow-md scale-105 ring-2 ring-rose-300'
+                      : 'text-slate-300 hover:bg-white/10'
+                  }`}
+                >
+                  <Eraser size={13} className="sm:w-4 sm:h-4" />
+                  <span className="text-[7.5px] sm:text-[9px] font-extrabold mt-0.5 leading-none tracking-tight">Erase</span>
+                </button>
+
+                {/* 7. Clear All Tool */}
+                <button
+                  data-tour="tool-clear"
+                  onClick={() => {
+                    setClearSignal((prev) => prev + 1)
+                    gameAudio.playTap()
+                    toast.success('Cleared annotations on this page')
+                  }}
+                  title="Clear all drawings and color fills on this page"
+                  className="w-8 sm:w-11 md:w-12 py-0.5 sm:py-1.5 px-0.5 rounded-lg sm:rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all bg-rose-700/80 hover:bg-rose-600 text-white shadow-md active:scale-95 cursor-pointer"
+                >
+                  <Trash2 size={13} className="sm:w-4 sm:h-4 text-white" />
+                  <span className="text-[7.5px] sm:text-[9px] font-extrabold mt-0.5 leading-none tracking-tight">Clear</span>
+                </button>
+
+                {/* 8. Type Tool */}
+                <button
+                  data-tour="tool-type"
+                  onClick={() => {
+                    setActiveTool('text')
+                    gameAudio.playTap()
+                  }}
+                  title="Type answers anywhere on the page"
+                  className={`w-8 sm:w-11 md:w-12 py-0.5 sm:py-1.5 px-0.5 rounded-lg sm:rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all cursor-pointer ${
+                    isToolActive('text')
+                      ? 'bg-indigo-600 text-white shadow-md scale-105 ring-2 ring-indigo-300'
+                      : 'text-slate-300 hover:bg-white/10'
+                  }`}
+                >
+                  <Type size={13} className="sm:w-4 sm:h-4" />
+                  <span className="text-[7.5px] sm:text-[9px] font-extrabold mt-0.5 leading-none tracking-tight">Type</span>
+                </button>
+
+                {/* 9. Undo Tool */}
+                <button
+                  data-tour="tool-undo"
+                  onClick={() => {
+                    setUndoSignal((prev) => prev + 1)
+                    gameAudio.playTap()
+                  }}
+                  title="Undo last action (Ctrl+Z)"
+                  className="w-8 sm:w-11 md:w-12 py-0.5 sm:py-1.5 px-0.5 rounded-lg sm:rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all text-slate-300 hover:bg-white/10 active:scale-95 hover:text-amber-300 cursor-pointer"
+                >
+                  <Undo2 size={13} className="text-amber-400 sm:w-4 sm:h-4" />
+                  <span className="text-[7.5px] sm:text-[9px] font-extrabold mt-0.5 leading-none tracking-tight">Undo</span>
+                </button>
+
+                {/* 10. Stroke Size Selector (Size label and controls) */}
+                <div
+                  data-control="stroke-size"
+                  className="flex flex-col items-center gap-0.5 sm:gap-1 pt-0.5 sm:pt-1 border-t border-white/15 w-full select-none"
+                >
+                  <span className="text-[7px] sm:text-[9px] font-bold text-slate-400 uppercase tracking-wider leading-none">Size</span>
+                  <div className="flex items-center justify-center gap-0.5 sm:gap-1">
+                    {[
+                      { size: 2, title: 'Thin (2px)' },
+                      { size: 4, title: 'Medium (4px)' },
+                      { size: 7, title: 'Thick (7px)' },
+                    ].map((opt) => (
+                      <button
+                        key={opt.size}
+                        onClick={() => {
+                          setStrokeWidth(opt.size)
+                          gameAudio.playTap()
+                        }}
+                        title={opt.title}
+                        className={`w-2.5 sm:w-3.5 h-3 sm:h-4.5 rounded sm:rounded-md flex items-center justify-center transition-all cursor-pointer ${
+                          strokeWidth === opt.size
+                            ? 'bg-blue-600 text-white shadow-xs ring-1 ring-blue-300'
+                            : 'bg-white/10 text-slate-300 hover:bg-white/20'
+                        }`}
+                      >
+                        <span
+                          className="rounded-full bg-current"
+                          style={{ width: `${Math.max(2, opt.size - 1)}px`, height: `${Math.max(2, opt.size - 1)}px` }}
+                        />
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* 11. Color Palette Selector */}
+                <div className="flex flex-col items-center gap-0.5 sm:gap-1 pt-0.5 sm:pt-1.5 border-t border-white/15 w-full">
+                  <div className="grid grid-cols-2 gap-0.5 sm:gap-1">
+                    {PALETTE_COLORS.map((col) => (
+                      <button
+                        key={col}
+                        onClick={() => {
+                          setActiveColor(col)
+                          if (!['pen', 'fill', 'highlighter'].includes(activeTool)) {
+                            setActiveTool('pen')
+                          }
+                          gameAudio.playTap()
+                        }}
+                        className={`w-3 h-3 sm:w-4 sm:h-4 rounded-full border transition-transform cursor-pointer ${
+                          activeColor === col
+                            ? 'scale-125 border-white shadow-md ring-2 ring-blue-400 z-10'
+                            : 'border-transparent hover:scale-110 opacity-80 hover:opacity-100'
+                        }`}
+                        style={{ backgroundColor: col }}
+                        title={`Select color ${col}`}
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            {/* ── Right Column: Complete Vertical PDF Toolbar (Right Side of PDF Viewer) ── */}
-            <div
-              data-tour="pdf-toolbar"
-              className="sticky top-0 sm:top-4 right-0 mr-0 shrink-0 flex flex-col items-center gap-1 sm:gap-1.5 p-0.5 sm:p-1.5 md:p-2 bg-slate-900/95 backdrop-blur-md rounded-none rounded-l-xl sm:rounded-2xl border-y-0 border-r-0 border-l sm:border border-white/15 shadow-2xl z-30 max-h-[calc(100vh-115px)] sm:max-h-[calc(100vh-90px)] overflow-y-auto overflow-x-hidden scrollbar-thin select-none"
-            >
-              {/* 1. Move (Hand) Tool */}
-              <button
-                data-tour="tool-move"
-                onClick={() => {
-                  setActiveTool('hand')
-                  gameAudio.playTap()
-                }}
-                title="Move / Pan page"
-                className={`w-9 sm:w-11 md:w-12 py-1 sm:py-1.5 px-0.5 rounded-lg sm:rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all cursor-pointer ${
-                  isToolActive('hand')
-                    ? 'bg-amber-600 text-white shadow-md scale-105 ring-2 ring-amber-300'
-                    : 'text-slate-300 hover:bg-white/10'
-                }`}
-              >
-                <Hand size={15} className="sm:w-4 sm:h-4" />
-                <span className="text-[8px] sm:text-[9px] font-extrabold mt-0.5 leading-none tracking-tight">Move</span>
-              </button>
+          {/* ── PDF Viewer Bottom Progress Bar (Directly below PDF document) ── */}
+          <div
+            ref={progressRef}
+            data-pdf-progress-bar="true"
+            className="w-full mt-0 sm:mt-2 flex items-center justify-between gap-1.5 sm:gap-3 px-2 sm:px-4 py-1.5 sm:py-2.5 bg-white/95 backdrop-blur-md rounded-none sm:rounded-2xl border-t border-b-0 sm:border border-slate-200/90 shadow-xs sm:shadow-sm shrink-0 select-none z-20"
+            style={{
+              width: typeof window !== 'undefined' && window.innerWidth >= 640 ? `${pageDimensions.width + toolbarWidth}px` : '100%',
+              maxWidth: '100%'
+            }}
+          >
+            {/* Left: Progress label and percentage */}
+            <div className="flex items-center gap-1 sm:gap-1.5 shrink-0 min-w-0">
+              <span className="text-[10px] sm:text-xs md:text-sm font-bold text-slate-700 whitespace-nowrap">
+                Progress
+              </span>
+              <span className="text-[10px] sm:text-xs md:text-sm font-black text-blue-600 whitespace-nowrap">
+                {chapterProgressFormatted}
+              </span>
+              <span className="sm:hidden text-[10px] text-slate-400 font-bold ml-0.5">
+                ({chapterRelativePage}/{chapterTotalPages})
+              </span>
+            </div>
 
-              {/* 2. Color Fill Tool */}
-              <button
-                data-tour="tool-color"
-                onClick={() => {
-                  setActiveTool('fill')
-                  gameAudio.playTap()
-                }}
-                title="Color worksheets and shapes"
-                className={`w-9 sm:w-11 md:w-12 py-1 sm:py-1.5 px-0.5 rounded-lg sm:rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all cursor-pointer ${
-                  isToolActive('fill')
-                    ? 'bg-emerald-600 text-white shadow-md scale-105 ring-2 ring-emerald-300'
-                    : 'text-slate-300 hover:bg-white/10'
-                }`}
-              >
-                <PaintBucket size={15} className="sm:w-4 sm:h-4" />
-                <span className="text-[8px] sm:text-[9px] font-extrabold mt-0.5 leading-none tracking-tight">Color</span>
-              </button>
-
-              {/* 3. Write (Pen) Tool */}
-              <button
-                data-tour="tool-write"
-                onClick={() => {
-                  setActiveTool('pen')
-                  gameAudio.playTap()
-                }}
-                title="Write and draw on the page"
-                className={`w-9 sm:w-11 md:w-12 py-1 sm:py-1.5 px-0.5 rounded-lg sm:rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all cursor-pointer ${
-                  isToolActive('pen')
-                    ? 'bg-blue-600 text-white shadow-md scale-105 ring-2 ring-blue-300'
-                    : 'text-slate-300 hover:bg-white/10'
-                }`}
-              >
-                <Pen size={15} className="sm:w-4 sm:h-4" />
-                <span className="text-[8px] sm:text-[9px] font-extrabold mt-0.5 leading-none tracking-tight">Write</span>
-              </button>
-
-              {/* 4. Highlight Tool */}
-              <button
-                data-tour="tool-highlighter"
-                onClick={() => {
-                  setActiveTool('highlighter')
-                  gameAudio.playTap()
-                }}
-                title="Highlight text and shapes"
-                className={`w-9 sm:w-11 md:w-12 py-1 sm:py-1.5 px-0.5 rounded-lg sm:rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all cursor-pointer ${
-                  isToolActive('highlighter')
-                    ? 'bg-yellow-500 text-slate-950 shadow-md scale-105 ring-2 ring-yellow-300'
-                    : 'text-slate-300 hover:bg-white/10'
-                }`}
-              >
-                <Highlighter size={15} className="sm:w-4 sm:h-4" />
-                <span className="text-[8px] sm:text-[9px] font-extrabold mt-0.5 leading-none tracking-tight">Highlight</span>
-              </button>
-
-              {/* 5. Star Tool */}
-              <button
-                data-tour="tool-star"
-                onClick={() => {
-                  setActiveTool('stamp')
-                  setSelectedEmoji('⭐')
-                  gameAudio.playTap()
-                  toast('⭐ Star tool active! Tap on the page to rate!', {
-                    icon: '⭐',
-                    id: 'star-rate-tip'
-                  })
-                }}
-                title="Rate with Stars ⭐"
-                className={`w-9 sm:w-11 md:w-12 py-1 sm:py-1.5 px-0.5 rounded-lg sm:rounded-xl text-xs font-bold flex flex-col items-center justify-center relative transition-all cursor-pointer ${
-                  isToolActive('stamp')
-                    ? 'bg-amber-500 text-white shadow-lg shadow-amber-500/50 scale-105 ring-2 ring-amber-300'
-                    : 'text-amber-300 hover:bg-white/10'
-                }`}
-              >
-                <span className="text-sm sm:text-base leading-none select-none drop-shadow">⭐</span>
-                <span className="text-[8px] sm:text-[9px] font-extrabold mt-0.5 leading-none tracking-tight">Star</span>
-                {isToolActive('stamp') && (
-                  <span className="absolute top-1 right-1 w-2 h-2 bg-yellow-300 rounded-full animate-ping" />
-                )}
-              </button>
-
-              {/* 6. Erase Tool */}
-              <button
-                data-tour="tool-erase"
-                onClick={() => {
-                  setActiveTool('eraser')
-                  gameAudio.playTap()
-                }}
-                title="Erase marks & color fills (tap color to flood-erase, or drag to erase)"
-                className={`w-9 sm:w-11 md:w-12 py-1 sm:py-1.5 px-0.5 rounded-lg sm:rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all cursor-pointer ${
-                  isToolActive('eraser')
-                    ? 'bg-rose-600 text-white shadow-md scale-105 ring-2 ring-rose-300'
-                    : 'text-slate-300 hover:bg-white/10'
-                }`}
-              >
-                <Eraser size={15} className="sm:w-4 sm:h-4" />
-                <span className="text-[8px] sm:text-[9px] font-extrabold mt-0.5 leading-none tracking-tight">Erase</span>
-              </button>
-
-              {/* 7. Clear All Tool */}
-              <button
-                data-tour="tool-clear"
-                onClick={() => {
-                  setClearSignal((prev) => prev + 1)
-                  gameAudio.playTap()
-                  toast.success('Cleared annotations on this page')
-                }}
-                title="Clear all drawings and color fills on this page"
-                className="w-9 sm:w-11 md:w-12 py-1 sm:py-1.5 px-0.5 rounded-lg sm:rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all bg-rose-700/80 hover:bg-rose-600 text-white shadow-md active:scale-95 cursor-pointer"
-              >
-                <Trash2 size={15} className="sm:w-4 sm:h-4 text-white" />
-                <span className="text-[8px] sm:text-[9px] font-extrabold mt-0.5 leading-none tracking-tight">Clear</span>
-              </button>
-
-              {/* 8. Type Tool */}
-              <button
-                data-tour="tool-type"
-                onClick={() => {
-                  setActiveTool('text')
-                  gameAudio.playTap()
-                }}
-                title="Type answers anywhere on the page"
-                className={`w-9 sm:w-11 md:w-12 py-1 sm:py-1.5 px-0.5 rounded-lg sm:rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all cursor-pointer ${
-                  isToolActive('text')
-                    ? 'bg-indigo-600 text-white shadow-md scale-105 ring-2 ring-indigo-300'
-                    : 'text-slate-300 hover:bg-white/10'
-                }`}
-              >
-                <Type size={15} className="sm:w-4 sm:h-4" />
-                <span className="text-[8px] sm:text-[9px] font-extrabold mt-0.5 leading-none tracking-tight">Type</span>
-              </button>
-
-              {/* 9. Undo Tool */}
-              <button
-                data-tour="tool-undo"
-                onClick={() => {
-                  setUndoSignal((prev) => prev + 1)
-                  gameAudio.playTap()
-                }}
-                title="Undo last action (Ctrl+Z)"
-                className="w-9 sm:w-11 md:w-12 py-1 sm:py-1.5 px-0.5 rounded-lg sm:rounded-xl text-xs font-bold flex flex-col items-center justify-center transition-all text-slate-300 hover:bg-white/10 active:scale-95 hover:text-amber-300 cursor-pointer"
-              >
-                <Undo2 size={15} className="text-amber-400 sm:w-4 sm:h-4" />
-                <span className="text-[8px] sm:text-[9px] font-extrabold mt-0.5 leading-none tracking-tight">Undo</span>
-              </button>
-
-              {/* 10. Color Palette Selector */}
-              <div className="flex flex-col items-center gap-1 pt-1.5 border-t border-white/15 w-full">
-                <div className="grid grid-cols-2 gap-1">
-                  {PALETTE_COLORS.map((col) => (
-                    <button
-                      key={col}
-                      onClick={() => {
-                        setActiveColor(col)
-                        if (!['pen', 'fill', 'highlighter'].includes(activeTool)) {
-                          setActiveTool('pen')
-                        }
-                        gameAudio.playTap()
-                      }}
-                      className={`w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full border transition-transform cursor-pointer ${
-                        activeColor === col
-                          ? 'scale-125 border-white shadow-md ring-2 ring-blue-400 z-10'
-                          : 'border-transparent hover:scale-110 opacity-80 hover:opacity-100'
-                      }`}
-                      style={{ backgroundColor: col }}
-                      title={`Select color ${col}`}
-                    />
-                  ))}
-                </div>
+            {/* Middle: Progress Bar */}
+            <div className="flex-1 flex items-center min-w-[60px] mx-1 sm:mx-2">
+              <div className="w-full bg-slate-100 rounded-full h-2 sm:h-2.5 overflow-hidden">
+                <div
+                  className={`h-full rounded-full transition-all duration-300 ease-out ${
+                    isChapterCompleted ? 'bg-emerald-500' : 'bg-blue-600'
+                  }`}
+                  style={{ width: `${chapterProgressPct}%` }}
+                />
               </div>
             </div>
 
+            {/* Right: Next Page / Continue to Next Chapter button */}
+                <div className="shrink-0 flex items-center">
+              {isChapterCompleted ? (
+                // ── 100% Chapter Progress Reached: Continue to Next Chapter or Course Completed ──
+                isFinalChapter ? (
+                  <button
+                    onClick={handleContinueToNextChapter}
+                    className="flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3.5 py-1.5 sm:py-2 bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white text-xs sm:text-xs md:text-sm font-bold rounded-lg sm:rounded-xl shadow-xs transition-all cursor-pointer whitespace-nowrap"
+                    title="Course Completed - All chapters finished!"
+                  >
+                    <span>Course Completed</span>
+                    <Check size={14} className="stroke-[2.5]" />
+                  </button>
+                ) : (
+                  <button
+                    onClick={handleContinueToNextChapter}
+                    className="flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3.5 py-1.5 sm:py-2 bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white text-xs sm:text-xs md:text-sm font-bold rounded-lg sm:rounded-xl shadow-xs transition-all cursor-pointer whitespace-nowrap"
+                    title={`Continue to Next Chapter: ${nextChapter?.title || 'Next'}`}
+                  >
+                    <span>Continue to Next Chapter</span>
+                    <ArrowRight size={14} className="stroke-[2.5]" />
+                  </button>
+                )
+              ) : (
+                // ── Before 100% Progress: Keep existing Next button unchanged ──
+                <button
+                  onClick={handleNextPageAction}
+                  disabled={isAtLastBookPage && isCurrentPageCompleted}
+                  className="flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3.5 py-1.5 sm:py-2 bg-blue-600 hover:bg-blue-700 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed text-white text-xs sm:text-xs md:text-sm font-bold rounded-lg sm:rounded-xl shadow-xs transition-all cursor-pointer whitespace-nowrap"
+                  title="Next Page"
+                >
+                  <span>Next</span>
+                  <ArrowRight size={14} className="stroke-[2.5]" />
+                </button>
+              )}
+            </div>
           </div>
         </div>
       </div>
