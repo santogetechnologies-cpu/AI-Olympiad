@@ -9,6 +9,8 @@ import { useAuth } from '../../contexts/AuthContext'
 import { gamification, type StudentStats } from '../../utils/gamification'
 import { progressService, type StudentDashboardData } from '../../services/progressService'
 import toast from 'react-hot-toast'
+import { SidebarSpotlightTour } from '../tour/SidebarSpotlightTour'
+import { tourService } from '../../services/tourService'
 
 interface NavItem {
   label: string
@@ -24,6 +26,7 @@ function AdminNav(): NavItem[] {
     { label: 'Content Manager', href: '/content-manager', icon: FolderOpen },
     { label: 'Students', href: '/admin/students', icon: Users },
     { label: 'Analytics', href: '/admin/analytics', icon: BarChart3 },
+    { label: 'Help & Support', href: '/admin/support', icon: HelpCircle },
     { label: 'Settings', href: '/admin/settings', icon: Settings },
   ]
 }
@@ -60,6 +63,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
   const [searchOpen, setSearchOpen] = useState(false)
   const [dashboardData, setDashboardData] = useState<StudentDashboardData | null>(null)
   const searchContainerRef = useRef<HTMLDivElement>(null)
+  const [showTour, setShowTour] = useState(false)
 
   const userRole = (user?.role || '') as string
   const isAdmin = userRole === 'admin'
@@ -115,6 +119,50 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
     }
   }, [user?.id, user?.organization_id, isStudent])
 
+
+  // One-time guided sidebar onboarding tour for students
+  useEffect(() => {
+    if (!user?.id || !isStudent) {
+      setShowTour(false)
+      return
+    }
+
+    if (user.profile?.sidebar_tour_completed) {
+      setShowTour(false)
+      return
+    }
+
+    try {
+      if (localStorage.getItem(`student_sidebar_tour_completed_${user.id}`) === 'true') {
+        setShowTour(false)
+        return
+      }
+    } catch {
+      // ignore
+    }
+
+    let active = true
+    tourService.isSidebarTourCompleted(user.id, user.profile?.sidebar_tour_completed)
+      .then(isCompleted => {
+        if (!isCompleted && active) {
+          const timer = setTimeout(() => {
+            if (active) setShowTour(true)
+          }, 350)
+          return () => clearTimeout(timer)
+        }
+      })
+      .catch(() => {})
+
+    const handleTourCompleted = () => {
+      setShowTour(false)
+    }
+
+    window.addEventListener('student_sidebar_tour_completed', handleTourCompleted)
+    return () => {
+      active = false
+      window.removeEventListener('student_sidebar_tour_completed', handleTourCompleted)
+    }
+  }, [user?.id, user?.profile?.sidebar_tour_completed, isStudent])
   // Close search dropdown on click outside
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -214,10 +262,13 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
             const Icon = item.icon
             const isActive = location.pathname === item.href ||
               (item.href !== '/admin' && item.href !== '/student' && item.href !== '/content-manager' && location.pathname.startsWith(item.href))
+            const navSlug = item.label.toLowerCase().replace(/\s+/g, '-')
             return (
               <Link
                 key={item.href}
                 to={item.href}
+                id={`sidebar-nav-${navSlug}`}
+                data-tour-target={`sidebar-${navSlug}`}
                 onClick={() => setMobileOpen(false)}
                 className={`flex items-center gap-3.5 px-4 py-3 rounded-2xl text-sm font-semibold transition-all group relative ${
                   isStudent
@@ -326,7 +377,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
               <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 p-1 bg-amber-50 border border-amber-200 shadow-xs">
                 <img src="/mama-ada-logo.png" alt="Mamma Ada LMS" className="w-full h-full object-contain" />
               </div>
-              <span className="text-xs font-black text-slate-900 truncate">Mamma Ada LMS</span>
+              <span className="hidden sm:inline text-xs font-black text-slate-900 truncate">Mamma Ada LMS</span>
             </Link>
 
             {/* Student Search Bar (Desktop & Tablet) */}
@@ -545,6 +596,33 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
             })}
           </nav>
         )}
+      {/* Student Guided Sidebar Onboarding Tour */}
+      {isStudent && user?.id && (
+        <SidebarSpotlightTour
+          userId={user.id}
+          isOpen={showTour}
+          onClose={() => {
+            setShowTour(false)
+            if (window.innerWidth < 1024) {
+              setMobileOpen(false)
+            }
+          }}
+          onComplete={() => {
+            setShowTour(false)
+            if (user.profile) {
+              user.profile.sidebar_tour_completed = true
+            }
+            if (window.innerWidth < 1024) {
+              setMobileOpen(false)
+            }
+          }}
+          ensureSidebarOpen={() => {
+            if (window.innerWidth < 1024) {
+              setMobileOpen(true)
+            }
+          }}
+        />
+      )}
       </div>
     </div>
   )

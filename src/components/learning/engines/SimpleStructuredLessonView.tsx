@@ -424,6 +424,7 @@ export const SimpleStructuredLessonView: React.FC<SimpleStructuredLessonProps> =
     return (
       <div className="w-full max-w-md mx-auto flex flex-col justify-between h-full max-h-full overflow-hidden select-none animate-in fade-in duration-200">
         <GaioInteractiveBookApp
+          gradeKey="class3"
           initialMonth={cNum >= 1 && cNum <= 6 ? cNum : 1}
           onComplete={onStartInteractiveGame}
           onExit={handlePrevScreen}

@@ -3,7 +3,6 @@
 // 100% In-PDF Interactive Engine:
 // 1. Word Tap & Speak (bounce animation, phonetic spelling)
 // 2. In-Line Typeable Worksheet Blanks (direct on dotted lines)
-// 3. Click-to-Circle & Tick Choices (choices, checkboxes)
 // 4. Tap-to-Count Objects (voice counting "One! Two! Three!")
 // 5. Drawing & Highlighter Canvas (Pen, Highlighter, Eraser)
 // 6. Moveable Elements & Images with Hand Tool (Stickers, EMIs, Custom Images)
@@ -27,6 +26,7 @@ import {
 import { gameAudio } from '../../../utils/gameAudio'
 import confetti from 'canvas-confetti'
 import toast from 'react-hot-toast'
+import { studentAnnotationService } from '../../../services/studentAnnotationService'
 
 export type StudioTool =
   | 'pointer'
@@ -37,7 +37,6 @@ export type StudioTool =
   | 'eraser'
   | 'text'
   | 'stamp'
-  | 'circle'
 
 export interface StrokePoint {
   x: number
@@ -47,7 +46,7 @@ export interface StrokePoint {
 }
 
 export interface DrawingStroke {
-  tool: 'pen' | 'highlighter' | 'eraser' | 'circle'
+  tool: 'pen' | 'highlighter' | 'eraser'
   color: string
   width: number
   points: StrokePoint[]
@@ -72,6 +71,7 @@ export interface TypedNote {
 }
 
 export interface UnifiedPdfInteractionLayerProps {
+  studentId?: string
   pageNumber: number
   bookKey: string
   pageWidth: number
@@ -89,6 +89,7 @@ export interface UnifiedPdfInteractionLayerProps {
   undoSignal?: number
   clearSignal?: number
   onAddStar?: (count?: number) => void
+  onPageActivity?: (pageNumber: number) => void
   onWordClick?: (word: PageWordItem) => void
   onWordSpell?: (word: PageWordItem) => void
 }
@@ -105,6 +106,7 @@ export const STAMP_ICONS: { [key: string]: { icon: any; color: string; label: st
 }
 
 export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProps> = ({
+  studentId,
   pageNumber,
   bookKey,
   pageWidth,
@@ -122,6 +124,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
   undoSignal,
   clearSignal,
   onAddStar,
+  onPageActivity,
   onWordClick,
   onWordSpell
 }) => {
@@ -141,7 +144,6 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
 
   // In-line typed blanks & circle toggles
   const [typedBlanks, setTypedBlanks] = useState<{ [id: string]: string }>({})
-  const [circledItems, setCircledItems] = useState<{ [id: string]: boolean }>({})
 
   // Synchronous refs to prevent race conditions when writing/drawing quickly
   const strokesRef = useRef<DrawingStroke[]>(strokes)
@@ -156,8 +158,6 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
   const typedBlanksRef = useRef<{ [id: string]: string }>(typedBlanks)
   typedBlanksRef.current = typedBlanks
 
-  const circledItemsRef = useRef<{ [id: string]: boolean }>(circledItems)
-  circledItemsRef.current = circledItems
 
   // Fill tool history stack
   const [fillHistory, setFillHistory] = useState<ImageData[]>([])
@@ -185,39 +185,53 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
   const [countNumber, setCountNumber] = useState<number>(0)
   const [bouncingWordId, setBouncingWordId] = useState<string | null>(null)
 
-  const storageKey = `gaio_page_state_${bookKey}_p${pageNumber}`
-  const imageOffsetsKey = `gaio_dragged_images_${bookKey}_p${pageNumber}`
-  const fillStorageKey = `gaio_fill_${bookKey}_p${pageNumber}`
+  const sId = studentId || 'default_student'
+  const storageKey = `gaio_page_state_${sId}_${bookKey}_p${pageNumber}`
+  const legacyStorageKey = `gaio_page_state_${bookKey}_p${pageNumber}`
+  const imageOffsetsKey = `gaio_dragged_images_${sId}_${bookKey}_p${pageNumber}`
+  const legacyImageOffsetsKey = `gaio_dragged_images_${bookKey}_p${pageNumber}`
+  const fillStorageKey = `gaio_fill_${sId}_${bookKey}_p${pageNumber}`
+  const legacyFillStorageKey = `gaio_fill_${bookKey}_p${pageNumber}`
 
-  // Load saved state for this page
+  // Load saved state for this page with student isolation and remote sync fallback
   useEffect(() => {
+    let isCancelled = false
+
+    const applyData = (data: any) => {
+      if (isCancelled || !data) return
+      if (data.strokes) setStrokes(data.strokes)
+      if (data.stickers) setStickers(data.stickers)
+      if (data.typedNotes) setTypedNotes(data.typedNotes)
+      if (data.typedBlanks) setTypedBlanks(data.typedBlanks)
+    }
+
     try {
-      const saved = localStorage.getItem(storageKey)
+      const saved = localStorage.getItem(storageKey) || localStorage.getItem(legacyStorageKey)
       if (saved) {
-        const parsed = JSON.parse(saved)
-        setStrokes(parsed.strokes || [])
-        setStickers(parsed.stickers || [])
-        setTypedNotes(parsed.typedNotes || [])
-        setTypedBlanks(parsed.typedBlanks || {})
-        setCircledItems(parsed.circledItems || {})
+        applyData(JSON.parse(saved))
       } else {
         setStrokes([])
         setStickers([])
         setTypedNotes([])
         setTypedBlanks({})
-        setCircledItems({})
       }
     } catch {
       setStrokes([])
       setStickers([])
       setTypedNotes([])
       setTypedBlanks({})
-      setCircledItems({})
     }
+
+    // Load remote annotations in background
+    studentAnnotationService.loadPageAnnotations(sId, bookKey, pageNumber).then((remote) => {
+      if (!isCancelled && remote) {
+        applyData(remote)
+      }
+    }).catch(() => {})
 
     // Load moved book image offsets
     try {
-      const savedImgs = localStorage.getItem(imageOffsetsKey)
+      const savedImgs = localStorage.getItem(imageOffsetsKey) || localStorage.getItem(legacyImageOffsetsKey)
       if (savedImgs) {
         setImageOffsets(JSON.parse(savedImgs))
       } else {
@@ -228,7 +242,11 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     }
 
     setCountNumber(0)
-  }, [storageKey, imageOffsetsKey])
+
+    return () => {
+      isCancelled = true
+    }
+  }, [storageKey, legacyStorageKey, imageOffsetsKey, legacyImageOffsetsKey, sId, bookKey, pageNumber])
 
   // Load fill layer for this page
   useEffect(() => {
@@ -243,7 +261,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     setFillHistory([])
 
     try {
-      const dataUrl = localStorage.getItem(fillStorageKey)
+      const dataUrl = localStorage.getItem(fillStorageKey) || localStorage.getItem(legacyFillStorageKey)
       if (dataUrl) {
         const img = new Image()
         img.onload = () => {
@@ -252,7 +270,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
         img.src = dataUrl
       }
     } catch {}
-  }, [fillStorageKey, pageWidth, pageHeight])
+  }, [fillStorageKey, legacyFillStorageKey, pageWidth, pageHeight])
 
   // Save drawing state
   const persistState = useCallback(
@@ -260,32 +278,47 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       newStrokes: DrawingStroke[],
       newStickers: PlacedSticker[],
       newNotes: TypedNote[],
-      newBlanks: { [id: string]: string },
-      newCircles: { [id: string]: boolean }
+      newBlanks: { [id: string]: string }
     ) => {
+      const payload = {
+        strokes: newStrokes,
+        stickers: newStickers,
+        typedNotes: newNotes,
+        typedBlanks: newBlanks
+      }
+
       try {
-        localStorage.setItem(
-          storageKey,
-          JSON.stringify({
-            strokes: newStrokes,
-            stickers: newStickers,
-            typedNotes: newNotes,
-            typedBlanks: newBlanks,
-            circledItems: newCircles
-          })
-        )
+        localStorage.setItem(storageKey, JSON.stringify(payload))
       } catch {}
+
+      // Asynchronously debounced sync to studentAnnotationService
+      studentAnnotationService.savePageAnnotations(sId, bookKey, pageNumber, payload)
+
+      // If user performed learning activities (drawing, stickers, notes, blanks)
+      if (
+        newStrokes.length > 0 ||
+        newStickers.length > 0 ||
+        newNotes.length > 0 ||
+        Object.keys(newBlanks).length > 0
+      ) {
+        onPageActivity?.(pageNumber)
+      }
     },
-    [storageKey]
+    [storageKey, sId, bookKey, pageNumber, onPageActivity]
   )
 
   const saveFillCanvas = useCallback(() => {
     const canvas = colorFillCanvasRef.current
     if (!canvas) return
     try {
-      localStorage.setItem(fillStorageKey, canvas.toDataURL('image/png'))
+      const fillUrl = canvas.toDataURL('image/png')
+      localStorage.setItem(fillStorageKey, fillUrl)
+      studentAnnotationService.savePageAnnotations(sId, bookKey, pageNumber, {
+        fillData: fillUrl,
+      })
+      onPageActivity?.(pageNumber)
     } catch {}
-  }, [fillStorageKey])
+  }, [fillStorageKey, sId, bookKey, pageNumber, onPageActivity])
 
   // Redraw canvas with high DPR and normalized coordinates
   const redrawCanvas = useCallback(() => {
@@ -318,10 +351,6 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       } else if (stroke.tool === 'eraser') {
         ctx.globalCompositeOperation = 'destination-out'
         ctx.lineWidth = stroke.width * 6
-      } else if (stroke.tool === 'circle') {
-        ctx.strokeStyle = '#2563eb'
-        ctx.lineWidth = 3
-        ctx.setLineDash([6, 3])
       } else {
         ctx.strokeStyle = stroke.color
         ctx.fillStyle = stroke.color
@@ -456,7 +485,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
           })
           toast.success('Figure moved! ✨', { id: 'img-moved' })
         } else {
-          persistState(strokes, stickers, typedNotes, typedBlanks, circledItems)
+          persistState(strokes, stickers, typedNotes, typedBlanks)
         }
         gameAudio.playTap()
       }
@@ -468,7 +497,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       window.removeEventListener('pointermove', handleGlobalPointerMove)
       window.removeEventListener('pointerup', handleGlobalPointerUp)
     }
-  }, [strokes, stickers, typedNotes, typedBlanks, circledItems, imageOffsetsKey, persistState])
+  }, [strokes, stickers, typedNotes, typedBlanks, imageOffsetsKey, persistState])
 
   // ── Color Fill Tool (Smart boundary-aware Flood Fill with PDF high-DPI scaling) ─────
   const handleColorFillClick = (e: React.MouseEvent<HTMLCanvasElement>) => {
@@ -687,7 +716,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       }
       const updated = [...stickers, newSticker]
       setStickers(updated)
-      persistState(strokes, updated, typedNotes, typedBlanks, circledItems)
+      persistState(strokes, updated, typedNotes, typedBlanks)
       gameAudio.playCoin()
       onAddStar?.(1)
       toast.success('Image placed! Use Hand Tool ✋ to move it anywhere.')
@@ -718,7 +747,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       setStickers(updated)
       stickersRef.current = updated
       setHistoryStack((prev) => [...prev.slice(-20), { type: 'sticker', id: newSticker.id }])
-      persistState(strokesRef.current, updated, typedNotesRef.current, typedBlanksRef.current, circledItemsRef.current)
+      persistState(strokesRef.current, updated, typedNotesRef.current, typedBlanksRef.current)
       gameAudio.playCoin()
       onAddStar?.(1)
       confetti({
@@ -754,7 +783,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       typedNotesRef.current = updated
       setHistoryStack((prev) => [...prev.slice(-20), { type: 'note', id: newId }])
       setEditingNoteId(newId)
-      persistState(strokesRef.current, stickersRef.current, updated, typedBlanksRef.current, circledItemsRef.current)
+      persistState(strokesRef.current, stickersRef.current, updated, typedBlanksRef.current)
       gameAudio.playTap()
       return
     }
@@ -980,7 +1009,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       setStrokes((prev) => {
         const updated = [...prev, newStroke]
         strokesRef.current = updated
-        persistState(updated, stickersRef.current, typedNotesRef.current, typedBlanksRef.current, circledItemsRef.current)
+        persistState(updated, stickersRef.current, typedNotesRef.current, typedBlanksRef.current)
         return updated
       })
       setHistoryStack((prev) => [...prev.slice(-20), { type: 'stroke' }])
@@ -996,7 +1025,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
         const next = stickers.slice(0, -1)
         setStickers(next)
         stickersRef.current = next
-        persistState(strokes, next, typedNotes, typedBlanks, circledItems)
+        persistState(strokes, next, typedNotes, typedBlanks)
         onAddStar?.(-1)
         gameAudio.playTap()
         toast.success('Removed last star / sticker! ↺', { id: 'undo-sticker' })
@@ -1028,7 +1057,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
         const next = strokes.slice(0, -1)
         setStrokes(next)
         strokesRef.current = next
-        persistState(next, stickers, typedNotes, typedBlanks, circledItems)
+        persistState(next, stickers, typedNotes, typedBlanks)
         gameAudio.playTap()
         toast.success('Undid last drawing! ↺', { id: 'undo-stroke' })
         return
@@ -1044,7 +1073,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       const next = stickers.filter((s) => s.id !== last.id)
       setStickers(next)
       stickersRef.current = next
-      persistState(strokes, next, typedNotes, typedBlanks, circledItems)
+      persistState(strokes, next, typedNotes, typedBlanks)
       onAddStar?.(-1)
       gameAudio.playTap()
       toast.success('Undid star / sticker! ↺', { id: 'undo-act' })
@@ -1071,18 +1100,18 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       const next = strokes.slice(0, -1)
       setStrokes(next)
       strokesRef.current = next
-      persistState(next, stickers, typedNotes, typedBlanks, circledItems)
+      persistState(next, stickers, typedNotes, typedBlanks)
       gameAudio.playTap()
       toast.success('Undid drawing mark! ↺', { id: 'undo-act' })
     } else if (last.type === 'note') {
       const next = typedNotes.filter((n) => n.id !== last.id)
       setTypedNotes(next)
       typedNotesRef.current = next
-      persistState(strokes, stickers, next, typedBlanks, circledItems)
+      persistState(strokes, stickers, next, typedBlanks)
       gameAudio.playTap()
       toast.success('Undid note! ↺', { id: 'undo-act' })
     }
-  }, [historyStack, stickers, fillHistory, strokes, typedNotes, typedBlanks, circledItems, fillStorageKey, persistState])
+  }, [historyStack, stickers, fillHistory, strokes, typedNotes, typedBlanks, fillStorageKey, persistState])
 
   // Trigger undo on undoSignal change
   const lastUndoRef = useRef<number>(0)
@@ -1120,7 +1149,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     }
 
     // 4. Save state
-    persistState([], stickersRef.current, typedNotesRef.current, typedBlanksRef.current, circledItemsRef.current)
+    persistState([], stickersRef.current, typedNotesRef.current, typedBlanksRef.current)
     setHistoryStack([])
     gameAudio.playTap()
     toast.success('Page markings & colors cleared! 🧼', { id: 'clear-page' })
@@ -1186,34 +1215,17 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
   const _handleBlankChange = (id: string, text: string) => {
     const updated = { ...typedBlanks, [id]: text }
     setTypedBlanks(updated)
-    persistState(strokes, stickers, typedNotes, updated, circledItems)
+    persistState(strokes, stickers, typedNotes, updated)
   }
   void _handleBlankChange
 
-
-  // 6. CIRCLE / CHOOSE ITEM TOGGLE
-  const handleCircleToggle = (id: string) => {
-    const nextVal = !circledItems[id]
-    const updated = { ...circledItems, [id]: nextVal }
-    setCircledItems(updated)
-    persistState(strokes, stickers, typedNotes, typedBlanks, updated)
-
-    if (nextVal) {
-      gameAudio.playSuccess()
-      onAddStar?.(1)
-      confetti({ particleCount: 20, spread: 40 })
-      toast.success('Circled choice! ⭐')
-    } else {
-      gameAudio.playTap()
-    }
-  }
 
   // Delete placed item
   const handleDeleteSticker = (id: string, e: React.MouseEvent) => {
     e.stopPropagation()
     const updated = stickers.filter((s) => s.id !== id)
     setStickers(updated)
-    persistState(strokes, updated, typedNotes, typedBlanks, circledItems)
+    persistState(strokes, updated, typedNotes, typedBlanks)
     gameAudio.playTap()
   }
 
@@ -1221,7 +1233,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     e.stopPropagation()
     const updated = typedNotes.filter((n) => n.id !== id)
     setTypedNotes(updated)
-    persistState(strokes, stickers, updated, typedBlanks, circledItems)
+    persistState(strokes, stickers, updated, typedBlanks)
     gameAudio.playTap()
   }
 
@@ -1402,48 +1414,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
         })}
       </div>
 
-      {/* ── LAYER D: In-Line Worksheet Blanks & Clickable Choices ─────────── */}
-      <div className="absolute inset-0 pointer-events-none z-30">
-        {regions.map((region) => {
-          if (!region.bbox) return null
-          const [x, y, w, h] = region.bbox
-          const sx = x * scale
-          const sy = y * scale
-          const sw = w * scale
-          const sh = h * scale
 
-          // Note: Pre-filled 'typeable' boxes are disabled per user request since students can use the freeform Text tool (T) or Pen tool.
-
-
-          // Choose / Option circle (e.g. A, B, C, D)
-          if (region.type === 'choose') {
-            const isCircled = !!circledItems[region.id]
-            return (
-              <button
-                key={region.id}
-                type="button"
-                onClick={() => handleCircleToggle(region.id)}
-                style={{
-                  left: `${sx}px`,
-                  top: `${sy}px`,
-                  width: `${Math.max(28, sw)}px`,
-                  height: `${Math.max(28, sh)}px`
-                }}
-                title={region.optionText || `Option ${region.label}`}
-                className={`absolute pointer-events-auto rounded-full font-black text-xs flex items-center justify-center transition-all shadow-md ${
-                  isCircled
-                    ? 'bg-emerald-500 text-white ring-4 ring-emerald-300 scale-110 z-30'
-                    : 'bg-white/95 hover:bg-blue-600 text-blue-900 hover:text-white border-2 border-blue-500 hover:scale-105'
-                }`}
-              >
-                {isCircled ? <Check size={16} className="stroke-[3]" /> : region.label || '✓'}
-              </button>
-            )
-          }
-
-          return null
-        })}
-      </div>
 
       {/* ── LAYER E: Freeform Typed Notes on Page (Moveable with Hand Tool) ─ */}
       <div
@@ -1482,7 +1453,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
                     onKeyDown={(e) => {
                       if (e.key === 'Enter') {
                         setEditingNoteId(null)
-                        persistState(strokes, stickers, typedNotes, typedBlanks, circledItems)
+                        persistState(strokes, stickers, typedNotes, typedBlanks)
                       }
                     }}
                     style={{
@@ -1494,7 +1465,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
                   <button
                     onClick={() => {
                       setEditingNoteId(null)
-                      persistState(strokes, stickers, typedNotes, typedBlanks, circledItems)
+                      persistState(strokes, stickers, typedNotes, typedBlanks)
                     }}
                     className="p-1 sm:p-1.5 bg-blue-600 text-white rounded hover:bg-blue-700 shrink-0"
                     title="Done"

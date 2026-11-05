@@ -83,24 +83,24 @@
           "id": "type_3_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_3_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -162,24 +162,24 @@
           "id": "type_4_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_4_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -407,10 +407,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -528,10 +528,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -649,10 +649,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -825,10 +825,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -891,10 +891,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -1011,24 +1011,24 @@
           "id": "type_18_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_18_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -1090,24 +1090,24 @@
           "id": "type_19_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_19_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -1169,24 +1169,24 @@
           "id": "type_20_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_20_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -1248,14 +1248,14 @@
           "id": "type_21_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -1316,14 +1316,14 @@
           "id": "type_22_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -1439,24 +1439,24 @@
           "id": "type_24_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_24_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -1518,14 +1518,14 @@
           "id": "type_25_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -1586,14 +1586,14 @@
           "id": "type_26_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -1710,10 +1710,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -1941,10 +1941,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -2172,10 +2172,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -2292,24 +2292,24 @@
           "id": "type_38_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_38_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -2371,24 +2371,24 @@
           "id": "type_39_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_39_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -2450,24 +2450,24 @@
           "id": "type_40_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_40_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -2529,14 +2529,14 @@
           "id": "type_41_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -2597,14 +2597,14 @@
           "id": "type_42_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -2720,24 +2720,24 @@
           "id": "type_44_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_44_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -2799,14 +2799,14 @@
           "id": "type_45_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -2867,14 +2867,14 @@
           "id": "type_46_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -2935,14 +2935,14 @@
           "id": "type_47_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -3003,24 +3003,24 @@
           "id": "type_48_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_48_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -3248,10 +3248,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -3313,24 +3313,24 @@
           "id": "type_53_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_53_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -3503,10 +3503,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -3679,10 +3679,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -3745,10 +3745,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -3810,24 +3810,24 @@
           "id": "type_61_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_61_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -3889,24 +3889,24 @@
           "id": "type_62_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_62_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -3968,14 +3968,14 @@
           "id": "type_63_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -4036,24 +4036,24 @@
           "id": "type_64_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_64_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -4115,14 +4115,14 @@
           "id": "type_65_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -4238,24 +4238,24 @@
           "id": "type_67_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_67_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -4317,24 +4317,24 @@
           "id": "type_68_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_68_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -4396,14 +4396,14 @@
           "id": "type_69_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -4575,10 +4575,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -4751,10 +4751,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -4817,10 +4817,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -4993,10 +4993,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -5059,10 +5059,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -5124,24 +5124,24 @@
           "id": "type_81_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_81_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -5203,24 +5203,24 @@
           "id": "type_82_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_82_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -5282,14 +5282,14 @@
           "id": "type_83_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -5350,24 +5350,24 @@
           "id": "type_84_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_84_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -5429,14 +5429,14 @@
           "id": "type_85_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -5552,24 +5552,24 @@
           "id": "type_87_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_87_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -5631,24 +5631,24 @@
           "id": "type_88_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_88_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -5710,14 +5710,14 @@
           "id": "type_89_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -5778,14 +5778,14 @@
           "id": "type_90_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -5846,14 +5846,14 @@
           "id": "type_91_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -5915,10 +5915,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -6146,10 +6146,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -6377,10 +6377,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -6498,10 +6498,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -6618,24 +6618,24 @@
           "id": "type_104_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_104_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -6697,24 +6697,24 @@
           "id": "type_105_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_105_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -6776,14 +6776,14 @@
           "id": "type_106_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -6844,14 +6844,14 @@
           "id": "type_107_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -6912,24 +6912,24 @@
           "id": "type_108_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_108_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -7046,24 +7046,24 @@
           "id": "type_110_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_110_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -7125,14 +7125,14 @@
           "id": "type_111_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -7193,24 +7193,24 @@
           "id": "type_112_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_112_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -7438,10 +7438,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -7669,10 +7669,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -7790,10 +7790,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -7910,24 +7910,24 @@
           "id": "type_124_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_124_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -7989,24 +7989,24 @@
           "id": "type_125_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_125_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -8068,14 +8068,14 @@
           "id": "type_126_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -8136,14 +8136,14 @@
           "id": "type_127_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -8204,24 +8204,24 @@
           "id": "type_128_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_128_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -8338,24 +8338,24 @@
           "id": "type_130_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_130_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -8417,14 +8417,14 @@
           "id": "type_131_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -8485,24 +8485,24 @@
           "id": "type_132_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_132_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -8564,14 +8564,14 @@
           "id": "type_133_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -8632,14 +8632,14 @@
           "id": "type_134_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -8756,10 +8756,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -8987,10 +8987,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -9218,10 +9218,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -9284,10 +9284,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -9404,24 +9404,24 @@
           "id": "type_147_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_147_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -9483,24 +9483,24 @@
           "id": "type_148_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_148_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -9562,14 +9562,14 @@
           "id": "type_149_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -9630,14 +9630,14 @@
           "id": "type_150_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -9698,14 +9698,14 @@
           "id": "type_151_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -9767,10 +9767,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -9832,24 +9832,24 @@
           "id": "type_153_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_153_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -9911,14 +9911,14 @@
           "id": "type_154_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -9979,14 +9979,14 @@
           "id": "type_155_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -10048,10 +10048,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -10279,10 +10279,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -10510,10 +10510,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -10576,10 +10576,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -10696,24 +10696,24 @@
           "id": "type_167_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_167_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -10775,24 +10775,24 @@
           "id": "type_168_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_168_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -10854,14 +10854,14 @@
           "id": "type_169_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -10922,14 +10922,14 @@
           "id": "type_170_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -10990,14 +10990,14 @@
           "id": "type_171_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -11059,10 +11059,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -11124,24 +11124,24 @@
           "id": "type_173_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_173_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -11203,14 +11203,14 @@
           "id": "type_174_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -11271,14 +11271,14 @@
           "id": "type_175_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -11339,24 +11339,24 @@
           "id": "type_176_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_176_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -11418,14 +11418,14 @@
           "id": "type_177_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -11597,10 +11597,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -11718,10 +11718,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -11839,10 +11839,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -12070,10 +12070,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -12190,24 +12190,24 @@
           "id": "type_190_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_190_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -12269,24 +12269,24 @@
           "id": "type_191_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_191_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -12348,24 +12348,24 @@
           "id": "type_192_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_192_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -12427,14 +12427,14 @@
           "id": "type_193_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -12495,14 +12495,14 @@
           "id": "type_194_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -12618,24 +12618,24 @@
           "id": "type_196_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_196_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -12697,14 +12697,14 @@
           "id": "type_197_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -12765,14 +12765,14 @@
           "id": "type_198_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -12889,10 +12889,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -13120,10 +13120,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -13351,10 +13351,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -13471,24 +13471,24 @@
           "id": "type_210_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_210_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -13550,24 +13550,24 @@
           "id": "type_211_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_211_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -13629,24 +13629,24 @@
           "id": "type_212_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_212_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -13708,14 +13708,14 @@
           "id": "type_213_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -13776,14 +13776,14 @@
           "id": "type_214_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -13899,24 +13899,24 @@
           "id": "type_216_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_216_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -13978,14 +13978,14 @@
           "id": "type_217_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -14046,14 +14046,14 @@
           "id": "type_218_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -14114,14 +14114,14 @@
           "id": "type_219_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -14182,24 +14182,24 @@
           "id": "type_220_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_220_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -14427,10 +14427,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -14658,10 +14658,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -14834,10 +14834,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -14900,10 +14900,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -14965,24 +14965,24 @@
           "id": "type_233_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_233_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -15044,24 +15044,24 @@
           "id": "type_234_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_234_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -15123,14 +15123,14 @@
           "id": "type_235_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -15191,24 +15191,24 @@
           "id": "type_236_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_236_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -15270,14 +15270,14 @@
           "id": "type_237_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -15393,24 +15393,24 @@
           "id": "type_239_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_239_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -15472,24 +15472,24 @@
           "id": "type_240_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_240_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -15551,14 +15551,14 @@
           "id": "type_241_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -15730,10 +15730,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -15961,10 +15961,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -16137,10 +16137,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -16203,10 +16203,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -16268,24 +16268,24 @@
           "id": "type_253_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_253_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -16347,24 +16347,24 @@
           "id": "type_254_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_254_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -16426,14 +16426,14 @@
           "id": "type_255_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -16494,24 +16494,24 @@
           "id": "type_256_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_256_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -16573,14 +16573,14 @@
           "id": "type_257_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -16696,24 +16696,24 @@
           "id": "type_259_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_259_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -16775,24 +16775,24 @@
           "id": "type_260_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_260_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -16854,14 +16854,14 @@
           "id": "type_261_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -16922,14 +16922,14 @@
           "id": "type_262_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -16990,14 +16990,14 @@
           "id": "type_263_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -17059,10 +17059,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -17179,24 +17179,24 @@
           "id": "type_266_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_266_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -17258,24 +17258,24 @@
           "id": "type_267_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_267_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -17337,24 +17337,24 @@
           "id": "type_268_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_268_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -17416,24 +17416,24 @@
           "id": "type_269_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "color_269_0",
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -17495,14 +17495,14 @@
           "id": "type_270_0",
           "type": "typeable",
           "bbox": [
-            100.0,
-            150.0,
-            220.0,
-            28.0
+            100,
+            150,
+            220,
+            28
           ],
           "prompt": "Enter your notes / answer here...",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         }
       ],
       "hasTypeable": true,
@@ -17564,10 +17564,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -17630,10 +17630,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -17696,10 +17696,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -17762,10 +17762,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -17828,10 +17828,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -17894,10 +17894,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],
@@ -18125,10 +18125,10 @@
           "type": "colorFill",
           "label": "Color Fill Studio",
           "bbox": [
-            50.0,
-            200.0,
-            490.0,
-            300.0
+            50,
+            200,
+            490,
+            300
           ]
         }
       ],

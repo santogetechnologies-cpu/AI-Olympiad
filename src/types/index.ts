@@ -20,6 +20,8 @@ export interface Profile {
   avatar_url?: string
   student_id_number?: string
   must_change_password?: boolean
+  sidebar_tour_completed?: boolean
+  pdf_tour_completed?: boolean
   status: 'active' | 'inactive' | 'suspended'
   created_at: string
   updated_at: string

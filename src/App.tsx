@@ -15,6 +15,7 @@ import AcademicStructurePage from './pages/admin/AcademicStructurePage'
 import ContentBuilderPage from './pages/admin/ContentBuilderPage'
 import AdminStudentsPage from './pages/admin/AdminStudentsPage'
 import AdminAnalyticsPage from './pages/admin/AdminAnalyticsPage'
+import AdminSupportPage from './pages/admin/AdminSupportPage'
 import AdminSettingsPage from './pages/admin/AdminSettingsPage'
 
 // Content Manager pages
@@ -58,6 +59,7 @@ export default function App() {
           <Route path="/admin/chapters/:chapterId/content" element={<ProtectedRoute allowedRoles={['admin']}><ContentBuilderPage /></ProtectedRoute>} />
           <Route path="/admin/students" element={<ProtectedRoute allowedRoles={['admin']}><AdminStudentsPage /></ProtectedRoute>} />
           <Route path="/admin/analytics" element={<ProtectedRoute allowedRoles={['admin']}><AdminAnalyticsPage /></ProtectedRoute>} />
+          <Route path="/admin/support" element={<ProtectedRoute allowedRoles={['admin']}><AdminSupportPage /></ProtectedRoute>} />
           <Route path="/admin/settings" element={<ProtectedRoute allowedRoles={['admin']}><AdminSettingsPage /></ProtectedRoute>} />
           <Route path="/settings" element={<ProtectedRoute allowedRoles={['admin']}><AdminSettingsPage /></ProtectedRoute>} />
           <Route path="/content-manager/settings" element={<Navigate to="/content-manager" replace />} />

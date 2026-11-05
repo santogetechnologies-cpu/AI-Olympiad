@@ -90,7 +90,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -388,7 +388,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -516,18 +516,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_14_0",
-          "type": "choose",
-          "bbox": [
-            417.7,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "A",
-          "optionText": "WORKSHEET:  Where Is AI Hiding?  (Part A)"
-        },
-        {
           "id": "type_14_1",
           "type": "typeable",
           "bbox": [
@@ -538,7 +526,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "say_14_2",
@@ -582,18 +570,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_15_0",
-          "type": "choose",
-          "bbox": [
-            416.5,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "B",
-          "optionText": "WORKSHEET:  Where Is AI Hiding?  (Part B)"
-        },
-        {
           "id": "type_15_1",
           "type": "typeable",
           "bbox": [
@@ -604,46 +580,46 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_15_2",
           "type": "typeable",
           "bbox": [
             218.4,
-            474.0,
+            474,
             76.6,
-            30.0
+            30
           ],
           "prompt": "Video apps ________ cartoons for me.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_15_3",
           "type": "typeable",
           "bbox": [
             300.3,
-            530.0,
+            530,
             78.8,
-            30.0
+            30
           ],
           "prompt": "A smart camera can ________ faces.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_15_4",
           "type": "typeable",
           "bbox": [
             253.8,
-            586.0,
-            75.0,
-            30.0
+            586,
+            75,
+            30
           ],
           "prompt": "AI learns from ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "say_15_5",
@@ -697,7 +673,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "say_16_1",
@@ -751,7 +727,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_17_1",
@@ -764,7 +740,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_17_2",
@@ -777,7 +753,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_17_3",
@@ -831,7 +807,7 @@
           ],
           "prompt": "Q1. AI can hide inside a...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_18_1",
@@ -844,7 +820,7 @@
           ],
           "prompt": "Q2. A keyboard that guesses words uses...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_18_2",
@@ -857,7 +833,7 @@
           ],
           "prompt": "Q3. Junk email is called...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_18_3",
@@ -870,7 +846,7 @@
           ],
           "prompt": "Q4. AI learns from...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_18_4",
@@ -883,7 +859,7 @@
           ],
           "prompt": "Q5. An AI detective looks for...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_18_5",
@@ -896,7 +872,7 @@
           ],
           "prompt": "MY STARS:  I got ____ / 5.  Colour your stars!",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_18_6",
@@ -991,7 +967,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_20_1",
@@ -1004,79 +980,7 @@
           ],
           "prompt": "1. A machine that can guess, suggest or recognise may use __",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_20_2",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) AI  \u2610"
-        },
-        {
-          "id": "choose_20_3",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) glue  \u2610"
-        },
-        {
-          "id": "choose_20_4",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) paint  \u2610"
-        },
-        {
-          "id": "choose_20_5",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            239.3,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) Face unlock  \u2610"
-        },
-        {
-          "id": "choose_20_6",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            226.1,
-            32,
-            26.9
-          ],
-          "label": "B",
-          "optionText": "(b) Simple calculator"
-        },
-        {
-          "id": "choose_20_7",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            226.1,
-            32,
-            26.9
-          ],
-          "label": "C",
-          "optionText": "(c) Video suggestions"
+          "fontSize": 14
         },
         {
           "id": "type_20_8",
@@ -1089,43 +993,7 @@
           ],
           "prompt": "3. A keyboard that guesses the next word uses ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_20_9",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            306.0,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) magic  \u2610"
-        },
-        {
-          "id": "choose_20_10",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            306.0,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) batteries only  \u2610"
-        },
-        {
-          "id": "choose_20_11",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            306.0,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) AI  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_20_12",
@@ -1138,43 +1006,7 @@
           ],
           "prompt": "4. A map app suggests the ____ road.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_20_13",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            363.0,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) best  \u2610"
-        },
-        {
-          "id": "choose_20_14",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            363.0,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) longest  \u2610"
-        },
-        {
-          "id": "choose_20_15",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            363.0,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) broken  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_20_16",
@@ -1187,7 +1019,7 @@
           ],
           "prompt": "1. AI can ____ the next word.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_20_17",
@@ -1200,7 +1032,7 @@
           ],
           "prompt": "2. Video apps ____ cartoons we like.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_20_18",
@@ -1213,7 +1045,7 @@
           ],
           "prompt": "3. Face unlock can ____ my face.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_20_19",
@@ -1226,7 +1058,7 @@
           ],
           "prompt": "4. We are AI ____ today!",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_20_20",
@@ -1280,19 +1112,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_21_1",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            110.2,
-            32,
-            28.7
-          ],
-          "label": "A",
-          "optionText": "(a) Recognises faces"
+          "fontSize": 12
         },
         {
           "id": "type_21_2",
@@ -1305,19 +1125,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_21_3",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            141.7,
-            32,
-            28.7
-          ],
-          "label": "B",
-          "optionText": "(b) Guesses words"
+          "fontSize": 12
         },
         {
           "id": "type_21_4",
@@ -1330,19 +1138,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_21_5",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            173.2,
-            32,
-            28.7
-          ],
-          "label": "C",
-          "optionText": "(c) Finds the best road"
+          "fontSize": 12
         },
         {
           "id": "type_21_6",
@@ -1355,19 +1151,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_21_7",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            204.7,
-            32,
-            28.7
-          ],
-          "label": "D",
-          "optionText": "(d) Suggests cartoons"
+          "fontSize": 12
         },
         {
           "id": "type_21_8",
@@ -1375,12 +1159,12 @@
           "bbox": [
             391.6,
             268.7,
-            110.0,
+            110,
             24.7
           ],
           "prompt": "1. What do we call someone who finds clues?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_21_9",
@@ -1393,7 +1177,7 @@
           ],
           "prompt": "2. Which phone feature recognises faces?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_21_10",
@@ -1406,7 +1190,7 @@
           ],
           "prompt": "3. Does a simple calculator use AI?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_21_11",
@@ -1620,7 +1404,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -1748,18 +1532,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_29_0",
-          "type": "choose",
-          "bbox": [
-            472.8,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "A",
-          "optionText": "WORKSHEET:  Meet the Smart Machines  (Part A)"
-        },
-        {
           "id": "type_29_1",
           "type": "typeable",
           "bbox": [
@@ -1770,7 +1542,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "say_29_2",
@@ -1814,18 +1586,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_30_0",
-          "type": "choose",
-          "bbox": [
-            471.6,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "B",
-          "optionText": "WORKSHEET:  Meet the Smart Machines  (Part B)"
-        },
-        {
           "id": "type_30_1",
           "type": "typeable",
           "bbox": [
@@ -1836,46 +1596,46 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_30_2",
           "type": "typeable",
           "bbox": [
             310.6,
-            564.0,
+            564,
             75.2,
-            30.0
+            30
           ],
           "prompt": "Sensors help a robot ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_30_3",
           "type": "typeable",
           "bbox": [
             270.2,
-            620.0,
+            620,
             73.9,
-            30.0
+            30
           ],
           "prompt": "AI helps a robot ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_30_4",
           "type": "typeable",
           "bbox": [
             301.8,
-            676.0,
+            676,
             75.5,
-            30.0
+            30
           ],
           "prompt": "Motors help a robot ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "say_30_5",
@@ -1929,7 +1689,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "say_31_1",
@@ -1983,7 +1743,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_32_1",
@@ -1996,7 +1756,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_32_2",
@@ -2009,7 +1769,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_32_3",
@@ -2063,7 +1823,7 @@
           ],
           "prompt": "Q1. Sensors are like our...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_33_1",
@@ -2076,7 +1836,7 @@
           ],
           "prompt": "Q2. A drone can...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_33_2",
@@ -2089,7 +1849,7 @@
           ],
           "prompt": "Q3. In a smart machine, AI is like the...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_33_3",
@@ -2102,7 +1862,7 @@
           ],
           "prompt": "Q5. Sense, Think, ...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_33_4",
@@ -2115,7 +1875,7 @@
           ],
           "prompt": "MY STARS:  I got ____ / 5.  Colour your stars!",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_33_5",
@@ -2210,7 +1970,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_35_1",
@@ -2223,43 +1983,7 @@
           ],
           "prompt": "1. Smart machines sense, think and ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_35_2",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) act  \u2610"
-        },
-        {
-          "id": "choose_35_3",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) sleep  \u2610"
-        },
-        {
-          "id": "choose_35_4",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) eat  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_35_5",
@@ -2272,43 +1996,7 @@
           ],
           "prompt": "2. A camera works like our ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_35_6",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) ears  \u2610"
-        },
-        {
-          "id": "choose_35_7",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) eyes  \u2610"
-        },
-        {
-          "id": "choose_35_8",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) nose  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_35_9",
@@ -2321,43 +2009,7 @@
           ],
           "prompt": "3. A microphone works like our ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_35_10",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) hands  \u2610"
-        },
-        {
-          "id": "choose_35_11",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) legs  \u2610"
-        },
-        {
-          "id": "choose_35_12",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) ears  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_35_13",
@@ -2370,43 +2022,7 @@
           ],
           "prompt": "4. A robot vacuum turns when it senses a ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_35_14",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) wall  \u2610"
-        },
-        {
-          "id": "choose_35_15",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) song  \u2610"
-        },
-        {
-          "id": "choose_35_16",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) colour  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_35_17",
@@ -2419,7 +2035,7 @@
           ],
           "prompt": "1. Machines use ____ to sense.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_35_18",
@@ -2432,7 +2048,7 @@
           ],
           "prompt": "2. AI helps machines ____ what to do.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_35_19",
@@ -2445,7 +2061,7 @@
           ],
           "prompt": "3. A ____ feels heat.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_35_20",
@@ -2458,7 +2074,7 @@
           ],
           "prompt": "4. An automatic ____ opens when you come.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_35_21",
@@ -2512,19 +2128,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_36_1",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            110.2,
-            32,
-            28.7
-          ],
-          "label": "A",
-          "optionText": "(a) Feels heat"
+          "fontSize": 12
         },
         {
           "id": "type_36_2",
@@ -2537,19 +2141,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_36_3",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            141.7,
-            32,
-            28.7
-          ],
-          "label": "B",
-          "optionText": "(b) Sees like eyes"
+          "fontSize": 12
         },
         {
           "id": "type_36_4",
@@ -2562,19 +2154,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_36_5",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            173.2,
-            32,
-            28.7
-          ],
-          "label": "C",
-          "optionText": "(c) Help the robot move"
+          "fontSize": 12
         },
         {
           "id": "type_36_6",
@@ -2587,32 +2167,20 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_36_7",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            204.7,
-            32,
-            28.7
-          ],
-          "label": "D",
-          "optionText": "(d) Hears like ears"
+          "fontSize": 12
         },
         {
           "id": "type_36_8",
           "type": "typeable",
           "bbox": [
-            320.0,
+            320,
             268.7,
             112.8,
             24.7
           ],
           "prompt": "1. What do machines use to sense?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_36_9",
@@ -2625,7 +2193,7 @@
           ],
           "prompt": "2. What sensor is like our eyes?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_36_10",
@@ -2638,7 +2206,7 @@
           ],
           "prompt": "3. What is the last step: sense, think or act?  ____________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_36_11",
@@ -2692,7 +2260,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_37_1",
@@ -2705,7 +2273,7 @@
           ],
           "prompt": "Q1. AI may be hiding in a...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_37_2",
@@ -2718,7 +2286,7 @@
           ],
           "prompt": "Q2. A flying robot is a...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_37_3",
@@ -2731,7 +2299,7 @@
           ],
           "prompt": "Q3. Sensors help machines...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_37_4",
@@ -2744,7 +2312,7 @@
           ],
           "prompt": "Q4. Junk email is...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_37_5",
@@ -2757,7 +2325,7 @@
           ],
           "prompt": "Q6. Recognise means...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "say_37_6",
@@ -2804,14 +2372,14 @@
           "id": "type_38_0",
           "type": "typeable",
           "bbox": [
-            430.0,
+            430,
             593.3,
             90.8,
             24.7
           ],
           "prompt": "I finished AI DISCOVER!  Teacher's sign: ____________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_38_1",
@@ -3029,7 +2597,7 @@
           ],
           "prompt": "called... the pizza shop",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_43_1",
@@ -3079,7 +2647,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -3207,18 +2775,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_47_0",
-          "type": "choose",
-          "bbox": [
-            373.3,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "A",
-          "optionText": "WORKSHEET:  Say It Clearly!  (Part A)"
-        },
-        {
           "id": "type_47_1",
           "type": "typeable",
           "bbox": [
@@ -3229,46 +2785,46 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_47_2",
           "type": "typeable",
           "bbox": [
             239.2,
-            564.0,
+            564,
             77.6,
-            30.0
+            30
           ],
           "prompt": "Remind me at ________ to study.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_47_3",
           "type": "typeable",
           "bbox": [
             183.5,
-            620.0,
+            620,
             80.5,
-            30.0
+            30
           ],
           "prompt": "Draw a ________ apple.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_47_4",
           "type": "typeable",
           "bbox": [
             287.5,
-            676.0,
+            676,
             73.4,
-            30.0
+            30
           ],
           "prompt": "Say \"thank you\" in ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "say_47_5",
@@ -3312,18 +2868,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_48_0",
-          "type": "choose",
-          "bbox": [
-            372.0,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "B",
-          "optionText": "WORKSHEET:  Say It Clearly!  (Part B)"
-        },
-        {
           "id": "type_48_1",
           "type": "typeable",
           "bbox": [
@@ -3334,7 +2878,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "say_48_2",
@@ -3388,7 +2932,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "say_49_1",
@@ -3442,7 +2986,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_50_1",
@@ -3455,7 +2999,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_50_2",
@@ -3468,7 +3012,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_50_3",
@@ -3522,20 +3066,20 @@
           ],
           "prompt": "Q1. To be understood, speak...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_51_1",
           "type": "typeable",
           "bbox": [
-            230.0,
+            230,
             332.7,
             60,
             26.4
           ],
           "prompt": "Q3. A small fact is called a...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_51_2",
@@ -3548,7 +3092,7 @@
           ],
           "prompt": "Q4. If AI gets it wrong, you...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_51_3",
@@ -3561,7 +3105,7 @@
           ],
           "prompt": "Q5. Exact means...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_51_4",
@@ -3574,7 +3118,7 @@
           ],
           "prompt": "MY STARS:  I got ____ / 5.  Colour your stars!",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_51_5",
@@ -3669,7 +3213,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_53_1",
@@ -3682,43 +3226,7 @@
           ],
           "prompt": "1. AI helpers understand us better when we speak ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_53_2",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) clearly  \u2610"
-        },
-        {
-          "id": "choose_53_3",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) fast and loud  \u2610"
-        },
-        {
-          "id": "choose_53_4",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) in whispers  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_53_5",
@@ -3731,79 +3239,7 @@
           ],
           "prompt": "2. A clear request tells what, where and ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_53_6",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) why not  \u2610"
-        },
-        {
-          "id": "choose_53_7",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) when  \u2610"
-        },
-        {
-          "id": "choose_53_8",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) who cares  \u2610"
-        },
-        {
-          "id": "choose_53_9",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            296.3,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) Play music.  \u2610"
-        },
-        {
-          "id": "choose_53_10",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            296.3,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) Call.  \u2610"
-        },
-        {
-          "id": "choose_53_11",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            283.1,
-            32,
-            26.9
-          ],
-          "label": "C",
-          "optionText": "(c) Play 'Happy Birthday'"
+          "fontSize": 14
         },
         {
           "id": "type_53_12",
@@ -3816,43 +3252,7 @@
           ],
           "prompt": "4. We should talk to AI helpers ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_53_13",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            363.0,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) politely  \u2610"
-        },
-        {
-          "id": "choose_53_14",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            363.0,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) rudely  \u2610"
-        },
-        {
-          "id": "choose_53_15",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            363.0,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) angrily  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_53_16",
@@ -3865,7 +3265,7 @@
           ],
           "prompt": "1. Use full and ____ words.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_53_17",
@@ -3878,7 +3278,7 @@
           ],
           "prompt": "2. Tell ____, where and when.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_53_18",
@@ -3891,7 +3291,7 @@
           ],
           "prompt": "3. Speak slowly and ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_53_19",
@@ -3904,7 +3304,7 @@
           ],
           "prompt": "4. A clear request saves ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_53_20",
@@ -3958,19 +3358,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_54_1",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            110.2,
-            32,
-            28.7
-          ],
-          "label": "A",
-          "optionText": "(a) At 5 o'clock"
+          "fontSize": 12
         },
         {
           "id": "type_54_2",
@@ -3983,19 +3371,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_54_3",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            141.7,
-            32,
-            28.7
-          ],
-          "label": "B",
-          "optionText": "(b) Water the plants"
+          "fontSize": 12
         },
         {
           "id": "type_54_4",
@@ -4008,19 +3384,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_54_5",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            173.2,
-            32,
-            28.7
-          ],
-          "label": "C",
-          "optionText": "(c) Softly"
+          "fontSize": 12
         },
         {
           "id": "type_54_6",
@@ -4033,19 +3397,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_54_7",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            204.7,
-            32,
-            28.7
-          ],
-          "label": "D",
-          "optionText": "(d) In the living room"
+          "fontSize": 12
         },
         {
           "id": "type_54_8",
@@ -4058,7 +3410,7 @@
           ],
           "prompt": "1. Which word tells the time in a request?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_54_9",
@@ -4071,7 +3423,7 @@
           ],
           "prompt": "2. Which word tells the place?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_54_10",
@@ -4084,7 +3436,7 @@
           ],
           "prompt": "3. How should we speak to AI: clearly or unclearly?  _______",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_54_11",
@@ -4254,14 +3606,14 @@
           "id": "type_58_0",
           "type": "typeable",
           "bbox": [
-            377.0,
+            377,
             453.2,
             60,
             24.7
           ],
           "prompt": "Bolt followed step by step... and bumped into a",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_58_1",
@@ -4274,7 +3626,7 @@
           ],
           "prompt": "forward 2, dig, dig, dig...",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_58_2",
@@ -4324,7 +3676,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -4452,18 +3804,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_62_0",
-          "type": "choose",
-          "bbox": [
-            432.2,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "A",
-          "optionText": "WORKSHEET:  Mission: Instructions  (Part A)"
-        },
-        {
           "id": "type_62_1",
           "type": "typeable",
           "bbox": [
@@ -4474,7 +3814,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_62_2",
@@ -4487,7 +3827,7 @@
           ],
           "prompt": "I drew ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_62_3",
@@ -4531,18 +3871,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_63_0",
-          "type": "choose",
-          "bbox": [
-            430.9,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "B",
-          "optionText": "WORKSHEET:  Mission: Instructions  (Part B)"
-        },
-        {
           "id": "type_63_1",
           "type": "typeable",
           "bbox": [
@@ -4553,7 +3881,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "say_63_2",
@@ -4607,7 +3935,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "say_64_1",
@@ -4661,7 +3989,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_65_1",
@@ -4674,7 +4002,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_65_2",
@@ -4687,7 +4015,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_65_3",
@@ -4734,14 +4062,14 @@
           "id": "type_66_0",
           "type": "typeable",
           "bbox": [
-            307.0,
+            307,
             115.7,
             60,
             26.4
           ],
           "prompt": "Q1. Instructions for a computer are a...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_66_1",
@@ -4754,7 +4082,7 @@
           ],
           "prompt": "Q2. A mistake in a program is a...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_66_2",
@@ -4767,7 +4095,7 @@
           ],
           "prompt": "Q4. Computers follow steps...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_66_3",
@@ -4780,7 +4108,7 @@
           ],
           "prompt": "Q5. Fixing a bug is called...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_66_4",
@@ -4793,7 +4121,7 @@
           ],
           "prompt": "MY STARS:  I got ____ / 5.  Colour your stars!",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_66_5",
@@ -4888,7 +4216,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_68_1",
@@ -4901,43 +4229,7 @@
           ],
           "prompt": "1. Instructions are ____ commands.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_68_2",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) step-by-step  \u2610"
-        },
-        {
-          "id": "choose_68_3",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) secret  \u2610"
-        },
-        {
-          "id": "choose_68_4",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) silly  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_68_5",
@@ -4950,43 +4242,7 @@
           ],
           "prompt": "2. A full set of instructions for a computer is a ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_68_6",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) picture  \u2610"
-        },
-        {
-          "id": "choose_68_7",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) program  \u2610"
-        },
-        {
-          "id": "choose_68_8",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) pencil  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_68_9",
@@ -4999,43 +4255,7 @@
           ],
           "prompt": "3. A mistake in a program is called a ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_68_10",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) butterfly  \u2610"
-        },
-        {
-          "id": "choose_68_11",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) ball  \u2610"
-        },
-        {
-          "id": "choose_68_12",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) bug  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_68_13",
@@ -5048,43 +4268,7 @@
           ],
           "prompt": "4. Fixing a mistake is called ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_68_14",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) debugging  \u2610"
-        },
-        {
-          "id": "choose_68_15",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) dancing  \u2610"
-        },
-        {
-          "id": "choose_68_16",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) drawing  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_68_17",
@@ -5097,7 +4281,7 @@
           ],
           "prompt": "1. Computers follow instructions ____ by one.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_68_18",
@@ -5110,7 +4294,7 @@
           ],
           "prompt": "2. A ____ is a mistake in a program.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_68_19",
@@ -5123,7 +4307,7 @@
           ],
           "prompt": "3. Fixing bugs is ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_68_20",
@@ -5136,7 +4320,7 @@
           ],
           "prompt": "4. People who write programs are ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_68_21",
@@ -5190,19 +4374,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_69_1",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            110.2,
-            32,
-            28.7
-          ],
-          "label": "A",
-          "optionText": "(a) A mistake"
+          "fontSize": 12
         },
         {
           "id": "type_69_2",
@@ -5215,19 +4387,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_69_3",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            141.7,
-            32,
-            28.7
-          ],
-          "label": "B",
-          "optionText": "(b) One step command"
+          "fontSize": 12
         },
         {
           "id": "type_69_4",
@@ -5240,19 +4400,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_69_5",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            173.2,
-            32,
-            28.7
-          ],
-          "label": "C",
-          "optionText": "(c) Fix the mistake"
+          "fontSize": 12
         },
         {
           "id": "type_69_6",
@@ -5265,19 +4413,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_69_7",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            204.7,
-            32,
-            28.7
-          ],
-          "label": "D",
-          "optionText": "(d) Full set of steps"
+          "fontSize": 12
         },
         {
           "id": "type_69_8",
@@ -5290,7 +4426,7 @@
           ],
           "prompt": "1. What is a mistake in a program called?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_69_9",
@@ -5303,7 +4439,7 @@
           ],
           "prompt": "2. What is a set of computer instructions called?  _________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_69_10",
@@ -5316,7 +4452,7 @@
           ],
           "prompt": "3. Who writes programs?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_69_11",
@@ -5370,7 +4506,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_70_1",
@@ -5383,20 +4519,20 @@
           ],
           "prompt": "Q2. A mistake in code is a...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_70_2",
           "type": "typeable",
           "bbox": [
-            240.0,
+            240,
             549.7,
             60,
             26.4
           ],
           "prompt": "Q5. Details make messages...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_70_3",
@@ -5409,7 +4545,7 @@
           ],
           "prompt": "Q6. Fixing a bug is...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "say_70_4",
@@ -5458,12 +4594,12 @@
           "bbox": [
             427.7,
             593.3,
-            92.0,
+            92,
             24.7
           ],
           "prompt": "I finished AI CONNECT!  Teacher's sign: ____________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_71_1",
@@ -5677,7 +4813,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -5729,7 +4865,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -5857,18 +4993,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_80_0",
-          "type": "choose",
-          "bbox": [
-            381.0,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "A",
-          "optionText": "WORKSHEET:  AI in My Mobile  (Part A)"
-        },
-        {
           "id": "type_80_1",
           "type": "typeable",
           "bbox": [
@@ -5879,7 +5003,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_80_2",
@@ -5892,7 +5016,7 @@
           ],
           "prompt": "My app's name is ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_80_3",
@@ -5936,18 +5060,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_81_0",
-          "type": "choose",
-          "bbox": [
-            379.7,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "B",
-          "optionText": "WORKSHEET:  AI in My Mobile  (Part B)"
-        },
-        {
           "id": "type_81_1",
           "type": "typeable",
           "bbox": [
@@ -5958,46 +5070,46 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_81_2",
           "type": "typeable",
           "bbox": [
             162.6,
-            564.0,
+            564,
             79.3,
-            30.0
+            30
           ],
           "prompt": "Face ________ opens the phone.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_81_3",
           "type": "typeable",
           "bbox": [
             291.5,
-            620.0,
+            620,
             75.1,
-            30.0
+            30
           ],
           "prompt": "I can type with my ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_81_4",
           "type": "typeable",
           "bbox": [
-            224.0,
-            676.0,
+            224,
+            676,
             73.9,
-            30.0
+            30
           ],
           "prompt": "The app can ________ English to Tamil.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "say_81_5",
@@ -6051,7 +5163,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "say_82_1",
@@ -6105,7 +5217,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_83_1",
@@ -6118,7 +5230,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_83_2",
@@ -6131,7 +5243,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_83_3",
@@ -6185,7 +5297,7 @@
           ],
           "prompt": "Q2. To change English to Tamil, use...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_84_1",
@@ -6198,7 +5310,7 @@
           ],
           "prompt": "Q3. Use a phone with...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_84_2",
@@ -6211,7 +5323,7 @@
           ],
           "prompt": "Q4. Maps help us...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_84_3",
@@ -6224,7 +5336,7 @@
           ],
           "prompt": "Q5. After using a phone, we should...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_84_4",
@@ -6237,7 +5349,7 @@
           ],
           "prompt": "MY STARS:  I got ____ / 5.  Colour your stars!",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_84_5",
@@ -6332,7 +5444,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_86_1",
@@ -6345,43 +5457,7 @@
           ],
           "prompt": "1. A mobile phone has many ____ helpers.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_86_2",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) AI  \u2610"
-        },
-        {
-          "id": "choose_86_3",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) paper  \u2610"
-        },
-        {
-          "id": "choose_86_4",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) wooden  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_86_5",
@@ -6394,43 +5470,7 @@
           ],
           "prompt": "2. Map apps help us find ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_86_6",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) toys  \u2610"
-        },
-        {
-          "id": "choose_86_7",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) places  \u2610"
-        },
-        {
-          "id": "choose_86_8",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) food  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_86_9",
@@ -6443,43 +5483,7 @@
           ],
           "prompt": "3. A translation app changes one ____ into another.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_86_10",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) colour  \u2610"
-        },
-        {
-          "id": "choose_86_11",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) picture  \u2610"
-        },
-        {
-          "id": "choose_86_12",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) language  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_86_13",
@@ -6492,43 +5496,7 @@
           ],
           "prompt": "4. We should use a phone for a ____ time.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_86_14",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) short  \u2610"
-        },
-        {
-          "id": "choose_86_15",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) very long  \u2610"
-        },
-        {
-          "id": "choose_86_16",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) whole day  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_86_17",
@@ -6541,7 +5509,7 @@
           ],
           "prompt": "1. The ____ makes photos bright.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_86_18",
@@ -6554,7 +5522,7 @@
           ],
           "prompt": "2. The keyboard fixes ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_86_19",
@@ -6567,7 +5535,7 @@
           ],
           "prompt": "3. Use a phone with an ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_86_20",
@@ -6580,7 +5548,7 @@
           ],
           "prompt": "4. Our eyes need ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_86_21",
@@ -6634,19 +5602,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_87_1",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            110.2,
-            32,
-            28.7
-          ],
-          "label": "A",
-          "optionText": "(a) Fixes spelling"
+          "fontSize": 12
         },
         {
           "id": "type_87_2",
@@ -6659,19 +5615,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_87_3",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            141.7,
-            32,
-            28.7
-          ],
-          "label": "B",
-          "optionText": "(b) Better photos"
+          "fontSize": 12
         },
         {
           "id": "type_87_4",
@@ -6684,19 +5628,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_87_5",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            173.2,
-            32,
-            28.7
-          ],
-          "label": "C",
-          "optionText": "(c) Changes language"
+          "fontSize": 12
         },
         {
           "id": "type_87_6",
@@ -6709,19 +5641,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_87_7",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            204.7,
-            32,
-            28.7
-          ],
-          "label": "D",
-          "optionText": "(d) Finds places"
+          "fontSize": 12
         },
         {
           "id": "type_87_8",
@@ -6734,7 +5654,7 @@
           ],
           "prompt": "1. Which app finds places?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_87_9",
@@ -6747,7 +5667,7 @@
           ],
           "prompt": "2. Which app changes languages?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_87_10",
@@ -6760,7 +5680,7 @@
           ],
           "prompt": "3. Who should be with us when we use a phone?  _____________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_87_11",
@@ -6974,7 +5894,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -7102,18 +6022,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_95_0",
-          "type": "choose",
-          "bbox": [
-            378.0,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "A",
-          "optionText": "WORKSHEET:  AI on the Move  (Part A)"
-        },
-        {
           "id": "type_95_1",
           "type": "typeable",
           "bbox": [
@@ -7124,46 +6032,46 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_95_2",
           "type": "typeable",
           "bbox": [
             286.9,
-            564.0,
+            564,
             73.2,
-            30.0
+            30
           ],
           "prompt": "AI helps cars stay ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_95_3",
           "type": "typeable",
           "bbox": [
             296.7,
-            620.0,
+            620,
             77.3,
-            30.0
+            30
           ],
           "prompt": "Maps help us avoid ________ jams.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_95_4",
           "type": "typeable",
           "bbox": [
             323.4,
-            676.0,
+            676,
             76.5,
-            30.0
+            30
           ],
           "prompt": "Smart transport saves ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "say_95_5",
@@ -7207,18 +6115,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_96_0",
-          "type": "choose",
-          "bbox": [
-            376.8,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "B",
-          "optionText": "WORKSHEET:  AI on the Move  (Part B)"
-        },
-        {
           "id": "type_96_1",
           "type": "typeable",
           "bbox": [
@@ -7229,7 +6125,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "say_96_2",
@@ -7283,7 +6179,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "say_97_1",
@@ -7337,7 +6233,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_98_1",
@@ -7350,7 +6246,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_98_2",
@@ -7363,7 +6259,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_98_3",
@@ -7417,7 +6313,7 @@
           ],
           "prompt": "Q2. Maps help us avoid...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_99_1",
@@ -7430,7 +6326,7 @@
           ],
           "prompt": "Q3. Planes can use...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_99_2",
@@ -7443,7 +6339,7 @@
           ],
           "prompt": "Q4. Smart cars see with...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_99_3",
@@ -7456,7 +6352,7 @@
           ],
           "prompt": "Q5. Smart transport saves...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_99_4",
@@ -7469,7 +6365,7 @@
           ],
           "prompt": "MY STARS:  I got ____ / 5.  Colour your stars!",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_99_5",
@@ -7564,7 +6460,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_101_1",
@@ -7577,43 +6473,7 @@
           ],
           "prompt": "1. AI helps vehicles move ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_101_2",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) safely  \u2610"
-        },
-        {
-          "id": "choose_101_3",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) slowly always  \u2610"
-        },
-        {
-          "id": "choose_101_4",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) backwards  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_101_5",
@@ -7626,43 +6486,7 @@
           ],
           "prompt": "2. Cars find the way using GPS and ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_101_6",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) sweets  \u2610"
-        },
-        {
-          "id": "choose_101_7",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) maps  \u2610"
-        },
-        {
-          "id": "choose_101_8",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) music  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_101_9",
@@ -7675,43 +6499,7 @@
           ],
           "prompt": "3. Self-driving test cars watch the road with ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_101_10",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) spoons  \u2610"
-        },
-        {
-          "id": "choose_101_11",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) flags  \u2610"
-        },
-        {
-          "id": "choose_101_12",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) cameras  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_101_13",
@@ -7724,43 +6512,7 @@
           ],
           "prompt": "4. Smart transport saves time and ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_101_14",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) fuel  \u2610"
-        },
-        {
-          "id": "choose_101_15",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) toys  \u2610"
-        },
-        {
-          "id": "choose_101_16",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) shoes  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_101_17",
@@ -7773,20 +6525,20 @@
           ],
           "prompt": "1. A ____ light tells cars when to stop.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_101_18",
           "type": "typeable",
           "bbox": [
-            58.0,
+            58,
             454.7,
             60,
             24.7
           ],
           "prompt": "2. ____ help pilots fly planes.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_101_19",
@@ -7799,7 +6551,7 @@
           ],
           "prompt": "3. AI checks train ____ for problems.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_101_20",
@@ -7812,7 +6564,7 @@
           ],
           "prompt": "4. Smart transport keeps the ____ cleaner.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_101_21",
@@ -7866,19 +6618,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_102_1",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            110.2,
-            32,
-            28.7
-          ],
-          "label": "A",
-          "optionText": "(a) Autopilot helps pilots"
+          "fontSize": 12
         },
         {
           "id": "type_102_2",
@@ -7891,19 +6631,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_102_3",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            141.7,
-            32,
-            28.7
-          ],
-          "label": "B",
-          "optionText": "(b) Finds roads with GPS"
+          "fontSize": 12
         },
         {
           "id": "type_102_4",
@@ -7916,19 +6644,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_102_5",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            173.2,
-            32,
-            28.7
-          ],
-          "label": "C",
-          "optionText": "(c) Controls crossings"
+          "fontSize": 12
         },
         {
           "id": "type_102_6",
@@ -7941,32 +6657,20 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_102_7",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            204.7,
-            32,
-            28.7
-          ],
-          "label": "D",
-          "optionText": "(d) Tracks checked by AI"
+          "fontSize": 12
         },
         {
           "id": "type_102_8",
           "type": "typeable",
           "bbox": [
-            335.0,
+            335,
             268.7,
             106.6,
             24.7
           ],
           "prompt": "1. What helps a car know where it is?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_102_9",
@@ -7979,7 +6683,7 @@
           ],
           "prompt": "2. Who is in charge of a plane?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_102_10",
@@ -7987,12 +6691,12 @@
           "bbox": [
             326.1,
             316.7,
-            112.0,
+            112,
             24.7
           ],
           "prompt": "3. What does smart transport save?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_102_11",
@@ -8046,7 +6750,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_103_1",
@@ -8059,7 +6763,7 @@
           ],
           "prompt": "Q2. Planes can fly with...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_103_2",
@@ -8072,7 +6776,7 @@
           ],
           "prompt": "Q3. Maps help us avoid...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_103_3",
@@ -8085,7 +6789,7 @@
           ],
           "prompt": "Q4. Use a phone with an...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_103_4",
@@ -8098,7 +6802,7 @@
           ],
           "prompt": "Q5. The way to go is the...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_103_5",
@@ -8111,7 +6815,7 @@
           ],
           "prompt": "Q6. Translate changes the...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "say_103_6",
@@ -8165,7 +6869,7 @@
           ],
           "prompt": "I finished AI SOLVE!  Teacher's sign: ____________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_104_1",
@@ -8420,7 +7124,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -8548,18 +7252,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_113_0",
-          "type": "choose",
-          "bbox": [
-            389.4,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "A",
-          "optionText": "WORKSHEET:  Future Job Hunt  (Part A)"
-        },
-        {
           "id": "type_113_1",
           "type": "typeable",
           "bbox": [
@@ -8570,7 +7262,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_113_2",
@@ -8583,7 +7275,7 @@
           ],
           "prompt": "My future job is called ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_113_3",
@@ -8627,18 +7319,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_114_0",
-          "type": "choose",
-          "bbox": [
-            388.1,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "B",
-          "optionText": "WORKSHEET:  Future Job Hunt  (Part B)"
-        },
-        {
           "id": "type_114_1",
           "type": "typeable",
           "bbox": [
@@ -8649,46 +7329,46 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_114_2",
           "type": "typeable",
           "bbox": [
             336.9,
-            480.0,
+            480,
             74.6,
-            30.0
+            30
           ],
           "prompt": "The work I choose is my ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_114_3",
           "type": "typeable",
           "bbox": [
             300.8,
-            536.0,
+            536,
             75.1,
-            30.0
+            30
           ],
           "prompt": "Working together is ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_114_4",
           "type": "typeable",
           "bbox": [
-            320.0,
-            592.0,
+            320,
+            592,
             75.2,
-            30.0
+            30
           ],
           "prompt": "The time ahead is the ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "say_114_5",
@@ -8742,7 +7422,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "say_115_1",
@@ -8796,7 +7476,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_116_1",
@@ -8809,7 +7489,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_116_2",
@@ -8822,7 +7502,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_116_3",
@@ -8869,14 +7549,14 @@
           "id": "type_117_0",
           "type": "typeable",
           "bbox": [
-            126.0,
+            126,
             224.2,
             60,
             26.4
           ],
           "prompt": "Q2. AI is a ___ for workers.",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_117_1",
@@ -8889,7 +7569,7 @@
           ],
           "prompt": "Q3. Career means...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_117_2",
@@ -8902,7 +7582,7 @@
           ],
           "prompt": "Q5. Future workers should be...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_117_3",
@@ -8915,7 +7595,7 @@
           ],
           "prompt": "MY STARS:  I got ____ / 5.  Colour your stars!",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_117_4",
@@ -9010,7 +7690,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_119_1",
@@ -9023,92 +7703,20 @@
           ],
           "prompt": "1. In the future, many jobs will work with robots and ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_119_2",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) AI  \u2610"
-        },
-        {
-          "id": "choose_119_3",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) dinosaurs  \u2610"
-        },
-        {
-          "id": "choose_119_4",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) ghosts  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_119_5",
           "type": "typeable",
           "bbox": [
-            188.0,
+            188,
             202.2,
             60,
             24.7
           ],
           "prompt": "2. A drone pilot flies ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_119_6",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) kites  \u2610"
-        },
-        {
-          "id": "choose_119_7",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) drones  \u2610"
-        },
-        {
-          "id": "choose_119_8",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) birds  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_119_9",
@@ -9121,43 +7729,7 @@
           ],
           "prompt": "3. Robots and people will work as a ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_119_10",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) fight  \u2610"
-        },
-        {
-          "id": "choose_119_11",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) secret  \u2610"
-        },
-        {
-          "id": "choose_119_12",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) team  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_119_13",
@@ -9170,43 +7742,7 @@
           ],
           "prompt": "4. To get future jobs, we should be ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_119_14",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) curious  \u2610"
-        },
-        {
-          "id": "choose_119_15",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) lazy  \u2610"
-        },
-        {
-          "id": "choose_119_16",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) rude  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_119_17",
@@ -9219,7 +7755,7 @@
           ],
           "prompt": "1. Space ____ may grow plants on Mars.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_119_18",
@@ -9232,7 +7768,7 @@
           ],
           "prompt": "2. A robot ____ teaches robots.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_119_19",
@@ -9245,7 +7781,7 @@
           ],
           "prompt": "3. Doctors will use AI to find illness ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_119_20",
@@ -9258,7 +7794,7 @@
           ],
           "prompt": "4. Keep ____ new things.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_119_21",
@@ -9312,19 +7848,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_120_1",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            110.2,
-            32,
-            28.7
-          ],
-          "label": "A",
-          "optionText": "(a) Creates games"
+          "fontSize": 12
         },
         {
           "id": "type_120_2",
@@ -9337,19 +7861,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_120_3",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            141.7,
-            32,
-            28.7
-          ],
-          "label": "B",
-          "optionText": "(b) Flies drones"
+          "fontSize": 12
         },
         {
           "id": "type_120_4",
@@ -9362,19 +7874,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_120_5",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            173.2,
-            32,
-            28.7
-          ],
-          "label": "C",
-          "optionText": "(c) Grows plants in space"
+          "fontSize": 12
         },
         {
           "id": "type_120_6",
@@ -9387,19 +7887,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_120_7",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            204.7,
-            32,
-            28.7
-          ],
-          "label": "D",
-          "optionText": "(d) Teaches robots"
+          "fontSize": 12
         },
         {
           "id": "type_120_8",
@@ -9412,7 +7900,7 @@
           ],
           "prompt": "1. Who flies drones?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_120_9",
@@ -9425,7 +7913,7 @@
           ],
           "prompt": "2. Who teaches robots?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_120_10",
@@ -9438,7 +7926,7 @@
           ],
           "prompt": "3. What should curious kids keep doing?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_120_11",
@@ -9611,7 +8099,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -9663,7 +8151,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -9756,7 +8244,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -9802,18 +8290,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_128_0",
-          "type": "choose",
-          "bbox": [
-            442.1,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "A",
-          "optionText": "WORKSHEET:  My Technology Talent  (Part A)"
-        },
-        {
           "id": "type_128_1",
           "type": "typeable",
           "bbox": [
@@ -9824,46 +8300,46 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_128_2",
           "type": "typeable",
           "bbox": [
             390.4,
-            564.0,
+            564,
             76.5,
-            30.0
+            30
           ],
           "prompt": "Something I am good at is my ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_128_3",
           "type": "typeable",
           "bbox": [
             309.4,
-            620.0,
+            620,
             71.4,
-            30.0
+            30
           ],
           "prompt": "To get better, I must ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_128_4",
           "type": "typeable",
           "bbox": [
             266.7,
-            676.0,
+            676,
             72.3,
-            30.0
+            30
           ],
           "prompt": "Typing fast is a ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "say_128_5",
@@ -9907,18 +8383,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_129_0",
-          "type": "choose",
-          "bbox": [
-            440.8,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "B",
-          "optionText": "WORKSHEET:  My Technology Talent  (Part B)"
-        },
-        {
           "id": "type_129_1",
           "type": "typeable",
           "bbox": [
@@ -9929,7 +8393,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_129_2",
@@ -9942,7 +8406,7 @@
           ],
           "prompt": "My talent is ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_129_3",
@@ -9996,7 +8460,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "say_130_1",
@@ -10050,7 +8514,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_131_1",
@@ -10063,7 +8527,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_131_2",
@@ -10076,7 +8540,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_131_3",
@@ -10130,7 +8594,7 @@
           ],
           "prompt": "Q1. Talent means...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_132_1",
@@ -10143,7 +8607,7 @@
           ],
           "prompt": "Q2. Talents grow with...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_132_2",
@@ -10156,7 +8620,7 @@
           ],
           "prompt": "Q3. An artist can use technology to...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_132_3",
@@ -10169,7 +8633,7 @@
           ],
           "prompt": "Q4. Builder kids can make...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_132_4",
@@ -10182,7 +8646,7 @@
           ],
           "prompt": "Q5. Talent + technology = ...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_132_5",
@@ -10195,7 +8659,7 @@
           ],
           "prompt": "MY STARS:  I got ____ / 5.  Colour your stars!",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_132_6",
@@ -10290,7 +8754,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_134_1",
@@ -10303,43 +8767,7 @@
           ],
           "prompt": "1. Everyone has a special ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_134_2",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) talent  \u2610"
-        },
-        {
-          "id": "choose_134_3",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) robot  \u2610"
-        },
-        {
-          "id": "choose_134_4",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) car  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_134_5",
@@ -10352,43 +8780,7 @@
           ],
           "prompt": "2. A child who loves building can design ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_134_6",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) songs  \u2610"
-        },
-        {
-          "id": "choose_134_7",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) bridges  \u2610"
-        },
-        {
-          "id": "choose_134_8",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) jokes  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_134_9",
@@ -10401,92 +8793,20 @@
           ],
           "prompt": "3. Puzzle lovers can become great ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_134_10",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) singers  \u2610"
-        },
-        {
-          "id": "choose_134_11",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) dancers  \u2610"
-        },
-        {
-          "id": "choose_134_12",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) coders  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_134_13",
           "type": "typeable",
           "bbox": [
-            276.0,
+            276,
             316.2,
             60,
             24.7
           ],
           "prompt": "4. Talent plus technology equals ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_134_14",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) superpower  \u2610"
-        },
-        {
-          "id": "choose_134_15",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) nothing  \u2610"
-        },
-        {
-          "id": "choose_134_16",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) trouble  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_134_17",
@@ -10499,7 +8819,7 @@
           ],
           "prompt": "1. Meera's talent is ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_134_18",
@@ -10512,7 +8832,7 @@
           ],
           "prompt": "2. Arjun's talent is ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_134_19",
@@ -10525,7 +8845,7 @@
           ],
           "prompt": "3. We must ____ our talents.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_134_20",
@@ -10538,7 +8858,7 @@
           ],
           "prompt": "4. Helpers can use technology in ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_134_21",
@@ -10592,19 +8912,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_135_1",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            110.2,
-            32,
-            28.7
-          ],
-          "label": "A",
-          "optionText": "(a) Write programs"
+          "fontSize": 12
         },
         {
           "id": "type_135_2",
@@ -10617,19 +8925,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_135_3",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            141.7,
-            32,
-            28.7
-          ],
-          "label": "B",
-          "optionText": "(b) Design cartoons"
+          "fontSize": 12
         },
         {
           "id": "type_135_4",
@@ -10642,19 +8938,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_135_5",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            173.2,
-            32,
-            28.7
-          ],
-          "label": "C",
-          "optionText": "(c) Work in hospitals"
+          "fontSize": 12
         },
         {
           "id": "type_135_6",
@@ -10667,19 +8951,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_135_7",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            204.7,
-            32,
-            28.7
-          ],
-          "label": "D",
-          "optionText": "(d) Make robots"
+          "fontSize": 12
         },
         {
           "id": "type_135_8",
@@ -10692,7 +8964,7 @@
           ],
           "prompt": "1. What does practice make our talent?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_135_9",
@@ -10705,7 +8977,7 @@
           ],
           "prompt": "2. What can puzzle lovers become?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_135_10",
@@ -10718,7 +8990,7 @@
           ],
           "prompt": "3. Talent plus technology equals?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_135_11",
@@ -10772,7 +9044,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_136_1",
@@ -10785,7 +9057,7 @@
           ],
           "prompt": "Q2. Talents grow with...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_136_2",
@@ -10798,7 +9070,7 @@
           ],
           "prompt": "Q3. Work we choose is a...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_136_3",
@@ -10811,7 +9083,7 @@
           ],
           "prompt": "Q4. AI for workers is a...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_136_4",
@@ -10824,7 +9096,7 @@
           ],
           "prompt": "Q6. Future workers are...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "say_136_5",
@@ -10873,12 +9145,12 @@
           "bbox": [
             411.8,
             593.3,
-            88.0,
+            88,
             24.7
           ],
           "prompt": "I finished AI RISE!  Teacher's sign: ____________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_137_1",
@@ -11133,7 +9405,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -11261,18 +9533,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_146_0",
-          "type": "choose",
-          "bbox": [
-            375.7,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "A",
-          "optionText": "WORKSHEET:  Create a Story  (Part A)"
-        },
-        {
           "id": "type_146_1",
           "type": "typeable",
           "bbox": [
@@ -11283,7 +9543,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_146_2",
@@ -11296,7 +9556,7 @@
           ],
           "prompt": "My character's name is ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_146_3",
@@ -11340,18 +9600,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_147_0",
-          "type": "choose",
-          "bbox": [
-            374.4,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "B",
-          "optionText": "WORKSHEET:  Create a Story  (Part B)"
-        },
-        {
           "id": "type_147_1",
           "type": "typeable",
           "bbox": [
@@ -11362,46 +9610,46 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_147_2",
           "type": "typeable",
           "bbox": [
             273.3,
-            510.0,
+            510,
             71.2,
-            30.0
+            30
           ],
           "prompt": "The writer is the ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_147_3",
           "type": "typeable",
           "bbox": [
             346.8,
-            566.0,
+            566,
             69.3,
-            30.0
+            30
           ],
           "prompt": "Who is in the story is the ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_147_4",
           "type": "typeable",
           "bbox": [
             336.8,
-            622.0,
+            622,
             74.6,
-            30.0
+            30
           ],
           "prompt": "Where it happens is the ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "say_147_5",
@@ -11455,7 +9703,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "say_148_1",
@@ -11509,7 +9757,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_149_1",
@@ -11522,7 +9770,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_149_2",
@@ -11535,7 +9783,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_149_3",
@@ -11589,7 +9837,7 @@
           ],
           "prompt": "Q2. The writer of a story is the...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_150_1",
@@ -11602,7 +9850,7 @@
           ],
           "prompt": "Q3. Where a story happens is the...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_150_2",
@@ -11615,7 +9863,7 @@
           ],
           "prompt": "MY STARS:  I got ____ / 5.  Colour your stars!",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_150_3",
@@ -11710,7 +9958,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_152_1",
@@ -11723,43 +9971,7 @@
           ],
           "prompt": "1. A story has characters, a place and a ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_152_2",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) problem  \u2610"
-        },
-        {
-          "id": "choose_152_3",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) pencil  \u2610"
-        },
-        {
-          "id": "choose_152_4",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) price  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_152_5",
@@ -11772,79 +9984,7 @@
           ],
           "prompt": "2. The place in a story is called the ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_152_6",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) ending  \u2610"
-        },
-        {
-          "id": "choose_152_7",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) setting  \u2610"
-        },
-        {
-          "id": "choose_152_8",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) title  \u2610"
-        },
-        {
-          "id": "choose_152_9",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) The AI tool  \u2610"
-        },
-        {
-          "id": "choose_152_10",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) The computer  \u2610"
-        },
-        {
-          "id": "choose_152_11",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) You  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_152_12",
@@ -11857,56 +9997,20 @@
           ],
           "prompt": "4. AI tools can give story ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_152_13",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) ideas  \u2610"
-        },
-        {
-          "id": "choose_152_14",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) feelings  \u2610"
-        },
-        {
-          "id": "choose_152_15",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) homework marks  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_152_16",
           "type": "typeable",
           "bbox": [
-            284.0,
+            284,
             430.7,
             60,
             24.7
           ],
           "prompt": "1. People or animals in a story are ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_152_17",
@@ -11919,7 +10023,7 @@
           ],
           "prompt": "2. The ____ makes a story exciting.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_152_18",
@@ -11932,7 +10036,7 @@
           ],
           "prompt": "3. A story has a beginning, middle and ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_152_19",
@@ -11945,7 +10049,7 @@
           ],
           "prompt": "4. I am the ____ of my story.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_152_20",
@@ -11999,19 +10103,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_153_1",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            110.2,
-            32,
-            28.7
-          ],
-          "label": "A",
-          "optionText": "(a) What goes wrong"
+          "fontSize": 12
         },
         {
           "id": "type_153_2",
@@ -12024,19 +10116,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_153_3",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            141.7,
-            32,
-            28.7
-          ],
-          "label": "B",
-          "optionText": "(b) Who is in the story"
+          "fontSize": 12
         },
         {
           "id": "type_153_4",
@@ -12049,19 +10129,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_153_5",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            173.2,
-            32,
-            28.7
-          ],
-          "label": "C",
-          "optionText": "(c) How it is solved"
+          "fontSize": 12
         },
         {
           "id": "type_153_6",
@@ -12074,19 +10142,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_153_7",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            204.7,
-            32,
-            28.7
-          ],
-          "label": "D",
-          "optionText": "(d) Where it happens"
+          "fontSize": 12
         },
         {
           "id": "type_153_8",
@@ -12099,7 +10155,7 @@
           ],
           "prompt": "1. What is the place in a story called?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_153_9",
@@ -12107,12 +10163,12 @@
           "bbox": [
             228.4,
             292.7,
-            111.0,
+            111,
             24.7
           ],
           "prompt": "2. Who writes a story?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_153_10",
@@ -12125,7 +10181,7 @@
           ],
           "prompt": "3. What makes a story exciting?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_153_11",
@@ -12175,7 +10231,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -12227,7 +10283,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -12320,7 +10376,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -12372,7 +10428,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -12424,7 +10480,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -12476,7 +10532,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -12522,18 +10578,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_161_0",
-          "type": "choose",
-          "bbox": [
-            374.4,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "A",
-          "optionText": "WORKSHEET:  Design with AI  (Part A)"
-        },
-        {
           "id": "type_161_1",
           "type": "typeable",
           "bbox": [
@@ -12544,20 +10588,20 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_161_2",
           "type": "typeable",
           "bbox": [
-            227.0,
+            227,
             654.7,
             112.6,
             24.7
           ],
           "prompt": "I used these colours: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_161_3",
@@ -12601,18 +10645,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_162_0",
-          "type": "choose",
-          "bbox": [
-            373.1,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "B",
-          "optionText": "WORKSHEET:  Design with AI  (Part B)"
-        },
-        {
           "id": "type_162_1",
           "type": "typeable",
           "bbox": [
@@ -12623,7 +10655,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_162_2",
@@ -12636,7 +10668,7 @@
           ],
           "prompt": "I drew ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_162_3",
@@ -12690,7 +10722,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "say_163_1",
@@ -12744,7 +10776,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_164_1",
@@ -12757,7 +10789,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_164_2",
@@ -12770,7 +10802,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_164_3",
@@ -12824,7 +10856,7 @@
           ],
           "prompt": "Q1. Design is planning how things...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_165_1",
@@ -12837,7 +10869,7 @@
           ],
           "prompt": "Q2. Shapes that repeat make a...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_165_2",
@@ -12850,7 +10882,7 @@
           ],
           "prompt": "Q3. A quick drawing is a...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_165_3",
@@ -12863,7 +10895,7 @@
           ],
           "prompt": "Q4. A good design is...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_165_4",
@@ -12876,7 +10908,7 @@
           ],
           "prompt": "Q5. Designers get ideas from...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_165_5",
@@ -12889,7 +10921,7 @@
           ],
           "prompt": "MY STARS:  I got ____ / 5.  Colour your stars!",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_165_6",
@@ -12984,7 +11016,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_167_1",
@@ -12997,43 +11029,7 @@
           ],
           "prompt": "1. Design means planning how something looks and ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_167_2",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) works  \u2610"
-        },
-        {
-          "id": "choose_167_3",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) smells  \u2610"
-        },
-        {
-          "id": "choose_167_4",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) sleeps  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_167_5",
@@ -13046,43 +11042,7 @@
           ],
           "prompt": "2. AI tools can suggest colours, shapes and ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_167_6",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) pets  \u2610"
-        },
-        {
-          "id": "choose_167_7",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) patterns  \u2610"
-        },
-        {
-          "id": "choose_167_8",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) parents  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_167_9",
@@ -13095,43 +11055,7 @@
           ],
           "prompt": "3. A good design is useful and ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_167_10",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) broken  \u2610"
-        },
-        {
-          "id": "choose_167_11",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) boring  \u2610"
-        },
-        {
-          "id": "choose_167_12",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) beautiful  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_167_13",
@@ -13144,43 +11068,7 @@
           ],
           "prompt": "4. After testing a design, we ____ it.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_167_14",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) improve  \u2610"
-        },
-        {
-          "id": "choose_167_15",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) hide  \u2610"
-        },
-        {
-          "id": "choose_167_16",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) throw  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_167_17",
@@ -13193,7 +11081,7 @@
           ],
           "prompt": "1. The person who designs is a ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_167_18",
@@ -13206,7 +11094,7 @@
           ],
           "prompt": "2. First we ____ the design.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_167_19",
@@ -13219,20 +11107,20 @@
           ],
           "prompt": "3. Then we ____ it to check.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_167_20",
           "type": "typeable",
           "bbox": [
-            246.0,
+            246,
             502.7,
             60,
             24.7
           ],
           "prompt": "4. Good designs are easy for ____ to use.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_167_21",
@@ -13286,19 +11174,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_168_1",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            110.2,
-            32,
-            28.7
-          ],
-          "label": "A",
-          "optionText": "(a) Check if it works"
+          "fontSize": 12
         },
         {
           "id": "type_168_2",
@@ -13311,19 +11187,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_168_3",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            141.7,
-            32,
-            28.7
-          ],
-          "label": "B",
-          "optionText": "(b) List what is needed"
+          "fontSize": 12
         },
         {
           "id": "type_168_4",
@@ -13336,19 +11200,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_168_5",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            173.2,
-            32,
-            28.7
-          ],
-          "label": "C",
-          "optionText": "(c) Make it better"
+          "fontSize": 12
         },
         {
           "id": "type_168_6",
@@ -13361,19 +11213,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_168_7",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            204.7,
-            32,
-            28.7
-          ],
-          "label": "D",
-          "optionText": "(d) Sketch the idea"
+          "fontSize": 12
         },
         {
           "id": "type_168_8",
@@ -13386,7 +11226,7 @@
           ],
           "prompt": "1. Who makes designs?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_168_9",
@@ -13399,7 +11239,7 @@
           ],
           "prompt": "2. What is the first step of design?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_168_10",
@@ -13412,7 +11252,7 @@
           ],
           "prompt": "3. What do we do after testing?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_168_11",
@@ -13466,7 +11306,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_169_1",
@@ -13479,7 +11319,7 @@
           ],
           "prompt": "Q1. The writer of a story is the...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_169_2",
@@ -13492,7 +11332,7 @@
           ],
           "prompt": "Q2. Shapes that repeat make a...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_169_3",
@@ -13505,7 +11345,7 @@
           ],
           "prompt": "Q4. A quick drawing is a...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_169_4",
@@ -13518,7 +11358,7 @@
           ],
           "prompt": "Q6. A good design is...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "say_169_5",
@@ -13572,7 +11412,7 @@
           ],
           "prompt": "I finished AI CREATE!  Teacher's sign: ____________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_170_1",
@@ -13704,7 +11544,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -13838,7 +11678,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -13890,7 +11730,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -13977,18 +11817,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_179_0",
-          "type": "choose",
-          "bbox": [
-            392.7,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "A",
-          "optionText": "WORKSHEET:  Secret or Share?  (Part A)"
-        },
-        {
           "id": "type_179_1",
           "type": "typeable",
           "bbox": [
@@ -13999,46 +11827,46 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_179_2",
           "type": "typeable",
           "bbox": [
             275.7,
-            564.0,
+            564,
             76.5,
-            30.0
+            30
           ],
           "prompt": "I never share my ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_179_3",
           "type": "typeable",
           "bbox": [
             350.1,
-            620.0,
-            79.0,
-            30.0
+            620,
+            79,
+            30
           ],
           "prompt": "Apps should not know my ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_179_4",
           "type": "typeable",
           "bbox": [
             318.3,
-            676.0,
+            676,
             68.4,
-            30.0
+            30
           ],
           "prompt": "If I'm unsure, I ask an ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "say_179_5",
@@ -14082,18 +11910,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_180_0",
-          "type": "choose",
-          "bbox": [
-            391.4,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "B",
-          "optionText": "WORKSHEET:  Secret or Share?  (Part B)"
-        },
-        {
           "id": "type_180_1",
           "type": "typeable",
           "bbox": [
@@ -14104,7 +11920,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "say_180_2",
@@ -14158,7 +11974,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "say_181_1",
@@ -14212,7 +12028,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_182_1",
@@ -14225,7 +12041,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_182_2",
@@ -14238,7 +12054,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_182_3",
@@ -14292,7 +12108,7 @@
           ],
           "prompt": "Q2. A strong password has...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_183_1",
@@ -14305,7 +12121,7 @@
           ],
           "prompt": "Q3. Before sharing, ask...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_183_2",
@@ -14318,7 +12134,7 @@
           ],
           "prompt": "Q4. An app asks your address. You...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_183_3",
@@ -14331,7 +12147,7 @@
           ],
           "prompt": "Q5. Protect means...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_183_4",
@@ -14344,7 +12160,7 @@
           ],
           "prompt": "MY STARS:  I got ____ / 5.  Colour your stars!",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_183_5",
@@ -14439,7 +12255,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_185_1",
@@ -14452,79 +12268,7 @@
           ],
           "prompt": "1. Personal information is information about ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_185_2",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) you  \u2610"
-        },
-        {
-          "id": "choose_185_3",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) the weather  \u2610"
-        },
-        {
-          "id": "choose_185_4",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) animals  \u2610"
-        },
-        {
-          "id": "choose_185_5",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) Favourite colour  \u2610"
-        },
-        {
-          "id": "choose_185_6",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) Password  \u2610"
-        },
-        {
-          "id": "choose_185_7",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) Favourite food  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_185_8",
@@ -14537,43 +12281,7 @@
           ],
           "prompt": "3. If an app asks for your phone number, ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_185_9",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) type it  \u2610"
-        },
-        {
-          "id": "choose_185_10",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) share it fast  \u2610"
-        },
-        {
-          "id": "choose_185_11",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) ask an adult  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_185_12",
@@ -14586,43 +12294,7 @@
           ],
           "prompt": "4. When in doubt, ____ it out.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_185_13",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) keep  \u2610"
-        },
-        {
-          "id": "choose_185_14",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) post  \u2610"
-        },
-        {
-          "id": "choose_185_15",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) shout  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_185_16",
@@ -14635,7 +12307,7 @@
           ],
           "prompt": "1. My ____ is secret.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_185_17",
@@ -14648,7 +12320,7 @@
           ],
           "prompt": "2. Never type your ____ into a chatbot.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_185_18",
@@ -14661,7 +12333,7 @@
           ],
           "prompt": "3. ____ an adult before sharing.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_185_19",
@@ -14674,7 +12346,7 @@
           ],
           "prompt": "4. My information is ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_185_20",
@@ -14728,19 +12400,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_186_1",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            110.2,
-            32,
-            28.7
-          ],
-          "label": "A",
-          "optionText": "(a) Never share"
+          "fontSize": 12
         },
         {
           "id": "type_186_2",
@@ -14753,19 +12413,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_186_3",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            141.7,
-            32,
-            28.7
-          ],
-          "label": "B",
-          "optionText": "(b) OK to share"
+          "fontSize": 12
         },
         {
           "id": "type_186_4",
@@ -14778,19 +12426,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_186_5",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            173.2,
-            32,
-            28.7
-          ],
-          "label": "C",
-          "optionText": "(c) Ask an adult"
+          "fontSize": 12
         },
         {
           "id": "type_186_6",
@@ -14803,19 +12439,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_186_7",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            204.7,
-            32,
-            28.7
-          ],
-          "label": "D",
-          "optionText": "(d) Keep secret"
+          "fontSize": 12
         },
         {
           "id": "type_186_8",
@@ -14823,12 +12447,12 @@
           "bbox": [
             310.6,
             268.7,
-            109.0,
+            109,
             24.7
           ],
           "prompt": "1. Name one thing to keep secret.  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_186_9",
@@ -14836,12 +12460,12 @@
           "bbox": [
             352.9,
             292.7,
-            113.0,
+            113,
             24.7
           ],
           "prompt": "2. Whom should we ask before sharing?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_186_10",
@@ -14854,7 +12478,7 @@
           ],
           "prompt": "3. Is your favourite colour secret?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_186_11",
@@ -15068,7 +12692,7 @@
             59.5,
             210.5,
             476.2,
-            463.0
+            463
           ],
           "description": "Outline illustration ready for color fill"
         },
@@ -15196,18 +12820,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_194_0",
-          "type": "choose",
-          "bbox": [
-            416.6,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "A",
-          "optionText": "WORKSHEET:  AI: Right or Wrong?  (Part A)"
-        },
-        {
           "id": "type_194_1",
           "type": "typeable",
           "bbox": [
@@ -15218,7 +12830,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_194_2",
@@ -15231,7 +12843,7 @@
           ],
           "prompt": "AI can help by ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_194_3",
@@ -15275,18 +12887,6 @@
       "height": 841.9,
       "regions": [
         {
-          "id": "choose_195_0",
-          "type": "choose",
-          "bbox": [
-            415.4,
-            57.2,
-            32,
-            34.0
-          ],
-          "label": "B",
-          "optionText": "WORKSHEET:  AI: Right or Wrong?  (Part B)"
-        },
-        {
           "id": "type_195_1",
           "type": "typeable",
           "bbox": [
@@ -15297,46 +12897,46 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_195_2",
           "type": "typeable",
           "bbox": [
             345.9,
-            480.0,
-            69.0,
-            30.0
+            480,
+            69,
+            30
           ],
           "prompt": "Telling the truth is being ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_195_3",
           "type": "typeable",
           "bbox": [
             313.9,
-            536.0,
-            73.0,
-            30.0
+            536,
+            73,
+            30
           ],
           "prompt": "Equal for everyone is ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "type_195_4",
           "type": "typeable",
           "bbox": [
             235.1,
-            592.0,
+            592,
             81.3,
-            30.0
+            30
           ],
           "prompt": "AI can make ________.",
           "placeholder": "Type answer...",
-          "fontSize": 17.0
+          "fontSize": 17
         },
         {
           "id": "say_195_5",
@@ -15390,7 +12990,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "say_196_1",
@@ -15444,7 +13044,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_197_1",
@@ -15457,7 +13057,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_197_2",
@@ -15470,7 +13070,7 @@
           ],
           "prompt": "_____________________________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_197_3",
@@ -15524,7 +13124,7 @@
           ],
           "prompt": "Q2. Copying AI homework is...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_198_1",
@@ -15537,7 +13137,7 @@
           ],
           "prompt": "Q3. A good use of AI is to...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_198_2",
@@ -15550,7 +13150,7 @@
           ],
           "prompt": "Q5. Honest means...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_198_3",
@@ -15563,7 +13163,7 @@
           ],
           "prompt": "MY STARS:  I got ____ / 5.  Colour your stars!",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_198_4",
@@ -15658,7 +13258,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_200_1",
@@ -15671,43 +13271,7 @@
           ],
           "prompt": "1. AI is smart, but it can make ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_200_2",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) mistakes  \u2610"
-        },
-        {
-          "id": "choose_200_3",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) cakes  \u2610"
-        },
-        {
-          "id": "choose_200_4",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            172.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) rain  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_200_5",
@@ -15720,43 +13284,7 @@
           ],
           "prompt": "2. Using AI to cheat in a test is ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_200_6",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) right  \u2610"
-        },
-        {
-          "id": "choose_200_7",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) wrong  \u2610"
-        },
-        {
-          "id": "choose_200_8",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            229.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) funny  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_200_9",
@@ -15769,43 +13297,7 @@
           ],
           "prompt": "3. We can check AI answers with ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_200_10",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) games  \u2610"
-        },
-        {
-          "id": "choose_200_11",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) toys  \u2610"
-        },
-        {
-          "id": "choose_200_12",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            286.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) books  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_200_13",
@@ -15818,43 +13310,7 @@
           ],
           "prompt": "4. Using AI to learn and help is ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
-        },
-        {
-          "id": "choose_200_14",
-          "type": "choose",
-          "bbox": [
-            44.1,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "A",
-          "optionText": "(a) right  \u2610"
-        },
-        {
-          "id": "choose_200_15",
-          "type": "choose",
-          "bbox": [
-            217.2,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "B",
-          "optionText": "(b) wrong  \u2610"
-        },
-        {
-          "id": "choose_200_16",
-          "type": "choose",
-          "bbox": [
-            390.3,
-            343.5,
-            32,
-            27.0
-          ],
-          "label": "C",
-          "optionText": "(c) silly  \u2610"
+          "fontSize": 14
         },
         {
           "id": "type_200_17",
@@ -15867,7 +13323,7 @@
           ],
           "prompt": "1. Fake photos can hurt ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_200_18",
@@ -15880,20 +13336,20 @@
           ],
           "prompt": "2. My work must be my ____.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_200_19",
           "type": "typeable",
           "bbox": [
-            127.0,
+            127,
             478.7,
             60,
             24.7
           ],
           "prompt": "3. Use AI to ____ others.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_200_20",
@@ -15906,7 +13362,7 @@
           ],
           "prompt": "4. Ravi said ____ to Arjun.",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_200_21",
@@ -15960,19 +13416,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_201_1",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            110.2,
-            32,
-            28.7
-          ],
-          "label": "A",
-          "optionText": "(a) Right"
+          "fontSize": 12
         },
         {
           "id": "type_201_2",
@@ -15985,19 +13429,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_201_3",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            141.7,
-            32,
-            28.7
-          ],
-          "label": "B",
-          "optionText": "(b) Right"
+          "fontSize": 12
         },
         {
           "id": "type_201_4",
@@ -16010,19 +13442,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_201_5",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            173.2,
-            32,
-            28.7
-          ],
-          "label": "C",
-          "optionText": "(c) Wrong"
+          "fontSize": 12
         },
         {
           "id": "type_201_6",
@@ -16035,19 +13455,7 @@
           ],
           "prompt": "____",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
-        },
-        {
-          "id": "choose_201_7",
-          "type": "choose",
-          "bbox": [
-            328.8,
-            204.7,
-            32,
-            28.7
-          ],
-          "label": "D",
-          "optionText": "(d) Wrong"
+          "fontSize": 12
         },
         {
           "id": "type_201_8",
@@ -16060,7 +13468,7 @@
           ],
           "prompt": "1. Can AI make mistakes?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_201_9",
@@ -16073,7 +13481,7 @@
           ],
           "prompt": "2. Is cheating with AI right or wrong?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "type_201_10",
@@ -16086,7 +13494,7 @@
           ],
           "prompt": "3. What did Ravi delete?  ______________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_201_11",
@@ -16140,7 +13548,7 @@
           ],
           "prompt": "Name: ________________________     Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 12.0
+          "fontSize": 12
         },
         {
           "id": "type_202_1",
@@ -16153,7 +13561,7 @@
           ],
           "prompt": "Q2. Copying AI homework is...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_202_2",
@@ -16166,7 +13574,7 @@
           ],
           "prompt": "Q4. Honest means telling the...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_202_3",
@@ -16179,7 +13587,7 @@
           ],
           "prompt": "Q5. An app asks your address. You...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "say_202_4",
@@ -16228,12 +13636,12 @@
           "bbox": [
             413.9,
             593.3,
-            90.0,
+            90,
             24.7
           ],
           "prompt": "I finished AI CARE!  Teacher's sign: ____________",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_203_1",
@@ -16369,20 +13777,20 @@
           ],
           "prompt": "Q1. A shop app saying \"You may like...\" uses...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_206_1",
           "type": "typeable",
           "bbox": [
-            222.0,
+            222,
             342.2,
             60,
             26.4
           ],
           "prompt": "Q3. A robot's \"brain\" is its...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_206_2",
@@ -16395,7 +13803,7 @@
           ],
           "prompt": "Q4. Satellites can watch the...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "say_206_3",
@@ -16449,7 +13857,7 @@
           ],
           "prompt": "Q6. Bolt follows steps...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_207_1",
@@ -16462,7 +13870,7 @@
           ],
           "prompt": "means up, up, then...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_207_2",
@@ -16475,7 +13883,7 @@
           ],
           "prompt": "Q10. A taxi app helps you...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "say_207_3",
@@ -16529,7 +13937,7 @@
           ],
           "prompt": "Q12. Typing fast is a...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_208_1",
@@ -16542,7 +13950,7 @@
           ],
           "prompt": "Q13. A Talent Tree shows things I am...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_208_2",
@@ -16555,7 +13963,7 @@
           ],
           "prompt": "Q15. Designers try...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "say_208_3",
@@ -16609,7 +14017,7 @@
           ],
           "prompt": "Q16. Panchatantra stories come from...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_209_1",
@@ -16622,7 +14030,7 @@
           ],
           "prompt": "Q18. A stranger asks for your password. You...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_209_2",
@@ -16635,7 +14043,7 @@
           ],
           "prompt": "Q20. AI is a tool, like a...",
           "placeholder": "Type answer...",
-          "fontSize": 15.0
+          "fontSize": 15
         },
         {
           "id": "type_209_3",
@@ -16648,7 +14056,7 @@
           ],
           "prompt": "MY SCORE:  I got ____ / 20.  Colour a star for every 4 right",
           "placeholder": "Type answer...",
-          "fontSize": 14.0
+          "fontSize": 14
         },
         {
           "id": "say_209_4",
@@ -16702,7 +14110,7 @@
           ],
           "prompt": "______________________________",
           "placeholder": "Type answer...",
-          "fontSize": 18.0
+          "fontSize": 18
         },
         {
           "id": "type_210_1",
@@ -16715,7 +14123,7 @@
           ],
           "prompt": "Teacher: ______________        Date: ______________",
           "placeholder": "Type answer...",
-          "fontSize": 13.0
+          "fontSize": 13
         },
         {
           "id": "say_210_2",

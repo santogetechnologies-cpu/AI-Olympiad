@@ -17,6 +17,8 @@ export const authService = {
           email,
           status: 'active',
           must_change_password: false,
+          sidebar_tour_completed: false,
+          pdf_tour_completed: false,
           created_at: new Date().toISOString(),
           updated_at: new Date().toISOString(),
         }

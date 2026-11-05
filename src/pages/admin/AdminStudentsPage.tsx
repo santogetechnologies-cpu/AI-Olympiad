@@ -11,22 +11,18 @@ import { userService } from '../../services/analyticsService'
 import { enrollmentService } from '../../services/progressService'
 import { classService } from '../../services/classService'
 import { subjectService } from '../../services/subjectService'
-import { supabase } from '../../lib/supabase'
+import { supabase, isUuid } from '../../lib/supabase'
+import {
+  type CSVStudentRow,
+  parseStudentCsv,
+  validateStudentRows,
+  matchClassInput,
+  generateSampleCsv
+} from '../../services/bulkStudentService'
 import { curriculumCatalogService } from '../../services/curriculumCatalogService'
 import type { Class, Subject } from '../../types'
 import toast from 'react-hot-toast'
 
-interface CSVStudentRow {
-  full_name: string
-  email: string
-  phone: string
-  student_id_number: string
-  class_name: string
-  class_id?: string
-  temporary_password: string
-  status?: 'pending' | 'success' | 'error'
-  error_message?: string
-}
 
 export default function AdminStudentsPage() {
   const { user } = useAuth()
@@ -61,7 +57,9 @@ export default function AdminStudentsPage() {
 
   // CSV Bulk Upload state
   const [csvRows, setCsvRows] = useState<CSVStudentRow[]>([])
+  const [bulkImportMode, setBulkImportMode] = useState<'multi_class' | 'same_class'>('multi_class')
   const [bulkSelectedClass, setBulkSelectedClass] = useState('')
+  const [classFilter, setClassFilter] = useState('')
   const [importing, setImporting] = useState(false)
   const [importProgress, setImportProgress] = useState({ current: 0, total: 0, successes: 0, failures: 0 })
   const fileInputRef = useRef<HTMLInputElement>(null)
@@ -90,7 +88,13 @@ export default function AdminStudentsPage() {
 
       allLevelsData.forEach(lvl => {
         const cleanName = lvl.name.toLowerCase().replace(/[\s-_]/g, '')
-        if (!existingClassNames.has(cleanName)) {
+        const cleanCode = (lvl.code || '').toLowerCase().replace(/[\s-_]/g, '')
+        const matchingDbClass = cls.find(c => {
+          const cName = c.name.toLowerCase().replace(/[\s-_]/g, '')
+          const cCode = (c.code || '').toLowerCase().replace(/[\s-_]/g, '')
+          return cName === cleanName || (cleanCode && cCode === cleanCode) || cName.includes(cleanName) || cleanName.includes(cName)
+        })
+        if (!matchingDbClass && !existingClassNames.has(cleanName)) {
           mergedClasses.push({
             id: `cat-cls-${lvl.gradeKey}`,
             organization_id: orgId,
@@ -167,19 +171,8 @@ export default function AdminStudentsPage() {
 
   // Sample CSV generator & downloader
   const downloadSampleCSV = () => {
-    const classExamples = classes.slice(0, 3).map(c => c.name).join(', ') || 'CLASS 3, CLASS 4, CLASS 5'
-    const c1 = classes[0]?.name || 'CLASS 3'
-    const c2 = classes[1]?.name || 'CLASS 4'
-    const c3 = classes[2]?.name || 'CLASS 5'
-    const headers = 'full_name,email,phone,student_id_number,class_name,temporary_password\n'
-    const sampleRows = [
-      `Aarav Sharma,aarav.sharma@example.com,9876543210,STD-2026-001,${c1},TempPass@123`,
-      `Diya Patel,diya.patel@example.com,9876543211,STD-2026-002,${c2},TempPass@123`,
-      `Rohan Kumar,rohan.kumar@example.com,9876543212,STD-2026-003,${c3},TempPass@123`,
-      `Ananya Reddy,ananya.reddy@example.com,9876543213,STD-2026-004,${c1},TempPass@123`
-    ].join('\n')
-
-    const blob = new Blob([headers + sampleRows], { type: 'text/csv;charset=utf-8;' })
+    const csvContent = generateSampleCsv(classes)
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' })
     const url = URL.createObjectURL(blob)
     const link = document.createElement('a')
     link.href = url
@@ -187,7 +180,7 @@ export default function AdminStudentsPage() {
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
-    toast.success('Sample CSV downloaded! Available classes include: ' + classExamples)
+    toast.success('Sample multi-class CSV downloaded!')
   }
 
   // Parse CSV File
@@ -200,67 +193,33 @@ export default function AdminStudentsPage() {
       const text = event.target?.result as string
       if (!text) return
 
-      const lines = text.split(/\r\n|\n/).filter(line => line.trim() !== '')
-      if (lines.length < 2) {
-        toast.error('CSV file must have a header row and at least one student row.')
-        return
-      }
+      try {
+        const result = parseStudentCsv(
+          text,
+          classes,
+          bulkImportMode,
+          bulkSelectedClass || undefined
+        )
 
-      const headers = lines[0].split(',').map(h => h.trim().toLowerCase().replace(/"/g, ''))
-      const rows: CSVStudentRow[] = []
-
-      for (let i = 1; i < lines.length; i++) {
-        // Simple CSV splitter handling quoted values
-        const values = lines[i].split(',').map(v => v.trim().replace(/^"|"$/g, ''))
-        if (values.length >= 2) {
-          const row: any = {}
-          headers.forEach((header, index) => {
-            row[header] = values[index] || ''
-          })
-
-          const rawClassName = row.class_name || row.class || row.standard || row.grade || ''
-          let matchedClass = classes.find(c => 
-            (rawClassName && (
-              c.name.toLowerCase() === rawClassName.toLowerCase() ||
-              (c.code && c.code.toLowerCase() === rawClassName.toLowerCase())
-            ))
-          )
-
-          // Fallback to bulkSelectedClass if not matched from CSV
-          if (!matchedClass && bulkSelectedClass) {
-            matchedClass = classes.find(c => c.id === bulkSelectedClass)
-          }
-
-          rows.push({
-            full_name: row.full_name || row.name || '',
-            email: row.email || '',
-            phone: row.phone || row.mobile || '',
-            student_id_number: row.student_id_number || row.student_id || row.roll_no || '',
-            class_name: matchedClass?.name || rawClassName || '',
-            class_id: matchedClass?.id || '',
-            temporary_password: row.temporary_password || row.password || 'TempPass@123',
-            status: 'pending'
-          })
+        // If the CSV contains class names, automatically adopt 'multi_class' mode (Option B) unless user explicitly selected same_class with a class
+        if (result.uniqueClassesDetected.length > 0 && bulkImportMode !== 'same_class') {
+          setBulkImportMode('multi_class')
         }
-      }
 
-      setCsvRows(rows)
-      toast.success(`Loaded ${rows.length} students from CSV. Ready for import.`)
+        setCsvRows(result.rows)
+        toast.success(`Loaded ${result.rows.length} students from CSV (${result.validCount} ready, ${result.errorCount} needing attention).`)
+      } catch (err: any) {
+        toast.error(err.message || 'Failed to parse CSV file')
+      }
     }
     reader.readAsText(file)
   }
 
-  // Handle setting default class in CSV import
+  // Handle setting target class in same_class mode (Option A)
   const handleDefaultClassChange = (classId: string) => {
     setBulkSelectedClass(classId)
-    const targetClass = classes.find(c => c.id === classId)
-    if (targetClass) {
-      setCsvRows(prev => prev.map(row => {
-        if (!row.class_id) {
-          return { ...row, class_id: targetClass.id, class_name: targetClass.name }
-        }
-        return row
-      }))
+    if (bulkImportMode === 'same_class') {
+      setCsvRows(prev => validateStudentRows(prev, 'same_class', classId, classes))
     }
   }
 
@@ -271,12 +230,28 @@ export default function AdminStudentsPage() {
       toast.error('Please select a class from the dropdown first')
       return
     }
-    setCsvRows(prev => prev.map(row => ({
-      ...row,
-      class_id: targetClass.id,
-      class_name: targetClass.name
-    })))
+    setCsvRows(prev => validateStudentRows(prev, 'same_class', targetClass.id, classes))
     toast.success(`Assigned all students to ${targetClass.name}`)
+  }
+
+  // Switch between Option A (Same Class) and Option B (Multi-Class CSV)
+  const handleModeSwitch = (newMode: 'multi_class' | 'same_class') => {
+    setBulkImportMode(newMode)
+    if (csvRows.length > 0) {
+      if (newMode === 'same_class' && bulkSelectedClass) {
+        setCsvRows(prev => validateStudentRows(prev, 'same_class', bulkSelectedClass, classes))
+      } else {
+        // Re-resolve from original raw_class_name
+        setCsvRows(prev => {
+          const reset = prev.map(r => ({
+            ...r,
+            class_id: undefined,
+            class_name: r.raw_class_name || r.class_name
+          }))
+          return validateStudentRows(reset, 'multi_class', undefined, classes)
+        })
+      }
+    }
   }
 
   // Update class for individual row in preview
@@ -287,36 +262,64 @@ export default function AdminStudentsPage() {
       next[index] = {
         ...next[index],
         class_id: classId,
-        class_name: targetClass?.name || ''
+        class_name: targetClass?.name || '',
       }
-      return next
+      return validateStudentRows(next, bulkImportMode, bulkSelectedClass, classes)
     })
   }
 
   // Execute Bulk Import
   const handleBulkImport = async () => {
     if (csvRows.length === 0) return
-    setImporting(true)
-    setImportProgress({ current: 0, total: csvRows.length, successes: 0, failures: 0 })
 
-    const updatedRows = [...csvRows]
+    // Re-validate all rows before sending
+    const validated = validateStudentRows(csvRows, bulkImportMode, bulkSelectedClass, classes)
+    setCsvRows(validated)
+
+    const blockingErrors = validated.filter(r => r.validation_error && r.status !== 'success')
+    if (blockingErrors.length > 0) {
+      toast.error(`Please fix or assign classes for the ${blockingErrors.length} row(s) with errors before importing.`)
+      return
+    }
+
+    setImporting(true)
+    setImportProgress({ current: 0, total: validated.length, successes: 0, failures: 0 })
+
+    const updatedRows = [...validated]
     let successCount = 0
     let failureCount = 0
 
     for (let i = 0; i < updatedRows.length; i++) {
       const student = updatedRows[i]
-      
-      // Determine class ID
-      let matchedClassId: string | null = student.class_id || null
-      if (!matchedClassId && student.class_name) {
-        const found = classes.find(c => 
-          c.name.toLowerCase() === student.class_name.toLowerCase() ||
-          (c.code && c.code.toLowerCase() === student.class_name.toLowerCase())
-        )
-        if (found) matchedClassId = found.id
+
+      // Skip already successfully created rows on re-submission
+      if (student.status === 'success') {
+        successCount++
+        continue
       }
-      if (!matchedClassId && bulkSelectedClass) {
+
+      // Determine class ID (UUID)
+      let matchedClassId: string | null = student.class_id || null
+
+      if (!matchedClassId && student.class_name) {
+        const matchRes = matchClassInput(student.class_name, classes)
+        if (matchRes.matchedClass) {
+          matchedClassId = matchRes.matchedClass.id
+        }
+      }
+
+      if (!matchedClassId && bulkImportMode === 'same_class' && bulkSelectedClass) {
         matchedClassId = bulkSelectedClass
+      }
+
+      // Ensure matchedClassId is a valid UUID (never pass synthetic slugs like cat-cls-...)
+      if (matchedClassId && !isUuid(matchedClassId)) {
+        try {
+          const resolved = await classService.resolveClassRecord(matchedClassId, orgId)
+          if (resolved?.id && isUuid(resolved.id)) {
+            matchedClassId = resolved.id
+          }
+        } catch {}
       }
 
       try {
@@ -326,7 +329,7 @@ export default function AdminStudentsPage() {
           p_full_name: student.full_name,
           p_phone: student.phone || null,
           p_student_id_number: student.student_id_number || null,
-          p_class_id: matchedClassId,
+          p_class_id: matchedClassId && isUuid(matchedClassId) ? matchedClassId : null,
           p_organization_id: orgId
         })
 
@@ -353,6 +356,8 @@ export default function AdminStudentsPage() {
         }
 
         updatedRows[i].status = 'success'
+        updatedRows[i].error_message = undefined
+        updatedRows[i].validation_error = undefined
         successCount++
       } catch (err: any) {
         updatedRows[i].status = 'error'
@@ -371,7 +376,7 @@ export default function AdminStudentsPage() {
 
     setImporting(false)
     if (successCount > 0) {
-      toast.success(`Successfully imported and enrolled ${successCount} students!`)
+      toast.success(`Successfully imported and enrolled ${successCount} students across classes!`)
       await load()
     }
     if (failureCount > 0) {
@@ -475,13 +480,19 @@ export default function AdminStudentsPage() {
     }
   }
 
-  const filtered = students.filter(s =>
-    !search ||
-    s.full_name?.toLowerCase().includes(search.toLowerCase()) ||
-    s.email?.toLowerCase().includes(search.toLowerCase()) ||
-    s.student_id_number?.toLowerCase().includes(search.toLowerCase()) ||
-    s.enrolled_class?.name?.toLowerCase().includes(search.toLowerCase())
-  )
+  const filtered = students.filter(s => {
+    const matchesSearch = !search ||
+      s.full_name?.toLowerCase().includes(search.toLowerCase()) ||
+      s.email?.toLowerCase().includes(search.toLowerCase()) ||
+      s.student_id_number?.toLowerCase().includes(search.toLowerCase()) ||
+      s.enrolled_class?.name?.toLowerCase().includes(search.toLowerCase())
+
+    const matchesClass = !classFilter ||
+      s.enrolled_class?.id === classFilter ||
+      s.enrolled_class?.name?.toLowerCase() === classFilter.toLowerCase()
+
+    return matchesSearch && matchesClass
+  })
 
   if (loading) return <AppLayout><LoadingState message="Loading students..." /></AppLayout>
 
@@ -507,7 +518,7 @@ export default function AdminStudentsPage() {
             </Button>
             <Button
               variant="secondary"
-              onClick={() => { setCsvRows([]); setBulkSelectedClass(''); setBulkModalOpen(true) }}
+              onClick={() => { setCsvRows([]); setBulkSelectedClass(''); setBulkImportMode('multi_class'); setBulkModalOpen(true) }}
               className="flex items-center gap-1.5 text-xs font-semibold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 border border-indigo-200"
             >
               <Upload size={15} />
@@ -523,16 +534,33 @@ export default function AdminStudentsPage() {
           </div>
         </div>
 
-        {/* Search */}
-        <div className="relative mb-5 max-w-md">
-          <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
-          <input
-            type="text"
-            placeholder="Search by name, email, student ID, or class..."
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-            className="w-full h-10 pl-9 pr-3 text-sm border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
-          />
+        {/* Search & Class Filter */}
+        <div className="flex flex-col sm:flex-row gap-3 mb-5 max-w-2xl">
+          <div className="relative flex-1">
+            <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
+            <input
+              type="text"
+              placeholder="Search by name, email, student ID, or class..."
+              value={search}
+              onChange={e => setSearch(e.target.value)}
+              className="w-full h-10 pl-9 pr-3 text-sm border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
+            />
+          </div>
+          <select
+            value={classFilter}
+            onChange={e => setClassFilter(e.target.value)}
+            className="h-10 px-3 text-xs border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white text-slate-700 font-medium"
+          >
+            <option value="">All Academic Classes ({students.length})</option>
+            {classes.map(c => {
+              const count = students.filter(s => s.enrolled_class?.id === c.id || s.enrolled_class?.name?.toLowerCase() === c.name.toLowerCase()).length
+              return (
+                <option key={c.id} value={c.id}>
+                  {c.name} {count > 0 ? `(${count})` : ''}
+                </option>
+              )
+            })}
+          </select>
         </div>
 
         {/* Students Table */}
@@ -649,60 +677,108 @@ export default function AdminStudentsPage() {
       {bulkModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
           <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" onClick={() => !importing && setBulkModalOpen(false)} />
-          <div className="relative bg-white rounded-2xl shadow-2xl p-6 w-full max-w-3xl max-h-[90vh] flex flex-col fade-in">
+          <div className="relative bg-white rounded-2xl shadow-2xl p-6 w-full max-w-4xl max-h-[90vh] flex flex-col fade-in">
             <div className="flex items-center justify-between pb-4 border-b border-slate-100">
               <div className="flex items-center gap-2.5">
                 <div className="w-10 h-10 bg-indigo-100 text-indigo-700 rounded-xl flex items-center justify-center">
                   <Upload size={20} />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-slate-900">Bulk Student Import (CSV)</h3>
-                  <p className="text-xs text-slate-500">Upload CSV with student details, assign classes, and create activated accounts.</p>
+                  <h3 className="text-lg font-bold text-slate-900">Bulk Student Import & Enrollment</h3>
+                  <p className="text-xs text-slate-500">Upload CSV to enroll students with individual academic classes and generate activated accounts.</p>
                 </div>
               </div>
-              <Button size="sm" variant="outline" onClick={downloadSampleCSV} className="flex items-center gap-1 text-xs">
-                <Download size={14} /> Template
-              </Button>
+              <div className="flex items-center gap-2">
+                <Button size="sm" variant="outline" onClick={downloadSampleCSV} className="flex items-center gap-1 text-xs">
+                  <Download size={14} /> Sample CSV
+                </Button>
+                <button
+                  onClick={() => !importing && setBulkModalOpen(false)}
+                  className="p-1.5 rounded-lg text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition"
+                  disabled={importing}
+                >
+                  <X size={18} />
+                </button>
+              </div>
             </div>
 
-            {/* Class Assignment Bar */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 my-4 p-3.5 bg-slate-50 rounded-xl border border-slate-200">
-              <div>
-                <label className="block text-xs font-semibold text-slate-700 mb-1.5 flex items-center gap-1.5">
-                  <GraduationCap size={15} className="text-indigo-600" />
-                  Default Class Assignment
-                </label>
-                <select
-                  value={bulkSelectedClass}
-                  onChange={(e) => handleDefaultClassChange(e.target.value)}
-                  disabled={importing}
-                  className="w-full h-9 px-3 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 font-medium text-slate-800"
-                >
-                  <option value="">-- Choose Class (Fallback / Quick Assign) --</option>
-                  {classes.map(c => (
-                    <option key={c.id} value={c.id}>{c.name} {c.code ? `(${c.code})` : ''}</option>
-                  ))}
-                </select>
-                <p className="text-[11px] text-slate-400 mt-1">
-                  Assigns this class to imported students without a class in CSV.
-                </p>
-              </div>
-              <div className="flex flex-col justify-end">
-                <Button
-                  type="button"
-                  size="sm"
-                  variant="outline"
-                  onClick={applyClassToAllRows}
-                  disabled={!bulkSelectedClass || csvRows.length === 0 || importing}
-                  className="h-9 text-xs font-medium border-slate-300 hover:bg-indigo-50 text-indigo-700 hover:border-indigo-300"
-                >
-                  Apply Selected Class to All Loaded Rows
-                </Button>
-              </div>
+            {/* Workflow Mode Selector */}
+            <div className="flex border-b border-slate-200 mt-3.5 mb-3">
+              <button
+                type="button"
+                onClick={() => handleModeSwitch('multi_class')}
+                disabled={importing}
+                className={`pb-2.5 px-4 text-xs font-bold transition border-b-2 flex items-center gap-2 ${
+                  bulkImportMode === 'multi_class'
+                    ? 'border-indigo-600 text-indigo-700'
+                    : 'border-transparent text-slate-500 hover:text-slate-800'
+                }`}
+              >
+                <Sparkles size={14} />
+                Option B: Multi-Class CSV Import (Each Row Has Its Own Class)
+              </button>
+              <button
+                type="button"
+                onClick={() => handleModeSwitch('same_class')}
+                disabled={importing}
+                className={`pb-2.5 px-4 text-xs font-bold transition border-b-2 flex items-center gap-2 ${
+                  bulkImportMode === 'same_class'
+                    ? 'border-indigo-600 text-indigo-700'
+                    : 'border-transparent text-slate-500 hover:text-slate-800'
+                }`}
+              >
+                <GraduationCap size={14} />
+                Option A: Bulk Add (Assign All to Same Class)
+              </button>
             </div>
+
+            {/* Mode-Specific Guidance & Controls */}
+            {bulkImportMode === 'multi_class' ? (
+              <div className="p-3 bg-indigo-50/70 border border-indigo-200 rounded-xl mb-3.5 text-xs text-indigo-900 flex items-start gap-2.5">
+                <Sparkles size={16} className="text-indigo-600 mt-0.5 flex-shrink-0" />
+                <div>
+                  <span className="font-bold">Multi-Class Mode Active:</span> Each student is automatically mapped to their respective class from the CSV's <code className="bg-indigo-100 text-indigo-900 px-1 py-0.5 rounded font-mono">class_name</code> column (e.g. Class 3, Class 5, UG 1st Year). Multiple classes can be imported together in a single CSV file.
+                </div>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3.5 p-3.5 bg-slate-50 rounded-xl border border-slate-200">
+                <div>
+                  <label className="block text-xs font-semibold text-slate-700 mb-1.5 flex items-center gap-1.5">
+                    <GraduationCap size={15} className="text-indigo-600" />
+                    Target Class for All Students
+                  </label>
+                  <select
+                    value={bulkSelectedClass}
+                    onChange={(e) => handleDefaultClassChange(e.target.value)}
+                    disabled={importing}
+                    className="w-full h-9 px-3 text-xs border border-slate-300 rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 font-medium text-slate-800"
+                  >
+                    <option value="">-- Choose Class (Applies to all) --</option>
+                    {classes.map(c => (
+                      <option key={c.id} value={c.id}>{c.name} {c.code ? `(${c.code})` : ''}</option>
+                    ))}
+                  </select>
+                  <p className="text-[11px] text-slate-400 mt-1">
+                    Enrolls all students in this batch into the chosen target class.
+                  </p>
+                </div>
+                <div className="flex flex-col justify-end">
+                  <Button
+                    type="button"
+                    size="sm"
+                    variant="outline"
+                    onClick={applyClassToAllRows}
+                    disabled={!bulkSelectedClass || csvRows.length === 0 || importing}
+                    className="h-9 text-xs font-medium border-slate-300 hover:bg-indigo-50 text-indigo-700 hover:border-indigo-300"
+                  >
+                    Apply Target Class to All Loaded Rows
+                  </Button>
+                </div>
+              </div>
+            )}
 
             {/* Upload Box */}
-            <div className="mb-4">
+            <div className="mb-3.5">
               <input
                 type="file"
                 ref={fileInputRef}
@@ -712,13 +788,36 @@ export default function AdminStudentsPage() {
               />
               <div
                 onClick={() => fileInputRef.current?.click()}
-                className="border-2 border-dashed border-slate-300 hover:border-indigo-400 bg-slate-50 hover:bg-indigo-50/30 rounded-xl p-5 text-center cursor-pointer transition"
+                className="border-2 border-dashed border-slate-300 hover:border-indigo-400 bg-slate-50 hover:bg-indigo-50/30 rounded-xl p-4 text-center cursor-pointer transition"
               >
-                <FileText size={28} className="text-slate-400 mx-auto mb-1.5" />
+                <FileText size={24} className="text-slate-400 mx-auto mb-1" />
                 <p className="text-sm font-semibold text-slate-700">Click to choose or drop your .CSV file here</p>
                 <p className="text-xs text-slate-400 mt-0.5">Columns: full_name, email, phone, student_id_number, class_name, temporary_password</p>
               </div>
             </div>
+
+            {/* Metrics & Validation Strip */}
+            {csvRows.length > 0 && (
+              <div className="flex flex-wrap items-center gap-2.5 mb-3 text-xs">
+                <span className="font-semibold text-slate-700">Batch Preview:</span>
+                <span className="bg-slate-100 text-slate-700 px-2.5 py-0.5 rounded-full font-medium">
+                  Total: {csvRows.length}
+                </span>
+                <span className="bg-emerald-50 text-emerald-700 border border-emerald-200 px-2.5 py-0.5 rounded-full font-medium">
+                  Ready: {csvRows.filter(r => !r.validation_error && r.class_id).length}
+                </span>
+                {csvRows.filter(r => r.validation_error || !r.class_id).length > 0 && (
+                  <span className="bg-amber-50 text-amber-700 border border-amber-200 px-2.5 py-0.5 rounded-full font-medium">
+                    Needs Attention: {csvRows.filter(r => r.validation_error || !r.class_id).length}
+                  </span>
+                )}
+                {csvRows.filter(r => r.status === 'success').length > 0 && (
+                  <span className="bg-indigo-50 text-indigo-700 border border-indigo-200 px-2.5 py-0.5 rounded-full font-medium">
+                    Enrolled: {csvRows.filter(r => r.status === 'success').length}
+                  </span>
+                )}
+              </div>
+            )}
 
             {/* Progress Bar if importing */}
             {importing && (
@@ -745,9 +844,10 @@ export default function AdminStudentsPage() {
                       <th className="p-2.5 text-left">#</th>
                       <th className="p-2.5 text-left">Student Name</th>
                       <th className="p-2.5 text-left">Email</th>
+                      <th className="p-2.5 text-left">Phone</th>
                       <th className="p-2.5 text-left">Student ID</th>
-                      <th className="p-2.5 text-left min-w-[160px]">Class</th>
-                      <th className="p-2.5 text-left">Status</th>
+                      <th className="p-2.5 text-left min-w-[170px]">Assigned Class</th>
+                      <th className="p-2.5 text-left">Status / Validation</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100">
@@ -756,14 +856,15 @@ export default function AdminStudentsPage() {
                         <td className="p-2.5 text-slate-400 font-mono">{idx + 1}</td>
                         <td className="p-2.5 font-medium text-slate-800">{row.full_name}</td>
                         <td className="p-2.5 text-slate-600">{row.email}</td>
+                        <td className="p-2.5 text-slate-600">{row.phone || '-'}</td>
                         <td className="p-2.5 text-slate-600 font-mono">{row.student_id_number || '-'}</td>
                         <td className="p-2.5">
                           <select
                             value={row.class_id || ''}
                             onChange={(e) => handleRowClassChange(idx, e.target.value)}
-                            disabled={importing}
+                            disabled={importing || row.status === 'success'}
                             className={`w-full py-1 px-2 text-xs font-semibold rounded-md border ${
-                              row.class_id ? 'border-indigo-300 bg-indigo-50/60 text-indigo-900' : 'border-amber-300 bg-amber-50 text-amber-900'
+                              row.class_id ? 'border-indigo-300 bg-indigo-50/60 text-indigo-900' : 'border-red-300 bg-red-50 text-red-900'
                             } focus:outline-none focus:ring-1 focus:ring-indigo-500`}
                           >
                             <option value="">-- Select Class --</option>
@@ -771,6 +872,11 @@ export default function AdminStudentsPage() {
                               <option key={c.id} value={c.id}>{c.name}</option>
                             ))}
                           </select>
+                          {row.raw_class_name && !row.class_id && (
+                            <span className="text-[10px] text-red-500 block mt-0.5">
+                              CSV: "{row.raw_class_name}"
+                            </span>
+                          )}
                         </td>
                         <td className="p-2.5">
                           {row.status === 'success' && (
@@ -779,12 +885,19 @@ export default function AdminStudentsPage() {
                             </span>
                           )}
                           {row.status === 'error' && (
-                            <span className="text-red-600 font-bold flex items-center gap-1" title={row.error_message}>
-                              <AlertCircle size={13} /> Failed
+                            <span className="text-red-600 font-bold flex items-center gap-1" title={row.error_message || row.validation_error}>
+                              <AlertCircle size={13} /> {row.validation_error || row.error_message || 'Failed'}
                             </span>
                           )}
-                          {row.status === 'pending' && (
-                            <span className="text-slate-400">Ready</span>
+                          {row.status === 'pending' && !row.validation_error && row.class_id && (
+                            <span className="text-emerald-700 font-semibold flex items-center gap-1">
+                              <CheckCircle2 size={13} /> Ready ({row.class_name})
+                            </span>
+                          )}
+                          {row.status === 'pending' && (!row.class_id || row.validation_error) && (
+                            <span className="text-amber-600 font-semibold flex items-center gap-1">
+                              <AlertCircle size={13} /> {row.validation_error || 'Class missing'}
+                            </span>
                           )}
                         </td>
                       </tr>
@@ -805,7 +918,7 @@ export default function AdminStudentsPage() {
                 </Button>
                 <Button
                   onClick={handleBulkImport}
-                  disabled={csvRows.length === 0 || importing}
+                  disabled={csvRows.length === 0 || importing || csvRows.some(r => r.validation_error && r.status !== 'success')}
                   loading={importing}
                   className="bg-indigo-600 hover:bg-indigo-700 text-white shadow-md font-semibold"
                 >

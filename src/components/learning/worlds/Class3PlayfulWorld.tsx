@@ -74,6 +74,7 @@ function C3Ch1S2MeetAIFriend(props: any) {
   return (
     <div className="w-full max-w-md mx-auto flex flex-col justify-between h-full max-h-full overflow-hidden select-none animate-in fade-in duration-200">
       <GaioInteractiveBookApp
+        gradeKey="class3"
         topicFilter={1}
         onComplete={props.onComplete}
         onExit={() => {
@@ -88,6 +89,7 @@ function C3Ch1S3MachinesThatHelp(props: any) {
   return (
     <div className="w-full max-w-md mx-auto flex flex-col justify-between h-full max-h-full overflow-hidden select-none animate-in fade-in duration-200">
       <GaioInteractiveBookApp
+        gradeKey="class3"
         topicFilter={2}
         onComplete={props.onComplete}
         onExit={() => {

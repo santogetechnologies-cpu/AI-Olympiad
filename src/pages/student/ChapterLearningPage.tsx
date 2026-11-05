@@ -4,7 +4,7 @@ import { AppLayout } from '../../components/layout/AppLayout'
 import { LoadingState, ErrorState, Button, Badge } from '../../components/ui'
 import { chapterService } from '../../services/chapterService'
 import { chapterContentService } from '../../services/chapterContentService'
-import { progressService, enrollmentService, parseGradeKeyFromClass } from '../../services/progressService'
+import { progressService, enrollmentService, parseGradeKeyFromClass, getClassChapters } from '../../services/progressService'
 import { learningProgressTracker } from '../../services/learningProgressTracker'
 import { useAuth } from '../../contexts/AuthContext'
 import { toast } from 'react-hot-toast'
@@ -25,6 +25,7 @@ import {
   Bot, MessageSquare, Rocket, Palette, HeartHandshake, ArrowLeft
 } from 'lucide-react'
 import { GaioInteractiveBookApp } from '../../components/gaio/GaioInteractiveBookApp'
+import { ErrorBoundary } from '../../components/common/ErrorBoundary'
 
 import { supabase } from '../../lib/supabase'
 
@@ -391,30 +392,26 @@ export const CLASS5_GRID_ITEMS: ChapterGridItem[] = [
 export const CHAPTER_GRID_ITEMS = CLASS3_GRID_ITEMS
 
 export function getGridItemsForGrade(gradeKey: string): ChapterGridItem[] {
-  if (gradeKey === 'class3') return CLASS3_GRID_ITEMS
-  if (gradeKey === 'class4') return CLASS4_GRID_ITEMS
-  if (gradeKey === 'class5') return CLASS5_GRID_ITEMS
-
-  const spec = SYLLABUS_SPECS.find(s => s.gradeKey === gradeKey)
-  const book = (bookCatalogData as Record<string, any>)[gradeKey]
-
-  const getPageRange = (monthIdx: number, fallback: string) => {
-    if (book?.chapters && book.chapters[monthIdx]) {
-      const ch = book.chapters[monthIdx]
-      return `p. ${ch.startPage}–${ch.endPage}`
-    }
-    return fallback
-  }
+  const gKey = parseGradeKeyFromClass(gradeKey || 'class3')
+  const chapters = getClassChapters(gKey)
+  const intro = chapters[0]
+  const ch1 = chapters[1]
+  const ch2 = chapters[2]
+  const ch3 = chapters[3]
+  const ch4 = chapters[4]
+  const ch5 = chapters[5]
+  const ch6 = chapters[6]
+  const finale = chapters[7]
 
   return [
     {
       key: 'intro',
       code: 'INTRO',
-      title: 'Welcome & Orientation',
-      subtitle: `${spec?.name || gradeKey.toUpperCase()} Tools & Foundations`,
+      title: intro?.title || 'Welcome & Orientation',
+      subtitle: intro?.subtitle || 'Tools & Foundations',
       monthNumber: 0,
-      pageRange: getPageRange(0, 'p. 1–5'),
-      screenCount: 8,
+      pageRange: `p. ${intro.startPage}–${intro.endPage}`,
+      screenCount: intro.totalPages,
       icon: Sparkles,
       gradient: 'from-sky-500 to-blue-600',
       badgeColor: 'bg-sky-50 text-sky-700 border-sky-200',
@@ -422,11 +419,11 @@ export function getGridItemsForGrade(gradeKey: string): ChapterGridItem[] {
     {
       key: 'ch1',
       code: 'CH1',
-      title: spec?.c1?.[0] || 'AI Discover',
-      subtitle: spec?.c1?.[1] ? `${spec.c1[1]}${spec.c1[2] ? ` & ${spec.c1[2]}` : ''}` : 'Generative Intelligence & Inside LLMs',
+      title: ch1?.title || 'AI Discover',
+      subtitle: ch1?.subtitle || 'Generative Intelligence & Inside LLMs',
       monthNumber: 1,
-      pageRange: getPageRange(1, 'p. 6–46'),
-      screenCount: 44,
+      pageRange: `p. ${ch1.startPage}–${ch1.endPage}`,
+      screenCount: ch1.totalPages,
       icon: Bot,
       gradient: 'from-blue-600 to-indigo-600',
       badgeColor: 'bg-blue-50 text-blue-700 border-blue-200',
@@ -434,11 +431,11 @@ export function getGridItemsForGrade(gradeKey: string): ChapterGridItem[] {
     {
       key: 'ch2',
       code: 'CH2',
-      title: spec?.c2?.[0] || 'AI Connect',
-      subtitle: spec?.c2?.[1] ? `${spec.c2[1]}${spec.c2[2] ? ` & ${spec.c2[2]}` : ''}` : 'Connect, Create & Automate',
+      title: ch2?.title || 'AI Connect',
+      subtitle: ch2?.subtitle || 'Connect, Create & Automate',
       monthNumber: 2,
-      pageRange: getPageRange(2, 'p. 47–87'),
-      screenCount: 44,
+      pageRange: `p. ${ch2.startPage}–${ch2.endPage}`,
+      screenCount: ch2.totalPages,
       icon: MessageSquare,
       gradient: 'from-indigo-600 to-violet-600',
       badgeColor: 'bg-indigo-50 text-indigo-700 border-indigo-200',
@@ -446,11 +443,11 @@ export function getGridItemsForGrade(gradeKey: string): ChapterGridItem[] {
     {
       key: 'ch3',
       code: 'CH3',
-      title: spec?.c3?.[0] || 'AI Solve',
-      subtitle: spec?.c3?.[1] ? `${spec.c3[1]}${spec.c3[2] ? ` & ${spec.c3[2]}` : ''}` : 'AI Automation at Work',
+      title: ch3?.title || 'AI Solve',
+      subtitle: ch3?.subtitle || 'AI Automation at Work',
       monthNumber: 3,
-      pageRange: getPageRange(3, 'p. 88–128'),
-      screenCount: 44,
+      pageRange: `p. ${ch3.startPage}–${ch3.endPage}`,
+      screenCount: ch3.totalPages,
       icon: Compass,
       gradient: 'from-amber-500 to-orange-600',
       badgeColor: 'bg-amber-50 text-amber-700 border-amber-200',
@@ -458,11 +455,11 @@ export function getGridItemsForGrade(gradeKey: string): ChapterGridItem[] {
     {
       key: 'ch4',
       code: 'CH4',
-      title: spec?.c4?.[0] || 'AI Rise',
-      subtitle: spec?.c4?.[1] ? `${spec.c4[1]}${spec.c4[2] ? ` & ${spec.c4[2]}` : ''}` : 'Become Industry Ready',
+      title: ch4?.title || 'AI Rise',
+      subtitle: ch4?.subtitle || 'Become Industry Ready',
       monthNumber: 4,
-      pageRange: getPageRange(4, 'p. 129–169'),
-      screenCount: 44,
+      pageRange: `p. ${ch4.startPage}–${ch4.endPage}`,
+      screenCount: ch4.totalPages,
       icon: Rocket,
       gradient: 'from-purple-500 to-violet-600',
       badgeColor: 'bg-purple-50 text-purple-700 border-purple-200',
@@ -470,11 +467,11 @@ export function getGridItemsForGrade(gradeKey: string): ChapterGridItem[] {
     {
       key: 'ch5',
       code: 'CH5',
-      title: spec?.c5?.[0] || 'AI Create',
-      subtitle: spec?.c5?.[1] ? `${spec.c5[1]}${spec.c5[2] ? ` & ${spec.c5[2]}` : ''}` : 'AI Automation Studio',
+      title: ch5?.title || 'AI Create',
+      subtitle: ch5?.subtitle || 'AI Automation Studio',
       monthNumber: 5,
-      pageRange: getPageRange(5, 'p. 170–210'),
-      screenCount: 44,
+      pageRange: `p. ${ch5.startPage}–${ch5.endPage}`,
+      screenCount: ch5.totalPages,
       icon: Palette,
       gradient: 'from-rose-500 to-pink-600',
       badgeColor: 'bg-rose-50 text-rose-700 border-rose-200',
@@ -482,11 +479,11 @@ export function getGridItemsForGrade(gradeKey: string): ChapterGridItem[] {
     {
       key: 'ch6',
       code: 'CH6',
-      title: spec?.c6?.[0] || 'AI Future',
-      subtitle: spec?.c6?.[1] ? `${spec.c6[1]}${spec.c6[2] ? ` & ${spec.c6[2]}` : ''}` : 'Truth, Safety & Alignment',
+      title: ch6?.title || 'AI Future',
+      subtitle: ch6?.subtitle || 'Truth, Safety & Alignment',
       monthNumber: 6,
-      pageRange: getPageRange(6, 'p. 211–251'),
-      screenCount: 44,
+      pageRange: `p. ${ch6.startPage}–${ch6.endPage}`,
+      screenCount: ch6.totalPages,
       icon: HeartHandshake,
       gradient: 'from-emerald-600 to-teal-600',
       badgeColor: 'bg-emerald-50 text-emerald-700 border-emerald-200',
@@ -494,11 +491,11 @@ export function getGridItemsForGrade(gradeKey: string): ChapterGridItem[] {
     {
       key: 'finale',
       code: 'FINALE',
-      title: 'Olympiad Mastery',
-      subtitle: 'Championship Challenge & Certificate',
+      title: finale?.title || 'Olympiad Mastery',
+      subtitle: finale?.subtitle || 'Championship Challenge & Certificate',
       monthNumber: 7,
-      pageRange: getPageRange(7, 'p. 252–266'),
-      screenCount: 14,
+      pageRange: `p. ${finale.startPage}–${finale.endPage}`,
+      screenCount: finale.totalPages,
       icon: Trophy,
       gradient: 'from-amber-500 to-yellow-500',
       badgeColor: 'bg-amber-50 text-amber-800 border-amber-200',
@@ -817,6 +814,42 @@ export default function ChapterLearningPage() {
     return 0
   }
 
+  // Independent Chapter & Overall Progress State
+  const [chapterProgressMap, setChapterProgressMap] = useState<Record<string, { completedPages: number; totalPages: number; percentage: number; formattedPercentage?: string; isCompleted: boolean }>>({})
+  const [overallProgressData, setOverallProgressData] = useState<{ completedPages: number; totalPages: number; percentage: number; formattedPercentage?: string }>({ completedPages: 0, totalPages: 0, percentage: 0 })
+
+  const loadGridProgress = useCallback(async () => {
+    const sId = user?.id || 'demo-student-id'
+    try {
+      const list = await progressService.getAllChaptersProgress(sId, assignedGrade)
+      const map: Record<string, any> = {}
+      list.forEach(p => {
+        map[p.key] = p
+      })
+      setChapterProgressMap(map)
+      const overall = await progressService.getPdfOverallProgress(sId, assignedGrade)
+      setOverallProgressData(overall)
+    } catch (e) {
+      console.warn('Notice loading grid progress:', e)
+    }
+  }, [user?.id, assignedGrade])
+
+  useEffect(() => {
+    loadGridProgress()
+    let debounceTimer: any = null
+    const handleUpdate = () => {
+      if (debounceTimer) clearTimeout(debounceTimer)
+      debounceTimer = setTimeout(() => {
+        loadGridProgress()
+      }, 150)
+    }
+    window.addEventListener('chapter_progress_updated', handleUpdate)
+    return () => {
+      if (debounceTimer) clearTimeout(debounceTimer)
+      window.removeEventListener('chapter_progress_updated', handleUpdate)
+    }
+  }, [loadGridProgress])
+
   const [chapter, setChapter] = useState<Chapter | null>(null)
   const [currentGradeKey, setCurrentGradeKey] = useState<string>('class3')
   const [sections, setSections] = useState<CanonicalSection[]>([])
@@ -942,20 +975,22 @@ export default function ChapterLearningPage() {
         }
       } else {
         chap = await chapterService.getById(chapterId)
-        if (chap.chapter_number) resolvedChapNum = String(chap.chapter_number)
+        if (chap) {
+          if (chap.chapter_number) resolvedChapNum = String(chap.chapter_number)
 
-        const matchedLvl =
-          curriculumCatalogService.getLevelData(chap.subject?.class?.name) ||
-          curriculumCatalogService.getLevelData(chap.subject?.class?.code) ||
-          curriculumCatalogService.getLevelData(chap.subject?.name) ||
-          curriculumCatalogService.getLevelData(chap.subject?.code) ||
-          curriculumCatalogService.getLevelData(chap.title) ||
-          curriculumCatalogService.getLevelData(chap.description) ||
-          curriculumCatalogService.getLevelData(chap.subject?.class_id) ||
-          curriculumCatalogService.getLevelData(chap.subject_id)
+          const matchedLvl =
+            curriculumCatalogService.getLevelData(chap.subject?.class?.name) ||
+            curriculumCatalogService.getLevelData(chap.subject?.class?.code) ||
+            curriculumCatalogService.getLevelData(chap.subject?.name) ||
+            curriculumCatalogService.getLevelData(chap.subject?.code) ||
+            curriculumCatalogService.getLevelData(chap.title) ||
+            curriculumCatalogService.getLevelData(chap.description) ||
+            curriculumCatalogService.getLevelData(chap.subject?.class_id) ||
+            curriculumCatalogService.getLevelData(chap.subject_id)
 
-        if (matchedLvl) {
-          resolvedGrade = matchedLvl.gradeKey
+          if (matchedLvl) {
+            resolvedGrade = matchedLvl.gradeKey
+          }
         }
       }
 
@@ -1375,8 +1410,8 @@ export default function ChapterLearningPage() {
     return (
       <AppLayout>
         <div className="w-full h-full max-h-full flex-1 flex flex-col items-center justify-start sm:justify-center p-2 sm:p-4 lg:p-6 overflow-y-auto overflow-x-hidden pb-24 lg:pb-6">
-          {/* Locked Assigned Class Indicator (Strictly reflects the student's database class assignment) */}
-          <div className="flex items-center justify-between gap-2 p-2 sm:p-2.5 px-3.5 sm:px-4 bg-white/95 rounded-2xl border border-slate-200/90 shadow-2xs mb-2.5 sm:mb-4 max-w-lg w-full shrink-0">
+          {/* Locked Assigned Class Indicator & Overall Track Progress */}
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3 sm:p-3.5 px-4 sm:px-5 bg-white/95 rounded-2xl border border-slate-200/90 shadow-2xs mb-3 sm:mb-5 max-w-5xl w-full shrink-0">
             <div className="flex items-center gap-2.5 min-w-0">
               <span className={`w-2.5 h-2.5 rounded-full shrink-0 ${currentTrackTheme.dot} animate-pulse`} />
               <div className="flex flex-col min-w-0">
@@ -1388,12 +1423,39 @@ export default function ChapterLearningPage() {
                 </span>
               </div>
             </div>
+
+            {/* Overall Progress Indicator */}
+            <div className="flex items-center gap-3 sm:min-w-[240px]">
+              <div className="flex-1">
+                <div className="flex items-center justify-between text-[10px] sm:text-[11px] font-bold mb-1">
+                  <span className="text-slate-500">Overall Progress</span>
+                  <span className="text-blue-600 font-black">
+                    {overallProgressData.formattedPercentage || `${overallProgressData.percentage}%`}
+                  </span>
+                </div>
+                <div className="w-full bg-slate-100 rounded-full h-2 overflow-hidden">
+                  <div
+                    className="bg-blue-600 h-full rounded-full transition-all duration-300"
+                    style={{ width: `${overallProgressData.percentage}%` }}
+                  />
+                </div>
+              </div>
+              <span className="text-[10px] sm:text-[11px] font-bold text-slate-400 shrink-0 whitespace-nowrap">
+                {overallProgressData.completedPages}/{overallProgressData.totalPages} pages
+              </span>
+            </div>
           </div>
 
           {/* Neat, Modern 8-Item Chapter Grid — 2 columns on mobile, 4 columns on desktop */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-3.5 lg:gap-4 w-full max-w-5xl mx-auto my-auto min-h-0">
             {currentGridItems.map((item) => {
               const Icon = item.icon
+              const prog = chapterProgressMap[item.key] || {
+                completedPages: 0,
+                totalPages: item.screenCount || 1,
+                percentage: 0,
+                isCompleted: false,
+              }
               return (
                 <div
                   key={item.key}
@@ -1432,6 +1494,26 @@ export default function ChapterLearningPage() {
                     </p>
                   </div>
 
+                  {/* Individual Chapter Progress Indicator */}
+                  <div className="w-full my-1 sm:my-1.5 pointer-events-none">
+                    <div className="flex items-center justify-between text-[8px] sm:text-[9px] font-bold mb-0.5 sm:mb-1">
+                      <span className="text-slate-500 font-medium">
+                        {prog.completedPages} / {prog.totalPages} pages
+                      </span>
+                      <span className={prog.isCompleted ? 'text-emerald-600 font-black' : 'text-blue-600 font-black'}>
+                        {prog.formattedPercentage || `${prog.percentage}%`}
+                      </span>
+                    </div>
+                    <div className="w-full bg-slate-100 rounded-full h-1 sm:h-1.5 overflow-hidden">
+                      <div
+                        className={`h-full rounded-full transition-all duration-300 ${
+                          prog.isCompleted ? 'bg-emerald-500' : 'bg-blue-600'
+                        }`}
+                        style={{ width: `${prog.percentage}%` }}
+                      />
+                    </div>
+                  </div>
+
                   <div className="pt-1 border-t border-slate-100 flex items-center justify-between text-[8px] sm:text-[9px] text-slate-400 font-semibold pointer-events-none">
                     <span className="font-mono">{item.pageRange}</span>
                     <span className="text-blue-600 font-bold group-hover:translate-x-0.5 transition-transform flex items-center gap-0.5">
@@ -1455,20 +1537,24 @@ export default function ChapterLearningPage() {
     const activeItem = currentGridItems.find((i) => i.key === resolvedItemKey) || currentGridItems[0]
     return (
       <AppLayout>
-        <div className="w-full h-full max-h-full flex-1 flex flex-col items-center justify-center min-h-0 bg-slate-900/5 overflow-hidden p-0">
-          <GaioInteractiveBookApp
+        <ErrorBoundary fallbackTitle="Digital Chapter Viewer">
+          <div className="w-full h-full max-h-full flex-1 flex flex-col items-center justify-center min-h-0 bg-slate-900/5 overflow-hidden p-0">
+            <GaioInteractiveBookApp
             gradeKey={assignedGrade}
             isGradeLocked={true}
             scopedMonth={activeItem.monthNumber}
-            chapterNumber={activeItem.code}
+            chapterNumber={activeItem.key}
             chapterTitle={activeItem.title}
             studentName={user?.profile?.full_name || 'Super Student'}
+            studentId={user?.id}
             onExit={() => navigate('/student/learning/chapters')}
+            onNavigateChapter={(nextKey) => navigate(`/student/learning/chapters/${nextKey}`)}
             onComplete={() => {
               toast.success(`🎉 You completed ${activeItem.code}: ${activeItem.title}!`)
             }}
           />
         </div>
+        </ErrorBoundary>
       </AppLayout>
     )
   }
@@ -1495,15 +1581,18 @@ export default function ChapterLearningPage() {
     const gKey = currentGradeKey as 'class3' | 'class4' | 'class5'
     return (
       <AppLayout>
-        <div className="flex-1 flex flex-col w-full h-full min-h-0 bg-slate-900/5 overflow-hidden">
-          <GaioInteractiveBookApp
+        <ErrorBoundary fallbackTitle="Digital Book Viewer">
+          <div className="flex-1 flex flex-col w-full h-full min-h-0 bg-slate-900/5 overflow-hidden">
+            <GaioInteractiveBookApp
             gradeKey={gKey}
             isGradeLocked={true}
             scopedMonth={cNum >= 1 && cNum <= 6 ? cNum : 1}
             chapterNumber={cNum}
             chapterTitle={chapter.title}
             studentName={user?.profile?.full_name || 'Super Student'}
+            studentId={user?.id}
             onExit={() => navigate('/student/learning')}
+            onNavigateChapter={(nextKey) => navigate(`/student/learning/chapters/${nextKey}`)}
             onComplete={() => {
               if (currentSection) {
                 markSectionDone(currentSection.id)
@@ -1512,6 +1601,7 @@ export default function ChapterLearningPage() {
             }}
           />
         </div>
+        </ErrorBoundary>
       </AppLayout>
     )
   }

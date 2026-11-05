@@ -146,6 +146,7 @@ export const LearningExperienceDispatcher: React.FC<LearningExperienceDispatcher
       case 'class3-playful':
         return (
           <GaioInteractiveBookApp
+            gradeKey="class3"
             initialMonth={cNum >= 1 && cNum <= 6 ? cNum : 1}
             onComplete={onCompleteSection}
             onExit={() => onJumpToSection(0)}

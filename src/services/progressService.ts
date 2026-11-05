@@ -2,6 +2,12 @@ import { supabase, isUuid } from '../lib/supabase'
 import type { StudentContentProgress, Enrollment, Class, Subject } from '../types'
 import { SYLLABUS_SPECS, ALL_LEVELS_CURRICULUM } from './curriculumData'
 import { curriculumCatalogService } from './curriculumCatalogService'
+import { classService } from './classService'
+import bookCatalogData from '../components/gaio/config/bookCatalog.json'
+import { gamification } from '../utils/gamification'
+import { CLASS_CHAPTER_BOUNDARIES, type ChapterBoundary, type ClassBoundaries } from './pdfChapterBoundaries'
+
+export { CLASS_CHAPTER_BOUNDARIES, type ChapterBoundary, type ClassBoundaries }
 
 export interface ProgressionResult {
   lessonCompleted: boolean
@@ -64,13 +70,13 @@ export interface StudentDashboardData {
 
 export const SECTION_PERCENTAGES: Record<number, number> = {
   0: 0,
-  1: 12.5,
+  1: 13,
   2: 25,
-  3: 37.5,
+  3: 38,
   4: 50,
-  5: 62.5,
+  5: 63,
   6: 75,
-  7: 87.5,
+  7: 88,
   8: 100,
 }
 
@@ -375,7 +381,950 @@ function saveLocalCompletionRecords(studentId: string, map: Map<string, SectionC
   } catch {}
 }
 
+
+export interface PageCompletionRecord {
+  completedPages: number[]
+  completedPagesByChapter?: Record<string, number[]>
+  completedChapters: string[]
+  lastAccessedPage?: number
+  lastReadByChapter?: Record<string, number>
+  updatedAt: string
+}
+
+export type StudentPageCompletionStore = Record<string, PageCompletionRecord>
+
+// Monotonic sequence tracker to prevent older async requests from overwriting newer page positions
+const lastReadSeqMap = new Map<string, number>()
+
+/**
+ * Whole-number progress percentage formatter:
+ * - 0% when completed <= 0
+ * - Exactly 100% when completed >= total (and only when all pages completed)
+ * - Whole-number integer strictly between 1% and 99% when partially complete
+ * - Never produces decimal values (e.g. 10%, 42%, 85%, 100%)
+ */
+export function formatProgressPercentage(completed: number, total: number): { numeric: number; formatted: string } {
+  if (!total || total <= 0 || !completed || completed <= 0) {
+    return { numeric: 0, formatted: '0%' }
+  }
+  if (completed >= total) {
+    return { numeric: 100, formatted: '100%' }
+  }
+  const rawPct = (completed / total) * 100
+  // Whole-number integer strictly between 1% and 99% when not all pages completed
+  const numeric = Math.min(99, Math.max(1, Math.round(rawPct)))
+  const formatted = `${numeric}%`
+  return { numeric, formatted }
+}
+
+export interface ChapterDefinition {
+  index: number
+  key: string
+  code: string
+  chapterNumber: number
+  title: string
+  subtitle?: string
+  pdfPath: string
+  totalPages: number
+  startPage: number
+  endPage: number
+}
+
+export const CLASS_PDF_MAP: Record<AppGradeKey, {
+  pdfPath: string
+  totalPages: number
+  className: string
+  code: string
+}> = {
+  class3: { pdfPath: '/books/class3.pdf', totalPages: 218, className: 'Class 3', code: 'CLS-03' },
+  class4: { pdfPath: '/books/class4.pdf', totalPages: 218, className: 'Class 4', code: 'CLS-04' },
+  class5: { pdfPath: '/books/class5.pdf', totalPages: 218, className: 'Class 5', code: 'CLS-05' },
+  class6: { pdfPath: '/books/class6.pdf', totalPages: 230, className: 'Class 6', code: 'CLS-06' },
+  class7: { pdfPath: '/books/class7.pdf', totalPages: 230, className: 'Class 7', code: 'CLS-07' },
+  class8: { pdfPath: '/books/class8.pdf', totalPages: 230, className: 'Class 8', code: 'CLS-08' },
+  class9: { pdfPath: '/books/class9.pdf', totalPages: 230, className: 'Class 9', code: 'CLS-09' },
+  class10: { pdfPath: '/books/class10.pdf', totalPages: 230, className: 'Class 10', code: 'CLS-10' },
+  class11: { pdfPath: '/books/class11.pdf', totalPages: 282, className: 'Class 11', code: 'CLS-11' },
+  class12: { pdfPath: '/books/class12.pdf', totalPages: 282, className: 'Class 12', code: 'CLS-12' },
+  ug1: { pdfPath: '/books/ug1.pdf', totalPages: 270, className: 'UG 1st Year', code: 'UG-01' },
+  ug2: { pdfPath: '/books/ug2.pdf', totalPages: 266, className: 'UG 2nd Year', code: 'UG-02' },
+  ug3: { pdfPath: '/books/ug3.pdf', totalPages: 266, className: 'UG 3rd Year', code: 'UG-03' },
+  ug4: { pdfPath: '/books/ug4.pdf', totalPages: 266, className: 'UG Final Year', code: 'UG-04' },
+  pg1: { pdfPath: '/books/pg1.pdf', totalPages: 266, className: 'PG 1st Year', code: 'PG-01' },
+  pg2: { pdfPath: '/books/pg2.pdf', totalPages: 266, className: 'PG 2nd Year', code: 'PG-02' },
+}
+
+export function getClassPdfInfo(gradeKey: string): { pdfPath: string; totalPages: number } {
+  const gKey = parseGradeKeyFromClass(gradeKey || 'class3')
+  const record = CLASS_PDF_MAP[gKey]
+  if (record) {
+    return {
+      pdfPath: record.pdfPath,
+      totalPages: pdfPageCountCache.get(record.pdfPath) || record.totalPages,
+    }
+  }
+  const fallbackPath = `/books/${gKey}.pdf`
+  return {
+    pdfPath: fallbackPath,
+    totalPages: pdfPageCountCache.get(fallbackPath) || 218,
+  }
+}
+
+export const DEFAULT_CHAPTER_PDFS = [
+  { pdfPath: '/books/class10.pdf', totalPages: 230 },
+  { pdfPath: '/books/class3.pdf', totalPages: 218 },
+  { pdfPath: '/books/class6.pdf', totalPages: 230 },
+  { pdfPath: '/books/class4.pdf', totalPages: 218 },
+  { pdfPath: '/books/class11.pdf', totalPages: 282 },
+  { pdfPath: '/books/class5.pdf', totalPages: 218 },
+]
+
+export const pdfPageCountCache = new Map<string, number>([
+  ['/books/class10.pdf', 230],
+  ['/books/class3.pdf', 218],
+  ['/books/class6.pdf', 230],
+  ['/books/class4.pdf', 218],
+  ['/books/class11.pdf', 282],
+  ['/books/class5.pdf', 218],
+  ['/books/class7.pdf', 230],
+  ['/books/class8.pdf', 230],
+  ['/books/class9.pdf', 230],
+  ['/books/class12.pdf', 282],
+  ['/books/ug1.pdf', 270],
+  ['/books/ug2.pdf', 266],
+  ['/books/ug3.pdf', 266],
+  ['/books/ug4.pdf', 266],
+  ['/books/pg1.pdf', 266],
+  ['/books/pg2.pdf', 266],
+])
+
+export function getClassChapters(gradeKey: string): ChapterDefinition[] {
+  const gKey = parseGradeKeyFromClass(gradeKey || 'class3')
+  const spec = SYLLABUS_SPECS.find(s => s.gradeKey === gKey) || SYLLABUS_SPECS[0]
+  const classPdf = getClassPdfInfo(gKey)
+  const bounds = CLASS_CHAPTER_BOUNDARIES[gKey] || CLASS_CHAPTER_BOUNDARIES.class3
+  const chapters: ChapterDefinition[] = []
+
+  // 1. Intro / Welcome (Segment 1: exactly first 5 pages 1–5)
+  chapters.push({
+    index: 0,
+    key: 'intro',
+    code: 'INTRO',
+    chapterNumber: 0,
+    title: 'Welcome & Orientation',
+    subtitle: `${spec?.name || 'AI Olympiad'} Tools & Foundations`,
+    pdfPath: classPdf.pdfPath,
+    totalPages: bounds.welcome.totalPages,
+    startPage: bounds.welcome.startPage,
+    endPage: bounds.welcome.endPage,
+  })
+
+  // 2. Chapters 1 to 6 (Segments 2 to 7: Month 1 to Month 6)
+  for (let i = 1; i <= 6; i++) {
+    const chKey = `ch${i}`
+    const chCode = `CH${i}`
+    const specChapter = (spec as any)[`c${i}`]
+    const title = Array.isArray(specChapter) ? specChapter[0] : (specChapter || `Chapter ${i}`)
+    const subtitle = Array.isArray(specChapter) && specChapter[1]
+      ? `${specChapter[1]}${specChapter[2] ? ` & ${specChapter[2]}` : ''}`
+      : undefined
+    const b = (bounds as any)[chKey] || { startPage: 1, endPage: classPdf.totalPages, totalPages: classPdf.totalPages }
+
+    chapters.push({
+      index: i,
+      key: chKey,
+      code: chCode,
+      chapterNumber: i,
+      title,
+      subtitle,
+      pdfPath: classPdf.pdfPath,
+      totalPages: b.totalPages,
+      startPage: b.startPage,
+      endPage: b.endPage,
+    })
+  }
+
+  // 3. Finale (Segment 8: Certificate through final page)
+  chapters.push({
+    index: 7,
+    key: 'finale',
+    code: 'FINALE',
+    chapterNumber: 7,
+    title: 'Olympiad Mastery',
+    subtitle: 'Championship Challenge & Certificate',
+    pdfPath: classPdf.pdfPath,
+    totalPages: bounds.finale.totalPages,
+    startPage: bounds.finale.startPage,
+    endPage: bounds.finale.endPage,
+  })
+
+  return chapters
+}
+
+export function normalizeChapterKey(input: string | number | undefined | null): string {
+  if (input === undefined || input === null) return 'intro'
+  const str = String(input).toLowerCase().trim()
+  if (str === '0' || str === 'intro' || str === 'month 0' || str === 'welcome' || str === 'orientation') return 'intro'
+  if (str === '7' || str === 'finale' || str === 'month 7' || str === 'certificate' || str === 'showcase' || str === 'mastery') return 'finale'
+  if (['intro', 'ch1', 'ch2', 'ch3', 'ch4', 'ch5', 'ch6', 'finale'].includes(str)) return str
+  if (['1', '2', '3', '4', '5', '6'].includes(str)) return `ch${str}`
+  const match = str.match(/\d+/)
+  if (match) {
+    const num = parseInt(match[0], 10)
+    if (num === 0) return 'intro'
+    if (num >= 7) return 'finale'
+    return `ch${num}`
+  }
+  return str || 'intro'
+}
+
+function getPagePersistentRecordKey(studentId: string): string {
+  return `nanjil_page_completions_${studentId}`
+}
+
+function loadLocalPageCompletions(studentId: string): StudentPageCompletionStore {
+  if (!studentId) return {}
+  try {
+    const raw = localStorage.getItem(getPagePersistentRecordKey(studentId))
+    if (raw) {
+      return JSON.parse(raw) as StudentPageCompletionStore
+    }
+  } catch {}
+  return {}
+}
+
+function saveLocalPageCompletions(studentId: string, store: StudentPageCompletionStore): void {
+  if (!studentId) return
+  try {
+    localStorage.setItem(getPagePersistentRecordKey(studentId), JSON.stringify(store))
+  } catch {}
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// SMOOTH BACKGROUND PERSISTENCE & COALESCING CACHE
+// Ensures zero freezing/lagging, debounces rapid page navigation,
+// coalesces concurrent requests, and prevents duplicate records.
+// ─────────────────────────────────────────────────────────────────────────────
+
+interface PendingProgressJob {
+  studentId: string
+  gradeKey: string
+  chapterKey: string
+  lastReadPage: number
+  totalPages: number
+  completedPages: number[]
+  completionPercentage: number
+  isCompleted: boolean
+  organizationId?: string
+  newPageNumber?: number
+}
+
+const pendingProgressJobs = new Map<string, PendingProgressJob>()
+let progressFlushTimer: ReturnType<typeof setTimeout> | null = null
+
+async function executePendingProgressFlush() {
+  if (pendingProgressJobs.size === 0) return
+  const jobs = Array.from(pendingProgressJobs.values())
+  pendingProgressJobs.clear()
+
+  for (const job of jobs) {
+    if (!isUuid(job.studentId)) continue
+
+    try {
+      await supabase.from('student_chapter_reading_progress').upsert(
+        {
+          student_id: job.studentId,
+          grade_key: job.gradeKey,
+          chapter_key: job.chapterKey,
+          last_read_page: job.lastReadPage,
+          total_pages: job.totalPages,
+          completed_pages: job.completedPages,
+          completion_percentage: job.completionPercentage,
+          is_completed: job.isCompleted,
+          organization_id: job.organizationId && isUuid(job.organizationId) ? job.organizationId : null,
+          updated_at: new Date().toISOString(),
+        },
+        { onConflict: 'student_id,grade_key,chapter_key' }
+      )
+    } catch (err) {
+      console.warn('Notice saving chapter reading progress in background:', err)
+    }
+
+    if (job.newPageNumber !== undefined) {
+      try {
+        await supabase.from('student_page_completions').upsert(
+          {
+            student_id: job.studentId,
+            grade_key: job.gradeKey,
+            chapter_key: job.chapterKey,
+            page_number: job.newPageNumber,
+            organization_id: job.organizationId && isUuid(job.organizationId) ? job.organizationId : null,
+          },
+          { onConflict: 'student_id,grade_key,chapter_key,page_number' }
+        )
+      } catch (err) {
+        console.warn('Notice saving individual page completion in background:', err)
+      }
+    }
+  }
+}
+
+function queueProgressPersistence(job: PendingProgressJob) {
+  const key = `${job.studentId}:${job.gradeKey}:${job.chapterKey}`
+  pendingProgressJobs.set(key, job)
+
+  if (progressFlushTimer) clearTimeout(progressFlushTimer)
+  progressFlushTimer = setTimeout(() => {
+    executePendingProgressFlush().catch(() => {})
+  }, 100)
+}
+
+// In-flight query deduplication & memory cache for getCompletedPages
+const inFlightCompletedPagesQueries = new Map<string, Promise<number[]>>()
+const completedPagesMemoryCache = new Map<string, { pages: number[]; timestamp: number }>()
+
 export const progressService = {
+  /**
+   * Flushes any queued background progress updates to Supabase immediately (called before unload or unmount)
+   */
+  async flushPendingUpdates(): Promise<void> {
+    if (progressFlushTimer) {
+      clearTimeout(progressFlushTimer)
+      progressFlushTimer = null
+    }
+    await executePendingProgressFlush()
+  },
+  // ─── SAVE AND RESTORE LAST-READ PAGE (PER STUDENT & CHAPTER) ────────────────
+  async saveLastReadPage(params: {
+    studentId: string
+    gradeKey: string
+    chapterKey: string
+    pageNumber: number
+    totalPages?: number
+    chapterId?: string
+    organizationId?: string
+  }): Promise<{ success: boolean; pageNumber: number }> {
+    let sId = params.studentId || 'demo-student-id'
+    try {
+      const { data: { user } } = await supabase.auth.getUser()
+      if (user?.id) {
+        sId = user.id
+      }
+    } catch {}
+
+    const gKey = parseGradeKeyFromClass(params.gradeKey || 'class3')
+    const chKey = normalizeChapterKey(params.chapterKey)
+    const chapters = getClassChapters(gKey)
+    const chapter = chapters.find(c => c.key === chKey) || chapters[0]
+
+    // Normalize pageNumber to relative page within [1, chapter.totalPages]
+    let relPage = Math.max(1, Math.floor(params.pageNumber || 1))
+    if (relPage > chapter.totalPages && relPage >= chapter.startPage && relPage <= chapter.endPage) {
+      relPage = relPage - chapter.startPage + 1
+    }
+    const pNum = Math.max(1, Math.min(chapter.totalPages, relPage))
+
+    // Monotonic sequence check to prevent older async requests from overwriting newer positions
+    const seqKey = `${sId}:${gKey}:${chKey}`
+    const currentSeq = Date.now()
+    const lastSeq = lastReadSeqMap.get(seqKey) || 0
+    if (currentSeq < lastSeq) {
+      return { success: false, pageNumber: pNum }
+    }
+    lastReadSeqMap.set(seqKey, currentSeq)
+
+    // 1. Immediately update student-isolated localStorage cache
+    const cacheKey = `nanjil_reading_position_${sId}_${gKey}_${chKey}`
+    try {
+      localStorage.setItem(
+        cacheKey,
+        JSON.stringify({
+          pageNumber: pNum,
+          updatedAt: new Date().toISOString(),
+        })
+      )
+    } catch {}
+
+    // Also update student's memory/localStorage store
+    const store = loadLocalPageCompletions(sId)
+    if (!store[gKey]) {
+      store[gKey] = {
+        completedPages: [],
+        completedPagesByChapter: {},
+        completedChapters: [],
+        updatedAt: new Date().toISOString(),
+      }
+    }
+    if (!store[gKey].completedPagesByChapter) {
+      store[gKey].completedPagesByChapter = {}
+    }
+    if (!store[gKey].lastReadByChapter) {
+      store[gKey].lastReadByChapter = {}
+    }
+    store[gKey].lastAccessedPage = pNum
+    store[gKey].lastReadByChapter[chKey] = pNum
+    store[gKey].updatedAt = new Date().toISOString()
+    saveLocalPageCompletions(sId, store)
+
+    // 2. Persist to Supabase student_chapter_reading_progress if valid student UUID
+    if (isUuid(sId)) {
+      try {
+        const total = chapter.totalPages
+        const completedInChapter = store[gKey].completedPagesByChapter[chKey] || []
+        const isDone = completedInChapter.length >= total && total > 0
+        const pctObj = formatProgressPercentage(completedInChapter.length, total)
+
+        await supabase.from('student_chapter_reading_progress').upsert(
+          {
+            student_id: sId,
+            grade_key: gKey,
+            chapter_key: chKey,
+            last_read_page: pNum,
+            total_pages: total,
+            completed_pages: completedInChapter,
+            is_completed: isDone,
+            completion_percentage: pctObj.numeric,
+            organization_id: params.organizationId && isUuid(params.organizationId) ? params.organizationId : null,
+            chapter_id: params.chapterId && isUuid(params.chapterId) ? params.chapterId : null,
+            updated_at: new Date().toISOString(),
+          },
+          { onConflict: 'student_id,grade_key,chapter_key' }
+        )
+      } catch (err) {
+        console.warn('Notice saving reading position to Supabase:', err)
+      }
+    }
+
+    return { success: true, pageNumber: pNum }
+  },
+
+  async getLastReadPage(params: {
+    studentId: string
+    gradeKey: string
+    chapterKey: string
+    fallbackStartPage?: number
+  }): Promise<number> {
+    let sId = params.studentId || 'demo-student-id'
+    try {
+      const { data: { user } } = await supabase.auth.getUser()
+      if (user?.id) {
+        sId = user.id
+      }
+    } catch {}
+
+    const gKey = parseGradeKeyFromClass(params.gradeKey || 'class3')
+    const chKey = normalizeChapterKey(params.chapterKey)
+    const chapters = getClassChapters(gKey)
+    const currentChapter = chapters.find(c => c.key === chKey) || chapters[0]
+
+    const fallback = params.fallbackStartPage !== undefined && params.fallbackStartPage !== null
+      ? Math.max(1, Math.min(currentChapter.totalPages, params.fallbackStartPage))
+      : 1
+
+    const normalizeResult = (rawPage: number): number => {
+      if (rawPage > currentChapter.totalPages && rawPage >= currentChapter.startPage && rawPage <= currentChapter.endPage) {
+        return rawPage - currentChapter.startPage + 1
+      }
+      return Math.max(1, Math.min(currentChapter.totalPages, rawPage))
+    }
+
+    // 1. Try Supabase first if student ID is UUID
+    if (isUuid(sId)) {
+      try {
+        const { data } = await supabase
+          .from('student_chapter_reading_progress')
+          .select('last_read_page, completed_pages, is_completed, updated_at')
+          .eq('student_id', sId)
+          .eq('grade_key', gKey)
+          .eq('chapter_key', chKey)
+          .maybeSingle()
+
+        if (data && data.last_read_page) {
+          const page = normalizeResult(data.last_read_page)
+          const cacheKey = `nanjil_reading_position_${sId}_${gKey}_${chKey}`
+          try {
+            localStorage.setItem(
+              cacheKey,
+              JSON.stringify({
+                pageNumber: page,
+                updatedAt: data.updated_at || new Date().toISOString(),
+              })
+            )
+          } catch {}
+          return page
+        }
+      } catch (err) {
+        console.warn('Notice fetching last read page from Supabase:', err)
+      }
+    }
+
+    // 2. Fall back to student-isolated localStorage cache
+    const cacheKey = `nanjil_reading_position_${sId}_${gKey}_${chKey}`
+    try {
+      const raw = localStorage.getItem(cacheKey)
+      if (raw) {
+        const parsed = JSON.parse(raw)
+        if (parsed?.pageNumber) {
+          return normalizeResult(parsed.pageNumber)
+        }
+      }
+    } catch {}
+
+    // 3. Fall back to store chapter lastReadByChapter
+    try {
+      const store = loadLocalPageCompletions(sId)
+      if (store[gKey]?.lastReadByChapter?.[chKey]) {
+        return normalizeResult(store[gKey].lastReadByChapter[chKey])
+      }
+    } catch {}
+
+    return fallback
+  },
+
+  // ─── DYNAMIC PDF PAGE & CHAPTER PROGRESS ENGINE ────────────────────────────
+  async recordPdfPageCompletion(params: {
+    studentId: string
+    gradeKey: string
+    pageNumber: number
+    chapterKey?: string
+    chapterIndex?: number
+    totalPages?: number
+    organizationId?: string
+    isChapterCompletion?: boolean
+  }): Promise<{
+    isNew: boolean
+    completedPages: number[]
+    chapterProgress: {
+      completedPages: number
+      totalPages: number
+      percentage: number
+      formattedPercentage: string
+      isCompleted: boolean
+    }
+    overallProgress: {
+      completedPages: number
+      totalPages: number
+      percentage: number
+      formattedPercentage: string
+    }
+    chapterCompleted: boolean
+  }> {
+    let sId = params.studentId || 'demo-student-id'
+    try {
+      const { data: { user } } = await supabase.auth.getUser()
+      if (user?.id) {
+        sId = user.id
+      }
+    } catch {}
+
+    const gKey = parseGradeKeyFromClass(params.gradeKey || 'class3')
+
+    // Resolve chapterKey
+    let chKey = 'intro'
+    if (params.chapterKey) {
+      chKey = normalizeChapterKey(params.chapterKey)
+    } else if (params.chapterIndex !== undefined && params.chapterIndex !== null) {
+      chKey = normalizeChapterKey(params.chapterIndex)
+    }
+
+    const store = loadLocalPageCompletions(sId)
+    if (!store[gKey]) {
+      store[gKey] = {
+        completedPages: [],
+        completedPagesByChapter: {},
+        completedChapters: [],
+        updatedAt: new Date().toISOString(),
+      }
+    }
+    if (!store[gKey].completedPagesByChapter) {
+      store[gKey].completedPagesByChapter = {}
+    }
+    if (!store[gKey].completedPagesByChapter[chKey]) {
+      store[gKey].completedPagesByChapter[chKey] = []
+    }
+    if (!Array.isArray(store[gKey].completedChapters)) {
+      store[gKey].completedChapters = []
+    }
+
+    // Resolve chapter metadata dynamically
+    const chapters = getClassChapters(gKey)
+    const currentChapter = chapters.find(c => c.key === chKey) || chapters[0]
+    const chTotalPages = currentChapter.totalPages
+
+    // Normalize pageNumber to relative page [1..chTotalPages]
+    let rawPage = Math.max(1, Math.floor(params.pageNumber || 1))
+    if (rawPage > chTotalPages && rawPage >= currentChapter.startPage && rawPage <= currentChapter.endPage) {
+      rawPage = rawPage - currentChapter.startPage + 1
+    }
+    const pNum = Math.max(1, Math.min(chTotalPages, rawPage))
+
+    const chPageSet = new Set<number>(store[gKey].completedPagesByChapter[chKey])
+    const isNew = !chPageSet.has(pNum)
+
+    if (isNew) {
+      chPageSet.add(pNum)
+      try {
+        gamification.addXP(5, sId, `pdf_${gKey}_${chKey}_p${pNum}`)
+      } catch {}
+    }
+
+    const sortedChapterPages = Array.from(chPageSet).sort((a, b) => a - b)
+    store[gKey].completedPagesByChapter[chKey] = sortedChapterPages
+
+    // Calculate unique physical pages across all chapters for overall progress
+    const physicalPagesSet = new Set<number>()
+    let totalClassPages = 0
+    for (const c of chapters) {
+      totalClassPages += c.totalPages
+      const chPages = store[gKey]?.completedPagesByChapter?.[c.key] || []
+      for (const p of chPages) {
+        if (p >= 1 && p <= c.totalPages) {
+          physicalPagesSet.add(c.startPage + p - 1)
+        }
+      }
+    }
+    const totalClassDone = physicalPagesSet.size
+    store[gKey].completedPages = Array.from(physicalPagesSet).sort((a, b) => a - b)
+    store[gKey].lastAccessedPage = pNum
+    store[gKey].updatedAt = new Date().toISOString()
+
+    const chCompletedCount = chPageSet.size
+    // A chapter is ONLY complete when all unique pages in that chapter are completed
+    const isChapterDone = chCompletedCount >= chTotalPages && chTotalPages > 0
+    const chProg = formatProgressPercentage(chCompletedCount, chTotalPages)
+    const overallProg = formatProgressPercentage(totalClassDone, totalClassPages)
+
+    if (isChapterDone && !store[gKey].completedChapters.includes(chKey)) {
+      store[gKey].completedChapters.push(chKey)
+      try {
+        gamification.addXP(50, sId, `pdf_chapter_done_${gKey}_${chKey}`)
+      } catch {}
+    }
+
+    saveLocalPageCompletions(sId, store)
+
+    // Update in-memory cache immediately for 0ms reads
+    const cacheKey = `${sId}:${gKey}:${chKey}`
+    completedPagesMemoryCache.set(cacheKey, { pages: sortedChapterPages, timestamp: Date.now() })
+    completedPagesMemoryCache.set(`${sId}:${gKey}:all`, { pages: store[gKey].completedPages, timestamp: Date.now() })
+
+    // Smooth background persistence: queue update to Supabase without blocking PDF navigation
+    if (isUuid(sId)) {
+      queueProgressPersistence({
+        studentId: sId,
+        gradeKey: gKey,
+        chapterKey: chKey,
+        lastReadPage: pNum,
+        totalPages: chTotalPages,
+        completedPages: sortedChapterPages,
+        completionPercentage: chProg.numeric,
+        isCompleted: isChapterDone,
+        organizationId: params.organizationId,
+        newPageNumber: isNew ? pNum : undefined,
+      })
+    }
+
+    // Advance class progression if all chapters complete
+    if (isChapterDone && store[gKey].completedChapters.length >= chapters.length && params.organizationId) {
+      setTimeout(() => {
+        progressService.checkAndAdvanceClassProgression(sId, params.organizationId!).catch(() => {})
+      }, 100)
+    }
+
+    // Dispatch global events for real-time reactivity
+    try {
+      window.dispatchEvent(
+        new CustomEvent('chapter_progress_updated', {
+          detail: {
+            studentId: sId,
+            gradeKey: gKey,
+            chapterKey: chKey,
+            pageNumber: pNum,
+            completedCount: totalClassDone,
+            chapterProgress: {
+              completedPages: chCompletedCount,
+              totalPages: chTotalPages,
+              percentage: chProg.numeric,
+              formattedPercentage: chProg.formatted,
+              isCompleted: isChapterDone,
+            },
+            overallProgress: {
+              completedPages: totalClassDone,
+              totalPages: totalClassPages,
+              percentage: overallProg.numeric,
+              formattedPercentage: overallProg.formatted,
+            },
+          },
+        })
+      )
+      window.dispatchEvent(
+        new CustomEvent('learning_event', {
+          detail: {
+            type: 'page_completed',
+            studentId: sId,
+            gradeKey: gKey,
+            chapterKey: chKey,
+            pageNumber: pNum,
+            chapterPct: chProg.numeric,
+            chapterPctFormatted: chProg.formatted,
+            overallPct: overallProg.numeric,
+            overallPctFormatted: overallProg.formatted,
+          },
+        })
+      )
+    } catch {}
+
+    return {
+      isNew,
+      completedPages: sortedChapterPages,
+      chapterProgress: {
+        completedPages: chCompletedCount,
+        totalPages: chTotalPages,
+        percentage: chProg.numeric,
+        formattedPercentage: chProg.formatted,
+        isCompleted: isChapterDone,
+      },
+      overallProgress: {
+        completedPages: totalClassDone,
+        totalPages: totalClassPages,
+        percentage: overallProg.numeric,
+        formattedPercentage: overallProg.formatted,
+      },
+      chapterCompleted: isChapterDone,
+    }
+  },
+
+  async getCompletedPages(studentId: string, gradeKey: string, chapterKey?: string, forceRefresh = false): Promise<number[]> {
+    let sId = studentId || 'demo-student-id'
+    try {
+      const { data: { user } } = await supabase.auth.getUser()
+      if (user?.id) {
+        sId = user.id
+      }
+    } catch {}
+
+    const gKey = parseGradeKeyFromClass(gradeKey || 'class3')
+    const chKey = chapterKey ? normalizeChapterKey(chapterKey) : undefined
+    const cacheKey = `${sId}:${gKey}:${chKey || 'all'}`
+
+    // 1. Fast memory cache check (within 2000ms return cached immediately without network request)
+    if (!forceRefresh) {
+      const cached = completedPagesMemoryCache.get(cacheKey)
+      if (cached && Date.now() - cached.timestamp < 2000) {
+        return cached.pages
+      }
+    }
+
+    // 2. Query coalescing: reuse existing in-flight promise for this key
+    if (inFlightCompletedPagesQueries.has(cacheKey)) {
+      return inFlightCompletedPagesQueries.get(cacheKey)!
+    }
+
+    const fetchPromise = (async () => {
+      const store = loadLocalPageCompletions(sId)
+      const chapters = getClassChapters(gKey)
+
+      let pageList: number[] = []
+      if (chKey) {
+        pageList = store[gKey]?.completedPagesByChapter?.[chKey] || []
+      } else {
+        pageList = store[gKey]?.completedPages || []
+      }
+      const pageSet = new Set<number>(pageList)
+
+      // Sync from Supabase if valid UUID
+      if (isUuid(sId)) {
+        try {
+          let query = supabase
+            .from('student_chapter_reading_progress')
+            .select('chapter_key, completed_pages')
+            .eq('student_id', sId)
+            .eq('grade_key', gKey)
+
+          if (chKey) {
+            query = query.eq('chapter_key', chKey)
+          }
+
+          const { data } = await query
+          if (data && Array.isArray(data)) {
+            let hasNew = false
+            if (!store[gKey]) {
+              store[gKey] = {
+                completedPages: [],
+                completedPagesByChapter: {},
+                completedChapters: [],
+                updatedAt: new Date().toISOString(),
+              }
+            }
+            if (!store[gKey].completedPagesByChapter) {
+              store[gKey].completedPagesByChapter = {}
+            }
+
+            for (const row of data) {
+              const rowChKey = row.chapter_key
+              if (!store[gKey].completedPagesByChapter[rowChKey]) {
+                store[gKey].completedPagesByChapter[rowChKey] = []
+              }
+              const existingRowSet = new Set(store[gKey].completedPagesByChapter[rowChKey])
+              if (Array.isArray(row.completed_pages)) {
+                for (const p of row.completed_pages) {
+                  if (typeof p === 'number' && !existingRowSet.has(p)) {
+                    existingRowSet.add(p)
+                    hasNew = true
+                  }
+                  if (chKey && rowChKey === chKey) {
+                    pageSet.add(p)
+                  } else if (!chKey) {
+                    const cDef = chapters.find(c => c.key === rowChKey)
+                    if (cDef && typeof p === 'number' && p >= 1 && p <= cDef.totalPages) {
+                      pageSet.add(cDef.startPage + p - 1)
+                    }
+                  }
+                }
+                store[gKey].completedPagesByChapter[rowChKey] = Array.from(existingRowSet).sort((a, b) => a - b)
+              }
+            }
+
+            // Recalculate physical unique completed pages across all chapters
+            const physicalPagesSet = new Set<number>()
+            for (const c of chapters) {
+              const chPages = store[gKey]?.completedPagesByChapter?.[c.key] || []
+              for (const p of chPages) {
+                if (p >= 1 && p <= c.totalPages) {
+                  physicalPagesSet.add(c.startPage + p - 1)
+                }
+              }
+            }
+            store[gKey].completedPages = Array.from(physicalPagesSet).sort((a, b) => a - b)
+
+            if (hasNew) {
+              saveLocalPageCompletions(sId, store)
+            }
+          }
+        } catch (err) {
+          // Fall back gracefully to local store
+        }
+      }
+
+      const result = Array.from(pageSet).sort((a, b) => a - b)
+      completedPagesMemoryCache.set(cacheKey, { pages: result, timestamp: Date.now() })
+      return result
+    })().finally(() => {
+      inFlightCompletedPagesQueries.delete(cacheKey)
+    })
+
+    inFlightCompletedPagesQueries.set(cacheKey, fetchPromise)
+    return fetchPromise
+  },
+
+  async getAllChaptersProgress(studentId: string, gradeKey: string): Promise<Array<{
+    index: number
+    key: string
+    code: string
+    title: string
+    subtitle?: string
+    pdfPath: string
+    startPage: number
+    endPage: number
+    totalPages: number
+    completedPages: number
+    percentage: number
+    formattedPercentage: string
+    isCompleted: boolean
+  }>> {
+    let sId = studentId || 'demo-student-id'
+    try {
+      const { data: { user } } = await supabase.auth.getUser()
+      if (user?.id) {
+        sId = user.id
+      }
+    } catch {}
+
+    const gKey = parseGradeKeyFromClass(gradeKey || 'class3')
+    const chapters = getClassChapters(gKey)
+
+    // Ensure all completed pages are synced
+    await progressService.getCompletedPages(sId, gKey)
+    const store = loadLocalPageCompletions(sId)
+
+    return chapters.map((ch) => {
+      const chDonePages = Array.from(new Set(store[gKey]?.completedPagesByChapter?.[ch.key] || []))
+      const doneCount = chDonePages.length
+      const isCompleted = doneCount >= ch.totalPages && ch.totalPages > 0
+      const prog = formatProgressPercentage(doneCount, ch.totalPages)
+
+      return {
+        index: ch.index,
+        key: ch.key,
+        code: ch.code,
+        title: ch.title,
+        subtitle: ch.subtitle,
+        pdfPath: ch.pdfPath,
+        startPage: ch.startPage,
+        endPage: ch.endPage,
+        totalPages: ch.totalPages,
+        completedPages: doneCount,
+        percentage: prog.numeric,
+        formattedPercentage: prog.formatted,
+        isCompleted,
+      }
+    })
+  },
+
+  async getPdfOverallProgress(studentId: string, gradeKey?: string): Promise<{
+    totalPages: number
+    completedPages: number
+    percentage: number
+    formattedPercentage: string
+    completedChaptersCount: number
+    totalChaptersCount: number
+  }> {
+    let sId = studentId || 'demo-student-id'
+    try {
+      const { data: { user } } = await supabase.auth.getUser()
+      if (user?.id) {
+        sId = user.id
+      }
+    } catch {}
+
+    let resolvedGrade = gradeKey ? parseGradeKeyFromClass(gradeKey) : 'class3'
+    if (!gradeKey && sId) {
+      try {
+        const assigned = await enrollmentService.getStudentAssignedGrade(sId)
+        if (assigned?.gradeKey) resolvedGrade = assigned.gradeKey
+      } catch {}
+    }
+
+    const chapters = getClassChapters(resolvedGrade)
+    await progressService.getCompletedPages(sId, resolvedGrade)
+    const store = loadLocalPageCompletions(sId)
+
+    let totalPages = 0
+    let completedPages = 0
+    let completedChaptersCount = 0
+
+    for (const ch of chapters) {
+      totalPages += ch.totalPages
+      const chDoneSet = new Set(store[resolvedGrade]?.completedPagesByChapter?.[ch.key] || [])
+      const chDone = chDoneSet.size
+      completedPages += chDone
+      if (chDone >= ch.totalPages && ch.totalPages > 0) {
+        completedChaptersCount++
+      }
+    }
+
+    const prog = formatProgressPercentage(completedPages, totalPages)
+
+    return {
+      totalPages,
+      completedPages,
+      percentage: prog.numeric,
+      formattedPercentage: prog.formatted,
+      completedChaptersCount,
+      totalChaptersCount: chapters.length,
+    }
+  },
+
   async getCanonicalSectionIds(chapterId: string): Promise<string[]> {
     if (!chapterId) return []
 
@@ -672,10 +1621,8 @@ export const progressService = {
   },
 
   async getStudentOverallProgress(studentId: string, _organizationId?: string) {
-    const completedSet = new Set<string>()
     let totalTime = 0
     let avgCompletion = 0
-    let itemsCount = 0
 
     if (isUuid(studentId)) {
       try {
@@ -685,11 +1632,7 @@ export const progressService = {
           .eq('student_id', studentId)
 
         if (data && data.length > 0) {
-          itemsCount = data.length
           data.forEach(i => {
-            if (i.status === 'completed') {
-              completedSet.add(i.chapter_content_id)
-            }
             totalTime += i.time_spent || 0
           })
           avgCompletion = data.reduce((sum, i) => sum + (i.completion_percentage || 0), 0) / data.length
@@ -697,21 +1640,13 @@ export const progressService = {
       } catch {}
     }
 
-    // Also include from persistent completion registry
-    const localMap = loadLocalCompletionRecords(studentId)
-    localMap.forEach(rec => {
-      if (rec.status === 'completed') {
-        completedSet.add(rec.section_id)
-      }
-    })
+    const pdfOverall = await progressService.getPdfOverallProgress(studentId)
 
-    const completed = completedSet.size
-    const totalPossible = Math.max(itemsCount, 48) // 6 chapters * 8 canonical sections = 48
     return {
-      completed,
+      completed: pdfOverall.completedPages,
       totalTime,
-      quizAvg: avgCompletion,
-      totalItems: totalPossible,
+      quizAvg: avgCompletion || pdfOverall.percentage,
+      totalItems: pdfOverall.totalPages,
     }
   },
 
@@ -999,7 +1934,34 @@ export const progressService = {
   async getStudentDetailedDashboard(studentId: string, orgId: string): Promise<StudentDashboardData> {
     // 1. Fetch student enrollments
     const enrollments = await enrollmentService.getAllStudentEnrollments(studentId)
-    const activeEnr = enrollments.find(e => e.status === 'active') || (enrollments.length > 0 ? enrollments[enrollments.length - 1] : null)
+    let activeEnr = enrollments.find(e => e.status === 'active') || (enrollments.length > 0 ? enrollments[enrollments.length - 1] : null)
+
+    if (!activeEnr) {
+      try {
+        const assigned = await enrollmentService.getStudentAssignedGrade(studentId, orgId);
+        if (assigned && assigned.gradeKey) {
+          activeEnr = {
+            id: 'enr-' + studentId,
+            student_id: studentId,
+            organization_id: orgId,
+            class_id: 'cat-cls-' + assigned.gradeKey,
+            status: 'active',
+            enrolled_at: new Date().toISOString(),
+            created_at: new Date().toISOString(),
+            class: {
+              id: 'cat-cls-' + assigned.gradeKey,
+              name: assigned.className,
+              code: assigned.code || '',
+            } as any,
+            subject: {
+              id: 'cat-sub-' + assigned.gradeKey,
+              name: assigned.subjectName || '',
+              class_id: 'cat-cls-' + assigned.gradeKey,
+            } as any,
+          } as any as Enrollment;
+        }
+      } catch {}
+    }
 
     if (!activeEnr) {
       return {
@@ -1075,6 +2037,30 @@ export const progressService = {
     }
 
     // If no custom DB chapters exist, check if class/subject corresponds to the AI Olympiad Curriculum Catalog
+    const resolvedGrade = parseGradeKeyFromClass(enrolledClass || activeEnr?.class_id || 'class3');
+    const bookEntry = (bookCatalogData as any)[resolvedGrade] || (bookCatalogData as any)['class3'];
+
+    if (chapList.length === 0 && bookEntry?.chapters && bookEntry.chapters.length > 0) {
+      chapList = bookEntry.chapters.map((c: any, idx: number) => ({
+        id: `book-${resolvedGrade}-${c.key}`,
+        organization_id: orgId,
+        subject_id: enrolledSubject?.id || `cat-sub-${resolvedGrade}`,
+        subject_name: enrolledSubject?.name || 'AI Olympiad Interactive Curriculum',
+        title: c.title,
+        chapter_number: idx === 0 ? 'Intro' : idx === 7 ? 'Finale' : String(idx),
+        short_description: `Pages ${c.startPage} - ${c.endPage} (${c.endPage - c.startPage + 1} pages)`,
+        description: c.title,
+        status: 'published',
+        estimated_duration: (c.endPage - c.startPage + 1) * 3,
+        display_order: idx + 1,
+        startPage: c.startPage,
+        endPage: c.endPage,
+        created_by: 'system',
+        created_at: new Date().toISOString(),
+        updated_at: new Date().toISOString(),
+      }));
+    }
+
     if (chapList.length === 0) {
       const allLevelsData = curriculumCatalogService.getAllLevelsData()
       const cleanClassName = enrolledClass?.name?.toLowerCase().replace(/[\s-_]/g, '') || ''
@@ -1257,7 +2243,7 @@ export const progressService = {
     }
 
     const overallPercentage = totalSectionsPossible > 0
-      ? Math.min(100, Math.round((totalSectionsDone / totalSectionsPossible) * 1000) / 10)
+      ? formatProgressPercentage(totalSectionsDone, totalSectionsPossible).numeric
       : 0
 
     const currentChapter = firstIncompleteChap || (assignedChapters.length > 0 ? assignedChapters[0] : null)
@@ -1288,13 +2274,42 @@ export const progressService = {
       }
     } catch {}
 
+    // Synchronize with dynamic PDF progress if available
+    let finalOverallPercentage = overallPercentage;
+    try {
+      const resolvedGradeKey = parseGradeKeyFromClass(enrolledClass || activeEnr?.class_id);
+      const pdfOverall = await progressService.getPdfOverallProgress(studentId, resolvedGradeKey);
+      const pdfChapters = await progressService.getAllChaptersProgress(studentId, resolvedGradeKey);
+
+      if (pdfOverall.completedPages > 0 || pdfOverall.percentage > 0) {
+        assignedChapters.forEach((ch, idx) => {
+          const pCh = pdfChapters[idx];
+          if (pCh) {
+            ch.progress = {
+              total: pCh.totalPages,
+              completed: pCh.completedPages,
+              percentage: pCh.percentage,
+            };
+            ch.completedSections = pCh.completedPages;
+            ch.totalSections = pCh.totalPages;
+            ch.percentage = pCh.percentage;
+            ch.is_completed = pCh.isCompleted;
+            ch.is_in_progress = !pCh.isCompleted && pCh.completedPages > 0;
+            ch.is_not_started = pCh.completedPages === 0;
+          }
+        });
+        completedChaptersCount = pdfOverall.completedChaptersCount;
+        finalOverallPercentage = pdfOverall.percentage;
+      }
+    } catch {}
+
     return {
       assignedClass: enrolledClass,
       assignedSubject: enrolledSubject,
       assignedChapters,
       totalChapters: assignedChapters.length,
       completedChapters: completedChaptersCount,
-      overallPercentage,
+      overallPercentage: finalOverallPercentage,
       currentChapter,
       currentSection: nextLesson?.contentTitle || (completedChaptersCount >= assignedChapters.length && assignedChapters.length > 0 ? 'All Chapters Mastered' : null),
       nextLesson,
@@ -1466,40 +2481,7 @@ export const enrollmentService = {
       classId.toLowerCase().includes(s.gradeKey.toLowerCase())
     )
 
-    let realClass: any = null
-
-    // If already a valid UUID, check in Supabase classes table
-    if (isUuid(classId)) {
-      try {
-        const { data: directCls } = await supabase
-          .from('classes')
-          .select('*, category:categories(*)')
-          .eq('id', classId)
-          .maybeSingle()
-        if (directCls) realClass = directCls
-      } catch {}
-    }
-
-    // If not found by UUID, look up in database by name/code
-    if (!realClass) {
-      try {
-        const { data: dbClasses } = await supabase
-          .from('classes')
-          .select('*, category:categories(*)')
-          .eq('organization_id', organizationId)
-          .neq('status', 'archived')
-
-        if (dbClasses && dbClasses.length > 0) {
-          const matched = dbClasses.find(c =>
-            (spec && c.name.toLowerCase().replace(/[\s-_]/g, '') === spec.name.toLowerCase().replace(/[\s-_]/g, '')) ||
-            (spec?.code && c.code && c.code.toLowerCase() === spec.code.toLowerCase()) ||
-            c.name.toLowerCase().replace(/[\s-_]/g, '') === classId.toLowerCase().replace(/[\s-_]/g, '') ||
-            (spec && c.name.toLowerCase().includes(spec.name.toLowerCase()))
-          )
-          if (matched) realClass = matched
-        }
-      } catch {}
-    }
+    let realClass: any = await classService.resolveClassRecord(classId, organizationId)
 
     // If still not in database, create the class row in Supabase
     if (!realClass) {
@@ -1781,13 +2763,17 @@ export const enrollmentService = {
         subId = dbSub?.id
       }
 
+      if (!dbClass || !isUuid(dbClass.id) || !isUuid(studentId)) {
+        return null
+      }
+
       const { data: enr, error: enrErr } = await supabase
         .from('enrollments')
         .insert({
           student_id: studentId,
-          organization_id: organizationId,
-          class_id: dbClass?.id || `cat-cls-${spec.gradeKey}`,
-          subject_id: subId || `cat-sub-${spec.gradeKey}`,
+          organization_id: isUuid(organizationId) ? organizationId : undefined,
+          class_id: dbClass.id,
+          subject_id: (subId && isUuid(subId)) ? subId : undefined,
           status: 'active',
           enrolled_at: new Date().toISOString(),
         })
@@ -1801,17 +2787,31 @@ export const enrollmentService = {
     return null
   },
 
-  async getByClass(classId: string): Promise<Enrollment[]> {
+  async getByClass(classId: string, organizationId?: string): Promise<Enrollment[]> {
+    if (!classId) return []
+    let resolvedClassId = classId
+    if (!isUuid(classId)) {
+      const realClass = await classService.resolveClassRecord(classId, organizationId)
+      if (realClass && isUuid(realClass.id)) {
+        resolvedClassId = realClass.id
+      } else {
+        return []
+      }
+    }
     const { data, error } = await supabase
       .from('enrollments')
       .select('*, student:profiles(*)')
-      .eq('class_id', classId)
+      .eq('class_id', resolvedClassId)
       .eq('status', 'active')
-    if (error) throw error
+    if (error) {
+      console.warn('Notice querying enrollments by class:', error)
+      return []
+    }
     return data || []
   },
 
   async unenroll(id: string) {
+    if (!isUuid(id)) return
     const { error } = await supabase
       .from('enrollments')
       .update({ status: 'inactive' })
@@ -1819,13 +2819,33 @@ export const enrollmentService = {
     if (error) throw error
   },
 
-  async isEnrolled(studentId: string, classId?: string, subjectId?: string): Promise<boolean> {
+  async isEnrolled(studentId: string, classId?: string, subjectId?: string, organizationId?: string): Promise<boolean> {
+    if (!studentId || !isUuid(studentId)) return false
+    let resolvedClassId: string | undefined = undefined
+    if (classId) {
+      if (isUuid(classId)) {
+        resolvedClassId = classId
+      } else {
+        const realClass = await classService.resolveClassRecord(classId, organizationId)
+        if (realClass && isUuid(realClass.id)) {
+          resolvedClassId = realClass.id
+        } else {
+          return false
+        }
+      }
+    }
+
+    if (subjectId && !isUuid(subjectId)) {
+      return false
+    }
+
     let query = supabase
       .from('enrollments')
       .select('id')
-      .eq('student_id', studentId)
       .eq('status', 'active')
-    if (classId) query = query.eq('class_id', classId)
+      .eq('student_id', studentId)
+
+    if (resolvedClassId) query = query.eq('class_id', resolvedClassId)
     if (subjectId) query = query.eq('subject_id', subjectId)
     const { data } = await query
     return (data?.length || 0) > 0

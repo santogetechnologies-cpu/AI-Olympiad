@@ -96,7 +96,13 @@ export default function StudentDashboard() {
   useEffect(() => {
     loadDashboard()
 
-    const handleProgressUpdate = () => loadDashboard()
+    let debounceTimer: any = null
+    const handleProgressUpdate = () => {
+      if (debounceTimer) clearTimeout(debounceTimer)
+      debounceTimer = setTimeout(() => {
+        loadDashboard()
+      }, 200)
+    }
     const handleEnrollmentUpdate = () => loadDashboard()
     const handleGamificationUpdate = (e: any) => {
       const updated = e?.detail?.stats || (user?.id ? gamification.getStats(user.id) : null)
@@ -109,7 +115,7 @@ export default function StudentDashboard() {
     }
 
     window.addEventListener('chapter_progress_updated', handleProgressUpdate)
-    window.addEventListener('learning_event', handleProgressUpdate)
+
     window.addEventListener('student_enrollment_updated', handleEnrollmentUpdate)
     window.addEventListener('storage', handleStorageChange)
     window.addEventListener('class_progression_advanced', handleProgressUpdate)
@@ -117,7 +123,7 @@ export default function StudentDashboard() {
 
     return () => {
       window.removeEventListener('chapter_progress_updated', handleProgressUpdate)
-      window.removeEventListener('learning_event', handleProgressUpdate)
+      if (debounceTimer) clearTimeout(debounceTimer)
       window.removeEventListener('student_enrollment_updated', handleEnrollmentUpdate)
       window.removeEventListener('storage', handleStorageChange)
       window.removeEventListener('class_progression_advanced', handleProgressUpdate)
@@ -142,7 +148,7 @@ export default function StudentDashboard() {
   const counts = useMemo(() => {
     const list = data?.assignedChapters || []
     return {
-      total: list.length || data?.totalChapters || 6,
+      total: list.length || data?.totalChapters || 8,
       completed: list.filter(c => c.is_completed).length || data?.completedChapters || 0,
       inProgress: list.filter(c => c.is_in_progress).length,
       notStarted: list.filter(c => c.is_not_started).length,

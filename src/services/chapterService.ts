@@ -1,15 +1,26 @@
-import { supabase } from '../lib/supabase'
+import { supabase, isUuid } from '../lib/supabase'
 import type { Chapter } from '../types'
 
 export const chapterService = {
-  async getAll(organizationId: string, subjectId?: string): Promise<Chapter[]> {
+  async getAll(organizationId?: string, subjectId?: string): Promise<Chapter[]> {
     let query = supabase
       .from('chapters')
       .select('*, subject:subjects(*)')
-      .eq('organization_id', organizationId)
       .neq('status', 'archived')
       .order('display_order', { ascending: true })
-    if (subjectId) query = query.eq('subject_id', subjectId)
+
+    if (organizationId && isUuid(organizationId)) {
+      query = query.eq('organization_id', organizationId)
+    }
+
+    if (subjectId) {
+      if (isUuid(subjectId)) {
+        query = query.eq('subject_id', subjectId)
+      } else {
+        return []
+      }
+    }
+
     const { data, error } = await query
     if (error) throw error
     return data || []
@@ -22,17 +33,22 @@ export const chapterService = {
       .neq('status', 'archived')
       .order('display_order', { ascending: true })
 
-    if (organizationId) {
+    if (organizationId && isUuid(organizationId)) {
       query = query.eq('organization_id', organizationId)
     }
+
     if (subjectId) {
-      query = query.eq('subject_id', subjectId)
+      if (isUuid(subjectId)) {
+        query = query.eq('subject_id', subjectId)
+      } else {
+        return []
+      }
     }
 
     const { data, error } = await query
     if (error) throw error
 
-    if ((!data || data.length === 0) && subjectId && organizationId) {
+    if ((!data || data.length === 0) && subjectId && isUuid(subjectId) && organizationId) {
       const fallback = await supabase
         .from('chapters')
         .select('*, subject:subjects(*)')
@@ -45,12 +61,14 @@ export const chapterService = {
     return data || []
   },
 
-  async getById(id: string): Promise<Chapter> {
+  async getById(id: string): Promise<Chapter | null> {
+    if (!isUuid(id)) return null
+
     const { data, error } = await supabase
       .from('chapters')
       .select('*, subject:subjects(*, class:classes(*, category:categories(*)))')
       .eq('id', id)
-      .single()
+      .maybeSingle()
     if (error) throw error
     return data
   },
@@ -66,6 +84,7 @@ export const chapterService = {
   },
 
   async update(id: string, payload: Partial<Chapter>): Promise<Chapter> {
+    if (!isUuid(id)) throw new Error(`Invalid chapter ID: ${id}`)
     const { data, error } = await supabase
       .from('chapters')
       .update(payload)
@@ -77,25 +96,31 @@ export const chapterService = {
   },
 
   async publish(id: string) {
+    if (!isUuid(id)) return
     return chapterService.update(id, { status: 'published' })
   },
 
   async unpublish(id: string) {
+    if (!isUuid(id)) return
     return chapterService.update(id, { status: 'draft' })
   },
 
   async reorder(items: { id: string; display_order: number }[]) {
-    const updates = items.map(({ id, display_order }) =>
+    const validItems = items.filter(i => isUuid(i.id))
+    const updates = validItems.map(({ id, display_order }) =>
       supabase.from('chapters').update({ display_order }).eq('id', id)
     )
     await Promise.all(updates)
   },
 
   async archive(id: string) {
+    if (!isUuid(id)) return
     return chapterService.update(id, { status: 'archived' })
   },
 
   async delete(id: string) {
+    if (!isUuid(id)) return
+
     const { data: contents } = await supabase.from('chapter_content').select('id').eq('chapter_id', id)
     if (contents && contents.length > 0) {
       const contentIds = contents.map(cc => cc.id)

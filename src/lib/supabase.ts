@@ -2,7 +2,7 @@ import { createClient } from '@supabase/supabase-js'
 
 const globalProcessEnv = typeof globalThis !== 'undefined' ? (globalThis as unknown as { process?: { env?: Record<string, string> } }).process?.env : undefined
 const supabaseUrl = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_SUPABASE_URL) || globalProcessEnv?.VITE_SUPABASE_URL || 'https://mock.supabase.co'
-const supabaseKey = (typeof import.meta !== 'undefined' && import.meta.env?.VITE_SUPABASE_PUBLISHABLE_KEY) || globalProcessEnv?.VITE_SUPABASE_PUBLISHABLE_KEY || 'mock-key'
+const supabaseKey = (typeof import.meta !== 'undefined' && (import.meta.env?.VITE_SUPABASE_PUBLISHABLE_KEY || import.meta.env?.VITE_SUPABASE_ANON_KEY)) || globalProcessEnv?.VITE_SUPABASE_PUBLISHABLE_KEY || globalProcessEnv?.VITE_SUPABASE_ANON_KEY || 'mock-key'
 
 if (!supabaseUrl || !supabaseKey) {
   console.warn('Missing Supabase environment variables')

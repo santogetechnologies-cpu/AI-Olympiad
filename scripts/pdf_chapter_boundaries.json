@@ -1,0 +1,690 @@
+{
+  "class10": {
+    "totalPages": 230,
+    "welcome": {
+      "startPage": 1,
+      "endPage": 5,
+      "totalPages": 5
+    },
+    "ch1": {
+      "startPage": 6,
+      "endPage": 40,
+      "totalPages": 35
+    },
+    "ch2": {
+      "startPage": 41,
+      "endPage": 75,
+      "totalPages": 35
+    },
+    "ch3": {
+      "startPage": 76,
+      "endPage": 110,
+      "totalPages": 35
+    },
+    "ch4": {
+      "startPage": 111,
+      "endPage": 145,
+      "totalPages": 35
+    },
+    "ch5": {
+      "startPage": 146,
+      "endPage": 180,
+      "totalPages": 35
+    },
+    "ch6": {
+      "startPage": 181,
+      "endPage": 221,
+      "totalPages": 41
+    },
+    "finale": {
+      "startPage": 222,
+      "endPage": 230,
+      "totalPages": 9
+    }
+  },
+  "class11": {
+    "totalPages": 282,
+    "welcome": {
+      "startPage": 1,
+      "endPage": 5,
+      "totalPages": 5
+    },
+    "ch1": {
+      "startPage": 6,
+      "endPage": 48,
+      "totalPages": 43
+    },
+    "ch2": {
+      "startPage": 49,
+      "endPage": 91,
+      "totalPages": 43
+    },
+    "ch3": {
+      "startPage": 92,
+      "endPage": 134,
+      "totalPages": 43
+    },
+    "ch4": {
+      "startPage": 135,
+      "endPage": 177,
+      "totalPages": 43
+    },
+    "ch5": {
+      "startPage": 178,
+      "endPage": 220,
+      "totalPages": 43
+    },
+    "ch6": {
+      "startPage": 221,
+      "endPage": 269,
+      "totalPages": 49
+    },
+    "finale": {
+      "startPage": 270,
+      "endPage": 282,
+      "totalPages": 13
+    }
+  },
+  "class12": {
+    "totalPages": 282,
+    "welcome": {
+      "startPage": 1,
+      "endPage": 5,
+      "totalPages": 5
+    },
+    "ch1": {
+      "startPage": 6,
+      "endPage": 48,
+      "totalPages": 43
+    },
+    "ch2": {
+      "startPage": 49,
+      "endPage": 91,
+      "totalPages": 43
+    },
+    "ch3": {
+      "startPage": 92,
+      "endPage": 134,
+      "totalPages": 43
+    },
+    "ch4": {
+      "startPage": 135,
+      "endPage": 177,
+      "totalPages": 43
+    },
+    "ch5": {
+      "startPage": 178,
+      "endPage": 220,
+      "totalPages": 43
+    },
+    "ch6": {
+      "startPage": 221,
+      "endPage": 260,
+      "totalPages": 40
+    },
+    "finale": {
+      "startPage": 261,
+      "endPage": 282,
+      "totalPages": 22
+    }
+  },
+  "class3": {
+    "totalPages": 218,
+    "welcome": {
+      "startPage": 1,
+      "endPage": 5,
+      "totalPages": 5
+    },
+    "ch1": {
+      "startPage": 6,
+      "endPage": 38,
+      "totalPages": 33
+    },
+    "ch2": {
+      "startPage": 39,
+      "endPage": 71,
+      "totalPages": 33
+    },
+    "ch3": {
+      "startPage": 72,
+      "endPage": 104,
+      "totalPages": 33
+    },
+    "ch4": {
+      "startPage": 105,
+      "endPage": 137,
+      "totalPages": 33
+    },
+    "ch5": {
+      "startPage": 138,
+      "endPage": 170,
+      "totalPages": 33
+    },
+    "ch6": {
+      "startPage": 171,
+      "endPage": 209,
+      "totalPages": 39
+    },
+    "finale": {
+      "startPage": 210,
+      "endPage": 218,
+      "totalPages": 9
+    }
+  },
+  "class4": {
+    "totalPages": 218,
+    "welcome": {
+      "startPage": 1,
+      "endPage": 5,
+      "totalPages": 5
+    },
+    "ch1": {
+      "startPage": 6,
+      "endPage": 38,
+      "totalPages": 33
+    },
+    "ch2": {
+      "startPage": 39,
+      "endPage": 71,
+      "totalPages": 33
+    },
+    "ch3": {
+      "startPage": 72,
+      "endPage": 104,
+      "totalPages": 33
+    },
+    "ch4": {
+      "startPage": 105,
+      "endPage": 137,
+      "totalPages": 33
+    },
+    "ch5": {
+      "startPage": 138,
+      "endPage": 170,
+      "totalPages": 33
+    },
+    "ch6": {
+      "startPage": 171,
+      "endPage": 209,
+      "totalPages": 39
+    },
+    "finale": {
+      "startPage": 210,
+      "endPage": 218,
+      "totalPages": 9
+    }
+  },
+  "class5": {
+    "totalPages": 218,
+    "welcome": {
+      "startPage": 1,
+      "endPage": 5,
+      "totalPages": 5
+    },
+    "ch1": {
+      "startPage": 6,
+      "endPage": 38,
+      "totalPages": 33
+    },
+    "ch2": {
+      "startPage": 39,
+      "endPage": 71,
+      "totalPages": 33
+    },
+    "ch3": {
+      "startPage": 72,
+      "endPage": 104,
+      "totalPages": 33
+    },
+    "ch4": {
+      "startPage": 105,
+      "endPage": 137,
+      "totalPages": 33
+    },
+    "ch5": {
+      "startPage": 138,
+      "endPage": 170,
+      "totalPages": 33
+    },
+    "ch6": {
+      "startPage": 171,
+      "endPage": 209,
+      "totalPages": 39
+    },
+    "finale": {
+      "startPage": 210,
+      "endPage": 218,
+      "totalPages": 9
+    }
+  },
+  "class6": {
+    "totalPages": 230,
+    "welcome": {
+      "startPage": 1,
+      "endPage": 5,
+      "totalPages": 5
+    },
+    "ch1": {
+      "startPage": 6,
+      "endPage": 40,
+      "totalPages": 35
+    },
+    "ch2": {
+      "startPage": 41,
+      "endPage": 75,
+      "totalPages": 35
+    },
+    "ch3": {
+      "startPage": 76,
+      "endPage": 110,
+      "totalPages": 35
+    },
+    "ch4": {
+      "startPage": 111,
+      "endPage": 145,
+      "totalPages": 35
+    },
+    "ch5": {
+      "startPage": 146,
+      "endPage": 180,
+      "totalPages": 35
+    },
+    "ch6": {
+      "startPage": 181,
+      "endPage": 221,
+      "totalPages": 41
+    },
+    "finale": {
+      "startPage": 222,
+      "endPage": 230,
+      "totalPages": 9
+    }
+  },
+  "class7": {
+    "totalPages": 230,
+    "welcome": {
+      "startPage": 1,
+      "endPage": 5,
+      "totalPages": 5
+    },
+    "ch1": {
+      "startPage": 6,
+      "endPage": 40,
+      "totalPages": 35
+    },
+    "ch2": {
+      "startPage": 41,
+      "endPage": 75,
+      "totalPages": 35
+    },
+    "ch3": {
+      "startPage": 76,
+      "endPage": 110,
+      "totalPages": 35
+    },
+    "ch4": {
+      "startPage": 111,
+      "endPage": 145,
+      "totalPages": 35
+    },
+    "ch5": {
+      "startPage": 146,
+      "endPage": 180,
+      "totalPages": 35
+    },
+    "ch6": {
+      "startPage": 181,
+      "endPage": 221,
+      "totalPages": 41
+    },
+    "finale": {
+      "startPage": 222,
+      "endPage": 230,
+      "totalPages": 9
+    }
+  },
+  "class8": {
+    "totalPages": 230,
+    "welcome": {
+      "startPage": 1,
+      "endPage": 5,
+      "totalPages": 5
+    },
+    "ch1": {
+      "startPage": 6,
+      "endPage": 40,
+      "totalPages": 35
+    },
+    "ch2": {
+      "startPage": 41,
+      "endPage": 75,
+      "totalPages": 35
+    },
+    "ch3": {
+      "startPage": 76,
+      "endPage": 110,
+      "totalPages": 35
+    },
+    "ch4": {
+      "startPage": 111,
+      "endPage": 145,
+      "totalPages": 35
+    },
+    "ch5": {
+      "startPage": 146,
+      "endPage": 180,
+      "totalPages": 35
+    },
+    "ch6": {
+      "startPage": 181,
+      "endPage": 221,
+      "totalPages": 41
+    },
+    "finale": {
+      "startPage": 222,
+      "endPage": 230,
+      "totalPages": 9
+    }
+  },
+  "class9": {
+    "totalPages": 230,
+    "welcome": {
+      "startPage": 1,
+      "endPage": 5,
+      "totalPages": 5
+    },
+    "ch1": {
+      "startPage": 6,
+      "endPage": 40,
+      "totalPages": 35
+    },
+    "ch2": {
+      "startPage": 41,
+      "endPage": 75,
+      "totalPages": 35
+    },
+    "ch3": {
+      "startPage": 76,
+      "endPage": 110,
+      "totalPages": 35
+    },
+    "ch4": {
+      "startPage": 111,
+      "endPage": 145,
+      "totalPages": 35
+    },
+    "ch5": {
+      "startPage": 146,
+      "endPage": 180,
+      "totalPages": 35
+    },
+    "ch6": {
+      "startPage": 181,
+      "endPage": 221,
+      "totalPages": 41
+    },
+    "finale": {
+      "startPage": 222,
+      "endPage": 230,
+      "totalPages": 9
+    }
+  },
+  "pg1": {
+    "totalPages": 266,
+    "welcome": {
+      "startPage": 1,
+      "endPage": 5,
+      "totalPages": 5
+    },
+    "ch1": {
+      "startPage": 6,
+      "endPage": 46,
+      "totalPages": 41
+    },
+    "ch2": {
+      "startPage": 47,
+      "endPage": 87,
+      "totalPages": 41
+    },
+    "ch3": {
+      "startPage": 88,
+      "endPage": 128,
+      "totalPages": 41
+    },
+    "ch4": {
+      "startPage": 129,
+      "endPage": 169,
+      "totalPages": 41
+    },
+    "ch5": {
+      "startPage": 170,
+      "endPage": 210,
+      "totalPages": 41
+    },
+    "ch6": {
+      "startPage": 211,
+      "endPage": 257,
+      "totalPages": 47
+    },
+    "finale": {
+      "startPage": 258,
+      "endPage": 266,
+      "totalPages": 9
+    }
+  },
+  "pg2": {
+    "totalPages": 266,
+    "welcome": {
+      "startPage": 1,
+      "endPage": 5,
+      "totalPages": 5
+    },
+    "ch1": {
+      "startPage": 6,
+      "endPage": 46,
+      "totalPages": 41
+    },
+    "ch2": {
+      "startPage": 47,
+      "endPage": 87,
+      "totalPages": 41
+    },
+    "ch3": {
+      "startPage": 88,
+      "endPage": 128,
+      "totalPages": 41
+    },
+    "ch4": {
+      "startPage": 129,
+      "endPage": 169,
+      "totalPages": 41
+    },
+    "ch5": {
+      "startPage": 170,
+      "endPage": 210,
+      "totalPages": 41
+    },
+    "ch6": {
+      "startPage": 211,
+      "endPage": 257,
+      "totalPages": 47
+    },
+    "finale": {
+      "startPage": 258,
+      "endPage": 266,
+      "totalPages": 9
+    }
+  },
+  "ug1": {
+    "totalPages": 270,
+    "welcome": {
+      "startPage": 1,
+      "endPage": 5,
+      "totalPages": 5
+    },
+    "ch1": {
+      "startPage": 6,
+      "endPage": 47,
+      "totalPages": 42
+    },
+    "ch2": {
+      "startPage": 48,
+      "endPage": 88,
+      "totalPages": 41
+    },
+    "ch3": {
+      "startPage": 89,
+      "endPage": 129,
+      "totalPages": 41
+    },
+    "ch4": {
+      "startPage": 130,
+      "endPage": 170,
+      "totalPages": 41
+    },
+    "ch5": {
+      "startPage": 171,
+      "endPage": 211,
+      "totalPages": 41
+    },
+    "ch6": {
+      "startPage": 212,
+      "endPage": 258,
+      "totalPages": 47
+    },
+    "finale": {
+      "startPage": 259,
+      "endPage": 270,
+      "totalPages": 12
+    }
+  },
+  "ug2": {
+    "totalPages": 266,
+    "welcome": {
+      "startPage": 1,
+      "endPage": 5,
+      "totalPages": 5
+    },
+    "ch1": {
+      "startPage": 6,
+      "endPage": 46,
+      "totalPages": 41
+    },
+    "ch2": {
+      "startPage": 47,
+      "endPage": 87,
+      "totalPages": 41
+    },
+    "ch3": {
+      "startPage": 88,
+      "endPage": 128,
+      "totalPages": 41
+    },
+    "ch4": {
+      "startPage": 129,
+      "endPage": 169,
+      "totalPages": 41
+    },
+    "ch5": {
+      "startPage": 170,
+      "endPage": 210,
+      "totalPages": 41
+    },
+    "ch6": {
+      "startPage": 211,
+      "endPage": 257,
+      "totalPages": 47
+    },
+    "finale": {
+      "startPage": 258,
+      "endPage": 266,
+      "totalPages": 9
+    }
+  },
+  "ug3": {
+    "totalPages": 266,
+    "welcome": {
+      "startPage": 1,
+      "endPage": 5,
+      "totalPages": 5
+    },
+    "ch1": {
+      "startPage": 6,
+      "endPage": 46,
+      "totalPages": 41
+    },
+    "ch2": {
+      "startPage": 47,
+      "endPage": 87,
+      "totalPages": 41
+    },
+    "ch3": {
+      "startPage": 88,
+      "endPage": 128,
+      "totalPages": 41
+    },
+    "ch4": {
+      "startPage": 129,
+      "endPage": 169,
+      "totalPages": 41
+    },
+    "ch5": {
+      "startPage": 170,
+      "endPage": 210,
+      "totalPages": 41
+    },
+    "ch6": {
+      "startPage": 211,
+      "endPage": 257,
+      "totalPages": 47
+    },
+    "finale": {
+      "startPage": 258,
+      "endPage": 266,
+      "totalPages": 9
+    }
+  },
+  "ug4": {
+    "totalPages": 266,
+    "welcome": {
+      "startPage": 1,
+      "endPage": 5,
+      "totalPages": 5
+    },
+    "ch1": {
+      "startPage": 6,
+      "endPage": 46,
+      "totalPages": 41
+    },
+    "ch2": {
+      "startPage": 47,
+      "endPage": 87,
+      "totalPages": 41
+    },
+    "ch3": {
+      "startPage": 88,
+      "endPage": 128,
+      "totalPages": 41
+    },
+    "ch4": {
+      "startPage": 129,
+      "endPage": 169,
+      "totalPages": 41
+    },
+    "ch5": {
+      "startPage": 170,
+      "endPage": 210,
+      "totalPages": 41
+    },
+    "ch6": {
+      "startPage": 211,
+      "endPage": 257,
+      "totalPages": 47
+    },
+    "finale": {
+      "startPage": 258,
+      "endPage": 266,
+      "totalPages": 9
+    }
+  }
+}

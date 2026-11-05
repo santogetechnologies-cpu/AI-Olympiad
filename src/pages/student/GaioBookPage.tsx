@@ -43,6 +43,7 @@ export const GaioBookPage: React.FC = () => {
         gradeKey={gradeKey}
         isGradeLocked={isGradeLocked}
         studentName={user?.profile?.full_name || 'Super Student'}
+        studentId={user?.id}
         onExit={() => navigate(user ? '/student/learning' : '/')}
         onComplete={() => {
           toast.success(`Congratulations! You completed the GAIO ${gradeKey.toUpperCase()} Coursebook!`)

@@ -297,7 +297,7 @@ export default function AcademicStructurePage() {
   }
 
   const ChapterModal = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm<ChapterForm>({
+    const { register, handleSubmit, formState: { errors } } = useForm<any>({
       resolver: zodResolver(chapterSchema),
       defaultValues: chapModal.editing ? {
         title: chapModal.editing.title,
@@ -326,7 +326,7 @@ export default function AcademicStructurePage() {
     return (
       <Modal open={chapModal.open} onClose={() => setChapModal({ open: false })} title={chapModal.editing ? 'Edit Chapter' : 'Add Chapter'}>
         <form onSubmit={handleSubmit(onSubmit)} className="p-6 space-y-4">
-          <Input label="Chapter Title" placeholder="e.g. Real Numbers" required error={errors.title?.message} {...register('title')} />
+          <Input label="Chapter Title" placeholder="e.g. Real Numbers" required error={errors.title?.message ? String(errors.title.message) : undefined} {...register('title')} />
           <Input label="Chapter Number (Optional)" placeholder="e.g. 1 or 1.1" {...register('chapter_number')} />
           <Input label="Short Description" placeholder="Brief summary..." {...register('short_description')} />
           <Textarea label="Full Description" {...register('description')} />

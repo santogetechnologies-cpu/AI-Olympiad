@@ -1,35 +1,84 @@
-import { supabase } from '../lib/supabase'
+import { supabase, isUuid } from '../lib/supabase'
 import type { Category } from '../types'
 
 export const categoryService = {
+  async resolveCategory(categoryIdentifier?: string | null, organizationId?: string): Promise<Category | null> {
+    if (!categoryIdentifier || typeof categoryIdentifier !== 'string') return null
+
+    if (isUuid(categoryIdentifier)) {
+      try {
+        const { data } = await supabase
+          .from('categories')
+          .select('*')
+          .eq('id', categoryIdentifier)
+          .maybeSingle()
+        if (data) return data
+      } catch {}
+    }
+
+    const cleanSlug = categoryIdentifier.toLowerCase().replace(/^cat-/, '')
+
+    try {
+      let query = supabase.from('categories').select('*').neq('status', 'archived')
+      if (organizationId && isUuid(organizationId)) {
+        query = query.eq('organization_id', organizationId)
+      }
+      const { data: cats } = await query
+      if (cats && cats.length > 0) {
+        const matched = cats.find(c =>
+          c.slug.toLowerCase() === cleanSlug ||
+          c.name.toLowerCase().includes(cleanSlug) ||
+          c.name.toLowerCase() === 'ai olympiad'
+        )
+        if (matched) return matched
+      }
+    } catch {}
+
+    return null
+  },
+
   async getAll(organizationId: string): Promise<Category[]> {
-    const { data, error } = await supabase
+    let query = supabase
       .from('categories')
       .select('*')
-      .eq('organization_id', organizationId)
       .neq('status', 'archived')
       .order('display_order', { ascending: true })
+
+    if (organizationId && isUuid(organizationId)) {
+      query = query.eq('organization_id', organizationId)
+    }
+
+    const { data, error } = await query
     if (error) throw error
     return data || []
   },
 
   async getPublished(organizationId: string): Promise<Category[]> {
-    const { data, error } = await supabase
+    let query = supabase
       .from('categories')
       .select('*')
-      .eq('organization_id', organizationId)
       .eq('status', 'published')
       .order('display_order', { ascending: true })
+
+    if (organizationId && isUuid(organizationId)) {
+      query = query.eq('organization_id', organizationId)
+    }
+
+    const { data, error } = await query
     if (error) throw error
     return data || []
   },
 
-  async getById(id: string): Promise<Category> {
+  async getById(id: string): Promise<Category | null> {
+    if (!isUuid(id)) {
+      return categoryService.resolveCategory(id)
+    }
+
     const { data, error } = await supabase
       .from('categories')
       .select('*')
       .eq('id', id)
-      .single()
+      .maybeSingle()
     if (error) throw error
     return data
   },
@@ -45,6 +94,7 @@ export const categoryService = {
   },
 
   async update(id: string, payload: Partial<Category>): Promise<Category> {
+    if (!isUuid(id)) throw new Error(`Invalid category ID: ${id}`)
     const { data, error } = await supabase
       .from('categories')
       .update(payload)
@@ -56,17 +106,21 @@ export const categoryService = {
   },
 
   async reorder(items: { id: string; display_order: number }[]) {
-    const updates = items.map(({ id, display_order }) =>
+    const validItems = items.filter(i => isUuid(i.id))
+    const updates = validItems.map(({ id, display_order }) =>
       supabase.from('categories').update({ display_order }).eq('id', id)
     )
     await Promise.all(updates)
   },
 
   async archive(id: string) {
+    if (!isUuid(id)) return
     return categoryService.update(id, { status: 'archived' })
   },
 
   async delete(id: string): Promise<void> {
+    if (!isUuid(id)) return
+
     const { data: cls } = await supabase.from('classes').select('id').eq('category_id', id)
     if (cls && cls.length > 0) {
       for (const c of cls) {
@@ -105,4 +159,3 @@ export const categoryService = {
     if (error) throw error
   },
 }
-

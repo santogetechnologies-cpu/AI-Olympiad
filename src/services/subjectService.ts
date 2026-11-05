@@ -1,26 +1,50 @@
-import { supabase } from '../lib/supabase'
+import { supabase, isUuid } from '../lib/supabase'
 import type { Subject } from '../types'
+import { classService } from './classService'
 
 export const subjectService = {
   async getAll(organizationId: string, classId?: string): Promise<Subject[]> {
+    let resolvedClassId: string | undefined = undefined
+
+    if (classId) {
+      if (isUuid(classId)) {
+        resolvedClassId = classId
+      } else {
+        // Fetch and use the actual class record UUID (Requirement 5)
+        const realClass = await classService.resolveClassRecord(classId, organizationId)
+        if (realClass && isUuid(realClass.id)) {
+          resolvedClassId = realClass.id
+        } else {
+          // If classId is a custom slug that has no database row yet, return empty list safely
+          return []
+        }
+      }
+    }
+
     let query = supabase
       .from('subjects')
       .select('*, class:classes(*)')
-      .eq('organization_id', organizationId)
       .neq('status', 'archived')
       .order('display_order', { ascending: true })
-    if (classId) query = query.eq('class_id', classId)
+
+    if (organizationId && isUuid(organizationId)) {
+      query = query.eq('organization_id', organizationId)
+    }
+
+    if (resolvedClassId) query = query.eq('class_id', resolvedClassId)
     const { data, error } = await query
     if (error) throw error
     return data || []
   },
 
-  async getById(id: string): Promise<Subject> {
+  async getById(id: string): Promise<Subject | null> {
+    if (!isUuid(id)) return null
+
     const { data, error } = await supabase
       .from('subjects')
       .select('*, class:classes(*, category:categories(*))')
       .eq('id', id)
-      .single()
+      .maybeSingle()
     if (error) throw error
     return data
   },
@@ -36,6 +60,7 @@ export const subjectService = {
   },
 
   async update(id: string, payload: Partial<Subject>): Promise<Subject> {
+    if (!isUuid(id)) throw new Error(`Invalid subject ID: ${id}`)
     const { data, error } = await supabase
       .from('subjects')
       .update(payload)
@@ -47,17 +72,21 @@ export const subjectService = {
   },
 
   async reorder(items: { id: string; display_order: number }[]) {
-    const updates = items.map(({ id, display_order }) =>
+    const validItems = items.filter(i => isUuid(i.id))
+    const updates = validItems.map(({ id, display_order }) =>
       supabase.from('subjects').update({ display_order }).eq('id', id)
     )
     await Promise.all(updates)
   },
 
   async archive(id: string) {
+    if (!isUuid(id)) return
     return subjectService.update(id, { status: 'archived' })
   },
 
   async delete(id: string): Promise<void> {
+    if (!isUuid(id)) return
+
     // Clean up enrollments for this subject
     await supabase.from('enrollments').delete().eq('subject_id', id)
 
@@ -87,4 +116,3 @@ export const subjectService = {
     if (error) throw error
   },
 }
-
