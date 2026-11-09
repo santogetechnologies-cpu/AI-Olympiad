@@ -1534,26 +1534,42 @@ export default function ChapterLearningPage() {
   // Once a chapter is selected, hide the chapter grid completely and show only the selected chapter's page.
   // Working Back to Chapters button returns to the chapter selection screen.
   if (resolvedItemKey) {
-    const activeItem = currentGridItems.find((i) => i.key === resolvedItemKey) || currentGridItems[0]
+    const fallbackItem: ChapterGridItem = {
+      key: 'intro',
+      code: 'INTRO',
+      title: 'Welcome & Orientation',
+      subtitle: 'Tools & Foundations',
+      monthNumber: 0,
+      pageRange: 'p. 1-5',
+      screenCount: 5,
+      icon: Sparkles,
+      gradient: 'from-sky-500 to-blue-600',
+      badgeColor: 'bg-sky-50 text-sky-700 border-sky-200'
+    }
+    const activeItem =
+      (currentGridItems && currentGridItems.find((i) => i && i.key === resolvedItemKey)) ||
+      currentGridItems?.[0] ||
+      fallbackItem
+
     return (
       <AppLayout>
         <ErrorBoundary fallbackTitle="Digital Chapter Viewer">
           <div className="w-full h-full max-h-full flex-1 flex flex-col items-center justify-center min-h-0 bg-slate-900/5 overflow-hidden p-0">
             <GaioInteractiveBookApp
-            gradeKey={assignedGrade}
-            isGradeLocked={true}
-            scopedMonth={activeItem.monthNumber}
-            chapterNumber={activeItem.key}
-            chapterTitle={activeItem.title}
-            studentName={user?.profile?.full_name || 'Super Student'}
-            studentId={user?.id}
-            onExit={() => navigate('/student/learning/chapters')}
-            onNavigateChapter={(nextKey) => navigate(`/student/learning/chapters/${nextKey}`)}
-            onComplete={() => {
-              toast.success(`🎉 You completed ${activeItem.code}: ${activeItem.title}!`)
-            }}
-          />
-        </div>
+              gradeKey={assignedGrade || 'class3'}
+              isGradeLocked={true}
+              scopedMonth={activeItem?.monthNumber ?? 0}
+              chapterNumber={activeItem?.key || 'intro'}
+              chapterTitle={activeItem?.title || 'Welcome & Orientation'}
+              studentName={user?.profile?.full_name || 'Super Student'}
+              studentId={user?.id || 'demo-student-id'}
+              onExit={() => navigate('/student/learning/chapters')}
+              onNavigateChapter={(nextKey) => navigate(`/student/learning/chapters/${nextKey}`)}
+              onComplete={() => {
+                toast.success(`🎉 You completed ${activeItem?.code || 'Chapter'}: ${activeItem?.title || 'Learning'}!`)
+              }}
+            />
+          </div>
         </ErrorBoundary>
       </AppLayout>
     )

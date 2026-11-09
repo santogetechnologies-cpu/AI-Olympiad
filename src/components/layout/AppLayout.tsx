@@ -373,7 +373,7 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
             )}
 
             {/* Mobile Brand Logo */}
-            <Link to={isStudent ? "/student" : "/admin"} className="flex lg:hidden items-center gap-2.5 min-w-0">
+            <Link to={isStudent ? "/student" : "/admin"} className="flex lg:hidden items-center gap-2.5 min-w-0 shrink-0">
               <div className="w-9 h-9 rounded-xl flex items-center justify-center shrink-0 p-1 bg-amber-50 border border-amber-200 shadow-xs">
                 <img src="/mama-ada-logo.png" alt="Mamma Ada LMS" className="w-full h-full object-contain" />
               </div>
@@ -457,10 +457,13 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
             {isStudent && (
               <div className="flex items-center gap-1.5 sm:gap-2">
-                <div className="flex items-center gap-1 bg-white border border-slate-200/80 px-2.5 py-1 rounded-full text-xs font-bold text-slate-700 shadow-2xs">
-                  <Flame size={14} className="fill-rose-500 text-rose-500 shrink-0" />
-                  <span>{stats.streak}</span>
-                  <span className="text-[10px] text-slate-400 font-medium">d</span>
+                <div
+                  data-streak-indicator="true"
+                  className="streak-badge-compact-320 flex items-center gap-1 max-[320px]:gap-0.5 bg-white border border-slate-200/80 px-2.5 max-[320px]:px-1 py-1 max-[320px]:py-0.5 rounded-full text-xs max-[320px]:text-[10px] font-bold text-slate-700 shadow-2xs shrink-0"
+                >
+                  <Flame size={14} className="streak-flame-icon fill-rose-500 text-rose-500 shrink-0 w-3.5 h-3.5 max-[320px]:w-2.5 max-[320px]:h-2.5" />
+                  <span className="leading-none">{stats.streak}</span>
+                  <span className="streak-unit text-[10px] max-[320px]:text-[8px] text-slate-400 font-medium leading-none">d</span>
                 </div>
                 <div className="flex items-center gap-1 bg-white border border-slate-200/80 px-2.5 py-1 rounded-full text-xs font-bold text-slate-700 shadow-2xs">
                   <Zap size={14} className="fill-amber-500 text-amber-500 shrink-0" />

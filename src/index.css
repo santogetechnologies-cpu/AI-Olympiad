@@ -656,3 +656,24 @@ body {
 }
 
 
+
+
+/* At exactly 320px mobile screen width, reduce the size of the Streak indicator in the top navbar */
+@media (max-width: 320px) {
+  .streak-badge-compact-320 {
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important;
+    padding-top: 0.125rem !important;
+    padding-bottom: 0.125rem !important;
+    font-size: 0.625rem !important;
+    gap: 0.125rem !important;
+  }
+  .streak-badge-compact-320 svg,
+  .streak-badge-compact-320 .streak-flame-icon {
+    width: 0.625rem !important;
+    height: 0.625rem !important;
+  }
+  .streak-badge-compact-320 .streak-unit {
+    font-size: 0.5rem !important;
+  }
+}

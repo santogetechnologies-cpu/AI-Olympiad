@@ -162,11 +162,12 @@ export const studentAnnotationService = {
 
       if (!error && data) {
         const res: PageAnnotationData = {
-          strokes: data.strokes || [],
+          strokes: Array.isArray(data.strokes) ? data.strokes : [],
           fillData: data.fill_data || null,
-          stickers: data.stickers || [],
+          stickers: Array.isArray(data.stickers) ? data.stickers.filter((s: any) => Boolean(s && typeof s.id === 'string')) : [],
           imageOffsets: data.image_offsets || {},
           typedBlanks: data.typed_blanks || {},
+          typedNotes: Array.isArray(data.typed_notes) ? data.typed_notes.filter((n: any) => Boolean(n && typeof n.id === 'string')) : [],
         }
         annotationMemoryCache.set(key, res)
         try {

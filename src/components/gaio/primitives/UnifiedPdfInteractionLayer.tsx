@@ -199,10 +199,16 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
 
     const applyData = (data: any) => {
       if (isCancelled || !data) return
-      if (data.strokes) setStrokes(data.strokes)
-      if (data.stickers) setStickers(data.stickers)
-      if (data.typedNotes) setTypedNotes(data.typedNotes)
-      if (data.typedBlanks) setTypedBlanks(data.typedBlanks)
+      if (Array.isArray(data.strokes)) setStrokes(data.strokes)
+      if (Array.isArray(data.stickers)) {
+        setStickers(data.stickers.filter((s: any) => Boolean(s && typeof s.id === 'string')))
+      }
+      if (Array.isArray(data.typedNotes)) {
+        setTypedNotes(data.typedNotes.filter((n: any) => Boolean(n && typeof n.id === 'string')))
+      }
+      if (data.typedBlanks && typeof data.typedBlanks === 'object') {
+        setTypedBlanks(data.typedBlanks)
+      }
     }
 
     try {
@@ -280,11 +286,13 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       newNotes: TypedNote[],
       newBlanks: { [id: string]: string }
     ) => {
+      const sanitizedStickers = (newStickers || []).filter((s): s is PlacedSticker => Boolean(s && typeof s.id === 'string'))
+      const sanitizedNotes = (newNotes || []).filter((n): n is TypedNote => Boolean(n && typeof n.id === 'string'))
       const payload = {
-        strokes: newStrokes,
-        stickers: newStickers,
-        typedNotes: newNotes,
-        typedBlanks: newBlanks
+        strokes: newStrokes || [],
+        stickers: sanitizedStickers,
+        typedNotes: sanitizedNotes,
+        typedBlanks: newBlanks || {}
       }
 
       try {
@@ -446,31 +454,37 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
 
   useEffect(() => {
     const handleGlobalPointerMove = (e: PointerEvent) => {
-      if (!dragStartRef.current || !containerRef.current) return
-      const rect = containerRef.current.getBoundingClientRect()
-      const deltaX = ((e.clientX - dragStartRef.current.startPointerX) / rect.width) * 100
-      const deltaY = ((e.clientY - dragStartRef.current.startPointerY) / rect.height) * 100
+      const currentDrag = dragStartRef.current
+      if (!currentDrag || !containerRef.current) return
+      const targetId = currentDrag.id
+      if (!targetId) return
 
-      if (dragStartRef.current.kind === 'sticker') {
-        const newX = Math.max(2, Math.min(98, parseFloat((dragStartRef.current.initX + deltaX).toFixed(1))))
-        const newY = Math.max(2, Math.min(98, parseFloat((dragStartRef.current.initY + deltaY).toFixed(1))))
+      const rect = containerRef.current.getBoundingClientRect()
+      if (!rect.width || !rect.height) return
+
+      const deltaX = ((e.clientX - currentDrag.startPointerX) / rect.width) * 100
+      const deltaY = ((e.clientY - currentDrag.startPointerY) / rect.height) * 100
+
+      if (currentDrag.kind === 'sticker') {
+        const newX = Math.max(2, Math.min(98, parseFloat((currentDrag.initX + deltaX).toFixed(1))))
+        const newY = Math.max(2, Math.min(98, parseFloat((currentDrag.initY + deltaY).toFixed(1))))
         setStickers((prev) =>
-          prev.map((s) => (s.id === dragStartRef.current!.id ? { ...s, x: newX, y: newY } : s))
+          (prev || []).map((s) => (s && s.id === targetId ? { ...s, x: newX, y: newY } : s))
         )
-      } else if (dragStartRef.current.kind === 'note') {
-        const newX = Math.max(2, Math.min(98, parseFloat((dragStartRef.current.initX + deltaX).toFixed(1))))
-        const newY = Math.max(2, Math.min(98, parseFloat((dragStartRef.current.initY + deltaY).toFixed(1))))
+      } else if (currentDrag.kind === 'note') {
+        const newX = Math.max(2, Math.min(98, parseFloat((currentDrag.initX + deltaX).toFixed(1))))
+        const newY = Math.max(2, Math.min(98, parseFloat((currentDrag.initY + deltaY).toFixed(1))))
         setTypedNotes((prev) =>
-          prev.map((n) => (n.id === dragStartRef.current!.id ? { ...n, x: newX, y: newY } : n))
+          (prev || []).map((n) => (n && n.id === targetId ? { ...n, x: newX, y: newY } : n))
         )
-      } else if (dragStartRef.current.kind === 'image') {
-        const deltaPxX = e.clientX - dragStartRef.current.startPointerX
-        const deltaPxY = e.clientY - dragStartRef.current.startPointerY
-        const nextX = parseFloat((dragStartRef.current.initX + deltaPxX).toFixed(1))
-        const nextY = parseFloat((dragStartRef.current.initY + deltaPxY).toFixed(1))
+      } else if (currentDrag.kind === 'image') {
+        const deltaPxX = e.clientX - currentDrag.startPointerX
+        const deltaPxY = e.clientY - currentDrag.startPointerY
+        const nextX = parseFloat((currentDrag.initX + deltaPxX).toFixed(1))
+        const nextY = parseFloat((currentDrag.initY + deltaPxY).toFixed(1))
         setImageOffsets((prev) => ({
           ...prev,
-          [dragStartRef.current!.id]: { x: nextX, y: nextY }
+          [targetId]: { x: nextX, y: nextY }
         }))
       }
     }
@@ -483,7 +497,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
         if (finishedKind === 'image') {
           setImageOffsets((latest) => {
             try {
-              localStorage.setItem(imageOffsetsKey, JSON.stringify(latest))
+              localStorage.setItem(imageOffsetsKey, JSON.stringify(latest || {}))
             } catch {}
             return latest
           })
@@ -1069,10 +1083,11 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
     }
 
     const last = historyStack[historyStack.length - 1]
+    if (!last) return
     setHistoryStack((prev) => prev.slice(0, -1))
 
     if (last.type === 'sticker') {
-      const next = stickers.filter((s) => s.id !== last.id)
+      const next = (stickers || []).filter((s) => Boolean(s && s.id !== last.id))
       setStickers(next)
       stickersRef.current = next
       persistState(strokes, next, typedNotes, typedBlanks)
@@ -1106,7 +1121,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
       gameAudio.playTap()
       toast.success('Undid drawing mark! ↺', { id: 'undo-act' })
     } else if (last.type === 'note') {
-      const next = typedNotes.filter((n) => n.id !== last.id)
+      const next = (typedNotes || []).filter((n) => Boolean(n && n.id !== last.id))
       setTypedNotes(next)
       typedNotesRef.current = next
       persistState(strokes, stickers, next, typedBlanks)
@@ -1180,7 +1195,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
 
   // 4. TAP TO SPEAK & WORD INTERACTIONS
   const handleWordTap = (item: PageWordItem) => {
-    if (activeTool !== 'pointer') return
+    if (!item?.id || activeTool !== 'pointer') return
 
     setBouncingWordId(item.id)
     setTimeout(() => setBouncingWordId(null), 600)
@@ -1198,7 +1213,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
   }
 
   const handleWordDoubleTap = (item: PageWordItem) => {
-    if (activeTool !== 'pointer') return
+    if (!item?.id || activeTool !== 'pointer') return
     if (onWordSpell) {
       onWordSpell(item)
     } else if ('speechSynthesis' in window) {
@@ -1225,7 +1240,8 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
   // Delete placed item
   const handleDeleteSticker = (id: string, e: React.MouseEvent) => {
     e.stopPropagation()
-    const updated = stickers.filter((s) => s.id !== id)
+    if (!id) return
+    const updated = (stickers || []).filter((s) => Boolean(s && s.id !== id))
     setStickers(updated)
     persistState(strokes, updated, typedNotes, typedBlanks)
     gameAudio.playTap()
@@ -1233,7 +1249,8 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
 
   const handleDeleteNote = (id: string, e: React.MouseEvent) => {
     e.stopPropagation()
-    const updated = typedNotes.filter((n) => n.id !== id)
+    if (!id) return
+    const updated = (typedNotes || []).filter((n) => Boolean(n && n.id !== id))
     setTypedNotes(updated)
     persistState(strokes, stickers, updated, typedBlanks)
     gameAudio.playTap()
@@ -1296,7 +1313,7 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
         }`}
       >
         {(regions || [])
-          .filter((r) => r.type === 'draggable' && r.imageSrc && r.bbox)
+          .filter((r): r is PageRegion => Boolean(r && r.id && r.type === 'draggable' && r.imageSrc && r.bbox))
           .map((reg) => {
             const [bx, by, bw, bh] = reg.bbox!
             const offset = imageOffsets[reg.id] || { x: 0, y: 0 }
@@ -1366,54 +1383,56 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
           activeTool === 'hand' ? 'z-40' : 'z-25'
         }`}
       >
-        {stickers.map((st) => {
-          const isDragging = draggingItemId === st.id
-          const isCustomImage = st.type === 'custom_image' && st.url
-          const conf = STAMP_ICONS[st.type] || STAMP_ICONS.star
-          const Icon = conf.icon
+        {(stickers || [])
+          .filter((st): st is PlacedSticker => Boolean(st && typeof st.id === 'string'))
+          .map((st) => {
+            const isDragging = draggingItemId === st.id
+            const isCustomImage = st.type === 'custom_image' && st.url
+            const conf = STAMP_ICONS[st.type] || STAMP_ICONS.star
+            const Icon = conf.icon
 
-          return (
-            <div
-              key={st.id}
-              onPointerDown={(e) => handleStartItemDrag(e, st.id, 'sticker', st.x, st.y)}
-              style={{ left: `${st.x}%`, top: `${st.y}%` }}
-              title={activeTool === 'hand' ? "Drag to move anywhere" : "Switch to Move tool to drag"}
-              className={`absolute -translate-x-1/2 -translate-y-1/2 drop-shadow-xl pointer-events-auto group touch-none select-none ${
-                activeTool === 'hand'
-                  ? 'cursor-grab active:cursor-grabbing hover:ring-2 hover:ring-blue-500 rounded-xl p-1 bg-white/20 backdrop-blur-xs'
-                  : 'cursor-pointer hover:ring-1 hover:ring-blue-400/50 rounded-xl p-1'
-              } ${
-                isDragging ? 'scale-125 z-50 opacity-95 ring-4 ring-amber-400' : 'transition-transform duration-100'
-              }`}
-            >
-              {st.emoji ? (
-                <span className="text-4xl select-none leading-none drop-shadow-md pointer-events-none">
-                  {st.emoji}
-                </span>
-              ) : isCustomImage ? (
-                <img
-                  src={st.url}
-                  alt={st.label || 'EMI Image'}
-                  className="w-16 h-16 object-contain rounded-lg border-2 border-white/80 shadow-md bg-white/40 backdrop-blur-xs pointer-events-none"
-                />
-              ) : (
-                <Icon className={`w-8 h-8 ${conf.color} pointer-events-none`} />
-              )}
+            return (
+              <div
+                key={st.id}
+                onPointerDown={(e) => handleStartItemDrag(e, st.id, 'sticker', st.x, st.y)}
+                style={{ left: `${st.x}%`, top: `${st.y}%` }}
+                title={activeTool === 'hand' ? "Drag to move anywhere" : "Switch to Move tool to drag"}
+                className={`absolute -translate-x-1/2 -translate-y-1/2 drop-shadow-xl pointer-events-auto group touch-none select-none ${
+                  activeTool === 'hand'
+                    ? 'cursor-grab active:cursor-grabbing hover:ring-2 hover:ring-blue-500 rounded-xl p-1 bg-white/20 backdrop-blur-xs'
+                    : 'cursor-pointer hover:ring-1 hover:ring-blue-400/50 rounded-xl p-1'
+                } ${
+                  isDragging ? 'scale-125 z-50 opacity-95 ring-4 ring-amber-400' : 'transition-transform duration-100'
+                }`}
+              >
+                {st.emoji ? (
+                  <span className="text-4xl select-none leading-none drop-shadow-md pointer-events-none">
+                    {st.emoji}
+                  </span>
+                ) : isCustomImage ? (
+                  <img
+                    src={st.url}
+                    alt={st.label || 'EMI Image'}
+                    className="w-16 h-16 object-contain rounded-lg border-2 border-white/80 shadow-md bg-white/40 backdrop-blur-xs pointer-events-none"
+                  />
+                ) : (
+                  <Icon className={`w-8 h-8 ${conf.color} pointer-events-none`} />
+                )}
 
-              {/* Hand Tool delete badge on hover */}
-              {activeTool === 'hand' && (
-                <button
-                  type="button"
-                  onClick={(e) => handleDeleteSticker(st.id, e)}
-                  title="Remove Item"
-                  className="absolute -top-2 -right-2 w-5 h-5 bg-rose-600 hover:bg-rose-700 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-lg"
-                >
-                  <Trash2 size={11} />
-                </button>
-              )}
-            </div>
-          )
-        })}
+                {/* Hand Tool delete badge on hover */}
+                {activeTool === 'hand' && (
+                  <button
+                    type="button"
+                    onClick={(e) => handleDeleteSticker(st.id, e)}
+                    title="Remove Item"
+                    className="absolute -top-2 -right-2 w-5 h-5 bg-rose-600 hover:bg-rose-700 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-lg"
+                  >
+                    <Trash2 size={11} />
+                  </button>
+                )}
+              </div>
+            )
+          })}
       </div>
 
 
@@ -1424,85 +1443,87 @@ export const UnifiedPdfInteractionLayer: React.FC<UnifiedPdfInteractionLayerProp
           activeTool === 'hand' ? 'z-40' : 'z-35'
         }`}
       >
-        {typedNotes.map((note) => {
-          const isEditing = editingNoteId === note.id
-          const isDragging = draggingItemId === note.id
+        {(typedNotes || [])
+          .filter((note): note is TypedNote => Boolean(note && typeof note.id === 'string'))
+          .map((note) => {
+            const isEditing = editingNoteId === note.id
+            const isDragging = draggingItemId === note.id
 
-          return (
-            <div
-              key={note.id}
-              onPointerDown={(e) => handleStartItemDrag(e, note.id, 'note', note.x, note.y)}
-              style={{ left: `${note.x}%`, top: `${note.y}%` }}
-              className={`absolute -translate-x-1 sm:-translate-x-2 -translate-y-2 sm:-translate-y-4 pointer-events-auto group ${
-                activeTool === 'hand'
-                  ? 'cursor-grab active:cursor-grabbing hover:ring-2 hover:ring-blue-500 rounded-lg'
-                  : ''
-              } ${isDragging ? 'scale-110 opacity-90' : ''}`}
-            >
-              {isEditing ? (
-                <div className="flex items-center gap-0.5 sm:gap-1 bg-white p-0.5 sm:p-1 rounded-md sm:rounded-lg shadow-xl border border-blue-500 sm:border-2">
-                  <input
-                    type="text"
-                    autoFocus
-                    value={note.text}
-                    placeholder="Type..."
-                    onChange={(e) => {
-                      const updated = typedNotes.map((n) =>
-                        n.id === note.id ? { ...n, text: e.target.value } : n
-                      )
-                      setTypedNotes(updated)
-                    }}
-                    onKeyDown={(e) => {
-                      if (e.key === 'Enter') {
+            return (
+              <div
+                key={note.id}
+                onPointerDown={(e) => handleStartItemDrag(e, note.id, 'note', note.x, note.y)}
+                style={{ left: `${note.x}%`, top: `${note.y}%` }}
+                className={`absolute -translate-x-1 sm:-translate-x-2 -translate-y-2 sm:-translate-y-4 pointer-events-auto group ${
+                  activeTool === 'hand'
+                    ? 'cursor-grab active:cursor-grabbing hover:ring-2 hover:ring-blue-500 rounded-lg'
+                    : ''
+                } ${isDragging ? 'scale-110 opacity-90' : ''}`}
+              >
+                {isEditing ? (
+                  <div className="flex items-center gap-0.5 sm:gap-1 bg-white p-0.5 sm:p-1 rounded-md sm:rounded-lg shadow-xl border border-blue-500 sm:border-2">
+                    <input
+                      type="text"
+                      autoFocus
+                      value={note.text}
+                      placeholder="Type..."
+                      onChange={(e) => {
+                        const updated = (typedNotes || []).map((n) =>
+                          n && n.id === note.id ? { ...n, text: e.target.value } : n
+                        )
+                        setTypedNotes(updated)
+                      }}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter') {
+                          setEditingNoteId(null)
+                          persistState(strokes, stickers, typedNotes, typedBlanks)
+                        }
+                      }}
+                      style={{
+                        fontSize: `${Math.max(10, Math.min(15, Math.round(13 * Math.max(0.65, scale))))}px`,
+                        width: `${Math.max(84, Math.min(176, Math.round(150 * Math.max(0.6, scale))))}px`
+                      }}
+                      className="px-1 sm:px-2 py-0.5 sm:py-1 font-bold text-blue-900 outline-none"
+                    />
+                    <button
+                      onClick={() => {
                         setEditingNoteId(null)
                         persistState(strokes, stickers, typedNotes, typedBlanks)
-                      }
+                      }}
+                      className="p-1 sm:p-1.5 bg-blue-600 text-white rounded hover:bg-blue-700 shrink-0"
+                      title="Done"
+                    >
+                      <Check size={12} className="sm:hidden" />
+                      <Check size={14} className="hidden sm:block" />
+                    </button>
+                  </div>
+                ) : (
+                  <div
+                    onClick={() => {
+                      if (activeTool !== 'hand') setEditingNoteId(note.id)
                     }}
                     style={{
-                      fontSize: `${Math.max(10, Math.min(15, Math.round(13 * Math.max(0.65, scale))))}px`,
-                      width: `${Math.max(84, Math.min(176, Math.round(150 * Math.max(0.6, scale))))}px`
+                      color: note.color,
+                      fontSize: `${Math.max(10, Math.min(15, Math.round(13 * Math.max(0.65, scale))))}px`
                     }}
-                    className="px-1 sm:px-2 py-0.5 sm:py-1 font-bold text-blue-900 outline-none"
-                  />
-                  <button
-                    onClick={() => {
-                      setEditingNoteId(null)
-                      persistState(strokes, stickers, typedNotes, typedBlanks)
-                    }}
-                    className="p-1 sm:p-1.5 bg-blue-600 text-white rounded hover:bg-blue-700 shrink-0"
-                    title="Done"
+                    className="px-1.5 sm:px-2.5 py-0.5 sm:py-1 bg-white/95 sm:bg-blue-50/95 border border-blue-300 rounded sm:rounded-lg shadow-xs sm:shadow-sm font-bold text-blue-900 cursor-pointer hover:border-blue-500 transition-all hover:scale-105 flex items-center gap-1 max-w-[130px] sm:max-w-none break-words"
                   >
-                    <Check size={12} className="sm:hidden" />
-                    <Check size={14} className="hidden sm:block" />
-                  </button>
-                </div>
-              ) : (
-                <div
-                  onClick={() => {
-                    if (activeTool !== 'hand') setEditingNoteId(note.id)
-                  }}
-                  style={{
-                    color: note.color,
-                    fontSize: `${Math.max(10, Math.min(15, Math.round(13 * Math.max(0.65, scale))))}px`
-                  }}
-                  className="px-1.5 sm:px-2.5 py-0.5 sm:py-1 bg-white/95 sm:bg-blue-50/95 border border-blue-300 rounded sm:rounded-lg shadow-xs sm:shadow-sm font-bold text-blue-900 cursor-pointer hover:border-blue-500 transition-all hover:scale-105 flex items-center gap-1 max-w-[130px] sm:max-w-none break-words"
-                >
-                  <span>{note.text || '(empty)'}</span>
-                  {activeTool === 'hand' && (
-                    <button
-                      type="button"
-                      onClick={(e) => handleDeleteNote(note.id, e)}
-                      title="Delete Note"
-                      className="opacity-0 group-hover:opacity-100 p-0.5 hover:bg-rose-100 rounded text-rose-600"
-                    >
-                      <Trash2 size={11} />
-                    </button>
-                  )}
-                </div>
-              )}
-            </div>
-          )
-        })}
+                    <span>{note.text || '(empty)'}</span>
+                    {activeTool === 'hand' && (
+                      <button
+                        type="button"
+                        onClick={(e) => handleDeleteNote(note.id, e)}
+                        title="Delete Note"
+                        className="opacity-0 group-hover:opacity-100 p-0.5 hover:bg-rose-100 rounded text-rose-600"
+                      >
+                        <Trash2 size={11} />
+                      </button>
+                    )}
+                  </div>
+                )}
+              </div>
+            )
+          })}
       </div>
     </div>
   )

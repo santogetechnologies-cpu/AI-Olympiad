@@ -113,10 +113,11 @@ export function usePdfBook({
     const minP = minPage || 1
     const docMax = numPagesRef.current || 218
     const maxP = maxPage && maxPage > 0 ? Math.min(docMax, maxPage) : docMax
-    const desired = initialPage || minP
-    const target = Math.max(minP, Math.min(maxP, desired))
-    targetPageRef.current = target
-    setCurrentPage(target)
+    setCurrentPage((prev) => {
+      if (prev >= minP && prev <= maxP) return prev
+      const desired = initialPage || minP
+      return Math.max(minP, Math.min(maxP, desired))
+    })
   }, [initialPage, minPage, maxPage])
 
   // Cache-enabled page retrieval helper
@@ -267,10 +268,9 @@ export function usePdfBook({
   }, [])
 
   const goToPage = useCallback((target: number) => {
-    const minP = minPageRef.current || 1
     const docMax = numPagesRef.current || 218
-    const maxP = maxPageRef.current && maxPageRef.current > 0 ? Math.min(docMax, maxPageRef.current) : docMax
-    setCurrentPage(Math.max(minP, Math.min(maxP, target)))
+    const safeTarget = Math.max(1, Math.min(docMax, target))
+    setCurrentPage(safeTarget)
   }, [])
 
   return {

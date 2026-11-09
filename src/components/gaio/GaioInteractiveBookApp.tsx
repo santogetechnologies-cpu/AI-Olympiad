@@ -409,6 +409,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
 
   // ─── CHAPTER & DYNAMIC PDF RESOLUTION ─────────────────────────────────────
   const [internalChapterKey, setInternalChapterKey] = useState<string | null>(null)
+  const isDropdownNavigationRef = useRef<boolean>(false)
 
   useEffect(() => {
     setInternalChapterKey(null)
@@ -428,8 +429,22 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
   const chapters = useMemo(() => getClassChapters(currentGrade), [currentGrade])
 
   const currentChapterDef = useMemo(() => {
-    return chapters.find((c) => c.key === currentChapterKey) || chapters[0]
-  }, [chapters, currentChapterKey])
+    const found = chapters.find((c) => c && c.key === currentChapterKey)
+    if (found) return found
+    if (chapters && chapters.length > 0) return chapters[0]
+    return {
+      index: 0,
+      key: 'intro',
+      code: 'INTRO',
+      chapterNumber: 0,
+      title: chapterTitle || 'Welcome & Orientation',
+      subtitle: 'Tools & Foundations',
+      pdfPath: `/books/${currentGrade || 'class3'}.pdf`,
+      totalPages: 5,
+      startPage: 1,
+      endPage: 5,
+    }
+  }, [chapters, currentChapterKey, chapterTitle, currentGrade])
 
   const currentChapterIndex = useMemo(() => {
     return chapters.findIndex((c) => c.key === currentChapterKey)
@@ -493,9 +508,9 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
   }, [currentGrade])
 
   const currentPageRegions = useMemo(() => {
-    if (!classManifest?.pages) return []
-    const p = classManifest.pages.find((pg: any) => pg.pageNumber === currentPage)
-    return (p?.regions || []).filter((r: any) => r.type !== 'choose')
+    if (!classManifest?.pages || !Array.isArray(classManifest.pages)) return []
+    const p = classManifest.pages.find((pg: any) => pg && pg.pageNumber === currentPage)
+    return (p?.regions || []).filter((r: any) => r && r.id && r.type !== 'choose')
   }, [classManifest, currentPage])
 
   // Stars state
@@ -742,6 +757,13 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
   useEffect(() => {
     let isCancelled = false
     hasRestoredLastReadRef.current = false
+
+    if (isDropdownNavigationRef.current) {
+      isDropdownNavigationRef.current = false
+      hasRestoredLastReadRef.current = true
+      goToPage(chapterStartPage)
+      return
+    }
 
     progressService.getLastReadPage({
       studentId: activeStudentId,
@@ -1041,8 +1063,18 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
               const chs = getClassChapters(currentGrade)
               const found = chs.find(c => c.key === targetKey)
               if (found) {
+                // 1. Preserve the reading position of the chapter we are leaving
+                if (currentPage) {
+                  saveReadingPosition(currentPage)
+                }
+                // 2. Mark dropdown navigation so last-read restoration does not override the section starting page
+                isDropdownNavigationRef.current = true
+                // 3. Immediately switch chapter key so active dropdown selection and bounds update
+                setInternalChapterKey(found.key)
+                // 4. Immediately jump to the exact starting page of the selected section
                 goToPage(found.startPage)
-                saveReadingPosition(found.startPage)
+                // 5. Notify parent router/state if onNavigateChapter is provided
+                onNavigateChapter?.(found.key)
                 gameAudio.playTap()
               }
             }}

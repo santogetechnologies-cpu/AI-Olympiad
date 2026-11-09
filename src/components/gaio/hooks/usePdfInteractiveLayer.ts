@@ -160,7 +160,7 @@ export function usePdfInteractiveLayer({
   // 1. Speak single word
   const speakWord = useCallback(
     (item: PageWordItem) => {
-      if (typeof window === 'undefined' || !('speechSynthesis' in window)) return
+      if (!item?.id || typeof window === 'undefined' || !('speechSynthesis' in window)) return
 
       window.speechSynthesis.cancel()
       setIsReadingAloud(false)
@@ -196,7 +196,7 @@ export function usePdfInteractiveLayer({
   // 2. Spell Word Mode (Letter by letter: "C... A... T... Cat!")
   const spellWord = useCallback(
     (item: PageWordItem) => {
-      if (typeof window === 'undefined' || !('speechSynthesis' in window)) return
+      if (!item?.id || typeof window === 'undefined' || !('speechSynthesis' in window)) return
 
       window.speechSynthesis.cancel()
       setIsReadingAloud(false)
@@ -251,7 +251,7 @@ export function usePdfInteractiveLayer({
         const charIdx = e.charIndex
         // Find matching word by char range
         const foundIdx = words.findIndex((w) => charIdx >= w.charStart && charIdx <= w.charEnd + 2)
-        if (foundIdx !== -1) {
+        if (foundIdx !== -1 && words[foundIdx]?.id) {
           setActiveWordIndex(foundIdx)
           setActiveWordId(words[foundIdx].id)
         }
@@ -322,11 +322,11 @@ export function usePdfInteractiveLayer({
     }
 
     const now = Date.now()
-    if (lastTapRef.current.id === item.id && now - lastTapRef.current.time < 320) {
+    if (lastTapRef.current?.id && item?.id && lastTapRef.current.id === item.id && now - lastTapRef.current.time < 320) {
       // Double tap detected -> spell mode!
       spellWord(item)
       lastTapRef.current = { id: '', time: 0 }
-    } else {
+    } else if (item?.id) {
       // Single tap -> speak word
       speakWord(item)
       lastTapRef.current = { id: item.id, time: now }
