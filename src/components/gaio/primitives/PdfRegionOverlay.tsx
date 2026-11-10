@@ -38,7 +38,7 @@ export const PdfRegionOverlay: React.FC<PdfRegionOverlayProps> = ({
 }) => {
   return (
     <div className="absolute inset-0 pointer-events-none z-20 overflow-hidden">
-      {regions.map((region) => {
+      {(regions || []).filter((region): region is PageRegion => Boolean(region && region.id)).map((region) => {
         if (!region.bbox && region.type !== 'sayIt') return null
 
         // Scale bounding box to canvas pixels

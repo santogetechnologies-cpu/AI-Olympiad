@@ -4,7 +4,7 @@ import { AppLayout } from '../../components/layout/AppLayout'
 import { LoadingState, ErrorState, Button, Badge } from '../../components/ui'
 import { chapterService } from '../../services/chapterService'
 import { chapterContentService } from '../../services/chapterContentService'
-import { progressService, enrollmentService, parseGradeKeyFromClass, getClassChapters } from '../../services/progressService'
+import { progressService, enrollmentService, parseGradeKeyFromClass, getClassChapters, normalizeChapterKey } from '../../services/progressService'
 import { learningProgressTracker } from '../../services/learningProgressTracker'
 import { useAuth } from '../../contexts/AuthContext'
 import { toast } from 'react-hot-toast'
@@ -1257,6 +1257,82 @@ export default function ChapterLearningPage() {
   const totalSections = sections.length || 8
   const currentSection = sections[currentSectionIdx] || sections[0]
 
+  // ─── ACTIVE LEARNING TIME TRACKING ON LMS LESSONS (ONLY WHEN ACTUALLY INSIDE A CHAPTER) ───
+  const isActivelyInsideLmsLesson = Boolean(!resolvedItemKey && chapter && currentSection)
+  const activeSecondsAccumulatorRef = useRef<number>(0)
+  const lastActiveTimestampRef = useRef<number>(Date.now())
+  const lastUserInteractionTimeRef = useRef<number>(Date.now())
+
+  const flushLearningTime = useCallback(() => {
+    // Only track if genuinely inside an active LMS lesson (not on chapter selection overview)
+    if (!isActivelyInsideLmsLesson || !chapter) return
+    const elapsed = activeSecondsAccumulatorRef.current
+    if (elapsed > 0) {
+      activeSecondsAccumulatorRef.current = 0
+      const chapKey = normalizeChapterKey(chapter.chapter_number || chapter.id || 'intro')
+      progressService.recordLearningTime({
+        studentId,
+        gradeKey: assignedGrade,
+        chapterKey: chapKey,
+        elapsedSeconds: elapsed,
+        organizationId: orgId,
+      }).catch(() => {})
+    }
+  }, [isActivelyInsideLmsLesson, chapter, studentId, assignedGrade, orgId])
+
+  useEffect(() => {
+    if (!isActivelyInsideLmsLesson) return
+    lastActiveTimestampRef.current = Date.now()
+    lastUserInteractionTimeRef.current = Date.now()
+
+    const onUserActivity = () => {
+      lastUserInteractionTimeRef.current = Date.now()
+    }
+
+    window.addEventListener('pointerdown', onUserActivity, { passive: true })
+    window.addEventListener('keydown', onUserActivity, { passive: true })
+    window.addEventListener('touchstart', onUserActivity, { passive: true })
+    window.addEventListener('scroll', onUserActivity, { passive: true })
+
+    const interval = setInterval(() => {
+      const now = Date.now()
+      const delta = (now - lastActiveTimestampRef.current) / 1000
+      lastActiveTimestampRef.current = now
+
+      if (document.visibilityState !== 'visible') return
+      const idleSeconds = (now - lastUserInteractionTimeRef.current) / 1000
+      if (idleSeconds > 180) return
+
+      const validTick = Math.min(5, Math.max(0, delta))
+      activeSecondsAccumulatorRef.current += validTick
+
+      // Fast update every 2 seconds
+      if (activeSecondsAccumulatorRef.current >= 2) {
+        flushLearningTime()
+      }
+    }, 1000)
+
+    const handleVisibilityOrUnload = () => {
+      flushLearningTime()
+    }
+
+    document.addEventListener('visibilitychange', handleVisibilityOrUnload)
+    window.addEventListener('beforeunload', handleVisibilityOrUnload)
+    window.addEventListener('pagehide', handleVisibilityOrUnload)
+
+    return () => {
+      clearInterval(interval)
+      window.removeEventListener('pointerdown', onUserActivity)
+      window.removeEventListener('keydown', onUserActivity)
+      window.removeEventListener('touchstart', onUserActivity)
+      window.removeEventListener('scroll', onUserActivity)
+      document.removeEventListener('visibilitychange', handleVisibilityOrUnload)
+      window.removeEventListener('beforeunload', handleVisibilityOrUnload)
+      window.removeEventListener('pagehide', handleVisibilityOrUnload)
+      flushLearningTime()
+    }
+  }, [isActivelyInsideLmsLesson, flushLearningTime])
+
   // Section completion handler - ONLY called after authentic completion of required content/game
   const markSectionDone = async (sectionId: string) => {
     // 1. Prevent duplicate completion records
@@ -1604,13 +1680,13 @@ export default function ChapterLearningPage() {
             isGradeLocked={true}
             scopedMonth={cNum >= 1 && cNum <= 6 ? cNum : 1}
             chapterNumber={cNum}
-            chapterTitle={chapter.title}
+            chapterTitle={chapter?.title || 'Learning'}
             studentName={user?.profile?.full_name || 'Super Student'}
-            studentId={user?.id}
+            studentId={user?.id || 'demo-student-id'}
             onExit={() => navigate('/student/learning')}
             onNavigateChapter={(nextKey) => navigate(`/student/learning/chapters/${nextKey}`)}
             onComplete={() => {
-              if (currentSection) {
+              if (currentSection?.id) {
                 markSectionDone(currentSection.id)
               }
               toast.success(`Congratulations! You completed Chapter ${cNum} in the GAIO ${currentGradeKey.toUpperCase()} Coursebook!`)
@@ -1820,7 +1896,7 @@ export default function ChapterLearningPage() {
                   currentSectionIdx={currentSectionIdx}
                   canonicalSection={currentSection}
                   completedSectionIds={completedSectionIds}
-                  onCompleteSection={() => markSectionDone(currentSection.id)}
+                  onCompleteSection={() => currentSection?.id && markSectionDone(currentSection.id)}
                   onJumpToSection={handleSelectSection}
                   onContinueNextChapter={handleContinueNextChapter}
                   isFinalChapter={isFinalChapter}

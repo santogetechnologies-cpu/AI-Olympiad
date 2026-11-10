@@ -1,4 +1,5 @@
 import { supabase } from '../lib/supabase'
+import { progressService } from './progressService'
 
 export const analyticsService = {
   async getAdminStats(organizationId: string) {
@@ -70,7 +71,9 @@ export const analyticsService = {
     
     const items = progress || []
     const completed = items.filter(i => i.status === 'completed').length
-    const totalTime = items.reduce((s, i) => s + (i.time_spent || 0), 0)
+    const dbTotalTime = items.reduce((s, i) => s + (i.time_spent || 0), 0)
+    const trackedTime = progressService.getLearningTimeSync(studentId).totalSeconds
+    const totalTime = Math.max(dbTotalTime, trackedTime)
 
     const { data: attempts } = await supabase
       .from('quiz_attempts')

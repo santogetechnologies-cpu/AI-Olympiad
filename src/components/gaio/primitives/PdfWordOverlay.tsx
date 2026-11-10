@@ -51,7 +51,7 @@ export const PdfWordOverlay: React.FC<PdfWordOverlayProps> = ({
       style={{ width: `${pageWidth}px`, height: `${pageHeight}px` }}
     >
       {/* Interactive Word Hitboxes */}
-      {words.map((item) => {
+      {(words || []).filter((item): item is PageWordItem => Boolean(item && item.id)).map((item) => {
         const isActive = activeWordId === item.id
         const isSelected = selectedWord?.id === item.id
 

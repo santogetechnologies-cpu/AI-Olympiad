@@ -3,7 +3,7 @@ import { useAuth } from '../../contexts/AuthContext'
 import { AppLayout } from '../../components/layout/AppLayout'
 import { Card, LoadingState } from '../../components/ui'
 import { TrendingUp, CheckCircle, Clock, Star, BookOpen } from 'lucide-react'
-import { progressService, enrollmentService, formatProgressPercentage } from '../../services/progressService'
+import { progressService, enrollmentService, formatProgressPercentage, formatLearningTime } from '../../services/progressService'
 
 export default function StudentProgressPage() {
   const { user } = useAuth()
@@ -17,6 +17,8 @@ export default function StudentProgressPage() {
     completedPages: number
     percentage: number
     isCompleted: boolean
+    learningTimeSeconds?: number
+    learningTimeFormatted?: string
   }>>([])
   const [loading, setLoading] = useState(true)
 
@@ -48,21 +50,22 @@ export default function StudentProgressPage() {
       if (debounceTimer) clearTimeout(debounceTimer)
       debounceTimer = setTimeout(() => {
         loadProgressData()
-      }, 150)
+      }, 50)
     }
     window.addEventListener('chapter_progress_updated', handleUpdate)
+    window.addEventListener('learning_time_updated', handleUpdate)
     window.addEventListener('storage', handleUpdate)
 
     return () => {
       if (debounceTimer) clearTimeout(debounceTimer)
       window.removeEventListener('chapter_progress_updated', handleUpdate)
+      window.removeEventListener('learning_time_updated', handleUpdate)
       window.removeEventListener('storage', handleUpdate)
     }
   }, [loadProgressData])
 
   const progressPct = formatProgressPercentage(stats.completed, stats.totalItems).numeric
-  const hours = Math.floor(stats.totalTime / 3600)
-  const minutes = Math.floor((stats.totalTime % 3600) / 60)
+  const formattedLearningTime = formatLearningTime(stats.totalTime)
 
   if (loading) return <AppLayout><LoadingState /></AppLayout>
 
@@ -93,7 +96,7 @@ export default function StudentProgressPage() {
             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2 sm:mb-3">
               <Clock size={20} className="text-purple-600" />
             </div>
-            <p className="text-2xl sm:text-3xl font-bold text-slate-900">{hours > 0 ? `${hours}h` : `${minutes}m`}</p>
+            <p className="text-2xl sm:text-3xl font-bold text-slate-900">{formattedLearningTime}</p>
             <p className="text-xs sm:text-sm text-slate-500 mt-0.5 sm:mt-1">Learning Time</p>
           </Card>
           <Card className="p-4 sm:p-5 text-center">
@@ -146,7 +149,7 @@ export default function StudentProgressPage() {
 
                   <div className="mt-2">
                     <div className="flex items-center justify-between text-xs text-slate-500 mb-1">
-                      <span>{ch.completedPages} of {ch.totalPages} pages</span>
+                      <span>{ch.completedPages} of {ch.totalPages} pages{ch.learningTimeSeconds && ch.learningTimeSeconds > 0 ? ` • ${ch.learningTimeFormatted}` : ''}</span>
                       <span className="font-semibold text-slate-700">{ch.percentage}%</span>
                     </div>
                     <div className="w-full bg-slate-100 rounded-full h-2 overflow-hidden">

@@ -244,7 +244,7 @@ export const PdfGamesLayer: React.FC<PdfGamesLayerProps> = ({
 
           {/* Interactive Word Zones for Tap */}
           <div className="absolute inset-0 pointer-events-none">
-            {words.map((w) => (
+            {(words || []).filter((w) => Boolean(w && w.id)).map((w) => (
               <div
                 key={w.id}
                 onClick={() => handleWordTap(w)}
@@ -302,7 +302,7 @@ export const PdfGamesLayer: React.FC<PdfGamesLayerProps> = ({
           </div>
 
           <div className="absolute inset-0 pointer-events-none">
-            {balloons.map((b) => (
+            {(balloons || []).filter((b) => Boolean(b && b.id)).map((b) => (
               <button
                 key={b.id}
                 onClick={() => handlePopBalloon(b.word, b.id)}

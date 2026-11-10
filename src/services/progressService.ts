@@ -388,10 +388,20 @@ export interface PageCompletionRecord {
   completedChapters: string[]
   lastAccessedPage?: number
   lastReadByChapter?: Record<string, number>
+  timeSpentSeconds?: number
+  timeSpentByChapter?: Record<string, number>
   updatedAt: string
 }
 
 export type StudentPageCompletionStore = Record<string, PageCompletionRecord>
+
+export interface StudentLearningTimeStore {
+  totalSeconds: number
+  byChapter: Record<string, number>
+  byGrade?: Record<string, number>
+  lastActiveAt?: string
+  updatedAt: string
+}
 
 // Monotonic sequence tracker to prevent older async requests from overwriting newer page positions
 const lastReadSeqMap = new Map<string, number>()
@@ -415,6 +425,28 @@ export function formatProgressPercentage(completed: number, total: number): { nu
   const numeric = Math.min(99, Math.max(1, Math.round(rawPct)))
   const formatted = `${numeric}%`
   return { numeric, formatted }
+}
+
+/**
+ * Clean learning time formatter:
+ * - Whole-number hours and minutes (e.g. "1h 15m", "45m", "2h")
+ * - If under a minute but positive seconds, returns e.g. "45s"
+ * - Returns "0m" for zero
+ */
+export function formatLearningTime(totalSeconds: number): string {
+  const s = Math.max(0, Math.round(totalSeconds || 0))
+  if (s === 0) return '0m'
+  const h = Math.floor(s / 3600)
+  const m = Math.floor((s % 3600) / 60)
+  const sec = s % 60
+
+  if (h > 0) {
+    return m > 0 ? `${h}h ${m}m` : `${h}h`
+  }
+  if (m > 0) {
+    return `${m}m`
+  }
+  return sec > 0 ? `${sec}s` : '0m'
 }
 
 export interface ChapterDefinition {
@@ -597,6 +629,35 @@ function saveLocalPageCompletions(studentId: string, store: StudentPageCompletio
   if (!studentId) return
   try {
     localStorage.setItem(getPagePersistentRecordKey(studentId), JSON.stringify(store))
+  } catch {}
+}
+
+function getLearningTimeStorageKey(studentId: string): string {
+  return `nanjil_learning_time_${studentId}`
+}
+
+function loadLocalLearningTime(studentId: string): StudentLearningTimeStore {
+  if (!studentId) return { totalSeconds: 0, byChapter: {}, updatedAt: new Date().toISOString() }
+  try {
+    const raw = localStorage.getItem(getLearningTimeStorageKey(studentId))
+    if (raw) {
+      const parsed = JSON.parse(raw)
+      return {
+        totalSeconds: Math.max(0, Number(parsed.totalSeconds) || 0),
+        byChapter: parsed.byChapter && typeof parsed.byChapter === 'object' ? parsed.byChapter : {},
+        byGrade: parsed.byGrade && typeof parsed.byGrade === 'object' ? parsed.byGrade : {},
+        lastActiveAt: parsed.lastActiveAt,
+        updatedAt: parsed.updatedAt || new Date().toISOString(),
+      }
+    }
+  } catch {}
+  return { totalSeconds: 0, byChapter: {}, updatedAt: new Date().toISOString() }
+}
+
+function saveLocalLearningTime(studentId: string, store: StudentLearningTimeStore): void {
+  if (!studentId) return
+  try {
+    localStorage.setItem(getLearningTimeStorageKey(studentId), JSON.stringify(store))
   } catch {}
 }
 
@@ -1231,6 +1292,8 @@ export const progressService = {
     percentage: number
     formattedPercentage: string
     isCompleted: boolean
+    learningTimeSeconds: number
+    learningTimeFormatted: string
   }>> {
     let sId = studentId || 'demo-student-id'
     try {
@@ -1246,12 +1309,14 @@ export const progressService = {
     // Ensure all completed pages are synced
     await progressService.getCompletedPages(sId, gKey)
     const store = loadLocalPageCompletions(sId)
+    const timeStore = progressService.getLearningTimeSync(sId, gKey)
 
     return chapters.map((ch) => {
       const chDonePages = Array.from(new Set(store[gKey]?.completedPagesByChapter?.[ch.key] || []))
       const doneCount = chDonePages.length
       const isCompleted = doneCount >= ch.totalPages && ch.totalPages > 0
       const prog = formatProgressPercentage(doneCount, ch.totalPages)
+      const chSeconds = Math.max(0, Number(timeStore.byChapter?.[ch.key]) || 0)
 
       return {
         index: ch.index,
@@ -1267,6 +1332,8 @@ export const progressService = {
         percentage: prog.numeric,
         formattedPercentage: prog.formatted,
         isCompleted,
+        learningTimeSeconds: chSeconds,
+        learningTimeFormatted: formatLearningTime(chSeconds),
       }
     })
   },
@@ -1620,8 +1687,152 @@ export const progressService = {
     return map
   },
 
+  getLearningTimeSync(studentId: string, _gradeKey?: string): StudentLearningTimeStore {
+    const sId = studentId || 'demo-student-id'
+    const store = loadLocalLearningTime(sId)
+
+    // Accurate calculation: sum of genuine active time spent working inside chapters
+    const chTotal = Object.values(store.byChapter || {}).reduce((sum, sec) => sum + (Number(sec) || 0), 0)
+    store.totalSeconds = Math.max(store.totalSeconds || 0, chTotal)
+
+    return store
+  },
+
+  async getLearningTime(studentId: string, gradeKey?: string): Promise<StudentLearningTimeStore> {
+    let sId = studentId || 'demo-student-id'
+    if (isUuid(sId)) {
+      try {
+        const { data: { user } } = await supabase.auth.getUser()
+        if (user?.id) sId = user.id
+      } catch {}
+    }
+    const localStore = progressService.getLearningTimeSync(sId, gradeKey)
+
+    // Sync from Supabase student_content_progress if available
+    if (isUuid(sId)) {
+      try {
+        const { data } = await supabase
+          .from('student_content_progress')
+          .select('time_spent')
+          .eq('student_id', sId)
+
+        if (data && data.length > 0) {
+          const dbSum = data.reduce((sum, item) => sum + (item.time_spent || 0), 0)
+          if (dbSum > localStore.totalSeconds) {
+            localStore.totalSeconds = dbSum
+            saveLocalLearningTime(sId, localStore)
+          }
+        }
+      } catch {}
+    }
+
+    return localStore
+  },
+
+  async recordLearningTime(params: {
+    studentId: string
+    gradeKey?: string
+    chapterKey?: string
+    elapsedSeconds: number
+    organizationId?: string
+  }): Promise<{ totalSeconds: number; chapterSeconds: number }> {
+    const { studentId, gradeKey, chapterKey, elapsedSeconds, organizationId } = params
+    const sId = studentId || 'demo-student-id'
+    if (!elapsedSeconds || elapsedSeconds <= 0) {
+      const current = progressService.getLearningTimeSync(sId, gradeKey)
+      const chKey = normalizeChapterKey(chapterKey || 'intro')
+      return { totalSeconds: current.totalSeconds, chapterSeconds: current.byChapter[chKey] || 0 }
+    }
+
+    const gKey = parseGradeKeyFromClass(gradeKey || 'class3')
+    const chKey = normalizeChapterKey(chapterKey || 'intro')
+    // Cap any single delta to 10 minutes (600 seconds) to guard against background sleep jumps
+    const safeDelta = Math.min(600, Math.max(1, Math.round(elapsedSeconds)))
+
+    const store = loadLocalLearningTime(sId)
+    if (!store.byChapter) store.byChapter = {}
+    store.byChapter[chKey] = (store.byChapter[chKey] || 0) + safeDelta
+
+    if (!store.byGrade) store.byGrade = {}
+    store.byGrade[gKey] = (store.byGrade[gKey] || 0) + safeDelta
+
+    // Total learning time is the exact sum of time spent working inside chapters
+    store.totalSeconds = Object.values(store.byChapter).reduce((sum, s) => sum + (Number(s) || 0), 0)
+
+    store.lastActiveAt = new Date().toISOString()
+    store.updatedAt = new Date().toISOString()
+    saveLocalLearningTime(sId, store)
+
+    // Mirror to PageCompletionRecord
+    try {
+      const pageStore = loadLocalPageCompletions(sId)
+      if (!pageStore[gKey]) {
+        pageStore[gKey] = {
+          completedPages: [],
+          completedPagesByChapter: {},
+          completedChapters: [],
+          updatedAt: new Date().toISOString()
+        }
+      }
+      pageStore[gKey].timeSpentSeconds = store.totalSeconds
+      if (!pageStore[gKey].timeSpentByChapter) pageStore[gKey].timeSpentByChapter = {}
+      pageStore[gKey].timeSpentByChapter[chKey] = store.byChapter[chKey]
+      saveLocalPageCompletions(sId, pageStore)
+    } catch {}
+
+    // Async sync to Supabase student_content_progress in background if UUID
+    if (isUuid(sId) && organizationId && isUuid(organizationId)) {
+      try {
+        const contentId = `${chKey}-sec-1`
+        if (isUuid(contentId)) {
+          Promise.resolve(
+            supabase.from('student_content_progress').upsert(
+              {
+                student_id: sId,
+                chapter_content_id: contentId,
+                organization_id: organizationId,
+                time_spent: store.byChapter[chKey],
+                last_accessed_at: new Date().toISOString(),
+                updated_at: new Date().toISOString()
+              },
+              { onConflict: 'student_id,chapter_content_id' }
+            )
+          ).catch(() => {})
+        }
+      } catch {}
+    }
+
+    // Broadcast live update events
+    try {
+      window.dispatchEvent(
+        new CustomEvent('learning_time_updated', {
+          detail: {
+            studentId: sId,
+            gradeKey: gKey,
+            chapterKey: chKey,
+            totalSeconds: store.totalSeconds,
+            chapterSeconds: store.byChapter[chKey],
+            deltaSeconds: safeDelta
+          }
+        })
+      )
+      window.dispatchEvent(
+        new CustomEvent('chapter_progress_updated', {
+          detail: {
+            studentId: sId,
+            gradeKey: gKey,
+            chapterKey: chKey,
+            learningTimeSeconds: store.totalSeconds
+          }
+        })
+      )
+    } catch {}
+
+    return { totalSeconds: store.totalSeconds, chapterSeconds: store.byChapter[chKey] }
+  },
+
   async getStudentOverallProgress(studentId: string, _organizationId?: string) {
-    let totalTime = 0
+    let contentTime = 0
     let avgCompletion = 0
 
     if (isUuid(studentId)) {
@@ -1633,7 +1844,7 @@ export const progressService = {
 
         if (data && data.length > 0) {
           data.forEach(i => {
-            totalTime += i.time_spent || 0
+            contentTime += i.time_spent || 0
           })
           avgCompletion = data.reduce((sum, i) => sum + (i.completion_percentage || 0), 0) / data.length
         }
@@ -1641,6 +1852,9 @@ export const progressService = {
     }
 
     const pdfOverall = await progressService.getPdfOverallProgress(studentId)
+    const learningTime = progressService.getLearningTimeSync(studentId)
+
+    const totalTime = Math.max(learningTime.totalSeconds || 0, contentTime || 0)
 
     return {
       completed: pdfOverall.completedPages,

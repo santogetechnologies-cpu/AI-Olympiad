@@ -447,7 +447,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
   }, [chapters, currentChapterKey, chapterTitle, currentGrade])
 
   const currentChapterIndex = useMemo(() => {
-    return chapters.findIndex((c) => c.key === currentChapterKey)
+    return chapters.findIndex((c) => c && c.key === currentChapterKey)
   }, [chapters, currentChapterKey])
 
   const nextChapter = useMemo(() => {
@@ -796,12 +796,110 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
     return () => clearTimeout(timer)
   }, [currentPage, saveReadingPosition, chapterStartPage])
 
+  // ─── ACTIVE LEARNING TIME TRACKING ───────────────────────────────────────
+  // Measures genuine engaged learning time while student is reading & interacting.
+  // Pauses automatically if tab is hidden or student is idle for > 3 minutes.
+  const activeSecondsAccumulatorRef = useRef<number>(0)
+  const lastActiveTimestampRef = useRef<number>(Date.now())
+  const lastUserInteractionTimeRef = useRef<number>(Date.now())
+
+  const flushLearningTime = useCallback(() => {
+    const elapsed = activeSecondsAccumulatorRef.current
+    if (elapsed > 0) {
+      activeSecondsAccumulatorRef.current = 0
+      progressService.recordLearningTime({
+        studentId: activeStudentId,
+        gradeKey: currentGrade,
+        chapterKey: currentChapterKey,
+        elapsedSeconds: elapsed,
+        organizationId: user?.organization_id,
+      }).catch(() => {})
+    }
+  }, [activeStudentId, currentGrade, currentChapterKey, user?.organization_id])
+
+  useEffect(() => {
+    lastActiveTimestampRef.current = Date.now()
+    lastUserInteractionTimeRef.current = Date.now()
+
+    const onUserActivity = () => {
+      lastUserInteractionTimeRef.current = Date.now()
+    }
+
+    window.addEventListener('pointerdown', onUserActivity, { passive: true })
+    window.addEventListener('keydown', onUserActivity, { passive: true })
+    window.addEventListener('touchstart', onUserActivity, { passive: true })
+    window.addEventListener('scroll', onUserActivity, { passive: true })
+
+    const interval = setInterval(() => {
+      const now = Date.now()
+      const delta = (now - lastActiveTimestampRef.current) / 1000
+      lastActiveTimestampRef.current = now
+
+      // 1. Only track when tab is visible
+      if (document.visibilityState !== 'visible') return
+
+      // 2. Idle detection: pause if no user interaction for > 3 minutes (180s)
+      const idleSeconds = (now - lastUserInteractionTimeRef.current) / 1000
+      if (idleSeconds > 180) return
+
+      // 3. Accumulate active seconds (capped to 5s per tick)
+      const validTick = Math.min(5, Math.max(0, delta))
+      activeSecondsAccumulatorRef.current += validTick
+
+      // 4. Flush to database/localStorage every 2 seconds for ultra-fast live updates
+      if (activeSecondsAccumulatorRef.current >= 2) {
+        flushLearningTime()
+      }
+    }, 1000)
+
+    const handleVisibilityOrUnload = () => {
+      flushLearningTime()
+    }
+
+    document.addEventListener('visibilitychange', handleVisibilityOrUnload)
+    window.addEventListener('beforeunload', handleVisibilityOrUnload)
+    window.addEventListener('pagehide', handleVisibilityOrUnload)
+
+    return () => {
+      clearInterval(interval)
+      window.removeEventListener('pointerdown', onUserActivity)
+      window.removeEventListener('keydown', onUserActivity)
+      window.removeEventListener('touchstart', onUserActivity)
+      window.removeEventListener('scroll', onUserActivity)
+      document.removeEventListener('visibilitychange', handleVisibilityOrUnload)
+      window.removeEventListener('beforeunload', handleVisibilityOrUnload)
+      window.removeEventListener('pagehide', handleVisibilityOrUnload)
+      flushLearningTime()
+    }
+  }, [flushLearningTime])
+
+  // When chapter switches, immediately flush accumulated time for the outgoing chapter
+  const prevChapterKeyRef = useRef<string>(currentChapterKey)
+  useEffect(() => {
+    if (prevChapterKeyRef.current !== currentChapterKey) {
+      const outgoingChapter = prevChapterKeyRef.current
+      prevChapterKeyRef.current = currentChapterKey
+      const elapsed = activeSecondsAccumulatorRef.current
+      if (elapsed > 0) {
+        activeSecondsAccumulatorRef.current = 0
+        progressService.recordLearningTime({
+          studentId: activeStudentId,
+          gradeKey: currentGrade,
+          chapterKey: outgoingChapter,
+          elapsedSeconds: elapsed,
+          organizationId: user?.organization_id,
+        }).catch(() => {})
+      }
+    }
+  }, [currentChapterKey, activeStudentId, currentGrade, user?.organization_id])
+
   // Save reading position safely when unmounting or leaving viewer
   useEffect(() => {
     const handleBeforeUnload = () => {
       if (currentPage) {
         saveReadingPosition(currentPage)
       }
+      flushLearningTime()
       progressService.flushPendingUpdates().catch(() => {})
     }
     window.addEventListener('beforeunload', handleBeforeUnload)
@@ -810,9 +908,10 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
       if (currentPage) {
         saveReadingPosition(currentPage)
       }
+      flushLearningTime()
       progressService.flushPendingUpdates().catch(() => {})
     }
-  }, [currentPage, saveReadingPosition])
+  }, [currentPage, saveReadingPosition, flushLearningTime])
 
   // ─── NEXT PAGE & CHAPTER COMPLETION ACTIONS ─────────────────────────────
   // Next Page action: instant page flip with asynchronous background persistence
@@ -834,6 +933,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
 
       // 3. Asynchronous background persistence (never blocks UI or rendering)
       saveReadingPosition(nextPhysical)
+      flushLearningTime()
       progressService.recordPdfPageCompletion({
         studentId: activeStudentId,
         gradeKey: currentGrade,
@@ -937,6 +1037,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
 
   // Action: Navigate to next chapter once 100% completed, or celebrate course finish on finale
   const handleContinueToNextChapter = useCallback(() => {
+    flushLearningTime()
     if (isFinalChapter || !nextChapter) {
       // Final chapter completed - handle completion appropriately without navigating to nonexistent chapter
       gameAudio.playVictory()
@@ -967,7 +1068,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
 
     // 3. Fallback: update internal chapter state
     setInternalChapterKey(nextChapter.key)
-  }, [isFinalChapter, nextChapter, currentGrade, onComplete, onNavigateChapter])
+  }, [isFinalChapter, nextChapter, currentGrade, onComplete, onNavigateChapter, flushLearningTime])
 
   // Keyboard navigation & gestures
   useEffect(() => {
@@ -1036,6 +1137,7 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
           {onExit && (
             <button
               onClick={() => {
+                flushLearningTime()
                 saveReadingPosition(currentPage)
                 onExit()
               }}
@@ -1063,17 +1165,19 @@ export const GaioInteractiveBookApp: React.FC<GaioInteractiveBookAppProps> = ({
               const chs = getClassChapters(currentGrade)
               const found = chs.find(c => c.key === targetKey)
               if (found) {
-                // 1. Preserve the reading position of the chapter we are leaving
+                // 1. Flush any active learning time for the chapter we are leaving
+                flushLearningTime()
+                // 2. Preserve the reading position of the chapter we are leaving
                 if (currentPage) {
                   saveReadingPosition(currentPage)
                 }
-                // 2. Mark dropdown navigation so last-read restoration does not override the section starting page
+                // 3. Mark dropdown navigation so last-read restoration does not override the section starting page
                 isDropdownNavigationRef.current = true
-                // 3. Immediately switch chapter key so active dropdown selection and bounds update
+                // 4. Immediately switch chapter key so active dropdown selection and bounds update
                 setInternalChapterKey(found.key)
-                // 4. Immediately jump to the exact starting page of the selected section
+                // 5. Immediately jump to the exact starting page of the selected section
                 goToPage(found.startPage)
-                // 5. Notify parent router/state if onNavigateChapter is provided
+                // 6. Notify parent router/state if onNavigateChapter is provided
                 onNavigateChapter?.(found.key)
                 gameAudio.playTap()
               }

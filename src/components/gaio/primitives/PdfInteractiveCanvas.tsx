@@ -644,7 +644,7 @@ export const PdfInteractiveCanvas: React.FC<PdfInteractiveCanvasProps> = ({
 
       {/* Interactive Stamp Badges Layer */}
       <div className="absolute inset-0 pointer-events-none z-20">
-        {stamps.map((stamp) => (
+        {(stamps || []).filter((stamp) => Boolean(stamp && stamp.id)).map((stamp) => (
           <div
             key={stamp.id}
             style={{ left: `${stamp.x}%`, top: `${stamp.y}%` }}
@@ -657,7 +657,7 @@ export const PdfInteractiveCanvas: React.FC<PdfInteractiveCanvasProps> = ({
 
       {/* Interactive Typed Notes Layer */}
       <div className="absolute inset-0 pointer-events-none z-20">
-        {textNotes.map((note) => {
+        {(textNotes || []).filter((note) => Boolean(note && note.id)).map((note) => {
           const isEditing = editingTextId === note.id
           return (
             <div
@@ -673,7 +673,7 @@ export const PdfInteractiveCanvas: React.FC<PdfInteractiveCanvasProps> = ({
                     value={note.text}
                     placeholder="Type answer..."
                     onChange={(e) => {
-                      const updated = textNotes.map((n) => (n.id === note.id ? { ...n, text: e.target.value } : n))
+                      const updated = (textNotes || []).map((n) => (n && n.id === note.id ? { ...n, text: e.target.value } : n))
                       setTextNotes(updated)
                     }}
                     onKeyDown={(e) => {

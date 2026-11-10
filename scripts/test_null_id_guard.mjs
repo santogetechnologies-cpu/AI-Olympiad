@@ -48,5 +48,27 @@ assert(appCode.includes('r && r.id && r.type !== \'choose\''), 'currentPageRegio
 
 console.log('✓ GaioInteractiveBookApp guards verified')
 
+// 5. Verify PdfWordOverlay.tsx guards
+const wordOverlayCode = fs.readFileSync('src/components/gaio/primitives/PdfWordOverlay.tsx', 'utf8')
+assert(wordOverlayCode.includes('(words || []).filter((item): item is PageWordItem => Boolean(item && item.id))'), 'PdfWordOverlay must filter out null items')
+console.log('✓ PdfWordOverlay guards verified')
+
+// 6. Verify PdfRegionOverlay.tsx guards
+const regionOverlayCode = fs.readFileSync('src/components/gaio/primitives/PdfRegionOverlay.tsx', 'utf8')
+assert(regionOverlayCode.includes('(regions || []).filter((region): region is PageRegion => Boolean(region && region.id))'), 'PdfRegionOverlay must filter out null regions')
+console.log('✓ PdfRegionOverlay guards verified')
+
+// 7. Verify PdfGamesLayer.tsx guards
+const gamesCode = fs.readFileSync('src/components/gaio/primitives/PdfGamesLayer.tsx', 'utf8')
+assert(gamesCode.includes('(words || []).filter((w) => Boolean(w && w.id))'), 'PdfGamesLayer words must filter out null items')
+assert(gamesCode.includes('(balloons || []).filter((b) => Boolean(b && b.id))'), 'PdfGamesLayer balloons must filter out null items')
+console.log('✓ PdfGamesLayer guards verified')
+
+// 8. Verify PdfInteractiveCanvas.tsx guards
+const canvasCode = fs.readFileSync('src/components/gaio/primitives/PdfInteractiveCanvas.tsx', 'utf8')
+assert(canvasCode.includes('(stamps || []).filter((stamp) => Boolean(stamp && stamp.id))'), 'PdfInteractiveCanvas stamps must filter out null items')
+assert(canvasCode.includes('(textNotes || []).filter((note) => Boolean(note && note.id))'), 'PdfInteractiveCanvas textNotes must filter out null items')
+console.log('✓ PdfInteractiveCanvas guards verified')
+
 console.log('ALL NULL ID GUARDS PASSED!')
 
