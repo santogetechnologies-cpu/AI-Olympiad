@@ -11,6 +11,7 @@ import { progressService, type StudentDashboardData } from '../../services/progr
 import toast from 'react-hot-toast'
 import { SidebarSpotlightTour } from '../tour/SidebarSpotlightTour'
 import { tourService } from '../../services/tourService'
+import { examService, examWindowState } from '../../services/examService'
 
 interface NavItem {
   label: string
@@ -25,6 +26,7 @@ function AdminNav(): NavItem[] {
     { label: 'Academic Structure', href: '/admin/academic', icon: BookOpen },
     { label: 'Content Manager', href: '/content-manager', icon: FolderOpen },
     { label: 'Students', href: '/admin/students', icon: Users },
+    { label: 'Exams', href: '/admin/exams', icon: GraduationCap },
     { label: 'Analytics', href: '/admin/analytics', icon: BarChart3 },
     { label: 'Help & Support', href: '/admin/support', icon: HelpCircle },
     { label: 'Settings', href: '/admin/settings', icon: Settings },
@@ -39,12 +41,12 @@ function ContentManagerNav(): NavItem[] {
   ]
 }
 
-function StudentNav(): NavItem[] {
+function StudentNav(openExams = 0): NavItem[] {
   return [
     { label: 'Home', href: '/student', icon: Home },
     { label: 'Learn', href: '/student/learning', icon: BookOpen },
     { label: 'Progress', href: '/student/progress', icon: BarChart3 },
-    { label: 'Exams', href: '/student/exams', icon: GraduationCap },
+    { label: 'Exams', href: '/student/exams', icon: GraduationCap, badge: openExams || undefined },
     { label: 'Help', href: '/student/help', icon: HelpCircle },
     { label: 'Profile', href: '/student/profile', icon: User },
   ]
@@ -70,11 +72,30 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
   const isContentManager = userRole === 'academic_content_manager' || userRole === 'content_manager'
   const isStudent = !isAdmin && !isContentManager
 
+  const [openExamCount, setOpenExamCount] = useState(0)
+
+  // Count exams the student can take right now (shown as a badge on the Exams nav item)
+  useEffect(() => {
+    if (!user?.id || !isStudent) return
+    let active = true
+    Promise.all([examService.listForStudent(), examService.getMyAttempts()])
+      .then(([exams, attempts]) => {
+        if (!active) return
+        const used = new Map<string, number>()
+        attempts.forEach(a => used.set(a.exam_id, (used.get(a.exam_id) || 0) + 1))
+        setOpenExamCount(exams.filter(e =>
+          e.status === 'published' && examWindowState(e) === 'open' && (used.get(e.id) || 0) < e.max_attempts
+        ).length)
+      })
+      .catch(() => {})
+    return () => { active = false }
+  }, [user?.id, isStudent, location.pathname])
+
   const navItems = isAdmin
     ? AdminNav()
     : isContentManager
     ? ContentManagerNav()
-    : StudentNav()
+    : StudentNav(openExamCount)
 
   const handleSignOut = async () => {
     try {
@@ -282,6 +303,11 @@ export function AppLayout({ children }: { children: React.ReactNode }) {
               >
                 <Icon size={19} className={`flex-shrink-0 ${isActive && isStudent ? 'text-[#2563eb] stroke-[2.5]' : ''}`} />
                 {!collapsed && <span className="truncate">{item.label}</span>}
+                {!!item.badge && (
+                  <span className={`${collapsed ? 'absolute top-1 right-1' : 'ml-auto'} min-w-5 h-5 px-1.5 rounded-full bg-rose-500 text-white text-[11px] font-bold flex items-center justify-center`}>
+                    {item.badge}
+                  </span>
+                )}
                 {collapsed && (
                   <div className="absolute left-full ml-2 px-2.5 py-1 bg-slate-800 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 pointer-events-none whitespace-nowrap z-50 border border-slate-700 shadow-md">
                     {item.label}

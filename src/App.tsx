@@ -17,6 +17,9 @@ import AdminStudentsPage from './pages/admin/AdminStudentsPage'
 import AdminAnalyticsPage from './pages/admin/AdminAnalyticsPage'
 import AdminSupportPage from './pages/admin/AdminSupportPage'
 import AdminSettingsPage from './pages/admin/AdminSettingsPage'
+import AdminExamsPage from './pages/admin/AdminExamsPage'
+import ExamBuilderPage from './pages/admin/ExamBuilderPage'
+import AdminExamResultsPage from './pages/admin/AdminExamResultsPage'
 
 // Content Manager pages
 import ContentManagerDashboard from './pages/content-manager/ContentManagerDashboard'
@@ -31,6 +34,7 @@ import StudentAssignmentsPage from './pages/student/StudentAssignmentsPage'
 import StudentQuizzesPage from './pages/student/StudentQuizzesPage'
 import StudentProfilePage from './pages/student/StudentProfilePage'
 import StudentExamsPage from './pages/student/StudentExamsPage'
+import StudentExamTakePage from './pages/student/StudentExamTakePage'
 import StudentHelpPage from './pages/student/StudentHelpPage'
 import GaioBookPage from './pages/student/GaioBookPage'
 
@@ -58,6 +62,10 @@ export default function App() {
           <Route path="/admin/academic" element={<ProtectedRoute allowedRoles={['admin']}><AcademicStructurePage /></ProtectedRoute>} />
           <Route path="/admin/chapters/:chapterId/content" element={<ProtectedRoute allowedRoles={['admin']}><ContentBuilderPage /></ProtectedRoute>} />
           <Route path="/admin/students" element={<ProtectedRoute allowedRoles={['admin']}><AdminStudentsPage /></ProtectedRoute>} />
+          <Route path="/admin/exams" element={<ProtectedRoute allowedRoles={['admin']}><AdminExamsPage /></ProtectedRoute>} />
+          <Route path="/admin/exams/new" element={<ProtectedRoute allowedRoles={['admin']}><ExamBuilderPage /></ProtectedRoute>} />
+          <Route path="/admin/exams/:examId/edit" element={<ProtectedRoute allowedRoles={['admin']}><ExamBuilderPage /></ProtectedRoute>} />
+          <Route path="/admin/exams/:examId/results" element={<ProtectedRoute allowedRoles={['admin']}><AdminExamResultsPage /></ProtectedRoute>} />
           <Route path="/admin/analytics" element={<ProtectedRoute allowedRoles={['admin']}><AdminAnalyticsPage /></ProtectedRoute>} />
           <Route path="/admin/support" element={<ProtectedRoute allowedRoles={['admin']}><AdminSupportPage /></ProtectedRoute>} />
           <Route path="/admin/settings" element={<ProtectedRoute allowedRoles={['admin']}><AdminSettingsPage /></ProtectedRoute>} />
@@ -82,6 +90,7 @@ export default function App() {
           <Route path="/student/assignments" element={<ProtectedRoute allowedRoles={['student']}><StudentAssignmentsPage /></ProtectedRoute>} />
           <Route path="/student/quizzes" element={<ProtectedRoute allowedRoles={['student']}><StudentQuizzesPage /></ProtectedRoute>} />
           <Route path="/student/exams" element={<ProtectedRoute allowedRoles={['student']}><StudentExamsPage /></ProtectedRoute>} />
+          <Route path="/student/exams/:examId" element={<ProtectedRoute allowedRoles={['student']}><StudentExamTakePage /></ProtectedRoute>} />
           <Route path="/student/help" element={<ProtectedRoute allowedRoles={['student']}><StudentHelpPage /></ProtectedRoute>} />
           <Route path="/student/profile" element={<ProtectedRoute allowedRoles={['student']}><StudentProfilePage /></ProtectedRoute>} />
           <Route path="/student/book" element={<ProtectedRoute allowedRoles={['student']}><GaioBookPage /></ProtectedRoute>} />
